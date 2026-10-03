@@ -113,13 +113,15 @@ public enum ClickTrack {
     public static func beats(from startFrame: Int64, to endFrame: Int64, bpm: Double, beatsPerBar: Int, sampleRate: Double = CAFFormat.defaultSampleRate) -> [(frame: Int64, accent: Bool)] {
         let fpb = framesPerBeat(bpm: bpm, sampleRate: sampleRate)
         guard endFrame > startFrame, fpb > 0 else { return [] }
-        var beatIndex = Int64((Double(max(0, startFrame)) / fpb).rounded(.up))
+        // Negative frames are allowed so a count-in can run before timeline 0.
+        let bar = Int64(max(1, beatsPerBar))
+        var beatIndex = Int64((Double(startFrame) / fpb).rounded(.up))
         var out: [(Int64, Bool)] = []
         while true {
             let f = Int64((Double(beatIndex) * fpb).rounded())
             if f >= endFrame { break }
             if f >= startFrame {
-                out.append((f, beatIndex % Int64(max(1, beatsPerBar)) == 0))
+                out.append((f, ((beatIndex % bar) + bar) % bar == 0))
             }
             beatIndex += 1
         }

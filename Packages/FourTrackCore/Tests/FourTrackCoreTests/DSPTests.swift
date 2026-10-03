@@ -72,6 +72,10 @@ final class DSPTests: XCTestCase {
         XCTAssertEqual(later.map(\.accent), [false, false, true, false])
         XCTAssertEqual(ClickTrack.countInFrames(bars: 2, bpm: 120, beatsPerBar: 4), 192_000)
         XCTAssertEqual(ClickTrack.countInFrames(bars: 0, bpm: 120, beatsPerBar: 4), 0)
+        // Count-in before timeline zero keeps the bar grid.
+        let countIn = ClickTrack.beats(from: -96_000, to: 1, bpm: 120, beatsPerBar: 4)
+        XCTAssertEqual(countIn.map(\.frame), [-96_000, -72_000, -48_000, -24_000, 0])
+        XCTAssertEqual(countIn.map(\.accent), [true, false, false, false, true])
     }
 
     func testClickIsShortAndBounded() {

@@ -7,8 +7,9 @@ import Foundation
 ///     <root>/<project-id>/track1.cleaned.caf
 ///     <root>/<project-id>/track1.peaks
 ///
-/// `root` is `Application Support/Projects` in the app.
-public final class ProjectStore {
+/// `root` is `Application Support/Projects` in the app. Stateless apart from
+/// its root URL, so it is safe to use from background tasks.
+public final class ProjectStore: @unchecked Sendable {
     public let rootURL: URL
     private let fm = FileManager.default
     private let encoder: JSONEncoder = {

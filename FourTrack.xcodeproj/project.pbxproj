@@ -1,0 +1,512 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0DF261BDDA4E3910193DFC34 /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */; };
+		10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */; };
+		36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30AF566B98693F94AB8FE8 /* TransportView.swift */; };
+		38B5D72F23F74EC7BF904055 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */; };
+		50F39BE78B7AFABB578F525D /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B4995428CDBEF1B07DA5B /* Metronome.swift */; };
+		526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */; };
+		5AAB0FF58C74595719931AEC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */; };
+		63ABFE7D9CE7F3BAB0338AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */; };
+		680F6132AC71207BA8608BD6 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C31B8FB95A04BDC54A725 /* ProjectView.swift */; };
+		6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8780E45856FF405502040 /* ExportSheet.swift */; };
+		88AD950E9257B5F935E2CDAB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */; };
+		8ABE8AF50AE165BAC274A0D9 /* LatencyCalibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A846F4359940E981658B8FC /* LatencyCalibrator.swift */; };
+		8B657B4AA343DFE41453610C /* ProjectsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FBB08FE5E09F2A10CCD01 /* ProjectsListView.swift */; };
+		8DC8F8AE92CE9D40E155EBB3 /* ChannelStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C806A3447CA0590D3D06113 /* ChannelStripView.swift */; };
+		9A5947C2067936DF69823BFC /* FourTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C3D1657FC7B0FA7CACF00 /* FourTrackApp.swift */; };
+		A587A05123AECD32A09C1D3E /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFEE72C12248DA0E64BDBB2 /* Recorder.swift */; };
+		A9312C5B7AD8221DF79667AE /* TrackRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72403350D7930C64EB602B /* TrackRowView.swift */; };
+		AA855860A85CCDA7B77D422D /* ProjectsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C36E6C1B68F948592E88019 /* ProjectsViewModel.swift */; };
+		B2FDFEAD3783C4869785ED67 /* MixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9B76CE52C0FB100E4EA7E /* MixView.swift */; };
+		B3A5C9B2D345A3BE9C5BD88D /* TrackChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E8AB0B69232CD61AC546C /* TrackChain.swift */; };
+		CA29953881822E60FD3BF932 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */; };
+		CC034BEDD8688E6CB526C9E7 /* VolumeFader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5454E139B97093DB44AF1F /* VolumeFader.swift */; };
+		D520B91A133B43BDD3B2770A /* FourTrackCore in Frameworks */ = {isa = PBXBuildFile; productRef = 97DB3616201DF8E8FB2E6783 /* FourTrackCore */; };
+		D8C3B9CC3E6041604FE542DF /* MacroSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C5BA5B14A06A629337D91E8 /* MacroSlider.swift */; };
+		E33896CC91297AB3EFBC9A8B /* SliderCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE76619988302B1526D9301 /* SliderCore.swift */; };
+		E6FA6EE7FB48B37E4B92394A /* Exporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6673AEBFF800A2914F5FA1C /* Exporter.swift */; };
+		E90D6FA1DDA009628BD7BCCE /* WaveformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB8133EC5C7B4C09CD78B60 /* WaveformView.swift */; };
+		F90A959006227F6B944C3090 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B47BE11791464A7FE1DA2 /* AppSettings.swift */; };
+		F95E1D0BA028BDE6B4727856 /* MixerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F2254BE2578A39C560A83 /* MixerEngine.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F9E8AB0B69232CD61AC546C /* TrackChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackChain.swift; sourceTree = "<group>"; };
+		1A9C3D1657FC7B0FA7CACF00 /* FourTrackApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourTrackApp.swift; sourceTree = "<group>"; };
+		1C5454E139B97093DB44AF1F /* VolumeFader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolumeFader.swift; sourceTree = "<group>"; };
+		1F30AF566B98693F94AB8FE8 /* TransportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportView.swift; sourceTree = "<group>"; };
+		2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		2FD8780E45856FF405502040 /* ExportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheet.swift; sourceTree = "<group>"; };
+		30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgements.swift; sourceTree = "<group>"; };
+		5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		5C1FBB08FE5E09F2A10CCD01 /* ProjectsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListView.swift; sourceTree = "<group>"; };
+		611B4995428CDBEF1B07DA5B /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
+		6878880E4225B009DD596A88 /* FourTrackCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FourTrackCore; path = Packages/FourTrackCore; sourceTree = SOURCE_ROOT; };
+		68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
+		741F2254BE2578A39C560A83 /* MixerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerEngine.swift; sourceTree = "<group>"; };
+		7C806A3447CA0590D3D06113 /* ChannelStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelStripView.swift; sourceTree = "<group>"; };
+		8A846F4359940E981658B8FC /* LatencyCalibrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyCalibrator.swift; sourceTree = "<group>"; };
+		8AFEE72C12248DA0E64BDBB2 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
+		998B47BE11791464A7FE1DA2 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		9B72403350D7930C64EB602B /* TrackRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackRowView.swift; sourceTree = "<group>"; };
+		9C36E6C1B68F948592E88019 /* ProjectsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsViewModel.swift; sourceTree = "<group>"; };
+		9C5BA5B14A06A629337D91E8 /* MacroSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroSlider.swift; sourceTree = "<group>"; };
+		9CB8133EC5C7B4C09CD78B60 /* WaveformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveformView.swift; sourceTree = "<group>"; };
+		A6673AEBFF800A2914F5FA1C /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
+		A73B2C8D15C308E8D8003C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredSlider.swift; sourceTree = "<group>"; };
+		B8FB2B46B8C9237AB766133A /* FourTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FourTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTrackControlsView.swift; sourceTree = "<group>"; };
+		F05C31B8FB95A04BDC54A725 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
+		F9F9B76CE52C0FB100E4EA7E /* MixView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixView.swift; sourceTree = "<group>"; };
+		FEE76619988302B1526D9301 /* SliderCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderCore.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		281C0BB573BD5AC53D3A041F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D520B91A133B43BDD3B2770A /* FourTrackCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		250AD9F4FEFE136233813359 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */,
+				A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */,
+				7C806A3447CA0590D3D06113 /* ChannelStripView.swift */,
+				F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */,
+				2FD8780E45856FF405502040 /* ExportSheet.swift */,
+				9C5BA5B14A06A629337D91E8 /* MacroSlider.swift */,
+				F9F9B76CE52C0FB100E4EA7E /* MixView.swift */,
+				5C1FBB08FE5E09F2A10CCD01 /* ProjectsListView.swift */,
+				F05C31B8FB95A04BDC54A725 /* ProjectView.swift */,
+				2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */,
+				FEE76619988302B1526D9301 /* SliderCore.swift */,
+				9B72403350D7930C64EB602B /* TrackRowView.swift */,
+				1F30AF566B98693F94AB8FE8 /* TransportView.swift */,
+				1C5454E139B97093DB44AF1F /* VolumeFader.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		38A8AF17D5457171DF4F3008 /* Waveform */ = {
+			isa = PBXGroup;
+			children = (
+				9CB8133EC5C7B4C09CD78B60 /* WaveformView.swift */,
+			);
+			path = Waveform;
+			sourceTree = "<group>";
+		};
+		4802524F1E7396E9383D0BB7 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */,
+				A6673AEBFF800A2914F5FA1C /* Exporter.swift */,
+				8A846F4359940E981658B8FC /* LatencyCalibrator.swift */,
+				611B4995428CDBEF1B07DA5B /* Metronome.swift */,
+				741F2254BE2578A39C560A83 /* MixerEngine.swift */,
+				8AFEE72C12248DA0E64BDBB2 /* Recorder.swift */,
+				0F9E8AB0B69232CD61AC546C /* TrackChain.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		51E3F710530F3CF2DDF0ABFE /* FourTrack */ = {
+			isa = PBXGroup;
+			children = (
+				AE312214F7817AAEECD2DB73 /* App */,
+				4802524F1E7396E9383D0BB7 /* Audio */,
+				D9C6EDE334297C84E7BF565F /* Resources */,
+				250AD9F4FEFE136233813359 /* UI */,
+				C6FB5A630CB91C6E2BF5FCF3 /* ViewModels */,
+				38A8AF17D5457171DF4F3008 /* Waveform */,
+			);
+			path = FourTrack;
+			sourceTree = "<group>";
+		};
+		5408DD0AD112FA61B95584E6 = {
+			isa = PBXGroup;
+			children = (
+				51E3F710530F3CF2DDF0ABFE /* FourTrack */,
+				B9F9DAB060E131EBC37ED0B0 /* Packages */,
+				8C608A094F0E331839FF975A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C608A094F0E331839FF975A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B8FB2B46B8C9237AB766133A /* FourTrack.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE312214F7817AAEECD2DB73 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				998B47BE11791464A7FE1DA2 /* AppSettings.swift */,
+				1A9C3D1657FC7B0FA7CACF00 /* FourTrackApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B9F9DAB060E131EBC37ED0B0 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				6878880E4225B009DD596A88 /* FourTrackCore */,
+			);
+			path = Packages;
+			sourceTree = "<group>";
+		};
+		C6FB5A630CB91C6E2BF5FCF3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C36E6C1B68F948592E88019 /* ProjectsViewModel.swift */,
+				702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D9C6EDE334297C84E7BF565F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */,
+				A73B2C8D15C308E8D8003C97 /* Info.plist */,
+				5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5720FD20E9B45BB36D65532 /* FourTrack */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490DE9AA8170E025941FAAF3 /* Build configuration list for PBXNativeTarget "FourTrack" */;
+			buildPhases = (
+				786311E1510B2B040B895DF0 /* Sources */,
+				76D5099FA1F1C0E77D3B789D /* Resources */,
+				281C0BB573BD5AC53D3A041F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourTrack;
+			packageProductDependencies = (
+				97DB3616201DF8E8FB2E6783 /* FourTrackCore */,
+			);
+			productName = FourTrack;
+			productReference = B8FB2B46B8C9237AB766133A /* FourTrack.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B397BD0583FA393F920604E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C5720FD20E9B45BB36D65532 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 6E911B547FD81D5AC0AB8F83 /* Build configuration list for PBXProject "FourTrack" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5408DD0AD112FA61B95584E6;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				1F117BDA9BDDB17FDDB81F3C /* XCLocalSwiftPackageReference "Packages/FourTrackCore" */,
+			);
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5720FD20E9B45BB36D65532 /* FourTrack */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		76D5099FA1F1C0E77D3B789D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63ABFE7D9CE7F3BAB0338AF2 /* Assets.xcassets in Resources */,
+				88AD950E9257B5F935E2CDAB /* PrivacyInfo.xcprivacy in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		786311E1510B2B040B895DF0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0DF261BDDA4E3910193DFC34 /* Acknowledgements.swift in Sources */,
+				F90A959006227F6B944C3090 /* AppSettings.swift in Sources */,
+				CA29953881822E60FD3BF932 /* AudioSessionManager.swift in Sources */,
+				526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */,
+				8DC8F8AE92CE9D40E155EBB3 /* ChannelStripView.swift in Sources */,
+				10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */,
+				6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */,
+				E6FA6EE7FB48B37E4B92394A /* Exporter.swift in Sources */,
+				9A5947C2067936DF69823BFC /* FourTrackApp.swift in Sources */,
+				8ABE8AF50AE165BAC274A0D9 /* LatencyCalibrator.swift in Sources */,
+				D8C3B9CC3E6041604FE542DF /* MacroSlider.swift in Sources */,
+				50F39BE78B7AFABB578F525D /* Metronome.swift in Sources */,
+				B2FDFEAD3783C4869785ED67 /* MixView.swift in Sources */,
+				F95E1D0BA028BDE6B4727856 /* MixerEngine.swift in Sources */,
+				680F6132AC71207BA8608BD6 /* ProjectView.swift in Sources */,
+				38B5D72F23F74EC7BF904055 /* ProjectViewModel.swift in Sources */,
+				8B657B4AA343DFE41453610C /* ProjectsListView.swift in Sources */,
+				AA855860A85CCDA7B77D422D /* ProjectsViewModel.swift in Sources */,
+				A587A05123AECD32A09C1D3E /* Recorder.swift in Sources */,
+				5AAB0FF58C74595719931AEC /* SettingsView.swift in Sources */,
+				E33896CC91297AB3EFBC9A8B /* SliderCore.swift in Sources */,
+				B3A5C9B2D345A3BE9C5BD88D /* TrackChain.swift in Sources */,
+				A9312C5B7AD8221DF79667AE /* TrackRowView.swift in Sources */,
+				36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */,
+				CC034BEDD8688E6CB526C9E7 /* VolumeFader.swift in Sources */,
+				E90D6FA1DDA009628BD7BCCE /* WaveformView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3772854502B7EFA275A2584D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		41FB18BCE4589380995301E9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46D91A1E0B6E1A7CA24A4BF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FourTrack/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourtrack.app;
+				PRODUCT_NAME = FourTrack;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F883D6F1E4D220FD7A163A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = FourTrack/Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourtrack.app;
+				PRODUCT_NAME = FourTrack;
+				SDKROOT = iphoneos;
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		490DE9AA8170E025941FAAF3 /* Build configuration list for PBXNativeTarget "FourTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46D91A1E0B6E1A7CA24A4BF7 /* Debug */,
+				F883D6F1E4D220FD7A163A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6E911B547FD81D5AC0AB8F83 /* Build configuration list for PBXProject "FourTrack" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41FB18BCE4589380995301E9 /* Debug */,
+				3772854502B7EFA275A2584D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		1F117BDA9BDDB17FDDB81F3C /* XCLocalSwiftPackageReference "Packages/FourTrackCore" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = Packages/FourTrackCore;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		97DB3616201DF8E8FB2E6783 /* FourTrackCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FourTrackCore;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 2B397BD0583FA393F920604E /* Project object */;
+}
