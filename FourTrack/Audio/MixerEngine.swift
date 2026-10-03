@@ -79,6 +79,10 @@ final class MixerEngine {
     /// Hardware format changed (route switch, sample rate change). The engine
     /// has stopped itself; reconnect and restart, keeping parameters and files.
     private func handleConfigurationChange() {
+        // The notification arrives asynchronously; if the engine was already
+        // restarted (e.g. by enabling the input for the first recording), the
+        // graph is live and there is nothing to repair.
+        guard !engine.isRunning else { return }
         // Let the owner finalize any recording while the scratch file is intact.
         onWillReconfigure?()
         stopPlayers()
@@ -213,6 +217,10 @@ final class MixerEngine {
         metronome settings: MetronomeSettings?
     ) throws -> RecordingPlan {
         stopPlayers()
+        // The session must be .playAndRecord before the input node is created.
+        if !AudioSessionManager.shared.isConfigured {
+            try AudioSessionManager.shared.configure()
+        }
         try prepareInput()
         try startIfNeeded()
 
