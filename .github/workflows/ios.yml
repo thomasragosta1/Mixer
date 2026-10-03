@@ -147,6 +147,31 @@ jobs:
             || { find /var/folders -name "*.xcdistributionlogs" -maxdepth 6 2>/dev/null | head -1 | xargs -I{} sh -c 'cat "{}"/IDEDistribution.standard.log | tail -60'; exit 1; }
           ls -la "$RUNNER_TEMP/export"
 
+      - name: Check App Store Connect app record
+        if: steps.secrets.outputs.ready == 'true'
+        run: |
+          python3 -m pip install --quiet --break-system-packages pyjwt cryptography 2>/dev/null || python3 -m pip install --quiet pyjwt cryptography
+          python3 - <<'PY'
+          import json, os, sys, time, urllib.request, jwt
+          key = open(os.environ["KEY_PATH"]).read()
+          token = jwt.encode(
+              {"iss": os.environ["ISSUER_ID"], "iat": int(time.time()), "exp": int(time.time()) + 600, "aud": "appstoreconnect-v1"},
+              key, algorithm="ES256", headers={"kid": os.environ["KEY_ID"], "typ": "JWT"})
+          req = urllib.request.Request("https://api.appstoreconnect.apple.com/v1/apps?limit=50&fields[apps]=name,bundleId",
+                                       headers={"Authorization": f"Bearer {token}"})
+          apps = json.load(urllib.request.urlopen(req))["data"]
+          wanted = os.environ["APP_BUNDLE_ID"]
+          print(f"Apps visible to this API key ({len(apps)}):")
+          for a in apps:
+              b = a["attributes"]["bundleId"]
+              # Spell out with spaces so GitHub's secret masking doesn't hide it.
+              print(f'  - {a["attributes"]["name"]}: {" ".join(b)}{"   <-- matches BUNDLE_ID" if b == wanted else ""}')
+          print(f'BUNDLE_ID secret (spelled out): {" ".join(wanted)}')
+          if not any(a["attributes"]["bundleId"] == wanted for a in apps):
+              print("::error::No App Store Connect app uses the BUNDLE_ID secret. Fix the secret or the app's bundle ID.")
+              sys.exit(1)
+          PY
+
       - name: Upload to App Store Connect
         if: steps.secrets.outputs.ready == 'true'
         run: |
