@@ -7,7 +7,7 @@ A native iOS multitrack recorder that feels like Voice Memos, not a DAW. It has 
 
 ## Requirements
 
-- Xcode 16 or later (iOS 18 SDK); the app targets iOS 17+, iPhone.
+- Xcode 26 or later (App Store uploads require the iOS 26 SDK); the app targets iOS 17+, iPhone.
 - An Apple Developer account for running on a device.
 
 ## Open and run

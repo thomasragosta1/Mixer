@@ -21,8 +21,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Xcode version
-        run: xcodebuild -version
+      - name: Select Xcode 26
+        run: |
+          XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
+          [ -z "$XC" ] && XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XC" ]; then echo "::error::No Xcode 26 on this runner"; ls -d /Applications/Xcode*.app; exit 1; fi
+          sudo xcode-select -s "$XC/Contents/Developer"
+          xcodebuild -version
 
       - name: Core package tests
         working-directory: Packages/FourTrackCore
@@ -71,6 +76,15 @@ jobs:
 
       - uses: actions/checkout@v4
         if: steps.secrets.outputs.ready == 'true'
+
+      - name: Select Xcode 26
+        if: steps.secrets.outputs.ready == 'true'
+        run: |
+          XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
+          [ -z "$XC" ] && XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          if [ -z "$XC" ]; then echo "::error::No Xcode 26 on this runner"; ls -d /Applications/Xcode*.app; exit 1; fi
+          sudo xcode-select -s "$XC/Contents/Developer"
+          xcodebuild -version
 
       - name: Write API key
         if: steps.secrets.outputs.ready == 'true'
