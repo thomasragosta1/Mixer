@@ -118,16 +118,17 @@ jobs:
             archive 2>&1 | tee archive.log | grep -E "error:|ARCHIVE (SUCCEEDED|FAILED)" || true
           grep -q "ARCHIVE SUCCEEDED" archive.log
 
-      - name: Upload to App Store Connect
+      - name: Export IPA
         if: steps.secrets.outputs.ready == 'true'
         run: |
+          echo "Archived bundle ID: $(/usr/libexec/PlistBuddy -c 'Print :ApplicationProperties:CFBundleIdentifier' "$RUNNER_TEMP/FourTrack.xcarchive/Info.plist")"
           cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
           <?xml version="1.0" encoding="UTF-8"?>
           <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
           <plist version="1.0">
           <dict>
             <key>method</key><string>app-store-connect</string>
-            <key>destination</key><string>upload</string>
+            <key>destination</key><string>export</string>
             <key>signingStyle</key><string>automatic</string>
             <key>teamID</key><string>${TEAM_ID}</string>
             <key>uploadSymbols</key><true/>
@@ -142,5 +143,17 @@ jobs:
             -allowProvisioningUpdates \
             -authenticationKeyPath "$KEY_PATH" \
             -authenticationKeyID "$KEY_ID" \
-            -authenticationKeyIssuerID "$ISSUER_ID"
+            -authenticationKeyIssuerID "$ISSUER_ID" \
+            || { find /var/folders -name "*.xcdistributionlogs" -maxdepth 6 2>/dev/null | head -1 | xargs -I{} sh -c 'cat "{}"/IDEDistribution.standard.log | tail -60'; exit 1; }
+          ls -la "$RUNNER_TEMP/export"
+
+      - name: Upload to App Store Connect
+        if: steps.secrets.outputs.ready == 'true'
+        run: |
+          # altool finds the key by ID in this folder.
+          mkdir -p ~/.appstoreconnect/private_keys
+          cp "$KEY_PATH" ~/.appstoreconnect/private_keys/
+          IPA=$(ls "$RUNNER_TEMP"/export/*.ipa | head -1)
+          xcrun altool --upload-app --type ios --file "$IPA" \
+            --apiKey "$KEY_ID" --apiIssuer "$ISSUER_ID" --output-format normal
           echo "::notice::Build ${{ github.run_number }} uploaded. It appears in TestFlight after Apple finishes processing (usually 10-30 minutes)."
