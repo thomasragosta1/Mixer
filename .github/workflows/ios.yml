@@ -75,9 +75,27 @@ jobs:
       - name: Write API key
         if: steps.secrets.outputs.ready == 'true'
         run: |
+          # Secrets pasted on a phone often carry stray spaces or line breaks.
+          trim() { printf '%s' "$1" | tr -d '[:space:]'; }
+          KEY_ID=$(trim "$ASC_KEY_ID")
+          {
+            echo "KEY_ID=$KEY_ID"
+            echo "ISSUER_ID=$(trim "$ASC_ISSUER_ID")"
+            echo "TEAM_ID=$(trim "$APPLE_TEAM_ID")"
+            echo "APP_BUNDLE_ID=$(trim "$BUNDLE_ID")"
+            echo "KEY_PATH=$RUNNER_TEMP/keys/AuthKey_${KEY_ID}.p8"
+          } >> "$GITHUB_ENV"
           mkdir -p "$RUNNER_TEMP/keys"
-          printf '%s\n' "$ASC_KEY_P8" > "$RUNNER_TEMP/keys/AuthKey_${ASC_KEY_ID}.p8"
-          echo "KEY_PATH=$RUNNER_TEMP/keys/AuthKey_${ASC_KEY_ID}.p8" >> "$GITHUB_ENV"
+          # Keep the PEM lines; drop carriage returns and surrounding blank lines.
+          printf '%s\n' "$ASC_KEY_P8" | tr -d '\r' | sed '/^[[:space:]]*$/d' > "$RUNNER_TEMP/keys/AuthKey_${KEY_ID}.p8"
+          KEY_FILE="$RUNNER_TEMP/keys/AuthKey_${KEY_ID}.p8"
+          grep -q "BEGIN PRIVATE KEY" "$KEY_FILE" || { echo "::error::ASC_KEY_P8 must include the -----BEGIN PRIVATE KEY----- line"; exit 1; }
+          # If the paste collapsed the key onto one line, rebuild proper PEM.
+          if [ "$(wc -l < "$KEY_FILE")" -lt 3 ]; then
+            body=$(tr -d '\n' < "$KEY_FILE" | sed -e 's/-----BEGIN PRIVATE KEY-----//' -e 's/-----END PRIVATE KEY-----//' | tr -d '[:space:]')
+            { echo "-----BEGIN PRIVATE KEY-----"; echo "$body" | fold -w 64; echo "-----END PRIVATE KEY-----"; } > "$KEY_FILE"
+          fi
+          openssl pkey -in "$KEY_FILE" -noout && echo "API key file is valid."
 
       - name: Archive
         if: steps.secrets.outputs.ready == 'true'
@@ -91,10 +109,10 @@ jobs:
             -archivePath "$RUNNER_TEMP/FourTrack.xcarchive" \
             -allowProvisioningUpdates \
             -authenticationKeyPath "$KEY_PATH" \
-            -authenticationKeyID "$ASC_KEY_ID" \
-            -authenticationKeyIssuerID "$ASC_ISSUER_ID" \
-            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
-            PRODUCT_BUNDLE_IDENTIFIER="$BUNDLE_ID" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            PRODUCT_BUNDLE_IDENTIFIER="$APP_BUNDLE_ID" \
             CODE_SIGN_STYLE=Automatic \
             CURRENT_PROJECT_VERSION="${{ github.run_number }}" \
             archive 2>&1 | tee archive.log | grep -E "error:|ARCHIVE (SUCCEEDED|FAILED)" || true
@@ -111,7 +129,7 @@ jobs:
             <key>method</key><string>app-store-connect</string>
             <key>destination</key><string>upload</string>
             <key>signingStyle</key><string>automatic</string>
-            <key>teamID</key><string>${APPLE_TEAM_ID}</string>
+            <key>teamID</key><string>${TEAM_ID}</string>
             <key>uploadSymbols</key><true/>
             <key>manageAppVersionAndBuildNumber</key><false/>
           </dict>
@@ -123,6 +141,6 @@ jobs:
             -exportPath "$RUNNER_TEMP/export" \
             -allowProvisioningUpdates \
             -authenticationKeyPath "$KEY_PATH" \
-            -authenticationKeyID "$ASC_KEY_ID" \
-            -authenticationKeyIssuerID "$ASC_ISSUER_ID"
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID"
           echo "::notice::Build ${{ github.run_number }} uploaded. It appears in TestFlight after Apple finishes processing (usually 10-30 minutes)."
