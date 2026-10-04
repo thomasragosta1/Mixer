@@ -21,7 +21,6 @@
 		88AD950E9257B5F935E2CDAB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */; };
 		8ABE8AF50AE165BAC274A0D9 /* LatencyCalibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A846F4359940E981658B8FC /* LatencyCalibrator.swift */; };
 		8B657B4AA343DFE41453610C /* ProjectsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FBB08FE5E09F2A10CCD01 /* ProjectsListView.swift */; };
-		8DC8F8AE92CE9D40E155EBB3 /* ChannelStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C806A3447CA0590D3D06113 /* ChannelStripView.swift */; };
 		9A5947C2067936DF69823BFC /* FourTrackApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C3D1657FC7B0FA7CACF00 /* FourTrackApp.swift */; };
 		A587A05123AECD32A09C1D3E /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AFEE72C12248DA0E64BDBB2 /* Recorder.swift */; };
 		A9312C5B7AD8221DF79667AE /* TrackRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72403350D7930C64EB602B /* TrackRowView.swift */; };
@@ -55,7 +54,6 @@
 		68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
 		702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		741F2254BE2578A39C560A83 /* MixerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerEngine.swift; sourceTree = "<group>"; };
-		7C806A3447CA0590D3D06113 /* ChannelStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelStripView.swift; sourceTree = "<group>"; };
 		84E4C9D955D96787E81A4BE5 /* BinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinView.swift; sourceTree = "<group>"; };
 		8A846F4359940E981658B8FC /* LatencyCalibrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyCalibrator.swift; sourceTree = "<group>"; };
 		8AFEE72C12248DA0E64BDBB2 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
@@ -92,7 +90,6 @@
 				3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */,
 				84E4C9D955D96787E81A4BE5 /* BinView.swift */,
 				A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */,
-				7C806A3447CA0590D3D06113 /* ChannelStripView.swift */,
 				F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */,
 				2FD8780E45856FF405502040 /* ExportSheet.swift */,
 				9C5BA5B14A06A629337D91E8 /* MacroSlider.swift */,
@@ -278,7 +275,6 @@
 				CA29953881822E60FD3BF932 /* AudioSessionManager.swift in Sources */,
 				7BFDC84C28A75873EED073F6 /* BinView.swift in Sources */,
 				526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */,
-				8DC8F8AE92CE9D40E155EBB3 /* ChannelStripView.swift in Sources */,
 				10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */,
 				6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */,
 				E6FA6EE7FB48B37E4B92394A /* Exporter.swift in Sources */,

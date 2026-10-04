@@ -26,12 +26,22 @@ struct ProjectView: View {
 
     var body: some View {
         VStack(spacing: 0) {
+            Picker("Mode", selection: $model.mixMode) {
+                Text("Record").tag(false)
+                Text("Mixing").tag(true)
+            }
+            .pickerStyle(.segmented)
+            .padding(.horizontal, 16)
+            .padding(.top, 4)
+            .padding(.bottom, 8)
+            .disabled(model.isRecording || model.isSaving)
+
             if model.mixMode {
                 MixView(model: model)
             } else {
                 lanes
             }
-            if let offer = model.cleanupOffer {
+            if !model.mixMode, let offer = model.cleanupOffer {
                 CleanupBanner(trackName: model.project.tracks[offer].name) {
                     model.acceptCleanupOffer()
                 } onDismiss: {
@@ -39,8 +49,10 @@ struct ProjectView: View {
                 }
                 .transition(.move(edge: .bottom).combined(with: .opacity))
             }
-            Divider()
-            TransportView(model: model)
+            if !model.mixMode {
+                Divider()
+                TransportView(model: model)
+            }
         }
         .background(Color(uiColor: .systemGroupedBackground))
         .animation(.default, value: model.cleanupOffer)
@@ -161,15 +173,6 @@ struct ProjectView: View {
             .accessibilityHint("Renames the project")
         }
         ToolbarItemGroup(placement: .topBarTrailing) {
-            Button {
-                model.mixMode.toggle()
-            } label: {
-                Image(systemName: "slider.vertical.3")
-                    .symbolVariant(model.mixMode ? .fill : .none)
-                    .foregroundStyle(model.mixMode ? Color.accentColor : Color.primary)
-            }
-            .accessibilityLabel(model.mixMode ? "Show tracks" : "Show mixer")
-
             Button {
                 showingExport = true
             } label: {

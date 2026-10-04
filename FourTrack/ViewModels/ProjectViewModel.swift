@@ -26,7 +26,14 @@ final class ProjectViewModel {
     /// Splicing a finished take into its track.
     private(set) var isSaving = false
     var armedTrack = 0
-    var mixMode = false
+    var mixMode = false {
+        didSet {
+            // Open Mixing on the armed track.
+            if mixMode && !oldValue { mixPage = armedTrack }
+        }
+    }
+    /// Track index shown in Mixing (or MixView.masterPage).
+    var mixPage = 0
 
     /// Cleanup progress per track (nil = not running).
     private(set) var cleanupProgress: [Int: Double] = [:]
