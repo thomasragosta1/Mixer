@@ -1,10 +1,12 @@
 import Foundation
 
-/// The three built-in drum kits. Every sound is synthesized, so the app
-/// ships no samples and each kit has its own character:
-/// - Studio: acoustic-style kit (tuned skins, noisy snare wires, cymbal wash)
-/// - 808: classic analog drum machine (boomy pitched kick, clap, cowbell)
-/// - Hand Percussion: cajón, bongos, conga, shaker, tambourine, woodblock
+/// The three built-in drum kits, each with its own character:
+/// - Studio: a real acoustic kit, multi-sampled (Big Rusty Drums by Karoryfer, CC0)
+/// - 808: classic analog drum machine, synthesized (boomy pitched kick, clap, cowbell)
+/// - Hand Percussion: real cajón, bongos, conga, shaker, tambourine and woodblock
+///   (Versilian Community Sample Library, CC0)
+/// Sampled kits carry two recorded takes per pad that alternate on repeated hits,
+/// so fast patterns don't sound machine-gunned.
 public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
     case studio
     case eightOhEight
@@ -34,9 +36,67 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
         }
     }
 
-    /// Rendered one-shot for a pad at full velocity.
-    public func sample(pad: Int, sampleRate: Double = CAFFormat.defaultSampleRate) -> [Float] {
-        DrumSynth.render(kit: self, pad: pad, sampleRate: sampleRate)
+    /// Number of alternate takes per pad.
+    public var variantCount: Int {
+        switch self {
+        case .studio, .handPercussion: return 2
+        case .eightOhEight: return 1
+        }
+    }
+
+    /// Folder under `Resources/Drums` for sampled kits.
+    var sampleFolder: String? {
+        switch self {
+        case .studio: return "studio"
+        case .handPercussion: return "hand"
+        case .eightOhEight: return nil
+        }
+    }
+
+    /// One-shot for a pad at full velocity. `variant` picks the recorded take
+    /// (wrapped to `variantCount`). Falls back to synthesis if a sample is missing.
+    public func sample(pad: Int, variant: Int = 0, sampleRate: Double = CAFFormat.defaultSampleRate) -> [Float] {
+        if sampleFolder != nil, let s = DrumSamples.load(kit: self, pad: pad, variant: variant % max(variantCount, 1), sampleRate: sampleRate) {
+            return s
+        }
+        return DrumSynth.render(kit: self, pad: pad, sampleRate: sampleRate)
+    }
+}
+
+/// Loads (and caches) the bundled drum samples.
+enum DrumSamples {
+    private static let lock = NSLock()
+    nonisolated(unsafe) private static var cache: [String: [Float]] = [:]
+
+    static func load(kit: DrumKit, pad: Int, variant: Int, sampleRate: Double) -> [Float]? {
+        guard let folder = kit.sampleFolder else { return nil }
+        let key = "\(folder)/\(pad)_\(variant + 1)@\(Int(sampleRate))"
+        lock.lock()
+        if let hit = cache[key] { lock.unlock(); return hit }
+        lock.unlock()
+        guard let url = Bundle.module.url(forResource: "\(pad)_\(variant + 1)", withExtension: "caf", subdirectory: "Drums/\(folder)"),
+              let reader = try? CAFReader(url: url),
+              var samples = try? reader.readAll(), !samples.isEmpty else { return nil }
+        if abs(reader.sampleRate - sampleRate) > 0.5 {
+            samples = resample(samples, from: reader.sampleRate, to: sampleRate)
+        }
+        lock.lock()
+        cache[key] = samples
+        lock.unlock()
+        return samples
+    }
+
+    /// Linear-interpolation resampler; only used for non-48 kHz renders.
+    static func resample(_ x: [Float], from: Double, to: Double) -> [Float] {
+        let n = Int((Double(x.count) * to / from).rounded())
+        guard n > 1, x.count > 1 else { return x }
+        let step = from / to
+        return (0..<n).map { i in
+            let pos = Double(i) * step
+            let j = min(Int(pos), x.count - 2)
+            let f = Float(pos - Double(j))
+            return x[j] * (1 - f) + x[j + 1] * f
+        }
     }
 }
 
@@ -69,21 +129,30 @@ public enum DrumRenderer {
     public static func render(_ hits: [DrumHit], kit: DrumKit, sampleRate: Double = CAFFormat.defaultSampleRate) -> [Float] {
         guard !hits.isEmpty else { return [] }
         var cache: [Int: [Float]] = [:]
-        func sample(_ pad: Int) -> [Float] {
-            if let s = cache[pad] { return s }
-            let s = kit.sample(pad: pad, sampleRate: sampleRate)
-            cache[pad] = s
+        func sample(_ pad: Int, _ variant: Int) -> [Float] {
+            let key = pad * 16 + variant
+            if let s = cache[key] { return s }
+            let s = kit.sample(pad: pad, variant: variant, sampleRate: sampleRate)
+            cache[key] = s
             return s
         }
+        // Alternate takes per pad in time order, like the live pad does.
+        let ordered = hits.sorted { $0.time < $1.time }
+        var counters: [Int: Int] = [:]
+        let variants: [Int] = ordered.map { hit in
+            let v = counters[hit.pad, default: 0]
+            counters[hit.pad] = v + 1
+            return v % max(kit.variantCount, 1)
+        }
         var length = 0
-        for hit in hits {
+        for (hit, v) in zip(ordered, variants) {
             let start = Int((max(0, hit.time) * sampleRate).rounded())
-            length = max(length, start + sample(hit.pad).count)
+            length = max(length, start + sample(hit.pad, v).count)
         }
         var out = [Float](repeating: 0, count: length)
-        for hit in hits {
+        for (hit, v) in zip(ordered, variants) {
             let start = Int((max(0, hit.time) * sampleRate).rounded())
-            let s = sample(hit.pad)
+            let s = sample(hit.pad, v)
             let v = min(max(hit.velocity, 0), 1)
             for i in 0..<s.count {
                 out[start + i] += s[i] * v

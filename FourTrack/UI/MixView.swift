@@ -146,13 +146,8 @@ struct CompactTrackCard: View {
 
     var body: some View {
         HStack(spacing: 10) {
-            HStack(spacing: 6) {
-                ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
-                    model.toggleMute(index)
-                }
-                ToggleChip(title: "S", isOn: track.solo, onColor: .yellow, accessibilityName: "Solo \(track.name)") {
-                    model.toggleSolo(index)
-                }
+            ToggleChip(title: "S", isOn: track.solo, onColor: .yellow, accessibilityName: "Solo \(track.name)") {
+                model.toggleSolo(index)
             }
             WaveformView(
                 peaks: model.peaks[index],

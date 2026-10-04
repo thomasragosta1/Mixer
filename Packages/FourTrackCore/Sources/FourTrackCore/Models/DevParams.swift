@@ -23,36 +23,57 @@ public struct DevParams: Codable, Equatable, Sendable {
     public static let inputGainRange: ClosedRange<Double> = -12...24
 }
 
-/// Parameters for Apple's DynamicsProcessor.
+/// Parameters for the in-house compressor (`CompressorDSP`).
 public struct CompressorParams: Codable, Equatable, Sendable {
     public var thresholdDB: Double
-    public var headroomDB: Double
+    /// Compression ratio (1 = off, 8 = 8:1).
+    public var ratio: Double
+    /// Soft-knee width in dB, centered on the threshold.
+    public var kneeDB: Double
     public var attackSeconds: Double
     public var releaseSeconds: Double
     public var makeupGainDB: Double
 
-    public init(thresholdDB: Double, headroomDB: Double, attackSeconds: Double, releaseSeconds: Double, makeupGainDB: Double) {
+    public init(thresholdDB: Double, ratio: Double, kneeDB: Double, attackSeconds: Double, releaseSeconds: Double, makeupGainDB: Double) {
         self.thresholdDB = thresholdDB
-        self.headroomDB = headroomDB
+        self.ratio = ratio
+        self.kneeDB = kneeDB
         self.attackSeconds = attackSeconds
         self.releaseSeconds = releaseSeconds
         self.makeupGainDB = makeupGainDB
     }
 
+    enum CodingKeys: String, CodingKey {
+        case thresholdDB, ratio, kneeDB, attackSeconds, releaseSeconds, makeupGainDB
+    }
+
+    /// Overrides saved before the in-house compressor (with `headroomDB` and no ratio) decode with a 4:1 ratio.
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        thresholdDB = try c.decode(Double.self, forKey: .thresholdDB)
+        ratio = try c.decodeIfPresent(Double.self, forKey: .ratio) ?? 4
+        kneeDB = try c.decodeIfPresent(Double.self, forKey: .kneeDB) ?? 6
+        attackSeconds = try c.decode(Double.self, forKey: .attackSeconds)
+        releaseSeconds = try c.decode(Double.self, forKey: .releaseSeconds)
+        makeupGainDB = try c.decode(Double.self, forKey: .makeupGainDB)
+    }
+
     func isApproximatelyEqual(to other: CompressorParams) -> Bool {
         abs(thresholdDB - other.thresholdDB) < 0.05
-            && abs(headroomDB - other.headroomDB) < 0.05
+            && abs(ratio - other.ratio) < 0.01
+            && abs(kneeDB - other.kneeDB) < 0.05
             && abs(attackSeconds - other.attackSeconds) < 0.00005
             && abs(releaseSeconds - other.releaseSeconds) < 0.0005
             && abs(makeupGainDB - other.makeupGainDB) < 0.05
     }
 
-    /// Ranges for the Developer Mode controls, matching DynamicsProcessor limits.
-    public static let thresholdRange: ClosedRange<Double> = -40...20
-    public static let headroomRange: ClosedRange<Double> = 0.1...40
+    /// Ranges for the Developer Mode controls.
+    public static let thresholdRange: ClosedRange<Double> = -60...0
+    public static let ratioRange: ClosedRange<Double> = 1...20
+    public static let kneeRange: ClosedRange<Double> = 0...24
     public static let attackRange: ClosedRange<Double> = 0.0001...0.2
     public static let releaseRange: ClosedRange<Double> = 0.01...3
-    public static let makeupRange: ClosedRange<Double> = -40...40
+    public static let makeupRange: ClosedRange<Double> = -12...24
 }
 
 public enum EQBandKind: String, Codable, Sendable {

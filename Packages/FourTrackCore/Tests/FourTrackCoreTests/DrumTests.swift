@@ -6,13 +6,18 @@ final class DrumTests: XCTestCase {
         for kit in DrumKit.allCases {
             XCTAssertEqual(kit.padNames.count, DrumKit.padCount)
             for pad in 0..<DrumKit.padCount {
-                let s = kit.sample(pad: pad)
+              for variant in 0..<kit.variantCount {
+                let s = kit.sample(pad: pad, variant: variant)
                 XCTAssertGreaterThan(s.count, 1_000, "\(kit) pad \(pad) too short")
                 XCTAssertLessThan(s.count, 48_000 * 4, "\(kit) pad \(pad) too long")
                 let peak = s.map { abs($0) }.max() ?? 0
                 XCTAssertEqual(peak, 0.89, accuracy: 0.001, "\(kit) pad \(pad) not normalized")
                 XCTAssertFalse(s.contains { $0.isNaN || $0.isInfinite })
                 XCTAssertLessThan(abs(s.last ?? 1), 0.01, "\(kit) pad \(pad) ends with a click")
+                // Pads must speak immediately: loud within the first 5 ms.
+                let attack = s.prefix(240).map { abs($0) }.max() ?? 0
+                XCTAssertGreaterThan(attack, 0.1, "\(kit) pad \(pad) v\(variant) attack is late")
+              }
             }
         }
     }
@@ -27,6 +32,23 @@ final class DrumTests: XCTestCase {
             XCTAssertLessThan(abs(correlation(a, c)), 0.9, "pad \(pad) studio vs hand")
             XCTAssertLessThan(abs(correlation(b, c)), 0.9, "pad \(pad) 808 vs hand")
         }
+    }
+
+    func testSampledKitsLoadRealSamplesAndAlternateTakes() {
+        for kit in [DrumKit.studio, .handPercussion] {
+            XCTAssertNotNil(DrumSamples.load(kit: kit, pad: 0, variant: 0, sampleRate: 48_000), "\(kit) samples missing from bundle")
+            for pad in 0..<DrumKit.padCount {
+                let a = kit.sample(pad: pad, variant: 0)
+                let b = kit.sample(pad: pad, variant: 1)
+                XCTAssertNotEqual(a, b, "\(kit) pad \(pad) takes identical")
+            }
+        }
+        // Two quick kicks render two different takes.
+        let out = DrumRenderer.render([DrumHit(time: 0, pad: 0, velocity: 1), DrumHit(time: 1, pad: 0, velocity: 1)], kit: .studio)
+        XCTAssertNotEqual(Array(out[0..<4_800]), Array(out[48_000..<52_800]))
+        // Resampled renders keep their length ratio.
+        let r = DrumKit.studio.sample(pad: 0, sampleRate: 44_100)
+        XCTAssertEqual(Double(r.count), Double(DrumKit.studio.sample(pad: 0).count) * 44_100 / 48_000, accuracy: 2)
     }
 
     func testRenderPlacesHitsAtTheirTimes() {

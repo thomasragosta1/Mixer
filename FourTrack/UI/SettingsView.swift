@@ -119,6 +119,9 @@ struct AcknowledgementsView: View {
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 12) {
+                Text("Drum Samples").font(.headline)
+                Text(Acknowledgements.samples)
+                    .font(.footnote)
                 Text("RNNoise").font(.headline)
                 Text(Acknowledgements.rnnoise)
                     .font(.footnote.monospaced())

@@ -19,6 +19,7 @@
 		63ABFE7D9CE7F3BAB0338AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */; };
 		680F6132AC71207BA8608BD6 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C31B8FB95A04BDC54A725 /* ProjectView.swift */; };
 		6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8780E45856FF405502040 /* ExportSheet.swift */; };
+		6BCC66B84969BBEFBE39B89D /* CompressorAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */; };
 		7BFDC84C28A75873EED073F6 /* BinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4C9D955D96787E81A4BE5 /* BinView.swift */; };
 		88AD950E9257B5F935E2CDAB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */; };
 		8ABE8AF50AE165BAC274A0D9 /* LatencyCalibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A846F4359940E981658B8FC /* LatencyCalibrator.swift */; };
@@ -50,6 +51,7 @@
 		2FD8780E45856FF405502040 /* ExportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheet.swift; sourceTree = "<group>"; };
 		30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgements.swift; sourceTree = "<group>"; };
+		59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressorAU.swift; sourceTree = "<group>"; };
 		5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5C1FBB08FE5E09F2A10CCD01 /* ProjectsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsListView.swift; sourceTree = "<group>"; };
 		611B4995428CDBEF1B07DA5B /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */,
+				59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */,
 				A6673AEBFF800A2914F5FA1C /* Exporter.swift */,
 				8A846F4359940E981658B8FC /* LatencyCalibrator.swift */,
 				611B4995428CDBEF1B07DA5B /* Metronome.swift */,
@@ -281,6 +284,7 @@
 				CA29953881822E60FD3BF932 /* AudioSessionManager.swift in Sources */,
 				7BFDC84C28A75873EED073F6 /* BinView.swift in Sources */,
 				526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */,
+				6BCC66B84969BBEFBE39B89D /* CompressorAU.swift in Sources */,
 				10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */,
 				36CE3A42675730887D90076C /* DrumPadView.swift in Sources */,
 				6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */,

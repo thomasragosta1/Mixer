@@ -59,8 +59,11 @@ struct DevTrackControlsView: View {
             ParamSlider(title: "Threshold", value: c.thresholdDB, range: CompressorParams.thresholdRange, format: { String(format: "%.1f dB", $0) }, resetValue: MacroCurves.compressor(track.compressor).thresholdDB) { v in
                 editCompressor { $0.thresholdDB = v }
             }
-            ParamSlider(title: "Headroom", value: c.headroomDB, range: CompressorParams.headroomRange, format: { String(format: "%.1f dB", $0) }, resetValue: MacroCurves.compressor(track.compressor).headroomDB) { v in
-                editCompressor { $0.headroomDB = v }
+            ParamSlider(title: "Ratio", value: c.ratio, range: CompressorParams.ratioRange, logarithmic: true, format: { String(format: "%.1f:1", $0) }, resetValue: MacroCurves.compressor(track.compressor).ratio) { v in
+                editCompressor { $0.ratio = v }
+            }
+            ParamSlider(title: "Knee", value: c.kneeDB, range: CompressorParams.kneeRange, format: { String(format: "%.1f dB", $0) }, resetValue: MacroCurves.compressor(track.compressor).kneeDB) { v in
+                editCompressor { $0.kneeDB = v }
             }
             ParamSlider(title: "Attack", value: c.attackSeconds, range: CompressorParams.attackRange, logarithmic: true, format: { String(format: "%.1f ms", $0 * 1000) }, resetValue: MacroCurves.compressor(track.compressor).attackSeconds) { v in
                 editCompressor { $0.attackSeconds = v }
@@ -68,7 +71,7 @@ struct DevTrackControlsView: View {
             ParamSlider(title: "Release", value: c.releaseSeconds, range: CompressorParams.releaseRange, logarithmic: true, format: { String(format: "%.0f ms", $0 * 1000) }, resetValue: MacroCurves.compressor(track.compressor).releaseSeconds) { v in
                 editCompressor { $0.releaseSeconds = v }
             }
-            ParamSlider(title: "Makeup", value: c.makeupGainDB, range: -12...24, format: { SliderSpeech.shortDB($0) }, resetValue: MacroCurves.compressor(track.compressor).makeupGainDB) { v in
+            ParamSlider(title: "Makeup", value: c.makeupGainDB, range: CompressorParams.makeupRange, format: { SliderSpeech.shortDB($0) }, resetValue: MacroCurves.compressor(track.compressor).makeupGainDB) { v in
                 editCompressor { $0.makeupGainDB = v }
             }
         } header: {

@@ -23,7 +23,8 @@ let package = Package(
         .target(
             name: "FourTrackCore",
             dependencies: ["CRNNoise"],
-            path: "Sources/FourTrackCore"
+            path: "Sources/FourTrackCore",
+            resources: [.copy("Resources/Drums")]
         ),
         .testTarget(
             name: "FourTrackCoreTests",

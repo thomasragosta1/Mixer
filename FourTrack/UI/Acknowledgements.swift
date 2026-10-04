@@ -36,4 +36,10 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
+
+    /// CC0 needs no attribution; credited anyway.
+    static let samples = """
+Studio kit: "Big Rusty Drums" by Karoryfer Samples, released under CC0 1.0 (public domain).
+Hand Percussion kit: Versilian Community Sample Library (VCSL) by Versilian Studios, released under CC0 1.0 (public domain).
+"""
 }

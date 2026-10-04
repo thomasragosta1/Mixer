@@ -14,7 +14,7 @@ enum EngineFormat {
 /// One track's processing chain:
 ///
 ///     playerDry ┐
-///               ├─> cleanupMix -> EQ -> Compressor -> Warmth -> Reverb -> trackMixer
+///               ├─> cleanupMix -> EQ -> Compressor (in-house) -> Warmth -> Reverb -> trackMixer
 ///     playerClean┘
 ///
 /// `playerClean` plays the full-strength Cleanup render; the Cleanup slider
@@ -26,13 +26,10 @@ final class TrackChain {
     let playerClean = AVAudioPlayerNode()
     let cleanupMix = AVAudioMixerNode()
     let eq = AVAudioUnitEQ(numberOfBands: 3)
-    let compressor = AVAudioUnitEffect(audioComponentDescription: AudioComponentDescription(
-        componentType: kAudioUnitType_Effect,
-        componentSubType: kAudioUnitSubType_DynamicsProcessor,
-        componentManufacturer: kAudioUnitManufacturer_Apple,
-        componentFlags: 0,
-        componentFlagsMask: 0
-    ))
+    /// The in-house compressor (`CompressorAU`). Falls back to Apple's
+    /// DynamicsProcessor only if the unit can't be registered.
+    let compressor: AVAudioUnitEffect
+    private let usesInHouseCompressor: Bool
     let warmth = AVAudioUnitDistortion()
     let reverb = AVAudioUnitReverb()
     let trackMixer = AVAudioMixerNode()
@@ -44,6 +41,19 @@ final class TrackChain {
 
     init(index: Int) {
         self.index = index
+        if CompressorAU.isRegistered {
+            compressor = AVAudioUnitEffect(audioComponentDescription: CompressorAU.componentDescription)
+            usesInHouseCompressor = true
+        } else {
+            compressor = AVAudioUnitEffect(audioComponentDescription: AudioComponentDescription(
+                componentType: kAudioUnitType_Effect,
+                componentSubType: kAudioUnitSubType_DynamicsProcessor,
+                componentManufacturer: kAudioUnitManufacturer_Apple,
+                componentFlags: 0,
+                componentFlagsMask: 0
+            ))
+            usesInHouseCompressor = false
+        }
         warmth.loadFactoryPreset(.multiDistortedCubed)
         warmth.bypass = true
     }
@@ -133,12 +143,22 @@ final class TrackChain {
 
         // Compressor
         let c = track.resolvedCompressor
-        setCompressor(kDynamicsProcessorParam_Threshold, c.thresholdDB)
-        setCompressor(kDynamicsProcessorParam_HeadRoom, c.headroomDB)
-        setCompressor(kDynamicsProcessorParam_AttackTime, c.attackSeconds)
-        setCompressor(kDynamicsProcessorParam_ReleaseTime, c.releaseSeconds)
-        setCompressor(kDynamicsProcessorParam_OverallGain, c.makeupGainDB)
-        setCompressor(kDynamicsProcessorParam_ExpansionRatio, 1)
+        if usesInHouseCompressor {
+            setCompressor(CompressorAU.Param.threshold.rawValue, c.thresholdDB)
+            setCompressor(CompressorAU.Param.ratio.rawValue, c.ratio)
+            setCompressor(CompressorAU.Param.knee.rawValue, c.kneeDB)
+            setCompressor(CompressorAU.Param.attack.rawValue, c.attackSeconds)
+            setCompressor(CompressorAU.Param.release.rawValue, c.releaseSeconds)
+            setCompressor(CompressorAU.Param.makeup.rawValue, c.makeupGainDB)
+        } else {
+            // DynamicsProcessor has no ratio; headroom approximates it.
+            setCompressor(kDynamicsProcessorParam_Threshold, c.thresholdDB)
+            setCompressor(kDynamicsProcessorParam_HeadRoom, max(0.1, -c.thresholdDB / c.ratio))
+            setCompressor(kDynamicsProcessorParam_AttackTime, c.attackSeconds)
+            setCompressor(kDynamicsProcessorParam_ReleaseTime, c.releaseSeconds)
+            setCompressor(kDynamicsProcessorParam_OverallGain, c.makeupGainDB)
+            setCompressor(kDynamicsProcessorParam_ExpansionRatio, 1)
+        }
 
         // Warmth (post-v1, behind a flag)
         var trimDB = 0.0
@@ -167,6 +187,10 @@ final class TrackChain {
     }
 
     private func setCompressor(_ param: AudioUnitParameterID, _ value: Double) {
+        if usesInHouseCompressor, let p = compressor.auAudioUnit.parameterTree?.parameter(withAddress: AUParameterAddress(param)) {
+            p.value = AUValue(value)
+            return
+        }
         AudioUnitSetParameter(compressor.audioUnit, param, kAudioUnitScope_Global, 0, AudioUnitParameterValue(value), 0)
     }
 }

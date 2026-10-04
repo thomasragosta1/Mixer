@@ -67,11 +67,17 @@ public enum MacroCurves {
 
     // MARK: - Compressor
 
-    /// Anchor rows from the spec, interpolated piecewise-linearly.
+    /// Anchor rows, interpolated piecewise-linearly. Tuned so the default (0.3)
+    /// is clearly audible: about 6 dB of gain reduction on peaks at -10 dBFS,
+    /// with makeup lifting the quiet parts. The top end is a firm 8:1 squash.
+    /// Makeup keeps typical material (around -20 dBFS) at roughly the same loudness.
+    /// (The spec's original table, for Apple's DynamicsProcessor, barely compressed
+    /// below 0.5; see DECISIONS.md.)
     static let compressorAnchors: [(slider: Double, params: CompressorParams)] = [
-        (0.0, CompressorParams(thresholdDB: 0, headroomDB: 20, attackSeconds: 0.010, releaseSeconds: 0.15, makeupGainDB: 0)),
-        (0.5, CompressorParams(thresholdDB: -18, headroomDB: 8, attackSeconds: 0.008, releaseSeconds: 0.12, makeupGainDB: 4)),
-        (1.0, CompressorParams(thresholdDB: -30, headroomDB: 3, attackSeconds: 0.003, releaseSeconds: 0.08, makeupGainDB: 8)),
+        (0.0, CompressorParams(thresholdDB: 0, ratio: 1, kneeDB: 6, attackSeconds: 0.010, releaseSeconds: 0.15, makeupGainDB: 0)),
+        (0.3, CompressorParams(thresholdDB: -20, ratio: 2.5, kneeDB: 8, attackSeconds: 0.010, releaseSeconds: 0.12, makeupGainDB: 4)),
+        (0.6, CompressorParams(thresholdDB: -26, ratio: 4, kneeDB: 6, attackSeconds: 0.006, releaseSeconds: 0.10, makeupGainDB: 7)),
+        (1.0, CompressorParams(thresholdDB: -34, ratio: 8, kneeDB: 4, attackSeconds: 0.002, releaseSeconds: 0.07, makeupGainDB: 11)),
     ]
 
     public static func compressor(_ slider: Double) -> CompressorParams {
@@ -89,7 +95,8 @@ public enum MacroCurves {
         func lerp(_ a: Double, _ b: Double) -> Double { a + (b - a) * t }
         return CompressorParams(
             thresholdDB: lerp(lower.params.thresholdDB, upper.params.thresholdDB),
-            headroomDB: lerp(lower.params.headroomDB, upper.params.headroomDB),
+            ratio: lerp(lower.params.ratio, upper.params.ratio),
+            kneeDB: lerp(lower.params.kneeDB, upper.params.kneeDB),
             attackSeconds: lerp(lower.params.attackSeconds, upper.params.attackSeconds),
             releaseSeconds: lerp(lower.params.releaseSeconds, upper.params.releaseSeconds),
             makeupGainDB: lerp(lower.params.makeupGainDB, upper.params.makeupGainDB)

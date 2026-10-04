@@ -24,10 +24,34 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 ## Drum tracks (owner request)
 
 - **A track is either Audio or Drums.** The + under the lanes offers "Audio Track" or "Drum Track". A drum lane shows its kit in a pill under M/S (tap it to change); Cleanup doesn't apply to drums.
-- **Three synthesized kits, no samples:** Studio (acoustic-style), 808 (analog drum machine) and Hand Percussion (cajón, bongos, conga, shaker, tambourine, woodblock). Eight pads each. Each kit has its own pad colours.
+- **Three kits, eight pads each, each with its own pad colours:**
+  - **Studio: real acoustic drums** from *Big Rusty Drums* (Karoryfer Samples, **CC0 1.0**: public domain, fine for a paid App Store app, no attribution required). Pads: kick, snare, closed hat, open hat, low tom, high tom, ride, crash. The close mics and overheads are pre-mixed into one mono sound per hit.
+  - **Hand Percussion: real recordings** from the *Versilian Community Sample Library* (**CC0 1.0**): cajón bass and slap, bongo low and high, conga, shaker, tambourine, woodblock.
+  - **808: synthesized** (an 808 is itself a synthesizer, so synthesis is the authentic sound).
+  - Sampled pads carry **two recorded takes** that alternate on repeated hits (live and in the rendered track), so fast patterns don't sound machine-gunned. Samples are 48 kHz mono 16-bit CAF, trimmed to start within 1 ms of the hit and normalized; about 3.6 MB in total. Both licenses ship next to the samples and are credited in Settings → Acknowledgements.
+  - Paid libraries were not used: their licenses allow use in your own music, not redistribution of the raw samples inside another app.
 - **The pad** appears above the transport whenever a drum track is armed. Pads fire on touch-down, play polyphonically through the drum track's own chain (so EQ, compressor, Space and volume apply), and give a light haptic.
 - **Recording drums records hits, not the microphone.** Each hit is stored with its timeline time, shifted earlier by the output latency so it lands where the player heard it. On stop, hits in the recorded span replace the old ones (the same overwrite-anywhere rule as audio), and the whole track is rendered to its audio file. Mixing, export, mute/solo and waveforms then work exactly as for audio tracks.
 - **Changing a kit re-renders every existing hit** with the new kit.
+
+## Compressor (owner request)
+
+- **In-house compressor replaces Apple's DynamicsProcessor.** The owner found 30% did nothing. It's a feed-forward design from Giannoulis, Massberg & Reiss (JAES 2012): soft knee, real ratio, smooth attack/release on the gain reduction, stereo-linked. Our own code, so there's no license to worry about. It runs as an in-process Audio Unit (`CompressorAU`), so the same code processes playback and export. If the unit ever fails to register, the chain falls back to DynamicsProcessor.
+- **Retuned curve (replaces the spec's table):**
+
+  | Slider | Threshold | Ratio | Knee | Attack | Release | Makeup |
+  |---|---|---|---|---|---|---|
+  | 0 | 0 dB | 1:1 (off) | 6 dB | 10 ms | 150 ms | 0 dB |
+  | 0.3 (default) | -20 dB | 2.5:1 | 8 dB | 10 ms | 120 ms | +4 dB |
+  | 0.6 | -26 dB | 4:1 | 6 dB | 6 ms | 100 ms | +7 dB |
+  | 1.0 | -34 dB | 8:1 | 4 dB | 2 ms | 70 ms | +11 dB |
+
+  At the default, a -10 dBFS tone gets about 5 dB of gain reduction: clearly audible, still natural on voice and guitar. Makeup never exceeds the threshold depth, so a steady 0 dBFS input can't leave the compressor above full scale (tested at every slider position). Fast transients can overshoot by the makeup amount for a few milliseconds; the master limiter catches those.
+- Developer Mode's compressor section now shows Threshold, Ratio, Knee, Attack, Release and Makeup (Headroom is gone). Saved overrides from older builds load with a 4:1 ratio.
+
+## Mixing page
+
+- **Mixing shows only Solo (owner request).** The M button is gone from the pinned track card; Mute stays in Record view.
 
 ## Recording and timing
 

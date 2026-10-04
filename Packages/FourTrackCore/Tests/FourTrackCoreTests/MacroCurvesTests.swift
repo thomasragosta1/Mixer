@@ -61,37 +61,40 @@ final class MacroCurvesTests: XCTestCase {
 
     // MARK: Compressor
 
-    func testCompressorAnchorsMatchSpecTable() {
+    func testCompressorAnchors() {
         let off = MacroCurves.compressor(0)
-        XCTAssertEqual(off, CompressorParams(thresholdDB: 0, headroomDB: 20, attackSeconds: 0.010, releaseSeconds: 0.15, makeupGainDB: 0))
-        let mid = MacroCurves.compressor(0.5)
-        XCTAssertEqual(mid.thresholdDB, -18, accuracy: 1e-9)
-        XCTAssertEqual(mid.headroomDB, 8, accuracy: 1e-9)
-        XCTAssertEqual(mid.attackSeconds, 0.008, accuracy: 1e-9)
-        XCTAssertEqual(mid.releaseSeconds, 0.12, accuracy: 1e-9)
-        XCTAssertEqual(mid.makeupGainDB, 4, accuracy: 1e-9)
+        XCTAssertEqual(off, CompressorParams(thresholdDB: 0, ratio: 1, kneeDB: 6, attackSeconds: 0.010, releaseSeconds: 0.15, makeupGainDB: 0))
+        let def = MacroCurves.compressor(Track.defaultCompressor)
+        XCTAssertEqual(def.thresholdDB, -20, accuracy: 1e-9)
+        XCTAssertEqual(def.ratio, 2.5, accuracy: 1e-9)
+        XCTAssertEqual(def.makeupGainDB, 4, accuracy: 1e-9)
         let max = MacroCurves.compressor(1)
-        XCTAssertEqual(max.thresholdDB, -30, accuracy: 1e-9)
-        XCTAssertEqual(max.headroomDB, 3, accuracy: 1e-9)
-        XCTAssertEqual(max.attackSeconds, 0.003, accuracy: 1e-9)
-        XCTAssertEqual(max.releaseSeconds, 0.08, accuracy: 1e-9)
-        XCTAssertEqual(max.makeupGainDB, 8, accuracy: 1e-9)
+        XCTAssertEqual(max.thresholdDB, -34, accuracy: 1e-9)
+        XCTAssertEqual(max.ratio, 8, accuracy: 1e-9)
+        XCTAssertEqual(max.attackSeconds, 0.002, accuracy: 1e-9)
+        XCTAssertEqual(max.releaseSeconds, 0.07, accuracy: 1e-9)
+        XCTAssertEqual(max.makeupGainDB, 11, accuracy: 1e-9)
     }
 
-    func testCompressorInterpolates() {
-        let q = MacroCurves.compressor(0.25)
-        XCTAssertEqual(q.thresholdDB, -9, accuracy: 1e-9)
-        XCTAssertEqual(q.makeupGainDB, 2, accuracy: 1e-9)
-        let tq = MacroCurves.compressor(0.75)
-        XCTAssertEqual(tq.thresholdDB, -24, accuracy: 1e-9)
-        XCTAssertEqual(tq.headroomDB, 5.5, accuracy: 1e-9)
+    func testCompressorInterpolatesAndIsMonotonic() {
+        let a = MacroCurves.compressor(0.15)
+        XCTAssertEqual(a.thresholdDB, -10, accuracy: 1e-9)
+        XCTAssertEqual(a.ratio, 1.75, accuracy: 1e-9)
+        var prev = MacroCurves.compressor(0)
+        for i in 1...100 {
+            let p = MacroCurves.compressor(Double(i) / 100)
+            XCTAssertLessThanOrEqual(p.thresholdDB, prev.thresholdDB + 1e-9)
+            XCTAssertGreaterThanOrEqual(p.ratio, prev.ratio - 1e-9)
+            prev = p
+        }
     }
 
     func testCompressorParamsStayInProcessorRanges() {
         for i in 0...100 {
             let p = MacroCurves.compressor(Double(i) / 100)
             XCTAssertTrue(CompressorParams.thresholdRange.contains(p.thresholdDB))
-            XCTAssertTrue(CompressorParams.headroomRange.contains(p.headroomDB))
+            XCTAssertTrue(CompressorParams.ratioRange.contains(p.ratio))
+            XCTAssertTrue(CompressorParams.kneeRange.contains(p.kneeDB))
             XCTAssertTrue(CompressorParams.attackRange.contains(p.attackSeconds))
             XCTAssertTrue(CompressorParams.releaseRange.contains(p.releaseSeconds))
             XCTAssertTrue(CompressorParams.makeupRange.contains(p.makeupGainDB))
