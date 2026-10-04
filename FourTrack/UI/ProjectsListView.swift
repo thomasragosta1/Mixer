@@ -26,9 +26,9 @@ struct ProjectsListView: View {
             VStack(spacing: 0) {
                 list
                 Divider()
-                RecordButton(isRecording: false) { newProject() }
+                RecordButton(isRecording: false) { newProject(record: true) }
                     .padding(.vertical, 14)
-                    .accessibilityLabel("New project")
+                    .accessibilityLabel("New recording")
                     .accessibilityHint("Creates a project and starts recording on Track 1")
             }
             .background(Color(uiColor: .systemGroupedBackground))
@@ -41,6 +41,15 @@ struct ProjectsListView: View {
                         Image(systemName: "gear")
                     }
                     .accessibilityLabel("Settings")
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        newProject(record: false)
+                    } label: {
+                        Image(systemName: "plus")
+                    }
+                    .accessibilityLabel("New project")
+                    .accessibilityHint("Creates an empty project without recording")
                 }
             }
             .navigationDestination(for: Route.self) { route in
@@ -92,7 +101,7 @@ struct ProjectsListView: View {
             ContentUnavailableView {
                 Label("No Projects", systemImage: "waveform")
             } description: {
-                Text("Tap the record button to start a song. Each project has four tracks: record a part, then layer the next one over it.")
+                Text("Tap the record button to start a song, or + to start an empty project. Each project has four tracks: record a part, then layer the next one over it.")
             }
             .frame(maxHeight: .infinity)
         } else {
@@ -125,9 +134,9 @@ struct ProjectsListView: View {
         }
     }
 
-    private func newProject() {
+    private func newProject(record: Bool) {
         guard let project = model.createProject() else { return }
-        path.append(.project(project.id, record: true))
+        path.append(.project(project.id, record: record))
     }
 }
 
