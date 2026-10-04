@@ -106,6 +106,11 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
 
+## Testing on the simulator
+
+- CI runs app tests inside the real app on an iOS Simulator before every TestFlight upload: creating a drum track and playing every kit, drawing the drum screen, and rendering a track through the full chain (EQ → compressor → reverb) at several compressor settings. A UI test taps through New Project → + → Drum Track → pads exactly as a person would. Crash reports are printed in the CI log if anything fails.
+- These tests caught the in-house compressor's render block rejecting its input (error -50, "cannot play"). It now pulls its input straight into the output buffers and processes in place.
+
 ## Not verified here
 
 This environment has no Xcode or iOS SDK. The core package is compiled and its tests run on Linux (Swift 5.10). The app target was only syntax-checked, so its first build in Xcode may need small fixes. Everything in §11 that needs a device is still to be checked: latency ≤ 5 ms, no dropouts while playing three tracks and recording a fourth, a phone call during recording, how Cleanup sounds on guitar, and echo cancellation quality.
