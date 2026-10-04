@@ -112,6 +112,26 @@ final class ProjectStoreTests: XCTestCase {
         XCTAssertFalse(FileManager.default.fileExists(atPath: junk.path))
     }
 
+    func testBinKeepsProjectsUntilPermanentDelete() throws {
+        let a = try store.create(name: "A", now: Date(timeIntervalSince1970: 1_000))
+        let b = try store.create(name: "B", now: Date(timeIntervalSince1970: 2_000))
+        try writeCAF([1], to: store.audioURL(project: a.id, track: 0))
+
+        try store.moveToBin(id: a.id, now: Date(timeIntervalSince1970: 5_000))
+        XCTAssertEqual(store.loadAll().map(\.id), [b.id])
+        XCTAssertEqual(store.loadBin().map(\.id), [a.id])
+        XCTAssertTrue(FileManager.default.fileExists(atPath: store.audioURL(project: a.id, track: 0).path))
+
+        try store.restore(id: a.id)
+        XCTAssertEqual(store.loadAll().map(\.id), [b.id, a.id])
+        XCTAssertEqual(store.loadBin(), [])
+
+        try store.moveToBin(id: a.id)
+        try store.delete(id: a.id)
+        XCTAssertEqual(store.loadBin(), [])
+        XCTAssertFalse(FileManager.default.fileExists(atPath: store.directory(for: a.id).path))
+    }
+
     func testVisibleTrackCount() throws {
         var p = try store.create()
         XCTAssertEqual(p.visibleTrackCount, 1)

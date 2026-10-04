@@ -57,7 +57,7 @@ struct TrackRowView: View {
     }
 
     private var controls: some View {
-        VStack(alignment: .leading, spacing: 6) {
+        VStack(alignment: .leading, spacing: 4) {
             Button {
                 draftName = track.name
                 renaming = true
@@ -85,20 +85,55 @@ struct TrackRowView: View {
                 }
             }
 
-            if let progress = model.cleanupProgress[index] {
-                ProgressView(value: progress) {
-                    Text("Cleaning up")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                }
-                .progressViewStyle(.linear)
-                .frame(width: 88)
-            } else if !track.isEmpty {
-                Text(TimeFormat.duration(track.durationSeconds))
-                    .font(.caption2.monospacedDigit())
-                    .foregroundStyle(.secondary)
+            CleanupToggle(
+                isOn: track.isCleanupOn,
+                progress: model.cleanupProgress[index],
+                trackName: track.name
+            ) {
+                model.toggleCleanup(index)
             }
+            .disabled(track.isEmpty || model.isRecording)
         }
+    }
+}
+
+/// Long thin on/off button for Cleanup, under M / S. Shows render progress
+/// while the cleaned copy is being made.
+struct CleanupToggle: View {
+    let isOn: Bool
+    let progress: Double?
+    let trackName: String
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            ZStack(alignment: .leading) {
+                Capsule()
+                    .fill(isOn ? Color.accentColor : Color(uiColor: .tertiarySystemFill))
+                if let progress, isOn {
+                    GeometryReader { geo in
+                        Capsule()
+                            .fill(Color.white.opacity(0.35))
+                            .frame(width: geo.size.width * progress)
+                    }
+                }
+                HStack(spacing: 4) {
+                    Image(systemName: "wand.and.stars")
+                    Text(progress != nil && isOn ? "Cleaning…" : "Clean up")
+                }
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(isOn ? Color.white : Color.primary)
+                .frame(maxWidth: .infinity)
+            }
+            .frame(width: 86, height: 22)
+            .clipShape(Capsule())
+            .frame(minHeight: 32)
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Clean up \(trackName)")
+        .accessibilityValue(isOn ? (progress != nil ? "On, processing" : "On") : "Off")
+        .accessibilityAddTraits(isOn ? .isSelected : [])
     }
 }
 

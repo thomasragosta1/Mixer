@@ -22,6 +22,8 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     public var space: Double
     public var warmth: Double
     public var cleanup: Double
+    /// Cleanup amount to restore when the on/off button turns it back on.
+    public var cleanupLevel: Double
     /// Exploded values edited in Developer Mode. Sections left nil follow the macro curves.
     public var devOverrides: DevParams?
     /// Length of the take in seconds (0 when empty). Cached so the list can show durations
@@ -33,6 +35,9 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     public var id: Int { index }
 
     public static let defaultCompressor = 0.3
+    public static let defaultCleanupLevel = 0.6
+
+    public var isCleanupOn: Bool { cleanup > 0 }
 
     public init(index: Int, name: String? = nil) {
         self.index = index
@@ -49,6 +54,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         self.space = 0
         self.warmth = 0
         self.cleanup = 0
+        self.cleanupLevel = Track.defaultCleanupLevel
         self.devOverrides = nil
         self.durationSeconds = 0
         self.lastRecordedRoute = nil
@@ -91,7 +97,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
 
     enum CodingKeys: String, CodingKey {
         case index, name, audioFileName, cleanedFileName, mute, solo, volume
-        case eqLow, eqMid, eqHigh, compressor, space, warmth, cleanup, devOverrides
+        case eqLow, eqMid, eqHigh, compressor, space, warmth, cleanup, cleanupLevel, devOverrides
         case durationSeconds, lastRecordedRoute
     }
 
@@ -112,6 +118,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         space = try c.decodeIfPresent(Double.self, forKey: .space) ?? 0
         warmth = try c.decodeIfPresent(Double.self, forKey: .warmth) ?? 0
         cleanup = try c.decodeIfPresent(Double.self, forKey: .cleanup) ?? 0
+        cleanupLevel = try c.decodeIfPresent(Double.self, forKey: .cleanupLevel) ?? Track.defaultCleanupLevel
         devOverrides = try c.decodeIfPresent(DevParams.self, forKey: .devOverrides)
         durationSeconds = try c.decodeIfPresent(Double.self, forKey: .durationSeconds) ?? 0
         lastRecordedRoute = try c.decodeIfPresent(AudioRouteKind.self, forKey: .lastRecordedRoute)

@@ -6,7 +6,6 @@ import FourTrackCore
 struct ProjectsListView: View {
     @State private var model: ProjectsViewModel
     @State private var path: [Route] = []
-    @State private var pendingDelete: Project?
     @State private var renaming: Project?
     @State private var draftName = ""
     @State private var showingSettings = false
@@ -14,6 +13,7 @@ struct ProjectsListView: View {
 
     enum Route: Hashable {
         case project(UUID, record: Bool)
+        case bin
     }
 
     init(store: ProjectStore, settings: AppSettings) {
@@ -62,6 +62,8 @@ struct ProjectsListView: View {
                     } else {
                         ContentUnavailableView("Project Not Found", systemImage: "questionmark.folder")
                     }
+                case .bin:
+                    BinView(model: model)
                 }
             }
             .onChange(of: path) { _, newPath in
@@ -69,16 +71,6 @@ struct ProjectsListView: View {
             }
             .sheet(isPresented: $showingSettings) {
                 SettingsView(model: nil, settings: settings)
-            }
-            .confirmationDialog(
-                "Delete \(pendingDelete?.name ?? "Project")?",
-                isPresented: Binding(get: { pendingDelete != nil }, set: { if !$0 { pendingDelete = nil } }),
-                titleVisibility: .visible,
-                presenting: pendingDelete
-            ) { project in
-                Button("Delete Project", role: .destructive) { model.delete(project) }
-            } message: { _ in
-                Text("All four tracks will be deleted. This can't be undone.")
             }
             .alert("Rename Project", isPresented: Binding(get: { renaming != nil }, set: { if !$0 { renaming = nil } })) {
                 TextField("Name", text: $draftName)
@@ -97,7 +89,7 @@ struct ProjectsListView: View {
 
     @ViewBuilder
     private var list: some View {
-        if model.projects.isEmpty {
+        if model.projects.isEmpty && model.binCount == 0 {
             ContentUnavailableView {
                 Label("No Projects", systemImage: "waveform")
             } description: {
@@ -114,9 +106,10 @@ struct ProjectsListView: View {
                             draftName = project.name
                             renaming = project
                         }
-                        .swipeActions(edge: .trailing, allowsFullSwipe: false) {
+                        // Deleting only moves the project to the bin, so no confirmation here.
+                        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
                             Button(role: .destructive) {
-                                pendingDelete = project
+                                model.delete(project)
                             } label: {
                                 Label("Delete", systemImage: "trash")
                             }
@@ -127,7 +120,25 @@ struct ProjectsListView: View {
                             draftName = project.name
                             renaming = project
                         }
-                        .accessibilityAction(named: "Delete") { pendingDelete = project }
+                        .accessibilityAction(named: "Delete") { model.delete(project) }
+                }
+                if model.binCount > 0 {
+                    Button {
+                        path.append(.bin)
+                    } label: {
+                        HStack {
+                            Label("Recently Deleted", systemImage: "trash")
+                            Spacer()
+                            Text("\(model.binCount)")
+                                .foregroundStyle(.secondary)
+                            Image(systemName: "chevron.right")
+                                .font(.footnote.weight(.semibold))
+                                .foregroundStyle(.tertiary)
+                        }
+                        .padding(.vertical, 6)
+                        .contentShape(Rectangle())
+                    }
+                    .buttonStyle(.plain)
                 }
             }
             .listStyle(.plain)

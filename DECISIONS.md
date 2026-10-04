@@ -42,6 +42,8 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 ## UI
 
 - **Tracks are revealed one at a time (owner request).** A new project shows one lane. A dashed **+** under the last lane reveals the next, up to four. Adding a lane arms it and rewinds to 0:00. The data model still holds four tracks; `Project.visibleTrackCount` controls how many lanes show, and a lane with audio is never hidden.
+- **Recently Deleted bin (owner request).** Deleting a project (swipe, or the project's menu) moves it to the bin with no confirmation. A "Recently Deleted" row appears at the bottom of the projects list when the bin isn't empty. Inside the bin, swipe right to recover and swipe left to delete permanently. Permanent deletion is the only action that asks for confirmation. Nothing expires automatically. Stored as `Project.deletedAt`.
+- **Cleanup on/off button (owner request).** A thin "Clean up" pill under M/S in each lane turns Cleanup on (at the last level used, 60% the first time) or off. The Cleanup slider in the mixer still sets the amount.
 - **A new track always starts at 0:00 (owner request).** Recording onto an empty track rewinds to the start first. Once a track has a take, overwrite-anywhere from the playhead applies as in the spec.
 
 - **Scrolling waveform with a fixed center playhead** (like Voice Memos' editor), shared across the four lanes. Dragging horizontally anywhere on the lanes scrubs; tapping a lane arms it.

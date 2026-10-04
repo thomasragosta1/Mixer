@@ -7,6 +7,8 @@ import FourTrackCore
 @MainActor
 final class ProjectsViewModel {
     private(set) var projects: [Project] = []
+    private(set) var binned: [Project] = []
+    var binCount: Int { binned.count }
     var errorMessage: String?
     let store: ProjectStore
 
@@ -29,6 +31,7 @@ final class ProjectsViewModel {
 
     func reload() {
         projects = store.loadAll()
+        binned = store.loadBin()
     }
 
     func createProject() -> Project? {
@@ -42,11 +45,33 @@ final class ProjectsViewModel {
         }
     }
 
+    /// Moves a project to Recently Deleted. Nothing is lost until it's deleted from there.
     func delete(_ project: Project) {
         do {
-            try store.delete(id: project.id)
+            try store.moveToBin(id: project.id)
         } catch {
             errorMessage = "Couldn't delete \(project.name). \(error.localizedDescription)"
+        }
+        reload()
+    }
+
+    func recover(_ project: Project) {
+        do {
+            try store.restore(id: project.id)
+        } catch {
+            errorMessage = "Couldn't recover \(project.name). \(error.localizedDescription)"
+        }
+        reload()
+    }
+
+    /// Permanent. Only offered inside Recently Deleted, behind a confirmation.
+    func deletePermanently(_ projects: [Project]) {
+        for project in projects {
+            do {
+                try store.delete(id: project.id)
+            } catch {
+                errorMessage = "Couldn't delete \(project.name). \(error.localizedDescription)"
+            }
         }
         reload()
     }

@@ -87,16 +87,39 @@ public final class ProjectStore: @unchecked Sendable {
         return try decoder.decode(Project.self, from: data)
     }
 
-    /// All projects, newest first. Unreadable folders are skipped, never deleted.
+    /// Live projects, newest first. Unreadable folders are skipped, never deleted.
     public func loadAll() -> [Project] {
+        loadEverything().filter { $0.deletedAt == nil }.sorted { $0.createdAt > $1.createdAt }
+    }
+
+    /// Projects in the bin, most recently deleted first.
+    public func loadBin() -> [Project] {
+        loadEverything().filter { $0.deletedAt != nil }.sorted { ($0.deletedAt ?? .distantPast) > ($1.deletedAt ?? .distantPast) }
+    }
+
+    private func loadEverything() -> [Project] {
         guard let entries = try? fm.contentsOfDirectory(at: rootURL, includingPropertiesForKeys: nil) else { return [] }
-        let projects = entries.compactMap { url -> Project? in
+        return entries.compactMap { url -> Project? in
             guard let id = UUID(uuidString: url.lastPathComponent) else { return nil }
             return try? load(id: id)
         }
-        return projects.sorted { $0.createdAt > $1.createdAt }
     }
 
+    /// Moves a project to the bin. Nothing is removed from disk.
+    public func moveToBin(id: UUID, now: Date = Date()) throws {
+        var project = try load(id: id)
+        project.deletedAt = now
+        try save(project)
+    }
+
+    /// Takes a project back out of the bin.
+    public func restore(id: UUID) throws {
+        var project = try load(id: id)
+        project.deletedAt = nil
+        try save(project)
+    }
+
+    /// Permanently removes a project and its audio. Only the bin calls this.
     public func delete(id: UUID) throws {
         let dir = directory(for: id)
         if fm.fileExists(atPath: dir.path) {
@@ -106,7 +129,7 @@ public final class ProjectStore: @unchecked Sendable {
 
     /// "New Project", "New Project 2", ... like Voice Memos' "New Recording N".
     public func nextDefaultName() -> String {
-        let names = Set(loadAll().map(\.name))
+        let names = Set(loadEverything().filter { $0.deletedAt == nil }.map(\.name))
         let base = "New Project"
         if !names.contains(base) { return base }
         var n = 2

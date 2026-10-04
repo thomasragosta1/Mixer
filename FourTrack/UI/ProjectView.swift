@@ -13,7 +13,6 @@ struct ProjectView: View {
     @State private var showingSettings = false
     @State private var renamingProject = false
     @State private var draftName = ""
-    @State private var confirmingDelete = false
     @State private var scrubStart: Double?
     private let onDelete: (Project) -> Void
     private let startRecordingOnAppear: Bool
@@ -79,16 +78,6 @@ struct ProjectView: View {
             Button("OK", role: .cancel) {}
         } message: {
             Text(model.errorMessage ?? "")
-        }
-        .confirmationDialog("Delete \(model.project.name)?", isPresented: $confirmingDelete, titleVisibility: .visible) {
-            Button("Delete Project", role: .destructive) {
-                let project = model.project
-                model.close()
-                dismiss()
-                onDelete(project)
-            }
-        } message: {
-            Text("All four tracks will be deleted. This can't be undone.")
         }
         .onAppear {
             model.activate()
@@ -224,7 +213,11 @@ struct ProjectView: View {
                 }
                 Divider()
                 Button(role: .destructive) {
-                    confirmingDelete = true
+                    // Goes to Recently Deleted; permanent deletion only happens there.
+                    let project = model.project
+                    model.close()
+                    dismiss()
+                    onDelete(project)
                 } label: {
                     Label("Delete Project", systemImage: "trash")
                 }

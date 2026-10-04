@@ -546,9 +546,25 @@ final class ProjectViewModel {
 
     func setWarmth(_ index: Int, _ value: Double) { update(track: index) { $0.warmth = value } }
 
+    /// The on/off button under M/S. Off remembers the level for next time.
+    func toggleCleanup(_ index: Int) {
+        let track = project.tracks[index]
+        if track.isCleanupOn {
+            update(track: index) { t in
+                t.cleanupLevel = t.cleanup
+                t.cleanup = 0
+            }
+        } else {
+            setCleanup(index, track.cleanupLevel > 0 ? track.cleanupLevel : Track.defaultCleanupLevel)
+        }
+    }
+
     /// Moving Cleanup above zero renders the cleaned copy if it doesn't exist yet.
     func setCleanup(_ index: Int, _ value: Double) {
-        update(track: index) { $0.cleanup = value }
+        update(track: index) { t in
+            t.cleanup = value
+            if value > 0 { t.cleanupLevel = value }
+        }
         if value > 0, project.tracks[index].cleanedFileName == nil, !project.tracks[index].isEmpty, cleanupProgress[index] == nil {
             runCleanup(index)
         }
@@ -771,6 +787,10 @@ final class ProjectViewModel {
 
     func saveNow() {
         saveTask?.cancel()
+        // A late save (e.g. a Cleanup render finishing) must not pull a binned project back out.
+        if let onDisk = try? store.load(id: project.id), onDisk.deletedAt != nil {
+            project.deletedAt = onDisk.deletedAt
+        }
         project.updatedAt = Date()
         do {
             try store.save(project)

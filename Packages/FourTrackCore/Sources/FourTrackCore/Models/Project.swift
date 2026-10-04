@@ -20,6 +20,8 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     /// How many lanes the project shows (1...4). New projects start with one;
     /// the "+" under the last lane reveals the next.
     public var visibleTrackCount: Int
+    /// Set when the project is moved to the bin; nil for live projects.
+    public var deletedAt: Date?
 
     public init(
         id: UUID = UUID(),
@@ -43,6 +45,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         self.masterVolume = masterVolume
         self.metronome = metronome
         self.visibleTrackCount = visibleTrackCount
+        self.deletedAt = nil
         normalizeTracks()
     }
 
@@ -73,7 +76,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount
+        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount, deletedAt
     }
 
     public init(from decoder: Decoder) throws {
@@ -88,6 +91,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         masterVolume = try c.decodeIfPresent(Double.self, forKey: .masterVolume) ?? MacroCurves.volumeUnitySlider
         metronome = try c.decodeIfPresent(MetronomeSettings.self, forKey: .metronome) ?? MetronomeSettings()
         visibleTrackCount = try c.decodeIfPresent(Int.self, forKey: .visibleTrackCount) ?? 1
+        deletedAt = try c.decodeIfPresent(Date.self, forKey: .deletedAt)
         normalizeTracks()
     }
 }
