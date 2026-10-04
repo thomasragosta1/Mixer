@@ -40,6 +40,9 @@ struct ProjectsListView: View {
                     .accessibilityHint("Creates a project and starts recording on Track 1")
             }
             .background(Color(uiColor: .systemGroupedBackground))
+            // The keyboard slides over the list and buttons instead of pushing them up.
+            // The naming bubble (an overlay) still sits above the keyboard.
+            .ignoresSafeArea(.keyboard, edges: .bottom)
             .navigationTitle("All Projects")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
