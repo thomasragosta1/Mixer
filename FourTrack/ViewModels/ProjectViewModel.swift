@@ -583,10 +583,8 @@ final class ProjectViewModel {
 
     private func startDrumTake() {
         let index = armedTrack
-        if project.tracks[index].drumHits.isEmpty {
-            playhead = 0
-            engine.seek(to: 0)
-        }
+        // Drum takes start wherever the playhead is, even on an empty track
+        // (the rendered track is silent before the first hit).
         routePadsIfNeeded()
         do {
             try engine.startDrumTake(trackIndex: index, from: playhead, project: project, metronome: metronomeIfEnabled)
@@ -869,7 +867,7 @@ final class ProjectViewModel {
             }
             let outcome = await Task.detached(priority: .utility) { () -> Error? in
                 do {
-                    try CleanupPipeline().render(
+                    try CleanupEngine.render(
                         input: input,
                         output: output,
                         progress: { job.value = $0 },

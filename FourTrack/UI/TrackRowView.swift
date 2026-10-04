@@ -26,14 +26,14 @@ struct TrackRowView<Scrub: Gesture>: View {
         .padding(12)
         .frame(height: Self.cardHeight)
         .background(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
+            RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
                 .fill(Color(uiColor: .secondarySystemGroupedBackground))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 16, style: .continuous)
+            RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
                 .strokeBorder(Color.red.opacity(isArmed ? 0.85 : 0), lineWidth: 2)
         )
-        .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+        .contentShape(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous))
         .onTapGesture { model.arm(index) }
         .accessibilityElement(children: .contain)
         .accessibilityAddTraits(isArmed ? .isSelected : [])
@@ -71,10 +71,10 @@ struct TrackRowView<Scrub: Gesture>: View {
             }
         }
         .background(
-            RoundedRectangle(cornerRadius: 10, style: .continuous)
+            RoundedRectangle(cornerRadius: Theme.innerRadius, style: .continuous)
                 .fill(Color(uiColor: .tertiarySystemFill).opacity(0.5))
         )
-        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+        .clipShape(RoundedRectangle(cornerRadius: Theme.innerRadius, style: .continuous))
         .contentShape(Rectangle())
         .gesture(onScrub)
     }

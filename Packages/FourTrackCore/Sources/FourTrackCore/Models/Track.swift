@@ -42,7 +42,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
 
     public var id: Int { index }
 
-    public static let defaultCompressor = 0.3
+    public static let defaultCompressor = 0.0
     public static let defaultCleanupLevel = 0.6
 
     public var isCleanupOn: Bool { cleanup > 0 }

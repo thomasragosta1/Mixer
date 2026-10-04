@@ -50,14 +50,22 @@ struct SliderCore: View {
                 thumb(in: geo.size, length: length)
             }
             .contentShape(Rectangle())
-            // High priority so vertical faders win over the mixer's scroll view.
-            .highPriorityGesture(drag(length: length))
-            .simultaneousGesture(TapGesture(count: 2).onEnded {
-                onEditingChanged(true)
-                value = resetValue
-                UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                onEditingChanged(false)
-            })
+            // A UIKit pan that only starts when the finger moves along the slider's
+            // axis. A vertical swipe that starts on a horizontal slider scrolls the
+            // page and leaves the value alone.
+            .overlay(
+                AxisPan(
+                    axis: axis,
+                    onChanged: { travel in dragChanged(travel: travel, length: length) },
+                    onEnded: dragEnded,
+                    onDoubleTap: {
+                        onEditingChanged(true)
+                        value = resetValue
+                        UIImpactFeedbackGenerator(style: .light).impactOccurred()
+                        onEditingChanged(false)
+                    }
+                )
+            )
         }
         .frame(
             minWidth: axis == .vertical ? SliderMetrics.hitTarget : nil,
@@ -130,25 +138,23 @@ struct SliderCore: View {
 
     // MARK: Interaction
 
-    private func drag(length: CGFloat) -> some Gesture {
-        DragGesture(minimumDistance: 2)
-            .onChanged { g in
-                if dragStart == nil {
-                    dragStart = value
-                    onEditingChanged(true)
-                }
-                let travel = axis == .horizontal ? g.translation.width : -g.translation.height
-                let raw = (dragStart ?? value) + Double(travel / length) * span
-                let clamped = min(max(raw, range.lowerBound), range.upperBound)
-                let snapped = snap(clamped)
-                hapticIfCrossing(from: value, to: snapped)
-                value = snapped
-            }
-            .onEnded { _ in
-                dragStart = nil
-                lastHapticDetent = nil
-                onEditingChanged(false)
-            }
+    private func dragChanged(travel: CGFloat, length: CGFloat) {
+        if dragStart == nil {
+            dragStart = value
+            onEditingChanged(true)
+        }
+        let raw = (dragStart ?? value) + Double(travel / length) * span
+        let clamped = min(max(raw, range.lowerBound), range.upperBound)
+        let snapped = snap(clamped)
+        hapticIfCrossing(from: value, to: snapped)
+        value = snapped
+    }
+
+    private func dragEnded() {
+        guard dragStart != nil else { return }
+        dragStart = nil
+        lastHapticDetent = nil
+        onEditingChanged(false)
     }
 
     private func snap(_ v: Double) -> Double {
@@ -169,6 +175,66 @@ struct SliderCore: View {
             if new != d && lastHapticDetent == d {
                 lastHapticDetent = nil
             }
+        }
+    }
+}
+
+/// Pan recognizer that begins only for movement along `axis`, and makes any
+/// enclosing scroll view wait for it to fail. Movement across the axis fails it
+/// immediately, so the scroll view takes over with no lag.
+struct AxisPan: UIViewRepresentable {
+    let axis: SliderAxis
+    /// Travel along the axis in points since the pan began (positive = increase).
+    let onChanged: (CGFloat) -> Void
+    let onEnded: () -> Void
+    let onDoubleTap: () -> Void
+
+    func makeCoordinator() -> Coordinator { Coordinator(self) }
+
+    func makeUIView(context: Context) -> UIView {
+        let view = UIView()
+        view.backgroundColor = .clear
+        view.isAccessibilityElement = false
+        let pan = UIPanGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handlePan(_:)))
+        pan.delegate = context.coordinator
+        view.addGestureRecognizer(pan)
+        let doubleTap = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleDoubleTap))
+        doubleTap.numberOfTapsRequired = 2
+        view.addGestureRecognizer(doubleTap)
+        return view
+    }
+
+    func updateUIView(_ uiView: UIView, context: Context) {
+        context.coordinator.parent = self
+    }
+
+    final class Coordinator: NSObject, UIGestureRecognizerDelegate {
+        var parent: AxisPan
+        init(_ parent: AxisPan) { self.parent = parent }
+
+        @objc func handlePan(_ pan: UIPanGestureRecognizer) {
+            let t = pan.translation(in: pan.view)
+            switch pan.state {
+            case .began, .changed:
+                parent.onChanged(parent.axis == .horizontal ? t.x : -t.y)
+            case .ended, .cancelled, .failed:
+                parent.onEnded()
+            default:
+                break
+            }
+        }
+
+        @objc func handleDoubleTap() { parent.onDoubleTap() }
+
+        func gestureRecognizerShouldBegin(_ g: UIGestureRecognizer) -> Bool {
+            guard let pan = g as? UIPanGestureRecognizer else { return true }
+            let v = pan.velocity(in: pan.view)
+            return parent.axis == .horizontal ? abs(v.x) > abs(v.y) : abs(v.y) > abs(v.x)
+        }
+
+        /// Scroll views (and the pager) wait for this pan to fail.
+        func gestureRecognizer(_ g: UIGestureRecognizer, shouldBeRequiredToFailBy other: UIGestureRecognizer) -> Bool {
+            g is UIPanGestureRecognizer && other.view is UIScrollView
         }
     }
 }

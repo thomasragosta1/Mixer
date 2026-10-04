@@ -33,13 +33,12 @@ struct ProjectsListView: View {
                         }
                             .padding(.bottom, 14)
                     }
-                Divider()
                 RecordButton(isRecording: false) { newProject(record: true) }
                     .padding(.vertical, 14)
                     .accessibilityLabel("New recording")
                     .accessibilityHint("Creates a project and starts recording on Track 1")
             }
-            .background(Color(uiColor: .systemGroupedBackground))
+            .background(Color(uiColor: .systemBackground))
             // The keyboard slides over the list and buttons instead of pushing them up.
             // The naming bubble (an overlay) still sits above the keyboard.
             .ignoresSafeArea(.keyboard, edges: .bottom)
@@ -208,13 +207,11 @@ struct NewProjectButton: View {
         Button(action: action) {
             Label("New Project", systemImage: "plus")
                 .font(.headline)
-                .padding(.horizontal, 20)
-                .frame(minHeight: 48)
-                .foregroundStyle(.white)
-                .background(Capsule().fill(Color.accentColor))
-                .shadow(color: .black.opacity(0.2), radius: 8, y: 3)
+                .padding(.horizontal, 8)
+                .frame(minHeight: 36)
         }
-        .buttonStyle(.plain)
+        .prominentGlassButton()
+        .controlSize(.large)
         .accessibilityHint("Creates an empty project without recording")
     }
 }
@@ -249,23 +246,28 @@ struct NewProjectBubble: View {
                     }
                     .frame(height: 36)
                     .padding(.horizontal, 8)
-                    .background(RoundedRectangle(cornerRadius: 8, style: .continuous).fill(Color(uiColor: .tertiarySystemFill)))
+                    .background(Capsule().fill(Color(uiColor: .tertiarySystemFill)))
                 }
-                .padding(16)
+                .padding(.horizontal, 20)
+                .padding(.top, 20)
+                .padding(.bottom, 16)
 
-                Divider()
-                HStack(spacing: 0) {
-                    Button("Cancel") { onFinish(nil) }
-                        .frame(maxWidth: .infinity, minHeight: 44)
-                    Divider().frame(height: 44)
-                    Button("Create") { onFinish(name.isEmpty ? defaultName : name) }
-                        .fontWeight(.semibold)
-                        .frame(maxWidth: .infinity, minHeight: 44)
+                HStack(spacing: 10) {
+                    Button { onFinish(nil) } label: {
+                        Text("Cancel").frame(maxWidth: .infinity, minHeight: 30)
+                    }
+                    .glassButton()
+                    Button { onFinish(name.isEmpty ? defaultName : name) } label: {
+                        Text("Create").fontWeight(.semibold).frame(maxWidth: .infinity, minHeight: 30)
+                    }
+                    .prominentGlassButton()
                 }
+                .controlSize(.large)
+                .padding(.horizontal, 16)
+                .padding(.bottom, 16)
             }
-            .frame(width: 280)
-            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
-            .shadow(color: .black.opacity(0.2), radius: 20, y: 8)
+            .frame(width: 300)
+            .glassPanel(cornerRadius: 32)
             .accessibilityElement(children: .contain)
             .accessibilityAddTraits(.isModal)
         }

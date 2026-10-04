@@ -144,12 +144,12 @@ final class TrackChain {
         // Compressor
         let c = track.resolvedCompressor
         if usesInHouseCompressor {
-            setCompressor(CompressorAU.Param.threshold.rawValue, c.thresholdDB)
-            setCompressor(CompressorAU.Param.ratio.rawValue, c.ratio)
-            setCompressor(CompressorAU.Param.knee.rawValue, c.kneeDB)
-            setCompressor(CompressorAU.Param.attack.rawValue, c.attackSeconds)
-            setCompressor(CompressorAU.Param.release.rawValue, c.releaseSeconds)
-            setCompressor(CompressorAU.Param.makeup.rawValue, c.makeupGainDB)
+            setCompressor(AudioUnitParameterID(CompressorAU.Param.threshold.rawValue), c.thresholdDB)
+            setCompressor(AudioUnitParameterID(CompressorAU.Param.ratio.rawValue), c.ratio)
+            setCompressor(AudioUnitParameterID(CompressorAU.Param.knee.rawValue), c.kneeDB)
+            setCompressor(AudioUnitParameterID(CompressorAU.Param.attack.rawValue), c.attackSeconds)
+            setCompressor(AudioUnitParameterID(CompressorAU.Param.release.rawValue), c.releaseSeconds)
+            setCompressor(AudioUnitParameterID(CompressorAU.Param.makeup.rawValue), c.makeupGainDB)
         } else {
             // DynamicsProcessor has no ratio; headroom approximates it.
             setCompressor(kDynamicsProcessorParam_Threshold, c.thresholdDB)

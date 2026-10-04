@@ -31,11 +31,11 @@ final class CompressorTests: XCTestCase {
         XCTAssertEqual(out, input)
     }
 
-    func testDefaultIsClearlyAudible() {
+    func testThirtyPercentIsClearlyAudible() {
         // The owner's complaint: 30% did nothing. On a -10 dBFS tone it must now
         // take off several dB at the compressor stage.
         var x = sine(db: -10)
-        let dsp = CompressorDSP(params: MacroCurves.compressor(Track.defaultCompressor))
+        let dsp = CompressorDSP(params: MacroCurves.compressor(0.3))
         dsp.process(&x)
         let reduction = dsp.lastReductionDB
         XCTAssertGreaterThan(reduction, 4, "default compressor too gentle")

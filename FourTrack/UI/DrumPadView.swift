@@ -33,7 +33,6 @@ struct DrumPadPanel: View {
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 10)
-        .background(Color(uiColor: .systemGroupedBackground))
     }
 
     /// Each kit has its own palette so the three feel distinct at a glance.
@@ -57,10 +56,10 @@ struct DrumPad: View {
     @State private var flash = false
 
     var body: some View {
-        RoundedRectangle(cornerRadius: 14, style: .continuous)
+        RoundedRectangle(cornerRadius: 18, style: .continuous)
             .fill(color.opacity(flash ? 0.95 : 0.35))
             .overlay(
-                RoundedRectangle(cornerRadius: 14, style: .continuous)
+                RoundedRectangle(cornerRadius: 18, style: .continuous)
                     .strokeBorder(color.opacity(0.8), lineWidth: 1)
             )
             .overlay(
@@ -75,7 +74,7 @@ struct DrumPad: View {
             .frame(height: 64)
             .scaleEffect(pressed ? 0.95 : 1)
             .animation(.easeOut(duration: 0.08), value: pressed)
-            .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .contentShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { _ in

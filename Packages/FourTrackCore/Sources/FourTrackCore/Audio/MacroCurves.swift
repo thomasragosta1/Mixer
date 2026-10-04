@@ -67,8 +67,8 @@ public enum MacroCurves {
 
     // MARK: - Compressor
 
-    /// Anchor rows, interpolated piecewise-linearly. Tuned so the default (0.3)
-    /// is clearly audible: about 6 dB of gain reduction on peaks at -10 dBFS,
+    /// Anchor rows, interpolated piecewise-linearly. Tuned so 0.3 is already
+    /// clearly audible: about 6 dB of gain reduction on peaks at -10 dBFS,
     /// with makeup lifting the quiet parts. The top end is a firm 8:1 squash.
     /// Makeup keeps typical material (around -20 dBFS) at roughly the same loudness.
     /// (The spec's original table, for Apple's DynamicsProcessor, barely compressed

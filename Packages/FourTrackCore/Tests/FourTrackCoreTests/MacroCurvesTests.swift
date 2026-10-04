@@ -64,7 +64,7 @@ final class MacroCurvesTests: XCTestCase {
     func testCompressorAnchors() {
         let off = MacroCurves.compressor(0)
         XCTAssertEqual(off, CompressorParams(thresholdDB: 0, ratio: 1, kneeDB: 6, attackSeconds: 0.010, releaseSeconds: 0.15, makeupGainDB: 0))
-        let def = MacroCurves.compressor(Track.defaultCompressor)
+        let def = MacroCurves.compressor(0.3)
         XCTAssertEqual(def.thresholdDB, -20, accuracy: 1e-9)
         XCTAssertEqual(def.ratio, 2.5, accuracy: 1e-9)
         XCTAssertEqual(def.makeupGainDB, 4, accuracy: 1e-9)

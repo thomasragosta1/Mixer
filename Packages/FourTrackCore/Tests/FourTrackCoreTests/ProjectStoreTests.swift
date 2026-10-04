@@ -19,7 +19,7 @@ final class ProjectStoreTests: XCTestCase {
         XCTAssertEqual(p.tracks.count, 4)
         XCTAssertEqual(p.tracks.map(\.name), ["Track 1", "Track 2", "Track 3", "Track 4"])
         XCTAssertEqual(p.tracks.map(\.index), [0, 1, 2, 3])
-        XCTAssertTrue(p.tracks.allSatisfy { $0.isEmpty && $0.volume == 0.75 && $0.cleanup == 0 && $0.compressor == 0.3 })
+        XCTAssertTrue(p.tracks.allSatisfy { $0.isEmpty && $0.volume == 0.75 && $0.cleanup == 0 && $0.compressor == 0 })
         XCTAssertTrue(FileManager.default.fileExists(atPath: store.metadataURL(for: p.id).path))
     }
 

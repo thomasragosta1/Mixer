@@ -54,8 +54,11 @@ struct ProjectView: View {
                     .transition(.move(edge: .bottom).combined(with: .opacity))
             }
             if !model.mixMode {
-                Divider()
                 TransportView(model: model)
+                    .padding(.vertical, 4)
+                    .glassPanel()
+                    .padding(.horizontal, 12)
+                    .padding(.bottom, 4)
             }
         }
         .background(Color(uiColor: .systemGroupedBackground))
@@ -258,7 +261,7 @@ struct AddTrackButton: View {
                 .font(.title3.weight(.semibold))
                 .frame(maxWidth: .infinity, minHeight: 52)
                 .background(
-                    RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
                         .strokeBorder(Color.secondary.opacity(0.35), style: StrokeStyle(lineWidth: 1.5, dash: [6, 5]))
                 )
                 .contentShape(Rectangle())
@@ -288,7 +291,7 @@ struct CleanupBanner: View {
             }
             Spacer(minLength: 0)
             Button("Clean Up", action: onAccept)
-                .buttonStyle(.borderedProminent)
+                .prominentGlassButton()
                 .controlSize(.small)
             Button(action: onDismiss) {
                 Image(systemName: "xmark")
@@ -300,7 +303,7 @@ struct CleanupBanner: View {
         }
         .padding(.leading, 14)
         .padding(.vertical, 6)
-        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .glassPanel(cornerRadius: 24)
         .padding(.horizontal, 12)
         .padding(.bottom, 8)
     }

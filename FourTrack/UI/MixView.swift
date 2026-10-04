@@ -159,14 +159,14 @@ struct CompactTrackCard: View {
                     Text("Empty").font(.caption).foregroundStyle(.secondary)
                 }
             }
-            .background(RoundedRectangle(cornerRadius: 8, style: .continuous).fill(Color(uiColor: .tertiarySystemFill).opacity(0.5)))
-            .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
+            .background(RoundedRectangle(cornerRadius: Theme.innerRadius, style: .continuous).fill(Color(uiColor: .tertiarySystemFill).opacity(0.5)))
+            .clipShape(RoundedRectangle(cornerRadius: Theme.innerRadius, style: .continuous))
             .contentShape(Rectangle())
             .highPriorityGesture(scrub)
         }
         .padding(10)
         .frame(height: 60)
-        .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Color(uiColor: .secondarySystemGroupedBackground)))
+        .background(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous).fill(Color(uiColor: .secondarySystemGroupedBackground)))
     }
 
     private var scrub: some Gesture {
@@ -203,7 +203,7 @@ struct MasterSummaryCard: View {
         }
         .padding(.horizontal, 14)
         .frame(height: 60)
-        .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Color(uiColor: .secondarySystemGroupedBackground)))
+        .background(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous).fill(Color(uiColor: .secondarySystemGroupedBackground)))
     }
 }
 
