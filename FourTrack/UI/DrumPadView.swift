@@ -34,6 +34,13 @@ struct DrumStudioView: View {
                     .padding(.horizontal, 16)
             }
 
+            // Pads always play, recording or not: jam along with the song first.
+            Text(model.isRecording ? "Recording your hits" : (model.isPlaying ? "Playing along. Nothing records until you press ●" : "Play along anytime. Press ● to record"))
+                .font(.caption)
+                .foregroundStyle(model.isRecording ? Color.red : Color.secondary)
+                .frame(maxWidth: .infinity)
+                .accessibilityHidden(true)
+
             DrumPadGrid(kit: track.drumKit, settings: track.padSettings) {
                 model.hitPad($0)
             } onHold: { pad in

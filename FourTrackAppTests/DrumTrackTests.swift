@@ -145,6 +145,50 @@ final class DrumTrackTests: XCTestCase {
         model.close()
     }
 
+    /// Pads must sound while the other tracks play, without recording.
+    func testPadsPlayAlongWithPlayback() throws {
+        var project = try store.create()
+        let url = store.audioURL(project: project.id, track: 0)
+        let w = try CAFWriter(url: url)
+        try w.write((0..<(48_000 * 4)).map { 0.3 * Float(sin(2 * .pi * 220 * Double($0) / 48_000)) })
+        try w.finish()
+        project.tracks[0].audioFileName = ProjectStore.audioFileName(track: 0)
+        project.visibleTrackCount = 2
+        project.tracks[1].kind = .drums
+        store.refreshDurations(&project)
+        try store.save(project)
+
+        let model = ProjectViewModel(project: project, store: store)
+        model.activate()
+        model.arm(0)
+        model.play()
+        XCTAssertTrue(model.isPlaying)
+        model.arm(1)              // switch to the drum track while the song plays
+        XCTAssertTrue(model.isPlaying, "arming the drums must not stop playback")
+
+        var peak: Float = 0
+        let lock = NSLock()
+        let mixer = model.engineForTesting.pads.mixer
+        mixer.installTap(onBus: 0, bufferSize: 1024, format: nil) { buffer, _ in
+            guard let d = buffer.floatChannelData?[0] else { return }
+            var m: Float = 0
+            for i in 0..<Int(buffer.frameLength) { m = max(m, abs(d[i])) }
+            lock.lock(); peak = max(peak, m); lock.unlock()
+        }
+        for pad in [0, 1, 0, 1] {
+            model.hitPad(pad)
+            spin(0.15)
+        }
+        spin(0.4)
+        mixer.removeTap(onBus: 0)
+        lock.lock(); let heard = peak; lock.unlock()
+        XCTAssertGreaterThan(heard, 0.05, "pads were silent during playback")
+        XCTAssertTrue(model.isPlaying)
+        XCTAssertFalse(model.isRecording)
+        XCTAssertTrue(model.project.tracks[1].drumHits.isEmpty, "playing along must not record")
+        model.close()
+    }
+
     private func spin(_ seconds: TimeInterval) {
         RunLoop.main.run(until: Date().addingTimeInterval(seconds))
     }

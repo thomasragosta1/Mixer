@@ -544,6 +544,9 @@ final class ProjectViewModel {
 
     // MARK: Tracks
 
+    /// For the in-app tests only.
+    var engineForTesting: MixerEngine { engine }
+
     func arm(_ index: Int) {
         guard !isRecording, project.visibleLanes.contains(index) else { return }
         armedTrack = index
