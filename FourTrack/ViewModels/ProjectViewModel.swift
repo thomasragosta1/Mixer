@@ -67,6 +67,8 @@ final class ProjectViewModel {
         self.settings = settings
         self.engine = MixerEngine()
         playhead = min(project.playheadSeconds, project.durationSeconds)
+        // Arm the first empty lane, or the last one if all have takes.
+        armedTrack = project.tracks.prefix(project.visibleTrackCount).first(where: { $0.isEmpty })?.index ?? project.visibleTrackCount - 1
         engine.voiceProcessingEnabled = settings.voiceProcessing
         engine.load(project: project, store: store)
         applyAll()
@@ -89,6 +91,7 @@ final class ProjectViewModel {
     // MARK: Derived
 
     var duration: Double { project.durationSeconds }
+    var visibleTrackCount: Int { project.visibleTrackCount }
     var developerMode: Bool { settings.developerMode }
     var hasAnyAudio: Bool { project.tracks.contains { !$0.isEmpty } }
 
@@ -225,6 +228,11 @@ final class ProjectViewModel {
         }
         let latency = settings.latency.compensation(for: route, estimate: engine.estimatedLatency)
         let trackIndex = armedTrack
+        // A new track always starts at 0:00; overwrite-anywhere applies once it has a take.
+        if project.tracks[trackIndex].isEmpty {
+            playhead = 0
+            engine.seek(to: 0)
+        }
         let startFrame = Int64((playhead * EngineFormat.sampleRate).rounded())
         let scratch = store.recordingTempURL(project: project.id)
 
@@ -461,8 +469,18 @@ final class ProjectViewModel {
     // MARK: Tracks
 
     func arm(_ index: Int) {
-        guard !isRecording else { return }
+        guard !isRecording, index < project.visibleTrackCount else { return }
         armedTrack = index
+    }
+
+    /// Reveals the next lane, arms it and rewinds, so the new part is laid
+    /// down from the top of the song.
+    func addTrack() {
+        guard !isRecording, project.visibleTrackCount < Project.trackCount else { return }
+        project.visibleTrackCount += 1
+        armedTrack = project.visibleTrackCount - 1
+        seek(to: 0)
+        scheduleSave()
     }
 
     func rename(track index: Int, to name: String) {

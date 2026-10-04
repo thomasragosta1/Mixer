@@ -112,6 +112,24 @@ final class ProjectStoreTests: XCTestCase {
         XCTAssertFalse(FileManager.default.fileExists(atPath: junk.path))
     }
 
+    func testVisibleTrackCount() throws {
+        var p = try store.create()
+        XCTAssertEqual(p.visibleTrackCount, 1)
+        p.visibleTrackCount = 3
+        try store.save(p)
+        XCTAssertEqual(try store.load(id: p.id).visibleTrackCount, 3)
+
+        // Older projects without the field show every lane that has audio.
+        var old = Project(name: "Old")
+        old.tracks[2].audioFileName = "track3.caf"
+        old.visibleTrackCount = 1
+        old.normalizeTracks()
+        XCTAssertEqual(old.visibleTrackCount, 3)
+        old.visibleTrackCount = 9
+        old.normalizeTracks()
+        XCTAssertEqual(old.visibleTrackCount, 4)
+    }
+
     func testSoloAndMuteAudibility() {
         var p = Project(name: "x")
         XCTAssertTrue((0..<4).allSatisfy { p.isAudible($0) })

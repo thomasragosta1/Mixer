@@ -41,6 +41,9 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 
 ## UI
 
+- **Tracks are revealed one at a time (owner request).** A new project shows one lane. A dashed **+** under the last lane reveals the next, up to four. Adding a lane arms it and rewinds to 0:00. The data model still holds four tracks; `Project.visibleTrackCount` controls how many lanes show, and a lane with audio is never hidden.
+- **A new track always starts at 0:00 (owner request).** Recording onto an empty track rewinds to the start first. Once a track has a take, overwrite-anywhere from the playhead applies as in the spec.
+
 - **Scrolling waveform with a fixed center playhead** (like Voice Memos' editor), shared across the four lanes. Dragging horizontally anywhere on the lanes scrubs; tapping a lane arms it.
 - **Mix strips scroll vertically.** Seven vertical sliders plus a fader don't fit an iPhone screen, so the four strips sit in one vertical scroll view. Slider drags take priority over scrolling; drag the labels to scroll.
 - **"Custom" macros.** Editing a section in Developer Mode stores an override. The macro then shows "Custom" (dimmed fill) while the override differs from its curve. Moving the macro slider again drops that section's override (the macro takes back control). "Reset to Macros" clears all of them.

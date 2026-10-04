@@ -104,33 +104,44 @@ struct ProjectView: View {
 
     // MARK: Lanes
 
+    /// Lanes are sized as if all four were showing, so adding a track never
+    /// resizes the ones already there.
     private var lanes: some View {
         GeometryReader { geo in
-            let laneHeight = max(64, (geo.size.height - 24 - 3 * 8) / 4)
-            ZStack {
-                VStack(spacing: 8) {
-                    ForEach(0..<Project.trackCount, id: \.self) { i in
-                        TrackRowView(model: model, index: i)
-                            .frame(height: laneHeight)
-                    }
+            let spacing: CGFloat = 8
+            let laneHeight = max(64, (geo.size.height - 24 - 3 * spacing) / 4)
+            let count = model.visibleTrackCount
+            let lanesHeight = CGFloat(count) * laneHeight + CGFloat(count - 1) * spacing
+            VStack(spacing: spacing) {
+                ForEach(0..<count, id: \.self) { i in
+                    TrackRowView(model: model, index: i)
+                        .frame(height: laneHeight)
                 }
-                .padding(.horizontal, 12)
-                .padding(.vertical, 12)
-                playheadLine(in: geo.size)
+                if count < Project.trackCount {
+                    AddTrackButton(nextNumber: count + 1) { model.addTrack() }
+                        .disabled(model.isRecording || model.isSaving)
+                }
+                Spacer(minLength: 0)
+            }
+            .padding(.horizontal, 12)
+            .padding(.vertical, 12)
+            .overlay(alignment: .topLeading) {
+                playheadLine(width: geo.size.width, height: lanesHeight)
             }
             .contentShape(Rectangle())
             .gesture(scrubGesture)
+            .animation(.spring(response: 0.35, dampingFraction: 0.85), value: count)
         }
     }
 
-    /// Shared playhead across all four lanes, at the center of the waveform area.
-    private func playheadLine(in size: CGSize) -> some View {
+    /// Shared playhead across the visible lanes, at the center of the waveform area.
+    private func playheadLine(width: CGFloat, height: CGFloat) -> some View {
         let waveformLeading: CGFloat = 12 + 12 + 104
-        let x = waveformLeading + (size.width - waveformLeading - 12) / 2
+        let x = waveformLeading + (width - waveformLeading - 12) / 2
         return Rectangle()
             .fill(model.isRecording ? Color.red : Color.accentColor)
-            .frame(width: 2, height: size.height - 16)
-            .position(x: x, y: size.height / 2)
+            .frame(width: 2, height: height)
+            .offset(x: x - 1, y: 12)
             .allowsHitTesting(false)
             .accessibilityHidden(true)
     }
@@ -223,6 +234,28 @@ struct ProjectView: View {
             .disabled(model.isRecording)
             .accessibilityLabel("More")
         }
+    }
+}
+
+/// The "+" under the last lane that reveals the next track.
+struct AddTrackButton: View {
+    let nextNumber: Int
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Image(systemName: "plus")
+                .font(.title3.weight(.semibold))
+                .frame(maxWidth: .infinity, minHeight: 52)
+                .background(
+                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                        .strokeBorder(Color.secondary.opacity(0.35), style: StrokeStyle(lineWidth: 1.5, dash: [6, 5]))
+                )
+                .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .foregroundStyle(Color.accentColor)
+        .accessibilityLabel("Add Track \(nextNumber)")
     }
 }
 

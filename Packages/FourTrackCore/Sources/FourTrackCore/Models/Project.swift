@@ -17,6 +17,9 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     public var masterVolume: Double
     /// Developer Mode metronome settings.
     public var metronome: MetronomeSettings
+    /// How many lanes the project shows (1...4). New projects start with one;
+    /// the "+" under the last lane reveals the next.
+    public var visibleTrackCount: Int
 
     public init(
         id: UUID = UUID(),
@@ -27,7 +30,8 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         playheadSeconds: Double = 0,
         tracks: [Track]? = nil,
         masterVolume: Double = MacroCurves.volumeUnitySlider,
-        metronome: MetronomeSettings = MetronomeSettings()
+        metronome: MetronomeSettings = MetronomeSettings(),
+        visibleTrackCount: Int = 1
     ) {
         self.id = id
         self.name = name
@@ -38,6 +42,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         self.tracks = tracks ?? (0..<Project.trackCount).map { Track(index: $0) }
         self.masterVolume = masterVolume
         self.metronome = metronome
+        self.visibleTrackCount = visibleTrackCount
         normalizeTracks()
     }
 
@@ -52,6 +57,9 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
             }
         }
         tracks = fixed
+        // Never hide a track that has audio.
+        let lastRecorded = (tracks.lastIndex { !$0.isEmpty } ?? -1) + 1
+        visibleTrackCount = min(Project.trackCount, max(1, visibleTrackCount, lastRecorded))
     }
 
     public var isAnySoloed: Bool { tracks.contains { $0.solo } }
@@ -65,7 +73,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome
+        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount
     }
 
     public init(from decoder: Decoder) throws {
@@ -79,6 +87,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         tracks = try c.decodeIfPresent([Track].self, forKey: .tracks) ?? []
         masterVolume = try c.decodeIfPresent(Double.self, forKey: .masterVolume) ?? MacroCurves.volumeUnitySlider
         metronome = try c.decodeIfPresent(MetronomeSettings.self, forKey: .metronome) ?? MetronomeSettings()
+        visibleTrackCount = try c.decodeIfPresent(Int.self, forKey: .visibleTrackCount) ?? 1
         normalizeTracks()
     }
 }

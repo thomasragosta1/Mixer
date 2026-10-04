@@ -9,12 +9,12 @@ struct MixView: View {
 
     var body: some View {
         GeometryReader { geo in
-            let columns = Project.trackCount + (model.developerMode ? 1 : 0)
+            let columns = model.visibleTrackCount + (model.developerMode ? 1 : 0)
             let spacing: CGFloat = 6
-            let width = (geo.size.width - 16 - spacing * CGFloat(columns - 1)) / CGFloat(columns)
+            let width = min(120, (geo.size.width - 16 - spacing * CGFloat(columns - 1)) / CGFloat(columns))
             ScrollView(.vertical) {
                 HStack(alignment: .top, spacing: spacing) {
-                    ForEach(0..<Project.trackCount, id: \.self) { i in
+                    ForEach(0..<model.visibleTrackCount, id: \.self) { i in
                         ChannelStripView(model: model, index: i) {
                             detailTrack = i
                         }
@@ -27,6 +27,7 @@ struct MixView: View {
                 }
                 .padding(.horizontal, 8)
                 .padding(.vertical, 10)
+                .frame(maxWidth: .infinity)
             }
         }
         .sheet(item: Binding(

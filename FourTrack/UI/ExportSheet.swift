@@ -21,7 +21,7 @@ struct ExportSheet: View {
                     }
                 } else if choosingTrack {
                     Section("Choose a Track") {
-                        ForEach(model.project.tracks) { track in
+                        ForEach(model.project.tracks.prefix(model.visibleTrackCount)) { track in
                             Button {
                                 start(.track(track.index))
                             } label: {
