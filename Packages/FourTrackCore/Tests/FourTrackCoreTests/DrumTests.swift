@@ -22,6 +22,17 @@ final class DrumTests: XCTestCase {
         }
     }
 
+    func testPadLayoutUsesEveryPadOnceWithGrooveOnTheBottomRow() {
+        for kit in DrumKit.allCases {
+            let flat = kit.padLayout.flatMap { $0 }
+            XCTAssertEqual(flat.sorted(), Array(0..<DrumKit.padCount), "\(kit)")
+            XCTAssertEqual(kit.padLayout.count, 2)
+            let bottom = kit.padLayout[1]
+            XCTAssertEqual(kit.family(of: bottom[0]), .kick, "\(kit) kick bottom-left")
+            XCTAssertEqual(kit.family(of: bottom[1]), .snare, "\(kit) snare next to kick")
+        }
+    }
+
     func testKitsSoundDifferent() {
         // Same pad slot across kits must not be near-identical.
         for pad in 0..<DrumKit.padCount {

@@ -36,6 +36,32 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
         }
     }
 
+    /// What a pad is, so the UI can colour pads by family.
+    public enum PadFamily: Sendable { case kick, snare, hat, tom, cymbal, accent }
+
+    public func family(of pad: Int) -> PadFamily {
+        switch self {
+        case .studio: return [.kick, .snare, .hat, .hat, .tom, .tom, .cymbal, .cymbal][pad]
+        case .eightOhEight: return [.kick, .snare, .snare, .hat, .hat, .accent, .accent, .tom][pad]
+        case .handPercussion: return [.kick, .snare, .tom, .tom, .tom, .hat, .hat, .accent][pad]
+        }
+    }
+
+    /// Where each sound sits on the 4 x 2 pad grid, rows top to bottom.
+    /// Same idea in every kit, like a finger-drumming pad: the groove (kick,
+    /// snare, hats) is the bottom row under the thumbs, kick bottom-left;
+    /// toms and cymbals/colour sounds sit above, low on the left, high on the right.
+    public var padLayout: [[Int]] {
+        switch self {
+        // Bottom: Kick, Snare, Closed Hat, Open Hat. Top: High Tom, Low Tom, Ride, Crash.
+        case .studio: return [[5, 4, 6, 7], [0, 1, 2, 3]]
+        // Bottom: Kick, Snare, Closed Hat, Open Hat. Top: Tom, Rim, Clap, Cowbell.
+        case .eightOhEight: return [[7, 6, 2, 5], [0, 1, 3, 4]]
+        // Bottom: Cajón, Slap, Shaker, Tambourine. Top: Conga, Bongo Low, Bongo High, Woodblock.
+        case .handPercussion: return [[4, 2, 3, 7], [0, 1, 5, 6]]
+        }
+    }
+
     /// Number of alternate takes per pad.
     public var variantCount: Int {
         switch self {

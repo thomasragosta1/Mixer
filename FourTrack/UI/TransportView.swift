@@ -91,20 +91,28 @@ struct TransportView: View {
 /// rounded square while recording.
 struct RecordButton: View {
     let isRecording: Bool
+    var size: CGFloat = 80
     let action: () -> Void
+
+    init(isRecording: Bool, size: CGFloat = 80, action: @escaping () -> Void) {
+        self.isRecording = isRecording
+        self.size = size
+        self.action = action
+    }
 
     var body: some View {
         Button(action: action) {
+            let k = size / 80
             ZStack {
                 Circle()
-                    .strokeBorder(Color(uiColor: .systemGray3), lineWidth: 4)
-                    .frame(width: 72, height: 72)
-                RoundedRectangle(cornerRadius: isRecording ? 8 : 29, style: .continuous)
+                    .strokeBorder(Color(uiColor: .systemGray3), lineWidth: 4 * k)
+                    .frame(width: 72 * k, height: 72 * k)
+                RoundedRectangle(cornerRadius: isRecording ? 8 * k : 29 * k, style: .continuous)
                     .fill(Color.red)
-                    .frame(width: isRecording ? 30 : 58, height: isRecording ? 30 : 58)
+                    .frame(width: (isRecording ? 30 : 58) * k, height: (isRecording ? 30 : 58) * k)
                     .animation(.spring(response: 0.3, dampingFraction: 0.8), value: isRecording)
             }
-            .frame(width: 80, height: 80)
+            .frame(width: size, height: size)
             .contentShape(Circle())
         }
         .buttonStyle(.plain)

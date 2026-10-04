@@ -43,9 +43,14 @@ struct ProjectView: View {
 
             if model.mixMode {
                 MixView(model: model)
+            } else if model.isDrumArmed {
+                // Drum layout: slim lanes, big pads, one-row transport.
+                DrumStudioView(model: model) { pendingTrackDelete = $0 }
+                    .transition(.opacity)
             } else {
                 lanes
                     .zIndex(laneDrag != nil ? 1 : 0)
+                    .transition(.opacity)
             }
             if !model.mixMode, let offer = model.cleanupOffer {
                 CleanupBanner(trackName: model.project.tracks[offer].name) {
@@ -55,11 +60,7 @@ struct ProjectView: View {
                 }
                 .transition(.move(edge: .bottom).combined(with: .opacity))
             }
-            if !model.mixMode && model.isDrumArmed {
-                DrumPadPanel(model: model)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
-            }
-            if !model.mixMode {
+            if !model.mixMode && !model.isDrumArmed {
                 TransportView(model: model)
                     .padding(.vertical, 4)
                     .glassPanel()
@@ -389,7 +390,14 @@ struct TrackBinDropZone: View {
 /// The "+" under the last lane. Tapping it asks for the kind of track.
 struct AddTrackButton: View {
     let nextNumber: Int
+    var height: CGFloat = 52
     let action: (TrackKind) -> Void
+
+    init(nextNumber: Int, height: CGFloat = 52, action: @escaping (TrackKind) -> Void) {
+        self.nextNumber = nextNumber
+        self.height = height
+        self.action = action
+    }
 
     var body: some View {
         Menu {
@@ -406,7 +414,7 @@ struct AddTrackButton: View {
         } label: {
             Image(systemName: "plus")
                 .font(.title3.weight(.semibold))
-                .frame(maxWidth: .infinity, minHeight: 52)
+                .frame(maxWidth: .infinity, minHeight: height)
                 .background(
                     RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
                         .strokeBorder(Color.secondary.opacity(0.35), style: StrokeStyle(lineWidth: 1.5, dash: [6, 5]))

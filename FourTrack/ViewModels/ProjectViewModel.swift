@@ -884,7 +884,9 @@ final class ProjectViewModel {
     }
 
     private var metronomeIfEnabled: MetronomeSettings? {
-        settings.developerMode && project.metronome.enabled ? project.metronome : nil
+        // The click is a Developer Mode tool, except on drum tracks where it's
+        // a core part of recording and sits right in the drum transport.
+        (settings.developerMode || isDrumArmed) && project.metronome.enabled ? project.metronome : nil
     }
 
     private var warmthActive: Bool { settings.developerMode && settings.warmthEnabled }
