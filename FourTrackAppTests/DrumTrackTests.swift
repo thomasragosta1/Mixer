@@ -133,8 +133,11 @@ final class DrumTrackTests: XCTestCase {
         XCTAssertFalse(model.project.tracks[0].mute)
         XCTAssertFalse(model.canUndo)
 
-        model.redo(); model.redo(); model.redo()
+        model.redo()
         XCTAssertTrue(model.project.tracks[0].mute)
+        model.redo()
+        XCTAssertEqual(model.project.tracks[0].volume, 0.4, accuracy: 1e-9)
+        model.redo()              // the delete again (it clears the slot)
         XCTAssertNil(model.project.tracks[0].audioFileName)
         XCTAssertFalse(FileManager.default.fileExists(atPath: url.path))
         model.undo()

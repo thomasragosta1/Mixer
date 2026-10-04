@@ -406,6 +406,9 @@ enum Haptics {
     static let lift = UIImpactFeedbackGenerator(style: .medium)
     static let bin = UIImpactFeedbackGenerator(style: .heavy)
     static let slot = UISelectionFeedbackGenerator()
+
+    /// The little buzz for every press-and-hold in the app.
+    static func hold() { lift.impactOccurred() }
 }
 
 /// Bin that rises from the bottom while a lane is held; drop a lane on it to delete.

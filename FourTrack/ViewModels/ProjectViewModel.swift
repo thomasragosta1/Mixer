@@ -415,10 +415,10 @@ final class ProjectViewModel {
             saveNow()
             engine.load(project: project, store: store)
             applyAll()
+            // Clean Up re-renders a new take if it's on. No "Clean up this take?" prompt:
+            // the Clean Up pill is right there on the track.
             if track.cleanup > 0 {
                 runCleanup(index)
-            } else if route == .speaker {
-                cleanupOffer = index
             }
         case .failure(let error):
             // The scratch file and marker stay on disk; recovery retries on next open.
@@ -1038,28 +1038,32 @@ final class ProjectViewModel {
         let after = project.metronome
         scheduleSave()
         if isPreviewingClick {
-            // Turning the metronome off ends the preview; anything else restarts it with the change.
-            if after.mode == .off && before.mode != .off { stopClickPreview() } else { restartClickPreview() }
+            // Turning the metronome off ends the preview; anything else applies live.
+            if after.mode == .off && before.mode != .off {
+                stopClickPreview()
+            } else {
+                engine.metronome.update(settings: previewSettings)
+            }
             return
         }
-        // Volume, the tempo step, or On <-> visual-only only change how loud the
-        // click is: no need to restart playback.
-        var gainOnly = before
-        gainOnly.volume = after.volume
-        gainOnly.tempoStep = after.tempoStep
-        gainOnly.countInBars = after.countInBars
-        if before.enabled && after.enabled { gainOnly.mode = after.mode }
-        if gainOnly == after {
-            engine.metronome.player.volume = Float(clickGain)
-            return
-        }
-        if isPlaying {
-            // Restart so the click picks up the new tempo or bar in time with the tracks.
+        guard isPlaying else { return }
+        if before.enabled && after.enabled, let live = metronomeIfEnabled {
+            // Tempo, time signature, volume, Click <-> Silent: change while it keeps
+            // going. The beat carries on from where it is, just faster or slower.
+            engine.metronome.update(settings: live)
+        } else {
+            // Turned on or off mid-song: start or stop the click in time with the tracks.
             let position = engine.pause()
             playhead = position
             try? engine.play(from: position, metronome: metronomeIfEnabled)
             syncClock()
         }
+    }
+
+    /// Where the click's beat grid is anchored (moves when the tempo changes
+    /// while it plays), for the beat lights.
+    var beatAnchor: (seconds: Double, beat: Double) {
+        (Double(engine.metronome.anchorFrame) / EngineFormat.sampleRate, engine.metronome.anchorBeat)
     }
 
     // MARK: Click preview
@@ -1070,13 +1074,18 @@ final class ProjectViewModel {
         if isPreviewingClick { stopClickPreview() } else { startClickPreview() }
     }
 
-    private func startClickPreview() {
-        guard !isPlaying, !isRecording, !isSaving else { return }
+    /// The preview clicks even if the metronome is Off; Silent stays silent.
+    private var previewSettings: MetronomeSettings {
         var s = project.metronome
         if s.mode == .off { s.mode = .on }
         if s.mode == .visual { s.volume = 0 }
+        return s
+    }
+
+    private func startClickPreview() {
+        guard !isPlaying, !isRecording, !isSaving else { return }
         do {
-            let firstClickHost = try engine.startClickPreview(settings: s)
+            let firstClickHost = try engine.startClickPreview(settings: previewSettings)
             let nowHost = AVAudioTime.seconds(forHostTime: mach_absolute_time())
             previewClock = PlayheadClock(seconds: 0, date: Date().addingTimeInterval(firstClickHost - nowHost), running: true)
             isPreviewingClick = true
@@ -1115,33 +1124,7 @@ final class ProjectViewModel {
     /// Arrow taps move by the project's tempo step; holding moves by 1 BPM.
     func nudgeTempo(_ direction: Int, fine: Bool) {
         let delta = Double(direction) * (fine ? 1 : project.metronome.tempoStep)
-        guard (isPlaying && project.metronome.enabled) || isPreviewingClick else {
-            setMetronome { $0.nudgeTempo(by: delta) }
-            return
-        }
-        // While playing, holding an arrow fires many small changes: show them at
-        // once, but restart the click only once the tempo settles.
-        checkpoint("Tempo", key: "metronome")
-        project.metronome.nudgeTempo(by: delta)
-        scheduleSave()
-        tempoRestartTask?.cancel()
-        tempoRestartTask = Task { [weak self] in
-            try? await Task.sleep(nanoseconds: 350_000_000)
-            guard !Task.isCancelled, let self else { return }
-            if self.isPreviewingClick {
-                self.restartClickPreview()
-                return
-            }
-            guard self.isPlaying else { return }
-            let position = self.engine.pause()
-            self.playhead = position
-            try? self.engine.play(from: position, metronome: self.metronomeIfEnabled)
-            self.syncClock()
-        }
-    }
-
-    private var clickGain: Double {
-        project.metronome.mode == .on ? MacroCurves.metronomeGain(project.metronome.volume) : 0
+        setMetronome { $0.nudgeTempo(by: delta) }
     }
 
     /// What the engine plays: nothing when off; a silent click when visual-only,

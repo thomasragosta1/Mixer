@@ -131,6 +131,7 @@ struct QuantizeChip: View {
             UISelectionFeedbackGenerator().selectionChanged()
         }
         .buttonStyle(.plain)
+        .simultaneousGesture(LongPressGesture(minimumDuration: 0.35).onEnded { _ in Haptics.hold() })
         .disabled(model.isRecording || model.isSaving)
         .animation(.easeOut(duration: 0.15), value: q.enabled)
         .accessibilityLabel("Quantize")
@@ -352,6 +353,7 @@ struct CompactLaneList: View {
         )
         .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
         .onTapGesture { model.arm(i) }
+        .simultaneousGesture(LongPressGesture(minimumDuration: 0.4).onEnded { _ in Haptics.hold() })
         .contextMenu {
             if !model.isRecording {
                 Button(role: .destructive) {

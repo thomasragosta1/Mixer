@@ -124,6 +124,7 @@ struct ProjectsListView: View {
                         .contentShape(Rectangle())
                         .onTapGesture { path.append(.project(project.id, record: false)) }
                         .onLongPressGesture {
+                            Haptics.hold()
                             draftName = project.name
                             renaming = project
                         }

@@ -44,6 +44,7 @@ struct MetronomeBar: View {
                 BeatLights(
                     metronome: m,
                     clock: model.isPreviewingClick ? model.previewClock : model.clock,
+                    anchor: { model.beatAnchor },
                     emphasized: m.mode == .visual
                 )
                 .frame(maxWidth: 64)
@@ -136,6 +137,7 @@ struct MetronomeBar: View {
             UISelectionFeedbackGenerator().selectionChanged()
         }
         .buttonStyle(.plain)
+        .simultaneousGesture(LongPressGesture(minimumDuration: 0.35).onEnded { _ in Haptics.hold() })
         .accessibilityLabel("Time signature")
         .accessibilityValue(m.timeSignature.label)
         .accessibilityHint("Tap to cycle 4/4, 3/4 and 2/4. Press and hold for more.")
@@ -168,6 +170,7 @@ struct TempoArrow: View {
                         didRepeat = false
                         holdTask = Task { @MainActor in
                             try? await Task.sleep(nanoseconds: 400_000_000)
+                            if !Task.isCancelled { UIImpactFeedbackGenerator(style: .medium).impactOccurred() }
                             var interval: UInt64 = 150_000_000
                             while !Task.isCancelled {
                                 didRepeat = true
@@ -199,14 +202,20 @@ struct TempoArrow: View {
 struct BeatLights: View {
     let metronome: MetronomeSettings
     let clock: PlayheadClock
+    /// The click's current grid anchor (it moves when the tempo changes mid-play).
+    var anchor: () -> (seconds: Double, beat: Double) = { (0, 0) }
     /// Bigger lights when the metronome is silent and the lights are the only cue.
     var emphasized = false
 
     var body: some View {
         TimelineView(.animation(minimumInterval: 1.0 / 60, paused: !clock.running)) { context in
             let position = clock.rawPosition(at: context.date)
-            let beat = metronome.beatInBar(at: position)
-            let phase = metronome.beatPhase(at: position)
+            let a = anchor()
+            let beats = a.beat + (position - a.seconds) * metronome.bpm / 60
+            let whole = beats.rounded(.down)
+            let n = Double(max(1, metronome.beatsPerBar))
+            let beat = Int((whole.truncatingRemainder(dividingBy: n) + n).truncatingRemainder(dividingBy: n))
+            let phase = beats - whole
             let count = max(1, metronome.beatsPerBar)
             let size: CGFloat = count > 6 ? 4 : (count > 4 ? 6 : (emphasized ? 10 : 8))
             HStack(spacing: count > 6 ? 1.5 : 4) {

@@ -78,6 +78,10 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - Undo and redo wait while recording, saving or a Cleanup render is running. The history lasts while the project is open and is deleted when it closes (or on next open after a crash). Undo never brings a project back out of Recently Deleted.
 - Not covered: the projects list (deleting projects already goes through the bin), and app-wide Settings like Developer Mode.
 
+## Haptics
+
+- **Every press-and-hold gives a light buzz (owner request):** lifting a track to drag it, holding a drum pad, the slim drum-screen lanes, holding a tempo arrow (when repeats start), the time signature and Q hold menus, and renaming a project from the list.
+
 ## Sliders
 
 - **Sliders only move for drags along their axis (owner request).** A vertical swipe that starts on a horizontal slider scrolls the page and leaves the value alone. Implemented with a UIKit pan recognizer that only begins when movement follows the slider's axis, and makes the enclosing scroll views (the mixer page and the track pager) wait for it to fail.
@@ -108,7 +112,7 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Blend model.** The offline pass renders one full-strength copy (denoise, then de-ess, then a tail suppressor for de-reverb), time-aligned with the original. RNNoise's one-frame delay is removed. The slider is a linear crossfade between the original and that render, using two player nodes per track, so slider moves are instant and non-destructive. Simplification vs. §5: de-ess and de-reverb are part of the render rather than "scaling in above 0.5"; they arrive proportionally with the blend. Revisit if it sounds wrong on guitar.
 - About 5% of the original is kept under the denoised signal so the 100% position never sounds hollow.
 - **De-reverb** is an in-house downward expander (`TailSuppressor`) that pulls down decaying room tails between phrases. It is not a true dereverberation model.
-- **Cleanup defaults to 0 on every track.** The "Clean up this take?" banner appears only for takes recorded on the built-in speaker route. Accepting it sets the slider to 60%.
+- **Cleanup defaults to 0 on every track.** There is no "Clean up this take?" prompt after recording (owner request: it appeared after every speaker-route take); the Clean Up pill on each track does the job. A track with Clean Up on re-renders new takes automatically.
 
 ## UI
 
@@ -128,6 +132,7 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Metronome for everyone (owner request), one row in the transport** (and on top of the drum transport):
   - **Mode button:** tap cycles **Click** (audible) → **Silent** (no sound, the beat lights still pulse; bigger lights) → **Off**. Silent mode runs the same click track at zero volume, so count-in and timing are identical.
   - **Time signature:** tap cycles 4/4 → 3/4 → 2/4; press and hold for 5/4, 6/4, 6/8, 7/8, 9/8, 12/8. In x/8 meters the BPM counts eighth notes.
+  - **Changes never restart the click (owner request).** Tempo, time signature, volume and Click/Silent apply while it keeps playing: the click carries on from the beat it's on and just speeds up or slows down, within about 0.4 s (it's rendered in 0.2 s chunks). The beat lights follow the moved grid. Only turning the metronome on or off mid-song restarts it, to line it up with the tracks; the next play starts again on the timeline-0 grid.
   - **Tempo:** starts at **120 BPM** (the usual DAW default). ‹ › change it by the project's step (10 BPM by default); press and hold an arrow for 1 BPM steps that speed up the longer you hold. While playing, the click restarts once the tempo settles rather than on every step.
   - **Play button for the click alone (owner request),** next to the tempo arrows: plays the metronome by itself from beat 1 to try a tempo (audible even if the metronome is Off; lights only in Silent). Tempo, signature and mode changes apply live; it stops when the song plays or records, and is disabled while the song plays.
   - **Beat lights:** one dot per beat, the current one pulses (downbeat in red), including during a count-in.
