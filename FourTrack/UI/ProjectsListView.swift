@@ -45,13 +45,20 @@ struct ProjectsListView: View {
             .navigationTitle("All Projects")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
-                ToolbarItem(placement: .topBarLeading) {
+                ToolbarItemGroup(placement: .topBarLeading) {
                     Button {
                         showingSettings = true
                     } label: {
                         Image(systemName: "gear")
                     }
                     .accessibilityLabel("Settings")
+                    Button {
+                        path.append(.bin)
+                    } label: {
+                        Image(systemName: "trash")
+                    }
+                    .accessibilityLabel("Recently Deleted")
+                    .accessibilityValue(model.binCount == 0 ? "Empty" : "\(model.binCount) projects")
                 }
             }
             .navigationDestination(for: Route.self) { route in
@@ -101,7 +108,7 @@ struct ProjectsListView: View {
 
     @ViewBuilder
     private var list: some View {
-        if model.projects.isEmpty && model.binCount == 0 {
+        if model.projects.isEmpty {
             ContentUnavailableView {
                 Label("No Projects", systemImage: "waveform")
             } description: {
@@ -135,24 +142,6 @@ struct ProjectsListView: View {
                             renaming = project
                         }
                         .accessibilityAction(named: "Delete") { model.delete(project) }
-                }
-                if model.binCount > 0 {
-                    Button {
-                        path.append(.bin)
-                    } label: {
-                        HStack {
-                            Label("Recently Deleted", systemImage: "trash")
-                            Spacer()
-                            Text("\(model.binCount)")
-                                .foregroundStyle(.secondary)
-                            Image(systemName: "chevron.right")
-                                .font(.footnote.weight(.semibold))
-                                .foregroundStyle(.tertiary)
-                        }
-                        .padding(.vertical, 6)
-                        .contentShape(Rectangle())
-                    }
-                    .buttonStyle(.plain)
                 }
             }
             .listStyle(.plain)

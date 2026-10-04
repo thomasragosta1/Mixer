@@ -22,6 +22,7 @@
 		6BCC66B84969BBEFBE39B89D /* CompressorAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */; };
 		719E4F4E98B4EF8C7C8249B6 /* VoiceIsolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C33C5D0807D6485D8E215E /* VoiceIsolation.swift */; };
 		7BFDC84C28A75873EED073F6 /* BinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4C9D955D96787E81A4BE5 /* BinView.swift */; };
+		85E4177A1A68A96E60CA5854 /* TrackBinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853BB5BA068D6604EFCB8CC9 /* TrackBinView.swift */; };
 		88AD950E9257B5F935E2CDAB /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */; };
 		8ABE8AF50AE165BAC274A0D9 /* LatencyCalibrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A846F4359940E981658B8FC /* LatencyCalibrator.swift */; };
 		8B657B4AA343DFE41453610C /* ProjectsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1FBB08FE5E09F2A10CCD01 /* ProjectsListView.swift */; };
@@ -64,6 +65,7 @@
 		741F2254BE2578A39C560A83 /* MixerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerEngine.swift; sourceTree = "<group>"; };
 		79C33C5D0807D6485D8E215E /* VoiceIsolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceIsolation.swift; sourceTree = "<group>"; };
 		84E4C9D955D96787E81A4BE5 /* BinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinView.swift; sourceTree = "<group>"; };
+		853BB5BA068D6604EFCB8CC9 /* TrackBinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBinView.swift; sourceTree = "<group>"; };
 		8A846F4359940E981658B8FC /* LatencyCalibrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyCalibrator.swift; sourceTree = "<group>"; };
 		8AFEE72C12248DA0E64BDBB2 /* Recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 		998B47BE11791464A7FE1DA2 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */,
 				FEE76619988302B1526D9301 /* SliderCore.swift */,
 				55B6CA0B0541E1048FE62C79 /* Theme.swift */,
+				853BB5BA068D6604EFCB8CC9 /* TrackBinView.swift */,
 				9B72403350D7930C64EB602B /* TrackRowView.swift */,
 				1F30AF566B98693F94AB8FE8 /* TransportView.swift */,
 				1C5454E139B97093DB44AF1F /* VolumeFader.swift */,
@@ -310,6 +313,7 @@
 				5AAB0FF58C74595719931AEC /* SettingsView.swift in Sources */,
 				E33896CC91297AB3EFBC9A8B /* SliderCore.swift in Sources */,
 				D5206B937C2826C4CC9E0959 /* Theme.swift in Sources */,
+				85E4177A1A68A96E60CA5854 /* TrackBinView.swift in Sources */,
 				B3A5C9B2D345A3BE9C5BD88D /* TrackChain.swift in Sources */,
 				A9312C5B7AD8221DF79667AE /* TrackRowView.swift in Sources */,
 				36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */,

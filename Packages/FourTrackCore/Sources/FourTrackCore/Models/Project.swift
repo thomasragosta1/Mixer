@@ -25,6 +25,9 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     /// Top-to-bottom display order of the tracks (a permutation of 0...3).
     /// Track indices (and their audio files) never change; only the order does.
     public var laneOrder: [Int]
+    /// The project's own "Recently Deleted": tracks removed from the lanes,
+    /// newest last, with their audio kept until deleted for good.
+    public var deletedTracks: [DeletedTrack]
 
     /// Track indices of the lanes on screen, top to bottom.
     public var visibleLanes: [Int] { Array(laneOrder.prefix(visibleTrackCount)) }
@@ -63,7 +66,46 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         self.visibleTrackCount = visibleTrackCount
         self.deletedAt = nil
         self.laneOrder = Array(0..<Project.trackCount)
+        self.deletedTracks = []
         normalizeTracks()
+    }
+
+    /// Clears a lane's slot and takes it off screen. The remaining lanes keep
+    /// their order; the freed slot goes after them, ready for "+".
+    public mutating func removeLane(_ index: Int) {
+        let visible = visibleLanes.filter { $0 != index }
+        let hidden = laneOrder.filter { $0 != index && !visible.contains($0) }
+        tracks[index] = Track(index: index)
+        if visible.isEmpty {
+            // Always keep one lane on screen.
+            laneOrder = [index] + hidden
+            visibleTrackCount = 1
+        } else {
+            laneOrder = visible + [index] + hidden
+            visibleTrackCount = visible.count
+        }
+    }
+
+    /// Slot a recovered track can go into: an empty lane on screen first,
+    /// then the next hidden one. nil when all four lanes hold audio.
+    public func freeSlotForRecovery() -> Int? {
+        if let empty = visibleLanes.first(where: { tracks[$0].isEmpty && tracks[$0].drumHits.isEmpty }) {
+            return empty
+        }
+        guard visibleTrackCount < Project.trackCount else { return nil }
+        return laneOrder[visibleTrackCount]
+    }
+
+    /// Puts a track into `slot` and makes sure its lane is on screen.
+    public mutating func placeRecovered(_ track: Track, in slot: Int) {
+        var t = track
+        t.index = slot
+        tracks[slot] = t
+        if !visibleLanes.contains(slot) {
+            let visible = visibleLanes
+            laneOrder = visible + [slot] + laneOrder.filter { $0 != slot && !visible.contains($0) }
+            visibleTrackCount = visible.count + 1
+        }
     }
 
     /// Guarantees exactly four tracks with indices 0...3, whatever was decoded.
@@ -97,7 +139,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount, deletedAt, laneOrder
+        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount, deletedAt, laneOrder, deletedTracks
     }
 
     public init(from decoder: Decoder) throws {
@@ -114,7 +156,22 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         visibleTrackCount = try c.decodeIfPresent(Int.self, forKey: .visibleTrackCount) ?? 1
         deletedAt = try c.decodeIfPresent(Date.self, forKey: .deletedAt)
         laneOrder = try c.decodeIfPresent([Int].self, forKey: .laneOrder) ?? Array(0..<Project.trackCount)
+        deletedTracks = try c.decodeIfPresent([DeletedTrack].self, forKey: .deletedTracks) ?? []
         normalizeTracks()
+    }
+}
+
+/// A track in a project's Recently Deleted. Its audio lives in the project
+/// folder under `deleted-<id>` file names until recovered or deleted for good.
+public struct DeletedTrack: Codable, Identifiable, Equatable, Sendable {
+    public var id: UUID
+    public var track: Track
+    public var deletedAt: Date
+
+    public init(id: UUID = UUID(), track: Track, deletedAt: Date = Date()) {
+        self.id = id
+        self.track = track
+        self.deletedAt = deletedAt
     }
 }
 

@@ -697,6 +697,65 @@ final class ProjectViewModel {
         scheduleSave()
     }
 
+    // MARK: Track bin
+
+    /// Moves a track to the project's Recently Deleted (after the user confirms).
+    func deleteTrack(_ index: Int) {
+        guard !isRecording, !isSaving else { return }
+        cleanupJobs[index]?.cancel()
+        takeGeneration[index] += 1
+        drumRenderGeneration[index] += 1
+        do {
+            try store.binTrack(&project, index: index)
+        } catch {
+            errorMessage = "The track couldn't be deleted. \(error.localizedDescription)"
+            return
+        }
+        afterTrackBinChange()
+    }
+
+    /// Puts a deleted track back into a free lane.
+    func recoverTrack(_ id: UUID) {
+        guard !isRecording, !isSaving else { return }
+        do {
+            let slot = try store.recoverTrack(&project, id: id)
+            takeGeneration[slot] += 1
+            drumRenderGeneration[slot] += 1
+            afterTrackBinChange()
+            armedTrack = slot
+            routePadsIfNeeded()
+        } catch ProjectStore.TrackBinError.noFreeLane {
+            errorMessage = "All four tracks are in use. Delete a track first, then recover this one."
+        } catch {
+            errorMessage = "The track couldn't be recovered. \(error.localizedDescription)"
+        }
+    }
+
+    func deleteTrackPermanently(_ id: UUID) {
+        store.deleteTrackPermanently(&project, id: id)
+        saveNow()
+    }
+
+    private func afterTrackBinChange() {
+        let wasPlaying = isPlaying
+        if wasPlaying { playhead = engine.pause() }
+        saveNow()
+        engine.load(project: project, store: store)
+        applyAll()
+        loadPeaks()
+        if !project.visibleLanes.contains(armedTrack) {
+            armedTrack = project.visibleLanes.first(where: { project.tracks[$0].isEmpty }) ?? project.visibleLanes.last ?? 0
+        }
+        routePadsIfNeeded()
+        playhead = min(playhead, project.durationSeconds)
+        if wasPlaying {
+            try? engine.play(from: playhead, metronome: metronomeIfEnabled)
+        } else {
+            engine.seek(to: playhead)
+        }
+        syncClock()
+    }
+
     func rename(track index: Int, to name: String) {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
         project.tracks[index].name = trimmed.isEmpty ? "Track \(index + 1)" : trimmed

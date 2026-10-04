@@ -127,6 +127,75 @@ public final class ProjectStore: @unchecked Sendable {
         }
     }
 
+    // MARK: Track bin
+
+    public enum TrackBinError: Error, Equatable {
+        case notFound
+        /// All four lanes already hold audio.
+        case noFreeLane
+    }
+
+    /// Moves a track's audio aside and its settings into the project's
+    /// Recently Deleted, then clears its lane. The caller saves the project.
+    public func binTrack(_ project: inout Project, index: Int, now: Date = Date()) throws {
+        let id = UUID()
+        var track = project.tracks[index]
+        let dir = directory(for: project.id)
+        func move(_ name: String?, to newName: String) throws -> String? {
+            guard let name else { return nil }
+            let from = dir.appendingPathComponent(name)
+            guard fm.fileExists(atPath: from.path) else { return nil }
+            try fm.moveItem(at: from, to: dir.appendingPathComponent(newName))
+            return newName
+        }
+        track.audioFileName = try move(track.audioFileName, to: "deleted-\(id.uuidString).caf")
+        track.cleanedFileName = try move(track.cleanedFileName, to: "deleted-\(id.uuidString).cleaned.caf")
+        try? fm.removeItem(at: peaksURL(project: project.id, track: index))
+        project.deletedTracks.append(DeletedTrack(id: id, track: track, deletedAt: now))
+        project.removeLane(index)
+        refreshDurations(&project)
+    }
+
+    /// Puts a deleted track back into a free lane; returns the lane's track index.
+    @discardableResult
+    public func recoverTrack(_ project: inout Project, id: UUID) throws -> Int {
+        guard let entry = project.deletedTracks.first(where: { $0.id == id }) else { throw TrackBinError.notFound }
+        guard let slot = project.freeSlotForRecovery() else { throw TrackBinError.noFreeLane }
+        var track = entry.track
+        let dir = directory(for: project.id)
+        // Clear whatever an empty slot may still have on disk.
+        for name in [ProjectStore.audioFileName(track: slot), ProjectStore.cleanedFileName(track: slot), ProjectStore.peaksFileName(track: slot)] {
+            try? fm.removeItem(at: dir.appendingPathComponent(name))
+        }
+        if let name = track.audioFileName {
+            let target = ProjectStore.audioFileName(track: slot)
+            try fm.moveItem(at: dir.appendingPathComponent(name), to: dir.appendingPathComponent(target))
+            track.audioFileName = target
+        }
+        if let name = track.cleanedFileName {
+            let target = ProjectStore.cleanedFileName(track: slot)
+            if (try? fm.moveItem(at: dir.appendingPathComponent(name), to: dir.appendingPathComponent(target))) != nil {
+                track.cleanedFileName = target
+            } else {
+                track.cleanedFileName = nil
+            }
+        }
+        project.deletedTracks.removeAll { $0.id == id }
+        project.placeRecovered(track, in: slot)
+        refreshDurations(&project)
+        return slot
+    }
+
+    /// Erases a deleted track's audio for good.
+    public func deleteTrackPermanently(_ project: inout Project, id: UUID) {
+        guard let entry = project.deletedTracks.first(where: { $0.id == id }) else { return }
+        let dir = directory(for: project.id)
+        for name in [entry.track.audioFileName, entry.track.cleanedFileName].compactMap({ $0 }) {
+            try? fm.removeItem(at: dir.appendingPathComponent(name))
+        }
+        project.deletedTracks.removeAll { $0.id == id }
+    }
+
     /// "New Project", "New Project 2", ... like Voice Memos' "New Recording N".
     public func nextDefaultName() -> String {
         let names = Set(loadEverything().filter { $0.deletedAt == nil }.map(\.name))

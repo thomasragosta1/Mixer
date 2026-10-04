@@ -15,8 +15,8 @@ struct BinView: View {
                 ContentUnavailableView("Nothing Deleted", systemImage: "trash", description: Text("Deleted projects stay here until you delete them for good."))
             } else {
                 List {
-                    Section {
-                        ForEach(model.binned) { project in
+                    ForEach(model.binned) { project in
+                        BinRow {
                             VStack(alignment: .leading, spacing: 4) {
                                 ProjectRow(project: project)
                                 if let deletedAt = project.deletedAt {
@@ -25,39 +25,12 @@ struct BinView: View {
                                         .foregroundStyle(.tertiary)
                                 }
                             }
-                            .swipeActions(edge: .leading, allowsFullSwipe: true) {
-                                Button {
-                                    model.recover(project)
-                                } label: {
-                                    Label("Recover", systemImage: "arrow.uturn.backward")
-                                }
-                                .tint(.blue)
-                            }
-                            .swipeActions(edge: .trailing, allowsFullSwipe: false) {
-                                Button(role: .destructive) {
-                                    pendingDelete = [project]
-                                } label: {
-                                    Label("Delete", systemImage: "trash")
-                                }
-                            }
-                            .contextMenu {
-                                Button {
-                                    model.recover(project)
-                                } label: {
-                                    Label("Recover", systemImage: "arrow.uturn.backward")
-                                }
-                                Button(role: .destructive) {
-                                    pendingDelete = [project]
-                                } label: {
-                                    Label("Delete Permanently", systemImage: "trash")
-                                }
-                            }
-                            .accessibilityElement(children: .combine)
-                            .accessibilityAction(named: "Recover") { model.recover(project) }
-                            .accessibilityAction(named: "Delete permanently") { pendingDelete = [project] }
+                        } onRecover: {
+                            model.recover(project)
+                            if model.binned.isEmpty { dismiss() }
+                        } onDelete: {
+                            pendingDelete = [project]
                         }
-                    } footer: {
-                        Text("Swipe right to recover, or left to delete permanently.")
                     }
                 }
                 .listStyle(.plain)
@@ -65,26 +38,6 @@ struct BinView: View {
         }
         .navigationTitle("Recently Deleted")
         .navigationBarTitleDisplayMode(.inline)
-        .toolbar {
-            if !model.binned.isEmpty {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Menu {
-                        Button {
-                            model.binned.forEach { model.recover($0) }
-                        } label: {
-                            Label("Recover All", systemImage: "arrow.uturn.backward")
-                        }
-                        Button(role: .destructive) {
-                            pendingDelete = model.binned
-                        } label: {
-                            Label("Delete All", systemImage: "trash")
-                        }
-                    } label: {
-                        Text("Edit")
-                    }
-                }
-            }
-        }
         .confirmationDialog(
             pendingDelete.count == 1 ? "Delete \(pendingDelete[0].name) permanently?" : "Delete \(pendingDelete.count) projects permanently?",
             isPresented: Binding(get: { !pendingDelete.isEmpty }, set: { if !$0 { pendingDelete = [] } }),
