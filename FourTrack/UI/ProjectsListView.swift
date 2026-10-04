@@ -1,4 +1,5 @@
 import SwiftUI
+import UIKit
 import FourTrackCore
 
 /// Home screen, Voice Memos style: a list of projects and a big record button
@@ -9,6 +10,7 @@ struct ProjectsListView: View {
     @State private var renaming: Project?
     @State private var draftName = ""
     @State private var showingSettings = false
+    @State private var namingNewProject = false
     let settings: AppSettings
 
     enum Route: Hashable {
@@ -25,6 +27,10 @@ struct ProjectsListView: View {
         NavigationStack(path: $path) {
             VStack(spacing: 0) {
                 list
+                    .overlay(alignment: .bottom) {
+                        NewProjectButton { namingNewProject = true }
+                            .padding(.bottom, 14)
+                    }
                 Divider()
                 RecordButton(isRecording: false) { newProject(record: true) }
                     .padding(.vertical, 14)
@@ -41,15 +47,6 @@ struct ProjectsListView: View {
                         Image(systemName: "gear")
                     }
                     .accessibilityLabel("Settings")
-                }
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button {
-                        newProject(record: false)
-                    } label: {
-                        Image(systemName: "plus")
-                    }
-                    .accessibilityLabel("New project")
-                    .accessibilityHint("Creates an empty project without recording")
                 }
             }
             .navigationDestination(for: Route.self) { route in
@@ -72,6 +69,14 @@ struct ProjectsListView: View {
             .sheet(isPresented: $showingSettings) {
                 SettingsView(model: nil, settings: settings)
             }
+            .sheet(isPresented: $namingNewProject) {
+                NewProjectSheet(defaultName: model.nextDefaultName) { name in
+                    namingNewProject = false
+                    guard let project = model.createProject(named: name) else { return }
+                    path.append(.project(project.id, record: false))
+                }
+                .presentationDetents([.height(220)])
+            }
             .alert("Rename Project", isPresented: Binding(get: { renaming != nil }, set: { if !$0 { renaming = nil } })) {
                 TextField("Name", text: $draftName)
                 Button("Cancel", role: .cancel) {}
@@ -93,9 +98,10 @@ struct ProjectsListView: View {
             ContentUnavailableView {
                 Label("No Projects", systemImage: "waveform")
             } description: {
-                Text("Tap the record button to start a song, or + to start an empty project. Each project has four tracks: record a part, then layer the next one over it.")
+                Text("Tap the record button to start a song, or New Project to set one up first. Each project has four tracks: record a part, then layer the next one over it.")
             }
             .frame(maxHeight: .infinity)
+            .padding(.bottom, 60)
         } else {
             List {
                 ForEach(model.projects) { project in
@@ -142,6 +148,8 @@ struct ProjectsListView: View {
                 }
             }
             .listStyle(.plain)
+            // Room so the last row can scroll above the floating button.
+            .contentMargins(.bottom, 76, for: .scrollContent)
         }
     }
 
@@ -169,5 +177,110 @@ struct ProjectRow: View {
             .foregroundStyle(.secondary)
         }
         .padding(.vertical, 6)
+    }
+}
+
+/// Floating "New Project" pill at the bottom of the projects list.
+struct NewProjectButton: View {
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            Label("New Project", systemImage: "plus")
+                .font(.headline)
+                .padding(.horizontal, 20)
+                .frame(minHeight: 48)
+                .foregroundStyle(.white)
+                .background(Capsule().fill(Color.accentColor))
+                .shadow(color: .black.opacity(0.2), radius: 8, y: 3)
+        }
+        .buttonStyle(.plain)
+        .accessibilityHint("Creates an empty project without recording")
+    }
+}
+
+/// Name a new project. The field starts with the default name fully
+/// selected, so typing replaces it and Create keeps it as is.
+struct NewProjectSheet: View {
+    let defaultName: String
+    let onCreate: (String) -> Void
+    @State private var name: String
+    @Environment(\.dismiss) private var dismiss
+
+    init(defaultName: String, onCreate: @escaping (String) -> Void) {
+        self.defaultName = defaultName
+        self.onCreate = onCreate
+        _name = State(initialValue: defaultName)
+    }
+
+    var body: some View {
+        NavigationStack {
+            VStack(alignment: .leading, spacing: 8) {
+                SelectAllTextField(text: $name, placeholder: defaultName) {
+                    onCreate(name.isEmpty ? defaultName : name)
+                }
+                .frame(height: 44)
+                .padding(.horizontal, 12)
+                .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(uiColor: .secondarySystemBackground)))
+                Spacer(minLength: 0)
+            }
+            .padding()
+            .navigationTitle("New Project")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel") { dismiss() }
+                }
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Create") { onCreate(name.isEmpty ? defaultName : name) }
+                        .fontWeight(.semibold)
+                }
+            }
+        }
+    }
+}
+
+/// UITextField that takes focus and selects all its text when shown.
+struct SelectAllTextField: UIViewRepresentable {
+    @Binding var text: String
+    var placeholder: String
+    var onSubmit: () -> Void
+
+    func makeUIView(context: Context) -> UITextField {
+        let field = UITextField()
+        field.text = text
+        field.placeholder = placeholder
+        field.font = .preferredFont(forTextStyle: .body)
+        field.adjustsFontForContentSizeCategory = true
+        field.clearButtonMode = .whileEditing
+        field.returnKeyType = .done
+        field.autocapitalizationType = .words
+        field.delegate = context.coordinator
+        field.addTarget(context.coordinator, action: #selector(Coordinator.changed(_:)), for: .editingChanged)
+        DispatchQueue.main.async {
+            field.becomeFirstResponder()
+            field.selectAll(nil)
+        }
+        return field
+    }
+
+    func updateUIView(_ field: UITextField, context: Context) {
+        if field.text != text { field.text = text }
+    }
+
+    func makeCoordinator() -> Coordinator { Coordinator(self) }
+
+    final class Coordinator: NSObject, UITextFieldDelegate {
+        var parent: SelectAllTextField
+        init(_ parent: SelectAllTextField) { self.parent = parent }
+
+        @objc func changed(_ field: UITextField) {
+            parent.text = field.text ?? ""
+        }
+
+        func textFieldShouldReturn(_ field: UITextField) -> Bool {
+            parent.onSubmit()
+            return false
+        }
     }
 }

@@ -34,9 +34,12 @@ final class ProjectsViewModel {
         binned = store.loadBin()
     }
 
-    func createProject() -> Project? {
+    var nextDefaultName: String { store.nextDefaultName() }
+
+    func createProject(named name: String? = nil) -> Project? {
+        let trimmed = name?.trimmingCharacters(in: .whitespacesAndNewlines)
         do {
-            let project = try store.create()
+            let project = try store.create(name: (trimmed?.isEmpty ?? true) ? nil : trimmed)
             reload()
             return project
         } catch {
