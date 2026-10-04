@@ -14,6 +14,7 @@
 		36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30AF566B98693F94AB8FE8 /* TransportView.swift */; };
 		36CE3A42675730887D90076C /* DrumPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */; };
 		38B5D72F23F74EC7BF904055 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */; };
+		452FDCB8562969A8013C48EC /* FourTrackCore in Frameworks */ = {isa = PBXBuildFile; productRef = F26CAF9FE144318925E8D782 /* FourTrackCore */; };
 		50F39BE78B7AFABB578F525D /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B4995428CDBEF1B07DA5B /* Metronome.swift */; };
 		526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */; };
 		5AAB0FF58C74595719931AEC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */; };
@@ -34,6 +35,7 @@
 		B2FDFEAD3783C4869785ED67 /* MixView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9B76CE52C0FB100E4EA7E /* MixView.swift */; };
 		B3A5C9B2D345A3BE9C5BD88D /* TrackChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E8AB0B69232CD61AC546C /* TrackChain.swift */; };
 		CA29953881822E60FD3BF932 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */; };
+		CB7CDC0698F28E240E1BAE55 /* DrumTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */; };
 		CC034BEDD8688E6CB526C9E7 /* VolumeFader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5454E139B97093DB44AF1F /* VolumeFader.swift */; };
 		D5206B937C2826C4CC9E0959 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6CA0B0541E1048FE62C79 /* Theme.swift */; };
 		D520B91A133B43BDD3B2770A /* FourTrackCore in Frameworks */ = {isa = PBXBuildFile; productRef = 97DB3616201DF8E8FB2E6783 /* FourTrackCore */; };
@@ -44,6 +46,16 @@
 		F90A959006227F6B944C3090 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998B47BE11791464A7FE1DA2 /* AppSettings.swift */; };
 		F95E1D0BA028BDE6B4727856 /* MixerEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741F2254BE2578A39C560A83 /* MixerEngine.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7AB82098079C98F39A55970F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B397BD0583FA393F920604E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5720FD20E9B45BB36D65532;
+			remoteInfo = FourTrack;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0F9E8AB0B69232CD61AC546C /* TrackChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackChain.swift; sourceTree = "<group>"; };
@@ -62,6 +74,7 @@
 		611B4995428CDBEF1B07DA5B /* Metronome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metronome.swift; sourceTree = "<group>"; };
 		6878880E4225B009DD596A88 /* FourTrackCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FourTrackCore; path = Packages/FourTrackCore; sourceTree = SOURCE_ROOT; };
 		68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
+		6CBCF15A100D38FA74B05B31 /* FourTrackTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FourTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		741F2254BE2578A39C560A83 /* MixerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerEngine.swift; sourceTree = "<group>"; };
 		79C33C5D0807D6485D8E215E /* VoiceIsolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceIsolation.swift; sourceTree = "<group>"; };
@@ -79,6 +92,7 @@
 		A73B2C8D15C308E8D8003C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredSlider.swift; sourceTree = "<group>"; };
 		B8FB2B46B8C9237AB766133A /* FourTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FourTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumTrackTests.swift; sourceTree = "<group>"; };
 		EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadView.swift; sourceTree = "<group>"; };
 		F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTrackControlsView.swift; sourceTree = "<group>"; };
 		F05C31B8FB95A04BDC54A725 /* ProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectView.swift; sourceTree = "<group>"; };
@@ -92,6 +106,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				D520B91A133B43BDD3B2770A /* FourTrackCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D7BA76D58F8E085BFFFBA8E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				452FDCB8562969A8013C48EC /* FourTrackCore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +152,14 @@
 			path = Waveform;
 			sourceTree = "<group>";
 		};
+		39ADB0D57D48357FB423D911 /* FourTrackAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */,
+			);
+			path = FourTrackAppTests;
+			sourceTree = "<group>";
+		};
 		4802524F1E7396E9383D0BB7 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				51E3F710530F3CF2DDF0ABFE /* FourTrack */,
+				39ADB0D57D48357FB423D911 /* FourTrackAppTests */,
 				B9F9DAB060E131EBC37ED0B0 /* Packages */,
 				8C608A094F0E331839FF975A /* Products */,
 			);
@@ -173,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				B8FB2B46B8C9237AB766133A /* FourTrack.app */,
+				6CBCF15A100D38FA74B05B31 /* FourTrackTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -217,6 +249,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7BD47EDA8C6B6469BDE5C7C4 /* FourTrackTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DADB3D9CA5E2265281F0B015 /* Build configuration list for PBXNativeTarget "FourTrackTests" */;
+			buildPhases = (
+				56AB5B1E4CDAD796C958D130 /* Sources */,
+				2D7BA76D58F8E085BFFFBA8E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				109D7B623AA8C7E6A9ABB730 /* PBXTargetDependency */,
+			);
+			name = FourTrackTests;
+			packageProductDependencies = (
+				F26CAF9FE144318925E8D782 /* FourTrackCore */,
+			);
+			productName = FourTrackTests;
+			productReference = 6CBCF15A100D38FA74B05B31 /* FourTrackTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		C5720FD20E9B45BB36D65532 /* FourTrack */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 490DE9AA8170E025941FAAF3 /* Build configuration list for PBXNativeTarget "FourTrack" */;
@@ -246,6 +298,10 @@
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					7BD47EDA8C6B6469BDE5C7C4 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
 					C5720FD20E9B45BB36D65532 = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
@@ -270,6 +326,7 @@
 			projectRoot = "";
 			targets = (
 				C5720FD20E9B45BB36D65532 /* FourTrack */,
+				7BD47EDA8C6B6469BDE5C7C4 /* FourTrackTests */,
 			);
 		};
 /* End PBXProject section */
@@ -288,6 +345,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		56AB5B1E4CDAD796C958D130 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7CDC0698F28E240E1BAE55 /* DrumTrackTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		786311E1510B2B040B895DF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -328,6 +393,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		109D7B623AA8C7E6A9ABB730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5720FD20E9B45BB36D65532 /* FourTrack */;
+			targetProxy = 7AB82098079C98F39A55970F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3772854502B7EFA275A2584D /* Release */ = {
@@ -479,6 +552,40 @@
 			};
 			name = Debug;
 		};
+		5B6A8A056EC6FE47F286D21F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourtrack.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourTrack.app/FourTrack";
+			};
+			name = Release;
+		};
+		5D9926BD536DF1C87C4C2F23 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourtrack.app.tests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourTrack.app/FourTrack";
+			};
+			name = Debug;
+		};
 		F883D6F1E4D220FD7A163A05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -520,6 +627,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
+		DADB3D9CA5E2265281F0B015 /* Build configuration list for PBXNativeTarget "FourTrackTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D9926BD536DF1C87C4C2F23 /* Debug */,
+				5B6A8A056EC6FE47F286D21F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCLocalSwiftPackageReference section */
@@ -531,6 +647,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		97DB3616201DF8E8FB2E6783 /* FourTrackCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FourTrackCore;
+		};
+		F26CAF9FE144318925E8D782 /* FourTrackCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FourTrackCore;
 		};

@@ -43,10 +43,10 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FourTrackCoreTests"
-               BuildableName = "FourTrackCoreTests"
-               BlueprintName = "FourTrackCoreTests"
-               ReferencedContainer = "container:Packages/FourTrackCore">
+               BlueprintIdentifier = "7BD47EDA8C6B6469BDE5C7C4"
+               BuildableName = "FourTrackTests.xctest"
+               BlueprintName = "FourTrackTests"
+               ReferencedContainer = "container:FourTrack.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
