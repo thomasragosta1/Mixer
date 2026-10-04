@@ -89,10 +89,28 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
     }
 }
 
-/// Loads (and caches) the bundled drum samples.
-enum DrumSamples {
+/// Loads (and caches) the drum samples. They ship inside the app (a "Drums"
+/// folder with `studio/` and `hand/`), not as a package resource bundle, so a
+/// missing file can never crash: the kit falls back to synthesis instead.
+public enum DrumSamples {
     private static let lock = NSLock()
     nonisolated(unsafe) private static var cache: [String: [Float]] = [:]
+    nonisolated(unsafe) private static var _directory: URL?
+
+    /// Folder holding `studio/` and `hand/`. Defaults to `Drums` in the main bundle.
+    public static var directory: URL? {
+        get {
+            lock.lock()
+            defer { lock.unlock() }
+            return _directory ?? Bundle.main.url(forResource: "Drums", withExtension: nil)
+        }
+        set {
+            lock.lock()
+            defer { lock.unlock() }
+            _directory = newValue
+            cache = [:]
+        }
+    }
 
     static func load(kit: DrumKit, pad: Int, variant: Int, sampleRate: Double) -> [Float]? {
         guard let folder = kit.sampleFolder else { return nil }
@@ -100,7 +118,9 @@ enum DrumSamples {
         lock.lock()
         if let hit = cache[key] { lock.unlock(); return hit }
         lock.unlock()
-        guard let url = Bundle.module.url(forResource: "\(pad)_\(variant + 1)", withExtension: "caf", subdirectory: "Drums/\(folder)"),
+        guard let dir = directory else { return nil }
+        let url = dir.appendingPathComponent(folder).appendingPathComponent("\(pad)_\(variant + 1).caf")
+        guard FileManager.default.fileExists(atPath: url.path),
               let reader = try? CAFReader(url: url),
               var samples = try? reader.readAll(), !samples.isEmpty else { return nil }
         if abs(reader.sampleRate - sampleRate) > 0.5 {

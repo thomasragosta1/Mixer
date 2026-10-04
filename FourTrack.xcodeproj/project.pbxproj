@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		046F999F0B060C4068D1967B /* Drums in Resources */ = {isa = PBXBuildFile; fileRef = 7CB2A3B61A3D61010ED4FFD3 /* Drums */; };
 		0DF261BDDA4E3910193DFC34 /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */; };
 		10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */; };
 		165BE017B7E30BED6207A9B5 /* PadSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CA97785154509CDEAC5C9 /* PadSampler.swift */; };
@@ -64,6 +65,7 @@
 		702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		741F2254BE2578A39C560A83 /* MixerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerEngine.swift; sourceTree = "<group>"; };
 		79C33C5D0807D6485D8E215E /* VoiceIsolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceIsolation.swift; sourceTree = "<group>"; };
+		7CB2A3B61A3D61010ED4FFD3 /* Drums */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Drums; path = FourTrack/Resources/Drums; sourceTree = SOURCE_ROOT; };
 		84E4C9D955D96787E81A4BE5 /* BinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinView.swift; sourceTree = "<group>"; };
 		853BB5BA068D6604EFCB8CC9 /* TrackBinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackBinView.swift; sourceTree = "<group>"; };
 		8A846F4359940E981658B8FC /* LatencyCalibrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LatencyCalibrator.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 			isa = PBXGroup;
 			children = (
 				30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */,
+				7CB2A3B61A3D61010ED4FFD3 /* Drums */,
 				A73B2C8D15C308E8D8003C97 /* Info.plist */,
 				5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */,
 			);
@@ -277,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63ABFE7D9CE7F3BAB0338AF2 /* Assets.xcassets in Resources */,
+				046F999F0B060C4068D1967B /* Drums in Resources */,
 				88AD950E9257B5F935E2CDAB /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

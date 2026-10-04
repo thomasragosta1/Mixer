@@ -2,6 +2,21 @@ import XCTest
 @testable import FourTrackCore
 
 final class DrumTests: XCTestCase {
+    override class func setUp() {
+        super.setUp()
+        // The samples live in the app's resources: <repo>/FourTrack/Resources/Drums.
+        DrumSamples.directory = URL(fileURLWithPath: #filePath)
+            .deletingLastPathComponent().deletingLastPathComponent().deletingLastPathComponent()
+            .deletingLastPathComponent().deletingLastPathComponent()
+            .appendingPathComponent("FourTrack/Resources/Drums")
+    }
+
+    func testMissingSamplesFallBackToSynthesis() {
+        let saved = DrumSamples.directory
+        DrumSamples.directory = URL(fileURLWithPath: "/nonexistent")
+        defer { DrumSamples.directory = saved }
+        XCTAssertGreaterThan(DrumKit.studio.sample(pad: 0).count, 1_000)
+    }
     func testEveryPadOfEveryKitRendersCleanly() {
         for kit in DrumKit.allCases {
             XCTAssertEqual(kit.padNames.count, DrumKit.padCount)

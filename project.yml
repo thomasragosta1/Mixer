@@ -27,6 +27,12 @@ targets:
     platform: iOS
     sources:
       - path: FourTrack
+        excludes:
+          - "Resources/Drums"
+      # Drum samples as a folder reference, so studio/ and hand/ keep their paths.
+      - path: FourTrack/Resources/Drums
+        type: folder
+        buildPhase: resources
     dependencies:
       - package: FourTrackCore
         product: FourTrackCore
