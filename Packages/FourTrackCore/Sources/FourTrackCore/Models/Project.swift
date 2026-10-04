@@ -194,6 +194,42 @@ extension Project {
     }
 }
 
+extension Project {
+    /// Turns off everything Simple mode hides, so switching to Simple can't
+    /// leave hidden settings changing the sound. Clean Up, pad volume and pad
+    /// tone are part of Simple mode and stay. Returns the drum tracks whose
+    /// sound changed (they need re-rendering).
+    @discardableResult
+    public mutating func resetFullModeFeatures() -> [Int] {
+        var changedDrums: [Int] = []
+        masterVolume = MacroCurves.volumeUnitySlider
+        metronome.mode = .off
+        for i in tracks.indices {
+            var t = tracks[i]
+            t.mute = false
+            t.solo = false
+            t.devOverrides = nil
+            t.volume = MacroCurves.volumeUnitySlider
+            t.eqLow = 0; t.eqMid = 0; t.eqHigh = 0
+            t.compressor = Track.defaultCompressor
+            t.space = 0
+            t.warmth = 0
+            if t.isDrums {
+                let before = (t.drumKit, t.quantize, t.padSettings)
+                t.drumKit = .studioTight
+                t.quantize.enabled = false
+                for p in t.padSettings.indices {
+                    t.padSettings[p].tune = 0
+                    t.padSettings[p].decay = 1
+                }
+                if before.0 != t.drumKit || before.1 != t.quantize || before.2 != t.padSettings { changedDrums.append(i) }
+            }
+            tracks[i] = t
+        }
+        return changedDrums
+    }
+}
+
 /// A track in a project's Recently Deleted. Its audio lives in the project
 /// folder under `deleted-<id>` file names until recovered or deleted for good.
 public struct DeletedTrack: Codable, Identifiable, Equatable, Sendable {

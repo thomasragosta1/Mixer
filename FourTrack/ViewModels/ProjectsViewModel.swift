@@ -36,10 +36,10 @@ final class ProjectsViewModel {
 
     var nextDefaultName: String { store.nextDefaultName() }
 
-    func createProject(named name: String? = nil) -> Project? {
+    func createProject(named name: String? = nil, mode: ProjectMode = .full) -> Project? {
         let trimmed = name?.trimmingCharacters(in: .whitespacesAndNewlines)
         do {
-            let project = try store.create(name: (trimmed?.isEmpty ?? true) ? nil : trimmed)
+            let project = try store.create(name: (trimmed?.isEmpty ?? true) ? nil : trimmed, mode: mode)
             reload()
             return project
         } catch {

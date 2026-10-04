@@ -15,19 +15,19 @@ final class DrumFlowUITests: XCTestCase {
         XCTAssertTrue(create.waitForExistence(timeout: 5))
         create.tap()
 
-        // New projects start in Simple mode: no mixer, no metronome.
+        // New projects default to Full mode; ⋯ → Simple Mode toggles it.
         XCTAssertTrue(app.buttons["Add Track 2"].firstMatch.waitForExistence(timeout: 5))
-        XCTAssertFalse(app.buttons["Metronome"].exists)
-        XCTAssertFalse(app.buttons["Mixing"].exists)
-        // ⋯ → Switch to Full Mode → confirm.
+        XCTAssertTrue(app.buttons["Metronome"].firstMatch.waitForExistence(timeout: 3), "Full mode is the default")
         app.buttons["More"].firstMatch.tap()
-        let full = app.buttons["Switch to Full Mode"].firstMatch
-        XCTAssertTrue(full.waitForExistence(timeout: 3))
-        full.tap()
-        let confirm = app.alerts.buttons["Switch"].firstMatch
-        XCTAssertTrue(confirm.waitForExistence(timeout: 3))
-        confirm.tap()
-        XCTAssertTrue(app.buttons["Metronome"].firstMatch.waitForExistence(timeout: 3), "Full mode shows the metronome")
+        let simple = app.buttons["Simple Mode"].firstMatch
+        XCTAssertTrue(simple.waitForExistence(timeout: 3))
+        simple.tap()
+        sleep(1)
+        XCTAssertFalse(app.buttons["Metronome"].exists, "Simple mode hides the metronome")
+        app.buttons["More"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["Simple Mode"].firstMatch.waitForExistence(timeout: 3))
+        app.buttons["Simple Mode"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["Metronome"].firstMatch.waitForExistence(timeout: 3), "back to Full")
 
         let add = app.buttons["Add Track 2"].firstMatch
         XCTAssertTrue(add.waitForExistence(timeout: 5))

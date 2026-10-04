@@ -799,16 +799,26 @@ final class ProjectViewModel {
         scheduleSave()
     }
 
-    /// Back to Simple only while nothing Simple mode hides is in use, so no
-    /// hidden setting can keep changing the sound.
-    var canSwitchToSimple: Bool { !isSimple && !project.usesFullModeFeatures }
+    /// Switching to Simple would turn off settings it hides (asks first).
+    var simpleModeResetsSettings: Bool { project.usesFullModeFeatures }
 
+    /// To Simple. Anything Simple mode hides is reset first so no hidden setting
+    /// keeps changing the sound; it's one undo step.
     func switchToSimpleMode() {
-        guard canSwitchToSimple, !isRecording else { return }
-        checkpoint("Simple Mode")
+        guard !isSimple, !isRecording, !isSaving else { return }
+        stopClickPreview()
+        let resets = project.usesFullModeFeatures
+        checkpoint("Simple Mode", audio: resets)
         mixMode = false
+        if isPlaying { pause() }
+        let changedDrums = project.resetFullModeFeatures()
         project.mode = .simple
+        applyAll()
+        routePadsIfNeeded()
         scheduleSave()
+        for i in changedDrums where !project.tracks[i].drumHits.isEmpty {
+            renderDrums(i)
+        }
     }
 
     // MARK: Undo / redo

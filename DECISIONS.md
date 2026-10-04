@@ -69,9 +69,9 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 
 ## Simple and Full mode (owner request)
 
-- **New projects start in Simple mode:** record, play, scrub, name/reorder/delete tracks, add audio or drum tracks, Clean Up, undo/redo and export. Drum tracks use Studio · Tight only, and holding a pad offers just Volume and Tone. Hidden: the Record/Mixing switch and mixer, M/S, the metronome (and its project settings), quantize, other kits and the Tune/Decay pad controls.
-- **⋯ → Switch to Full Mode** (after a confirmation) shows everything for that project. Existing projects open in Full mode, so nothing they use disappears.
-- **Going back is allowed when it's safe:** ⋯ → Switch to Simple Mode works only while the project uses nothing Simple mode hides (mixer at defaults, no mute/solo, metronome off, no quantize, Studio · Tight drums, pad tune and decay untouched). Otherwise the item is disabled and its label says what to reset, so a hidden setting can never keep changing the sound. Mode switches are undo steps.
+- **Full is the default (owner request).** The New Project bubble has a **Full | Simple** switch (Full selected); the big record button makes a Full project. Projects in Simple mode show a small "Simple" tag in the list.
+- **Simple mode:** record, play, scrub, name/reorder/delete tracks, add audio or drum tracks, Clean Up, undo/redo and export. Drum tracks use Studio · Tight only, and holding a pad offers just Volume and Tone. Hidden: the Record/Mixing switch and mixer, M/S, the metronome (and its project settings), quantize, other kits and the Tune/Decay pad controls.
+- **⋯ → Simple Mode is a toggle, both ways, any time.** Turning it off goes straight to Full. Turning it on when the project uses something Simple hides first asks, then resets those settings (mixer to defaults, mute/solo off, metronome off, quantize off, Studio · Tight, pad tune and decay reset; Clean Up, pad volume and tone stay) and re-renders affected drum tracks, as one undo step, so no hidden setting keeps changing the sound. Older projects open in Full mode.
 
 ## Undo / redo (owner request)
 

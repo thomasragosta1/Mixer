@@ -19,7 +19,7 @@ struct ProjectView: View {
     @State private var binFrame: CGRect = .zero
     @State private var pendingTrackDelete: Int?
     @State private var showingTrackBin = false
-    @State private var confirmingFullMode = false
+    @State private var confirmingSimpleMode = false
     private let onDelete: (Project) -> Void
     private let startRecordingOnAppear: Bool
 
@@ -96,11 +96,11 @@ struct ProjectView: View {
                 Text("\u{201C}\(model.project.tracks[i].name)\u{201D} will move to Recently Deleted in this project.")
             }
         }
-        .alert("Switch to Full Mode?", isPresented: $confirmingFullMode) {
-            Button("Switch") { model.switchToFullMode() }
+        .alert("Switch to Simple Mode?", isPresented: $confirmingSimpleMode) {
+            Button("Switch") { model.switchToSimpleMode() }
             Button("Cancel", role: .cancel) {}
         } message: {
-            Text("Adds the mixer, mute and solo, the metronome, quantize and every drum kit and pad setting to this project. You can go back to Simple later only while none of those are in use.")
+            Text("Simple mode hides the mixer, mute and solo, the metronome, quantize and the extra drum kits and pad settings, so those are reset to their defaults. Clean Up, pad volume and tone stay. You can undo this.")
         }
         .sheet(isPresented: $showingTrackBin) {
             TrackBinView(model: model)
@@ -359,24 +359,19 @@ struct ProjectView: View {
                 } label: {
                     Label("Recently Deleted", systemImage: "trash")
                 }
-                if model.isSimple {
-                    Button {
-                        confirmingFullMode = true
-                    } label: {
-                        Label("Switch to Full Mode", systemImage: "slider.horizontal.3")
-                    }
-                } else {
-                    Button {
-                        model.switchToSimpleMode()
-                    } label: {
-                        if model.canSwitchToSimple {
-                            Label("Switch to Simple Mode", systemImage: "circle.grid.2x1")
+                Toggle(isOn: Binding(
+                    get: { model.isSimple },
+                    set: { simple in
+                        if !simple {
+                            model.switchToFullMode()
+                        } else if model.simpleModeResetsSettings {
+                            confirmingSimpleMode = true
                         } else {
-                            // A menu can't explain a disabled item, so the label does.
-                            Label("Simple Mode: reset mixer, M/S, metronome & drum extras first", systemImage: "circle.grid.2x1")
+                            model.switchToSimpleMode()
                         }
                     }
-                    .disabled(!model.canSwitchToSimple)
+                )) {
+                    Label("Simple Mode", systemImage: "circle.grid.2x1")
                 }
                 Button {
                     showingSettings = true

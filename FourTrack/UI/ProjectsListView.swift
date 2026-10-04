@@ -83,9 +83,9 @@ struct ProjectsListView: View {
             }
             .overlay {
                 if namingNewProject {
-                    NewProjectBubble(defaultName: model.nextDefaultName) { name in
+                    NewProjectBubble(defaultName: model.nextDefaultName) { name, mode in
                         withAnimation(.easeOut(duration: 0.15)) { namingNewProject = false }
-                        guard let name, let project = model.createProject(named: name) else { return }
+                        guard let name, let project = model.createProject(named: name, mode: mode) else { return }
                         path.append(.project(project.id, record: false))
                     }
                     .transition(.opacity.combined(with: .scale(scale: 1.08)))
@@ -162,9 +162,19 @@ struct ProjectRow: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 2) {
-            Text(project.name)
-                .font(.headline)
-                .lineLimit(1)
+            HStack(spacing: 6) {
+                Text(project.name)
+                    .font(.headline)
+                    .lineLimit(1)
+                if project.mode == .simple {
+                    Text("Simple")
+                        .font(.caption2.weight(.semibold))
+                        .padding(.horizontal, 6)
+                        .padding(.vertical, 2)
+                        .background(Capsule().fill(Color(uiColor: .tertiarySystemFill)))
+                        .foregroundStyle(.secondary)
+                }
+            }
             HStack {
                 Text(Self.dateLabel(project.createdAt))
                 Spacer()
@@ -211,10 +221,12 @@ struct NewProjectButton: View {
 /// replaces it and Create keeps it. Calls back with nil on Cancel.
 struct NewProjectBubble: View {
     let defaultName: String
-    let onFinish: (String?) -> Void
+    /// Name (nil = cancelled) and the project's mode.
+    let onFinish: (String?, ProjectMode) -> Void
     @State private var name: String
+    @State private var mode: ProjectMode = .full
 
-    init(defaultName: String, onFinish: @escaping (String?) -> Void) {
+    init(defaultName: String, onFinish: @escaping (String?, ProjectMode) -> Void) {
         self.defaultName = defaultName
         self.onFinish = onFinish
         _name = State(initialValue: defaultName)
@@ -224,7 +236,7 @@ struct NewProjectBubble: View {
         ZStack {
             Color.black.opacity(0.35)
                 .ignoresSafeArea()
-                .onTapGesture { onFinish(nil) }
+                .onTapGesture { onFinish(nil, mode) }
                 .accessibilityHidden(true)
 
             VStack(spacing: 0) {
@@ -232,22 +244,32 @@ struct NewProjectBubble: View {
                     Text("New Project")
                         .font(.headline)
                     SelectAllTextField(text: $name, placeholder: defaultName) {
-                        onFinish(name.isEmpty ? defaultName : name)
+                        onFinish(name.isEmpty ? defaultName : name, mode)
                     }
                     .frame(height: 36)
                     .padding(.horizontal, 8)
                     .background(Capsule().fill(Color(uiColor: .tertiarySystemFill)))
+                    Picker("Mode", selection: $mode) {
+                        Text("Full").tag(ProjectMode.full)
+                        Text("Simple").tag(ProjectMode.simple)
+                    }
+                    .pickerStyle(.segmented)
+                    Text(mode == .full ? "Everything: mixer, metronome, quantize, all drum kits." : "Just recording, drums and Clean Up. Switch any time from ⋯.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .multilineTextAlignment(.center)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
                 .padding(.horizontal, 20)
                 .padding(.top, 20)
                 .padding(.bottom, 16)
 
                 HStack(spacing: 10) {
-                    Button { onFinish(nil) } label: {
+                    Button { onFinish(nil, mode) } label: {
                         Text("Cancel").frame(maxWidth: .infinity, minHeight: 30)
                     }
                     .glassButton()
-                    Button { onFinish(name.isEmpty ? defaultName : name) } label: {
+                    Button { onFinish(name.isEmpty ? defaultName : name, mode) } label: {
                         Text("Create").fontWeight(.semibold).frame(maxWidth: .infinity, minHeight: 30)
                     }
                     .prominentGlassButton()

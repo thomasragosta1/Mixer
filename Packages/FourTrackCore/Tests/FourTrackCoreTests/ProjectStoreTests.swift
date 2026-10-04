@@ -201,13 +201,32 @@ final class ProjectStoreTests: XCTestCase {
 }
 
 final class ProjectModeTests: XCTestCase {
-    func testNewProjectsAreSimpleOldOnesFull() throws {
+    func testNewProjectsDefaultToFullOldOnesFull() throws {
         let dir = try makeTempDir()
         defer { try? FileManager.default.removeItem(at: dir) }
         let store = try ProjectStore(rootURL: dir)
-        XCTAssertEqual(try store.create().mode, .simple)
+        XCTAssertEqual(try store.create().mode, .full, "Full is the default")
+        XCTAssertEqual(try store.create(mode: .simple).mode, .simple)
         let old = try JSONDecoder().decode(Project.self, from: JSONEncoder().encode(Project(name: "Old")).withoutKey("mode"))
         XCTAssertEqual(old.mode, .full)
+    }
+
+    func testResetMakesProjectSimpleSafe() {
+        var p = Project(name: "P", mode: .full)
+        p.tracks[0].mute = true
+        p.tracks[0].eqLow = 0.4
+        p.tracks[0].cleanup = 0.6
+        p.metronome.mode = .on
+        p.tracks[1].kind = .drums
+        p.tracks[1].drumKit = .eightOhEight
+        p.tracks[1].quantize.enabled = true
+        p.tracks[1].padSettings[0] = PadSettings(volume: 0.5, tune: 0.3, decay: 0.2, tone: 0.4)
+        XCTAssertTrue(p.usesFullModeFeatures)
+        XCTAssertEqual(p.resetFullModeFeatures(), [1])
+        XCTAssertFalse(p.usesFullModeFeatures)
+        XCTAssertEqual(p.tracks[0].cleanup, 0.6, "Clean Up stays")
+        XCTAssertEqual(p.tracks[1].padSettings[0].volume, 0.5, "pad volume stays")
+        XCTAssertEqual(p.tracks[1].padSettings[0].tone, 0.4, "pad tone stays")
     }
 
     func testFullFeatureDetection() {
