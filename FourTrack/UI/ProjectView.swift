@@ -320,15 +320,15 @@ struct ProjectView: View {
             .accessibilityHint("Renames the project")
         }
         ToolbarItemGroup(placement: .topBarTrailing) {
-            Button {
-                showingExport = true
-            } label: {
-                Image(systemName: "square.and.arrow.up")
-            }
-            .disabled(!model.hasAnyAudio || model.isRecording)
-            .accessibilityLabel("Export")
-
             Menu {
+                // Share lives in the menu so the top bar stays uncluttered.
+                Button {
+                    showingExport = true
+                } label: {
+                    Label("Share / Export", systemImage: "square.and.arrow.up")
+                }
+                .disabled(!model.hasAnyAudio || model.isRecording)
+                Divider()
                 Button {
                     draftName = model.project.name
                     renamingProject = true

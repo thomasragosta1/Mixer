@@ -73,6 +73,10 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Simple mode:** record, play, scrub, name/reorder/delete tracks, add audio or drum tracks, Clean Up, undo/redo and export. Drum tracks use Studio · Tight only, and holding a pad offers just Volume and Tone. Hidden: the Record/Mixing switch and mixer, M/S, the metronome (and its project settings), quantize, other kits and the Tune/Decay pad controls.
 - **⋯ → Simple Mode is a toggle, both ways, any time.** Turning it off goes straight to Full. Turning it on when the project uses something Simple hides first asks, then resets those settings (mixer to defaults, mute/solo off, metronome off, quantize off, Studio · Tight, pad tune and decay reset; Clean Up, pad volume and tone stay) and re-renders affected drum tracks, as one undo step, so no hidden setting keeps changing the sound. Older projects open in Full mode.
 
+## Top bar (owner request)
+
+- The top bar holds only undo/redo (left), the project name and the ⋯ menu (right). **Share / Export** is the first item in the ⋯ menu, to keep the bar uncluttered.
+
 ## Undo / redo (owner request)
 
 - **Undo and redo buttons at the top left of every project screen** (record, drums and mixing). The history is 1,000 steps per project and covers every edit: mixer and Developer Mode sliders, mute/solo, names, track type and order, adding and deleting tracks (including permanent deletes in the project's bin), recordings (audio and drums), kits, pad sounds, quantize and metronome settings. Playhead moves, arming and switching screens are not steps.
