@@ -51,6 +51,8 @@ final class ProjectViewModel {
 
     var showPermissionDenied = false
     var showBluetoothTip = false
+    /// One-time tip before the first audio recording with the click on the speaker.
+    var showMetronomeHeadphoneTip = false
     var errorMessage: String?
 
     private(set) var meterLevels: [MeterStore.Level] = Array(repeating: .init(), count: Project.trackCount + 1)
@@ -265,8 +267,15 @@ final class ProjectViewModel {
         }
     }
 
-    func startRecording() async {
+    func startRecording(skipHeadphoneTip: Bool = false) async {
         guard !isRecording, !isSaving, !isStartingRecording else { return }
+        // First time recording audio with an audible click and no headphones:
+        // the mic would pick the click up. Suggest headphones once, before recording.
+        if !skipHeadphoneTip, needsMetronomeHeadphoneTip {
+            settings.metronomeHeadphoneTipShown = true
+            showMetronomeHeadphoneTip = true
+            return
+        }
         isStartingRecording = true
         defer { isStartingRecording = false }
         stopClickPreview()
@@ -367,6 +376,14 @@ final class ProjectViewModel {
         isCountingIn = punch ? false : (metronomeIfEnabled.map { $0.countInBars > 0 } ?? false)
         syncClock()
         startTicker()
+    }
+
+    private var needsMetronomeHeadphoneTip: Bool {
+        !settings.metronomeHeadphoneTipShown
+            && !project.tracks[armedTrack].isDrums
+            && !isSimple
+            && project.metronome.mode == .on
+            && AudioSessionManager.shared.currentRoute == .speaker
     }
 
     /// The click without a count-in, for recording that starts mid-song.

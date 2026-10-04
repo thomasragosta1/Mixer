@@ -33,6 +33,11 @@ final class AppSettings {
         }
     }
 
+    /// The one-time "use headphones so the click isn't recorded" tip has been shown.
+    var metronomeHeadphoneTipShown: Bool {
+        didSet { defaults.set(metronomeHeadphoneTipShown, forKey: Keys.metronomeHeadphoneTipShown) }
+    }
+
     var exportFormat: ExportOptions.Format {
         didSet { defaults.set(exportFormat.rawValue, forKey: Keys.exportFormat) }
     }
@@ -51,6 +56,7 @@ final class AppSettings {
         developerMode = defaults.bool(forKey: Keys.developerMode)
         warmthEnabled = defaults.bool(forKey: Keys.warmthEnabled)
         voiceProcessing = defaults.bool(forKey: Keys.voiceProcessing)
+        metronomeHeadphoneTipShown = defaults.bool(forKey: Keys.metronomeHeadphoneTipShown)
         if let data = defaults.data(forKey: Keys.latency), let decoded = try? JSONDecoder().decode(LatencySettings.self, from: data) {
             latency = decoded
         } else {
@@ -65,6 +71,7 @@ final class AppSettings {
         static let developerMode = "developerMode"
         static let warmthEnabled = "warmthEnabled"
         static let voiceProcessing = "voiceProcessing"
+        static let metronomeHeadphoneTipShown = "metronomeHeadphoneTipShown"
         static let latency = "latencySettings"
         static let exportFormat = "exportFormat"
         static let exportSampleRate = "exportSampleRate"
