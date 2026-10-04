@@ -49,6 +49,10 @@ struct ProjectView: View {
                 }
                 .transition(.move(edge: .bottom).combined(with: .opacity))
             }
+            if !model.mixMode && model.isDrumArmed {
+                DrumPadPanel(model: model)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
             if !model.mixMode {
                 Divider()
                 TransportView(model: model)
@@ -56,6 +60,7 @@ struct ProjectView: View {
         }
         .background(Color(uiColor: .systemGroupedBackground))
         .animation(.default, value: model.cleanupOffer)
+        .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.isDrumArmed)
         .navigationTitle(model.project.name)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { toolbar }
@@ -122,7 +127,7 @@ struct ProjectView: View {
             .moveDisabled(model.isRecording || model.isSaving)
 
             if model.visibleTrackCount < Project.trackCount {
-                AddTrackButton(nextNumber: model.visibleTrackCount + 1) { model.addTrack() }
+                AddTrackButton(nextNumber: model.visibleTrackCount + 1) { kind in model.addTrack(kind: kind) }
                     .disabled(model.isRecording || model.isSaving)
                     .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
                     .listRowSeparator(.hidden)
@@ -189,7 +194,16 @@ struct ProjectView: View {
                     Label("Rename Project", systemImage: "pencil")
                 }
                 let i = model.armedTrack
-                if !model.project.tracks[i].isEmpty {
+                if model.project.tracks[i].isEmpty {
+                    let drums = model.project.tracks[i].isDrums
+                    Button {
+                        model.setKind(i, drums ? .audio : .drums)
+                    } label: {
+                        Label(drums ? "Make \(model.project.tracks[i].name) an Audio Track" : "Make \(model.project.tracks[i].name) a Drum Track",
+                              systemImage: drums ? "mic" : "square.grid.3x2")
+                    }
+                }
+                if !model.project.tracks[i].isEmpty && !model.project.tracks[i].isDrums {
                     Button {
                         model.update(track: i) { if $0.cleanup == 0 { $0.cleanup = 0.6 } }
                         model.runCleanup(i)
@@ -222,13 +236,24 @@ struct ProjectView: View {
     }
 }
 
-/// The "+" under the last lane that reveals the next track.
+/// The "+" under the last lane. Tapping it asks for the kind of track.
 struct AddTrackButton: View {
     let nextNumber: Int
-    let action: () -> Void
+    let action: (TrackKind) -> Void
 
     var body: some View {
-        Button(action: action) {
+        Menu {
+            Button {
+                action(.audio)
+            } label: {
+                Label("Audio Track", systemImage: "mic")
+            }
+            Button {
+                action(.drums)
+            } label: {
+                Label("Drum Track", systemImage: "square.grid.3x2")
+            }
+        } label: {
             Image(systemName: "plus")
                 .font(.title3.weight(.semibold))
                 .frame(maxWidth: .infinity, minHeight: 52)

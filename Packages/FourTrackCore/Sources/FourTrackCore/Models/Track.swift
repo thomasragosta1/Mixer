@@ -31,6 +31,14 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     public var durationSeconds: Double
     /// Audio route the take was recorded on, used to decide whether to offer Cleanup.
     public var lastRecordedRoute: AudioRouteKind?
+    /// Audio (microphone) or drums (pad hits rendered with a kit).
+    public var kind: TrackKind
+    /// Drum tracks: the kit used to render `drumHits`.
+    public var drumKit: DrumKit
+    /// Drum tracks: every pad hit, so a kit change can re-render the track.
+    public var drumHits: [DrumHit]
+
+    public var isDrums: Bool { kind == .drums }
 
     public var id: Int { index }
 
@@ -58,6 +66,9 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         self.devOverrides = nil
         self.durationSeconds = 0
         self.lastRecordedRoute = nil
+        self.kind = .audio
+        self.drumKit = .studio
+        self.drumHits = []
     }
 
     public var isEmpty: Bool { audioFileName == nil }
@@ -98,7 +109,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     enum CodingKeys: String, CodingKey {
         case index, name, audioFileName, cleanedFileName, mute, solo, volume
         case eqLow, eqMid, eqHigh, compressor, space, warmth, cleanup, cleanupLevel, devOverrides
-        case durationSeconds, lastRecordedRoute
+        case durationSeconds, lastRecordedRoute, kind, drumKit, drumHits
     }
 
     public init(from decoder: Decoder) throws {
@@ -122,7 +133,15 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         devOverrides = try c.decodeIfPresent(DevParams.self, forKey: .devOverrides)
         durationSeconds = try c.decodeIfPresent(Double.self, forKey: .durationSeconds) ?? 0
         lastRecordedRoute = try c.decodeIfPresent(AudioRouteKind.self, forKey: .lastRecordedRoute)
+        kind = try c.decodeIfPresent(TrackKind.self, forKey: .kind) ?? .audio
+        drumKit = try c.decodeIfPresent(DrumKit.self, forKey: .drumKit) ?? .studio
+        drumHits = try c.decodeIfPresent([DrumHit].self, forKey: .drumHits) ?? []
     }
+}
+
+public enum TrackKind: String, Codable, Sendable {
+    case audio
+    case drums
 }
 
 /// Output route categories that get their own latency offset.

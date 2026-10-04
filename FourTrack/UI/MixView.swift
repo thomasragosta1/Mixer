@@ -266,6 +266,18 @@ struct TrackMixPage: View {
 
     var body: some View {
         List {
+            if track.isDrums {
+                Section {
+                    Picker("Kit", selection: Binding(get: { track.drumKit }, set: { model.setDrumKit(index, $0) })) {
+                        ForEach(DrumKit.allCases) { Text($0.displayName).tag($0) }
+                    }
+                    .pickerStyle(.segmented)
+                } header: {
+                    Text("Drum Kit")
+                } footer: {
+                    Text("Changing the kit re-plays every hit on this track with the new sounds.")
+                }
+            } else {
             Section {
                 Toggle(isOn: Binding(
                     get: { track.isCleanupOn },
@@ -292,6 +304,7 @@ struct TrackMixPage: View {
                 }
             } footer: {
                 Text("Reduces background noise, harsh \"s\" sounds and room echo. Works best on voice.")
+            }
             }
 
             Section("Tone") {

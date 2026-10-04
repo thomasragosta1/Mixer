@@ -21,6 +21,7 @@ final class MixerEngine {
     private(set) var chains: [TrackChain] = (0..<Project.trackCount).map { TrackChain(index: $0) }
     private(set) var master = MasterChain()
     private(set) var metronome = Metronome()
+    private(set) var pads = PadSampler()
     let meters = MeterStore()
 
     private(set) var state: State = .stopped
@@ -54,6 +55,7 @@ final class MixerEngine {
         chains.forEach { $0.attach(to: engine) }
         master.attach(to: engine)
         metronome.attach(to: engine)
+        pads.attach(to: engine)
         connectGraph()
         engine.prepare()
         observeConfigurationChanges()
@@ -63,6 +65,7 @@ final class MixerEngine {
         chains.forEach { $0.connect(in: engine) }
         master.connect(tracks: chains, in: engine)
         metronome.connect(in: engine)
+        pads.connect(to: chains[pads.routedTrack], in: engine)
     }
 
     private func observeConfigurationChanges() {
@@ -102,7 +105,7 @@ final class MixerEngine {
     }
 
     private var ownNodes: [AVAudioNode] {
-        chains.flatMap(\.nodes) + [master.mixer, master.limiter, metronome.player]
+        chains.flatMap(\.nodes) + [master.mixer, master.limiter, metronome.player] + pads.nodes
     }
 
     /// Throws away the whole engine (media services reset) and rebuilds it.
@@ -112,6 +115,11 @@ final class MixerEngine {
         chains = (0..<Project.trackCount).map { TrackChain(index: $0) }
         master = MasterChain()
         metronome = Metronome()
+        let kit = pads.kit
+        let routed = pads.routedTrack
+        pads = PadSampler()
+        pads.routedTrack = routed
+        pads.load(kit: kit)
         inputPrepared = false
         build()
     }
@@ -206,6 +214,63 @@ final class MixerEngine {
     private func stopPlayers() {
         chains.forEach { $0.stop() }
         metronome.stop()
+    }
+
+    // MARK: Drum pads
+
+    /// Sends the pads through a drum track's chain so they sound like the track.
+    func routePads(to trackIndex: Int, kit: DrumKit) {
+        pads.load(kit: kit)
+        guard pads.routedTrack != trackIndex else { return }
+        pads.routedTrack = trackIndex
+        engine.disconnectNodeOutput(pads.mixer)
+        pads.connect(to: chains[trackIndex], in: engine)
+    }
+
+    func hitPad(_ pad: Int, velocity: Float) throws {
+        try startIfNeeded()
+        pads.trigger(pad, velocity: velocity)
+    }
+
+    /// Output-side delay: a pad tapped in time with what the player hears
+    /// lands this much earlier on the timeline than the engine clock says.
+    var padTimingCompensation: Double {
+        engine.outputNode.presentationLatency + AudioSessionManager.shared.ioBufferDuration
+    }
+
+    /// Starts a drum take: like a recording but with no microphone. Other
+    /// audible tracks play for monitoring; hits are collected by the caller.
+    func startDrumTake(trackIndex: Int, from seconds: Double, project: Project, metronome settings: MetronomeSettings?) throws {
+        stopPlayers()
+        try startIfNeeded()
+        var countIn = 0.0
+        if let settings, settings.enabled, settings.countInBars > 0 {
+            countIn = Double(ClickTrack.countInFrames(bars: settings.countInBars, bpm: settings.bpm, beatsPerBar: settings.beatsPerBar)) / EngineFormat.sampleRate
+        }
+        startFrame = frame(seconds)
+        startHost = mach_absolute_time() + AVAudioTime.hostTime(forSeconds: MixerEngine.startLead + countIn)
+        let time = AVAudioTime(hostTime: startHost)
+        for chain in chains where chain.index != trackIndex && project.isAudible(chain.index) {
+            if chain.schedule(from: startFrame) {
+                chain.play(at: time)
+            }
+        }
+        if let settings, settings.enabled {
+            let countInFrames = frame(countIn)
+            metronome.start(fromFrame: startFrame - countInFrames, at: startHost - AVAudioTime.hostTime(forSeconds: countIn), settings: settings)
+        }
+        recordingSink = nil
+        recordingPlan = nil
+        state = .recording
+    }
+
+    /// Ends a drum take; returns the timeline position it stopped at.
+    func stopDrumTake() -> Double {
+        let stopSeconds = currentSeconds
+        stopPlayers()
+        startFrame = frame(stopSeconds)
+        state = .stopped
+        return stopSeconds
     }
 
     // MARK: Recording

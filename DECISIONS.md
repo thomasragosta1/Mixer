@@ -21,6 +21,14 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Master peak limiter.** Every track feeds `master mixer → Apple PeakLimiter → main mixer`. This is what guarantees "no clipping at any macro position" even with four tracks at +6 dB and maximum compressor makeup. The bounce goes through the same limiter.
 - **Microphone enabled lazily.** The input node is only touched on the first recording, so opening and playing a project never turns on the mic indicator.
 
+## Drum tracks (owner request)
+
+- **A track is either Audio or Drums.** The + under the lanes offers "Audio Track" or "Drum Track". A drum lane shows its kit in a pill under M/S (tap it to change); Cleanup doesn't apply to drums.
+- **Three synthesized kits, no samples:** Studio (acoustic-style), 808 (analog drum machine) and Hand Percussion (cajón, bongos, conga, shaker, tambourine, woodblock). Eight pads each. Each kit has its own pad colours.
+- **The pad** appears above the transport whenever a drum track is armed. Pads fire on touch-down, play polyphonically through the drum track's own chain (so EQ, compressor, Space and volume apply), and give a light haptic.
+- **Recording drums records hits, not the microphone.** Each hit is stored with its timeline time, shifted earlier by the output latency so it lands where the player heard it. On stop, hits in the recorded span replace the old ones (the same overwrite-anywhere rule as audio), and the whole track is rendered to its audio file. Mixing, export, mute/solo and waveforms then work exactly as for audio tracks.
+- **Changing a kit re-renders every existing hit** with the new kit.
+
 ## Recording and timing
 
 - **Alignment uses host time, not buffer counting.** Players start at a shared host time `T`. The recorder notes the host time of the first captured sample, and the splice skips `(T − firstSample + latency) × 48 kHz` frames of the scratch file. This removes tap-start jitter and pre-roll, and makes count-in work for free (the count-in audio is skipped).

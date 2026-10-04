@@ -64,6 +64,12 @@ final class ProjectViewModel {
     @ObservationIgnored private var isActive = false
     /// Guards against a double tap while permission or the engine is starting.
     @ObservationIgnored private var isStartingRecording = false
+    // Drum takes
+    @ObservationIgnored private var isDrumTake = false
+    @ObservationIgnored private var drumTakeStart: Double = 0
+    @ObservationIgnored private var drumTakeHits: [DrumHit] = []
+    @ObservationIgnored private var padPeaksCache: [DrumKit: [[Float]]] = [:]
+    @ObservationIgnored private var drumRenderGeneration = [Int](repeating: 0, count: Project.trackCount)
     /// Bumped on every splice so a Cleanup render of an older take is discarded.
     @ObservationIgnored private var takeGeneration = [Int](repeating: 0, count: Project.trackCount)
 
@@ -84,6 +90,7 @@ final class ProjectViewModel {
         loadPeaks()
         engine.seek(to: playhead)
         clock = PlayheadClock(seconds: playhead, date: Date(), running: false)
+        routePadsIfNeeded()
         engine.onWillReconfigure = { [weak self] in self?.handleEngineWillReconfigure() }
         engine.onConfigurationChange = { [weak self] in self?.applyAll() }
     }
@@ -246,6 +253,10 @@ final class ProjectViewModel {
         isStartingRecording = true
         defer { isStartingRecording = false }
         if isPlaying { pause() }
+        if project.tracks[armedTrack].isDrums {
+            startDrumTake()
+            return
+        }
         guard await AudioSessionManager.shared.requestPermission() else {
             showPermissionDenied = true
             return
@@ -306,6 +317,10 @@ final class ProjectViewModel {
     }
 
     func stopRecording() {
+        if isDrumTake {
+            stopDrumTake()
+            return
+        }
         guard isRecording, let result = engine.stopRecording() else { return }
         isRecording = false
         isCountingIn = false
@@ -420,7 +435,11 @@ final class ProjectViewModel {
         if isRecording {
             playhead = engine.currentSeconds
             isCountingIn = !engine.isPastCountIn
-            if let sink = engine.recordingSink, let plan = engine.recordingPlan {
+            if isDrumTake {
+                // Extend the live region up to "now" so the lane scrolls with the take.
+                let wanted = Int((playhead - drumTakeStart) * WaveformView.peaksPerSecond)
+                if wanted > livePeaks.count { livePeaks += [Float](repeating: 0, count: wanted - livePeaks.count) }
+            } else if let sink = engine.recordingSink, let plan = engine.recordingPlan {
                 if isCountingIn {
                     livePeaks = []
                 } else {
@@ -509,14 +528,173 @@ final class ProjectViewModel {
     func arm(_ index: Int) {
         guard !isRecording, project.visibleLanes.contains(index) else { return }
         armedTrack = index
+        routePadsIfNeeded()
+    }
+
+    // MARK: Drums
+
+    /// An empty track can switch between audio and drums.
+    func setKind(_ index: Int, _ kind: TrackKind) {
+        guard !isRecording, project.tracks[index].isEmpty, project.tracks[index].kind != kind else { return }
+        project.tracks[index].kind = kind
+        if kind == .drums && project.tracks[index].name == "Track \(index + 1)" {
+            project.tracks[index].name = "Drums"
+        } else if kind == .audio && project.tracks[index].name == "Drums" {
+            project.tracks[index].name = "Track \(index + 1)"
+        }
+        routePadsIfNeeded()
+        scheduleSave()
+    }
+
+    var isDrumArmed: Bool { project.tracks[armedTrack].isDrums }
+
+    /// Points the live pads at the armed drum track's chain and kit.
+    private func routePadsIfNeeded() {
+        let track = project.tracks[armedTrack]
+        guard track.isDrums else { return }
+        engine.routePads(to: armedTrack, kit: track.drumKit)
+    }
+
+    /// Plays a pad; during a drum take, also records the hit.
+    func hitPad(_ pad: Int) {
+        let velocity: Float = 0.9
+        do {
+            try engine.hitPad(pad, velocity: velocity)
+        } catch {
+            errorMessage = "Audio couldn't start. \(error.localizedDescription)"
+            return
+        }
+        guard isDrumTake, engine.isPastCountIn else { return }
+        let time = max(drumTakeStart, engine.currentSeconds - engine.padTimingCompensation)
+        drumTakeHits.append(DrumHit(time: time, pad: pad, velocity: velocity))
+        drawLiveHit(pad: pad, at: time)
+    }
+
+    /// Changes a drum track's kit and re-renders its existing hits with it.
+    func setDrumKit(_ index: Int, _ kit: DrumKit) {
+        guard project.tracks[index].isDrums, project.tracks[index].drumKit != kit else { return }
+        project.tracks[index].drumKit = kit
+        if index == armedTrack { routePadsIfNeeded() }
+        scheduleSave()
+        if !project.tracks[index].drumHits.isEmpty {
+            renderDrums(index)
+        }
+    }
+
+    private func startDrumTake() {
+        let index = armedTrack
+        if project.tracks[index].drumHits.isEmpty {
+            playhead = 0
+            engine.seek(to: 0)
+        }
+        routePadsIfNeeded()
+        do {
+            try engine.startDrumTake(trackIndex: index, from: playhead, project: project, metronome: metronomeIfEnabled)
+        } catch {
+            errorMessage = "Recording couldn't start. \(error.localizedDescription)"
+            return
+        }
+        drumTakeStart = playhead
+        drumTakeHits = []
+        recordingStartSeconds = playhead
+        livePeaks = []
+        isDrumTake = true
+        isRecording = true
+        isCountingIn = metronomeIfEnabled.map { $0.countInBars > 0 } ?? false
+        syncClock()
+        startTicker()
+    }
+
+    private func stopDrumTake() {
+        let stopSeconds = max(engine.stopDrumTake(), drumTakeStart)
+        isDrumTake = false
+        isRecording = false
+        isCountingIn = false
+        let index = armedTrack
+        project.tracks[index].drumHits = DrumRenderer.overwrite(project.tracks[index].drumHits, from: drumTakeStart, to: stopSeconds, with: drumTakeHits)
+        drumTakeHits = []
+        playhead = stopSeconds
+        engine.seek(to: playhead)
+        syncClock()
+        renderDrums(index)
+    }
+
+    /// Adds a hit's waveform to the live peaks while a take is running.
+    private func drawLiveHit(pad: Int, at time: Double) {
+        let kit = project.tracks[armedTrack].drumKit
+        if padPeaksCache[kit] == nil {
+            padPeaksCache[kit] = (0..<DrumKit.padCount).map { PeakGenerator.peaks(of: kit.sample(pad: $0)) }
+        }
+        guard let hitPeaks = padPeaksCache[kit]?[pad] else { return }
+        let start = Int((time - drumTakeStart) * WaveformView.peaksPerSecond)
+        guard start >= 0 else { return }
+        let needed = start + hitPeaks.count
+        if livePeaks.count < needed { livePeaks += [Float](repeating: 0, count: needed - livePeaks.count) }
+        for (i, p) in hitPeaks.enumerated() where p > livePeaks[start + i] {
+            livePeaks[start + i] = p
+        }
+    }
+
+    /// Renders a drum track's hits with its kit into its audio file, off the main thread.
+    private func renderDrums(_ index: Int) {
+        let track = project.tracks[index]
+        let hits = track.drumHits
+        let kit = track.drumKit
+        let url = store.audioURL(project: project.id, track: index)
+        let peaksURL = store.peaksURL(project: project.id, track: index)
+        drumRenderGeneration[index] += 1
+        let generation = drumRenderGeneration[index]
+        isSaving = true
+        Task {
+            let outcome = await Task.detached(priority: .userInitiated) { () -> Result<[Float], Error> in
+                do {
+                    if hits.isEmpty {
+                        try? FileManager.default.removeItem(at: url)
+                        try? FileManager.default.removeItem(at: peaksURL)
+                        return .success([])
+                    }
+                    try DrumRenderer.write(hits, kit: kit, to: url)
+                    let peaks = try PeakGenerator.peaks(ofFileAt: url)
+                    try? PeakGenerator.write(peaks, to: peaksURL)
+                    return .success(peaks)
+                } catch {
+                    return .failure(error)
+                }
+            }.value
+            guard generation == self.drumRenderGeneration[index] else { return }
+            self.isSaving = false
+            self.livePeaks = []
+            switch outcome {
+            case .success(let newPeaks):
+                self.project.tracks[index].audioFileName = hits.isEmpty ? nil : ProjectStore.audioFileName(track: index)
+                self.peaks[index] = newPeaks
+                self.store.refreshDurations(&self.project)
+                self.saveNow()
+                let wasPlaying = self.isPlaying
+                if wasPlaying { self.playhead = self.engine.pause() }
+                self.engine.load(project: self.project, store: self.store)
+                self.applyAll()
+                if wasPlaying { try? self.engine.play(from: self.playhead, metronome: self.metronomeIfEnabled) }
+                self.syncClock()
+            case .failure(let error):
+                self.errorMessage = "The drum track couldn't be saved. \(error.localizedDescription)"
+            }
+        }
     }
 
     /// Reveals the next lane, arms it and rewinds, so the new part is laid
     /// down from the top of the song.
-    func addTrack() {
+    func addTrack(kind: TrackKind = .audio) {
         guard !isRecording, project.visibleTrackCount < Project.trackCount else { return }
         project.visibleTrackCount += 1
         armedTrack = project.laneOrder[project.visibleTrackCount - 1]
+        if project.tracks[armedTrack].isEmpty {
+            project.tracks[armedTrack].kind = kind
+            if kind == .drums && project.tracks[armedTrack].name == "Track \(armedTrack + 1)" {
+                project.tracks[armedTrack].name = "Drums"
+            }
+        }
+        routePadsIfNeeded()
         seek(to: 0)
         scheduleSave()
     }
@@ -587,6 +765,7 @@ final class ProjectViewModel {
     /// The on/off button under M/S. Off remembers the level for next time.
     func toggleCleanup(_ index: Int) {
         let track = project.tracks[index]
+        guard !track.isDrums else { return }
         if track.isCleanupOn {
             update(track: index) { t in
                 t.cleanupLevel = t.cleanup

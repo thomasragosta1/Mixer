@@ -109,15 +109,49 @@ struct TrackRowView<Scrub: Gesture>: View {
                 }
             }
 
-            CleanupToggle(
-                isOn: track.isCleanupOn,
-                progress: model.cleanupProgress[index],
-                trackName: track.name
-            ) {
-                model.toggleCleanup(index)
+            if track.isDrums {
+                KitMenu(kit: track.drumKit) { model.setDrumKit(index, $0) }
+                    .disabled(model.isRecording)
+            } else {
+                CleanupToggle(
+                    isOn: track.isCleanupOn,
+                    progress: model.cleanupProgress[index],
+                    trackName: track.name
+                ) {
+                    model.toggleCleanup(index)
+                }
+                .disabled(track.isEmpty || model.isRecording)
             }
-            .disabled(track.isEmpty || model.isRecording)
         }
+    }
+}
+
+/// Thin pill under M / S on drum tracks showing the kit; tap to change it.
+struct KitMenu: View {
+    let kit: DrumKit
+    let onChange: (DrumKit) -> Void
+
+    var body: some View {
+        Menu {
+            Picker("Kit", selection: Binding(get: { kit }, set: onChange)) {
+                ForEach(DrumKit.allCases) { Text($0.displayName).tag($0) }
+            }
+        } label: {
+            HStack(spacing: 4) {
+                Image(systemName: "square.grid.3x2.fill")
+                Text(kit.displayName)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.7)
+            }
+            .font(.caption2.weight(.semibold))
+            .foregroundStyle(Color.primary)
+            .frame(width: 86, height: 24)
+            .background(Capsule().fill(Color(uiColor: .tertiarySystemFill)))
+            .contentShape(Capsule())
+        }
+        .buttonStyle(.plain)
+        .accessibilityLabel("Drum kit")
+        .accessibilityValue(kit.displayName)
     }
 }
 
