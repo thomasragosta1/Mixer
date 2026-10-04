@@ -114,11 +114,16 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
   - **Mode button:** tap cycles **Click** (audible) → **Silent** (no sound, the beat lights still pulse; bigger lights) → **Off**. Silent mode runs the same click track at zero volume, so count-in and timing are identical.
   - **Time signature:** tap cycles 4/4 → 3/4 → 2/4; press and hold for 5/4, 6/4, 6/8, 7/8, 9/8, 12/8. In x/8 meters the BPM counts eighth notes.
   - **Tempo:** starts at **120 BPM** (the usual DAW default). ‹ › change it by the project's step (10 BPM by default); press and hold an arrow for 1 BPM steps that speed up the longer you hold. While playing, the click restarts once the tempo settles rather than on every step.
+  - **Play button for the click alone (owner request),** next to the tempo arrows: plays the metronome by itself from beat 1 to try a tempo (audible even if the metronome is Off; lights only in Silent). Tempo, signature and mode changes apply live; it stops when the song plays or records, and is disabled while the song plays.
   - **Beat lights:** one dot per beat, the current one pulses (downbeat in red), including during a count-in.
   - **Project Settings → Metronome (This Project):** tempo-arrow step (1–40 BPM), count-in (none / 1 / 2 bars, default 1) and click volume. Old projects keep their tempo and on/off state.
   - The click grid is anchored to timeline 0, the count-in plays the bars before the playhead, and the click is never part of an export.
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
+
+## CI minutes (repo stays private)
+
+- GitHub counts macOS minutes ten times against the plan's 2,000 free minutes. To stretch them: the core package tests run on Linux (1x); the app tests, archive and upload share one macOS job (one runner, one checkout, no separate build step); and pushes that only touch Markdown don't build at all. Pushes still ship to TestFlight automatically, so changes are batched into fewer pushes.
 
 ## Testing on the simulator
 

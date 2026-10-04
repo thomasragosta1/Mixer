@@ -2,6 +2,9 @@ name: iOS
 
 on:
   push:
+    # Doc-only changes don't need a build.
+    paths-ignore:
+      - "**/*.md"
   workflow_dispatch:
     inputs:
       upload:
@@ -14,10 +17,35 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  build:
-    name: Build and test
+  # The core package is platform-independent: test it on Linux, where a CI
+  # minute counts once instead of ten times on macOS.
+  core:
+    name: Core tests (Linux)
+    runs-on: ubuntu-latest
+    container: swift:5.10-jammy
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Core package tests
+        working-directory: Packages/FourTrackCore
+        run: swift test
+
+  # One macOS job: app tests in the simulator, then (on pushes) archive and
+  # upload. One runner and one checkout instead of two; the simulator test
+  # builds the app once instead of a separate build step.
+  ios:
+    name: App tests and TestFlight
+    needs: core
     runs-on: macos-15
-    timeout-minutes: 40
+    timeout-minutes: 60
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      BUNDLE_ID: ${{ secrets.BUNDLE_ID }}
+      # Every push ships a build; manual runs can opt out with the "upload" input.
+      SHIP: ${{ github.event_name == 'push' || inputs.upload }}
     steps:
       - uses: actions/checkout@v4
 
@@ -28,22 +56,6 @@ jobs:
           if [ -z "$XC" ]; then echo "::error::No Xcode 26 on this runner"; ls -d /Applications/Xcode*.app; exit 1; fi
           sudo xcode-select -s "$XC/Contents/Developer"
           xcodebuild -version
-
-      - name: Core package tests
-        working-directory: Packages/FourTrackCore
-        run: swift test
-
-      - name: Build app (simulator, unsigned)
-        run: |
-          set -o pipefail
-          xcodebuild \
-            -project FourTrack.xcodeproj \
-            -scheme FourTrack \
-            -configuration Debug \
-            -destination 'generic/platform=iOS Simulator' \
-            CODE_SIGNING_ALLOWED=NO \
-            build 2>&1 | tee build.log | grep -E "error:|warning: .*FourTrack/|BUILD (SUCCEEDED|FAILED)" || true
-          grep -q "BUILD SUCCEEDED" build.log
 
       - name: App tests in the simulator
         run: |
@@ -64,24 +76,10 @@ jobs:
             exit 1
           fi
 
-  testflight:
-    name: Upload to TestFlight
-    needs: build
-    runs-on: macos-15
-    timeout-minutes: 60
-    # Every push to the working branch ships a build once the secrets exist;
-    # manual runs can opt out with the "upload" input.
-    if: github.event_name == 'push' || inputs.upload
-    env:
-      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
-      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
-      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
-      BUNDLE_ID: ${{ secrets.BUNDLE_ID }}
-    steps:
       - name: Check secrets
         id: secrets
         run: |
+          if [ "$SHIP" != "true" ]; then echo "ready=false" >> "$GITHUB_OUTPUT"; exit 0; fi
           missing=""
           for v in ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_P8 APPLE_TEAM_ID BUNDLE_ID; do
             [ -z "${!v}" ] && missing="$missing $v"
@@ -92,18 +90,6 @@ jobs:
           else
             echo "ready=true" >> "$GITHUB_OUTPUT"
           fi
-
-      - uses: actions/checkout@v4
-        if: steps.secrets.outputs.ready == 'true'
-
-      - name: Select Xcode 26
-        if: steps.secrets.outputs.ready == 'true'
-        run: |
-          XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
-          [ -z "$XC" ] && XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
-          if [ -z "$XC" ]; then echo "::error::No Xcode 26 on this runner"; ls -d /Applications/Xcode*.app; exit 1; fi
-          sudo xcode-select -s "$XC/Contents/Developer"
-          xcodebuild -version
 
       - name: Write API key
         if: steps.secrets.outputs.ready == 'true'

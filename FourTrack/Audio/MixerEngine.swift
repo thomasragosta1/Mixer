@@ -198,6 +198,20 @@ final class MixerEngine {
         state = .playing
     }
 
+    /// Plays the click on its own (no tracks), from beat 1, to try a tempo.
+    /// Returns the host time (seconds) of the first click.
+    @discardableResult
+    func startClickPreview(settings: MetronomeSettings) throws -> Double {
+        try startIfNeeded()
+        let host = mach_absolute_time() + AVAudioTime.hostTime(forSeconds: MixerEngine.startLead)
+        metronome.start(fromFrame: 0, at: host, settings: settings)
+        return AVAudioTime.seconds(forHostTime: host)
+    }
+
+    func stopClickPreview() {
+        metronome.stop()
+    }
+
     /// Stops playback and returns where it stopped.
     @discardableResult
     func pause() -> Double {

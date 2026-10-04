@@ -48,6 +48,13 @@ final class DrumFlowUITests: XCTestCase {
         app.buttons["Time signature"].firstMatch.tap()
         app.descendants(matching: .any)["Faster"].firstMatch.tap()
         app.descendants(matching: .any)["Slower"].firstMatch.press(forDuration: 1.2)
+        // The metronome's own play button.
+        let playClick = app.buttons["Play click"].firstMatch
+        XCTAssertTrue(playClick.waitForExistence(timeout: 3))
+        playClick.tap()
+        sleep(1)
+        XCTAssertTrue(app.buttons["Stop click"].firstMatch.exists, "click preview didn't start")
+        app.buttons["Stop click"].firstMatch.tap()
 
         // Press and hold a pad: its settings bubble, an edit, then revert (asks first).
         app.buttons["Snare"].firstMatch.press(forDuration: 1.2)

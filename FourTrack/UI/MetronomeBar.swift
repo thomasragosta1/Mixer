@@ -38,14 +38,39 @@ struct MetronomeBar: View {
             TempoArrow(systemName: "chevron.right", label: "Faster") {
                 model.nudgeTempo(1, fine: $0)
             }
-            Spacer(minLength: 4)
-            if m.enabled {
-                BeatLights(metronome: m, clock: model.clock, emphasized: m.mode == .visual)
-                    .transition(.opacity)
+            previewButton
+            Spacer(minLength: 2)
+            if m.enabled || model.isPreviewingClick {
+                BeatLights(
+                    metronome: m,
+                    clock: model.isPreviewingClick ? model.previewClock : model.clock,
+                    emphasized: m.mode == .visual
+                )
+                .frame(maxWidth: 64)
+                .transition(.opacity)
             }
         }
         .disabled(model.isRecording || model.isSaving)
         .animation(.easeOut(duration: 0.2), value: m.mode)
+    }
+
+    /// Plays the click on its own to try the tempo (not while the song plays).
+    private var previewButton: some View {
+        Button {
+            model.toggleClickPreview()
+        } label: {
+            Image(systemName: model.isPreviewingClick ? "stop.fill" : "play.fill")
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(model.isPreviewingClick ? Color.white : Color.accentColor)
+                .frame(width: 32, height: 32)
+                .background(Circle().fill(model.isPreviewingClick ? Color.accentColor : Color.accentColor.opacity(0.14)))
+                .contentShape(Circle())
+        }
+        .buttonStyle(.plain)
+        .disabled(model.isPlaying)
+        .opacity(model.isPlaying ? 0.4 : 1)
+        .accessibilityLabel(model.isPreviewingClick ? "Stop click" : "Play click")
+        .accessibilityHint("Plays the metronome on its own")
     }
 
     private var modeButton: some View {
@@ -59,8 +84,8 @@ struct MetronomeBar: View {
                 Text(title)
                     .font(.footnote.weight(.semibold))
             }
-            .padding(.horizontal, 10)
-            .frame(width: 84, height: 32)
+            .padding(.horizontal, 6)
+            .frame(width: 76, height: 32)
             .foregroundStyle(m.mode == .on ? Color.white : (m.mode == .visual ? Color.accentColor : Color.secondary))
             .background(Capsule().fill(m.mode == .on ? Color.accentColor : (m.mode == .visual ? Color.accentColor.opacity(0.16) : Color(uiColor: .tertiarySystemFill))))
             .contentShape(Capsule())
@@ -183,8 +208,8 @@ struct BeatLights: View {
             let beat = metronome.beatInBar(at: position)
             let phase = metronome.beatPhase(at: position)
             let count = max(1, metronome.beatsPerBar)
-            let size: CGFloat = count > 7 ? 6 : (emphasized ? 11 : 8)
-            HStack(spacing: count > 7 ? 3 : 5) {
+            let size: CGFloat = count > 6 ? 4 : (count > 4 ? 6 : (emphasized ? 10 : 8))
+            HStack(spacing: count > 6 ? 1.5 : 4) {
                 ForEach(0..<count, id: \.self) { i in
                     let active = clock.running && i == beat
                     Circle()

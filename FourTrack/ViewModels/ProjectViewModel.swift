@@ -23,6 +23,10 @@ final class ProjectViewModel {
     private(set) var isRecording = false
     /// True during a count-in, before the take starts.
     private(set) var isCountingIn = false
+    /// The metronome is playing on its own (its play button).
+    private(set) var isPreviewingClick = false
+    /// Beat-light clock for the click preview.
+    private(set) var previewClock = PlayheadClock(seconds: 0, date: Date(), running: false)
     /// Splicing a finished take into its track.
     private(set) var isSaving = false
     var armedTrack = 0
@@ -127,6 +131,7 @@ final class ProjectViewModel {
 
     func close() {
         guard !isClosed else { return }
+        stopClickPreview()
         if isRecording { stopRecording() }
         if isPlaying { pause() }
         cleanupJobs.values.forEach { $0.cancel() }
@@ -139,6 +144,7 @@ final class ProjectViewModel {
     }
 
     func enteredBackground() {
+        stopClickPreview()
         project.playheadSeconds = playhead
         saveNow()
     }
@@ -166,6 +172,7 @@ final class ProjectViewModel {
 
     func play() {
         guard !isRecording, !isSaving else { return }
+        stopClickPreview()
         // Voice Memos behavior: at the end, play from the start.
         if playhead >= duration - 0.01 { playhead = 0 }
         guard duration > 0 else { return }
@@ -254,6 +261,7 @@ final class ProjectViewModel {
         guard !isRecording, !isSaving, !isStartingRecording else { return }
         isStartingRecording = true
         defer { isStartingRecording = false }
+        stopClickPreview()
         if isPlaying { pause() }
         if project.tracks[armedTrack].isDrums {
             startDrumTake()
@@ -585,6 +593,7 @@ final class ProjectViewModel {
 
     private func startDrumTake() {
         let index = armedTrack
+        stopClickPreview()
         // Drum takes start wherever the playhead is, even on an empty track
         // (the rendered track is silent before the first hit).
         routePadsIfNeeded()
@@ -895,6 +904,11 @@ final class ProjectViewModel {
         change(&project.metronome)
         let after = project.metronome
         scheduleSave()
+        if isPreviewingClick {
+            // Turning the metronome off ends the preview; anything else restarts it with the change.
+            if after.mode == .off && before.mode != .off { stopClickPreview() } else { restartClickPreview() }
+            return
+        }
         // Volume, the tempo step, or On <-> visual-only only change how loud the
         // click is: no need to restart playback.
         var gainOnly = before
@@ -915,6 +929,42 @@ final class ProjectViewModel {
         }
     }
 
+    // MARK: Click preview
+
+    /// The metronome's own play button: the click alone, to try a tempo before
+    /// playing or recording. Silent mode previews the beat lights only.
+    func toggleClickPreview() {
+        if isPreviewingClick { stopClickPreview() } else { startClickPreview() }
+    }
+
+    private func startClickPreview() {
+        guard !isPlaying, !isRecording, !isSaving else { return }
+        var s = project.metronome
+        if s.mode == .off { s.mode = .on }
+        if s.mode == .visual { s.volume = 0 }
+        do {
+            let firstClickHost = try engine.startClickPreview(settings: s)
+            let nowHost = AVAudioTime.seconds(forHostTime: mach_absolute_time())
+            previewClock = PlayheadClock(seconds: 0, date: Date().addingTimeInterval(firstClickHost - nowHost), running: true)
+            isPreviewingClick = true
+        } catch {
+            errorMessage = "Audio couldn't start. \(error.localizedDescription)"
+        }
+    }
+
+    func stopClickPreview() {
+        guard isPreviewingClick else { return }
+        engine.stopClickPreview()
+        isPreviewingClick = false
+        previewClock = PlayheadClock(seconds: 0, date: Date(), running: false)
+    }
+
+    private func restartClickPreview() {
+        engine.stopClickPreview()
+        isPreviewingClick = false
+        startClickPreview()
+    }
+
     /// Tap the metronome: On → visual-only → Off.
     func cycleMetronomeMode() {
         setMetronome { $0.mode = $0.mode.next }
@@ -932,7 +982,7 @@ final class ProjectViewModel {
     /// Arrow taps move by the project's tempo step; holding moves by 1 BPM.
     func nudgeTempo(_ direction: Int, fine: Bool) {
         let delta = Double(direction) * (fine ? 1 : project.metronome.tempoStep)
-        guard isPlaying, project.metronome.enabled else {
+        guard (isPlaying && project.metronome.enabled) || isPreviewingClick else {
             setMetronome { $0.nudgeTempo(by: delta) }
             return
         }
@@ -943,7 +993,12 @@ final class ProjectViewModel {
         tempoRestartTask?.cancel()
         tempoRestartTask = Task { [weak self] in
             try? await Task.sleep(nanoseconds: 350_000_000)
-            guard !Task.isCancelled, let self, self.isPlaying else { return }
+            guard !Task.isCancelled, let self else { return }
+            if self.isPreviewingClick {
+                self.restartClickPreview()
+                return
+            }
+            guard self.isPlaying else { return }
             let position = self.engine.pause()
             self.playhead = position
             try? self.engine.play(from: position, metronome: self.metronomeIfEnabled)
