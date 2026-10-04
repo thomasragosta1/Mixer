@@ -40,7 +40,8 @@ struct ProjectsListView: View {
                     .accessibilityHint("Creates a project and starts recording on Track 1")
             }
             .background(Color(uiColor: .systemGroupedBackground))
-            .navigationTitle("Four-Track")
+            .navigationTitle("All Projects")
+            .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .topBarLeading) {
                     Button {
@@ -110,6 +111,7 @@ struct ProjectsListView: View {
             List {
                 ForEach(model.projects) { project in
                     ProjectRow(project: project)
+                        .listRowInsets(EdgeInsets(top: 9, leading: 20, bottom: 9, trailing: 20))
                         .contentShape(Rectangle())
                         .onTapGesture { path.append(.project(project.id, record: false)) }
                         .onLongPressGesture {
@@ -167,12 +169,12 @@ struct ProjectRow: View {
     let project: Project
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 2) {
             Text(project.name)
                 .font(.headline)
                 .lineLimit(1)
             HStack {
-                Text(project.createdAt, format: .dateTime.month(.abbreviated).day().year())
+                Text(Self.dateLabel(project.createdAt))
                 Spacer()
                 Text(TimeFormat.duration(project.durationSeconds))
                     .monospacedDigit()
@@ -180,7 +182,18 @@ struct ProjectRow: View {
             .font(.subheadline)
             .foregroundStyle(.secondary)
         }
-        .padding(.vertical, 6)
+    }
+
+    /// Voice Memos style: a time for today, "Yesterday", then the date.
+    static func dateLabel(_ date: Date, now: Date = Date()) -> String {
+        let calendar = Calendar.current
+        if calendar.isDate(date, inSameDayAs: now) {
+            return date.formatted(date: .omitted, time: .shortened)
+        }
+        if let yesterday = calendar.date(byAdding: .day, value: -1, to: now), calendar.isDate(date, inSameDayAs: yesterday) {
+            return "Yesterday"
+        }
+        return date.formatted(.dateTime.month(.abbreviated).day().year())
     }
 }
 
