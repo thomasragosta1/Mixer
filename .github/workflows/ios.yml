@@ -152,8 +152,8 @@ jobs:
             archive 2>&1 | tee archive.log | grep -E "error:|ARCHIVE (SUCCEEDED|FAILED)" || true
           grep -q "ARCHIVE SUCCEEDED" archive.log
           APP="$RUNNER_TEMP/FourTrack.xcarchive/Products/Applications/FourTrack.app"
-          echo "Drum samples in app:"; ls "$APP/Drums/studio" "$APP/Drums/hand" | head -40
-          test -f "$APP/Drums/studio/0_1.caf" && test -f "$APP/Drums/hand/7_2.caf" || { echo "::error::Drum samples missing from the app bundle"; exit 1; }
+          echo "Drum samples in app:"; ls "$APP/Drums/studio" "$APP/Drums/studio-tight" "$APP/Drums/hand" | head -60
+          test -f "$APP/Drums/studio/0_1.caf" && test -f "$APP/Drums/studio-tight/7_2.caf" && test -f "$APP/Drums/hand/7_2.caf" || { echo "::error::Drum samples missing from the app bundle"; exit 1; }
 
       - name: Export IPA
         if: steps.secrets.outputs.ready == 'true'

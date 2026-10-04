@@ -134,7 +134,7 @@ struct KitMenu: View {
     var body: some View {
         Menu {
             Picker("Kit", selection: Binding(get: { kit }, set: onChange)) {
-                ForEach(DrumKit.allCases) { Text($0.displayName).tag($0) }
+                ForEach(DrumKit.menuOrder) { Text($0.displayName).tag($0) }
             }
         } label: {
             HStack(spacing: 4) {

@@ -37,9 +37,11 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 """
 
+    /// CC BY 4.0 (DRSKit) requires this credit, a link to the license and a note of changes.
     /// CC0 needs no attribution; credited anyway.
     static let samples = """
-Studio kit: "Big Rusty Drums" by Karoryfer Samples, released under CC0 1.0 (public domain).
+Studio · Tight kit: "DRSKit" by Lars Muldjord and Bent Bisballe Nyeng (DrumGizmo, drumgizmo.org) with Jes Eiler of DRSDrums; sfz port by kinwie. Licensed under Creative Commons Attribution 4.0 International (creativecommons.org/licenses/by/4.0). Changes made for Four-Track: selected hits, close and overhead microphones mixed to mono and time-aligned, decays shortened, snare equalized, levels normalized.
+Studio · Roomy kit: "Big Rusty Drums" by Karoryfer Samples, released under CC0 1.0 (public domain).
 Hand Percussion kit: Versilian Community Sample Library (VCSL) by Versilian Studios, released under CC0 1.0 (public domain).
 """
 }

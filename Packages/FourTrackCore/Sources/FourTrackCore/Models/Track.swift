@@ -67,7 +67,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         self.durationSeconds = 0
         self.lastRecordedRoute = nil
         self.kind = .audio
-        self.drumKit = .studio
+        self.drumKit = DrumKit.defaultKit
         self.drumHits = []
     }
 
@@ -134,7 +134,8 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         durationSeconds = try c.decodeIfPresent(Double.self, forKey: .durationSeconds) ?? 0
         lastRecordedRoute = try c.decodeIfPresent(AudioRouteKind.self, forKey: .lastRecordedRoute)
         kind = try c.decodeIfPresent(TrackKind.self, forKey: .kind) ?? .audio
-        drumKit = try c.decodeIfPresent(DrumKit.self, forKey: .drumKit) ?? .studio
+        // An unknown kit (from a newer version) falls back instead of failing the whole project.
+        drumKit = ((try? c.decodeIfPresent(DrumKit.self, forKey: .drumKit)) ?? nil) ?? DrumKit.defaultKit
         drumHits = try c.decodeIfPresent([DrumHit].self, forKey: .drumHits) ?? []
     }
 }

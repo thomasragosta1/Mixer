@@ -1,25 +1,69 @@
 import Foundation
 
-/// The three built-in drum kits, each with its own character:
-/// - Studio: a real acoustic kit, multi-sampled (Big Rusty Drums by Karoryfer, CC0)
+/// The built-in drum kits, each with its own character:
+/// - Studio, in two sounds:
+///   - Tight: a dry, close-miked studio kit (DRSKit by the DrumGizmo team and
+///     DRSDrums, CC BY 4.0): close mics, phase-aligned, short decays
+///   - Roomy: a big kit with its room (Big Rusty Drums by Karoryfer, CC0)
 /// - 808: classic analog drum machine, synthesized (boomy pitched kick, clap, cowbell)
 /// - Hand Percussion: real cajón, bongos, conga, shaker, tambourine and woodblock
 ///   (Versilian Community Sample Library, CC0)
 /// Sampled kits carry two recorded takes per pad that alternate on repeated hits,
 /// so fast patterns don't sound machine-gunned.
 public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
+    /// Studio · Roomy. The raw value stays "studio" so existing tracks keep their sound.
     case studio
     case eightOhEight
     case handPercussion
+    /// Studio · Tight.
+    case studioTight
 
     public var id: String { rawValue }
 
-    public var displayName: String {
+    /// The kit new drum tracks start with, and what "Studio" picks from another kit.
+    public static let defaultKit: DrumKit = .studioTight
+
+    /// The kit choices shown side by side; both Studio sounds share the Studio tag.
+    public static let kitChoices: [DrumKit] = [.studio, .eightOhEight, .handPercussion]
+
+    /// The two Studio sounds, in switch order.
+    public static let studioSounds: [DrumKit] = [.studioTight, .studio]
+
+    /// Every kit in menu order.
+    public static let menuOrder: [DrumKit] = [.studioTight, .studio, .eightOhEight, .handPercussion]
+
+    public var isStudio: Bool { self == .studio || self == .studioTight }
+
+    /// The kit-choice tag this kit sits under (both Studio sounds → `.studio`).
+    public var choice: DrumKit { isStudio ? .studio : self }
+
+    /// "Studio", "808", "Hand Percussion".
+    public var familyName: String {
         switch self {
-        case .studio: return "Studio"
+        case .studio, .studioTight: return "Studio"
         case .eightOhEight: return "808"
         case .handPercussion: return "Hand Percussion"
         }
+    }
+
+    /// "Tight" / "Roomy" for the Studio sounds, nil for the other kits.
+    public var soundName: String? {
+        switch self {
+        case .studioTight: return "Tight"
+        case .studio: return "Roomy"
+        case .eightOhEight, .handPercussion: return nil
+        }
+    }
+
+    /// "Studio · Tight", "808", ...
+    public var displayName: String {
+        soundName.map { "\(familyName) · \($0)" } ?? familyName
+    }
+
+    /// Picking a kit choice: Studio keeps the current Studio sound, or starts on the default.
+    public func choosing(_ choice: DrumKit) -> DrumKit {
+        if choice.isStudio { return isStudio ? self : DrumKit.defaultKit }
+        return choice
     }
 
     public static let padCount = 8
@@ -27,7 +71,7 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
     /// Pad names, in pad order (top-left to bottom-right on a 4 x 2 grid).
     public var padNames: [String] {
         switch self {
-        case .studio:
+        case .studio, .studioTight:
             return ["Kick", "Snare", "Closed Hat", "Open Hat", "Low Tom", "High Tom", "Ride", "Crash"]
         case .eightOhEight:
             return ["Kick", "Snare", "Clap", "Closed Hat", "Open Hat", "Cowbell", "Rim", "Tom"]
@@ -41,7 +85,7 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
 
     public func family(of pad: Int) -> PadFamily {
         switch self {
-        case .studio: return [.kick, .snare, .hat, .hat, .tom, .tom, .cymbal, .cymbal][pad]
+        case .studio, .studioTight: return [.kick, .snare, .hat, .hat, .tom, .tom, .cymbal, .cymbal][pad]
         case .eightOhEight: return [.kick, .snare, .snare, .hat, .hat, .accent, .accent, .tom][pad]
         case .handPercussion: return [.kick, .snare, .tom, .tom, .tom, .hat, .hat, .accent][pad]
         }
@@ -54,7 +98,7 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
     public var padLayout: [[Int]] {
         switch self {
         // Bottom: Kick, Snare, Closed Hat, Open Hat. Top: High Tom, Low Tom, Ride, Crash.
-        case .studio: return [[5, 4, 6, 7], [0, 1, 2, 3]]
+        case .studio, .studioTight: return [[5, 4, 6, 7], [0, 1, 2, 3]]
         // Bottom: Kick, Snare, Closed Hat, Open Hat. Top: Tom, Rim, Clap, Cowbell.
         case .eightOhEight: return [[7, 6, 2, 5], [0, 1, 3, 4]]
         // Bottom: Cajón, Slap, Shaker, Tambourine. Top: Conga, Bongo Low, Bongo High, Woodblock.
@@ -65,7 +109,7 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
     /// Number of alternate takes per pad.
     public var variantCount: Int {
         switch self {
-        case .studio, .handPercussion: return 2
+        case .studio, .studioTight, .handPercussion: return 2
         case .eightOhEight: return 1
         }
     }
@@ -74,6 +118,7 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
     var sampleFolder: String? {
         switch self {
         case .studio: return "studio"
+        case .studioTight: return "studio-tight"
         case .handPercussion: return "hand"
         case .eightOhEight: return nil
         }
@@ -112,7 +157,7 @@ public enum DrumSamples {
         }
     }
 
-    static func load(kit: DrumKit, pad: Int, variant: Int, sampleRate: Double) -> [Float]? {
+    public static func load(kit: DrumKit, pad: Int, variant: Int, sampleRate: Double) -> [Float]? {
         guard let folder = kit.sampleFolder else { return nil }
         let key = "\(folder)/\(pad)_\(variant + 1)@\(Int(sampleRate))"
         lock.lock()
@@ -239,7 +284,7 @@ enum DrumSynth {
     static func render(kit: DrumKit, pad: Int, sampleRate sr: Double) -> [Float] {
         var noise = Noise(seed: UInt64(pad * 7919 + kit.hashSeed))
         switch kit {
-        case .studio:
+        case .studio, .studioTight:
             switch pad {
             case 0: return kick(sr, start: 140, end: 52, pitchDecay: 0.035, decay: 0.32, click: 0.35, noise: &noise)
             case 1: return snare(sr, tone: 185, toneDecay: 0.08, noiseDecay: 0.18, noiseLevel: 0.75, bright: 2_500, noise: &noise)
@@ -534,7 +579,7 @@ struct Noise {
 extension DrumKit {
     var hashSeed: Int {
         switch self {
-        case .studio: return 1
+        case .studio, .studioTight: return 1
         case .eightOhEight: return 2
         case .handPercussion: return 3
         }

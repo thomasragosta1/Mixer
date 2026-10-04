@@ -27,11 +27,20 @@ final class DrumFlowUITests: XCTestCase {
         for name in ["Kick", "Snare", "Closed Hat", "Crash"] {
             app.buttons[name].firstMatch.tap()
         }
+        // New drum tracks start on Studio · Tight; switch to Roomy and back.
+        XCTAssertTrue(app.buttons["Tight"].firstMatch.waitForExistence(timeout: 3), "Studio sound switch missing")
+        for sound in ["Roomy", "Tight"] {
+            app.buttons[sound].firstMatch.tap()
+            sleep(1)
+            app.buttons["Kick"].firstMatch.tap()
+            app.buttons["Snare"].firstMatch.tap()
+        }
         for kit in ["808", "Hand Percussion", "Studio"] {
             app.buttons[kit].firstMatch.tap()
             sleep(1)
             app.buttons[kit == "Hand Percussion" ? "Cajón" : "Kick"].firstMatch.tap()
         }
+        XCTAssertTrue(app.buttons["Tight"].firstMatch.exists, "Studio should come back on Tight")
         // Back to the audio lane and to drums again.
         app.descendants(matching: .any)["Track 1"].firstMatch.tap()
         sleep(1)

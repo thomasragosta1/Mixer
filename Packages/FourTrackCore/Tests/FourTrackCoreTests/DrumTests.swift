@@ -48,6 +48,28 @@ final class DrumTests: XCTestCase {
         }
     }
 
+    func testStudioSounds() {
+        // Existing tracks keep the original Studio kit; it is now the "Roomy" sound.
+        XCTAssertEqual(DrumKit(rawValue: "studio"), .studio)
+        XCTAssertEqual(DrumKit.studio.displayName, "Studio · Roomy")
+        XCTAssertEqual(DrumKit.studioTight.displayName, "Studio · Tight")
+        XCTAssertEqual(DrumKit.eightOhEight.displayName, "808")
+        XCTAssertEqual(Track(index: 0).drumKit, .studioTight)
+        // Picking "Studio" keeps the current Studio sound, or starts on Tight.
+        XCTAssertEqual(DrumKit.studio.choosing(.studio), .studio)
+        XCTAssertEqual(DrumKit.eightOhEight.choosing(.studio), .studioTight)
+        XCTAssertEqual(DrumKit.studioTight.choosing(.handPercussion), .handPercussion)
+        XCTAssertEqual(Set(DrumKit.menuOrder), Set(DrumKit.allCases))
+        XCTAssertEqual(DrumKit.studioTight.choice, .studio)
+        // Tight really is tighter: every drum (not cymbal) pad is shorter than its Roomy twin.
+        for pad in [0, 1, 2, 4, 5] {
+            XCTAssertLessThan(DrumKit.studioTight.sample(pad: pad).count, DrumKit.studio.sample(pad: pad).count, "pad \(pad)")
+        }
+        // A kit this version doesn't know decodes to the default instead of failing the project.
+        let json = #"{"index":1,"kind":"drums","drumKit":"someFutureKit"}"#
+        XCTAssertEqual(try JSONDecoder().decode(Track.self, from: Data(json.utf8)).drumKit, .studioTight)
+    }
+
     func testKitsSoundDifferent() {
         // Same pad slot across kits must not be near-identical.
         for pad in 0..<DrumKit.padCount {
@@ -61,7 +83,7 @@ final class DrumTests: XCTestCase {
     }
 
     func testSampledKitsLoadRealSamplesAndAlternateTakes() {
-        for kit in [DrumKit.studio, .handPercussion] {
+        for kit in [DrumKit.studio, .studioTight, .handPercussion] {
             XCTAssertNotNil(DrumSamples.load(kit: kit, pad: 0, variant: 0, sampleRate: 48_000), "\(kit) samples missing from bundle")
             for pad in 0..<DrumKit.padCount {
                 let a = kit.sample(pad: pad, variant: 0)

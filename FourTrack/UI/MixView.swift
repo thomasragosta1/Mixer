@@ -263,14 +263,15 @@ struct TrackMixPage: View {
         List {
             if track.isDrums {
                 Section {
-                    Picker("Kit", selection: Binding(get: { track.drumKit }, set: { model.setDrumKit(index, $0) })) {
-                        ForEach(DrumKit.allCases) { Text($0.displayName).tag($0) }
-                    }
-                    .pickerStyle(.segmented)
+                    DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
+                        .disabled(model.isRecording)
+                        .padding(.vertical, 4)
                 } header: {
                     Text("Drum Kit")
                 } footer: {
-                    Text("Changing the kit re-plays every hit on this track with the new sounds.")
+                    Text(track.drumKit.isStudio
+                         ? "Tight is dry and punchy; Roomy keeps the sound of the room. Changing either re-plays every hit on this track."
+                         : "Changing the kit re-plays every hit on this track with the new sounds.")
                 }
             } else {
             Section {

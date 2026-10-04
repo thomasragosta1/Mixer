@@ -18,14 +18,9 @@ struct DrumStudioView: View {
         VStack(spacing: 10) {
             CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
 
-            HStack(spacing: 10) {
-                Picker("Kit", selection: Binding(get: { track.drumKit }, set: { model.setDrumKit(index, $0) })) {
-                    ForEach(DrumKit.allCases) { Text($0.displayName).tag($0) }
-                }
-                .pickerStyle(.segmented)
+            DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
                 .disabled(model.isRecording)
-            }
-            .padding(.horizontal, 16)
+                .padding(.horizontal, 16)
 
             DrumPadGrid(kit: track.drumKit) { model.hitPad($0) }
                 .padding(.horizontal, 12)
@@ -41,6 +36,34 @@ struct DrumStudioView: View {
             MetronomeSheet(model: model)
                 .presentationDetents([.height(300)])
         }
+    }
+}
+
+// MARK: - Kit choice
+
+/// Studio / 808 / Hand Percussion, plus a Tight / Roomy switch under Studio.
+struct DrumKitPicker: View {
+    let kit: DrumKit
+    let onChange: (DrumKit) -> Void
+
+    var body: some View {
+        VStack(spacing: 8) {
+            Picker("Kit", selection: Binding(get: { kit.choice }, set: { onChange(kit.choosing($0)) })) {
+                ForEach(DrumKit.kitChoices) { Text($0.familyName).tag($0) }
+            }
+            .pickerStyle(.segmented)
+
+            if kit.isStudio {
+                Picker("Studio sound", selection: Binding(get: { kit }, set: onChange)) {
+                    ForEach(DrumKit.studioSounds) { Text($0.soundName ?? $0.familyName).tag($0) }
+                }
+                .pickerStyle(.segmented)
+                .frame(maxWidth: 220)
+                .transition(.opacity.combined(with: .move(edge: .top)))
+                .accessibilityHint("Tight is dry and punchy; Roomy keeps the sound of the room.")
+            }
+        }
+        .animation(.spring(response: 0.3, dampingFraction: 0.85), value: kit.isStudio)
     }
 }
 

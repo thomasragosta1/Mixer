@@ -22,9 +22,16 @@ final class DrumTrackTests: XCTestCase {
     }
 
     func testDrumSamplesShipInTheApp() {
-        let studio = DrumSamples.directory?.appendingPathComponent("studio/0_1.caf")
-        XCTAssertNotNil(studio)
-        XCTAssertTrue(FileManager.default.fileExists(atPath: studio?.path ?? ""))
+        for folder in ["studio", "studio-tight", "hand"] {
+            for pad in 0..<DrumKit.padCount {
+                for take in 1...2 {
+                    let url = DrumSamples.directory?.appendingPathComponent("\(folder)/\(pad)_\(take).caf")
+                    XCTAssertTrue(FileManager.default.fileExists(atPath: url?.path ?? ""), "\(folder)/\(pad)_\(take).caf missing")
+                }
+            }
+        }
+        // Real samples, not the synthesized fallback: the sampled Tight kick is a recording.
+        XCTAssertNotNil(DrumSamples.load(kit: .studioTight, pad: 0, variant: 0, sampleRate: 48_000))
     }
 
     func testAddingDrumTrackAndPlayingPads() throws {
