@@ -150,7 +150,13 @@ final class DrumTrackTests: XCTestCase {
         var project = try store.create()
         let url = store.audioURL(project: project.id, track: 0)
         let w = try CAFWriter(url: url)
-        try w.write((0..<(48_000 * 4)).map { 0.3 * Float(sin(2 * .pi * 220 * Double($0) / 48_000)) })
+        var tone = [Float](repeating: 0, count: 48_000 * 4)
+        let step: Double = 2 * Double.pi * 220 / 48_000
+        for i in tone.indices {
+            let phase: Double = step * Double(i)
+            tone[i] = Float(0.3 * sin(phase))
+        }
+        try w.write(tone)
         try w.finish()
         project.tracks[0].audioFileName = ProjectStore.audioFileName(track: 0)
         project.visibleTrackCount = 2
