@@ -33,11 +33,6 @@ final class CompressorAU: AUAudioUnit {
     private var _inputBusses: AUAudioUnitBusArray!
     private var _outputBusses: AUAudioUnitBusArray!
     private var _parameterTree: AUParameterTree!
-    /// Render-thread state, captured strongly by the render block (no weak loads on the audio thread).
-    private final class RenderState {
-        var inputBuffer: AVAudioPCMBuffer?
-    }
-    private let state = RenderState()
 
     override init(componentDescription: AudioComponentDescription, options: AudioComponentInstantiationOptions = []) throws {
         let format = AVAudioFormat(standardFormatWithSampleRate: CAFFormat.defaultSampleRate, channels: 2)!
@@ -106,45 +101,24 @@ final class CompressorAU: AUAudioUnit {
         guard outputBus.format.channelCount == inputBus.format.channelCount else {
             throw NSError(domain: NSOSStatusErrorDomain, code: Int(kAudioUnitErr_FailedInitialization))
         }
-        state.inputBuffer = AVAudioPCMBuffer(pcmFormat: inputBus.format, frameCapacity: maximumFramesToRender)
         dsp.reset(sampleRate: outputBus.format.sampleRate)
     }
 
-    override func deallocateRenderResources() {
-        state.inputBuffer = nil
-        super.deallocateRenderResources()
-    }
 
     override var internalRenderBlock: AUInternalRenderBlock {
         let dsp = self.dsp
-        let state = self.state
         return { _, timestamp, frameCount, _, outputData, _, pullInputBlock in
-            guard let pullInputBlock, let input = state.inputBuffer, let channels = input.floatChannelData else {
-                return kAudioUnitErr_NoConnection
-            }
-            guard frameCount <= input.frameCapacity else { return kAudioUnitErr_TooManyFramesToProcess }
-
-            // Pull the input into our own buffer (reset pointers each time; upstream may have moved them).
-            let inList = UnsafeMutableAudioBufferListPointer(input.mutableAudioBufferList)
-            for i in 0..<inList.count {
-                inList[i].mData = UnsafeMutableRawPointer(channels[i])
-                inList[i].mDataByteSize = frameCount * UInt32(MemoryLayout<Float>.size)
-            }
-            var pullFlags = AudioUnitRenderActionFlags()
-            let status = pullInputBlock(&pullFlags, timestamp, frameCount, 0, input.mutableAudioBufferList)
-            guard status == noErr else { return status }
-
-            // Process in place when the host gives no output memory.
+            guard let pullInputBlock else { return kAudioUnitErr_NoConnection }
+            // In-place processing: pull the input straight into the output
+            // buffer list (upstream fills our buffers, or hands us its own when
+            // mData is nil), then compress those samples where they are.
             let outList = UnsafeMutableAudioBufferListPointer(outputData)
             for i in 0..<outList.count {
-                let src = inList[min(i, inList.count - 1)]
-                if outList[i].mData == nil {
-                    outList[i].mData = src.mData
-                } else if outList[i].mData != src.mData, let s = src.mData, let d = outList[i].mData {
-                    d.copyMemory(from: s, byteCount: Int(frameCount) * MemoryLayout<Float>.size)
-                }
                 outList[i].mDataByteSize = frameCount * UInt32(MemoryLayout<Float>.size)
             }
+            var pullFlags = AudioUnitRenderActionFlags()
+            let status = pullInputBlock(&pullFlags, timestamp, frameCount, 0, outputData)
+            guard status == noErr else { return status }
             guard let left = outList.first?.mData?.assumingMemoryBound(to: Float.self) else { return noErr }
             let right = outList.count > 1 ? outList[1].mData?.assumingMemoryBound(to: Float.self) : nil
             dsp.process(left, right, frames: Int(frameCount))

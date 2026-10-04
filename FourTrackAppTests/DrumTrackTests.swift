@@ -1,4 +1,5 @@
 import XCTest
+import AVFoundation
 import SwiftUI
 import UIKit
 @testable import FourTrack
@@ -66,6 +67,31 @@ final class DrumTrackTests: XCTestCase {
         spin(1.5)
         host.view.layoutIfNeeded()
         window.isHidden = true
+    }
+
+    /// The whole track chain (EQ -> in-house compressor -> warmth -> reverb)
+    /// must render real audio, at every compressor setting.
+    func testTrackChainRendersThroughCompressor() throws {
+        var project = try store.create()
+        let url = store.audioURL(project: project.id, track: 0)
+        let w = try CAFWriter(url: url)
+        try w.write((0..<48_000).map { 0.5 * Float(sin(2 * .pi * 220 * Double($0) / 48_000)) })
+        try w.finish()
+        project.tracks[0].audioFileName = ProjectStore.audioFileName(track: 0)
+        store.refreshDurations(&project)
+        for slider in [0.0, 0.3, 1.0] {
+            project.tracks[0].compressor = slider
+            var options = ExportOptions()
+            options.format = .wav
+            let out = try Exporter.exportTrack(0, project: project, store: store, options: options, warmthEnabled: false) { _ in }
+            let file = try AVAudioFile(forReading: out)
+            let buffer = AVAudioPCMBuffer(pcmFormat: file.processingFormat, frameCapacity: AVAudioFrameCount(file.length))!
+            try file.read(into: buffer)
+            let samples = UnsafeBufferPointer(start: buffer.floatChannelData![0], count: Int(buffer.frameLength))
+            let peak = samples.map { abs($0) }.max() ?? 0
+            XCTAssertGreaterThan(peak, 0.05, "compressor \(slider) rendered silence")
+            XCTAssertLessThanOrEqual(peak, 1.0)
+        }
     }
 
     private func spin(_ seconds: TimeInterval) {

@@ -54,7 +54,7 @@ jobs:
             -project FourTrack.xcodeproj \
             -scheme FourTrack \
             -destination "id=$UDID" \
-            CODE_SIGNING_ALLOWED=NO 2>&1 | tee test.log | grep -E "error:|Test Case|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
+            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | tee test.log | grep -E "error:|Test Case|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
           status=${PIPESTATUS[0]}
           set -e
           if [ "$status" != "0" ]; then

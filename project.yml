@@ -77,6 +77,19 @@ targets:
         TEST_HOST: $(BUILT_PRODUCTS_DIR)/FourTrack.app/FourTrack
         BUNDLE_LOADER: $(TEST_HOST)
 
+  FourTrackUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: FourTrackUITests
+    dependencies:
+      - target: FourTrack
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: com.fourtrack.app.uitests
+        TEST_TARGET_NAME: FourTrack
+
 schemes:
   FourTrack:
     build:
@@ -88,5 +101,6 @@ schemes:
       config: Debug
       targets:
         - FourTrackTests
+        - FourTrackUITests
     archive:
       config: Release

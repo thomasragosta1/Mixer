@@ -49,6 +49,16 @@
                ReferencedContainer = "container:FourTrack.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "D136FC8F265ED893F6E02D69"
+               BuildableName = "FourTrackUITests.xctest"
+               BlueprintName = "FourTrackUITests"
+               ReferencedContainer = "container:FourTrack.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <CommandLineArguments>
       </CommandLineArguments>

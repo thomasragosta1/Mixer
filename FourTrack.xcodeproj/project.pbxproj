@@ -22,6 +22,7 @@
 		680F6132AC71207BA8608BD6 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C31B8FB95A04BDC54A725 /* ProjectView.swift */; };
 		6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8780E45856FF405502040 /* ExportSheet.swift */; };
 		6BCC66B84969BBEFBE39B89D /* CompressorAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */; };
+		6DCD3C86187BC74CB7DC7487 /* DrumFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03CC3498679B0B0EE9BE02 /* DrumFlowUITests.swift */; };
 		719E4F4E98B4EF8C7C8249B6 /* VoiceIsolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C33C5D0807D6485D8E215E /* VoiceIsolation.swift */; };
 		7BFDC84C28A75873EED073F6 /* BinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4C9D955D96787E81A4BE5 /* BinView.swift */; };
 		85E4177A1A68A96E60CA5854 /* TrackBinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853BB5BA068D6604EFCB8CC9 /* TrackBinView.swift */; };
@@ -48,6 +49,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		1F27F9906BB5E3DAAD349A14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B397BD0583FA393F920604E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5720FD20E9B45BB36D65532;
+			remoteInfo = FourTrack;
+		};
 		7AB82098079C98F39A55970F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 2B397BD0583FA393F920604E /* Project object */;
@@ -66,7 +74,9 @@
 		2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		2FD8780E45856FF405502040 /* ExportSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportSheet.swift; sourceTree = "<group>"; };
 		30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3188C30C4D3756A30B656E19 /* FourTrackUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FourTrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Acknowledgements.swift; sourceTree = "<group>"; };
+		3C03CC3498679B0B0EE9BE02 /* DrumFlowUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumFlowUITests.swift; sourceTree = "<group>"; };
 		55B6CA0B0541E1048FE62C79 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompressorAU.swift; sourceTree = "<group>"; };
 		5AF5F53D2AB6B95BB1B24F92 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
@@ -195,6 +205,7 @@
 			children = (
 				51E3F710530F3CF2DDF0ABFE /* FourTrack */,
 				39ADB0D57D48357FB423D911 /* FourTrackAppTests */,
+				B84A8A75D8357B17AA4ED296 /* FourTrackUITests */,
 				B9F9DAB060E131EBC37ED0B0 /* Packages */,
 				8C608A094F0E331839FF975A /* Products */,
 			);
@@ -205,6 +216,7 @@
 			children = (
 				B8FB2B46B8C9237AB766133A /* FourTrack.app */,
 				6CBCF15A100D38FA74B05B31 /* FourTrackTests.xctest */,
+				3188C30C4D3756A30B656E19 /* FourTrackUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -216,6 +228,14 @@
 				1A9C3D1657FC7B0FA7CACF00 /* FourTrackApp.swift */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		B84A8A75D8357B17AA4ED296 /* FourTrackUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3C03CC3498679B0B0EE9BE02 /* DrumFlowUITests.swift */,
+			);
+			path = FourTrackUITests;
 			sourceTree = "<group>";
 		};
 		B9F9DAB060E131EBC37ED0B0 /* Packages */ = {
@@ -289,6 +309,24 @@
 			productReference = B8FB2B46B8C9237AB766133A /* FourTrack.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D136FC8F265ED893F6E02D69 /* FourTrackUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 977D98ED5909B6A06B835F7D /* Build configuration list for PBXNativeTarget "FourTrackUITests" */;
+			buildPhases = (
+				897EB8D42C29A3DA67220326 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F235DC1E40D394DBA7886A3 /* PBXTargetDependency */,
+			);
+			name = FourTrackUITests;
+			packageProductDependencies = (
+			);
+			productName = FourTrackUITests;
+			productReference = 3188C30C4D3756A30B656E19 /* FourTrackUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -305,6 +343,11 @@
 					C5720FD20E9B45BB36D65532 = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
+					};
+					D136FC8F265ED893F6E02D69 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5720FD20E9B45BB36D65532;
 					};
 				};
 			};
@@ -327,6 +370,7 @@
 			targets = (
 				C5720FD20E9B45BB36D65532 /* FourTrack */,
 				7BD47EDA8C6B6469BDE5C7C4 /* FourTrackTests */,
+				D136FC8F265ED893F6E02D69 /* FourTrackUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,6 +436,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		897EB8D42C29A3DA67220326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DCD3C86187BC74CB7DC7487 /* DrumFlowUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -399,6 +451,11 @@
 			isa = PBXTargetDependency;
 			target = C5720FD20E9B45BB36D65532 /* FourTrack */;
 			targetProxy = 7AB82098079C98F39A55970F /* PBXContainerItemProxy */;
+		};
+		3F235DC1E40D394DBA7886A3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5720FD20E9B45BB36D65532 /* FourTrack */;
+			targetProxy = 1F27F9906BB5E3DAAD349A14 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -586,6 +643,40 @@
 			};
 			name = Debug;
 		};
+		729EDE295E0016FEC29A70F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourtrack.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FourTrack;
+			};
+			name = Release;
+		};
+		8862512D189C2D36BB545468 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.fourtrack.app.uitests;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FourTrack;
+			};
+			name = Debug;
+		};
 		F883D6F1E4D220FD7A163A05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -623,6 +714,15 @@
 			buildConfigurations = (
 				41FB18BCE4589380995301E9 /* Debug */,
 				3772854502B7EFA275A2584D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		977D98ED5909B6A06B835F7D /* Build configuration list for PBXNativeTarget "FourTrackUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8862512D189C2D36BB545468 /* Debug */,
+				729EDE295E0016FEC29A70F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
