@@ -28,7 +28,9 @@ struct ProjectsListView: View {
             VStack(spacing: 0) {
                 list
                     .overlay(alignment: .bottom) {
-                        NewProjectButton { namingNewProject = true }
+                        NewProjectButton {
+                            withAnimation(.easeOut(duration: 0.2)) { namingNewProject = true }
+                        }
                             .padding(.bottom, 14)
                     }
                 Divider()
@@ -69,13 +71,15 @@ struct ProjectsListView: View {
             .sheet(isPresented: $showingSettings) {
                 SettingsView(model: nil, settings: settings)
             }
-            .sheet(isPresented: $namingNewProject) {
-                NewProjectSheet(defaultName: model.nextDefaultName) { name in
-                    namingNewProject = false
-                    guard let project = model.createProject(named: name) else { return }
-                    path.append(.project(project.id, record: false))
+            .overlay {
+                if namingNewProject {
+                    NewProjectBubble(defaultName: model.nextDefaultName) { name in
+                        withAnimation(.easeOut(duration: 0.15)) { namingNewProject = false }
+                        guard let name, let project = model.createProject(named: name) else { return }
+                        path.append(.project(project.id, record: false))
+                    }
+                    .transition(.opacity.combined(with: .scale(scale: 1.08)))
                 }
-                .presentationDetents([.height(220)])
             }
             .alert("Rename Project", isPresented: Binding(get: { renaming != nil }, set: { if !$0 { renaming = nil } })) {
                 TextField("Name", text: $draftName)
@@ -199,43 +203,55 @@ struct NewProjectButton: View {
     }
 }
 
-/// Name a new project. The field starts with the default name fully
-/// selected, so typing replaces it and Create keeps it as is.
-struct NewProjectSheet: View {
+/// Centered pop-up bubble for naming a new project, styled like an iOS
+/// alert. The field starts with the default name fully selected, so typing
+/// replaces it and Create keeps it. Calls back with nil on Cancel.
+struct NewProjectBubble: View {
     let defaultName: String
-    let onCreate: (String) -> Void
+    let onFinish: (String?) -> Void
     @State private var name: String
-    @Environment(\.dismiss) private var dismiss
 
-    init(defaultName: String, onCreate: @escaping (String) -> Void) {
+    init(defaultName: String, onFinish: @escaping (String?) -> Void) {
         self.defaultName = defaultName
-        self.onCreate = onCreate
+        self.onFinish = onFinish
         _name = State(initialValue: defaultName)
     }
 
     var body: some View {
-        NavigationStack {
-            VStack(alignment: .leading, spacing: 8) {
-                SelectAllTextField(text: $name, placeholder: defaultName) {
-                    onCreate(name.isEmpty ? defaultName : name)
+        ZStack {
+            Color.black.opacity(0.35)
+                .ignoresSafeArea()
+                .onTapGesture { onFinish(nil) }
+                .accessibilityHidden(true)
+
+            VStack(spacing: 0) {
+                VStack(spacing: 12) {
+                    Text("New Project")
+                        .font(.headline)
+                    SelectAllTextField(text: $name, placeholder: defaultName) {
+                        onFinish(name.isEmpty ? defaultName : name)
+                    }
+                    .frame(height: 36)
+                    .padding(.horizontal, 8)
+                    .background(RoundedRectangle(cornerRadius: 8, style: .continuous).fill(Color(uiColor: .tertiarySystemFill)))
                 }
-                .frame(height: 44)
-                .padding(.horizontal, 12)
-                .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(uiColor: .secondarySystemBackground)))
-                Spacer(minLength: 0)
-            }
-            .padding()
-            .navigationTitle("New Project")
-            .navigationBarTitleDisplayMode(.inline)
-            .toolbar {
-                ToolbarItem(placement: .cancellationAction) {
-                    Button("Cancel") { dismiss() }
-                }
-                ToolbarItem(placement: .confirmationAction) {
-                    Button("Create") { onCreate(name.isEmpty ? defaultName : name) }
+                .padding(16)
+
+                Divider()
+                HStack(spacing: 0) {
+                    Button("Cancel") { onFinish(nil) }
+                        .frame(maxWidth: .infinity, minHeight: 44)
+                    Divider().frame(height: 44)
+                    Button("Create") { onFinish(name.isEmpty ? defaultName : name) }
                         .fontWeight(.semibold)
+                        .frame(maxWidth: .infinity, minHeight: 44)
                 }
             }
+            .frame(width: 280)
+            .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .shadow(color: .black.opacity(0.2), radius: 20, y: 8)
+            .accessibilityElement(children: .contain)
+            .accessibilityAddTraits(.isModal)
         }
     }
 }
