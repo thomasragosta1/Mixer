@@ -17,6 +17,8 @@ final class ProjectViewModel {
     private(set) var livePeaks: [Float] = []
     private(set) var recordingStartSeconds: Double = 0
     private(set) var playhead: Double = 0
+    /// Smoothly animatable playhead for the waveforms.
+    private(set) var clock = PlayheadClock(seconds: 0, date: Date(), running: false)
     private(set) var isPlaying = false
     private(set) var isRecording = false
     /// True during a count-in, before the take starts.
@@ -74,6 +76,7 @@ final class ProjectViewModel {
         applyAll()
         loadPeaks()
         engine.seek(to: playhead)
+        clock = PlayheadClock(seconds: playhead, date: Date(), running: false)
         engine.onWillReconfigure = { [weak self] in self?.handleEngineWillReconfigure() }
         engine.onConfigurationChange = { [weak self] in self?.applyAll() }
     }
@@ -126,6 +129,17 @@ final class ProjectViewModel {
 
     // MARK: Transport
 
+    /// Re-anchors the waveform clock to the engine after any transport change.
+    private func syncClock() {
+        if isPlaying || isRecording {
+            let anchor = engine.timelineAnchor
+            let nowHost = AVAudioTime.seconds(forHostTime: mach_absolute_time())
+            clock = PlayheadClock(seconds: anchor.seconds, date: Date().addingTimeInterval(anchor.hostSeconds - nowHost), running: true)
+        } else {
+            clock = PlayheadClock(seconds: playhead, date: Date(), running: false)
+        }
+    }
+
     func togglePlay() {
         if isRecording {
             stopRecording()
@@ -142,6 +156,7 @@ final class ProjectViewModel {
         do {
             try engine.play(from: playhead, metronome: metronomeIfEnabled)
             isPlaying = true
+            syncClock()
             startTicker()
         } catch {
             errorMessage = "Playback couldn't start. \(error.localizedDescription)"
@@ -152,6 +167,7 @@ final class ProjectViewModel {
         guard isPlaying else { return }
         playhead = min(engine.pause(), duration)
         isPlaying = false
+        syncClock()
         project.playheadSeconds = playhead
         scheduleSave()
     }
@@ -175,6 +191,7 @@ final class ProjectViewModel {
         if wasPlaying {
             try? engine.play(from: target, metronome: metronomeIfEnabled)
         }
+        syncClock()
         scheduleSave()
     }
 
@@ -187,12 +204,14 @@ final class ProjectViewModel {
             playhead = engine.pause()
             isPlaying = false
         }
+        syncClock()
     }
 
     func scrub(to seconds: Double) {
         guard !isRecording else { return }
         playhead = min(max(0, seconds), duration)
         engine.seek(to: playhead)
+        syncClock()
     }
 
     func endScrub() {
@@ -275,6 +294,7 @@ final class ProjectViewModel {
         livePeaks = []
         isRecording = true
         isCountingIn = metronomeIfEnabled.map { $0.countInBars > 0 } ?? false
+        syncClock()
         startTicker()
     }
 
@@ -286,6 +306,7 @@ final class ProjectViewModel {
         finalize(sink: result.sink, plan: result.plan)
         playhead = stopSeconds
         engine.seek(to: playhead)
+        syncClock()
     }
 
     /// Splices the scratch recording into its track off the main thread.
@@ -473,6 +494,7 @@ final class ProjectViewModel {
             playhead = min(engine.pause(), duration)
             isPlaying = false
         }
+        syncClock()
     }
 
     // MARK: Tracks
@@ -614,6 +636,7 @@ final class ProjectViewModel {
             let position = engine.pause()
             playhead = position
             try? engine.play(from: position, metronome: metronomeIfEnabled)
+            syncClock()
         }
     }
 
@@ -703,6 +726,7 @@ final class ProjectViewModel {
         engine.load(project: project, store: store)
         applyAll()
         if wasPlaying { try? engine.play(from: playhead, metronome: metronomeIfEnabled) }
+        syncClock()
     }
 
     // MARK: Export

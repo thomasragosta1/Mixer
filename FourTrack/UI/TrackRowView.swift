@@ -51,7 +51,12 @@ struct TrackRowView<Scrub: Gesture>: View {
             livePeaks: isRecordingHere ? model.livePeaks : [],
             liveStart: model.recordingStartSeconds,
             showsLive: isRecordingHere && !model.isCountingIn,
-            playhead: model.playhead,
+            clock: model.clock,
+            // All lanes share one anchor so they stay aligned: the right edge
+            // while recording (newest audio enters from the right), the center
+            // otherwise.
+            anchor: model.isRecording ? 1 : 0.5,
+            showsPlayheadLine: !model.isRecording,
             color: model.project.isAudible(index) ? .primary : .secondary
         )
         .overlay {
@@ -65,21 +70,9 @@ struct TrackRowView<Scrub: Gesture>: View {
                     .allowsHitTesting(false)
             }
         }
-        .overlay {
-            // Playhead, centered like Voice Memos.
-            Rectangle()
-                .fill(model.isRecording ? Color.red : Color.accentColor)
-                .frame(width: 2)
-                .allowsHitTesting(false)
-                .accessibilityHidden(true)
-        }
         .background(
             RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .fill(Color(uiColor: .tertiarySystemFill).opacity(isRecordingHere ? 0 : 0.5))
-        )
-        .background(
-            RoundedRectangle(cornerRadius: 10, style: .continuous)
-                .fill(Color.red.opacity(isRecordingHere ? 0.15 : 0))
+                .fill(Color(uiColor: .tertiarySystemFill).opacity(0.5))
         )
         .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
         .contentShape(Rectangle())

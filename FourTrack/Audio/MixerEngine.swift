@@ -167,6 +167,12 @@ final class MixerEngine {
         return Double(startFrame) / EngineFormat.sampleRate + max(0, now - start)
     }
 
+    /// The timeline position at which the transport started, and the host time
+    /// (in seconds) it is rendered, for smooth UI interpolation.
+    var timelineAnchor: (seconds: Double, hostSeconds: Double) {
+        (Double(startFrame) / EngineFormat.sampleRate, AVAudioTime.seconds(forHostTime: startHost))
+    }
+
     /// Plays every track with audio after `seconds`.
     func play(from seconds: Double, metronome settings: MetronomeSettings?) throws {
         try startIfNeeded()
