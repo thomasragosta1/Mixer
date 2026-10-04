@@ -41,6 +41,27 @@ final class DrumFlowUITests: XCTestCase {
             app.buttons[kit == "Hand Percussion" ? "Cajón" : "Kick"].firstMatch.tap()
         }
         XCTAssertTrue(app.buttons["Tight"].firstMatch.exists, "Studio should come back on Tight")
+        // Metronome: Click → Silent → Off, a time signature tap, tempo arrows.
+        let metronome = app.buttons["Metronome"].firstMatch
+        XCTAssertTrue(metronome.waitForExistence(timeout: 3))
+        metronome.tap(); metronome.tap(); metronome.tap()
+        app.buttons["Time signature"].firstMatch.tap()
+        app.descendants(matching: .any)["Faster"].firstMatch.tap()
+        app.descendants(matching: .any)["Slower"].firstMatch.press(forDuration: 1.2)
+
+        // Press and hold a pad: its settings bubble, an edit, then revert (asks first).
+        app.buttons["Snare"].firstMatch.press(forDuration: 1.2)
+        let revert = app.buttons["Revert to Default"].firstMatch
+        XCTAssertTrue(revert.waitForExistence(timeout: 5), "pad settings didn't open")
+        app.descendants(matching: .any)["Snare tune"].firstMatch.swipeRight()
+        sleep(1)
+        revert.tap()
+        XCTAssertTrue(app.buttons["Are you sure?"].firstMatch.waitForExistence(timeout: 3))
+        app.buttons["Are you sure?"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["Revert to Default"].firstMatch.waitForExistence(timeout: 3))
+        app.buttons["Done"].firstMatch.tap()
+        sleep(1)
+
         // Back to the audio lane and to drums again.
         app.descendants(matching: .any)["Track 1"].firstMatch.tap()
         sleep(1)

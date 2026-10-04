@@ -13,6 +13,7 @@ final class PadSampler {
     private var buffers: [[AVAudioPCMBuffer]] = []
     private var nextVariant: [Int] = Array(repeating: 0, count: DrumKit.padCount)
     private(set) var kit: DrumKit?
+    private(set) var padSettings: [PadSettings] = []
     /// Track index whose chain the pads currently feed.
     var routedTrack = 0
 
@@ -31,15 +32,26 @@ final class PadSampler {
         engine.connect(mixer, to: chain.cleanupMix, fromBus: 0, toBus: 2, format: EngineFormat.mono)
     }
 
-    func load(kit: DrumKit) {
-        guard kit != self.kit else { return }
-        self.kit = kit
-        buffers = (0..<DrumKit.padCount).map { pad in
-            (0..<kit.variantCount).compactMap { variant in
-                Self.makeBuffer(kit.sample(pad: pad, variant: variant))
+    /// Loads a kit with per-pad settings. Only pads whose sound changed are rebuilt.
+    func load(kit: DrumKit, pads: [PadSettings] = []) {
+        let settings = Self.normalized(pads)
+        if kit == self.kit && settings == padSettings { return }
+        let kitChanged = kit != self.kit
+        if kitChanged || buffers.count != DrumKit.padCount {
+            buffers = Array(repeating: [], count: DrumKit.padCount)
+            nextVariant = Array(repeating: 0, count: DrumKit.padCount)
+        }
+        for pad in 0..<DrumKit.padCount where kitChanged || padSettings.count != DrumKit.padCount || padSettings[pad] != settings[pad] || buffers[pad].isEmpty {
+            buffers[pad] = (0..<kit.variantCount).compactMap { variant in
+                Self.makeBuffer(PadProcessor.apply(kit.sample(pad: pad, variant: variant), settings[pad]))
             }
         }
-        nextVariant = Array(repeating: 0, count: DrumKit.padCount)
+        self.kit = kit
+        padSettings = settings
+    }
+
+    private static func normalized(_ pads: [PadSettings]) -> [PadSettings] {
+        Array(pads.prefix(DrumKit.padCount)) + Array(repeating: .default, count: max(0, DrumKit.padCount - pads.count))
     }
 
     private static func makeBuffer(_ samples: [Float]) -> AVAudioPCMBuffer? {

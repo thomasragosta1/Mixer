@@ -4,12 +4,14 @@ import FourTrackCore
 
 /// Record mode while a drum track is armed. The screen is rebuilt around
 /// playing: the lanes shrink to slim rows (still tappable to switch tracks),
-/// the pads take most of the screen, and the transport becomes one compact
-/// row with a metronome right next to record.
+/// the pads take most of the screen, and the transport becomes a compact
+/// panel with the metronome on top. Press and hold a pad to adjust its sound.
 struct DrumStudioView: View {
     @Bindable var model: ProjectViewModel
     let onDeleteTrack: (Int) -> Void
-    @State private var showingMetronome = false
+    @State private var editingPad: PadID?
+
+    struct PadID: Identifiable { let id: Int }
 
     private var index: Int { model.armedTrack }
     private var track: Track { model.project.tracks[index] }
@@ -22,19 +24,28 @@ struct DrumStudioView: View {
                 .disabled(model.isRecording)
                 .padding(.horizontal, 16)
 
-            DrumPadGrid(kit: track.drumKit) { model.hitPad($0) }
-                .padding(.horizontal, 12)
-                .frame(maxHeight: .infinity)
+            DrumPadGrid(kit: track.drumKit, settings: track.padSettings) {
+                model.hitPad($0)
+            } onHold: { pad in
+                guard !model.isRecording, !model.isSaving else { return }
+                editingPad = PadID(id: pad)
+            }
+            .padding(.horizontal, 12)
+            .frame(maxHeight: .infinity)
 
-            DrumTransport(model: model, showingMetronome: $showingMetronome)
-                .glassPanel()
-                .padding(.horizontal, 12)
-                .padding(.bottom, 4)
+            VStack(spacing: 6) {
+                MetronomeBar(model: model)
+                    .padding(.horizontal, 14)
+                    .padding(.top, 10)
+                DrumTransport(model: model)
+            }
+            .glassPanel()
+            .padding(.horizontal, 12)
+            .padding(.bottom, 4)
         }
         .padding(.top, 2)
-        .sheet(isPresented: $showingMetronome) {
-            MetronomeSheet(model: model)
-                .presentationDetents([.height(300)])
+        .sheet(item: $editingPad) { item in
+            PadSettingsSheet(model: model, trackIndex: index, pad: item.id)
         }
     }
 }
@@ -74,7 +85,9 @@ struct DrumKitPicker: View {
 /// Pads stretch to fill the space they're given.
 struct DrumPadGrid: View {
     let kit: DrumKit
+    var settings: [PadSettings] = []
     let onHit: (Int) -> Void
+    var onHold: ((Int) -> Void)? = nil
 
     var body: some View {
         VStack(spacing: 10) {
@@ -83,10 +96,11 @@ struct DrumPadGrid: View {
                     ForEach(row, id: \.self) { pad in
                         DrumPad(
                             name: kit.padNames[pad],
-                            color: Self.color(kit.family(of: pad))
-                        ) {
-                            onHit(pad)
-                        }
+                            color: Self.color(kit.family(of: pad)),
+                            isAdjusted: settings.indices.contains(pad) && !settings[pad].isDefault,
+                            onHit: { onHit(pad) },
+                            onHold: onHold.map { hold in { hold(pad) } }
+                        )
                     }
                 }
             }
@@ -108,14 +122,19 @@ struct DrumPadGrid: View {
 }
 
 /// One pad. Fires on touch-down, lights up and gives a light haptic.
+/// Pressing and holding (without sliding off) opens its sound settings.
 struct DrumPad: View {
     let name: String
     let color: Color
+    var isAdjusted = false
     let onHit: () -> Void
+    var onHold: (() -> Void)? = nil
     @State private var pressed = false
     @State private var flash = false
+    @State private var holdTask: Task<Void, Never>?
 
     private static let haptic = UIImpactFeedbackGenerator(style: .light)
+    private static let holdHaptic = UIImpactFeedbackGenerator(style: .medium)
 
     var body: some View {
         let shape = RoundedRectangle(cornerRadius: 22, style: .continuous)
@@ -130,26 +149,53 @@ struct DrumPad: View {
                     .foregroundStyle(flash ? .white : .primary)
                     .padding(12)
             }
+            .overlay(alignment: .topTrailing) {
+                if isAdjusted {
+                    // This pad's sound has been adjusted.
+                    Image(systemName: "slider.horizontal.3")
+                        .font(.caption2.weight(.bold))
+                        .foregroundStyle(color)
+                        .padding(10)
+                        .accessibilityHidden(true)
+                }
+            }
             .frame(minHeight: 72, maxHeight: 150)
             .scaleEffect(pressed ? 0.94 : 1)
             .animation(.spring(response: 0.18, dampingFraction: 0.6), value: pressed)
             .contentShape(shape)
             .gesture(
                 DragGesture(minimumDistance: 0)
-                    .onChanged { _ in
-                        guard !pressed else { return }
-                        pressed = true
-                        onHit()
-                        Self.haptic.impactOccurred()
-                        flash = true
-                        withAnimation(.easeOut(duration: 0.3)) { flash = false }
+                    .onChanged { g in
+                        if !pressed {
+                            pressed = true
+                            onHit()
+                            Self.haptic.impactOccurred()
+                            flash = true
+                            withAnimation(.easeOut(duration: 0.3)) { flash = false }
+                            if let onHold {
+                                holdTask = Task { @MainActor in
+                                    try? await Task.sleep(nanoseconds: 550_000_000)
+                                    guard !Task.isCancelled else { return }
+                                    Self.holdHaptic.impactOccurred()
+                                    onHold()
+                                }
+                            }
+                        } else if hypot(g.translation.width, g.translation.height) > 24 {
+                            holdTask?.cancel()
+                        }
                     }
-                    .onEnded { _ in pressed = false }
+                    .onEnded { _ in
+                        pressed = false
+                        holdTask?.cancel()
+                        holdTask = nil
+                    }
             )
             .accessibilityElement()
             .accessibilityLabel(name)
+            .accessibilityValue(isAdjusted ? "Adjusted" : "")
             .accessibilityAddTraits(.isButton)
             .accessibilityAction { onHit() }
+            .accessibilityAction(named: "Adjust sound") { onHold?() }
     }
 }
 
@@ -253,11 +299,10 @@ struct CompactLaneList: View {
 
 // MARK: - Transport
 
-/// One row: time, return to start, play, record, metronome. Record sits in
+/// One row: time, return to start, play, record, skip back. Record sits in
 /// the middle under the pads so it's reachable without leaving the groove.
 struct DrumTransport: View {
     @Bindable var model: ProjectViewModel
-    @Binding var showingMetronome: Bool
 
     var body: some View {
         HStack(spacing: 0) {
@@ -267,11 +312,6 @@ struct DrumTransport: View {
                     .foregroundStyle(model.isRecording ? .red : .primary)
                     .lineLimit(1)
                     .minimumScaleFactor(0.7)
-                if model.project.metronome.enabled {
-                    Text("\(Int(model.project.metronome.bpm)) BPM")
-                        .font(.caption2)
-                        .foregroundStyle(.secondary)
-                }
             }
             .frame(width: 92, alignment: .leading)
             .accessibilityElement(children: .combine)
@@ -285,23 +325,8 @@ struct DrumTransport: View {
             RecordButton(isRecording: model.isRecording, size: 60) { model.toggleRecord() }
                 .frame(maxWidth: .infinity)
 
-            Button {
-                model.setMetronome { $0.enabled.toggle() }
-            } label: {
-                Image(systemName: "metronome.fill")
-                    .font(.system(size: 20))
-                    .foregroundStyle(model.project.metronome.enabled ? Color.white : Color.secondary)
-                    .frame(width: 44, height: 44)
-                    .background(Circle().fill(model.project.metronome.enabled ? Color.accentColor : Color(uiColor: .tertiarySystemFill)))
-                    .frame(maxWidth: .infinity)
-                    .contentShape(Rectangle())
-            }
-            .simultaneousGesture(LongPressGesture().onEnded { _ in showingMetronome = true })
-            .disabled(model.isRecording)
-            .accessibilityLabel("Metronome")
-            .accessibilityValue(model.project.metronome.enabled ? "On, \(Int(model.project.metronome.bpm)) BPM" : "Off")
-            .accessibilityHint("Press and hold for tempo and count-in")
-            .accessibilityAction(named: "Tempo and count-in") { showingMetronome = true }
+            button("gobackward.15", "Skip back 15 seconds") { model.skip(by: -15) }
+                .disabled(model.isRecording)
         }
         .buttonStyle(.plain)
         .disabled(model.isSaving)

@@ -15,7 +15,11 @@ struct SettingsView: View {
                 Section {
                     Toggle("Developer Mode", isOn: $settings.developerMode)
                 } footer: {
-                    Text("Shows detailed compressor, EQ and reverb controls, level meters, a metronome with count-in, latency tools and more export options. Turning it off hides them but keeps your values.")
+                    Text("Shows detailed compressor, EQ and reverb controls, level meters, latency tools and more export options. Turning it off hides them but keeps your values.")
+                }
+
+                if let model {
+                    metronomeSection(model)
                 }
 
                 if settings.developerMode {
@@ -49,6 +53,42 @@ struct SettingsView: View {
                     Button("Done") { dismiss() }
                 }
             }
+        }
+    }
+
+    /// This project's metronome details; the main controls live in the transport.
+    private func metronomeSection(_ model: ProjectViewModel) -> some View {
+        let m = model.project.metronome
+        return Section {
+            Stepper(value: Binding(
+                get: { m.tempoStep },
+                set: { v in model.setMetronome { $0.tempoStep = min(max(v, MetronomeSettings.tempoStepRange.lowerBound), MetronomeSettings.tempoStepRange.upperBound) } }
+            ), in: MetronomeSettings.tempoStepRange, step: 1) {
+                LabeledContent("Tempo arrows step", value: "\(Int(m.tempoStep)) BPM")
+            }
+            Picker("Count-in", selection: Binding(
+                get: { m.countInBars },
+                set: { v in model.setMetronome { $0.countInBars = v } }
+            )) {
+                Text("None").tag(0)
+                Text("1 bar").tag(1)
+                Text("2 bars").tag(2)
+            }
+            VStack(alignment: .leading, spacing: 4) {
+                HStack {
+                    Text("Click volume")
+                    Spacer()
+                    Text(SliderSpeech.percent(m.volume)).foregroundStyle(.secondary).monospacedDigit()
+                }
+                MacroSlider(label: "Click volume", value: Binding(
+                    get: { m.volume },
+                    set: { v in model.setMetronome { $0.volume = v } }
+                ), defaultValue: 0.6)
+            }
+        } header: {
+            Text("Metronome (This Project)")
+        } footer: {
+            Text("In the transport: tap the metronome for Click, Silent (beats shown, no sound) or Off. Tap the time signature to cycle 4/4, 3/4 and 2/4; press and hold it for more. Tap the arrows to change the tempo by the step above; press and hold them to change it 1 BPM at a time. The click is never part of an export.")
         }
     }
 

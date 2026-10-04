@@ -15,7 +15,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     public var tracks: [Track]
     /// Developer Mode master volume (slider value, 0...1, unity at 0.75).
     public var masterVolume: Double
-    /// Developer Mode metronome settings.
+    /// Metronome: mode, tempo, time signature, count-in.
     public var metronome: MetronomeSettings
     /// How many lanes the project shows (1...4). New projects start with one;
     /// the "+" under the last lane reveals the next.
@@ -175,22 +175,136 @@ public struct DeletedTrack: Codable, Identifiable, Equatable, Sendable {
     }
 }
 
-public struct MetronomeSettings: Codable, Equatable, Sendable {
-    public var enabled: Bool
+/// Off, clicking, or silent with the beats shown on screen.
+public enum MetronomeMode: String, Codable, CaseIterable, Sendable {
+    case off
+    case on
+    /// No sound; the beat lights still pulse.
+    case visual
+
+    /// The next state for the metronome button: On → Visual → Off → On.
+    public var next: MetronomeMode {
+        switch self {
+        case .off: return .on
+        case .on: return .visual
+        case .visual: return .off
+        }
+    }
+}
+
+public struct TimeSignature: Codable, Equatable, Hashable, Sendable {
+    public var beats: Int
+    /// 4 = quarter-note beats, 8 = eighth-note beats.
+    public var unit: Int
+
+    public init(_ beats: Int, _ unit: Int) {
+        self.beats = beats
+        self.unit = unit
+    }
+
+    public var label: String { "\(beats)/\(unit)" }
+
+    /// Tapping the time signature cycles these.
+    public static let quick: [TimeSignature] = [TimeSignature(4, 4), TimeSignature(3, 4), TimeSignature(2, 4)]
+    /// Press and hold for these.
+    public static let more: [TimeSignature] = [TimeSignature(5, 4), TimeSignature(6, 4), TimeSignature(6, 8), TimeSignature(7, 8), TimeSignature(9, 8), TimeSignature(12, 8)]
+
+    /// The next quick signature after this one (an unusual one goes back to 4/4).
+    public var nextQuick: TimeSignature {
+        guard let i = TimeSignature.quick.firstIndex(of: self) else { return TimeSignature.quick[0] }
+        return TimeSignature.quick[(i + 1) % TimeSignature.quick.count]
+    }
+}
+
+public struct MetronomeSettings: Equatable, Sendable {
+    public var mode: MetronomeMode
+    /// Beats (of `beatUnit`) per minute.
     public var bpm: Double
     /// 0, 1 or 2 bars of count-in before recording starts.
     public var countInBars: Int
     public var beatsPerBar: Int
+    public var beatUnit: Int
     /// Slider value 0...1.
     public var volume: Double
+    /// BPM change for one tap on the tempo arrows (press and hold changes by 1).
+    public var tempoStep: Double
 
-    public init(enabled: Bool = false, bpm: Double = 100, countInBars: Int = 1, beatsPerBar: Int = 4, volume: Double = 0.6) {
-        self.enabled = enabled
+    /// The metronome is running (clicking or visual-only).
+    public var enabled: Bool {
+        get { mode != .off }
+        set { mode = newValue ? .on : .off }
+    }
+
+    public var timeSignature: TimeSignature {
+        get { TimeSignature(beatsPerBar, beatUnit) }
+        set { beatsPerBar = max(1, newValue.beats); beatUnit = newValue.unit }
+    }
+
+    public init(enabled: Bool = false, bpm: Double = MetronomeSettings.defaultBPM, countInBars: Int = 1, beatsPerBar: Int = 4, volume: Double = 0.6) {
+        self.mode = enabled ? .on : .off
         self.bpm = bpm
         self.countInBars = countInBars
         self.beatsPerBar = beatsPerBar
+        self.beatUnit = 4
         self.volume = volume
+        self.tempoStep = MetronomeSettings.defaultTempoStep
     }
 
+    public static let defaultBPM: Double = 120
+    public static let defaultTempoStep: Double = 10
     public static let bpmRange: ClosedRange<Double> = 40...240
+    public static let tempoStepRange: ClosedRange<Double> = 1...40
+
+    /// Changes the tempo by `delta`, clamped to the allowed range.
+    public mutating func nudgeTempo(by delta: Double) {
+        bpm = min(max((bpm + delta).rounded(), MetronomeSettings.bpmRange.lowerBound), MetronomeSettings.bpmRange.upperBound)
+    }
+
+    /// Beat number within the bar (0-based) at a timeline position, on the click grid
+    /// anchored at 0. Negative positions (count-in) work too.
+    public func beatInBar(at seconds: Double) -> Int {
+        let beat = Int((seconds * bpm / 60).rounded(.down))
+        let n = max(1, beatsPerBar)
+        return ((beat % n) + n) % n
+    }
+
+    /// How far through the current beat (0..<1), for the pulse animation.
+    public func beatPhase(at seconds: Double) -> Double {
+        let b = seconds * bpm / 60
+        return b - b.rounded(.down)
+    }
+}
+
+extension MetronomeSettings: Codable {
+    enum CodingKeys: String, CodingKey {
+        case mode, enabled, bpm, countInBars, beatsPerBar, beatUnit, volume, tempoStep
+    }
+
+    public init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        self.init()
+        if let mode = try? c.decodeIfPresent(MetronomeMode.self, forKey: .mode) {
+            self.mode = mode
+        } else {
+            // Saved before the three-state button: a plain on/off.
+            self.enabled = (try c.decodeIfPresent(Bool.self, forKey: .enabled)) ?? false
+        }
+        bpm = try c.decodeIfPresent(Double.self, forKey: .bpm) ?? MetronomeSettings.defaultBPM
+        countInBars = try c.decodeIfPresent(Int.self, forKey: .countInBars) ?? 1
+        beatsPerBar = try c.decodeIfPresent(Int.self, forKey: .beatsPerBar) ?? 4
+        beatUnit = try c.decodeIfPresent(Int.self, forKey: .beatUnit) ?? 4
+        volume = try c.decodeIfPresent(Double.self, forKey: .volume) ?? 0.6
+        tempoStep = try c.decodeIfPresent(Double.self, forKey: .tempoStep) ?? MetronomeSettings.defaultTempoStep
+    }
+
+    public func encode(to encoder: Encoder) throws {
+        var c = encoder.container(keyedBy: CodingKeys.self)
+        try c.encode(mode, forKey: .mode)
+        try c.encode(bpm, forKey: .bpm)
+        try c.encode(countInBars, forKey: .countInBars)
+        try c.encode(beatsPerBar, forKey: .beatsPerBar)
+        try c.encode(beatUnit, forKey: .beatUnit)
+        try c.encode(volume, forKey: .volume)
+        try c.encode(tempoStep, forKey: .tempoStep)
+    }
 }

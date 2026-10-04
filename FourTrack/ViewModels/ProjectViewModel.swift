@@ -69,6 +69,8 @@ final class ProjectViewModel {
     @ObservationIgnored private var drumTakeStart: Double = 0
     @ObservationIgnored private var drumTakeHits: [DrumHit] = []
     @ObservationIgnored private var padPeaksCache: [DrumKit: [[Float]]] = [:]
+    @ObservationIgnored private var padRenderTask: Task<Void, Never>?
+    @ObservationIgnored private var tempoRestartTask: Task<Void, Never>?
     @ObservationIgnored private var drumRenderGeneration = [Int](repeating: 0, count: Project.trackCount)
     /// Bumped on every splice so a Cleanup render of an older take is discarded.
     @ObservationIgnored private var takeGeneration = [Int](repeating: 0, count: Project.trackCount)
@@ -552,7 +554,7 @@ final class ProjectViewModel {
     private func routePadsIfNeeded() {
         let track = project.tracks[armedTrack]
         guard track.isDrums else { return }
-        engine.routePads(to: armedTrack, kit: track.drumKit)
+        engine.routePads(to: armedTrack, kit: track.drumKit, pads: track.padSettings)
     }
 
     /// Plays a pad; during a drum take, also records the hit.
@@ -638,6 +640,7 @@ final class ProjectViewModel {
         let track = project.tracks[index]
         let hits = track.drumHits
         let kit = track.drumKit
+        let pads = track.padSettings
         let url = store.audioURL(project: project.id, track: index)
         let peaksURL = store.peaksURL(project: project.id, track: index)
         drumRenderGeneration[index] += 1
@@ -651,7 +654,7 @@ final class ProjectViewModel {
                         try? FileManager.default.removeItem(at: peaksURL)
                         return .success([])
                     }
-                    try DrumRenderer.write(hits, kit: kit, to: url)
+                    try DrumRenderer.write(hits, kit: kit, pads: pads, to: url)
                     let peaks = try PeakGenerator.peaks(ofFileAt: url)
                     try? PeakGenerator.write(peaks, to: peaksURL)
                     return .success(peaks)
@@ -695,6 +698,29 @@ final class ProjectViewModel {
         routePadsIfNeeded()
         seek(to: 0)
         scheduleSave()
+    }
+
+    // MARK: Pad settings
+
+    /// Live edit of one pad's sound on a drum track. The pads update at once;
+    /// the track's audio re-renders shortly after the last change.
+    func setPadSettings(track index: Int, pad: Int, _ settings: PadSettings) {
+        guard project.tracks[index].isDrums, project.tracks[index].padSettings.indices.contains(pad),
+              project.tracks[index].padSettings[pad] != settings else { return }
+        project.tracks[index].padSettings[pad] = settings
+        if index == armedTrack { routePadsIfNeeded() }
+        scheduleSave()
+        padRenderTask?.cancel()
+        guard !project.tracks[index].drumHits.isEmpty else { return }
+        padRenderTask = Task { [weak self] in
+            try? await Task.sleep(nanoseconds: 600_000_000)
+            guard !Task.isCancelled, let self, !self.isRecording else { return }
+            self.renderDrums(index)
+        }
+    }
+
+    func revertPad(track index: Int, pad: Int) {
+        setPadSettings(track: index, pad: pad, .default)
     }
 
     // MARK: Track bin
@@ -867,15 +893,21 @@ final class ProjectViewModel {
     func setMetronome(_ change: (inout MetronomeSettings) -> Void) {
         let before = project.metronome
         change(&project.metronome)
+        let after = project.metronome
         scheduleSave()
-        var volumeOnly = before
-        volumeOnly.volume = project.metronome.volume
-        if volumeOnly == project.metronome {
-            engine.metronome.player.volume = Float(MacroCurves.metronomeGain(project.metronome.volume))
+        // Volume, the tempo step, or On <-> visual-only only change how loud the
+        // click is: no need to restart playback.
+        var gainOnly = before
+        gainOnly.volume = after.volume
+        gainOnly.tempoStep = after.tempoStep
+        gainOnly.countInBars = after.countInBars
+        if before.enabled && after.enabled { gainOnly.mode = after.mode }
+        if gainOnly == after {
+            engine.metronome.player.volume = Float(clickGain)
             return
         }
         if isPlaying {
-            // Restart so the click picks up the new tempo in time with the tracks.
+            // Restart so the click picks up the new tempo or bar in time with the tracks.
             let position = engine.pause()
             playhead = position
             try? engine.play(from: position, metronome: metronomeIfEnabled)
@@ -883,10 +915,53 @@ final class ProjectViewModel {
         }
     }
 
+    /// Tap the metronome: On → visual-only → Off.
+    func cycleMetronomeMode() {
+        setMetronome { $0.mode = $0.mode.next }
+    }
+
+    /// Tap the time signature: 4/4 → 3/4 → 2/4.
+    func cycleTimeSignature() {
+        setMetronome { $0.timeSignature = $0.timeSignature.nextQuick }
+    }
+
+    func setTimeSignature(_ signature: TimeSignature) {
+        setMetronome { $0.timeSignature = signature }
+    }
+
+    /// Arrow taps move by the project's tempo step; holding moves by 1 BPM.
+    func nudgeTempo(_ direction: Int, fine: Bool) {
+        let delta = Double(direction) * (fine ? 1 : project.metronome.tempoStep)
+        guard isPlaying, project.metronome.enabled else {
+            setMetronome { $0.nudgeTempo(by: delta) }
+            return
+        }
+        // While playing, holding an arrow fires many small changes: show them at
+        // once, but restart the click only once the tempo settles.
+        project.metronome.nudgeTempo(by: delta)
+        scheduleSave()
+        tempoRestartTask?.cancel()
+        tempoRestartTask = Task { [weak self] in
+            try? await Task.sleep(nanoseconds: 350_000_000)
+            guard !Task.isCancelled, let self, self.isPlaying else { return }
+            let position = self.engine.pause()
+            self.playhead = position
+            try? self.engine.play(from: position, metronome: self.metronomeIfEnabled)
+            self.syncClock()
+        }
+    }
+
+    private var clickGain: Double {
+        project.metronome.mode == .on ? MacroCurves.metronomeGain(project.metronome.volume) : 0
+    }
+
+    /// What the engine plays: nothing when off; a silent click when visual-only,
+    /// so the count-in and beat grid behave exactly the same.
     private var metronomeIfEnabled: MetronomeSettings? {
-        // The click is a Developer Mode tool, except on drum tracks where it's
-        // a core part of recording and sits right in the drum transport.
-        (settings.developerMode || isDrumArmed) && project.metronome.enabled ? project.metronome : nil
+        guard project.metronome.enabled else { return nil }
+        var settings = project.metronome
+        if settings.mode == .visual { settings.volume = 0 }
+        return settings
     }
 
     private var warmthActive: Bool { settings.developerMode && settings.warmthEnabled }

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		046F999F0B060C4068D1967B /* Drums in Resources */ = {isa = PBXBuildFile; fileRef = 7CB2A3B61A3D61010ED4FFD3 /* Drums */; };
+		0DE45F691F0FB738A72EFF2B /* MetronomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ED446E366C7244DB8683CA /* MetronomeBar.swift */; };
 		0DF261BDDA4E3910193DFC34 /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */; };
 		10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */; };
 		165BE017B7E30BED6207A9B5 /* PadSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CA97785154509CDEAC5C9 /* PadSampler.swift */; };
@@ -19,6 +20,7 @@
 		526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */; };
 		5AAB0FF58C74595719931AEC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */; };
 		63ABFE7D9CE7F3BAB0338AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */; };
+		66AA634E77E0C174A6981F57 /* PadSettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EAFCAB120FD9F141681A /* PadSettingsSheet.swift */; };
 		680F6132AC71207BA8608BD6 /* ProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C31B8FB95A04BDC54A725 /* ProjectView.swift */; };
 		6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD8780E45856FF405502040 /* ExportSheet.swift */; };
 		6BCC66B84969BBEFBE39B89D /* CompressorAU.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */; };
@@ -102,6 +104,8 @@
 		A73B2C8D15C308E8D8003C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredSlider.swift; sourceTree = "<group>"; };
 		B8FB2B46B8C9237AB766133A /* FourTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FourTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4ED446E366C7244DB8683CA /* MetronomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeBar.swift; sourceTree = "<group>"; };
+		DE19EAFCAB120FD9F141681A /* PadSettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadSettingsSheet.swift; sourceTree = "<group>"; };
 		E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumTrackTests.swift; sourceTree = "<group>"; };
 		EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadView.swift; sourceTree = "<group>"; };
 		F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTrackControlsView.swift; sourceTree = "<group>"; };
@@ -140,7 +144,9 @@
 				EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */,
 				2FD8780E45856FF405502040 /* ExportSheet.swift */,
 				9C5BA5B14A06A629337D91E8 /* MacroSlider.swift */,
+				C4ED446E366C7244DB8683CA /* MetronomeBar.swift */,
 				F9F9B76CE52C0FB100E4EA7E /* MixView.swift */,
+				DE19EAFCAB120FD9F141681A /* PadSettingsSheet.swift */,
 				5C1FBB08FE5E09F2A10CCD01 /* ProjectsListView.swift */,
 				F05C31B8FB95A04BDC54A725 /* ProjectView.swift */,
 				2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */,
@@ -415,9 +421,11 @@
 				8ABE8AF50AE165BAC274A0D9 /* LatencyCalibrator.swift in Sources */,
 				D8C3B9CC3E6041604FE542DF /* MacroSlider.swift in Sources */,
 				50F39BE78B7AFABB578F525D /* Metronome.swift in Sources */,
+				0DE45F691F0FB738A72EFF2B /* MetronomeBar.swift in Sources */,
 				B2FDFEAD3783C4869785ED67 /* MixView.swift in Sources */,
 				F95E1D0BA028BDE6B4727856 /* MixerEngine.swift in Sources */,
 				165BE017B7E30BED6207A9B5 /* PadSampler.swift in Sources */,
+				66AA634E77E0C174A6981F57 /* PadSettingsSheet.swift in Sources */,
 				680F6132AC71207BA8608BD6 /* ProjectView.swift in Sources */,
 				38B5D72F23F74EC7BF904055 /* ProjectViewModel.swift in Sources */,
 				8B657B4AA343DFE41453610C /* ProjectsListView.swift in Sources */,

@@ -37,6 +37,8 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     public var drumKit: DrumKit
     /// Drum tracks: every pad hit, so a kit change can re-render the track.
     public var drumHits: [DrumHit]
+    /// Drum tracks: per-pad sound adjustments, always `DrumKit.padCount` entries.
+    public var padSettings: [PadSettings]
 
     public var isDrums: Bool { kind == .drums }
 
@@ -69,6 +71,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         self.kind = .audio
         self.drumKit = DrumKit.defaultKit
         self.drumHits = []
+        self.padSettings = Array(repeating: .default, count: DrumKit.padCount)
     }
 
     public var isEmpty: Bool { audioFileName == nil }
@@ -109,7 +112,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     enum CodingKeys: String, CodingKey {
         case index, name, audioFileName, cleanedFileName, mute, solo, volume
         case eqLow, eqMid, eqHigh, compressor, space, warmth, cleanup, cleanupLevel, devOverrides
-        case durationSeconds, lastRecordedRoute, kind, drumKit, drumHits
+        case durationSeconds, lastRecordedRoute, kind, drumKit, drumHits, padSettings
     }
 
     public init(from decoder: Decoder) throws {
@@ -137,6 +140,8 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         // An unknown kit (from a newer version) falls back instead of failing the whole project.
         drumKit = ((try? c.decodeIfPresent(DrumKit.self, forKey: .drumKit)) ?? nil) ?? DrumKit.defaultKit
         drumHits = try c.decodeIfPresent([DrumHit].self, forKey: .drumHits) ?? []
+        let pads = (try? c.decodeIfPresent([PadSettings].self, forKey: .padSettings)) ?? nil
+        padSettings = (pads ?? []).prefix(DrumKit.padCount) + Array(repeating: .default, count: max(0, DrumKit.padCount - (pads?.count ?? 0)))
     }
 }
 

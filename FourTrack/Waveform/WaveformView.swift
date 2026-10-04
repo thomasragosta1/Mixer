@@ -12,6 +12,12 @@ struct PlayheadClock: Equatable {
     func position(at now: Date) -> Double {
         running ? seconds + max(0, now.timeIntervalSince(date)) : seconds
     }
+
+    /// Like `position` but runs negative before the transport reaches its
+    /// start, so a count-in's beats can be shown.
+    func rawPosition(at now: Date) -> Double {
+        running ? seconds + now.timeIntervalSince(date) : seconds
+    }
 }
 
 /// Voice Memos-style waveform: rounded bars on a fixed time grid that scroll

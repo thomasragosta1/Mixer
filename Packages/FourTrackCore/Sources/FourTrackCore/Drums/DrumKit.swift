@@ -217,13 +217,14 @@ public enum DrumRenderer {
 
     /// Mixes all hits into one mono buffer. Overlapping hits sum, then a soft
     /// clipper keeps dense patterns from clipping. Empty for no hits.
-    public static func render(_ hits: [DrumHit], kit: DrumKit, sampleRate: Double = CAFFormat.defaultSampleRate) -> [Float] {
+    public static func render(_ hits: [DrumHit], kit: DrumKit, pads: [PadSettings] = [], sampleRate: Double = CAFFormat.defaultSampleRate) -> [Float] {
         guard !hits.isEmpty else { return [] }
         var cache: [Int: [Float]] = [:]
         func sample(_ pad: Int, _ variant: Int) -> [Float] {
             let key = pad * 16 + variant
             if let s = cache[key] { return s }
-            let s = kit.sample(pad: pad, variant: variant, sampleRate: sampleRate)
+            let raw = kit.sample(pad: pad, variant: variant, sampleRate: sampleRate)
+            let s = pads.indices.contains(pad) ? PadProcessor.apply(raw, pads[pad], sampleRate: sampleRate) : raw
             cache[key] = s
             return s
         }
@@ -262,8 +263,8 @@ public enum DrumRenderer {
 
     /// Renders and writes a drum track atomically; returns the frame count.
     @discardableResult
-    public static func write(_ hits: [DrumHit], kit: DrumKit, to url: URL, sampleRate: Double = CAFFormat.defaultSampleRate) throws -> Int {
-        let samples = render(hits, kit: kit, sampleRate: sampleRate)
+    public static func write(_ hits: [DrumHit], kit: DrumKit, pads: [PadSettings] = [], to url: URL, sampleRate: Double = CAFFormat.defaultSampleRate) throws -> Int {
+        let samples = render(hits, kit: kit, pads: pads, sampleRate: sampleRate)
         let temp = url.deletingLastPathComponent().appendingPathComponent(".\(url.lastPathComponent).drums-\(UUID().uuidString)")
         let writer = try CAFWriter(url: temp, sampleRate: sampleRate)
         do {

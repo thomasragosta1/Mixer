@@ -20,6 +20,23 @@ public struct Biquad {
         return f
     }
 
+    /// High shelf, `gainDB` above `frequency` (RBJ, shelf slope 1).
+    public static func highShelf(frequency: Double, gainDB: Double, sampleRate: Double) -> Biquad {
+        let A = pow(10, gainDB / 40)
+        let w0 = 2 * Double.pi * frequency / sampleRate
+        let c = cos(w0)
+        let alpha = sin(w0) / 2 * sqrt(2)
+        let sq = 2 * sqrt(A) * alpha
+        let a0 = (A + 1) - (A - 1) * c + sq
+        var f = Biquad()
+        f.b0 = Float(A * ((A + 1) + (A - 1) * c + sq) / a0)
+        f.b1 = Float(-2 * A * ((A - 1) + (A + 1) * c) / a0)
+        f.b2 = Float(A * ((A + 1) + (A - 1) * c - sq) / a0)
+        f.a1 = Float(2 * ((A - 1) - (A + 1) * c) / a0)
+        f.a2 = Float(((A + 1) - (A - 1) * c - sq) / a0)
+        return f
+    }
+
     public static func lowPass(frequency: Double, q: Double = 0.7071, sampleRate: Double) -> Biquad {
         let w0 = 2 * Double.pi * frequency / sampleRate
         let alpha = sin(w0) / (2 * q)

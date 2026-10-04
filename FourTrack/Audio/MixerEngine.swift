@@ -116,10 +116,11 @@ final class MixerEngine {
         master = MasterChain()
         metronome = Metronome()
         let kit = pads.kit
+        let padSettings = pads.padSettings
         let routed = pads.routedTrack
         pads = PadSampler()
         pads.routedTrack = routed
-        if let kit { pads.load(kit: kit) }
+        if let kit { pads.load(kit: kit, pads: padSettings) }
         inputPrepared = false
         build()
     }
@@ -219,8 +220,8 @@ final class MixerEngine {
     // MARK: Drum pads
 
     /// Sends the pads through a drum track's chain so they sound like the track.
-    func routePads(to trackIndex: Int, kit: DrumKit) {
-        pads.load(kit: kit)
+    func routePads(to trackIndex: Int, kit: DrumKit, pads padSettings: [PadSettings]) {
+        pads.load(kit: kit, pads: padSettings)
         guard pads.routedTrack != trackIndex else { return }
         pads.routedTrack = trackIndex
         engine.disconnectNodeOutput(pads.mixer)
