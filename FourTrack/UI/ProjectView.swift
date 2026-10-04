@@ -45,6 +45,7 @@ struct ProjectView: View {
                 MixView(model: model)
             } else {
                 lanes
+                    .zIndex(laneDrag != nil ? 1 : 0)
             }
             if !model.mixMode, let offer = model.cleanupOffer {
                 CleanupBanner(trackName: model.project.tracks[offer].name) {
@@ -166,10 +167,17 @@ struct ProjectView: View {
                 ForEach(Array(order.enumerated()), id: \.element) { position, i in
                     let dragging = laneDrag?.index == i
                     TrackRowView(model: model, index: i, onScrub: scrubGesture)
-                        .scaleEffect(dragging ? 1.03 : 1)
-                        .opacity(dragging && overBin ? 0.55 : 1)
-                        .shadow(color: .black.opacity(dragging ? 0.18 : 0), radius: 14, y: 6)
+                        // Only the card lifts: shadow and scale follow its rounded shape.
+                        .compositingGroup()
+                        .shadow(color: .black.opacity(dragging ? 0.22 : 0), radius: dragging ? 18 : 0, y: dragging ? 10 : 0)
+                        .scaleEffect(dragging ? (overBin ? 0.55 : 1.04) : 1, anchor: .center)
+                        .opacity(dragging && overBin ? 0.7 : 1)
+                        .animation(.spring(response: 0.28, dampingFraction: 0.72), value: dragging)
+                        .animation(.spring(response: 0.3, dampingFraction: 0.75), value: overBin)
+                        // The held card tracks the finger 1:1 with no animation lag;
+                        // the others glide out of its way.
                         .offset(y: laneOffset(position: position, index: i, count: order.count))
+                        .animation(dragging ? nil : .spring(response: 0.32, dampingFraction: 0.82), value: laneOffset(position: position, index: i, count: order.count))
                         .zIndex(dragging ? 1 : 0)
                         .simultaneousGesture(laneGesture(index: i, position: position, count: order.count))
                         .accessibilityAction(named: "Delete track") { pendingTrackDelete = i }
@@ -183,9 +191,10 @@ struct ProjectView: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 6)
-            .animation(.spring(response: 0.3, dampingFraction: 0.85), value: laneDrag?.translation == nil ? -1 : targetPosition(count: order.count))
         }
         .scrollDisabled(laneDrag != nil)
+        // Let the held card travel past the list (down to the bin) without being clipped.
+        .scrollClipDisabled(laneDrag != nil)
         .scrollBounceBehavior(.basedOnSize)
         .background(Color(uiColor: .systemGroupedBackground))
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.visibleLanes)
@@ -209,21 +218,24 @@ struct ProjectView: View {
     }
 
     private func laneGesture(index: Int, position: Int, count: Int) -> some Gesture {
-        LongPressGesture(minimumDuration: 0.4)
+        LongPressGesture(minimumDuration: 0.3)
             .sequenced(before: DragGesture(minimumDistance: 0, coordinateSpace: .global))
             .onChanged { value in
                 guard !model.isRecording, !model.isSaving, scrubStart == nil else { return }
                 guard case .second(true, let drag) = value else { return }
                 if laneDrag == nil {
                     laneDrag = LaneDrag(index: index, startPosition: position)
-                    UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                    Haptics.lift.impactOccurred()
+                    Haptics.slot.prepare()
                 }
                 guard let drag else { return }
+                let before = targetPosition(count: count)
                 laneDrag?.translation = drag.translation.height
+                if targetPosition(count: count) != before && !overBin { Haptics.slot.selectionChanged() }
                 let over = binFrame.insetBy(dx: -24, dy: -24).contains(drag.location)
                 if over != overBin {
                     overBin = over
-                    UIImpactFeedbackGenerator(style: over ? .heavy : .light).impactOccurred()
+                    (over ? Haptics.bin : Haptics.lift).impactOccurred()
                 }
             }
             .onEnded { _ in
@@ -236,7 +248,8 @@ struct ProjectView: View {
                         model.moveLanes(fromOffsets: IndexSet(integer: d.startPosition), toOffset: target > d.startPosition ? target + 1 : target)
                     }
                 }
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.85)) {
+                // Drop: the card settles into its new slot with one spring.
+                withAnimation(.spring(response: 0.34, dampingFraction: 0.8)) {
                     laneDrag = nil
                     overBin = false
                 }
@@ -341,6 +354,12 @@ struct ProjectView: View {
             .accessibilityLabel("More")
         }
     }
+}
+
+enum Haptics {
+    static let lift = UIImpactFeedbackGenerator(style: .medium)
+    static let bin = UIImpactFeedbackGenerator(style: .heavy)
+    static let slot = UISelectionFeedbackGenerator()
 }
 
 /// Bin that rises from the bottom while a lane is held; drop a lane on it to delete.
