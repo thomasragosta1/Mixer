@@ -119,7 +119,7 @@ final class MixerEngine {
         let routed = pads.routedTrack
         pads = PadSampler()
         pads.routedTrack = routed
-        pads.load(kit: kit)
+        if let kit { pads.load(kit: kit) }
         inputPrepared = false
         build()
     }
