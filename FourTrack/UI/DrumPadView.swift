@@ -20,6 +20,9 @@ struct DrumStudioView: View {
         VStack(spacing: 10) {
             CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
 
+            DrumTrackControls(model: model, index: index)
+                .padding(.horizontal, 16)
+
             DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
                 .disabled(model.isRecording)
                 .padding(.horizontal, 16)
@@ -47,6 +50,83 @@ struct DrumStudioView: View {
         .sheet(item: $editingPad) { item in
             PadSettingsSheet(model: model, trackIndex: index, pad: item.id)
         }
+    }
+}
+
+// MARK: - Track controls
+
+/// The armed drum track's name with M, S and Q (quantize).
+struct DrumTrackControls: View {
+    @Bindable var model: ProjectViewModel
+    let index: Int
+
+    private var track: Track { model.project.tracks[index] }
+
+    var body: some View {
+        HStack(spacing: 6) {
+            Text(track.name)
+                .font(.headline)
+                .lineLimit(1)
+            Spacer(minLength: 8)
+            ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
+                model.toggleMute(index)
+            }
+            ToggleChip(title: "S", isOn: track.solo, onColor: .yellow, accessibilityName: "Solo \(track.name)") {
+                model.toggleSolo(index)
+            }
+            QuantizeChip(model: model, index: index)
+        }
+    }
+}
+
+/// Q: tap to snap the drum track to the grid (at the current tempo) or back to
+/// as played; press and hold to pick the grid.
+struct QuantizeChip: View {
+    @Bindable var model: ProjectViewModel
+    let index: Int
+
+    private var q: QuantizeSettings { model.project.tracks[index].quantize }
+
+    var body: some View {
+        Menu {
+            Section("Quantize to") {
+                ForEach(QuantizeDivision.allCases) { d in
+                    Button {
+                        model.setQuantizeDivision(index, d)
+                    } label: {
+                        if q.enabled && q.division == d {
+                            Label(d.label, systemImage: "checkmark")
+                        } else {
+                            Text(d.label)
+                        }
+                    }
+                }
+            }
+            if q.enabled {
+                Button("Off (as played)") { model.toggleQuantize(index) }
+            }
+        } label: {
+            Text(q.enabled ? "Q \(q.division.label)" : "Q")
+                .font(.footnote.weight(.bold))
+                .lineLimit(1)
+                .minimumScaleFactor(0.7)
+                .frame(width: q.enabled ? 64 : 40, height: 28)
+                .foregroundStyle(q.enabled ? Color.black : Color.primary)
+                .background(
+                    RoundedRectangle(cornerRadius: 7, style: .continuous)
+                        .fill(q.enabled ? Color.green : Color(uiColor: .tertiarySystemFill))
+                )
+                .contentShape(Rectangle())
+        } primaryAction: {
+            model.toggleQuantize(index)
+            UISelectionFeedbackGenerator().selectionChanged()
+        }
+        .buttonStyle(.plain)
+        .disabled(model.isRecording || model.isSaving)
+        .animation(.easeOut(duration: 0.15), value: q.enabled)
+        .accessibilityLabel("Quantize")
+        .accessibilityValue(q.enabled ? "On, \(q.division.label)" : "Off")
+        .accessibilityHint("Tap to snap hits to the grid. Press and hold to choose the grid.")
     }
 }
 

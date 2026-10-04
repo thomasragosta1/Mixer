@@ -69,6 +69,16 @@ final class DrumFlowUITests: XCTestCase {
         app.buttons["Done"].firstMatch.tap()
         sleep(1)
 
+        // M, S and Q on the drum track, then undo / redo.
+        app.buttons["Mute Drums"].firstMatch.tap()
+        app.buttons["Solo Drums"].firstMatch.tap()
+        app.buttons["Quantize"].firstMatch.tap()
+        let undo = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Undo'")).firstMatch
+        XCTAssertTrue(undo.waitForExistence(timeout: 3))
+        for _ in 0..<3 { undo.tap(); usleep(300_000) }
+        let redo = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Redo'")).firstMatch
+        redo.tap()
+
         // Back to the audio lane and to drums again.
         app.descendants(matching: .any)["Track 1"].firstMatch.tap()
         sleep(1)

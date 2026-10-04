@@ -39,6 +39,8 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     public var drumHits: [DrumHit]
     /// Drum tracks: per-pad sound adjustments, always `DrumKit.padCount` entries.
     public var padSettings: [PadSettings]
+    /// Drum tracks: snap hits to a grid (non-destructive).
+    public var quantize: QuantizeSettings
 
     public var isDrums: Bool { kind == .drums }
 
@@ -72,6 +74,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         self.drumKit = DrumKit.defaultKit
         self.drumHits = []
         self.padSettings = Array(repeating: .default, count: DrumKit.padCount)
+        self.quantize = QuantizeSettings()
     }
 
     public var isEmpty: Bool { audioFileName == nil }
@@ -112,7 +115,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     enum CodingKeys: String, CodingKey {
         case index, name, audioFileName, cleanedFileName, mute, solo, volume
         case eqLow, eqMid, eqHigh, compressor, space, warmth, cleanup, cleanupLevel, devOverrides
-        case durationSeconds, lastRecordedRoute, kind, drumKit, drumHits, padSettings
+        case durationSeconds, lastRecordedRoute, kind, drumKit, drumHits, padSettings, quantize
     }
 
     public init(from decoder: Decoder) throws {
@@ -141,6 +144,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         drumKit = ((try? c.decodeIfPresent(DrumKit.self, forKey: .drumKit)) ?? nil) ?? DrumKit.defaultKit
         drumHits = try c.decodeIfPresent([DrumHit].self, forKey: .drumHits) ?? []
         let pads = (try? c.decodeIfPresent([PadSettings].self, forKey: .padSettings)) ?? nil
+        quantize = (try? c.decodeIfPresent(QuantizeSettings.self, forKey: .quantize)) ?? nil ?? QuantizeSettings()
         padSettings = (pads ?? []).prefix(DrumKit.padCount) + Array(repeating: .default, count: max(0, DrumKit.padCount - (pads?.count ?? 0)))
     }
 }

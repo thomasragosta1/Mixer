@@ -18,6 +18,7 @@
 		452FDCB8562969A8013C48EC /* FourTrackCore in Frameworks */ = {isa = PBXBuildFile; productRef = F26CAF9FE144318925E8D782 /* FourTrackCore */; };
 		50F39BE78B7AFABB578F525D /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B4995428CDBEF1B07DA5B /* Metronome.swift */; };
 		526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */; };
+		55C2B5D2F70A2B5934349FBE /* UndoHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2E7D8F476C04248424708 /* UndoHistory.swift */; };
 		5AAB0FF58C74595719931AEC /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9BC0D46DAF1C958DDD27D0 /* SettingsView.swift */; };
 		63ABFE7D9CE7F3BAB0338AF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30BAB574AB8C5F2FE8285CE8 /* Assets.xcassets */; };
 		66AA634E77E0C174A6981F57 /* PadSettingsSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE19EAFCAB120FD9F141681A /* PadSettingsSheet.swift */; };
@@ -105,6 +106,7 @@
 		A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredSlider.swift; sourceTree = "<group>"; };
 		B8FB2B46B8C9237AB766133A /* FourTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FourTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4ED446E366C7244DB8683CA /* MetronomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeBar.swift; sourceTree = "<group>"; };
+		D0B2E7D8F476C04248424708 /* UndoHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoHistory.swift; sourceTree = "<group>"; };
 		DE19EAFCAB120FD9F141681A /* PadSettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadSettingsSheet.swift; sourceTree = "<group>"; };
 		E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumTrackTests.swift; sourceTree = "<group>"; };
 		EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadView.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 			children = (
 				9C36E6C1B68F948592E88019 /* ProjectsViewModel.swift */,
 				702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */,
+				D0B2E7D8F476C04248424708 /* UndoHistory.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				B3A5C9B2D345A3BE9C5BD88D /* TrackChain.swift in Sources */,
 				A9312C5B7AD8221DF79667AE /* TrackRowView.swift in Sources */,
 				36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */,
+				55C2B5D2F70A2B5934349FBE /* UndoHistory.swift in Sources */,
 				719E4F4E98B4EF8C7C8249B6 /* VoiceIsolation.swift in Sources */,
 				CC034BEDD8688E6CB526C9E7 /* VolumeFader.swift in Sources */,
 				E90D6FA1DDA009628BD7BCCE /* WaveformView.swift in Sources */,

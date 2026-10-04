@@ -101,3 +101,43 @@ final class PadAndMetronomeTests: XCTestCase {
         XCTAssertEqual(try JSONDecoder().decode(MetronomeSettings.self, from: JSONEncoder().encode(v)), v)
     }
 }
+
+final class QuantizeTests: XCTestCase {
+    func testSnapsToSixteenthsAtTempo() {
+        // 120 BPM: quarter = 0.5 s, sixteenth = 0.125 s.
+        let q = QuantizeSettings(enabled: true, division: .sixteenth, bpm: 120)
+        XCTAssertEqual(q.gridSeconds, 0.125, accuracy: 1e-9)
+        let hits = [DrumHit(time: 0.13, pad: 0), DrumHit(time: 0.49, pad: 1), DrumHit(time: 0.06, pad: 2)]
+        let out = q.apply(to: hits)
+        XCTAssertEqual(out.map(\.time), [0.0, 0.125, 0.5])
+        XCTAssertEqual(out.map(\.pad), [2, 0, 1])
+    }
+
+    func testOffLeavesHitsAloneAndMergesDuplicates() {
+        let hits = [DrumHit(time: 0.26, pad: 0, velocity: 0.5), DrumHit(time: 0.24, pad: 0, velocity: 0.9)]
+        XCTAssertEqual(QuantizeSettings().apply(to: hits), hits)
+        let q = QuantizeSettings(enabled: true, division: .eighth, bpm: 120)
+        let out = q.apply(to: hits)
+        XCTAssertEqual(out.count, 1)
+        XCTAssertEqual(out[0].velocity, 0.9)
+        XCTAssertEqual(out[0].time, 0.25, accuracy: 1e-9)
+    }
+
+    func testEighthBeatUnitAndTriplets() {
+        // 6/8 at 120 eighths per minute: an eighth = 0.5 s, so a quarter = 1 s.
+        XCTAssertEqual(QuantizeSettings(enabled: true, division: .quarter, bpm: 120, beatUnit: 8).gridSeconds, 1, accuracy: 1e-9)
+        XCTAssertEqual(QuantizeSettings(enabled: true, division: .eighthTriplet, bpm: 120).gridSeconds, 0.5 / 3, accuracy: 1e-9)
+    }
+
+    func testTrackRoundTripAndPlayableHits() throws {
+        var t = Track(index: 0)
+        t.kind = .drums
+        t.drumHits = [DrumHit(time: 0.13, pad: 0)]
+        XCTAssertEqual(t.playableDrumHits, t.drumHits)
+        t.quantize = QuantizeSettings(enabled: true, division: .sixteenth, bpm: 120)
+        XCTAssertEqual(t.playableDrumHits.map(\.time), [0.125])
+        XCTAssertEqual(t.drumHits.map(\.time), [0.13], "original timing is kept")
+        let back = try JSONDecoder().decode(Track.self, from: JSONEncoder().encode(t))
+        XCTAssertEqual(back.quantize, t.quantize)
+    }
+}

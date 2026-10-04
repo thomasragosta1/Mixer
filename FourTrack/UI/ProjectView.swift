@@ -281,6 +281,22 @@ struct ProjectView: View {
 
     @ToolbarContentBuilder
     private var toolbar: some ToolbarContent {
+        ToolbarItemGroup(placement: .topBarLeading) {
+            Button {
+                model.undo()
+            } label: {
+                Image(systemName: "arrow.uturn.backward")
+            }
+            .disabled(!model.canUndo || model.isUndoBlocked)
+            .accessibilityLabel(model.undoLabel.map { "Undo \($0)" } ?? "Undo")
+            Button {
+                model.redo()
+            } label: {
+                Image(systemName: "arrow.uturn.forward")
+            }
+            .disabled(!model.canRedo || model.isUndoBlocked)
+            .accessibilityLabel(model.redoLabel.map { "Redo \($0)" } ?? "Redo")
+        }
         ToolbarItem(placement: .principal) {
             Button {
                 draftName = model.project.name

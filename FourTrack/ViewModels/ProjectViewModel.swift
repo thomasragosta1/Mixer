@@ -23,6 +23,11 @@ final class ProjectViewModel {
     private(set) var isRecording = false
     /// True during a count-in, before the take starts.
     private(set) var isCountingIn = false
+    /// Undo / redo availability and what the next step is, for the toolbar.
+    private(set) var canUndo = false
+    private(set) var canRedo = false
+    private(set) var undoLabel: String?
+    private(set) var redoLabel: String?
     /// The metronome is playing on its own (its play button).
     private(set) var isPreviewingClick = false
     /// Beat-light clock for the click preview.
@@ -74,6 +79,7 @@ final class ProjectViewModel {
     @ObservationIgnored private var drumTakeHits: [DrumHit] = []
     @ObservationIgnored private var padPeaksCache: [DrumKit: [[Float]]] = [:]
     @ObservationIgnored private var padRenderTask: Task<Void, Never>?
+    @ObservationIgnored private lazy var history = UndoHistory(store: store, projectID: project.id)
     @ObservationIgnored private var tempoRestartTask: Task<Void, Never>?
     @ObservationIgnored private var drumRenderGeneration = [Int](repeating: 0, count: Project.trackCount)
     /// Bumped on every splice so a Cleanup render of an older take is discarded.
@@ -121,6 +127,7 @@ final class ProjectViewModel {
     /// Press-and-hold reordering of lanes. Not while recording.
     func moveLanes(fromOffsets source: IndexSet, toOffset destination: Int) {
         guard !isRecording else { return }
+        checkpoint("Reorder Tracks")
         project.moveLanes(fromOffsets: source, toOffset: destination)
         scheduleSave()
     }
@@ -140,6 +147,7 @@ final class ProjectViewModel {
         ticker?.cancel()
         engine.teardown()
         AudioSessionManager.shared.onEvent = nil
+        history.clear()
         isClosed = true
     }
 
@@ -351,6 +359,7 @@ final class ProjectViewModel {
 
     private func splice(pending: PendingRecording, scratchURL: URL) {
         let index = pending.trackIndex
+        checkpoint("Recording", audio: true)
         let destination = store.audioURL(project: project.id, track: index)
         let existing = project.tracks[index].audioFileName.map { store.fileURL($0, in: project.id) }
         let peaksURL = store.peaksURL(project: project.id, track: index)
@@ -546,6 +555,7 @@ final class ProjectViewModel {
     /// An empty track can switch between audio and drums.
     func setKind(_ index: Int, _ kind: TrackKind) {
         guard !isRecording, project.tracks[index].isEmpty, project.tracks[index].kind != kind else { return }
+        checkpoint("Track Type")
         project.tracks[index].kind = kind
         if kind == .drums && project.tracks[index].name == "Track \(index + 1)" {
             project.tracks[index].name = "Drums"
@@ -583,6 +593,7 @@ final class ProjectViewModel {
     /// Changes a drum track's kit and re-renders its existing hits with it.
     func setDrumKit(_ index: Int, _ kit: DrumKit) {
         guard project.tracks[index].isDrums, project.tracks[index].drumKit != kit else { return }
+        checkpoint("Drum Kit", audio: true)
         project.tracks[index].drumKit = kit
         if index == armedTrack { routePadsIfNeeded() }
         scheduleSave()
@@ -620,6 +631,7 @@ final class ProjectViewModel {
         isRecording = false
         isCountingIn = false
         let index = armedTrack
+        checkpoint("Drum Recording", audio: true)
         project.tracks[index].drumHits = DrumRenderer.overwrite(project.tracks[index].drumHits, from: drumTakeStart, to: stopSeconds, with: drumTakeHits)
         drumTakeHits = []
         playhead = stopSeconds
@@ -647,7 +659,7 @@ final class ProjectViewModel {
     /// Renders a drum track's hits with its kit into its audio file, off the main thread.
     private func renderDrums(_ index: Int) {
         let track = project.tracks[index]
-        let hits = track.drumHits
+        let hits = track.playableDrumHits
         let kit = track.drumKit
         let pads = track.padSettings
         let url = store.audioURL(project: project.id, track: index)
@@ -696,6 +708,7 @@ final class ProjectViewModel {
     /// down from the top of the song.
     func addTrack(kind: TrackKind = .audio) {
         guard !isRecording, project.visibleTrackCount < Project.trackCount else { return }
+        checkpoint("Add Track")
         project.visibleTrackCount += 1
         armedTrack = project.laneOrder[project.visibleTrackCount - 1]
         if project.tracks[armedTrack].isEmpty {
@@ -711,25 +724,104 @@ final class ProjectViewModel {
 
     // MARK: Pad settings
 
-    /// Live edit of one pad's sound on a drum track. The pads update at once;
-    /// the track's audio re-renders shortly after the last change.
-    func setPadSettings(track index: Int, pad: Int, _ settings: PadSettings) {
-        guard project.tracks[index].isDrums, project.tracks[index].padSettings.indices.contains(pad),
-              project.tracks[index].padSettings[pad] != settings else { return }
-        project.tracks[index].padSettings[pad] = settings
-        if index == armedTrack { routePadsIfNeeded() }
-        scheduleSave()
-        padRenderTask?.cancel()
-        guard !project.tracks[index].drumHits.isEmpty else { return }
-        padRenderTask = Task { [weak self] in
-            try? await Task.sleep(nanoseconds: 600_000_000)
-            guard !Task.isCancelled, let self, !self.isRecording else { return }
-            self.renderDrums(index)
+    /// While the pad bubble is open: hear a draft on the live pads without saving it.
+    func previewPadSettings(track index: Int, pad: Int, _ settings: PadSettings) {
+        guard index == armedTrack, project.tracks[index].isDrums, project.tracks[index].padSettings.indices.contains(pad) else { return }
+        var pads = project.tracks[index].padSettings
+        pads[pad] = settings
+        engine.routePads(to: index, kit: project.tracks[index].drumKit, pads: pads)
+    }
+
+    /// The bubble closed without Apply: back to the saved sound.
+    func endPadPreview() {
+        routePadsIfNeeded()
+    }
+
+    /// Apply: saves the pad's sound and re-renders the track's existing hits with it.
+    func applyPadSettings(track index: Int, pad: Int, _ settings: PadSettings) {
+        guard !isRecording, project.tracks[index].isDrums, project.tracks[index].padSettings.indices.contains(pad),
+              project.tracks[index].padSettings[pad] != settings else {
+            routePadsIfNeeded()
+            return
         }
+        checkpoint("\(project.tracks[index].drumKit.padNames[pad]) Sound", audio: true)
+        project.tracks[index].padSettings[pad] = settings
+        routePadsIfNeeded()
+        scheduleSave()
+        if !project.tracks[index].drumHits.isEmpty { renderDrums(index) }
     }
 
     func revertPad(track index: Int, pad: Int) {
-        setPadSettings(track: index, pad: pad, .default)
+        applyPadSettings(track: index, pad: pad, .default)
+    }
+
+    // MARK: Quantize
+
+    /// Q: snaps the drum track to the grid at the current tempo, or back to as played.
+    func toggleQuantize(_ index: Int) {
+        guard !isRecording, project.tracks[index].isDrums else { return }
+        var q = project.tracks[index].quantize
+        if q.enabled {
+            q.enabled = false
+        } else {
+            q = QuantizeSettings(enabled: true, division: q.division, bpm: project.metronome.bpm, beatUnit: project.metronome.beatUnit)
+        }
+        setQuantize(index, q, label: q.enabled ? "Quantize" : "Quantize Off")
+    }
+
+    /// Picks the grid (press and hold Q); turns quantize on at the current tempo.
+    func setQuantizeDivision(_ index: Int, _ division: QuantizeDivision) {
+        guard !isRecording, project.tracks[index].isDrums else { return }
+        let q = QuantizeSettings(enabled: true, division: division, bpm: project.metronome.bpm, beatUnit: project.metronome.beatUnit)
+        setQuantize(index, q, label: "Quantize \(division.label)")
+    }
+
+    private func setQuantize(_ index: Int, _ q: QuantizeSettings, label: String) {
+        guard project.tracks[index].quantize != q else { return }
+        checkpoint(label, audio: true)
+        project.tracks[index].quantize = q
+        scheduleSave()
+        if !project.tracks[index].drumHits.isEmpty { renderDrums(index) }
+    }
+
+    // MARK: Undo / redo
+
+    /// Records the project before a change. See `UndoHistory`.
+    private func checkpoint(_ label: String, key: String? = nil, audio: Bool = false) {
+        history.checkpoint(project, label: label, key: key, audio: audio)
+        refreshUndoState()
+    }
+
+    private func refreshUndoState() {
+        canUndo = history.canUndo
+        canRedo = history.canRedo
+        undoLabel = history.undoLabel
+        redoLabel = history.redoLabel
+    }
+
+    /// Undo and redo wait for recording, saving and Cleanup renders to finish.
+    var isUndoBlocked: Bool { isRecording || isSaving || isStartingRecording || !cleanupProgress.isEmpty }
+
+    func undo() {
+        guard !isUndoBlocked, let step = history.undo(current: project) else { return }
+        restore(step.project)
+    }
+
+    func redo() {
+        guard !isUndoBlocked, let step = history.redo(current: project) else { return }
+        restore(step.project)
+    }
+
+    private func restore(_ snapshot: Project) {
+        stopClickPreview()
+        padRenderTask?.cancel()
+        tempoRestartTask?.cancel()
+        var restored = snapshot
+        // Undo never pulls a binned project back out of Recently Deleted.
+        restored.deletedAt = project.deletedAt
+        project = restored
+        refreshUndoState()
+        afterTrackBinChange()
     }
 
     // MARK: Track bin
@@ -737,6 +829,7 @@ final class ProjectViewModel {
     /// Moves a track to the project's Recently Deleted (after the user confirms).
     func deleteTrack(_ index: Int) {
         guard !isRecording, !isSaving else { return }
+        checkpoint("Delete Track", audio: true)
         cleanupJobs[index]?.cancel()
         takeGeneration[index] += 1
         drumRenderGeneration[index] += 1
@@ -752,6 +845,11 @@ final class ProjectViewModel {
     /// Puts a deleted track back into a free lane.
     func recoverTrack(_ id: UUID) {
         guard !isRecording, !isSaving else { return }
+        guard project.freeSlotForRecovery() != nil else {
+            errorMessage = "All four tracks are in use. Delete a track first, then recover this one."
+            return
+        }
+        checkpoint("Recover Track", audio: true)
         do {
             let slot = try store.recoverTrack(&project, id: id)
             takeGeneration[slot] += 1
@@ -767,6 +865,7 @@ final class ProjectViewModel {
     }
 
     func deleteTrackPermanently(_ id: UUID) {
+        checkpoint("Delete Track Permanently", audio: true)
         store.deleteTrackPermanently(&project, id: id)
         saveNow()
     }
@@ -793,24 +892,28 @@ final class ProjectViewModel {
 
     func rename(track index: Int, to name: String) {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        checkpoint("Rename Track")
         project.tracks[index].name = trimmed.isEmpty ? "Track \(index + 1)" : trimmed
         scheduleSave()
     }
 
     func renameProject(to name: String) {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
-        guard !trimmed.isEmpty else { return }
+        guard !trimmed.isEmpty, trimmed != project.name else { return }
+        checkpoint("Rename Project")
         project.name = trimmed
         scheduleSave()
     }
 
     func toggleMute(_ index: Int) {
+        checkpoint("Mute")
         project.tracks[index].mute.toggle()
         applyAll()
         scheduleSave()
     }
 
     func toggleSolo(_ index: Int) {
+        checkpoint("Solo")
         project.tracks[index].solo.toggle()
         applyAll()
         scheduleSave()
@@ -818,16 +921,17 @@ final class ProjectViewModel {
 
     /// Generic slider edit. Moving a macro hands control back from any
     /// Developer Mode override of the same section.
-    func update(track index: Int, _ change: (inout Track) -> Void) {
+    func update(track index: Int, label: String = "Mix Change", key: String? = nil, _ change: (inout Track) -> Void) {
+        checkpoint(label, key: key ?? "\(label)-\(index)")
         change(&project.tracks[index])
         engine.chains[index].apply(project.tracks[index], audible: project.isAudible(index), warmthEnabled: warmthActive)
         scheduleSave()
     }
 
-    func setVolume(_ index: Int, _ value: Double) { update(track: index) { $0.volume = value } }
+    func setVolume(_ index: Int, _ value: Double) { update(track: index, label: "Volume") { $0.volume = value } }
 
     func setEQ(_ index: Int, low: Double? = nil, mid: Double? = nil, high: Double? = nil) {
-        update(track: index) { t in
+        update(track: index, label: low != nil ? "Low" : (mid != nil ? "Mid" : "High")) { t in
             if let low { t.eqLow = low }
             if let mid { t.eqMid = mid }
             if let high { t.eqHigh = high }
@@ -837,7 +941,7 @@ final class ProjectViewModel {
     }
 
     func setCompressor(_ index: Int, _ value: Double) {
-        update(track: index) { t in
+        update(track: index, label: "Compressor") { t in
             t.compressor = value
             t.devOverrides?.compressor = nil
             t.devOverrides = t.devOverrides.flatMap { $0.isEmpty ? nil : $0 }
@@ -845,21 +949,21 @@ final class ProjectViewModel {
     }
 
     func setSpace(_ index: Int, _ value: Double) {
-        update(track: index) { t in
+        update(track: index, label: "Space") { t in
             t.space = value
             t.devOverrides?.reverb = nil
             t.devOverrides = t.devOverrides.flatMap { $0.isEmpty ? nil : $0 }
         }
     }
 
-    func setWarmth(_ index: Int, _ value: Double) { update(track: index) { $0.warmth = value } }
+    func setWarmth(_ index: Int, _ value: Double) { update(track: index, label: "Warmth") { $0.warmth = value } }
 
     /// The on/off button under M/S. Off remembers the level for next time.
     func toggleCleanup(_ index: Int) {
         let track = project.tracks[index]
         guard !track.isDrums else { return }
         if track.isCleanupOn {
-            update(track: index) { t in
+            update(track: index, label: "Clean Up Off", key: UUID().uuidString) { t in
                 t.cleanupLevel = t.cleanup
                 t.cleanup = 0
             }
@@ -870,7 +974,7 @@ final class ProjectViewModel {
 
     /// Moving Cleanup above zero renders the cleaned copy if it doesn't exist yet.
     func setCleanup(_ index: Int, _ value: Double) {
-        update(track: index) { t in
+        update(track: index, label: "Clean Up") { t in
             t.cleanup = value
             if value > 0 { t.cleanupLevel = value }
         }
@@ -880,6 +984,7 @@ final class ProjectViewModel {
     }
 
     func setMasterVolume(_ value: Double) {
+        checkpoint("Master Volume", key: "master")
         project.masterVolume = value
         engine.master.apply(masterVolume: value)
         scheduleSave()
@@ -888,7 +993,7 @@ final class ProjectViewModel {
     // Developer Mode exploded values
 
     func editDevParams(_ index: Int, _ change: (inout DevParams, Track) -> Void) {
-        update(track: index) { t in
+        update(track: index, label: "Advanced Control") { t in
             var params = t.devOverrides ?? DevParams()
             change(&params, t)
             t.devOverrides = params.isEmpty ? nil : params
@@ -896,12 +1001,16 @@ final class ProjectViewModel {
     }
 
     func resetDevOverrides(_ index: Int) {
-        update(track: index) { $0.devOverrides = nil }
+        update(track: index, label: "Reset to Macros", key: UUID().uuidString) { $0.devOverrides = nil }
     }
 
     func setMetronome(_ change: (inout MetronomeSettings) -> Void) {
         let before = project.metronome
-        change(&project.metronome)
+        var proposed = before
+        change(&proposed)
+        guard proposed != before else { return }
+        checkpoint("Metronome", key: "metronome")
+        project.metronome = proposed
         let after = project.metronome
         scheduleSave()
         if isPreviewingClick {
@@ -988,6 +1097,7 @@ final class ProjectViewModel {
         }
         // While playing, holding an arrow fires many small changes: show them at
         // once, but restart the click only once the tempo settles.
+        checkpoint("Tempo", key: "metronome")
         project.metronome.nudgeTempo(by: delta)
         scheduleSave()
         tempoRestartTask?.cancel()

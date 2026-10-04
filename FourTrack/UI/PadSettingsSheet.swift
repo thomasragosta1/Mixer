@@ -3,20 +3,33 @@ import UIKit
 import FourTrackCore
 
 /// Press and hold a drum pad: its sound settings, mixer-style, in a bubble
-/// tinted with the pad's colour. Every slider plays the pad when you let go.
-/// "Revert to Default" asks "Are you sure?" on the first tap and reverts on
-/// the second; a tap anywhere else (or any other change) cancels it.
+/// tinted with the pad's colour. Moves are heard on the pads right away (and
+/// each slider plays the pad when you let go) but only saved with the big
+/// Apply button at the bottom; swiping the bubble away discards them.
+/// The small Revert button at the top asks "Are you sure?" on the first tap
+/// and reverts on the second; a tap anywhere else (or any change) cancels it.
 struct PadSettingsSheet: View {
     @Bindable var model: ProjectViewModel
     let trackIndex: Int
     let pad: Int
     @State private var confirmingRevert = false
+    @State private var draft: PadSettings
+    @State private var applied = false
     @Environment(\.dismiss) private var dismiss
 
+    init(model: ProjectViewModel, trackIndex: Int, pad: Int) {
+        self.model = model
+        self.trackIndex = trackIndex
+        self.pad = pad
+        let pads = model.project.tracks[trackIndex].padSettings
+        _draft = State(initialValue: pads.indices.contains(pad) ? pads[pad] : .default)
+    }
+
     private var track: Track { model.project.tracks[trackIndex] }
-    private var settings: PadSettings {
+    private var saved: PadSettings {
         track.padSettings.indices.contains(pad) ? track.padSettings[pad] : .default
     }
+    private var settings: PadSettings { draft }
     private var color: Color { DrumPadGrid.color(track.drumKit.family(of: pad)) }
     private var name: String { track.drumKit.padNames[pad] }
 
@@ -86,7 +99,8 @@ struct PadSettingsSheet: View {
                 .accessibilityAdjustableAction { adjust(\.tone, $0, step: 0.05, range: -1...1) }
             }
 
-            revertButton
+            Spacer(minLength: 0)
+            applyButton
         }
         .padding(.horizontal, 22)
         .padding(.top, 22)
@@ -94,7 +108,13 @@ struct PadSettingsSheet: View {
         .frame(maxHeight: .infinity, alignment: .top)
         // A tap on empty space cancels a pending revert.
         .background(Color.clear.contentShape(Rectangle()).onTapGesture { cancelRevert() })
-        .onChange(of: settings) { _, _ in cancelRevert() }
+        .onChange(of: draft) { _, new in
+            cancelRevert()
+            model.previewPadSettings(track: trackIndex, pad: pad, new)
+        }
+        .onDisappear {
+            if !applied { model.endPadPreview() }
+        }
         .presentationDetents([.height(500)])
         .presentationCornerRadius(34)
         .presentationDragIndicator(.visible)
@@ -116,53 +136,63 @@ struct PadSettingsSheet: View {
                     .foregroundStyle(.secondary)
             }
             Spacer()
+            revertButton
             Button {
                 cancelRevert()
                 model.hitPad(pad)
             } label: {
                 Image(systemName: "play.fill")
-                    .font(.title3)
-                    .frame(width: 30, height: 30)
+                    .font(.body)
+                    .frame(width: 24, height: 24)
             }
             .glassButton()
             .tint(color)
             .accessibilityLabel("Play \(name)")
-            Button("Done") {
-                cancelRevert()
-                dismiss()
-            }
-            .prominentGlassButton()
-            .tint(color)
         }
     }
 
-    private var revertButton: some View {
-        VStack(spacing: 6) {
-            Button {
-                if confirmingRevert {
-                    model.revertPad(track: trackIndex, pad: pad)
-                    UINotificationFeedbackGenerator().notificationOccurred(.success)
-                    confirmingRevert = false
-                } else {
-                    withAnimation(.spring(response: 0.25, dampingFraction: 0.8)) { confirmingRevert = true }
-                    UIImpactFeedbackGenerator(style: .light).impactOccurred()
-                }
-            } label: {
-                Text(confirmingRevert ? "Are you sure?" : "Revert to Default")
-                    .font(.body.weight(.semibold))
-                    .frame(maxWidth: .infinity, minHeight: 30)
-            }
-            .prominentGlassButton()
-            .tint(confirmingRevert ? .red : color)
-            .disabled(settings.isDefault && !confirmingRevert)
-            .accessibilityHint(confirmingRevert ? "Tap again to revert. Tap anywhere else to cancel." : "Asks before reverting.")
-
-            Text(confirmingRevert ? "Tap again to revert. Tap anywhere else to cancel." : " ")
-                .font(.caption)
-                .foregroundStyle(.secondary)
-                .accessibilityHidden(true)
+    /// Big button at the bottom: saves the sound and closes.
+    private var applyButton: some View {
+        Button {
+            cancelRevert()
+            applied = true
+            model.applyPadSettings(track: trackIndex, pad: pad, draft)
+            dismiss()
+        } label: {
+            Text(draft == saved ? "Done" : "Apply")
+                .font(.headline)
+                .frame(maxWidth: .infinity, minHeight: 40)
         }
-        .padding(.top, 4)
+        .prominentGlassButton()
+        .controlSize(.large)
+        .tint(color)
+        .accessibilityHint(draft == saved ? "Closes" : "Saves this sound and updates the drum track")
+    }
+
+    /// Small button at the top. First tap: "Are you sure?". Second tap: back to
+    /// the kit's own sound, saved at once.
+    private var revertButton: some View {
+        Button {
+            if confirmingRevert {
+                draft = .default
+                model.revertPad(track: trackIndex, pad: pad)
+                UINotificationFeedbackGenerator().notificationOccurred(.success)
+                confirmingRevert = false
+            } else {
+                withAnimation(.spring(response: 0.25, dampingFraction: 0.8)) { confirmingRevert = true }
+                UIImpactFeedbackGenerator(style: .light).impactOccurred()
+            }
+        } label: {
+            Text(confirmingRevert ? "Are you sure?" : "Revert")
+                .font(.footnote.weight(.semibold))
+                .padding(.horizontal, 4)
+        }
+        .glassButton()
+        .controlSize(.small)
+        .tint(confirmingRevert ? .red : color)
+        .disabled(saved.isDefault && draft.isDefault && !confirmingRevert)
+        .accessibilityLabel(confirmingRevert ? "Are you sure?" : "Revert to Default")
+        .accessibilityHint(confirmingRevert ? "Tap again to revert. Tap anywhere else to cancel." : "Asks before reverting.")
     }
 
     private func row<S: View>(_ title: String, _ value: String, @ViewBuilder slider: () -> S) -> some View {
@@ -184,19 +214,13 @@ struct PadSettingsSheet: View {
     private func binding(_ key: WritableKeyPath<PadSettings, Double>) -> Binding<Double> {
         Binding(
             get: { settings[keyPath: key] },
-            set: { value in
-                var s = settings
-                s[keyPath: key] = value
-                model.setPadSettings(track: trackIndex, pad: pad, s)
-            }
+            set: { value in draft[keyPath: key] = value }
         )
     }
 
     private func adjust(_ key: WritableKeyPath<PadSettings, Double>, _ direction: AccessibilityAdjustmentDirection, step: Double, range: ClosedRange<Double>) {
-        var s = settings
         let delta = direction == .increment ? step : -step
-        s[keyPath: key] = min(max(s[keyPath: key] + delta, range.lowerBound), range.upperBound)
-        model.setPadSettings(track: trackIndex, pad: pad, s)
+        draft[keyPath: key] = min(max(draft[keyPath: key] + delta, range.lowerBound), range.upperBound)
     }
 
     /// Plays the pad when a slider is let go, so each change can be heard.

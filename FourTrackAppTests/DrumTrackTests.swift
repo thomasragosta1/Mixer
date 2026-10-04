@@ -101,6 +101,47 @@ final class DrumTrackTests: XCTestCase {
         }
     }
 
+    func testUndoRedoRestoresSettingsAndAudio() throws {
+        var project = try store.create()
+        let url = store.audioURL(project: project.id, track: 0)
+        let w = try CAFWriter(url: url)
+        try w.write([Float](repeating: 0.25, count: 4_800))
+        try w.finish()
+        project.tracks[0].audioFileName = ProjectStore.audioFileName(track: 0)
+        store.refreshDurations(&project)
+        try store.save(project)
+
+        let model = ProjectViewModel(project: project, store: store)
+        model.activate()
+        XCTAssertFalse(model.canUndo)
+
+        model.toggleMute(0)
+        XCTAssertTrue(model.project.tracks[0].mute)
+        model.setVolume(0, 0.5)
+        model.setVolume(0, 0.4)   // merges with the previous move
+        model.deleteTrack(0)      // moves the take into the project's bin
+        XCTAssertNil(model.project.tracks[0].audioFileName)
+        XCTAssertFalse(FileManager.default.fileExists(atPath: url.path))
+
+        model.undo()              // delete
+        XCTAssertEqual(model.project.tracks[0].audioFileName, ProjectStore.audioFileName(track: 0))
+        XCTAssertEqual(try CAFReader(url: url).frameCount, 4_800, "the take's audio is back")
+        XCTAssertEqual(model.project.tracks[0].volume, 0.4, accuracy: 1e-9)
+        model.undo()              // both volume moves at once
+        XCTAssertEqual(model.project.tracks[0].volume, MacroCurves.volumeUnitySlider, accuracy: 1e-9)
+        model.undo()              // mute
+        XCTAssertFalse(model.project.tracks[0].mute)
+        XCTAssertFalse(model.canUndo)
+
+        model.redo(); model.redo(); model.redo()
+        XCTAssertTrue(model.project.tracks[0].mute)
+        XCTAssertNil(model.project.tracks[0].audioFileName)
+        XCTAssertFalse(FileManager.default.fileExists(atPath: url.path))
+        model.undo()
+        XCTAssertTrue(FileManager.default.fileExists(atPath: url.path))
+        model.close()
+    }
+
     private func spin(_ seconds: TimeInterval) {
         RunLoop.main.run(until: Date().addingTimeInterval(seconds))
     }

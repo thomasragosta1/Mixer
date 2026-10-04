@@ -42,9 +42,11 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Drum takes start at the playhead (owner request),** even on an empty drum track; the rendered track is silent before the first hit. (Audio tracks still start an empty track at 0:00.)
 - **Recording drums records hits, not the microphone.** Each hit is stored with its timeline time, shifted earlier by the output latency so it lands where the player heard it. On stop, hits in the recorded span replace the old ones (the same overwrite-anywhere rule as audio), and the whole track is rendered to its audio file. Mixing, export, mute/solo and waveforms then work exactly as for audio tracks.
 - **Changing a kit re-renders every existing hit** with the new kit.
+- **Drum screen track row (owner request):** the armed drum track's name with **M**, **S** and **Q** above the kit picker.
+- **Quantize (owner request), non-destructive.** Drum tracks already store hits (like MIDI), so quantize snaps them only when they are rendered and played; the hits keep their played timing. **Q** tap: on (1/16 by default) or off; press and hold Q to pick 1/4, 1/8, 1/16, 1/32, 1/8T or 1/16T. The grid is built from the tempo and beat unit at the moment quantize is turned on (stored with the track), so a later tempo change doesn't drag the drums away from the audio tracks; turn Q off and on to re-grid at a new tempo. Two hits of the same pad landing on one grid line merge into the louder one. New hits recorded while Q is on are snapped too.
 - **Per-pad sound settings (owner request).** Press and hold any pad (0.55 s, not while recording) to open its settings bubble: **Volume** (same curve and unity detent as the track fader), **Tune** (±12 semitones, sampler-style so pitch and length move together), **Decay** (Natural down to a tight 25 ms damping, attack untouched) and **Tone** (darker/brighter shelf at 3 kHz). Each slider plays the pad when released, and there's a Play button.
   - The bubble's background is the pad's own colour (the same tint the pad uses), and its sliders and buttons take that colour too.
-  - **Revert to Default:** the first tap turns it into "Are you sure?" (red); a second tap reverts. Tapping anywhere else, moving a slider, Play or Done cancels it. Disabled when the pad is already at default.
+  - **Apply (big, bottom) / Revert (small, top) (owner request).** Slider moves are heard on the pads straight away but only saved by **Apply**, which also re-renders the track's hits and closes the bubble (it reads "Done" when nothing changed). Swiping the bubble away discards the draft. **Revert** at the top: the first tap turns it into "Are you sure?" (red); a second tap goes back to the kit's own sound and saves that. Tapping anywhere else, moving a slider or Play cancels it.
   - Settings are stored per drum track and pad (`Track.padSettings`) as slider values. The live pads and the rendered track use the same processing (`PadProcessor`), so what you hear while playing is what gets recorded. Pads with adjustments show a small slider icon. Changes re-render the track's existing hits about half a second after the last move.
 
 ## Compressor (owner request)
@@ -62,6 +64,13 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
   At the default, a -10 dBFS tone gets about 5 dB of gain reduction: clearly audible, still natural on voice and guitar. Makeup never exceeds the threshold depth, so a steady 0 dBFS input can't leave the compressor above full scale (tested at every slider position). Fast transients can overshoot by the makeup amount for a few milliseconds; the master limiter catches those.
 - **Default is 0 (owner request).** New tracks start uncompressed, so what you hear is what you recorded; existing tracks keep their value. The spec's 0.3 default was dropped.
 - Developer Mode's compressor section now shows Threshold, Ratio, Knee, Attack, Release and Makeup (Headroom is gone). Saved overrides from older builds load with a 4:1 ratio.
+
+## Undo / redo (owner request)
+
+- **Undo and redo buttons at the top left of every project screen** (record, drums and mixing). The history is 1,000 steps per project and covers every edit: mixer and Developer Mode sliders, mute/solo, names, track type and order, adding and deleting tracks (including permanent deletes in the project's bin), recordings (audio and drums), kits, pad sounds, quantize and metronome settings. Playhead moves, arming and switching screens are not steps.
+- **How audio comes back.** Each step stores the project as it was. Steps that rewrite audio also keep the affected files (takes, Cleanup renders, waveform caches, binned takes) as clones in the project's `.undo` folder; on iOS a clone costs no space until the original is overwritten, so only audio that really changed uses storage. Moves of the same slider within a second merge into one step.
+- Undo and redo wait while recording, saving or a Cleanup render is running. The history lasts while the project is open and is deleted when it closes (or on next open after a crash). Undo never brings a project back out of Recently Deleted.
+- Not covered: the projects list (deleting projects already goes through the bin), and app-wide Settings like Developer Mode.
 
 ## Sliders
 
