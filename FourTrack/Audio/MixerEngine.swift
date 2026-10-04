@@ -354,6 +354,54 @@ final class MixerEngine {
         return plan
     }
 
+    /// Punch-in: starts recording onto `trackIndex` while the song is already
+    /// playing, without stopping or restarting anything. Recording begins at
+    /// the current playback position; the other tracks and the click keep
+    /// going. Returns nil when that isn't possible (not playing, or the
+    /// microphone hasn't been set up yet; setting it up briefly stops the
+    /// engine), and the caller then starts a normal recording from here.
+    func punchInRecording(trackIndex: Int, scratchURL: URL, latency: Double, route: AudioRouteKind, inputGainDB: Double) throws -> RecordingPlan? {
+        guard state == .playing, inputPrepared, engine.isRunning else { return nil }
+        let input = engine.inputNode
+        let inputFormat = input.outputFormat(forBus: 0)
+        guard inputFormat.sampleRate > 0, inputFormat.channelCount > 0 else { return nil }
+        let sink = try RecordingSink(url: scratchURL, inputFormat: inputFormat)
+        input.removeTap(onBus: 0)
+        input.installTap(onBus: 0, bufferSize: 1024, format: inputFormat) { buffer, time in
+            sink.append(buffer, at: time)
+        }
+        // The punch point on the running timeline. Audio that arrives a little
+        // later is placed where it really happened (see RecordingPlan.placement).
+        let punchHost = max(mach_absolute_time(), startHost)
+        let elapsed = AVAudioTime.seconds(forHostTime: punchHost) - AVAudioTime.seconds(forHostTime: startHost)
+        let punchFrame = startFrame + frame(elapsed)
+        // The track being recorded goes quiet; everything else keeps playing.
+        chains[trackIndex].stop()
+        let plan = RecordingPlan(
+            trackIndex: trackIndex,
+            startFrame: punchFrame,
+            startHostTime: punchHost,
+            latency: latency,
+            route: route,
+            inputGainDB: inputGainDB
+        )
+        recordingSink = sink
+        recordingPlan = plan
+        state = .recording
+        return plan
+    }
+
+    /// Punch-in for a drum track: hits start recording now, nothing restarts.
+    /// Returns the timeline position the take starts at, or nil if not playing.
+    func punchInDrums(trackIndex: Int) -> Double? {
+        guard state == .playing else { return nil }
+        chains[trackIndex].stop()
+        recordingSink = nil
+        recordingPlan = nil
+        state = .recording
+        return currentSeconds
+    }
+
     /// True once the count-in (if any) is over and the take is running.
     var isPastCountIn: Bool {
         state == .recording && mach_absolute_time() >= startHost

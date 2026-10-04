@@ -195,6 +195,46 @@ final class DrumTrackTests: XCTestCase {
         model.close()
     }
 
+    /// Recording a drum track while the song plays starts from the live spot,
+    /// without restarting; adding a track mid-song doesn't stop or rewind it.
+    func testPunchInAndAddTrackWhilePlaying() async throws {
+        var project = try store.create()
+        let url = store.audioURL(project: project.id, track: 0)
+        let w = try CAFWriter(url: url)
+        try w.write([Float](repeating: 0.1, count: 48_000 * 6))
+        try w.finish()
+        project.tracks[0].audioFileName = ProjectStore.audioFileName(track: 0)
+        store.refreshDurations(&project)
+        try store.save(project)
+
+        let model = ProjectViewModel(project: project, store: store)
+        model.activate()
+        model.play()
+        XCTAssertTrue(model.isPlaying)
+        spin(1.0)
+
+        model.addTrack(kind: .drums)                 // mid-song
+        XCTAssertTrue(model.isPlaying, "adding a track must not stop the song")
+        XCTAssertGreaterThan(model.engineForTesting.currentSeconds, 0.5, "adding a track must not rewind")
+        XCTAssertTrue(model.isDrumArmed)
+
+        let before = model.engineForTesting.currentSeconds
+        await model.startRecording()                 // punch in
+        XCTAssertTrue(model.isRecording)
+        XCTAssertGreaterThanOrEqual(model.recordingStartSeconds, before - 0.05, "records from the live spot, not 0:00")
+        spin(0.3)
+        model.hitPad(0)
+        spin(0.3)
+        model.hitPad(1)
+        spin(0.3)
+        model.stopRecording()
+        spin(1.5)                                    // drum render
+        let hits = model.project.tracks[model.armedTrack].drumHits
+        XCTAssertEqual(hits.count, 2)
+        XCTAssertGreaterThan(hits.first?.time ?? 0, before, "hits land after the punch point")
+        model.close()
+    }
+
     private func spin(_ seconds: TimeInterval) {
         RunLoop.main.run(until: Date().addingTimeInterval(seconds))
     }

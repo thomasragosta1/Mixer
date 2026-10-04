@@ -270,12 +270,14 @@ final class ProjectViewModel {
         isStartingRecording = true
         defer { isStartingRecording = false }
         stopClickPreview()
-        if isPlaying { pause() }
+        // Pressing record while the song plays punches in from the live spot.
+        let punch = isPlaying
         if project.tracks[armedTrack].isDrums {
-            startDrumTake()
+            startDrumTake(punch: punch)
             return
         }
         guard await AudioSessionManager.shared.requestPermission() else {
+            if punch { pause() }
             showPermissionDenied = true
             return
         }
@@ -292,13 +294,46 @@ final class ProjectViewModel {
         }
         let latency = settings.latency.compensation(for: route, estimate: engine.estimatedLatency)
         let trackIndex = armedTrack
-        // A new track always starts at 0:00; overwrite-anywhere applies once it has a take.
-        if project.tracks[trackIndex].isEmpty {
+        let scratch = store.recordingTempURL(project: project.id)
+
+        if punch, let plan = try? engine.punchInRecording(
+            trackIndex: trackIndex,
+            scratchURL: scratch,
+            latency: latency,
+            route: route,
+            inputGainDB: project.tracks[trackIndex].inputGainDB
+        ) {
+            // Seamless: the song never stops.
+            let marker = PendingRecording(
+                trackIndex: trackIndex,
+                insertFrame: plan.startFrame,
+                skipFrames: Int64((latency * EngineFormat.sampleRate).rounded()),
+                inputGainDB: plan.inputGainDB,
+                route: route
+            )
+            try? store.savePendingRecording(marker, project: project.id)
+            pendingMarkerFinal = false
+            playhead = Double(plan.startFrame) / EngineFormat.sampleRate
+            recordingStartSeconds = playhead
+            livePeaks = []
+            isPlaying = false
+            isRecording = true
+            isCountingIn = false
+            syncClock()
+            startTicker()
+            return
+        }
+        // Couldn't punch in seamlessly (first recording sets up the mic): stop
+        // and record from right here instead, with no count-in.
+        if punch { pause() }
+
+        // A new track starts at 0:00 when recording from a stop; overwrite-anywhere
+        // applies once it has a take, and a punch-in records from the live spot.
+        if project.tracks[trackIndex].isEmpty && !punch {
             playhead = 0
             engine.seek(to: 0)
         }
         let startFrame = Int64((playhead * EngineFormat.sampleRate).rounded())
-        let scratch = store.recordingTempURL(project: project.id)
 
         // Crash-safety marker; refined with exact timing once audio arrives.
         let marker = PendingRecording(
@@ -319,7 +354,7 @@ final class ProjectViewModel {
                 scratchURL: scratch,
                 latency: latency,
                 route: route,
-                metronome: metronomeIfEnabled
+                metronome: punch ? metronomeWithoutCountIn : metronomeIfEnabled
             )
         } catch {
             store.clearPendingRecording(project: project.id)
@@ -329,9 +364,16 @@ final class ProjectViewModel {
         recordingStartSeconds = playhead
         livePeaks = []
         isRecording = true
-        isCountingIn = metronomeIfEnabled.map { $0.countInBars > 0 } ?? false
+        isCountingIn = punch ? false : (metronomeIfEnabled.map { $0.countInBars > 0 } ?? false)
         syncClock()
         startTicker()
+    }
+
+    /// The click without a count-in, for recording that starts mid-song.
+    private var metronomeWithoutCountIn: MetronomeSettings? {
+        guard var s = metronomeIfEnabled else { return nil }
+        s.countInBars = 0
+        return s
     }
 
     func stopRecording() {
@@ -605,9 +647,26 @@ final class ProjectViewModel {
         }
     }
 
-    private func startDrumTake() {
+    private func startDrumTake(punch: Bool = false) {
         let index = armedTrack
         stopClickPreview()
+        if punch, let start = engine.punchInDrums(trackIndex: index) {
+            // Seamless drum punch-in: hits record from the live spot.
+            routePadsIfNeeded()
+            playhead = start
+            drumTakeStart = start
+            drumTakeHits = []
+            recordingStartSeconds = start
+            livePeaks = []
+            isPlaying = false
+            isDrumTake = true
+            isRecording = true
+            isCountingIn = false
+            syncClock()
+            startTicker()
+            return
+        }
+        if isPlaying { pause() }
         // Drum takes start wherever the playhead is, even on an empty track
         // (the rendered track is silent before the first hit).
         routePadsIfNeeded()
@@ -721,7 +780,9 @@ final class ProjectViewModel {
             }
         }
         routePadsIfNeeded()
-        seek(to: 0)
+        // While the song plays, a new track appears without stopping or
+        // jumping; from a stop, it rewinds so the part is laid down from the top.
+        if !isPlaying { seek(to: 0) }
         scheduleSave()
     }
 
