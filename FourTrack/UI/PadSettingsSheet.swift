@@ -15,6 +15,8 @@ struct PadSettingsSheet: View {
     @State private var confirmingRevert = false
     @State private var draft: PadSettings
     @State private var applied = false
+    /// A/B: the pads play the kit's original sound instead of the draft.
+    @State private var hearingOriginal = false
     @Environment(\.dismiss) private var dismiss
 
     init(model: ProjectViewModel, trackIndex: Int, pad: Int) {
@@ -36,6 +38,7 @@ struct PadSettingsSheet: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             header
+            compareSwitch
 
             row("Volume", volumeText) {
                 SliderCore(
@@ -112,12 +115,18 @@ struct PadSettingsSheet: View {
         .background(Color.clear.contentShape(Rectangle()).onTapGesture { cancelRevert() })
         .onChange(of: draft) { _, new in
             cancelRevert()
+            // Moving a slider always goes back to hearing your version.
+            if hearingOriginal { hearingOriginal = false }
             model.previewPadSettings(track: trackIndex, pad: pad, new)
+        }
+        .onChange(of: hearingOriginal) { _, original in
+            model.previewPadSettings(track: trackIndex, pad: pad, original ? .default : draft)
+            model.hitPad(pad)
         }
         .onDisappear {
             if !applied { model.endPadPreview() }
         }
-        .presentationDetents([.height(model.isSimple ? 340 : 500)])
+        .presentationDetents([.height(model.isSimple ? 380 : 540)])
         .presentationCornerRadius(34)
         .presentationDragIndicator(.visible)
         .presentationBackground {
@@ -151,6 +160,18 @@ struct PadSettingsSheet: View {
             .tint(color)
             .accessibilityLabel("Play \(name)")
         }
+    }
+
+    /// A/B compare: tap either side to hear the kit's original sound or yours.
+    /// The pads on screen follow the choice too, so you can play both.
+    private var compareSwitch: some View {
+        Picker("Compare", selection: $hearingOriginal) {
+            Text("Original").tag(true)
+            Text("Yours").tag(false)
+        }
+        .pickerStyle(.segmented)
+        .disabled(draft.isDefault)
+        .accessibilityHint("Switches between the original sound and your adjusted sound, and plays it.")
     }
 
     /// Big button at the bottom: saves the sound and closes.
