@@ -132,6 +132,31 @@ final class ProjectStoreTests: XCTestCase {
         XCTAssertFalse(FileManager.default.fileExists(atPath: store.directory(for: a.id).path))
     }
 
+    func testLaneOrder() throws {
+        var p = Project(name: "x")
+        p.visibleTrackCount = 3
+        XCTAssertEqual(p.visibleLanes, [0, 1, 2])
+        p.moveLanes(fromOffsets: [2], toOffset: 0)
+        XCTAssertEqual(p.visibleLanes, [2, 0, 1])
+        XCTAssertEqual(p.laneOrder, [2, 0, 1, 3])
+        p.moveLanes(fromOffsets: [0], toOffset: 3)
+        XCTAssertEqual(p.laneOrder, [0, 1, 2, 3])
+        // Corrupt orders are repaired.
+        p.laneOrder = [3, 3, 9]
+        p.normalizeTracks()
+        XCTAssertEqual(p.laneOrder, [3, 0, 1, 2])
+        // A recorded track is never hidden, wherever it sits.
+        var q = Project(name: "y")
+        q.laneOrder = [1, 2, 3, 0]
+        q.tracks[0].audioFileName = "track1.caf"
+        q.visibleTrackCount = 1
+        q.normalizeTracks()
+        XCTAssertEqual(q.visibleTrackCount, 4)
+        // Round trip.
+        let data = try JSONEncoder().encode(p)
+        XCTAssertEqual(try JSONDecoder().decode(Project.self, from: data).laneOrder, p.laneOrder)
+    }
+
     func testVisibleTrackCount() throws {
         var p = try store.create()
         XCTAssertEqual(p.visibleTrackCount, 1)

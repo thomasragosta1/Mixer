@@ -14,7 +14,7 @@ struct MixView: View {
             let width = min(120, (geo.size.width - 16 - spacing * CGFloat(columns - 1)) / CGFloat(columns))
             ScrollView(.vertical) {
                 HStack(alignment: .top, spacing: spacing) {
-                    ForEach(0..<model.visibleTrackCount, id: \.self) { i in
+                    ForEach(model.visibleLanes, id: \.self) { i in
                         ChannelStripView(model: model, index: i) {
                             detailTrack = i
                         }

@@ -1,50 +1,39 @@
 import SwiftUI
 import FourTrackCore
 
-/// One horizontal track lane in record mode: name, M/S, and a compact
-/// waveform. Tapping the lane arms it.
-struct TrackRowView: View {
+/// One track as an iOS-style card: name, M/S and the Cleanup pill on the
+/// left, waveform with the playhead on the right. Tap the card to arm it;
+/// drag the waveform sideways to scrub.
+struct TrackRowView<Scrub: Gesture>: View {
     @Bindable var model: ProjectViewModel
     let index: Int
+    let onScrub: Scrub
     @State private var renaming = false
     @State private var draftName = ""
+
+    static var cardHeight: CGFloat { 112 }
 
     private var track: Track { model.project.tracks[index] }
     private var isArmed: Bool { model.armedTrack == index }
     private var isRecordingHere: Bool { model.isRecording && isArmed }
 
     var body: some View {
-        HStack(spacing: 0) {
+        HStack(spacing: 12) {
             controls
-                .frame(width: 104, alignment: .leading)
-                .padding(.leading, 12)
-            WaveformView(
-                peaks: model.peaks[index],
-                livePeaks: isRecordingHere ? model.livePeaks : [],
-                liveStart: model.recordingStartSeconds,
-                showsLive: isRecordingHere && !model.isCountingIn,
-                playhead: model.playhead,
-                color: model.project.isAudible(index) ? .primary : .secondary
-            )
-            .overlay(alignment: .center) {
-                if track.isEmpty && !isRecordingHere {
-                    Text(isArmed ? "Ready to record" : "Empty")
-                        .font(.caption)
-                        .foregroundStyle(.tertiary)
-                        .allowsHitTesting(false)
-                }
-            }
+                .frame(width: 92, alignment: .leading)
+            waveform
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .padding(12)
+        .frame(height: Self.cardHeight)
         .background(
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(isArmed ? Color.red.opacity(isRecordingHere ? 0.16 : 0.08) : Color(uiColor: .secondarySystemBackground))
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .fill(Color(uiColor: .secondarySystemGroupedBackground))
         )
         .overlay(
-            RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .strokeBorder(isArmed ? Color.red.opacity(0.7) : .clear, lineWidth: 1.5)
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
+                .strokeBorder(Color.red.opacity(isArmed ? 0.85 : 0), lineWidth: 2)
         )
-        .contentShape(Rectangle())
+        .contentShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .onTapGesture { model.arm(index) }
         .accessibilityElement(children: .contain)
         .accessibilityAddTraits(isArmed ? .isSelected : [])
@@ -56,13 +45,54 @@ struct TrackRowView: View {
         }
     }
 
+    private var waveform: some View {
+        WaveformView(
+            peaks: model.peaks[index],
+            livePeaks: isRecordingHere ? model.livePeaks : [],
+            liveStart: model.recordingStartSeconds,
+            showsLive: isRecordingHere && !model.isCountingIn,
+            playhead: model.playhead,
+            color: model.project.isAudible(index) ? .primary : .secondary
+        )
+        .overlay {
+            if track.isEmpty && !isRecordingHere {
+                Text(isArmed ? "Ready to record" : "Empty")
+                    .font(.caption)
+                    .foregroundStyle(.secondary)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 3)
+                    .background(Capsule().fill(Color(uiColor: .secondarySystemGroupedBackground)))
+                    .allowsHitTesting(false)
+            }
+        }
+        .overlay {
+            // Playhead, centered like Voice Memos.
+            Rectangle()
+                .fill(model.isRecording ? Color.red : Color.accentColor)
+                .frame(width: 2)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
+        }
+        .background(
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .fill(Color(uiColor: .tertiarySystemFill).opacity(isRecordingHere ? 0 : 0.5))
+        )
+        .background(
+            RoundedRectangle(cornerRadius: 10, style: .continuous)
+                .fill(Color.red.opacity(isRecordingHere ? 0.15 : 0))
+        )
+        .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
+        .contentShape(Rectangle())
+        .gesture(onScrub)
+    }
+
     private var controls: some View {
-        VStack(alignment: .leading, spacing: 4) {
+        VStack(alignment: .leading, spacing: 8) {
             Button {
                 draftName = track.name
                 renaming = true
             } label: {
-                HStack(spacing: 4) {
+                HStack(spacing: 5) {
                     if isArmed {
                         Circle().fill(Color.red).frame(width: 7, height: 7)
                     }
@@ -71,6 +101,7 @@ struct TrackRowView: View {
                         .lineLimit(1)
                         .foregroundStyle(.primary)
                 }
+                .frame(height: 20)
             }
             .buttonStyle(.plain)
             .accessibilityLabel("\(track.name)\(isArmed ? ", armed" : "")")
@@ -125,10 +156,9 @@ struct CleanupToggle: View {
                 .foregroundStyle(isOn ? Color.white : Color.primary)
                 .frame(maxWidth: .infinity)
             }
-            .frame(width: 86, height: 22)
+            .frame(width: 86, height: 24)
             .clipShape(Capsule())
-            .frame(minHeight: 32)
-            .contentShape(Rectangle())
+            .contentShape(Capsule())
         }
         .buttonStyle(.plain)
         .accessibilityLabel("Clean up \(trackName)")
@@ -149,14 +179,13 @@ struct ToggleChip: View {
         Button(action: action) {
             Text(title)
                 .font(.footnote.weight(.bold))
-                .frame(width: 40, height: 32)
+                .frame(width: 40, height: 28)
                 .foregroundStyle(isOn ? Color.black : Color.primary)
                 .background(
                     RoundedRectangle(cornerRadius: 7, style: .continuous)
                         .fill(isOn ? onColor : Color(uiColor: .tertiarySystemFill))
                 )
                 .contentShape(Rectangle())
-                .frame(minHeight: 44)
         }
         .buttonStyle(.plain)
         .accessibilityLabel(accessibilityName)

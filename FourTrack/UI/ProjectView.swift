@@ -42,6 +42,7 @@ struct ProjectView: View {
             Divider()
             TransportView(model: model)
         }
+        .background(Color(uiColor: .systemGroupedBackground))
         .animation(.default, value: model.cleanupOffer)
         .navigationTitle(model.project.name)
         .navigationBarTitleDisplayMode(.inline)
@@ -93,49 +94,37 @@ struct ProjectView: View {
 
     // MARK: Lanes
 
-    /// Lanes are sized as if all four were showing, so adding a track never
-    /// resizes the ones already there.
+    /// Lanes as separate cards in a List: press and hold a card to drag it
+    /// up or down (not while recording). Drag sideways on a waveform to scrub.
     private var lanes: some View {
-        GeometryReader { geo in
-            let spacing: CGFloat = 8
-            let laneHeight = max(64, (geo.size.height - 24 - 3 * spacing) / 4)
-            let count = model.visibleTrackCount
-            let lanesHeight = CGFloat(count) * laneHeight + CGFloat(count - 1) * spacing
-            VStack(spacing: spacing) {
-                ForEach(0..<count, id: \.self) { i in
-                    TrackRowView(model: model, index: i)
-                        .frame(height: laneHeight)
-                }
-                if count < Project.trackCount {
-                    AddTrackButton(nextNumber: count + 1) { model.addTrack() }
-                        .disabled(model.isRecording || model.isSaving)
-                }
-                Spacer(minLength: 0)
+        List {
+            ForEach(model.visibleLanes, id: \.self) { i in
+                TrackRowView(model: model, index: i, onScrub: scrubGesture)
+                    .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
             }
-            .padding(.horizontal, 12)
-            .padding(.vertical, 12)
-            .overlay(alignment: .topLeading) {
-                playheadLine(width: geo.size.width, height: lanesHeight)
+            .onMove { source, destination in
+                model.moveLanes(fromOffsets: source, toOffset: destination)
             }
-            .contentShape(Rectangle())
-            .gesture(scrubGesture)
-            .animation(.spring(response: 0.35, dampingFraction: 0.85), value: count)
+            .moveDisabled(model.isRecording || model.isSaving)
+
+            if model.visibleTrackCount < Project.trackCount {
+                AddTrackButton(nextNumber: model.visibleTrackCount + 1) { model.addTrack() }
+                    .disabled(model.isRecording || model.isSaving)
+                    .listRowInsets(EdgeInsets(top: 6, leading: 16, bottom: 6, trailing: 16))
+                    .listRowSeparator(.hidden)
+                    .listRowBackground(Color.clear)
+            }
         }
+        .listStyle(.plain)
+        .scrollContentBackground(.hidden)
+        .scrollBounceBehavior(.basedOnSize)
+        .background(Color(uiColor: .systemGroupedBackground))
+        .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.visibleLanes)
     }
 
-    /// Shared playhead across the visible lanes, at the center of the waveform area.
-    private func playheadLine(width: CGFloat, height: CGFloat) -> some View {
-        let waveformLeading: CGFloat = 12 + 12 + 104
-        let x = waveformLeading + (width - waveformLeading - 12) / 2
-        return Rectangle()
-            .fill(model.isRecording ? Color.red : Color.accentColor)
-            .frame(width: 2, height: height)
-            .offset(x: x - 1, y: 12)
-            .allowsHitTesting(false)
-            .accessibilityHidden(true)
-    }
-
-    /// Drag the waveforms to scrub, like Voice Memos.
+    /// Drag a waveform sideways to scrub, like Voice Memos.
     private var scrubGesture: some Gesture {
         DragGesture(minimumDistance: 8)
             .onChanged { g in
@@ -241,7 +230,7 @@ struct AddTrackButton: View {
                 .font(.title3.weight(.semibold))
                 .frame(maxWidth: .infinity, minHeight: 52)
                 .background(
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    RoundedRectangle(cornerRadius: 16, style: .continuous)
                         .strokeBorder(Color.secondary.opacity(0.35), style: StrokeStyle(lineWidth: 1.5, dash: [6, 5]))
                 )
                 .contentShape(Rectangle())

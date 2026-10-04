@@ -68,7 +68,7 @@ final class ProjectViewModel {
         self.engine = MixerEngine()
         playhead = min(project.playheadSeconds, project.durationSeconds)
         // Arm the first empty lane, or the last one if all have takes.
-        armedTrack = project.tracks.prefix(project.visibleTrackCount).first(where: { $0.isEmpty })?.index ?? project.visibleTrackCount - 1
+        armedTrack = project.visibleLanes.first(where: { project.tracks[$0].isEmpty }) ?? project.visibleLanes.last ?? 0
         engine.voiceProcessingEnabled = settings.voiceProcessing
         engine.load(project: project, store: store)
         applyAll()
@@ -92,6 +92,15 @@ final class ProjectViewModel {
 
     var duration: Double { project.durationSeconds }
     var visibleTrackCount: Int { project.visibleTrackCount }
+    /// Track indices on screen, top to bottom.
+    var visibleLanes: [Int] { project.visibleLanes }
+
+    /// Press-and-hold reordering of lanes. Not while recording.
+    func moveLanes(fromOffsets source: IndexSet, toOffset destination: Int) {
+        guard !isRecording else { return }
+        project.moveLanes(fromOffsets: source, toOffset: destination)
+        scheduleSave()
+    }
     var developerMode: Bool { settings.developerMode }
     var hasAnyAudio: Bool { project.tracks.contains { !$0.isEmpty } }
 
@@ -469,7 +478,7 @@ final class ProjectViewModel {
     // MARK: Tracks
 
     func arm(_ index: Int) {
-        guard !isRecording, index < project.visibleTrackCount else { return }
+        guard !isRecording, project.visibleLanes.contains(index) else { return }
         armedTrack = index
     }
 
@@ -478,7 +487,7 @@ final class ProjectViewModel {
     func addTrack() {
         guard !isRecording, project.visibleTrackCount < Project.trackCount else { return }
         project.visibleTrackCount += 1
-        armedTrack = project.visibleTrackCount - 1
+        armedTrack = project.laneOrder[project.visibleTrackCount - 1]
         seek(to: 0)
         scheduleSave()
     }

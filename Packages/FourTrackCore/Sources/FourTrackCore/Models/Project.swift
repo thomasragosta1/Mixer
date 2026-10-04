@@ -22,6 +22,22 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     public var visibleTrackCount: Int
     /// Set when the project is moved to the bin; nil for live projects.
     public var deletedAt: Date?
+    /// Top-to-bottom display order of the tracks (a permutation of 0...3).
+    /// Track indices (and their audio files) never change; only the order does.
+    public var laneOrder: [Int]
+
+    /// Track indices of the lanes on screen, top to bottom.
+    public var visibleLanes: [Int] { Array(laneOrder.prefix(visibleTrackCount)) }
+
+    /// Reorders visible lanes (List.onMove semantics).
+    public mutating func moveLanes(fromOffsets source: IndexSet, toOffset destination: Int) {
+        var visible = visibleLanes
+        let moving = source.sorted().map { visible[$0] }
+        for offset in source.sorted(by: >) { visible.remove(at: offset) }
+        let insertAt = destination - source.filter { $0 < destination }.count
+        visible.insert(contentsOf: moving, at: max(0, min(insertAt, visible.count)))
+        laneOrder = visible + laneOrder.dropFirst(visibleTrackCount)
+    }
 
     public init(
         id: UUID = UUID(),
@@ -46,6 +62,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         self.metronome = metronome
         self.visibleTrackCount = visibleTrackCount
         self.deletedAt = nil
+        self.laneOrder = Array(0..<Project.trackCount)
         normalizeTracks()
     }
 
@@ -60,8 +77,12 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
             }
         }
         tracks = fixed
+        // Lane order must be a permutation of 0...3.
+        var seen = Set<Int>()
+        laneOrder = laneOrder.filter { (0..<Project.trackCount).contains($0) && seen.insert($0).inserted }
+        laneOrder += (0..<Project.trackCount).filter { !seen.contains($0) }
         // Never hide a track that has audio.
-        let lastRecorded = (tracks.lastIndex { !$0.isEmpty } ?? -1) + 1
+        let lastRecorded = tracks.filter { !$0.isEmpty }.compactMap { laneOrder.firstIndex(of: $0.index) }.max().map { $0 + 1 } ?? 0
         visibleTrackCount = min(Project.trackCount, max(1, visibleTrackCount, lastRecorded))
     }
 
@@ -76,7 +97,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount, deletedAt
+        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount, deletedAt, laneOrder
     }
 
     public init(from decoder: Decoder) throws {
@@ -92,6 +113,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         metronome = try c.decodeIfPresent(MetronomeSettings.self, forKey: .metronome) ?? MetronomeSettings()
         visibleTrackCount = try c.decodeIfPresent(Int.self, forKey: .visibleTrackCount) ?? 1
         deletedAt = try c.decodeIfPresent(Date.self, forKey: .deletedAt)
+        laneOrder = try c.decodeIfPresent([Int].self, forKey: .laneOrder) ?? Array(0..<Project.trackCount)
         normalizeTracks()
     }
 }

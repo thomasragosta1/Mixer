@@ -32,7 +32,7 @@ struct TransportView: View {
                 if model.developerMode {
                     metronomeButton
                 } else {
-                    Color.clear.frame(maxWidth: .infinity, minHeight: 44)
+                    Color.clear.frame(height: 44).frame(maxWidth: .infinity)
                 }
             }
             .buttonStyle(.plain)
@@ -51,6 +51,7 @@ struct TransportView: View {
         .padding(.horizontal)
         .padding(.top, 8)
         .padding(.bottom, 4)
+        .fixedSize(horizontal: false, vertical: true)
         .sheet(isPresented: $showingMetronome) {
             MetronomeSheet(model: model)
                 .presentationDetents([.height(300)])
