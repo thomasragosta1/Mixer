@@ -784,6 +784,30 @@ final class ProjectViewModel {
         if !project.tracks[index].drumHits.isEmpty { renderDrums(index) }
     }
 
+    // MARK: Simple / Full mode
+
+    var isSimple: Bool { project.mode == .simple }
+
+    /// Full mode adds the mixer, mute/solo, metronome, quantize and every drum kit.
+    func switchToFullMode() {
+        guard isSimple, !isRecording else { return }
+        checkpoint("Full Mode")
+        project.mode = .full
+        scheduleSave()
+    }
+
+    /// Back to Simple only while nothing Simple mode hides is in use, so no
+    /// hidden setting can keep changing the sound.
+    var canSwitchToSimple: Bool { !isSimple && !project.usesFullModeFeatures }
+
+    func switchToSimpleMode() {
+        guard canSwitchToSimple, !isRecording else { return }
+        checkpoint("Simple Mode")
+        mixMode = false
+        project.mode = .simple
+        scheduleSave()
+    }
+
     // MARK: Undo / redo
 
     /// Records the project before a change. See `UndoHistory`.
@@ -1123,7 +1147,7 @@ final class ProjectViewModel {
     /// What the engine plays: nothing when off; a silent click when visual-only,
     /// so the count-in and beat grid behave exactly the same.
     private var metronomeIfEnabled: MetronomeSettings? {
-        guard project.metronome.enabled else { return nil }
+        guard !isSimple, project.metronome.enabled else { return nil }
         var settings = project.metronome
         if settings.mode == .visual { settings.volume = 0 }
         return settings

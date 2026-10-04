@@ -199,3 +199,43 @@ final class ProjectStoreTests: XCTestCase {
         XCTAssertEqual(LatencyModel.estimate(inputLatency: 0.002, outputLatency: 0.003, ioBufferDuration: 0.005), 0.015, accuracy: 1e-12)
     }
 }
+
+final class ProjectModeTests: XCTestCase {
+    func testNewProjectsAreSimpleOldOnesFull() throws {
+        let dir = try makeTempDir()
+        defer { try? FileManager.default.removeItem(at: dir) }
+        let store = try ProjectStore(rootURL: dir)
+        XCTAssertEqual(try store.create().mode, .simple)
+        let old = try JSONDecoder().decode(Project.self, from: JSONEncoder().encode(Project(name: "Old")).withoutKey("mode"))
+        XCTAssertEqual(old.mode, .full)
+    }
+
+    func testFullFeatureDetection() {
+        var p = Project(name: "P", mode: .full)
+        XCTAssertFalse(p.usesFullModeFeatures)
+        p.tracks[0].cleanup = 0.6        // Clean Up is part of Simple mode
+        XCTAssertFalse(p.usesFullModeFeatures)
+        p.tracks[1].kind = .drums
+        p.tracks[1].padSettings[0].volume = 0.5
+        p.tracks[1].padSettings[0].tone = -0.4   // pad volume and tone are Simple too
+        XCTAssertFalse(p.usesFullModeFeatures)
+        for change in [{ (q: inout Project) in q.tracks[0].mute = true },
+                       { $0.tracks[2].eqLow = 0.2 },
+                       { $0.metronome.mode = .visual },
+                       { $0.tracks[1].quantize.enabled = true },
+                       { $0.tracks[1].drumKit = .eightOhEight },
+                       { $0.tracks[1].padSettings[2].tune = 0.5 }] {
+            var q = p
+            change(&q)
+            XCTAssertTrue(q.usesFullModeFeatures)
+        }
+    }
+}
+
+private extension Data {
+    func withoutKey(_ key: String) -> Data {
+        var obj = try! JSONSerialization.jsonObject(with: self) as! [String: Any]
+        obj.removeValue(forKey: key)
+        return try! JSONSerialization.data(withJSONObject: obj)
+    }
+}

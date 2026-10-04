@@ -67,7 +67,8 @@ public final class ProjectStore: @unchecked Sendable {
     // MARK: CRUD
 
     public func create(name: String? = nil, now: Date = Date()) throws -> Project {
-        let project = Project(name: name ?? nextDefaultName(), createdAt: now)
+        // New projects start in Simple mode; the ⋯ menu switches to Full.
+        let project = Project(name: name ?? nextDefaultName(), createdAt: now, mode: .simple)
         try fm.createDirectory(at: directory(for: project.id), withIntermediateDirectories: true)
         try save(project)
         return project

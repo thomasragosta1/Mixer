@@ -8,7 +8,9 @@ struct TransportView: View {
 
     var body: some View {
         VStack(spacing: 10) {
-            MetronomeBar(model: model)
+            if !model.isSimple {
+                MetronomeBar(model: model)
+            }
 
             Text(model.isCountingIn ? "Count-in" : TimeFormat.precise(model.playhead))
                 .font(.system(size: 28, weight: .light, design: .rounded).monospacedDigit())

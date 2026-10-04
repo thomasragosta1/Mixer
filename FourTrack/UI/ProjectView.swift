@@ -19,6 +19,7 @@ struct ProjectView: View {
     @State private var binFrame: CGRect = .zero
     @State private var pendingTrackDelete: Int?
     @State private var showingTrackBin = false
+    @State private var confirmingFullMode = false
     private let onDelete: (Project) -> Void
     private let startRecordingOnAppear: Bool
 
@@ -31,17 +32,20 @@ struct ProjectView: View {
 
     var body: some View {
         VStack(spacing: 0) {
-            Picker("Mode", selection: $model.mixMode) {
-                Text("Record").tag(false)
-                Text("Mixing").tag(true)
+            // Simple projects have no mixer: just recording.
+            if !model.isSimple {
+                Picker("Mode", selection: $model.mixMode) {
+                    Text("Record").tag(false)
+                    Text("Mixing").tag(true)
+                }
+                .pickerStyle(.segmented)
+                .padding(.horizontal, 16)
+                .padding(.top, 4)
+                .padding(.bottom, 8)
+                .disabled(model.isRecording || model.isSaving)
             }
-            .pickerStyle(.segmented)
-            .padding(.horizontal, 16)
-            .padding(.top, 4)
-            .padding(.bottom, 8)
-            .disabled(model.isRecording || model.isSaving)
 
-            if model.mixMode {
+            if model.mixMode && !model.isSimple {
                 MixView(model: model)
             } else if model.isDrumArmed {
                 // Drum layout: slim lanes, big pads, one-row transport.
@@ -91,6 +95,12 @@ struct ProjectView: View {
             if let i = pendingTrackDelete {
                 Text("\u{201C}\(model.project.tracks[i].name)\u{201D} will move to Recently Deleted in this project.")
             }
+        }
+        .alert("Switch to Full Mode?", isPresented: $confirmingFullMode) {
+            Button("Switch") { model.switchToFullMode() }
+            Button("Cancel", role: .cancel) {}
+        } message: {
+            Text("Adds the mixer, mute and solo, the metronome, quantize and every drum kit and pad setting to this project. You can go back to Simple later only while none of those are in use.")
         }
         .sheet(isPresented: $showingTrackBin) {
             TrackBinView(model: model)
@@ -348,6 +358,25 @@ struct ProjectView: View {
                     showingTrackBin = true
                 } label: {
                     Label("Recently Deleted", systemImage: "trash")
+                }
+                if model.isSimple {
+                    Button {
+                        confirmingFullMode = true
+                    } label: {
+                        Label("Switch to Full Mode", systemImage: "slider.horizontal.3")
+                    }
+                } else {
+                    Button {
+                        model.switchToSimpleMode()
+                    } label: {
+                        if model.canSwitchToSimple {
+                            Label("Switch to Simple Mode", systemImage: "circle.grid.2x1")
+                        } else {
+                            // A menu can't explain a disabled item, so the label does.
+                            Label("Simple Mode: reset mixer, M/S, metronome & drum extras first", systemImage: "circle.grid.2x1")
+                        }
+                    }
+                    .disabled(!model.canSwitchToSimple)
                 }
                 Button {
                     showingSettings = true

@@ -28,6 +28,8 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     /// The project's own "Recently Deleted": tracks removed from the lanes,
     /// newest last, with their audio kept until deleted for good.
     public var deletedTracks: [DeletedTrack]
+    /// Simple projects show only the basic recording features; Full shows everything.
+    public var mode: ProjectMode
 
     /// Track indices of the lanes on screen, top to bottom.
     public var visibleLanes: [Int] { Array(laneOrder.prefix(visibleTrackCount)) }
@@ -52,8 +54,10 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         tracks: [Track]? = nil,
         masterVolume: Double = MacroCurves.volumeUnitySlider,
         metronome: MetronomeSettings = MetronomeSettings(),
-        visibleTrackCount: Int = 1
+        visibleTrackCount: Int = 1,
+        mode: ProjectMode = .full
     ) {
+        self.mode = mode
         self.id = id
         self.name = name
         self.createdAt = createdAt
@@ -139,7 +143,7 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
     }
 
     enum CodingKeys: String, CodingKey {
-        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount, deletedAt, laneOrder, deletedTracks
+        case id, name, createdAt, updatedAt, durationSeconds, playheadSeconds, tracks, masterVolume, metronome, visibleTrackCount, deletedAt, laneOrder, deletedTracks, mode
     }
 
     public init(from decoder: Decoder) throws {
@@ -157,7 +161,36 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
         deletedAt = try c.decodeIfPresent(Date.self, forKey: .deletedAt)
         laneOrder = try c.decodeIfPresent([Int].self, forKey: .laneOrder) ?? Array(0..<Project.trackCount)
         deletedTracks = try c.decodeIfPresent([DeletedTrack].self, forKey: .deletedTracks) ?? []
+        // Projects from before Simple mode keep every feature they had.
+        mode = ((try? c.decodeIfPresent(ProjectMode.self, forKey: .mode)) ?? nil) ?? .full
         normalizeTracks()
+    }
+}
+
+/// How much of the app a project shows.
+public enum ProjectMode: String, Codable, Sendable {
+    /// Just recording: tracks, drums (Studio · Tight, with pad volume and tone),
+    /// Clean Up, export. No mixer, mute/solo, metronome or quantize.
+    case simple
+    /// Everything.
+    case full
+}
+
+extension Project {
+    /// True when the project uses something Simple mode hides, so switching back
+    /// to Simple would hide settings that still change the sound.
+    public var usesFullModeFeatures: Bool {
+        if masterVolume != MacroCurves.volumeUnitySlider || metronome.enabled { return true }
+        for t in tracks {
+            if t.mute || t.solo || t.devOverrides != nil { return true }
+            if t.volume != MacroCurves.volumeUnitySlider || t.eqLow != 0 || t.eqMid != 0 || t.eqHigh != 0 { return true }
+            if t.compressor != Track.defaultCompressor || t.space != 0 || t.warmth != 0 { return true }
+            if t.isDrums {
+                if t.drumKit != .studioTight || t.quantize.enabled { return true }
+                if t.padSettings.contains(where: { $0.tune != 0 || $0.decay < 1 }) { return true }
+            }
+        }
+        return false
     }
 }
 

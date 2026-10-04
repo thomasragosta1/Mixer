@@ -18,7 +18,7 @@ struct SettingsView: View {
                     Text("Shows detailed compressor, EQ and reverb controls, level meters, latency tools and more export options. Turning it off hides them but keeps your values.")
                 }
 
-                if let model {
+                if let model, !model.isSimple {
                     metronomeSection(model)
                 }
 

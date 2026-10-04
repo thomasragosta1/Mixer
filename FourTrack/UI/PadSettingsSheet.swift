@@ -53,6 +53,7 @@ struct PadSettingsSheet: View {
                 .accessibilityValue(volumeText)
                 .accessibilityAdjustableAction { adjust(\.volume, $0, step: 0.02, range: 0...1) }
             }
+            if !model.isSimple {
             row("Tune", tuneText) {
                 SliderCore(
                     value: binding(\.tune),
@@ -82,6 +83,7 @@ struct PadSettingsSheet: View {
                 .accessibilityLabel("\(name) decay")
                 .accessibilityValue(decayText)
                 .accessibilityAdjustableAction { adjust(\.decay, $0, step: 0.05, range: 0...1) }
+            }
             }
             row("Tone", toneText) {
                 SliderCore(
@@ -115,7 +117,7 @@ struct PadSettingsSheet: View {
         .onDisappear {
             if !applied { model.endPadPreview() }
         }
-        .presentationDetents([.height(500)])
+        .presentationDetents([.height(model.isSimple ? 340 : 500)])
         .presentationCornerRadius(34)
         .presentationDragIndicator(.visible)
         .presentationBackground {

@@ -100,16 +100,22 @@ struct TrackRowView<Scrub: Gesture>: View {
             .accessibilityLabel("\(track.name)\(isArmed ? ", armed" : "")")
             .accessibilityHint("Renames the track")
 
-            HStack(spacing: 6) {
-                ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
-                    model.toggleMute(index)
-                }
-                ToggleChip(title: "S", isOn: track.solo, onColor: .yellow, accessibilityName: "Solo \(track.name)") {
-                    model.toggleSolo(index)
+            if !model.isSimple {
+                HStack(spacing: 6) {
+                    ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
+                        model.toggleMute(index)
+                    }
+                    ToggleChip(title: "S", isOn: track.solo, onColor: .yellow, accessibilityName: "Solo \(track.name)") {
+                        model.toggleSolo(index)
+                    }
                 }
             }
 
-            if track.isDrums {
+            if track.isDrums && model.isSimple {
+                Label("Drums", systemImage: "square.grid.3x2.fill")
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(.secondary)
+            } else if track.isDrums {
                 KitMenu(kit: track.drumKit) { model.setDrumKit(index, $0) }
                     .disabled(model.isRecording)
             } else {

@@ -20,12 +20,19 @@ struct DrumStudioView: View {
         VStack(spacing: 10) {
             CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
 
-            DrumTrackControls(model: model, index: index)
-                .padding(.horizontal, 16)
+            if model.isSimple {
+                Text(track.name)
+                    .font(.headline)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .padding(.horizontal, 16)
+            } else {
+                DrumTrackControls(model: model, index: index)
+                    .padding(.horizontal, 16)
 
-            DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
-                .disabled(model.isRecording)
-                .padding(.horizontal, 16)
+                DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
+                    .disabled(model.isRecording)
+                    .padding(.horizontal, 16)
+            }
 
             DrumPadGrid(kit: track.drumKit, settings: track.padSettings) {
                 model.hitPad($0)
@@ -37,9 +44,11 @@ struct DrumStudioView: View {
             .frame(maxHeight: .infinity)
 
             VStack(spacing: 6) {
-                MetronomeBar(model: model)
-                    .padding(.horizontal, 14)
-                    .padding(.top, 10)
+                if !model.isSimple {
+                    MetronomeBar(model: model)
+                        .padding(.horizontal, 14)
+                        .padding(.top, 10)
+                }
                 DrumTransport(model: model)
             }
             .glassPanel()

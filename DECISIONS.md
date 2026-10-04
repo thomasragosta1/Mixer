@@ -65,6 +65,12 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Default is 0 (owner request).** New tracks start uncompressed, so what you hear is what you recorded; existing tracks keep their value. The spec's 0.3 default was dropped.
 - Developer Mode's compressor section now shows Threshold, Ratio, Knee, Attack, Release and Makeup (Headroom is gone). Saved overrides from older builds load with a 4:1 ratio.
 
+## Simple and Full mode (owner request)
+
+- **New projects start in Simple mode:** record, play, scrub, name/reorder/delete tracks, add audio or drum tracks, Clean Up, undo/redo and export. Drum tracks use Studio · Tight only, and holding a pad offers just Volume and Tone. Hidden: the Record/Mixing switch and mixer, M/S, the metronome (and its project settings), quantize, other kits and the Tune/Decay pad controls.
+- **⋯ → Switch to Full Mode** (after a confirmation) shows everything for that project. Existing projects open in Full mode, so nothing they use disappears.
+- **Going back is allowed when it's safe:** ⋯ → Switch to Simple Mode works only while the project uses nothing Simple mode hides (mixer at defaults, no mute/solo, metronome off, no quantize, Studio · Tight drums, pad tune and decay untouched). Otherwise the item is disabled and its label says what to reset, so a hidden setting can never keep changing the sound. Mode switches are undo steps.
+
 ## Undo / redo (owner request)
 
 - **Undo and redo buttons at the top left of every project screen** (record, drums and mixing). The history is 1,000 steps per project and covers every edit: mixer and Developer Mode sliders, mute/solo, names, track type and order, adding and deleting tracks (including permanent deletes in the project's bin), recordings (audio and drums), kits, pad sounds, quantize and metronome settings. Playhead moves, arming and switching screens are not steps.
