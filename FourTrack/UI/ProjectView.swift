@@ -29,6 +29,13 @@ struct ProjectView: View {
         startRecordingOnAppear = startRecording
     }
 
+    /// For the in-app tests: a screen around an existing model.
+    init(model: ProjectViewModel, onDelete: @escaping (Project) -> Void = { _ in }) {
+        _model = State(wrappedValue: model)
+        self.onDelete = onDelete
+        startRecordingOnAppear = false
+    }
+
     var body: some View {
         VStack(spacing: 0) {
             // Simple projects have no mixer: just recording.

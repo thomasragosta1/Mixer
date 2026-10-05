@@ -235,6 +235,71 @@ final class DrumTrackTests: XCTestCase {
         model.close()
     }
 
+    /// Owner crash: Simple project, delete an audio track, press Undo. Runs the
+    /// real screen around the model so a crash in the views shows up here.
+    func testUndoTrackDeleteOnScreenInSimpleMode() throws {
+        var project = try store.create(mode: .simple)
+        project.visibleTrackCount = 2
+        for i in 0..<2 {
+            let w = try CAFWriter(url: store.audioURL(project: project.id, track: i))
+            try w.write([Float](repeating: 0.2, count: 96_000))
+            try w.finish()
+            project.tracks[i].audioFileName = ProjectStore.audioFileName(track: i)
+        }
+        // Track 2 has Clean Up on, with its render on disk.
+        let c = try CAFWriter(url: store.cleanedURL(project: project.id, track: 1))
+        try c.write([Float](repeating: 0.1, count: 96_000))
+        try c.finish()
+        project.tracks[1].cleanedFileName = ProjectStore.cleanedFileName(track: 1)
+        project.tracks[1].cleanup = 0.6
+        project.tracks[1].volume = 0.5
+        store.refreshDurations(&project)
+        try store.save(project)
+
+        let model = ProjectViewModel(project: try store.load(id: project.id), store: store)
+        let host = UIHostingController(rootView: NavigationStack { ProjectView(model: model) })
+        let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene
+        let window = scene.map { UIWindow(windowScene: $0) } ?? UIWindow(frame: CGRect(x: 0, y: 0, width: 393, height: 852))
+        window.frame = CGRect(x: 0, y: 0, width: 393, height: 852)
+        window.rootViewController = host
+        window.makeKeyAndVisible()
+        spin(1)
+
+        for index in [1, 0] {
+            model.arm(index)
+            spin(0.3)
+            model.deleteTrack(index)
+            spin(0.6)
+            host.view.layoutIfNeeded()
+            model.undo()
+            spin(0.6)
+            host.view.layoutIfNeeded()
+            XCTAssertNotNil(model.project.tracks[index].audioFileName, "track \(index + 1) is back")
+        }
+        // Delete both, then undo both.
+        model.deleteTrack(1)
+        spin(0.4)
+        model.deleteTrack(0)
+        spin(0.4)
+        model.undo()
+        spin(0.4)
+        model.undo()
+        spin(0.6)
+        host.view.layoutIfNeeded()
+        XCTAssertEqual(model.project.visibleLanes.count, 2)
+        // And while playing.
+        model.play()
+        spin(0.4)
+        model.deleteTrack(1)
+        spin(0.4)
+        model.undo()
+        spin(0.6)
+        model.pause()
+        host.view.layoutIfNeeded()
+        window.isHidden = true
+        model.close()
+    }
+
     private func spin(_ seconds: TimeInterval) {
         RunLoop.main.run(until: Date().addingTimeInterval(seconds))
     }
