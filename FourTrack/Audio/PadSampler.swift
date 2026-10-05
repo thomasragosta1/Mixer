@@ -72,9 +72,20 @@ final class PadSampler {
         nextVariant[pad] += 1
         let voice = voices[nextVoice]
         nextVoice = (nextVoice + 1) % voices.count
-        voice.stop()
         voice.volume = velocity
-        voice.scheduleBuffer(buffer, at: nil, options: [], completionHandler: nil)
-        voice.play()
+        // Voices keep running (silent when idle), so a hit only schedules its
+        // buffer, replacing whatever that voice was still playing. Stopping and
+        // restarting a player on every tap made the main thread wait for the
+        // audio hardware, which froze the app when the hardware stalled.
+        voice.scheduleBuffer(buffer, at: nil, options: .interrupts, completionHandler: nil)
+        if !voice.isPlaying { voice.play() }
+    }
+
+    /// Starts every voice idling, right after the engine (re)starts, so taps
+    /// never have to start a player themselves.
+    func startVoices() {
+        for voice in voices where !voice.isPlaying && voice.engine?.isRunning == true {
+            voice.play()
+        }
     }
 }

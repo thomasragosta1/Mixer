@@ -102,6 +102,7 @@ final class MixerEngine {
         connectGraph()
         engine.prepare()
         try? engine.start()
+        pads.startVoices()
         if hadMeters { installMeterTaps() }
         state = .stopped
         onConfigurationChange?()
@@ -148,6 +149,7 @@ final class MixerEngine {
         if !engine.isRunning {
             engine.prepare()
             try engine.start()
+            pads.startVoices()
         }
     }
 
@@ -260,6 +262,7 @@ final class MixerEngine {
 
     func hitPad(_ pad: Int, velocity: Float) throws {
         try startIfNeeded()
+        guard engine.isRunning else { return }
         pads.trigger(pad, velocity: velocity)
     }
 
@@ -485,7 +488,10 @@ final class MixerEngine {
         }
         inputPrepared = true
         engine.prepare()
-        if wasRunning { try engine.start() }
+        if wasRunning {
+            try engine.start()
+            pads.startVoices()
+        }
     }
 
     /// Turns echo cancellation off again (headphones plugged in, or the setting
