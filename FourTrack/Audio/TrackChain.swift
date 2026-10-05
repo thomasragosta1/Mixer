@@ -81,8 +81,19 @@ final class TrackChain {
 
     /// Opens (or closes) the take and its Cleanup render. Call after every splice.
     func load(audioURL: URL?, cleanedURL: URL?) {
-        file = audioURL.flatMap { try? AVAudioFile(forReading: $0, commonFormat: .pcmFormatFloat32, interleaved: false) }
-        cleanFile = cleanedURL.flatMap { try? AVAudioFile(forReading: $0, commonFormat: .pcmFormatFloat32, interleaved: false) }
+        file = audioURL.flatMap(Self.openPlayable)
+        cleanFile = cleanedURL.flatMap(Self.openPlayable)
+    }
+
+    /// Opens a take only if the players can play it. Scheduling a file whose
+    /// format doesn't match the player's connection raises an Objective-C
+    /// exception that ends the app, so anything unexpected (a damaged or
+    /// half-restored file) is treated as silence instead.
+    private static func openPlayable(_ url: URL) -> AVAudioFile? {
+        guard let f = try? AVAudioFile(forReading: url, commonFormat: .pcmFormatFloat32, interleaved: false) else { return nil }
+        let format = f.processingFormat
+        guard format.sampleRate == EngineFormat.sampleRate, format.channelCount == 1, f.length > 0 else { return nil }
+        return f
     }
 
     var lengthFrames: AVAudioFramePosition { file?.length ?? 0 }
@@ -104,6 +115,8 @@ final class TrackChain {
     }
 
     func play(at time: AVAudioTime?) {
+        // Starting a player on a stopped engine also raises an exception.
+        guard playerDry.engine?.isRunning == true else { return }
         playerDry.play(at: time)
         if cleanFile != nil {
             playerClean.play(at: time)
