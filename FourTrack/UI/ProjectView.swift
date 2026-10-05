@@ -56,14 +56,6 @@ struct ProjectView: View {
                     .zIndex(laneDrag != nil ? 1 : 0)
                     .transition(.opacity)
             }
-            if !model.mixMode, let offer = model.cleanupOffer {
-                CleanupBanner(trackName: model.project.tracks[offer].name) {
-                    model.acceptCleanupOffer()
-                } onDismiss: {
-                    model.cleanupOffer = nil
-                }
-                .transition(.move(edge: .bottom).combined(with: .opacity))
-            }
             if !model.mixMode && !model.isDrumArmed {
                 TransportView(model: model)
                     .padding(.vertical, 4)
@@ -106,7 +98,6 @@ struct ProjectView: View {
             TrackBinView(model: model)
                 .presentationDetents([.medium, .large])
         }
-        .animation(.default, value: model.cleanupOffer)
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.isDrumArmed)
         .navigationTitle(model.project.name)
         .navigationBarTitleDisplayMode(.inline)
@@ -283,7 +274,9 @@ struct ProjectView: View {
                     model.beginScrub()
                 }
                 let seconds = (scrubStart ?? 0) - Double(g.translation.width / WaveformView.defaultPointsPerSecond)
+                let before = model.playhead
                 model.scrub(to: seconds)
+                Haptics.scrubTick(from: before, to: model.playhead, grid: model.beatGrid, end: model.duration)
             }
             .onEnded { _ in
                 if scrubStart != nil {
@@ -410,6 +403,19 @@ enum Haptics {
 
     /// The little buzz for every press-and-hold in the app.
     static func hold() { lift.impactOccurred() }
+
+    /// While scrubbing: a tick on every bar line when the metronome's grid is
+    /// showing, and at the start and end of the song, so you can feel your place.
+    static func scrubTick(from old: Double, to new: Double, grid: BeatGrid?, end: Double) {
+        guard old != new else { return }
+        let hitEdge = (new <= 0 && old > 0) || (new >= end && old < end)
+        var crossedBar = false
+        if let grid {
+            let n = Double(max(1, grid.beatsPerBar))
+            crossedBar = (grid.beat(at: old) / n).rounded(.down) != (grid.beat(at: new) / n).rounded(.down)
+        }
+        if hitEdge || crossedBar { slot.selectionChanged() }
+    }
 }
 
 /// Bin that rises from the bottom while a lane is held; drop a lane on it to delete.
@@ -473,43 +479,6 @@ struct AddTrackButton: View {
         .buttonStyle(.plain)
         .foregroundStyle(Color.accentColor)
         .accessibilityLabel("Add Track \(nextNumber)")
-    }
-}
-
-/// Non-blocking offer after a speaker-route take: "Clean up this take?"
-struct CleanupBanner: View {
-    let trackName: String
-    let onAccept: () -> Void
-    let onDismiss: () -> Void
-
-    var body: some View {
-        HStack(spacing: 12) {
-            Image(systemName: "wand.and.stars")
-                .foregroundStyle(Color.accentColor)
-            VStack(alignment: .leading, spacing: 2) {
-                Text("Clean up this take?")
-                    .font(.subheadline.weight(.semibold))
-                Text("Reduces noise and backing-track bleed on \(trackName).")
-                    .font(.caption)
-                    .foregroundStyle(.secondary)
-            }
-            Spacer(minLength: 0)
-            Button("Clean Up", action: onAccept)
-                .prominentGlassButton()
-                .controlSize(.small)
-            Button(action: onDismiss) {
-                Image(systemName: "xmark")
-                    .font(.footnote.weight(.semibold))
-                    .frame(width: 44, height: 44)
-            }
-            .buttonStyle(.plain)
-            .accessibilityLabel("Dismiss")
-        }
-        .padding(.leading, 14)
-        .padding(.vertical, 6)
-        .glassPanel(cornerRadius: 24)
-        .padding(.horizontal, 12)
-        .padding(.bottom, 8)
     }
 }
 

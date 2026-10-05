@@ -147,8 +147,18 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
   - **Headphones tip (owner request), once per install:** the first time you record an audio track with the click audible (Click mode) while sound comes out of the iPhone speaker, a pop-up suggests plugging in headphones so the click isn't recorded (or switching to Silent). "Record Anyway" records; Cancel doesn't. Not shown for drum tracks (they record hits, not the mic), in Silent mode, or with headphones/Bluetooth connected.
   - **Project Settings → Metronome (This Project):** tempo-arrow step (1–40 BPM), count-in (none / 1 / 2 bars, default 1) and click volume. Old projects keep their tempo and on/off state.
   - The click grid is anchored to timeline 0, the count-in plays the bars before the playhead, and the click is never part of an export.
+  - **Usable while recording (owner request).** The metronome row stays live during a take: switch the click on (it joins on the beat of what's playing, no count-in), off, Click/Silent, or change tempo and signature. Only the stand-alone click preview is disabled while the song plays or records.
+  - **Beat lines behind the waveforms (owner request, may be removed):** whenever the metronome is Click or Silent, every lane (record, drum and mixing screens) draws a faint hairline per bar and a fainter, shorter one per beat, scrolling with the audio. Beat lines drop out below 9 pt spacing so fast tempos stay calm. Turning the metronome Off removes them; simple projects never show them. While playing they follow the click's live grid (so tempo changes bend them), and when stopped they show the timeline-0 grid the next play starts on.
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
+
+## Feel and intuitiveness pass
+
+- **Tapping a track's name arms it** when it isn't armed (the same as tapping anywhere on its card); tapping the armed track's name renames it. Before, the name was the one spot on a card that renamed instead of arming, which is where people tap first.
+- **A light tick when arming a different track,** on both the lane cards and the slim drum-screen rows.
+- **Scrubbing ticks on every bar line** while the beat lines are showing, and at the start and end of the song, so you can feel your place without looking.
+- **Renaming a track to the same name** no longer adds an undo step.
+- Removed the leftover "Clean up this take?" banner code (the pop-up was already switched off).
 
 ## CI minutes (repo stays private)
 

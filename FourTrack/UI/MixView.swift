@@ -152,7 +152,8 @@ struct CompactTrackCard: View {
             WaveformView(
                 peaks: model.peaks[index],
                 clock: model.clock,
-                color: model.project.isAudible(index) ? .primary : .secondary
+                color: model.project.isAudible(index) ? .primary : .secondary,
+                beatGrid: model.beatGrid
             )
             .overlay {
                 if track.isEmpty {

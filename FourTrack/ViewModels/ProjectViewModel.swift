@@ -46,8 +46,6 @@ final class ProjectViewModel {
 
     /// Cleanup progress per track (nil = not running).
     private(set) var cleanupProgress: [Int: Double] = [:]
-    /// Track to offer "Clean up this take?" for (speaker-route recordings).
-    var cleanupOffer: Int?
 
     var showPermissionDenied = false
     var showBluetoothTip = false
@@ -1007,8 +1005,10 @@ final class ProjectViewModel {
 
     func rename(track index: Int, to name: String) {
         let trimmed = name.trimmingCharacters(in: .whitespacesAndNewlines)
+        let newName = trimmed.isEmpty ? "Track \(index + 1)" : trimmed
+        guard newName != project.tracks[index].name else { return }
         checkpoint("Rename Track")
-        project.tracks[index].name = trimmed.isEmpty ? "Track \(index + 1)" : trimmed
+        project.tracks[index].name = newName
         scheduleSave()
     }
 
@@ -1137,18 +1137,28 @@ final class ProjectViewModel {
             }
             return
         }
-        guard isPlaying else { return }
+        // While playing or recording, nothing restarts: changes apply live.
+        guard isPlaying || isRecording else { return }
         if before.enabled && after.enabled, let live = metronomeIfEnabled {
-            // Tempo, time signature, volume, Click <-> Silent: change while it keeps
-            // going. The beat carries on from where it is, just faster or slower.
+            // Tempo, time signature, volume, Click <-> Silent: the beat carries on
+            // from where it is, just faster or slower.
             engine.metronome.update(settings: live)
+        } else if let live = metronomeIfEnabled {
+            // Switched on after pressing play or record: joins in on the beat.
+            engine.startClickLive(settings: live)
         } else {
-            // Turned on or off mid-song: start or stop the click in time with the tracks.
-            let position = engine.pause()
-            playhead = position
-            try? engine.play(from: position, metronome: metronomeIfEnabled)
-            syncClock()
+            engine.stopClick()
         }
+    }
+
+    /// Beat lines for the waveforms while the metronome is on (Click or Silent).
+    var beatGrid: BeatGrid? {
+        guard !isSimple, project.metronome.enabled else { return nil }
+        let m = project.metronome
+        // While the click runs, follow its (possibly moved) grid; otherwise the
+        // grid the next play will start on.
+        let a = (isPlaying || isRecording) ? beatAnchor : (seconds: 0, beat: 0)
+        return BeatGrid(bpm: m.bpm, beatsPerBar: m.beatsPerBar, anchorSeconds: a.seconds, anchorBeat: a.beat)
     }
 
     /// Where the click's beat grid is anchored (moves when the tempo changes
@@ -1237,16 +1247,6 @@ final class ProjectViewModel {
     }
 
     // MARK: Cleanup
-
-    func acceptCleanupOffer() {
-        guard let index = cleanupOffer else { return }
-        cleanupOffer = nil
-        // A sensible starting blend; the slider takes it from there.
-        if project.tracks[index].cleanup == 0 {
-            update(track: index) { $0.cleanup = 0.6 }
-        }
-        runCleanup(index)
-    }
 
     func runCleanup(_ index: Int) {
         guard let name = project.tracks[index].audioFileName, cleanupProgress[index] == nil else { return }

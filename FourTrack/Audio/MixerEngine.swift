@@ -208,6 +208,19 @@ final class MixerEngine {
         return AVAudioTime.seconds(forHostTime: host)
     }
 
+    /// Starts the click mid-song or mid-take, in time with what's playing
+    /// (the metronome was switched on after play or record was pressed).
+    func startClickLive(settings: MetronomeSettings) {
+        guard state != .stopped else { return }
+        let host = mach_absolute_time() + AVAudioTime.hostTime(forSeconds: MixerEngine.startLead)
+        let elapsed = AVAudioTime.seconds(forHostTime: host) - AVAudioTime.seconds(forHostTime: startHost)
+        metronome.start(fromFrame: startFrame + frame(elapsed), at: host, settings: settings)
+    }
+
+    func stopClick() {
+        metronome.stop()
+    }
+
     func stopClickPreview() {
         metronome.stop()
     }

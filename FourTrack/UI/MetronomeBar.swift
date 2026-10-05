@@ -51,7 +51,8 @@ struct MetronomeBar: View {
                 .transition(.opacity)
             }
         }
-        .disabled(model.isRecording || model.isSaving)
+        // Usable while recording too: switch the click on, or change tempo, mid-take.
+        .disabled(model.isSaving)
         .animation(.easeOut(duration: 0.2), value: m.mode)
     }
 
@@ -68,8 +69,8 @@ struct MetronomeBar: View {
                 .contentShape(Circle())
         }
         .buttonStyle(.plain)
-        .disabled(model.isPlaying)
-        .opacity(model.isPlaying ? 0.4 : 1)
+        .disabled(model.isPlaying || model.isRecording)
+        .opacity(model.isPlaying || model.isRecording ? 0.4 : 1)
         .accessibilityLabel(model.isPreviewingClick ? "Stop click" : "Play click")
         .accessibilityHint("Plays the metronome on its own")
     }

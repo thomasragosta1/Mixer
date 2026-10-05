@@ -341,7 +341,8 @@ struct CompactLaneList: View {
                 anchor: model.isRecording ? 1 : 0.5,
                 showsPlayheadLine: !model.isRecording,
                 pointsPerSecond: WaveformView.defaultPointsPerSecond,
-                color: model.project.isAudible(i) ? .primary : .secondary
+                color: model.project.isAudible(i) ? .primary : .secondary,
+                beatGrid: model.beatGrid
             )
             .frame(height: 30)
             .clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous))
@@ -359,7 +360,10 @@ struct CompactLaneList: View {
                 .strokeBorder(Color.red.opacity(armed ? 0.8 : 0), lineWidth: 1.5)
         )
         .contentShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .onTapGesture { model.arm(i) }
+        .onTapGesture {
+            if !armed && !model.isRecording { Haptics.slot.selectionChanged() }
+            model.arm(i)
+        }
         .simultaneousGesture(LongPressGesture(minimumDuration: 0.4).onEnded { _ in Haptics.hold() })
         .contextMenu {
             if !model.isRecording {
@@ -384,7 +388,9 @@ struct CompactLaneList: View {
                     scrubStart = model.playhead
                     model.beginScrub()
                 }
+                let before = model.playhead
                 model.scrub(to: (scrubStart ?? 0) - Double(g.translation.width / WaveformView.defaultPointsPerSecond))
+                Haptics.scrubTick(from: before, to: model.playhead, grid: model.beatGrid, end: model.duration)
             }
             .onEnded { _ in
                 if scrubStart != nil {

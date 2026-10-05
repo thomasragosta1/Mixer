@@ -34,7 +34,7 @@ struct TrackRowView<Scrub: Gesture>: View {
                 .strokeBorder(Color.red.opacity(isArmed ? 0.85 : 0), lineWidth: 2)
         )
         .contentShape(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous))
-        .onTapGesture { model.arm(index) }
+        .onTapGesture { arm() }
         .accessibilityElement(children: .contain)
         .accessibilityAddTraits(isArmed ? .isSelected : [])
         .accessibilityAction(named: "Arm for recording") { model.arm(index) }
@@ -43,6 +43,11 @@ struct TrackRowView<Scrub: Gesture>: View {
             Button("Cancel", role: .cancel) {}
             Button("Save") { model.rename(track: index, to: draftName) }
         }
+    }
+
+    private func arm() {
+        if !isArmed && !model.isRecording { Haptics.slot.selectionChanged() }
+        model.arm(index)
     }
 
     private var waveform: some View {
@@ -57,7 +62,8 @@ struct TrackRowView<Scrub: Gesture>: View {
             // otherwise.
             anchor: model.isRecording ? 1 : 0.5,
             showsPlayheadLine: !model.isRecording,
-            color: model.project.isAudible(index) ? .primary : .secondary
+            color: model.project.isAudible(index) ? .primary : .secondary,
+            beatGrid: model.beatGrid
         )
         .overlay {
             if track.isEmpty && !isRecordingHere {
@@ -81,9 +87,15 @@ struct TrackRowView<Scrub: Gesture>: View {
 
     private var controls: some View {
         VStack(alignment: .leading, spacing: 8) {
+            // Tapping the name of another track arms it, like tapping anywhere
+            // on its card; tapping the armed track's name renames it.
             Button {
-                draftName = track.name
-                renaming = true
+                if isArmed {
+                    draftName = track.name
+                    renaming = true
+                } else {
+                    arm()
+                }
             } label: {
                 HStack(spacing: 5) {
                     if isArmed {
@@ -98,7 +110,7 @@ struct TrackRowView<Scrub: Gesture>: View {
             }
             .buttonStyle(.plain)
             .accessibilityLabel("\(track.name)\(isArmed ? ", armed" : "")")
-            .accessibilityHint("Renames the track")
+            .accessibilityHint(isArmed ? "Renames the track" : "Arms the track for recording")
 
             if !model.isSimple {
                 HStack(spacing: 6) {
