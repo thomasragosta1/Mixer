@@ -5,6 +5,7 @@ on:
     # Doc-only changes don't need a build.
     paths-ignore:
       - "**/*.md"
+      - .github/workflows/crash-logs.yml
   workflow_dispatch:
     inputs:
       upload:

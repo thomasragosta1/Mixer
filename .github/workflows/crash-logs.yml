@@ -1,0 +1,58 @@
+name: TestFlight crash reports
+
+# Prints the newest crash reports testers shared from TestFlight (when iOS
+# asks "Share with developer?" after a crash), so crashes on a phone can be
+# read here with their stack traces.
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/crash-logs.yml
+
+jobs:
+  crashes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+      BUNDLE_ID: ${{ secrets.BUNDLE_ID }}
+    steps:
+      - name: Fetch crash reports
+        run: |
+          python3 -m pip install --quiet pyjwt cryptography
+          python3 - <<'PY'
+          import json, os, re, time, urllib.request, urllib.error, jwt
+          trim = lambda s: re.sub(r"\s", "", s)
+          key = os.environ["ASC_KEY_P8"].replace("\r", "").strip()
+          if key.count("\n") < 2:
+              body = re.sub(r"-----(BEGIN|END) PRIVATE KEY-----", "", key)
+              body = trim(body)
+              key = "-----BEGIN PRIVATE KEY-----\n" + "\n".join(body[i:i+64] for i in range(0, len(body), 64)) + "\n-----END PRIVATE KEY-----\n"
+          token = jwt.encode(
+              {"iss": trim(os.environ["ASC_ISSUER_ID"]), "iat": int(time.time()), "exp": int(time.time()) + 900, "aud": "appstoreconnect-v1"},
+              key, algorithm="ES256", headers={"kid": trim(os.environ["ASC_KEY_ID"]), "typ": "JWT"})
+
+          def get(path):
+              req = urllib.request.Request("https://api.appstoreconnect.apple.com" + path, headers={"Authorization": f"Bearer {token}"})
+              try:
+                  return json.load(urllib.request.urlopen(req))
+              except urllib.error.HTTPError as e:
+                  print(f"{path} -> HTTP {e.code}: {e.read().decode()[:800]}")
+                  return None
+
+          bundle = trim(os.environ["BUNDLE_ID"])
+          apps = get(f"/v1/apps?filter[bundleId]={bundle}")
+          app_id = apps["data"][0]["id"]
+          subs = get(f"/v1/apps/{app_id}/betaFeedbackCrashSubmissions?limit=5&sort=-createdDate")
+          if not subs or not subs.get("data"):
+              print("No crash reports shared from TestFlight yet.")
+          for s in (subs or {}).get("data", []):
+              a = s["attributes"]
+              print("=" * 80)
+              print({k: a.get(k) for k in ("createdDate", "comment", "deviceModel", "osVersion", "appPlatform", "buildBundleId")})
+              log = get(f"/v1/betaFeedbackCrashSubmissions/{s['id']}/crashLog")
+              text = ((log or {}).get("data") or {}).get("attributes", {}).get("logText") or ""
+              print(text[:40000] if text else "(no crash log attached)")
+          PY
