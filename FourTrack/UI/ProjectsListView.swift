@@ -224,7 +224,7 @@ struct NewProjectBubble: View {
     /// Name (nil = cancelled) and the project's mode.
     let onFinish: (String?, ProjectMode) -> Void
     @State private var name: String
-    @State private var mode: ProjectMode = .full
+    @State private var mode: ProjectMode = .simple
 
     init(defaultName: String, onFinish: @escaping (String?, ProjectMode) -> Void) {
         self.defaultName = defaultName
@@ -250,8 +250,8 @@ struct NewProjectBubble: View {
                     .padding(.horizontal, 8)
                     .background(Capsule().fill(Color(uiColor: .tertiarySystemFill)))
                     Picker("Mode", selection: $mode) {
-                        Text("Full").tag(ProjectMode.full)
                         Text("Simple").tag(ProjectMode.simple)
+                        Text("Full").tag(ProjectMode.full)
                     }
                     .pickerStyle(.segmented)
                     Text(mode == .full ? "Everything: drums, mixer, metronome, quantize." : "Just audio tracks, volume and Clean Up. Switch any time from ⋯.")

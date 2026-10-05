@@ -201,12 +201,12 @@ final class ProjectStoreTests: XCTestCase {
 }
 
 final class ProjectModeTests: XCTestCase {
-    func testNewProjectsDefaultToFullOldOnesFull() throws {
+    func testNewProjectsDefaultToSimpleOldOnesFull() throws {
         let dir = try makeTempDir()
         defer { try? FileManager.default.removeItem(at: dir) }
         let store = try ProjectStore(rootURL: dir)
-        XCTAssertEqual(try store.create().mode, .full, "Full is the default")
-        XCTAssertEqual(try store.create(mode: .simple).mode, .simple)
+        XCTAssertEqual(try store.create().mode, .simple, "Simple is the default")
+        XCTAssertEqual(try store.create(mode: .full).mode, .full)
         let old = try JSONDecoder().decode(Project.self, from: JSONEncoder().encode(Project(name: "Old")).withoutKey("mode"))
         XCTAssertEqual(old.mode, .full)
     }

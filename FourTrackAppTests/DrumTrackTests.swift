@@ -35,7 +35,7 @@ final class DrumTrackTests: XCTestCase {
     }
 
     func testAddingDrumTrackAndPlayingPads() throws {
-        let project = try store.create()
+        let project = try store.create(mode: .full)
         let model = ProjectViewModel(project: project, store: store)
         model.activate()
         model.addTrack(kind: .drums)
@@ -51,7 +51,7 @@ final class DrumTrackTests: XCTestCase {
     func testDrumScreenRenders() throws {
         // A project whose second lane is an empty drum track: opening it arms
         // that lane, so the drum layout is what gets drawn.
-        var project = try store.create()
+        var project = try store.create(mode: .full)
         project.visibleTrackCount = 2
         project.tracks[1].kind = .drums
         project.tracks[1].name = "Drums"
@@ -79,7 +79,7 @@ final class DrumTrackTests: XCTestCase {
     /// The whole track chain (EQ -> in-house compressor -> warmth -> reverb)
     /// must render real audio, at every compressor setting.
     func testTrackChainRendersThroughCompressor() throws {
-        var project = try store.create()
+        var project = try store.create(mode: .full)
         let url = store.audioURL(project: project.id, track: 0)
         let w = try CAFWriter(url: url)
         try w.write((0..<48_000).map { 0.5 * Float(sin(2 * .pi * 220 * Double($0) / 48_000)) })
@@ -102,7 +102,7 @@ final class DrumTrackTests: XCTestCase {
     }
 
     func testUndoRedoRestoresSettingsAndAudio() throws {
-        var project = try store.create()
+        var project = try store.create(mode: .full)
         let url = store.audioURL(project: project.id, track: 0)
         let w = try CAFWriter(url: url)
         try w.write([Float](repeating: 0.25, count: 4_800))
@@ -147,7 +147,7 @@ final class DrumTrackTests: XCTestCase {
 
     /// Pads must sound while the other tracks play, without recording.
     func testPadsPlayAlongWithPlayback() throws {
-        var project = try store.create()
+        var project = try store.create(mode: .full)
         let url = store.audioURL(project: project.id, track: 0)
         let w = try CAFWriter(url: url)
         var tone = [Float](repeating: 0, count: 48_000 * 4)
@@ -198,7 +198,7 @@ final class DrumTrackTests: XCTestCase {
     /// Recording a drum track while the song plays starts from the live spot,
     /// without restarting; adding a track mid-song doesn't stop or rewind it.
     func testPunchInAndAddTrackWhilePlaying() async throws {
-        var project = try store.create()
+        var project = try store.create(mode: .full)
         let url = store.audioURL(project: project.id, track: 0)
         let w = try CAFWriter(url: url)
         try w.write([Float](repeating: 0.1, count: 48_000 * 6))

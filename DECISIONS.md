@@ -69,7 +69,7 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 
 ## Simple and Full mode (owner request)
 
-- **Full is the default (owner request).** The New Project bubble has a **Full | Simple** switch (Full selected); the big record button makes a Full project. Projects in Simple mode show a small "Simple" tag in the list.
+- **Simple is the default (owner request).** The New Project bubble has a **Simple | Full** switch (Simple selected); the big record button makes a Simple project. Projects saved before modes existed open as Full. Projects in Simple mode show a small "Simple" tag in the list.
 - **Simple mode:** record, play, scrub, name/reorder/delete audio tracks, a volume bar per track, Clean Up, undo/redo and export. No drum tracks (see "Simple mode: audio only" below). Hidden: the Record/Mixing switch and mixer, M/S, the metronome (and its project settings) and quantize.
 - **⋯ → Simple Mode is a toggle, both ways, any time.** Turning it off goes straight to Full. Turning it on when the project uses something Simple hides first asks, then resets those settings (tone and effects to defaults, mute/solo off, metronome off; volume and Clean Up stay) as one undo step, so no hidden setting keeps changing the sound. Older projects open in Full mode.
 

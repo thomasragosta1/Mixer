@@ -36,7 +36,7 @@ final class ProjectsViewModel {
 
     var nextDefaultName: String { store.nextDefaultName() }
 
-    func createProject(named name: String? = nil, mode: ProjectMode = .full) -> Project? {
+    func createProject(named name: String? = nil, mode: ProjectMode = .simple) -> Project? {
         let trimmed = name?.trimmingCharacters(in: .whitespacesAndNewlines)
         do {
             let project = try store.create(name: (trimmed?.isEmpty ?? true) ? nil : trimmed, mode: mode)
