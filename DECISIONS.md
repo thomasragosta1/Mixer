@@ -152,6 +152,11 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
 
+## Deleting a track: swipe from the right edge (owner request)
+
+- Replaces drag-to-bin. Put a finger on the **right-most edge of a track card** (a 30 pt strip) and swipe left: the card slides with the finger and uncovers a red trash, like Mail. Past the threshold (40% of the card, max 160 pt) there's a firm tick and the trash grows; let go there and the "Are you sure you want to delete this track?" alert appears, while the card springs back. Let go before the threshold and nothing happens.
+- Starting the swipe anywhere else on the card still scrubs (waveform) or adjusts (volume bar); vertical swipes scroll. A tap on the edge strip still arms the track. Press and hold still reorders. Works on the slim lanes of the drum screen too (where press and hold still offers Delete as well). Not available while recording.
+
 ## Recording through the speaker: echo cancellation on by default (owner request)
 
 - Voice Memos can play a recording out loud while you record over it without capturing the playback. We now do the same: when a take is recorded through the **iPhone speaker**, Apple's voice processing (`AVAudioInputNode.setVoiceProcessingEnabled`, acoustic echo cancellation) removes the playing tracks and the click from the microphone. It replaces spec §4.5's "Developer Mode toggle only, if it sounds acceptable": the owner wants this as the normal behaviour.

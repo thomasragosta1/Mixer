@@ -187,7 +187,8 @@ struct AxisPan: UIViewRepresentable {
     /// Travel along the axis in points since the pan began (positive = increase).
     let onChanged: (CGFloat) -> Void
     let onEnded: () -> Void
-    let onDoubleTap: () -> Void
+    let onDoubleTap: (() -> Void)?
+    var onTap: (() -> Void)? = nil
 
     func makeCoordinator() -> Coordinator { Coordinator(self) }
 
@@ -198,9 +199,15 @@ struct AxisPan: UIViewRepresentable {
         let pan = UIPanGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handlePan(_:)))
         pan.delegate = context.coordinator
         view.addGestureRecognizer(pan)
-        let doubleTap = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleDoubleTap))
-        doubleTap.numberOfTapsRequired = 2
-        view.addGestureRecognizer(doubleTap)
+        if onDoubleTap != nil {
+            let doubleTap = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleDoubleTap))
+            doubleTap.numberOfTapsRequired = 2
+            view.addGestureRecognizer(doubleTap)
+        }
+        if onTap != nil {
+            let tap = UITapGestureRecognizer(target: context.coordinator, action: #selector(Coordinator.handleTap))
+            view.addGestureRecognizer(tap)
+        }
         return view
     }
 
@@ -224,7 +231,8 @@ struct AxisPan: UIViewRepresentable {
             }
         }
 
-        @objc func handleDoubleTap() { parent.onDoubleTap() }
+        @objc func handleDoubleTap() { parent.onDoubleTap?() }
+        @objc func handleTap() { parent.onTap?() }
 
         func gestureRecognizerShouldBegin(_ g: UIGestureRecognizer) -> Bool {
             guard let pan = g as? UIPanGestureRecognizer else { return true }

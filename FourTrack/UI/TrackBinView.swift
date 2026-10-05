@@ -43,7 +43,7 @@ struct TrackBinView: View {
                     ContentUnavailableView(
                         "No Deleted Tracks",
                         systemImage: "trash",
-                        description: Text("Press and hold a track, then drag it to the bin to delete it. It waits here until you recover it or delete it for good.")
+                        description: Text("Swipe left from the right edge of a track to delete it. It waits here until you recover it or delete it for good.")
                     )
                 } else {
                     List {

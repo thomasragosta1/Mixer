@@ -15,8 +15,6 @@ struct ProjectView: View {
     @State private var draftName = ""
     @State private var scrubStart: Double?
     @State private var laneDrag: LaneDrag?
-    @State private var overBin = false
-    @State private var binFrame: CGRect = .zero
     @State private var pendingTrackDelete: Int?
     @State private var showingTrackBin = false
     @State private var confirmingSimpleMode = false
@@ -66,15 +64,6 @@ struct ProjectView: View {
             }
         }
         .background(Color(uiColor: .systemGroupedBackground))
-        .overlay(alignment: .bottom) {
-            if laneDrag != nil {
-                TrackBinDropZone(isTargeted: overBin)
-                    .onGeometryChange(for: CGRect.self, of: { $0.frame(in: .global) }) { binFrame = $0 }
-                    .padding(.bottom, 24)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
-            }
-        }
-        .animation(.spring(response: 0.3, dampingFraction: 0.8), value: laneDrag != nil)
         .alert(
             "Are you sure you want to delete this track?",
             isPresented: Binding(get: { pendingTrackDelete != nil }, set: { if !$0 { pendingTrackDelete = nil } })
@@ -98,7 +87,7 @@ struct ProjectView: View {
         .alert("Delete Drum Tracks First", isPresented: $showingDrumsBlockSimple) {
             Button("OK", role: .cancel) {}
         } message: {
-            Text("Simple mode only has audio tracks. Press and hold a drum track and drag it to the bin, then switch to Simple mode.")
+            Text("Simple mode only has audio tracks. Swipe left from the right edge of each drum track to delete it, then switch to Simple mode.")
         }
         .sheet(isPresented: $showingTrackBin) {
             TrackBinView(model: model)
@@ -172,8 +161,8 @@ struct ProjectView: View {
     private var laneStep: CGFloat { TrackRowView<DragGesture>.cardHeight(simple: model.isSimple) + Self.laneSpacing }
 
     /// Lanes as separate cards. Press and hold a card, then drag it up or down
-    /// to reorder, or onto the bin that appears at the bottom to delete it
-    /// (not while recording). Drag sideways on a waveform to scrub.
+    /// to reorder; swipe in from a card's right edge to delete it (not while
+    /// recording). Drag sideways on a waveform to scrub.
     private var lanes: some View {
         let order = model.visibleLanes
         return ScrollView {
@@ -184,10 +173,14 @@ struct ProjectView: View {
                         // Only the card lifts: shadow and scale follow its rounded shape.
                         .compositingGroup()
                         .shadow(color: .black.opacity(dragging ? 0.22 : 0), radius: dragging ? 18 : 0, y: dragging ? 10 : 0)
-                        .scaleEffect(dragging ? (overBin ? 0.55 : 1.04) : 1, anchor: .center)
-                        .opacity(dragging && overBin ? 0.7 : 1)
+                        .scaleEffect(dragging ? 1.04 : 1, anchor: .center)
                         .animation(.spring(response: 0.28, dampingFraction: 0.72), value: dragging)
-                        .animation(.spring(response: 0.3, dampingFraction: 0.75), value: overBin)
+                        // Swipe in from the card's right edge to delete it.
+                        .modifier(EdgeSwipeToDelete(
+                            enabled: !model.isRecording && !model.isSaving && laneDrag == nil,
+                            onTap: { model.arm(i) },
+                            onDelete: { pendingTrackDelete = i }
+                        ))
                         // The held card tracks the finger 1:1 with no animation lag;
                         // the others glide out of its way.
                         .offset(y: laneOffset(position: position, index: i, count: order.count))
@@ -224,7 +217,6 @@ struct ProjectView: View {
     private func laneOffset(position: Int, index: Int, count: Int) -> CGFloat {
         guard let d = laneDrag else { return 0 }
         if d.index == index { return d.translation }
-        if overBin { return 0 }
         let target = targetPosition(count: count)
         if position > d.startPosition && position <= target { return -laneStep }
         if position < d.startPosition && position >= target { return laneStep }
@@ -245,27 +237,17 @@ struct ProjectView: View {
                 guard let drag else { return }
                 let before = targetPosition(count: count)
                 laneDrag?.translation = drag.translation.height
-                if targetPosition(count: count) != before && !overBin { Haptics.slot.selectionChanged() }
-                let over = binFrame.insetBy(dx: -24, dy: -24).contains(drag.location)
-                if over != overBin {
-                    overBin = over
-                    (over ? Haptics.bin : Haptics.lift).impactOccurred()
-                }
+                if targetPosition(count: count) != before { Haptics.slot.selectionChanged() }
             }
             .onEnded { _ in
                 guard let d = laneDrag else { return }
-                if overBin {
-                    pendingTrackDelete = d.index
-                } else {
-                    let target = targetPosition(count: count)
-                    if target != d.startPosition {
-                        model.moveLanes(fromOffsets: IndexSet(integer: d.startPosition), toOffset: target > d.startPosition ? target + 1 : target)
-                    }
+                let target = targetPosition(count: count)
+                if target != d.startPosition {
+                    model.moveLanes(fromOffsets: IndexSet(integer: d.startPosition), toOffset: target > d.startPosition ? target + 1 : target)
                 }
                 // Drop: the card settles into its new slot with one spring.
                 withAnimation(.spring(response: 0.34, dampingFraction: 0.8)) {
                     laneDrag = nil
-                    overBin = false
                 }
             }
     }
@@ -406,7 +388,7 @@ struct ProjectView: View {
 
 enum Haptics {
     static let lift = UIImpactFeedbackGenerator(style: .medium)
-    static let bin = UIImpactFeedbackGenerator(style: .heavy)
+    static let delete = UIImpactFeedbackGenerator(style: .heavy)
     static let slot = UISelectionFeedbackGenerator()
 
     /// The little buzz for every press-and-hold in the app.
@@ -426,27 +408,79 @@ enum Haptics {
     }
 }
 
-/// Bin that rises from the bottom while a lane is held; drop a lane on it to delete.
-struct TrackBinDropZone: View {
-    let isTargeted: Bool
+/// iOS-style swipe to delete, started on the card's right edge: the card
+/// follows the finger left, uncovering a red trash; let go past the threshold
+/// (or flick) and `onDelete` runs (it asks "are you sure"), and the card
+/// springs back. Starting anywhere else on the card leaves scrubbing and the
+/// other gestures alone.
+struct EdgeSwipeToDelete: ViewModifier {
+    var enabled = true
+    var cornerRadius: CGFloat = Theme.cardRadius
+    /// How wide the grab strip on the right edge is.
+    var edgeWidth: CGFloat = 30
+    /// Taps on the strip still do what a tap on the card does.
+    var onTap: (() -> Void)? = nil
+    let onDelete: () -> Void
 
-    var body: some View {
-        VStack(spacing: 6) {
-            Image(systemName: isTargeted ? "trash.fill" : "trash")
-                .font(.system(size: 26, weight: .semibold))
-                .foregroundStyle(isTargeted ? .white : .red)
-                .frame(width: 72, height: 72)
-                .background(Circle().fill(isTargeted ? Color.red : Color.red.opacity(0.12)))
-                .scaleEffect(isTargeted ? 1.15 : 1)
-            Text(isTargeted ? "Release to Delete" : "Drag Here to Delete")
-                .font(.footnote.weight(.semibold))
-                .foregroundStyle(isTargeted ? .red : .secondary)
+    @State private var offset: CGFloat = 0
+    @State private var width: CGFloat = 1
+    @State private var pastThreshold = false
+
+    private var threshold: CGFloat { min(width * 0.4, 160) }
+
+    func body(content: Content) -> some View {
+        content
+            .offset(x: offset)
+            .overlay(alignment: .trailing) {
+                if enabled {
+                    AxisPan(
+                        axis: .horizontal,
+                        onChanged: changed,
+                        onEnded: ended,
+                        onDoubleTap: nil,
+                        onTap: onTap
+                    )
+                    .frame(width: edgeWidth)
+                    .offset(x: offset)
+                }
+            }
+            .background(alignment: .trailing) {
+                // Only visible while the card is pulled aside.
+                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
+                    .fill(Color.red)
+                    .overlay(alignment: .trailing) {
+                        Image(systemName: "trash.fill")
+                            .font(.system(size: 20, weight: .semibold))
+                            .foregroundStyle(.white)
+                            .scaleEffect(pastThreshold ? 1.25 : 1)
+                            .frame(width: max(0, -offset))
+                            .opacity(min(1, Double(-offset / 40)))
+                    }
+                    .frame(width: max(0, -offset + cornerRadius))
+                    .opacity(offset < 0 ? 1 : 0)
+                    .accessibilityHidden(true)
+            }
+            .onGeometryChange(for: CGFloat.self, of: { $0.size.width }) { width = max(1, $0) }
+            .animation(.spring(response: 0.25, dampingFraction: 0.7), value: pastThreshold)
+    }
+
+    private func changed(_ travel: CGFloat) {
+        // Leftwards only; resist past most of the width.
+        let raw = min(0, travel)
+        let limit = width * 0.85
+        offset = raw > -limit ? raw : -limit - (-raw - limit) * 0.2
+        let past = -offset >= threshold
+        if past != pastThreshold {
+            pastThreshold = past
+            (past ? Haptics.delete : Haptics.lift).impactOccurred()
         }
-        .padding(.horizontal, 28)
-        .padding(.vertical, 14)
-        .glassPanel(cornerRadius: 28)
-        .animation(.spring(response: 0.25, dampingFraction: 0.7), value: isTargeted)
-        .accessibilityHidden(true)
+    }
+
+    private func ended() {
+        let delete = pastThreshold
+        pastThreshold = false
+        withAnimation(.spring(response: 0.32, dampingFraction: 0.82)) { offset = 0 }
+        if delete { onDelete() }
     }
 }
 
