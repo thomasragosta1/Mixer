@@ -22,16 +22,17 @@ struct SettingsView: View {
                     metronomeSection(model)
                 }
 
+                Section {
+                    Toggle("Keep Playback Out of Recordings", isOn: $settings.speakerEchoCancellation)
+                } header: {
+                    Text("Recording Without Headphones")
+                } footer: {
+                    Text("When you record through the iPhone speaker, the tracks you hear (and the click) are removed from the microphone, so only your new part is recorded. It slightly changes the microphone's tone; with headphones it isn't used.")
+                }
+
                 if settings.developerMode {
                     latencySection
                     exportSection
-                    Section {
-                        Toggle("Echo Cancellation", isOn: $settings.voiceProcessing)
-                    } header: {
-                        Text("Speaker Overdubs")
-                    } footer: {
-                        Text("Uses Apple's voice processing to reduce backing-track bleed when recording without headphones. It changes the tone of the microphone; experimental. Applies from the next recording.")
-                    }
                     Section {
                         Toggle("Warmth Macro", isOn: $settings.warmthEnabled)
                     } header: {

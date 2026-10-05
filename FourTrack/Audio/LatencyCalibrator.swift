@@ -29,6 +29,8 @@ enum LatencyCalibrator {
             scratchURL: scratchURL,
             latency: 0,
             route: route,
+            // Echo cancellation would remove the very clicks being measured.
+            echoCancellation: false,
             metronome: clicks
         )
         let beatSeconds = 60 / bpm

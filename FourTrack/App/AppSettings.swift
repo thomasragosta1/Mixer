@@ -20,9 +20,10 @@ final class AppSettings {
         didSet { defaults.set(warmthEnabled, forKey: Keys.warmthEnabled) }
     }
 
-    /// Apple echo cancellation on the input (Developer Mode, experimental).
-    var voiceProcessing: Bool {
-        didSet { defaults.set(voiceProcessing, forKey: Keys.voiceProcessing) }
+    /// Recording through the iPhone speaker: Apple's echo cancellation keeps
+    /// the playing tracks (and the click) out of the microphone. On by default.
+    var speakerEchoCancellation: Bool {
+        didSet { defaults.set(speakerEchoCancellation, forKey: Keys.speakerEchoCancellation) }
     }
 
     var latency: LatencySettings {
@@ -55,7 +56,7 @@ final class AppSettings {
         self.defaults = defaults
         developerMode = defaults.bool(forKey: Keys.developerMode)
         warmthEnabled = defaults.bool(forKey: Keys.warmthEnabled)
-        voiceProcessing = defaults.bool(forKey: Keys.voiceProcessing)
+        speakerEchoCancellation = defaults.object(forKey: Keys.speakerEchoCancellation) as? Bool ?? true
         metronomeHeadphoneTipShown = defaults.bool(forKey: Keys.metronomeHeadphoneTipShown)
         if let data = defaults.data(forKey: Keys.latency), let decoded = try? JSONDecoder().decode(LatencySettings.self, from: data) {
             latency = decoded
@@ -70,7 +71,7 @@ final class AppSettings {
     private enum Keys {
         static let developerMode = "developerMode"
         static let warmthEnabled = "warmthEnabled"
-        static let voiceProcessing = "voiceProcessing"
+        static let speakerEchoCancellation = "speakerEchoCancellation"
         static let metronomeHeadphoneTipShown = "metronomeHeadphoneTipShown"
         static let latency = "latencySettings"
         static let exportFormat = "exportFormat"

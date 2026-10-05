@@ -152,6 +152,17 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
 
+## Recording through the speaker: echo cancellation on by default (owner request)
+
+- Voice Memos can play a recording out loud while you record over it without capturing the playback. We now do the same: when a take is recorded through the **iPhone speaker**, Apple's voice processing (`AVAudioInputNode.setVoiceProcessingEnabled`, acoustic echo cancellation) removes the playing tracks and the click from the microphone. It replaces spec §4.5's "Developer Mode toggle only, if it sounds acceptable": the owner wants this as the normal behaviour.
+- **Settings → Recording Without Headphones → Keep Playback Out of Recordings**, on by default, available in every project (Simple too).
+- Only used on the speaker route. With wired or Bluetooth headphones the mic hears nothing to cancel, so it's switched off and the mic's tone is untouched. Plugging headphones in while stopped turns it off again.
+- Tuned for music rather than calls: automatic gain control off, other apps' audio ducked as little as possible.
+- Switching it on or off restarts the engine, so it's only done while stopped. Once on, it stays on for speaker playback, so later punch-ins while playing stay seamless. If the first speaker punch-in needs it switched on, the take starts from that spot after a brief stop, just like the very first recording does.
+- Latency: echo cancellation adds its own delay, so a speaker calibration measured without it doesn't apply. While it's on, takes are moved by the engine's estimate of the processed path, plus any manual offset. Latency calibration always runs with it off, since it would cancel the calibration clicks.
+- The one-time "headphones suggested" metronome tip no longer appears when echo cancellation is handling the click.
+- **Needs checking on a device:** how much of the playback is removed at loud speaker volume, how the processed mic sounds on singing and guitar, and whether speaker overdubs line up.
+
 ## Simple mode: audio only (owner request)
 
 - Simple projects have **only audio tracks**. Each track card shows its name, Clean Up and a **volume bar along the bottom** (same fader as the mixer: unity detent at 0 dB, double tap resets). Nothing else: no drums, mixer, mute/solo, metronome or quantize.

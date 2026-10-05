@@ -97,7 +97,6 @@ final class ProjectViewModel {
         playhead = min(project.playheadSeconds, project.durationSeconds)
         // Arm the first empty lane, or the last one if all have takes.
         armedTrack = project.visibleLanes.first(where: { project.tracks[$0].isEmpty }) ?? project.visibleLanes.last ?? 0
-        engine.voiceProcessingEnabled = settings.voiceProcessing
         engine.load(project: project, store: store)
         applyAll()
         loadPeaks()
@@ -300,22 +299,23 @@ final class ProjectViewModel {
             settings.latency.bluetoothTipShown = true
             showBluetoothTip = true
         }
-        let latency = settings.latency.compensation(for: route, estimate: engine.estimatedLatency)
+        let echoCancellation = wantsEchoCancellation(route)
         let trackIndex = armedTrack
         let scratch = store.recordingTempURL(project: project.id)
 
         if punch, let plan = try? engine.punchInRecording(
             trackIndex: trackIndex,
             scratchURL: scratch,
-            latency: latency,
+            latency: latencyCompensation(route),
             route: route,
-            inputGainDB: project.tracks[trackIndex].inputGainDB
+            inputGainDB: project.tracks[trackIndex].inputGainDB,
+            echoCancellation: echoCancellation
         ) {
             // Seamless: the song never stops.
             let marker = PendingRecording(
                 trackIndex: trackIndex,
                 insertFrame: plan.startFrame,
-                skipFrames: Int64((latency * EngineFormat.sampleRate).rounded()),
+                skipFrames: Int64((plan.latency * EngineFormat.sampleRate).rounded()),
                 inputGainDB: plan.inputGainDB,
                 route: route
             )
@@ -331,9 +331,19 @@ final class ProjectViewModel {
             startTicker()
             return
         }
-        // Couldn't punch in seamlessly (first recording sets up the mic): stop
-        // and record from right here instead, with no count-in.
+        // Couldn't punch in seamlessly (first recording sets up the mic, or echo
+        // cancellation has to switch): stop and record from right here instead,
+        // with no count-in.
         if punch { pause() }
+        // Set up the microphone (and echo cancellation) first, so the latency
+        // estimate reflects the path this take really uses.
+        do {
+            try engine.prepareInput(echoCancellation: echoCancellation)
+        } catch {
+            errorMessage = "The microphone couldn't start. \(error.localizedDescription)"
+            return
+        }
+        let latency = latencyCompensation(route)
 
         // A new track starts at 0:00 when recording from a stop; overwrite-anywhere
         // applies once it has a take, and a punch-in records from the live spot.
@@ -362,6 +372,7 @@ final class ProjectViewModel {
                 scratchURL: scratch,
                 latency: latency,
                 route: route,
+                echoCancellation: echoCancellation,
                 metronome: punch ? metronomeWithoutCountIn : metronomeIfEnabled
             )
         } catch {
@@ -377,8 +388,26 @@ final class ProjectViewModel {
         startTicker()
     }
 
+    /// Recording through the iPhone speaker: Apple's echo cancellation keeps the
+    /// playing tracks and the click out of the take, like Voice Memos layering.
+    /// Headphones don't need it, so their tone stays untouched.
+    private func wantsEchoCancellation(_ route: AudioRouteKind) -> Bool {
+        settings.speakerEchoCancellation && route == .speaker
+    }
+
+    /// How far to move a take earlier. Echo cancellation adds its own delay,
+    /// so a calibration measured without it doesn't apply; use the engine's
+    /// estimate of the processed path instead.
+    private func latencyCompensation(_ route: AudioRouteKind) -> Double {
+        if engine.voiceProcessingActive {
+            return max(0, engine.estimatedLatency + (settings.latency.manualOffsetMs[route] ?? 0) / 1000)
+        }
+        return settings.latency.compensation(for: route, estimate: engine.estimatedLatency)
+    }
+
     private var needsMetronomeHeadphoneTip: Bool {
         !settings.metronomeHeadphoneTipShown
+            && !wantsEchoCancellation(AudioSessionManager.shared.currentRoute)
             && !project.tracks[armedTrack].isDrums
             && !isSimple
             && project.metronome.mode == .on
@@ -555,7 +584,7 @@ final class ProjectViewModel {
 
     func developerModeChanged() {
         engine.setMetersEnabled(settings.developerMode)
-        engine.setVoiceProcessing(settings.voiceProcessing)
+        if !settings.speakerEchoCancellation { engine.disableVoiceProcessingIfIdle() }
         applyAll()
         if settings.developerMode { startTicker() }
     }
@@ -578,13 +607,16 @@ final class ProjectViewModel {
         case .outputDeviceLost:
             if isRecording { stopRecording() }
             if isPlaying { pause() }
+            if !wantsEchoCancellation(AudioSessionManager.shared.currentRoute) { engine.disableVoiceProcessingIfIdle() }
         case .routeChanged:
-            break
+            // Headphones in: playback no longer needs echo cancellation.
+            if !isPlaying && !isRecording && !wantsEchoCancellation(AudioSessionManager.shared.currentRoute) {
+                engine.disableVoiceProcessingIfIdle()
+            }
         case .mediaServicesReset:
             if isRecording { stopRecording() }
             isPlaying = false
             engine.rebuild()
-            engine.voiceProcessingEnabled = settings.voiceProcessing
             engine.load(project: project, store: store)
             applyAll()
             engine.setMetersEnabled(settings.developerMode)

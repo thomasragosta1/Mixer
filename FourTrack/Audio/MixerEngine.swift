@@ -40,7 +40,10 @@ final class MixerEngine {
     var onWillReconfigure: (() -> Void)?
     var onConfigurationChange: (() -> Void)?
 
-    var voiceProcessingEnabled = false
+    /// Apple's voice processing (echo cancellation) is on for the input and
+    /// output. Used when recording through the speaker so the playing tracks
+    /// aren't captured by the microphone.
+    private(set) var voiceProcessingActive = false
 
     /// How far ahead of "now" to start players, so all four start together.
     static let startLead = 0.05
@@ -313,14 +316,11 @@ final class MixerEngine {
         scratchURL: URL,
         latency: Double,
         route: AudioRouteKind,
+        echoCancellation: Bool,
         metronome settings: MetronomeSettings?
     ) throws -> RecordingPlan {
         stopPlayers()
-        // The session must be .playAndRecord before the input node is created.
-        if !AudioSessionManager.shared.isConfigured {
-            try AudioSessionManager.shared.configure()
-        }
-        try prepareInput()
+        try prepareInput(echoCancellation: echoCancellation)
         try startIfNeeded()
 
         let input = engine.inputNode
@@ -371,10 +371,11 @@ final class MixerEngine {
     /// playing, without stopping or restarting anything. Recording begins at
     /// the current playback position; the other tracks and the click keep
     /// going. Returns nil when that isn't possible (not playing, or the
-    /// microphone hasn't been set up yet; setting it up briefly stops the
-    /// engine), and the caller then starts a normal recording from here.
-    func punchInRecording(trackIndex: Int, scratchURL: URL, latency: Double, route: AudioRouteKind, inputGainDB: Double) throws -> RecordingPlan? {
-        guard state == .playing, inputPrepared, engine.isRunning else { return nil }
+    /// microphone hasn't been set up yet, or echo cancellation has to be
+    /// switched; either briefly stops the engine), and the caller then starts
+    /// a normal recording from here.
+    func punchInRecording(trackIndex: Int, scratchURL: URL, latency: Double, route: AudioRouteKind, inputGainDB: Double, echoCancellation: Bool) throws -> RecordingPlan? {
+        guard state == .playing, inputPrepared, engine.isRunning, voiceProcessingActive == echoCancellation else { return nil }
         let input = engine.inputNode
         let inputFormat = input.outputFormat(forBus: 0)
         guard inputFormat.sampleRate > 0, inputFormat.channelCount > 0 else { return nil }
@@ -442,30 +443,56 @@ final class MixerEngine {
     }
 
     /// The input node is enabled lazily on the first recording so playback
-    /// alone never turns on the microphone.
-    private func prepareInput() throws {
-        guard !inputPrepared else { return }
+    /// alone never turns on the microphone. Also switches echo cancellation
+    /// to what this recording needs (only while stopped: it restarts the engine).
+    func prepareInput(echoCancellation: Bool) throws {
+        // The session must be .playAndRecord before the input node is created.
+        if !AudioSessionManager.shared.isConfigured {
+            try AudioSessionManager.shared.configure()
+        }
+        guard !inputPrepared || voiceProcessingActive != echoCancellation else { return }
         let wasRunning = engine.isRunning
         if wasRunning { engine.stop() }
         let input = engine.inputNode
-        if voiceProcessingEnabled {
-            try? input.setVoiceProcessingEnabled(true)
+        if voiceProcessingActive != echoCancellation {
+            do {
+                try input.setVoiceProcessingEnabled(echoCancellation)
+                voiceProcessingActive = echoCancellation
+            } catch {
+                // Without it the take still records, just with the speaker bleed.
+                voiceProcessingActive = input.isVoiceProcessingEnabled
+            }
+            if voiceProcessingActive {
+                // Music, not a phone call: no automatic gain riding the level,
+                // and other apps' audio ducked as little as possible.
+                input.isVoiceProcessingAGCEnabled = false
+                input.voiceProcessingOtherAudioDuckingConfiguration = AVAudioVoiceProcessingOtherAudioDuckingConfiguration(
+                    enableAdvancedDucking: false,
+                    duckingLevel: .min
+                )
+            }
+            // Voice processing changes the I/O formats; reconnect the graph to match.
+            stopPlayers()
+            let hadMeters = metersInstalled
+            removeMeterTaps()
+            defer { if hadMeters { installMeterTaps() } }
+            for node in ownNodes {
+                engine.disconnectNodeOutput(node)
+            }
+            engine.disconnectNodeOutput(engine.mainMixerNode)
+            engine.connect(engine.mainMixerNode, to: engine.outputNode, format: nil)
+            connectGraph()
         }
         inputPrepared = true
         engine.prepare()
         if wasRunning { try engine.start() }
     }
 
-    /// Applies a Developer Mode change to echo cancellation; takes effect on the
-    /// next recording.
-    func setVoiceProcessing(_ enabled: Bool) {
-        voiceProcessingEnabled = enabled
-        guard inputPrepared, state == .stopped else { return }
-        let wasRunning = engine.isRunning
-        if wasRunning { engine.stop() }
-        try? engine.inputNode.setVoiceProcessingEnabled(enabled)
-        engine.prepare()
-        if wasRunning { try? engine.start() }
+    /// Turns echo cancellation off again (headphones plugged in, or the setting
+    /// switched off) so playback isn't processed. Only while stopped.
+    func disableVoiceProcessingIfIdle() {
+        guard voiceProcessingActive, state == .stopped else { return }
+        try? prepareInput(echoCancellation: false)
     }
 
     // MARK: Latency
