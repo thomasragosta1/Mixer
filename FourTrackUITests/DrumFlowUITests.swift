@@ -24,6 +24,7 @@ final class DrumFlowUITests: XCTestCase {
         simple.tap()
         sleep(1)
         XCTAssertFalse(app.buttons["Metronome"].exists, "Simple mode hides the metronome")
+        XCTAssertTrue(app.descendants(matching: .any)["Track 1 Volume"].firstMatch.waitForExistence(timeout: 3), "Simple mode shows a volume bar on each track")
         app.buttons["More"].firstMatch.tap()
         XCTAssertTrue(app.buttons["Simple Mode"].firstMatch.waitForExistence(timeout: 3))
         app.buttons["Simple Mode"].firstMatch.tap()

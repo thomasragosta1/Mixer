@@ -87,6 +87,7 @@ final class ProjectViewModel {
 
     init(project: Project, store: ProjectStore, settings: AppSettings = .shared) {
         var project = project
+        project.migrateSimpleMode()
         store.cleanTemporaryFiles(project: project.id)
         store.refreshDurations(&project)
         self.project = project
@@ -615,6 +616,7 @@ final class ProjectViewModel {
     /// An empty track can switch between audio and drums.
     func setKind(_ index: Int, _ kind: TrackKind) {
         guard !isRecording, project.tracks[index].isEmpty, project.tracks[index].kind != kind else { return }
+        guard !(isSimple && kind == .drums) else { return }
         checkpoint("Track Type")
         project.tracks[index].kind = kind
         if kind == .drums && project.tracks[index].name == "Track \(index + 1)" {
@@ -783,8 +785,10 @@ final class ProjectViewModel {
 
     /// Reveals the next lane, arms it and rewinds, so the new part is laid
     /// down from the top of the song.
-    func addTrack(kind: TrackKind = .audio) {
+    func addTrack(kind requested: TrackKind = .audio) {
         guard !isRecording, project.visibleTrackCount < Project.trackCount else { return }
+        // Simple projects only have audio tracks.
+        let kind: TrackKind = isSimple ? .audio : requested
         checkpoint("Add Track")
         project.visibleTrackCount += 1
         armedTrack = project.laneOrder[project.visibleTrackCount - 1]
@@ -878,23 +882,23 @@ final class ProjectViewModel {
     /// Switching to Simple would turn off settings it hides (asks first).
     var simpleModeResetsSettings: Bool { project.usesFullModeFeatures }
 
+    /// Simple mode has no drums: tracks with drum takes have to go first.
+    var simpleModeBlockedByDrums: Bool { !project.drumTracksWithTakes.isEmpty }
+
     /// To Simple. Anything Simple mode hides is reset first so no hidden setting
     /// keeps changing the sound; it's one undo step.
     func switchToSimpleMode() {
-        guard !isSimple, !isRecording, !isSaving else { return }
+        guard !isSimple, !isRecording, !isSaving, !simpleModeBlockedByDrums else { return }
         stopClickPreview()
-        let resets = project.usesFullModeFeatures
-        checkpoint("Simple Mode", audio: resets)
+        checkpoint("Simple Mode")
         mixMode = false
         if isPlaying { pause() }
-        let changedDrums = project.resetFullModeFeatures()
+        project.resetFullModeFeatures()
         project.mode = .simple
+        // Arm an audio track (an empty drum track just became one).
+        if !project.visibleLanes.contains(armedTrack) { armedTrack = project.visibleLanes.first ?? 0 }
         applyAll()
-        routePadsIfNeeded()
         scheduleSave()
-        for i in changedDrums where !project.tracks[i].drumHits.isEmpty {
-            renderDrums(i)
-        }
     }
 
     // MARK: Undo / redo
@@ -958,6 +962,10 @@ final class ProjectViewModel {
     /// Puts a deleted track back into a free lane.
     func recoverTrack(_ id: UUID) {
         guard !isRecording, !isSaving else { return }
+        if isSimple, project.deletedTracks.first(where: { $0.id == id })?.track.isDrums == true {
+            errorMessage = "Drum tracks are only in Full mode. Switch to Full mode from the ⋯ menu to recover this one."
+            return
+        }
         guard project.freeSlotForRecovery() != nil else {
             errorMessage = "All four tracks are in use. Delete a track first, then recover this one."
             return

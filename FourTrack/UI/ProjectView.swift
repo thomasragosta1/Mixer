@@ -20,6 +20,7 @@ struct ProjectView: View {
     @State private var pendingTrackDelete: Int?
     @State private var showingTrackBin = false
     @State private var confirmingSimpleMode = false
+    @State private var showingDrumsBlockSimple = false
     private let onDelete: (Project) -> Void
     private let startRecordingOnAppear: Bool
 
@@ -92,7 +93,12 @@ struct ProjectView: View {
             Button("Switch") { model.switchToSimpleMode() }
             Button("Cancel", role: .cancel) {}
         } message: {
-            Text("Simple mode hides the mixer, mute and solo, the metronome, quantize and the extra drum kits and pad settings, so those are reset to their defaults. Clean Up, pad volume and tone stay. You can undo this.")
+            Text("Simple mode hides the mixer's tone and effects, mute and solo, and the metronome, so those are reset to their defaults. Volume and Clean Up stay. You can undo this.")
+        }
+        .alert("Delete Drum Tracks First", isPresented: $showingDrumsBlockSimple) {
+            Button("OK", role: .cancel) {}
+        } message: {
+            Text("Simple mode only has audio tracks. Press and hold a drum track and drag it to the bin, then switch to Simple mode.")
         }
         .sheet(isPresented: $showingTrackBin) {
             TrackBinView(model: model)
@@ -163,7 +169,7 @@ struct ProjectView: View {
     }
 
     private static let laneSpacing: CGFloat = 12
-    private var laneStep: CGFloat { TrackRowView<DragGesture>.cardHeight + Self.laneSpacing }
+    private var laneStep: CGFloat { TrackRowView<DragGesture>.cardHeight(simple: model.isSimple) + Self.laneSpacing }
 
     /// Lanes as separate cards. Press and hold a card, then drag it up or down
     /// to reorder, or onto the bin that appears at the bottom to delete it
@@ -192,7 +198,7 @@ struct ProjectView: View {
                 }
 
                 if model.visibleTrackCount < Project.trackCount {
-                    AddTrackButton(nextNumber: model.visibleTrackCount + 1) { kind in model.addTrack(kind: kind) }
+                    AddTrackButton(nextNumber: model.visibleTrackCount + 1, audioOnly: model.isSimple) { kind in model.addTrack(kind: kind) }
                         .disabled(model.isRecording || model.isSaving)
                         .opacity(laneDrag == nil ? 1 : 0.3)
                 }
@@ -335,7 +341,7 @@ struct ProjectView: View {
                     Label("Rename Project", systemImage: "pencil")
                 }
                 let i = model.armedTrack
-                if model.project.tracks[i].isEmpty {
+                if model.project.tracks[i].isEmpty && !model.isSimple {
                     let drums = model.project.tracks[i].isDrums
                     Button {
                         model.setKind(i, drums ? .audio : .drums)
@@ -363,6 +369,8 @@ struct ProjectView: View {
                     set: { simple in
                         if !simple {
                             model.switchToFullMode()
+                        } else if model.simpleModeBlockedByDrums {
+                            showingDrumsBlockSimple = true
                         } else if model.simpleModeResetsSettings {
                             confirmingSimpleMode = true
                         } else {
@@ -446,15 +454,40 @@ struct TrackBinDropZone: View {
 struct AddTrackButton: View {
     let nextNumber: Int
     var height: CGFloat = 52
+    /// Simple projects: tapping adds an audio track straight away.
+    var audioOnly = false
     let action: (TrackKind) -> Void
 
-    init(nextNumber: Int, height: CGFloat = 52, action: @escaping (TrackKind) -> Void) {
+    init(nextNumber: Int, height: CGFloat = 52, audioOnly: Bool = false, action: @escaping (TrackKind) -> Void) {
         self.nextNumber = nextNumber
         self.height = height
+        self.audioOnly = audioOnly
         self.action = action
     }
 
     var body: some View {
+        if audioOnly {
+            Button { action(.audio) } label: { plus }
+                .buttonStyle(.plain)
+                .foregroundStyle(Color.accentColor)
+                .accessibilityLabel("Add Track \(nextNumber)")
+        } else {
+            menu
+        }
+    }
+
+    private var plus: some View {
+        Image(systemName: "plus")
+            .font(.title3.weight(.semibold))
+            .frame(maxWidth: .infinity, minHeight: height)
+            .background(
+                RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
+                    .strokeBorder(Color.secondary.opacity(0.35), style: StrokeStyle(lineWidth: 1.5, dash: [6, 5]))
+            )
+            .contentShape(Rectangle())
+    }
+
+    private var menu: some View {
         Menu {
             Button {
                 action(.audio)
@@ -467,14 +500,7 @@ struct AddTrackButton: View {
                 Label("Drum Track", systemImage: "square.grid.3x2")
             }
         } label: {
-            Image(systemName: "plus")
-                .font(.title3.weight(.semibold))
-                .frame(maxWidth: .infinity, minHeight: height)
-                .background(
-                    RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
-                        .strokeBorder(Color.secondary.opacity(0.35), style: StrokeStyle(lineWidth: 1.5, dash: [6, 5]))
-                )
-                .contentShape(Rectangle())
+            plus
         }
         .buttonStyle(.plain)
         .foregroundStyle(Color.accentColor)

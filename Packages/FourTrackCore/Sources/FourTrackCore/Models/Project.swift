@@ -169,8 +169,8 @@ public struct Project: Codable, Identifiable, Equatable, Sendable {
 
 /// How much of the app a project shows.
 public enum ProjectMode: String, Codable, Sendable {
-    /// Just recording: tracks, drums (Studio · Tight, with pad volume and tone),
-    /// Clean Up, export. No mixer, mute/solo, metronome or quantize.
+    /// Just recording audio: tracks with a volume bar and Clean Up, export.
+    /// No drum tracks, mixer, mute/solo, metronome or quantize.
     case simple
     /// Everything.
     case full
@@ -178,30 +178,30 @@ public enum ProjectMode: String, Codable, Sendable {
 
 extension Project {
     /// True when the project uses something Simple mode hides, so switching back
-    /// to Simple would hide settings that still change the sound.
+    /// to Simple would hide settings that still change the sound. Volume and
+    /// Clean Up are part of Simple mode.
     public var usesFullModeFeatures: Bool {
         if masterVolume != MacroCurves.volumeUnitySlider || metronome.enabled { return true }
         for t in tracks {
             if t.mute || t.solo || t.devOverrides != nil { return true }
-            if t.volume != MacroCurves.volumeUnitySlider || t.eqLow != 0 || t.eqMid != 0 || t.eqHigh != 0 { return true }
+            if t.eqLow != 0 || t.eqMid != 0 || t.eqHigh != 0 { return true }
             if t.compressor != Track.defaultCompressor || t.space != 0 || t.warmth != 0 { return true }
-            if t.isDrums {
-                if t.drumKit != .studioTight || t.quantize.enabled { return true }
-                if t.padSettings.contains(where: { $0.tune != 0 || $0.decay < 1 }) { return true }
-            }
+            if t.isDrums { return true }
         }
         return false
     }
-}
 
-extension Project {
+    /// Drum tracks with something recorded on them. Simple mode has no drums,
+    /// so these have to be deleted before a project can switch to Simple.
+    public var drumTracksWithTakes: [Int] {
+        visibleLanes.filter { tracks[$0].isDrums && (!tracks[$0].isEmpty || !tracks[$0].drumHits.isEmpty) }
+    }
+
     /// Turns off everything Simple mode hides, so switching to Simple can't
-    /// leave hidden settings changing the sound. Clean Up, pad volume and pad
-    /// tone are part of Simple mode and stay. Returns the drum tracks whose
-    /// sound changed (they need re-rendering).
-    @discardableResult
-    public mutating func resetFullModeFeatures() -> [Int] {
-        var changedDrums: [Int] = []
+    /// leave hidden settings changing the sound. Volume and Clean Up stay.
+    /// Empty drum tracks become audio tracks; call only when
+    /// `drumTracksWithTakes` is empty.
+    public mutating func resetFullModeFeatures() {
         masterVolume = MacroCurves.volumeUnitySlider
         metronome.mode = .off
         for i in tracks.indices {
@@ -209,24 +209,31 @@ extension Project {
             t.mute = false
             t.solo = false
             t.devOverrides = nil
-            t.volume = MacroCurves.volumeUnitySlider
             t.eqLow = 0; t.eqMid = 0; t.eqHigh = 0
             t.compressor = Track.defaultCompressor
             t.space = 0
             t.warmth = 0
-            if t.isDrums {
-                let before = (t.drumKit, t.quantize, t.padSettings)
-                t.drumKit = .studioTight
-                t.quantize.enabled = false
-                for p in t.padSettings.indices {
-                    t.padSettings[p].tune = 0
-                    t.padSettings[p].decay = 1
-                }
-                if before.0 != t.drumKit || before.1 != t.quantize || before.2 != t.padSettings { changedDrums.append(i) }
+            if t.isDrums && t.isEmpty && t.drumHits.isEmpty {
+                t.kind = .audio
+                if t.name == "Drums" { t.name = "Track \(i + 1)" }
             }
             tracks[i] = t
         }
-        return changedDrums
+    }
+
+    /// Brings a project saved by an earlier version in line with today's
+    /// Simple mode: a Simple project that already has drum takes becomes Full
+    /// (so nothing is lost); otherwise its empty drum tracks become audio tracks.
+    public mutating func migrateSimpleMode() {
+        guard mode == .simple else { return }
+        if !drumTracksWithTakes.isEmpty {
+            mode = .full
+            return
+        }
+        for i in tracks.indices where tracks[i].isDrums && tracks[i].isEmpty && tracks[i].drumHits.isEmpty {
+            tracks[i].kind = .audio
+            if tracks[i].name == "Drums" { tracks[i].name = "Track \(i + 1)" }
+        }
     }
 }
 

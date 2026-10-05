@@ -3,7 +3,8 @@ import FourTrackCore
 
 /// One track as an iOS-style card: name, M/S and the Cleanup pill on the
 /// left, waveform with the playhead on the right. Tap the card to arm it;
-/// drag the waveform sideways to scrub.
+/// drag the waveform sideways to scrub. In Simple projects the card has no
+/// M/S and a volume bar runs along its bottom instead.
 struct TrackRowView<Scrub: Gesture>: View {
     @Bindable var model: ProjectViewModel
     let index: Int
@@ -11,20 +12,27 @@ struct TrackRowView<Scrub: Gesture>: View {
     @State private var renaming = false
     @State private var draftName = ""
 
-    static var cardHeight: CGFloat { 112 }
+    static func cardHeight(simple: Bool) -> CGFloat { simple ? 136 : 112 }
 
     private var track: Track { model.project.tracks[index] }
     private var isArmed: Bool { model.armedTrack == index }
     private var isRecordingHere: Bool { model.isRecording && isArmed }
 
     var body: some View {
-        HStack(spacing: 12) {
-            controls
-                .frame(width: 92, alignment: .leading)
-            waveform
+        VStack(spacing: 0) {
+            HStack(spacing: 12) {
+                controls
+                    .frame(width: 92, alignment: .leading)
+                waveform
+            }
+            if model.isSimple {
+                volumeBar
+            }
         }
-        .padding(12)
-        .frame(height: Self.cardHeight)
+        .padding(.horizontal, 12)
+        .padding(.top, 12)
+        .padding(.bottom, model.isSimple ? 2 : 12)
+        .frame(height: Self.cardHeight(simple: model.isSimple))
         .background(
             RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous)
                 .fill(Color(uiColor: .secondarySystemGroupedBackground))
@@ -43,6 +51,26 @@ struct TrackRowView<Scrub: Gesture>: View {
             Button("Cancel", role: .cancel) {}
             Button("Save") { model.rename(track: index, to: draftName) }
         }
+    }
+
+    /// Simple mode's only mix control: the track's volume, full width.
+    private var volumeBar: some View {
+        HStack(spacing: 8) {
+            Image(systemName: "speaker.fill")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+                .accessibilityHidden(true)
+            VolumeFader(label: "\(track.name) Volume", value: Binding(
+                get: { track.volume },
+                set: { model.setVolume(index, $0) }
+            ))
+            Text(SliderSpeech.shortDB(MacroCurves.volumeDB(track.volume)))
+                .font(.caption.monospacedDigit())
+                .foregroundStyle(.secondary)
+                .frame(width: 48, alignment: .trailing)
+                .accessibilityHidden(true)
+        }
+        .frame(height: 44)
     }
 
     private func arm() {
@@ -123,11 +151,7 @@ struct TrackRowView<Scrub: Gesture>: View {
                 }
             }
 
-            if track.isDrums && model.isSimple {
-                Label("Drums", systemImage: "square.grid.3x2.fill")
-                    .font(.caption.weight(.semibold))
-                    .foregroundStyle(.secondary)
-            } else if track.isDrums {
+            if track.isDrums {
                 KitMenu(kit: track.drumKit) { model.setDrumKit(index, $0) }
                     .disabled(model.isRecording)
             } else {

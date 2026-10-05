@@ -70,8 +70,8 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 ## Simple and Full mode (owner request)
 
 - **Full is the default (owner request).** The New Project bubble has a **Full | Simple** switch (Full selected); the big record button makes a Full project. Projects in Simple mode show a small "Simple" tag in the list.
-- **Simple mode:** record, play, scrub, name/reorder/delete tracks, add audio or drum tracks, Clean Up, undo/redo and export. Drum tracks use Studio · Tight only, and holding a pad offers just Volume and Tone. Hidden: the Record/Mixing switch and mixer, M/S, the metronome (and its project settings), quantize, other kits and the Tune/Decay pad controls.
-- **⋯ → Simple Mode is a toggle, both ways, any time.** Turning it off goes straight to Full. Turning it on when the project uses something Simple hides first asks, then resets those settings (mixer to defaults, mute/solo off, metronome off, quantize off, Studio · Tight, pad tune and decay reset; Clean Up, pad volume and tone stay) and re-renders affected drum tracks, as one undo step, so no hidden setting keeps changing the sound. Older projects open in Full mode.
+- **Simple mode:** record, play, scrub, name/reorder/delete audio tracks, a volume bar per track, Clean Up, undo/redo and export. No drum tracks (see "Simple mode: audio only" below). Hidden: the Record/Mixing switch and mixer, M/S, the metronome (and its project settings) and quantize.
+- **⋯ → Simple Mode is a toggle, both ways, any time.** Turning it off goes straight to Full. Turning it on when the project uses something Simple hides first asks, then resets those settings (tone and effects to defaults, mute/solo off, metronome off; volume and Clean Up stay) as one undo step, so no hidden setting keeps changing the sound. Older projects open in Full mode.
 
 ## Top bar (owner request)
 
@@ -151,6 +151,14 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
   - **Beat lines behind the waveforms (owner request, may be removed):** whenever the metronome is Click or Silent, every lane (record, drum and mixing screens) draws a faint hairline per bar and a fainter, shorter one per beat, scrolling with the audio. Beat lines drop out below 9 pt spacing so fast tempos stay calm. Turning the metronome Off removes them; simple projects never show them. While playing they follow the click's live grid (so tempo changes bend them), and when stopped they show the timeline-0 grid the next play starts on.
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
+
+## Simple mode: audio only (owner request)
+
+- Simple projects have **only audio tracks**. Each track card shows its name, Clean Up and a **volume bar along the bottom** (same fader as the mixer: unity detent at 0 dB, double tap resets). Nothing else: no drums, mixer, mute/solo, metronome or quantize.
+- "+" adds an audio track straight away (no Audio/Drum menu), and ⋯ has no "Make a Drum Track".
+- **Switching to Simple** resets the hidden settings (tone, compressor, space, warmth, mute/solo, metronome, master volume) after a confirmation, keeps volume and Clean Up, and turns empty drum tracks into audio tracks. If a drum track has a take, the switch is refused with "Delete Drum Tracks First", rather than silently deleting a part.
+- Drum tracks in the project's Recently Deleted can't be recovered while the project is Simple (the message points to Full mode).
+- **Older Simple projects that already have drum takes open as Full** so nothing is lost; their empty drum tracks become audio tracks otherwise.
 
 ## Feel and intuitiveness pass
 

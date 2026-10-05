@@ -216,38 +216,52 @@ final class ProjectModeTests: XCTestCase {
         p.tracks[0].mute = true
         p.tracks[0].eqLow = 0.4
         p.tracks[0].cleanup = 0.6
+        p.tracks[0].volume = 0.5
         p.metronome.mode = .on
         p.tracks[1].kind = .drums
-        p.tracks[1].drumKit = .eightOhEight
-        p.tracks[1].quantize.enabled = true
-        p.tracks[1].padSettings[0] = PadSettings(volume: 0.5, tune: 0.3, decay: 0.2, tone: 0.4)
+        p.tracks[1].name = "Drums"
+        p.visibleTrackCount = 2
         XCTAssertTrue(p.usesFullModeFeatures)
-        XCTAssertEqual(p.resetFullModeFeatures(), [1])
+        XCTAssertTrue(p.drumTracksWithTakes.isEmpty, "an empty drum track has no takes")
+        p.resetFullModeFeatures()
         XCTAssertFalse(p.usesFullModeFeatures)
         XCTAssertEqual(p.tracks[0].cleanup, 0.6, "Clean Up stays")
-        XCTAssertEqual(p.tracks[1].padSettings[0].volume, 0.5, "pad volume stays")
-        XCTAssertEqual(p.tracks[1].padSettings[0].tone, 0.4, "pad tone stays")
+        XCTAssertEqual(p.tracks[0].volume, 0.5, "volume stays")
+        XCTAssertEqual(p.tracks[1].kind, .audio, "empty drum track becomes audio")
+        XCTAssertEqual(p.tracks[1].name, "Track 2")
     }
 
     func testFullFeatureDetection() {
         var p = Project(name: "P", mode: .full)
         XCTAssertFalse(p.usesFullModeFeatures)
         p.tracks[0].cleanup = 0.6        // Clean Up is part of Simple mode
-        XCTAssertFalse(p.usesFullModeFeatures)
-        p.tracks[1].kind = .drums
-        p.tracks[1].padSettings[0].volume = 0.5
-        p.tracks[1].padSettings[0].tone = -0.4   // pad volume and tone are Simple too
+        p.tracks[0].volume = 0.4         // and so is volume
         XCTAssertFalse(p.usesFullModeFeatures)
         for change in [{ (q: inout Project) in q.tracks[0].mute = true },
                        { $0.tracks[2].eqLow = 0.2 },
                        { $0.metronome.mode = .visual },
-                       { $0.tracks[1].quantize.enabled = true },
-                       { $0.tracks[1].drumKit = .eightOhEight },
-                       { $0.tracks[1].padSettings[2].tune = 0.5 }] {
+                       { $0.tracks[1].kind = .drums }] {
             var q = p
             change(&q)
             XCTAssertTrue(q.usesFullModeFeatures)
         }
+    }
+
+    func testDrumTakesAndMigration() {
+        var p = Project(name: "P", mode: .simple)
+        p.visibleTrackCount = 2
+        p.tracks[1].kind = .drums
+        p.tracks[1].name = "Drums"
+        var empty = p
+        empty.migrateSimpleMode()
+        XCTAssertEqual(empty.mode, .simple)
+        XCTAssertEqual(empty.tracks[1].kind, .audio)
+
+        p.tracks[1].drumHits = [DrumHit(time: 0.5, pad: 0, velocity: 0.9)]
+        XCTAssertEqual(p.drumTracksWithTakes, [1])
+        p.migrateSimpleMode()
+        XCTAssertEqual(p.mode, .full, "a Simple project with drum takes keeps them by becoming Full")
+        XCTAssertEqual(p.tracks[1].kind, .drums)
     }
 }
 

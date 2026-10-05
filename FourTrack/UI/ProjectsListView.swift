@@ -254,7 +254,7 @@ struct NewProjectBubble: View {
                         Text("Simple").tag(ProjectMode.simple)
                     }
                     .pickerStyle(.segmented)
-                    Text(mode == .full ? "Everything: mixer, metronome, quantize, all drum kits." : "Just recording, drums and Clean Up. Switch any time from ⋯.")
+                    Text(mode == .full ? "Everything: drums, mixer, metronome, quantize." : "Just audio tracks, volume and Clean Up. Switch any time from ⋯.")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
