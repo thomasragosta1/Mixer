@@ -126,7 +126,16 @@ public enum DrumKit: String, Codable, CaseIterable, Sendable, Identifiable {
 
     /// One-shot for a pad at full velocity. `variant` picks the recorded take
     /// (wrapped to `variantCount`). Falls back to synthesis if a sample is missing.
+    /// Balanced against the rest of the kit (`DrumLevels`).
     public func sample(pad: Int, variant: Int = 0, sampleRate: Double = CAFFormat.defaultSampleRate) -> [Float] {
+        let v = variant % max(variantCount, 1)
+        let raw = rawSample(pad: pad, variant: v, sampleRate: sampleRate)
+        let g = DrumLevels.gain(kit: self, pad: pad, variant: v, sampleRate: sampleRate) { raw }
+        return g == 1 ? raw : raw.map { $0 * g }
+    }
+
+    /// The one-shot as recorded or synthesized, before balancing.
+    func rawSample(pad: Int, variant: Int, sampleRate: Double) -> [Float] {
         if sampleFolder != nil, let s = DrumSamples.load(kit: self, pad: pad, variant: variant % max(variantCount, 1), sampleRate: sampleRate) {
             return s
         }
@@ -154,6 +163,7 @@ public enum DrumSamples {
             defer { lock.unlock() }
             _directory = newValue
             cache = [:]
+            DrumLevels.resetCache()
         }
     }
 
@@ -240,8 +250,8 @@ public enum DrumVoicing {
 
 /// Turns a list of hits into a track's audio.
 public enum DrumRenderer {
-    /// Bumped when rendering changes audibly. 1: choke groups.
-    public static let version = 1
+    /// Bumped when rendering changes audibly. 1: choke groups. 2: balanced pad levels.
+    public static let version = 2
 
     /// Replaces the hits in [start, end) with `newHits` (tape-style overwrite)
     /// and returns the merged, time-sorted list.

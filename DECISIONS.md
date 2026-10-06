@@ -154,6 +154,11 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
 
+## Drum pads balanced by loudness (owner: some drums far too loud by default)
+
+- Every sample shipped peak-normalized (all peaks at 0.89), which made long and bright sounds far louder than kicks: in Studio Tight the crash measured ~6 dB over the kick, in the 808 kit the kick ~10 dB over the rim. Pads are now balanced by measured loudness (`DrumLevels`): ITU-R BS.1770 K-weighting (the LUFS curve) over each one-shot's loudest 150 ms, then a gain to a target for its role, relative to the kit's kick: snare -1 dB, clap -3, toms/congas/bongos -3, rim -6, crash -6, open hat -7, cowbell/woodblock -7, closed hat -8, ride -8, tambourine -8, shaker -9. Every kit's kick aims at the same loudness, so switching kits doesn't jump in level. Peaks stay at or under 0.9, so a quiet sample is only raised as far as its peak allows (and the rest of that kit follows it). Each recorded take is balanced on its own, so alternating takes match.
+- Applied where samples are loaded, so the live pads and the recorded track match. Pad Volume in the hold bubble still adjusts from there. Existing drum takes re-render once (renderer version 2).
+
 ## Drum voices choke like real drums (owner report: 808 kick distorting on repeats)
 
 - Repeated hits used to stack: every hit rang out in full on its own voice, so a quick run of 808 kicks (long sine tails) piled up, phased against each other and drove the clipper. Now, live and in the recorded track alike (`DrumVoicing`), **hitting a drum again fades out its previous ring over 4 ms** (no click), finishing just before the new hit starts so the two never overlap (an 808 tail and a new attack in phase would otherwise peak far above either; live, the new note waits those 4 ms), the way a re-struck drum or a drum machine behaves, and **the closed and open hi-hat choke each other**. Different drums still overlap freely.

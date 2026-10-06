@@ -22,7 +22,8 @@ final class DrumTests: XCTestCase {
             XCTAssertEqual(kit.padNames.count, DrumKit.padCount)
             for pad in 0..<DrumKit.padCount {
               for variant in 0..<kit.variantCount {
-                let s = kit.sample(pad: pad, variant: variant)
+                // The source sample (balancing then sets its level in the kit).
+                let s = kit.rawSample(pad: pad, variant: variant, sampleRate: 48_000)
                 XCTAssertGreaterThan(s.count, 1_000, "\(kit) pad \(pad) too short")
                 XCTAssertLessThan(s.count, 48_000 * 4, "\(kit) pad \(pad) too long")
                 let peak = s.map { abs($0) }.max() ?? 0
@@ -191,5 +192,24 @@ final class DrumTests: XCTestCase {
         XCTAssertEqual(DrumVoicing.chokeGain(frame: 0, chokeFrame: 10, fadeFrames: 384), 1)
         XCTAssertLessThan(DrumVoicing.chokeGain(frame: 10, chokeFrame: 10, fadeFrames: 384), 1)
         XCTAssertEqual(DrumVoicing.chokeGain(frame: 10 + 384, chokeFrame: 10, fadeFrames: 384), 0)
+    }
+
+    /// Every pad sits at its role's level relative to the kit's kick (or below,
+    /// when its peak doesn't allow raising it), and nothing comes near clipping.
+    func testPadsAreBalancedByLoudness() {
+        for kit in DrumKit.allCases {
+            let kick = DrumLevels.loudness(kit.sample(pad: 0), sampleRate: 48_000)
+            for pad in 0..<DrumKit.padCount {
+                for v in 0..<kit.variantCount {
+                    let s = kit.sample(pad: pad, variant: v)
+                    let loud = DrumLevels.loudness(s, sampleRate: 48_000)
+                    let target = kick + DrumLevels.targetOffset(kit: kit, pad: pad)
+                    XCTAssertLessThanOrEqual(loud, target + 0.6, "\(kit) \(kit.padNames[pad]) v\(v) too loud")
+                    XCTAssertLessThanOrEqual(s.map(abs).max() ?? 0, 0.901, "\(kit) \(kit.padNames[pad]) peak")
+                }
+            }
+            // Cymbals and hats sit well under the kick, snare near it.
+            XCTAssertLessThan(DrumLevels.targetOffset(kit: kit, pad: kit.padNames.firstIndex(of: "Closed Hat") ?? 5), -5)
+        }
     }
 }
