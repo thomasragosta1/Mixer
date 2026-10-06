@@ -27,7 +27,7 @@ struct SettingsView: View {
                 } header: {
                     Text("Recording Without Headphones")
                 } footer: {
-                    Text("When you record through the iPhone speaker, the tracks you hear (and the click) are removed from the microphone, so only your new part is recorded. It slightly changes the microphone's tone; with headphones it isn't used.")
+                    Text("When you record through the iPhone speaker while other tracks or the click play, they're removed from the microphone so only your new part is recorded. It's made for voices and can colour instruments like piano; turn it off (or use headphones) for the most natural sound. Takes with nothing playing always use the plain microphone.")
                 }
 
                 if settings.developerMode {

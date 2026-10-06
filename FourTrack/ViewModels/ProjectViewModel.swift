@@ -384,11 +384,24 @@ final class ProjectViewModel {
         startTicker()
     }
 
-    /// Recording through the iPhone speaker: Apple's echo cancellation keeps the
-    /// playing tracks and the click out of the take, like Voice Memos layering.
-    /// Headphones don't need it, so their tone stays untouched.
+    /// Recording through the iPhone speaker while something plays back: Apple's
+    /// echo cancellation keeps the other tracks and the click out of the take.
+    /// It's voice-call processing and colours instruments (piano comes out
+    /// pumping and harsh), so it's only used when there is something to
+    /// cancel. A take with nothing playing, or on headphones, gets the plain
+    /// microphone, the same as Voice Memos.
     private func wantsEchoCancellation(_ route: AudioRouteKind) -> Bool {
-        settings.speakerEchoCancellation && route == .speaker
+        settings.speakerEchoCancellation && route == .speaker && backingIsAudible
+    }
+
+    /// Whether anything will be heard through the speaker during a take on the
+    /// armed track: another audible track with audio, or the click.
+    private var backingIsAudible: Bool {
+        let otherAudio = project.visibleLanes.contains { i in
+            i != armedTrack && !project.tracks[i].isEmpty && project.isAudible(i)
+        }
+        let click = metronomeIfEnabled.map { $0.volume > 0 } ?? false
+        return otherAudio || click
     }
 
     /// How far to move a take earlier. Echo cancellation adds its own delay,
@@ -421,6 +434,9 @@ final class ProjectViewModel {
         finalize(sink: result.sink, plan: result.plan)
         playhead = stopSeconds
         engine.seek(to: playhead)
+        // Echo cancellation is only for the overdub itself: playback and the
+        // next take go back to the plain microphone and output.
+        engine.disableVoiceProcessingIfIdle()
         syncClock()
     }
 
