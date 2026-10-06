@@ -15,6 +15,12 @@ public enum DrumLevels {
     /// Never boost or cut a sample by more than this.
     static let maxAdjustDB = 18.0
 
+    /// Extra level for a kit's kick over the rest of its kit. The 808 kick is
+    /// mostly low end, which measures louder than it sounds on phone speakers.
+    public static func kickEmphasis(kit: DrumKit) -> Double {
+        kit == .eightOhEight ? 5 : 0
+    }
+
     /// Target loudness for a pad, relative to the kick, in dB.
     public static func targetOffset(kit: DrumKit, pad: Int) -> Double {
         let name = kit.padNames[pad]
@@ -47,10 +53,15 @@ public enum DrumLevels {
         // The kit's kick sets the reference: wherever it actually lands (a
         // quiet kick can only be raised as far as its peak allows), the other
         // pads sit relative to it.
-        let reference = pad == 0
-            ? kickLoudness
-            : landedLoudness(kit.rawSample(pad: 0, variant: 0, sampleRate: sampleRate), target: kickLoudness, sampleRate: sampleRate)
-        let g = gain(for: raw(), target: reference + targetOffset(kit: kit, pad: pad), sampleRate: sampleRate)
+        let emphasis = kickEmphasis(kit: kit)
+        let target: Double
+        if pad == 0 {
+            target = kickLoudness + emphasis
+        } else {
+            let kick = landedLoudness(kit.rawSample(pad: 0, variant: 0, sampleRate: sampleRate), target: kickLoudness + emphasis, sampleRate: sampleRate)
+            target = kick - emphasis + targetOffset(kit: kit, pad: pad)
+        }
+        let g = gain(for: raw(), target: target, sampleRate: sampleRate)
         lock.lock()
         gains[key] = g
         lock.unlock()

@@ -203,7 +203,7 @@ final class DrumTests: XCTestCase {
                 for v in 0..<kit.variantCount {
                     let s = kit.sample(pad: pad, variant: v)
                     let loud = DrumLevels.loudness(s, sampleRate: 48_000)
-                    let target = kick + DrumLevels.targetOffset(kit: kit, pad: pad)
+                    let target = pad == 0 ? kick : kick - DrumLevels.kickEmphasis(kit: kit) + DrumLevels.targetOffset(kit: kit, pad: pad)
                     XCTAssertLessThanOrEqual(loud, target + 0.6, "\(kit) \(kit.padNames[pad]) v\(v) too loud")
                     XCTAssertLessThanOrEqual(s.map(abs).max() ?? 0, 0.901, "\(kit) \(kit.padNames[pad]) peak")
                 }
@@ -211,5 +211,15 @@ final class DrumTests: XCTestCase {
             // Cymbals and hats sit well under the kick, snare near it.
             XCTAssertLessThan(DrumLevels.targetOffset(kit: kit, pad: kit.padNames.firstIndex(of: "Closed Hat") ?? 5), -5)
         }
+    }
+
+    /// The 808 kick must carry on small speakers: real energy above the sub
+    /// range (harmonics and click), not just a 40-50 Hz sine.
+    func test808KickHasAudibleHarmonics() {
+        let s = DrumKit.eightOhEight.rawSample(pad: 0, variant: 0, sampleRate: 48_000)
+        var hp = Biquad.highPass(frequency: 150, sampleRate: 48_000)
+        let total = s.prefix(9_600).reduce(0.0) { $0 + Double($1 * $1) }
+        let upper = s.prefix(9_600).reduce(0.0) { acc, x in let y = hp.process(x); return acc + Double(y * y) }
+        XCTAssertGreaterThan(upper / total, 0.05, "808 kick is almost all sub bass")
     }
 }

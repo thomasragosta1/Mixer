@@ -250,8 +250,9 @@ public enum DrumVoicing {
 
 /// Turns a list of hits into a track's audio.
 public enum DrumRenderer {
-    /// Bumped when rendering changes audibly. 1: choke groups. 2: balanced pad levels.
-    public static let version = 2
+    /// Bumped when rendering changes audibly. 1: choke groups. 2: balanced pad
+    /// levels. 3: saturated 808 kick, lifted 5 dB.
+    public static let version = 3
 
     /// Replaces the hits in [start, end) with `newHits` (tape-style overwrite)
     /// and returns the merged, time-sorted list.
@@ -363,7 +364,7 @@ enum DrumSynth {
             }
         case .eightOhEight:
             switch pad {
-            case 0: return kick(sr, start: 95, end: 44, pitchDecay: 0.06, decay: 0.95, click: 0.08, noise: &noise)
+            case 0: return kick808(sr, noise: &noise)
             case 1: return snare(sr, tone: 238, toneDecay: 0.06, noiseDecay: 0.13, noiseLevel: 0.55, bright: 4_500, secondTone: 476, noise: &noise)
             case 2: return clap(sr, noise: &noise)
             case 3: return hat(sr, decay: 0.05, hp: 7_500, metallic: true, noise: &noise)
@@ -400,6 +401,32 @@ enum DrumSynth {
             var s = Float(sin(phase) * amp)
             if t < 0.004 { s += click * noise.next() * Float(1 - t / 0.004) }
             out[i] = s * 0.95
+        }
+        return finish(out, sr)
+    }
+
+    /// An 808 kick the way it's used in records: a sine that drops from 160 Hz
+    /// to a 48 Hz boom, driven into soft saturation so its harmonics carry on
+    /// small speakers (a pure sub sine all but vanishes on a phone), plus a
+    /// short beater click so every hit has a clear front.
+    static func kick808(_ sr: Double, noise: inout Noise) -> [Float] {
+        let decay = 0.65
+        let n = Int(sr * decay * 4)
+        var out = [Float](repeating: 0, count: n)
+        var phase = 0.0
+        let drive = 4.0
+        let norm = tanh(drive)
+        var clickTone = Biquad.highPass(frequency: 1_200, sampleRate: sr)
+        for i in 0..<n {
+            let t = Double(i) / sr
+            let f = 48 + (160 - 48) * exp(-t / 0.028)
+            phase += 2 * .pi * f / sr
+            let body = sin(phase) * exp(-t / decay)
+            var s = Float(tanh(drive * body) / norm)
+            if t < 0.006 {
+                s += 0.35 * clickTone.process(noise.next()) * Float(1 - t / 0.006)
+            }
+            out[i] = s * 0.9
         }
         return finish(out, sr)
     }
