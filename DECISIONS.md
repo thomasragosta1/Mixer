@@ -208,3 +208,7 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 ## Not verified here
 
 This environment has no Xcode or iOS SDK. The core package is compiled and its tests run on Linux (Swift 5.10). The app target was only syntax-checked, so its first build in Xcode may need small fixes. Everything in §11 that needs a device is still to be checked: latency ≤ 5 ms, no dropouts while playing three tracks and recording a fourth, a phone call during recording, how Cleanup sounds on guitar, and echo cancellation quality.
+
+## Lock screen controls (owner request)
+
+- The open project shows on the lock screen and in Control Center (title = project name; "Four-Track", or "Recording" during a take). Play, pause, skip back / forward 15 s and dragging the progress bar drive the transport while the phone is locked; the app already keeps playing in the background (audio background mode). Pause during a take stops recording, keeping the take. Skips and scrubbing are ignored while recording. The controls are registered when a project opens and removed when it closes.

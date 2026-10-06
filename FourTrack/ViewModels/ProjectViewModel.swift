@@ -19,8 +19,12 @@ final class ProjectViewModel {
     private(set) var playhead: Double = 0
     /// Smoothly animatable playhead for the waveforms.
     private(set) var clock = PlayheadClock(seconds: 0, date: Date(), running: false)
-    private(set) var isPlaying = false
-    private(set) var isRecording = false
+    private(set) var isPlaying = false {
+        didSet { if isPlaying != oldValue { updateNowPlaying() } }
+    }
+    private(set) var isRecording = false {
+        didSet { if isRecording != oldValue { updateNowPlaying() } }
+    }
     /// True during a count-in, before the take starts.
     private(set) var isCountingIn = false
     /// Undo / redo availability and what the next step is, for the toolbar.
@@ -113,6 +117,7 @@ final class ProjectViewModel {
         AudioSessionManager.shared.onEvent = { [weak self] event in self?.handleSessionEvent(event) }
         recoverPendingRecording()
         developerModeChanged()
+        startNowPlaying()
         // Drum takes from before choke groups: re-render once so repeated hits
         // stop piling up (the hits themselves are unchanged).
         for i in project.visibleLanes where project.tracks[i].needsDrumRerender {
@@ -149,9 +154,60 @@ final class ProjectViewModel {
         saveNow()
         ticker?.cancel()
         engine.teardown()
+        nowPlaying.deactivate()
         AudioSessionManager.shared.onEvent = nil
         history.clear()
         isClosed = true
+    }
+
+    // MARK: Lock screen
+
+    @ObservationIgnored private let nowPlaying = NowPlaying()
+
+    private func startNowPlaying() {
+        nowPlaying.activate(NowPlaying.Handlers(
+            play: { [weak self] in
+                guard let self, !self.isRecording else { return false }
+                if !self.isPlaying { self.play() }
+                return self.isPlaying
+            },
+            pause: { [weak self] in
+                guard let self else { return false }
+                if self.isRecording { self.stopRecording() } else if self.isPlaying { self.pause() }
+                return true
+            },
+            toggle: { [weak self] in
+                guard let self else { return false }
+                self.togglePlay()
+                return true
+            },
+            skip: { [weak self] seconds in
+                guard let self, !self.isRecording else { return false }
+                self.skip(by: seconds)
+                return true
+            },
+            seek: { [weak self] seconds in
+                guard let self, !self.isRecording else { return false }
+                self.seek(to: seconds)
+                return true
+            }
+        ))
+        updateNowPlaying()
+    }
+
+    /// Keeps the lock screen player in step with the transport.
+    private func updateNowPlaying() {
+        guard isActive, !isClosed else { return }
+        let running = isPlaying || isRecording
+        // During a count-in the transport hasn't reached its start yet.
+        let elapsed = max(0, running ? engine.currentSeconds : playhead)
+        nowPlaying.update(
+            title: project.name,
+            duration: max(duration, elapsed),
+            elapsed: elapsed,
+            playing: isPlaying,
+            recording: isRecording
+        )
     }
 
     func enteredBackground() {
@@ -227,6 +283,7 @@ final class ProjectViewModel {
         }
         syncClock()
         scheduleSave()
+        updateNowPlaying()
     }
 
     // Scrubbing: dragging the waveform moves the playhead like Voice Memos.
@@ -252,6 +309,7 @@ final class ProjectViewModel {
         guard !isRecording else { return }
         project.playheadSeconds = playhead
         scheduleSave()
+        updateNowPlaying()
         if scrubWasPlaying {
             scrubWasPlaying = false
             play()

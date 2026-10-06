@@ -11,6 +11,7 @@
 		0DE45F691F0FB738A72EFF2B /* MetronomeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4ED446E366C7244DB8683CA /* MetronomeBar.swift */; };
 		0DF261BDDA4E3910193DFC34 /* Acknowledgements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3746E1B15282204E9A57CFD1 /* Acknowledgements.swift */; };
 		10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */; };
+		11916F43D3B1AE8313DBDF13 /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AD077F4E8E623D12C36E0 /* NowPlaying.swift */; };
 		165BE017B7E30BED6207A9B5 /* PadSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CA97785154509CDEAC5C9 /* PadSampler.swift */; };
 		36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30AF566B98693F94AB8FE8 /* TransportView.swift */; };
 		36CE3A42675730887D90076C /* DrumPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */; };
@@ -104,6 +105,7 @@
 		A6673AEBFF800A2914F5FA1C /* Exporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exporter.swift; sourceTree = "<group>"; };
 		A73B2C8D15C308E8D8003C97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredSlider.swift; sourceTree = "<group>"; };
+		AD6AD077F4E8E623D12C36E0 /* NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlaying.swift; sourceTree = "<group>"; };
 		B8FB2B46B8C9237AB766133A /* FourTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FourTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4ED446E366C7244DB8683CA /* MetronomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeBar.swift; sourceTree = "<group>"; };
 		D0B2E7D8F476C04248424708 /* UndoHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoHistory.swift; sourceTree = "<group>"; };
@@ -257,6 +259,7 @@
 		C6FB5A630CB91C6E2BF5FCF3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				AD6AD077F4E8E623D12C36E0 /* NowPlaying.swift */,
 				9C36E6C1B68F948592E88019 /* ProjectsViewModel.swift */,
 				702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */,
 				D0B2E7D8F476C04248424708 /* UndoHistory.swift */,
@@ -427,6 +430,7 @@
 				0DE45F691F0FB738A72EFF2B /* MetronomeBar.swift in Sources */,
 				B2FDFEAD3783C4869785ED67 /* MixView.swift in Sources */,
 				F95E1D0BA028BDE6B4727856 /* MixerEngine.swift in Sources */,
+				11916F43D3B1AE8313DBDF13 /* NowPlaying.swift in Sources */,
 				165BE017B7E30BED6207A9B5 /* PadSampler.swift in Sources */,
 				66AA634E77E0C174A6981F57 /* PadSettingsSheet.swift in Sources */,
 				680F6132AC71207BA8608BD6 /* ProjectView.swift in Sources */,
