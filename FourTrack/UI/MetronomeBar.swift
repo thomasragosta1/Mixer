@@ -3,7 +3,8 @@ import UIKit
 import FourTrackCore
 
 /// The metronome, kept to one row:
-/// - the mode button cycles Click → Silent (beats shown, no sound) → Off,
+/// - the mode button cycles Click → Silent (beats shown, no sound) → Off;
+///   switching it on starts it keeping time at once, on its own or with the song,
 /// - the time signature cycles 4/4 → 3/4 → 2/4 (press and hold for more),
 /// - the arrows change the tempo by the project's step (press and hold for 1 BPM steps),
 /// - the beat lights pulse in time whenever the metronome runs.
@@ -38,7 +39,6 @@ struct MetronomeBar: View {
             TempoArrow(systemName: "chevron.right", label: "Faster") {
                 model.nudgeTempo(1, fine: $0)
             }
-            previewButton
             Spacer(minLength: 2)
             if m.enabled || model.isPreviewingClick {
                 BeatLights(
@@ -54,25 +54,6 @@ struct MetronomeBar: View {
         // Usable while recording too: switch the click on, or change tempo, mid-take.
         .disabled(model.isSaving)
         .animation(.easeOut(duration: 0.2), value: m.mode)
-    }
-
-    /// Plays the click on its own to try the tempo (not while the song plays).
-    private var previewButton: some View {
-        Button {
-            model.toggleClickPreview()
-        } label: {
-            Image(systemName: model.isPreviewingClick ? "stop.fill" : "play.fill")
-                .font(.system(size: 13, weight: .bold))
-                .foregroundStyle(model.isPreviewingClick ? Color.white : Color.accentColor)
-                .frame(width: 32, height: 32)
-                .background(Circle().fill(model.isPreviewingClick ? Color.accentColor : Color.accentColor.opacity(0.14)))
-                .contentShape(Circle())
-        }
-        .buttonStyle(.plain)
-        .disabled(model.isPlaying || model.isRecording)
-        .opacity(model.isPlaying || model.isRecording ? 0.4 : 1)
-        .accessibilityLabel(model.isPreviewingClick ? "Stop click" : "Play click")
-        .accessibilityHint("Plays the metronome on its own")
     }
 
     private var modeButton: some View {

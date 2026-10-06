@@ -57,13 +57,13 @@ final class DrumFlowUITests: XCTestCase {
         app.buttons["Time signature"].firstMatch.tap()
         app.descendants(matching: .any)["Faster"].firstMatch.tap()
         app.descendants(matching: .any)["Slower"].firstMatch.press(forDuration: 1.2)
-        // The metronome's own play button.
-        let playClick = app.buttons["Play click"].firstMatch
-        XCTAssertTrue(playClick.waitForExistence(timeout: 3))
-        playClick.tap()
+        // Turning the metronome on starts it keeping time at once; there's no
+        // separate play button any more.
+        XCTAssertFalse(app.buttons["Play click"].exists)
+        metronome.tap()                      // Click: ticking now
         sleep(1)
-        XCTAssertTrue(app.buttons["Stop click"].firstMatch.exists, "click preview didn't start")
-        app.buttons["Stop click"].firstMatch.tap()
+        XCTAssertEqual(metronome.value as? String, "Click on")
+        metronome.tap(); metronome.tap()     // Silent, then Off
 
         // Press and hold a pad: its settings bubble, an edit, then revert (asks first).
         app.buttons["Snare"].firstMatch.press(forDuration: 1.2)

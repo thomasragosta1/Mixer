@@ -37,7 +37,9 @@ final class ProjectViewModel {
     /// Beat-light clock for the click preview.
     private(set) var previewClock = PlayheadClock(seconds: 0, date: Date(), running: false)
     /// Splicing a finished take into its track.
-    private(set) var isSaving = false
+    private(set) var isSaving = false {
+        didSet { if oldValue && !isSaving { resumeClickIfWanted() } }
+    }
     var armedTrack = 0
     var mixMode = false {
         didSet {
@@ -240,6 +242,8 @@ final class ProjectViewModel {
     func play() {
         guard !isRecording, !isSaving else { return }
         stopClickPreview()
+        // With the metronome on, it keeps time again after the song stops.
+        clickWanted = !isSimple && project.metronome.enabled
         // Voice Memos behavior: at the end, play from the start.
         if playhead >= duration - 0.01 { playhead = 0 }
         guard duration > 0 else { return }
@@ -260,6 +264,7 @@ final class ProjectViewModel {
         syncClock()
         project.playheadSeconds = playhead
         scheduleSave()
+        resumeClickIfWanted()
     }
 
     func skip(by seconds: Double) {
@@ -280,6 +285,10 @@ final class ProjectViewModel {
         project.playheadSeconds = target
         if wasPlaying {
             try? engine.play(from: target, metronome: metronomeIfEnabled)
+        } else if isPreviewingClick {
+            // The free-running click picks up from the new spot's beat.
+            stopClickPreview()
+            startClickPreview()
         }
         syncClock()
         scheduleSave()
@@ -310,6 +319,10 @@ final class ProjectViewModel {
         project.playheadSeconds = playhead
         scheduleSave()
         updateNowPlaying()
+        if isPreviewingClick && !scrubWasPlaying {
+            stopClickPreview()
+            startClickPreview()
+        }
         if scrubWasPlaying {
             scrubWasPlaying = false
             play()
@@ -331,6 +344,7 @@ final class ProjectViewModel {
         isStartingRecording = true
         defer { isStartingRecording = false }
         stopClickPreview()
+        clickWanted = !isSimple && project.metronome.enabled
         // Pressing record while the song plays punches in from the live spot.
         let punch = isPlaying
         if project.tracks[armedTrack].isDrums {
@@ -1242,13 +1256,20 @@ final class ProjectViewModel {
         project.metronome = proposed
         let after = project.metronome
         scheduleSave()
+        // Turning the metronome on starts it ticking right away (heard in
+        // Click, lights only in Silent); Off stops it.
+        if after.enabled && !before.enabled { clickWanted = true }
+        if !after.enabled { clickWanted = false }
         if isPreviewingClick {
-            // Turning the metronome off ends the preview; anything else applies live.
-            if after.mode == .off && before.mode != .off {
+            if !after.enabled {
                 stopClickPreview()
             } else {
                 engine.metronome.update(settings: previewSettings)
             }
+            return
+        }
+        if !isPlaying && !isRecording {
+            resumeClickIfWanted()
             return
         }
         // While playing or recording, nothing restarts: changes apply live.
@@ -1281,28 +1302,35 @@ final class ProjectViewModel {
         (Double(engine.metronome.anchorFrame) / EngineFormat.sampleRate, engine.metronome.anchorBeat)
     }
 
-    // MARK: Click preview
+    // MARK: Free-running click
 
-    /// The metronome's own play button: the click alone, to try a tempo before
-    /// playing or recording. Silent mode previews the beat lights only.
-    func toggleClickPreview() {
-        if isPreviewingClick { stopClickPreview() } else { startClickPreview() }
-    }
+    /// The metronome keeps time on its own whenever it's on and the song isn't
+    /// playing: from the moment it's turned on, and again after a pause. It
+    /// runs on the song's beat grid from the playhead, so the beat carries on
+    /// where the song stopped, and play or record take over seamlessly.
+    @ObservationIgnored private var clickWanted = false
 
-    /// The preview clicks even if the metronome is Off; Silent stays silent.
+    /// Silent runs the same click at zero volume, so the lights keep time.
     private var previewSettings: MetronomeSettings {
         var s = project.metronome
-        if s.mode == .off { s.mode = .on }
         if s.mode == .visual { s.volume = 0 }
+        s.countInBars = 0
         return s
     }
 
+    /// Starts the free-running click if the metronome is on and nothing plays.
+    private func resumeClickIfWanted() {
+        guard clickWanted, !isSimple, project.metronome.enabled, !isPreviewingClick else { return }
+        startClickPreview()
+    }
+
     private func startClickPreview() {
-        guard !isPlaying, !isRecording, !isSaving else { return }
+        guard !isPlaying, !isRecording, !isSaving, !isClosed else { return }
         do {
-            let firstClickHost = try engine.startClickPreview(settings: previewSettings)
+            let from = playhead
+            let firstClickHost = try engine.startClickPreview(settings: previewSettings, fromSeconds: from)
             let nowHost = AVAudioTime.seconds(forHostTime: mach_absolute_time())
-            previewClock = PlayheadClock(seconds: 0, date: Date().addingTimeInterval(firstClickHost - nowHost), running: true)
+            previewClock = PlayheadClock(seconds: from, date: Date().addingTimeInterval(firstClickHost - nowHost), running: true)
             isPreviewingClick = true
         } catch {
             errorMessage = "Audio couldn't start. \(error.localizedDescription)"
@@ -1314,12 +1342,6 @@ final class ProjectViewModel {
         engine.stopClickPreview()
         isPreviewingClick = false
         previewClock = PlayheadClock(seconds: 0, date: Date(), running: false)
-    }
-
-    private func restartClickPreview() {
-        engine.stopClickPreview()
-        isPreviewingClick = false
-        startClickPreview()
     }
 
     /// Tap the metronome: On → visual-only → Off.

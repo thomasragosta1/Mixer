@@ -204,10 +204,11 @@ final class MixerEngine {
     /// Plays the click on its own (no tracks), from beat 1, to try a tempo.
     /// Returns the host time (seconds) of the first click.
     @discardableResult
-    func startClickPreview(settings: MetronomeSettings) throws -> Double {
+    func startClickPreview(settings: MetronomeSettings, fromSeconds: Double = 0) throws -> Double {
         try startIfNeeded()
         let host = mach_absolute_time() + AVAudioTime.hostTime(forSeconds: MixerEngine.startLead)
-        metronome.start(fromFrame: 0, at: host, settings: settings)
+        // On the song's grid from `fromSeconds`, so the beat lines up with the timeline.
+        metronome.start(fromFrame: frame(fromSeconds), at: host, settings: settings)
         return AVAudioTime.seconds(forHostTime: host)
     }
 
