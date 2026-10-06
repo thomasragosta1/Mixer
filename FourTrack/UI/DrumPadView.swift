@@ -124,6 +124,8 @@ struct DrumTrackControls: View {
                 .font(.headline)
                 .lineLimit(1)
             Spacer(minLength: 8)
+            hideHandle
+            Spacer(minLength: 8)
             ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
                 model.toggleMute(index)
             }
@@ -132,6 +134,35 @@ struct DrumTrackControls: View {
             }
             QuantizeChip(model: model, index: index)
         }
+    }
+
+    /// Pull down (or tap) to hide the pads and see every track full size.
+    private var hideHandle: some View {
+        VStack(spacing: 3) {
+            Capsule()
+                .fill(Color.secondary.opacity(0.5))
+                .frame(width: 36, height: 5)
+            Image(systemName: "chevron.compact.down")
+                .font(.system(size: 14, weight: .semibold))
+                .foregroundStyle(.secondary)
+        }
+        .frame(width: 64, height: 40)
+        .contentShape(Rectangle())
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .onEnded { g in
+                    if g.translation.height > 24 || (abs(g.translation.height) < 8 && abs(g.translation.width) < 8) {
+                        Haptics.lift.impactOccurred()
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) { model.drumPadsHidden = true }
+                    }
+                }
+        )
+        .disabled(model.isRecording)
+        .accessibilityElement()
+        .accessibilityLabel("Hide drum pads")
+        .accessibilityHint("Shows every track full size")
+        .accessibilityAddTraits(.isButton)
+        .accessibilityAction { model.drumPadsHidden = true }
     }
 }
 

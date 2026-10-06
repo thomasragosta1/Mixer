@@ -230,3 +230,7 @@ This environment has no Xcode or iOS SDK. The core package is compiled and its t
   - the drum screen puts the slim lanes, kit and transport in a 380 pt scrolling column on the left and the pads fill the rest.
   - The pad sound bubble scrolls when it's short.
 - **SDK:** full iPhone Duo resizing needs apps built with the iOS 27 SDK. The GitHub macOS runners only have Xcode 26.x so far; CI now picks the newest Xcode 27 automatically when it appears (falling back to the newest 26, with a warning). Not tested on an iPhone Duo or its simulator (needs Xcode 27.1).
+
+## Hide the drum pads (owner request)
+
+- A grab handle sits in the middle of the drum screen's top row, between the track name and M / S / Q. Pull it down (or tap it) and the pads go away: every track shows as a full-size card, exactly as when an audio track is armed, with the normal transport. A "Drum Pads" pull tab above the transport brings them back (pull up or tap). Pressing record on a drum track brings the pads back too, since you need them to play. Hidden stays hidden while you switch between tracks during the session; it isn't saved with the project.

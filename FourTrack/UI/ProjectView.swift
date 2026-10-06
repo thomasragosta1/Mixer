@@ -59,7 +59,7 @@ struct ProjectView: View {
 
             if model.mixMode && !model.isSimple {
                 MixView(model: model)
-            } else if model.isDrumArmed {
+            } else if model.showsDrumPads {
                 // Drum layout: slim lanes, big pads, one-row transport.
                 DrumStudioView(model: model) { pendingTrackDelete = $0 }
                     .transition(.opacity)
@@ -68,6 +68,7 @@ struct ProjectView: View {
                     lanes
                         .zIndex(laneDrag != nil ? 1 : 0)
                     ScrollView {
+                        if model.isDrumArmed { PadsPullTab(model: model) }
                         transport
                     }
                     .scrollBounceBehavior(.basedOnSize)
@@ -79,7 +80,8 @@ struct ProjectView: View {
                     .zIndex(laneDrag != nil ? 1 : 0)
                     .transition(.opacity)
             }
-            if !model.mixMode && !model.isDrumArmed && !isWide {
+            if !model.mixMode && !model.showsDrumPads && !isWide {
+                if model.isDrumArmed { PadsPullTab(model: model) }
                 transport
             }
         }
@@ -123,7 +125,7 @@ struct ProjectView: View {
             TrackBinView(model: model)
                 .presentationDetents([.medium, .large])
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.isDrumArmed)
+        .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.showsDrumPads)
         .navigationTitle(model.project.name)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { toolbar }
@@ -464,6 +466,39 @@ enum Haptics {
             crossedBar = (grid.beat(at: old) / n).rounded(.down) != (grid.beat(at: new) / n).rounded(.down)
         }
         if hitEdge || crossedBar { slot.selectionChanged() }
+    }
+}
+
+/// Above the transport while a drum track's pads are pulled down: drag it up
+/// (or tap it) to bring the pads back.
+struct PadsPullTab: View {
+    @Bindable var model: ProjectViewModel
+
+    var body: some View {
+        VStack(spacing: 4) {
+            Capsule()
+                .fill(Color.secondary.opacity(0.5))
+                .frame(width: 36, height: 5)
+            Label("Drum Pads", systemImage: "chevron.up")
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(.secondary)
+        }
+        .frame(maxWidth: .infinity, minHeight: 44)
+        .contentShape(Rectangle())
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .onEnded { g in
+                    // A tap or an upward pull.
+                    if g.translation.height < -24 || (abs(g.translation.height) < 8 && abs(g.translation.width) < 8) {
+                        Haptics.lift.impactOccurred()
+                        withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) { model.drumPadsHidden = false }
+                    }
+                }
+        )
+        .accessibilityElement()
+        .accessibilityLabel("Show drum pads")
+        .accessibilityAddTraits(.isButton)
+        .accessibilityAction { model.drumPadsHidden = false }
     }
 }
 

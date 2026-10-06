@@ -338,6 +338,8 @@ final class ProjectViewModel {
         if isRecording {
             stopRecording()
         } else {
+            // Recording drums needs the pads.
+            if isDrumArmed && drumPadsHidden { drumPadsHidden = false }
             Task { await startRecording() }
         }
     }
@@ -740,6 +742,14 @@ final class ProjectViewModel {
     }
 
     var isDrumArmed: Bool { project.tracks[armedTrack].isDrums }
+
+    /// The drum pads pulled down out of the way: every track shows as a full
+    /// card, the same as with an audio track armed. Pull the tab back up (or
+    /// press record on a drum track) to bring the pads back.
+    var drumPadsHidden = false
+
+    /// The drum screen (pads) is showing.
+    var showsDrumPads: Bool { isDrumArmed && !drumPadsHidden }
 
     /// Points the live pads at the armed drum track's chain and kit.
     private func routePadsIfNeeded() {
