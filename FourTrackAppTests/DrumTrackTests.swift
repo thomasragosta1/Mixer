@@ -300,6 +300,27 @@ final class DrumTrackTests: XCTestCase {
         model.close()
     }
 
+    /// Clean Up renders long takes in parallel segments; the joined result must
+    /// keep the take's exact length and not be silent.
+    func testCleanupKeepsLengthAcrossSegments() throws {
+        let input = dir.appendingPathComponent("long.caf")
+        let output = dir.appendingPathComponent("long.cleaned.caf")
+        try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        let frames = 48_000 * 30 + 123          // 30 s: several segments
+        var samples = [Float](repeating: 0, count: frames)
+        for i in 0..<frames {
+            let t = Float(i) / 48_000
+            samples[i] = 0.3 * sinf(2 * .pi * 220 * t) * (sinf(2 * .pi * 3 * t) > 0 ? 1 : 0.2)
+        }
+        let w = try CAFWriter(url: input)
+        try w.write(samples)
+        try w.finish()
+        let start = Date()
+        try CleanupEngine.render(input: input, output: output, progress: { _ in }, isCancelled: { false })
+        print("Cleanup of 30 s took \(Date().timeIntervalSince(start)) s (Voice Isolation available: \(VoiceIsolation.isAvailable))")
+        XCTAssertEqual(try CAFReader(url: output).frameCount, Int64(frames))
+    }
+
     private func spin(_ seconds: TimeInterval) {
         RunLoop.main.run(until: Date().addingTimeInterval(seconds))
     }

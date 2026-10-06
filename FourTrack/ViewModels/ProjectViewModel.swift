@@ -1304,7 +1304,7 @@ final class ProjectViewModel {
                     self?.cleanupProgress[index] = job.value
                 }
             }
-            let outcome = await Task.detached(priority: .utility) { () -> Error? in
+            let outcome = await Task.detached(priority: .userInitiated) { () -> Error? in
                 do {
                     try CleanupEngine.render(
                         input: input,

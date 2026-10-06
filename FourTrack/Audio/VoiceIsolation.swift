@@ -55,10 +55,78 @@ enum VoiceIsolation {
 
     /// Runs the take through the unit offline. Output is time-aligned with
     /// the input (the unit's reported latency is removed) and the same length.
-    static func render(input: URL, output: URL, progress: (Double) -> Void, isCancelled: () -> Bool) throws {
-        let file = try AVAudioFile(forReading: input, commonFormat: .pcmFormatFloat32, interleaved: false)
-        let total = file.length
+    ///
+    /// The model is the slow part, so a take is split into segments rendered
+    /// in parallel, each on its own engine. Each segment starts a second early
+    /// (thrown away) so the model has settled by the join, and runs 20 ms past
+    /// its end for a crossfade into the next one, so joins are inaudible.
+    static func render(input: URL, output: URL, progress: @escaping (Double) -> Void, isCancelled: @escaping () -> Bool) throws {
+        let total = try AVAudioFile(forReading: input, commonFormat: .pcmFormatFloat32, interleaved: false).length
         guard total > 0 else { throw Failure.renderFailed }
+        let sampleRate = EngineFormat.sampleRate
+        let preroll = AVAudioFramePosition(sampleRate * 1.0)
+        let crossfade = AVAudioFramePosition(sampleRate * 0.02)
+        // Segments of at least 8 s, one per spare core, at most 4.
+        let cores = max(1, ProcessInfo.processInfo.activeProcessorCount - 1)
+        let count = max(1, min(4, cores, Int(Double(total) / (sampleRate * 8))))
+        let bounds = (0...count).map { AVAudioFramePosition(Double(total) * Double($0) / Double(count)) }
+
+        let lock = NSLock()
+        var segmentProgress = [Double](repeating: 0, count: count)
+        var results = [Result<(samples: [Float], energy: Double), Error>?](repeating: nil, count: count)
+        DispatchQueue.concurrentPerform(iterations: count) { k in
+            let start = bounds[k]
+            let end = k == count - 1 ? total : min(total, bounds[k + 1] + crossfade)
+            let result = Result {
+                try renderSegment(input: input, from: start, to: end, preroll: preroll, isCancelled: isCancelled) { p in
+                    let overall: Double = lock.withLock {
+                        segmentProgress[k] = p
+                        return segmentProgress.reduce(0, +) / Double(count)
+                    }
+                    progress(overall)
+                }
+            }
+            lock.withLock { results[k] = result }
+        }
+
+        // Join the segments, crossfading each one's extra tail into the next.
+        let writer = try CAFWriter(url: output, sampleRate: sampleRate)
+        var carry: [Float] = []
+        var energy: Double = 0
+        for k in 0..<count {
+            guard let result = results[k] else { throw Failure.renderFailed }
+            let segment = try result.get()
+            energy += segment.energy
+            var samples = segment.samples
+            let fade = min(carry.count, samples.count)
+            for i in 0..<fade {
+                let t = Float(i + 1) / Float(fade + 1)
+                samples[i] = carry[i] * (1 - t) + samples[i] * t
+            }
+            let keep = k == count - 1 ? samples.count : max(0, samples.count - Int(crossfade))
+            try writer.write(Array(samples[0..<keep]))
+            carry = Array(samples[keep...])
+        }
+        try writer.finish()
+        // A model that failed to load passes silence; treat that as a failure so
+        // Cleanup falls back instead of erasing the take.
+        if energy / Double(total) < 1e-12 { throw Failure.silentOutput }
+    }
+
+    /// Renders input frames [start, end) through its own engine and unit,
+    /// warming the model up on `preroll` frames before `start`.
+    private static func renderSegment(
+        input: URL,
+        from start: AVAudioFramePosition,
+        to end: AVAudioFramePosition,
+        preroll: AVAudioFramePosition,
+        isCancelled: () -> Bool,
+        progress: (Double) -> Void
+    ) throws -> (samples: [Float], energy: Double) {
+        let file = try AVAudioFile(forReading: input, commonFormat: .pcmFormatFloat32, interleaved: false)
+        let readStart = max(0, start - preroll)
+        let readFrames = end - readStart
+        guard readFrames > 0 else { return ([], 0) }
 
         let effect = AVAudioUnitEffect(audioComponentDescription: description)
         // Agree on a format up front: bus formats throw Swift errors, whereas a
@@ -88,18 +156,19 @@ enum VoiceIsolation {
         try engine.enableManualRenderingMode(.offline, format: mono, maximumFrameCount: 4_096)
         try engine.start()
         defer { engine.stop() }
-        player.scheduleFile(file, at: nil)
+        player.scheduleSegment(file, startingFrame: readStart, frameCount: AVAudioFrameCount(readFrames), at: nil)
         player.play()
 
         let latencyFrames = AVAudioFramePosition((effect.auAudioUnit.latency * mono.sampleRate).rounded())
-        let renderTotal = total + latencyFrames
+        let renderTotal = readFrames + latencyFrames
         guard let buffer = AVAudioPCMBuffer(pcmFormat: engine.manualRenderingFormat, frameCapacity: engine.manualRenderingMaximumFrameCount) else {
             throw Failure.renderFailed
         }
-        let writer = try CAFWriter(url: output, sampleRate: mono.sampleRate)
-        var toSkip = latencyFrames
-        var written: AVAudioFramePosition = 0
-        var outEnergy: Double = 0
+        let wanted = Int(end - start)
+        var out: [Float] = []
+        out.reserveCapacity(wanted)
+        var toSkip = latencyFrames + (start - readStart)
+        var energy: Double = 0
         while engine.manualRenderingSampleTime < renderTotal {
             if isCancelled() { throw CleanupPipeline.Failure.cancelled }
             let remaining = renderTotal - engine.manualRenderingSampleTime
@@ -113,11 +182,11 @@ enum VoiceIsolation {
                     chunk = chunk.dropFirst(drop)
                     toSkip -= AVAudioFramePosition(drop)
                 }
-                let keep = Int(min(AVAudioFramePosition(chunk.count), total - written))
-                let samples = Array(chunk.prefix(keep))
-                for s in samples { outEnergy += Double(s * s) }
-                try writer.write(samples)
-                written += AVAudioFramePosition(keep)
+                let keep = min(chunk.count, wanted - out.count)
+                for s in chunk.prefix(keep) {
+                    energy += Double(s * s)
+                    out.append(s)
+                }
             case .insufficientDataFromInputNode, .cannotDoInCurrentContext:
                 continue
             case .error:
@@ -127,9 +196,8 @@ enum VoiceIsolation {
             }
             progress(Double(engine.manualRenderingSampleTime) / Double(renderTotal))
         }
-        try writer.finish()
-        // A model that failed to load passes silence; treat that as a failure so
-        // Cleanup falls back instead of erasing the take.
-        if written > 0 && outEnergy / Double(written) < 1e-12 { throw Failure.silentOutput }
+        // The unit can end a few frames short; pad so the take keeps its length.
+        if out.count < wanted { out.append(contentsOf: repeatElement(0, count: wanted - out.count)) }
+        return (out, energy)
     }
 }
