@@ -161,9 +161,14 @@ final class DrumTests: XCTestCase {
         let hits = (0..<12).map { DrumHit(time: Double($0) * 0.09, pad: 0, velocity: 1) }
         let many = DrumRenderer.render(hits, kit: kit)
         let manyPeak = many.map(abs).max() ?? 0
-        XCTAssertLessThanOrEqual(manyPeak, singlePeak * 1.15, "re-hits must not pile up (only the 8 ms fade overlaps)")
+        XCTAssertLessThanOrEqual(manyPeak, singlePeak * 1.001, "re-hits must not pile up")
         // The last hit rings out fully; the earlier ones are cut at the next hit.
         XCTAssertEqual(many.count, Int((11 * 0.09 * 48_000).rounded()) + single.count, accuracy: 2)
+        // Every kick before the last is silent at the moment the next one starts.
+        for k in 1..<12 {
+            let start = Int((Double(k) * 0.09 * 48_000).rounded())
+            XCTAssertEqual(many[start - 1], 0, accuracy: 0.02, "kick \(k) still ringing when the next starts")
+        }
     }
 
     /// Closed hat chokes the open hat, like a real hi-hat; other drums overlap.
@@ -175,7 +180,7 @@ final class DrumTests: XCTestCase {
         let choked = DrumRenderer.render([DrumHit(time: 0, pad: 3), DrumHit(time: 0.1, pad: 2)], kit: kit)
         let closedAlone = DrumRenderer.render([DrumHit(time: 0.1, pad: 2)], kit: kit)
         // After the fade, only the closed hat is left.
-        let after = 4_800 + 600
+        let after = 4_800 + 200
         let tailLength = min(choked.count, closedAlone.count) - after
         if tailLength > 0, open.count > after + tailLength {
             for k in stride(from: after, to: after + tailLength, by: 97) {

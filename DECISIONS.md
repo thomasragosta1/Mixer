@@ -156,7 +156,7 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 
 ## Drum voices choke like real drums (owner report: 808 kick distorting on repeats)
 
-- Repeated hits used to stack: every hit rang out in full on its own voice, so a quick run of 808 kicks (long sine tails) piled up, phased against each other and drove the clipper. Now, live and in the recorded track alike (`DrumVoicing`), **hitting a drum again fades out its previous ring over 8 ms** (no click), the way a re-struck drum or a drum machine behaves, and **the closed and open hi-hat choke each other**. Different drums still overlap freely.
+- Repeated hits used to stack: every hit rang out in full on its own voice, so a quick run of 808 kicks (long sine tails) piled up, phased against each other and drove the clipper. Now, live and in the recorded track alike (`DrumVoicing`), **hitting a drum again fades out its previous ring over 4 ms** (no click), finishing just before the new hit starts so the two never overlap (an 808 tail and a new attack in phase would otherwise peak far above either; live, the new note waits those 4 ms), the way a re-struck drum or a drum machine behaves, and **the closed and open hi-hat choke each other**. Different drums still overlap freely.
 - The live pads are now a small sampler inside one `AVAudioSourceNode` (16 voices, the oldest-to-finish is reused when all are busy). A tap only queues a note for the audio thread; no player is started or stopped from the main thread, so taps can never block on the audio hardware (the cause of the build-25 freeze report).
 
 ## Deleting a track: swipe from the right edge (owner request)

@@ -212,8 +212,11 @@ public struct DrumHit: Codable, Equatable, Sendable {
 /// Without this, repeated hits stack up: an 808 kick's long sine tails add up
 /// and cancel each other into a warbly, clipping mess.
 public enum DrumVoicing {
-    /// A cut-off note fades out over this long instead of stopping dead (no click).
-    public static let chokeFadeSeconds = 0.008
+    /// A cut-off note fades out over this long instead of stopping dead (no
+    /// click). The fade finishes before the new note starts, so the two never
+    /// overlap: an old 808 tail plus a new attack in phase would otherwise peak
+    /// far above either one.
+    public static let chokeFadeSeconds = 0.004
 
     /// Pads in the same group cut each other off.
     public static func chokeGroup(kit: DrumKit, pad: Int) -> Int {
@@ -270,13 +273,14 @@ public enum DrumRenderer {
             return v % max(kit.variantCount, 1)
         }
         let starts = ordered.map { Int((max(0, $0.time) * sampleRate).rounded()) }
-        // Each hit rings until the next hit in its choke group, then fades out.
+        // Each hit rings until just before the next hit in its choke group,
+        // fading out so it's silent by the time that hit starts.
         let fadeFrames = max(1, Int((DrumVoicing.chokeFadeSeconds * sampleRate).rounded()))
         var chokeAt = [Int?](repeating: nil, count: ordered.count)
         var lastInGroup: [Int: Int] = [:]
         for (i, hit) in ordered.enumerated() {
             let group = DrumVoicing.chokeGroup(kit: kit, pad: hit.pad)
-            if let prev = lastInGroup[group] { chokeAt[prev] = starts[i] - starts[prev] }
+            if let prev = lastInGroup[group] { chokeAt[prev] = max(0, starts[i] - starts[prev] - fadeFrames) }
             lastInGroup[group] = i
         }
         var length = 0

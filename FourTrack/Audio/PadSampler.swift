@@ -98,6 +98,8 @@ final class PadVoices: @unchecked Sendable {
         var group = -1
         /// Frames left in the choke fade; nil while ringing normally.
         var fadeLeft: Int?
+        /// Frames to wait before starting, while a choked note fades out.
+        var delay = 0
         var active: Bool { position < samples.count }
     }
 
@@ -138,15 +140,18 @@ final class PadVoices: @unchecked Sendable {
     }
 
     private func start(_ note: Note) {
-        // Same drum (or the other hi-hat) still ringing: fade it out now.
-        for v in voices.indices where voices[v].active && voices[v].group == note.group && voices[v].fadeLeft == nil {
-            voices[v].fadeLeft = fadeFrames
+        // Same drum (or the other hi-hat) still ringing: fade it out now, and
+        // start the new note once it's silent (4 ms later) so they never add up.
+        var choked = false
+        for v in voices.indices where voices[v].active && voices[v].group == note.group {
+            if voices[v].fadeLeft == nil { voices[v].fadeLeft = fadeFrames }
+            choked = true
         }
         // A free voice, else the one closest to finishing.
         let free = voices.indices.first { !voices[$0].active }
             ?? voices.indices.min { (voices[$0].samples.count - voices[$0].position) < (voices[$1].samples.count - voices[$1].position) }
             ?? 0
-        voices[free] = Voice(samples: note.samples, position: 0, gain: note.gain, group: note.group, fadeLeft: nil)
+        voices[free] = Voice(samples: note.samples, position: 0, gain: note.gain, group: note.group, fadeLeft: nil, delay: choked ? fadeFrames : 0)
     }
 
     private func mix(_ voice: inout Voice, into out: UnsafeMutablePointer<Float>, frames: Int) {
@@ -155,8 +160,10 @@ final class PadVoices: @unchecked Sendable {
         var fadeLeft = voice.fadeLeft
         let gain = voice.gain
         let fade = fadeFrames
+        let wait = min(voice.delay, frames)
+        voice.delay -= wait
         voice.samples.withUnsafeBufferPointer { s in
-            for i in 0..<frames {
+            for i in wait..<frames {
                 guard position < count else { break }
                 var g = gain
                 if let left = fadeLeft {
