@@ -49,8 +49,6 @@ final class ProjectViewModel {
 
     var showPermissionDenied = false
     var showBluetoothTip = false
-    /// One-time tip before the first audio recording with the click on the speaker.
-    var showMetronomeHeadphoneTip = false
     var errorMessage: String?
 
     private(set) var meterLevels: [MeterStore.Level] = Array(repeating: .init(), count: Project.trackCount + 1)
@@ -270,15 +268,8 @@ final class ProjectViewModel {
         }
     }
 
-    func startRecording(skipHeadphoneTip: Bool = false) async {
+    func startRecording() async {
         guard !isRecording, !isSaving, !isStartingRecording else { return }
-        // First time recording audio with an audible click and no headphones:
-        // the mic would pick the click up. Suggest headphones once, before recording.
-        if !skipHeadphoneTip, needsMetronomeHeadphoneTip {
-            settings.metronomeHeadphoneTipShown = true
-            showMetronomeHeadphoneTip = true
-            return
-        }
         isStartingRecording = true
         defer { isStartingRecording = false }
         stopClickPreview()
@@ -410,14 +401,6 @@ final class ProjectViewModel {
         return settings.latency.compensation(for: route, estimate: engine.estimatedLatency)
     }
 
-    private var needsMetronomeHeadphoneTip: Bool {
-        !settings.metronomeHeadphoneTipShown
-            && !wantsEchoCancellation(AudioSessionManager.shared.currentRoute)
-            && !project.tracks[armedTrack].isDrums
-            && !isSimple
-            && project.metronome.mode == .on
-            && AudioSessionManager.shared.currentRoute == .speaker
-    }
 
     /// The click without a count-in, for recording that starts mid-song.
     private var metronomeWithoutCountIn: MetronomeSettings? {
@@ -885,7 +868,7 @@ final class ProjectViewModel {
         if q.enabled {
             q.enabled = false
         } else {
-            q = QuantizeSettings(enabled: true, division: q.division, bpm: project.metronome.bpm, beatUnit: project.metronome.beatUnit)
+            q = QuantizeSettings(enabled: true, division: q.division, bpm: project.metronome.bpm, beatUnit: project.metronome.beatUnit, strength: q.strength)
         }
         setQuantize(index, q, label: q.enabled ? "Quantize" : "Quantize Off")
     }
@@ -893,8 +876,19 @@ final class ProjectViewModel {
     /// Picks the grid (press and hold Q); turns quantize on at the current tempo.
     func setQuantizeDivision(_ index: Int, _ division: QuantizeDivision) {
         guard !isRecording, project.tracks[index].isDrums else { return }
-        let q = QuantizeSettings(enabled: true, division: division, bpm: project.metronome.bpm, beatUnit: project.metronome.beatUnit)
+        let q = QuantizeSettings(enabled: true, division: division, bpm: project.metronome.bpm, beatUnit: project.metronome.beatUnit, strength: project.tracks[index].quantize.strength)
         setQuantize(index, q, label: "Quantize \(division.label)")
+    }
+
+    /// How far hits move toward the grid (100% snaps exactly; less keeps feel).
+    func setQuantizeStrength(_ index: Int, _ strength: Double) {
+        guard !isRecording, project.tracks[index].isDrums else { return }
+        var q = project.tracks[index].quantize
+        if !q.enabled {
+            q = QuantizeSettings(enabled: true, division: q.division, bpm: project.metronome.bpm, beatUnit: project.metronome.beatUnit)
+        }
+        q.strength = strength
+        setQuantize(index, q, label: "Quantize Strength")
     }
 
     private func setQuantize(_ index: Int, _ q: QuantizeSettings, label: String) {

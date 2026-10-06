@@ -124,12 +124,6 @@ struct ProjectView: View {
         } message: {
             Text("Four-Track needs the microphone to record. You can turn it on in Settings.")
         }
-        .alert("Headphones Suggested", isPresented: $model.showMetronomeHeadphoneTip) {
-            Button("Record Anyway") { Task { await model.startRecording(skipHeadphoneTip: true) } }
-            Button("Cancel", role: .cancel) {}
-        } message: {
-            Text("The metronome is playing through the speaker, so the microphone will pick it up and it will be on your track. Plug in headphones to keep the click off the recording, or set the metronome to Silent to just see the beat.")
-        }
         .alert("Tip: Use Wired Headphones for Overdubs", isPresented: $model.showBluetoothTip) {
             Button("OK", role: .cancel) {}
         } message: {

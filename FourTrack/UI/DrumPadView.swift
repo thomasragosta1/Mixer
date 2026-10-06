@@ -106,7 +106,7 @@ struct QuantizeChip: View {
     var body: some View {
         Menu {
             Section("Quantize to") {
-                ForEach(QuantizeDivision.allCases) { d in
+                ForEach(QuantizeDivision.menuOrder) { d in
                     Button {
                         model.setQuantizeDivision(index, d)
                     } label: {
@@ -118,11 +118,25 @@ struct QuantizeChip: View {
                     }
                 }
             }
+            Section("Strength") {
+                ForEach(QuantizeSettings.strengths, id: \.self) { s in
+                    Button {
+                        model.setQuantizeStrength(index, s)
+                    } label: {
+                        let title = s == 1 ? "100% (exact)" : "\(Int(s * 100))% (keeps some feel)"
+                        if q.enabled && abs(q.strength - s) < 0.001 {
+                            Label(title, systemImage: "checkmark")
+                        } else {
+                            Text(title)
+                        }
+                    }
+                }
+            }
             if q.enabled {
                 Button("Off (as played)") { model.toggleQuantize(index) }
             }
         } label: {
-            Text(q.enabled ? "Q \(q.division.label)" : "Q")
+            Text(q.enabled ? "Q \(q.division.shortLabel)" : "Q")
                 .font(.footnote.weight(.bold))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
@@ -142,7 +156,7 @@ struct QuantizeChip: View {
         .disabled(model.isRecording || model.isSaving)
         .animation(.easeOut(duration: 0.15), value: q.enabled)
         .accessibilityLabel("Quantize")
-        .accessibilityValue(q.enabled ? "On, \(q.division.label)" : "Off")
+        .accessibilityValue(q.enabled ? "On, \(q.division.label), \(Int(q.strength * 100)) percent" : "Off")
         .accessibilityHint("Tap to snap hits to the grid. Press and hold to choose the grid.")
     }
 }

@@ -140,4 +140,31 @@ final class QuantizeTests: XCTestCase {
         let back = try JSONDecoder().decode(Track.self, from: JSONEncoder().encode(t))
         XCTAssertEqual(back.quantize, t.quantize)
     }
+
+    /// Swing: two slots per beat, the second on the last third. A hit near the
+    /// middle of the beat goes to the late (swung) slot, never to a straight
+    /// eighth or the middle triplet.
+    func testSwingQuantize() {
+        let q = QuantizeSettings(enabled: true, division: .eighthSwing, bpm: 120)
+        let hits = [0.02, 0.22, 0.30, 0.47, 0.81, 1.05].enumerated().map { DrumHit(time: $0.element, pad: $0.offset % 2) }
+        let out = q.apply(to: hits).map(\.time)
+        let third = 0.5 * 2 / 3
+        let expected = [0, third, third, 0.5, 0.5 + third, 1.0]
+        for (a, b) in zip(out, expected) { XCTAssertEqual(a, b, accuracy: 1e-9) }
+        // 1/16 swing: pairs of sixteenths in each eighth.
+        let q16 = QuantizeSettings(enabled: true, division: .sixteenthSwing, bpm: 120)
+        XCTAssertEqual(q16.gridLine(near: 0.17).time, 0.25 * 2 / 3, accuracy: 1e-9)
+        XCTAssertEqual(q16.gridLine(near: 0.24).time, 0.25, accuracy: 1e-9)
+    }
+
+    /// Strength moves hits only part of the way, keeping some feel.
+    func testQuantizeStrength() {
+        var q = QuantizeSettings(enabled: true, division: .eighth, bpm: 120)
+        q.strength = 0.5
+        let out = q.apply(to: [DrumHit(time: 0.29, pad: 0)])
+        XCTAssertEqual(out[0].time, 0.27, accuracy: 1e-9)   // halfway from 0.29 to 0.25
+        // Older projects decode with full strength.
+        let old = #"{"enabled":true,"division":"eighth","bpm":120,"beatUnit":4}"#.data(using: .utf8)!
+        XCTAssertEqual(try JSONDecoder().decode(QuantizeSettings.self, from: old).strength, 1)
+    }
 }
