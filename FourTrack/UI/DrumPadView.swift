@@ -314,7 +314,7 @@ struct DrumPad: View {
 
 /// Every lane as one slim row: name, small waveform, armed dot. Tap a row to
 /// arm it (an audio lane brings back the full recording view); drag sideways
-/// to scrub; swipe in from the right edge (or press and hold) to delete.
+/// to scrub; press and hold for Delete.
 struct CompactLaneList: View {
     @Bindable var model: ProjectViewModel
     let onDeleteTrack: (Int) -> Void
@@ -378,12 +378,6 @@ struct CompactLaneList: View {
             if !armed && !model.isRecording { Haptics.slot.selectionChanged() }
             model.arm(i)
         }
-        .modifier(EdgeSwipeToDelete(
-            enabled: !model.isRecording && !model.isSaving,
-            cornerRadius: 14,
-            onTap: { model.arm(i) },
-            onDelete: { onDeleteTrack(i) }
-        ))
         .simultaneousGesture(LongPressGesture(minimumDuration: 0.4).onEnded { _ in Haptics.hold() })
         .contextMenu {
             if !model.isRecording {

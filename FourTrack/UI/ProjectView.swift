@@ -15,6 +15,9 @@ struct ProjectView: View {
     @State private var draftName = ""
     @State private var scrubStart: Double?
     @State private var laneDrag: LaneDrag?
+    /// Where the held card is, per frame. Kept out of `laneDrag` so following
+    /// the finger only redraws that one card, not the whole screen.
+    @State private var laneMotion = LaneMotion()
     @State private var pendingTrackDelete: Int?
     @State private var showingTrackBin = false
     @State private var confirmingSimpleMode = false
@@ -71,6 +74,15 @@ struct ProjectView: View {
             }
         }
         .background(Color(uiColor: .systemGroupedBackground))
+        .overlay(alignment: .bottom) {
+            if laneDrag != nil {
+                TrackBinDropZone(isTargeted: laneDrag?.overBin == true)
+                    .onGeometryChange(for: CGRect.self, of: { $0.frame(in: .global) }) { laneMotion.binFrame = $0 }
+                    .padding(.bottom, 24)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
+        .animation(.spring(response: 0.25, dampingFraction: 0.8), value: laneDrag != nil)
         .alert(
             "Are you sure you want to delete this track?",
             isPresented: Binding(get: { pendingTrackDelete != nil }, set: { if !$0 { pendingTrackDelete = nil } })
@@ -94,7 +106,7 @@ struct ProjectView: View {
         .alert("Delete Drum Tracks First", isPresented: $showingDrumsBlockSimple) {
             Button("OK", role: .cancel) {}
         } message: {
-            Text("Simple mode only has audio tracks. Swipe left from the right edge of each drum track to delete it, then switch to Simple mode.")
+            Text("Simple mode only has audio tracks. Press and hold each drum track and drag it to the bin, then switch to Simple mode.")
         }
         .sheet(isPresented: $showingTrackBin) {
             TrackBinView(model: model)
@@ -151,42 +163,42 @@ struct ProjectView: View {
 
     // MARK: Lanes
 
-    /// A lane being dragged after a press and hold.
+    /// A lane being dragged after a press and hold. Only changes when the
+    /// drag starts, crosses into another slot, or reaches the bin.
     struct LaneDrag: Equatable {
         let index: Int
         let startPosition: Int
-        var translation: CGFloat = 0
+        var target: Int
+        var overBin = false
     }
 
     private static let laneSpacing: CGFloat = 12
     private var laneStep: CGFloat { TrackRowView<DragGesture>.cardHeight(simple: model.isSimple) + Self.laneSpacing }
 
-    /// Lanes as separate cards. Press and hold a card, then drag it up or down
-    /// to reorder; swipe in from a card's right edge to delete it (not while
-    /// recording). Drag sideways on a waveform to scrub.
+    /// Lanes as separate cards. Press and hold a card (briefly), then drag it
+    /// up or down to reorder, or onto the bin that rises at the bottom to
+    /// delete it (not while recording). Drag sideways on a waveform to scrub.
     private var lanes: some View {
         let order = model.visibleLanes
         return ScrollView {
             VStack(spacing: Self.laneSpacing) {
                 ForEach(Array(order.enumerated()), id: \.element) { position, i in
                     let dragging = laneDrag?.index == i
+                    let overBin = dragging && laneDrag?.overBin == true
                     TrackRowView(model: model, index: i, onScrub: scrubGesture)
                         // Only the card lifts: shadow and scale follow its rounded shape.
                         .compositingGroup()
                         .shadow(color: .black.opacity(dragging ? 0.22 : 0), radius: dragging ? 18 : 0, y: dragging ? 10 : 0)
-                        .scaleEffect(dragging ? 1.04 : 1, anchor: .center)
-                        .animation(.spring(response: 0.28, dampingFraction: 0.72), value: dragging)
-                        // Swipe in from the card's right edge to delete it.
-                        .modifier(EdgeSwipeToDelete(
-                            enabled: !model.isRecording && !model.isSaving && laneDrag == nil,
-                            onTap: { model.arm(i) },
-                            onDelete: { pendingTrackDelete = i }
-                        ))
-                        // The held card tracks the finger 1:1 with no animation lag;
-                        // the others glide out of its way.
-                        .offset(y: laneOffset(position: position, index: i, count: order.count))
-                        .animation(dragging ? nil : .spring(response: 0.32, dampingFraction: 0.82), value: laneOffset(position: position, index: i, count: order.count))
-                        .zIndex(dragging ? 1 : 0)
+                        .scaleEffect(dragging ? (overBin ? 0.55 : 1.04) : 1, anchor: .center)
+                        .opacity(overBin ? 0.7 : 1)
+                        .animation(.spring(response: 0.22, dampingFraction: 0.75), value: dragging)
+                        .animation(.spring(response: 0.22, dampingFraction: 0.75), value: overBin)
+                        // The other cards glide out of the held card's way.
+                        .offset(y: laneOffset(position: position, index: i))
+                        .animation(.spring(response: 0.26, dampingFraction: 0.85), value: laneOffset(position: position, index: i))
+                        // The held card follows the finger 1:1.
+                        .modifier(FollowsFinger(motion: laneMotion, index: i))
+                        .zIndex(dragging || laneMotion.index == i ? 1 : 0)
                         .simultaneousGesture(laneGesture(index: i, position: position, count: order.count))
                         .accessibilityAction(named: "Delete track") { pendingTrackDelete = i }
                 }
@@ -208,47 +220,74 @@ struct ProjectView: View {
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.visibleLanes)
     }
 
-    private func targetPosition(count: Int) -> Int {
-        guard let d = laneDrag else { return -1 }
-        let moved = Int((d.translation / laneStep).rounded())
-        return min(max(d.startPosition + moved, 0), count - 1)
-    }
-
-    /// The dragged card follows the finger; the others slide out of its way.
-    private func laneOffset(position: Int, index: Int, count: Int) -> CGFloat {
-        guard let d = laneDrag else { return 0 }
-        if d.index == index { return d.translation }
-        let target = targetPosition(count: count)
-        if position > d.startPosition && position <= target { return -laneStep }
-        if position < d.startPosition && position >= target { return laneStep }
+    /// Cards between the held card's old and new slot shift by one slot.
+    private func laneOffset(position: Int, index: Int) -> CGFloat {
+        guard let d = laneDrag, d.index != index, !d.overBin else { return 0 }
+        if position > d.startPosition && position <= d.target { return -laneStep }
+        if position < d.startPosition && position >= d.target { return laneStep }
         return 0
     }
 
     private func laneGesture(index: Int, position: Int, count: Int) -> some Gesture {
-        LongPressGesture(minimumDuration: 0.3)
+        // A short hold (0.2 s) picks the card up; it then tracks the finger
+        // from the very first movement.
+        LongPressGesture(minimumDuration: 0.2, maximumDistance: 12)
             .sequenced(before: DragGesture(minimumDistance: 0, coordinateSpace: .global))
             .onChanged { value in
                 guard !model.isRecording, !model.isSaving, scrubStart == nil else { return }
                 guard case .second(true, let drag) = value else { return }
                 if laneDrag == nil {
-                    laneDrag = LaneDrag(index: index, startPosition: position)
+                    laneMotion.index = index
+                    laneMotion.y = 0
+                    laneDrag = LaneDrag(index: index, startPosition: position, target: position)
                     Haptics.lift.impactOccurred()
                     Haptics.slot.prepare()
+                    Haptics.delete.prepare()
                 }
-                guard let drag else { return }
-                let before = targetPosition(count: count)
-                laneDrag?.translation = drag.translation.height
-                if targetPosition(count: count) != before { Haptics.slot.selectionChanged() }
+                guard let drag, var d = laneDrag else { return }
+                laneMotion.y = drag.translation.height
+                // Rare changes only: a new slot, or reaching the bin.
+                let over = laneMotion.binFrame.insetBy(dx: -30, dy: -30).contains(drag.location)
+                let moved = Int((drag.translation.height / laneStep).rounded())
+                let target = min(max(position + moved, 0), count - 1)
+                if over != d.overBin {
+                    d.overBin = over
+                    (over ? Haptics.delete : Haptics.lift).impactOccurred()
+                }
+                if target != d.target && !over {
+                    d.target = target
+                    Haptics.slot.selectionChanged()
+                }
+                if d != laneDrag { laneDrag = d }
             }
             .onEnded { _ in
                 guard let d = laneDrag else { return }
-                let target = targetPosition(count: count)
-                if target != d.startPosition {
-                    model.moveLanes(fromOffsets: IndexSet(integer: d.startPosition), toOffset: target > d.startPosition ? target + 1 : target)
+                if d.overBin {
+                    pendingTrackDelete = d.index
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.85)) {
+                        laneDrag = nil
+                        laneMotion.y = 0
+                    } completion: {
+                        laneMotion.index = nil
+                    }
+                    return
                 }
-                // Drop: the card settles into its new slot with one spring.
-                withAnimation(.spring(response: 0.34, dampingFraction: 0.8)) {
+                // Drop: reorder with no animation, keeping the card exactly under
+                // the finger, then let it settle into its slot with one spring.
+                let residual = laneMotion.y - CGFloat(d.target - d.startPosition) * laneStep
+                var instant = Transaction()
+                instant.disablesAnimations = true
+                withTransaction(instant) {
+                    if d.target != d.startPosition {
+                        model.moveLanes(fromOffsets: IndexSet(integer: d.startPosition), toOffset: d.target > d.startPosition ? d.target + 1 : d.target)
+                    }
                     laneDrag = nil
+                    laneMotion.y = residual
+                }
+                withAnimation(.spring(response: 0.3, dampingFraction: 0.82)) {
+                    laneMotion.y = 0
+                } completion: {
+                    laneMotion.index = nil
                 }
             }
     }
@@ -409,79 +448,46 @@ enum Haptics {
     }
 }
 
-/// iOS-style swipe to delete, started on the card's right edge: the card
-/// follows the finger left, uncovering a red trash; let go past the threshold
-/// (or flick) and `onDelete` runs (it asks "are you sure"), and the card
-/// springs back. Starting anywhere else on the card leaves scrubbing and the
-/// other gestures alone.
-struct EdgeSwipeToDelete: ViewModifier {
-    var enabled = true
-    var cornerRadius: CGFloat = Theme.cardRadius
-    /// How wide the grab strip on the right edge is.
-    var edgeWidth: CGFloat = 30
-    /// Taps on the strip still do what a tap on the card does.
-    var onTap: (() -> Void)? = nil
-    let onDelete: () -> Void
+/// The held card's position, updated every frame of a drag. Observed only
+/// by `FollowsFinger`, so moving it redraws just that card.
+@Observable
+final class LaneMotion {
+    var index: Int?
+    var y: CGFloat = 0
+    @ObservationIgnored var binFrame: CGRect = .zero
+}
 
-    @State private var offset: CGFloat = 0
-    @State private var width: CGFloat = 1
-    @State private var pastThreshold = false
-
-    private var threshold: CGFloat { min(width * 0.4, 160) }
+/// Offsets the held card by the finger's movement.
+struct FollowsFinger: ViewModifier {
+    let motion: LaneMotion
+    let index: Int
 
     func body(content: Content) -> some View {
-        content
-            .offset(x: offset)
-            .overlay(alignment: .trailing) {
-                if enabled {
-                    AxisPan(
-                        axis: .horizontal,
-                        onChanged: changed,
-                        onEnded: ended,
-                        onDoubleTap: nil,
-                        onTap: onTap
-                    )
-                    .frame(width: edgeWidth)
-                    .offset(x: offset)
-                }
-            }
-            .background(alignment: .trailing) {
-                // Only visible while the card is pulled aside.
-                RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
-                    .fill(Color.red)
-                    .overlay(alignment: .trailing) {
-                        Image(systemName: "trash.fill")
-                            .font(.system(size: 20, weight: .semibold))
-                            .foregroundStyle(.white)
-                            .scaleEffect(pastThreshold ? 1.25 : 1)
-                            .frame(width: max(0, -offset))
-                            .opacity(min(1, Double(-offset / 40)))
-                    }
-                    .frame(width: max(0, -offset + cornerRadius))
-                    .opacity(offset < 0 ? 1 : 0)
-                    .accessibilityHidden(true)
-            }
-            .onGeometryChange(for: CGFloat.self, of: { $0.size.width }) { width = max(1, $0) }
-            .animation(.spring(response: 0.25, dampingFraction: 0.7), value: pastThreshold)
+        content.offset(y: motion.index == index ? motion.y : 0)
     }
+}
 
-    private func changed(_ travel: CGFloat) {
-        // Leftwards only; resist past most of the width.
-        let raw = min(0, travel)
-        let limit = width * 0.85
-        offset = raw > -limit ? raw : -limit - (-raw - limit) * 0.2
-        let past = -offset >= threshold
-        if past != pastThreshold {
-            pastThreshold = past
-            (past ? Haptics.delete : Haptics.lift).impactOccurred()
+/// Bin that rises from the bottom while a lane is held; drop a lane on it to delete.
+struct TrackBinDropZone: View {
+    let isTargeted: Bool
+
+    var body: some View {
+        VStack(spacing: 6) {
+            Image(systemName: isTargeted ? "trash.fill" : "trash")
+                .font(.system(size: 26, weight: .semibold))
+                .foregroundStyle(isTargeted ? .white : .red)
+                .frame(width: 72, height: 72)
+                .background(Circle().fill(isTargeted ? Color.red : Color.red.opacity(0.12)))
+                .scaleEffect(isTargeted ? 1.15 : 1)
+            Text(isTargeted ? "Release to Delete" : "Drag Here to Delete")
+                .font(.footnote.weight(.semibold))
+                .foregroundStyle(isTargeted ? .red : .secondary)
         }
-    }
-
-    private func ended() {
-        let delete = pastThreshold
-        pastThreshold = false
-        withAnimation(.spring(response: 0.32, dampingFraction: 0.82)) { offset = 0 }
-        if delete { onDelete() }
+        .padding(.horizontal, 28)
+        .padding(.vertical, 14)
+        .glassPanel(cornerRadius: 28)
+        .animation(.spring(response: 0.2, dampingFraction: 0.7), value: isTargeted)
+        .accessibilityHidden(true)
     }
 }
 
