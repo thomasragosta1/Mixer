@@ -218,3 +218,13 @@ This environment has no Xcode or iOS SDK. The core package is compiled and its t
 ## Lock screen controls (owner request)
 
 - The open project shows on the lock screen and in Control Center (title = project name; "Four-Track", or "Recording" during a take). Play, pause, skip back / forward 15 s and dragging the progress bar drive the transport while the phone is locked; the app already keeps playing in the background (audio background mode). Pause during a take stops recording, keeping the take. Skips and scrubbing are ignored while recording. The controls are registered when a project opens and removed when it closes.
+
+## iPhone Duo (owner request, following Apple's "Prepare for iPhone Duo")
+
+- Audit: the app uses none of the patterns Apple asks to remove (`UIScreen.main`, device orientation or idiom checks, hard-coded screen sizes, `UIWindow(frame:)`, fill-only media). Layout already comes from available space.
+- **Resizable and rotatable:** removed `UIRequiresFullScreen` and allowed portrait and both landscapes, so the app can fill the inner display and resize when the device folds or unfolds instead of running letterboxed.
+- **Wide layouts:** whenever the space is clearly wider than tall (landscape, the unfolded inner display), measured live with `onGeometryChange`:
+  - the record screen puts the transport in a 360 pt column beside the track cards;
+  - the drum screen puts the slim lanes, kit and transport in a 380 pt scrolling column on the left and the pads fill the rest.
+  - The pad sound bubble scrolls when it's short.
+- **SDK:** full iPhone Duo resizing needs apps built with the iOS 27 SDK. The GitHub macOS runners only have Xcode 26.x so far; CI now picks the newest Xcode 27 automatically when it appears (falling back to the newest 26, with a warning). Not tested on an iPhone Duo or its simulator (needs Xcode 27.1).

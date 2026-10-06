@@ -50,11 +50,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Select Xcode 26
+      # Newest release Xcode: 27 (iOS 27 SDK, needed for iPhone Duo resizing)
+      # as soon as the runner has it, else the newest 26.
+      - name: Select Xcode
         run: |
-          XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
-          [ -z "$XC" ] && XC=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
-          if [ -z "$XC" ]; then echo "::error::No Xcode 26 on this runner"; ls -d /Applications/Xcode*.app; exit 1; fi
+          XC=""
+          for v in 27 26; do
+            XC=$(ls -d /Applications/Xcode_$v*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
+            [ -n "$XC" ] && break
+          done
+          if [ -z "$XC" ]; then echo "::error::No Xcode 26 or 27 on this runner"; ls -d /Applications/Xcode*.app; exit 1; fi
+          case "$XC" in *Xcode_26*) echo "::warning::Building with $XC (iOS 26 SDK). iPhone Duo resizing needs the iOS 27 SDK; CI switches automatically when Xcode 27 is on the runner.";; esac
           sudo xcode-select -s "$XC/Contents/Developer"
           xcodebuild -version
 

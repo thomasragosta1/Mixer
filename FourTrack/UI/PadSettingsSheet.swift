@@ -42,6 +42,8 @@ struct PadSettingsSheet: View {
             header
             compareButton
 
+            // Scrolls when the sheet is short (landscape, the outer display).
+            ScrollView {
             VStack(alignment: .leading, spacing: 18) {
             row("Volume", volumeText) {
                 SliderCore(
@@ -111,6 +113,8 @@ struct PadSettingsSheet: View {
             .opacity(hearingOriginal ? 0.3 : 1)
             .allowsHitTesting(!hearingOriginal)
             .animation(.easeOut(duration: 0.15), value: hearingOriginal)
+            }
+            .scrollBounceBehavior(.basedOnSize)
 
             Spacer(minLength: 0)
             applyButton

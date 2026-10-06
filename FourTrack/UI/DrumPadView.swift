@@ -16,56 +16,96 @@ struct DrumStudioView: View {
     private var index: Int { model.armedTrack }
     private var track: Track { model.project.tracks[index] }
 
+    /// Wider than tall (landscape, or an unfolded inner display): controls in
+    /// a column on the left, the pads filling the right.
+    @State private var isWide = false
+
     var body: some View {
-        VStack(spacing: 10) {
-            CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
-
-            if model.isSimple {
-                Text(track.name)
-                    .font(.headline)
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.horizontal, 16)
-            } else {
-                DrumTrackControls(model: model, index: index)
-                    .padding(.horizontal, 16)
-
-                DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
-                    .disabled(model.isRecording)
-                    .padding(.horizontal, 16)
-            }
-
-            // Pads always play, recording or not: jam along with the song first.
-            Text(model.isRecording ? "Recording your hits" : (model.isPlaying ? "Playing along. Nothing records until you press ●" : "Play along anytime. Press ● to record"))
-                .font(.caption)
-                .foregroundStyle(model.isRecording ? Color.red : Color.secondary)
-                .frame(maxWidth: .infinity)
-                .accessibilityHidden(true)
-
-            DrumPadGrid(kit: track.drumKit, settings: track.padSettings) {
-                model.hitPad($0)
-            } onHold: { pad in
-                guard !model.isRecording, !model.isSaving else { return }
-                editingPad = PadID(id: pad)
-            }
-            .padding(.horizontal, 12)
-            .frame(maxHeight: .infinity)
-
-            VStack(spacing: 6) {
-                if !model.isSimple {
-                    MetronomeBar(model: model)
-                        .padding(.horizontal, 14)
-                        .padding(.top, 10)
+        Group {
+            if isWide {
+                HStack(alignment: .top, spacing: 12) {
+                    ScrollView {
+                        VStack(spacing: 10) {
+                            CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
+                            trackControls
+                            transportPanel
+                        }
+                        .padding(.bottom, 8)
+                    }
+                    .scrollBounceBehavior(.basedOnSize)
+                    .frame(width: 380)
+                    VStack(spacing: 10) {
+                        hint
+                        pads
+                    }
+                    .padding(.trailing, 12)
+                    .padding(.bottom, 8)
                 }
-                DrumTransport(model: model)
+            } else {
+                VStack(spacing: 10) {
+                    CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
+                    trackControls
+                    hint
+                    pads
+                    transportPanel
+                }
             }
-            .glassPanel()
-            .padding(.horizontal, 12)
-            .padding(.bottom, 4)
         }
+        .onGeometryChange(for: Bool.self, of: { $0.size.width > $0.size.height * 1.1 }) { isWide = $0 }
         .padding(.top, 2)
         .sheet(item: $editingPad) { item in
             PadSettingsSheet(model: model, trackIndex: index, pad: item.id)
         }
+    }
+
+    @ViewBuilder private var trackControls: some View {
+        if model.isSimple {
+            Text(track.name)
+                .font(.headline)
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding(.horizontal, 16)
+        } else {
+            DrumTrackControls(model: model, index: index)
+                .padding(.horizontal, 16)
+
+            DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
+                .disabled(model.isRecording)
+                .padding(.horizontal, 16)
+        }
+    }
+
+    // Pads always play, recording or not: jam along with the song first.
+    private var hint: some View {
+        Text(model.isRecording ? "Recording your hits" : (model.isPlaying ? "Playing along. Nothing records until you press ●" : "Play along anytime. Press ● to record"))
+            .font(.caption)
+            .foregroundStyle(model.isRecording ? Color.red : Color.secondary)
+            .frame(maxWidth: .infinity)
+            .accessibilityHidden(true)
+    }
+
+    private var pads: some View {
+        DrumPadGrid(kit: track.drumKit, settings: track.padSettings) {
+            model.hitPad($0)
+        } onHold: { pad in
+            guard !model.isRecording, !model.isSaving else { return }
+            editingPad = PadID(id: pad)
+        }
+        .padding(.horizontal, isWide ? 0 : 12)
+        .frame(maxHeight: .infinity)
+    }
+
+    private var transportPanel: some View {
+        VStack(spacing: 6) {
+            if !model.isSimple {
+                MetronomeBar(model: model)
+                    .padding(.horizontal, 14)
+                    .padding(.top, 10)
+            }
+            DrumTransport(model: model)
+        }
+        .glassPanel()
+        .padding(.horizontal, 12)
+        .padding(.bottom, 4)
     }
 }
 

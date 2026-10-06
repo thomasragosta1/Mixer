@@ -18,6 +18,9 @@ struct ProjectView: View {
     /// Where the held card is, per frame. Kept out of `laneDrag` so following
     /// the finger only redraws that one card, not the whole screen.
     @State private var laneMotion = LaneMotion()
+    /// Wider than tall (landscape, or an unfolded inner display): the
+    /// transport sits beside the tracks instead of under them.
+    @State private var isWide = false
     @State private var pendingTrackDelete: Int?
     @State private var showingTrackBin = false
     @State private var confirmingSimpleMode = false
@@ -60,19 +63,27 @@ struct ProjectView: View {
                 // Drum layout: slim lanes, big pads, one-row transport.
                 DrumStudioView(model: model) { pendingTrackDelete = $0 }
                     .transition(.opacity)
+            } else if isWide {
+                HStack(alignment: .top, spacing: 0) {
+                    lanes
+                        .zIndex(laneDrag != nil ? 1 : 0)
+                    ScrollView {
+                        transport
+                    }
+                    .scrollBounceBehavior(.basedOnSize)
+                    .frame(width: 360)
+                }
+                .transition(.opacity)
             } else {
                 lanes
                     .zIndex(laneDrag != nil ? 1 : 0)
                     .transition(.opacity)
             }
-            if !model.mixMode && !model.isDrumArmed {
-                TransportView(model: model)
-                    .padding(.vertical, 4)
-                    .glassPanel()
-                    .padding(.horizontal, 12)
-                    .padding(.bottom, 4)
+            if !model.mixMode && !model.isDrumArmed && !isWide {
+                transport
             }
         }
+        .onGeometryChange(for: Bool.self, of: { $0.size.width > $0.size.height * 1.1 }) { isWide = $0 }
         .background(Color(uiColor: .systemGroupedBackground))
         .overlay(alignment: .bottom) {
             if laneDrag != nil {
@@ -159,6 +170,14 @@ struct ProjectView: View {
         .onChange(of: scenePhase) { _, phase in
             if phase == .background { model.enteredBackground() }
         }
+    }
+
+    private var transport: some View {
+        TransportView(model: model)
+            .padding(.vertical, 4)
+            .glassPanel()
+            .padding(.horizontal, 12)
+            .padding(.bottom, 4)
     }
 
     // MARK: Lanes
