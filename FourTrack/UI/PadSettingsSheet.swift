@@ -6,6 +6,8 @@ import FourTrackCore
 /// tinted with the pad's colour. Moves are heard on the pads right away (and
 /// each slider plays the pad when you let go) but only saved with the big
 /// Apply button at the bottom; swiping the bubble away discards them.
+/// Press and hold "Hold to Compare" to hear the kit's original sound; let go
+/// to go back to yours.
 /// The small Revert button at the top asks "Are you sure?" on the first tap
 /// and reverts on the second; a tap anywhere else (or any change) cancels it.
 struct PadSettingsSheet: View {
@@ -15,7 +17,7 @@ struct PadSettingsSheet: View {
     @State private var confirmingRevert = false
     @State private var draft: PadSettings
     @State private var applied = false
-    /// A/B: the pads play the kit's original sound instead of the draft.
+    /// While "Hold to Compare" is held: the pads play the kit's original sound.
     @State private var hearingOriginal = false
     @Environment(\.dismiss) private var dismiss
 
@@ -38,8 +40,9 @@ struct PadSettingsSheet: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 18) {
             header
-            compareSwitch
+            compareButton
 
+            VStack(alignment: .leading, spacing: 18) {
             row("Volume", volumeText) {
                 SliderCore(
                     value: binding(\.volume),
@@ -103,6 +106,11 @@ struct PadSettingsSheet: View {
                 .accessibilityValue(toneText)
                 .accessibilityAdjustableAction { adjust(\.tone, $0, step: 0.05, range: -1...1) }
             }
+            }
+            // While comparing, your settings step back: what you hear is the original.
+            .opacity(hearingOriginal ? 0.3 : 1)
+            .allowsHitTesting(!hearingOriginal)
+            .animation(.easeOut(duration: 0.15), value: hearingOriginal)
 
             Spacer(minLength: 0)
             applyButton
@@ -126,7 +134,7 @@ struct PadSettingsSheet: View {
         .onDisappear {
             if !applied { model.endPadPreview() }
         }
-        .presentationDetents([.height(model.isSimple ? 380 : 540)])
+        .presentationDetents([.height(model.isSimple ? 380 : 556)])
         .presentationCornerRadius(34)
         .presentationDragIndicator(.visible)
         .presentationBackground {
@@ -162,16 +170,42 @@ struct PadSettingsSheet: View {
         }
     }
 
-    /// A/B compare: tap either side to hear the kit's original sound or yours.
-    /// The pads on screen follow the choice too, so you can play both.
-    private var compareSwitch: some View {
-        Picker("Compare", selection: $hearingOriginal) {
-            Text("Original").tag(true)
-            Text("Yours").tag(false)
+    /// Press and hold to hear the kit's original sound (the pad plays at once,
+    /// and the pads on screen play it too while held); let go to hear yours
+    /// again. Only shown once the sound has been changed.
+    private var compareButton: some View {
+        HStack(spacing: 8) {
+            Image(systemName: hearingOriginal ? "ear.fill" : "ear")
+            Text(hearingOriginal ? "Original" : "Hold to Compare")
+                .contentTransition(.opacity)
         }
-        .pickerStyle(.segmented)
-        .disabled(draft.isDefault)
-        .accessibilityHint("Switches between the original sound and your adjusted sound, and plays it.")
+        .font(.subheadline.weight(.semibold))
+        .foregroundStyle(hearingOriginal ? Color.white : Color.primary)
+        .frame(maxWidth: .infinity, minHeight: 44)
+        .background(
+            Capsule().fill(hearingOriginal ? color : Color(uiColor: .tertiarySystemFill))
+        )
+        .contentShape(Capsule())
+        .scaleEffect(hearingOriginal ? 0.97 : 1)
+        .animation(.spring(response: 0.2, dampingFraction: 0.8), value: hearingOriginal)
+        .gesture(
+            DragGesture(minimumDistance: 0)
+                .onChanged { _ in
+                    guard !hearingOriginal else { return }
+                    cancelRevert()
+                    Haptics.hold()
+                    hearingOriginal = true
+                }
+                .onEnded { _ in hearingOriginal = false }
+        )
+        .opacity(draft.isDefault ? 0 : 1)
+        .allowsHitTesting(!draft.isDefault)
+        .accessibilityElement()
+        .accessibilityLabel("Compare with original")
+        .accessibilityHint("Plays the kit's original sound. Activate again to hear yours.")
+        .accessibilityAddTraits(.isButton)
+        .accessibilityAction { hearingOriginal.toggle() }
+        .accessibilityHidden(draft.isDefault)
     }
 
     /// Big button at the bottom: saves the sound and closes.
