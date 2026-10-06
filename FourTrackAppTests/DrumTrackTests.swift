@@ -269,6 +269,33 @@ final class DrumTrackTests: XCTestCase {
         model.close()
     }
 
+    /// The metronome opens Off, and the very first time it's turned on (with
+    /// the audio engine not yet started) it must actually click.
+    func testFirstClickIsHeard() throws {
+        var project = try store.create(mode: .full)
+        project.metronome.mode = .on      // saved on: still opens Off
+        try store.save(project)
+        let model = ProjectViewModel(project: try store.load(id: project.id), store: store)
+        model.activate()
+        XCTAssertEqual(model.project.metronome.mode, .off)
+        let player = model.engineForTesting.metronome.player
+        var peak: Float = 0
+        let lock = NSLock()
+        model.cycleMetronomeMode()        // Off -> Click: starts keeping time
+        XCTAssertTrue(model.isPreviewingClick)
+        player.installTap(onBus: 0, bufferSize: 1024, format: nil) { buffer, _ in
+            guard let d = buffer.floatChannelData?[0] else { return }
+            var m: Float = 0
+            for i in 0..<Int(buffer.frameLength) { m = max(m, abs(d[i])) }
+            lock.lock(); peak = max(peak, m); lock.unlock()
+        }
+        spin(1.5)
+        player.removeTap(onBus: 0)
+        lock.lock(); let heard = peak; lock.unlock()
+        XCTAssertGreaterThan(heard, 0.01, "the first click was silent")
+        model.close()
+    }
+
     /// Recording a drum track while the song plays starts from the live spot,
     /// without restarting; adding a track mid-song doesn't stop or rewind it.
     func testPunchInAndAddTrackWhilePlaying() async throws {

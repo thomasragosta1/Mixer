@@ -92,6 +92,9 @@ final class ProjectViewModel {
     init(project: Project, store: ProjectStore, settings: AppSettings = .shared) {
         var project = project
         project.migrateSimpleMode()
+        // The click always starts off when a project opens (tempo and the rest
+        // of its settings are kept); turning it on starts it keeping time.
+        project.metronome.mode = .off
         store.cleanTemporaryFiles(project: project.id)
         store.refreshDurations(&project)
         self.project = project

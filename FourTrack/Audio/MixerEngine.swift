@@ -148,6 +148,19 @@ final class MixerEngine {
         if !engine.isRunning {
             engine.prepare()
             try engine.start()
+            waitForFirstRender()
+        }
+    }
+
+    /// The first start after the audio session activates can take longer than
+    /// our 50 ms start lead before the hardware actually renders. Anything
+    /// scheduled for a moment that has already passed by then is skipped
+    /// entirely (the first click after turning the metronome on was silent).
+    /// So wait, briefly and only on a fresh start, until audio is flowing.
+    private func waitForFirstRender() {
+        let deadline = Date().addingTimeInterval(0.6)
+        while engine.isRunning, engine.outputNode.lastRenderTime?.isSampleTimeValid != true, Date() < deadline {
+            usleep(5_000)
         }
     }
 
