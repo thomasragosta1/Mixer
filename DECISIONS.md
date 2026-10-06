@@ -153,6 +153,11 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 - **Single-track export** renders that track with its own processing and fader, ignoring mute and solo. **Mix export** respects mute and solo, so it matches playback.
 - Exports are stereo. AAC 256 kbps 48 kHz by default; Developer Mode adds 24-bit WAV, 44.1 kHz and "Export All Tracks".
 
+## Drum voices choke like real drums (owner report: 808 kick distorting on repeats)
+
+- Repeated hits used to stack: every hit rang out in full on its own voice, so a quick run of 808 kicks (long sine tails) piled up, phased against each other and drove the clipper. Now, live and in the recorded track alike (`DrumVoicing`), **hitting a drum again fades out its previous ring over 8 ms** (no click), the way a re-struck drum or a drum machine behaves, and **the closed and open hi-hat choke each other**. Different drums still overlap freely.
+- The live pads are now a small sampler inside one `AVAudioSourceNode` (16 voices, the oldest-to-finish is reused when all are busy). A tap only queues a note for the audio thread; no player is started or stopped from the main thread, so taps can never block on the audio hardware (the cause of the build-25 freeze report).
+
 ## Deleting a track: swipe from the right edge (owner request)
 
 - Replaces drag-to-bin. Put a finger on the **right-most edge of a track card** (a 30 pt strip) and swipe left: the card slides with the finger and uncovers a red trash, like Mail. Past the threshold (40% of the card, max 160 pt) there's a firm tick and the trash grows; let go there and the "Are you sure you want to delete this track?" alert appears, while the card springs back. Let go before the threshold and nothing happens.

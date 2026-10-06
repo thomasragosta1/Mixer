@@ -102,7 +102,6 @@ final class MixerEngine {
         connectGraph()
         engine.prepare()
         try? engine.start()
-        pads.startVoices()
         if hadMeters { installMeterTaps() }
         state = .stopped
         onConfigurationChange?()
@@ -149,7 +148,6 @@ final class MixerEngine {
         if !engine.isRunning {
             engine.prepare()
             try engine.start()
-            pads.startVoices()
         }
     }
 
@@ -488,10 +486,7 @@ final class MixerEngine {
         }
         inputPrepared = true
         engine.prepare()
-        if wasRunning {
-            try engine.start()
-            pads.startVoices()
-        }
+        if wasRunning { try engine.start() }
     }
 
     /// Turns echo cancellation off again (headphones plugged in, or the setting

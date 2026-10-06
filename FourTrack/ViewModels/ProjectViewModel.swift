@@ -115,6 +115,11 @@ final class ProjectViewModel {
         AudioSessionManager.shared.onEvent = { [weak self] event in self?.handleSessionEvent(event) }
         recoverPendingRecording()
         developerModeChanged()
+        // Drum takes from before choke groups: re-render once so repeated hits
+        // stop piling up (the hits themselves are unchanged).
+        for i in project.visibleLanes where project.tracks[i].needsDrumRerender {
+            renderDrums(i)
+        }
     }
 
     // MARK: Derived
@@ -800,6 +805,7 @@ final class ProjectViewModel {
             switch outcome {
             case .success(let newPeaks):
                 self.project.tracks[index].audioFileName = hits.isEmpty ? nil : ProjectStore.audioFileName(track: index)
+                self.project.tracks[index].drumRenderVersion = DrumRenderer.version
                 self.peaks[index] = newPeaks
                 self.store.refreshDurations(&self.project)
                 self.saveNow()

@@ -151,4 +151,40 @@ final class DrumTests: XCTestCase {
         for i in 0..<n { ab += a[i] * b[i]; aa += a[i] * a[i]; bb += b[i] * b[i] }
         return aa > 0 && bb > 0 ? ab / (aa.squareRoot() * bb.squareRoot()) : 0
     }
+
+    /// Hammering the 808 kick must sound like one kick re-struck, not a stack
+    /// of sine tails adding up into distortion.
+    func testRepeatedKickIsChokedNotStacked() {
+        let kit = DrumKit.eightOhEight
+        let single = DrumRenderer.render([DrumHit(time: 0, pad: 0, velocity: 1)], kit: kit)
+        let singlePeak = single.map(abs).max() ?? 0
+        let hits = (0..<12).map { DrumHit(time: Double($0) * 0.09, pad: 0, velocity: 1) }
+        let many = DrumRenderer.render(hits, kit: kit)
+        let manyPeak = many.map(abs).max() ?? 0
+        XCTAssertLessThanOrEqual(manyPeak, singlePeak * 1.15, "re-hits must not pile up (only the 8 ms fade overlaps)")
+        // The last hit rings out fully; the earlier ones are cut at the next hit.
+        XCTAssertEqual(many.count, Int((11 * 0.09 * 48_000).rounded()) + single.count, accuracy: 2)
+    }
+
+    /// Closed hat chokes the open hat, like a real hi-hat; other drums overlap.
+    func testHiHatsChokeEachOtherButDrumsOverlap() {
+        let kit = DrumKit.studioTight
+        XCTAssertEqual(DrumVoicing.chokeGroup(kit: kit, pad: 2), DrumVoicing.chokeGroup(kit: kit, pad: 3))
+        XCTAssertNotEqual(DrumVoicing.chokeGroup(kit: kit, pad: 0), DrumVoicing.chokeGroup(kit: kit, pad: 1))
+        let open = DrumRenderer.render([DrumHit(time: 0, pad: 3)], kit: kit)
+        let choked = DrumRenderer.render([DrumHit(time: 0, pad: 3), DrumHit(time: 0.1, pad: 2)], kit: kit)
+        let closedAlone = DrumRenderer.render([DrumHit(time: 0.1, pad: 2)], kit: kit)
+        // After the fade, only the closed hat is left.
+        let after = 4_800 + 600
+        let tailLength = min(choked.count, closedAlone.count) - after
+        if tailLength > 0, open.count > after + tailLength {
+            for k in stride(from: after, to: after + tailLength, by: 97) {
+                XCTAssertEqual(choked[k], closedAlone[k], accuracy: 1e-6)
+            }
+        }
+        // Fade, not a hard cut: no jump bigger than the samples themselves make.
+        XCTAssertEqual(DrumVoicing.chokeGain(frame: 0, chokeFrame: 10, fadeFrames: 384), 1)
+        XCTAssertLessThan(DrumVoicing.chokeGain(frame: 10, chokeFrame: 10, fadeFrames: 384), 1)
+        XCTAssertEqual(DrumVoicing.chokeGain(frame: 10 + 384, chokeFrame: 10, fadeFrames: 384), 0)
+    }
 }

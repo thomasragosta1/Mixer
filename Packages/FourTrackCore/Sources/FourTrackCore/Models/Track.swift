@@ -41,6 +41,9 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     public var padSettings: [PadSettings]
     /// Drum tracks: snap hits to a grid (non-destructive).
     public var quantize: QuantizeSettings
+    /// Drum tracks: `DrumRenderer.version` the audio was rendered with, so a
+    /// renderer fix can re-render older takes. 0 = before versions existed.
+    public var drumRenderVersion: Int = 0
 
     public var isDrums: Bool { kind == .drums }
 
@@ -115,7 +118,7 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
     enum CodingKeys: String, CodingKey {
         case index, name, audioFileName, cleanedFileName, mute, solo, volume
         case eqLow, eqMid, eqHigh, compressor, space, warmth, cleanup, cleanupLevel, devOverrides
-        case durationSeconds, lastRecordedRoute, kind, drumKit, drumHits, padSettings, quantize
+        case durationSeconds, lastRecordedRoute, kind, drumKit, drumHits, padSettings, quantize, drumRenderVersion
     }
 
     public init(from decoder: Decoder) throws {
@@ -146,6 +149,12 @@ public struct Track: Codable, Identifiable, Equatable, Sendable {
         let pads = (try? c.decodeIfPresent([PadSettings].self, forKey: .padSettings)) ?? nil
         quantize = (try? c.decodeIfPresent(QuantizeSettings.self, forKey: .quantize)) ?? nil ?? QuantizeSettings()
         padSettings = (pads ?? []).prefix(DrumKit.padCount) + Array(repeating: .default, count: max(0, DrumKit.padCount - (pads?.count ?? 0)))
+        drumRenderVersion = try c.decodeIfPresent(Int.self, forKey: .drumRenderVersion) ?? 0
+    }
+
+    /// A drum take rendered by an older renderer (before choke groups).
+    public var needsDrumRerender: Bool {
+        isDrums && !drumHits.isEmpty && drumRenderVersion < DrumRenderer.version
     }
 }
 

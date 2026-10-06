@@ -195,6 +195,43 @@ final class DrumTrackTests: XCTestCase {
         model.close()
     }
 
+    /// Live pads choke like the recorded track: hammering the 808 kick must not
+    /// stack its tails into something louder (and distorted) than one hit.
+    func testRapid808KicksDontPileUpLive() throws {
+        var project = try store.create(mode: .full)
+        project.tracks[0].kind = .drums
+        project.tracks[0].drumKit = .eightOhEight
+        try store.save(project)
+        let model = ProjectViewModel(project: project, store: store)
+        model.activate()
+        model.arm(0)
+        let mixer = model.engineForTesting.pads.mixer
+        func peak(hits: Int, gap: TimeInterval) -> Float {
+            var peak: Float = 0
+            let lock = NSLock()
+            mixer.installTap(onBus: 0, bufferSize: 512, format: nil) { buffer, _ in
+                guard let d = buffer.floatChannelData?[0] else { return }
+                var m: Float = 0
+                for i in 0..<Int(buffer.frameLength) { m = max(m, abs(d[i])) }
+                lock.lock(); peak = max(peak, m); lock.unlock()
+            }
+            for _ in 0..<hits {
+                model.hitPad(0)
+                spin(gap)
+            }
+            spin(0.6)
+            mixer.removeTap(onBus: 0)
+            lock.lock(); defer { lock.unlock() }
+            return peak
+        }
+        let single = peak(hits: 1, gap: 0.05)
+        spin(1.5)
+        let rapid = peak(hits: 12, gap: 0.06)
+        XCTAssertGreaterThan(single, 0.05, "the kick must sound")
+        XCTAssertLessThanOrEqual(rapid, single * 1.25, "rapid kicks piled up: \(rapid) vs one hit \(single)")
+        model.close()
+    }
+
     /// Recording a drum track while the song plays starts from the live spot,
     /// without restarting; adding a track mid-song doesn't stop or rewind it.
     func testPunchInAndAddTrackWhilePlaying() async throws {

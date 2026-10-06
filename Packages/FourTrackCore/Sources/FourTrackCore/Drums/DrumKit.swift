@@ -206,8 +206,40 @@ public struct DrumHit: Codable, Equatable, Sendable {
     }
 }
 
+/// How pads cut each other off, like real drums and drum machines: hitting a
+/// drum again stops its previous ring (the stick re-strikes the same head), and
+/// the closed and open hi-hat are one instrument, so either chokes the other.
+/// Without this, repeated hits stack up: an 808 kick's long sine tails add up
+/// and cancel each other into a warbly, clipping mess.
+public enum DrumVoicing {
+    /// A cut-off note fades out over this long instead of stopping dead (no click).
+    public static let chokeFadeSeconds = 0.008
+
+    /// Pads in the same group cut each other off.
+    public static func chokeGroup(kit: DrumKit, pad: Int) -> Int {
+        let names = kit.padNames
+        guard names.indices.contains(pad) else { return pad }
+        let name = names[pad]
+        if name == "Closed Hat" || name == "Open Hat" { return 100 }
+        return pad
+    }
+
+    /// Gain for a voice cut off at `chokeFrame` (relative to its start):
+    /// 1 before it, a fade to 0 over `fadeFrames`, 0 after.
+    @inline(__always)
+    public static func chokeGain(frame: Int, chokeFrame: Int, fadeFrames: Int) -> Float {
+        if frame < chokeFrame { return 1 }
+        let into = frame - chokeFrame
+        if into >= fadeFrames { return 0 }
+        return 1 - Float(into + 1) / Float(fadeFrames + 1)
+    }
+}
+
 /// Turns a list of hits into a track's audio.
 public enum DrumRenderer {
+    /// Bumped when rendering changes audibly. 1: choke groups.
+    public static let version = 1
+
     /// Replaces the hits in [start, end) with `newHits` (tape-style overwrite)
     /// and returns the merged, time-sorted list.
     public static func overwrite(_ existing: [DrumHit], from start: Double, to end: Double, with newHits: [DrumHit]) -> [DrumHit] {
@@ -215,8 +247,9 @@ public enum DrumRenderer {
         return (kept + newHits.filter { $0.time >= 0 }).sorted { $0.time < $1.time }
     }
 
-    /// Mixes all hits into one mono buffer. Overlapping hits sum, then a soft
-    /// clipper keeps dense patterns from clipping. Empty for no hits.
+    /// Mixes all hits into one mono buffer. A hit is cut off (with a short
+    /// fade) by the next hit in its choke group; different drums overlap and
+    /// sum, and a soft clipper keeps dense patterns from clipping. Empty for no hits.
     public static func render(_ hits: [DrumHit], kit: DrumKit, pads: [PadSettings] = [], sampleRate: Double = CAFFormat.defaultSampleRate) -> [Float] {
         guard !hits.isEmpty else { return [] }
         var cache: [Int: [Float]] = [:]
@@ -236,18 +269,36 @@ public enum DrumRenderer {
             counters[hit.pad] = v + 1
             return v % max(kit.variantCount, 1)
         }
+        let starts = ordered.map { Int((max(0, $0.time) * sampleRate).rounded()) }
+        // Each hit rings until the next hit in its choke group, then fades out.
+        let fadeFrames = max(1, Int((DrumVoicing.chokeFadeSeconds * sampleRate).rounded()))
+        var chokeAt = [Int?](repeating: nil, count: ordered.count)
+        var lastInGroup: [Int: Int] = [:]
+        for (i, hit) in ordered.enumerated() {
+            let group = DrumVoicing.chokeGroup(kit: kit, pad: hit.pad)
+            if let prev = lastInGroup[group] { chokeAt[prev] = starts[i] - starts[prev] }
+            lastInGroup[group] = i
+        }
         var length = 0
-        for (hit, v) in zip(ordered, variants) {
-            let start = Int((max(0, hit.time) * sampleRate).rounded())
-            length = max(length, start + sample(hit.pad, v).count)
+        for (i, (hit, v)) in zip(ordered, variants).enumerated() {
+            var ring = sample(hit.pad, v).count
+            if let c = chokeAt[i] { ring = min(ring, c + fadeFrames) }
+            length = max(length, starts[i] + ring)
         }
         var out = [Float](repeating: 0, count: length)
-        for (hit, v) in zip(ordered, variants) {
-            let start = Int((max(0, hit.time) * sampleRate).rounded())
+        for (i, (hit, v)) in zip(ordered, variants).enumerated() {
+            let start = starts[i]
             let s = sample(hit.pad, v)
-            let v = min(max(hit.velocity, 0), 1)
-            for i in 0..<s.count {
-                out[start + i] += s[i] * v
+            let gain = min(max(hit.velocity, 0), 1)
+            if let c = chokeAt[i] {
+                let ring = min(s.count, c + fadeFrames)
+                for k in 0..<ring {
+                    out[start + k] += s[k] * gain * DrumVoicing.chokeGain(frame: k, chokeFrame: c, fadeFrames: fadeFrames)
+                }
+            } else {
+                for k in 0..<s.count {
+                    out[start + k] += s[k] * gain
+                }
             }
         }
         // Soft clip only above about -3 dBFS so normal material is untouched.

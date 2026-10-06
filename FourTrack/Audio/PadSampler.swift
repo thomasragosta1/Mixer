@@ -1,33 +1,51 @@
 import AVFoundation
+import os
 import FourTrackCore
 
-/// Plays drum pads live. Each kit's one-shots (every recorded take of every
-/// pad) are loaded once into buffers, and repeated hits alternate takes; a small pool of player nodes gives polyphony so fast or
-/// overlapping hits don't cut each other off. The pool feeds a mixer that
-/// is routed into the armed drum track's chain.
+/// Plays drum pads live: a small sampler that mixes its own voices inside one
+/// source node. Each kit's one-shots (every recorded take of every pad) are
+/// loaded once, repeated hits alternate takes, and voices follow the same
+/// choke rules as the recorded drum track (`DrumVoicing`): hitting a drum again
+/// fades out its previous ring, and the closed hat cuts off the open hat. So a
+/// fast run of 808 kicks sounds like one kick re-struck instead of tails piling
+/// up into distortion, and what you play is what gets recorded.
+///
+/// A tap only queues a note; the audio thread picks it up on its next cycle.
+/// Nothing is ever started or stopped from the main thread, so a tap can't
+/// block on the audio hardware. The output feeds a mixer routed into the armed
+/// drum track's chain.
 final class PadSampler {
     let mixer = AVAudioMixerNode()
-    private let voices: [AVAudioPlayerNode] = (0..<10).map { _ in AVAudioPlayerNode() }
-    private var nextVoice = 0
+    private let voices: PadVoices
+    private let source: AVAudioSourceNode
     /// buffers[pad][variant]
-    private var buffers: [[AVAudioPCMBuffer]] = []
+    private var buffers: [[[Float]]] = []
     private var nextVariant: [Int] = Array(repeating: 0, count: DrumKit.padCount)
     private(set) var kit: DrumKit?
     private(set) var padSettings: [PadSettings] = []
     /// Track index whose chain the pads currently feed.
     var routedTrack = 0
 
-    var nodes: [AVAudioNode] { [mixer] + voices }
+    init() {
+        let voices = PadVoices()
+        self.voices = voices
+        source = AVAudioSourceNode(format: EngineFormat.mono) { _, _, frameCount, audioBufferList -> OSStatus in
+            let list = UnsafeMutableAudioBufferListPointer(audioBufferList)
+            guard let data = list.first?.mData?.assumingMemoryBound(to: Float.self) else { return noErr }
+            voices.render(into: data, frames: Int(frameCount))
+            return noErr
+        }
+    }
+
+    var nodes: [AVAudioNode] { [mixer, source] }
 
     func attach(to engine: AVAudioEngine) {
         engine.attach(mixer)
-        voices.forEach { engine.attach($0) }
+        engine.attach(source)
     }
 
     func connect(to chain: TrackChain, in engine: AVAudioEngine) {
-        for (i, voice) in voices.enumerated() {
-            engine.connect(voice, to: mixer, fromBus: 0, toBus: i, format: EngineFormat.mono)
-        }
+        engine.connect(source, to: mixer, format: EngineFormat.mono)
         // Bus 0 and 1 of the chain's input mixer are the take and its Cleanup render.
         engine.connect(mixer, to: chain.cleanupMix, fromBus: 0, toBus: 2, format: EngineFormat.mono)
     }
@@ -42,9 +60,9 @@ final class PadSampler {
             nextVariant = Array(repeating: 0, count: DrumKit.padCount)
         }
         for pad in 0..<DrumKit.padCount where kitChanged || padSettings.count != DrumKit.padCount || padSettings[pad] != settings[pad] || buffers[pad].isEmpty {
-            buffers[pad] = (0..<kit.variantCount).compactMap { variant in
-                Self.makeBuffer(PadProcessor.apply(kit.sample(pad: pad, variant: variant), settings[pad]))
-            }
+            buffers[pad] = (0..<kit.variantCount).map { variant in
+                PadProcessor.apply(kit.sample(pad: pad, variant: variant), settings[pad])
+            }.filter { !$0.isEmpty }
         }
         self.kit = kit
         padSettings = settings
@@ -54,38 +72,104 @@ final class PadSampler {
         Array(pads.prefix(DrumKit.padCount)) + Array(repeating: .default, count: max(0, DrumKit.padCount - pads.count))
     }
 
-    private static func makeBuffer(_ samples: [Float]) -> AVAudioPCMBuffer? {
-        guard !samples.isEmpty,
-              let buffer = AVAudioPCMBuffer(pcmFormat: EngineFormat.mono, frameCapacity: AVAudioFrameCount(samples.count)),
-              let out = buffer.floatChannelData?[0] else { return nil }
-        buffer.frameLength = AVAudioFrameCount(samples.count)
-        samples.withUnsafeBufferPointer { src in
-            out.update(from: src.baseAddress!, count: samples.count)
-        }
-        return buffer
-    }
-
     func trigger(_ pad: Int, velocity: Float) {
-        guard buffers.indices.contains(pad), !buffers[pad].isEmpty else { return }
+        guard let kit, buffers.indices.contains(pad), !buffers[pad].isEmpty else { return }
         let takes = buffers[pad]
-        let buffer = takes[nextVariant[pad] % takes.count]
+        let samples = takes[nextVariant[pad] % takes.count]
         nextVariant[pad] += 1
-        let voice = voices[nextVoice]
-        nextVoice = (nextVoice + 1) % voices.count
-        voice.volume = velocity
-        // Voices keep running (silent when idle), so a hit only schedules its
-        // buffer, replacing whatever that voice was still playing. Stopping and
-        // restarting a player on every tap made the main thread wait for the
-        // audio hardware, which froze the app when the hardware stalled.
-        voice.scheduleBuffer(buffer, at: nil, options: .interrupts, completionHandler: nil)
-        if !voice.isPlaying { voice.play() }
+        voices.queue(samples, gain: velocity, group: DrumVoicing.chokeGroup(kit: kit, pad: pad))
+    }
+}
+
+/// The sampler's voices, shared between the main thread (which queues notes)
+/// and the audio thread (which mixes them). The audio thread only ever tries
+/// the lock, so it never waits on the main thread.
+final class PadVoices: @unchecked Sendable {
+    private struct Note {
+        var samples: [Float]
+        var gain: Float
+        var group: Int
     }
 
-    /// Starts every voice idling, right after the engine (re)starts, so taps
-    /// never have to start a player themselves.
-    func startVoices() {
-        for voice in voices where !voice.isPlaying && voice.engine?.isRunning == true {
-            voice.play()
+    private struct Voice {
+        var samples: [Float] = []
+        var position = 0
+        var gain: Float = 0
+        var group = -1
+        /// Frames left in the choke fade; nil while ringing normally.
+        var fadeLeft: Int?
+        var active: Bool { position < samples.count }
+    }
+
+    static let voiceCount = 16
+    private let fadeFrames = max(1, Int((DrumVoicing.chokeFadeSeconds * EngineFormat.sampleRate).rounded()))
+    private let lock: UnsafeMutablePointer<os_unfair_lock> = {
+        let l = UnsafeMutablePointer<os_unfair_lock>.allocate(capacity: 1)
+        l.initialize(to: os_unfair_lock())
+        return l
+    }()
+    private var pending: [Note] = []
+    private var voices = [Voice](repeating: Voice(), count: PadVoices.voiceCount)
+    private var nextVoice = 0
+
+    deinit {
+        lock.deinitialize(count: 1)
+        lock.deallocate()
+    }
+
+    /// Main thread: a pad was hit.
+    func queue(_ samples: [Float], gain: Float, group: Int) {
+        os_unfair_lock_lock(lock)
+        if pending.count < 64 { pending.append(Note(samples: samples, gain: gain, group: group)) }
+        os_unfair_lock_unlock(lock)
+    }
+
+    /// Audio thread: mixes every ringing voice into `out`.
+    func render(into out: UnsafeMutablePointer<Float>, frames: Int) {
+        out.update(repeating: 0, count: frames)
+        if os_unfair_lock_trylock(lock) {
+            for note in pending { start(note) }
+            pending.removeAll(keepingCapacity: true)
+            os_unfair_lock_unlock(lock)
         }
+        for v in voices.indices where voices[v].active {
+            mix(&voices[v], into: out, frames: frames)
+        }
+    }
+
+    private func start(_ note: Note) {
+        // Same drum (or the other hi-hat) still ringing: fade it out now.
+        for v in voices.indices where voices[v].active && voices[v].group == note.group && voices[v].fadeLeft == nil {
+            voices[v].fadeLeft = fadeFrames
+        }
+        // A free voice, else the one closest to finishing.
+        let free = voices.indices.first { !voices[$0].active }
+            ?? voices.indices.min { (voices[$0].samples.count - voices[$0].position) < (voices[$1].samples.count - voices[$1].position) }
+            ?? 0
+        voices[free] = Voice(samples: note.samples, position: 0, gain: note.gain, group: note.group, fadeLeft: nil)
+    }
+
+    private func mix(_ voice: inout Voice, into out: UnsafeMutablePointer<Float>, frames: Int) {
+        let count = voice.samples.count
+        var position = voice.position
+        var fadeLeft = voice.fadeLeft
+        let gain = voice.gain
+        let fade = fadeFrames
+        voice.samples.withUnsafeBufferPointer { s in
+            for i in 0..<frames {
+                guard position < count else { break }
+                var g = gain
+                if let left = fadeLeft {
+                    if left <= 0 { position = count; break }
+                    g *= Float(left) / Float(fade + 1)
+                    fadeLeft = left - 1
+                }
+                out[i] += s[position] * g
+                position += 1
+            }
+        }
+        voice.position = position
+        voice.fadeLeft = fadeLeft
+        if position >= count { voice.samples = [] ; voice.position = 0 }
     }
 }
