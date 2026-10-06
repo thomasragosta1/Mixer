@@ -232,6 +232,43 @@ final class DrumTrackTests: XCTestCase {
         model.close()
     }
 
+    /// Live pads are always heard, even when another track is soloed or the
+    /// drum track itself is muted; only its recorded take follows mute/solo.
+    func testPadsAudibleWhileAnotherTrackIsSoloed() throws {
+        var project = try store.create(mode: .full)
+        let w = try CAFWriter(url: store.audioURL(project: project.id, track: 0))
+        try w.write([Float](repeating: 0.1, count: 48_000))
+        try w.finish()
+        project.tracks[0].audioFileName = ProjectStore.audioFileName(track: 0)
+        project.visibleTrackCount = 2
+        project.tracks[1].kind = .drums
+        store.refreshDurations(&project)
+        try store.save(project)
+        let model = ProjectViewModel(project: project, store: store)
+        model.activate()
+        model.toggleSolo(0)
+        model.toggleMute(1)
+        model.arm(1)
+        let out = model.engineForTesting.chains[1].trackMixer
+        var peak: Float = 0
+        let lock = NSLock()
+        out.installTap(onBus: 0, bufferSize: 1024, format: nil) { buffer, _ in
+            guard let d = buffer.floatChannelData?[0] else { return }
+            var m: Float = 0
+            for i in 0..<Int(buffer.frameLength) { m = max(m, abs(d[i])) }
+            lock.lock(); peak = max(peak, m); lock.unlock()
+        }
+        for pad in [0, 1, 0, 1] {
+            model.hitPad(pad)
+            spin(0.15)
+        }
+        spin(0.4)
+        out.removeTap(onBus: 0)
+        lock.lock(); let heard = peak; lock.unlock()
+        XCTAssertGreaterThan(heard, 0.02, "pads were silenced by solo/mute")
+        model.close()
+    }
+
     /// Recording a drum track while the song plays starts from the live spot,
     /// without restarting; adding a track mid-song doesn't stop or rewind it.
     func testPunchInAndAddTrackWhilePlaying() async throws {

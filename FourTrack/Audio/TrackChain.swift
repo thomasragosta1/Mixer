@@ -131,12 +131,15 @@ final class TrackChain {
     // MARK: Parameters
 
     /// Pushes a track's stored slider values (or Developer Mode overrides) into
-    /// the DSP nodes. `audible` folds in mute and solo.
+    /// the DSP nodes. `audible` folds in mute and solo. It silences the
+    /// recorded take only: live drum pads routed into this chain stay audible,
+    /// so you can always hear what you play, even with another track soloed.
     func apply(_ track: Track, audible: Bool, warmthEnabled: Bool) {
         // Cleanup blend. Without a render, the original plays at full level.
         let blend = MacroCurves.cleanupBlend(cleanFile == nil ? 0 : track.cleanup)
-        playerDry.volume = Float(blend.dry)
-        playerClean.volume = Float(blend.wet)
+        let take: Float = audible ? 1 : 0
+        playerDry.volume = Float(blend.dry) * take
+        playerClean.volume = Float(blend.wet) * take
 
         // EQ
         let bands = track.resolvedEQ
@@ -194,8 +197,9 @@ final class TrackChain {
         reverb.wetDryMix = Float(r.wetDryMix)
         reverb.bypass = r.wetDryMix <= 0
 
-        // Volume, mute, solo: silenced tracks keep their fader value.
-        let gain = audible ? MacroCurves.volumeGain(track.volume) * MacroCurves.dbToGain(trimDB) : 0
+        // Volume. Mute and solo act on the take players above, so faders keep
+        // their value and live pads aren't silenced.
+        let gain = MacroCurves.volumeGain(track.volume) * MacroCurves.dbToGain(trimDB)
         trackMixer.outputVolume = Float(gain)
     }
 
