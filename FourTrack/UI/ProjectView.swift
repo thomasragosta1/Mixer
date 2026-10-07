@@ -125,7 +125,7 @@ struct ProjectView: View {
             TrackBinView(model: model)
                 .presentationDetents([.medium, .large])
         }
-        .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.showsDrumPads)
+        .animation(PadsDrawer.animation, value: model.showsDrumPads)
         .navigationTitle(model.project.name)
         .navigationBarTitleDisplayMode(.inline)
         .toolbar { toolbar }
@@ -469,56 +469,32 @@ enum Haptics {
     }
 }
 
-/// Above the transport while a drum track's pads are pulled down. Drag it up
-/// (it follows the finger) past the threshold, flick it, or tap it to bring
-/// the pads back.
+/// Above the transport while a drum track's pads are put away: just the
+/// grabber. Swipe up on it (or tap it) to bring the pads back. It never moves
+/// with the finger.
 struct PadsPullTab: View {
     @Bindable var model: ProjectViewModel
-    @State private var lift: CGFloat = 0
-    @State private var pastThreshold = false
-    private static let threshold: CGFloat = 60
 
     var body: some View {
-        VStack(spacing: 4) {
-            Capsule()
-                .fill(Color.secondary.opacity(pastThreshold ? 0.9 : 0.5))
-                .frame(width: pastThreshold ? 44 : 36, height: 5)
-            Label("Drum Pads", systemImage: "chevron.up")
-                .font(.caption.weight(.semibold))
-                .foregroundStyle(.secondary)
-        }
-        .frame(maxWidth: .infinity, minHeight: 44)
-        .contentShape(Rectangle())
-        .offset(y: -lift)
-        .scaleEffect(1 + min(0.08, lift / 600))
-        .animation(.spring(response: 0.2, dampingFraction: 0.7), value: pastThreshold)
-        .gesture(
-            DragGesture(minimumDistance: 0, coordinateSpace: .global)
-                .onChanged { g in
-                    let y = max(0, -g.translation.height)
-                    lift = y <= Self.threshold ? y : Self.threshold + (y - Self.threshold) * 0.4
-                    let past = y >= Self.threshold
-                    if past != pastThreshold {
-                        pastThreshold = past
-                        if past { Haptics.lift.impactOccurred() }
+        GrabberBar()
+            .frame(minHeight: 30)
+            .onTapGesture { show() }
+            .simultaneousGesture(
+                DragGesture(minimumDistance: 10)
+                    .onEnded { g in
+                        if g.translation.height < -16 || g.predictedEndTranslation.height < -60 { show() }
                     }
-                }
-                .onEnded { g in
-                    let tap = abs(g.translation.height) < 6 && abs(g.translation.width) < 6
-                    let flick = -g.predictedEndTranslation.height > Self.threshold * 2
-                    let show = tap || flick || -g.translation.height >= Self.threshold
-                    pastThreshold = false
-                    if tap { Haptics.lift.impactOccurred() }
-                    withAnimation(.spring(response: show ? 0.42 : 0.32, dampingFraction: show ? 0.88 : 0.75)) {
-                        lift = 0
-                        if show { model.drumPadsHidden = false }
-                    }
-                }
-        )
-        .accessibilityElement()
-        .accessibilityLabel("Show drum pads")
-        .accessibilityAddTraits(.isButton)
-        .accessibilityAction { model.drumPadsHidden = false }
+            )
+            .accessibilityElement()
+            .accessibilityLabel("Show drum pads")
+            .accessibilityAddTraits(.isButton)
+            .accessibilityAction { show() }
+    }
+
+    private func show() {
+        guard model.drumPadsHidden else { return }
+        Haptics.slot.selectionChanged()
+        withAnimation(PadsDrawer.animation) { model.drumPadsHidden = false }
     }
 }
 

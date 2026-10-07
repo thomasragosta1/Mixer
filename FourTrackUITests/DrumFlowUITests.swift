@@ -50,7 +50,7 @@ final class DrumFlowUITests: XCTestCase {
             app.buttons[kit == "Hand Percussion" ? "Cajón" : "Kick"].firstMatch.tap()
         }
         XCTAssertTrue(app.buttons["Tight"].firstMatch.exists, "Studio should come back on Tight")
-        // Pull the pads down: every track shows full size, then bring them back.
+        // Put the pads away (tap the grabber): every track shows full size, then bring them back.
         let hide = app.descendants(matching: .any)["Hide drum pads"].firstMatch
         XCTAssertTrue(hide.waitForExistence(timeout: 3))
         hide.tap()

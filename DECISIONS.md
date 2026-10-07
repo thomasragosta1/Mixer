@@ -231,9 +231,14 @@ This environment has no Xcode or iOS SDK. The core package is compiled and its t
   - The pad sound bubble scrolls when it's short.
 - **SDK:** full iPhone Duo resizing needs apps built with the iOS 27 SDK. The GitHub macOS runners only have Xcode 26.x so far; CI now picks the newest Xcode 27 automatically when it appears (falling back to the newest 26, with a warning). Not tested on an iPhone Duo or its simulator (needs Xcode 27.1).
 
-## Hide the drum pads (owner request)
+## Hide the drum pads (owner request, reworked twice)
 
-- A grab handle sits centred on its own row at the very top of the drum controls, with the track name and M / S / Q just below it (the old "Play along anytime…" hint line is gone). The pull is interactive: the pads slide down and fade with the finger, a tick marks the 90 pt threshold, and on release they glide away (past it, on a flick, or on a tap) or spring back; the "Drum Pads" tab follows the finger up the same way (60 pt). Pull it down (or tap it) and the pads go away: every track shows as a full-size card, exactly as when an audio track is armed, with the normal transport. A "Drum Pads" pull tab above the transport brings them back (pull up or tap). Pressing record on a drum track brings the pads back too, since you need them to play. Hidden stays hidden while you switch between tracks during the session; it isn't saved with the project.
+- **Handles never move.** A small grabber sits centred at the very top of the drum header (name and M / S / Q just below). Swipe down anywhere on that header, or tap the grabber, and the pads go away: every track shows as a full-size card with the normal transport. With the pads away, a bare grabber (no label) sits above the transport; swipe up on it or tap it to bring them back. Pressing record on a drum track also brings them back.
+- **Smooth by design.** Earlier versions tracked the finger live (the pads and the tab moved with it), which felt laggy and the owner disliked the tab dragging. Now the gesture is recognised (a 20 pt swipe or a flick) and a single damped spring (response 0.42, damping 0.92) moves the pads in or out; nothing follows the finger. Hidden stays hidden while switching tracks in a session; it isn't saved.
+
+## Play after a take (owner request)
+
+- When a recording (audio or drums) finishes, the playhead shows where it stopped, but the next Play starts from the beginning of the song. Moving the playhead yourself first (scrub, skip, return to start) cancels that, and Play starts from where you put it.
 
 ## Playhead on open (owner request)
 

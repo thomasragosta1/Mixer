@@ -73,6 +73,9 @@ final class ProjectViewModel {
     @ObservationIgnored private var cleanupJobs: [Int: ProgressBox] = [:]
     @ObservationIgnored private var pendingMarkerFinal = false
     @ObservationIgnored private var scrubWasPlaying = false
+    /// Set when a take finishes: the next Play starts from the beginning of
+    /// the song (moving the playhead yourself cancels it).
+    @ObservationIgnored private var playFromStartNext = false
     @ObservationIgnored private var isClosed = false
     @ObservationIgnored private var isActive = false
     /// Guards against a double tap while permission or the engine is starting.
@@ -254,8 +257,12 @@ final class ProjectViewModel {
         stopClickPreview()
         // With the metronome on, it keeps time again after the song stops.
         clickWanted = !isSimple && project.metronome.enabled
-        // Voice Memos behavior: at the end, play from the start.
-        if playhead >= duration - 0.01 { playhead = 0 }
+        // After a take, and (Voice Memos behavior) at the end: play from the start.
+        if playFromStartNext || playhead >= duration - 0.01 {
+            playFromStartNext = false
+            playhead = 0
+            engine.seek(to: 0)
+        }
         guard duration > 0 else { return }
         do {
             try engine.play(from: playhead, metronome: metronomeIfEnabled)
@@ -287,6 +294,7 @@ final class ProjectViewModel {
 
     func seek(to seconds: Double) {
         guard !isRecording else { return }
+        playFromStartNext = false
         let target = min(max(0, seconds), duration)
         let wasPlaying = isPlaying
         if wasPlaying { _ = engine.pause() }
@@ -309,6 +317,7 @@ final class ProjectViewModel {
 
     func beginScrub() {
         guard !isRecording else { return }
+        playFromStartNext = false
         scrubWasPlaying = isPlaying
         if isPlaying {
             playhead = engine.pause()
@@ -518,6 +527,7 @@ final class ProjectViewModel {
         finalize(sink: result.sink, plan: result.plan)
         playhead = stopSeconds
         engine.seek(to: playhead)
+        playFromStartNext = true
         // Echo cancellation is only for the overdub itself: playback and the
         // next take go back to the plain microphone and output.
         engine.disableVoiceProcessingIfIdle()
@@ -843,6 +853,7 @@ final class ProjectViewModel {
         drumTakeHits = []
         playhead = stopSeconds
         engine.seek(to: playhead)
+        playFromStartNext = true
         syncClock()
         renderDrums(index)
     }

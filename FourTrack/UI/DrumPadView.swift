@@ -19,8 +19,6 @@ struct DrumStudioView: View {
     /// Wider than tall (landscape, or an unfolded inner display): controls in
     /// a column on the left, the pads filling the right.
     @State private var isWide = false
-    /// How far the pads are being pulled down by the handle (follows the finger).
-    @State private var pull: CGFloat = 0
 
     var body: some View {
         Group {
@@ -37,7 +35,6 @@ struct DrumStudioView: View {
                     .scrollBounceBehavior(.basedOnSize)
                     .frame(width: 380)
                     pads
-                    .modifier(PulledDown(pull: pull))
                     .padding(.trailing, 12)
                     .padding(.bottom, 8)
                 }
@@ -46,7 +43,6 @@ struct DrumStudioView: View {
                     CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
                     trackControls
                     pads
-                        .modifier(PulledDown(pull: pull))
                     transportPanel
                 }
             }
@@ -65,7 +61,7 @@ struct DrumStudioView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 16)
         } else {
-            DrumTrackControls(model: model, index: index, pull: $pull)
+            DrumTrackControls(model: model, index: index)
                 .padding(.horizontal, 16)
 
             DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
@@ -102,22 +98,25 @@ struct DrumStudioView: View {
 
 // MARK: - Track controls
 
-/// The handle that pulls the pads down out of the way, centred at the very
-/// top, with the armed drum track's name and M, S and Q (quantize) below it.
+/// The armed drum track's header: a small handle centred at the very top,
+/// then the name and M, S and Q (quantize). Swipe down anywhere on it (or tap
+/// the handle) to put the pads away. The handle itself never moves: the swipe
+/// is recognised, then one spring animation does the rest.
 struct DrumTrackControls: View {
     @Bindable var model: ProjectViewModel
     let index: Int
-    @Binding var pull: CGFloat
-    @State private var pastThreshold = false
 
     private var track: Track { model.project.tracks[index] }
-    /// Pull this far (or flick) and the pads go away on release.
-    private static let threshold: CGFloat = 90
 
     var body: some View {
-        // The handle on its own row at the very top, centred; name and M / S / Q below.
         VStack(spacing: 0) {
-            hideHandle
+            GrabberBar()
+                .onTapGesture { hidePads() }
+                .accessibilityElement()
+                .accessibilityLabel("Hide drum pads")
+                .accessibilityHint("Shows every track full size")
+                .accessibilityAddTraits(.isButton)
+                .accessibilityAction { hidePads() }
             HStack(spacing: 4) {
                 Text(track.name)
                     .font(.headline)
@@ -133,68 +132,36 @@ struct DrumTrackControls: View {
                 QuantizeChip(model: model, index: index)
             }
         }
-    }
-
-    /// Drag down: the pads follow the finger and fade; past the threshold (or a
-    /// quick flick, or a tap) they glide away on release, otherwise they
-    /// spring back.
-    private var hideHandle: some View {
-        VStack(spacing: 2) {
-            Capsule()
-                .fill(Color.secondary.opacity(pastThreshold ? 0.9 : 0.5))
-                .frame(width: pastThreshold ? 44 : 36, height: 5)
-            Image(systemName: "chevron.compact.down")
-                .font(.system(size: 15, weight: .semibold))
-                .foregroundStyle(.secondary)
-                .offset(y: min(pull, Self.threshold) * 0.08)
-        }
-        .frame(width: 96, height: 30)
         .contentShape(Rectangle())
-        .animation(.spring(response: 0.2, dampingFraction: 0.7), value: pastThreshold)
-        .gesture(
-            DragGesture(minimumDistance: 0, coordinateSpace: .global)
-                .onChanged { g in
-                    // Follows the finger 1:1, with resistance past the threshold.
-                    let y = max(0, g.translation.height)
-                    pull = y <= Self.threshold ? y : Self.threshold + (y - Self.threshold) * 0.4
-                    let past = y >= Self.threshold
-                    if past != pastThreshold {
-                        pastThreshold = past
-                        if past { Haptics.lift.impactOccurred() }
-                    }
-                }
+        .simultaneousGesture(
+            DragGesture(minimumDistance: 10)
                 .onEnded { g in
-                    let tap = abs(g.translation.height) < 6 && abs(g.translation.width) < 6
-                    let flick = g.predictedEndTranslation.height > Self.threshold * 2
-                    pastThreshold = false
-                    if tap || flick || g.translation.height >= Self.threshold {
-                        if tap { Haptics.lift.impactOccurred() }
-                        withAnimation(.spring(response: 0.42, dampingFraction: 0.88)) {
-                            model.drumPadsHidden = true
-                        }
-                    } else {
-                        withAnimation(.spring(response: 0.32, dampingFraction: 0.75)) { pull = 0 }
-                    }
+                    guard abs(g.translation.height) > abs(g.translation.width) else { return }
+                    if g.translation.height > 20 || g.predictedEndTranslation.height > 70 { hidePads() }
                 }
         )
-        .disabled(model.isRecording)
-        .accessibilityElement()
-        .accessibilityLabel("Hide drum pads")
-        .accessibilityHint("Shows every track full size")
-        .accessibilityAddTraits(.isButton)
-        .accessibilityAction { model.drumPadsHidden = true }
+    }
+
+    private func hidePads() {
+        guard !model.isRecording, !model.drumPadsHidden else { return }
+        Haptics.slot.selectionChanged()
+        withAnimation(PadsDrawer.animation) { model.drumPadsHidden = true }
     }
 }
 
-/// The pads area while the handle pulls it down: slides with the finger and fades.
-struct PulledDown: ViewModifier {
-    let pull: CGFloat
+/// How the pads come and go: one smooth, slightly damped spring.
+enum PadsDrawer {
+    static let animation = Animation.spring(response: 0.42, dampingFraction: 0.92)
+}
 
-    func body(content: Content) -> some View {
-        content
-            .offset(y: pull)
-            .opacity(1 - min(0.7, Double(pull) / 260))
-            .scaleEffect(1 - min(0.06, pull / 2_000), anchor: .top)
+/// The iOS-style grabber: a short rounded bar with a generous, invisible hit area.
+struct GrabberBar: View {
+    var body: some View {
+        Capsule()
+            .fill(Color.secondary.opacity(0.45))
+            .frame(width: 36, height: 5)
+            .frame(maxWidth: .infinity, minHeight: 22)
+            .contentShape(Rectangle())
     }
 }
 
