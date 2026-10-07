@@ -19,6 +19,8 @@ struct DrumStudioView: View {
     /// Wider than tall (landscape, or an unfolded inner display): controls in
     /// a column on the left, the pads filling the right.
     @State private var isWide = false
+    /// How far the pads are being pulled down by the handle (follows the finger).
+    @State private var pull: CGFloat = 0
 
     var body: some View {
         Group {
@@ -38,6 +40,7 @@ struct DrumStudioView: View {
                         hint
                         pads
                     }
+                    .modifier(PulledDown(pull: pull))
                     .padding(.trailing, 12)
                     .padding(.bottom, 8)
                 }
@@ -45,8 +48,11 @@ struct DrumStudioView: View {
                 VStack(spacing: 10) {
                     CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
                     trackControls
-                    hint
-                    pads
+                    VStack(spacing: 10) {
+                        hint
+                        pads
+                    }
+                    .modifier(PulledDown(pull: pull))
                     transportPanel
                 }
             }
@@ -65,7 +71,7 @@ struct DrumStudioView: View {
                 .frame(maxWidth: .infinity, alignment: .leading)
                 .padding(.horizontal, 16)
         } else {
-            DrumTrackControls(model: model, index: index)
+            DrumTrackControls(model: model, index: index, pull: $pull)
                 .padding(.horizontal, 16)
 
             DrumKitPicker(kit: track.drumKit) { model.setDrumKit(index, $0) }
@@ -111,49 +117,79 @@ struct DrumStudioView: View {
 
 // MARK: - Track controls
 
-/// The armed drum track's name with M, S and Q (quantize).
+/// The armed drum track's name with M, S and Q (quantize), and the handle,
+/// dead centre, that pulls the pads down out of the way.
 struct DrumTrackControls: View {
     @Bindable var model: ProjectViewModel
     let index: Int
+    @Binding var pull: CGFloat
+    @State private var pastThreshold = false
 
     private var track: Track { model.project.tracks[index] }
+    /// Pull this far (or flick) and the pads go away on release.
+    private static let threshold: CGFloat = 90
 
     var body: some View {
-        HStack(spacing: 6) {
+        // Equal halves either side keep the handle dead centre on any width.
+        HStack(spacing: 4) {
             Text(track.name)
                 .font(.headline)
                 .lineLimit(1)
-            Spacer(minLength: 8)
+                .minimumScaleFactor(0.8)
+                .frame(maxWidth: .infinity, alignment: .leading)
             hideHandle
-            Spacer(minLength: 8)
-            ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
-                model.toggleMute(index)
+            HStack(spacing: 4) {
+                ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
+                    model.toggleMute(index)
+                }
+                ToggleChip(title: "S", isOn: track.solo, onColor: .yellow, accessibilityName: "Solo \(track.name)") {
+                    model.toggleSolo(index)
+                }
+                QuantizeChip(model: model, index: index)
             }
-            ToggleChip(title: "S", isOn: track.solo, onColor: .yellow, accessibilityName: "Solo \(track.name)") {
-                model.toggleSolo(index)
-            }
-            QuantizeChip(model: model, index: index)
+            .frame(maxWidth: .infinity, alignment: .trailing)
         }
     }
 
-    /// Pull down (or tap) to hide the pads and see every track full size.
+    /// Drag down: the pads follow the finger and fade; past the threshold (or a
+    /// quick flick, or a tap) they glide away on release, otherwise they
+    /// spring back.
     private var hideHandle: some View {
-        VStack(spacing: 3) {
+        VStack(spacing: 2) {
             Capsule()
-                .fill(Color.secondary.opacity(0.5))
-                .frame(width: 36, height: 5)
+                .fill(Color.secondary.opacity(pastThreshold ? 0.9 : 0.5))
+                .frame(width: pastThreshold ? 44 : 36, height: 5)
             Image(systemName: "chevron.compact.down")
-                .font(.system(size: 14, weight: .semibold))
+                .font(.system(size: 15, weight: .semibold))
                 .foregroundStyle(.secondary)
+                .offset(y: min(pull, Self.threshold) * 0.08)
         }
-        .frame(width: 64, height: 40)
+        .frame(width: 44, height: 44)
         .contentShape(Rectangle())
+        .animation(.spring(response: 0.2, dampingFraction: 0.7), value: pastThreshold)
         .gesture(
-            DragGesture(minimumDistance: 0)
+            DragGesture(minimumDistance: 0, coordinateSpace: .global)
+                .onChanged { g in
+                    // Follows the finger 1:1, with resistance past the threshold.
+                    let y = max(0, g.translation.height)
+                    pull = y <= Self.threshold ? y : Self.threshold + (y - Self.threshold) * 0.4
+                    let past = y >= Self.threshold
+                    if past != pastThreshold {
+                        pastThreshold = past
+                        if past { Haptics.lift.impactOccurred() }
+                    }
+                }
                 .onEnded { g in
-                    if g.translation.height > 24 || (abs(g.translation.height) < 8 && abs(g.translation.width) < 8) {
-                        Haptics.lift.impactOccurred()
-                        withAnimation(.spring(response: 0.35, dampingFraction: 0.85)) { model.drumPadsHidden = true }
+                    let tap = abs(g.translation.height) < 6 && abs(g.translation.width) < 6
+                    let flick = g.predictedEndTranslation.height > Self.threshold * 2
+                    pastThreshold = false
+                    if tap || flick || g.translation.height >= Self.threshold {
+                        if tap { Haptics.lift.impactOccurred() }
+                        withAnimation(.spring(response: 0.42, dampingFraction: 0.88)) {
+                            model.drumPadsHidden = true
+                        }
+                    } else {
+                        withAnimation(.spring(response: 0.32, dampingFraction: 0.75)) { pull = 0 }
                     }
                 }
         )
@@ -163,6 +199,18 @@ struct DrumTrackControls: View {
         .accessibilityHint("Shows every track full size")
         .accessibilityAddTraits(.isButton)
         .accessibilityAction { model.drumPadsHidden = true }
+    }
+}
+
+/// The pads area while the handle pulls it down: slides with the finger and fades.
+struct PulledDown: ViewModifier {
+    let pull: CGFloat
+
+    func body(content: Content) -> some View {
+        content
+            .offset(y: pull)
+            .opacity(1 - min(0.7, Double(pull) / 260))
+            .scaleEffect(1 - min(0.06, pull / 2_000), anchor: .top)
     }
 }
 
@@ -211,7 +259,7 @@ struct QuantizeChip: View {
                 .font(.footnote.weight(.bold))
                 .lineLimit(1)
                 .minimumScaleFactor(0.7)
-                .frame(width: q.enabled ? 64 : 40, height: 28)
+                .frame(width: q.enabled ? 56 : 40, height: 28)
                 .foregroundStyle(q.enabled ? Color.black : Color.primary)
                 .background(
                     RoundedRectangle(cornerRadius: 7, style: .continuous)
