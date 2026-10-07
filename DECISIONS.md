@@ -234,3 +234,7 @@ This environment has no Xcode or iOS SDK. The core package is compiled and its t
 ## Hide the drum pads (owner request)
 
 - A grab handle sits in the middle of the drum screen's top row, between the track name and M / S / Q. Pull it down (or tap it) and the pads go away: every track shows as a full-size card, exactly as when an audio track is armed, with the normal transport. A "Drum Pads" pull tab above the transport brings them back (pull up or tap). Pressing record on a drum track brings the pads back too, since you need them to play. Hidden stays hidden while you switch between tracks during the session; it isn't saved with the project.
+
+## Playhead on open (owner request)
+
+- The first time a project is opened after the app was launched fresh (killed, or the phone restarted), the playhead starts at 0:00. Reopening a project while the app is still running (it was only in the background, or you went back to the list) returns to where you left off.

@@ -89,6 +89,9 @@ final class ProjectViewModel {
     /// Bumped on every splice so a Cleanup render of an older take is discarded.
     @ObservationIgnored private var takeGeneration = [Int](repeating: 0, count: Project.trackCount)
 
+    /// Projects opened since the app process started.
+    private static var openedThisLaunch: Set<UUID> = []
+
     init(project: Project, store: ProjectStore, settings: AppSettings = .shared) {
         var project = project
         project.migrateSimpleMode()
@@ -101,7 +104,11 @@ final class ProjectViewModel {
         self.store = store
         self.settings = settings
         self.engine = MixerEngine()
-        playhead = min(project.playheadSeconds, project.durationSeconds)
+        // First open since the app launched (it was killed or the phone
+        // restarted): start at 0:00. Reopening during the same run of the app
+        // returns to where you left off.
+        let firstOpenThisLaunch = Self.openedThisLaunch.insert(project.id).inserted
+        playhead = firstOpenThisLaunch ? 0 : min(project.playheadSeconds, project.durationSeconds)
         // Arm the first empty lane, or the last one if all have takes.
         armedTrack = project.visibleLanes.first(where: { project.tracks[$0].isEmpty }) ?? project.visibleLanes.last ?? 0
         engine.load(project: project, store: store)
