@@ -776,7 +776,10 @@ final class ProjectViewModel {
     }
 
     /// Plays a pad; during a drum take, also records the hit.
-    func hitPad(_ pad: Int) {
+    /// `lateBy`: how long ago the finger actually landed (the touch event's
+    /// own timestamp), so a recorded hit lands where the finger did even when
+    /// the main thread was busy for a moment.
+    func hitPad(_ pad: Int, lateBy: TimeInterval = 0) {
         let velocity: Float = 0.9
         do {
             try engine.hitPad(pad, velocity: velocity)
@@ -785,7 +788,7 @@ final class ProjectViewModel {
             return
         }
         guard isDrumTake, engine.isPastCountIn else { return }
-        let time = max(drumTakeStart, engine.currentSeconds - engine.padTimingCompensation)
+        let time = max(drumTakeStart, engine.currentSeconds - engine.padTimingCompensation - min(lateBy, 0.1))
         drumTakeHits.append(DrumHit(time: time, pad: pad, velocity: velocity))
         drawLiveHit(pad: pad, at: time)
     }

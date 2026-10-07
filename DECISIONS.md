@@ -243,3 +243,14 @@ This environment has no Xcode or iOS SDK. The core package is compiled and its t
 ## Playhead on open (owner request)
 
 - The first time a project is opened after the app was launched fresh (killed, or the phone restarted), the playhead starts at 0:00. Reopening a project while the app is still running (it was only in the background, or you went back to the list) returns to where you left off.
+
+## Drum pad multitouch (owner: inconsistent)
+
+Audit of the old design (a SwiftUI `DragGesture(minimumDistance: 0)` on each pad) found:
+1. Separate SwiftUI gestures on sibling pads don't reliably start together, so a second finger during fast two-handed playing was sometimes late or dropped.
+2. Each pad tracked one touch: a second finger on a pad already held didn't retrigger it (no rolls).
+3. The navigation swipe-back edge gesture could delay touches on the left-hand pads.
+4. Press-and-hold fired whenever a finger rested 0.55 s, even while other fingers were drumming.
+5. Recorded hit times used the moment the main thread handled the touch, adding jitter when it was busy.
+
+Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers the whole grid and tracks every finger independently: a pad sounds on touch-down, including a second finger on a held pad; sliding doesn't retrigger; a pad stays pressed until its last finger lifts; the gaps between pads go to the nearest pad. Hold-for-settings only fires for a single, unmoved finger (any new finger cancels it). The swipe-back gesture is off while the pads are on screen. Each hit carries how long ago the finger actually landed (`UITouch.timestamp`), which is taken off the recorded hit time (capped at 100 ms). The SwiftUI pads only draw (pressed while held, a flash on every hit) and keep their VoiceOver actions.
