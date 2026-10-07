@@ -36,10 +36,7 @@ struct DrumStudioView: View {
                     }
                     .scrollBounceBehavior(.basedOnSize)
                     .frame(width: 380)
-                    VStack(spacing: 10) {
-                        hint
-                        pads
-                    }
+                    pads
                     .modifier(PulledDown(pull: pull))
                     .padding(.trailing, 12)
                     .padding(.bottom, 8)
@@ -48,11 +45,8 @@ struct DrumStudioView: View {
                 VStack(spacing: 10) {
                     CompactLaneList(model: model, onDeleteTrack: onDeleteTrack)
                     trackControls
-                    VStack(spacing: 10) {
-                        hint
-                        pads
-                    }
-                    .modifier(PulledDown(pull: pull))
+                    pads
+                        .modifier(PulledDown(pull: pull))
                     transportPanel
                 }
             }
@@ -78,15 +72,6 @@ struct DrumStudioView: View {
                 .disabled(model.isRecording)
                 .padding(.horizontal, 16)
         }
-    }
-
-    // Pads always play, recording or not: jam along with the song first.
-    private var hint: some View {
-        Text(model.isRecording ? "Recording your hits" : (model.isPlaying ? "Playing along. Nothing records until you press ●" : "Play along anytime. Press ● to record"))
-            .font(.caption)
-            .foregroundStyle(model.isRecording ? Color.red : Color.secondary)
-            .frame(maxWidth: .infinity)
-            .accessibilityHidden(true)
     }
 
     private var pads: some View {
@@ -117,8 +102,8 @@ struct DrumStudioView: View {
 
 // MARK: - Track controls
 
-/// The armed drum track's name with M, S and Q (quantize), and the handle,
-/// dead centre, that pulls the pads down out of the way.
+/// The handle that pulls the pads down out of the way, centred at the very
+/// top, with the armed drum track's name and M, S and Q (quantize) below it.
 struct DrumTrackControls: View {
     @Bindable var model: ProjectViewModel
     let index: Int
@@ -130,15 +115,15 @@ struct DrumTrackControls: View {
     private static let threshold: CGFloat = 90
 
     var body: some View {
-        // Equal halves either side keep the handle dead centre on any width.
-        HStack(spacing: 4) {
-            Text(track.name)
-                .font(.headline)
-                .lineLimit(1)
-                .minimumScaleFactor(0.8)
-                .frame(maxWidth: .infinity, alignment: .leading)
+        // The handle on its own row at the very top, centred; name and M / S / Q below.
+        VStack(spacing: 0) {
             hideHandle
             HStack(spacing: 4) {
+                Text(track.name)
+                    .font(.headline)
+                    .lineLimit(1)
+                    .minimumScaleFactor(0.8)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 ToggleChip(title: "M", isOn: track.mute, onColor: .orange, accessibilityName: "Mute \(track.name)") {
                     model.toggleMute(index)
                 }
@@ -147,7 +132,6 @@ struct DrumTrackControls: View {
                 }
                 QuantizeChip(model: model, index: index)
             }
-            .frame(maxWidth: .infinity, alignment: .trailing)
         }
     }
 
@@ -164,7 +148,7 @@ struct DrumTrackControls: View {
                 .foregroundStyle(.secondary)
                 .offset(y: min(pull, Self.threshold) * 0.08)
         }
-        .frame(width: 44, height: 44)
+        .frame(width: 96, height: 30)
         .contentShape(Rectangle())
         .animation(.spring(response: 0.2, dampingFraction: 0.7), value: pastThreshold)
         .gesture(
