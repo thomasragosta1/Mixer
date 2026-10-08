@@ -1,0 +1,5 @@
+Query chain:
+ →Find: Target Application 'com.fourtrack.app'
+  ↪︎Find: Descendants matching type Any
+    ↪︎Find: Elements matching predicate '"Skip forward 15 seconds" IN identifiers'
+      ↪︎Find: First Match

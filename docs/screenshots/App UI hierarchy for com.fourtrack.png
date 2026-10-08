@@ -1,0 +1,98 @@
+Application, 0x103766c20, pid: 13316, label: 'Four-Track' <App element pid: 13316>
+  Window (Main), 0x10376b010, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4320411840.4>
+    Other, 0x10376b3d0, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4321292624.5>
+      Other, 0x10376b4f0, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4319166192.6>
+        Other, 0x10376b130, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4321652336.7>
+          Other, 0x10376b250, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4320747744.8>
+            Other, 0x10376b610, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4319177600.9>
+              NavigationBar, 0x10376b730, {{0.0, 62.0}, {440.0, 54.0}}, identifier: 'Late Night Demo' <AX element pid: 13316, elementOrHash.elementID: 4321658624.10>
+                Button, 0x10376b850, {{20.0, 62.0}, {44.0, 44.0}}, identifier: 'BackButton', label: 'All Projects' <AX element pid: 13316, elementOrHash.elementID: 105553141235776.85>
+                Other, 0x10376b970, {{80.0, 66.0}, {40.0, 36.0}}, identifier: 'arrow.uturn.backward', label: 'Undo Add Track' <AX element pid: 13316, elementOrHash.elementID: 4348593664.86>
+                  Other, 0x10376ba90, {{80.0, 66.0}, {40.0, 36.0}} <AX element pid: 13316, elementOrHash.elementID: 4321069184.90>
+                    Button, 0x10376bbb0, {{80.0, 66.0}, {40.0, 36.0}}, identifier: 'arrow.uturn.backward', label: 'Undo Add Track' <AX element pid: 13316, elementOrHash.elementID: 4321066880.95>
+                Other, 0x103168c90, {{136.0, 66.0}, {40.0, 36.0}}, identifier: 'arrow.uturn.forward', label: 'Redo' <AX element pid: 13316, elementOrHash.elementID: 4340381696.87>
+                  Other, 0x103168600, {{136.0, 66.0}, {40.0, 36.0}} <AX element pid: 13316, elementOrHash.elementID: 4322168208.91>
+                    Button, 0x1031557e0, {{136.0, 66.0}, {40.0, 36.0}}, identifier: 'arrow.uturn.forward', label: 'Redo', Disabled <AX element pid: 13316, elementOrHash.elementID: 4321844320.96>
+                StaticText, 0x1031696c0, {{192.0, 73.3}, {133.0, 21.3}}, label: 'Late Night Demo' <AX element pid: 13316, elementOrHash.elementID: 4355771904.88>
+                  Other, 0x103169a20, {{192.0, 73.3}, {133.0, 21.3}} <AX element pid: 13316, elementOrHash.elementID: 4321167760.92>
+                    Button, 0x103169d80, {{192.0, 73.3}, {133.0, 21.3}}, label: 'Late Night Demo' <AX element pid: 13316, elementOrHash.elementID: 4320669536.97>
+                Other, 0x10316a0e0, {{380.0, 66.0}, {36.0, 36.0}}, label: 'More' <AX element pid: 13316, elementOrHash.elementID: 4355776512.89>
+                  Other, 0x10316a440, {{380.0, 66.0}, {36.0, 36.0}} <AX element pid: 13316, elementOrHash.elementID: 4715560368.93>
+                    Button, 0x10316a7a0, {{383.0, 66.0}, {30.0, 36.0}}, label: 'More' <AX element pid: 13316, elementOrHash.elementID: 4715557344.98>
+                      Button, 0x10316ab40, {{383.0, 66.0}, {30.0, 36.0}} <AX element pid: 13316, elementOrHash.elementID: 4715545824.100>
+                        Image, 0x10316aee0, {{387.0, 73.0}, {22.0, 22.0}}, identifier: 'ellipsis.circle', label: 'More' <AX element pid: 13316, elementOrHash.elementID: 4715543568.115>
+              Other, 0x10316b260, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4319154400.11>
+                Other, 0x10316b5e0, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4320598320.17>
+                  Other, 0x10316b950, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4319418496.94>
+                    Other, 0x10316bcf0, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4320230464.99>
+                      SegmentedControl, 0x10316c060, {{16.0, 120.0}, {408.0, 31.0}} <AX element pid: 13316, elementOrHash.elementID: 4319888448.101>
+                        Button, 0x10316c3c0, {{16.0, 120.0}, {204.0, 32.0}}, label: 'Record', Selected <AX element pid: 13316, elementOrHash.elementID: 4319891344.116>
+                        Button, 0x10316c720, {{220.0, 120.0}, {204.0, 32.0}}, label: 'Mixing' <AX element pid: 13316, elementOrHash.elementID: 4319894816.117>
+                      StaticText, 0x10316ca90, {{16.0, 161.0}, {408.0, 44.0}}, label: 'Acoustic' <AX element pid: 13316, elementOrHash.elementID: 4321171680.342>
+                        Image, 0x10316ce10, {{31.0, 176.3}, {12.0, 13.3}}, identifier: 'waveform', label: 'waveform' <AX element pid: 13316, elementOrHash.elementID: 4752586112.373>
+                        StaticText, 0x10316d1a0, {{56.0, 174.0}, {59.3, 18.0}}, label: 'Acoustic' <AX element pid: 13316, elementOrHash.elementID: 4321141824.374>
+                        Other, 0x10316d520, {{146.0, 168.0}, {266.0, 30.0}} <AX element pid: 13316, elementOrHash.elementID: 4752740016.375>
+                      StaticText, 0x10316d890, {{16.0, 211.0}, {408.0, 44.0}}, label: 'Vocal' <AX element pid: 13316, elementOrHash.elementID: 4752744704.343>
+                        Image, 0x10316dc10, {{31.0, 226.3}, {12.0, 13.3}}, identifier: 'waveform', label: 'waveform' <AX element pid: 13316, elementOrHash.elementID: 4752741792.376>
+                        StaticText, 0x10316df90, {{56.0, 224.0}, {37.7, 18.0}}, label: 'Vocal' <AX element pid: 13316, elementOrHash.elementID: 4752742464.377>
+                        Other, 0x10316e300, {{146.0, 218.0}, {266.0, 30.0}} <AX element pid: 13316, elementOrHash.elementID: 4752743248.378>
+                      StaticText, 0x10316e680, {{16.0, 261.0}, {408.0, 44.0}}, label: 'Bass' <AX element pid: 13316, elementOrHash.elementID: 4752748080.344>
+                        Image, 0x10316ea20, {{31.0, 276.3}, {12.0, 13.3}}, identifier: 'waveform', label: 'waveform' <AX element pid: 13316, elementOrHash.elementID: 4752745808.379>
+                        StaticText, 0x10316ed70, {{56.0, 274.0}, {33.0, 18.0}}, label: 'Bass' <AX element pid: 13316, elementOrHash.elementID: 4752746240.380>
+                        Other, 0x10316f0d0, {{146.0, 268.0}, {266.0, 30.0}} <AX element pid: 13316, elementOrHash.elementID: 4752746976.381>
+                      StaticText, 0x10316f450, {{16.0, 311.0}, {408.0, 44.0}}, label: 'Drums, armed', Selected <AX element pid: 13316, elementOrHash.elementID: 4752751456.345>
+                        Image, 0x10316f7c0, {{31.0, 327.0}, {12.0, 12.0}}, identifier: 'square.grid.2x2.fill', label: 'Grid 2x2' <AX element pid: 13316, elementOrHash.elementID: 4752749184.382>
+                        StaticText, 0x10316fb20, {{56.0, 324.0}, {47.3, 18.0}}, label: 'Drums' <AX element pid: 13316, elementOrHash.elementID: 4752749616.383>
+                        Other, 0x10316fe80, {{146.0, 318.0}, {266.0, 30.0}} <AX element pid: 13316, elementOrHash.elementID: 4752750352.384>
+                      Button, 0x1031701d0, {{16.0, 365.0}, {408.0, 22.0}}, label: 'Hide drum pads' <AX element pid: 13316, elementOrHash.elementID: 4752752560.346>
+                      StaticText, 0x103170550, {{16.0, 390.8}, {53.0, 20.3}}, label: 'Drums' <AX element pid: 13316, elementOrHash.elementID: 4752753728.347>
+                      Button, 0x1031708b0, {{296.0, 387.0}, {40.0, 28.0}}, label: 'Mute Drums' <AX element pid: 13316, elementOrHash.elementID: 4752754160.348>
+                      Button, 0x103170c10, {{340.0, 387.0}, {40.0, 28.0}}, label: 'Solo Drums' <AX element pid: 13316, elementOrHash.elementID: 4752755264.349>
+                      Button, 0x103170f70, {{384.0, 387.0}, {40.0, 28.0}}, label: 'Quantize', value: Off <AX element pid: 13316, elementOrHash.elementID: 4752759088.350>
+                        Button, 0x1031712c0, {{384.0, 387.0}, {40.0, 28.0}} <AX element pid: 13316, elementOrHash.elementID: 4752757472.385>
+                          StaticText, 0x10376bcd0, {{384.0, 387.0}, {40.0, 28.0}}, label: 'Q' <AX element pid: 13316, elementOrHash.elementID: 4752756368.406>
+                      SegmentedControl, 0x10376bdf0, {{16.0, 425.0}, {408.0, 31.0}} <AX element pid: 13316, elementOrHash.elementID: 4717900768.351>
+                        Button, 0x10376bf10, {{16.0, 425.0}, {136.0, 32.0}}, label: 'Studio', Selected <AX element pid: 13316, elementOrHash.elementID: 4717895440.386>
+                        Button, 0x10376c030, {{152.0, 425.0}, {136.0, 32.0}}, label: '808' <AX element pid: 13316, elementOrHash.elementID: 4717760192.387>
+                        Button, 0x10376c150, {{288.0, 425.0}, {136.0, 32.0}}, label: 'Hand Percussion' <AX element pid: 13316, elementOrHash.elementID: 4717769840.388>
+                      SegmentedControl, 0x10376c270, {{110.0, 464.0}, {220.0, 31.0}} <AX element pid: 13316, elementOrHash.elementID: 4717904992.352>
+                        Button, 0x10376c390, {{110.0, 464.0}, {110.0, 32.0}}, label: 'Tight', Selected <AX element pid: 13316, elementOrHash.elementID: 4717907728.389>
+                        Button, 0x10376c4b0, {{220.0, 464.0}, {110.0, 32.0}}, label: 'Roomy' <AX element pid: 13316, elementOrHash.elementID: 4717621520.390>
+                      Button, 0x10376c5d0, {{12.0, 505.0}, {96.7, 134.7}}, label: 'High Tom' <AX element pid: 13316, elementOrHash.elementID: 4752763024.353>
+                        StaticText, 0x10376c6f0, {{24.0, 609.7}, {67.7, 18.0}}, label: 'High Tom' <AX element pid: 13316, elementOrHash.elementID: 4752762592.391>
+                      Button, 0x10376c810, {{118.7, 505.0}, {96.3, 134.7}}, label: 'Low Tom' <AX element pid: 13316, elementOrHash.elementID: 4752764912.354>
+                        StaticText, 0x10376c930, {{130.7, 609.7}, {63.3, 18.0}}, label: 'Low Tom' <AX element pid: 13316, elementOrHash.elementID: 4752764480.392>
+                      Button, 0x10376ca50, {{225.0, 505.0}, {96.7, 134.7}}, label: 'Ride' <AX element pid: 13316, elementOrHash.elementID: 4752766800.355>
+                        StaticText, 0x10376cb70, {{237.0, 609.7}, {32.0, 18.0}}, label: 'Ride' <AX element pid: 13316, elementOrHash.elementID: 4752766368.393>
+                      Button, 0x10376cc90, {{331.7, 505.0}, {96.3, 134.7}}, label: 'Crash' <AX element pid: 13316, elementOrHash.elementID: 4752768688.356>
+                        StaticText, 0x10376cdb0, {{343.7, 609.7}, {42.3, 18.0}}, label: 'Crash' <AX element pid: 13316, elementOrHash.elementID: 4752768256.394>
+                      Button, 0x10376ced0, {{12.0, 649.7}, {96.7, 134.3}}, label: 'Kick' <AX element pid: 13316, elementOrHash.elementID: 4752770576.357>
+                        StaticText, 0x10376cff0, {{24.0, 754.0}, {31.0, 18.0}}, label: 'Kick' <AX element pid: 13316, elementOrHash.elementID: 4752770144.395>
+                      Button, 0x10376d110, {{118.7, 649.7}, {96.3, 134.3}}, label: 'Snare' <AX element pid: 13316, elementOrHash.elementID: 4752772464.358>
+                        StaticText, 0x10376d230, {{130.7, 754.0}, {41.7, 18.0}}, label: 'Snare' <AX element pid: 13316, elementOrHash.elementID: 4752772032.396>
+                      Button, 0x10376d350, {{225.0, 649.7}, {96.7, 134.3}}, label: 'Closed Hat' <AX element pid: 13316, elementOrHash.elementID: 4752774352.359>
+                        StaticText, 0x10376d520, {{237.0, 734.0}, {53.7, 38.0}}, label: 'Closed Hat' <AX element pid: 13316, elementOrHash.elementID: 4752773920.397>
+                      Button, 0x10376d640, {{331.7, 649.7}, {96.3, 134.3}}, label: 'Open Hat' <AX element pid: 13316, elementOrHash.elementID: 4752776240.360>
+                        StaticText, 0x10376d760, {{343.7, 754.0}, {67.7, 18.0}}, label: 'Open Hat' <AX element pid: 13316, elementOrHash.elementID: 4752775808.398>
+                      Other, 0x10376d880, {{12.0, 505.0}, {416.0, 279.0}} <AX element pid: 13316, elementOrHash.elementID: 4752512176.361>
+                      Button, 0x10376d9a0, {{26.0, 804.0}, {76.0, 32.0}}, label: 'Metronome', value: Click on <AX element pid: 13316, elementOrHash.elementID: 4752781040.362>
+                        Image, 0x10376dac0, {{38.0, 813.3}, {15.3, 13.3}}, identifier: 'metronome.fill', label: 'metronome.fill' <AX element pid: 13316, elementOrHash.elementID: 4752778128.399>
+                        StaticText, 0x10376dbe0, {{59.3, 812.2}, {31.7, 15.7}}, label: 'Click' <AX element pid: 13316, elementOrHash.elementID: 4752778912.400>
+                      Button, 0x10376dd00, {{108.0, 804.0}, {46.0, 32.0}}, label: 'Time signature', value: 4/4 <AX element pid: 13316, elementOrHash.elementID: 4752789216.363>
+                        Button, 0x10376de20, {{108.0, 804.0}, {46.0, 32.0}} <AX element pid: 13316, elementOrHash.elementID: 4752783872.401>
+                          StaticText, 0x10376df40, {{108.0, 804.0}, {46.0, 32.0}}, label: '4/4' <AX element pid: 13316, elementOrHash.elementID: 4752782768.409>
+                      Button, 0x10376e060, {{160.0, 804.0}, {36.0, 32.0}}, label: 'Slower' <AX element pid: 13316, elementOrHash.elementID: 4752790416.364>
+                        Image, 0x10376e180, {{160.0, 804.0}, {36.0, 32.0}}, identifier: 'chevron.left', label: 'Back' <AX element pid: 13316, elementOrHash.elementID: 4752791920.402>
+                      Other, 0x10376e2a0, {{209.8, 805.3}, {22.3, 29.3}}, label: 'Tempo', value: 92 beats per minute <AX element pid: 13316, elementOrHash.elementID: 4752794720.365>
+                        StaticText, 0x10376e3c0, {{209.8, 805.3}, {22.3, 20.3}}, label: '92' <AX element pid: 13316, elementOrHash.elementID: 4752792352.403>
+                        StaticText, 0x10376e4e0, {{210.7, 823.7}, {20.7, 11.0}}, label: 'BPM' <AX element pid: 13316, elementOrHash.elementID: 4752793936.404>
+                      Button, 0x10376e600, {{246.0, 804.0}, {36.0, 32.0}}, label: 'Faster' <AX element pid: 13316, elementOrHash.elementID: 4752796608.366>
+                        Image, 0x10376e720, {{246.0, 804.0}, {36.0, 32.0}}, identifier: 'chevron.right', label: 'Forward' <AX element pid: 13316, elementOrHash.elementID: 4752796176.405>
+                      Other, 0x10376e840, {{360.0, 815.4}, {44.0, 9.1}} <AX element pid: 13316, elementOrHash.elementID: 4752797952.367>
+                      StaticText, 0x10376eab0, {{26.0, 869.8}, {64.3, 20.3}}, label: '0:00.00' <AX element pid: 13316, elementOrHash.elementID: 4752798384.368>
+                      Button, 0x10376ebd0, {{118.0, 858.0}, {74.0, 44.0}}, identifier: 'backward.end.fill', label: 'Return to start' <AX element pid: 13316, elementOrHash.elementID: 4752799840.369>
+                      Button, 0x10376ecf0, {{192.0, 858.0}, {74.0, 44.0}}, identifier: 'play.fill', label: 'Play' <AX element pid: 13316, elementOrHash.elementID: 4752800944.370>
+                      Button, 0x10376ee10, {{273.0, 850.0}, {60.0, 60.0}}, label: 'Record' <AX element pid: 13316, elementOrHash.elementID: 4752802048.371>
+                      Button, 0x10376ef30, {{340.0, 858.0}, {74.0, 44.0}}, identifier: 'gobackward.15', label: 'Skip back 15 seconds' <AX element pid: 13316, elementOrHash.elementID: 4752803616.372>
+              Other, 0x10376f250, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4319170672.12>
+                Other, 0x10376f370, {{0.0, 0.0}, {440.0, 956.0}} <AX element pid: 13316, elementOrHash.elementID: 4319192000.18>
