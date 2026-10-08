@@ -104,4 +104,63 @@ final class DrumFlowUITests: XCTestCase {
         sleep(1)
         XCTAssertEqual(app.state, .runningForeground)
     }
+
+    /// Every pad of every kit: a tap in the middle, near each corner, and just
+    /// outside its edge (in the gap) plays that pad, and only that pad.
+    func testEveryPadPlaysOnlyItself() {
+        let app = XCUIApplication()
+        app.launchArguments += ["-hintsDisabled", "YES", "-padHitCounts", "YES"]
+        app.launch()
+
+        app.buttons["New Project"].firstMatch.tap()
+        let create = app.buttons["Create"].firstMatch
+        XCTAssertTrue(create.waitForExistence(timeout: 5))
+        create.tap()
+        XCTAssertTrue(app.buttons["More"].firstMatch.waitForExistence(timeout: 5))
+        app.buttons["More"].firstMatch.tap()
+        app.buttons["Simple Mode"].firstMatch.tap()
+        let add = app.buttons["Add Track 2"].firstMatch
+        XCTAssertTrue(add.waitForExistence(timeout: 5))
+        add.tap()
+        app.buttons["Drum Track"].firstMatch.tap()
+        XCTAssertTrue(app.buttons["Kick"].firstMatch.waitForExistence(timeout: 5))
+
+        let kits: [(String, [String])] = [
+            ("Studio", ["Kick", "Snare", "Closed Hat", "Open Hat", "Low Tom", "High Tom", "Ride", "Crash"]),
+            ("808", ["Kick", "Snare", "Clap", "Closed Hat", "Open Hat", "Cowbell", "Rim", "Tom"]),
+            ("Hand Percussion", ["Cajón", "Slap", "Bongo Low", "Bongo High", "Conga", "Shaker", "Tambourine", "Woodblock"]),
+        ]
+        // Middle, four corners (inside), and 3 pt into the gap on the right and below.
+        let spots: [(CGVector, CGVector)] = [
+            (CGVector(dx: 0.5, dy: 0.5), .zero),
+            (CGVector(dx: 0.08, dy: 0.08), .zero),
+            (CGVector(dx: 0.92, dy: 0.08), .zero),
+            (CGVector(dx: 0.08, dy: 0.92), .zero),
+            (CGVector(dx: 0.92, dy: 0.92), .zero),
+            (CGVector(dx: 1, dy: 0.5), CGVector(dx: 3, dy: 0)),
+            (CGVector(dx: 0.5, dy: 1), CGVector(dx: 0, dy: 3)),
+        ]
+        for (kit, names) in kits {
+            app.buttons[kit].firstMatch.tap()
+            sleep(1)
+            XCTAssertTrue(app.buttons[names[0]].firstMatch.waitForExistence(timeout: 3), "\(kit) pads missing")
+            func counts() -> [String: Int] {
+                Dictionary(uniqueKeysWithValues: names.map { ($0, Int(app.buttons[$0].firstMatch.value as? String ?? "") ?? -1) })
+            }
+            for name in names {
+                let pad = app.buttons[name].firstMatch
+                for (offset, extra) in spots {
+                    let before = counts()
+                    pad.coordinate(withNormalizedOffset: offset).withOffset(extra).tap()
+                    usleep(250_000)
+                    let after = counts()
+                    for other in names {
+                        let expected = (before[other] ?? 0) + (other == name ? 1 : 0)
+                        XCTAssertEqual(after[other], expected, "\(kit): tapping \(name) at \(offset)+\(extra) changed \(other)")
+                    }
+                }
+            }
+        }
+        XCTAssertEqual(app.state, .runningForeground)
+    }
 }

@@ -262,15 +262,12 @@ struct DrumKitPicker: View {
 
 // MARK: - Pads
 
-/// The 4 x 2 pad grid, laid out like a finger-drumming controller: kick,
-/// snare and hats on the bottom row under the thumbs, toms and cymbals above.
-/// Pads stretch to fill the space they're given.
-///
-/// Touch goes through one UIKit surface over the whole grid (`PadTouchSurface`)
-/// rather than a SwiftUI gesture per pad: every finger is tracked on its own,
-/// a pad sounds the instant a finger lands (also a second finger on a pad
-/// that's already held, for rolls), and the touch's own timestamp is passed on
-/// so recorded hits land where the finger did. The pads themselves only draw.
+/// The pads. Each pad has its own UIKit touch area, so UIKit itself routes
+/// every finger to the pad it landed on: no position bookkeeping that can drift
+/// out of step with the layout. Fingers are tracked independently: a pad
+/// sounds the instant a finger lands (also a second finger on a pad that's
+/// already held, for rolls), sliding doesn't retrigger, and the touch's own
+/// timestamp is passed on so recorded hits land where the finger did.
 struct DrumPadGrid: View {
     let kit: DrumKit
     var settings: [PadSettings] = []
@@ -278,14 +275,17 @@ struct DrumPadGrid: View {
     let onHit: (Int, TimeInterval) -> Void
     var onHold: ((Int) -> Void)? = nil
 
-    @State private var frames: [Int: CGRect] = [:]
     @State private var held: Set<Int> = []
     @State private var hits: [Int: Int] = [:]
+    /// Shared by every pad: how many fingers are down anywhere on the grid.
+    @State private var touches = PadTouches()
+
+    static let spacing: CGFloat = 10
 
     var body: some View {
-        VStack(spacing: 10) {
+        VStack(spacing: Self.spacing) {
             ForEach(Array(kit.padLayout.enumerated()), id: \.offset) { _, row in
-                HStack(spacing: 10) {
+                HStack(spacing: Self.spacing) {
                     ForEach(row, id: \.self) { pad in
                         DrumPad(
                             name: kit.padNames[pad],
@@ -293,27 +293,33 @@ struct DrumPadGrid: View {
                             isAdjusted: settings.indices.contains(pad) && !settings[pad].isDefault,
                             isHeld: held.contains(pad),
                             hitCount: hits[pad, default: 0],
-                            onHit: { onHit(pad, 0) },
+                            onHit: { hit(pad, lateBy: 0) },
                             onHold: onHold.map { hold in { hold(pad) } }
                         )
-                        .onGeometryChange(for: CGRect.self, of: { $0.frame(in: .named("pads")) }) { frames[pad] = $0 }
+                        // Half the gap on every side, so a finger between two
+                        // pads still plays the nearer one.
+                        .overlay(
+                            PadTouchArea(
+                                pad: pad,
+                                touches: touches,
+                                onDown: { lateBy in hit(pad, lateBy: lateBy) },
+                                onUp: { held.remove(pad) },
+                                onHold: onHold.map { hold in { hold(pad) } }
+                            )
+                            .padding(-Self.spacing / 2)
+                            .accessibilityHidden(true)
+                        )
                     }
                 }
             }
         }
-        .coordinateSpace(.named("pads"))
-        .overlay(
-            PadTouchSurface(
-                frames: frames,
-                onDown: { pad, lateBy in
-                    onHit(pad, lateBy)
-                    held.insert(pad)
-                    hits[pad, default: 0] += 1
-                },
-                onUp: { pad in held.remove(pad) },
-                onHold: onHold
-            )
-        )
+        .background(PopGestureBlocker().accessibilityHidden(true))
+    }
+
+    private func hit(_ pad: Int, lateBy: TimeInterval) {
+        onHit(pad, lateBy)
+        held.insert(pad)
+        hits[pad, default: 0] += 1
     }
 
     /// Colour by what the pad is, the same in every kit: kicks red, snares and
@@ -330,7 +336,7 @@ struct DrumPadGrid: View {
     }
 }
 
-/// One pad, drawing only (touch is handled by `PadTouchSurface`): presses in
+/// One pad, drawing only (touch is handled by `PadTouchArea`): presses in
 /// while held, flashes on every hit.
 struct DrumPad: View {
     let name: String
@@ -343,6 +349,9 @@ struct DrumPad: View {
     let onHit: () -> Void
     var onHold: (() -> Void)? = nil
     @State private var lit = false
+
+    /// UI tests launch with `-padHitCounts YES` to read each pad's hit count.
+    private static let exposesHitCount = UserDefaults.standard.bool(forKey: "padHitCounts")
 
     var body: some View {
         let shape = RoundedRectangle(cornerRadius: 22, style: .continuous)
@@ -381,30 +390,54 @@ struct DrumPad: View {
             }
             .accessibilityElement()
             .accessibilityLabel(name)
-            .accessibilityValue(isAdjusted ? "Adjusted" : "")
+            .accessibilityValue(Self.exposesHitCount ? "\(hitCount)" : (isAdjusted ? "Adjusted" : ""))
             .accessibilityAddTraits(.isButton)
             .accessibilityAction { onHit() }
             .accessibilityAction(named: "Adjust sound") { onHold?() }
     }
 }
 
-/// One touch surface over the whole pad grid. Each finger is tracked on its
-/// own: a pad sounds the moment a finger lands on it (a second finger on a
-/// held pad hits again), sliding doesn't retrigger, and lifting releases it.
-/// A press-and-hold opens the pad's settings only when it's the only finger
-/// down and it hasn't moved, so resting a finger while drumming never does.
-/// While it's on screen, the swipe-back edge gesture is switched off so the
-/// left-hand pads respond instantly.
-struct PadTouchSurface: UIViewRepresentable {
-    var frames: [Int: CGRect]
-    var onDown: (Int, TimeInterval) -> Void
-    var onUp: (Int) -> Void
-    var onHold: ((Int) -> Void)?
+/// Fingers down anywhere on the pad grid. Press-and-hold for a pad's settings
+/// only counts when it's the only finger down, so resting a finger while
+/// drumming never opens it; any new finger cancels a pending hold.
+final class PadTouches {
+    var fingers = 0
+    private var pendingHold: DispatchWorkItem?
 
-    func makeUIView(context: Context) -> PadTouchView { PadTouchView() }
+    func began(count: Int) {
+        fingers += count
+        cancelHold()
+    }
+
+    func ended(count: Int) {
+        fingers = max(0, fingers - count)
+        if fingers == 0 { cancelHold() }
+    }
+
+    func scheduleHold(_ work: DispatchWorkItem, after delay: TimeInterval) {
+        cancelHold()
+        pendingHold = work
+        DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: work)
+    }
+
+    func cancelHold() {
+        pendingHold?.cancel()
+        pendingHold = nil
+    }
+}
+
+/// One pad's touch area.
+struct PadTouchArea: UIViewRepresentable {
+    let pad: Int
+    let touches: PadTouches
+    var onDown: (TimeInterval) -> Void
+    var onUp: () -> Void
+    var onHold: (() -> Void)?
+
+    func makeUIView(context: Context) -> PadTouchView { PadTouchView(touches: touches) }
 
     func updateUIView(_ view: PadTouchView, context: Context) {
-        view.frames = frames
+        view.pad = pad
         view.onDown = onDown
         view.onUp = onUp
         view.onHold = onHold
@@ -412,28 +445,24 @@ struct PadTouchSurface: UIViewRepresentable {
 }
 
 final class PadTouchView: UIView {
-    var frames: [Int: CGRect] = [:]
-    var onDown: (Int, TimeInterval) -> Void = { _, _ in }
-    var onUp: (Int) -> Void = { _ in }
-    var onHold: ((Int) -> Void)?
+    var pad = 0
+    var onDown: (TimeInterval) -> Void = { _ in }
+    var onUp: () -> Void = {}
+    var onHold: (() -> Void)?
 
-    private struct Finger {
-        let pad: Int
-        let start: CGPoint
-        var hold: DispatchWorkItem?
-    }
-
-    private var fingers: [ObjectIdentifier: Finger] = [:]
+    private let touches: PadTouches
+    /// Fingers on this pad, and where the one that may become a hold started.
+    private var down: Set<ObjectIdentifier> = []
+    private var holdStart: (id: ObjectIdentifier, point: CGPoint)?
     private let haptic = UIImpactFeedbackGenerator(style: .light)
     private let holdHaptic = UIImpactFeedbackGenerator(style: .medium)
-    private weak var popGesture: UIGestureRecognizer?
-    private var popWasEnabled = true
 
     static let holdDelay: TimeInterval = 0.55
     static let holdSlop: CGFloat = 16
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    init(touches: PadTouches) {
+        self.touches = touches
+        super.init(frame: .zero)
         isMultipleTouchEnabled = true
         isExclusiveTouch = false
         backgroundColor = .clear
@@ -442,95 +471,108 @@ final class PadTouchView: UIView {
 
     required init?(coder: NSCoder) { fatalError("init(coder:) is not used") }
 
-    /// The pad under a point; the gaps between pads go to the nearest one.
-    private func pad(at point: CGPoint) -> Int? {
-        if let hit = frames.first(where: { $0.value.insetBy(dx: -5, dy: -5).contains(point) }) { return hit.key }
-        return nil
-    }
-
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    override func touchesBegan(_ set: Set<UITouch>, with event: UIEvent?) {
         let now = ProcessInfo.processInfo.systemUptime
-        // Any new finger means the player is drumming: no settings bubble.
-        cancelHolds()
-        for touch in touches {
-            let point = touch.location(in: self)
-            guard let pad = pad(at: point) else { continue }
-            var finger = Finger(pad: pad, start: point, hold: nil)
-            onDown(pad, max(0, now - touch.timestamp))
-            haptic.impactOccurred()
-            if onHold != nil, fingers.isEmpty, touches.count == 1 {
-                let id = ObjectIdentifier(touch)
-                let work = DispatchWorkItem { [weak self] in
-                    guard let self, self.fingers.count == 1, self.fingers[id]?.pad == pad else { return }
-                    self.holdHaptic.impactOccurred()
-                    self.onHold?(pad)
-                }
-                finger.hold = work
-                DispatchQueue.main.asyncAfter(deadline: .now() + Self.holdDelay, execute: work)
-            }
-            fingers[ObjectIdentifier(touch)] = finger
+        let wasIdle = touches.fingers == 0
+        touches.began(count: set.count)
+        holdStart = nil
+        for touch in set {
+            down.insert(ObjectIdentifier(touch))
+            onDown(max(0, now - touch.timestamp))
         }
+        haptic.impactOccurred()
         haptic.prepare()
+        if onHold != nil, wasIdle, set.count == 1, let touch = set.first {
+            let id = ObjectIdentifier(touch)
+            holdStart = (id, touch.location(in: self))
+            let work = DispatchWorkItem { [weak self] in
+                guard let self, self.touches.fingers == 1, self.holdStart?.id == id, self.down.contains(id) else { return }
+                self.holdHaptic.impactOccurred()
+                self.onHold?()
+            }
+            touches.scheduleHold(work, after: Self.holdDelay)
+        }
     }
 
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
-        for touch in touches {
-            let id = ObjectIdentifier(touch)
-            guard let finger = fingers[id], finger.hold != nil else { continue }
-            let p = touch.location(in: self)
-            if hypot(p.x - finger.start.x, p.y - finger.start.y) > Self.holdSlop {
-                finger.hold?.cancel()
-                fingers[id]?.hold = nil
+    override func touchesMoved(_ set: Set<UITouch>, with event: UIEvent?) {
+        guard let start = holdStart, let touch = set.first(where: { ObjectIdentifier($0) == start.id }) else { return }
+        let p = touch.location(in: self)
+        if hypot(p.x - start.point.x, p.y - start.point.y) > Self.holdSlop {
+            holdStart = nil
+            touches.cancelHold()
+        }
+    }
+
+    override func touchesEnded(_ set: Set<UITouch>, with event: UIEvent?) { lift(set) }
+    override func touchesCancelled(_ set: Set<UITouch>, with event: UIEvent?) { lift(set) }
+
+    private func lift(_ set: Set<UITouch>) {
+        var lifted = 0
+        for touch in set where down.remove(ObjectIdentifier(touch)) != nil {
+            lifted += 1
+            if holdStart?.id == ObjectIdentifier(touch) {
+                holdStart = nil
+                touches.cancelHold()
             }
         }
+        touches.ended(count: lifted)
+        // The pad stays pressed while another finger is still on it.
+        if lifted > 0 && down.isEmpty { onUp() }
     }
-
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) { lift(touches) }
-    override func touchesCancelled(_ touches: Set<UITouch>, with event: UIEvent?) { lift(touches) }
-
-    private func lift(_ touches: Set<UITouch>) {
-        for touch in touches {
-            guard let finger = fingers.removeValue(forKey: ObjectIdentifier(touch)) else { continue }
-            finger.hold?.cancel()
-            // The pad stays pressed while another finger is still on it.
-            if !fingers.values.contains(where: { $0.pad == finger.pad }) { onUp(finger.pad) }
-        }
-    }
-
-    private func cancelHolds() {
-        for (id, finger) in fingers where finger.hold != nil {
-            finger.hold?.cancel()
-            fingers[id]?.hold = nil
-        }
-    }
-
-    // MARK: Swipe-back edge gesture
 
     override func didMoveToWindow() {
         super.didMoveToWindow()
         if window != nil {
             haptic.prepare()
-            if let gesture = navigationController?.interactivePopGestureRecognizer {
-                popGesture = gesture
-                popWasEnabled = gesture.isEnabled
-                gesture.isEnabled = false
-            }
-        } else {
-            popGesture?.isEnabled = popWasEnabled
-            popGesture = nil
+        } else if !down.isEmpty {
             // Off screen mid-touch: release everything.
-            for (_, finger) in fingers { finger.hold?.cancel(); onUp(finger.pad) }
-            fingers.removeAll()
+            touches.ended(count: down.count)
+            down.removeAll()
+            holdStart = nil
+            onUp()
         }
     }
+}
 
-    private var navigationController: UINavigationController? {
-        var responder: UIResponder? = self
-        while let r = responder {
-            if let vc = r as? UIViewController { return vc.navigationController }
-            responder = r.next
+/// While the pads are on screen, the swipe-back edge gesture is off so the
+/// left-hand pads respond instantly.
+struct PopGestureBlocker: UIViewRepresentable {
+    func makeUIView(context: Context) -> BlockerView { BlockerView() }
+    func updateUIView(_ view: BlockerView, context: Context) {}
+
+    final class BlockerView: UIView {
+        private weak var gesture: UIGestureRecognizer?
+        private var wasEnabled = true
+
+        override init(frame: CGRect) {
+            super.init(frame: frame)
+            isUserInteractionEnabled = false
         }
-        return nil
+
+        required init?(coder: NSCoder) { fatalError("init(coder:) is not used") }
+
+        override func didMoveToWindow() {
+            super.didMoveToWindow()
+            if window != nil {
+                if let g = navigationController?.interactivePopGestureRecognizer {
+                    gesture = g
+                    wasEnabled = g.isEnabled
+                    g.isEnabled = false
+                }
+            } else {
+                gesture?.isEnabled = wasEnabled
+                gesture = nil
+            }
+        }
+
+        private var navigationController: UINavigationController? {
+            var responder: UIResponder? = self
+            while let r = responder {
+                if let vc = r as? UIViewController { return vc.navigationController }
+                responder = r.next
+            }
+            return nil
+        }
     }
 }
 
