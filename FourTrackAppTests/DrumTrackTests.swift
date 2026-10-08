@@ -21,6 +21,50 @@ final class DrumTrackTests: XCTestCase {
         try? FileManager.default.removeItem(at: dir)
     }
 
+    /// Voice Memos-style import: a stereo 44.1 kHz AAC file becomes a 48 kHz
+    /// mono track, first in a new project, then as the next track of it.
+    func testImportingAudioMakesATrack() async throws {
+        let source = dir.appendingPathComponent("New Recording 7.m4a")
+        let settings: [String: Any] = [AVFormatIDKey: kAudioFormatMPEG4AAC, AVSampleRateKey: 44_100, AVNumberOfChannelsKey: 2, AVEncoderBitRateKey: 128_000]
+        do {
+            let file = try AVAudioFile(forWriting: source, settings: settings)
+            let format = AVAudioFormat(standardFormatWithSampleRate: 44_100, channels: 2)!
+            let buffer = AVAudioPCMBuffer(pcmFormat: format, frameCapacity: 88_200)!
+            buffer.frameLength = 88_200
+            for ch in 0..<2 {
+                for i in 0..<88_200 { buffer.floatChannelData![ch][i] = 0.4 * sin(Float(i) * 2 * .pi * 440 / 44_100) }
+            }
+            try file.write(from: buffer)
+        }
+
+        let list = ProjectsViewModel(store: store)
+        list.pendingImport = source
+        let imported = await list.importPending(into: nil)
+        let id = try XCTUnwrap(imported, list.errorMessage ?? "import failed")
+        var project = try store.load(id: id)
+        XCTAssertEqual(project.name, "New Recording 7")
+        XCTAssertEqual(project.tracks[0].name, "New Recording 7")
+        let reader = try CAFReader(url: store.audioURL(project: id, track: 0))
+        XCTAssertEqual(reader.sampleRate, 48_000)
+        XCTAssertEqual(reader.channelCount, 1)
+        XCTAssertEqual(reader.durationSeconds, 2, accuracy: 0.1)
+        XCTAssertGreaterThan(try reader.readAll().map(abs).max() ?? 0, 0.2, "the audio came through")
+        XCTAssertEqual(project.durationSeconds, 2, accuracy: 0.1)
+
+        list.pendingImport = source
+        let added = await list.importPending(into: project)
+        XCTAssertNotNil(added, list.errorMessage ?? "second import failed")
+        project = try store.load(id: id)
+        XCTAssertEqual(project.visibleTrackCount, 2)
+        XCTAssertFalse(project.tracks[project.visibleLanes[1]].isEmpty, "added as the next track")
+
+        list.pendingImport = dir.appendingPathComponent("missing.m4a")
+        let failed = await list.importPending(into: nil)
+        XCTAssertNil(failed)
+        XCTAssertNotNil(list.errorMessage)
+        XCTAssertEqual(store.loadAll().count, 1, "a failed import leaves no empty project behind")
+    }
+
     func testDrumSamplesShipInTheApp() {
         for folder in ["studio", "studio-tight", "hand"] {
             for pad in 0..<DrumKit.padCount {

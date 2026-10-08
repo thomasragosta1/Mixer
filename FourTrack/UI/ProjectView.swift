@@ -168,10 +168,29 @@ struct ProjectView: View {
                 Task { await model.startRecording() }
             }
         }
-        .onDisappear { model.close() }
+        .onDisappear {
+            model.close()
+            Hints.shared.screenDisappeared()
+        }
+        .hintBubble([.dragTrackToBin, .padSound, .metronomeHolds])
+        .onChange(of: wantedHint, initial: true) { _, hint in
+            if let hint { Hints.shared.request(hint) } else { Hints.shared.cancelPending() }
+        }
         .onChange(of: scenePhase) { _, phase in
             if phase == .background { model.enteredBackground() }
         }
+    }
+
+    /// The press-and-hold tip worth showing for what's on screen now.
+    private var wantedHint: HoldHint? {
+        guard !model.isRecording, !model.isSaving, !model.mixMode, laneDrag == nil else { return nil }
+        let hints = Hints.shared
+        guard hints.current == nil else { return nil }
+        var candidates: [HoldHint] = []
+        if model.showsDrumPads { candidates.append(.padSound) }
+        if !model.isSimple && model.project.metronome.enabled { candidates.append(.metronomeHolds) }
+        if !model.showsDrumPads && model.hasAnyAudio { candidates.append(.dragTrackToBin) }
+        return candidates.first { !hints.hasSeen($0) }
     }
 
     private var transport: some View {
@@ -234,6 +253,7 @@ struct ProjectView: View {
             .padding(.vertical, 6)
         }
         .scrollDisabled(laneDrag != nil)
+        .modifier(WaveformPinch(model: model))
         // Let the held card travel past the list (down to the bin) without being clipped.
         .scrollClipDisabled(laneDrag != nil)
         .scrollBounceBehavior(.basedOnSize)
@@ -261,6 +281,7 @@ struct ProjectView: View {
                     laneMotion.index = index
                     laneMotion.y = 0
                     laneDrag = LaneDrag(index: index, startPosition: position, target: position)
+                    Hints.shared.dismiss(.dragTrackToBin)
                     Haptics.lift.impactOccurred()
                     Haptics.slot.prepare()
                     Haptics.delete.prepare()
@@ -317,12 +338,12 @@ struct ProjectView: View {
     private var scrubGesture: some Gesture {
         DragGesture(minimumDistance: 8)
             .onChanged { g in
-                guard !model.isRecording, laneDrag == nil, abs(g.translation.width) > abs(g.translation.height) || scrubStart != nil else { return }
+                guard !model.isRecording, !model.isZooming, laneDrag == nil, abs(g.translation.width) > abs(g.translation.height) || scrubStart != nil else { return }
                 if scrubStart == nil {
                     scrubStart = model.playhead
                     model.beginScrub()
                 }
-                let seconds = (scrubStart ?? 0) - Double(g.translation.width / WaveformView.defaultPointsPerSecond)
+                let seconds = (scrubStart ?? 0) - Double(g.translation.width / (WaveformView.defaultPointsPerSecond * model.effectiveZoom))
                 let before = model.playhead
                 model.scrub(to: seconds)
                 Haptics.scrubTick(from: before, to: model.playhead, grid: model.beatGrid, end: model.duration)
@@ -608,4 +629,45 @@ struct ShareSheet: UIViewControllerRepresentable {
     }
 
     func updateUIViewController(_ controller: UIActivityViewController, context: Context) {}
+}
+
+/// Full mode: pinch the tracks to zoom the waveforms in and out. Snaps to the
+/// standard scale with a tick on the way through.
+struct WaveformPinch: ViewModifier {
+    let model: ProjectViewModel
+    @State private var startZoom: Double?
+
+    func body(content: Content) -> some View {
+        if model.isSimple {
+            content
+        } else {
+            content
+                .simultaneousGesture(
+                    MagnifyGesture(minimumScaleDelta: 0.02)
+                        .onChanged { value in
+                            guard !model.isRecording else { return }
+                            if startZoom == nil {
+                                startZoom = model.waveformZoom
+                                model.isZooming = true
+                            }
+                            let range = ProjectViewModel.zoomRange
+                            let raw = min(max((startZoom ?? 1) * value.magnification, range.lowerBound), range.upperBound)
+                            // A small detent at the standard scale.
+                            let z = abs(raw - 1) < 0.07 ? 1 : raw
+                            let before = model.waveformZoom
+                            if (z == 1) != (before == 1) || ((z == range.lowerBound || z == range.upperBound) && z != before) {
+                                Haptics.slot.selectionChanged()
+                            }
+                            if z != before { model.waveformZoom = z }
+                        }
+                        .onEnded { _ in
+                            startZoom = nil
+                            model.isZooming = false
+                        }
+                )
+                .accessibilityZoomAction { action in
+                    model.stepZoom(in: action.direction == .zoomIn)
+                }
+        }
+    }
 }

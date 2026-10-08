@@ -119,7 +119,10 @@ struct MetronomeBar: View {
             UISelectionFeedbackGenerator().selectionChanged()
         }
         .buttonStyle(.plain)
-        .simultaneousGesture(LongPressGesture(minimumDuration: 0.35).onEnded { _ in Haptics.hold() })
+        .simultaneousGesture(LongPressGesture(minimumDuration: 0.35).onEnded { _ in
+            Haptics.hold()
+            Hints.shared.dismiss(.metronomeHolds)
+        })
         .accessibilityLabel("Time signature")
         .accessibilityValue(m.timeSignature.label)
         .accessibilityHint("Tap to cycle 4/4, 3/4 and 2/4. Press and hold for more.")
@@ -152,7 +155,10 @@ struct TempoArrow: View {
                         didRepeat = false
                         holdTask = Task { @MainActor in
                             try? await Task.sleep(nanoseconds: 400_000_000)
-                            if !Task.isCancelled { UIImpactFeedbackGenerator(style: .medium).impactOccurred() }
+                            if !Task.isCancelled {
+                                UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+                                Hints.shared.dismiss(.metronomeHolds)
+                            }
                             var interval: UInt64 = 150_000_000
                             while !Task.isCancelled {
                                 didRepeat = true

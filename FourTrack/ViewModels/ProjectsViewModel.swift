@@ -48,6 +48,99 @@ final class ProjectsViewModel {
         }
     }
 
+    // MARK: Importing audio
+
+    /// A recording shared in (Voice Memos → Share → Four-Track) or picked with
+    /// Import Audio, waiting for "New Project or which project?".
+    var pendingImport: URL?
+    private(set) var isImporting = false
+
+    /// Projects a recording can go into: any with a lane free.
+    var projectsWithRoom: [Project] { projects.filter { $0.freeSlotForRecovery() != nil } }
+
+    /// Converts the recording into a new track. With no project, it starts a
+    /// new one named after the recording. Returns the project to open.
+    func importPending(into existing: Project?) async -> UUID? {
+        guard let source = pendingImport else { return nil }
+        pendingImport = nil
+        isImporting = true
+        defer {
+            isImporting = false
+            Self.discardInboxCopy(source)
+        }
+        let title = Self.title(for: source)
+        var project: Project
+        if let existing {
+            guard let fresh = try? store.load(id: existing.id) else {
+                errorMessage = "Couldn't open \(existing.name)."
+                return nil
+            }
+            project = fresh
+        } else {
+            guard let created = createProject(named: title, mode: .simple) else { return nil }
+            project = created
+        }
+        guard let slot = project.freeSlotForRecovery() else {
+            errorMessage = "\(project.name) already has four tracks. Delete one, or add the recording to a new project."
+            return nil
+        }
+        let destination = store.audioURL(project: project.id, track: slot)
+        let peaksURL = store.peaksURL(project: project.id, track: slot)
+        let scoped = source.startAccessingSecurityScopedResource()
+        defer { if scoped { source.stopAccessingSecurityScopedResource() } }
+        let outcome = await Task.detached(priority: .userInitiated) { () -> Result<Void, Error> in
+            do {
+                try AudioImporter.importAudio(from: source, to: destination)
+                let peaks = try PeakGenerator.peaks(ofFileAt: destination)
+                try? PeakGenerator.write(peaks, to: peaksURL)
+                return .success(())
+            } catch {
+                return .failure(error)
+            }
+        }.value
+        switch outcome {
+        case .success:
+            var track = Track(index: slot, name: String(title.prefix(30)))
+            track.audioFileName = ProjectStore.audioFileName(track: slot)
+            project.placeRecovered(track, in: slot)
+            store.refreshDurations(&project)
+            project.updatedAt = Date()
+            do {
+                try store.save(project)
+            } catch {
+                errorMessage = "Couldn't save \(project.name). \(error.localizedDescription)"
+                return nil
+            }
+            reload()
+            return project.id
+        case .failure(let error):
+            if existing == nil { try? store.delete(id: project.id) }
+            reload()
+            errorMessage = "Couldn't import \u{201C}\(title)\u{201D}. \(error.localizedDescription)"
+            return nil
+        }
+    }
+
+    func cancelImport() {
+        if let source = pendingImport { Self.discardInboxCopy(source) }
+        pendingImport = nil
+    }
+
+    /// "New Recording 12.m4a" → "New Recording 12".
+    static func title(for url: URL) -> String {
+        let name = url.deletingPathExtension().lastPathComponent.trimmingCharacters(in: .whitespacesAndNewlines)
+        return name.isEmpty ? "Imported Audio" : name
+    }
+
+    /// Files shared into the app land in Documents/Inbox; once imported, the
+    /// copy is no longer needed.
+    private static func discardInboxCopy(_ url: URL) {
+        let documents = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].standardizedFileURL.path
+        if url.standardizedFileURL.path.hasPrefix(documents) {
+            try? FileManager.default.removeItem(at: url)
+        }
+    }
+
     /// Moves a project to Recently Deleted. Nothing is lost until it's deleted from there.
     func delete(_ project: Project) {
         do {

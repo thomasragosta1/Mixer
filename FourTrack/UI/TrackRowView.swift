@@ -90,6 +90,7 @@ struct TrackRowView<Scrub: Gesture>: View {
             // otherwise.
             anchor: model.isRecording ? 1 : 0.5,
             showsPlayheadLine: !model.isRecording,
+            pointsPerSecond: WaveformView.defaultPointsPerSecond * model.effectiveZoom,
             color: model.project.isAudible(index) ? .primary : .secondary,
             beatGrid: model.beatGrid
         )

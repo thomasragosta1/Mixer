@@ -254,3 +254,21 @@ Audit of the old design (a SwiftUI `DragGesture(minimumDistance: 0)` on each pad
 5. Recorded hit times used the moment the main thread handled the touch, adding jitter when it was busy.
 
 Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers the whole grid and tracks every finger independently: a pad sounds on touch-down, including a second finger on a held pad; sliding doesn't retrigger; a pad stays pressed until its last finger lifts; the gaps between pads go to the nearest pad. Hold-for-settings only fires for a single, unmoved finger (any new finger cancels it). The swipe-back gesture is off while the pads are on screen. Each hit carries how long ago the finger actually landed (`UITouch.timestamp`), which is taken off the recorded hit time (capped at 100 ms). The SwiftUI pads only draw (pressed while held, a flash on every hit) and keep their VoiceOver actions.
+
+## The click stops with the song (owner request)
+
+- Turning the metronome on while nothing plays still starts it ticking on its own. Once Play or Record takes over, pausing or stopping silences it again; it doesn't keep going after the song. Turning it off and on restarts it.
+
+## Press-and-hold tips (owner request)
+
+- Four hidden gestures get a one-line tip, each shown once ever, the first time the thing it explains is on screen: hold a project to rename it; hold a track and drag it to the bin; hold a drum pad for its sound; hold the time signature or a tempo arrow. Only one tip at a time, at least 25 s apart, never while recording or mixing. A tip fades after 6 s, goes on tap, and is marked seen when it appears or when the gesture is used. VoiceOver announces it. Settings → Show Tips Again brings them back. UI tests launch with `-hintsDisabled YES`.
+
+## Pinch zoom (owner request, Full mode)
+
+- Pinch the track list to zoom the waveforms from 0.25× to 4× (12.5–200 points per second), with a detent and tick at the standard 1×. Scrubbing follows the zoom, and so do the slim lanes on the drum screen. The zoom isn't saved; Simple mode always uses 1×. VoiceOver users can use the zoom rotor action.
+
+## Importing audio (owner request)
+
+- **Share from Voice Memos:** Four-Track declares that it opens audio files (`CFBundleDocumentTypes`, rank Alternate, copied into the app rather than opened in place), so it appears in the share sheet for Voice Memos and Files. That avoids a Share Extension, which would need a second bundle ID, App ID and provisioning profile in CI for the same result.
+- **Import Audio** (the arrow-into-tray button on the projects list) opens the Files picker for any audio.
+- Either way, a sheet asks: **New Project** (named after the recording, Simple mode, recording on Track 1) or **add as a new track** to a project that has a lane free (projects with all four tracks used aren't listed). The file is converted to the app's track format (48 kHz mono, stereo folded down) next to the destination and then moved into place, so a failed import leaves nothing half-written; a failed import into a new project removes that project. The shared copy is deleted after import.

@@ -50,6 +50,14 @@ targets:
           UIApplicationSupportsMultipleScenes: false
         UISupportedInterfaceOrientations: [UIInterfaceOrientationPortrait, UIInterfaceOrientationLandscapeLeft, UIInterfaceOrientationLandscapeRight]
         ITSAppUsesNonExemptEncryption: false
+        # Voice Memos / Files → Share → Four-Track: the recording is copied into
+        # Documents/Inbox and handed to the app (onOpenURL), which imports it.
+        CFBundleDocumentTypes:
+          - CFBundleTypeName: Audio Recording
+            CFBundleTypeRole: Viewer
+            LSHandlerRank: Alternate
+            LSItemContentTypes: [public.audio, public.mpeg-4-audio, com.apple.m4a-audio, public.mp3, com.microsoft.waveform-audio, public.aiff-audio, public.aifc-audio, com.apple.coreaudio-format]
+        LSSupportsOpeningDocumentsInPlace: false
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.fourtrack.app

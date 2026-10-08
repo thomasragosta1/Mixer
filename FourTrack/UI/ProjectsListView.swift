@@ -1,5 +1,6 @@
 import SwiftUI
 import UIKit
+import UniformTypeIdentifiers
 import FourTrackCore
 
 /// Home screen, Voice Memos style: a list of projects and a big record button
@@ -11,6 +12,7 @@ struct ProjectsListView: View {
     @State private var draftName = ""
     @State private var showingSettings = false
     @State private var namingNewProject = false
+    @State private var choosingAudioFile = false
     let settings: AppSettings
 
     enum Route: Hashable {
@@ -60,6 +62,15 @@ struct ProjectsListView: View {
                     .accessibilityLabel("Recently Deleted")
                     .accessibilityValue(model.binCount == 0 ? "Empty" : "\(model.binCount) projects")
                 }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        choosingAudioFile = true
+                    } label: {
+                        Image(systemName: "square.and.arrow.down")
+                    }
+                    .accessibilityLabel("Import Audio")
+                    .accessibilityHint("Adds a recording from Files or Voice Memos as a track")
+                }
             }
             .navigationDestination(for: Route.self) { route in
                 switch route {
@@ -80,6 +91,36 @@ struct ProjectsListView: View {
             }
             .sheet(isPresented: $showingSettings) {
                 SettingsView(model: nil, settings: settings)
+            }
+            .fileImporter(isPresented: $choosingAudioFile, allowedContentTypes: [.audio]) { result in
+                if case .success(let url) = result { model.pendingImport = url }
+            }
+            // Voice Memos (or Files) → Share → Four-Track.
+            .onOpenURL { url in
+                guard url.isFileURL else { return }
+                path = []
+                model.pendingImport = url
+            }
+            .sheet(isPresented: Binding(get: { model.pendingImport != nil }, set: { if !$0 { model.cancelImport() } })) {
+                if let url = model.pendingImport {
+                    ImportDestinationSheet(title: ProjectsViewModel.title(for: url), projects: model.projectsWithRoom) { destination in
+                        Task {
+                            if let id = await model.importPending(into: destination) {
+                                path = [.project(id, record: false)]
+                            }
+                        }
+                    } onCancel: {
+                        model.cancelImport()
+                    }
+                    .presentationDetents([.medium, .large])
+                }
+            }
+            .overlay {
+                if model.isImporting {
+                    ProgressView("Importing\u{2026}")
+                        .padding(20)
+                        .background(.regularMaterial, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                }
             }
             .overlay {
                 if namingNewProject {
@@ -125,6 +166,7 @@ struct ProjectsListView: View {
                         .onTapGesture { path.append(.project(project.id, record: false)) }
                         .onLongPressGesture {
                             Haptics.hold()
+                            Hints.shared.dismiss(.renameProject)
                             draftName = project.name
                             renaming = project
                         }
@@ -146,6 +188,9 @@ struct ProjectsListView: View {
                 }
             }
             .listStyle(.plain)
+            .hintBubble([.renameProject])
+            .onAppear { Hints.shared.request(.renameProject) }
+            .onDisappear { Hints.shared.screenDisappeared() }
             // Room so the last row can scroll above the floating button.
             .contentMargins(.bottom, 76, for: .scrollContent)
         }
@@ -327,6 +372,56 @@ struct SelectAllTextField: UIViewRepresentable {
         func textFieldShouldReturn(_ field: UITextField) -> Bool {
             parent.onSubmit()
             return false
+        }
+    }
+}
+
+/// Where a shared or imported recording goes: a new project, or a new track
+/// in one that has a lane free.
+struct ImportDestinationSheet: View {
+    let title: String
+    let projects: [Project]
+    let onChoose: (Project?) -> Void
+    let onCancel: () -> Void
+
+    var body: some View {
+        NavigationStack {
+            List {
+                Section {
+                    Button {
+                        onChoose(nil)
+                    } label: {
+                        Label("New Project", systemImage: "plus.square.on.square")
+                    }
+                } footer: {
+                    Text("Starts a project called \u{201C}\(title)\u{201D} with this recording on Track 1.")
+                }
+                if !projects.isEmpty {
+                    Section("Add as a New Track To") {
+                        ForEach(projects) { project in
+                            Button {
+                                onChoose(project)
+                            } label: {
+                                VStack(alignment: .leading, spacing: 2) {
+                                    Text(project.name)
+                                        .foregroundStyle(.primary)
+                                    Text("\(project.tracks.filter { !$0.isEmpty }.count) of 4 tracks used")
+                                        .font(.caption)
+                                        .foregroundStyle(.secondary)
+                                }
+                            }
+                            .accessibilityHint("Adds the recording as a new track")
+                        }
+                    }
+                }
+            }
+            .navigationTitle("Add \u{201C}\(title)\u{201D}")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .cancellationAction) {
+                    Button("Cancel", action: onCancel)
+                }
+            }
         }
     }
 }

@@ -8,6 +8,8 @@ final class DrumFlowUITests: XCTestCase {
 
     func testCreateDrumTrackAndPlayPads() {
         let app = XCUIApplication()
+        // Press-and-hold tips would sit over the controls being tapped.
+        app.launchArguments += ["-hintsDisabled", "YES"]
         app.launch()
 
         app.buttons["New Project"].firstMatch.tap()

@@ -75,6 +75,7 @@ struct DrumStudioView: View {
             model.hitPad(pad, lateBy: lateBy)
         } onHold: { pad in
             guard !model.isRecording, !model.isSaving else { return }
+            Hints.shared.dismiss(.padSound)
             editingPad = PadID(id: pad)
         }
         .padding(.horizontal, isWide ? 0 : 12)
@@ -577,7 +578,7 @@ struct CompactLaneList: View {
                 clock: model.clock,
                 anchor: model.isRecording ? 1 : 0.5,
                 showsPlayheadLine: !model.isRecording,
-                pointsPerSecond: WaveformView.defaultPointsPerSecond,
+                pointsPerSecond: WaveformView.defaultPointsPerSecond * model.effectiveZoom,
                 color: model.project.isAudible(i) ? .primary : .secondary,
                 beatGrid: model.beatGrid
             )
@@ -620,13 +621,13 @@ struct CompactLaneList: View {
     private var scrub: some Gesture {
         DragGesture(minimumDistance: 8)
             .onChanged { g in
-                guard !model.isRecording, abs(g.translation.width) > abs(g.translation.height) || scrubStart != nil else { return }
+                guard !model.isRecording, !model.isZooming, abs(g.translation.width) > abs(g.translation.height) || scrubStart != nil else { return }
                 if scrubStart == nil {
                     scrubStart = model.playhead
                     model.beginScrub()
                 }
                 let before = model.playhead
-                model.scrub(to: (scrubStart ?? 0) - Double(g.translation.width / WaveformView.defaultPointsPerSecond))
+                model.scrub(to: (scrubStart ?? 0) - Double(g.translation.width / (WaveformView.defaultPointsPerSecond * model.effectiveZoom)))
                 Haptics.scrubTick(from: before, to: model.playhead, grid: model.beatGrid, end: model.duration)
             }
             .onEnded { _ in

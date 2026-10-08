@@ -13,10 +13,12 @@
 		10F0700FC7413ADD3621D19A /* DevTrackControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */; };
 		11916F43D3B1AE8313DBDF13 /* NowPlaying.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6AD077F4E8E623D12C36E0 /* NowPlaying.swift */; };
 		165BE017B7E30BED6207A9B5 /* PadSampler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3CA97785154509CDEAC5C9 /* PadSampler.swift */; };
+		2F6D611CFB03CF1503BBA2DF /* Hints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 760E834ADAA2D6D433B62287 /* Hints.swift */; };
 		36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F30AF566B98693F94AB8FE8 /* TransportView.swift */; };
 		36CE3A42675730887D90076C /* DrumPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */; };
 		38B5D72F23F74EC7BF904055 /* ProjectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */; };
 		452FDCB8562969A8013C48EC /* FourTrackCore in Frameworks */ = {isa = PBXBuildFile; productRef = F26CAF9FE144318925E8D782 /* FourTrackCore */; };
+		4BEDD0F5F09B0DC7165E7C50 /* AudioImporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF11E63277B23F719C8F9EEA /* AudioImporter.swift */; };
 		50F39BE78B7AFABB578F525D /* Metronome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 611B4995428CDBEF1B07DA5B /* Metronome.swift */; };
 		526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */; };
 		55C2B5D2F70A2B5934349FBE /* UndoHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B2E7D8F476C04248424708 /* UndoHistory.swift */; };
@@ -91,6 +93,7 @@
 		6CBCF15A100D38FA74B05B31 /* FourTrackTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FourTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		741F2254BE2578A39C560A83 /* MixerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerEngine.swift; sourceTree = "<group>"; };
+		760E834ADAA2D6D433B62287 /* Hints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hints.swift; sourceTree = "<group>"; };
 		79C33C5D0807D6485D8E215E /* VoiceIsolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VoiceIsolation.swift; sourceTree = "<group>"; };
 		7CB2A3B61A3D61010ED4FFD3 /* Drums */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Drums; path = FourTrack/Resources/Drums; sourceTree = SOURCE_ROOT; };
 		84E4C9D955D96787E81A4BE5 /* BinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinView.swift; sourceTree = "<group>"; };
@@ -107,6 +110,7 @@
 		A7CDA447AB5DEF03D8308E34 /* CenteredSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenteredSlider.swift; sourceTree = "<group>"; };
 		AD6AD077F4E8E623D12C36E0 /* NowPlaying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowPlaying.swift; sourceTree = "<group>"; };
 		B8FB2B46B8C9237AB766133A /* FourTrack.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FourTrack.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF11E63277B23F719C8F9EEA /* AudioImporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioImporter.swift; sourceTree = "<group>"; };
 		C4ED446E366C7244DB8683CA /* MetronomeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetronomeBar.swift; sourceTree = "<group>"; };
 		D0B2E7D8F476C04248424708 /* UndoHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoHistory.swift; sourceTree = "<group>"; };
 		DE19EAFCAB120FD9F141681A /* PadSettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadSettingsSheet.swift; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */,
 				EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */,
 				2FD8780E45856FF405502040 /* ExportSheet.swift */,
+				760E834ADAA2D6D433B62287 /* Hints.swift */,
 				9C5BA5B14A06A629337D91E8 /* MacroSlider.swift */,
 				C4ED446E366C7244DB8683CA /* MetronomeBar.swift */,
 				F9F9B76CE52C0FB100E4EA7E /* MixView.swift */,
@@ -183,6 +188,7 @@
 		4802524F1E7396E9383D0BB7 /* Audio */ = {
 			isa = PBXGroup;
 			children = (
+				BF11E63277B23F719C8F9EEA /* AudioImporter.swift */,
 				68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */,
 				59903BCA8D021DA7DF0E72EF /* CompressorAU.swift */,
 				A6673AEBFF800A2914F5FA1C /* Exporter.swift */,
@@ -415,6 +421,7 @@
 			files = (
 				0DF261BDDA4E3910193DFC34 /* Acknowledgements.swift in Sources */,
 				F90A959006227F6B944C3090 /* AppSettings.swift in Sources */,
+				4BEDD0F5F09B0DC7165E7C50 /* AudioImporter.swift in Sources */,
 				CA29953881822E60FD3BF932 /* AudioSessionManager.swift in Sources */,
 				7BFDC84C28A75873EED073F6 /* BinView.swift in Sources */,
 				526BAE0CCF4244AA1FC2D570 /* CenteredSlider.swift in Sources */,
@@ -424,6 +431,7 @@
 				6B737DB325E880CD72A56840 /* ExportSheet.swift in Sources */,
 				E6FA6EE7FB48B37E4B92394A /* Exporter.swift in Sources */,
 				9A5947C2067936DF69823BFC /* FourTrackApp.swift in Sources */,
+				2F6D611CFB03CF1503BBA2DF /* Hints.swift in Sources */,
 				8ABE8AF50AE165BAC274A0D9 /* LatencyCalibrator.swift in Sources */,
 				D8C3B9CC3E6041604FE542DF /* MacroSlider.swift in Sources */,
 				50F39BE78B7AFABB578F525D /* Metronome.swift in Sources */,

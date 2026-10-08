@@ -255,8 +255,9 @@ final class ProjectViewModel {
     func play() {
         guard !isRecording, !isSaving else { return }
         stopClickPreview()
-        // With the metronome on, it keeps time again after the song stops.
-        clickWanted = !isSimple && project.metronome.enabled
+        // The click stops with the song: once play takes over, pausing
+        // leaves the metronome silent until it's turned on again.
+        clickWanted = false
         // After a take, and (Voice Memos behavior) at the end: play from the start.
         if playFromStartNext || playhead >= duration - 0.01 {
             playFromStartNext = false
@@ -365,7 +366,7 @@ final class ProjectViewModel {
         isStartingRecording = true
         defer { isStartingRecording = false }
         stopClickPreview()
-        clickWanted = !isSimple && project.metronome.enabled
+        clickWanted = false
         // Pressing record while the song plays punches in from the live spot.
         let punch = isPlaying
         if project.tracks[armedTrack].isDrums {
@@ -1025,6 +1026,22 @@ final class ProjectViewModel {
 
     var isSimple: Bool { project.mode == .simple }
 
+    // MARK: Waveform zoom
+
+    /// Full mode: how far the waveforms are zoomed (pinch the tracks). 1 is
+    /// the standard scale; Simple mode always uses it.
+    var waveformZoom: Double = 1
+    static let zoomRange: ClosedRange<Double> = 0.25...4
+    var effectiveZoom: Double { isSimple ? 1 : waveformZoom }
+    /// A pinch is in progress, so a one-finger scrub doesn't fight it.
+    @ObservationIgnored var isZooming = false
+
+    /// VoiceOver zoom, and anything else that steps instead of pinching.
+    func stepZoom(in zoomIn: Bool) {
+        let z = waveformZoom * (zoomIn ? 1.5 : 1 / 1.5)
+        waveformZoom = min(max(z, Self.zoomRange.lowerBound), Self.zoomRange.upperBound)
+    }
+
     /// Full mode adds the mixer, mute/solo, metronome, quantize and every drum kit.
     func switchToFullMode() {
         guard isSimple, !isRecording else { return }
@@ -1338,10 +1355,9 @@ final class ProjectViewModel {
 
     // MARK: Free-running click
 
-    /// The metronome keeps time on its own whenever it's on and the song isn't
-    /// playing: from the moment it's turned on, and again after a pause. It
-    /// runs on the song's beat grid from the playhead, so the beat carries on
-    /// where the song stopped, and play or record take over seamlessly.
+    /// Turning the metronome on while nothing plays starts it keeping time on
+    /// its own, on the song's beat grid from the playhead, so play or record
+    /// take over seamlessly. Once the song plays, the click stops with it.
     @ObservationIgnored private var clickWanted = false
 
     /// Silent runs the same click at zero volume, so the lights keep time.
