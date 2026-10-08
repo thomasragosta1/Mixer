@@ -50,6 +50,9 @@ final class ScreenshotTests: XCTestCase {
         tap("Drum Track")
         XCTAssertTrue(app.buttons["Kick"].firstMatch.waitForExistence(timeout: 5))
         for pad in ["Kick", "Snare", "Closed Hat"] { app.buttons[pad].firstMatch.tap() }
+        // Adding a track rewinds; move into the song so the lanes show audio.
+        tap("Skip forward 15 seconds")
+        tap("Skip forward 15 seconds")
         shot("04-drums")
         back()
 
