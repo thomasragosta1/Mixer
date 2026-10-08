@@ -17,6 +17,14 @@ struct TransportView: View {
                 .foregroundStyle(model.isRecording ? .red : .primary)
                 .accessibilityLabel(model.isRecording ? "Recording time" : "Playhead")
                 .accessibilityValue(TimeFormat.duration(model.playhead))
+                // Swipe up or down to move the playhead 5 seconds.
+                .accessibilityAdjustableAction { direction in
+                    switch direction {
+                    case .increment: model.skip(by: 5)
+                    case .decrement: model.skip(by: -5)
+                    @unknown default: break
+                    }
+                }
 
             HStack(spacing: 0) {
                 transportButton("backward.end.fill", label: "Return to start") { model.returnToStart() }
@@ -30,6 +38,7 @@ struct TransportView: View {
                         .contentShape(Rectangle())
                 }
                 .accessibilityLabel(model.isPlaying || model.isRecording ? "Pause" : "Play")
+                .accessibilityShowsLargeContentViewer()
                 .disabled(!model.hasAnyAudio && !model.isRecording)
                 transportButton("goforward.15", label: "Skip forward 15 seconds") { model.skip(by: 15) }
                 Color.clear.frame(height: 44).frame(maxWidth: .infinity)
@@ -62,6 +71,7 @@ struct TransportView: View {
         }
         .disabled(model.isRecording)
         .accessibilityLabel(label)
+        .accessibilityShowsLargeContentViewer()
     }
 }
 

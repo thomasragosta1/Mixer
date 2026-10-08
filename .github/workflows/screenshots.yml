@@ -1,0 +1,79 @@
+name: Screenshots
+
+# App Store screenshots on a 6.9-inch iPhone simulator, committed to
+# docs/screenshots on the branch it ran on. Run it by hand from Actions.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  shots:
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          XC=""
+          for v in 27 26; do
+            XC=$(ls -d /Applications/Xcode_$v*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
+            [ -n "$XC" ] && break
+          done
+          sudo xcode-select -s "$XC/Contents/Developer"
+          xcodebuild -version
+
+      - name: Boot a 6.9-inch iPhone
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "
+          import json, sys
+          d = json.load(sys.stdin)['devices']
+          names = ['iPhone 17 Pro Max', 'iPhone 16 Pro Max', 'iPhone 16 Plus', 'iPhone 15 Pro Max']
+          for want in names:
+              for k, v in sorted(d.items(), reverse=True):
+                  if 'iOS' not in k: continue
+                  for x in v:
+                      if x['name'] == want:
+                          print(x['udid']); sys.exit()
+          ")
+          [ -n "$UDID" ] || { echo "::error::No 6.9-inch simulator"; xcrun simctl list devices available; exit 1; }
+          echo "UDID=$UDID" >> "$GITHUB_ENV"
+          xcrun simctl boot "$UDID" || true
+          xcrun simctl bootstatus "$UDID" -b
+          xcrun simctl status_override "$UDID" --time "9:41" --dataNetwork wifi --wifiMode active --wifiBars 3 --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+
+      - name: Capture
+        run: |
+          set -o pipefail
+          xcodebuild test \
+            -project FourTrack.xcodeproj \
+            -scheme FourTrack \
+            -destination "id=$UDID" \
+            -only-testing:FourTrackUITests/ScreenshotTests \
+            -resultBundlePath "$RUNNER_TEMP/Shots.xcresult" \
+            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | grep -E "error:|Test Case|\*\* TEST" || true
+          mkdir -p "$RUNNER_TEMP/out"
+          xcrun xcresulttool export attachments --path "$RUNNER_TEMP/Shots.xcresult" --output-path "$RUNNER_TEMP/out"
+          ls -la "$RUNNER_TEMP/out"
+
+      - name: Commit screenshots
+        run: |
+          mkdir -p docs/screenshots
+          python3 - <<'PY'
+          import json, os, shutil
+          out = os.path.join(os.environ["RUNNER_TEMP"], "out")
+          manifest = json.load(open(os.path.join(out, "manifest.json")))
+          for test in manifest:
+              for a in test.get("attachments", []):
+                  name = a.get("suggestedHumanReadableName") or a["exportedFileName"]
+                  base = name.split("_")[0]
+                  shutil.copy(os.path.join(out, a["exportedFileName"]), f"docs/screenshots/{base}.png")
+                  print("saved", base)
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs/screenshots
+          git commit -m "Update App Store screenshots" || echo "No changes"
+          git push

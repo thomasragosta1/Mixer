@@ -19,6 +19,9 @@ final class ProjectsViewModel {
 
     static func makeStore() -> ProjectStore {
         let support = FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
+        if DemoContent.isEnabled, let demo = try? DemoContent.makeStore(root: support.appendingPathComponent("DemoProjects", isDirectory: true)) {
+            return demo
+        }
         let root = support.appendingPathComponent("Projects", isDirectory: true)
         do {
             return try ProjectStore(rootURL: root)

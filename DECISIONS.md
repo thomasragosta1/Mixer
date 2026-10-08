@@ -272,3 +272,14 @@ Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers
 - **Share from Voice Memos:** Four-Track declares that it opens audio files (`CFBundleDocumentTypes`, rank Alternate, copied into the app rather than opened in place), so it appears in the share sheet for Voice Memos and Files. That avoids a Share Extension, which would need a second bundle ID, App ID and provisioning profile in CI for the same result.
 - **Import Audio** (the arrow-into-tray button on the projects list) opens the Files picker for any audio.
 - Either way, a sheet asks: **New Project** (named after the recording, Simple mode, recording on Track 1) or **add as a new track** to a project that has a lane free (projects with all four tracks used aren't listed). The file is converted to the app's track format (48 kHz mono, stereo folded down) next to the destination and then moved into place, so a failed import leaves nothing half-written; a failed import into a new project removes that project. The shared copy is deleted after import.
+
+## Privacy policy, support page, store listing
+
+- The policy lives in the app (Settings → Privacy Policy, readable offline) and as a web page for App Store Connect: `docs/privacy.html`, generated from the same text by `scripts/privacy_html.py`, served by GitHub Pages with `docs/index.html` as the Support page. Contact is GitHub Issues rather than a personal email address. CLAUDE.md §14 makes updating it part of any change that affects data.
+- Store text, keywords, App Privacy and age rating answers (4+) are in `docs/app-store.md`.
+- Screenshots come from a UI test (`ScreenshotTests`, run only by the Screenshots workflow) on a 6.9-inch simulator. `-demoContent YES` swaps in a separate, freshly seeded store (DemoProjects) with synthesized audio, so screenshots never show or touch real projects.
+
+## Accessibility pass
+
+- VoiceOver: every control has a label; added Move Up / Move Down actions on track cards (the drag-to-reorder equivalent), swipe up/down on the playhead time to move 5 s, and the zoom rotor for waveform zoom. Tips are announced.
+- Large text: lists, sheets, settings and the policy scale to the largest accessibility sizes. The recording/mixing screen (fixed-size track cards, channel strips, pads) caps at XXXL; its transport buttons support the Large Content Viewer (long-press shows them enlarged).

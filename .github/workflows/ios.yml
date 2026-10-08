@@ -6,6 +6,8 @@ on:
     paths-ignore:
       - "**/*.md"
       - .github/workflows/crash-logs.yml
+      - .github/workflows/screenshots.yml
+      - "docs/**"
   workflow_dispatch:
     inputs:
       upload:
@@ -73,6 +75,7 @@ jobs:
             -project FourTrack.xcodeproj \
             -scheme FourTrack \
             -destination "id=$UDID" \
+            -skip-testing:FourTrackUITests/ScreenshotTests \
             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | tee test.log | grep -E "error:|Test Case|Cleanup of|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
           status=${PIPESTATUS[0]}
           set -e

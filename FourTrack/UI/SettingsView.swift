@@ -44,6 +44,7 @@ struct SettingsView: View {
 
                 Section {
                     Button("Show Tips Again") { Hints.shared.resetAll() }
+                    NavigationLink("Privacy Policy") { PrivacyPolicyView() }
                     NavigationLink("Acknowledgements") { AcknowledgementsView() }
                     LabeledContent("Version", value: Bundle.main.appVersion)
                 }

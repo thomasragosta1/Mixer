@@ -298,3 +298,9 @@ Keep audio code free of SwiftUI imports. UI talks to an `@Observable` project vi
 - Minimum supported iPhone model and iOS version.
 - Whether Warmth ships in v1 or the first update. (Default: first update.)
 - App name and icon.
+
+---
+
+## 14. Maintenance rules (owner)
+
+- **Privacy policy:** whenever a change affects what data the app touches, stores, shares or sends (new permissions, network use, sync, analytics, imports/exports), update `FourTrack/UI/PrivacyPolicyView.swift` (text and `lastUpdated`), run `python3 scripts/privacy_html.py` to refresh the hosted copy in `docs/privacy.html`, and update `PrivacyInfo.xcprivacy` and the App Privacy answers in `docs/app-store.md` if they change.

@@ -86,6 +86,10 @@ struct ProjectView: View {
             }
         }
         .onGeometryChange(for: Bool.self, of: { $0.size.width > $0.size.height * 1.1 }) { isWide = $0 }
+        // Track cards, strips and pads have fixed sizes; past XXXL their text
+        // would clip. Buttons there offer the Large Content Viewer instead,
+        // and sheets and lists opened from here scale fully.
+        .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
         .background(Color(uiColor: .systemGroupedBackground))
         .overlay(alignment: .bottom) {
             if laneDrag != nil {
@@ -241,6 +245,14 @@ struct ProjectView: View {
                         .zIndex(dragging || laneMotion.index == i ? 1 : 0)
                         .simultaneousGesture(laneGesture(index: i, position: position, count: order.count))
                         .accessibilityAction(named: "Delete track") { pendingTrackDelete = i }
+                        .accessibilityAction(named: "Move up") {
+                            guard position > 0, !model.isRecording else { return }
+                            model.moveLanes(fromOffsets: IndexSet(integer: position), toOffset: position - 1)
+                        }
+                        .accessibilityAction(named: "Move down") {
+                            guard position < order.count - 1, !model.isRecording else { return }
+                            model.moveLanes(fromOffsets: IndexSet(integer: position), toOffset: position + 2)
+                        }
                 }
 
                 if model.visibleTrackCount < Project.trackCount {
