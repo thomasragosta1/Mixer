@@ -229,7 +229,7 @@ struct ProjectView: View {
                 ForEach(Array(order.enumerated()), id: \.element) { position, i in
                     let dragging = laneDrag?.index == i
                     let overBin = dragging && laneDrag?.overBin == true
-                    TrackRowView(model: model, index: i, onScrub: scrubGesture)
+                    trackRow(i)
                         // Only the card lifts: shadow and scale follow its rounded shape.
                         .compositingGroup()
                         .shadow(color: .black.opacity(dragging ? 0.22 : 0), radius: dragging ? 18 : 0, y: dragging ? 10 : 0)
@@ -351,22 +351,44 @@ struct ProjectView: View {
     private var scrubGesture: some Gesture {
         DragGesture(minimumDistance: 8)
             .onChanged { g in
-                guard !model.isRecording, !model.isZooming, laneDrag == nil, abs(g.translation.width) > abs(g.translation.height) || scrubStart != nil else { return }
-                if scrubStart == nil {
-                    scrubStart = model.playhead
-                    model.beginScrub()
-                }
-                let seconds = (scrubStart ?? 0) - Double(g.translation.width / (WaveformView.defaultPointsPerSecond * model.effectiveZoom))
-                let before = model.playhead
-                model.scrub(to: seconds)
-                Haptics.scrubTick(from: before, to: model.playhead, grid: model.beatGrid, end: model.duration)
+                guard abs(g.translation.width) > abs(g.translation.height) || scrubStart != nil else { return }
+                scrubMoved(by: g.translation.width)
             }
-            .onEnded { _ in
-                if scrubStart != nil {
-                    scrubStart = nil
-                    model.endScrub()
-                }
-            }
+            .onEnded { _ in scrubEnded() }
+    }
+
+    /// iOS 18+: a UIKit pan that only starts sideways, so vertical drags scroll the list.
+    @available(iOS 18.0, *)
+    private var horizontalScrub: HorizontalPan {
+        HorizontalPan(onChange: { scrubMoved(by: $0) }, onEnd: { scrubEnded() })
+    }
+
+    private func scrubMoved(by dx: CGFloat) {
+        guard !model.isRecording, !model.isZooming, laneDrag == nil else { return }
+        if scrubStart == nil {
+            scrubStart = model.playhead
+            model.beginScrub()
+        }
+        let seconds = (scrubStart ?? 0) - Double(dx / (WaveformView.defaultPointsPerSecond * model.effectiveZoom))
+        let before = model.playhead
+        model.scrub(to: seconds)
+        Haptics.scrubTick(from: before, to: model.playhead, grid: model.beatGrid, end: model.duration)
+    }
+
+    private func scrubEnded() {
+        if scrubStart != nil {
+            scrubStart = nil
+            model.endScrub()
+        }
+    }
+
+    @ViewBuilder
+    private func trackRow(_ i: Int) -> some View {
+        if #available(iOS 18.0, *) {
+            TrackRowView(model: model, index: i, onScrub: horizontalScrub)
+        } else {
+            TrackRowView(model: model, index: i, onScrub: scrubGesture)
+        }
     }
 
     // MARK: Toolbar
@@ -653,34 +675,40 @@ struct WaveformPinch: ViewModifier {
     func body(content: Content) -> some View {
         if model.isSimple {
             content
+        } else if #available(iOS 18.0, *) {
+            content
+                .simultaneousGesture(PinchRecognizer(onChange: changed, onEnd: ended))
+                .accessibilityZoomAction { action in model.stepZoom(in: action.direction == .zoomIn) }
         } else {
             content
                 .simultaneousGesture(
                     MagnifyGesture(minimumScaleDelta: 0.02)
-                        .onChanged { value in
-                            guard !model.isRecording else { return }
-                            if startZoom == nil {
-                                startZoom = model.waveformZoom
-                                model.isZooming = true
-                            }
-                            let range = ProjectViewModel.zoomRange
-                            let raw = min(max((startZoom ?? 1) * value.magnification, range.lowerBound), range.upperBound)
-                            // A small detent at the standard scale.
-                            let z = abs(raw - 1) < 0.07 ? 1 : raw
-                            let before = model.waveformZoom
-                            if (z == 1) != (before == 1) || ((z == range.lowerBound || z == range.upperBound) && z != before) {
-                                Haptics.slot.selectionChanged()
-                            }
-                            if z != before { model.waveformZoom = z }
-                        }
-                        .onEnded { _ in
-                            startZoom = nil
-                            model.isZooming = false
-                        }
+                        .onChanged { changed($0.magnification) }
+                        .onEnded { _ in ended() }
                 )
-                .accessibilityZoomAction { action in
-                    model.stepZoom(in: action.direction == .zoomIn)
-                }
+                .accessibilityZoomAction { action in model.stepZoom(in: action.direction == .zoomIn) }
         }
+    }
+
+    private func changed(_ magnification: CGFloat) {
+        guard !model.isRecording else { return }
+        if startZoom == nil {
+            startZoom = model.waveformZoom
+            model.isZooming = true
+        }
+        let range = ProjectViewModel.zoomRange
+        let raw = min(max((startZoom ?? 1) * magnification, range.lowerBound), range.upperBound)
+        // A small detent at the standard scale.
+        let z = abs(raw - 1) < 0.07 ? 1 : raw
+        let before = model.waveformZoom
+        if (z == 1) != (before == 1) || ((z == range.lowerBound || z == range.upperBound) && z != before) {
+            Haptics.slot.selectionChanged()
+        }
+        if z != before { model.waveformZoom = z }
+    }
+
+    private func ended() {
+        startZoom = nil
+        model.isZooming = false
     }
 }

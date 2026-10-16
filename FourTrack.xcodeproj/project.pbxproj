@@ -32,6 +32,7 @@
 		6DCD3C86187BC74CB7DC7487 /* DrumFlowUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C03CC3498679B0B0EE9BE02 /* DrumFlowUITests.swift */; };
 		719E4F4E98B4EF8C7C8249B6 /* VoiceIsolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C33C5D0807D6485D8E215E /* VoiceIsolation.swift */; };
 		769AA9EA2C7D363BF9C87E1B /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09527E8651126EA3637F0EFE /* PrivacyPolicyView.swift */; };
+		784535FF3D0010D0990F7826 /* UIKitGestures.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECB4BE821BC4A51D1CA605B /* UIKitGestures.swift */; };
 		7BFDC84C28A75873EED073F6 /* BinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E4C9D955D96787E81A4BE5 /* BinView.swift */; };
 		7DF252D3E25408D3DFBFFFE0 /* CloudSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = F477CD470F1D64DAA1325C70 /* CloudSync.swift */; };
 		85E4177A1A68A96E60CA5854 /* TrackBinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853BB5BA068D6604EFCB8CC9 /* TrackBinView.swift */; };
@@ -99,6 +100,7 @@
 		6878880E4225B009DD596A88 /* FourTrackCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FourTrackCore; path = Packages/FourTrackCore; sourceTree = SOURCE_ROOT; };
 		68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionManager.swift; sourceTree = "<group>"; };
 		6CBCF15A100D38FA74B05B31 /* FourTrackTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = FourTrackTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ECB4BE821BC4A51D1CA605B /* UIKitGestures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIKitGestures.swift; sourceTree = "<group>"; };
 		702A407D2D44FE41D0FA16E3 /* ProjectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectViewModel.swift; sourceTree = "<group>"; };
 		741F2254BE2578A39C560A83 /* MixerEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixerEngine.swift; sourceTree = "<group>"; };
 		760E834ADAA2D6D433B62287 /* Hints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hints.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 				853BB5BA068D6604EFCB8CC9 /* TrackBinView.swift */,
 				9B72403350D7930C64EB602B /* TrackRowView.swift */,
 				1F30AF566B98693F94AB8FE8 /* TransportView.swift */,
+				6ECB4BE821BC4A51D1CA605B /* UIKitGestures.swift */,
 				1C5454E139B97093DB44AF1F /* VolumeFader.swift */,
 			);
 			path = UI;
@@ -482,6 +485,7 @@
 				B3A5C9B2D345A3BE9C5BD88D /* TrackChain.swift in Sources */,
 				A9312C5B7AD8221DF79667AE /* TrackRowView.swift in Sources */,
 				36CA7623B8906FF96AC950B2 /* TransportView.swift in Sources */,
+				784535FF3D0010D0990F7826 /* UIKitGestures.swift in Sources */,
 				55C2B5D2F70A2B5934349FBE /* UndoHistory.swift in Sources */,
 				719E4F4E98B4EF8C7C8249B6 /* VoiceIsolation.swift in Sources */,
 				CC034BEDD8688E6CB526C9E7 /* VolumeFader.swift in Sources */,
