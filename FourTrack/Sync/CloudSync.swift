@@ -107,6 +107,7 @@ final class CloudSync {
             try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
         }
         disk = Self.loadDisk()
+        Self.purgeOldBackups()
         var config = CKSyncEngine.Configuration(
             database: container.privateCloudDatabase,
             stateSerialization: Self.loadEngineState(),
@@ -175,12 +176,14 @@ final class CloudSync {
     private func scanAll() {
         guard engine != nil, let store else { return }
         let local = Set(store.allProjectIDs())
-        for id in local.union(disk.ledger.projects.keys) {
-            if local.contains(id) {
-                scanProject(id)
-            } else if disk.ledger.projects[id] != nil, disk.incoming[id] == nil {
-                deleteRemote(id)
-            }
+        let missing = disk.ledger.projects.keys.filter { !local.contains($0) && disk.incoming[$0] == nil }
+        // Several synced projects vanishing at once looks like a storage problem,
+        // not the person deleting them: never pass that on to iCloud.
+        let suspicious = missing.count >= 3 && missing.count * 2 > disk.ledger.projects.count
+        for id in local { scanProject(id) }
+        deletionsPaused = suspicious
+        if !suspicious {
+            for id in missing { deleteRemote(id) }
         }
         saveDisk()
         updateStatus()
@@ -354,9 +357,12 @@ final class CloudSync {
         let remoteHash = SyncPlanner.hash(data)
         // Our own save coming back.
         if state?.metadataHash == remoteHash, manifest == disk.ledger.manifest(for: id) { return }
-        // Unsent edits here that are newer win; they'll be sent.
-        if let localData = store.metadataData(for: id), SyncPlanner.hash(localData) != state?.metadataHash,
-           let local = store.decodeProject(localData), local.updatedAt > remote.updatedAt {
+        // A project already on this device is only replaced by a strictly newer
+        // edit from another device. Anything else (our own upload echoing back,
+        // an older copy) leaves this device's version alone, and it gets sent.
+        if let localData = store.metadataData(for: id), let local = store.decodeProject(localData),
+           remote.updatedAt <= local.updatedAt {
+            scanProject(id)
             return
         }
         disk.incoming[id] = IncomingProject(json: data, manifest: manifest, updatedAt: remote.updatedAt)
@@ -368,8 +374,7 @@ final class CloudSync {
     /// made elsewhere, the edits win and the update is dropped.
     private func resolveIncomingAfterLocalEdits(_ id: UUID) {
         guard let store, let incoming = disk.incoming[id], let localData = store.metadataData(for: id),
-              SyncPlanner.hash(localData) != disk.ledger.projects[id]?.metadataHash,
-              let local = store.decodeProject(localData), local.updatedAt > incoming.updatedAt else { return }
+              let local = store.decodeProject(localData), local.updatedAt >= incoming.updatedAt else { return }
         disk.incoming[id] = nil
         saveDisk()
         scanProject(id)
@@ -380,6 +385,8 @@ final class CloudSync {
     private func tryApplyIncoming(_ id: UUID) {
         guard let store, let incoming = disk.incoming[id], openProject != id else { return }
         if incoming.deleted {
+            // Deleted on another device: kept aside for a while, not erased.
+            Self.backUp(project: id, files: nil, store: store)
             store.removeSynced(id: id)
             disk.ledger.forget(id)
             disk.incoming[id] = nil
@@ -393,6 +400,13 @@ final class CloudSync {
             guard FileManager.default.fileExists(atPath: incomingURL(SyncNames.audioRecordName(project: id, remoteID: remoteID)).path) else { return }
         }
         let dir = store.directory(for: id)
+        // Only files this device knows were already in iCloud are removed; audio
+        // that never made it up is left alone.
+        let removals = plan.removals.filter { state.files[$0] != nil }
+        // Whatever gets replaced or removed is copied aside first.
+        if store.metadataData(for: id) != nil {
+            Self.backUp(project: id, files: Array(plan.downloads.keys) + removals, store: store)
+        }
         do {
             try FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
             for (fileName, remoteID) in plan.downloads {
@@ -401,7 +415,7 @@ final class CloudSync {
                 // The waveform cache is rebuilt from the new audio.
                 try? FileManager.default.removeItem(at: dir.appendingPathComponent(fileName.replacingOccurrences(of: ".caf", with: ".peaks")))
             }
-            for fileName in plan.removals {
+            for fileName in removals {
                 try? FileManager.default.removeItem(at: dir.appendingPathComponent(fileName))
                 try? FileManager.default.removeItem(at: dir.appendingPathComponent(fileName.replacingOccurrences(of: ".caf", with: ".peaks")))
             }
@@ -461,6 +475,44 @@ final class CloudSync {
         incoming.manifest = incoming.manifest.filter { $0.value != remoteID }
         disk.incoming[projectID] = incoming
         tryApplyIncoming(projectID)
+    }
+
+    // MARK: Safety copies
+
+    /// Copies of everything sync replaced or removed, kept for 30 days in
+    /// Application Support/SyncBackups/<date>/<project>/.
+    private static var backupFolder: URL {
+        FileManager.default.urls(for: .applicationSupportDirectory, in: .userDomainMask)[0]
+            .appendingPathComponent("SyncBackups", isDirectory: true)
+    }
+
+    /// `files` nil copies the whole project folder; otherwise project.json and those files.
+    private static func backUp(project id: UUID, files: [String]?, store: ProjectStore) {
+        let fm = FileManager.default
+        let source = store.directory(for: id)
+        guard fm.fileExists(atPath: source.path) else { return }
+        let stamp = ISO8601DateFormatter().string(from: Date()).replacingOccurrences(of: ":", with: "-")
+        let target = backupFolder.appendingPathComponent(stamp, isDirectory: true).appendingPathComponent(id.uuidString, isDirectory: true)
+        try? fm.createDirectory(at: target.deletingLastPathComponent(), withIntermediateDirectories: true)
+        if files == nil {
+            try? fm.copyItem(at: source, to: target)
+            return
+        }
+        try? fm.createDirectory(at: target, withIntermediateDirectories: true)
+        for name in ["project.json"] + (files ?? []) {
+            let from = source.appendingPathComponent(name)
+            if fm.fileExists(atPath: from.path) { try? fm.copyItem(at: from, to: target.appendingPathComponent(name)) }
+        }
+    }
+
+    private static func purgeOldBackups() {
+        let fm = FileManager.default
+        guard let entries = try? fm.contentsOfDirectory(at: backupFolder, includingPropertiesForKeys: [.creationDateKey]) else { return }
+        let cutoff = Date().addingTimeInterval(-30 * 86_400)
+        for entry in entries {
+            let created = (try? entry.resourceValues(forKeys: [.creationDateKey]).creationDate) ?? Date()
+            if created < cutoff { try? fm.removeItem(at: entry) }
+        }
     }
 
     private func incomingURL(_ recordName: String) -> URL {
@@ -610,8 +662,14 @@ final class CloudSync {
         updateStatus()
     }
 
+    @ObservationIgnored private var deletionsPaused = false
+
     private func updateStatus() {
         guard let engine else { return }
+        if deletionsPaused {
+            status = .failed("Some projects couldn't be read on this iPhone, so sync paused deletions to keep iCloud's copies safe.")
+            return
+        }
         if status == .storageFull || status == .checking { return }
         let busy = !engine.state.pendingRecordZoneChanges.isEmpty || !staging.isEmpty || !disk.incoming.isEmpty
         status = busy ? .syncing : .upToDate
