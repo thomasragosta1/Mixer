@@ -111,7 +111,9 @@ struct TrackRowView<Scrub: Gesture>: View {
         )
         .clipShape(RoundedRectangle(cornerRadius: Theme.innerRadius, style: .continuous))
         .contentShape(Rectangle())
-        .gesture(onScrub)
+        // Simultaneous, so a vertical drag that starts on a waveform still
+        // scrolls the track list; the scrub itself only follows sideways drags.
+        .simultaneousGesture(onScrub)
     }
 
     private var controls: some View {

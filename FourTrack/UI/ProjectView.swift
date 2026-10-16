@@ -264,7 +264,8 @@ struct ProjectView: View {
             .padding(.horizontal, 16)
             .padding(.vertical, 6)
         }
-        .scrollDisabled(laneDrag != nil)
+        // Held card or a sideways scrub in progress: the list stays put.
+        .scrollDisabled(laneDrag != nil || scrubStart != nil)
         .modifier(WaveformPinch(model: model))
         // Let the held card travel past the list (down to the bin) without being clipped.
         .scrollClipDisabled(laneDrag != nil)

@@ -161,4 +161,33 @@ final class DrumFlowUITests: XCTestCase {
         }
         XCTAssertEqual(app.state, .runningForeground)
     }
+
+    /// With four tracks the list is taller than the screen: a vertical drag
+    /// that starts on a waveform scrolls it, so the last track can be reached.
+    func testTrackListScrollsToTheLastTrack() {
+        let app = XCUIApplication()
+        app.launchArguments += ["-hintsDisabled", "YES"]
+        app.launch()
+        app.buttons["New Project"].firstMatch.tap()
+        let create = app.buttons["Create"].firstMatch
+        XCTAssertTrue(create.waitForExistence(timeout: 5))
+        create.tap()
+        for n in 2...4 {
+            let add = app.buttons["Add Track \(n)"].firstMatch
+            XCTAssertTrue(add.waitForExistence(timeout: 15))
+            add.tap()
+        }
+        let last = app.descendants(matching: .any)["Track 4 Volume"].firstMatch
+        XCTAssertTrue(last.waitForExistence(timeout: 5))
+        if last.isHittable { print("Screen tall enough to show all four tracks; scrolling not needed here.") }
+        let third = app.descendants(matching: .any)["Track 3 Volume"].firstMatch
+        // Start on the third track's waveform (right of its name, above its volume bar).
+        let start = third.coordinate(withNormalizedOffset: CGVector(dx: 0.7, dy: -1.5))
+        let end = third.coordinate(withNormalizedOffset: CGVector(dx: 0.7, dy: -5))
+        for _ in 0..<2 {
+            start.press(forDuration: 0.05, thenDragTo: end)
+            sleep(1)
+        }
+        XCTAssertTrue(last.isHittable, "the last track's controls should scroll into view")
+    }
 }

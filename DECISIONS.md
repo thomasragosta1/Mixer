@@ -309,3 +309,7 @@ Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers
   - Before sync replaces or removes anything (a project deleted on another device, audio replaced by a newer take, a dropped track), the old project.json and files are copied to Application Support/SyncBackups/<date>/<project>/ and kept for 30 days.
   - Only audio files this device knows were already in iCloud can be removed by an incoming update. Audio that never uploaded is never deleted.
   - If several synced projects vanish at once (3 or more, and over half), sync treats it as a storage problem, not deletions. It doesn't pass them on to iCloud, and the status explains this.
+
+## Track list scrolling (owner: couldn't scroll to the bottom of the last track)
+
+- A vertical drag that started on a waveform was captured by the waveform's scrub gesture, so the list only scrolled from the narrow name column. The scrub is now simultaneous with the list's scrolling: vertical drags scroll anywhere on a card, and sideways drags scrub (the list holds still while a scrub is in progress). A UI test with four tracks drags up on a waveform and checks that the last track comes into view.
