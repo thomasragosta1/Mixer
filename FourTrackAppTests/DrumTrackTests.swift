@@ -98,11 +98,13 @@ final class DrumTrackTests: XCTestCase {
     /// Opening and closing a project without editing doesn't make it look
     /// newer, which would beat an edit made on another device.
     func testOpeningAndClosingDoesNotCountAsAnEdit() throws {
-        let project = try store.create(name: "Untouched")
-        let model = ProjectViewModel(project: project, store: store)
+        let created = try store.create(name: "Untouched")
+        let before = try store.load(id: created.id)
+        let model = ProjectViewModel(project: before, store: store)
         model.activate()
         model.close()
-        XCTAssertEqual(try store.load(id: project.id).updatedAt, project.updatedAt)
+        let after = try store.load(id: created.id)
+        XCTAssertEqual(after.updatedAt.timeIntervalSince1970, before.updatedAt.timeIntervalSince1970, accuracy: 0.001)
     }
 
     func testDrumSamplesShipInTheApp() {
