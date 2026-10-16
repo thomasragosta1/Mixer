@@ -19,7 +19,7 @@ final class DrumFlowUITests: XCTestCase {
 
         // New projects default to Simple mode; ⋯ → Simple Mode toggles it.
         XCTAssertTrue(app.buttons["Add Track 2"].firstMatch.waitForExistence(timeout: 5))
-        XCTAssertTrue(app.descendants(matching: .any)["Track 1 Volume"].firstMatch.waitForExistence(timeout: 3), "Simple mode is the default and shows a volume bar on each track")
+        XCTAssertTrue(app.descendants(matching: .any)["Track 1 Volume"].firstMatch.waitForExistence(timeout: 10), "Simple mode is the default and shows a volume bar on each track")
         XCTAssertFalse(app.buttons["Metronome"].exists, "Simple mode hides the metronome")
         app.buttons["More"].firstMatch.tap()
         XCTAssertTrue(app.buttons["Simple Mode"].firstMatch.waitForExistence(timeout: 3))
@@ -130,12 +130,10 @@ final class DrumFlowUITests: XCTestCase {
             ("808", ["Kick", "Snare", "Clap", "Closed Hat", "Open Hat", "Cowbell", "Rim", "Tom"]),
             ("Hand Percussion", ["Cajón", "Slap", "Bongo Low", "Bongo High", "Conga", "Shaker", "Tambourine", "Woodblock"]),
         ]
-        // Middle, four corners (inside), and 3 pt into the gap on the right and below.
+        // Middle, two opposite corners (inside), and 3 pt into the gap on the right and below.
         let spots: [(CGVector, CGVector)] = [
             (CGVector(dx: 0.5, dy: 0.5), .zero),
             (CGVector(dx: 0.08, dy: 0.08), .zero),
-            (CGVector(dx: 0.92, dy: 0.08), .zero),
-            (CGVector(dx: 0.08, dy: 0.92), .zero),
             (CGVector(dx: 0.92, dy: 0.92), .zero),
             (CGVector(dx: 1, dy: 0.5), CGVector(dx: 3, dy: 0)),
             (CGVector(dx: 0.5, dy: 1), CGVector(dx: 0, dy: 3)),

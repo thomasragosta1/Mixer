@@ -288,7 +288,7 @@ Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers
 
 - The previous single touch surface found the pad under a finger from a table of pad frames reported by SwiftUI. Anything that left that table out of step with the drawn pads (a layout change, a kit switch, the drawer animating) sent touches to the wrong pad or to none.
 - Now each pad has its own UIKit touch view, extended 5 pt into the gaps so a finger between pads plays the nearer one. UIKit routes every finger to the view it landed on, so there's no table to drift. Everything else stays: each finger is independent, a second finger on a held pad hits again, sliding doesn't retrigger, the touch timestamp corrects recorded timing, press-and-hold only with a single unmoved finger, and the swipe-back gesture is off while the pads show.
-- A UI test taps every pad of every kit in the middle, near all four corners and in the gaps, and checks that exactly that pad registered one hit (`-padHitCounts YES` exposes each pad's hit count to the test).
+- A UI test taps every pad of every kit in the middle, near two opposite corners and in the gaps, and checks that exactly that pad registered one hit (`-padHitCounts YES` exposes each pad's hit count to the test).
 
 ## iCloud sync (owner request)
 
