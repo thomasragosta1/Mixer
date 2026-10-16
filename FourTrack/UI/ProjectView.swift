@@ -269,7 +269,9 @@ struct ProjectView: View {
         .modifier(WaveformPinch(model: model))
         // Let the held card travel past the list (down to the bin) without being clipped.
         .scrollClipDisabled(laneDrag != nil)
-        .scrollBounceBehavior(.basedOnSize)
+        // Always scrollable. (.basedOnSize compared the cards with the list's
+        // full height, including the strip under the navigation bar, and
+        // switched scrolling off while the last card was still cut off.)
         .background(Color(uiColor: .systemGroupedBackground))
         .animation(.spring(response: 0.35, dampingFraction: 0.85), value: model.visibleLanes)
     }
