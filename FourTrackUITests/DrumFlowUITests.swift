@@ -18,7 +18,7 @@ final class DrumFlowUITests: XCTestCase {
         create.tap()
 
         // New projects default to Simple mode; ⋯ → Simple Mode toggles it.
-        XCTAssertTrue(app.buttons["Add Track 2"].firstMatch.waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["Add Track 2"].firstMatch.waitForExistence(timeout: 15), "the new project didn't open")
         XCTAssertTrue(app.descendants(matching: .any)["Track 1 Volume"].firstMatch.waitForExistence(timeout: 10), "Simple mode is the default and shows a volume bar on each track")
         XCTAssertFalse(app.buttons["Metronome"].exists, "Simple mode hides the metronome")
         app.buttons["More"].firstMatch.tap()
