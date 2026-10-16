@@ -243,7 +243,7 @@ struct ProjectView: View {
                         // The held card follows the finger 1:1.
                         .modifier(FollowsFinger(motion: laneMotion, index: i))
                         .zIndex(dragging || laneMotion.index == i ? 1 : 0)
-                        .simultaneousGesture(laneGesture(index: i, position: position, count: order.count))
+                        .simultaneousGesture(laneGesture(index: i, position: position, count: order.count), including: ScrollDiag.has("noLane") ? .subviews : .all)
                         .accessibilityAction(named: "Delete track") { pendingTrackDelete = i }
                         .accessibilityAction(named: "Move up") {
                             guard position > 0, !model.isRecording else { return }
@@ -265,7 +265,7 @@ struct ProjectView: View {
             .padding(.vertical, 6)
         }
         // Held card or a sideways scrub in progress: the list stays put.
-        .scrollDisabled(laneDrag != nil || scrubStart != nil)
+        .scrollDisabled(!ScrollDiag.has("noDisable") && (laneDrag != nil || scrubStart != nil))
         .modifier(WaveformPinch(model: model))
         // Let the held card travel past the list (down to the bin) without being clipped.
         .scrollClipDisabled(laneDrag != nil)
@@ -386,7 +386,9 @@ struct ProjectView: View {
 
     @ViewBuilder
     private func trackRow(_ i: Int) -> some View {
-        if #available(iOS 18.0, *) {
+        if ScrollDiag.has("noScrub") {
+            TrackRowView(model: model, index: i, onScrub: EmptyModifier())
+        } else if #available(iOS 18.0, *) {
             TrackRowView(model: model, index: i, onScrub: RecognizerModifier(recognizer: horizontalScrub))
         } else {
             TrackRowView(model: model, index: i, onScrub: SimultaneousGestureModifier(gesture: scrubGesture))
@@ -713,4 +715,10 @@ struct WaveformPinch: ViewModifier {
         startZoom = nil
         model.isZooming = false
     }
+}
+
+/// UI-test switches for finding what blocks scrolling (`-scrollDiag noLane,noScrub`).
+enum ScrollDiag {
+    static let flags = UserDefaults.standard.string(forKey: "scrollDiag") ?? ""
+    static func has(_ flag: String) -> Bool { flags.contains(flag) }
 }
