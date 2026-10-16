@@ -217,7 +217,7 @@ struct ProjectView: View {
     }
 
     private static let laneSpacing: CGFloat = 12
-    private var laneStep: CGFloat { TrackRowView<DragGesture>.cardHeight(simple: model.isSimple) + Self.laneSpacing }
+    private var laneStep: CGFloat { TrackRowView<EmptyModifier>.cardHeight(simple: model.isSimple) + Self.laneSpacing }
 
     /// Lanes as separate cards. Press and hold a card (briefly), then drag it
     /// up or down to reorder, or onto the bin that rises at the bottom to
@@ -385,9 +385,9 @@ struct ProjectView: View {
     @ViewBuilder
     private func trackRow(_ i: Int) -> some View {
         if #available(iOS 18.0, *) {
-            TrackRowView(model: model, index: i, onScrub: horizontalScrub)
+            TrackRowView(model: model, index: i, onScrub: RecognizerModifier(recognizer: horizontalScrub))
         } else {
-            TrackRowView(model: model, index: i, onScrub: scrubGesture)
+            TrackRowView(model: model, index: i, onScrub: SimultaneousGestureModifier(gesture: scrubGesture))
         }
     }
 
@@ -677,7 +677,7 @@ struct WaveformPinch: ViewModifier {
             content
         } else if #available(iOS 18.0, *) {
             content
-                .simultaneousGesture(PinchRecognizer(onChange: changed, onEnd: ended))
+                .gesture(PinchRecognizer(onChange: changed, onEnd: ended))
                 .accessibilityZoomAction { action in model.stepZoom(in: action.direction == .zoomIn) }
         } else {
             content

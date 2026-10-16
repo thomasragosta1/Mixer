@@ -5,7 +5,7 @@ import FourTrackCore
 /// left, waveform with the playhead on the right. Tap the card to arm it;
 /// drag the waveform sideways to scrub. In Simple projects the card has no
 /// M/S and a volume bar runs along its bottom instead.
-struct TrackRowView<Scrub: Gesture>: View {
+struct TrackRowView<Scrub: ViewModifier>: View {
     @Bindable var model: ProjectViewModel
     let index: Int
     let onScrub: Scrub
@@ -111,9 +111,8 @@ struct TrackRowView<Scrub: Gesture>: View {
         )
         .clipShape(RoundedRectangle(cornerRadius: Theme.innerRadius, style: .continuous))
         .contentShape(Rectangle())
-        // Simultaneous, so a vertical drag that starts on a waveform still
-        // scrolls the track list; the scrub itself only follows sideways drags.
-        .simultaneousGesture(onScrub)
+        // The scrub only follows sideways drags; vertical ones scroll the list.
+        .modifier(onScrub)
     }
 
     private var controls: some View {

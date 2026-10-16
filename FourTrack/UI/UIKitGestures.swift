@@ -75,3 +75,16 @@ struct PinchRecognizer: UIGestureRecognizerRepresentable {
         func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith other: UIGestureRecognizer) -> Bool { true }
     }
 }
+
+/// Attaches a SwiftUI gesture alongside the others (iOS 17).
+struct SimultaneousGestureModifier<G: Gesture>: ViewModifier {
+    let gesture: G
+    func body(content: Content) -> some View { content.simultaneousGesture(gesture) }
+}
+
+/// Attaches a UIKit recognizer (iOS 18+).
+@available(iOS 18.0, *)
+struct RecognizerModifier<R: UIGestureRecognizerRepresentable>: ViewModifier {
+    let recognizer: R
+    func body(content: Content) -> some View { content.gesture(recognizer) }
+}
