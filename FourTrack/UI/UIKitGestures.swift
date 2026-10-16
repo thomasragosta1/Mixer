@@ -88,3 +88,40 @@ struct RecognizerModifier<R: UIGestureRecognizerRepresentable>: ViewModifier {
     let recognizer: R
     func body(content: Content) -> some View { content.gesture(recognizer) }
 }
+
+/// Press and hold (0.2 s, within 12 pt), then drag: reports how far the finger
+/// has moved vertically since the hold landed and where it is in the window.
+/// Moving before the hold lands fails it, so the list scrolls instead.
+@available(iOS 18.0, *)
+struct HoldAndDrag: UIGestureRecognizerRepresentable {
+    var onChange: (CGFloat, CGPoint) -> Void
+    var onEnd: () -> Void
+
+    func makeUIGestureRecognizer(context: Context) -> UILongPressGestureRecognizer {
+        let hold = UILongPressGestureRecognizer()
+        hold.minimumPressDuration = 0.2
+        hold.allowableMovement = 12
+        return hold
+    }
+
+    func handleUIGestureRecognizerAction(_ recognizer: UILongPressGestureRecognizer, context: Context) {
+        let location = recognizer.location(in: nil)
+        switch recognizer.state {
+        case .began:
+            context.coordinator.start = location
+            onChange(0, location)
+        case .changed:
+            onChange(location.y - context.coordinator.start.y, location)
+        case .ended, .cancelled, .failed:
+            onEnd()
+        default:
+            break
+        }
+    }
+
+    func makeCoordinator(converter: CoordinateSpaceConverter) -> Coordinator { Coordinator() }
+
+    final class Coordinator {
+        var start = CGPoint.zero
+    }
+}

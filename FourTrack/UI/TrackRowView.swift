@@ -42,7 +42,7 @@ struct TrackRowView<Scrub: ViewModifier>: View {
                 .strokeBorder(Color.red.opacity(isArmed ? 0.85 : 0), lineWidth: 2)
         )
         .contentShape(RoundedRectangle(cornerRadius: Theme.cardRadius, style: .continuous))
-        .gesture(TapGesture().onEnded { arm() }, including: ScrollDiag.has("noTap") ? .subviews : .all)
+        .onTapGesture { arm() }
         .accessibilityElement(children: .contain)
         .accessibilityAddTraits(isArmed ? .isSelected : [])
         .accessibilityAction(named: "Arm for recording") { model.arm(index) }

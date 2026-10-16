@@ -229,7 +229,7 @@ struct ProjectView: View {
                 ForEach(Array(order.enumerated()), id: \.element) { position, i in
                     let dragging = laneDrag?.index == i
                     let overBin = dragging && laneDrag?.overBin == true
-                    trackRow(i)
+                    withLaneHold(trackRow(i), index: i, position: position, count: order.count)
                         // Only the card lifts: shadow and scale follow its rounded shape.
                         .compositingGroup()
                         .shadow(color: .black.opacity(dragging ? 0.22 : 0), radius: dragging ? 18 : 0, y: dragging ? 10 : 0)
@@ -243,7 +243,7 @@ struct ProjectView: View {
                         // The held card follows the finger 1:1.
                         .modifier(FollowsFinger(motion: laneMotion, index: i))
                         .zIndex(dragging || laneMotion.index == i ? 1 : 0)
-                        .simultaneousGesture(laneGesture(index: i, position: position, count: order.count), including: ScrollDiag.has("noLane") ? .subviews : .all)
+
                         .accessibilityAction(named: "Delete track") { pendingTrackDelete = i }
                         .accessibilityAction(named: "Move up") {
                             guard position > 0, !model.isRecording else { return }
@@ -265,7 +265,7 @@ struct ProjectView: View {
             .padding(.vertical, 6)
         }
         // Held card or a sideways scrub in progress: the list stays put.
-        .scrollDisabled(!ScrollDiag.has("noDisable") && (laneDrag != nil || scrubStart != nil))
+        .scrollDisabled(laneDrag != nil || scrubStart != nil)
         .modifier(WaveformPinch(model: model))
         // Let the held card travel past the list (down to the bin) without being clipped.
         .scrollClipDisabled(laneDrag != nil)
@@ -290,63 +290,92 @@ struct ProjectView: View {
         LongPressGesture(minimumDuration: 0.2, maximumDistance: 12)
             .sequenced(before: DragGesture(minimumDistance: 0, coordinateSpace: .global))
             .onChanged { value in
-                guard !model.isRecording, !model.isSaving, scrubStart == nil else { return }
                 guard case .second(true, let drag) = value else { return }
-                if laneDrag == nil {
-                    laneMotion.index = index
-                    laneMotion.y = 0
-                    laneDrag = LaneDrag(index: index, startPosition: position, target: position)
-                    Hints.shared.dismiss(.dragTrackToBin)
-                    Haptics.lift.impactOccurred()
-                    Haptics.slot.prepare()
-                    Haptics.delete.prepare()
-                }
-                guard let drag, var d = laneDrag else { return }
-                laneMotion.y = drag.translation.height
-                // Rare changes only: a new slot, or reaching the bin.
-                let over = laneMotion.binFrame.insetBy(dx: -30, dy: -30).contains(drag.location)
-                let moved = Int((drag.translation.height / laneStep).rounded())
-                let target = min(max(position + moved, 0), count - 1)
-                if over != d.overBin {
-                    d.overBin = over
-                    (over ? Haptics.delete : Haptics.lift).impactOccurred()
-                }
-                if target != d.target && !over {
-                    d.target = target
-                    Haptics.slot.selectionChanged()
-                }
-                if d != laneDrag { laneDrag = d }
+                laneHoldMoved(index: index, position: position, count: count,
+                              dy: drag?.translation.height ?? 0, location: drag?.location)
             }
-            .onEnded { _ in
-                guard let d = laneDrag else { return }
-                if d.overBin {
-                    pendingTrackDelete = d.index
-                    withAnimation(.spring(response: 0.3, dampingFraction: 0.85)) {
-                        laneDrag = nil
-                        laneMotion.y = 0
-                    } completion: {
-                        laneMotion.index = nil
-                    }
-                    return
-                }
-                // Drop: reorder with no animation, keeping the card exactly under
-                // the finger, then let it settle into its slot with one spring.
-                let residual = laneMotion.y - CGFloat(d.target - d.startPosition) * laneStep
-                var instant = Transaction()
-                instant.disablesAnimations = true
-                withTransaction(instant) {
-                    if d.target != d.startPosition {
-                        model.moveLanes(fromOffsets: IndexSet(integer: d.startPosition), toOffset: d.target > d.startPosition ? d.target + 1 : d.target)
-                    }
-                    laneDrag = nil
-                    laneMotion.y = residual
-                }
-                withAnimation(.spring(response: 0.3, dampingFraction: 0.82)) {
-                    laneMotion.y = 0
-                } completion: {
-                    laneMotion.index = nil
-                }
+            .onEnded { _ in laneHoldEnded() }
+    }
+
+    /// iOS 18+: the same hold-and-drag as a UIKit long press, which gives way
+    /// to the list's scrolling when the finger moves before the hold lands.
+    /// (SwiftUI's long press inside a ScrollView stops it scrolling there.)
+    @available(iOS 18.0, *)
+    private func laneHold(index: Int, position: Int, count: Int) -> HoldAndDrag {
+        HoldAndDrag(
+            onChange: { dy, location in
+                laneHoldMoved(index: index, position: position, count: count, dy: dy, location: location)
+            },
+            onEnd: { laneHoldEnded() }
+        )
+    }
+
+    private func laneHoldMoved(index: Int, position: Int, count: Int, dy: CGFloat, location: CGPoint?) {
+        guard !model.isRecording, !model.isSaving, scrubStart == nil else { return }
+        if laneDrag == nil {
+            laneMotion.index = index
+            laneMotion.y = 0
+            laneDrag = LaneDrag(index: index, startPosition: position, target: position)
+            Hints.shared.dismiss(.dragTrackToBin)
+            Haptics.lift.impactOccurred()
+            Haptics.slot.prepare()
+            Haptics.delete.prepare()
+        }
+        guard let location, var d = laneDrag else { return }
+        laneMotion.y = dy
+        // Rare changes only: a new slot, or reaching the bin.
+        let over = laneMotion.binFrame.insetBy(dx: -30, dy: -30).contains(location)
+        let moved = Int((dy / laneStep).rounded())
+        let target = min(max(position + moved, 0), count - 1)
+        if over != d.overBin {
+            d.overBin = over
+            (over ? Haptics.delete : Haptics.lift).impactOccurred()
+        }
+        if target != d.target && !over {
+            d.target = target
+            Haptics.slot.selectionChanged()
+        }
+        if d != laneDrag { laneDrag = d }
+    }
+
+    private func laneHoldEnded() {
+        guard let d = laneDrag else { return }
+        if d.overBin {
+            pendingTrackDelete = d.index
+            withAnimation(.spring(response: 0.3, dampingFraction: 0.85)) {
+                laneDrag = nil
+                laneMotion.y = 0
+            } completion: {
+                laneMotion.index = nil
             }
+            return
+        }
+        // Drop: reorder with no animation, keeping the card exactly under
+        // the finger, then let it settle into its slot with one spring.
+        let residual = laneMotion.y - CGFloat(d.target - d.startPosition) * laneStep
+        var instant = Transaction()
+        instant.disablesAnimations = true
+        withTransaction(instant) {
+            if d.target != d.startPosition {
+                model.moveLanes(fromOffsets: IndexSet(integer: d.startPosition), toOffset: d.target > d.startPosition ? d.target + 1 : d.target)
+            }
+            laneDrag = nil
+            laneMotion.y = residual
+        }
+        withAnimation(.spring(response: 0.3, dampingFraction: 0.82)) {
+            laneMotion.y = 0
+        } completion: {
+            laneMotion.index = nil
+        }
+    }
+
+    @ViewBuilder
+    private func withLaneHold<V: View>(_ view: V, index: Int, position: Int, count: Int) -> some View {
+        if #available(iOS 18.0, *) {
+            view.gesture(laneHold(index: index, position: position, count: count))
+        } else {
+            view.simultaneousGesture(laneGesture(index: index, position: position, count: count))
+        }
     }
 
     /// Drag a waveform sideways to scrub, like Voice Memos.
@@ -386,9 +415,7 @@ struct ProjectView: View {
 
     @ViewBuilder
     private func trackRow(_ i: Int) -> some View {
-        if ScrollDiag.has("noScrub") {
-            TrackRowView(model: model, index: i, onScrub: EmptyModifier())
-        } else if #available(iOS 18.0, *) {
+        if #available(iOS 18.0, *) {
             TrackRowView(model: model, index: i, onScrub: RecognizerModifier(recognizer: horizontalScrub))
         } else {
             TrackRowView(model: model, index: i, onScrub: SimultaneousGestureModifier(gesture: scrubGesture))
@@ -717,8 +744,3 @@ struct WaveformPinch: ViewModifier {
     }
 }
 
-/// UI-test switches for finding what blocks scrolling (`-scrollDiag noLane,noScrub`).
-enum ScrollDiag {
-    static let flags = UserDefaults.standard.string(forKey: "scrollDiag") ?? ""
-    static func has(_ flag: String) -> Bool { flags.contains(flag) }
-}

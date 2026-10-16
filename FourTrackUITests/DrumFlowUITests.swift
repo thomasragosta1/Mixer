@@ -162,30 +162,6 @@ final class DrumFlowUITests: XCTestCase {
         XCTAssertEqual(app.state, .runningForeground)
     }
 
-    /// Which gesture stops the list scrolling: each one switched off in turn.
-    func testScrollDiagnosis() {
-        for flags in ["noLane", "noScrub", "noTap", "noDisable", "noLane,noScrub,noTap,noDisable"] {
-            let app = XCUIApplication()
-            app.launchArguments += ["-hintsDisabled", "YES", "-scrollDiag", flags]
-            app.launch()
-            app.buttons["New Project"].firstMatch.tap()
-            let create = app.buttons["Create"].firstMatch
-            _ = create.waitForExistence(timeout: 5)
-            create.tap()
-            for n in 2...4 {
-                let add = app.buttons["Add Track \(n)"].firstMatch
-                _ = add.waitForExistence(timeout: 15)
-                add.tap()
-            }
-            let last = app.descendants(matching: .any)["Track 4 Volume"].firstMatch
-            _ = last.waitForExistence(timeout: 5)
-            app.scrollViews.firstMatch.swipeUp()
-            sleep(1)
-            print("SCROLLDIAG flags=\(flags) scrolled=\(last.isHittable) last=\(last.frame)")
-            app.terminate()
-        }
-    }
-
     /// With four tracks the list is taller than the screen: a vertical drag
     /// that starts on a waveform scrolls it, so the last track can be reached.
     func testTrackListScrollsToTheLastTrack() {
