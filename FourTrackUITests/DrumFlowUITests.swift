@@ -179,15 +179,35 @@ final class DrumFlowUITests: XCTestCase {
         }
         let last = app.descendants(matching: .any)["Track 4 Volume"].firstMatch
         XCTAssertTrue(last.waitForExistence(timeout: 5))
+        let list = app.scrollViews.firstMatch
+        func report(_ step: String) {
+            print("SCROLLDIAG \(step): list=\(list.exists ? "\(list.frame)" : "none") last=\(last.frame) hittable=\(last.isHittable) window=\(app.windows.firstMatch.frame)")
+        }
+        report("start")
         if last.isHittable { print("Screen tall enough to show all four tracks; scrolling not needed here.") }
         let third = app.descendants(matching: .any)["Track 3 Volume"].firstMatch
-        // Start on the third track's waveform (right of its name, above its volume bar).
+        // 1. Drag up starting on the third track's waveform.
         let start = third.coordinate(withNormalizedOffset: CGVector(dx: 0.7, dy: -1.5))
         let end = third.coordinate(withNormalizedOffset: CGVector(dx: 0.7, dy: -5))
-        for _ in 0..<2 {
-            start.press(forDuration: 0.05, thenDragTo: end)
+        start.press(forDuration: 0.05, thenDragTo: end)
+        sleep(1)
+        report("after waveform drag")
+        let fromWaveform = last.isHittable
+        // 2. Drag up starting on the name column.
+        if !fromWaveform {
+            let s2 = third.coordinate(withNormalizedOffset: CGVector(dx: 0.08, dy: -1.5))
+            let e2 = third.coordinate(withNormalizedOffset: CGVector(dx: 0.08, dy: -5))
+            s2.press(forDuration: 0.05, thenDragTo: e2)
             sleep(1)
+            report("after name-column drag")
         }
+        // 3. A plain swipe on the list.
+        if !last.isHittable, list.exists {
+            list.swipeUp()
+            sleep(1)
+            report("after list swipe")
+        }
+        XCTAssertTrue(fromWaveform, "a drag starting on a waveform should scroll the list")
         XCTAssertTrue(last.isHittable, "the last track's controls should scroll into view")
     }
 }
