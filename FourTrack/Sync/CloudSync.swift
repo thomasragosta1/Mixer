@@ -70,6 +70,12 @@ final class CloudSync {
 
     // MARK: Lifecycle
 
+    /// False in a build that was signed without iCloud (the switch is hidden;
+    /// touching CloudKit there would crash).
+    static var isAvailable: Bool {
+        Bundle.main.object(forInfoDictionaryKey: "FTCloudSyncAvailable") as? Bool ?? true
+    }
+
     /// Called once at launch with the app's project store.
     func configure(store: ProjectStore, enabled: Bool) {
         self.store = store
@@ -89,7 +95,7 @@ final class CloudSync {
     }
 
     private func start() async {
-        guard engine == nil, let store, !DemoContent.isEnabled else { return }
+        guard engine == nil, store != nil, Self.isAvailable, !DemoContent.isEnabled else { return }
         status = .checking
         let container = CKContainer.default()
         let account = (try? await container.accountStatus()) ?? .couldNotDetermine

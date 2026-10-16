@@ -216,15 +216,28 @@ jobs:
           </dict>
           </plist>
           PLIST
-          xcodebuild -exportArchive \
-            -archivePath "$RUNNER_TEMP/FourTrack.xcarchive" \
-            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
-            -exportPath "$RUNNER_TEMP/export" \
-            -allowProvisioningUpdates \
-            -authenticationKeyPath "$KEY_PATH" \
-            -authenticationKeyID "$KEY_ID" \
-            -authenticationKeyIssuerID "$ISSUER_ID" \
-            || { find /var/folders -name "*.xcdistributionlogs" -maxdepth 6 2>/dev/null | head -1 | xargs -I{} sh -c 'cat "{}"/IDEDistribution.standard.log | tail -60'; exit 1; }
+          export_ipa() {
+            xcodebuild -exportArchive \
+              -archivePath "$RUNNER_TEMP/FourTrack.xcarchive" \
+              -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+              -exportPath "$RUNNER_TEMP/export" \
+              -allowProvisioningUpdates \
+              -authenticationKeyPath "$KEY_PATH" \
+              -authenticationKeyID "$KEY_ID" \
+              -authenticationKeyIssuerID "$ISSUER_ID" 2>&1 | grep -E "error:|warning:|EXPORT" ; return ${PIPESTATUS[0]}
+          }
+          if ! export_ipa; then
+            # Signing couldn't include iCloud (usually: the iCloud container isn't
+            # set up on the App ID yet). Ship the build without iCloud sync; the
+            # app hides the switch when the build can't sync.
+            echo "::warning::Exported WITHOUT iCloud sync. To enable it: developer.apple.com → Certificates, IDs & Profiles → Identifiers → iCloud Containers → + → iCloud.<bundle ID>; then open the app's App ID → iCloud → Configure → tick that container → Save. The next build picks it up."
+            APP="$RUNNER_TEMP/FourTrack.xcarchive/Products/Applications/FourTrack.app"
+            /usr/libexec/PlistBuddy -c "Set :FTCloudSyncAvailable false" "$APP/Info.plist"
+            printf '<?xml version="1.0" encoding="UTF-8"?>\n<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">\n<plist version="1.0"><dict/></plist>\n' > "$RUNNER_TEMP/none.entitlements"
+            codesign --force --sign - --timestamp=none --generate-entitlement-der --entitlements "$RUNNER_TEMP/none.entitlements" "$APP"
+            rm -rf "$RUNNER_TEMP/export"
+            export_ipa || { find /var/folders -name "*.xcdistributionlogs" -maxdepth 6 2>/dev/null | head -1 | xargs -I{} sh -c 'cat "{}"/IDEDistribution.standard.log | tail -60'; exit 1; }
+          fi
           ls -la "$RUNNER_TEMP/export"
 
       - name: Check App Store Connect app record

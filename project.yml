@@ -58,6 +58,8 @@ targets:
             LSHandlerRank: Alternate
             LSItemContentTypes: [public.audio, public.mpeg-4-audio, com.apple.m4a-audio, public.mp3, com.microsoft.waveform-audio, public.aiff-audio, public.aifc-audio, com.apple.coreaudio-format]
         LSSupportsOpeningDocumentsInPlace: false
+        # CI sets this to false when a build couldn't be signed with iCloud.
+        FTCloudSyncAvailable: true
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.fourtrack.app

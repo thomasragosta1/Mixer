@@ -18,6 +18,7 @@ struct SettingsView: View {
                     Text("Shows detailed compressor, EQ and reverb controls, level meters, latency tools and more export options. Turning it off hides them but keeps your values.")
                 }
 
+                if CloudSync.isAvailable {
                 Section {
                     Toggle("Sync with iCloud", isOn: $settings.iCloudSync)
                     if settings.iCloudSync {
@@ -30,6 +31,7 @@ struct SettingsView: View {
                     Text("iCloud")
                 } footer: {
                     Text("Keeps your projects on all your devices signed in to the same Apple Account. They're stored in your own iCloud, which only you can see, and count toward your iCloud storage. Turning sync off keeps everything on this iPhone.")
+                }
                 }
 
                 if let model, !model.isSimple {
