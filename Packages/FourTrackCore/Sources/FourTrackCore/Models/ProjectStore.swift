@@ -24,6 +24,10 @@ public final class ProjectStore: @unchecked Sendable {
         return d
     }()
 
+    /// Called after a project is saved or deleted (iCloud sync listens). May
+    /// be called from any thread.
+    public var onChange: (@Sendable (UUID) -> Void)?
+
     public init(rootURL: URL) throws {
         self.rootURL = rootURL
         try fm.createDirectory(at: rootURL, withIntermediateDirectories: true)
@@ -80,6 +84,7 @@ public final class ProjectStore: @unchecked Sendable {
         }
         let data = try encoder.encode(project)
         try data.write(to: metadataURL(for: project.id), options: .atomic)
+        onChange?(project.id)
     }
 
     public func load(id: UUID) throws -> Project {
@@ -109,6 +114,7 @@ public final class ProjectStore: @unchecked Sendable {
     public func moveToBin(id: UUID, now: Date = Date()) throws {
         var project = try load(id: id)
         project.deletedAt = now
+        project.updatedAt = now
         try save(project)
     }
 
@@ -116,6 +122,7 @@ public final class ProjectStore: @unchecked Sendable {
     public func restore(id: UUID) throws {
         var project = try load(id: id)
         project.deletedAt = nil
+        project.updatedAt = Date()
         try save(project)
     }
 
@@ -125,6 +132,7 @@ public final class ProjectStore: @unchecked Sendable {
         if fm.fileExists(atPath: dir.path) {
             try fm.removeItem(at: dir)
         }
+        onChange?(id)
     }
 
     // MARK: Track bin
@@ -204,6 +212,50 @@ public final class ProjectStore: @unchecked Sendable {
         var n = 2
         while names.contains("\(base) \(n)") { n += 1 }
         return "\(base) \(n)"
+    }
+
+    // MARK: Sync support
+
+    /// Every project folder on disk, live or binned.
+    public func allProjectIDs() -> [UUID] {
+        guard let entries = try? fm.contentsOfDirectory(atPath: rootURL.path) else { return [] }
+        return entries.compactMap(UUID.init(uuidString:)).filter { fm.fileExists(atPath: metadataURL(for: $0).path) }
+    }
+
+    public func metadataData(for id: UUID) -> Data? {
+        try? Data(contentsOf: metadataURL(for: id))
+    }
+
+    /// Writes project.json received from another device, after checking it
+    /// decodes. Doesn't call `onChange`: it isn't a local edit.
+    public func replaceMetadata(_ data: Data, for id: UUID) throws {
+        let project = try decoder.decode(Project.self, from: data)
+        guard project.id == id else { throw CocoaError(.fileReadCorruptFile) }
+        try fm.createDirectory(at: directory(for: id), withIntermediateDirectories: true)
+        try data.write(to: metadataURL(for: id), options: .atomic)
+    }
+
+    /// Removes a project deleted on another device. Doesn't call `onChange`.
+    public func removeSynced(id: UUID) {
+        try? fm.removeItem(at: directory(for: id))
+    }
+
+    /// The audio files sync carries for a project, with fingerprints.
+    public func syncableFiles(in id: UUID) -> [String: FileFingerprint] {
+        let dir = directory(for: id)
+        guard let names = try? fm.contentsOfDirectory(atPath: dir.path) else { return [:] }
+        var out: [String: FileFingerprint] = [:]
+        for name in names where SyncNames.isSyncable(name) {
+            guard let attrs = try? fm.attributesOfItem(atPath: dir.appendingPathComponent(name).path) else { continue }
+            let size = (attrs[.size] as? NSNumber)?.int64Value ?? 0
+            let modified = (attrs[.modificationDate] as? Date)?.timeIntervalSince1970 ?? 0
+            out[name] = FileFingerprint(size: size, modified: modified)
+        }
+        return out
+    }
+
+    public func decodeProject(_ data: Data) -> Project? {
+        try? decoder.decode(Project.self, from: data)
     }
 
     // MARK: Derived data

@@ -62,6 +62,9 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.fourtrack.app
         PRODUCT_NAME: FourTrack
+        # iCloud (CloudKit, private database). The CI archive is unsigned, so
+        # the workflow signs these into the app before export.
+        CODE_SIGN_ENTITLEMENTS: FourTrack/Resources/FourTrack.entitlements
         TARGETED_DEVICE_FAMILY: "1"
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor

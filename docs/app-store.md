@@ -50,8 +50,11 @@ SHARE THE RESULT
 • Export the full mix or a single track as a high-quality AAC file and send it anywhere.
 • Play and pause from the lock screen.
 
+ON ALL YOUR DEVICES
+• Turn on iCloud sync and your songs follow you to your other iPhone or iPad, stored in your own iCloud.
+
 PRIVATE BY DESIGN
-• Your songs stay on your iPhone. No account, no ads, no tracking, no data collected.
+• No account, no ads, no tracking, no data collected. Your songs live on your device and, if you choose, in your own iCloud, never on our servers.
 
 ## Keywords (100, comma-separated, no spaces after commas)
 
@@ -78,6 +81,7 @@ First release.
 - "Do you or your third-party partners collect data from this app?" → **No, we do not collect data from this app.**
 - Result shown on the store: **Data Not Collected**.
 - Matches `FourTrack/Resources/PrivacyInfo.xcprivacy` (no tracking, no collected data types).
+- iCloud sync doesn't change this: projects go to the person's own iCloud private database (CloudKit), which the developer can't access, so Apple doesn't count it as data collection.
 
 ## Age Rating
 

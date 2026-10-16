@@ -12,9 +12,15 @@ final class ProjectsViewModel {
     var errorMessage: String?
     let store: ProjectStore
 
+    @ObservationIgnored private var syncObserver: NSObjectProtocol?
+
     init(store: ProjectStore) {
         self.store = store
         reload()
+        // Projects added, changed or deleted on another device.
+        syncObserver = NotificationCenter.default.addObserver(forName: CloudSync.projectsChanged, object: nil, queue: .main) { [weak self] _ in
+            MainActor.assumeIsolated { self?.reload() }
+        }
     }
 
     static func makeStore() -> ProjectStore {

@@ -65,6 +65,46 @@ final class DrumTrackTests: XCTestCase {
         XCTAssertEqual(store.loadAll().count, 1, "a failed import leaves no empty project behind")
     }
 
+    /// iCloud audio: Apple Lossless there and back is exact to 24 bits; a
+    /// take with samples beyond full scale travels as the original file.
+    func testSyncAudioRoundTrip() throws {
+        func write(_ samples: [Float], _ name: String) throws -> URL {
+            let url = dir.appendingPathComponent(name)
+            let writer = try CAFWriter(url: url)
+            try writer.write(samples)
+            try writer.finish()
+            return url
+        }
+        let tone = (0..<96_000).map { Float(0.6 * sin(Double($0) * 2 * .pi * 220 / 48_000)) }
+        let source = try write(tone, "tone.caf")
+        let staged = try SyncAudio.stage(source, as: dir.appendingPathComponent("up"))
+        XCTAssertEqual(staged.pathExtension, "m4a")
+        let stagedSize = try FileManager.default.attributesOfItem(atPath: staged.path)[.size] as? Int ?? 0
+        XCTAssertLessThan(stagedSize, 96_000 * 4 * 3 / 4, "smaller than the float file")
+        let back = dir.appendingPathComponent("back.caf")
+        try SyncAudio.restore(staged, to: back)
+        let restored = try CAFReader(url: back).readAll()
+        XCTAssertEqual(restored.count, tone.count)
+        XCTAssertLessThan(zip(restored, tone).map { abs($0 - $1) }.max() ?? 1, 1e-6, "lossless at 24 bits")
+
+        let hot = try write(tone.map { $0 * 2 }, "hot.caf")
+        let stagedHot = try SyncAudio.stage(hot, as: dir.appendingPathComponent("uphot"))
+        XCTAssertEqual(stagedHot.pathExtension, "caf", "over full scale keeps the original")
+        let backHot = dir.appendingPathComponent("backhot.caf")
+        try SyncAudio.restore(stagedHot, to: backHot)
+        XCTAssertEqual(try CAFReader(url: backHot).readAll(), tone.map { $0 * 2 })
+    }
+
+    /// Opening and closing a project without editing doesn't make it look
+    /// newer, which would beat an edit made on another device.
+    func testOpeningAndClosingDoesNotCountAsAnEdit() throws {
+        let project = try store.create(name: "Untouched")
+        let model = ProjectViewModel(project: project, store: store)
+        model.activate()
+        model.close()
+        XCTAssertEqual(try store.load(id: project.id).updatedAt, project.updatedAt)
+    }
+
     func testDrumSamplesShipInTheApp() {
         for folder in ["studio", "studio-tight", "hand"] {
             for pad in 0..<DrumKit.padCount {

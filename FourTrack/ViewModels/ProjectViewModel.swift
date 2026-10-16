@@ -104,6 +104,7 @@ final class ProjectViewModel {
         store.cleanTemporaryFiles(project: project.id)
         store.refreshDurations(&project)
         self.project = project
+        self.lastSaved = project
         self.store = store
         self.settings = settings
         self.engine = MixerEngine()
@@ -129,6 +130,7 @@ final class ProjectViewModel {
     func activate() {
         guard !isActive else { return }
         isActive = true
+        CloudSync.shared.projectOpened(project.id)
         AudioSessionManager.shared.onEvent = { [weak self] event in self?.handleSessionEvent(event) }
         recoverPendingRecording()
         developerModeChanged()
@@ -173,6 +175,7 @@ final class ProjectViewModel {
         AudioSessionManager.shared.onEvent = nil
         history.clear()
         isClosed = true
+        CloudSync.shared.projectClosed(project.id)
     }
 
     // MARK: Lock screen
@@ -1587,18 +1590,41 @@ final class ProjectViewModel {
         }
     }
 
+    /// What was last written, so opening and closing a project without
+    /// changing anything doesn't make it look newer (which would win over an
+    /// edit made on another device).
+    @ObservationIgnored private var lastSaved: Project
+
     func saveNow() {
         saveTask?.cancel()
         // A late save (e.g. a Cleanup render finishing) must not pull a binned project back out.
         if let onDisk = try? store.load(id: project.id), onDisk.deletedAt != nil {
             project.deletedAt = onDisk.deletedAt
         }
-        project.updatedAt = Date()
+        if project.updatedAt > lastSaved.updatedAt {
+            // Already marked as edited (a new take changes audio, not always the project).
+        } else if Self.sameContent(project, lastSaved) {
+            // At most the playhead moved: keep it without counting as an edit.
+            guard project.playheadSeconds != lastSaved.playheadSeconds else { return }
+            project.updatedAt = lastSaved.updatedAt
+        } else {
+            project.updatedAt = Date()
+        }
         do {
             try store.save(project)
+            lastSaved = project
         } catch {
             errorMessage = "Couldn't save the project. \(error.localizedDescription)"
         }
+    }
+
+    private static func sameContent(_ a: Project, _ b: Project) -> Bool {
+        var a = a, b = b
+        a.playheadSeconds = 0
+        b.playheadSeconds = 0
+        a.updatedAt = .distantPast
+        b.updatedAt = .distantPast
+        return a == b
     }
 
     private func loadPeaks() {

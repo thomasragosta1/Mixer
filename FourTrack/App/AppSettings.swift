@@ -26,6 +26,14 @@ final class AppSettings {
         didSet { defaults.set(speakerEchoCancellation, forKey: Keys.speakerEchoCancellation) }
     }
 
+    /// Sync projects through the person's own iCloud (private database).
+    var iCloudSync: Bool {
+        didSet {
+            defaults.set(iCloudSync, forKey: Keys.iCloudSync)
+            if iCloudSync != oldValue { CloudSync.shared.setEnabled(iCloudSync) }
+        }
+    }
+
     var latency: LatencySettings {
         didSet {
             if let data = try? JSONEncoder().encode(latency) {
@@ -53,6 +61,7 @@ final class AppSettings {
         developerMode = defaults.bool(forKey: Keys.developerMode)
         warmthEnabled = defaults.bool(forKey: Keys.warmthEnabled)
         speakerEchoCancellation = defaults.object(forKey: Keys.speakerEchoCancellation) as? Bool ?? true
+        iCloudSync = defaults.bool(forKey: Keys.iCloudSync)
         if let data = defaults.data(forKey: Keys.latency), let decoded = try? JSONDecoder().decode(LatencySettings.self, from: data) {
             latency = decoded
         } else {
@@ -67,6 +76,7 @@ final class AppSettings {
         static let developerMode = "developerMode"
         static let warmthEnabled = "warmthEnabled"
         static let speakerEchoCancellation = "speakerEchoCancellation"
+        static let iCloudSync = "iCloudSync"
         static let latency = "latencySettings"
         static let exportFormat = "exportFormat"
         static let exportSampleRate = "exportSampleRate"

@@ -150,6 +150,53 @@ jobs:
           APP="$RUNNER_TEMP/FourTrack.xcarchive/Products/Applications/FourTrack.app"
           echo "Drum samples in app:"; ls "$APP/Drums/studio" "$APP/Drums/studio-tight" "$APP/Drums/hand" | head -60
           test -f "$APP/Drums/studio/0_1.caf" && test -f "$APP/Drums/studio-tight/7_2.caf" && test -f "$APP/Drums/hand/7_2.caf" || { echo "::error::Drum samples missing from the app bundle"; exit 1; }
+          # The archive is unsigned, which would leave out the app's entitlements
+          # (iCloud). Sign them in ad hoc; export re-signs for distribution and
+          # keeps them.
+          sed "s/\$(PRODUCT_BUNDLE_IDENTIFIER)/$APP_BUNDLE_ID/g" FourTrack/Resources/FourTrack.entitlements > "$RUNNER_TEMP/app.entitlements"
+          codesign --force --sign - --timestamp=none --generate-entitlement-der --entitlements "$RUNNER_TEMP/app.entitlements" "$APP"
+          echo "Entitlements in the archive:"; codesign -d --entitlements - --xml "$APP" | plutil -p - || true
+
+      - name: Enable iCloud on the App ID
+        if: steps.secrets.outputs.ready == 'true'
+        # Best effort: export's automatic signing needs the App ID to allow
+        # iCloud. The iCloud container itself (iCloud.<bundle ID>) is created
+        # and assigned by signing, or once by hand in the developer portal.
+        continue-on-error: true
+        run: |
+          python3 -m pip install --quiet --break-system-packages pyjwt cryptography 2>/dev/null || python3 -m pip install --quiet pyjwt cryptography
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.error, jwt
+          key = open(os.environ["KEY_PATH"]).read()
+          token = jwt.encode(
+              {"iss": os.environ["ISSUER_ID"], "iat": int(time.time()), "exp": int(time.time()) + 600, "aud": "appstoreconnect-v1"},
+              key, algorithm="ES256", headers={"kid": os.environ["KEY_ID"], "typ": "JWT"})
+          H = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+          def call(method, path, body=None):
+              req = urllib.request.Request("https://api.appstoreconnect.apple.com" + path, method=method, headers=H,
+                                           data=json.dumps(body).encode() if body else None)
+              try:
+                  return json.load(urllib.request.urlopen(req))
+              except urllib.error.HTTPError as e:
+                  print(f"{method} {path}: HTTP {e.code} {e.read().decode()[:600]}")
+                  return None
+          wanted = os.environ["APP_BUNDLE_ID"]
+          ids = call("GET", "/v1/bundleIds?limit=200&filter[identifier]=" + wanted) or {"data": []}
+          match = [b for b in ids["data"] if b["attributes"]["identifier"] == wanted]
+          if not match:
+              print("::warning::App ID not found through the API"); raise SystemExit(0)
+          bid = match[0]["id"]
+          caps = call("GET", f"/v1/bundleIds/{bid}/bundleIdCapabilities") or {"data": []}
+          types = [c["attributes"]["capabilityType"] for c in caps["data"]]
+          print("App ID capabilities:", types)
+          if "ICLOUD" in types:
+              print("iCloud already enabled.")
+          else:
+              r = call("POST", "/v1/bundleIdCapabilities", {"data": {"type": "bundleIdCapabilities",
+                  "attributes": {"capabilityType": "ICLOUD", "settings": [{"key": "ICLOUD_VERSION", "options": [{"key": "XCODE_6"}]}]},
+                  "relationships": {"bundleId": {"data": {"type": "bundleIds", "id": bid}}}}})
+              print("Enabled iCloud." if r else "::warning::Couldn't enable iCloud on the App ID")
+          PY
 
       - name: Export IPA
         if: steps.secrets.outputs.ready == 'true'

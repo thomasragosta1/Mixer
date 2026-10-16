@@ -69,6 +69,9 @@ jobs:
               for a in test.get("attachments", []):
                   name = a.get("suggestedHumanReadableName") or a["exportedFileName"]
                   base = name.split("_")[0]
+                  # Only the named screens (failure diagnostics have other names).
+                  if not (base[:2].isdigit() and base[2:3] == "-"):
+                      continue
                   shutil.copy(os.path.join(out, a["exportedFileName"]), f"docs/screenshots/{base}.png")
                   print("saved", base)
           PY
