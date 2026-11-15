@@ -70,13 +70,16 @@ jobs:
         run: |
           UDID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; print(next(x['udid'] for k,v in sorted(d.items(), reverse=True) if 'iOS' in k for x in v if x['name'].startswith('iPhone')))")
           echo "Simulator: $UDID"
+          # Lets the tests record through the simulator's microphone, where it has one.
+          xcrun simctl boot "$UDID" 2>/dev/null || true
+          xcrun simctl privacy "$UDID" grant microphone com.fourtrack.app || true
           set +e
           xcodebuild test \
             -project FourTrack.xcodeproj \
             -scheme FourTrack \
             -destination "id=$UDID" \
             -skip-testing:FourTrackUITests/ScreenshotTests \
-            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | tee test.log | grep -E "error:|Test Case|Cleanup of|SCROLLDIAG|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
+            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | tee test.log | grep -E "error:|Test Case|Cleanup of|STRESS .*(FAIL|alert|unavailable)|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
           status=${PIPESTATUS[0]}
           set -e
           if [ "$status" != "0" ]; then

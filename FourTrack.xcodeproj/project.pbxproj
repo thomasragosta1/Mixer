@@ -49,6 +49,7 @@
 		B3A5C9B2D345A3BE9C5BD88D /* TrackChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F9E8AB0B69232CD61AC546C /* TrackChain.swift */; };
 		CA29953881822E60FD3BF932 /* AudioSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68D65353444E7A6AA5A6503E /* AudioSessionManager.swift */; };
 		CB7CDC0698F28E240E1BAE55 /* DrumTrackTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */; };
+		5D7E55A1C0FFEE0012345678 /* StressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7E55A1C0FFEE0012345679 /* StressTests.swift */; };
 		CC034BEDD8688E6CB526C9E7 /* VolumeFader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5454E139B97093DB44AF1F /* VolumeFader.swift */; };
 		D5206B937C2826C4CC9E0959 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B6CA0B0541E1048FE62C79 /* Theme.swift */; };
 		D520B91A133B43BDD3B2770A /* FourTrackCore in Frameworks */ = {isa = PBXBuildFile; productRef = 97DB3616201DF8E8FB2E6783 /* FourTrackCore */; };
@@ -126,6 +127,7 @@
 		D0B2E7D8F476C04248424708 /* UndoHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoHistory.swift; sourceTree = "<group>"; };
 		DE19EAFCAB120FD9F141681A /* PadSettingsSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PadSettingsSheet.swift; sourceTree = "<group>"; };
 		E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumTrackTests.swift; sourceTree = "<group>"; };
+		5D7E55A1C0FFEE0012345679 /* StressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StressTests.swift; sourceTree = "<group>"; };
 		E7F069FD3CE065A8C653A8C5 /* SyncAudio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncAudio.swift; sourceTree = "<group>"; };
 		EE65AC3B7AD39BB1DF38647B /* DrumPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrumPadView.swift; sourceTree = "<group>"; };
 		F0483F30626DAA81F37E94EA /* DevTrackControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevTrackControlsView.swift; sourceTree = "<group>"; };
@@ -196,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				E248CDB5E260D7F61E446E36 /* DrumTrackTests.swift */,
+				5D7E55A1C0FFEE0012345679 /* StressTests.swift */,
 			);
 			path = FourTrackAppTests;
 			sourceTree = "<group>";
@@ -440,6 +443,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB7CDC0698F28E240E1BAE55 /* DrumTrackTests.swift in Sources */,
+				5D7E55A1C0FFEE0012345678 /* StressTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
