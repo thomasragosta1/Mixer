@@ -162,7 +162,21 @@ final class CloudSync {
 
     // MARK: Local changes → iCloud
 
+    /// Projects the person permanently deleted on this device (also while sync
+    /// was off). Only these are ever deleted from iCloud: a project that's
+    /// merely missing from disk is never treated as a deletion.
+    private static let deletedKey = "syncLocallyDeletedProjects"
+    private static var locallyDeleted: Set<String> {
+        get { Set(UserDefaults.standard.stringArray(forKey: deletedKey) ?? []) }
+        set { UserDefaults.standard.set(Array(newValue).sorted(), forKey: deletedKey) }
+    }
+
     private func localChange(_ id: UUID) {
+        if let store, store.metadataData(for: id) == nil {
+            var deleted = Self.locallyDeleted
+            deleted.insert(id.uuidString)
+            Self.locallyDeleted = deleted
+        }
         guard engine != nil else { return }
         // Saves come in bursts while editing; settle first.
         scanTask?.cancel()
@@ -181,9 +195,15 @@ final class CloudSync {
         // not the person deleting them: never pass that on to iCloud.
         let suspicious = missing.count >= 3 && missing.count * 2 > disk.ledger.projects.count
         for id in local { scanProject(id) }
-        deletionsPaused = suspicious
+        var deleted = Self.locallyDeleted
+        let unexplained = missing.filter { !deleted.contains($0.uuidString) }
+        deletionsPaused = suspicious || !unexplained.isEmpty
         if !suspicious {
-            for id in missing { deleteRemote(id) }
+            for id in missing where deleted.contains(id.uuidString) {
+                deleteRemote(id)
+                deleted.remove(id.uuidString)
+            }
+            Self.locallyDeleted = deleted
         }
         saveDisk()
         updateStatus()
@@ -214,7 +234,12 @@ final class CloudSync {
             changed = true
         }
         for remoteID in plan.retired {
-            engine.state.add(pendingRecordZoneChanges: [.deleteRecord(recordID(SyncNames.audioRecordName(project: id, remoteID: remoteID)))])
+            // The old audio stays in iCloud until the project record that no
+            // longer uses it has been saved (see `sent`), so another device
+            // never finds a project pointing at audio that's gone.
+            var waiting = disk.retired ?? [:]
+            waiting[id, default: []].append(remoteID)
+            disk.retired = waiting
             state.files = state.files.filter { $0.value.remoteID != remoteID }
             changed = true
         }
@@ -250,6 +275,10 @@ final class CloudSync {
             removeStaged(name)
         }
         engine.state.remove(pendingRecordZoneChanges: [.saveRecord(recordID(SyncNames.projectRecordName(id)))])
+        for remoteID in disk.retired?[id] ?? [] {
+            deletes.append(.deleteRecord(recordID(SyncNames.audioRecordName(project: id, remoteID: remoteID))))
+        }
+        disk.retired?[id] = nil
         engine.state.add(pendingRecordZoneChanges: deletes)
         disk.ledger.forget(id)
     }
@@ -302,6 +331,9 @@ final class CloudSync {
         let name = id.recordName
         let record = existingRecord(name) ?? CKRecord(recordType: UUID(uuidString: name) != nil ? SyncNames.projectType : SyncNames.audioType, recordID: id)
         if let projectID = UUID(uuidString: name) {
+            // Wait until every take it lists is in iCloud, so no device ever
+            // receives a project pointing at audio that isn't there yet.
+            guard !disk.ledger.outgoing.values.contains(where: { $0.projectID == projectID }) else { return nil }
             guard let data = store.metadataData(for: projectID), let project = store.decodeProject(data) else { return nil }
             let json = Self.outgoingFolder.appendingPathComponent(name).appendingPathExtension("json")
             guard (try? data.write(to: json, options: .atomic)) != nil else { return nil }
@@ -385,6 +417,18 @@ final class CloudSync {
     private func tryApplyIncoming(_ id: UUID) {
         guard let store, let incoming = disk.incoming[id], openProject != id else { return }
         if incoming.deleted {
+            // Edited here since it last synced: those edits were never in
+            // iCloud, so the delete from the other device doesn't take them.
+            // The project stays and is uploaded again as a new copy.
+            if let data = store.metadataData(for: id), let synced = disk.ledger.projects[id]?.metadataHash,
+               SyncPlanner.hash(data) != synced {
+                disk.ledger.forget(id)
+                disk.retired?[id] = nil
+                disk.incoming[id] = nil
+                saveDisk()
+                scanProject(id)
+                return
+            }
             // Deleted on another device: kept aside for a while, not erased.
             Self.backUp(project: id, files: nil, store: store)
             store.removeSynced(id: id)
@@ -468,13 +512,19 @@ final class CloudSync {
         }
     }
 
+    /// A waiting update lists audio that isn't in iCloud (the other device is
+    /// still uploading it, or it was replaced). The update just keeps
+    /// waiting: nothing on this device is removed or replaced because of
+    /// audio that's missing. After a day, an update for a project that
+    /// already exists here is dropped and this device keeps its own version.
     private func dropMissingAudio(_ recordName: String) {
-        guard let projectID = SyncNames.project(ofAudioRecord: recordName),
-              let remoteID = SyncNames.remoteID(ofAudioRecord: recordName),
+        guard let store, let projectID = SyncNames.project(ofAudioRecord: recordName),
               var incoming = disk.incoming[projectID] else { return }
-        incoming.manifest = incoming.manifest.filter { $0.value != remoteID }
+        let since = incoming.waitingSince ?? Date()
+        incoming.waitingSince = since
         disk.incoming[projectID] = incoming
-        tryApplyIncoming(projectID)
+        guard Date().timeIntervalSince(since) > 86_400, store.metadataData(for: projectID) != nil else { return }
+        disk.incoming[projectID] = nil
     }
 
     // MARK: Safety copies
@@ -620,11 +670,17 @@ final class CloudSync {
                 state.metadataHash = sentHashes.removeValue(forKey: name) ?? state.metadataHash
                 disk.ledger.projects[id] = state
                 removeStaged(name)
+                // Audio this project stopped using can go now.
+                var waiting = disk.retired ?? [:]
+                for remoteID in waiting.removeValue(forKey: id) ?? [] {
+                    engine.state.add(pendingRecordZoneChanges: [.deleteRecord(recordID(SyncNames.audioRecordName(project: id, remoteID: remoteID)))])
+                }
+                disk.retired = waiting
             } else {
-                disk.ledger.confirmUpload(recordName: name)
-                removeStaged(name)
+                audioConfirmed(name, engine: engine)
             }
         }
+        if !changes.savedRecords.isEmpty { lastSendError = nil }
         for deleted in changes.deletedRecordIDs {
             disk.ledger.systemFields[deleted.recordName] = nil
         }
@@ -642,8 +698,7 @@ final class CloudSync {
                     }
                 } else {
                     // Audio records are immutable; the server copy is the same content.
-                    disk.ledger.confirmUpload(recordName: id.recordName)
-                    removeStaged(id.recordName)
+                    audioConfirmed(id.recordName, engine: engine)
                 }
             case .zoneNotFound, .userDeletedZone:
                 disk.zoneCreated = false
@@ -655,12 +710,25 @@ final class CloudSync {
             case .quotaExceeded:
                 status = .storageFull
             default:
-                break
+                // Shown in Settings instead of "Syncing…" forever.
+                lastSendError = failure.error.localizedDescription
             }
         }
         saveDisk()
         updateStatus()
     }
+
+    /// An audio upload is in iCloud. Once a project has none left to send,
+    /// its own record (held back until now) is queued.
+    private func audioConfirmed(_ recordName: String, engine: CKSyncEngine) {
+        let projectID = disk.ledger.outgoing[recordName]?.projectID
+        disk.ledger.confirmUpload(recordName: recordName)
+        removeStaged(recordName)
+        guard let projectID, !disk.ledger.outgoing.values.contains(where: { $0.projectID == projectID }) else { return }
+        engine.state.add(pendingRecordZoneChanges: [.saveRecord(recordID(SyncNames.projectRecordName(projectID)))])
+    }
+
+    @ObservationIgnored private var lastSendError: String?
 
     @ObservationIgnored private var deletionsPaused = false
 
@@ -672,6 +740,10 @@ final class CloudSync {
         }
         if status == .storageFull || status == .checking { return }
         let busy = !engine.state.pendingRecordZoneChanges.isEmpty || !staging.isEmpty || !disk.incoming.isEmpty
+        if busy, let lastSendError {
+            status = .failed("Some changes couldn't be sent to iCloud yet. \(lastSendError)")
+            return
+        }
         status = busy ? .syncing : .upToDate
     }
 
@@ -735,12 +807,17 @@ struct IncomingProject: Codable {
     var manifest: [String: String]
     var updatedAt: Date
     var deleted = false
+    /// When audio this update needs was first found missing from iCloud.
+    var waitingSince: Date?
 }
 
 struct SyncDisk: Codable {
     var ledger = SyncLedger()
     var incoming: [UUID: IncomingProject] = [:]
     var zoneCreated = false
+    /// Remote IDs of audio a project has stopped using, deleted from iCloud
+    /// once the project record that no longer lists them is saved.
+    var retired: [UUID: [String]]?
 }
 
 extension CloudSync: CKSyncEngineDelegate {

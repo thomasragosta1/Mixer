@@ -21,6 +21,9 @@ final class AudioSessionManager {
     }
 
     var onEvent: ((Event) -> Void)?
+    /// The open project receiving `onEvent`, so a project that closes late
+    /// can't take the session away from the one that opened after it.
+    var owner: ObjectIdentifier?
     private var observers: [NSObjectProtocol] = []
     private(set) var isConfigured = false
 
@@ -74,6 +77,13 @@ final class AudioSessionManager {
         // Phone mic is mono; only settable once the session is active.
         try? session.setPreferredInputNumberOfChannels(1)
         isConfigured = true
+    }
+
+    /// After an interruption (a call, Siri) the session has to be made
+    /// active again before audio can start.
+    func reactivate() {
+        guard isConfigured else { return }
+        try? session.setActive(true)
     }
 
     func deactivate() {

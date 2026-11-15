@@ -160,7 +160,8 @@ public final class CAFReader {
                 dataSize = size
                 if size < 0 { break }
             }
-            if size < 0 { break }
+            // A damaged header can claim a chunk bigger than the file.
+            if size < 0 || UInt64(size) > fileSize { break }
             offset = bodyStart + UInt64(size)
         }
 

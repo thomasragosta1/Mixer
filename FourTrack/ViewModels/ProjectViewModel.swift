@@ -38,7 +38,12 @@ final class ProjectViewModel {
     private(set) var previewClock = PlayheadClock(seconds: 0, date: Date(), running: false)
     /// Splicing a finished take into its track.
     private(set) var isSaving = false {
-        didSet { if oldValue && !isSaving { resumeClickIfWanted() } }
+        didSet {
+            if oldValue && !isSaving {
+                resumeClickIfWanted()
+                scheduleIdle()
+            }
+        }
     }
     var armedTrack = 0
     var mixMode = false {
@@ -94,6 +99,14 @@ final class ProjectViewModel {
 
     /// Projects opened since the app process started.
     private static var openedThisLaunch: Set<UUID> = []
+    /// Projects with a take being saved right now (possibly by a screen that
+    /// has already closed), so a screen opened meanwhile waits for it.
+    private static var splicing: Set<UUID> = []
+    /// How many open screens each project has.
+    private static var openCount: [UUID: Int] = [:]
+    @ObservationIgnored private var idleTask: Task<Void, Never>?
+    /// Seconds of nothing playing before the audio hardware is rested.
+    private static let idleSeconds: Double = 30
 
     init(project: Project, store: ProjectStore, settings: AppSettings = .shared) {
         var project = project
@@ -101,7 +114,6 @@ final class ProjectViewModel {
         // The click always starts off when a project opens (tempo and the rest
         // of its settings are kept); turning it on starts it keeping time.
         project.metronome.mode = .off
-        store.cleanTemporaryFiles(project: project.id)
         store.refreshDurations(&project)
         self.project = project
         self.lastSaved = project
@@ -130,15 +142,80 @@ final class ProjectViewModel {
     func activate() {
         guard !isActive else { return }
         isActive = true
+        Self.openCount[project.id, default: 0] += 1
         CloudSync.shared.projectOpened(project.id)
+        AudioSessionManager.shared.owner = ObjectIdentifier(self)
         AudioSessionManager.shared.onEvent = { [weak self] event in self?.handleSessionEvent(event) }
-        recoverPendingRecording()
+        store.cleanTemporaryFiles(project: project.id)
+        if Self.splicing.contains(project.id) {
+            waitForEarlierSave()
+        } else {
+            recoverPendingRecording()
+        }
         developerModeChanged()
         startNowPlaying()
         // Drum takes from before choke groups: re-render once so repeated hits
         // stop piling up (the hits themselves are unchanged).
         for i in project.visibleLanes where project.tracks[i].needsDrumRerender {
             renderDrums(i)
+        }
+    }
+
+    /// This project was closed moments ago while a take was still being
+    /// saved. Wait for that save, then show what it wrote.
+    private func waitForEarlierSave() {
+        let id = project.id
+        isSaving = true
+        Task {
+            while Self.splicing.contains(id) {
+                try? await Task.sleep(nanoseconds: 50_000_000)
+            }
+            guard !self.isClosed else { return }
+            if var fresh = try? self.store.load(id: id) {
+                fresh.metronome.mode = .off
+                self.store.refreshDurations(&fresh)
+                self.project = fresh
+                self.lastSaved = fresh
+                self.engine.load(project: fresh, store: self.store)
+                self.applyAll()
+                self.loadPeaks()
+                self.playhead = min(self.playhead, fresh.durationSeconds)
+                self.engine.seek(to: self.playhead)
+                self.syncClock()
+            }
+            self.isSaving = false
+            // If that save failed, its scratch recording is still waiting.
+            self.recoverPendingRecording()
+        }
+    }
+
+    // MARK: Resting the audio hardware
+
+    /// Called whenever something stops. If nothing plays, records or clicks
+    /// for a while, the engine is stopped (and the microphone let go), so the
+    /// app isn't kept running in the background with the mic indicator on.
+    private func scheduleIdle() {
+        idleTask?.cancel()
+        idleTask = Task { [weak self] in
+            try? await Task.sleep(nanoseconds: UInt64(ProjectViewModel.idleSeconds * 1_000_000_000))
+            guard !Task.isCancelled else { return }
+            self?.restIfQuiet()
+        }
+    }
+
+    private func restIfQuiet() {
+        guard !isClosed, !isPlaying, !isRecording, !isSaving, !isPreviewingClick, !isCalibrating, !isStartingRecording else { return }
+        if engine.inputPrepared {
+            // A fresh engine without the microphone: its indicator goes off.
+            // The next take sets the microphone up again.
+            engine.rebuild()
+            engine.load(project: project, store: store)
+            applyAll()
+            engine.setMetersEnabled(settings.developerMode)
+            routePadsIfNeeded()
+            engine.seek(to: playhead)
+        } else {
+            engine.stopWhenIdle()
         }
     }
 
@@ -166,16 +243,29 @@ final class ProjectViewModel {
         stopClickPreview()
         if isRecording { stopRecording() }
         if isPlaying { pause() }
+        idleTask?.cancel()
         cleanupJobs.values.forEach { $0.cancel() }
         project.playheadSeconds = playhead
         saveNow()
         ticker?.cancel()
         engine.teardown()
         nowPlaying.deactivate()
-        AudioSessionManager.shared.onEvent = nil
+        if AudioSessionManager.shared.owner == ObjectIdentifier(self) {
+            AudioSessionManager.shared.onEvent = nil
+            AudioSessionManager.shared.owner = nil
+            // Hand the audio back: the microphone is released and other
+            // apps' music can carry on.
+            AudioSessionManager.shared.deactivate()
+        }
         history.clear()
         isClosed = true
-        CloudSync.shared.projectClosed(project.id)
+        if isActive {
+            Self.openCount[project.id] = max(0, (Self.openCount[project.id] ?? 1) - 1)
+        }
+        // A take still being saved tells sync the project is closed once it's written.
+        if !Self.splicing.contains(project.id) {
+            CloudSync.shared.projectClosed(project.id)
+        }
     }
 
     // MARK: Lock screen
@@ -232,6 +322,9 @@ final class ProjectViewModel {
         stopClickPreview()
         project.playheadSeconds = playhead
         saveNow()
+        // Nothing playing or recording: don't keep the hardware (or the
+        // microphone) running behind the lock screen.
+        restIfQuiet()
     }
 
     // MARK: Transport
@@ -286,6 +379,7 @@ final class ProjectViewModel {
         project.playheadSeconds = playhead
         scheduleSave()
         resumeClickIfWanted()
+        scheduleIdle()
     }
 
     func skip(by seconds: Double) {
@@ -379,6 +473,12 @@ final class ProjectViewModel {
         guard await AudioSessionManager.shared.requestPermission() else {
             if punch { pause() }
             showPermissionDenied = true
+            return
+        }
+        // A take needs room for itself and for the copy made while it's saved.
+        if let free = Self.freeBytes(at: store.rootURL), free > 0, free < 50_000_000 {
+            if punch { pause() }
+            errorMessage = "There isn't enough free storage on this iPhone to record. Free up some space and try again."
             return
         }
         do {
@@ -481,6 +581,10 @@ final class ProjectViewModel {
         startTicker()
     }
 
+    private static func freeBytes(at url: URL) -> Int64? {
+        (try? url.resourceValues(forKeys: [.volumeAvailableCapacityForImportantUsageKey]))?.volumeAvailableCapacityForImportantUsage
+    }
+
     /// Recording through the iPhone speaker while something plays back: Apple's
     /// echo cancellation keeps the other tracks and the click out of the take.
     /// It's voice-call processing and colours instruments (piano comes out
@@ -536,6 +640,7 @@ final class ProjectViewModel {
         // next take go back to the plain microphone and output.
         engine.disableVoiceProcessingIfIdle()
         syncClock()
+        scheduleIdle()
     }
 
     /// Splices the scratch recording into its track off the main thread.
@@ -554,10 +659,12 @@ final class ProjectViewModel {
         let peaksURL = store.peaksURL(project: project.id, track: index)
         isSaving = true
         livePeaks = []
+        let projectID = project.id
+        Self.splicing.insert(projectID)
         Task {
-            let outcome = await Task.detached(priority: .userInitiated) { () -> Result<[Float], Error> in
+            let outcome = await Task.detached(priority: .userInitiated) { () -> Result<SpliceOutcome, Error> in
                 do {
-                    try Splicer.splice(.init(
+                    let result = try Splicer.splice(.init(
                         trackURL: existing,
                         destinationURL: destination,
                         recordingURL: scratchURL,
@@ -567,25 +674,45 @@ final class ProjectViewModel {
                     ))
                     let peaks = try PeakGenerator.peaks(ofFileAt: destination)
                     try? PeakGenerator.write(peaks, to: peaksURL)
-                    return .success(peaks)
+                    return .success(SpliceOutcome(peaks: peaks, recorded: result.replacedEnd > result.replacedStart))
                 } catch {
                     return .failure(error)
                 }
             }.value
+            Self.splicing.remove(projectID)
             self.didSplice(index: index, route: pending.route, outcome: outcome)
         }
     }
 
-    private func didSplice(index: Int, route: AudioRouteKind, outcome: Result<[Float], Error>) {
+    private struct SpliceOutcome: Sendable {
+        var peaks: [Float]
+        /// False when the take held no audio (stopped during the count-in).
+        var recorded: Bool
+    }
+
+    private func didSplice(index: Int, route: AudioRouteKind, outcome: Result<SpliceOutcome, Error>) {
         isSaving = false
+        defer {
+            // This screen closed while the take was being saved: sync hears
+            // about the close now, unless the project is open again.
+            if isClosed, (Self.openCount[project.id] ?? 0) == 0 {
+                CloudSync.shared.projectClosed(project.id)
+            }
+        }
         switch outcome {
-        case .success(let newPeaks):
+        case .success(let spliced):
+            let newPeaks = spliced.peaks
             store.clearPendingRecording(project: project.id)
             var track = project.tracks[index]
-            if newPeaks.isEmpty && track.isEmpty {
-                // Stopped during the count-in: nothing was recorded.
-                try? FileManager.default.removeItem(at: store.audioURL(project: project.id, track: index))
-                try? FileManager.default.removeItem(at: store.peaksURL(project: project.id, track: index))
+            if !spliced.recorded {
+                // Stopped during the count-in: nothing was recorded, so there's
+                // no step to undo and the track (and its Clean Up) stays as it was.
+                history.discardLastCheckpoint()
+                refreshUndoState()
+                if track.isEmpty {
+                    try? FileManager.default.removeItem(at: store.audioURL(project: project.id, track: index))
+                    try? FileManager.default.removeItem(at: store.peaksURL(project: project.id, track: index))
+                }
                 return
             }
             track.audioFileName = ProjectStore.audioFileName(track: index)
@@ -602,6 +729,8 @@ final class ProjectViewModel {
             store.refreshDurations(&project)
             project.updatedAt = Date()
             saveNow()
+            // A screen that has closed only needed to save the take.
+            guard !isClosed else { return }
             engine.load(project: project, store: store)
             applyAll()
             // Clean Up re-renders a new take if it's on. No "Clean up this take?" prompt:
@@ -658,6 +787,10 @@ final class ProjectViewModel {
                     livePeaks = skipPeaks < all.count ? Array(all[skipPeaks...]) : []
                 }
                 refinePendingMarker(sink: sink)
+                if sink.didFail {
+                    stopRecording()
+                    errorMessage = "Recording stopped because this iPhone is out of storage. What was captured up to then has been kept."
+                }
             }
         } else if isPlaying {
             let position = engine.currentSeconds
@@ -702,10 +835,13 @@ final class ProjectViewModel {
         switch event {
         case .interruptionBegan:
             // Calls, Siri, alarms: keep everything captured so far.
+            stopClickPreview()
             if isRecording { stopRecording() }
             if isPlaying { pause() }
         case .interruptionEnded:
-            try? engine.startIfNeeded()
+            // Nothing restarts by itself: the next play or take reactivates
+            // the session and starts the engine.
+            break
         case .outputDeviceLost:
             if isRecording { stopRecording() }
             if isPlaying { pause() }
@@ -732,6 +868,7 @@ final class ProjectViewModel {
             isPlaying = false
         }
         syncClock()
+        scheduleIdle()
     }
 
     // MARK: Tracks
@@ -791,6 +928,7 @@ final class ProjectViewModel {
             errorMessage = "Audio couldn't start. \(error.localizedDescription)"
             return
         }
+        scheduleIdle()
         guard isDrumTake, engine.isPastCountIn else { return }
         let time = max(drumTakeStart, engine.currentSeconds - engine.padTimingCompensation - min(lateBy, 0.1))
         drumTakeHits.append(DrumHit(time: time, pad: pad, velocity: velocity))
@@ -1393,6 +1531,7 @@ final class ProjectViewModel {
     func stopClickPreview() {
         guard isPreviewingClick else { return }
         engine.stopClickPreview()
+        scheduleIdle()
         isPreviewingClick = false
         previewClock = PlayheadClock(seconds: 0, date: Date(), running: false)
     }
@@ -1512,7 +1651,11 @@ final class ProjectViewModel {
     func export(_ kind: ExportKind) {
         guard exportProgress == nil else { return }
         if isPlaying { pause() }
-        let project = self.project
+        // With Developer Mode off, playback runs the master at unity; the
+        // export has to match what was heard.
+        var heard = self.project
+        if !settings.developerMode { heard.masterVolume = MacroCurves.volumeUnitySlider }
+        let project = heard
         let store = self.store
         let options = settings.exportOptions
         let warmth = warmthActive
@@ -1569,6 +1712,7 @@ final class ProjectViewModel {
             let seconds = try await LatencyCalibrator.run(engine: engine, scratchURL: scratch, route: route)
             settings.latency.measured[route] = seconds
             engine.seek(to: playhead)
+            scheduleIdle()
             return String(format: "%@: %.1f ms", route.displayName, seconds * 1000)
         } catch {
             engine.seek(to: playhead)

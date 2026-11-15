@@ -82,7 +82,8 @@ enum AudioImporter {
             if outBuffer.frameLength > 0, let samples = outBuffer.floatChannelData?[0] {
                 try writer.write(UnsafeBufferPointer(start: samples, count: Int(outBuffer.frameLength)))
             }
-            if status == .endOfStream || status == .error { break }
+            if status == .error { throw ImportError.unreadable }
+            if status == .endOfStream { break }
         }
         try writer.finish()
         guard writer.framesWritten > 0 else { throw ImportError.empty }

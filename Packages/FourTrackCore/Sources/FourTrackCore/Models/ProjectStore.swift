@@ -156,8 +156,17 @@ public final class ProjectStore: @unchecked Sendable {
             try fm.moveItem(at: from, to: dir.appendingPathComponent(newName))
             return newName
         }
-        track.audioFileName = try move(track.audioFileName, to: "deleted-\(id.uuidString).caf")
-        track.cleanedFileName = try move(track.cleanedFileName, to: "deleted-\(id.uuidString).cleaned.caf")
+        let movedAudio = try move(track.audioFileName, to: "deleted-\(id.uuidString).caf")
+        do {
+            track.cleanedFileName = try move(track.cleanedFileName, to: "deleted-\(id.uuidString).cleaned.caf")
+        } catch {
+            // Put the take back, so the project still matches what's on disk.
+            if let movedAudio, let original = track.audioFileName {
+                try? fm.moveItem(at: dir.appendingPathComponent(movedAudio), to: dir.appendingPathComponent(original))
+            }
+            throw error
+        }
+        track.audioFileName = movedAudio
         try? fm.removeItem(at: peaksURL(project: project.id, track: index))
         project.deletedTracks.append(DeletedTrack(id: id, track: track, deletedAt: now))
         project.removeLane(index)
@@ -273,14 +282,25 @@ public final class ProjectStore: @unchecked Sendable {
         project.durationSeconds = project.tracks.map(\.durationSeconds).max() ?? 0
     }
 
-    /// Removes leftover temp files from an interrupted splice. The scratch
+    /// Removes temp files left behind by an interrupted splice, drum render,
+    /// Clean Up or import. Files touched in the last `olderThan` seconds are
+    /// left alone: they belong to a job that is still running. The scratch
     /// recording is kept: `pendingRecording(project:)` hands it back for recovery.
-    public func cleanTemporaryFiles(project id: UUID) {
+    public func cleanTemporaryFiles(project id: UUID, olderThan: TimeInterval = 60) {
         let dir = directory(for: id)
         guard let entries = try? fm.contentsOfDirectory(atPath: dir.path) else { return }
-        for name in entries where name.contains(".splice-") {
-            try? fm.removeItem(at: dir.appendingPathComponent(name))
+        let cutoff = Date().addingTimeInterval(-olderThan)
+        for name in entries where ProjectStore.isTemporary(name) {
+            let url = dir.appendingPathComponent(name)
+            let modified = (try? fm.attributesOfItem(atPath: url.path))?[.modificationDate] as? Date
+            if let modified, modified > cutoff { continue }
+            try? fm.removeItem(at: url)
         }
+    }
+
+    static func isTemporary(_ name: String) -> Bool {
+        name.contains(".splice-") || name.contains(".drums-") || name.contains(".cleanup-")
+            || name.contains(".isolated-") || name.hasPrefix(".import-")
     }
 
     // MARK: Crash recovery

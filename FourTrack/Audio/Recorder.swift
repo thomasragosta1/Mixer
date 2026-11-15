@@ -68,6 +68,9 @@ final class RecordingSink: @unchecked Sendable {
 
     var framesWritten: Int64 { lock.withLock { writer.framesWritten } }
 
+    /// A write to the scratch file failed (the iPhone is out of storage).
+    var didFail: Bool { lock.withLock { failed } }
+
     /// Peaks captured so far, including the partially filled bucket.
     func livePeaks() -> [Float] {
         lock.withLock {

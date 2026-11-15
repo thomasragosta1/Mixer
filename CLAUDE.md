@@ -4,6 +4,8 @@ Native iOS multitrack recorder that feels like Apple Voice Memos, not a DAW. Fou
 
 Read this whole file before writing code. When a decision is not covered here, choose the simplest option that preserves the Voice Memos feel, and note the decision in `DECISIONS.md`.
 
+This is the original spec. The owner has since changed parts of it (drum tracks, Simple and Full mode, adding and removing tracks, iCloud sync, the mixer layout, the compressor and more). Where this file and `DECISIONS.md` disagree, `DECISIONS.md` is what the app does.
+
 ---
 
 ## 1. Platform and stack

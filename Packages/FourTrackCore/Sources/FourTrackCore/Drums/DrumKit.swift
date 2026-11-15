@@ -334,7 +334,14 @@ public enum DrumRenderer {
         let temp = url.deletingLastPathComponent().appendingPathComponent(".\(url.lastPathComponent).drums-\(UUID().uuidString)")
         let writer = try CAFWriter(url: temp, sampleRate: sampleRate)
         do {
-            try writer.write(samples)
+            try samples.withUnsafeBufferPointer { all in
+                var offset = 0
+                while offset < all.count {
+                    let n = min(65_536, all.count - offset)
+                    try writer.write(UnsafeBufferPointer(rebasing: all[offset..<(offset + n)]))
+                    offset += n
+                }
+            }
             try writer.finish()
             try AtomicFile.replace(url, with: temp)
         } catch {

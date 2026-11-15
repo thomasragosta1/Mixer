@@ -7,7 +7,7 @@ Paste these into App Store Connect → your app → the version page (and App In
 | Field | Value |
 |---|---|
 | Name (30) | Four-Track (if taken: **Four-Track Recorder**) |
-| Subtitle (30) | Layer songs like Voice Memos |
+| Subtitle (30) | Four tracks. Record in layers. |
 | Primary category | Music |
 | Secondary category | (none) |
 | Privacy Policy URL | https://thomasragosta1.github.io/mixer/privacy.html |
@@ -51,14 +51,14 @@ SHARE THE RESULT
 • Play and pause from the lock screen.
 
 ON ALL YOUR DEVICES
-• Turn on iCloud sync and your songs follow you to your other iPhone or iPad, stored in your own iCloud.
+• Turn on iCloud sync and your songs follow you to your other iPhone, stored in your own iCloud.
 
 PRIVATE BY DESIGN
 • No account, no ads, no tracking, no data collected. Your songs live on your device and, if you choose, in your own iCloud, never on our servers.
 
 ## Keywords (100, comma-separated, no spaces after commas)
 
-multitrack,recorder,overdub,songwriting,demo,4 track,guitar,vocal,drum pads,metronome,voice memo
+multitrack,recorder,overdub,songwriting,demo,4 track,guitar,vocal,drum pads,metronome,layers
 
 ## What's New (first release)
 

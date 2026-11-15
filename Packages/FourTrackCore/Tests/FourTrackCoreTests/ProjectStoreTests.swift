@@ -108,7 +108,7 @@ final class ProjectStoreTests: XCTestCase {
         let p = try store.create()
         let junk = store.directory(for: p.id).appendingPathComponent(".track1.caf.splice-123")
         try Data([1]).write(to: junk)
-        store.cleanTemporaryFiles(project: p.id)
+        store.cleanTemporaryFiles(project: p.id, olderThan: 0)
         XCTAssertFalse(FileManager.default.fileExists(atPath: junk.path))
     }
 

@@ -28,7 +28,7 @@ final class MixerEngine {
     /// Timeline frame and host time that playback started from.
     private var startFrame: Int64 = 0
     private var startHost: UInt64 = 0
-    private var inputPrepared = false
+    private(set) var inputPrepared = false
     private var configObserver: NSObjectProtocol?
     private var metersInstalled = false
 
@@ -125,6 +125,8 @@ final class MixerEngine {
         pads.routedTrack = routed
         if let kit { pads.load(kit: kit, pads: padSettings) }
         inputPrepared = false
+        // The new engine starts without voice processing.
+        voiceProcessingActive = false
         build()
     }
 
@@ -146,10 +148,19 @@ final class MixerEngine {
             try AudioSessionManager.shared.configure()
         }
         if !engine.isRunning {
+            AudioSessionManager.shared.reactivate()
             engine.prepare()
             try engine.start()
             waitForFirstRender()
         }
+    }
+
+    /// Nothing has played for a while: stop the hardware so the app can rest
+    /// in the background. The next play, take or pad starts it again.
+    func stopWhenIdle() {
+        guard state == .stopped, engine.isRunning else { return }
+        stopPlayers()
+        engine.stop()
     }
 
     /// The first start after the audio session activates can take longer than

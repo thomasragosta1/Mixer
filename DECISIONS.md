@@ -211,7 +211,7 @@ Choices made where `CLAUDE.md` left room, or where the spec offered options. Eac
 
 ## Not verified here
 
-This environment has no Xcode or iOS SDK. The core package is compiled and its tests run on Linux (Swift 5.10). The app target was only syntax-checked, so its first build in Xcode may need small fixes. Everything in §11 that needs a device is still to be checked: latency ≤ 5 ms, no dropouts while playing three tracks and recording a fourth, a phone call during recording, how Cleanup sounds on guitar, and echo cancellation quality.
+The app is built and tested in CI (core tests on Linux, app and UI tests on an iOS Simulator), not on a phone. Everything in §11 that needs a device is still to be checked: latency ≤ 5 ms, no dropouts while playing three tracks and recording a fourth, a phone call during recording, how Cleanup sounds on guitar, and echo cancellation quality.
 
 ## Live pads ignore mute and solo (owner request)
 
@@ -315,3 +315,21 @@ Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers
 - A vertical drag that started on a waveform didn't scroll the list. On iOS 18 and later, SwiftUI's drag and magnify gestures inside a ScrollView stop it scrolling. On iOS 18+ the waveform scrub and the pinch zoom are now UIKit recognizers (`UIGestureRecognizerRepresentable`): the scrub pan only begins on a sideways movement, and the pinch needs two fingers, so vertical drags always reach the list. The list holds still while a scrub is in progress. iOS 17 keeps the SwiftUI gestures. A UI test with four tracks drags up on a waveform and checks that the last track comes into view (it failed before this fix).
 - **Root cause, found by a UI test reporting the list's frame:** the list had `.scrollBounceBehavior(.basedOnSize)`. SwiftUI compared the cards' height (592 pt for four Simple tracks) with the scroll view's full frame (626 pt, which includes the area under the navigation bar), decided they fit, and disabled scrolling, though the last card ran ~70 pt past the visible area. The list now always scrolls. The UIKit scrub and pinch stay, since they keep vertical drags on waveforms going to the list.
 - **Actual root cause, found by a diagnostic UI test that switched each gesture off in turn:** the cards' press-and-hold to move or delete (a SwiftUI `LongPressGesture` sequenced with a drag) stopped the ScrollView from scrolling at all on iOS 26. Switching off only that gesture made the list scroll; switching off the scrub, the tap or `scrollDisabled` didn't. On iOS 18+ the hold is now a UIKit long press (`HoldAndDrag`: 0.2 s within 12 pt, then follows the finger), which fails as soon as the finger moves first, so the list scrolls. Moving and deleting tracks work as before. `.basedOnSize` was removed as well, so the list can always scroll.
+
+## Audit fixes
+
+- **The audio hardware rests when nothing plays.** After 30 s with nothing playing, recording or clicking (and at once when the app goes to the background), the engine stops; if the microphone had been set up, the engine is rebuilt without it so the microphone indicator goes off. Closing a project deactivates the audio session, so other apps' music can resume. The cost: the first punch-in after a rest isn't seamless (the microphone is set up again, as for the very first take).
+- **Export matches playback.** With Developer Mode off the master plays at unity, and the export now does too.
+- **Storage.** A take won't start with under 50 MB free, and a take stops with a message (keeping what was captured) if a write fails. Undo keeps audio for the last 20 audio steps (takes, drum renders, deleted tracks); older ones are dropped with everything before them. The privacy manifest declares the disk-space API (reason E174.1).
+- **Long takes.** Clean Up renders in batches of up to four 8–60 s segments and writes each batch out, instead of holding the whole take in memory. Drum tracks are still rendered in memory.
+- **The click can't end up late.** If the main thread stalls long enough for the click to run dry, the missed chunks are skipped and the next one is placed at its exact time.
+- **Closing mid-save.** A screen that closes while a take is being saved only saves it; a screen opened on the same project meanwhile waits for that save instead of saving the same take twice. Opening a project no longer deletes temp files in its initializer (SwiftUI can build a model it never shows); temp files are cleaned when the screen appears, and only if older than a minute.
+- **Stopping during a count-in** leaves no undo step and keeps the track's Clean Up render.
+- **iCloud sync:**
+  - A project record is sent only after all the audio it lists is in iCloud, and replaced audio is deleted from iCloud only after the project record that stops using it is saved.
+  - Audio missing from iCloud never causes anything to be removed on a device; the update waits (dropped after a day if the project already exists there).
+  - Only projects permanently deleted on a device are deleted from iCloud; a project merely missing from disk never is.
+  - A delete arriving from another device doesn't remove a project that has edits iCloud never received.
+  - Send errors show in Settings instead of "Syncing…".
+- **CI:** only pushes to the default branch ship to TestFlight; other branches run the tests.
+- **Store listing:** the subtitle and keywords no longer use "Voice Memos" (an Apple trademark).

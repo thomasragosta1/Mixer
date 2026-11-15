@@ -47,8 +47,9 @@ jobs:
       ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
       APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
       BUNDLE_ID: ${{ secrets.BUNDLE_ID }}
-      # Every push ships a build; manual runs can opt out with the "upload" input.
-      SHIP: ${{ github.event_name == 'push' || inputs.upload }}
+      # Pushes to the default branch ship a build; other branches only run the
+      # tests. Manual runs ship unless the "upload" input is switched off.
+      SHIP: ${{ (github.event_name == 'push' && github.ref_name == github.event.repository.default_branch) || inputs.upload == true }}
     steps:
       - uses: actions/checkout@v4
 

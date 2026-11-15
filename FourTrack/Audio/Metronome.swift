@@ -12,6 +12,8 @@ final class Metronome {
     private let normal = ClickTrack.click(accent: false)
     private var settings = MetronomeSettings()
     private var nextChunkStart: Int64 = 0
+    /// Timeline frame the player's own clock started from.
+    private var firstChunkStart: Int64 = 0
     private var generation = 0
     /// Beat grid: beat number `anchorBeat` falls on timeline frame `anchorFrame`.
     private(set) var anchorFrame: Int64 = 0
@@ -42,6 +44,7 @@ final class Metronome {
         carry = []
         generation += 1
         nextChunkStart = fromFrame
+        firstChunkStart = fromFrame
         for _ in 0..<Metronome.queuedChunks { scheduleNextChunk(generation: generation) }
         player.play(at: AVAudioTime(hostTime: hostTime))
     }
@@ -73,9 +76,27 @@ final class Metronome {
     }
 
     private func scheduleNextChunk(generation gen: Int) {
-        guard gen == generation, let buffer = renderChunk(from: nextChunkStart) else { return }
+        guard gen == generation else { return }
+        // Chunks are queued from the main thread. If it was held up long enough
+        // for the player to run dry, the next chunk would start late and every
+        // click after it would stay late. Skip the chunks that were missed and
+        // place the next one at its exact spot on the player's clock instead.
+        var startTime: AVAudioTime?
+        if let nodeTime = player.lastRenderTime, nodeTime.isSampleTimeValid,
+           let now = player.playerTime(forNodeTime: nodeTime), now.isSampleTimeValid {
+            let played = now.sampleTime
+            let due = nextChunkStart - firstChunkStart
+            if played > due {
+                let margin: Int64 = 2_400
+                let missed = (played + margin - due + Metronome.chunkFrames - 1) / Metronome.chunkFrames
+                nextChunkStart += missed * Metronome.chunkFrames
+                carry = []
+                startTime = AVAudioTime(sampleTime: nextChunkStart - firstChunkStart, atRate: EngineFormat.sampleRate)
+            }
+        }
+        guard let buffer = renderChunk(from: nextChunkStart) else { return }
         nextChunkStart += Metronome.chunkFrames
-        player.scheduleBuffer(buffer, completionCallbackType: .dataConsumed) { [weak self] _ in
+        player.scheduleBuffer(buffer, at: startTime, options: [], completionCallbackType: .dataConsumed) { [weak self] _ in
             DispatchQueue.main.async {
                 self?.scheduleNextChunk(generation: gen)
             }

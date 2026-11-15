@@ -25,6 +25,10 @@ final class UndoHistory {
     }
 
     static let limit = 1_000
+    /// Steps that keep audio (takes, drum renders, deleted tracks) each hold a
+    /// copy of what they replaced. Only this many are kept, so a long session
+    /// can't fill the iPhone's storage.
+    static let audioStepLimit = 20
     static let mergeWindow: TimeInterval = 1.0
 
     private let store: ProjectStore
@@ -65,6 +69,26 @@ final class UndoHistory {
             let dropped = undoSteps.removeFirst()
             remove(dropped.files)
         }
+        trimAudioSteps()
+    }
+
+    /// Drops the oldest steps once more than `audioStepLimit` of them hold
+    /// audio. History has to stay continuous, so everything up to and
+    /// including the oldest surplus audio step goes.
+    private func trimAudioSteps() {
+        let audioSteps = undoSteps.indices.filter { undoSteps[$0].files != nil }
+        guard audioSteps.count > Self.audioStepLimit else { return }
+        let cut = audioSteps[audioSteps.count - Self.audioStepLimit - 1]
+        for step in undoSteps[...cut] { remove(step.files) }
+        undoSteps.removeSubrange(...cut)
+    }
+
+    /// Takes back the last checkpoint when the change it was for didn't
+    /// happen (a take stopped during the count-in).
+    func discardLastCheckpoint() {
+        guard let step = undoSteps.popLast() else { return }
+        remove(step.files)
+        lastKey = nil
     }
 
     /// Takes back the last step. `current` becomes a redo step. Returns the project to restore.

@@ -66,46 +66,60 @@ enum VoiceIsolation {
         let sampleRate = EngineFormat.sampleRate
         let preroll = AVAudioFramePosition(sampleRate * 1.0)
         let crossfade = AVAudioFramePosition(sampleRate * 0.02)
-        // Segments of at least 8 s, one per spare core, at most 4.
+        // Segments of 8 to 60 s, rendered up to four at a time (one per spare
+        // core) and written out batch by batch, so a long take never sits in
+        // memory whole.
         let cores = max(1, ProcessInfo.processInfo.activeProcessorCount - 1)
-        let count = max(1, min(4, cores, Int(Double(total) / (sampleRate * 8))))
-        let bounds = (0...count).map { AVAudioFramePosition(Double(total) * Double($0) / Double(count)) }
+        let parallel = max(1, min(4, cores))
+        let shortest = AVAudioFramePosition(sampleRate * 8)
+        let longest = AVAudioFramePosition(sampleRate * 60)
+        let segmentLength = min(longest, max(shortest, total / AVAudioFramePosition(parallel) + 1))
+        let count = max(1, Int((total + segmentLength - 1) / segmentLength))
+        let bounds = (0...count).map { min(total, AVAudioFramePosition($0) * segmentLength) }
 
         let lock = NSLock()
-        var segmentProgress = [Double](repeating: 0, count: count)
-        var results = [Result<(samples: [Float], energy: Double), Error>?](repeating: nil, count: count)
-        DispatchQueue.concurrentPerform(iterations: count) { k in
-            let start = bounds[k]
-            let end = k == count - 1 ? total : min(total, bounds[k + 1] + crossfade)
-            let result = Result {
-                try renderSegment(input: input, from: start, to: end, preroll: preroll, isCancelled: isCancelled) { p in
-                    let overall: Double = lock.withLock {
-                        segmentProgress[k] = p
-                        return segmentProgress.reduce(0, +) / Double(count)
-                    }
-                    progress(overall)
-                }
-            }
-            lock.withLock { results[k] = result }
-        }
-
-        // Join the segments, crossfading each one's extra tail into the next.
         let writer = try CAFWriter(url: output, sampleRate: sampleRate)
         var carry: [Float] = []
         var energy: Double = 0
-        for k in 0..<count {
-            guard let result = results[k] else { throw Failure.renderFailed }
-            let segment = try result.get()
-            energy += segment.energy
-            var samples = segment.samples
-            let fade = min(carry.count, samples.count)
-            for i in 0..<fade {
-                let t = Float(i + 1) / Float(fade + 1)
-                samples[i] = carry[i] * (1 - t) + samples[i] * t
+        var finished = 0
+        while finished < count {
+            let batch = min(parallel, count - finished)
+            let first = finished
+            var segmentProgress = [Double](repeating: 0, count: batch)
+            var results = [Result<(samples: [Float], energy: Double), Error>?](repeating: nil, count: batch)
+            DispatchQueue.concurrentPerform(iterations: batch) { j in
+                let k = first + j
+                let start = bounds[k]
+                let end = k == count - 1 ? total : min(total, bounds[k + 1] + crossfade)
+                let result = Result {
+                    try renderSegment(input: input, from: start, to: end, preroll: preroll, isCancelled: isCancelled) { p in
+                        let overall: Double = lock.withLock {
+                            segmentProgress[j] = p
+                            return (Double(first) + segmentProgress.reduce(0, +)) / Double(count)
+                        }
+                        progress(overall)
+                    }
+                }
+                lock.withLock { results[j] = result }
             }
-            let keep = k == count - 1 ? samples.count : max(0, samples.count - Int(crossfade))
-            try writer.write(Array(samples[0..<keep]))
-            carry = Array(samples[keep...])
+
+            // Join the segments, crossfading each one's extra tail into the next.
+            for j in 0..<batch {
+                let k = first + j
+                guard let result = results[j] else { throw Failure.renderFailed }
+                let segment = try result.get()
+                energy += segment.energy
+                var samples = segment.samples
+                let fade = min(carry.count, samples.count)
+                for i in 0..<fade {
+                    let t = Float(i + 1) / Float(fade + 1)
+                    samples[i] = carry[i] * (1 - t) + samples[i] * t
+                }
+                let keep = k == count - 1 ? samples.count : max(0, samples.count - Int(crossfade))
+                try writer.write(Array(samples[0..<keep]))
+                carry = Array(samples[keep...])
+            }
+            finished += batch
         }
         try writer.finish()
         // A model that failed to load passes silence; treat that as a failure so
