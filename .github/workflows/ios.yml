@@ -86,6 +86,8 @@ jobs:
           if [ "$status" != "0" ]; then
             echo "---- crash reports ----"
             for f in $(ls -t ~/Library/Logs/DiagnosticReports/*FourTrack* 2>/dev/null | head -3); do echo "== $f"; head -c 60000 "$f"; done
+            echo "---- last steps before each crash ----"
+            grep -B12 "Restarting after unexpected exit" test.log | grep -E "STRESS|Restarting" || true
             echo "---- log tail ----"; tail -120 test.log
             exit 1
           fi

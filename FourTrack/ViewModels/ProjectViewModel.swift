@@ -135,6 +135,16 @@ final class ProjectViewModel {
         routePadsIfNeeded()
         engine.onWillReconfigure = { [weak self] in self?.handleEngineWillReconfigure() }
         engine.onConfigurationChange = { [weak self] in self?.applyAll() }
+        engine.onRebuilt = { [weak self] in self?.restoreEngine() }
+    }
+
+    /// The engine replaced itself with a fresh one: give it the project back.
+    private func restoreEngine() {
+        engine.load(project: project, store: store)
+        applyAll()
+        engine.setMetersEnabled(settings.developerMode)
+        routePadsIfNeeded()
+        engine.seek(to: playhead)
     }
 
     /// Called when the project screen appears: takes over session events and
@@ -209,11 +219,7 @@ final class ProjectViewModel {
             // A fresh engine without the microphone: its indicator goes off.
             // The next take sets the microphone up again.
             engine.rebuild()
-            engine.load(project: project, store: store)
-            applyAll()
-            engine.setMetersEnabled(settings.developerMode)
-            routePadsIfNeeded()
-            engine.seek(to: playhead)
+            restoreEngine()
         } else {
             engine.stopWhenIdle()
         }

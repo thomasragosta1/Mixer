@@ -38,6 +38,11 @@ final class MixerEngine {
     /// Called before and after the engine reconnects for a hardware
     /// configuration change.
     var onWillReconfigure: (() -> Void)?
+    /// Called after the engine replaced itself with a fresh one (to change
+    /// echo cancellation): the owner loads the project's audio and settings again.
+    var onRebuilt: (() -> Void)?
+    /// This engine's hardware has run at least once.
+    private var everStarted = false
     var onConfigurationChange: (() -> Void)?
 
     /// Apple's voice processing (echo cancellation) is on for the input and
@@ -102,6 +107,7 @@ final class MixerEngine {
         connectGraph()
         engine.prepare()
         try? engine.start()
+        everStarted = true
         if hadMeters { installMeterTaps() }
         state = .stopped
         onConfigurationChange?()
@@ -125,6 +131,7 @@ final class MixerEngine {
         pads.routedTrack = routed
         if let kit { pads.load(kit: kit, pads: padSettings) }
         inputPrepared = false
+        everStarted = false
         // The new engine starts without voice processing.
         voiceProcessingActive = false
         build()
@@ -151,6 +158,7 @@ final class MixerEngine {
             AudioSessionManager.shared.reactivate()
             engine.prepare()
             try engine.start()
+            everStarted = true
             waitForFirstRender()
         }
     }
@@ -470,7 +478,13 @@ final class MixerEngine {
 
     /// The input node is enabled lazily on the first recording so playback
     /// alone never turns on the microphone. Also switches echo cancellation
-    /// to what this recording needs (only while stopped: it restarts the engine).
+    /// to what this recording needs (only while stopped).
+    ///
+    /// Voice processing is only ever switched on, and only on an engine that
+    /// has never run. Switching it on a used engine (or off again) tears down
+    /// the engine's input and output while parts of it are still referenced,
+    /// which crashed the app at the start of speaker takes. So a change in
+    /// either direction starts from a fresh engine instead.
     func prepareInput(echoCancellation: Bool) throws {
         // The session must be .playAndRecord before the input node is created.
         if !AudioSessionManager.shared.isConfigured {
@@ -478,47 +492,61 @@ final class MixerEngine {
         }
         guard !inputPrepared || voiceProcessingActive != echoCancellation else { return }
         let wasRunning = engine.isRunning
-        if wasRunning { engine.stop() }
-        let input = engine.inputNode
         if voiceProcessingActive != echoCancellation {
-            do {
-                try input.setVoiceProcessingEnabled(echoCancellation)
-                voiceProcessingActive = echoCancellation
-            } catch {
-                // Without it the take still records, just with the speaker bleed.
+            if everStarted || inputPrepared || voiceProcessingActive {
+                rebuild()
+                onRebuilt?()
+            }
+            if echoCancellation {
+                let input = engine.inputNode
+                do {
+                    try input.setVoiceProcessingEnabled(true)
+                } catch {
+                    // Without it the take still records, just with the speaker bleed.
+                }
                 voiceProcessingActive = input.isVoiceProcessingEnabled
+                if voiceProcessingActive {
+                    // Music, not a phone call: no automatic gain riding the level,
+                    // and other apps' audio ducked as little as possible.
+                    input.isVoiceProcessingAGCEnabled = false
+                    input.voiceProcessingOtherAudioDuckingConfiguration = AVAudioVoiceProcessingOtherAudioDuckingConfiguration(
+                        enableAdvancedDucking: false,
+                        duckingLevel: .min
+                    )
+                    // Voice processing changes the I/O formats; reconnect the graph to match.
+                    let hadMeters = metersInstalled
+                    removeMeterTaps()
+                    for node in ownNodes {
+                        engine.disconnectNodeOutput(node)
+                    }
+                    engine.disconnectNodeOutput(engine.mainMixerNode)
+                    engine.connect(engine.mainMixerNode, to: engine.outputNode, format: nil)
+                    connectGraph()
+                    if hadMeters { installMeterTaps() }
+                }
+            } else {
+                // The fresh engine needs its input before it first starts.
+                _ = engine.inputNode
             }
-            if voiceProcessingActive {
-                // Music, not a phone call: no automatic gain riding the level,
-                // and other apps' audio ducked as little as possible.
-                input.isVoiceProcessingAGCEnabled = false
-                input.voiceProcessingOtherAudioDuckingConfiguration = AVAudioVoiceProcessingOtherAudioDuckingConfiguration(
-                    enableAdvancedDucking: false,
-                    duckingLevel: .min
-                )
-            }
-            // Voice processing changes the I/O formats; reconnect the graph to match.
-            stopPlayers()
-            let hadMeters = metersInstalled
-            removeMeterTaps()
-            defer { if hadMeters { installMeterTaps() } }
-            for node in ownNodes {
-                engine.disconnectNodeOutput(node)
-            }
-            engine.disconnectNodeOutput(engine.mainMixerNode)
-            engine.connect(engine.mainMixerNode, to: engine.outputNode, format: nil)
-            connectGraph()
+        } else {
+            if wasRunning { engine.stop() }
+            _ = engine.inputNode
         }
         inputPrepared = true
         engine.prepare()
-        if wasRunning { try engine.start() }
+        if wasRunning {
+            try engine.start()
+            everStarted = true
+        }
     }
 
     /// Turns echo cancellation off again (headphones plugged in, or the setting
     /// switched off) so playback isn't processed. Only while stopped.
     func disableVoiceProcessingIfIdle() {
         guard voiceProcessingActive, state == .stopped else { return }
-        try? prepareInput(echoCancellation: false)
+        // A fresh engine, without voice processing and without the microphone.
+        rebuild()
+        onRebuilt?()
     }
 
     // MARK: Latency
