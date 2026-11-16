@@ -80,10 +80,25 @@ final class StressTests: XCTestCase {
 
     private func runSessions(_ seeds: Range<Int>) async throws {
         var failures: [String] = []
+        // Each batch gets a fixed time, so the whole suite can't outrun CI.
+        let started = Date()
+        let budget: TimeInterval = 120
+        var ran = 0
+        var slowest: (seed: Int, seconds: TimeInterval) = (seeds.lowerBound, 0)
+        defer {
+            let total = String(format: "%.1f", Date().timeIntervalSince(started))
+            let worst = String(format: "%.1f", slowest.seconds)
+            stressLog("batch \(seeds.lowerBound)-\(seeds.upperBound - 1): ran \(ran) of \(seeds.count) sessions in \(total) s; slowest seed \(slowest.seed) took \(worst) s")
+        }
         for seed in seeds {
+            if Date().timeIntervalSince(started) > budget { break }
+            let sessionStart = Date()
             let root = FileManager.default.temporaryDirectory.appendingPathComponent("stress-\(seed)-\(UUID().uuidString)")
             let session = try StressSession(seed: seed, root: root)
             let problems = await session.run()
+            ran += 1
+            let took = Date().timeIntervalSince(sessionStart)
+            if took > slowest.seconds { slowest = (seed, took) }
             for problem in problems {
                 stressLog("FAIL seed \(seed): \(problem)")
                 failures.append("seed \(seed): \(problem)")

@@ -14,6 +14,10 @@ on:
         description: Upload to TestFlight
         type: boolean
         default: true
+      only:
+        description: Run only this test (e.g. FourTrackTests/StressTests); empty runs everything
+        type: string
+        default: ""
 
 concurrency:
   group: ios-${{ github.ref }}
@@ -68,6 +72,9 @@ jobs:
           xcodebuild -version
 
       - name: App tests in the simulator
+        timeout-minutes: 40
+        env:
+          ONLY: ${{ inputs.only }}
         run: |
           UDID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; print(next(x['udid'] for k,v in sorted(d.items(), reverse=True) if 'iOS' in k for x in v if x['name'].startswith('iPhone')))")
           echo "Simulator: $UDID"
@@ -80,7 +87,8 @@ jobs:
             -scheme FourTrack \
             -destination "id=$UDID" \
             -skip-testing:FourTrackUITests/ScreenshotTests \
-            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | tee test.log | grep -E "error:|Test Case|Cleanup of|STRESS .*(FAIL|alert|unavailable)|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
+            ${ONLY:+-only-testing:$ONLY} \
+            CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | tee test.log | grep --line-buffered -E "error:|Test Case|Cleanup of|STRESS (batch|.*(FAIL|alert|unavailable))|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
           status=${PIPESTATUS[0]}
           set -e
           if [ "$status" != "0" ]; then
