@@ -81,13 +81,15 @@ jobs:
           # Lets the tests record through the simulator's microphone, where it has one.
           xcrun simctl boot "$UDID" 2>/dev/null || true
           xcrun simctl privacy "$UDID" grant microphone com.fourtrack.app || true
+          # The stress sessions are long: they run only when asked for by name.
+          if [ -n "$ONLY" ]; then SELECT="-only-testing:$ONLY"; else SELECT="-skip-testing:FourTrackTests/StressTests"; fi
           set +e
           xcodebuild test \
             -project FourTrack.xcodeproj \
             -scheme FourTrack \
             -destination "id=$UDID" \
             -skip-testing:FourTrackUITests/ScreenshotTests \
-            ${ONLY:+-only-testing:$ONLY} \
+            $SELECT \
             CODE_SIGN_STYLE=Manual CODE_SIGN_IDENTITY=- DEVELOPMENT_TEAM= 2>&1 | tee test.log | grep --line-buffered -E "error:|Test Case|Cleanup of|STRESS (batch|.*(FAIL|alert|unavailable))|crash|Terminating|exception|TEST (SUCCEEDED|FAILED)|\*\* TEST"
           status=${PIPESTATUS[0]}
           set -e

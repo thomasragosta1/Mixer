@@ -125,7 +125,11 @@ private struct SeededRNG: RandomNumberGenerator {
     private var state: UInt64
 
     init(seed: UInt64) {
-        state = seed &* 0x9E37_79B9_7F4A_7C15 &+ 0xD1B5_4A32_D192_ED03
+        // Scramble the seed first: neighbouring seeds must give unrelated sessions.
+        var z = (seed &+ 1) &* 0xD6E8_FEB8_6659_FD93
+        z = (z ^ (z >> 32)) &* 0xD6E8_FEB8_6659_FD93
+        z = (z ^ (z >> 32)) &* 0xD6E8_FEB8_6659_FD93
+        state = z ^ (z >> 32)
     }
 
     mutating func next() -> UInt64 {
@@ -270,6 +274,10 @@ private final class StressSession {
         stressSpin(0.3)
         if checkDisk { checkProjectOnDisk(id) }
         UserDefaults.standard.removePersistentDomain(forName: suiteName)
+        if !problems.isEmpty {
+            // The whole session, so a failure can be read without the full log.
+            stressLog("FAIL seed \(seed) steps: " + trail.joined(separator: " | "))
+        }
         stressLog("s=\(seed) end problems=\(problems.count)")
         return problems
     }
@@ -318,8 +326,11 @@ private final class StressSession {
         return lanes[pick(lanes.count)]
     }
 
+    private var trail: [String] = []
+
     private func note(_ action: String) {
         stressLog("s=\(seed) i=\(stepIndex) \(action)")
+        trail.append("\(stepIndex) \(action)")
     }
 
     private func settle(_ limit: TimeInterval) {

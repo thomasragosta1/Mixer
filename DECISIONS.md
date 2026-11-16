@@ -343,3 +343,8 @@ Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers
 
 - The task that copies progress to the screen wrote one last value after the job had finished and cleared it. Export then stayed on "Exporting…" (the sheet's Done button is disabled while exporting, and further exports are refused), and a track stayed on "Cleaning…", which also blocks undo. Both now stop as soon as they're cancelled.
 - If echo cancellation leaves the microphone without a usable format, the take is recorded with the plain microphone instead of failing with "No microphone is available".
+
+## Stress tests
+
+- `FourTrackAppTests/StressTests.swift` runs up to 500 seeded random sessions against the project model (every fifth with the real screen drawn). They take about half an hour, so CI skips them unless the iOS workflow is run by hand with `only` set to `FourTrackTests/StressTests`.
+- Open finding: in some sessions an export never finishes (reproducible by seed, so it depends on what was done before; Clean Up running at the time is the leading suspect). The cause isn't identified yet. Export now fails with an error if its render stops making progress, instead of spinning forever.

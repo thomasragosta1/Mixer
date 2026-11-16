@@ -119,13 +119,19 @@ enum Exporter {
         }
 
         var lastReported = -1.0
+        var stalled = 0
         while engine.manualRenderingSampleTime < totalFrames {
             let remaining = totalFrames - engine.manualRenderingSampleTime
             let frames = AVAudioFrameCount(min(AVAudioFramePosition(buffer.frameCapacity), remaining))
             switch try engine.renderOffline(frames, to: buffer) {
             case .success:
+                stalled = 0
                 try file.write(from: buffer)
             case .insufficientDataFromInputNode, .cannotDoInCurrentContext:
+                // Normally clears on the next pass; if it never does, fail the
+                // export instead of leaving "Exporting…" up for good.
+                stalled += 1
+                if stalled > 2_000 { throw ExportError.renderFailed }
                 continue
             case .error:
                 throw ExportError.renderFailed
