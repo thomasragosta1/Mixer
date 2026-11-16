@@ -357,8 +357,18 @@ final class MixerEngine {
         try prepareInput(echoCancellation: echoCancellation)
         try startIfNeeded()
 
-        let input = engine.inputNode
-        let inputFormat = input.outputFormat(forBus: 0)
+        var input = engine.inputNode
+        var inputFormat = input.outputFormat(forBus: 0)
+        if voiceProcessingActive && (inputFormat.sampleRate <= 0 || inputFormat.channelCount == 0) {
+            // Echo cancellation left the microphone without a usable format:
+            // record with the plain microphone rather than not at all.
+            rebuild()
+            onRebuilt?()
+            try prepareInput(echoCancellation: false)
+            try startIfNeeded()
+            input = engine.inputNode
+            inputFormat = input.outputFormat(forBus: 0)
+        }
         guard inputFormat.sampleRate > 0, inputFormat.channelCount > 0 else {
             throw RecorderError.noInput
         }

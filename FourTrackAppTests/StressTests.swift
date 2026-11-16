@@ -82,7 +82,7 @@ final class StressTests: XCTestCase {
         var failures: [String] = []
         // Each batch gets a fixed time, so the whole suite can't outrun CI.
         let started = Date()
-        let budget: TimeInterval = 120
+        let budget: TimeInterval = 170
         var ran = 0
         var slowest: (seed: Int, seconds: TimeInterval) = (seeds.lowerBound, 0)
         defer {

@@ -338,3 +338,8 @@ Now one UIKit surface (`PadTouchSurface` / `PadTouchView`, multitouch on) covers
 
 - The 500-session stress run crashed in every batch at the same place: `AVAudioInputNode.setVoiceProcessingEnabled` called from `MixerEngine.prepareInput`, when a take needed echo cancellation switched on an engine that had already been used. The engine's input and output are torn down inside that call while parts of them are still referenced.
 - Echo cancellation is now only ever switched on, and only on an engine that has never run. Any change (on for a speaker overdub, off again afterwards) starts from a fresh engine, and the project's audio and settings are loaded into it again. The cost is a slightly longer pause before a speaker overdub starts and after it ends.
+
+## Export and Clean Up stuck "in progress" (found by the stress tests)
+
+- The task that copies progress to the screen wrote one last value after the job had finished and cleared it. Export then stayed on "Exporting…" (the sheet's Done button is disabled while exporting, and further exports are refused), and a track stayed on "Cleaning…", which also blocks undo. Both now stop as soon as they're cancelled.
+- If echo cancellation leaves the microphone without a usable format, the take is recorded with the plain microphone instead of failing with "No microphone is available".

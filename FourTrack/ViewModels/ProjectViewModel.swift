@@ -1595,6 +1595,9 @@ final class ProjectViewModel {
             let poll = Task { [weak self] in
                 while !Task.isCancelled {
                     try? await Task.sleep(nanoseconds: 100_000_000)
+                    // Cancelled once the render is done: writing the progress
+                    // again would leave the track "Cleaning…" for good.
+                    guard !Task.isCancelled else { return }
                     self?.cleanupProgress[index] = job.value
                 }
             }
@@ -1671,6 +1674,9 @@ final class ProjectViewModel {
             let poll = Task { [weak self] in
                 while !Task.isCancelled {
                     try? await Task.sleep(nanoseconds: 100_000_000)
+                    // Cancelled once the export is done: writing the progress
+                    // again would leave the sheet on "Exporting…" for good.
+                    guard !Task.isCancelled else { return }
                     self?.exportProgress = progressBox.value
                 }
             }
