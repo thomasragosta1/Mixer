@@ -71,10 +71,6 @@ struct AnimalArticleView: View {
             }
             .task { await scrollForScreenshot(proxy) }
         }
-        .onPreferenceChange(HeroOffsetKey.self) { minY in
-            let past = minY < -(heroHeight - 140)
-            if past != pastHero { withAnimation(.easeInOut(duration: 0.25)) { pastHero = past } }
-        }
     }
 
     /// `-FaunaScrollTo <section>` scrolls on launch, for App Store screenshots.
@@ -93,7 +89,6 @@ struct AnimalArticleView: View {
             let stretch = max(0, minY)
             let parallax = minY < 0 ? -minY * 0.35 : 0
             ZStack(alignment: .bottomLeading) {
-                Color.clear.preference(key: HeroOffsetKey.self, value: minY)
 
                 AnimalPhoto(animal: animal, size: .hero)
                     .frame(width: geo.size.width, height: heroHeight + stretch)
@@ -117,6 +112,11 @@ struct AnimalArticleView: View {
             .offset(y: -stretch)
         }
         .frame(height: heroHeight)
+        .onGeometryChange(for: Bool.self) { geo in
+            geo.frame(in: .scrollView).minY < -(heroHeight - 140)
+        } action: { past in
+            withAnimation(.easeInOut(duration: 0.25)) { pastHero = past }
+        }
     }
 
     private var heroTitle: some View {
@@ -480,9 +480,4 @@ private struct UnlockCard: View {
         }
         return "Answer \(questions) about the \(animal.name) to show you read it, and we'll introduce you to another."
     }
-}
-
-private struct HeroOffsetKey: PreferenceKey {
-    static let defaultValue: CGFloat = 0
-    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
 }
