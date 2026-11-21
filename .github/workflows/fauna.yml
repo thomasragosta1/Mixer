@@ -1,0 +1,125 @@
+name: Fauna
+
+on:
+  push:
+    paths:
+      - "Fauna/**"
+      - .github/workflows/fauna.yml
+  workflow_dispatch:
+
+concurrency:
+  group: fauna-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    name: Build and screenshot
+    runs-on: macos-15
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check content
+        run: python3 Fauna/scripts/validate_content.py --online
+
+      - name: Select Xcode
+        run: |
+          XC=""
+          for v in 27 26 16; do
+            XC=$(ls -d /Applications/Xcode_$v*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
+            [ -n "$XC" ] && break
+          done
+          sudo xcode-select -s "$XC/Contents/Developer"
+          xcodebuild -version
+
+      - name: Build for the simulator
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; print(next(x['udid'] for k,v in sorted(d.items(), reverse=True) if 'iOS' in k for x in v if x['name'].startswith('iPhone') and 'Pro' in x['name'] and 'Max' not in x['name']))")
+          echo "UDID=$UDID" >> "$GITHUB_ENV"
+          set +e
+          xcodebuild build \
+            -project Fauna/Fauna.xcodeproj \
+            -scheme Fauna \
+            -destination "id=$UDID" \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee build.log | grep -E "error:|warning: .*Fauna/|BUILD (SUCCEEDED|FAILED)"
+          status=${PIPESTATUS[0]}
+          set -e
+          if [ "$status" != "0" ]; then
+            echo "---- errors with context ----"
+            grep -B2 -A6 "error:" build.log | head -300
+            exit 1
+          fi
+
+      - name: Screenshots
+        run: |
+          APP=build/Build/Products/Debug-iphonesimulator/Fauna.app
+          xcrun simctl boot "$UDID" || true
+          xcrun simctl bootstatus "$UDID" -b
+          xcrun simctl status_bar "$UDID" override --time 9:41 --batteryState charged --batteryLevel 100 --cellularBars 4 --wifiBars 3 || true
+          xcrun simctl install "$UDID" "$APP"
+          mkdir -p shots
+          shot() {
+            name=$1; shift
+            xcrun simctl terminate "$UDID" com.fauna.daily 2>/dev/null || true
+            xcrun simctl launch "$UDID" com.fauna.daily "$@" >/dev/null
+            sleep 12
+            xcrun simctl io "$UDID" screenshot "shots/$name.png" >/dev/null 2>&1
+            echo "shot $name"
+          }
+          shot 1-onboarding -FaunaOnboarding
+          shot 2-today -FaunaDemo
+          shot 3-facts -FaunaDemo -FaunaScrollTo facts
+          shot 4-didyouknow -FaunaDemo -FaunaScrollTo didYouKnow
+          shot 5-help -FaunaDemo -FaunaScrollTo help
+          shot 6-unlock -FaunaDemo -FaunaScrollTo unlock
+          shot 7-quiz -FaunaDemo -FaunaQuiz
+          shot 8-journal -FaunaDemo -FaunaTab journal
+          shot 9-focus -FaunaDemo -FaunaTab focus
+          xcrun simctl ui "$UDID" appearance dark
+          shot 10-today-dark -FaunaDemo -FaunaScrollTo facts
+          shot 11-journal-dark -FaunaDemo -FaunaTab journal
+
+      - name: Contact sheet
+        run: |
+          python3 -m pip install --quiet --break-system-packages pillow 2>/dev/null || python3 -m pip install --quiet pillow
+          python3 - <<'PY'
+          from PIL import Image
+          import glob, base64, io, re
+          files = sorted(glob.glob("shots/*.png"), key=lambda p: int(re.search(r"/(\d+)-", p).group(1)))
+          ims = [Image.open(f).convert("RGB") for f in files]
+          w = 300
+          ims = [im.resize((w, int(im.height * w / im.width))) for im in ims]
+          h = max(im.height for im in ims)
+          cols = 6
+          rows = (len(ims) + cols - 1) // cols
+          sheet = Image.new("RGB", (cols * (w + 8), rows * (h + 8)), "white")
+          for i, im in enumerate(ims):
+              sheet.paste(im, ((i % cols) * (w + 8), (i // cols) * (h + 8)))
+          sheet.save("shots/contact-sheet.jpg", quality=80)
+          PY
+
+      # Commit downsized screenshots so they can be reviewed in the repo (pushes made with
+      # GITHUB_TOKEN don't start new workflow runs).
+      - name: Commit screenshots
+        if: github.event_name == 'push'
+        run: |
+          mkdir -p Fauna/docs/screenshots
+          for f in shots/*.png; do sips -Z 1100 "$f" --out "Fauna/docs/screenshots/$(basename "$f")" >/dev/null; done
+          cp shots/contact-sheet.jpg Fauna/docs/screenshots/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Fauna/docs/screenshots
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Fauna: update screenshots [skip ci]"
+          git push origin "HEAD:${GITHUB_REF_NAME}" || echo "::warning::Couldn't push screenshots (branch moved)"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fauna-screenshots
+          path: shots/
+          if-no-files-found: ignore
