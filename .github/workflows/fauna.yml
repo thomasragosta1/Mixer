@@ -194,6 +194,13 @@ jobs:
                   return None
           fid = os.environ["FAUNA_ID"]
           spelled = " ".join(fid)
+          try:
+              urllib.request.urlopen(urllib.request.Request("https://api.appstoreconnect.apple.com/v1/apps?limit=1", headers=H))
+          except urllib.error.HTTPError as e:
+              if "REQUIRED_AGREEMENTS" in e.read().decode():
+                  print("::error::Apple needs the account holder to accept an updated agreement: "
+                        "appstoreconnect.apple.com -> Business (or the Agreements banner). Then re-run this workflow.")
+                  sys.exit(1)
           ids = call("GET", "/v1/bundleIds?limit=200&filter[identifier]=" + fid) or {"data": []}
           if not any(b["attributes"]["identifier"] == fid for b in ids["data"]):
               r = call("POST", "/v1/bundleIds", {"data": {"type": "bundleIds", "attributes": {
