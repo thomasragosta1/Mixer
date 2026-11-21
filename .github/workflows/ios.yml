@@ -11,7 +11,6 @@ on:
       # Fauna is a separate app with its own workflow.
       - "Fauna/**"
       - .github/workflows/fauna.yml
-      - .github/workflows/fauna-feedback.yml
   workflow_dispatch:
     inputs:
       upload:
