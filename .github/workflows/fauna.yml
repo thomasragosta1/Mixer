@@ -126,3 +126,181 @@ jobs:
           name: fauna-screenshots
           path: shots/
           if-no-files-found: ignore
+
+  # Archives Fauna and uploads it to TestFlight with the same App Store Connect API key
+  # the FourTrack workflow uses. The bundle ID is FAUNA_BUNDLE_ID if set, otherwise
+  # derived from FourTrack's BUNDLE_ID (last part replaced with "fauna").
+  testflight:
+    name: TestFlight
+    runs-on: macos-15
+    timeout-minutes: 45
+    env:
+      ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+      ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+      ASC_KEY_P8: ${{ secrets.ASC_KEY_P8 }}
+      APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+      BUNDLE_ID: ${{ secrets.BUNDLE_ID }}
+      FAUNA_BUNDLE_ID: ${{ secrets.FAUNA_BUNDLE_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up API key and bundle ID
+        run: |
+          trim() { printf '%s' "$1" | tr -d '[:space:]'; }
+          for v in ASC_KEY_ID ASC_ISSUER_ID ASC_KEY_P8 APPLE_TEAM_ID; do
+            [ -z "${!v}" ] && { echo "::error::Missing secret $v"; exit 1; }
+          done
+          ID=$(trim "$FAUNA_BUNDLE_ID")
+          if [ -z "$ID" ]; then
+            BASE=$(trim "$BUNDLE_ID")
+            [ -z "$BASE" ] && { echo "::error::Set a FAUNA_BUNDLE_ID secret"; exit 1; }
+            ID="${BASE%.*}.fauna"
+            [ "$ID" = "$BASE" ] && ID="$BASE.fauna"
+          fi
+          KEY_ID=$(trim "$ASC_KEY_ID")
+          {
+            echo "KEY_ID=$KEY_ID"
+            echo "ISSUER_ID=$(trim "$ASC_ISSUER_ID")"
+            echo "TEAM_ID=$(trim "$APPLE_TEAM_ID")"
+            echo "FAUNA_ID=$ID"
+            echo "KEY_PATH=$RUNNER_TEMP/keys/AuthKey_${KEY_ID}.p8"
+          } >> "$GITHUB_ENV"
+          mkdir -p "$RUNNER_TEMP/keys"
+          KEY_FILE="$RUNNER_TEMP/keys/AuthKey_${KEY_ID}.p8"
+          printf '%s\n' "$ASC_KEY_P8" | tr -d '\r' | sed '/^[[:space:]]*$/d' > "$KEY_FILE"
+          if [ "$(wc -l < "$KEY_FILE")" -lt 3 ]; then
+            body=$(tr -d '\n' < "$KEY_FILE" | sed -e 's/-----BEGIN PRIVATE KEY-----//' -e 's/-----END PRIVATE KEY-----//' | tr -d '[:space:]')
+            { echo "-----BEGIN PRIVATE KEY-----"; echo "$body" | fold -w 64; echo "-----END PRIVATE KEY-----"; } > "$KEY_FILE"
+          fi
+          echo "Fauna bundle ID (spelled out): $(echo "$ID" | sed 's/./& /g')"
+
+      - name: Register the bundle ID and check the App Store Connect app
+        id: asc
+        run: |
+          python3 -m pip install --quiet --break-system-packages pyjwt cryptography 2>/dev/null || python3 -m pip install --quiet pyjwt cryptography
+          python3 - <<'PY'
+          import json, os, sys, time, urllib.request, urllib.error, jwt
+          key = open(os.environ["KEY_PATH"]).read()
+          token = jwt.encode({"iss": os.environ["ISSUER_ID"], "iat": int(time.time()), "exp": int(time.time()) + 1100,
+                              "aud": "appstoreconnect-v1"}, key, algorithm="ES256", headers={"kid": os.environ["KEY_ID"], "typ": "JWT"})
+          H = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+          def call(method, path, body=None):
+              req = urllib.request.Request("https://api.appstoreconnect.apple.com" + path, method=method, headers=H,
+                                           data=json.dumps(body).encode() if body else None)
+              try:
+                  return json.load(urllib.request.urlopen(req))
+              except urllib.error.HTTPError as e:
+                  print(f"{method} {path.split('?')[0]}: HTTP {e.code} {e.read().decode()[:400]}")
+                  return None
+          fid = os.environ["FAUNA_ID"]
+          spelled = " ".join(fid)
+          ids = call("GET", "/v1/bundleIds?limit=200&filter[identifier]=" + fid) or {"data": []}
+          if not any(b["attributes"]["identifier"] == fid for b in ids["data"]):
+              r = call("POST", "/v1/bundleIds", {"data": {"type": "bundleIds", "attributes": {
+                  "identifier": fid, "name": "Fauna", "platform": "IOS"}}})
+              print("Registered App ID." if r else "::warning::Couldn't register the App ID")
+          apps = (call("GET", "/v1/apps?limit=200&fields[apps]=name,bundleId") or {"data": []})["data"]
+          if not any(a["attributes"]["bundleId"] == fid for a in apps):
+              print(f"::error::Create the Fauna app in App Store Connect first: appstoreconnect.apple.com -> Apps -> + -> New App, "
+                    f"platform iOS, name Fauna, bundle ID: {spelled} (without spaces), SKU fauna. Then re-run this workflow.")
+              sys.exit(1)
+          print(f"App Store Connect app found for {spelled}")
+          PY
+
+      - name: Select Xcode
+        run: |
+          XC=""
+          for v in 27 26; do
+            XC=$(ls -d /Applications/Xcode_$v*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
+            [ -n "$XC" ] && break
+          done
+          sudo xcode-select -s "$XC/Contents/Developer"
+          xcodebuild -version
+
+      - name: Archive
+        run: |
+          set -o pipefail
+          xcodebuild \
+            -project Fauna/Fauna.xcodeproj \
+            -scheme Fauna \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$RUNNER_TEMP/Fauna.xcarchive" \
+            DEVELOPMENT_TEAM="$TEAM_ID" \
+            PRODUCT_BUNDLE_IDENTIFIER="$FAUNA_ID" \
+            CURRENT_PROJECT_VERSION="${{ github.run_number }}" \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            archive 2>&1 | tee archive.log | grep -E "error:|ARCHIVE (SUCCEEDED|FAILED)" || true
+          grep -q "ARCHIVE SUCCEEDED" archive.log
+
+      - name: Export IPA
+        run: |
+          cat > "$RUNNER_TEMP/ExportOptions.plist" <<PLIST
+          <?xml version="1.0" encoding="UTF-8"?>
+          <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+          <plist version="1.0">
+          <dict>
+            <key>method</key><string>app-store-connect</string>
+            <key>destination</key><string>export</string>
+            <key>signingStyle</key><string>automatic</string>
+            <key>teamID</key><string>${TEAM_ID}</string>
+            <key>uploadSymbols</key><true/>
+            <key>manageAppVersionAndBuildNumber</key><false/>
+          </dict>
+          </plist>
+          PLIST
+          xcodebuild -exportArchive \
+            -archivePath "$RUNNER_TEMP/Fauna.xcarchive" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -exportPath "$RUNNER_TEMP/export" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath "$KEY_PATH" \
+            -authenticationKeyID "$KEY_ID" \
+            -authenticationKeyIssuerID "$ISSUER_ID" 2>&1 | grep -E "error:|EXPORT"
+          ls "$RUNNER_TEMP"/export/*.ipa
+
+      - name: Upload to TestFlight
+        run: |
+          mkdir -p ~/.appstoreconnect/private_keys
+          cp "$KEY_PATH" ~/.appstoreconnect/private_keys/
+          xcrun altool --upload-app --type ios --file "$(ls "$RUNNER_TEMP"/export/*.ipa | head -1)" \
+            --apiKey "$KEY_ID" --apiIssuer "$ISSUER_ID" --output-format normal
+          echo "::notice::Fauna build ${{ github.run_number }} uploaded. It shows up in TestFlight after Apple processes it (usually 10-30 minutes)."
+
+      - name: Give the team's internal testers every build
+        continue-on-error: true
+        run: |
+          python3 - <<'PY'
+          import json, os, time, urllib.request, urllib.error, jwt
+          key = open(os.environ["KEY_PATH"]).read()
+          token = jwt.encode({"iss": os.environ["ISSUER_ID"], "iat": int(time.time()), "exp": int(time.time()) + 1100,
+                              "aud": "appstoreconnect-v1"}, key, algorithm="ES256", headers={"kid": os.environ["KEY_ID"], "typ": "JWT"})
+          H = {"Authorization": f"Bearer {token}", "Content-Type": "application/json"}
+          def call(method, path, body=None):
+              req = urllib.request.Request("https://api.appstoreconnect.apple.com" + path, method=method, headers=H,
+                                           data=json.dumps(body).encode() if body else None)
+              try:
+                  r = urllib.request.urlopen(req); t = r.read(); return json.loads(t) if t else {}
+              except urllib.error.HTTPError as e:
+                  print(f"{method} {path.split('?')[0]}: HTTP {e.code} {e.read().decode()[:300]}"); return None
+          fid = os.environ["FAUNA_ID"]
+          app = [a for a in call("GET", "/v1/apps?limit=200")["data"] if a["attributes"]["bundleId"] == fid][0]
+          groups = (call("GET", f"/v1/apps/{app['id']}/betaGroups") or {"data": []})["data"]
+          internal = [g for g in groups if g["attributes"].get("isInternalGroup")]
+          if internal:
+              gid = internal[0]["id"]
+          else:
+              g = call("POST", "/v1/betaGroups", {"data": {"type": "betaGroups",
+                  "attributes": {"name": "Team", "isInternalGroup": True, "hasAccessToAllBuilds": True},
+                  "relationships": {"app": {"data": {"type": "apps", "id": app["id"]}}}}})
+              gid = g["data"]["id"] if g else None
+              print("Created internal group 'Team'." if gid else "Couldn't create a group")
+          if gid:
+              users = (call("GET", "/v1/users?limit=50") or {"data": []})["data"]
+              for u in users:
+                  a = u["attributes"]
+                  r = call("POST", "/v1/betaTesters", {"data": {"type": "betaTesters",
+                      "attributes": {"email": a["username"], "firstName": a.get("firstName") or "", "lastName": a.get("lastName") or ""},
+                      "relationships": {"betaGroups": {"data": [{"type": "betaGroups", "id": gid}]}}}})
+                  print("Added a team member to internal testing." if r else "Tester not added (may already be in the group).")
+          PY
