@@ -77,6 +77,43 @@ struct FlowLayout: Layout {
     }
 }
 
+/// A selectable capsule with an SF Symbol, used for focus filters.
+struct SelectChip: View {
+    let title: String
+    let symbol: String
+    let tint: Color
+    let isOn: Bool
+    let action: () -> Void
+
+    var body: some View {
+        Button {
+            Haptics.select()
+            action()
+        } label: {
+            HStack(spacing: 6) {
+                Image(systemName: isOn ? "checkmark" : symbol)
+                    .font(.footnote.weight(.bold))
+                    .contentTransition(.symbolEffect(.replace))
+                Text(title)
+                    .font(.subheadline.weight(.semibold))
+            }
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
+            .foregroundStyle(isOn ? .white : .primary)
+            .background {
+                Capsule()
+                    .fill(isOn ? AnyShapeStyle(tint) : AnyShapeStyle(Material.thinMaterial))
+                Capsule()
+                    .strokeBorder(isOn ? .clear : Color.primary.opacity(0.08))
+            }
+            .contentShape(Capsule())
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityAddTraits(isOn ? .isSelected : [])
+        .animation(.spring(response: 0.3, dampingFraction: 0.75), value: isOn)
+    }
+}
+
 /// Compact IUCN label like "EN · Endangered".
 struct StatusPill: View {
     let status: ConservationStatus
@@ -132,13 +169,13 @@ struct ConservationScale: View {
                     let current = step == status
                     VStack(spacing: 6) {
                         Text(step.rawValue)
-                            .font(.system(size: current ? 13 : 11, weight: .bold))
+                            .font(.system(size: current ? 13 : 11, weight: .bold, design: .rounded))
                             .foregroundStyle(current ? .white : step.color)
                             .frame(maxWidth: .infinity)
                             .frame(height: current ? 34 : 26)
                             .background(
                                 RoundedRectangle(cornerRadius: 8, style: .continuous)
-                                    .fill(current ? AnyShapeStyle(step.color.gradient) : AnyShapeStyle(step.color.opacity(0.15)))
+                                    .fill(current ? AnyShapeStyle(step.color) : AnyShapeStyle(step.color.opacity(0.15)))
                             )
                             .shadow(color: current ? step.color.opacity(0.45) : .clear, radius: 8, y: 4)
                     }
@@ -174,7 +211,7 @@ struct RangeMap: View {
             Annotation(animal.name, coordinate: center, anchor: .center) {
                 ZStack {
                     Circle().fill(animal.group.color.opacity(0.25)).frame(width: 54, height: 54)
-                    Circle().fill(animal.group.color.gradient).frame(width: 30, height: 30)
+                    Circle().fill(animal.group.color).frame(width: 30, height: 30)
                         .overlay(Circle().strokeBorder(.white, lineWidth: 2))
                     Image(systemName: animal.group.symbol)
                         .font(.system(size: 13, weight: .bold))

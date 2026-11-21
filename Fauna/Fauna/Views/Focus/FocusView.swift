@@ -1,90 +1,38 @@
 import SwiftUI
 
-/// Settings-style rows for choosing kinds of animals and places. Empty selections mean "everything".
-/// Put inside a `List` or `Form`.
-struct FocusSections: View {
+/// Chips for choosing kinds of animals and places. Empty selections mean "everything".
+struct FocusPicker: View {
     @Binding var groups: Set<AnimalGroup>
     @Binding var regions: Set<Region>
+    var onDark = false
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
-        Section {
-            ForEach(AnimalGroup.allCases) { group in
-                CheckRow(title: group.title, symbol: group.symbol, tint: group.color,
-                         isOn: groups.contains(group)) { toggle(group, in: &groups) }
+        VStack(alignment: .leading, spacing: 22) {
+            VStack(alignment: .leading, spacing: 10) {
+                Eyebrow("Kinds of animals", color: onDark ? .white.opacity(0.7) : .secondary)
+                FlowLayout(spacing: 8, lineSpacing: 8) {
+                    ForEach(AnimalGroup.allCases) { group in
+                        SelectChip(title: group.title, symbol: group.symbol, tint: group.color,
+                                   isOn: groups.contains(group)) { toggle(group, in: &groups) }
+                    }
+                }
             }
-        } header: {
-            Text("Kinds of Animals")
-        } footer: {
-            Text(groups.isEmpty ? "Choose none for every kind of animal." : "")
-        }
-
-        Section {
-            ForEach(Region.allCases) { region in
-                CheckRow(title: region.title, symbol: region.symbol, tint: regionTint(region),
-                         isOn: regions.contains(region)) { toggle(region, in: &regions) }
+            VStack(alignment: .leading, spacing: 10) {
+                Eyebrow("Places", color: onDark ? .white.opacity(0.7) : .secondary)
+                FlowLayout(spacing: 8, lineSpacing: 8) {
+                    ForEach(Region.allCases) { region in
+                        SelectChip(title: region.title, symbol: region.symbol, tint: .faunaMoss,
+                                   isOn: regions.contains(region)) { toggle(region, in: &regions) }
+                    }
+                }
             }
-        } header: {
-            Text("Places")
-        } footer: {
-            Text(regions.isEmpty ? "Choose none for animals from everywhere." : "")
         }
-    }
-
-    private func regionTint(_ region: Region) -> Color {
-        switch region {
-        case .arctic, .antarctica: .cyan
-        case .openOcean: .blue
-        case .africa, .southAmerica, .centralAmerica: .orange
-        case .asia, .oceania: .red
-        case .europe: .indigo
-        case .naEast, .naWest: .green
-        }
+        .environment(\.colorScheme, onDark ? .dark : colorScheme)
     }
 
     private func toggle<T: Hashable>(_ value: T, in set: inout Set<T>) {
-        Haptics.select()
         if set.contains(value) { set.remove(value) } else { set.insert(value) }
-    }
-}
-
-/// A Settings-style row: colored icon tile, title, and a checkmark when selected.
-struct CheckRow: View {
-    let title: String
-    let symbol: String
-    let tint: Color
-    let isOn: Bool
-    let action: () -> Void
-
-    var body: some View {
-        Button(action: action) {
-            HStack(spacing: 12) {
-                IconTile(symbol: symbol, tint: tint)
-                Text(title)
-                    .foregroundStyle(.primary)
-                Spacer()
-                if isOn {
-                    Image(systemName: "checkmark")
-                        .font(.body.weight(.semibold))
-                        .foregroundStyle(Color.accentColor)
-                }
-            }
-            .contentShape(Rectangle())
-        }
-        .accessibilityAddTraits(isOn ? .isSelected : [])
-    }
-}
-
-/// The rounded-square symbol tile used in iOS Settings.
-struct IconTile: View {
-    let symbol: String
-    let tint: Color
-    var body: some View {
-        Image(systemName: symbol)
-            .font(.system(size: 14, weight: .semibold))
-            .foregroundStyle(.white)
-            .frame(width: 29, height: 29)
-            .background(tint, in: RoundedRectangle(cornerRadius: 7, style: .continuous))
-            .accessibilityHidden(true)
     }
 }
 
@@ -98,74 +46,26 @@ struct FocusView: View {
 
     var body: some View {
         NavigationStack {
-            List {
-                Section {
-                    summary
-                } footer: {
-                    Text("Want bugs in eastern Canada? Choose Insects & Bugs and Eastern North America.")
+            ScrollView {
+                VStack(alignment: .leading, spacing: 24) {
+                    header
+                    card {
+                        FocusPicker(groups: $groups, regions: $regions)
+                            matchSummary
+                    }
+                    card { reminderSection }
+                    card { aboutSection }
                 }
-
-                FocusSections(groups: $groups, regions: $regions)
-
-                Section {
-                    Toggle(isOn: Binding(get: { store.state.reminderEnabled }, set: setReminder)) {
-                        HStack(spacing: 12) {
-                            IconTile(symbol: "bell.badge.fill", tint: .red)
-                            Text("Daily Animal")
-                        }
-                    }
-                    if store.state.reminderEnabled {
-                        DatePicker(selection: $reminderTime, displayedComponents: .hourAndMinute) {
-                            HStack(spacing: 12) {
-                                IconTile(symbol: "clock.fill", tint: .blue)
-                                Text("Time")
-                            }
-                        }
-                    }
-                    if notificationsDenied {
-                        Button("Turn On Notifications in Settings") {
-                            if let url = URL(string: UIApplication.openSettingsURLString) { UIApplication.shared.open(url) }
-                        }
-                    }
-                } header: {
-                    Text("Notifications")
-                } footer: {
-                    Text("A notification each day naming the animal that's waiting for you.")
-                }
-
-                Section {
-                    Link(destination: URL(string: "https://en.wikipedia.org/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License")!) {
-                        HStack(spacing: 12) {
-                            IconTile(symbol: "book.closed.fill", tint: .gray)
-                            Text("Sources & Licenses")
-                                .foregroundStyle(.primary)
-                            Spacer()
-                            Image(systemName: "arrow.up.right")
-                                .font(.footnote.weight(.semibold))
-                                .foregroundStyle(.tertiary)
-                        }
-                    }
-                    Button("Reset Journal", role: .destructive) { confirmReset = true }
-                } header: {
-                    Text("About")
-                } footer: {
-                    Text("Articles are condensed from Wikipedia (CC BY-SA 4.0). Photos come from Wikimedia Commons. Donation links open each organization's own website; Fauna never handles money.")
-                }
+                .padding(.horizontal, 18)
+                .padding(.bottom, 40)
             }
-            .listStyle(.insetGrouped)
+            .background(Color(.systemGroupedBackground))
             .navigationTitle("Focus")
             .onAppear(perform: load)
             .onChange(of: groups) { _, _ in saveFocus() }
             .onChange(of: regions) { _, _ in saveFocus() }
-            .onChange(of: reminderTime) { _, time in
-                let c = Calendar.current.dateComponents([.hour, .minute], from: time)
-                guard c.hour != store.state.reminderHour || c.minute != store.state.reminderMinute else { return }
-                store.state.reminderHour = c.hour ?? 8
-                store.state.reminderMinute = c.minute ?? 0
-                Task { await Reminders.reschedule(store) }
-            }
             .confirmationDialog("Start your journal over?", isPresented: $confirmReset, titleVisibility: .visible) {
-                Button("Reset Journal", role: .destructive) {
+                Button("Reset journal", role: .destructive) {
                     store.resetProgress()
                     Task { await Reminders.reschedule(store) }
                 }
@@ -175,23 +75,101 @@ struct FocusView: View {
         }
     }
 
-    private var summary: some View {
+    private var header: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            Text("Narrow your daily animal to the creatures and places you care about. Want bugs in eastern Canada? Pick Insects & Bugs and Eastern North America.")
+                .font(.subheadline)
+                .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
+        }
+        .padding(.horizontal, 4)
+    }
+
+    private var matchSummary: some View {
         let pool = store.library.filter { store.matchesFocus($0, groups: groups, regions: regions) }
         let unmet = pool.filter { !store.metIDs.contains($0.id) }.count
-        return HStack(spacing: 12) {
-            IconTile(symbol: pool.isEmpty ? "exclamationmark.triangle.fill" : "scope",
-                     tint: pool.isEmpty ? .orange : .accentColor)
+        return HStack(spacing: 10) {
+            Image(systemName: pool.isEmpty ? "exclamationmark.triangle.fill" : "scope")
+                .foregroundStyle(pool.isEmpty ? .orange : Color.faunaMoss)
             VStack(alignment: .leading, spacing: 2) {
-                Text(pool.isEmpty ? "No Matches Yet" : "\(pool.count) Animals Match")
-                    .font(.headline)
+                Text(pool.isEmpty ? "No animals match yet" : "\(pool.count) animals match")
+                    .font(.subheadline.weight(.semibold))
                     .contentTransition(.numericText())
-                Text(pool.isEmpty ? "Fauna will pick from everywhere." : "\(unmet) you haven't met yet")
-                    .font(.subheadline)
+                Text(pool.isEmpty ? "We'll pick from everywhere until more are added." :
+                        "\(unmet) you haven't met. When they run out, Fauna picks from anywhere.")
+                    .font(.caption)
                     .foregroundStyle(.secondary)
             }
         }
-        .padding(.vertical, 2)
+        .padding(12)
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.tertiarySystemFill), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
         .animation(.smooth, value: pool.count)
+    }
+
+    private var reminderSection: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Toggle(isOn: Binding(get: { store.state.reminderEnabled }, set: setReminder)) {
+                Label {
+                    VStack(alignment: .leading, spacing: 2) {
+                        Text("Daily animal").font(.headline)
+                        Text("A notification with the name of each new animal.")
+                            .font(.caption).foregroundStyle(.secondary)
+                    }
+                } icon: {
+                    Image(systemName: "bell.badge.fill").foregroundStyle(.red)
+                }
+            }
+            .tint(.faunaMoss)
+            if store.state.reminderEnabled {
+                DatePicker("Time", selection: $reminderTime, displayedComponents: .hourAndMinute)
+                    .onChange(of: reminderTime) { _, time in
+                        let c = Calendar.current.dateComponents([.hour, .minute], from: time)
+                        store.state.reminderHour = c.hour ?? 8
+                        store.state.reminderMinute = c.minute ?? 0
+                        Task { await Reminders.reschedule(store) }
+                    }
+            }
+            if notificationsDenied {
+                Button {
+                    if let url = URL(string: UIApplication.openSettingsURLString) { UIApplication.shared.open(url) }
+                } label: {
+                    Label("Notifications are off for Fauna. Turn them on in Settings.", systemImage: "gear")
+                        .font(.footnote)
+                }
+            }
+        }
+        .animation(.smooth, value: store.state.reminderEnabled)
+    }
+
+    private var aboutSection: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            Label {
+                VStack(alignment: .leading, spacing: 4) {
+                    Text("About Fauna").font(.headline)
+                    Text("Articles are condensed from Wikipedia and shared under CC BY-SA 4.0. Photos come from Wikimedia Commons. Donation links go straight to each organization's own website; Fauna never handles money.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                        .fixedSize(horizontal: false, vertical: true)
+                }
+            } icon: {
+                Image(systemName: "leaf.fill").foregroundStyle(Color.faunaMoss)
+            }
+            Divider()
+            Button(role: .destructive) {
+                confirmReset = true
+            } label: {
+                Label("Reset journal", systemImage: "arrow.counterclockwise")
+                    .font(.subheadline.weight(.semibold))
+            }
+        }
+    }
+
+    private func card<Content: View>(@ViewBuilder _ content: () -> Content) -> some View {
+        VStack(alignment: .leading, spacing: 18, content: content)
+            .padding(18)
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 24, style: .continuous))
     }
 
     // MARK: Actions

@@ -31,7 +31,7 @@ struct FaunaApp: App {
         WindowGroup {
             RootView()
                 .environment(store)
-                .tint(.accentColor)
+                .tint(.faunaMoss)
         }
     }
 }
@@ -84,7 +84,7 @@ struct MainTabs: View {
 #Preview("Today") {
     MainTabs()
         .environment(AppStore.demo())
-        .tint(.accentColor)
+        .tint(.faunaMoss)
 }
 
 #Preview("Onboarding") {

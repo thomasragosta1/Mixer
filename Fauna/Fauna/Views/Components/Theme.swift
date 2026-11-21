@@ -1,7 +1,7 @@
 import SwiftUI
 
 extension AnimalGroup {
-    /// System colors, so the palette adapts to light, dark and increased contrast like Apple's apps.
+    /// iOS system colors, so the palette adapts to dark mode and increased contrast.
     var color: Color {
         switch self {
         case .mammal: .orange
@@ -16,7 +16,7 @@ extension AnimalGroup {
 
     /// Two tones used for placeholder art while a photo loads.
     var gradient: [Color] {
-        [color.blended(with: .black, by: 0.15), color.blended(with: .black, by: 0.55)]
+        [color.blended(with: .black, by: 0.25), color.blended(with: .black, by: 0.5)]
     }
 }
 
@@ -48,20 +48,21 @@ extension Color {
                      blue: b1 + (b2 - b1) * t, opacity: a1 + (a2 - a1) * t)
     }
 
-    static let faunaInk = Color(red: 0.05, green: 0.13, blue: 0.11)
-    static let faunaForest = Color(red: 0.07, green: 0.26, blue: 0.20)
-    static let faunaMoss = Color.green
-    static let faunaGold = Color.yellow
+    /// Near-black surfaces for the onboarding and unlock card.
+    static let faunaInk = Color(white: 0.06)
+    static let faunaForest = Color(white: 0.12)
+    /// The app's green: close to iOS system green, a touch calmer.
+    static let faunaMoss = Color(red: 0.20, green: 0.68, blue: 0.37)
+    static let faunaGold = Color(red: 0.96, green: 0.78, blue: 0.42)
 }
 
-/// San Francisco throughout, sized from Dynamic Type styles.
 enum FaunaFont {
     static func display(_ size: CGFloat, weight: Font.Weight = .bold) -> Font {
-        .system(size: size, weight: weight)
+        .system(size: size, weight: weight, design: .serif)
     }
-    static let eyebrow = Font.footnote.weight(.semibold)
-    static let body = Font.body
-    static let lede = Font.title3
+    static let eyebrow = Font.system(.caption, design: .rounded).weight(.bold)
+    static let body = Font.system(.body, design: .serif)
+    static let lede = Font.system(.title3, design: .serif)
 }
 
 /// Uppercase, tracked label used above headings.
@@ -75,6 +76,7 @@ struct Eyebrow: View {
     var body: some View {
         Text(text.uppercased())
             .font(FaunaFont.eyebrow)
+            .tracking(1.4)
             .foregroundStyle(color)
     }
 }
@@ -89,17 +91,20 @@ struct PressableStyle: ButtonStyle {
     }
 }
 
-/// The large, filled button Apple uses at the bottom of welcome screens and sheets.
+/// The big, pill-shaped primary action.
 struct ProminentPillStyle: ButtonStyle {
     var tint: Color = .accentColor
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.headline)
+            .font(.system(.headline, design: .rounded))
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity)
-            .frame(minHeight: 50)
-            .background(tint, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
-            .opacity(configuration.isPressed ? 0.75 : 1)
+            .padding(.vertical, 17)
+            .background(
+                Capsule().fill(tint)
+            )
+            .scaleEffect(configuration.isPressed ? 0.97 : 1)
+            .animation(.spring(response: 0.3, dampingFraction: 0.7), value: configuration.isPressed)
     }
 }
 

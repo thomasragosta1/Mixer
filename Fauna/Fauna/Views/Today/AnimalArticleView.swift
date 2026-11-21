@@ -25,7 +25,7 @@ struct AnimalArticleView: View {
                 .ignoresSafeArea(edges: .top)
             // Pinned to the top of the safe area; its material extends up under the status bar.
             Text(animal.name)
-                .font(.headline)
+                .font(.system(.headline, design: .serif))
                 .lineLimit(1)
                 .padding(.horizontal, 64)
                 .frame(maxWidth: .infinity)
@@ -121,17 +121,15 @@ struct AnimalArticleView: View {
 
     private var heroTitle: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text(eyebrowText.uppercased())
-                .font(.footnote.weight(.semibold))
-                .foregroundStyle(.white.opacity(0.85))
+            Eyebrow(eyebrowText, color: .white.opacity(0.85))
             Text(animal.name)
-                .font(.system(size: titleSize, weight: .bold))
+                .font(FaunaFont.display(titleSize))
                 .foregroundStyle(.white)
                 .lineLimit(3)
                 .minimumScaleFactor(0.7)
                 .shadow(color: .black.opacity(0.35), radius: 12, y: 4)
             Text(animal.scientificName)
-                .font(.title3)
+                .font(.system(.title3, design: .serif).italic())
                 .foregroundStyle(.white.opacity(0.85))
             HStack(spacing: 8) {
                 GroupPill(group: animal.group)
@@ -159,8 +157,8 @@ struct AnimalArticleView: View {
     // MARK: Article
 
     private var content: some View {
-        VStack(alignment: .leading, spacing: 32) {
-            VStack(alignment: .leading, spacing: 14) {
+        VStack(alignment: .leading, spacing: 36) {
+            VStack(alignment: .leading, spacing: 18) {
                 HStack(spacing: 6) {
                     Image(systemName: "book.pages")
                     Text("\(animal.readingMinutes) min read · Condensed from Wikipedia")
@@ -168,14 +166,14 @@ struct AnimalArticleView: View {
                 .font(.footnote.weight(.medium))
                 .foregroundStyle(.secondary)
 
-                Text(animal.tagline)
-                    .font(.title2.bold())
+                Text("“\(animal.tagline)”")
+                    .font(FaunaFont.display(27, weight: .semibold))
+                    .foregroundStyle(accent)
                     .fixedSize(horizontal: false, vertical: true)
 
                 Text(animal.lede)
                     .font(FaunaFont.lede)
-                    .foregroundStyle(.secondary)
-                    .lineSpacing(3)
+                    .lineSpacing(6)
                     .fixedSize(horizontal: false, vertical: true)
             }
 
@@ -186,7 +184,7 @@ struct AnimalArticleView: View {
                 VStack(alignment: .leading, spacing: 16) {
                     RangeMap(animal: animal)
                         .frame(height: 210)
-                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                        .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
                         .overlay(alignment: .bottomLeading) {
                             Label(animal.range, systemImage: "location.fill")
                                 .font(.footnote.weight(.semibold))
@@ -227,7 +225,7 @@ struct AnimalArticleView: View {
                 VStack(alignment: .leading, spacing: 20) {
                     ConservationScale(status: animal.status)
                         .padding(16)
-                        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
                     Paragraph(animal.outlook)
                 }
             }
@@ -284,7 +282,8 @@ private struct Paragraph: View {
     var body: some View {
         Text(text)
             .font(FaunaFont.body)
-            .lineSpacing(3)
+            .lineSpacing(5)
+            .foregroundStyle(Color.primary.opacity(0.88))
             .fixedSize(horizontal: false, vertical: true)
     }
 }
@@ -296,24 +295,19 @@ private struct ArticleSection<Content: View>: View {
     @ViewBuilder var content: Content
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 12) {
-            Label(title, systemImage: symbol)
-                .font(.title3.bold())
-                .labelStyle(SectionLabelStyle(tint: tint))
-                .accessibilityAddTraits(.isHeader)
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(spacing: 10) {
+                Image(systemName: symbol)
+                    .font(.system(size: 13, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 28, height: 28)
+                    .background(tint, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                Text(title)
+                    .font(FaunaFont.display(22))
+            }
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isHeader)
             content
-        }
-    }
-}
-
-private struct SectionLabelStyle: LabelStyle {
-    let tint: Color
-    func makeBody(configuration: Configuration) -> some View {
-        HStack(spacing: 8) {
-            configuration.icon
-                .foregroundStyle(tint)
-                .imageScale(.medium)
-            configuration.title
         }
     }
 }
@@ -331,18 +325,26 @@ struct FactGrid: View {
                         .foregroundStyle(tint)
                     VStack(alignment: .leading, spacing: 3) {
                         Text(fact.value)
-                            .font(.headline)
+                            .font(.system(.headline, design: .rounded))
                             .lineLimit(2)
                             .minimumScaleFactor(0.8)
                             .fixedSize(horizontal: false, vertical: true)
-                        Text(fact.label)
-                            .font(.caption)
+                        Text(fact.label.uppercased())
+                            .font(.caption2.weight(.semibold))
+                            .tracking(0.8)
                             .foregroundStyle(.secondary)
                     }
                 }
-                .frame(maxWidth: .infinity, minHeight: 88, alignment: .topLeading)
+                .frame(maxWidth: .infinity, minHeight: 96, alignment: .topLeading)
                 .padding(14)
-                .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                .background(
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .fill(tint.opacity(0.08))
+                )
+                .overlay(
+                    RoundedRectangle(cornerRadius: 20, style: .continuous)
+                        .strokeBorder(tint.opacity(0.12))
+                )
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel("\(fact.label): \(fact.value)")
             }
@@ -355,17 +357,29 @@ private struct DidYouKnowCard: View {
     let tint: Color
 
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
-            Label("Did You Know?", systemImage: "lightbulb.fill")
-                .font(.subheadline.weight(.semibold))
-                .foregroundStyle(tint)
+        VStack(alignment: .leading, spacing: 12) {
+            Label("Did you know?", systemImage: "lightbulb.max.fill")
+                .font(.system(.subheadline, design: .rounded).weight(.bold))
+                .foregroundStyle(.white.opacity(0.9))
             Text(text)
-                .font(.body.weight(.medium))
+                .font(FaunaFont.display(20, weight: .medium))
+                .foregroundStyle(.white)
+                .lineSpacing(4)
                 .fixedSize(horizontal: false, vertical: true)
         }
-        .padding(16)
+        .padding(22)
         .frame(maxWidth: .infinity, alignment: .leading)
-        .background(tint.opacity(0.12), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+        .background {
+            RoundedRectangle(cornerRadius: 26, style: .continuous)
+                .fill(tint.blended(with: .black, by: 0.15))
+            Image(systemName: "sparkles")
+                .font(.system(size: 120))
+                .foregroundStyle(.white.opacity(0.07))
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                .offset(x: 20, y: -20)
+                .clipped()
+        }
+        .clipShape(RoundedRectangle(cornerRadius: 26, style: .continuous))
     }
 }
 
@@ -376,10 +390,16 @@ private struct HelpSection: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 14) {
-            Label("Help the \(animal.name)", systemImage: "heart.fill")
-                .font(.title3.bold())
-                .labelStyle(SectionLabelStyle(tint: .pink))
-                .accessibilityAddTraits(.isHeader)
+            HStack(spacing: 10) {
+                Image(systemName: "hands.and.sparkles.fill")
+                    .font(.system(size: 13, weight: .bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 28, height: 28)
+                    .background(Color.pink, in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                Text("Help the \(animal.name)")
+                    .font(FaunaFont.display(22))
+            }
+            .accessibilityAddTraits(.isHeader)
 
             Text("These groups work to protect the \(animal.name) and its home. Fauna takes no cut; donations go straight to them.")
                 .font(.subheadline)
@@ -391,11 +411,11 @@ private struct HelpSection: View {
                     openURL(charity.url)
                 } label: {
                     HStack(alignment: .top, spacing: 14) {
-                        Image(systemName: "hand.raised.fill")
-                            .font(.system(size: 17, weight: .semibold))
+                        Text(String(charity.name.prefix(1)))
+                            .font(FaunaFont.display(20))
                             .foregroundStyle(.white)
-                            .frame(width: 36, height: 36)
-                            .background(Color.pink, in: RoundedRectangle(cornerRadius: 9, style: .continuous))
+                            .frame(width: 44, height: 44)
+                            .background(Color.pink, in: RoundedRectangle(cornerRadius: 12, style: .continuous))
                         VStack(alignment: .leading, spacing: 4) {
                             Text(charity.name)
                                 .font(.headline)
@@ -415,8 +435,8 @@ private struct HelpSection: View {
                         }
                         Spacer(minLength: 0)
                     }
-                    .padding(14)
-                    .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    .padding(16)
+                    .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 22, style: .continuous))
                 }
                 .buttonStyle(PressableStyle())
                 .accessibilityHint("Opens \(charity.host) in Safari")
@@ -434,29 +454,34 @@ private struct UnlockCard: View {
     var body: some View {
         let inFocus = store.canUnlockInFocus
         let anywhere = store.canUnlockAnywhere
-        VStack(spacing: 14) {
-            Image(systemName: anywhere ? "sparkles" : "checkmark.seal.fill")
-                .font(.system(size: 40, weight: .semibold))
-                .foregroundStyle(Color.accentColor)
-                .symbolRenderingMode(.hierarchical)
-                .padding(.bottom, 2)
-            Text(anywhere ? "Curious for More?" : "You've Met Them All")
-                .font(.title2.bold())
-            Text(message(inFocus: inFocus, anywhere: anywhere))
-                .font(.subheadline)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-                .fixedSize(horizontal: false, vertical: true)
+        VStack(spacing: 18) {
+            ZStack {
+                Circle().fill(.white.opacity(0.12)).frame(width: 74, height: 74)
+                Image(systemName: anywhere ? "lock.open.fill" : "checkmark.seal.fill")
+                    .font(.system(size: 30, weight: .semibold))
+                    .foregroundStyle(Color.faunaGold)
+                    .symbolEffect(.pulse, options: .repeating.speed(0.5))
+            }
+            VStack(spacing: 8) {
+                Text(anywhere ? "Curious for more?" : "You've met them all")
+                    .font(FaunaFont.display(26))
+                    .foregroundStyle(.white)
+                Text(message(inFocus: inFocus, anywhere: anywhere))
+                    .font(.callout)
+                    .foregroundStyle(.white.opacity(0.78))
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
             if anywhere {
                 Button(action: start) {
-                    Text("Unlock Another Animal")
+                    Label("Unlock another animal", systemImage: "sparkles")
                 }
-                .buttonStyle(ProminentPillStyle())
-                .padding(.top, 6)
+                .buttonStyle(ProminentPillStyle(tint: .faunaMoss))
             }
             if !inFocus && store.hasFocus {
-                Button("Widen My Focus") { store.selectedTab = .focus }
+                Button("Widen my focus") { store.selectedTab = .focus }
                     .font(.subheadline.weight(.semibold))
+                    .foregroundStyle(Color.faunaGold)
             }
             if store.streak > 1 {
                 Label("\(store.streak)-day streak", systemImage: "flame.fill")
@@ -464,9 +489,16 @@ private struct UnlockCard: View {
                     .foregroundStyle(.orange)
             }
         }
-        .padding(22)
+        .padding(26)
         .frame(maxWidth: .infinity)
-        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+        .background {
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .fill(Color.faunaForest)
+        }
+        .overlay(
+            RoundedRectangle(cornerRadius: 30, style: .continuous)
+                .strokeBorder(Color.white.opacity(0.08))
+        )
     }
 
     private func message(inFocus: Bool, anywhere: Bool) -> String {

@@ -21,7 +21,7 @@ struct TodayView: View {
             .animation(.smooth(duration: 0.6), value: store.currentAnimal?.id)
             .navigationDestination(for: Animal.self) { AnimalArticleView(animal: $0, mode: .journal) }
         }
-        .sheet(item: $quizAnimal) { QuizView(animal: $0) }
+        .fullScreenCover(item: $quizAnimal) { QuizView(animal: $0) }
         .onAppear {
             if ProcessInfo.processInfo.arguments.contains("-FaunaQuiz") { quizAnimal = store.currentAnimal }
         }
