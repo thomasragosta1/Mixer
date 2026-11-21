@@ -357,12 +357,21 @@ struct AnimalArticleView: View {
 private struct Paragraph: View {
     let text: String
     init(_ text: String) { self.text = text }
+    /// Content separates paragraphs with a blank line.
+    private var paragraphs: [String] {
+        text.components(separatedBy: "\n\n").map { $0.trimmingCharacters(in: .whitespacesAndNewlines) }.filter { !$0.isEmpty }
+    }
+
     var body: some View {
-        Text(text)
-            .font(FaunaFont.body)
-            .lineSpacing(5)
-            .foregroundStyle(Color.primary.opacity(0.88))
-            .fixedSize(horizontal: false, vertical: true)
+        VStack(alignment: .leading, spacing: 14) {
+            ForEach(Array(paragraphs.enumerated()), id: \.offset) { _, paragraph in
+                Text(paragraph)
+                    .font(FaunaFont.body)
+                    .lineSpacing(5)
+                    .foregroundStyle(Color.primary.opacity(0.88))
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+        }
     }
 }
 
