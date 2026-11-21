@@ -81,7 +81,7 @@ final class AppStore {
         }
     }
 
-    static var defaultFileURL: URL? {
+    nonisolated static var defaultFileURL: URL? {
         guard let dir = try? FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask,
                                                      appropriateFor: nil, create: true) else { return nil }
         return dir.appendingPathComponent("fauna-state.json")
