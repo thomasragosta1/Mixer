@@ -85,7 +85,7 @@ struct AnimalArticleView: View {
                     .padding(.horizontal, 24)
                     .padding(.bottom, 58)
                     .offset(y: parallax * 0.4)
-                    .opacity(minY < 0 ? max(0, 1 + minY / 320) : 1)
+                    .opacity(minY < 0 ? Double(max(0, 1 + minY / 320)) : 1)
             }
             .frame(width: geo.size.width, height: heroHeight + stretch)
             .clipped()

@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Check content
-        run: python3 Fauna/scripts/validate_content.py --online
+        run: python3 Fauna/scripts/validate_content.py
 
       - name: Select Xcode
         run: |
@@ -53,6 +53,9 @@ jobs:
             grep -B2 -A6 "error:" build.log | head -300
             exit 1
           fi
+
+      - name: Check Wikipedia titles still have photos
+        run: python3 Fauna/scripts/validate_content.py --online
 
       - name: Screenshots
         run: |
