@@ -285,15 +285,6 @@ struct AnimalArticleView: View {
             DidYouKnowCard(text: store.measured(animal.didYouKnow), tint: accent)
                 .id("didYouKnow")
 
-            ArticleSection(title: "Its future", symbol: "heart.fill", tint: accent) {
-                VStack(alignment: .leading, spacing: 20) {
-                    ConservationScale(status: animal.status)
-                        .padding(16)
-                        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
-                    Paragraph(store.measured(animal.outlook))
-                }
-            }
-
             if let people = animal.people, !people.isEmpty {
                 ArticleSection(title: "People and the \(animal.name)", symbol: "person.2.fill", tint: accent) {
                     Paragraph(store.measured(people))
@@ -303,6 +294,15 @@ struct AnimalArticleView: View {
             if let relatives = animal.relatives, !relatives.isEmpty {
                 ArticleSection(title: "Relatives and origins", symbol: "tree.fill", tint: accent) {
                     Paragraph(store.measured(relatives))
+                }
+            }
+
+            ArticleSection(title: "Its future", symbol: "heart.fill", tint: accent) {
+                VStack(alignment: .leading, spacing: 20) {
+                    ConservationScale(status: animal.status)
+                        .padding(16)
+                        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
+                    Paragraph(store.measured(animal.outlook))
                 }
             }
 
