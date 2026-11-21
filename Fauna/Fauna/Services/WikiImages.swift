@@ -14,6 +14,10 @@ actor WikiImages {
     private let memory = NSCache<NSString, UIImage>()
     private var resolved: [String: URL]
     private var inflight: [String: Task<UIImage?, Never>] = [:]
+    /// Wikipedia rate-limits bursts, so at most a few lookups run at once.
+    private var activeLookups = 0
+    private var waiting: [CheckedContinuation<Void, Never>] = []
+    private let maxLookups = 3
     private static let defaultsKey = "WikiImages.resolved.v1"
 
     init() {
@@ -58,13 +62,41 @@ actor WikiImages {
         if let url = resolved[key] { return url }
         let path = title.replacingOccurrences(of: " ", with: "_")
             .addingPercentEncoding(withAllowedCharacters: Self.pathSafe) ?? title
-        guard let api = URL(string: "https://en.wikipedia.org/api/rest_v1/page/summary/\(path)"),
-              let (data, _) = try? await session.data(from: api),
-              let summary = try? JSONDecoder().decode(Summary.self, from: data) else { return nil }
+        guard let api = URL(string: "https://en.wikipedia.org/api/rest_v1/page/summary/\(path)") else { return nil }
+        await acquireLookup()
+        defer { releaseLookup() }
+        var summary: Summary?
+        for attempt in 0..<4 {
+            guard let (data, response) = try? await session.data(from: api) else { return nil }
+            let status = (response as? HTTPURLResponse)?.statusCode ?? 200
+            if status == 429 || status >= 500 {
+                try? await Task.sleep(for: .seconds(Double(1 << attempt)))
+                continue
+            }
+            summary = try? JSONDecoder().decode(Summary.self, from: data)
+            break
+        }
+        guard let summary else { return nil }
         guard let url = Self.pick(summary, width: size.rawValue) else { return nil }
         resolved[key] = url
         UserDefaults.standard.set(resolved.mapValues(\.absoluteString), forKey: Self.defaultsKey)
         return url
+    }
+
+    private func acquireLookup() async {
+        if activeLookups < maxLookups {
+            activeLookups += 1
+            return
+        }
+        await withCheckedContinuation { waiting.append($0) }
+    }
+
+    private func releaseLookup() {
+        if waiting.isEmpty {
+            activeLookups -= 1
+        } else {
+            waiting.removeFirst().resume()
+        }
     }
 
     private static let pathSafe = CharacterSet(charactersIn:

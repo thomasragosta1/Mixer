@@ -4,7 +4,7 @@
   python3 scripts/validate_content.py           # structure only
   python3 scripts/validate_content.py --online  # also check every Wikipedia title has a photo
 """
-import json, sys, urllib.parse, urllib.request
+import json, sys, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -53,17 +53,28 @@ print("groups:", dict(Counter(a["group"] for a in animals)))
 print("regions:", dict(Counter(r for a in animals for r in a["regions"])))
 
 if "--online" in sys.argv:
+    import time
+    # Wikipedia rate-limits bursts: go slowly, retry 429s, and only fail on real misses.
     for a in animals:
         title = a["wikipediaTitle"].replace(" ", "_")
         url = "https://en.wikipedia.org/api/rest_v1/page/summary/" + urllib.parse.quote(title, safe="")
         req = urllib.request.Request(url, headers={"User-Agent": "Fauna content check (github actions)"})
-        try:
-            data = json.load(urllib.request.urlopen(req, timeout=20))
-            img = (data.get("originalimage") or data.get("thumbnail") or {}).get("source")
-            if not img: fail(f"{a['id']}: no image for '{a['wikipediaTitle']}'")
-            else: print(f"ok  {a['id']:28} {data.get('title')}  {img.rsplit('/',1)[-1][:60]}")
-        except Exception as e:
-            fail(f"{a['id']}: '{a['wikipediaTitle']}' -> {e}")
+        for attempt in range(5):
+            try:
+                data = json.load(urllib.request.urlopen(req, timeout=20))
+                img = (data.get("originalimage") or data.get("thumbnail") or {}).get("source")
+                if not img: fail(f"{a['id']}: no image for '{a['wikipediaTitle']}'")
+                else: print(f"ok  {a['id']:28} {data.get('title')}")
+                break
+            except urllib.error.HTTPError as e:
+                if e.code == 429 and attempt < 4:
+                    time.sleep(2 ** attempt * 2); continue
+                if e.code == 429: print(f"WARN {a['id']}: still rate-limited, skipped")
+                else: fail(f"{a['id']}: '{a['wikipediaTitle']}' -> {e}")
+                break
+            except Exception as e:
+                print(f"WARN {a['id']}: {e}"); break
+        time.sleep(0.6)
 
 if fail.count:
     print(f"{fail.count} problem(s)"); sys.exit(1)
