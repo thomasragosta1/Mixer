@@ -317,10 +317,10 @@ struct QuizView: View {
     private func start() {
         items = animal.quiz.prefix(3).shuffled().map { q in
             let order = q.choices.indices.shuffled()
-            return Item(prompt: q.prompt,
-                        choices: order.map { q.choices[$0] },
+            return Item(prompt: store.measured(q.prompt),
+                        choices: order.map { store.measured(q.choices[$0]) },
                         correct: order.firstIndex(of: 0) ?? 0,
-                        explanation: q.explanation)
+                        explanation: store.measured(q.explanation))
         }
         index = 0
         picked = nil

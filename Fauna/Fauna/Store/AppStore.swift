@@ -17,6 +17,7 @@ struct AppState: Codable, Equatable {
     var todayChain: [String] = []
     var journal: [JournalEntry] = []
     var quizPassedIDs: [String] = []
+    var units: UnitPreference = .automatic
 
     init() {}
 
@@ -34,6 +35,7 @@ struct AppState: Codable, Equatable {
         todayChain = try c.decodeIfPresent([String].self, forKey: .todayChain) ?? d.todayChain
         journal = try c.decodeIfPresent([JournalEntry].self, forKey: .journal) ?? d.journal
         quizPassedIDs = try c.decodeIfPresent([String].self, forKey: .quizPassedIDs) ?? d.quizPassedIDs
+        units = (try? c.decodeIfPresent(UnitPreference.self, forKey: .units)) ?? d.units
     }
 }
 
@@ -95,6 +97,11 @@ final class AppStore {
     // MARK: - Lookups
 
     func animal(_ id: String) -> Animal? { byID[id] }
+
+    var usesImperial: Bool { state.units.usesImperial }
+
+    /// Text with measurements shown in the reader's preferred units.
+    func measured(_ text: String) -> String { UnitText.localize(text, imperial: usesImperial) }
 
     var todayAnimals: [Animal] { state.todayChain.compactMap { byID[$0] } }
     var currentAnimal: Animal? { todayAnimals.last }
@@ -235,6 +242,7 @@ final class AppStore {
         fresh.reminderEnabled = keep.reminderEnabled
         fresh.reminderHour = keep.reminderHour
         fresh.reminderMinute = keep.reminderMinute
+        fresh.units = keep.units
         state = fresh
         rebuildQueue()
         refreshDay()

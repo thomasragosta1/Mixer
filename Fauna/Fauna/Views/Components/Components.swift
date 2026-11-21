@@ -200,28 +200,86 @@ struct ConservationScale: View {
     }
 }
 
-/// A small satellite map centered on the animal's home range. Not interactive.
+/// A satellite picture of the animal's home range with a marker in the middle.
+///
+/// A live 3D map loads slowly (especially zoomed out to a whole ocean), so this renders a flat
+/// snapshot once and caches it on disk; after that it appears instantly.
 struct RangeMap: View {
     let animal: Animal
+    @State private var image: UIImage?
 
     var body: some View {
-        let center = CLLocationCoordinate2D(latitude: animal.coordinate.latitude, longitude: animal.coordinate.longitude)
-        let span = MKCoordinateSpan(latitudeDelta: min(animal.mapSpan, 150), longitudeDelta: min(animal.mapSpan * 1.6, 300))
-        Map(initialPosition: .region(MKCoordinateRegion(center: center, span: span)), interactionModes: []) {
-            Annotation(animal.name, coordinate: center, anchor: .center) {
-                ZStack {
-                    Circle().fill(animal.group.color.opacity(0.25)).frame(width: 54, height: 54)
-                    Circle().fill(animal.group.color).frame(width: 30, height: 30)
-                        .overlay(Circle().strokeBorder(.white, lineWidth: 2))
-                    Image(systemName: animal.group.symbol)
-                        .font(.system(size: 13, weight: .bold))
-                        .foregroundStyle(.white)
+        GeometryReader { geo in
+            ZStack {
+                Rectangle().fill(Color(red: 0.12, green: 0.16, blue: 0.2))
+                if let image {
+                    Image(uiImage: image)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: geo.size.width, height: geo.size.height)
+                        .transition(.opacity)
+                } else {
+                    ProgressView().tint(.white)
                 }
+                marker
             }
-            .annotationTitles(.hidden)
+            .task(id: animal.id) {
+                let size = CGSize(width: max(geo.size.width, 1), height: max(geo.size.height, 1))
+                let loaded = await RangeSnapshots.shared.image(for: animal, size: size)
+                withAnimation(.easeOut(duration: 0.3)) { image = loaded }
+            }
         }
-        .mapStyle(.imagery(elevation: .realistic))
-        .allowsHitTesting(false)
+        .clipped()
+        .accessibilityElement(children: .ignore)
         .accessibilityLabel("Map of the \(animal.name)'s range: \(animal.range)")
+    }
+
+    private var marker: some View {
+        ZStack {
+            Circle().fill(animal.group.color.opacity(0.3)).frame(width: 54, height: 54)
+            Circle().fill(animal.group.color).frame(width: 30, height: 30)
+                .overlay(Circle().strokeBorder(.white, lineWidth: 2))
+            Image(systemName: animal.group.symbol)
+                .font(.system(size: 13, weight: .bold))
+                .foregroundStyle(.white)
+        }
+        .shadow(color: .black.opacity(0.3), radius: 6, y: 2)
+    }
+}
+
+/// Renders and caches range map snapshots.
+actor RangeSnapshots {
+    static let shared = RangeSnapshots()
+    private let memory = NSCache<NSString, UIImage>()
+    private let dir: URL? = {
+        guard let caches = FileManager.default.urls(for: .cachesDirectory, in: .userDomainMask).first else { return nil }
+        let d = caches.appendingPathComponent("RangeMaps", isDirectory: true)
+        try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
+        return d
+    }()
+
+    func image(for animal: Animal, size: CGSize) async -> UIImage? {
+        let key = "\(animal.id)-\(Int(size.width))x\(Int(size.height))-v1"
+        if let hit = memory.object(forKey: key as NSString) { return hit }
+        let file = dir?.appendingPathComponent(key + ".jpg")
+        if let file, let data = try? Data(contentsOf: file), let img = UIImage(data: data) {
+            memory.setObject(img, forKey: key as NSString)
+            return img
+        }
+        let options = MKMapSnapshotter.Options()
+        let lat = animal.coordinate.latitude
+        // Keep the region inside the valid latitude range so wide ocean views still render.
+        let latSpan = max(1, min(animal.mapSpan, 170 - 2 * abs(lat)))
+        options.region = MKCoordinateRegion(
+            center: CLLocationCoordinate2D(latitude: lat, longitude: animal.coordinate.longitude),
+            span: MKCoordinateSpan(latitudeDelta: latSpan, longitudeDelta: min(latSpan * 1.6, 359)))
+        options.size = size
+        options.mapType = .satellite
+        options.pointOfInterestFilter = .excludingAll
+        guard let snapshot = try? await MKMapSnapshotter(options: options).start() else { return nil }
+        let img = snapshot.image
+        memory.setObject(img, forKey: key as NSString)
+        if let file, let data = img.jpegData(compressionQuality: 0.8) { try? data.write(to: file) }
+        return img
     }
 }

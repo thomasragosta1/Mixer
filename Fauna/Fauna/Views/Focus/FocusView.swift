@@ -54,6 +54,7 @@ struct FocusView: View {
                             matchSummary
                     }
                     card { reminderSection }
+                    card { unitsSection }
                     card { aboutSection }
                 }
                 .padding(.horizontal, 18)
@@ -140,6 +141,32 @@ struct FocusView: View {
             }
         }
         .animation(.smooth, value: store.state.reminderEnabled)
+    }
+
+    private var unitsSection: some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Label {
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Units").font(.headline)
+                    Text(unitsCaption)
+                        .font(.caption).foregroundStyle(.secondary)
+                }
+            } icon: {
+                Image(systemName: "ruler.fill").foregroundStyle(.blue)
+            }
+            Picker("Units", selection: Binding(get: { store.state.units }, set: { store.state.units = $0 })) {
+                ForEach(UnitPreference.allCases) { Text($0.title).tag($0) }
+            }
+            .pickerStyle(.segmented)
+        }
+    }
+
+    private var unitsCaption: String {
+        switch store.state.units {
+        case .automatic: "Following your iPhone's setting: \(store.usesImperial ? "feet, pounds, miles" : "metres, kilograms, kilometres")."
+        case .metric: "Metres, kilograms, kilometres."
+        case .imperial: "Feet, pounds, miles."
+        }
     }
 
     private var aboutSection: some View {

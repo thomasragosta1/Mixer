@@ -14,8 +14,19 @@ struct AnimalArticleView: View {
     @ScaledMetric(relativeTo: .largeTitle) private var titleSize: CGFloat = 44
     /// True once the photo has scrolled away, to fade in a frosted bar behind the status bar.
     @State private var pastHero = false
+    @State private var heroImage: UIImage?
+    @State private var viewSize: CGSize = CGSize(width: 393, height: 852)
+    @State private var topInset: CGFloat = 59
+    @State private var showPhoto = false
 
-    private let heroHeight: CGFloat = 520
+    /// The photo is shown whole: the header takes the photo's own shape (within sensible limits)
+    /// and any leftover space is filled with a soft blur of the same photo.
+    private var heroHeight: CGFloat {
+        let w = viewSize.width
+        let ratio = heroImage.map { $0.size.height / max($0.size.width, 1) } ?? 0.75
+        let natural = w * ratio + topInset
+        return min(max(natural, w * 0.62 + topInset), viewSize.height * 0.72)
+    }
     private var accent: Color { animal.group.color }
 
     var body: some View {
@@ -61,15 +72,21 @@ struct AnimalArticleView: View {
                 VStack(spacing: 0) {
                     hero
                     content
-                        .background(
-                            UnevenRoundedRectangle(topLeadingRadius: 30, topTrailingRadius: 30, style: .continuous)
-                                .fill(Color(.systemBackground))
-                                .shadow(color: .black.opacity(0.12), radius: 20, y: -6)
-                        )
-                        .padding(.top, -30)
                 }
             }
             .task { await scrollForScreenshot(proxy) }
+        }
+        .onGeometryChange(for: CGSize.self) { $0.size } action: { viewSize = $0 }
+        .background {
+            GeometryReader { geo in
+                Color.clear.onAppear { topInset = max(geo.safeAreaInsets.top, 20) }
+            }
+        }
+        .task(id: animal.id) {
+            heroImage = await WikiImages.shared.image(for: animal.wikipediaTitle, size: .hero)
+        }
+        .fullScreenCover(isPresented: $showPhoto) {
+            PhotoViewer(animal: animal, preview: heroImage)
         }
     }
 
@@ -87,53 +104,72 @@ struct AnimalArticleView: View {
         GeometryReader { geo in
             let minY = geo.frame(in: .scrollView).minY
             let stretch = max(0, minY)
-            let parallax = minY < 0 ? -minY * 0.35 : 0
-            ZStack(alignment: .bottomLeading) {
-
-                AnimalPhoto(animal: animal, size: .hero)
-                    .frame(width: geo.size.width, height: heroHeight + stretch)
-                    .offset(y: parallax)
-
-                LinearGradient(stops: [
-                    .init(color: .black.opacity(0.35), location: 0),
-                    .init(color: .clear, location: 0.22),
-                    .init(color: .clear, location: 0.45),
-                    .init(color: .black.opacity(0.78), location: 1),
-                ], startPoint: .top, endPoint: .bottom)
-
-                heroTitle
-                    .padding(.horizontal, 24)
-                    .padding(.bottom, 58)
-                    .offset(y: parallax * 0.4)
-                    .opacity(minY < 0 ? Double(max(0, 1 + minY / 320)) : 1)
+            let parallax = minY < 0 ? -minY * 0.3 : 0
+            ZStack(alignment: .bottom) {
+                // Backdrop: the same photo, blurred, filling whatever the photo doesn't.
+                AnimalPhoto(animal: animal, size: .card)
+                    .blur(radius: 30)
+                    .scaleEffect(1.2)
+                    .overlay(Color.black.opacity(0.15))
+                if let heroImage {
+                    Image(uiImage: heroImage)
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: geo.size.width, height: heroHeight + stretch - topInset,
+                               alignment: .bottom)
+                        .transition(.opacity)
+                }
+                LinearGradient(colors: [.black.opacity(0.35), .clear], startPoint: .top, endPoint: .center)
+                    .frame(height: topInset * 2)
+                    .frame(maxHeight: .infinity, alignment: .top)
+                Image(systemName: "arrow.up.left.and.arrow.down.right")
+                    .font(.footnote.weight(.bold))
+                    .foregroundStyle(.white)
+                    .frame(width: 32, height: 32)
+                    .background(.ultraThinMaterial, in: Circle())
+                    .environment(\.colorScheme, .dark)
+                    .padding(12)
+                    .frame(maxWidth: .infinity, alignment: .trailing)
+                    .accessibilityHidden(true)
             }
+            .offset(y: parallax)
             .frame(width: geo.size.width, height: heroHeight + stretch)
             .clipped()
             .offset(y: -stretch)
+            .contentShape(Rectangle())
+            .onTapGesture { showPhoto = true }
+            .accessibilityElement()
+            .accessibilityLabel("Photo of the \(animal.name)")
+            .accessibilityHint("Opens the photo full screen")
+            .accessibilityAddTraits(.isButton)
         }
         .frame(height: heroHeight)
+        .animation(.easeOut(duration: 0.35), value: heroImage == nil)
         .onGeometryChange(for: Bool.self) { geo in
-            geo.frame(in: .scrollView).minY < -(heroHeight - 140)
+            geo.frame(in: .scrollView).minY < -(heroHeight - topInset - 20)
         } action: { past in
             withAnimation(.easeInOut(duration: 0.25)) { pastHero = past }
         }
     }
 
     private var heroTitle: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            Eyebrow(eyebrowText, color: .white.opacity(0.85))
+        VStack(alignment: .leading, spacing: 8) {
+            Eyebrow(eyebrowText, color: accent)
             Text(animal.name)
                 .font(FaunaFont.display(titleSize))
-                .foregroundStyle(.white)
                 .lineLimit(3)
                 .minimumScaleFactor(0.7)
-                .shadow(color: .black.opacity(0.35), radius: 12, y: 4)
             Text(animal.scientificName)
                 .font(.system(.title3, design: .serif).italic())
-                .foregroundStyle(.white.opacity(0.85))
+                .foregroundStyle(.secondary)
             HStack(spacing: 8) {
-                GroupPill(group: animal.group)
-                StatusPill(status: animal.status, onDark: true)
+                Label(animal.group.singular, systemImage: animal.group.symbol)
+                    .font(.caption.weight(.semibold))
+                    .foregroundStyle(animal.group.color)
+                    .padding(.horizontal, 10)
+                    .padding(.vertical, 6)
+                    .background(animal.group.color.opacity(0.13), in: Capsule())
+                StatusPill(status: animal.status)
             }
             .padding(.top, 4)
         }
@@ -158,6 +194,8 @@ struct AnimalArticleView: View {
 
     private var content: some View {
         VStack(alignment: .leading, spacing: 36) {
+            heroTitle
+
             VStack(alignment: .leading, spacing: 18) {
                 HStack(spacing: 6) {
                     Image(systemName: "book.pages")
@@ -171,13 +209,13 @@ struct AnimalArticleView: View {
                     .foregroundStyle(accent)
                     .fixedSize(horizontal: false, vertical: true)
 
-                Text(animal.lede)
+                Text(store.measured(animal.lede))
                     .font(FaunaFont.lede)
                     .lineSpacing(6)
                     .fixedSize(horizontal: false, vertical: true)
             }
 
-            FactGrid(facts: animal.facts, tint: accent)
+            FactGrid(facts: animal.facts.map { Fact(label: $0.label, value: store.measured($0.value)) }, tint: accent)
                 .id("facts")
 
             ArticleSection(title: "Where it lives", symbol: "map.fill", tint: accent) {
@@ -186,7 +224,7 @@ struct AnimalArticleView: View {
                         .frame(height: 210)
                         .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
                         .overlay(alignment: .bottomLeading) {
-                            Label(animal.range, systemImage: "location.fill")
+                            Label(store.measured(animal.range), systemImage: "location.fill")
                                 .font(.footnote.weight(.semibold))
                                 .foregroundStyle(.white)
                                 .lineLimit(2)
@@ -196,7 +234,7 @@ struct AnimalArticleView: View {
                                 .environment(\.colorScheme, .dark)
                                 .padding(10)
                         }
-                    Paragraph(animal.home)
+                    Paragraph(store.measured(animal.home))
                     FlowLayout(spacing: 6) {
                         ForEach(animal.regions) { region in
                             Label(region.title, systemImage: region.symbol)
@@ -210,15 +248,27 @@ struct AnimalArticleView: View {
                 }
             }
 
+            if let anatomy = animal.anatomy, !anatomy.isEmpty {
+                ArticleSection(title: "Body and senses", symbol: "eye.fill", tint: accent) {
+                    Paragraph(store.measured(anatomy))
+                }
+            }
+
             ArticleSection(title: "How it lives", symbol: "leaf.fill", tint: accent) {
-                Paragraph(animal.life)
+                Paragraph(store.measured(animal.life))
+            }
+
+            if let family = animal.family, !family.isEmpty {
+                ArticleSection(title: "Family life", symbol: "figure.2.and.child.holdinghands", tint: accent) {
+                    Paragraph(store.measured(family))
+                }
             }
 
             ArticleSection(title: "What makes it remarkable", symbol: "sparkles", tint: accent) {
-                Paragraph(animal.remarkable)
+                Paragraph(store.measured(animal.remarkable))
             }
 
-            DidYouKnowCard(text: animal.didYouKnow, tint: accent)
+            DidYouKnowCard(text: store.measured(animal.didYouKnow), tint: accent)
                 .id("didYouKnow")
 
             ArticleSection(title: "Its future", symbol: "heart.fill", tint: accent) {
@@ -226,7 +276,13 @@ struct AnimalArticleView: View {
                     ConservationScale(status: animal.status)
                         .padding(16)
                         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
-                    Paragraph(animal.outlook)
+                    Paragraph(store.measured(animal.outlook))
+                }
+            }
+
+            if let people = animal.people, !people.isEmpty {
+                ArticleSection(title: "People and the \(animal.name)", symbol: "person.2.fill", tint: accent) {
+                    Paragraph(store.measured(people))
                 }
             }
 
@@ -241,7 +297,7 @@ struct AnimalArticleView: View {
             }
         }
         .padding(.horizontal, 22)
-        .padding(.top, 30)
+        .padding(.top, 24)
         .padding(.bottom, 48)
     }
 

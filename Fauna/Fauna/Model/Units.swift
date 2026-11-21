@@ -1,0 +1,122 @@
+import Foundation
+
+/// How measurements are shown. Automatic follows Settings › General › Language & Region.
+enum UnitPreference: String, Codable, CaseIterable, Identifiable {
+    case automatic, metric, imperial
+    var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .automatic: "Automatic"
+        case .metric: "Metric"
+        case .imperial: "Imperial"
+        }
+    }
+
+    var usesImperial: Bool {
+        switch self {
+        case .metric: false
+        case .imperial: true
+        case .automatic: Locale.current.measurementSystem == .us
+        }
+    }
+}
+
+/// Rewrites the metric measurements in Fauna's text ("3–6 kg", "4,500 kilometres",
+/// "up to 30 m", "100 km/h") into US customary units. Content is written in metric.
+enum UnitText {
+    private struct Rule {
+        let factor: Double
+        let unit: String
+        let unitPlural: String
+        /// Above this many target units, switch to the bigger unit (inches → feet).
+        var promote: (limit: Double, factor: Double, unit: String, plural: String)? = nil
+    }
+
+    private static let rules: [String: Rule] = {
+        let inch = Rule(factor: 1 / 2.54, unit: "in", unitPlural: "in", promote: (36, 1 / 12, "ft", "ft"))
+        let mm = Rule(factor: 1 / 25.4, unit: "in", unitPlural: "in")
+        let ft = Rule(factor: 3.28084, unit: "ft", unitPlural: "ft")
+        let feetWord = Rule(factor: 3.28084, unit: "foot", unitPlural: "feet")
+        let mi = Rule(factor: 0.621371, unit: "mi", unitPlural: "mi")
+        let miWord = Rule(factor: 0.621371, unit: "mile", unitPlural: "miles")
+        let oz = Rule(factor: 1 / 28.3495, unit: "oz", unitPlural: "oz", promote: (32, 1 / 16, "lb", "lb"))
+        let ozWord = Rule(factor: 1 / 28.3495, unit: "ounce", unitPlural: "ounces")
+        let lb = Rule(factor: 2.20462, unit: "lb", unitPlural: "lb")
+        let lbWord = Rule(factor: 2.20462, unit: "pound", unitPlural: "pounds")
+        let tons = Rule(factor: 1.10231, unit: "ton", unitPlural: "tons")
+        let mph = Rule(factor: 0.621371, unit: "mph", unitPlural: "mph")
+        let mps = Rule(factor: 2.23694, unit: "mph", unitPlural: "mph")
+        let inWord = Rule(factor: 1 / 2.54, unit: "inch", unitPlural: "inches",
+                          promote: (36, 1 / 12, "foot", "feet"))
+        return [
+            "km/h": mph, "m/s": mps,
+            "mm": mm, "cm": inch, "m": ft, "km": mi, "g": oz, "kg": lb,
+            "tonne": tons, "tonnes": tons,
+            "millimetre": mm, "millimetres": mm,
+            "centimetre": inWord, "centimetres": inWord,
+            "metre": feetWord, "metres": feetWord, "meter": feetWord, "meters": feetWord,
+            "kilometre": miWord, "kilometres": miWord, "kilometer": miWord, "kilometers": miWord,
+            "gram": ozWord, "grams": ozWord,
+            "kilogram": lbWord, "kilograms": lbWord,
+        ]
+    }()
+
+    private static let number = #"\d[\d,]*(?:\.\d+)?"#
+    private static let regex: NSRegularExpression = {
+        let units = rules.keys.sorted { $0.count > $1.count }
+            .map { NSRegularExpression.escapedPattern(for: $0) }
+            .joined(separator: "|")
+        let pattern = "(\(number))(?:(\\s?(?:–|-|to|and)\\s?)(\(number)))?\\s?(\(units))(?![A-Za-z])"
+        return try! NSRegularExpression(pattern: pattern)
+    }()
+
+    static func localize(_ text: String, imperial: Bool) -> String {
+        guard imperial else { return text }
+        let ns = text as NSString
+        var result = ""
+        var cursor = 0
+        for match in regex.matches(in: text, range: NSRange(location: 0, length: ns.length)) {
+            let unitKey = ns.substring(with: match.range(at: 4))
+            guard let rule = rules[unitKey],
+                  let a = value(ns.substring(with: match.range(at: 1))) else { continue }
+            let b = match.range(at: 3).location != NSNotFound ? value(ns.substring(with: match.range(at: 3))) : nil
+            let joiner = match.range(at: 2).location != NSNotFound ? ns.substring(with: match.range(at: 2)) : nil
+
+            var factor = rule.factor
+            var unit = (b ?? a) * factor == 1 ? rule.unit : rule.unitPlural
+            if let p = rule.promote, max(a, b ?? a) * factor >= p.limit {
+                factor *= p.factor
+                unit = p.plural
+            }
+            var out = format(a * factor)
+            if let b, let joiner { out += joiner + format(b * factor) }
+            out += " " + unit
+
+            result += ns.substring(with: NSRange(location: cursor, length: match.range.location - cursor))
+            result += out
+            cursor = match.range.location + match.range.length
+        }
+        result += ns.substring(from: cursor)
+        return result
+    }
+
+    private static func value(_ s: String) -> Double? {
+        Double(s.replacingOccurrences(of: ",", with: ""))
+    }
+
+    /// Two significant figures for small values, whole numbers in the middle, rounded tens and
+    /// hundreds for big ones, so converted numbers don't look falsely precise.
+    private static func format(_ v: Double) -> String {
+        let rounded: Double
+        switch v {
+        case ..<1: rounded = (v * 100).rounded() / 100
+        case ..<10: rounded = (v * 10).rounded() / 10
+        case ..<100: rounded = v.rounded()
+        case ..<1000: rounded = (v / 5).rounded() * 5
+        case ..<10000: rounded = (v / 50).rounded() * 50
+        default: rounded = (v / 100).rounded() * 100
+        }
+        return rounded.formatted(.number.precision(.fractionLength(0...2)))
+    }
+}

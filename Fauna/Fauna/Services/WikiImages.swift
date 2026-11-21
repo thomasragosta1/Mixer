@@ -8,7 +8,7 @@ actor WikiImages {
     static let shared = WikiImages()
 
     /// Wikimedia serves thumbnails at a set of standard widths.
-    enum Size: Int { case card = 500, hero = 1280 }
+    enum Size: Int { case card = 500, hero = 1280, full = 1920 }
 
     private let session: URLSession
     private let memory = NSCache<NSString, UIImage>()

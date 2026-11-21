@@ -18,6 +18,10 @@ struct Animal: Codable, Identifiable, Hashable {
     let life: String
     let remarkable: String
     let outlook: String
+    /// Longer-read sections; optional so older content still decodes.
+    let anatomy: String?
+    let family: String?
+    let people: String?
     let didYouKnow: String
     let facts: [Fact]
     let quiz: [QuizQuestion]
@@ -31,7 +35,7 @@ struct Animal: Codable, Identifiable, Hashable {
 
     /// Reading time for the article body, rounded up to whole minutes.
     var readingMinutes: Int {
-        let words = [lede, home, life, remarkable, outlook, didYouKnow]
+        let words = [lede, home, life, remarkable, outlook, didYouKnow, anatomy ?? "", family ?? "", people ?? ""]
             .reduce(0) { $0 + $1.split(separator: " ").count }
         return max(1, Int((Double(words) / 220).rounded(.up)))
     }
