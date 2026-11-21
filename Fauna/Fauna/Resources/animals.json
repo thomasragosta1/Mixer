@@ -5,43 +5,82 @@
     "scientificName": "Ambystoma mexicanum",
     "wikipediaTitle": "Axolotl",
     "group": "amphibian",
-    "regions": ["centralAmerica"],
+    "regions": [
+      "centralAmerica"
+    ],
     "range": "Only the canals of Lake Xochimilco, at the southern edge of Mexico City",
     "status": "CR",
-    "coordinate": { "latitude": 19.26, "longitude": -99.10 },
+    "coordinate": {
+      "latitude": 19.26,
+      "longitude": -99.1
+    },
     "mapSpan": 0.8,
     "tagline": "The salamander that never grows up",
     "lede": "Most salamanders trade their gills for lungs and leave the water. The axolotl never does. It spends its whole life looking like an oversized tadpole with a permanent smile, feathery gills fanning out from its head like a crown.",
     "home": "Wild axolotls live in just one place on Earth: the canals and wetlands of Xochimilco, a remnant of the great lake that once surrounded the Aztec capital. They need cool, clean, still water with plenty of plants to hide in.",
+    "anatomy": "An axolotl's most striking features are the three pairs of feathery gills that sweep back from its head. Each stalk is fringed with fine filaments that are packed with blood vessels, which is why they often look pink or red; the more filaments, the more oxygen it can pull from the water. Its eyes are small and lidless, and its eyesight is poor, so it relies heavily on smell and on a lateral line, a row of pressure-sensitive cells along each side that feels the faint ripples made by moving prey. Wild axolotls are dark, mottled olive and brown with gold flecks, ideal for hiding on a muddy bed. The pale pink, golden and white axolotls in pet shops come from captive lines. Its teeth are tiny cones used to grip rather than chew, so prey is swallowed whole. Unusually, it carries a huge genome: about ten times more DNA than a human.",
     "life": "Axolotls hunt by ambush, waiting on the muddy bottom and then sucking in worms, insect larvae, small crustaceans and fish with a sudden gulp. They breathe through their gills, their skin, and simple lungs, swimming up now and then to gulp air.",
+    "family": "Axolotls breed in the cool months, from roughly December to June. A courting male nudges the female and performs a sort of slow waggling dance, then deposits small packets of sperm on the lake bed. The female picks one up with her cloaca and later lays between a few hundred and around a thousand eggs, sticking them one by one to water plants and stones. The eggs hatch after about two weeks into tiny larvae that must start hunting almost immediately, first on microscopic animals, then on larger prey as they grow. Neither parent looks after the young, and adults will eat eggs and larvae, including their own. Axolotls can breed when they are about a year old. In captivity, a single female may spawn several times a year, which is one reason the species is so common in laboratories even while it vanishes in the wild.",
     "remarkable": "Scientists call it neoteny: the axolotl keeps its juvenile features for life and still breeds. Even stranger, it can regrow lost limbs, its tail, parts of its spinal cord and even parts of its heart and brain, without scarring. Labs around the world study it to learn how.",
     "outlook": "Millions of axolotls live in aquariums and labs, but in the wild they are critically endangered. Pollution, the spread of Mexico City, and introduced carp and tilapia that eat their eggs have pushed the wild population to the edge. Local farmers are restoring traditional chinampa canals as refuges.",
+    "people": "The Aztecs ate axolotls and featured them in their stories, and for centuries they were sold in Mexico City markets as food and medicine. European scientists first saw living axolotls in 1864, when a batch was sent to Paris. To everyone's astonishment, a few of them later transformed into land-dwelling salamanders, revealing that the axolotl could change but normally doesn't. Since then it has become one of the most studied amphibians in the world, used in research on regeneration, embryos and cancer. In modern Mexico it is a cultural icon: it appears on the 50-peso banknote, in murals, festivals and toys, and has a museum devoted to it in Chapultepec Park. Scientists from the National Autonomous University of Mexico work with local farmers in Xochimilco to keep canals clean and create refuges, and visitors can 'adopt' an axolotl to fund the work.",
     "didYouKnow": "The name comes from Nahuatl and is often linked to Xolotl, the Aztec god of fire and lightning, who was said to have transformed into an axolotl to escape death.",
     "facts": [
-      { "label": "Length", "value": "15–30 cm" },
-      { "label": "Weight", "value": "60–230 g" },
-      { "label": "Lifespan", "value": "10–15 years" },
-      { "label": "Diet", "value": "Worms, larvae, small fish" }
+      {
+        "label": "Length",
+        "value": "15–30 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "60–230 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "10–15 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Worms, larvae, small fish"
+      }
     ],
     "quiz": [
       {
         "prompt": "Where do axolotls live in the wild?",
-        "choices": ["The canals of Xochimilco, Mexico City", "Mountain streams in the Andes", "Caves in southern Europe", "Rice paddies in Japan"],
+        "choices": [
+          "The canals of Xochimilco, Mexico City",
+          "Mountain streams in the Andes",
+          "Caves in southern Europe",
+          "Rice paddies in Japan"
+        ],
         "explanation": "Wild axolotls survive only in the canals and wetlands of Xochimilco, at the edge of Mexico City."
       },
       {
         "prompt": "What does neoteny mean for an axolotl?",
-        "choices": ["It keeps its juvenile features, like gills, as an adult", "It can change color to match its surroundings", "It sleeps through the whole winter", "It lays eggs on land"],
+        "choices": [
+          "It keeps its juvenile features, like gills, as an adult",
+          "It can change color to match its surroundings",
+          "It sleeps through the whole winter",
+          "It lays eggs on land"
+        ],
         "explanation": "Axolotls stay in their larval form for life, keeping their feathery gills even when they breed."
       },
       {
         "prompt": "Which of these can an axolotl regrow?",
-        "choices": ["A lost limb, without scarring", "Only its tail tip", "Nothing at all", "Only its teeth"],
+        "choices": [
+          "A lost limb, without scarring",
+          "Only its tail tip",
+          "Nothing at all",
+          "Only its teeth"
+        ],
         "explanation": "Axolotls can regenerate whole limbs, their tails, parts of the spinal cord, heart and brain."
       }
     ],
     "charities": [
-      { "name": "Amphibian Ark", "url": "https://www.amphibianark.org", "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction." }
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction."
+      }
     ]
   },
   {
@@ -50,44 +89,89 @@
     "scientificName": "Danaus plexippus",
     "wikipediaTitle": "Monarch butterfly",
     "group": "insect",
-    "regions": ["naEast", "naWest", "centralAmerica"],
+    "regions": [
+      "naEast",
+      "naWest",
+      "centralAmerica"
+    ],
     "range": "Across North America in summer; eastern monarchs winter in the mountains of central Mexico",
     "status": "VU",
-    "coordinate": { "latitude": 40.0, "longitude": -88.0 },
+    "coordinate": {
+      "latitude": 40.0,
+      "longitude": -88.0
+    },
     "mapSpan": 40,
     "tagline": "A featherweight that crosses a continent",
     "lede": "Each autumn, monarchs from southern Canada and the eastern United States fly up to 4,500 kilometres to a few mountain forests in Mexico. None of them has ever been there before. Their great-grandparents left the previous spring.",
     "home": "In summer, monarchs spread across meadows, roadsides and gardens wherever milkweed grows, from the Maritimes to the Prairies. In winter, the eastern population packs into oyamel fir forests high in central Mexico, millions of butterflies hanging from single trees like orange leaves.",
+    "anatomy": "Like all butterflies, a monarch has four wings covered in thousands of tiny overlapping scales, which create its orange and black pattern. You can tell males from females by looking at the hind wings: males have a small black spot on a vein of each hind wing, made of special scent scales, and slightly thinner black veins. Monarchs taste with their feet, which helps a female check that a leaf is milkweed before laying an egg on it. Adults feed through a long, coiled tube called a proboscis that unrolls to sip nectar. Their compound eyes can see ultraviolet light, and the clock genes in their antennae are essential to navigation: in experiments, monarchs with painted-over antennae lose their sense of direction. The striped caterpillar has two pairs of black tentacles, one at each end, which it uses to feel its way and may help confuse predators.",
     "life": "A monarch caterpillar eats only milkweed. Over about two weeks it grows roughly two thousand times heavier, then hangs upside down and forms a jade-green chrysalis studded with gold dots. Summer adults live just a few weeks, but the autumn generation can live for eight months.",
+    "family": "A female monarch lays each egg singly, usually on the underside of a young milkweed leaf, and may lay several hundred over her short life. The egg hatches in three to five days. The caterpillar's first meal is its own eggshell, then it starts on the milkweed, carefully chewing a circle to drain the leaf's sticky latex before eating. It sheds its skin four times as it grows. After about two weeks, it hangs head-down in a J shape and forms its chrysalis, which turns from jade green to see-through just before the adult emerges, roughly ten to fourteen days later. Summer butterflies mate and lay eggs within days. The autumn generation is different: shorter days and cooler temperatures switch off breeding, so these butterflies put all their energy into migrating and surviving the winter, mating only when spring arrives.",
     "remarkable": "Milkweed contains toxins that monarchs store in their bodies, making them taste terrible to birds. Their bright orange wings are a warning sign. On migration they navigate using a sun compass in their antennae and brain that corrects for the time of day.",
     "outlook": "Monarch numbers have fallen sharply over recent decades. Milkweed has been lost to herbicides and development, the Mexican forests face logging, and extreme weather hits the migration. Planting native milkweed and nectar flowers is one of the most direct ways anyone can help.",
+    "people": "For centuries, people in central Mexico knew that millions of butterflies appeared each November, around the Day of the Dead, and many saw them as the returning souls of ancestors. Scientists didn't know where North America's monarchs went until 1975, when a team following decades of tagging work by Canadian zoologist Fred Urquhart found the overwintering forests in the mountains west of Mexico City. Today part of that area is protected as the Monarch Butterfly Biosphere Reserve, a UNESCO World Heritage Site, and tourism provides local communities with income. Citizen scientists across Canada and the United States tag monarchs with tiny stickers, count them at milkweed patches, and plant 'waystations' of milkweed and nectar flowers in gardens and schoolyards. The monarch is also the official insect or butterfly of several US states, and a symbol of the three countries working together to protect it.",
     "didYouKnow": "It takes three to four generations of monarchs, each living only weeks, to travel north again in spring. Then a single long-lived generation makes the whole trip south.",
     "facts": [
-      { "label": "Wingspan", "value": "8.9–10.2 cm" },
-      { "label": "Weight", "value": "About 0.5 g" },
-      { "label": "Lifespan", "value": "2–6 weeks; up to 8 months" },
-      { "label": "Diet", "value": "Milkweed; adults sip nectar" }
+      {
+        "label": "Wingspan",
+        "value": "8.9–10.2 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 0.5 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "2–6 weeks; up to 8 months"
+      },
+      {
+        "label": "Diet",
+        "value": "Milkweed; adults sip nectar"
+      }
     ],
     "quiz": [
       {
         "prompt": "What is the only food a monarch caterpillar eats?",
-        "choices": ["Milkweed", "Oak leaves", "Clover", "Pine needles"],
+        "choices": [
+          "Milkweed",
+          "Oak leaves",
+          "Clover",
+          "Pine needles"
+        ],
         "explanation": "Monarch caterpillars feed only on milkweed, which is why planting it matters so much."
       },
       {
         "prompt": "Where do eastern monarchs spend the winter?",
-        "choices": ["Fir forests in the mountains of central Mexico", "Underground in Canadian meadows", "Florida swamps", "Caribbean beaches"],
+        "choices": [
+          "Fir forests in the mountains of central Mexico",
+          "Underground in Canadian meadows",
+          "Florida swamps",
+          "Caribbean beaches"
+        ],
         "explanation": "They gather by the millions in oyamel fir forests high in central Mexico."
       },
       {
         "prompt": "Why are monarchs so brightly colored?",
-        "choices": ["To warn predators that they are toxic", "To attract bees", "To stay warm in the sun", "To hide among autumn leaves"],
+        "choices": [
+          "To warn predators that they are toxic",
+          "To attract bees",
+          "To stay warm in the sun",
+          "To hide among autumn leaves"
+        ],
         "explanation": "Toxins from milkweed make monarchs taste bad, and their orange wings advertise it."
       }
     ],
     "charities": [
-      { "name": "Xerces Society", "url": "https://www.xerces.org", "blurb": "Protects pollinators and other invertebrates, including monarch habitat across North America." },
-      { "name": "Monarch Watch", "url": "https://www.monarchwatch.org", "blurb": "Tracks the migration with citizen scientists and helps people plant milkweed waystations." }
+      {
+        "name": "Xerces Society",
+        "url": "https://www.xerces.org",
+        "blurb": "Protects pollinators and other invertebrates, including monarch habitat across North America."
+      },
+      {
+        "name": "Monarch Watch",
+        "url": "https://www.monarchwatch.org",
+        "blurb": "Tracks the migration with citizen scientists and helps people plant milkweed waystations."
+      }
     ]
   },
   {
@@ -96,43 +180,82 @@
     "scientificName": "Bombus affinis",
     "wikipediaTitle": "Bombus affinis",
     "group": "insect",
-    "regions": ["naEast"],
+    "regions": [
+      "naEast"
+    ],
     "range": "Once from southern Ontario and Quebec to Georgia; now scattered patches of the US Midwest and Northeast",
     "status": "CR",
-    "coordinate": { "latitude": 43.5, "longitude": -82.0 },
+    "coordinate": {
+      "latitude": 43.5,
+      "longitude": -82.0
+    },
     "mapSpan": 18,
     "tagline": "A common bee that quietly vanished",
     "lede": "Twenty-five years ago, this fuzzy bee buzzed through gardens and meadows from southern Ontario to the Carolinas. Then, within a decade, it disappeared from most of its range. In 2017 it became the first bumble bee protected under the US Endangered Species Act.",
     "home": "Rusty patched bumble bees need open grasslands, prairies and woodland edges with flowers blooming from early spring to autumn, plus undisturbed ground for nests and winter shelter. In Canada it was last confirmed in 2009, at Pinery Provincial Park in Ontario.",
+    "anatomy": "Rusty patched bumble bees are round, fuzzy bees with mostly yellow and black bands. Queens are larger than workers and lack the rusty patch, which is why identification needs a close look. Their dense hair keeps them warm and collects pollen, which they comb into pollen baskets on their hind legs, flat shiny areas fringed with stiff hairs. Like other bumble bees, they have a fairly long tongue for reaching nectar deep inside flowers. Females have a smooth stinger they can use more than once, but bumble bees are gentle and sting only when handled or when their nest is threatened. They see ultraviolet light and patterns on petals that are invisible to us, and they can even sense the weak electric charge of a flower, which changes briefly after another bee has visited, helping them skip flowers that have just been emptied.",
     "life": "Each colony lasts a single year. A queen wakes in spring, finds an old rodent burrow, and raises the first workers alone. By late summer the colony may hold hundreds of bees. Then new queens mate, dig into the soil, and are the only ones to survive the winter.",
+    "family": "Each spring, a mated queen emerges from her winter hideaway in loose soil and searches for a nest site, often an abandoned rodent burrow. She builds a wax pot of nectar and a small mound of pollen, lays her first eggs on it, and keeps them warm by shivering her flight muscles and pressing her body against the brood, much like a bird on its nest. These first daughters become workers, taking over foraging while the queen stays home to lay eggs. Rusty patched colonies grow large for bumble bees and remain active into autumn. Late in the season, the colony switches to raising males and new queens. They leave to mate, the old queen and her workers die as the weather cools, and only the young queens dig in for the winter, carrying the next year's colonies inside them.",
     "remarkable": "Bumble bees can 'buzz pollinate': they grip a flower and vibrate their flight muscles so fast that pollen shakes loose. Tomatoes, blueberries and cranberries are pollinated best this way. Workers wear a small rusty-orange patch on their abdomen, which gives the species its name.",
     "outlook": "The species has lost around ninety percent of its population. Habitat loss, pesticides such as neonicotinoids, diseases spread from managed bees, and a warming climate all play a part. Leaving lawns a little wild, planting early and late bloomers and skipping pesticides gives native bees a chance.",
+    "people": "The rusty patched bumble bee was once so common that few people noticed it. Its collapse was spotted in the late 1990s by researchers studying bumble bees in the US Midwest, and in 2017 it became the first bumble bee, and the first bee in the continental United States, to be listed as endangered. In Canada it is listed as Endangered under the Species at Risk Act, and surveys continue in southern Ontario in the hope that it still survives there. Much of what we know about its current range comes from volunteers: projects such as Bumble Bee Watch ask people to photograph bumble bees and upload them so experts can identify them. Gardeners can help by planting native flowers like wild bergamot, goldenrod and asters, leaving some leaf litter and bare ground, and avoiding pesticides.",
     "didYouKnow": "Bumble bees can fly in cooler weather than most bees because they shiver their flight muscles to warm up before take-off.",
     "facts": [
-      { "label": "Length", "value": "1–2 cm" },
-      { "label": "Colony", "value": "Up to ~1,000 bees" },
-      { "label": "Lifespan", "value": "Weeks; queens ~1 year" },
-      { "label": "Diet", "value": "Nectar and pollen" }
+      {
+        "label": "Length",
+        "value": "1–2 cm"
+      },
+      {
+        "label": "Colony",
+        "value": "Up to ~1,000 bees"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Weeks; queens ~1 year"
+      },
+      {
+        "label": "Diet",
+        "value": "Nectar and pollen"
+      }
     ],
     "quiz": [
       {
         "prompt": "Where does the bee's name come from?",
-        "choices": ["A rusty-orange patch on the workers' abdomen", "The rust-colored flowers it visits", "Its nests in old metal machinery", "The color of its queen's wings"],
+        "choices": [
+          "A rusty-orange patch on the workers' abdomen",
+          "The rust-colored flowers it visits",
+          "Its nests in old metal machinery",
+          "The color of its queen's wings"
+        ],
         "explanation": "Workers and males carry a small rusty patch in the middle of their backs."
       },
       {
         "prompt": "Which members of a colony survive the winter?",
-        "choices": ["Only the newly mated queens", "The whole colony, huddled together", "Only the males", "None; new bees hatch from eggs in spring"],
+        "choices": [
+          "Only the newly mated queens",
+          "The whole colony, huddled together",
+          "Only the males",
+          "None; new bees hatch from eggs in spring"
+        ],
         "explanation": "The colony dies in autumn; only the young queens overwinter in the soil."
       },
       {
         "prompt": "What is buzz pollination?",
-        "choices": ["Vibrating flight muscles to shake pollen loose", "Flying in a figure-eight to signal others", "Humming to attract a mate", "Collecting pollen only at night"],
+        "choices": [
+          "Vibrating flight muscles to shake pollen loose",
+          "Flying in a figure-eight to signal others",
+          "Humming to attract a mate",
+          "Collecting pollen only at night"
+        ],
         "explanation": "Bumble bees vibrate on a flower so pollen shakes free, which crops like tomatoes need."
       }
     ],
     "charities": [
-      { "name": "Xerces Society", "url": "https://www.xerces.org", "blurb": "Leads bumble bee conservation and runs the Bumble Bee Watch community science project." }
+      {
+        "name": "Xerces Society",
+        "url": "https://www.xerces.org",
+        "blurb": "Leads bumble bee conservation and runs the Bumble Bee Watch community science project."
+      }
     ]
   },
   {
@@ -141,43 +264,82 @@
     "scientificName": "Actias luna",
     "wikipediaTitle": "Luna moth",
     "group": "insect",
-    "regions": ["naEast"],
+    "regions": [
+      "naEast"
+    ],
     "range": "Deciduous forests of eastern North America, from Nova Scotia and southern Ontario to Florida and Texas",
     "status": "NE",
-    "coordinate": { "latitude": 44.0, "longitude": -77.0 },
+    "coordinate": {
+      "latitude": 44.0,
+      "longitude": -77.0
+    },
     "mapSpan": 22,
     "tagline": "A ghost-green moth that lives for a week",
     "lede": "On a warm night in early summer, something the size of a hand drifts past the porch light: pale green wings, long trailing tails, and two eyespots. The luna moth is one of the largest and loveliest moths in North America, and it has only days to live.",
     "home": "Luna moths live in hardwood forests across eastern North America. In Canada they occur from Saskatchewan to Nova Scotia, where there is one generation each summer. Farther south, two or three generations hatch each year.",
+    "anatomy": "Luna moths belong to the giant silk moths, a family of big, heavy-bodied moths. Their wings are a soft lime green, edged with a band of purple or brown in the north and yellow in the south, and each wing carries a transparent eyespot that may startle predators. The long hind-wing tails twist as the moth flies. Males have very broad, feathery antennae covered in sensors that can detect a few molecules of a female's scent; females have narrower antennae. Adults have no working mouth and a reduced digestive system, since they never feed. The caterpillar is bright green with small red or yellow bumps, and grows to about 7 centimetres. When threatened it rears up, clicks its jaws and may regurgitate a bitter fluid. Its colour matches the leaves it eats so well that most people never notice one.",
     "life": "Caterpillars spend weeks munching the leaves of birch, walnut, hickory, sweetgum and persimmon, then spin a papery cocoon wrapped in leaves. The adult that emerges has no working mouth. It never eats, living on stored energy for about a week, just long enough to find a mate.",
+    "family": "Female luna moths release their scent, called a pheromone, after dark, usually around midnight, and males fly in from far away. They mate through the early morning. The next evening the female begins laying around 200 to 300 eggs, in small groups on the leaves of the trees her caterpillars will eat. The eggs hatch after about a week. The caterpillars molt five times over several weeks, eating heavily. When fully grown, a caterpillar spins a thin silk cocoon wrapped in leaves, which usually falls to the forest floor. In Canada, the luna moth spends the winter as a pupa inside this cocoon, hidden in the leaf litter, and the adult emerges in late spring or early summer. Further south, summer generations follow one another quickly, and the last of the year overwinters the same way.",
     "remarkable": "Those long hindwing tails are a defense against bats. As the moth flies, the twisting tails scatter the bat's sonar echoes, so the bat strikes the tail instead of the body. Males can smell a female's scent from a great distance with their broad, feathery antennae.",
     "outlook": "Luna moths are still widespread, but like many night insects they are affected by pesticides, habitat loss and artificial light, which draws them away from mating and into the paths of predators. Turning off outdoor lights on summer nights is a simple way to help.",
+    "people": "The luna moth was named in the 1700s after the Roman moon goddess Luna, for its pale colour and night flights. It has become one of the most recognisable moths in North America and a favourite of photographers and nature lovers, appearing on a 1987 US postage stamp. Because the adults are so short-lived and only active at night, seeing one is often a memorable event. Like many night-flying insects, luna moths are drawn to artificial light, where they waste precious time and energy and are easier for birds and bats to catch. Many conservation groups now recommend turning off unnecessary outdoor lights or using warm, shielded bulbs. Keeping native trees such as birch, walnut and hickory, and leaving fallen leaves under them over the winter, protects the cocoons that are resting there until spring.",
     "didYouKnow": "A luna caterpillar can make a clicking sound with its mandibles and spit a bitter fluid when it is disturbed.",
     "facts": [
-      { "label": "Wingspan", "value": "8–11.5 cm" },
-      { "label": "Adult life", "value": "About 1 week" },
-      { "label": "Generations", "value": "1 per year in Canada" },
-      { "label": "Diet", "value": "Leaves (caterpillars only)" }
+      {
+        "label": "Wingspan",
+        "value": "8–11.5 cm"
+      },
+      {
+        "label": "Adult life",
+        "value": "About 1 week"
+      },
+      {
+        "label": "Generations",
+        "value": "1 per year in Canada"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves (caterpillars only)"
+      }
     ],
     "quiz": [
       {
         "prompt": "Why doesn't an adult luna moth eat?",
-        "choices": ["It has no working mouth", "It only drinks rainwater", "It eats only once, on its first night", "It shares food from its caterpillar siblings"],
+        "choices": [
+          "It has no working mouth",
+          "It only drinks rainwater",
+          "It eats only once, on its first night",
+          "It shares food from its caterpillar siblings"
+        ],
         "explanation": "Adult luna moths have no functional mouthparts and live on energy stored as caterpillars."
       },
       {
         "prompt": "What do the long tails on its wings do?",
-        "choices": ["Confuse hunting bats' sonar", "Help it swim", "Store extra energy", "Attract fireflies"],
+        "choices": [
+          "Confuse hunting bats' sonar",
+          "Help it swim",
+          "Store extra energy",
+          "Attract fireflies"
+        ],
         "explanation": "The spinning tails scatter bat echolocation, so bats aim for the tails instead of the body."
       },
       {
         "prompt": "How long does an adult luna moth live?",
-        "choices": ["About a week", "About a year", "One hour", "Three months"],
+        "choices": [
+          "About a week",
+          "About a year",
+          "One hour",
+          "Three months"
+        ],
         "explanation": "With no way to eat, the adult lives for roughly seven to ten days."
       }
     ],
     "charities": [
-      { "name": "Nature Conservancy of Canada", "url": "https://www.natureconservancy.ca", "blurb": "Protects forests and wetlands across Canada, including eastern hardwood habitat." }
+      {
+        "name": "Nature Conservancy of Canada",
+        "url": "https://www.natureconservancy.ca",
+        "blurb": "Protects forests and wetlands across Canada, including eastern hardwood habitat."
+      }
     ]
   },
   {
@@ -186,43 +348,84 @@
     "scientificName": "Gavia immer",
     "wikipediaTitle": "Common loon",
     "group": "bird",
-    "regions": ["naEast", "naWest", "arctic"],
+    "regions": [
+      "naEast",
+      "naWest",
+      "arctic"
+    ],
     "range": "Breeds on lakes across Canada and the northern US; winters on Atlantic and Pacific coasts",
     "status": "LC",
-    "coordinate": { "latitude": 47.5, "longitude": -79.5 },
+    "coordinate": {
+      "latitude": 47.5,
+      "longitude": -79.5
+    },
     "mapSpan": 20,
     "tagline": "The voice of the northern lake",
     "lede": "If you've heard a wild, echoing wail across a dark lake, you've heard a loon. Few sounds say 'northern wilderness' more clearly. The common loon is so woven into Canadian life that it appears on the one-dollar coin, which everyone calls the 'loonie'.",
     "home": "In summer, loons nest on clear, quiet lakes from Newfoundland to Alaska, usually one pair per small lake. They need clean water and plenty of fish. In winter they move to ice-free ocean coasts, trading their checkerboard breeding plumage for plain grey.",
+    "anatomy": "The common loon has a long, dagger-shaped bill, a black head with a glossy green sheen in summer, a striped white necklace, and a black-and-white checkerboard back. Its eyes are a deep red, which may help it see underwater, where red light fades quickly. Loons have special muscles that change the shape of their lenses, so they can focus both in air and underwater. Their bones are solid rather than hollow, and they can squeeze air out of their feathers and lungs to sink quietly. Their legs sit so far back that they cannot easily walk, but they make loons powerful underwater swimmers that chase fish with their feet. Their wings are small for their weight, which is why they need a long run across the water to take off. In the air, though, loons are fast fliers, reaching speeds of over 100 km/h.",
     "life": "Loons are built for diving. Unlike most birds, their bones are solid rather than hollow, so they can sink easily, and they can dive to around 60 metres while chasing fish. Chicks ride on their parents' backs for their first weeks, staying warm and safe from pike and snapping turtles.",
+    "family": "Loons usually pair up with the same partner for several years and return to the same lake. They build a simple nest of plants right at the water's edge, because they can barely walk, and lay one or two olive-brown eggs. Both parents take turns incubating for about four weeks. Chicks can swim almost immediately but ride on their parents' backs for the first couple of weeks to rest and stay warm. Both parents feed them small fish and insects, and the chicks learn to dive and catch their own food over the summer. By around 11 or 12 weeks, the young can fly. In autumn the adults leave first, and the young follow later on their own. Young loons stay on the ocean for two or three years before returning north to breed.",
     "remarkable": "A loon's legs sit far back on its body, perfect for swimming but terrible for walking, so it barely shuffles on land. To take off, it runs across the water for a long runway. Its calls each mean something: the wail keeps in touch, the tremolo signals alarm, and only males yodel to defend territory.",
     "outlook": "Loons are widespread, but they are sensitive to lead fishing tackle, which they swallow with grit, to mercury and acid rain, and to boat wakes that swamp shoreline nests. Lead-free tackle and giving nesting loons space help a lot.",
+    "people": "Loons have long been important in Indigenous stories across North America. In some Anishinaabe traditions the loon is a clan animal, and its calls appear in many legends. To settlers and cottagers, the loon's wail came to symbolise the northern wilderness, and it appears on the Canadian one-dollar coin, introduced in 1987, which gave the coin its nickname 'loonie'. It is Ontario's provincial bird and Minnesota's state bird. Loons are sensitive indicators of lake health. Many are poisoned after swallowing lead sinkers or jigs, which they mistake for the pebbles they swallow to help digestion, so several provinces and states encourage or require lead-free tackle. Volunteers across Canada take part in loon surveys each summer, counting pairs and chicks to track how lakes are doing.",
     "didYouKnow": "The common loon is the provincial bird of Ontario and the state bird of Minnesota.",
     "facts": [
-      { "label": "Length", "value": "66–91 cm" },
-      { "label": "Weight", "value": "2.2–7.6 kg" },
-      { "label": "Lifespan", "value": "Up to 30 years" },
-      { "label": "Diet", "value": "Fish" }
+      {
+        "label": "Length",
+        "value": "66–91 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2.2–7.6 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 30 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish"
+      }
     ],
     "quiz": [
       {
         "prompt": "Which coin features the common loon?",
-        "choices": ["The Canadian one-dollar coin", "The US quarter", "The British pound", "The euro"],
+        "choices": [
+          "The Canadian one-dollar coin",
+          "The US quarter",
+          "The British pound",
+          "The euro"
+        ],
         "explanation": "The loon on Canada's dollar coin is why it's nicknamed the 'loonie'."
       },
       {
         "prompt": "Why do loons struggle to walk on land?",
-        "choices": ["Their legs are set far back on their bodies", "They have no toes", "Their wings are too heavy", "They are blind out of the water"],
+        "choices": [
+          "Their legs are set far back on their bodies",
+          "They have no toes",
+          "Their wings are too heavy",
+          "They are blind out of the water"
+        ],
         "explanation": "Legs placed far back are great for diving but make walking almost impossible."
       },
       {
         "prompt": "Which call do only male loons make?",
-        "choices": ["The yodel", "The wail", "The hoot", "The tremolo"],
+        "choices": [
+          "The yodel",
+          "The wail",
+          "The hoot",
+          "The tremolo"
+        ],
         "explanation": "Only males yodel, and they use it to defend their territory."
       }
     ],
     "charities": [
-      { "name": "Birds Canada", "url": "https://www.birdscanada.org", "blurb": "Runs the Canadian Lakes Loon Survey and other bird conservation science." }
+      {
+        "name": "Birds Canada",
+        "url": "https://www.birdscanada.org",
+        "blurb": "Runs the Canadian Lakes Loon Survey and other bird conservation science."
+      }
     ]
   },
   {
@@ -231,43 +434,84 @@
     "scientificName": "Fratercula arctica",
     "wikipediaTitle": "Atlantic puffin",
     "group": "bird",
-    "regions": ["naEast", "europe", "arctic"],
+    "regions": [
+      "naEast",
+      "europe",
+      "arctic"
+    ],
     "range": "North Atlantic coasts: Newfoundland and Labrador, Maine, Iceland, Norway, the Faroes and Britain",
     "status": "VU",
-    "coordinate": { "latitude": 63.4, "longitude": -20.3 },
+    "coordinate": {
+      "latitude": 63.4,
+      "longitude": -20.3
+    },
     "mapSpan": 30,
     "tagline": "The clown of the North Atlantic",
     "lede": "With its rainbow bill, orange feet and sad-clown eyes, the Atlantic puffin looks like a cartoon. But this little seabird is a tough ocean traveller that spends most of its life far out at sea, coming ashore only to raise a single chick.",
     "home": "Puffins nest in huge colonies on grassy clifftops and rocky islands across the North Atlantic. Iceland holds the largest share of the world's population, and Newfoundland's Witless Bay hosts North America's biggest colony. In winter they scatter across the open ocean.",
+    "anatomy": "An Atlantic puffin is a small, chunky seabird with a black back, white belly and white face. In summer its large, triangular bill is striped with blue, yellow and bright orange, with a fleshy yellow rosette at the corners of the mouth. Small dark horn-like plates above and below its eyes give it a sad expression. Puffins' bills even glow under ultraviolet light, which other puffins may be able to see. Their wings are short and strong, built more for 'flying' underwater than in the air, so they must flap very fast to stay aloft. Underwater they use their wings to pursue fish and their orange feet to steer, and they can dive down to around 60 metres, although most dives are much shallower. Spines on the roof of the mouth and a rough tongue hold caught fish in place while the puffin keeps hunting.",
     "life": "Puffins dig burrows with their bills and feet and lay one egg. Both parents bring fish to the chick, called a puffling. Using a rough tongue and spines on the roof of their mouths, they can hold a row of small fish crosswise in their bills, often ten or more at once.",
+    "family": "Puffins usually return to the same mate and the same burrow every year, greeting each other by tapping and rubbing their bills together, a display called billing. They dig their burrows up to about a metre long using their bills and feet, or take over rabbit holes, and line the nest chamber with grass and feathers. The female lays a single white egg, and both parents take turns incubating it for about six weeks. The chick, called a puffling, is fed small fish several times a day. After about six weeks in the dark burrow, the puffling leaves at night, flying or tumbling down to the sea, and swims away from land. It spends its first few years entirely at sea and returns to the colony when it is around three to five years old, first breeding at about five.",
     "remarkable": "Puffins 'fly' underwater with their wings, diving for sand eels, herring and capelin. In the air they flap up to 400 times a minute and can reach about 80 km/h. Their famous bill is only bright in the breeding season; in winter they shed its colorful outer plates.",
     "outlook": "Puffins are listed as vulnerable because European colonies have declined, linked to warming seas that move their prey, overfishing and storms. In Maine, the long-running Project Puffin brought puffins back to islands where they had vanished a century ago.",
+    "people": "People in Iceland, the Faroe Islands and Norway have hunted puffins for food for centuries, using long-handled nets to catch birds in flight, and in some places limited hunting continues today. In the 1800s and early 1900s, hunting wiped out puffin colonies on many islands in the Gulf of Maine. In 1973, American biologist Stephen Kress started Project Puffin, bringing young puffins from Newfoundland to Eastern Egg Rock in Maine and using wooden decoys and mirrors to persuade returning birds the island was safe. It worked, and puffins now nest on several Maine islands again. The Atlantic puffin is Newfoundland and Labrador's provincial bird and a huge draw for tourism, from Witless Bay to Iceland's Westman Islands, where every summer local children rescue lost pufflings attracted to town lights.",
     "didYouKnow": "On some Icelandic islands, children rescue confused pufflings that land in town at night and release them toward the sea the next morning.",
     "facts": [
-      { "label": "Length", "value": "28–30 cm" },
-      { "label": "Weight", "value": "About 500 g" },
-      { "label": "Lifespan", "value": "Often 20+ years" },
-      { "label": "Diet", "value": "Small fish" }
+      {
+        "label": "Length",
+        "value": "28–30 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 500 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Often 20+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Small fish"
+      }
     ],
     "quiz": [
       {
         "prompt": "What is a baby puffin called?",
-        "choices": ["A puffling", "A pufflet", "A cygnet", "A squab"],
+        "choices": [
+          "A puffling",
+          "A pufflet",
+          "A cygnet",
+          "A squab"
+        ],
         "explanation": "Puffin chicks are called pufflings."
       },
       {
         "prompt": "What happens to a puffin's colorful bill in winter?",
-        "choices": ["It sheds its colorful outer plates and looks duller", "It turns bright blue", "It grows longer", "It stays exactly the same"],
+        "choices": [
+          "It sheds its colorful outer plates and looks duller",
+          "It turns bright blue",
+          "It grows longer",
+          "It stays exactly the same"
+        ],
         "explanation": "The bright bill is a breeding-season display; the outer plates are shed in winter."
       },
       {
         "prompt": "How do puffins carry fish back to their chick?",
-        "choices": ["Many at once, held crosswise in the bill", "Swallowed whole, then coughed up", "Clutched in their feet", "One at a time only"],
+        "choices": [
+          "Many at once, held crosswise in the bill",
+          "Swallowed whole, then coughed up",
+          "Clutched in their feet",
+          "One at a time only"
+        ],
         "explanation": "A rough tongue and mouth spines let puffins hold a whole row of fish."
       }
     ],
     "charities": [
-      { "name": "National Audubon Society", "url": "https://www.audubon.org", "blurb": "Home of Project Puffin, which restored puffin colonies on the coast of Maine." }
+      {
+        "name": "National Audubon Society",
+        "url": "https://www.audubon.org",
+        "blurb": "Home of Project Puffin, which restored puffin colonies on the coast of Maine."
+      }
     ]
   },
   {
@@ -276,43 +520,83 @@
     "scientificName": "Castor canadensis",
     "wikipediaTitle": "North American beaver",
     "group": "mammal",
-    "regions": ["naEast", "naWest"],
+    "regions": [
+      "naEast",
+      "naWest"
+    ],
     "range": "Streams, ponds and lakes across almost all of Canada and the United States",
     "status": "LC",
-    "coordinate": { "latitude": 46.0, "longitude": -76.0 },
+    "coordinate": {
+      "latitude": 46.0,
+      "longitude": -76.0
+    },
     "mapSpan": 25,
     "tagline": "Nature's master builder",
     "lede": "Few animals reshape the land like the beaver. With nothing but teeth, paws and determination, a family of beavers can turn a trickling stream into a pond, flood a forest, and create a wetland that hundreds of other species depend on.",
     "home": "Beavers live wherever there is slow water and trees: from Arctic river deltas to desert streams. They build dome-shaped lodges of sticks and mud with underwater entrances, so they can come and go unseen and stay safe from wolves and coyotes.",
+    "anatomy": "The beaver is North America's largest rodent. Its thick brown fur has two layers: long, coarse guard hairs and a dense, soft underfur that traps air and keeps the skin dry. Beavers comb oil from glands near their tail through their fur with a split claw on each hind foot. Their big, webbed hind feet push them through the water, while the small, nimble front paws carry sticks, mud and food. The famous tail is flat, scaly and wide; it works as a rudder, a prop to lean on while gnawing, a fat store for winter, and an alarm, slapped hard on the water to warn the family of danger. Beavers can close their lips behind their front teeth, so they can gnaw underwater without swallowing water, and valves close their ears and nostrils when they dive.",
     "life": "Beavers are vegetarians. They eat bark, twigs, leaves and water plants, and in autumn they store a pile of branches underwater near the lodge to feed on through the winter, even when the pond is frozen. Families of parents and young stay together for about two years.",
+    "family": "Beavers live in family groups, usually a breeding pair that stays together for many years, plus their young from this year and last year. Kits are born in late spring inside the lodge, typically two to four at a time. They have fur and open eyes at birth, and can swim within a day, though they cannot dive well at first because their fur is so buoyant. The whole family helps raise them: yearlings bring food and help repair the dam and lodge. Young beavers stay with their parents for about two years, learning to build, then leave to find their own territory, sometimes travelling many kilometres. Families mark their territory with mounds of mud scented with castoreum, a musky substance from glands near the tail, and keep strangers away.",
     "remarkable": "A beaver's front teeth never stop growing, and their orange color comes from iron in the enamel, which makes them extra tough. Clear inner eyelids act like goggles, valves seal their ears and nose, and they can stay underwater for about 15 minutes.",
     "outlook": "The fur trade nearly wiped beavers out by the 1800s. Today they have bounced back, and scientists now see them as allies: beaver ponds store water during droughts, slow floods, filter pollutants and create rich habitat for fish, birds and frogs.",
+    "people": "The beaver shaped Canada's history. Beaver fur made a dense, waterproof felt prized for hats in Europe, and from the 1600s the fur trade drove exploration and settlement, founded companies like the Hudson's Bay Company, and changed the lives of many Indigenous peoples who trapped and traded furs. By the late 1800s beavers had been wiped out across much of the continent. Protection, reintroductions and the end of the fashion for beaver hats allowed them to return, and today there may be millions. Beavers can cause trouble, flooding roads and farmland, but many communities now use 'beaver deceivers', pipes that let water flow through a dam without the beavers noticing, so people and beavers can coexist. The beaver appears on the Canadian five-cent coin, and Parks Canada's logo features one.",
     "didYouKnow": "The beaver became an official national symbol of Canada in 1975.",
     "facts": [
-      { "label": "Length", "value": "74–90 cm + tail" },
-      { "label": "Weight", "value": "11–32 kg" },
-      { "label": "Lifespan", "value": "10–12 years" },
-      { "label": "Diet", "value": "Bark, twigs, water plants" }
+      {
+        "label": "Length",
+        "value": "74–90 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "11–32 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "10–12 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Bark, twigs, water plants"
+      }
     ],
     "quiz": [
       {
         "prompt": "Why are a beaver's teeth orange?",
-        "choices": ["Iron in the enamel makes them tougher", "Stains from eating carrots", "They're coated in mud", "It's a sign of old age"],
+        "choices": [
+          "Iron in the enamel makes them tougher",
+          "Stains from eating carrots",
+          "They're coated in mud",
+          "It's a sign of old age"
+        ],
         "explanation": "Iron-rich enamel gives beaver teeth their color and extra strength."
       },
       {
         "prompt": "How do beavers get food in winter when the pond freezes?",
-        "choices": ["They store branches underwater near the lodge", "They hibernate without eating", "They migrate south", "They hunt fish under the ice"],
+        "choices": [
+          "They store branches underwater near the lodge",
+          "They hibernate without eating",
+          "They migrate south",
+          "They hunt fish under the ice"
+        ],
         "explanation": "In autumn beavers stockpile branches underwater to eat all winter."
       },
       {
         "prompt": "Why are beaver dams good for other wildlife?",
-        "choices": ["They create wetlands that many species need", "They keep predators away from rivers", "They make water warmer for fish", "They don't help other wildlife"],
+        "choices": [
+          "They create wetlands that many species need",
+          "They keep predators away from rivers",
+          "They make water warmer for fish",
+          "They don't help other wildlife"
+        ],
         "explanation": "Beaver ponds become rich wetlands for fish, birds, amphibians and insects."
       }
     ],
     "charities": [
-      { "name": "Canadian Wildlife Federation", "url": "https://cwf-fcf.org", "blurb": "Works on wetland and freshwater conservation across Canada." }
+      {
+        "name": "Canadian Wildlife Federation",
+        "url": "https://cwf-fcf.org",
+        "blurb": "Works on wetland and freshwater conservation across Canada."
+      }
     ]
   },
   {
@@ -321,43 +605,85 @@
     "scientificName": "Alces alces",
     "wikipediaTitle": "Moose",
     "group": "mammal",
-    "regions": ["naEast", "naWest", "europe", "asia"],
+    "regions": [
+      "naEast",
+      "naWest",
+      "europe",
+      "asia"
+    ],
     "range": "Northern forests of Canada, Alaska, the northern US, Scandinavia and Siberia",
     "status": "LC",
-    "coordinate": { "latitude": 48.5, "longitude": -71.0 },
+    "coordinate": {
+      "latitude": 48.5,
+      "longitude": -71.0
+    },
     "mapSpan": 30,
     "tagline": "The giant of the northern forest",
     "lede": "The moose is the largest deer that has ever lived in modern times, standing taller at the shoulder than most people. Despite their size and gangly legs, moose move silently through dense forest and are surprisingly graceful swimmers.",
     "home": "Moose live in the boreal forests that ring the top of the world, from Newfoundland to Alaska and across Scandinavia and Russia. They love places where forest meets water: lakes, bogs and marshes full of the plants they eat.",
+    "anatomy": "A moose looks almost mismatched: long legs, a short neck, a humped back, and a long face with an overhanging, flexible upper lip that strips leaves from branches. That big nose is more than it seems; it contains a large, complex nasal cavity, and moose can close their nostrils when they put their heads underwater to feed. Under the chin hangs a flap of skin called a bell or dewlap, whose purpose is still debated. Their coat is made of long, hollow guard hairs over a woolly undercoat, excellent insulation in winter but a problem in summer heat, which is one reason moose spend so much time in water. Long legs let them step over fallen logs and walk through snow up to about 90 centimetres deep. A bull's broad, palm-shaped antlers can weigh over 30 kilograms and are grown in about five months each year.",
     "life": "Moose are browsers, eating leaves, twigs and bark from willow, birch and aspen. In summer they wade into ponds to eat water plants, even dunking their heads underwater. An adult can eat more than 30 kilograms of food a day in summer.",
+    "family": "Moose mate in September and October, the season called the rut. Bulls stop eating much, call with deep grunts, thrash bushes with their antlers and sometimes fight rivals by locking antlers and shoving. Cows call with long, moaning wails. After about eight months, in late May or June, the cow gives birth to one calf, sometimes twins, in a sheltered spot, often near water. Calves are reddish-brown and can stand within a day. They grow fast on rich milk, gaining well over a kilogram a day, and can outrun a person within a few days. The mother is fiercely protective, and the calf stays with her for about a year, until she drives it away shortly before her next calf is born. Wolves and bears take many calves, so their first year is the most dangerous.",
     "remarkable": "A bull's antlers can span more than 1.8 metres and are among the fastest-growing tissues of any animal. They are shed every winter and regrown each spring. Moose can swim for kilometres, dive several metres, and their long legs carry them through deep snow.",
     "outlook": "Moose are common across most of their range, but in some southern areas they are declining. Warmer winters let winter ticks thrive, and thousands of ticks can weaken a single moose. A brain worm carried by deer is another growing threat.",
+    "people": "The name 'moose' comes from an Algonquian word, often translated as 'twig eater' or 'he strips off'. For thousands of years moose have been a major source of meat, hide, sinew and bone for Indigenous peoples across the North, and hunting remains important in many communities today. Moose are hugely popular with wildlife watchers, and parks such as Algonquin in Ontario draw visitors hoping to see one by the road. They can also be dangerous: collisions between cars and moose are a serious hazard in Newfoundland, Scandinavia and elsewhere, and a frightened or protective moose can charge. Moose were introduced to Newfoundland in 1904, where only a handful were released, and there are now over 100,000. Wildlife biologists track moose health closely, studying the effects of ticks, parasites and warming winters.",
     "didYouKnow": "In Britain and much of Europe, this animal is called an 'elk'. In North America, 'elk' means a completely different deer, the wapiti.",
     "facts": [
-      { "label": "Shoulder height", "value": "1.4–2.1 m" },
-      { "label": "Weight", "value": "Up to ~700 kg" },
-      { "label": "Lifespan", "value": "15–25 years" },
-      { "label": "Diet", "value": "Leaves, twigs, water plants" }
+      {
+        "label": "Shoulder height",
+        "value": "1.4–2.1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~700 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "15–25 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves, twigs, water plants"
+      }
     ],
     "quiz": [
       {
         "prompt": "What happens to a bull moose's antlers each winter?",
-        "choices": ["They fall off and regrow in spring", "They turn white", "They stop growing forever", "They are kept for life"],
+        "choices": [
+          "They fall off and regrow in spring",
+          "They turn white",
+          "They stop growing forever",
+          "They are kept for life"
+        ],
         "explanation": "Moose shed their antlers every winter and grow a new set each year."
       },
       {
         "prompt": "What is the moose called in Britain?",
-        "choices": ["Elk", "Reindeer", "Stag", "Caribou"],
+        "choices": [
+          "Elk",
+          "Reindeer",
+          "Stag",
+          "Caribou"
+        ],
         "explanation": "In British English the moose is called an elk, which confuses many North Americans."
       },
       {
         "prompt": "Which growing threat is linked to warmer winters?",
-        "choices": ["Winter ticks", "Sunburn", "Lack of snow to drink", "Too many antlers"],
+        "choices": [
+          "Winter ticks",
+          "Sunburn",
+          "Lack of snow to drink",
+          "Too many antlers"
+        ],
         "explanation": "Milder winters let winter ticks survive in huge numbers on moose."
       }
     ],
     "charities": [
-      { "name": "Nature Conservancy of Canada", "url": "https://www.natureconservancy.ca", "blurb": "Protects large forest and wetland landscapes where moose live." }
+      {
+        "name": "Nature Conservancy of Canada",
+        "url": "https://www.natureconservancy.ca",
+        "blurb": "Protects large forest and wetland landscapes where moose live."
+      }
     ]
   },
   {
@@ -366,43 +692,82 @@
     "scientificName": "Chelydra serpentina",
     "wikipediaTitle": "Common snapping turtle",
     "group": "reptile",
-    "regions": ["naEast"],
+    "regions": [
+      "naEast"
+    ],
     "range": "Ponds, marshes and slow rivers from southern Canada east of the Rockies to the Gulf of Mexico",
     "status": "LC",
-    "coordinate": { "latitude": 44.5, "longitude": -79.0 },
+    "coordinate": {
+      "latitude": 44.5,
+      "longitude": -79.0
+    },
     "mapSpan": 20,
     "tagline": "A dinosaur-looking survivor of the pond",
     "lede": "With a jagged shell, a long saw-toothed tail and a hooked beak, the snapping turtle looks like it walked out of the age of dinosaurs. Its lineage is ancient, and its reputation is fierce, but underwater it is a shy animal that would rather swim away.",
     "home": "Snapping turtles live in almost any fresh water with a soft bottom: ponds, marshes, lakes and slow rivers, from Nova Scotia and southern Ontario to the Gulf Coast. They spend most of their time buried in mud with just their eyes and nostrils showing.",
+    "anatomy": "The common snapping turtle has a large head, a powerful hooked beak and long neck that can shoot forward surprisingly far, reaching nearly halfway back along its own shell. The top shell, or carapace, has three ridges of bumps that wear smoother with age and is often coated with algae, which helps with camouflage. The bottom shell, the plastron, is small and cross-shaped, leaving the legs free but offering little protection, which is why snappers rely on their bite. Their long tail has a row of saw-like plates along the top. Snappers have strong claws for digging and walking along the bottom; they are poor swimmers compared with many turtles and usually walk underwater instead. They have good night vision and an excellent sense of smell, and can sense vibrations through the water. Their bite is strong, but they rarely bite anything they don't intend to eat.",
     "life": "Snappers eat nearly anything: water plants, fish, frogs, insects, small birds and carrion, which makes them valuable pond cleaners. In the north they spend months beneath the ice, barely moving, and can live for decades. Females may not breed until they are 15 to 20 years old.",
+    "family": "Snapping turtles mate in spring and summer, often in the water. In late May and June, females leave the water to find sunny, sandy or gravelly spots to dig nests, often road shoulders, railway beds or gardens, sometimes travelling more than a kilometre. A female digs a flask-shaped hole with her back legs and lays between about 20 and 40 round, white eggs, sometimes more, then covers them and leaves. Raccoons, skunks and foxes dig up many nests. Those that survive hatch in late summer or early autumn; in the coldest places the hatchlings may stay in the nest over winter. Nest temperature decides their sex: cooler and warmer extremes produce females, while middle temperatures produce males. The hatchlings, about the size of a coin, head straight for water. Very few survive to adulthood.",
     "remarkable": "Unlike most turtles, a snapper can't pull fully into its small shell. On land, where it can't swim away, it defends itself with a lightning-fast strike, which is where its name comes from. The temperature of the nest decides whether eggs hatch as males or females.",
     "outlook": "Snapping turtles are listed as Special Concern in Canada. Because they mature so slowly, losing even a few adults hurts a population. Many females are killed by cars while crossing roads to nest each June. Helping one across, in the direction it's heading, can save decades of life.",
+    "people": "Snapping turtles have a fearsome reputation, but most people never encounter one unless they meet a female crossing a road in June. In many places, especially Ontario, people help them cross safely: lifting them carefully by the back of the shell with both hands, or nudging them along with a car mat, always in the direction they were going. Picking one up by the tail can hurt its spine. Some Indigenous creation stories describe the world being formed on the back of a great turtle, and North America is called Turtle Island by many Indigenous peoples. Snapping turtles have been hunted for food in parts of their range, and in Ontario hunting them was finally banned in 2017 because adults are so slow to replace. Turtle rescue centres now treat injured turtles and even incubate eggs from females killed on roads.",
     "didYouKnow": "Snapping turtles can't easily breathe while buried under winter ice, so they absorb some oxygen from the water through skin in their throat and rear end.",
     "facts": [
-      { "label": "Shell length", "value": "20–36 cm" },
-      { "label": "Weight", "value": "4.5–16 kg" },
-      { "label": "Lifespan", "value": "40+ years" },
-      { "label": "Diet", "value": "Almost anything" }
+      {
+        "label": "Shell length",
+        "value": "20–36 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "4.5–16 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "40+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Almost anything"
+      }
     ],
     "quiz": [
       {
         "prompt": "Why do snapping turtles snap on land?",
-        "choices": ["Their shell is too small to hide in", "They are always hungry", "They can't see well in daylight", "To communicate with other turtles"],
+        "choices": [
+          "Their shell is too small to hide in",
+          "They are always hungry",
+          "They can't see well in daylight",
+          "To communicate with other turtles"
+        ],
         "explanation": "They can't retract fully into their small shell, so on land they defend themselves by striking."
       },
       {
         "prompt": "What decides whether a hatchling is male or female?",
-        "choices": ["The temperature of the nest", "The size of the egg", "The mother's age", "The time of year it hatches"],
+        "choices": [
+          "The temperature of the nest",
+          "The size of the egg",
+          "The mother's age",
+          "The time of year it hatches"
+        ],
         "explanation": "Like many turtles, snappers have temperature-dependent sex determination."
       },
       {
         "prompt": "What is a major threat to nesting females?",
-        "choices": ["Being hit by cars crossing roads", "Running out of food", "Sunburn on the beach", "Losing their shells"],
+        "choices": [
+          "Being hit by cars crossing roads",
+          "Running out of food",
+          "Sunburn on the beach",
+          "Losing their shells"
+        ],
         "explanation": "Females often cross roads in June to lay eggs, and many are killed by traffic."
       }
     ],
     "charities": [
-      { "name": "Turtle Survival Alliance", "url": "https://turtlesurvival.org", "blurb": "Works worldwide to save turtles and tortoises from extinction." }
+      {
+        "name": "Turtle Survival Alliance",
+        "url": "https://turtlesurvival.org",
+        "blurb": "Works worldwide to save turtles and tortoises from extinction."
+      }
     ]
   },
   {
@@ -411,43 +776,82 @@
     "scientificName": "Pseudacris crucifer",
     "wikipediaTitle": "Spring peeper",
     "group": "amphibian",
-    "regions": ["naEast"],
+    "regions": [
+      "naEast"
+    ],
     "range": "Woodlands and wetlands of eastern North America, from Manitoba to the Maritimes and south to Florida",
     "status": "LC",
-    "coordinate": { "latitude": 45.0, "longitude": -73.5 },
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": -73.5
+    },
     "mapSpan": 20,
     "tagline": "A thumbnail-sized frog that freezes solid",
     "lede": "When the first warm rain falls on melting snow, the night fills with high, bell-like 'peep! peep!' calls. That chorus, one of the first signs of spring in eastern Canada, comes from frogs small enough to sit on a coin.",
     "home": "Spring peepers live in woodlands near ponds, swamps and flooded ditches across eastern North America. They spend most of the year hidden among leaf litter and low shrubs, gathering in shallow water only for a few weeks each spring to breed.",
+    "anatomy": "A spring peeper is a tiny tree frog, tan, brown or grey with a darker X-shaped mark across its back and a dark band between the eyes. Its skin can lighten or darken slightly to match its surroundings. Its fingers and toes end in round, sticky pads that let it climb grass stems and shrubs, although it spends most of its time near the ground. A male has a dark throat and a vocal sac that inflates like a balloon, almost as big as the frog itself, when it calls; the sac amplifies the sound so a single peeper can be heard far away. Like other frogs, the peeper breathes through its lungs and through its moist skin, and drinks by absorbing water through the skin of its belly. Its large eyes face forward and sideways, helping it judge distance when it leaps on insects.",
     "life": "Peepers hunt at night for small insects and spiders, climbing with sticky toe pads. Males call from the water's edge by inflating a throat sac like a bubblegum balloon. A full chorus can be heard from more than a kilometre away. Eggs hatch into tadpoles that become frogs by summer.",
+    "family": "In early spring, as soon as ice melts from ponds and flooded woods, males gather and call through the night. Each 'peep' takes a lot of energy, and males may call thousands of times an evening. Females choose males, often preferring faster or louder calls. Mating happens in shallow water, where the female lays around 800 to 1,000 eggs, one at a time or in small clusters, attached to underwater plants. The eggs hatch in about a week. The tadpoles feed on algae and tiny bits of plant matter and change into tiny frogs in two to three months, leaving the water in early summer. Many breeding pools are temporary and dry up by midsummer, which keeps out fish that would eat eggs and tadpoles, but also means tadpoles race against the water drying up.",
     "remarkable": "Spring peepers survive winter by partly freezing. Ice forms in their body, their heart stops, and they stop breathing. Their liver floods their cells with glucose, which acts like antifreeze and protects them. When the thaw comes, they warm up and hop away.",
     "outlook": "Spring peepers are still common, but like many amphibians they depend on small, temporary wetlands that are easily drained or filled in. Protecting vernal pools and keeping pesticides out of wet areas helps them and many other species.",
+    "people": "For many people in eastern Canada and the United States, the first peepers of the year are a beloved sign that winter is truly over, and in New England they are sometimes called 'pinkletinks'. Because they rely on small seasonal wetlands, peepers are used in volunteer frog-call surveys run in many provinces and states. Volunteers drive set routes on spring nights, stopping to listen and record which frog species are calling and how loudly, giving scientists a picture of how wetlands are faring year to year. Scientists studying how animals survive freezing have also learned a lot from frogs like peepers and wood frogs. Their natural antifreeze is of interest to medical researchers looking for better ways to preserve human organs and tissues for transplant.",
     "didYouKnow": "Its scientific name, crucifer, means 'cross-bearer', after the dark X-shaped mark on its back.",
     "facts": [
-      { "label": "Length", "value": "2–3.5 cm" },
-      { "label": "Weight", "value": "3–5 g" },
-      { "label": "Lifespan", "value": "About 3 years" },
-      { "label": "Diet", "value": "Small insects, spiders" }
+      {
+        "label": "Length",
+        "value": "2–3.5 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "3–5 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 3 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Small insects, spiders"
+      }
     ],
     "quiz": [
       {
         "prompt": "What mark does a spring peeper have on its back?",
-        "choices": ["A dark X shape", "Red spots", "A yellow stripe", "A white star"],
+        "choices": [
+          "A dark X shape",
+          "Red spots",
+          "A yellow stripe",
+          "A white star"
+        ],
         "explanation": "The X-shaped mark gives it the scientific name crucifer, 'cross-bearer'."
       },
       {
         "prompt": "How do spring peepers survive winter?",
-        "choices": ["They partly freeze, protected by glucose", "They migrate south", "They live deep in warm caves", "They stay active under the ice"],
+        "choices": [
+          "They partly freeze, protected by glucose",
+          "They migrate south",
+          "They live deep in warm caves",
+          "They stay active under the ice"
+        ],
         "explanation": "Glucose acts like antifreeze in their cells while ice forms in their bodies."
       },
       {
         "prompt": "When are peepers usually heard calling?",
-        "choices": ["On early spring nights", "On hot August afternoons", "Only during snowstorms", "At dawn in late autumn"],
+        "choices": [
+          "On early spring nights",
+          "On hot August afternoons",
+          "Only during snowstorms",
+          "At dawn in late autumn"
+        ],
         "explanation": "Their chorus is one of the first sounds of spring in eastern North America."
       }
     ],
     "charities": [
-      { "name": "Save The Frogs!", "url": "https://www.savethefrogs.com", "blurb": "Protects amphibian populations through education, research and habitat projects." }
+      {
+        "name": "Save The Frogs!",
+        "url": "https://www.savethefrogs.com",
+        "blurb": "Protects amphibian populations through education, research and habitat projects."
+      }
     ]
   },
   {
@@ -456,43 +860,82 @@
     "scientificName": "Homarus americanus",
     "wikipediaTitle": "American lobster",
     "group": "marineInvertebrate",
-    "regions": ["naEast"],
+    "regions": [
+      "naEast"
+    ],
     "range": "Rocky seafloor of the North Atlantic coast, from Labrador to North Carolina",
     "status": "LC",
-    "coordinate": { "latitude": 44.5, "longitude": -65.5 },
+    "coordinate": {
+      "latitude": 44.5,
+      "longitude": -65.5
+    },
     "mapSpan": 14,
     "tagline": "An armored giant that tastes with its legs",
     "lede": "The American lobster is the heaviest crustacean on Earth. The record holder, caught off Nova Scotia, weighed more than 20 kilograms. Lobsters can live for decades, perhaps much longer, growing a little bigger every time they shed their shells.",
     "home": "American lobsters live on rocky and muddy seafloors along the Atlantic coast, from shallow coves to depths of several hundred metres. The Gulf of Maine and Canada's Maritime provinces are the heart of their range and of a huge fishery.",
+    "anatomy": "An American lobster has a hard outer skeleton made of chitin and calcium, ten legs, and a long, muscular tail that ends in a fan. The first pair of legs carries the claws: a heavy, blunt crusher claw for breaking shells and a thinner cutter claw with sharp teeth for tearing. Lobsters can be right- or left-'handed', depending on which side the crusher grows. Their eyes sit on movable stalks and are good at detecting motion in dim light, though not detail. Long antennae feel their surroundings, while the short, branched antennules sample the water for scents, and tiny hairs on their walking legs and mouthparts taste food. Lobsters breathe through feathery gills tucked under the shell along their sides. Their blood is colourless or slightly blue because, like an octopus, they use copper-based hemocyanin to carry oxygen.",
     "life": "Lobsters hide in crevices by day and come out at night to eat fish, clams, crabs, sea urchins and worms. To grow, a lobster must molt: it cracks open its shell, wriggles out, and waits for a new soft shell to harden. Young lobsters molt many times a year.",
+    "family": "A female lobster mates soon after she molts, while her shell is still soft. She stores sperm and later fertilises her eggs as she lays them, gluing thousands to the underside of her tail, where they are called 'berries'. A large female can carry tens of thousands of eggs. She carries and cleans them for about 9 to 11 months, fanning them with water. When they hatch, the tiny larvae float near the surface for several weeks, drifting with the currents, molting several times; most are eaten by fish. Survivors settle to the bottom, where they hide in rocky crevices. Lobsters grow slowly and may take five to eight years to reach the size allowed for harvest. Older lobsters molt less often, perhaps once every year or two, and big ones may be decades old.",
     "remarkable": "Lobsters taste with tiny hairs on their legs and smell with their short antennae. They have one big crusher claw and one slim cutter claw, and they can regrow lost limbs. Their dark blue-green shells turn red when cooked, because heat releases a red pigment called astaxanthin.",
     "outlook": "The American lobster is not endangered, and careful rules like releasing egg-bearing females have kept the fishery strong. But warming water is pushing lobsters northward, and southern New England populations have collapsed while Canadian catches rose.",
+    "people": "In colonial New England and the Maritimes, lobsters were so abundant they washed up on beaches in piles and were fed to servants and prisoners and used as fertiliser. That changed in the 1800s with canning and railways, which let lobster be shipped inland, and today it is a luxury food and one of the most valuable fisheries in Canada and the United States, central to the economy and identity of many coastal towns. Fishers use rules to keep stocks healthy: minimum and maximum sizes, limited licences and seasons, and the practice of notching the tail of egg-bearing females and returning them so they can keep breeding. Scientists and fishers together track how warming water is shifting lobster populations, pushing them northward toward Atlantic Canada and away from southern New England.",
     "didYouKnow": "About one lobster in two million is born bright blue because of a genetic quirk.",
     "facts": [
-      { "label": "Length", "value": "20–60 cm" },
-      { "label": "Weight", "value": "0.5–4 kg; record 20 kg" },
-      { "label": "Lifespan", "value": "Decades" },
-      { "label": "Diet", "value": "Fish, clams, crabs" }
+      {
+        "label": "Length",
+        "value": "20–60 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "0.5–4 kg; record 20 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Decades"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish, clams, crabs"
+      }
     ],
     "quiz": [
       {
         "prompt": "Why do lobsters turn red when cooked?",
-        "choices": ["Heat releases a red pigment called astaxanthin", "They absorb color from the water", "Boiling burns the shell", "They are red all along, hidden by mud"],
+        "choices": [
+          "Heat releases a red pigment called astaxanthin",
+          "They absorb color from the water",
+          "Boiling burns the shell",
+          "They are red all along, hidden by mud"
+        ],
         "explanation": "Astaxanthin is bound to proteins in the shell until heat frees it."
       },
       {
         "prompt": "How does a lobster grow bigger?",
-        "choices": ["It molts, shedding its old shell", "Its shell stretches", "It adds new rings to its shell", "It stops growing after one year"],
+        "choices": [
+          "It molts, shedding its old shell",
+          "Its shell stretches",
+          "It adds new rings to its shell",
+          "It stops growing after one year"
+        ],
         "explanation": "Lobsters must molt and grow a new shell each time they get larger."
       },
       {
         "prompt": "How do lobsters taste their food?",
-        "choices": ["With tiny hairs on their legs", "With their eyes", "With their tail fan", "They can't taste at all"],
+        "choices": [
+          "With tiny hairs on their legs",
+          "With their eyes",
+          "With their tail fan",
+          "They can't taste at all"
+        ],
         "explanation": "Sensory hairs on their legs let lobsters taste what they walk on."
       }
     ],
     "charities": [
-      { "name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns for science-based fishing and healthy oceans." }
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns for science-based fishing and healthy oceans."
+      }
     ]
   },
   {
@@ -501,43 +944,82 @@
     "scientificName": "Panthera uncia",
     "wikipediaTitle": "Snow leopard",
     "group": "mammal",
-    "regions": ["asia"],
+    "regions": [
+      "asia"
+    ],
     "range": "High mountains of 12 countries in Central and South Asia, including the Himalayas and Altai",
     "status": "VU",
-    "coordinate": { "latitude": 36.5, "longitude": 76.0 },
+    "coordinate": {
+      "latitude": 36.5,
+      "longitude": 76.0
+    },
     "mapSpan": 25,
     "tagline": "The ghost of the mountains",
     "lede": "Snow leopards are so well hidden and so rare that many people who live in their mountains never see one. Smoky-grey fur with dark rosettes blends perfectly into rock and snow, earning this big cat its nickname: the ghost of the mountains.",
     "home": "Snow leopards roam steep, rocky slopes usually between 3,000 and 4,500 metres, across the Himalayas, the Tibetan Plateau, the Pamirs and the Altai. A single cat may patrol a territory of hundreds of square kilometres.",
+    "anatomy": "The snow leopard is a medium-sized big cat with a thick, smoky-grey to cream coat covered in dark rosettes and spots. Its fur can be up to 12 centimetres long on the belly, and its tail, almost as long as its body, is thick and furry. Its paws are large and wide, with fur on the soles that keeps them warm and spreads its weight on snow. Its forelimbs are short and powerful and its hind limbs long, giving it strength and agility for leaping across rocky slopes. The large nasal cavity warms cold air before it reaches the lungs. Its eyes are pale green or grey, unusual among big cats. Snow leopards have a partly ossified voice box that doesn't allow them to roar, so they communicate with hisses, growls, mews and a puffing sound called chuffing.",
     "life": "They hunt wild sheep and goats such as blue sheep and ibex, stalking on cliffs and pouncing from above, and also eat marmots, hares and birds. Snow leopards are solitary, keeping in touch with scent marks and scrapes. Mothers raise their cubs alone for about two years.",
+    "family": "Snow leopards mate in late winter, and the female gives birth after about three months, usually to two or three cubs, in a rocky den lined with her own fur. Cubs are born blind and helpless and open their eyes after about a week. They start eating meat at around two months and leave the den with their mother at about three months. For the next year and a half, she teaches them to hunt, and the family travels together across her territory. At around 18 to 22 months, the young become independent and leave to find their own range, which can be a dangerous time as they wander into areas with livestock and people. Males take no part in raising cubs. A female may have only a few litters in her lifetime.",
     "remarkable": "Everything about the snow leopard is built for cold: thick fur, a short muzzle, small ears and huge furry paws that work like snowshoes. Its long, thick tail helps with balance on cliffs and doubles as a scarf wrapped over its face. Unlike lions and tigers, it can't roar.",
     "outlook": "There are only a few thousand snow leopards left in the wild. They are threatened by poaching, retaliation killings when they take livestock, and climate change shrinking their habitat. Programs that insure herders' livestock and involve local communities have reduced conflict.",
-    "didYouKnow": "Snow leopards can leap more than nine metres in a single bound.",
+    "people": "Snow leopards have long been part of the cultures of Central and South Asia. In parts of the Himalayas, people see them as sacred, and Buddhist monasteries in the region help protect them. It appears on the emblems of cities such as Almaty and Bishkek, and both Kazakhstan and Kyrgyzstan treat it as a national symbol. Because they live in such remote mountains, they were rarely photographed until camera traps became common, and researchers now use these cameras, DNA from droppings and satellite collars to study them. Herders sometimes kill snow leopards after losing livestock. Conservation groups have reduced this by helping communities build predator-proof livestock pens, set up insurance schemes that compensate losses, and earn income from crafts and wildlife tourism, giving people a reason to keep snow leopards alive.",
+    "didYouKnow": "Snow leopards can leap more than 9 metres in a single bound.",
     "facts": [
-      { "label": "Length", "value": "75–150 cm + tail" },
-      { "label": "Weight", "value": "22–55 kg" },
-      { "label": "Lifespan", "value": "10–12 years wild" },
-      { "label": "Diet", "value": "Blue sheep, ibex, marmots" }
+      {
+        "label": "Length",
+        "value": "75–150 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "22–55 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "10–12 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Blue sheep, ibex, marmots"
+      }
     ],
     "quiz": [
       {
         "prompt": "Which of these can a snow leopard NOT do?",
-        "choices": ["Roar", "Leap several metres", "Hunt on steep cliffs", "Survive deep cold"],
+        "choices": [
+          "Roar",
+          "Leap several metres",
+          "Hunt on steep cliffs",
+          "Survive deep cold"
+        ],
         "explanation": "Unlike lions, tigers and jaguars, snow leopards cannot roar."
       },
       {
         "prompt": "How does a snow leopard use its long tail?",
-        "choices": ["For balance and as a scarf against the cold", "To swim through rivers", "To dig dens", "To signal danger to other cats"],
+        "choices": [
+          "For balance and as a scarf against the cold",
+          "To swim through rivers",
+          "To dig dens",
+          "To signal danger to other cats"
+        ],
         "explanation": "The thick tail helps balance on cliffs and wraps around the face for warmth."
       },
       {
         "prompt": "What are the snow leopard's main prey?",
-        "choices": ["Wild sheep and goats like blue sheep and ibex", "Fish from mountain lakes", "Yaks and wild horses", "Mostly insects"],
+        "choices": [
+          "Wild sheep and goats like blue sheep and ibex",
+          "Fish from mountain lakes",
+          "Yaks and wild horses",
+          "Mostly insects"
+        ],
         "explanation": "Blue sheep and ibex are their most important prey."
       }
     ],
     "charities": [
-      { "name": "Snow Leopard Trust", "url": "https://snowleopard.org", "blurb": "Works with communities across snow leopard range to protect the cats and their habitat." }
+      {
+        "name": "Snow Leopard Trust",
+        "url": "https://snowleopard.org",
+        "blurb": "Works with communities across snow leopard range to protect the cats and their habitat."
+      }
     ]
   },
   {
@@ -546,43 +1028,82 @@
     "scientificName": "Ailurus fulgens",
     "wikipediaTitle": "Red panda",
     "group": "mammal",
-    "regions": ["asia"],
+    "regions": [
+      "asia"
+    ],
     "range": "Temperate mountain forests of the eastern Himalayas: Nepal, India, Bhutan, Myanmar and China",
     "status": "EN",
-    "coordinate": { "latitude": 27.5, "longitude": 88.5 },
+    "coordinate": {
+      "latitude": 27.5,
+      "longitude": 88.5
+    },
     "mapSpan": 14,
     "tagline": "The original panda",
     "lede": "The red panda was called a 'panda' about fifty years before the giant panda was. Cat-sized, rust-red and ring-tailed, it spends most of its life in the trees of misty Himalayan forests, and it isn't a bear or a raccoon, but the last living member of its own family.",
     "home": "Red pandas live in cool, damp mountain forests with a thick understory of bamboo, usually between about 2,200 and 4,800 metres. Moss-covered trees give them places to rest, and their red and white coat blends with the red moss and white lichen.",
+    "anatomy": "A red panda is about the size of a large house cat, with thick rusty-red fur on its back, black legs and belly, and a long, bushy tail ringed with red and buff stripes. Its face is white with reddish 'tear' marks running from each eye, and it has upright, white-edged ears. The dark belly and legs may help camouflage it when seen from below against the dark canopy. Its fur is dense, and even the soles of its feet are furry, protecting them from cold and wet branches. Its sharp, semi-retractable claws and flexible ankles make it a superb climber. Red pandas have strong jaws and broad molar teeth for crushing bamboo, but their digestive system is short and simple, like a carnivore's, so they extract only a small fraction of the energy in what they eat.",
     "life": "Though they belong to the order of meat-eaters, red pandas eat mostly bamboo leaves and tender shoots, plus some fruit, acorns, eggs and insects. Bamboo is hard to digest, so they save energy: sleeping a lot, slowing their metabolism in cold weather, and curling their bushy tail around them like a blanket.",
+    "family": "Red pandas are solitary for most of the year and meet only to mate, in winter. After a pregnancy that can last from about three to five months, because the development of the embryo can be delayed, the female gives birth in early summer to one to four cubs, usually two, in a nest in a tree hollow or rock crevice. Before birth, she gathers leaves, moss and twigs to line it. The cubs are born with thick grey-buff fur and closed eyes, and open them at around three weeks. They stay in the nest for about three months, while the mother returns regularly to feed and clean them. They are weaned at around six to eight months and stay with her until the next breeding season, when they leave to find territories of their own.",
     "remarkable": "To grip bamboo, the red panda has a 'false thumb', an extended wrist bone that works like an extra finger. Giant pandas have one too, but the two species evolved it separately. Red pandas can also turn their ankles to climb down trees head-first.",
     "outlook": "Red pandas are endangered, with perhaps fewer than 10,000 left. Forests are being cleared for farms, roads and livestock, and red pandas are poached for fur and the pet trade. Community forest guardians in Nepal now monitor and protect their habitat.",
+    "people": "The red panda was described by Western science in 1825, decades before the giant panda, and the word 'panda' probably comes from a Nepali name for it. In parts of Nepal and India, red pandas appear in local beliefs and are considered good luck. They are popular in zoos around the world, and international breeding programs keep a healthy captive population. The red panda is the state animal of Sikkim in India, and the Firefox web browser's name refers to it, since 'firefox' is one of its nicknames. In Nepal, the Red Panda Network trains local 'forest guardians', who monitor red pandas, help restore forest, and teach communities about them. Ecotourism treks to see wild red pandas give villagers income from protecting forests rather than clearing them.",
     "didYouKnow": "Red pandas mark their territory with scent glands on the soles of their feet.",
     "facts": [
-      { "label": "Length", "value": "50–64 cm + tail" },
-      { "label": "Weight", "value": "3–6 kg" },
-      { "label": "Lifespan", "value": "8–10 years wild" },
-      { "label": "Diet", "value": "Mostly bamboo" }
+      {
+        "label": "Length",
+        "value": "50–64 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "3–6 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "8–10 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly bamboo"
+      }
     ],
     "quiz": [
       {
         "prompt": "How is the red panda related to the giant panda?",
-        "choices": ["It isn't closely related; it has its own family", "It is a baby giant panda", "It is a type of bear", "It is a giant panda's cousin in the raccoon family"],
+        "choices": [
+          "It isn't closely related; it has its own family",
+          "It is a baby giant panda",
+          "It is a type of bear",
+          "It is a giant panda's cousin in the raccoon family"
+        ],
         "explanation": "Red pandas are the only living members of the family Ailuridae."
       },
       {
         "prompt": "What helps a red panda grip bamboo?",
-        "choices": ["An extended wrist bone, a 'false thumb'", "Sticky paw pads", "Its prehensile tail", "Hooked claws on its back feet"],
+        "choices": [
+          "An extended wrist bone, a 'false thumb'",
+          "Sticky paw pads",
+          "Its prehensile tail",
+          "Hooked claws on its back feet"
+        ],
         "explanation": "A wrist bone that acts like a thumb lets it hold bamboo stems."
       },
       {
         "prompt": "What makes up most of a red panda's diet?",
-        "choices": ["Bamboo", "Fish", "Insects", "Berries"],
+        "choices": [
+          "Bamboo",
+          "Fish",
+          "Insects",
+          "Berries"
+        ],
         "explanation": "Bamboo leaves and shoots make up the vast majority of what it eats."
       }
     ],
     "charities": [
-      { "name": "Red Panda Network", "url": "https://redpandanetwork.org", "blurb": "Trains local 'forest guardians' and restores red panda habitat in Nepal." }
+      {
+        "name": "Red Panda Network",
+        "url": "https://redpandanetwork.org",
+        "blurb": "Trains local 'forest guardians' and restores red panda habitat in Nepal."
+      }
     ]
   },
   {
@@ -591,43 +1112,82 @@
     "scientificName": "Manis javanica",
     "wikipediaTitle": "Sunda pangolin",
     "group": "mammal",
-    "regions": ["asia"],
+    "regions": [
+      "asia"
+    ],
     "range": "Forests and plantations of Southeast Asia, from Myanmar and Vietnam to Borneo, Sumatra and Java",
     "status": "CR",
-    "coordinate": { "latitude": 1.5, "longitude": 110.5 },
+    "coordinate": {
+      "latitude": 1.5,
+      "longitude": 110.5
+    },
     "mapSpan": 25,
     "tagline": "A walking pinecone with a sticky tongue",
     "lede": "Pangolins are the only mammals covered in scales. When threatened, a Sunda pangolin rolls into a tight, armored ball that even a tiger struggles to open. Sadly, that defense is no protection against people, and pangolins are among the most trafficked wild mammals in the world.",
     "home": "Sunda pangolins live in tropical forests across Southeast Asia, and also in gardens and plantations. They are nocturnal, spending the day curled up in burrows or tree hollows, and are excellent climbers that use their tails to grip branches.",
+    "anatomy": "The Sunda pangolin is covered from head to tail in overlapping brownish scales, except for its face, belly and inner legs, which are covered in skin and sparse hair. The scales are made of keratin and grow throughout its life, worn down as it digs and climbs. It has a small, cone-shaped head, tiny eyes and poor eyesight, but an excellent sense of smell for finding ant and termite nests. Its front feet have long, curved claws for ripping into nests, so it walks on its knuckles or on its hind legs to protect them. Its long, sticky tongue starts deep in its chest and is coated with thick saliva. Without teeth, it relies on a muscular stomach with tough spines and swallowed stones to grind its food. Its prehensile tail can grip branches, helping it climb trees with ease.",
     "life": "Pangolins eat ants and termites, tearing open nests with strong front claws. They have no teeth. Instead they catch insects with a sticky tongue that can be longer than their head and body, anchored deep in the chest. They swallow small stones that help grind food in the stomach.",
+    "family": "Sunda pangolins live alone and meet only to mate. After a pregnancy of around six months, the female usually gives birth to a single baby, sometimes two, often in a burrow or tree hollow. The newborn's scales are soft at first and harden within a couple of days. For the first weeks, the baby stays in the den while the mother forages. Later it rides on her back or tail as she travels and climbs, gripping tightly. If danger threatens, the mother curls into a ball around her young one, sheltering it inside her armour. The young pangolin learns to find food by following its mother and is weaned at about three or four months, staying with her until it is ready to live on its own. Pangolins breed slowly, so populations recover poorly from hunting.",
     "remarkable": "A pangolin's scales are made of keratin, the same material as your fingernails, and they overlap like roof tiles. Mothers carry their single baby on their tail, and the baby clings on and can be wrapped up safely when the mother rolls into a ball.",
     "outlook": "The Sunda pangolin is critically endangered. Hundreds of thousands of pangolins have been taken from the wild for their meat and for scales used in traditional medicine, even though their scales have no proven medical value. All international trade in pangolins is banned.",
+    "people": "Pangolins have been eaten as bushmeat and used in traditional medicine across Asia for a very long time, with their scales wrongly believed to cure ailments from poor circulation to skin disease. In recent decades, demand has turned this into a vast illegal trade, with tonnes of scales seized at ports, and the Sunda pangolin is now critically endangered. Since 2017, all eight pangolin species have been listed on Appendix I of CITES, which bans international commercial trade, and China removed pangolin scales from its official list of traditional medicines in 2020. Rescue centres in Vietnam, Indonesia and Malaysia care for pangolins confiscated from traffickers, and some are released back into protected forests. World Pangolin Day, held each February, raises awareness of these little-known animals.",
     "didYouKnow": "The word 'pangolin' comes from the Malay word penggulung, meaning 'roller'.",
     "facts": [
-      { "label": "Length", "value": "40–65 cm + tail" },
-      { "label": "Weight", "value": "Up to ~10 kg" },
-      { "label": "Teeth", "value": "None" },
-      { "label": "Diet", "value": "Ants and termites" }
+      {
+        "label": "Length",
+        "value": "40–65 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~10 kg"
+      },
+      {
+        "label": "Teeth",
+        "value": "None"
+      },
+      {
+        "label": "Diet",
+        "value": "Ants and termites"
+      }
     ],
     "quiz": [
       {
         "prompt": "What are pangolin scales made of?",
-        "choices": ["Keratin, like fingernails", "Bone", "Hardened skin cells and sand", "Chalk"],
+        "choices": [
+          "Keratin, like fingernails",
+          "Bone",
+          "Hardened skin cells and sand",
+          "Chalk"
+        ],
         "explanation": "Pangolin scales are keratin, the same protein in human nails and hair."
       },
       {
         "prompt": "How does a pangolin defend itself?",
-        "choices": ["It rolls into a tight, scaly ball", "It sprays a bad smell", "It runs very fast", "It bites with sharp teeth"],
+        "choices": [
+          "It rolls into a tight, scaly ball",
+          "It sprays a bad smell",
+          "It runs very fast",
+          "It bites with sharp teeth"
+        ],
         "explanation": "Rolled up, its overlapping scales protect its soft belly."
       },
       {
         "prompt": "Why are pangolins so heavily trafficked?",
-        "choices": ["For their meat and scales used in traditional medicine", "As racing animals", "For their wool", "Because they damage crops"],
+        "choices": [
+          "For their meat and scales used in traditional medicine",
+          "As racing animals",
+          "For their wool",
+          "Because they damage crops"
+        ],
         "explanation": "Illegal demand for meat and scales has driven pangolins toward extinction."
       }
     ],
     "charities": [
-      { "name": "Save Pangolins", "url": "https://www.savepangolins.org", "blurb": "Funds pangolin research, rescue and anti-trafficking work across Asia and Africa." }
+      {
+        "name": "Save Pangolins",
+        "url": "https://www.savepangolins.org",
+        "blurb": "Funds pangolin research, rescue and anti-trafficking work across Asia and Africa."
+      }
     ]
   },
   {
@@ -636,10 +1196,15 @@
     "scientificName": "Loxodonta africana",
     "wikipediaTitle": "African bush elephant",
     "group": "mammal",
-    "regions": ["africa"],
+    "regions": [
+      "africa"
+    ],
     "range": "Savannas, grasslands and woodlands across sub-Saharan Africa",
     "status": "EN",
-    "coordinate": { "latitude": -2.65, "longitude": 37.26 },
+    "coordinate": {
+      "latitude": -2.65,
+      "longitude": 37.26
+    },
     "mapSpan": 30,
     "tagline": "The largest animal that walks the Earth",
     "lede": "No land animal alive is bigger than the African bush elephant. A big bull can weigh as much as a city bus. Yet elephants are also among the most social and emotional animals on Earth, living in close families led by wise old females.",
@@ -649,30 +1214,61 @@
     "outlook": "African bush elephants are endangered. Poaching for ivory killed hundreds of thousands in recent decades, and growing farms and towns squeeze their habitat and cause conflict with people. Where protection is strong, like in parts of Kenya and Botswana, numbers have recovered.",
     "didYouKnow": "Research suggests elephants use distinct calls for individual family members, much like names.",
     "facts": [
-      { "label": "Shoulder height", "value": "3–4 m" },
-      { "label": "Weight", "value": "Up to 6–7 tonnes" },
-      { "label": "Lifespan", "value": "60–70 years" },
-      { "label": "Diet", "value": "Grass, leaves, bark, fruit" }
+      {
+        "label": "Shoulder height",
+        "value": "3–4 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 6–7 tonnes"
+      },
+      {
+        "label": "Lifespan",
+        "value": "60–70 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Grass, leaves, bark, fruit"
+      }
     ],
     "quiz": [
       {
         "prompt": "Who usually leads an elephant herd?",
-        "choices": ["The oldest female, the matriarch", "The biggest male", "The youngest calf", "Herds have no leader"],
+        "choices": [
+          "The oldest female, the matriarch",
+          "The biggest male",
+          "The youngest calf",
+          "Herds have no leader"
+        ],
         "explanation": "A matriarch leads her family using decades of experience."
       },
       {
         "prompt": "What is one purpose of an elephant's huge ears?",
-        "choices": ["Releasing heat to stay cool", "Storing water", "Scaring away birds", "Smelling food"],
+        "choices": [
+          "Releasing heat to stay cool",
+          "Storing water",
+          "Scaring away birds",
+          "Smelling food"
+        ],
         "explanation": "Flapping their ears helps elephants cool down in the African heat."
       },
       {
         "prompt": "How do elephants communicate over long distances?",
-        "choices": ["Deep, low rumbles that travel kilometres", "Flashing their tusks in the sun", "Stomping in rhythm", "High-pitched squeaks"],
+        "choices": [
+          "Deep, low rumbles that travel kilometres",
+          "Flashing their tusks in the sun",
+          "Stomping in rhythm",
+          "High-pitched squeaks"
+        ],
         "explanation": "Elephant rumbles, many below human hearing, carry far through air and ground."
       }
     ],
     "charities": [
-      { "name": "Save the Elephants", "url": "https://www.savetheelephants.org", "blurb": "Researches elephant behavior and works to end the ivory trade in Kenya and beyond." }
+      {
+        "name": "Save the Elephants",
+        "url": "https://www.savetheelephants.org",
+        "blurb": "Researches elephant behavior and works to end the ivory trade in Kenya and beyond."
+      }
     ]
   },
   {
@@ -681,10 +1277,16 @@
     "scientificName": "Acinonyx jubatus",
     "wikipediaTitle": "Cheetah",
     "group": "mammal",
-    "regions": ["africa", "asia"],
+    "regions": [
+      "africa",
+      "asia"
+    ],
     "range": "Grasslands and savannas of eastern and southern Africa, plus a tiny population in Iran",
     "status": "VU",
-    "coordinate": { "latitude": -20.5, "longitude": 17.0 },
+    "coordinate": {
+      "latitude": -20.5,
+      "longitude": 17.0
+    },
     "mapSpan": 35,
     "tagline": "Built for a few seconds of pure speed",
     "lede": "The cheetah is the fastest land animal on Earth, reaching about 100 km/h in a few seconds. Everything about it, from its slim body to its oversized heart and lungs, is designed for one explosive sprint.",
@@ -694,30 +1296,61 @@
     "outlook": "Fewer than about 7,000 adult cheetahs remain, mostly in southern and eastern Africa; the Asiatic cheetah in Iran is down to a handful. Habitat loss, conflict with livestock farmers and illegal trade in cubs as pets are the main threats. Livestock guard dogs have reduced conflict in Namibia.",
     "didYouKnow": "A cheetah can go from standing still to about 95 km/h in only three seconds.",
     "facts": [
-      { "label": "Length", "value": "1.1–1.5 m + tail" },
-      { "label": "Weight", "value": "21–72 kg" },
-      { "label": "Lifespan", "value": "10–12 years wild" },
-      { "label": "Diet", "value": "Gazelles, impala, hares" }
+      {
+        "label": "Length",
+        "value": "1.1–1.5 m + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "21–72 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "10–12 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Gazelles, impala, hares"
+      }
     ],
     "quiz": [
       {
         "prompt": "What may the black 'tear lines' on a cheetah's face do?",
-        "choices": ["Reduce glare from the sun", "Scare away hyenas", "Help it see at night", "Show its age"],
+        "choices": [
+          "Reduce glare from the sun",
+          "Scare away hyenas",
+          "Help it see at night",
+          "Show its age"
+        ],
         "explanation": "The dark lines likely cut sun glare, helping cheetahs focus on prey in daylight."
       },
       {
         "prompt": "Why do cheetahs' claws only partly retract?",
-        "choices": ["They grip the ground like running spikes", "To climb trees faster", "So they can dig dens", "They are too big to retract"],
+        "choices": [
+          "They grip the ground like running spikes",
+          "To climb trees faster",
+          "So they can dig dens",
+          "They are too big to retract"
+        ],
         "explanation": "Semi-retractable claws give extra traction during high-speed chases."
       },
       {
         "prompt": "Which sound can a cheetah NOT make?",
-        "choices": ["A roar", "A purr", "A chirp", "A hiss"],
+        "choices": [
+          "A roar",
+          "A purr",
+          "A chirp",
+          "A hiss"
+        ],
         "explanation": "Cheetahs purr, chirp and hiss, but cannot roar."
       }
     ],
     "charities": [
-      { "name": "Cheetah Conservation Fund", "url": "https://cheetah.org", "blurb": "Works with farmers in Namibia, including breeding livestock guard dogs, to protect wild cheetahs." }
+      {
+        "name": "Cheetah Conservation Fund",
+        "url": "https://cheetah.org",
+        "blurb": "Works with farmers in Namibia, including breeding livestock guard dogs, to protect wild cheetahs."
+      }
     ]
   },
   {
@@ -726,10 +1359,15 @@
     "scientificName": "Okapia johnstoni",
     "wikipediaTitle": "Okapi",
     "group": "mammal",
-    "regions": ["africa"],
+    "regions": [
+      "africa"
+    ],
     "range": "Dense rainforest of the northeastern Democratic Republic of the Congo",
     "status": "EN",
-    "coordinate": { "latitude": 1.5, "longitude": 28.5 },
+    "coordinate": {
+      "latitude": 1.5,
+      "longitude": 28.5
+    },
     "mapSpan": 10,
     "tagline": "The forest giraffe with zebra legs",
     "lede": "With striped legs like a zebra, a velvety chocolate coat and a face like a giraffe, the okapi looks assembled from spare parts. It was so secretive that Western scientists only described it in 1901, and it's still rarely seen in the wild.",
@@ -739,30 +1377,61 @@
     "outlook": "Okapis are endangered. Logging, mining and armed conflict in eastern Congo destroy their forest and make protection dangerous. Rangers at the Okapi Wildlife Reserve protect them at great personal risk, and the okapi is a national symbol of the DRC.",
     "didYouKnow": "Okapi stripes are thought to help calves follow their mothers through the dark forest.",
     "facts": [
-      { "label": "Shoulder height", "value": "About 1.5 m" },
-      { "label": "Weight", "value": "200–350 kg" },
-      { "label": "Lifespan", "value": "20–30 years" },
-      { "label": "Diet", "value": "Leaves, buds, fruit, fungi" }
+      {
+        "label": "Shoulder height",
+        "value": "About 1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "200–350 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20–30 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves, buds, fruit, fungi"
+      }
     ],
     "quiz": [
       {
         "prompt": "What is the okapi's closest living relative?",
-        "choices": ["The giraffe", "The zebra", "The horse", "The antelope"],
+        "choices": [
+          "The giraffe",
+          "The zebra",
+          "The horse",
+          "The antelope"
+        ],
         "explanation": "Despite the zebra stripes, okapis belong to the giraffe family."
       },
       {
         "prompt": "Where do wild okapis live?",
-        "choices": ["Rainforests of the Democratic Republic of the Congo", "The Sahara Desert", "Savannas of Kenya", "Mountains of Ethiopia"],
+        "choices": [
+          "Rainforests of the Democratic Republic of the Congo",
+          "The Sahara Desert",
+          "Savannas of Kenya",
+          "Mountains of Ethiopia"
+        ],
         "explanation": "Okapis are found only in the rainforests of the DRC."
       },
       {
         "prompt": "What can an okapi do with its long tongue?",
-        "choices": ["Clean its own ears and eyelids", "Catch flying insects", "Breathe underwater", "Make loud whistles"],
+        "choices": [
+          "Clean its own ears and eyelids",
+          "Catch flying insects",
+          "Breathe underwater",
+          "Make loud whistles"
+        ],
         "explanation": "Its long, flexible tongue can reach its eyes and ears."
       }
     ],
     "charities": [
-      { "name": "Okapi Conservation Project", "url": "https://www.okapiconservation.org", "blurb": "Supports rangers and communities protecting the Okapi Wildlife Reserve." }
+      {
+        "name": "Okapi Conservation Project",
+        "url": "https://www.okapiconservation.org",
+        "blurb": "Supports rangers and communities protecting the Okapi Wildlife Reserve."
+      }
     ]
   },
   {
@@ -771,10 +1440,15 @@
     "scientificName": "Pongo pygmaeus",
     "wikipediaTitle": "Bornean orangutan",
     "group": "mammal",
-    "regions": ["asia"],
+    "regions": [
+      "asia"
+    ],
     "range": "Lowland rainforests and peat swamps of Borneo, in Indonesia and Malaysia",
     "status": "CR",
-    "coordinate": { "latitude": 0.5, "longitude": 113.5 },
+    "coordinate": {
+      "latitude": 0.5,
+      "longitude": 113.5
+    },
     "mapSpan": 12,
     "tagline": "The thoughtful person of the forest",
     "lede": "'Orangutan' comes from Malay words meaning 'person of the forest'. It's a fitting name. These great apes share about 97 percent of our DNA, use tools, and learn skills from their mothers over years of patient childhood.",
@@ -784,30 +1458,61 @@
     "outlook": "Bornean orangutans are critically endangered. More than half of the population was lost between 1999 and 2015, as forests were cleared for oil palm and paper plantations, burned in fires and logged. Protected forests and rescue centres are helping, and choosing products with deforestation-free palm oil makes a difference.",
     "didYouKnow": "Because mothers have a baby only every six to eight years, orangutans are among the slowest-breeding mammals on Earth.",
     "facts": [
-      { "label": "Height", "value": "1.2–1.5 m" },
-      { "label": "Weight", "value": "30–100 kg" },
-      { "label": "Lifespan", "value": "35–45 years" },
-      { "label": "Diet", "value": "Mostly fruit" }
+      {
+        "label": "Height",
+        "value": "1.2–1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "30–100 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "35–45 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly fruit"
+      }
     ],
     "quiz": [
       {
         "prompt": "What does 'orangutan' mean?",
-        "choices": ["Person of the forest", "Red ape", "Tree climber", "King of the jungle"],
+        "choices": [
+          "Person of the forest",
+          "Red ape",
+          "Tree climber",
+          "King of the jungle"
+        ],
         "explanation": "It comes from Malay words meaning 'person of the forest'."
       },
       {
         "prompt": "How often do orangutans build a sleeping nest?",
-        "choices": ["Every night", "Once a year", "Only during storms", "Never; they sleep on the ground"],
+        "choices": [
+          "Every night",
+          "Once a year",
+          "Only during storms",
+          "Never; they sleep on the ground"
+        ],
         "explanation": "Each evening they weave a new nest of branches high in the trees."
       },
       {
         "prompt": "How long do young orangutans stay with their mothers?",
-        "choices": ["About seven or eight years", "About six months", "One year", "Their whole lives"],
+        "choices": [
+          "About seven or eight years",
+          "About six months",
+          "One year",
+          "Their whole lives"
+        ],
         "explanation": "Orangutans have one of the longest childhoods of any animal."
       }
     ],
     "charities": [
-      { "name": "Orangutan Foundation International", "url": "https://orangutan.org", "blurb": "Runs orangutan rescue, rehabilitation and forest protection in Borneo." }
+      {
+        "name": "Orangutan Foundation International",
+        "url": "https://orangutan.org",
+        "blurb": "Runs orangutan rescue, rehabilitation and forest protection in Borneo."
+      }
     ]
   },
   {
@@ -816,10 +1521,15 @@
     "scientificName": "Ornithorhynchus anatinus",
     "wikipediaTitle": "Platypus",
     "group": "mammal",
-    "regions": ["oceania"],
+    "regions": [
+      "oceania"
+    ],
     "range": "Rivers and streams of eastern Australia and Tasmania",
     "status": "NT",
-    "coordinate": { "latitude": -37.5, "longitude": 146.0 },
+    "coordinate": {
+      "latitude": -37.5,
+      "longitude": 146.0
+    },
     "mapSpan": 18,
     "tagline": "A mammal that lays eggs and hunts by electricity",
     "lede": "When the first platypus specimen reached Britain in 1799, some scientists thought it was a hoax: a duck's bill sewn onto a mammal. It's real, and the truth is stranger than the hoax. The platypus lays eggs, hunts with an electric sense, and the males are venomous.",
@@ -829,30 +1539,61 @@
     "outlook": "The platypus is listed as near threatened. Dams, drought, land clearing and pollution damage its rivers, and many drown in illegal 'opera house' yabby traps. Healthy, flowing streams with vegetated banks are what they need most.",
     "didYouKnow": "Under ultraviolet light, platypus fur glows a blue-green color.",
     "facts": [
-      { "label": "Length", "value": "40–60 cm" },
-      { "label": "Weight", "value": "0.7–2.4 kg" },
-      { "label": "Lifespan", "value": "About 10–20 years" },
-      { "label": "Diet", "value": "Larvae, shrimp, worms" }
+      {
+        "label": "Length",
+        "value": "40–60 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "0.7–2.4 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 10–20 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Larvae, shrimp, worms"
+      }
     ],
     "quiz": [
       {
         "prompt": "How does a platypus find prey with its eyes closed?",
-        "choices": ["It senses electric fields with its bill", "It listens for heartbeats", "It uses echolocation", "It smells underwater"],
+        "choices": [
+          "It senses electric fields with its bill",
+          "It listens for heartbeats",
+          "It uses echolocation",
+          "It smells underwater"
+        ],
         "explanation": "Electroreceptors in its bill detect the electric signals of moving prey."
       },
       {
         "prompt": "How do platypuses have babies?",
-        "choices": ["They lay eggs", "Live birth, like most mammals", "Babies grow in a pouch from birth", "They hatch from eggs laid by the father"],
+        "choices": [
+          "They lay eggs",
+          "Live birth, like most mammals",
+          "Babies grow in a pouch from birth",
+          "They hatch from eggs laid by the father"
+        ],
         "explanation": "The platypus is a monotreme, one of the few mammals that lay eggs."
       },
       {
         "prompt": "What do male platypuses have?",
-        "choices": ["Venomous spurs on their hind ankles", "Poisonous fur", "Sharp teeth", "Electric shocks in their tails"],
+        "choices": [
+          "Venomous spurs on their hind ankles",
+          "Poisonous fur",
+          "Sharp teeth",
+          "Electric shocks in their tails"
+        ],
         "explanation": "Males carry a venomous spur on each hind leg."
       }
     ],
     "charities": [
-      { "name": "WWF-Australia", "url": "https://wwf.org.au", "blurb": "Works to protect Australian rivers, forests and the wildlife that depends on them." }
+      {
+        "name": "WWF-Australia",
+        "url": "https://wwf.org.au",
+        "blurb": "Works to protect Australian rivers, forests and the wildlife that depends on them."
+      }
     ]
   },
   {
@@ -861,10 +1602,15 @@
     "scientificName": "Strigops habroptilus",
     "wikipediaTitle": "Kākāpō",
     "group": "bird",
-    "regions": ["oceania"],
+    "regions": [
+      "oceania"
+    ],
     "range": "A few predator-free islands off New Zealand, such as Whenua Hou",
     "status": "CR",
-    "coordinate": { "latitude": -46.9, "longitude": 167.9 },
+    "coordinate": {
+      "latitude": -46.9,
+      "longitude": 167.9
+    },
     "mapSpan": 10,
     "tagline": "A flightless parrot where every bird has a name",
     "lede": "The kākāpō is a moss-green parrot that can't fly, comes out at night, smells faintly of honey, and may live for decades. It is the heaviest parrot in the world, and one of the rarest birds on Earth. There are so few that every single one has a name.",
@@ -874,30 +1620,61 @@
     "outlook": "By 1995 only about 50 kākāpō were left. An intense recovery program, with island sanctuaries, supplementary feeding and veterinary care, has slowly lifted numbers to a couple of hundred. Each breeding season is followed closely across New Zealand.",
     "didYouKnow": "Kākāpō are thought to live for 60 years or more, one of the longest lifespans of any bird.",
     "facts": [
-      { "label": "Length", "value": "Up to 64 cm" },
-      { "label": "Weight", "value": "2–4 kg" },
-      { "label": "Lifespan", "value": "60+ years" },
-      { "label": "Diet", "value": "Leaves, seeds, fruit" }
+      {
+        "label": "Length",
+        "value": "Up to 64 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2–4 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "60+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves, seeds, fruit"
+      }
     ],
     "quiz": [
       {
         "prompt": "What makes the kākāpō unusual among parrots?",
-        "choices": ["It can't fly and is the heaviest parrot", "It lives underwater", "It's the smallest parrot", "It only eats insects"],
+        "choices": [
+          "It can't fly and is the heaviest parrot",
+          "It lives underwater",
+          "It's the smallest parrot",
+          "It only eats insects"
+        ],
         "explanation": "It is the world's only flightless parrot and the heaviest."
       },
       {
         "prompt": "How do male kākāpō attract mates?",
-        "choices": ["Deep booming calls from hollows they dig", "Bright feather dances", "Building elaborate nests", "Bringing gifts of fruit"],
+        "choices": [
+          "Deep booming calls from hollows they dig",
+          "Bright feather dances",
+          "Building elaborate nests",
+          "Bringing gifts of fruit"
+        ],
         "explanation": "Males boom from bowl-shaped hollows night after night."
       },
       {
         "prompt": "What triggers a kākāpō breeding season?",
-        "choices": ["Years when rimu trees produce lots of fruit", "Every spring, without fail", "The first snowfall", "A full moon"],
+        "choices": [
+          "Years when rimu trees produce lots of fruit",
+          "Every spring, without fail",
+          "The first snowfall",
+          "A full moon"
+        ],
         "explanation": "They only breed in mast years when trees like rimu fruit heavily."
       }
     ],
     "charities": [
-      { "name": "Kākāpō Recovery", "url": "https://www.doc.govt.nz/our-work/kakapo-recovery/", "blurb": "New Zealand's Department of Conservation program that cares for every kākāpō." }
+      {
+        "name": "Kākāpō Recovery",
+        "url": "https://www.doc.govt.nz/our-work/kakapo-recovery/",
+        "blurb": "New Zealand's Department of Conservation program that cares for every kākāpō."
+      }
     ]
   },
   {
@@ -906,10 +1683,15 @@
     "scientificName": "Aptenodytes forsteri",
     "wikipediaTitle": "Emperor penguin",
     "group": "bird",
-    "regions": ["antarctica"],
+    "regions": [
+      "antarctica"
+    ],
     "range": "Sea ice around the coast of Antarctica",
     "status": "NT",
-    "coordinate": { "latitude": -77.5, "longitude": 166.0 },
+    "coordinate": {
+      "latitude": -77.5,
+      "longitude": 166.0
+    },
     "mapSpan": 30,
     "tagline": "Raising chicks in the coldest place on Earth",
     "lede": "Emperor penguins do something no other animal attempts. They breed in the middle of the Antarctic winter, on sea ice, in temperatures that can fall below minus 40 degrees and winds of 150 km/h, in total darkness.",
@@ -919,30 +1701,61 @@
     "outlook": "Emperor penguins depend on stable sea ice to raise their chicks. In recent years, early ice break-up has caused whole colonies to fail, and scientists project steep declines this century as Antarctica warms. Reducing greenhouse gases is the only real long-term protection.",
     "didYouKnow": "A male emperor can lose almost half his body weight while incubating the egg through winter.",
     "facts": [
-      { "label": "Height", "value": "About 1.1 m" },
-      { "label": "Weight", "value": "22–45 kg" },
-      { "label": "Lifespan", "value": "About 20 years" },
-      { "label": "Diet", "value": "Fish, krill, squid" }
+      {
+        "label": "Height",
+        "value": "About 1.1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "22–45 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 20 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish, krill, squid"
+      }
     ],
     "quiz": [
       {
         "prompt": "Who keeps the emperor penguin egg warm?",
-        "choices": ["The father, balancing it on his feet", "The mother, in a nest of stones", "Both parents, taking turns daily", "It's buried in the snow"],
+        "choices": [
+          "The father, balancing it on his feet",
+          "The mother, in a nest of stones",
+          "Both parents, taking turns daily",
+          "It's buried in the snow"
+        ],
         "explanation": "Males incubate the egg on their feet for about two months."
       },
       {
         "prompt": "When do emperor penguins breed?",
-        "choices": ["In the dark Antarctic winter", "In the Antarctic summer", "Only every five years", "Whenever the sea freezes"],
+        "choices": [
+          "In the dark Antarctic winter",
+          "In the Antarctic summer",
+          "Only every five years",
+          "Whenever the sea freezes"
+        ],
         "explanation": "Emperors are the only penguins that breed through the Antarctic winter."
       },
       {
         "prompt": "How do huddling males share warmth fairly?",
-        "choices": ["They shuffle so each takes a turn in the middle", "The biggest stay in the middle", "They take turns diving into the sea", "They don't huddle"],
+        "choices": [
+          "They shuffle so each takes a turn in the middle",
+          "The biggest stay in the middle",
+          "They take turns diving into the sea",
+          "They don't huddle"
+        ],
         "explanation": "The huddle slowly rotates so every penguin gets time in the warm centre."
       }
     ],
     "charities": [
-      { "name": "Antarctic and Southern Ocean Coalition", "url": "https://www.asoc.org", "blurb": "Campaigns for marine protected areas and strong protection of Antarctica." }
+      {
+        "name": "Antarctic and Southern Ocean Coalition",
+        "url": "https://www.asoc.org",
+        "blurb": "Campaigns for marine protected areas and strong protection of Antarctica."
+      }
     ]
   },
   {
@@ -951,10 +1764,15 @@
     "scientificName": "Ursus maritimus",
     "wikipediaTitle": "Polar bear",
     "group": "mammal",
-    "regions": ["arctic"],
+    "regions": [
+      "arctic"
+    ],
     "range": "Arctic sea ice and coasts of Canada, Alaska, Greenland, Norway and Russia",
     "status": "VU",
-    "coordinate": { "latitude": 58.77, "longitude": -94.17 },
+    "coordinate": {
+      "latitude": 58.77,
+      "longitude": -94.17
+    },
     "mapSpan": 30,
     "tagline": "A bear that lives on the frozen sea",
     "lede": "The polar bear is the largest land carnivore on Earth, but it's really a creature of the sea ice. It is classified as a marine mammal, spends most of its life on frozen ocean, and can swim for days. About two-thirds of the world's polar bears live in Canada.",
@@ -964,30 +1782,61 @@
     "outlook": "Polar bears need sea ice to hunt, and Arctic sea ice is shrinking as the climate warms. Longer ice-free seasons mean longer fasts and thinner bears, and some populations have already declined. Their future depends on how fast global emissions fall.",
     "didYouKnow": "Polar bears have small bumps called papillae on their paw pads that grip the ice like non-slip soles.",
     "facts": [
-      { "label": "Length", "value": "1.8–3 m" },
-      { "label": "Weight", "value": "150–700 kg" },
-      { "label": "Lifespan", "value": "20–25 years" },
-      { "label": "Diet", "value": "Seals" }
+      {
+        "label": "Length",
+        "value": "1.8–3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "150–700 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20–25 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Seals"
+      }
     ],
     "quiz": [
       {
         "prompt": "What color is a polar bear's skin?",
-        "choices": ["Black", "White", "Pink", "Blue"],
+        "choices": [
+          "Black",
+          "White",
+          "Pink",
+          "Blue"
+        ],
         "explanation": "Black skin absorbs heat; the transparent fur only looks white."
       },
       {
         "prompt": "What is the polar bear's main prey?",
-        "choices": ["Seals", "Fish", "Caribou", "Berries"],
+        "choices": [
+          "Seals",
+          "Fish",
+          "Caribou",
+          "Berries"
+        ],
         "explanation": "Ringed and bearded seals make up most of a polar bear's diet."
       },
       {
         "prompt": "Why is sea ice so important to polar bears?",
-        "choices": ["It's their platform for hunting seals", "They drink it as fresh water", "It keeps them hidden from orcas", "They sleep inside it all summer"],
+        "choices": [
+          "It's their platform for hunting seals",
+          "They drink it as fresh water",
+          "It keeps them hidden from orcas",
+          "They sleep inside it all summer"
+        ],
         "explanation": "Without sea ice, polar bears can't reach the seals they depend on."
       }
     ],
     "charities": [
-      { "name": "Polar Bears International", "url": "https://polarbearsinternational.org", "blurb": "Researches polar bears and the sea ice they need, based partly in Churchill, Manitoba." }
+      {
+        "name": "Polar Bears International",
+        "url": "https://polarbearsinternational.org",
+        "blurb": "Researches polar bears and the sea ice they need, based partly in Churchill, Manitoba."
+      }
     ]
   },
   {
@@ -996,43 +1845,79 @@
     "scientificName": "Monodon monoceros",
     "wikipediaTitle": "Narwhal",
     "group": "mammal",
-    "regions": ["arctic"],
+    "regions": [
+      "arctic"
+    ],
     "range": "Arctic waters of Canada, Greenland, Norway and Russia",
     "status": "LC",
-    "coordinate": { "latitude": 74.0, "longitude": -84.0 },
+    "coordinate": {
+      "latitude": 74.0,
+      "longitude": -84.0
+    },
     "mapSpan": 25,
     "tagline": "The unicorn of the sea",
-    "lede": "For centuries, Europeans sold narwhal tusks as unicorn horns, worth more than their weight in gold. The truth is just as magical: a whale with a single spiralling tooth up to three metres long, living among the ice floes of the high Arctic.",
+    "lede": "For centuries, Europeans sold narwhal tusks as unicorn horns, worth more than their weight in gold. The truth is just as magical: a whale with a single spiralling tooth up to 3 metres long, living among the ice floes of the high Arctic.",
     "home": "Narwhals live year-round in Arctic waters, mostly in the Canadian Arctic and around Greenland. In summer they gather in ice-free bays and fjords; in winter they move offshore under thick pack ice, surfacing through cracks to breathe.",
     "life": "Narwhals travel in groups and eat Greenland halibut, Arctic cod, squid and shrimp, often swallowing prey whole by suction. They are some of the deepest-diving mammals, reaching more than 1,500 metres in winter to hunt in total darkness.",
     "remarkable": "The tusk is actually a tooth, usually the left canine, that grows straight out through the upper lip in a left-handed spiral. Most males have one; a few females do, and rarely a narwhal grows two. The tusk may be used to show off to rivals and to sense the water around it.",
     "outlook": "Narwhals are currently listed as least concern, but they are very sensitive to change. Melting sea ice opens the Arctic to shipping, noise and new predators like orcas, and their specialised diet makes it hard to adapt. Inuit communities hunt narwhal sustainably and help monitor them.",
     "didYouKnow": "Narwhals have no dorsal fin, which may help them swim under ice without scraping.",
     "facts": [
-      { "label": "Length", "value": "4–5.5 m + tusk" },
-      { "label": "Weight", "value": "800–1,600 kg" },
-      { "label": "Lifespan", "value": "Up to 50 years" },
-      { "label": "Diet", "value": "Halibut, cod, squid" }
+      {
+        "label": "Length",
+        "value": "4–5.5 m + tusk"
+      },
+      {
+        "label": "Weight",
+        "value": "800–1,600 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 50 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Halibut, cod, squid"
+      }
     ],
     "quiz": [
       {
         "prompt": "What is a narwhal's tusk?",
-        "choices": ["A long tooth", "A horn made of bone", "A modified fin", "Hardened hair"],
+        "choices": [
+          "A long tooth",
+          "A horn made of bone",
+          "A modified fin",
+          "Hardened hair"
+        ],
         "explanation": "The tusk is a tooth, usually the left canine, that grows through the lip."
       },
       {
         "prompt": "Which narwhals usually have a tusk?",
-        "choices": ["Most males", "Only females", "Only babies", "Every narwhal has two"],
+        "choices": [
+          "Most males",
+          "Only females",
+          "Only babies",
+          "Every narwhal has two"
+        ],
         "explanation": "Most males grow a tusk; only a few females do."
       },
       {
         "prompt": "How deep can narwhals dive?",
-        "choices": ["More than 1,500 metres", "About 10 metres", "100 metres at most", "They don't dive"],
+        "choices": [
+          "More than 1,500 metres",
+          "About 10 metres",
+          "100 metres at most",
+          "They don't dive"
+        ],
         "explanation": "Narwhals are among the deepest-diving mammals in the ocean."
       }
     ],
     "charities": [
-      { "name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works with Arctic communities to protect narwhals, sea ice habitat and marine life." }
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works with Arctic communities to protect narwhals, sea ice habitat and marine life."
+      }
     ]
   },
   {
@@ -1041,43 +1926,80 @@
     "scientificName": "Balaenoptera musculus",
     "wikipediaTitle": "Blue whale",
     "group": "mammal",
-    "regions": ["openOcean", "antarctica"],
+    "regions": [
+      "openOcean",
+      "antarctica"
+    ],
     "range": "All the world's oceans, from the Antarctic to the North Atlantic and Pacific",
     "status": "EN",
-    "coordinate": { "latitude": -20.0, "longitude": -110.0 },
+    "coordinate": {
+      "latitude": -20.0,
+      "longitude": -110.0
+    },
     "mapSpan": 100,
     "tagline": "The largest animal that has ever lived",
     "lede": "Bigger than any dinosaur, the blue whale is the largest animal known to have ever existed. It can grow to around 30 metres long and weigh as much as 30 elephants. Its heart alone weighs around 180 kilograms.",
     "home": "Blue whales live in every ocean. Many travel between cold, food-rich feeding grounds near the poles and warmer waters where they give birth. Some populations, like one in the northern Indian Ocean, may stay in one region year-round.",
     "life": "Incredibly, the biggest animal on Earth eats one of the smallest: krill, tiny shrimp-like animals. A blue whale lunges into a swarm with its mouth open, gulping a volume of water larger than its own body, then pushes it out through baleen plates that trap the krill. It can eat several tonnes a day.",
-    "remarkable": "Blue whale calls are among the loudest sounds made by any animal, deep enough that much of it is below human hearing, and can travel hundreds of kilometres underwater. A newborn calf is about seven metres long and gains around 90 kilograms a day on its mother's rich milk.",
+    "remarkable": "Blue whale calls are among the loudest sounds made by any animal, deep enough that much of it is below human hearing, and can travel hundreds of kilometres underwater. A newborn calf is about 7 metres long and gains around 90 kilograms a day on its mother's rich milk.",
     "outlook": "Whaling killed hundreds of thousands of blue whales in the 20th century, leaving some populations at a few percent of their original size. They have been protected since 1966 and are slowly recovering, but ship strikes, entanglement in fishing gear and ocean noise remain threats.",
     "didYouKnow": "Blue whales can live 80 to 90 years, which scientists estimate by counting layers in their earwax plugs, a bit like tree rings.",
     "facts": [
-      { "label": "Length", "value": "Up to ~30 m" },
-      { "label": "Weight", "value": "Up to ~190 tonnes" },
-      { "label": "Lifespan", "value": "80–90 years" },
-      { "label": "Diet", "value": "Krill" }
+      {
+        "label": "Length",
+        "value": "Up to ~30 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~190 tonnes"
+      },
+      {
+        "label": "Lifespan",
+        "value": "80–90 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Krill"
+      }
     ],
     "quiz": [
       {
         "prompt": "What does the blue whale mainly eat?",
-        "choices": ["Krill", "Sharks", "Seals", "Seaweed"],
+        "choices": [
+          "Krill",
+          "Sharks",
+          "Seals",
+          "Seaweed"
+        ],
         "explanation": "The largest animal on Earth survives on tiny shrimp-like krill."
       },
       {
         "prompt": "How does a blue whale filter its food from the water?",
-        "choices": ["Through baleen plates in its mouth", "With rows of sharp teeth", "Through its blowhole", "Using its tail"],
+        "choices": [
+          "Through baleen plates in its mouth",
+          "With rows of sharp teeth",
+          "Through its blowhole",
+          "Using its tail"
+        ],
         "explanation": "Baleen plates trap krill while water is pushed out."
       },
       {
         "prompt": "Since when have blue whales been protected from hunting?",
-        "choices": ["1966", "1866", "2016", "They are still hunted legally"],
+        "choices": [
+          "1966",
+          "1866",
+          "2016",
+          "They are still hunted legally"
+        ],
         "explanation": "Blue whales were protected internationally in 1966 after heavy whaling."
       }
     ],
     "charities": [
-      { "name": "Whale and Dolphin Conservation", "url": "https://whales.org", "blurb": "Fights threats to whales and dolphins, from whaling to ship strikes and entanglement." }
+      {
+        "name": "Whale and Dolphin Conservation",
+        "url": "https://whales.org",
+        "blurb": "Fights threats to whales and dolphins, from whaling to ship strikes and entanglement."
+      }
     ]
   },
   {
@@ -1086,10 +2008,17 @@
     "scientificName": "Octopus vulgaris",
     "wikipediaTitle": "Common octopus",
     "group": "marineInvertebrate",
-    "regions": ["europe", "openOcean", "africa"],
+    "regions": [
+      "europe",
+      "openOcean",
+      "africa"
+    ],
     "range": "Coastal waters of the Mediterranean and eastern Atlantic",
     "status": "LC",
-    "coordinate": { "latitude": 37.0, "longitude": 15.0 },
+    "coordinate": {
+      "latitude": 37.0,
+      "longitude": 15.0
+    },
     "mapSpan": 30,
     "tagline": "Three hearts, blue blood and a brain in every arm",
     "lede": "The common octopus is about as alien as life on Earth gets: three hearts, blue blood, no bones, and skin that can change color in a fraction of a second. It's also remarkably clever, able to solve puzzles, open jars and escape from aquarium tanks.",
@@ -1099,30 +2028,61 @@
     "outlook": "The common octopus is not considered threatened, but it is heavily fished, and scientists worry about plans to farm octopuses, given their intelligence and solitary nature. Several countries now recognise octopuses as sentient in animal-welfare law.",
     "didYouKnow": "An octopus's blood is blue because it uses copper-based hemocyanin to carry oxygen, instead of iron-based hemoglobin.",
     "facts": [
-      { "label": "Arm span", "value": "Up to ~1 m" },
-      { "label": "Weight", "value": "3–10 kg" },
-      { "label": "Lifespan", "value": "1–2 years" },
-      { "label": "Diet", "value": "Crabs, clams, snails" }
+      {
+        "label": "Arm span",
+        "value": "Up to ~1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "3–10 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "1–2 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Crabs, clams, snails"
+      }
     ],
     "quiz": [
       {
         "prompt": "How many hearts does an octopus have?",
-        "choices": ["Three", "One", "Two", "Eight"],
+        "choices": [
+          "Three",
+          "One",
+          "Two",
+          "Eight"
+        ],
         "explanation": "Two hearts pump blood through the gills and one through the body."
       },
       {
         "prompt": "Where are most of an octopus's neurons?",
-        "choices": ["In its arms", "In its central brain", "In its eyes", "In its skin"],
+        "choices": [
+          "In its arms",
+          "In its central brain",
+          "In its eyes",
+          "In its skin"
+        ],
         "explanation": "About two-thirds of its neurons are in its arms."
       },
       {
         "prompt": "What happens to a mother octopus after her eggs hatch?",
-        "choices": ["She dies soon after", "She raises the young for a year", "She lays another batch right away", "She leaves to find a new den"],
+        "choices": [
+          "She dies soon after",
+          "She raises the young for a year",
+          "She lays another batch right away",
+          "She leaves to find a new den"
+        ],
         "explanation": "Females guard their eggs without eating and die soon after they hatch."
       }
     ],
     "charities": [
-      { "name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns to protect ocean habitats and end overfishing." }
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect ocean habitats and end overfishing."
+      }
     ]
   },
   {
@@ -1131,10 +2091,17 @@
     "scientificName": "Dermochelys coriacea",
     "wikipediaTitle": "Leatherback sea turtle",
     "group": "reptile",
-    "regions": ["openOcean", "naEast", "centralAmerica"],
+    "regions": [
+      "openOcean",
+      "naEast",
+      "centralAmerica"
+    ],
     "range": "Oceans worldwide, from tropical nesting beaches to the cold waters off Nova Scotia",
     "status": "VU",
-    "coordinate": { "latitude": 10.5, "longitude": -61.0 },
+    "coordinate": {
+      "latitude": 10.5,
+      "longitude": -61.0
+    },
     "mapSpan": 60,
     "tagline": "The jellyfish hunter that crosses oceans",
     "lede": "The leatherback is the largest turtle on Earth and one of the great ocean wanderers. Instead of a hard shell, it wears a flexible, leathery carapace, and it travels thousands of kilometres from tropical beaches to cold northern seas, following the jellyfish it eats.",
@@ -1144,30 +2111,61 @@
     "outlook": "Leatherbacks are vulnerable worldwide, and Pacific populations have crashed. They are often caught by accident in fishing gear, their eggs are taken, and they mistake floating plastic bags for jellyfish. Beach protection and turtle-safe fishing gear are helping some Atlantic populations.",
     "didYouKnow": "Leatherback turtles have been around in some form for over 100 million years, since the age of dinosaurs.",
     "facts": [
-      { "label": "Length", "value": "1.8–2.2 m" },
-      { "label": "Weight", "value": "250–700 kg" },
-      { "label": "Lifespan", "value": "30+ years" },
-      { "label": "Diet", "value": "Jellyfish" }
+      {
+        "label": "Length",
+        "value": "1.8–2.2 m"
+      },
+      {
+        "label": "Weight",
+        "value": "250–700 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "30+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Jellyfish"
+      }
     ],
     "quiz": [
       {
         "prompt": "What do leatherbacks mainly eat?",
-        "choices": ["Jellyfish", "Seagrass", "Crabs", "Small sharks"],
+        "choices": [
+          "Jellyfish",
+          "Seagrass",
+          "Crabs",
+          "Small sharks"
+        ],
         "explanation": "Leatherbacks live almost entirely on jellyfish."
       },
       {
         "prompt": "How is a leatherback's shell different from other turtles'?",
-        "choices": ["It's flexible and leathery, not hard", "It's twice as hard", "It's made of feathers", "It has no shell at all"],
+        "choices": [
+          "It's flexible and leathery, not hard",
+          "It's twice as hard",
+          "It's made of feathers",
+          "It has no shell at all"
+        ],
         "explanation": "Its carapace is leathery skin over small bones, not hard plates."
       },
       {
         "prompt": "Why are plastic bags dangerous to leatherbacks?",
-        "choices": ["They look like jellyfish and get eaten", "They block their nesting beaches", "They scare away their mates", "They change the water temperature"],
+        "choices": [
+          "They look like jellyfish and get eaten",
+          "They block their nesting beaches",
+          "They scare away their mates",
+          "They change the water temperature"
+        ],
         "explanation": "Floating plastic bags are easily mistaken for jellyfish."
       }
     ],
     "charities": [
-      { "name": "Sea Turtle Conservancy", "url": "https://conserveturtles.org", "blurb": "Protects nesting beaches and tracks sea turtles across the Atlantic and Caribbean." }
+      {
+        "name": "Sea Turtle Conservancy",
+        "url": "https://conserveturtles.org",
+        "blurb": "Protects nesting beaches and tracks sea turtles across the Atlantic and Caribbean."
+      }
     ]
   },
   {
@@ -1176,10 +2174,16 @@
     "scientificName": "Rhincodon typus",
     "wikipediaTitle": "Whale shark",
     "group": "fish",
-    "regions": ["openOcean", "oceania"],
+    "regions": [
+      "openOcean",
+      "oceania"
+    ],
     "range": "Warm tropical oceans worldwide, gathering at places like Ningaloo Reef and the Yucatán",
     "status": "EN",
-    "coordinate": { "latitude": -22.5, "longitude": 113.7 },
+    "coordinate": {
+      "latitude": -22.5,
+      "longitude": 113.7
+    },
     "mapSpan": 50,
     "tagline": "The gentle giant with a starry back",
     "lede": "The whale shark is the biggest fish in the sea, as long as a bus, yet it's harmless to people. Swimmers who meet one see a vast, spotted body gliding slowly past, its wide mouth open, sieving the water for food far too small to see.",
@@ -1189,30 +2193,61 @@
     "outlook": "Whale sharks are endangered. They grow and breed slowly, and numbers have fallen because of fishing, accidental catch in nets, and collisions with ships. Well-managed tourism, like at Ningaloo, now makes a living whale shark far more valuable than a dead one.",
     "didYouKnow": "A whale shark's mouth can be more than a metre wide and contains thousands of tiny teeth that it doesn't use for eating.",
     "facts": [
-      { "label": "Length", "value": "Up to ~18 m" },
-      { "label": "Weight", "value": "Up to ~20 tonnes" },
-      { "label": "Lifespan", "value": "Possibly 100+ years" },
-      { "label": "Diet", "value": "Plankton, krill, fish eggs" }
+      {
+        "label": "Length",
+        "value": "Up to ~18 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~20 tonnes"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Possibly 100+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Plankton, krill, fish eggs"
+      }
     ],
     "quiz": [
       {
         "prompt": "What kind of animal is a whale shark?",
-        "choices": ["A fish, the largest in the sea", "A whale", "A dolphin", "A ray"],
+        "choices": [
+          "A fish, the largest in the sea",
+          "A whale",
+          "A dolphin",
+          "A ray"
+        ],
         "explanation": "Despite the name, it's a shark, and the world's biggest fish."
       },
       {
         "prompt": "What does a whale shark eat?",
-        "choices": ["Plankton and tiny animals it filters from the water", "Seals and sea lions", "Other sharks", "Coral"],
+        "choices": [
+          "Plankton and tiny animals it filters from the water",
+          "Seals and sea lions",
+          "Other sharks",
+          "Coral"
+        ],
         "explanation": "It's a gentle filter feeder that sieves plankton and small prey."
       },
       {
         "prompt": "How do researchers tell individual whale sharks apart?",
-        "choices": ["By their unique pattern of spots", "By the shape of their teeth", "By the songs they sing", "By the color of their eyes"],
+        "choices": [
+          "By their unique pattern of spots",
+          "By the shape of their teeth",
+          "By the songs they sing",
+          "By the color of their eyes"
+        ],
         "explanation": "Each spot pattern is unique, like a fingerprint."
       }
     ],
     "charities": [
-      { "name": "Marine Megafauna Foundation", "url": "https://marinemegafauna.org", "blurb": "Researches and protects whale sharks, manta rays and other ocean giants." }
+      {
+        "name": "Marine Megafauna Foundation",
+        "url": "https://marinemegafauna.org",
+        "blurb": "Researches and protects whale sharks, manta rays and other ocean giants."
+      }
     ]
   },
   {
@@ -1221,43 +2256,79 @@
     "scientificName": "Oophaga pumilio",
     "wikipediaTitle": "Oophaga pumilio",
     "group": "amphibian",
-    "regions": ["centralAmerica"],
+    "regions": [
+      "centralAmerica"
+    ],
     "range": "Lowland rainforests of Nicaragua, Costa Rica and Panama",
     "status": "LC",
-    "coordinate": { "latitude": 9.35, "longitude": -82.25 },
+    "coordinate": {
+      "latitude": 9.35,
+      "longitude": -82.25
+    },
     "mapSpan": 6,
     "tagline": "A tiny jewel that's a devoted parent",
-    "lede": "Barely two centimetres long and bright as a candy, the strawberry poison frog is impossible to miss on the rainforest floor. That's exactly the point. Its color warns every predator: I'm toxic. Don't even try.",
+    "lede": "Barely 2 centimetres long and bright as a candy, the strawberry poison frog is impossible to miss on the rainforest floor. That's exactly the point. Its color warns every predator: I'm toxic. Don't even try.",
     "home": "Strawberry poison frogs live in humid lowland rainforests from Nicaragua to Panama, hopping through leaf litter by day. In Panama's Bocas del Toro islands, isolated populations evolved into more than a dozen color forms, from red with blue legs to green, orange and yellow.",
     "life": "These frogs eat ants and mites. The poison on their skin, called alkaloids, comes from these prey, so frogs raised in captivity on other insects aren't toxic. Males call from perches to defend territories, and parents share the work of raising their young.",
     "remarkable": "After the eggs hatch, the mother carries each tadpole on her back up into the trees, placing it in its own tiny pool of water cupped in a bromeliad leaf. Then she returns every few days to lay unfertilised eggs for it to eat. Few frogs work so hard for their young.",
     "outlook": "The species is still common, but its forests are being cleared for farming and development, and some island color forms have tiny ranges. Collecting for the pet trade is another pressure. Like all amphibians, it's also threatened by the deadly chytrid fungus.",
     "didYouKnow": "The red-and-blue form is nicknamed the 'blue jeans' frog because its legs look like it's wearing denim.",
     "facts": [
-      { "label": "Length", "value": "17–24 mm" },
-      { "label": "Color forms", "value": "15+" },
-      { "label": "Active", "value": "By day" },
-      { "label": "Diet", "value": "Ants and mites" }
+      {
+        "label": "Length",
+        "value": "17–24 mm"
+      },
+      {
+        "label": "Color forms",
+        "value": "15+"
+      },
+      {
+        "label": "Active",
+        "value": "By day"
+      },
+      {
+        "label": "Diet",
+        "value": "Ants and mites"
+      }
     ],
     "quiz": [
       {
         "prompt": "Where does the frog's poison come from?",
-        "choices": ["The ants and mites it eats", "It makes it from sunlight", "Plants it sits on", "It's born with it, whatever it eats"],
+        "choices": [
+          "The ants and mites it eats",
+          "It makes it from sunlight",
+          "Plants it sits on",
+          "It's born with it, whatever it eats"
+        ],
         "explanation": "Toxins come from its diet; captive frogs fed other insects are harmless."
       },
       {
         "prompt": "What does the mother feed her tadpoles?",
-        "choices": ["Unfertilised eggs", "Insects she catches", "Nectar", "Nothing; they find their own food"],
+        "choices": [
+          "Unfertilised eggs",
+          "Insects she catches",
+          "Nectar",
+          "Nothing; they find their own food"
+        ],
         "explanation": "She returns to each tadpole to lay unfertilised eggs as food."
       },
       {
         "prompt": "Where are the tadpoles raised?",
-        "choices": ["In tiny pools held by bromeliad leaves", "In large rivers", "In the ocean", "Inside the father's mouth"],
+        "choices": [
+          "In tiny pools held by bromeliad leaves",
+          "In large rivers",
+          "In the ocean",
+          "Inside the father's mouth"
+        ],
         "explanation": "The mother carries each tadpole up to its own little bromeliad pool."
       }
     ],
     "charities": [
-      { "name": "Amphibian Ark", "url": "https://www.amphibianark.org", "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction." }
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction."
+      }
     ]
   },
   {
@@ -1266,10 +2337,16 @@
     "scientificName": "Bradypus variegatus",
     "wikipediaTitle": "Brown-throated sloth",
     "group": "mammal",
-    "regions": ["centralAmerica", "southAmerica"],
+    "regions": [
+      "centralAmerica",
+      "southAmerica"
+    ],
     "range": "Rainforests from Honduras to Bolivia and northern Argentina",
     "status": "LC",
-    "coordinate": { "latitude": 9.65, "longitude": -82.75 },
+    "coordinate": {
+      "latitude": 9.65,
+      "longitude": -82.75
+    },
     "mapSpan": 30,
     "tagline": "A slow life, perfectly lived",
     "lede": "The brown-throated sloth moves so slowly that algae grows in its fur. It's not lazy; it's efficient. Living on a diet of leaves that provides very little energy, the sloth has turned slowness into a survival strategy that has worked for millions of years.",
@@ -1279,30 +2356,61 @@
     "outlook": "The brown-throated sloth is still widespread, but deforestation breaks up its forest, forcing sloths onto the ground, roads and power lines where they're in danger. Wildlife bridges and power-line insulation in Costa Rica are helping them get around safely.",
     "didYouKnow": "A sloth's slow movements make it hard for eagles and jaguars, which hunt by spotting motion, to notice them.",
     "facts": [
-      { "label": "Length", "value": "42–80 cm" },
-      { "label": "Weight", "value": "2.2–6.3 kg" },
-      { "label": "Top speed", "value": "About 0.25 km/h" },
-      { "label": "Diet", "value": "Leaves" }
+      {
+        "label": "Length",
+        "value": "42–80 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2.2–6.3 kg"
+      },
+      {
+        "label": "Top speed",
+        "value": "About 0.25 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves"
+      }
     ],
     "quiz": [
       {
         "prompt": "Why does a sloth's fur often look green?",
-        "choices": ["Algae grows in it", "It rolls in leaves", "It's dyed by the fruit it eats", "Its skin is green"],
+        "choices": [
+          "Algae grows in it",
+          "It rolls in leaves",
+          "It's dyed by the fruit it eats",
+          "Its skin is green"
+        ],
         "explanation": "Algae grows in grooves in the hair and helps with camouflage."
       },
       {
         "prompt": "How often do sloths climb down to the ground?",
-        "choices": ["About once a week, to poop", "Every hour, to drink", "Never in their lives", "Once a day, to sleep"],
+        "choices": [
+          "About once a week, to poop",
+          "Every hour, to drink",
+          "Never in their lives",
+          "Once a day, to sleep"
+        ],
         "explanation": "They descend roughly once a week to relieve themselves."
       },
       {
         "prompt": "Why do sloths move so slowly?",
-        "choices": ["Their leafy diet gives them very little energy", "They have weak bones", "They're always sleepy from fruit", "They're blind"],
+        "choices": [
+          "Their leafy diet gives them very little energy",
+          "They have weak bones",
+          "They're always sleepy from fruit",
+          "They're blind"
+        ],
         "explanation": "Slow movement saves energy on a low-calorie diet of leaves."
       }
     ],
     "charities": [
-      { "name": "The Sloth Conservation Foundation", "url": "https://slothconservation.org", "blurb": "Builds wildlife bridges and researches sloths in Costa Rica." }
+      {
+        "name": "The Sloth Conservation Foundation",
+        "url": "https://slothconservation.org",
+        "blurb": "Builds wildlife bridges and researches sloths in Costa Rica."
+      }
     ]
   },
   {
@@ -1311,10 +2419,16 @@
     "scientificName": "Panthera onca",
     "wikipediaTitle": "Jaguar",
     "group": "mammal",
-    "regions": ["southAmerica", "centralAmerica"],
+    "regions": [
+      "southAmerica",
+      "centralAmerica"
+    ],
     "range": "From northern Mexico through the Amazon to northern Argentina",
     "status": "NT",
-    "coordinate": { "latitude": -17.5, "longitude": -57.0 },
+    "coordinate": {
+      "latitude": -17.5,
+      "longitude": -57.0
+    },
     "mapSpan": 40,
     "tagline": "The water-loving king of the Americas",
     "lede": "The jaguar is the largest cat in the Americas and the third largest in the world. Unlike most cats, it loves water. In Brazil's Pantanal wetlands, jaguars swim rivers, hunt caimans and fish, and doze on sandbanks in the afternoon heat.",
@@ -1324,30 +2438,61 @@
     "outlook": "Jaguars are near threatened and have already vanished from about half of their original range. Forest clearing for ranching and farming, fires, and conflict with cattle ranchers are the biggest threats. Wildlife corridors connecting protected areas are key to their future.",
     "didYouKnow": "The name 'jaguar' is often traced to the Tupi-Guarani word yaguara, said to mean something like 'one who kills with a single leap'.",
     "facts": [
-      { "label": "Length", "value": "1.1–1.85 m + tail" },
-      { "label": "Weight", "value": "56–96 kg" },
-      { "label": "Lifespan", "value": "12–15 years wild" },
-      { "label": "Diet", "value": "Capybaras, caimans, deer" }
+      {
+        "label": "Length",
+        "value": "1.1–1.85 m + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "56–96 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "12–15 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Capybaras, caimans, deer"
+      }
     ],
     "quiz": [
       {
         "prompt": "How can you tell a jaguar from a leopard?",
-        "choices": ["Jaguar rosettes have spots inside them", "Jaguars have stripes", "Leopards are always bigger", "Jaguars have no spots"],
+        "choices": [
+          "Jaguar rosettes have spots inside them",
+          "Jaguars have stripes",
+          "Leopards are always bigger",
+          "Jaguars have no spots"
+        ],
         "explanation": "Jaguar rosettes usually contain small dots; leopard rosettes don't."
       },
       {
         "prompt": "How do jaguars often kill their prey?",
-        "choices": ["With a bite through the skull", "By chasing it until it's exhausted", "By drowning it", "With venom"],
+        "choices": [
+          "With a bite through the skull",
+          "By chasing it until it's exhausted",
+          "By drowning it",
+          "With venom"
+        ],
         "explanation": "Their powerful bite can pierce skulls and turtle shells."
       },
       {
         "prompt": "What do jaguars think of water?",
-        "choices": ["They love it and are strong swimmers", "They avoid it completely", "They only drink at night", "They are afraid of rivers"],
+        "choices": [
+          "They love it and are strong swimmers",
+          "They avoid it completely",
+          "They only drink at night",
+          "They are afraid of rivers"
+        ],
         "explanation": "Jaguars swim well and hunt caimans and fish in rivers."
       }
     ],
     "charities": [
-      { "name": "Panthera", "url": "https://panthera.org", "blurb": "Global wild cat conservation, including the Jaguar Corridor Initiative." }
+      {
+        "name": "Panthera",
+        "url": "https://panthera.org",
+        "blurb": "Global wild cat conservation, including the Jaguar Corridor Initiative."
+      }
     ]
   },
   {
@@ -1356,43 +2501,79 @@
     "scientificName": "Vultur gryphus",
     "wikipediaTitle": "Andean condor",
     "group": "bird",
-    "regions": ["southAmerica"],
+    "regions": [
+      "southAmerica"
+    ],
     "range": "The Andes mountains and Pacific coast of South America, from Venezuela to Tierra del Fuego",
     "status": "VU",
-    "coordinate": { "latitude": -33.0, "longitude": -70.0 },
+    "coordinate": {
+      "latitude": -33.0,
+      "longitude": -70.0
+    },
     "mapSpan": 40,
     "tagline": "The bird that barely needs to flap",
-    "lede": "With wings stretching more than three metres, the Andean condor is one of the largest flying birds in the world. It's also one of the most efficient. One tracked condor flew more than 170 kilometres over five hours without flapping its wings once.",
+    "lede": "With wings stretching more than 3 metres, the Andean condor is one of the largest flying birds in the world. It's also one of the most efficient. One tracked condor flew more than 170 kilometres over five hours without flapping its wings once.",
     "home": "Andean condors live along the Andes mountains, from Venezuela to the southern tip of South America, and along nearby Pacific coasts. They nest on high cliff ledges and soar over open grasslands and mountains in search of food.",
     "life": "Condors are scavengers. They eat carrion, mostly large dead animals like guanacos, cattle, and on the coast, dead sea lions and whales. They help keep ecosystems clean. Pairs mate for life and raise just one chick every two years, caring for it for over a year.",
     "remarkable": "Condors ride rising currents of warm air and wind deflected off mountains, flapping during only about one percent of their flight time, mostly during take-off. They can soar to over 5,000 metres. Males have a fleshy comb on their heads and a ruff of white feathers around their necks.",
     "outlook": "Condors are vulnerable because they breed so slowly. Many are poisoned by bait set out for predators or by lead from bullets in carcasses, and some are shot. Captive breeding and release programs have returned condors to areas where they had vanished.",
     "didYouKnow": "The Andean condor is a national symbol of Bolivia, Chile, Colombia, Ecuador and Peru.",
     "facts": [
-      { "label": "Wingspan", "value": "Up to 3.3 m" },
-      { "label": "Weight", "value": "11–15 kg" },
-      { "label": "Lifespan", "value": "50+ years" },
-      { "label": "Diet", "value": "Carrion" }
+      {
+        "label": "Wingspan",
+        "value": "Up to 3.3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "11–15 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "50+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Carrion"
+      }
     ],
     "quiz": [
       {
         "prompt": "What do Andean condors eat?",
-        "choices": ["Carrion, mostly large dead animals", "Live rabbits they catch", "Fruit and seeds", "Fish they dive for"],
+        "choices": [
+          "Carrion, mostly large dead animals",
+          "Live rabbits they catch",
+          "Fruit and seeds",
+          "Fish they dive for"
+        ],
         "explanation": "Condors are scavengers that feed on carcasses."
       },
       {
         "prompt": "How do condors fly so efficiently?",
-        "choices": ["They soar on rising air and rarely flap", "They flap very fast", "They only fly downhill", "They ride on other birds"],
+        "choices": [
+          "They soar on rising air and rarely flap",
+          "They flap very fast",
+          "They only fly downhill",
+          "They ride on other birds"
+        ],
         "explanation": "Condors flap only about one percent of the time, riding air currents."
       },
       {
         "prompt": "How often do condors raise a chick?",
-        "choices": ["About one chick every two years", "Ten chicks a year", "Twice a year", "Only once in their lives"],
+        "choices": [
+          "About one chick every two years",
+          "Ten chicks a year",
+          "Twice a year",
+          "Only once in their lives"
+        ],
         "explanation": "Their slow breeding makes populations vulnerable to losses."
       }
     ],
     "charities": [
-      { "name": "The Peregrine Fund", "url": "https://peregrinefund.org", "blurb": "Conserves birds of prey worldwide, including condors." }
+      {
+        "name": "The Peregrine Fund",
+        "url": "https://peregrinefund.org",
+        "blurb": "Conserves birds of prey worldwide, including condors."
+      }
     ]
   },
   {
@@ -1401,10 +2582,15 @@
     "scientificName": "Amblyrhynchus cristatus",
     "wikipediaTitle": "Marine iguana",
     "group": "reptile",
-    "regions": ["southAmerica"],
+    "regions": [
+      "southAmerica"
+    ],
     "range": "Only the rocky shores of the Galápagos Islands, Ecuador",
     "status": "VU",
-    "coordinate": { "latitude": -0.8, "longitude": -91.1 },
+    "coordinate": {
+      "latitude": -0.8,
+      "longitude": -91.1
+    },
     "mapSpan": 4,
     "tagline": "The only lizard that feeds in the sea",
     "lede": "When Charles Darwin saw marine iguanas piled on Galápagos lava rocks, he called them 'imps of darkness'. They may look grumpy, but they're unique: the only lizards in the world that swim into the ocean to feed.",
@@ -1414,30 +2600,61 @@
     "outlook": "Marine iguanas are vulnerable. Introduced cats, dogs and rats eat eggs and young, El Niño events cause mass starvation, and oil spills and warming seas threaten their algae. Removing invasive predators from islands has been a major conservation success.",
     "didYouKnow": "Marine iguanas can hold their breath for up to an hour, though most dives are much shorter.",
     "facts": [
-      { "label": "Length", "value": "Up to ~1.3 m" },
-      { "label": "Weight", "value": "1–12 kg" },
-      { "label": "Dives", "value": "20+ m deep" },
-      { "label": "Diet", "value": "Seaweed" }
+      {
+        "label": "Length",
+        "value": "Up to ~1.3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "1–12 kg"
+      },
+      {
+        "label": "Dives",
+        "value": "20+ m deep"
+      },
+      {
+        "label": "Diet",
+        "value": "Seaweed"
+      }
     ],
     "quiz": [
       {
         "prompt": "What do marine iguanas eat?",
-        "choices": ["Seaweed and algae", "Fish", "Crabs", "Seabird eggs"],
+        "choices": [
+          "Seaweed and algae",
+          "Fish",
+          "Crabs",
+          "Seabird eggs"
+        ],
         "explanation": "They feed on algae growing on rocks in and near the sea."
       },
       {
         "prompt": "How do marine iguanas get rid of extra salt?",
-        "choices": ["They sneeze it out through their noses", "They sweat it out", "They drink fresh water from streams", "They don't need to"],
+        "choices": [
+          "They sneeze it out through their noses",
+          "They sweat it out",
+          "They drink fresh water from streams",
+          "They don't need to"
+        ],
         "explanation": "Salt glands connected to the nostrils let them sneeze out salt."
       },
       {
         "prompt": "What can marine iguanas do when food is scarce?",
-        "choices": ["Shrink their bodies, even their bones", "Hibernate for a year", "Switch to eating insects", "Migrate to South America"],
+        "choices": [
+          "Shrink their bodies, even their bones",
+          "Hibernate for a year",
+          "Switch to eating insects",
+          "Migrate to South America"
+        ],
         "explanation": "During El Niño famines they can shrink in length."
       }
     ],
     "charities": [
-      { "name": "Galápagos Conservancy", "url": "https://www.galapagos.org", "blurb": "Funds restoration and protection of Galápagos wildlife and islands." }
+      {
+        "name": "Galápagos Conservancy",
+        "url": "https://www.galapagos.org",
+        "blurb": "Funds restoration and protection of Galápagos wildlife and islands."
+      }
     ]
   },
   {
@@ -1446,43 +2663,79 @@
     "scientificName": "Erinaceus europaeus",
     "wikipediaTitle": "European hedgehog",
     "group": "mammal",
-    "regions": ["europe"],
+    "regions": [
+      "europe"
+    ],
     "range": "Western and northern Europe, from Britain and Scandinavia to Italy; introduced to New Zealand",
     "status": "NT",
-    "coordinate": { "latitude": 52.0, "longitude": -1.0 },
+    "coordinate": {
+      "latitude": 52.0,
+      "longitude": -1.0
+    },
     "mapSpan": 20,
     "tagline": "The garden's prickly night-time visitor",
     "lede": "For many Europeans, a snuffling hedgehog in the garden after dark is a small piece of magic. Covered in thousands of spines, it trundles across lawns and hedgerows each night, sniffing out beetles, worms and slugs.",
     "home": "European hedgehogs live in woodland edges, hedgerows, farmland, parks and gardens across western Europe. They have adapted well to towns, where gardens can be a rich hunting ground, if fences and walls don't block their way.",
-    "life": "Hedgehogs are nocturnal and solitary, roaming one to two kilometres a night in search of beetles, caterpillars, earthworms and slugs. From about November to March, they hibernate in nests of leaves, their heart rate falling from around 190 to about 20 beats a minute.",
+    "life": "Hedgehogs are nocturnal and solitary, roaming one to 2 kilometres a night in search of beetles, caterpillars, earthworms and slugs. From about November to March, they hibernate in nests of leaves, their heart rate falling from around 190 to about 20 beats a minute.",
     "remarkable": "An adult has around 5,000 to 7,000 spines, which are hollow hairs made of keratin. When frightened, it rolls into a tight, prickly ball using a band of muscle along its back. Hedgehogs also 'self-anoint', frothing at the mouth and spreading foamy saliva over their spines, and nobody is sure why.",
     "outlook": "In 2024, the IUCN moved the European hedgehog to near threatened. Populations in Britain and several other countries have fallen sharply, due to lost hedgerows, intensive farming, roads and tidy gardens. Cutting a 13-centimetre hole in your fence creates a 'hedgehog highway'.",
     "didYouKnow": "Hedgehogs got their name because they forage in hedges and make pig-like grunts while they hunt.",
     "facts": [
-      { "label": "Length", "value": "20–30 cm" },
-      { "label": "Weight", "value": "0.6–1.2 kg" },
-      { "label": "Lifespan", "value": "2–5 years wild" },
-      { "label": "Diet", "value": "Beetles, worms, slugs" }
+      {
+        "label": "Length",
+        "value": "20–30 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "0.6–1.2 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "2–5 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Beetles, worms, slugs"
+      }
     ],
     "quiz": [
       {
         "prompt": "About how many spines does an adult hedgehog have?",
-        "choices": ["5,000 to 7,000", "About 50", "About 500", "More than a million"],
+        "choices": [
+          "5,000 to 7,000",
+          "About 50",
+          "About 500",
+          "More than a million"
+        ],
         "explanation": "Adults carry roughly 5,000 to 7,000 spines."
       },
       {
         "prompt": "What is a 'hedgehog highway'?",
-        "choices": ["A small hole in a garden fence so hedgehogs can pass", "A road sign warning drivers", "A tunnel under a motorway", "A trail of food left out at night"],
+        "choices": [
+          "A small hole in a garden fence so hedgehogs can pass",
+          "A road sign warning drivers",
+          "A tunnel under a motorway",
+          "A trail of food left out at night"
+        ],
         "explanation": "Holes about 13 cm wide let hedgehogs roam between gardens."
       },
       {
         "prompt": "What do hedgehogs do in winter?",
-        "choices": ["Hibernate in nests of leaves", "Migrate south to Africa", "Grow thicker spines and stay active", "Sleep in other animals' burrows"],
+        "choices": [
+          "Hibernate in nests of leaves",
+          "Migrate south to Africa",
+          "Grow thicker spines and stay active",
+          "Sleep in other animals' burrows"
+        ],
         "explanation": "They hibernate from about November to March."
       }
     ],
     "charities": [
-      { "name": "British Hedgehog Preservation Society", "url": "https://www.britishhedgehogs.org.uk", "blurb": "Runs Hedgehog Street and supports hedgehog rescue and research in the UK." }
+      {
+        "name": "British Hedgehog Preservation Society",
+        "url": "https://www.britishhedgehogs.org.uk",
+        "blurb": "Runs Hedgehog Street and supports hedgehog rescue and research in the UK."
+      }
     ]
   },
   {
@@ -1491,43 +2744,79 @@
     "scientificName": "Varanus komodoensis",
     "wikipediaTitle": "Komodo dragon",
     "group": "reptile",
-    "regions": ["asia"],
+    "regions": [
+      "asia"
+    ],
     "range": "Komodo, Rinca, Flores and a few nearby islands in Indonesia",
     "status": "EN",
-    "coordinate": { "latitude": -8.55, "longitude": 119.45 },
+    "coordinate": {
+      "latitude": -8.55,
+      "longitude": 119.45
+    },
     "mapSpan": 3,
     "tagline": "The largest lizard on Earth",
-    "lede": "Komodo dragons are real dragons, more or less. Growing up to three metres long, they are the largest living lizards, top predators on a handful of Indonesian islands, able to take down deer and water buffalo.",
+    "lede": "Komodo dragons are real dragons, more or less. Growing up to 3 metres long, they are the largest living lizards, top predators on a handful of Indonesian islands, able to take down deer and water buffalo.",
     "home": "Komodo dragons live only on a few islands in Indonesia, including Komodo, Rinca and parts of Flores, in dry savanna and tropical forest. Komodo National Park, a World Heritage Site, was created to protect them.",
     "life": "Komodos hunt deer, wild pigs and water buffalo by ambush, and happily eat carrion. They can eat up to 80 percent of their body weight in a single meal. Young dragons spend their first years living in trees, safe from cannibalistic adults.",
     "remarkable": "A Komodo's bite is deadly partly because of venom glands in its lower jaw, which cause bleeding and shock, so even prey that escapes may die later. They flick forked tongues to 'taste' the air, finding carrion kilometres away. And females can sometimes lay fertile eggs without ever meeting a male.",
     "outlook": "Komodo dragons are endangered, with only a few thousand left. Their tiny island range is threatened by rising sea levels, habitat loss on Flores, and the hunting of their prey. Komodo National Park protects most of the remaining population.",
     "didYouKnow": "Komodo dragon teeth are coated with iron, which helps keep their serrated edges sharp.",
     "facts": [
-      { "label": "Length", "value": "2–3 m" },
-      { "label": "Weight", "value": "Up to ~90 kg" },
-      { "label": "Lifespan", "value": "About 30 years" },
-      { "label": "Diet", "value": "Deer, pigs, carrion" }
+      {
+        "label": "Length",
+        "value": "2–3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~90 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 30 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Deer, pigs, carrion"
+      }
     ],
     "quiz": [
       {
         "prompt": "What makes a Komodo dragon's bite so deadly?",
-        "choices": ["Venom from glands in its jaw", "Electric shocks", "Teeth as long as a knife", "Poison on its skin"],
+        "choices": [
+          "Venom from glands in its jaw",
+          "Electric shocks",
+          "Teeth as long as a knife",
+          "Poison on its skin"
+        ],
         "explanation": "Venom glands in the lower jaw cause bleeding and shock."
       },
       {
         "prompt": "What can female Komodo dragons sometimes do?",
-        "choices": ["Lay fertile eggs without a male", "Change into males", "Fly short distances", "Breathe underwater"],
+        "choices": [
+          "Lay fertile eggs without a male",
+          "Change into males",
+          "Fly short distances",
+          "Breathe underwater"
+        ],
         "explanation": "This is called parthenogenesis and has been seen in zoos."
       },
       {
         "prompt": "How do young Komodo dragons stay safe?",
-        "choices": ["They live in trees", "They live in the sea", "They hide inside their eggs for a year", "Their mothers guard them for years"],
+        "choices": [
+          "They live in trees",
+          "They live in the sea",
+          "They hide inside their eggs for a year",
+          "Their mothers guard them for years"
+        ],
         "explanation": "Young dragons climb trees to avoid hungry adults."
       }
     ],
     "charities": [
-      { "name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works across Indonesia to protect threatened species and island habitats." }
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works across Indonesia to protect threatened species and island habitats."
+      }
     ]
   },
   {
@@ -1536,10 +2825,17 @@
     "scientificName": "Odontodactylus scyllarus",
     "wikipediaTitle": "Peacock mantis shrimp",
     "group": "marineInvertebrate",
-    "regions": ["openOcean", "asia", "oceania"],
+    "regions": [
+      "openOcean",
+      "asia",
+      "oceania"
+    ],
     "range": "Coral reefs of the Indo-Pacific, from East Africa to Guam",
     "status": "NE",
-    "coordinate": { "latitude": -8.3, "longitude": 115.5 },
+    "coordinate": {
+      "latitude": -8.3,
+      "longitude": 115.5
+    },
     "mapSpan": 40,
     "tagline": "A rainbow with a punch like a bullet",
     "lede": "The peacock mantis shrimp looks like a living rainbow, and it hits like a heavyweight. Its club-shaped arms strike with the acceleration of a bullet, fast enough to shatter snail shells and, now and then, aquarium glass.",
@@ -1549,30 +2845,61 @@
     "outlook": "The peacock mantis shrimp hasn't been assessed by the IUCN, and it is common on many reefs. But like all reef life, it depends on healthy coral, which is threatened by warming oceans, bleaching, pollution and destructive fishing.",
     "didYouKnow": "Engineers study the mantis shrimp's club, which can survive thousands of impacts, to design tougher materials for helmets and aircraft.",
     "facts": [
-      { "label": "Length", "value": "3–18 cm" },
-      { "label": "Color receptors", "value": "12–16 types" },
-      { "label": "Strike speed", "value": "About 23 m/s" },
-      { "label": "Diet", "value": "Crabs, snails, clams" }
+      {
+        "label": "Length",
+        "value": "3–18 cm"
+      },
+      {
+        "label": "Color receptors",
+        "value": "12–16 types"
+      },
+      {
+        "label": "Strike speed",
+        "value": "About 23 m/s"
+      },
+      {
+        "label": "Diet",
+        "value": "Crabs, snails, clams"
+      }
     ],
     "quiz": [
       {
         "prompt": "How does a peacock mantis shrimp break shells?",
-        "choices": ["With super-fast, club-like arms", "With acid", "By dropping them from a height", "By squeezing with its tail"],
+        "choices": [
+          "With super-fast, club-like arms",
+          "With acid",
+          "By dropping them from a height",
+          "By squeezing with its tail"
+        ],
         "explanation": "Its clubs strike with the acceleration of a bullet."
       },
       {
         "prompt": "How many types of color receptors do its eyes have?",
-        "choices": ["12 to 16", "3, like humans", "1", "None; it's colorblind"],
+        "choices": [
+          "12 to 16",
+          "3, like humans",
+          "1",
+          "None; it's colorblind"
+        ],
         "explanation": "Mantis shrimp have far more color receptor types than we do."
       },
       {
         "prompt": "What hits the prey a second time after a strike?",
-        "choices": ["A collapsing bubble in the boiling water", "The shrimp's tail", "A second shrimp", "A jet of ink"],
+        "choices": [
+          "A collapsing bubble in the boiling water",
+          "The shrimp's tail",
+          "A second shrimp",
+          "A jet of ink"
+        ],
         "explanation": "The strike creates a cavitation bubble that collapses with force."
       }
     ],
     "charities": [
-      { "name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns to protect coral reefs and ocean habitats." }
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect coral reefs and ocean habitats."
+      }
     ]
   },
   {
@@ -1581,10 +2908,15 @@
     "scientificName": "Photinus pyralis",
     "wikipediaTitle": "Photinus pyralis",
     "group": "insect",
-    "regions": ["naEast"],
+    "regions": [
+      "naEast"
+    ],
     "range": "Fields and lawns of eastern North America, reaching north into southern Ontario",
     "status": "LC",
-    "coordinate": { "latitude": 40.5, "longitude": -82.0 },
+    "coordinate": {
+      "latitude": 40.5,
+      "longitude": -82.0
+    },
     "mapSpan": 20,
     "tagline": "Summer's living lanterns",
     "lede": "On warm June evenings, lawns and meadows across eastern North America start to twinkle. Those yellow-green flashes, swooping upward like a J, are male common eastern fireflies writing messages in light.",
@@ -1594,30 +2926,61 @@
     "outlook": "The common eastern firefly is still widespread, but many firefly species are declining. Artificial light at night drowns out their signals, pesticides harm larvae, and habitat is lost to development. Turning off outdoor lights and mowing less can bring fireflies back.",
     "didYouKnow": "The firefly enzyme luciferase is used in medical research labs to make genes and cells light up.",
     "facts": [
-      { "label": "Length", "value": "11–14 mm" },
-      { "label": "Adult life", "value": "A few weeks" },
-      { "label": "Larva life", "value": "1–2 years" },
-      { "label": "Larva diet", "value": "Snails, slugs, worms" }
+      {
+        "label": "Length",
+        "value": "11–14 mm"
+      },
+      {
+        "label": "Adult life",
+        "value": "A few weeks"
+      },
+      {
+        "label": "Larva life",
+        "value": "1–2 years"
+      },
+      {
+        "label": "Larva diet",
+        "value": "Snails, slugs, worms"
+      }
     ],
     "quiz": [
       {
         "prompt": "What shape does the male's flash trace in the air?",
-        "choices": ["A rising J-shaped swoop", "A perfect circle", "A zigzag", "A straight line down"],
+        "choices": [
+          "A rising J-shaped swoop",
+          "A perfect circle",
+          "A zigzag",
+          "A straight line down"
+        ],
         "explanation": "The J-shaped swoop earned it the nickname 'Big Dipper firefly'."
       },
       {
         "prompt": "What do firefly larvae eat?",
-        "choices": ["Snails, slugs and worms", "Nectar", "Leaves", "Nothing"],
+        "choices": [
+          "Snails, slugs and worms",
+          "Nectar",
+          "Leaves",
+          "Nothing"
+        ],
         "explanation": "The larvae are predators in the soil."
       },
       {
         "prompt": "What is a major threat to fireflies?",
-        "choices": ["Artificial light at night", "Cold winters", "Too many flowers", "Rain"],
+        "choices": [
+          "Artificial light at night",
+          "Cold winters",
+          "Too many flowers",
+          "Rain"
+        ],
         "explanation": "Light pollution drowns out the flashes they use to find mates."
       }
     ],
     "charities": [
-      { "name": "Xerces Society", "url": "https://www.xerces.org", "blurb": "Leads firefly conservation research and the Firefly Atlas project." }
+      {
+        "name": "Xerces Society",
+        "url": "https://www.xerces.org",
+        "blurb": "Leads firefly conservation research and the Firefly Atlas project."
+      }
     ]
   },
   {
@@ -1626,43 +2989,80 @@
     "scientificName": "Archilochus colubris",
     "wikipediaTitle": "Ruby-throated hummingbird",
     "group": "bird",
-    "regions": ["naEast", "centralAmerica"],
+    "regions": [
+      "naEast",
+      "centralAmerica"
+    ],
     "range": "Breeds across eastern North America to southern Canada; winters in Central America",
     "status": "LC",
-    "coordinate": { "latitude": 45.0, "longitude": -76.0 },
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": -76.0
+    },
     "mapSpan": 30,
     "tagline": "A bird lighter than a coin that crosses the Gulf",
-    "lede": "The ruby-throated hummingbird weighs about three grams, less than a Canadian quarter coin. Yet each autumn, many of them fly nonstop across the Gulf of Mexico, around 800 kilometres of open water, in a single overnight flight.",
+    "lede": "The ruby-throated hummingbird weighs about 3 grams, less than a Canadian quarter coin. Yet each autumn, many of them fly nonstop across the Gulf of Mexico, around 800 kilometres of open water, in a single overnight flight.",
     "home": "This is the only hummingbird that breeds in eastern North America, nesting from the Gulf states to southern Canada, as far north as Nova Scotia and the Prairies. It visits gardens, forest edges and meadows full of flowers, and spends the winter in Central America.",
     "life": "Hummingbirds drink nectar from flowers like bee balm and jewelweed, and catch tiny insects and spiders for protein. Females build walnut-sized nests of plant down bound with spider silk, which stretch as the chicks grow. They raise the young completely alone.",
     "remarkable": "Its wings beat about 50 times a second, and its heart can race over 1,000 beats a minute. To survive cold nights, it can enter torpor, a deep sleep where its body cools and its heart slows dramatically. The male's ruby throat is made by structure, not pigment, and looks black at the wrong angle.",
     "outlook": "Ruby-throated hummingbirds are common and stable. Planting native flowers that bloom across the season helps them, as does keeping feeders clean with plain sugar water, four parts water to one part sugar, with no red dye.",
     "didYouKnow": "Before migrating, a ruby-throated hummingbird can almost double its weight in fat to fuel the trip.",
     "facts": [
-      { "label": "Length", "value": "7–9 cm" },
-      { "label": "Weight", "value": "About 3 g" },
-      { "label": "Lifespan", "value": "3–5 years" },
-      { "label": "Diet", "value": "Nectar, tiny insects" }
+      {
+        "label": "Length",
+        "value": "7–9 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 3 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "3–5 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Nectar, tiny insects"
+      }
     ],
     "quiz": [
       {
         "prompt": "How do many ruby-throats reach Central America in autumn?",
-        "choices": ["A nonstop flight across the Gulf of Mexico", "Riding on the backs of geese", "Hopping island to island over months", "They don't migrate"],
+        "choices": [
+          "A nonstop flight across the Gulf of Mexico",
+          "Riding on the backs of geese",
+          "Hopping island to island over months",
+          "They don't migrate"
+        ],
         "explanation": "Many fly about 800 km across the Gulf in one go."
       },
       {
         "prompt": "Why can the male's red throat look black?",
-        "choices": ["Its color comes from structure, which depends on the angle", "It changes with its mood", "It gets dirty from nectar", "It fades at night"],
+        "choices": [
+          "Its color comes from structure, which depends on the angle",
+          "It changes with its mood",
+          "It gets dirty from nectar",
+          "It fades at night"
+        ],
         "explanation": "Iridescent structural color only flashes red at certain angles."
       },
       {
         "prompt": "How do hummingbirds survive cold nights?",
-        "choices": ["They enter torpor, slowing their heart and cooling down", "They huddle in large groups", "They fly all night to stay warm", "They eat continuously"],
+        "choices": [
+          "They enter torpor, slowing their heart and cooling down",
+          "They huddle in large groups",
+          "They fly all night to stay warm",
+          "They eat continuously"
+        ],
         "explanation": "Torpor saves precious energy overnight."
       }
     ],
     "charities": [
-      { "name": "Birds Canada", "url": "https://www.birdscanada.org", "blurb": "Monitors and protects birds across Canada, from backyards to the boreal." }
+      {
+        "name": "Birds Canada",
+        "url": "https://www.birdscanada.org",
+        "blurb": "Monitors and protects birds across Canada, from backyards to the boreal."
+      }
     ]
   },
   {
@@ -1671,43 +3071,80 @@
     "scientificName": "Diomedea exulans",
     "wikipediaTitle": "Wandering albatross",
     "group": "bird",
-    "regions": ["antarctica", "openOcean"],
+    "regions": [
+      "antarctica",
+      "openOcean"
+    ],
     "range": "The Southern Ocean, breeding on islands like South Georgia, Crozet and Kerguelen",
     "status": "VU",
-    "coordinate": { "latitude": -54.0, "longitude": -38.0 },
+    "coordinate": {
+      "latitude": -54.0,
+      "longitude": -38.0
+    },
     "mapSpan": 60,
     "tagline": "The widest wings in the world",
-    "lede": "No living bird has longer wings than the wandering albatross. Spread out, they can stretch more than three metres from tip to tip. With them, this great seabird glides around the Southern Ocean for months, sometimes circling the globe.",
+    "lede": "No living bird has longer wings than the wandering albatross. Spread out, they can stretch more than 3 metres from tip to tip. With them, this great seabird glides around the Southern Ocean for months, sometimes circling the globe.",
     "home": "Wandering albatrosses spend most of their lives over the open Southern Ocean, among the strongest winds on Earth. They come ashore only to breed, on remote, windswept islands such as South Georgia, Crozet, Kerguelen and the Prince Edward Islands.",
     "life": "They feed on squid and fish, mostly snatched from the surface, often at night. Pairs mate for life and perform elaborate dances. They lay a single egg, and raising the chick takes almost a year, so most pairs breed only every two years. They don't start breeding until around ten years old.",
     "remarkable": "Albatrosses use 'dynamic soaring', swooping between faster winds above and slower air near the waves to gain energy, so they can travel huge distances while barely flapping. A wandering albatross can cover hundreds of kilometres in a day, and they can live more than 50 years.",
     "outlook": "The wandering albatross is vulnerable. Many drown after grabbing baited hooks on longline fishing boats. Simple fixes like bird-scaring lines, weighted hooks and setting lines at night dramatically reduce these deaths, and campaigns are spreading them across fleets.",
     "didYouKnow": "Albatrosses have a special shoulder lock that holds their wings out without using muscle, letting them glide for hours with little effort.",
     "facts": [
-      { "label": "Wingspan", "value": "2.5–3.5 m" },
-      { "label": "Weight", "value": "6–12 kg" },
-      { "label": "Lifespan", "value": "50+ years" },
-      { "label": "Diet", "value": "Squid, fish" }
+      {
+        "label": "Wingspan",
+        "value": "2.5–3.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "6–12 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "50+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Squid, fish"
+      }
     ],
     "quiz": [
       {
         "prompt": "What record does the wandering albatross hold?",
-        "choices": ["The longest wingspan of any living bird", "The fastest flight", "The heaviest flying bird", "The deepest dive"],
-        "explanation": "Its wings can span more than three metres."
+        "choices": [
+          "The longest wingspan of any living bird",
+          "The fastest flight",
+          "The heaviest flying bird",
+          "The deepest dive"
+        ],
+        "explanation": "Its wings can span more than 3 metres."
       },
       {
         "prompt": "What is the main human threat to wandering albatrosses?",
-        "choices": ["Baited hooks on longline fishing boats", "Light pollution", "Wind farms", "Pesticides"],
+        "choices": [
+          "Baited hooks on longline fishing boats",
+          "Light pollution",
+          "Wind farms",
+          "Pesticides"
+        ],
         "explanation": "Albatrosses drown after taking bait from longlines."
       },
       {
         "prompt": "How do albatrosses travel so far without flapping?",
-        "choices": ["Dynamic soaring between wind layers", "Riding on ships", "Swimming most of the way", "Flapping very fast in short bursts"],
+        "choices": [
+          "Dynamic soaring between wind layers",
+          "Riding on ships",
+          "Swimming most of the way",
+          "Flapping very fast in short bursts"
+        ],
         "explanation": "Dynamic soaring extracts energy from changes in wind speed."
       }
     ],
     "charities": [
-      { "name": "BirdLife International", "url": "https://www.birdlife.org", "blurb": "Runs the Albatross Task Force, working with fishers to stop seabird bycatch." }
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "Runs the Albatross Task Force, working with fishers to stop seabird bycatch."
+      }
     ]
   }
 ]

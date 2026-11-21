@@ -17,7 +17,7 @@ struct PhotoViewer: View {
     var body: some View {
         ZStack {
             Color.black
-                .opacity(1 - min(0.6, abs(dismissDrag) / 400))
+                .opacity(Double(1 - min(0.6, abs(dismissDrag) / 400)))
                 .ignoresSafeArea()
 
             if let shown = image ?? preview {
