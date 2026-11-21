@@ -19,6 +19,43 @@ struct AnimalArticleView: View {
     private var accent: Color { animal.group.color }
 
     var body: some View {
+        ZStack(alignment: .top) {
+            article
+                .background(Color(.systemBackground))
+                .ignoresSafeArea(edges: .top)
+            // Pinned to the top of the safe area; its material extends up under the status bar.
+            Text(animal.name)
+                .font(.system(.headline, design: .serif))
+                .lineLimit(1)
+                .padding(.horizontal, 64)
+                .frame(maxWidth: .infinity)
+                .frame(height: 44)
+                .background(.bar)
+                .overlay(alignment: .bottom) { Divider() }
+                .opacity(pastHero ? 1 : 0)
+                .allowsHitTesting(false)
+                .accessibilityHidden(true)
+        }
+        .scrollIndicators(.hidden)
+        .toolbarBackground(.hidden, for: .navigationBar)
+        .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
+        .toolbar {
+            ToolbarItem(placement: .topBarTrailing) {
+                ShareLink(item: animal.wikipediaURL,
+                          subject: Text(animal.name),
+                          message: Text("I met the \(animal.name) on Fauna today. \(animal.tagline).")) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.body.weight(.semibold))
+                        .foregroundStyle(pastHero ? Color.primary : .white)
+                        .frame(width: 36, height: 36)
+                        .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Circle())
+                }
+                .accessibilityLabel("Share")
+            }
+        }
+    }
+
+    private var article: some View {
         ScrollViewReader { proxy in
             ScrollView {
                 VStack(spacing: 0) {
@@ -37,27 +74,6 @@ struct AnimalArticleView: View {
         .onPreferenceChange(HeroOffsetKey.self) { minY in
             let past = minY < -(heroHeight - 140)
             if past != pastHero { withAnimation(.easeInOut(duration: 0.25)) { pastHero = past } }
-        }
-        .background(Color(.systemBackground))
-        .ignoresSafeArea(edges: .top)
-        .scrollIndicators(.hidden)
-        .navigationTitle(pastHero ? animal.name : "")
-        .navigationBarTitleDisplayMode(.inline)
-        .toolbarBackground(pastHero ? .visible : .hidden, for: .navigationBar)
-        .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
-        .toolbar {
-            ToolbarItem(placement: .topBarTrailing) {
-                ShareLink(item: animal.wikipediaURL,
-                          subject: Text(animal.name),
-                          message: Text("I met the \(animal.name) on Fauna today. \(animal.tagline).")) {
-                    Image(systemName: "square.and.arrow.up")
-                        .font(.body.weight(.semibold))
-                        .foregroundStyle(pastHero ? Color.primary : .white)
-                        .frame(width: 36, height: 36)
-                        .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Circle())
-                }
-                .accessibilityLabel("Share")
-            }
         }
     }
 
