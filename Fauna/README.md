@@ -39,7 +39,7 @@ scripts/        validate_content.py, make_icon.py
 ## Decisions I made without asking
 
 - **Name:** Fauna. **Platform:** iOS 17+, iPhone, SwiftUI, no third-party code, no backend, no accounts, no analytics.
-- **Look:** editorial serif headlines over SF body text, iOS system colors, flat fills (no gradients beyond photo scrims), and one calm green. The icon is an amber animal eye with a slit pupil, with dark and tinted variants (`scripts/make_icon.py`).
+- **Look:** serif headlines and reading text with SF for interface labels, iOS system colors, flat fills (no gradients beyond photo scrims), and one calm green. The icon is an amber animal eye with a slit pupil, with dark and tinted variants (`scripts/make_icon.py`).
 - **Content is bundled, photos are live.** Wikipedia articles are condensed by hand into `animals.json` (about 300 words each, plus facts, questions, and charities), because generating readable summaries and fair quiz questions on-device isn't reliable. Lead photos come from the Wikipedia REST API at a standard Wikimedia width and are cached on disk. Adding an animal is a JSON edit; `scripts/validate_content.py` checks it.
 - **The quiz requires all answers right**, since the point is proving you read it. Retries are unlimited and reshuffled. Questions are written to be answerable from the article alone.
 - **One daily animal, unlimited bonus animals** as long as you keep passing quizzes. Bonus animals come from the same queue, so the notification schedule is rebuilt after each unlock.
