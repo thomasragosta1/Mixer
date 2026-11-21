@@ -225,6 +225,11 @@ final class AppStore {
         return byID[id]
     }
 
+    func markQuizPassed(_ animal: Animal) {
+        guard !state.quizPassedIDs.contains(animal.id) else { return }
+        state.quizPassedIDs.append(animal.id)
+    }
+
     func completeOnboarding() {
         var next = state
         next.hasOnboarded = true

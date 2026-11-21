@@ -6,6 +6,8 @@ struct QuizView: View {
     @Environment(AppStore.self) private var store
     @Environment(\.dismiss) private var dismiss
     let animal: Animal
+    /// Practice quizzes (from the Journal) test you without unlocking a new animal.
+    var practice = false
 
     private struct Item: Identifiable {
         let id = UUID()
@@ -235,7 +237,7 @@ struct QuizView: View {
                     .font(FaunaFont.display(28))
                     .foregroundStyle(.white)
                     .multilineTextAlignment(.center)
-                Text(unlocked == nil ? "That's everything for now. Come back tomorrow." : "Your next animal is ready.")
+                Text(successMessage)
                     .font(.callout)
                     .foregroundStyle(.white.opacity(0.75))
             }
@@ -271,7 +273,7 @@ struct QuizView: View {
                 .offset(y: revealed ? 0 : 30)
                 .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.35), value: revealed)
             } else {
-                Button("Back to today") { dismiss() }
+                Button(practice ? "Done" : "Back to today") { dismiss() }
                     .buttonStyle(ProminentPillStyle(tint: .faunaMoss))
             }
             Spacer()
@@ -342,6 +344,13 @@ struct QuizView: View {
         }
     }
 
+    private var successMessage: String {
+        if practice { return "Still sharp. The \(animal.name) is yours." }
+        guard unlocked != nil else { return "You've discovered every animal in Fauna. Come back tomorrow." }
+        let today = store.state.todayChain.count
+        return "Your next animal is ready. That's \(today) today, and you can keep going as long as you like."
+    }
+
     private func advance() {
         Haptics.tap()
         if index + 1 < items.count {
@@ -350,7 +359,10 @@ struct QuizView: View {
                 picked = nil
             }
         } else {
-            if passed {
+            if passed && practice {
+                store.markQuizPassed(animal)
+                Haptics.success()
+            } else if passed {
                 let anywhere = !store.canUnlockInFocus
                 unlocked = store.unlockNext(for: animal, allowOutsideFocus: anywhere)
                 Task { await Reminders.reschedule(store) }

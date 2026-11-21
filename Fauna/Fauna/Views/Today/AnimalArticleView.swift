@@ -51,6 +51,20 @@ struct AnimalArticleView: View {
         .toolbarBackground(.hidden, for: .navigationBar)
         .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
         .toolbar {
+            if mode == .today, let onStartQuiz, store.canUnlockAnywhere {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: onStartQuiz) {
+                        Label("Next animal", systemImage: "sparkles")
+                            .font(.subheadline.weight(.semibold))
+                            .labelStyle(.titleAndIcon)
+                            .foregroundStyle(pastHero ? Color.primary : .white)
+                            .padding(.horizontal, 12)
+                            .frame(height: 36)
+                            .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Capsule())
+                    }
+                    .accessibilityHint("Answer three questions about this animal to unlock another")
+                }
+            }
             ToolbarItem(placement: .topBarTrailing) {
                 ShareLink(item: animal.wikipediaURL,
                           subject: Text(animal.name),
@@ -300,6 +314,8 @@ struct AnimalArticleView: View {
             if mode == .today, let onStartQuiz {
                 UnlockCard(animal: animal, start: onStartQuiz)
                     .id("unlock")
+            } else if mode == .journal {
+                PracticeCard(animal: animal, passed: store.hasPassedQuiz(animal))
             }
         }
         .padding(.horizontal, 22)
@@ -573,5 +589,32 @@ private struct UnlockCard: View {
             return "You've met every animal in your focus. Answer \(questions) about the \(animal.name) to unlock one from anywhere in the world."
         }
         return "Answer \(questions) about the \(animal.name) to show you read it, and we'll introduce you to another."
+    }
+}
+
+/// End of a Journal article: re-take the quiz for practice.
+private struct PracticeCard: View {
+    let animal: Animal
+    let passed: Bool
+    @State private var showQuiz = false
+
+    var body: some View {
+        VStack(spacing: 14) {
+            Image(systemName: passed ? "checkmark.seal.fill" : "questionmark.bubble.fill")
+                .font(.system(size: 30, weight: .semibold))
+                .foregroundStyle(passed ? Color.faunaGold : Color.faunaMoss)
+            Text("Test yourself")
+                .font(FaunaFont.display(24))
+            Text(passed ? "You've passed this one before. See if it stuck." : "Three questions about the \(animal.name). No pressure.")
+                .font(.callout)
+                .foregroundStyle(.secondary)
+                .multilineTextAlignment(.center)
+            Button { showQuiz = true } label: { Text("Start quiz") }
+                .buttonStyle(ProminentPillStyle(tint: .faunaMoss))
+        }
+        .fullScreenCover(isPresented: $showQuiz) { QuizView(animal: animal, practice: true) }
+        .padding(24)
+        .frame(maxWidth: .infinity)
+        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 26, style: .continuous))
     }
 }
