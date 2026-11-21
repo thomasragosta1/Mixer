@@ -22,6 +22,7 @@ struct Animal: Codable, Identifiable, Hashable {
     let anatomy: String?
     let family: String?
     let people: String?
+    let relatives: String?
     let didYouKnow: String
     let facts: [Fact]
     let quiz: [QuizQuestion]
@@ -33,11 +34,14 @@ struct Animal: Codable, Identifiable, Hashable {
         return URL(string: "https://en.wikipedia.org/wiki/\(path)")!
     }
 
-    /// Reading time for the article body, rounded up to whole minutes.
+    /// Reading time for everything on the page, at a relaxed 200 words a minute (reading to learn,
+    /// not skimming), rounded to the nearest minute.
     var readingMinutes: Int {
-        let words = [lede, home, life, remarkable, outlook, didYouKnow, anatomy ?? "", family ?? "", people ?? ""]
-            .reduce(0) { $0 + $1.split(separator: " ").count }
-        return max(1, Int((Double(words) / 220).rounded(.up)))
+        let body = [lede, home, life, remarkable, outlook, didYouKnow, anatomy ?? "", family ?? "",
+                    people ?? "", relatives ?? "", range]
+        let extras = facts.map { "\($0.label) \($0.value)" } + charities.map { "\($0.name) \($0.blurb)" }
+        let words = (body + extras).reduce(0) { $0 + $1.split(separator: " ").count }
+        return max(1, Int((Double(words) / 200).rounded()))
     }
 }
 

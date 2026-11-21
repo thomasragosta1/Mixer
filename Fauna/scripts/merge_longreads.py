@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Merges scripts/longreads/*.json ({id: {anatomy, family, people}}) into animals.json."""
+"""Merges scripts/longreads/*.json ({id: {anatomy, family, people, relatives}}) into animals.json."""
 import json
 from pathlib import Path
 root = Path(__file__).resolve().parent.parent
@@ -7,9 +7,10 @@ path = root / "Fauna/Resources/animals.json"
 animals = json.loads(path.read_text())
 extra = {}
 for f in sorted((root / "scripts/longreads").glob("*.json")):
-    extra.update(json.loads(f.read_text()))
+    for k, v in json.loads(f.read_text()).items():
+        extra.setdefault(k, {}).update(v)
 order = ["id", "name", "scientificName", "wikipediaTitle", "group", "regions", "range", "status", "coordinate",
-         "mapSpan", "tagline", "lede", "home", "anatomy", "life", "family", "remarkable", "outlook", "people",
+         "mapSpan", "tagline", "lede", "home", "anatomy", "life", "family", "remarkable", "outlook", "people", "relatives",
          "didYouKnow", "facts", "quiz", "charities"]
 out = []
 for a in animals:

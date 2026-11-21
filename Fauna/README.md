@@ -1,15 +1,16 @@
 # Fauna
 
-One remarkable animal, every day. A native SwiftUI iPhone app that turns Wikipedia into a two-minute read, sends a daily notification naming the next animal, and makes you prove you read today's before you get another.
+One remarkable animal, every day. A native SwiftUI iPhone app that turns Wikipedia into a four-minute read, sends a daily notification naming the next animal, and makes you prove you read today's before you get another.
 
 ![Screens](docs/screenshots/contact-sheet.jpg)
 
 ## What it does
 
-- **Today.** A full-bleed photo header that stretches and parallaxes, then a condensed article: pull quote, lede, four quick facts, a satellite map of the range, how it lives, what makes it remarkable, a "Did you know?" card, and its IUCN Red List status on a seven-step scale.
+- **Today.** The lead photo shown whole (tap for a zoomable full-screen view), then a condensed article: tagline and lede, four quick facts, where it lives (with a satellite map), body and senses, how it lives, family life, what makes it remarkable, a "Did you know?" card, its IUCN Red List status on a seven-step scale, people and the animal, and its relatives and origins.
 - **Earn the next one.** At the end, "Unlock another animal" opens a full-screen quiz of up to three multiple-choice questions. Every answer has to be right. A miss explains the answer and offers "Read it again" or "Try again" (questions and choices reshuffle). Pass, and the next animal slides in.
 - **Focus.** Narrow the daily animal by kind (mammals, birds, reptiles, amphibians, fish, insects & bugs, sea invertebrates) and place (11 regions, including Eastern North America, so "bugs in eastern Canada" is two taps). When your focus runs dry, Fauna says so and picks from anywhere.
-- **Daily notification.** "Meet the Okapi: the forest giraffe with zebra legs. 2-minute read." at the time you choose. The next 30 days are scheduled with real animal names and rebuilt whenever the queue changes.
+- **Daily notification.** "Meet the Okapi: the forest giraffe with zebra legs. 4-minute read." at the time you choose. The next 30 days are scheduled with real animal names and rebuilt whenever the queue changes.
+- **Units.** Automatic (follows the iPhone's Measurement System), Metric or Imperial. Content is written in metric and converted on the fly, including article text and quiz answers.
 - **Help.** Each animal links to one or two real organizations working on it (Xerces Society, Red Panda Network, Snow Leopard Trust, Polar Bears International, and others). Links open the charity's own site in Safari; the app never handles money.
 - **Journal.** Animals you've met as photo cards with a seal for passed quizzes, your streak, and blurred, locked tiles for everything still out there.
 
@@ -32,8 +33,8 @@ Fauna/
   Store/        AppStore: daily rollover, queue, unlocks, journal, streak, JSON persistence
   Services/     WikiImages (Wikipedia REST → Wikimedia thumbnails, cached), Reminders (notifications)
   Views/        Today (article), Quiz, Journal, Focus, Onboarding, Components (theme, chips, map, scale)
-  Resources/    animals.json (38 animals, 114 questions), assets, privacy manifest
-scripts/        validate_content.py, make_icon.py
+  Resources/    animals.json (38 animals, ~4-minute articles, 114 questions), assets, privacy manifest
+scripts/        validate_content.py, make_icon.py, merge_longreads.py (+ longreads/: the longer sections)
 ```
 
 ## Decisions I made without asking

@@ -286,6 +286,12 @@ struct AnimalArticleView: View {
                 }
             }
 
+            if let relatives = animal.relatives, !relatives.isEmpty {
+                ArticleSection(title: "Relatives and origins", symbol: "tree.fill", tint: accent) {
+                    Paragraph(store.measured(relatives))
+                }
+            }
+
             HelpSection(animal: animal)
                 .id("help")
 

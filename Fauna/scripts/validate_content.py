@@ -13,7 +13,7 @@ REGIONS = {"arctic", "naEast", "naWest", "centralAmerica", "southAmerica", "euro
            "asia", "oceania", "antarctica", "openOcean"}
 STATUSES = {"LC", "NT", "VU", "EN", "CR", "EW", "EX", "DD", "NE"}
 TEXT = ["name", "scientificName", "wikipediaTitle", "range", "tagline", "lede", "home", "life",
-        "remarkable", "outlook", "didYouKnow"]
+        "remarkable", "outlook", "didYouKnow", "anatomy", "family", "people", "relatives"]
 
 def fail(msg):
     print("ERROR:", msg); fail.count += 1
@@ -44,8 +44,9 @@ for a in animals:
     if not ch: fail(f"{aid}: needs a charity")
     for c in ch:
         if not c.get("url", "").startswith("https://"): fail(f"{aid}: charity url must be https")
-    words = sum(len(a[k].split()) for k in ["lede", "home", "life", "remarkable", "outlook"])
-    if words > 420: fail(f"{aid}: article too long ({words} words)")
+    words = sum(len(a.get(k, "").split()) for k in
+                ["lede", "home", "anatomy", "life", "family", "remarkable", "outlook", "people", "relatives"])
+    if not 600 <= words <= 1200: fail(f"{aid}: article is {words} words; aim for 4-5 minutes (650-1100)")
 
 print(f"{len(animals)} animals, {sum(len(a['quiz']) for a in animals)} questions")
 from collections import Counter

@@ -65,7 +65,7 @@ struct OnboardingView: View {
                 .foregroundStyle(.white.opacity(0.8))
                 .padding(.top, 4)
             VStack(alignment: .leading, spacing: 18) {
-                PromiseRow(symbol: "book.pages.fill", title: "A two-minute read",
+                PromiseRow(symbol: "book.pages.fill", title: "A four-minute read",
                         text: "Wikipedia, condensed into something you'll actually finish.")
                 PromiseRow(symbol: "checkmark.seal.fill", title: "Earn the next one",
                         text: "Want another? Answer three quick questions to prove you read it.")
@@ -136,7 +136,7 @@ struct OnboardingView: View {
                             Text("now").font(.caption2).foregroundStyle(.white.opacity(0.6))
                         }
                         Text("Meet the Okapi").font(.subheadline.weight(.semibold)).foregroundStyle(.white)
-                        Text("The forest giraffe with zebra legs. 2-minute read.")
+                        Text("The forest giraffe with zebra legs. 4-minute read.")
                             .font(.footnote).foregroundStyle(.white.opacity(0.8)).lineLimit(1)
                     }
                 }
