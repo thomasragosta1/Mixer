@@ -1,15 +1,16 @@
 import SwiftUI
 
 extension AnimalGroup {
+    /// System colors, so the palette adapts to light, dark and increased contrast like Apple's apps.
     var color: Color {
         switch self {
-        case .mammal: Color(red: 0.80, green: 0.45, blue: 0.24)
-        case .bird: Color(red: 0.22, green: 0.55, blue: 0.86)
-        case .reptile: Color(red: 0.42, green: 0.60, blue: 0.24)
-        case .amphibian: Color(red: 0.12, green: 0.64, blue: 0.54)
-        case .fish: Color(red: 0.10, green: 0.42, blue: 0.78)
-        case .insect: Color(red: 0.90, green: 0.60, blue: 0.10)
-        case .marineInvertebrate: Color(red: 0.86, green: 0.32, blue: 0.46)
+        case .mammal: .orange
+        case .bird: .blue
+        case .reptile: .green
+        case .amphibian: .teal
+        case .fish: .indigo
+        case .insect: .yellow
+        case .marineInvertebrate: .pink
         }
     }
 
@@ -22,14 +23,14 @@ extension AnimalGroup {
 extension ConservationStatus {
     var color: Color {
         switch self {
-        case .LC: Color(red: 0.20, green: 0.66, blue: 0.40)
-        case .NT: Color(red: 0.55, green: 0.72, blue: 0.20)
-        case .VU: Color(red: 0.93, green: 0.70, blue: 0.10)
-        case .EN: Color(red: 0.95, green: 0.47, blue: 0.13)
-        case .CR: Color(red: 0.88, green: 0.20, blue: 0.20)
-        case .EW: Color(red: 0.55, green: 0.25, blue: 0.62)
-        case .EX: Color(red: 0.25, green: 0.25, blue: 0.27)
-        case .DD, .NE: Color.gray
+        case .LC: .green
+        case .NT: .mint
+        case .VU: .yellow
+        case .EN: .orange
+        case .CR: .red
+        case .EW: .purple
+        case .EX: Color(.systemGray)
+        case .DD, .NE: Color(.systemGray2)
         }
     }
 }
@@ -49,17 +50,18 @@ extension Color {
 
     static let faunaInk = Color(red: 0.05, green: 0.13, blue: 0.11)
     static let faunaForest = Color(red: 0.07, green: 0.26, blue: 0.20)
-    static let faunaMoss = Color(red: 0.30, green: 0.55, blue: 0.36)
-    static let faunaGold = Color(red: 0.96, green: 0.78, blue: 0.42)
+    static let faunaMoss = Color.green
+    static let faunaGold = Color.yellow
 }
 
+/// San Francisco throughout, sized from Dynamic Type styles.
 enum FaunaFont {
     static func display(_ size: CGFloat, weight: Font.Weight = .bold) -> Font {
-        .system(size: size, weight: weight, design: .serif)
+        .system(size: size, weight: weight)
     }
-    static let eyebrow = Font.system(.caption, design: .rounded).weight(.bold)
-    static let body = Font.system(.body, design: .serif)
-    static let lede = Font.system(.title3, design: .serif)
+    static let eyebrow = Font.footnote.weight(.semibold)
+    static let body = Font.body
+    static let lede = Font.title3
 }
 
 /// Uppercase, tracked label used above headings.
@@ -73,7 +75,6 @@ struct Eyebrow: View {
     var body: some View {
         Text(text.uppercased())
             .font(FaunaFont.eyebrow)
-            .tracking(1.4)
             .foregroundStyle(color)
     }
 }
@@ -88,21 +89,17 @@ struct PressableStyle: ButtonStyle {
     }
 }
 
-/// The big, pill-shaped primary action.
+/// The large, filled button Apple uses at the bottom of welcome screens and sheets.
 struct ProminentPillStyle: ButtonStyle {
     var tint: Color = .accentColor
     func makeBody(configuration: Configuration) -> some View {
         configuration.label
-            .font(.system(.headline, design: .rounded))
+            .font(.headline)
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity)
-            .padding(.vertical, 17)
-            .background(
-                Capsule().fill(tint.gradient)
-                    .shadow(color: tint.opacity(0.35), radius: configuration.isPressed ? 4 : 14, y: configuration.isPressed ? 2 : 8)
-            )
-            .scaleEffect(configuration.isPressed ? 0.97 : 1)
-            .animation(.spring(response: 0.3, dampingFraction: 0.7), value: configuration.isPressed)
+            .frame(minHeight: 50)
+            .background(tint, in: RoundedRectangle(cornerRadius: 14, style: .continuous))
+            .opacity(configuration.isPressed ? 0.75 : 1)
     }
 }
 

@@ -1,61 +1,73 @@
 #!/usr/bin/env python3
-"""Draws the Fauna app icon (light and dark) into the asset catalog. Requires Pillow."""
+"""Draws the Fauna app icon (light, dark and tinted) in the style of Apple's own icons:
+one simple white glyph on a soft vertical gradient. Requires Pillow."""
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter
-import math
 
-OUT = Path(__file__).resolve().parent.parent / "Fauna/Resources/Assets.xcassets/AppIcon.appiconset"
-S = 4096  # supersampled, downscaled to 1024
+ROOT = Path(__file__).resolve().parent.parent / "Fauna/Resources/Assets.xcassets"
+OUT = ROOT / "AppIcon.appiconset"
+S = 2048  # drawn at 2x, saved at 1024
 
-def lerp(a, b, t): return tuple(int(a[i] + (b[i] - a[i]) * t) for i in range(3))
 
-def background(top, bottom, glow):
+def gradient(top, bottom):
     img = Image.new("RGB", (S, S))
-    px = img.load()
+    d = ImageDraw.Draw(img)
     for y in range(S):
-        c = lerp(top, bottom, y / S)
-        ImageDraw.Draw(img).line([(0, y), (S, y)], fill=c)
-    g = Image.new("L", (S, S), 0)
-    ImageDraw.Draw(g).ellipse([S * 0.05, -S * 0.25, S * 0.95, S * 0.65], fill=255)
-    g = g.filter(ImageFilter.GaussianBlur(S * 0.12))
-    img = Image.composite(Image.new("RGB", (S, S), glow), img, g.point(lambda v: int(v * 0.55)))
+        t = y / (S - 1)
+        d.line([(0, y), (S, y)], fill=tuple(round(top[i] + (bottom[i] - top[i]) * t) for i in range(3)))
     return img
 
-def paw(draw, cx, cy, scale, color):
-    # main pad: a soft rounded triangle built from overlapping ellipses
-    w, h = 0.25 * scale, 0.20 * scale
-    draw.ellipse([cx - w * 0.78, cy - h * 0.62, cx + w * 0.78, cy + h * 0.75], fill=color)
-    draw.ellipse([cx - w * 1.0, cy - h * 0.05, cx - w * 0.02, cy + h * 0.92], fill=color)
-    draw.ellipse([cx + w * 0.02, cy - h * 0.05, cx + w * 1.0, cy + h * 0.92], fill=color)
+
+def paw_mask():
+    """A pawprint built from soft shapes, unioned smoothly (blur + threshold) like an SF Symbol."""
+    m = Image.new("L", (S, S), 0)
+    d = ImageDraw.Draw(m)
+    cx, cy, u = S * 0.5, S * 0.57, S * 0.01
+    # main pad: three overlapping circles melted together into a rounded triangle
+    d.ellipse([cx - 15 * u, cy - 9 * u, cx + 15 * u, cy + 13 * u], fill=255)
+    d.ellipse([cx - 19 * u, cy + 1 * u, cx - 3 * u, cy + 17 * u], fill=255)
+    d.ellipse([cx + 3 * u, cy + 1 * u, cx + 19 * u, cy + 17 * u], fill=255)
+    m = m.filter(ImageFilter.GaussianBlur(3.2 * u)).point(lambda v: 255 if v > 120 else 0)
     # toes
-    toes = [(-0.33, -0.22, 0.085, 0.11, -22), (-0.12, -0.42, 0.09, 0.118, -7),
-            (0.12, -0.42, 0.09, 0.118, 7), (0.33, -0.22, 0.085, 0.11, 22)]
-    for dx, dy, rx, ry, rot in toes:
-        toe = Image.new("L", (int(rx * scale * 2.6), int(ry * scale * 2.6)), 0)
-        tw, th = toe.size
-        ImageDraw.Draw(toe).ellipse([tw / 2 - rx * scale, th / 2 - ry * scale, tw / 2 + rx * scale, th / 2 + ry * scale], fill=255)
-        toe = toe.rotate(-rot, resample=Image.BICUBIC)
-        layer = Image.new("RGBA", toe.size, color)
-        draw._image.paste(layer, (int(cx + dx * scale - tw / 2), int(cy + dy * scale - th / 2)), toe)
+    toes = Image.new("L", (S, S), 0)
+    for dx, dy, rx, ry, rot in [(-21, -12, 6.2, 8.0, 28), (-8, -23, 6.6, 8.6, 9),
+                                (8, -23, 6.6, 8.6, -9), (21, -12, 6.2, 8.0, -28)]:
+        t = Image.new("L", (int(20 * u), int(20 * u)), 0)
+        ImageDraw.Draw(t).ellipse([10 * u - rx * u, 10 * u - ry * u, 10 * u + rx * u, 10 * u + ry * u], fill=255)
+        t = t.rotate(rot, resample=Image.BICUBIC)
+        toes.paste(t, (int(cx + dx * u - 10 * u), int(cy + dy * u - 10 * u)), t)
+    m.paste(255, (0, 0), toes)
+    return m.filter(ImageFilter.GaussianBlur(1.2))
 
-def make(name, top, bottom, glow, paw_color, sun_color):
-    img = background(top, bottom, glow).convert("RGBA")
-    d = ImageDraw.Draw(img)
-    # a low golden sun behind the paw
-    sun = Image.new("L", (S, S), 0)
-    ImageDraw.Draw(sun).ellipse([S * 0.17, S * 0.17, S * 0.83, S * 0.83], fill=255)
-    sun = sun.filter(ImageFilter.GaussianBlur(S * 0.004))
-    img.paste(Image.new("RGBA", (S, S), sun_color), (0, 0), sun.point(lambda v: int(v * 0.22)))
-    # soft shadow under the paw
-    shadow = Image.new("RGBA", (S, S), (0, 0, 0, 0))
-    paw(ImageDraw.Draw(shadow), S * 0.5, S * 0.58 + S * 0.015, S * 0.92, (0, 0, 0, 110))
-    shadow = shadow.filter(ImageFilter.GaussianBlur(S * 0.02))
-    img = Image.alpha_composite(img, shadow)
-    d = ImageDraw.Draw(img)
-    paw(d, S * 0.5, S * 0.58, S * 0.92, paw_color)
-    img = img.convert("RGB").resize((1024, 1024), Image.LANCZOS)
-    img.save(OUT / name, optimize=True)
-    print("wrote", OUT / name)
 
-make("AppIcon.png", (28, 92, 70), (9, 38, 31), (70, 140, 100), (247, 226, 178, 255), (245, 200, 107, 255))
-make("AppIcon-Dark.png", (16, 40, 33), (3, 10, 9), (30, 70, 52), (240, 205, 130, 255), (245, 200, 107, 255))
+def save(img, name):
+    img.resize((1024, 1024), Image.LANCZOS).save(OUT / name, optimize=True)
+    print("wrote", name)
+
+
+glyph = paw_mask()
+
+# Light: white paw on a bright-to-deep green, like Apple's system app icons.
+light = gradient((86, 214, 120), (22, 150, 82))
+shadow = Image.new("RGBA", (S, S), (0, 70, 30, 0))
+shadow.putalpha(glyph.filter(ImageFilter.GaussianBlur(S * 0.012)).point(lambda v: int(v * 0.25)))
+light = light.convert("RGBA")
+light.alpha_composite(shadow, (0, int(S * 0.008)))
+light.paste((255, 255, 255, 255), (0, 0), glyph)
+save(light.convert("RGB"), "AppIcon.png")
+
+# Dark: near-black background, green gradient glyph (the iOS 18+ dark icon style).
+dark = gradient((32, 36, 34), (10, 12, 11)).convert("RGBA")
+dark.paste(gradient((110, 226, 140), (40, 180, 100)), (0, 0), glyph)
+save(dark.convert("RGB"), "AppIcon-Dark.png")
+
+# Tinted: grayscale glyph on black; iOS applies the user's tint.
+tinted = gradient((0, 0, 0), (0, 0, 0)).convert("L")
+tinted.paste(gradient((255, 255, 255), (200, 200, 200)).convert("L"), (0, 0), glyph)
+save(tinted.convert("RGB"), "AppIcon-Tinted.png")
+
+# In-app logo (onboarding): the light icon, smaller.
+logo = ROOT / "Logo.imageset"
+logo.mkdir(exist_ok=True)
+light.convert("RGB").resize((360, 360), Image.LANCZOS).save(logo / "Logo.png", optimize=True)
+(logo / "Contents.json").write_text('{\n  "images" : [ { "filename" : "Logo.png", "idiom" : "universal" } ],\n  "info" : { "author" : "xcode", "version" : 1 }\n}\n')

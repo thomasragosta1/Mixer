@@ -12,7 +12,7 @@ struct JournalView: View {
                     stats
                     if !store.journalAnimals.isEmpty {
                         VStack(alignment: .leading, spacing: 14) {
-                            Eyebrow("Animals you've met")
+                            Text("Animals You've Met").font(.title3.bold())
                             LazyVGrid(columns: columns, spacing: 14) {
                                 ForEach(store.journalAnimals) { item in
                                     NavigationLink(value: item.animal) {
@@ -26,7 +26,7 @@ struct JournalView: View {
                     }
                     if !store.undiscovered.isEmpty {
                         VStack(alignment: .leading, spacing: 6) {
-                            Eyebrow("Still out there")
+                            Text("Still Out There").font(.title3.bold())
                             Text("Read today's animal and pass its quiz to meet another.")
                                 .font(.subheadline)
                                 .foregroundStyle(.secondary)
@@ -56,22 +56,22 @@ struct JournalView: View {
                     .font(FaunaFont.display(54))
                     .contentTransition(.numericText())
                 Text("of \(total) animals discovered")
-                    .font(.system(.headline, design: .serif))
+                    .font(.headline)
                     .foregroundStyle(.secondary)
             }
             ProgressView(value: Double(met), total: Double(max(total, 1)))
-                .tint(Color.faunaMoss)
+                .tint(.accentColor)
             HStack(spacing: 12) {
                 StatTile(value: "\(store.streak)", label: "day streak",
                          symbol: "flame.fill", tint: .orange)
                 StatTile(value: "\(store.state.quizPassedIDs.count)", label: "quizzes passed",
-                         symbol: "checkmark.seal.fill", tint: .faunaMoss)
+                         symbol: "checkmark.seal.fill", tint: .green)
                 StatTile(value: "\(Set(store.journalAnimals.map { $0.animal.group }).count)", label: "kinds of animal",
                          symbol: "square.grid.2x2.fill", tint: .blue)
             }
         }
         .padding(20)
-        .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 26, style: .continuous))
+        .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
     }
 }
 
@@ -87,7 +87,7 @@ private struct StatTile: View {
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(tint)
             Text(value)
-                .font(.system(.title2, design: .rounded).weight(.bold))
+                .font(.title2.bold())
             Text(label)
                 .font(.caption)
                 .foregroundStyle(.secondary)
@@ -144,7 +144,7 @@ private struct JournalCard: View {
                     .background(animal.group.color.gradient, in: Circle())
                     .padding(10)
             }
-            .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             .shadow(color: .black.opacity(0.12), radius: 10, y: 6)
             .accessibilityElement(children: .combine)
             .accessibilityLabel("\(animal.name), met \(date.formatted(date: .abbreviated, time: .omitted))")
@@ -176,7 +176,7 @@ private struct LockedCard: View {
                 }
                 .environment(\.colorScheme, .dark)
             }
-            .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Undiscovered \(animal.group.singular.lowercased())")
     }
