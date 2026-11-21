@@ -12,6 +12,8 @@ struct AnimalArticleView: View {
     /// Starts the unlock quiz; Today supplies it so the quiz outlives this view when the next animal arrives.
     var onStartQuiz: (() -> Void)? = nil
     @ScaledMetric(relativeTo: .largeTitle) private var titleSize: CGFloat = 44
+    /// True once the photo has scrolled away, to fade in a frosted bar behind the status bar.
+    @State private var pastHero = false
 
     private let heroHeight: CGFloat = 520
     private var accent: Color { animal.group.color }
@@ -32,11 +34,17 @@ struct AnimalArticleView: View {
             }
             .task { await scrollForScreenshot(proxy) }
         }
+        .onPreferenceChange(HeroOffsetKey.self) { minY in
+            let past = minY < -(heroHeight - 140)
+            if past != pastHero { withAnimation(.easeInOut(duration: 0.25)) { pastHero = past } }
+        }
         .background(Color(.systemBackground))
         .ignoresSafeArea(edges: .top)
         .scrollIndicators(.hidden)
-        .toolbarBackground(.hidden, for: .navigationBar)
-        .toolbarColorScheme(.dark, for: .navigationBar)
+        .navigationTitle(pastHero ? animal.name : "")
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(pastHero ? .visible : .hidden, for: .navigationBar)
+        .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
         .toolbar {
             ToolbarItem(placement: .topBarTrailing) {
                 ShareLink(item: animal.wikipediaURL,
@@ -44,10 +52,9 @@ struct AnimalArticleView: View {
                           message: Text("I met the \(animal.name) on Fauna today. \(animal.tagline).")) {
                     Image(systemName: "square.and.arrow.up")
                         .font(.body.weight(.semibold))
-                        .foregroundStyle(.white)
+                        .foregroundStyle(pastHero ? Color.primary : .white)
                         .frame(width: 36, height: 36)
-                        .background(.ultraThinMaterial, in: Circle())
-                        .environment(\.colorScheme, .dark)
+                        .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Circle())
                 }
                 .accessibilityLabel("Share")
             }
@@ -70,6 +77,8 @@ struct AnimalArticleView: View {
             let stretch = max(0, minY)
             let parallax = minY < 0 ? -minY * 0.35 : 0
             ZStack(alignment: .bottomLeading) {
+                Color.clear.preference(key: HeroOffsetKey.self, value: minY)
+
                 AnimalPhoto(animal: animal, size: .hero)
                     .frame(width: geo.size.width, height: heroHeight + stretch)
                     .offset(y: parallax)
@@ -489,4 +498,9 @@ private struct UnlockCard: View {
         }
         return "Answer \(questions) about the \(animal.name) to show you read it, and we'll introduce you to another."
     }
+}
+
+private struct HeroOffsetKey: PreferenceKey {
+    static let defaultValue: CGFloat = 0
+    static func reduce(value: inout CGFloat, nextValue: () -> CGFloat) { value = nextValue() }
 }
