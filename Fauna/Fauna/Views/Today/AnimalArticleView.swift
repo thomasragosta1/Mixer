@@ -18,6 +18,8 @@ struct AnimalArticleView: View {
     @State private var viewSize: CGSize = CGSize(width: 393, height: 852)
     @State private var topInset: CGFloat = 59
     @State private var showPhoto = false
+    /// The end-of-article unlock card is on screen, so the floating unlock button steps aside.
+    @State private var unlockCardVisible = false
 
     /// The photo is shown whole: the header takes the photo's own shape (within sensible limits)
     /// and any leftover space is filled with a soft blur of the same photo.
@@ -47,24 +49,19 @@ struct AnimalArticleView: View {
                 .allowsHitTesting(false)
                 .accessibilityHidden(true)
         }
+        .safeAreaInset(edge: .bottom, spacing: 0) {
+            if mode == .today, let onStartQuiz, store.canUnlockAnywhere, !unlockCardVisible {
+                UnlockPill(action: onStartQuiz)
+                    .padding(.horizontal, 20)
+                    .padding(.bottom, 10)
+                    .transition(.move(edge: .bottom).combined(with: .opacity))
+            }
+        }
+        .animation(.spring(response: 0.4, dampingFraction: 0.85), value: unlockCardVisible)
         .scrollIndicators(.hidden)
         .toolbarBackground(.hidden, for: .navigationBar)
         .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
         .toolbar {
-            if mode == .today, let onStartQuiz, store.canUnlockAnywhere {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(action: onStartQuiz) {
-                        Label("Next animal", systemImage: "sparkles")
-                            .font(.subheadline.weight(.semibold))
-                            .labelStyle(.titleAndIcon)
-                            .foregroundStyle(pastHero ? Color.primary : .white)
-                            .padding(.horizontal, 12)
-                            .frame(height: 36)
-                            .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Capsule())
-                    }
-                    .accessibilityHint("Answer three questions about this animal to unlock another")
-                }
-            }
             ToolbarItem(placement: .topBarTrailing) {
                 ShareLink(item: animal.wikipediaURL,
                           subject: Text(animal.name),
@@ -314,6 +311,11 @@ struct AnimalArticleView: View {
             if mode == .today, let onStartQuiz {
                 UnlockCard(animal: animal, start: onStartQuiz)
                     .id("unlock")
+                    .onGeometryChange(for: Bool.self) { geo in
+                        geo.frame(in: .global).minY < UIScreen.main.bounds.height - 60
+                    } action: { visible in
+                        unlockCardVisible = visible
+                    }
             } else if mode == .journal {
                 PracticeCard(animal: animal, passed: store.hasPassedQuiz(animal))
             }
@@ -612,9 +614,9 @@ private struct PracticeCard: View {
             Image(systemName: passed ? "checkmark.seal.fill" : "questionmark.bubble.fill")
                 .font(.system(size: 30, weight: .semibold))
                 .foregroundStyle(passed ? Color.faunaGold : Color.faunaMoss)
-            Text("Test yourself")
+            Text("Practice quiz")
                 .font(FaunaFont.display(24))
-            Text(passed ? "You've passed this one before. See if it stuck." : "Three questions about the \(animal.name). No pressure.")
+            Text(passed ? "You've passed this one before. See if it stuck. Just for fun; it doesn't unlock anything." : "Three questions about the \(animal.name), just for fun. It doesn't unlock anything.")
                 .font(.callout)
                 .foregroundStyle(.secondary)
                 .multilineTextAlignment(.center)
@@ -625,5 +627,39 @@ private struct PracticeCard: View {
         .padding(24)
         .frame(maxWidth: .infinity)
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 26, style: .continuous))
+    }
+}
+
+/// Floating button on Today: the one obvious way to get the next animal.
+private struct UnlockPill: View {
+    let action: () -> Void
+
+    var body: some View {
+        Button(action: action) {
+            HStack(spacing: 12) {
+                Image(systemName: "lock.open.fill")
+                    .font(.system(size: 15, weight: .bold))
+                    .frame(width: 34, height: 34)
+                    .background(.white.opacity(0.2), in: Circle())
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("Unlock the next animal")
+                        .font(.subheadline.weight(.bold))
+                    Text("3 quick questions about this one")
+                        .font(.caption)
+                        .opacity(0.85)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.bold))
+                    .opacity(0.8)
+            }
+            .foregroundStyle(.white)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
+            .background(Color.faunaMoss, in: Capsule())
+            .shadow(color: .black.opacity(0.18), radius: 12, y: 6)
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityHint("Answer three questions about this animal to unlock another")
     }
 }

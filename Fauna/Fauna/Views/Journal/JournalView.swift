@@ -15,11 +15,23 @@ struct JournalView: View {
                             Eyebrow("Animals you've met")
                             LazyVGrid(columns: columns, spacing: 14) {
                                 ForEach(store.journalAnimals) { item in
-                                    NavigationLink(value: item.animal) {
-                                        JournalCard(animal: item.animal, date: item.entry.date,
-                                                    passed: store.hasPassedQuiz(item.animal))
+                                    if item.animal.id == store.currentAnimal?.id {
+                                        // Today's animal lives on Today, where its quiz unlocks the next one.
+                                        Button {
+                                            store.selectedTab = .today
+                                        } label: {
+                                            JournalCard(animal: item.animal, date: item.entry.date,
+                                                        passed: store.hasPassedQuiz(item.animal), isToday: true)
+                                        }
+                                        .buttonStyle(PressableStyle())
+                                        .accessibilityHint("Opens Today")
+                                    } else {
+                                        NavigationLink(value: item.animal) {
+                                            JournalCard(animal: item.animal, date: item.entry.date,
+                                                        passed: store.hasPassedQuiz(item.animal))
+                                        }
+                                        .buttonStyle(PressableStyle())
                                     }
-                                    .buttonStyle(PressableStyle())
                                 }
                             }
                         }
@@ -33,7 +45,13 @@ struct JournalView: View {
                         }
                         LazyVGrid(columns: columns, spacing: 14) {
                             ForEach(store.undiscovered) { animal in
-                                LockedCard(animal: animal)
+                                Button {
+                                    store.selectedTab = .today
+                                } label: {
+                                    LockedCard(animal: animal)
+                                }
+                                .buttonStyle(PressableStyle())
+                                .accessibilityHint("Opens Today, where you can unlock your next animal")
                             }
                         }
                     }
@@ -104,6 +122,7 @@ private struct JournalCard: View {
     let animal: Animal
     let date: Date
     let passed: Bool
+    var isToday = false
 
     var body: some View {
         AnimalPhoto(animal: animal, size: .card)
@@ -118,9 +137,9 @@ private struct JournalCard: View {
                         .foregroundStyle(.white)
                         .lineLimit(2)
                         .multilineTextAlignment(.leading)
-                    Text(date.formatted(.dateTime.month(.abbreviated).day()))
-                        .font(.caption.weight(.medium))
-                        .foregroundStyle(.white.opacity(0.75))
+                    Text(isToday ? "Today · tap to read" : date.formatted(.dateTime.month(.abbreviated).day()))
+                        .font(.caption.weight(isToday ? .bold : .medium))
+                        .foregroundStyle(isToday ? Color.faunaGold : .white.opacity(0.75))
                 }
                 .padding(14)
             }
