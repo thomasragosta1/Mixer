@@ -1,0 +1,247 @@
+[
+  {
+    "id": "secretarybird",
+    "name": "Secretarybird",
+    "scientificName": "Sagittarius serpentarius",
+    "wikipediaTitle": "Secretarybird",
+    "group": "bird",
+    "regions": ["africa"],
+    "range": "Open grasslands and savannas south of the Sahara",
+    "status": "EN",
+    "coordinate": { "latitude": -2.3, "longitude": 34.8 },
+    "mapSpan": 40,
+    "tagline": "The eagle on stilts that kicks snakes",
+    "lede": "Imagine an eagle on a model's legs, wearing a crest of quill pens. The secretarybird strides across the African savanna hunting on foot, and when it finds a snake, it stamps it to death with kicks so fast they are hard to see.",
+    "home": "Secretarybirds live in open grasslands and savannas from Senegal and Sudan to South Africa. They avoid dense forest and true desert, preferring places where they can walk through short grass and see prey. They roost and nest at night on the flat tops of thorny acacia trees.",
+    "anatomy": "Standing over a metre tall, the secretarybird is a grey bird of prey with black flight feathers, black 'trousers' on its upper legs, and long, bare, pink legs. Its face has bare orange-red skin, and a crest of long black feathers sticks out from the back of its head. Its legs are the longest of any bird of prey, and its short toes are tipped with blunt claws for stamping rather than grabbing.",
+    "life": "Secretarybirds hunt mostly on foot, walking 20 or more kilometres a day through grass. They eat insects, rodents, lizards, small birds and, famously, snakes, including venomous ones. When they find prey, they stamp on it with powerful kicks. Studies of a captive bird measured kicks that hit with a force about five times its own body weight, landing in about 15 milliseconds.",
+    "family": "Pairs are thought to mate for life and defend territories. They build huge, flat nests of sticks on top of trees, often reusing them for years. The female lays one to three eggs, and both parents incubate and then feed the chicks by regurgitating food. Young secretarybirds stay in the nest for around two to three months, and older chicks sometimes kill younger siblings when food is scarce.",
+    "remarkable": "A secretarybird's kicks are so fast and precise that scientists have studied them to understand how animals control rapid, accurate strikes, which may help design better robots.\n\nIt can also fly well, soaring high on thermals despite spending most of its time walking.",
+    "outlook": "In 2020, the IUCN listed secretarybirds as endangered after major declines. Grasslands are being converted to farms and settlements, and the birds suffer from overgrazing, fires, power lines, poisoning and disturbance. Bush encroachment, where shrubs take over open grassland, also reduces suitable habitat.",
+    "people": "The name may come from its crest feathers, said to resemble the quill pens that 18th-century office clerks tucked behind their ears. Another theory traces it to an Arabic phrase for 'hunter bird'. The secretarybird appears on the coat of arms of South Africa and of Sudan, symbolising strength and protection. Farmers once valued it for controlling snakes and rodents.",
+    "relatives": "The secretarybird is the only living member of its family, Sagittariidae. It is a bird of prey, related to eagles, hawks and kites, but it evolved its own long-legged, ground-hunting lifestyle. Fossils show that relatives once lived in Europe. Its closest living counterpart in hunting style is not a raptor at all: the seriemas of South America, which also stride across grasslands and kill snakes by beating them.",
+    "didYouKnow": "A secretarybird's kick can land in about 15 milliseconds, roughly ten times faster than the blink of an eye.",
+    "facts": [
+      { "label": "Height", "value": "About 1.3 m" },
+      { "label": "Wingspan", "value": "1.9–2.1 m" },
+      { "label": "Lifespan", "value": "10–15 years wild" },
+      { "label": "Diet", "value": "Snakes, rodents, insects" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a secretarybird kill snakes?",
+        "choices": ["By stamping on them with fast kicks", "By dropping them from the sky", "By squeezing them", "With venom"],
+        "explanation": "It stamps prey with powerful, precise kicks."
+      },
+      {
+        "prompt": "Where does its name possibly come from?",
+        "choices": ["Its crest looks like quill pens tucked behind an ear", "It keeps careful nests", "It was found in an office", "It sorts its food"],
+        "explanation": "One theory compares its crest to clerks' quill pens."
+      },
+      {
+        "prompt": "How does the secretarybird mostly hunt?",
+        "choices": ["On foot, walking through grass", "Diving into water", "From high perches at night", "In large flocks"],
+        "explanation": "It walks long distances each day looking for prey."
+      }
+    ],
+    "charities": [
+      { "name": "BirdLife International", "url": "https://www.birdlife.org", "blurb": "Works across Africa to protect threatened birds and grasslands." }
+    ]
+  },
+  {
+    "id": "superb-lyrebird",
+    "name": "Superb Lyrebird",
+    "scientificName": "Menura novaehollandiae",
+    "wikipediaTitle": "Superb lyrebird",
+    "group": "bird",
+    "regions": ["oceania"],
+    "range": "Wet forests of southeastern Australia",
+    "status": "LC",
+    "coordinate": { "latitude": -37.8, "longitude": 145.4 },
+    "mapSpan": 10,
+    "tagline": "The forest's greatest mimic",
+    "lede": "The superb lyrebird can imitate almost anything it hears: other birds, koalas, dogs, even camera shutters and chainsaws. In Australia's misty forests, a single male can perform a concert of borrowed sounds while displaying a tail shaped like an ancient lyre.",
+    "home": "Superb lyrebirds live in wet eucalyptus forests and rainforests of southeastern Australia, from southern Queensland through New South Wales to Victoria. A population was introduced to Tasmania in the 1930s and 1940s. They spend most of their time on the forest floor among ferns and leaf litter.",
+    "anatomy": "A superb lyrebird is about the size of a pheasant, brown above and greyish below, with strong legs and feet for scratching through soil. Males have a spectacular tail of 16 feathers: two broad, curved outer feathers shaped like the arms of a lyre, two thin central ones, and twelve lacy, silvery filmy feathers. The bird's voice box, called the syrinx, has the most complex muscles of any songbird, allowing its astonishing range of sounds.",
+    "life": "Lyrebirds forage by raking leaf litter and soil with their feet, eating worms, insects, spiders and other small creatures. A single bird may turn over huge amounts of soil each year, helping to break down leaf litter and reduce fuel for bushfires. They are shy and fast runners, and prefer to run rather than fly, though they glide down slopes and roost in trees at night.",
+    "family": "In winter, males build display mounds of soil in the forest and perform elaborate shows, throwing their tail forward over their head like a shimmering veil while singing and dancing. Females build a domed nest of sticks and ferns on the ground or a stump and raise a single chick alone. The egg takes about 50 days to hatch, and the chick stays in the nest for around six weeks.",
+    "remarkable": "Lyrebirds can mimic sounds so accurately that recordings fool other birds.\n\nSome lyrebirds in New England National Park in New South Wales sing flute-like tunes that may trace back to a pet lyrebird taught by a flute-playing farmer in the 1930s, passed from bird to bird ever since.",
+    "outlook": "Superb lyrebirds are not threatened, but the 2019–2020 bushfires burned a large part of their range, and introduced foxes and cats prey on them. Their recovery after fires is being watched closely by scientists.",
+    "people": "The superb lyrebird appears on the Australian 10-cent coin and on many stamps. David Attenborough's famous film of a lyrebird imitating a camera shutter, car alarm and chainsaw made it world famous. Walkers in forests near Melbourne and Sydney often hear their calls.",
+    "relatives": "There are two species of lyrebird: the superb lyrebird and the smaller Albert's lyrebird of the rainforests near the Queensland–New South Wales border. Lyrebirds belong to one of the oldest branches of songbirds, and their closest relatives are the Australian scrub-birds. Songbirds as a whole are thought to have originated in Australia before spreading worldwide.",
+    "didYouKnow": "Lyrebirds in one Australian national park still sing flute-like melodies that may have been learned from a flute-playing farmer nearly a century ago.",
+    "facts": [
+      { "label": "Length", "value": "74–98 cm with tail" },
+      { "label": "Weight", "value": "About 1 kg" },
+      { "label": "Lifespan", "value": "Up to ~30 years" },
+      { "label": "Diet", "value": "Worms, insects, spiders" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the superb lyrebird famous for?",
+        "choices": ["Mimicking sounds, including machines", "Diving underwater", "Building bowers of blue objects", "Migrating to Antarctica"],
+        "explanation": "It can imitate other birds, animals and even chainsaws."
+      },
+      {
+        "prompt": "Which Australian coin features the lyrebird?",
+        "choices": ["The 10-cent coin", "The $1 coin", "The 5-cent coin", "The $2 coin"],
+        "explanation": "The superb lyrebird appears on the 10-cent coin."
+      },
+      {
+        "prompt": "How do lyrebirds help the forest?",
+        "choices": ["Raking leaf litter, which reduces bushfire fuel", "Pollinating flowers", "Spreading seeds by flying long distances", "Eating invasive plants"],
+        "explanation": "Their digging breaks down leaf litter on the forest floor."
+      }
+    ],
+    "charities": [
+      { "name": "BirdLife Australia", "url": "https://www.birdlife.org.au", "blurb": "Protects Australian birds and their habitats, including bushfire recovery work." }
+    ]
+  },
+  {
+    "id": "gharial",
+    "name": "Gharial",
+    "scientificName": "Gavialis gangeticus",
+    "wikipediaTitle": "Gharial",
+    "group": "reptile",
+    "regions": ["asia"],
+    "range": "Large rivers of northern India and Nepal",
+    "status": "CR",
+    "coordinate": { "latitude": 26.7, "longitude": 78.5 },
+    "mapSpan": 12,
+    "tagline": "The crocodile with a pot on its nose",
+    "lede": "With a snout as thin as a broom handle, lined with more than a hundred needle-sharp teeth, the gharial is built for one thing: catching fish. Males wear a strange bulbous knob on the tip of their snout, and it is one of the most endangered crocodilians on Earth.",
+    "home": "Gharials live in large, fast-flowing rivers with deep pools and sandbanks, mainly in northern India and Nepal. The Chambal River in India holds the largest remaining population. They once lived in river systems from Pakistan to Myanmar, but have vanished from most of them.",
+    "anatomy": "Gharials are among the longest crocodilians, with males reaching 5 metres or more. Their long, narrow snout cuts through water with little resistance, ideal for snapping sideways at fish. Adult males develop a hollow growth on the tip of the snout called a ghara, after a type of Indian pot, which they use to make buzzing sounds and bubbles to attract females. Their legs are relatively weak, so they rarely walk far on land.",
+    "life": "Gharials spend most of their time in water and come out to bask on sandbanks. They eat almost entirely fish, sweeping their heads sideways to snap at passing prey, and juveniles eat insects and frogs. Unlike many crocodiles, gharials are not considered dangerous to people, since their thin jaws cannot easily tackle large animals.",
+    "family": "During the breeding season, a dominant male defends a stretch of river with several females. Females dig nests in sandbanks and lay around 30 to 50 eggs, among the largest of any crocodilian. After about two months, the hatchlings call from inside their eggs, and the mother digs them out and guards them in the water for weeks. Males sometimes help guard the young and carry them on their backs.",
+    "remarkable": "The male's ghara acts as a sound resonator, making a loud humming buzz, and also helps produce bubbles during courtship.\n\nA gharial's snout contains over 100 interlocking teeth, ideal for gripping slippery fish.",
+    "outlook": "Gharials are critically endangered, with perhaps several hundred breeding adults. Dams, sand mining, water diversion and fishing nets have destroyed or fragmented their rivers. Captive breeding and release programs since the 1970s have saved them from extinction, but released animals need healthy rivers to survive.",
+    "people": "In Hindu tradition, the goddess Ganga is often shown riding a makara, a mythical creature sometimes associated with the gharial. In the 1970s, gharials had fallen to fewer than 200 in the wild, prompting India to start breeding programs and to create the National Chambal Sanctuary. The Madras Crocodile Bank Trust and other groups now monitor gharials and work with river communities.",
+    "relatives": "The gharial belongs to the family Gavialidae. Genetic studies suggest its closest living relative is the false gharial, or tomistoma, of Southeast Asia, which also has a slender snout. Together they are related to crocodiles and alligators. Fossil gharial relatives once lived in many parts of the world, including South America and Africa, some reaching enormous sizes.",
+    "didYouKnow": "The gharial's name comes from 'ghara', the Hindi word for the round pot that the knob on a male's snout resembles.",
+    "facts": [
+      { "label": "Length", "value": "3.5–6 m" },
+      { "label": "Weight", "value": "Up to ~250 kg" },
+      { "label": "Teeth", "value": "Over 100" },
+      { "label": "Diet", "value": "Fish" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do gharials mainly eat?",
+        "choices": ["Fish", "Deer", "Fruit", "Birds"],
+        "explanation": "Their thin snouts are built for catching fish."
+      },
+      {
+        "prompt": "What is the 'ghara' on a male's snout used for?",
+        "choices": ["Making buzzing sounds and bubbles", "Breathing underwater", "Digging nests", "Storing food"],
+        "explanation": "It works as a resonator during courtship."
+      },
+      {
+        "prompt": "Where does the largest gharial population live?",
+        "choices": ["The Chambal River in India", "The Amazon", "The Nile", "Lake Victoria"],
+        "explanation": "The Chambal River holds the most gharials today."
+      }
+    ],
+    "charities": [
+      { "name": "Madras Crocodile Bank Trust", "url": "https://www.madrascrocodilebank.org", "blurb": "Breeds and studies crocodilians in India, including the gharial." }
+    ]
+  },
+  {
+    "id": "thorny-devil",
+    "name": "Thorny Devil",
+    "scientificName": "Moloch horridus",
+    "wikipediaTitle": "Thorny devil",
+    "group": "reptile",
+    "regions": ["oceania"],
+    "range": "Sandy deserts and scrub of central and western Australia",
+    "status": "LC",
+    "coordinate": { "latitude": -25.0, "longitude": 128.0 },
+    "mapSpan": 22,
+    "tagline": "A spiky lizard that drinks through its skin",
+    "lede": "Covered head to tail in cone-shaped spikes, the thorny devil looks fearsome but is a small, slow, harmless lizard. It eats thousands of ants a day, carries a fake head on its neck, and can drink water simply by standing in damp sand.",
+    "home": "Thorny devils live in the arid interior of Australia, in sandy deserts, spinifex grasslands and dry scrub across Western Australia, South Australia and the Northern Territory. They are active during the day in spring and autumn and shelter in burrows during extreme heat or cold.",
+    "anatomy": "A thorny devil is about the size of a hand, with its body covered in sharp, conical spines. Its colours of yellow, tan and reddish brown camouflage it against desert sand, and it can darken or lighten to match its surroundings and temperature. On the back of its neck is a spiny lump called a false head. Between its scales runs a network of tiny grooves that draw water across its skin to its mouth.",
+    "life": "Thorny devils eat almost nothing but small black ants, licking them up one at a time, and can eat thousands in a single meal. They walk with a slow, jerky, rocking movement, which may help them look like a windblown leaf to predators. When threatened, a thorny devil tucks its real head between its front legs, leaving the spiky false head sticking up as a decoy.",
+    "family": "Thorny devils mate in late winter and spring. The female digs a burrow up to about 30 centimetres deep and lays a clutch of around 3 to 10 eggs, then fills in the burrow to hide it. The eggs hatch after three to four months, and the tiny hatchlings dig their way to the surface, already looking like miniature adults and immediately starting to eat ants.",
+    "remarkable": "A thorny devil can gather water from damp sand, dew or rain through capillary action: tiny channels between its scales carry water to the corners of its mouth, where it swallows it.\n\nScientists study this system for ideas on collecting water in dry places.",
+    "outlook": "Thorny devils are common in suitable habitat and not considered threatened. Their main dangers are predators such as birds of prey and goannas, road traffic, and land clearing in some areas.",
+    "people": "The thorny devil is an icon of the Australian outback, appearing on stamps and in wildlife documentaries. Its scientific name, Moloch horridus, refers to Moloch, a fearsome deity from ancient texts, a reflection of its intimidating look rather than its gentle nature. In Aboriginal traditions of Western Australia, the thorny devil appears in stories and is known by several names, including ngiyari.",
+    "relatives": "The thorny devil is the only species in its genus. It belongs to the dragon lizards, family Agamidae, along with bearded dragons and frilled lizards. A strikingly similar lizard, the horned lizard of North American deserts, also eats ants and can drink through its skin, but the two are not closely related; their similarities evolved independently in similar environments.",
+    "didYouKnow": "A thorny devil can eat thousands of ants in a single meal, licking them up one by one.",
+    "facts": [
+      { "label": "Length", "value": "Up to 21 cm" },
+      { "label": "Weight", "value": "30–90 g" },
+      { "label": "Lifespan", "value": "Up to ~20 years" },
+      { "label": "Diet", "value": "Small black ants" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a thorny devil drink?",
+        "choices": ["Grooves in its skin carry water to its mouth", "It drinks from rivers", "It eats cactus", "It doesn't need water"],
+        "explanation": "Capillary channels between its scales move water to its mouth."
+      },
+      {
+        "prompt": "What is the 'false head' used for?",
+        "choices": ["A decoy when the real head is tucked away", "Storing fat", "Hearing", "Attracting mates"],
+        "explanation": "It tucks its real head down and presents the spiky lump."
+      },
+      {
+        "prompt": "What does the thorny devil eat?",
+        "choices": ["Mostly small black ants", "Seeds", "Mice", "Other lizards"],
+        "explanation": "It is an ant specialist."
+      }
+    ],
+    "charities": [
+      { "name": "Australian Wildlife Conservancy", "url": "https://www.australianwildlife.org", "blurb": "Protects Australian wildlife and habitats across a network of sanctuaries." }
+    ]
+  },
+  {
+    "id": "blandings-turtle",
+    "name": "Blanding's Turtle",
+    "scientificName": "Emydoidea blandingii",
+    "wikipediaTitle": "Blanding's turtle",
+    "group": "reptile",
+    "regions": ["naEast"],
+    "range": "Wetlands of the Great Lakes region, southern Ontario and Quebec, and Nova Scotia",
+    "status": "EN",
+    "coordinate": { "latitude": 44.6, "longitude": -78.5 },
+    "mapSpan": 16,
+    "tagline": "The smiling turtle that can live 80 years",
+    "lede": "With a bright yellow throat and a mouth that curves into a permanent smile, Blanding's turtle is one of the friendliest-looking reptiles in North America. It is also remarkably long-lived, with some individuals still breeding in their seventies.",
+    "home": "Blanding's turtles live in shallow, plant-rich wetlands, marshes, ponds and slow streams around the Great Lakes, in southern Ontario and Quebec, and in parts of the northern United States. An isolated population lives in Nova Scotia, far from the rest. They often travel between several wetlands during a year.",
+    "anatomy": "Blanding's turtle has a high, domed, dark shell speckled with yellow flecks and a long neck with a bright yellow chin and throat. Its bottom shell, the plastron, has a hinge, so it can partly close the front of its shell, like a box turtle. Its mouth curves upward in a way that looks like a smile. Adults are around 18 to 27 centimetres long.",
+    "life": "Blanding's turtles are omnivores, eating crayfish, insects, snails, frogs, fish and plants. They often bask on logs and banks, and spend winter hibernating underwater in wetlands, staying active even under ice. They are known for travelling long distances overland between wetlands, sometimes more than a kilometre, which brings them into contact with roads.",
+    "family": "Blanding's turtles mature very slowly, often not breeding until they are around 14 to 20 years old. In June, females leave the water to lay about 10 eggs in sandy or gravelly soil, sometimes travelling far to find a good spot. As with many turtles, warmer nests produce females. Hatchlings emerge in late summer or autumn and head for water. Only a tiny fraction survive to adulthood.",
+    "remarkable": "Blanding's turtles show very little sign of ageing: older females can still lay eggs and appear as healthy as younger ones.\n\nScientists study them to understand how some animals seem to avoid the usual effects of age.",
+    "outlook": "Blanding's turtles are endangered. Losing even a few adult females each year can cause a population to decline, because they take so long to replace. Roads, wetland drainage, development and nest predators such as raccoons are major threats. In Canada, the Great Lakes/St. Lawrence and Nova Scotia populations are both listed as endangered.",
+    "people": "The species is named after William Blanding, a 19th-century naturalist from Philadelphia. In Ontario and Nova Scotia, volunteers protect nests with wire cages, help turtles across roads and track individuals. Turtle crossing signs and underpasses help reduce road deaths. In Nova Scotia's Kejimkujik National Park, a long-running recovery program has followed individual turtles for decades.",
+    "relatives": "Blanding's turtle is the only species in its genus. It belongs to the pond turtle family, Emydidae, which includes painted turtles, sliders and box turtles. Its closest relatives are thought to be the European pond turtle and the western pond turtle. The Nova Scotia population was likely cut off from the main population thousands of years ago, after the last ice age, when the climate was warmer.",
+    "didYouKnow": "Some Blanding's turtles are still laying eggs at over 70 years old.",
+    "facts": [
+      { "label": "Shell length", "value": "18–27 cm" },
+      { "label": "Weight", "value": "0.75–1.4 kg" },
+      { "label": "Lifespan", "value": "75+ years" },
+      { "label": "Diet", "value": "Crayfish, insects, plants" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How old can Blanding's turtles be when they still lay eggs?",
+        "choices": ["Over 70 years old", "No older than 10", "About 2 years", "They lay eggs only once"],
+        "explanation": "They show remarkably little sign of ageing."
+      },
+      {
+        "prompt": "What colour is a Blanding's turtle's throat?",
+        "choices": ["Bright yellow", "Red", "Blue", "Black"],
+        "explanation": "Its yellow chin and throat make it easy to recognise."
+      },
+      {
+        "prompt": "Why are adult females so important to protect?",
+        "choices": ["They take many years to replace", "They lay hundreds of eggs a year", "Males can't swim", "They guard the nest for years"],
+        "explanation": "Slow maturity means each lost adult is hard to replace."
+      }
+    ],
+    "charities": [
+      { "name": "Turtle Survival Alliance", "url": "https://turtlesurvival.org", "blurb": "Works worldwide to save turtles and tortoises from extinction." }
+    ]
+  }
+]

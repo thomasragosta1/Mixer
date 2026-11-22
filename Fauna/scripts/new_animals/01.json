@@ -1,0 +1,247 @@
+[
+  {
+    "id": "shoebill",
+    "name": "Shoebill",
+    "scientificName": "Balaeniceps rex",
+    "wikipediaTitle": "Shoebill",
+    "group": "bird",
+    "regions": ["africa"],
+    "range": "Papyrus swamps of East and Central Africa, from South Sudan to Zambia",
+    "status": "VU",
+    "coordinate": { "latitude": 1.5, "longitude": 31.5 },
+    "mapSpan": 18,
+    "tagline": "A prehistoric stare in the papyrus",
+    "lede": "Standing still as a statue in a swamp, the shoebill looks less like a bird than a dinosaur that forgot to go extinct. Its enormous clog-shaped bill, cold yellow eyes and slow, deliberate movements have made it one of Africa's most sought-after birds.",
+    "home": "Shoebills live in vast freshwater swamps and marshes thick with papyrus and reeds, in countries such as Uganda, South Sudan, Zambia, Tanzania and the Democratic Republic of the Congo. They prefer places where floating vegetation lets them stand over water rich in fish, and they are thinly spread, each bird needing a large area.",
+    "anatomy": "The shoebill stands up to about 1.4 metres tall, with grey plumage, long legs and broad wings that span over 2 metres. Its bill is its most famous feature: around 24 centimetres long and 10 wide, with sharp edges and a hooked tip that can grip and slice slippery prey. Its eyes face forward more than most birds', giving it good depth perception for striking at fish. Long toes spread its weight so it can stand on floating plants without sinking.",
+    "life": "Shoebills are patient ambush hunters. A bird may stand motionless for long periods, watching the water, then lunge forward and collapse onto its prey, scooping up fish, plants and mud all at once. Lungfish are a favourite, along with catfish, frogs, water snakes and even baby crocodiles. After a strike, it shakes away the weeds and swallows the catch, often decapitating it first with the bill's sharp edge.",
+    "family": "Shoebills breed in the dry season, building a large nest of grass and reeds on a floating mat of vegetation or a small island. The female usually lays two eggs, and both parents incubate them for about a month, cooling the eggs on hot days by pouring bills full of water over them. Usually only one chick survives; the older chick often outcompetes or attacks its sibling. Young shoebills take about three to four months to fly.",
+    "remarkable": "When greeting a mate or a familiar person, a shoebill bows its head and clatters its bill loudly, a sound that has been compared to a machine gun. It is one of the few birds that can make such a noise.\n\nShoebills are also strikingly calm around people who stay still, which has made them famous with photographers.",
+    "outlook": "With perhaps a few thousand shoebills left, the species is listed as vulnerable. Its swamps are being drained for farming and grazing, burned, and disturbed, and chicks and eggs are taken for the illegal wildlife trade. Protected wetlands such as Uganda's Mabamba Swamp now draw birdwatchers, and the income gives local communities a reason to protect the birds.",
+    "people": "Ancient Egyptians may have known the shoebill, and images resembling it appear in their art. European scientists described it in the 1850s, naming it Balaeniceps rex, roughly 'whale-headed king', for its bill. In Uganda, local guides take visitors by canoe through papyrus channels in search of shoebills, and former fishers have become guides and guardians. Some zoos now keep and breed shoebills, though breeding them in captivity has proved difficult.",
+    "relatives": "The shoebill is the only living member of its family, Balaenicipitidae. It was long thought to be a stork, then a relative of herons, but genetic studies show its closest relatives are pelicans and the hamerkop, another unusual African waterbird that builds enormous nests. Shoebill-like birds once lived more widely; fossils of a relative have been found in Egypt and dated to millions of years ago.",
+    "didYouKnow": "A shoebill can stand so still for so long that photographers sometimes mistake it for a statue until it blinks.",
+    "facts": [
+      { "label": "Height", "value": "1.1–1.4 m" },
+      { "label": "Wingspan", "value": "2.3–2.6 m" },
+      { "label": "Lifespan", "value": "35+ years" },
+      { "label": "Diet", "value": "Lungfish, catfish, frogs" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a shoebill usually hunt?",
+        "choices": ["It stands still for a long time, then lunges", "It dives from high in the air", "It chases fish underwater", "It hunts in large flocks"],
+        "explanation": "Shoebills are patient ambush hunters that strike suddenly after waiting motionless."
+      },
+      {
+        "prompt": "How do shoebills keep their eggs cool on hot days?",
+        "choices": ["They pour bills full of water over them", "They bury them in mud", "They move them into shade", "They sit on them less"],
+        "explanation": "Parents carry water in their huge bills and pour it over the eggs."
+      },
+      {
+        "prompt": "What sound does a shoebill make when greeting?",
+        "choices": ["A loud clattering of its bill", "A high whistle", "A deep booming call", "It is completely silent"],
+        "explanation": "Bill-clattering sounds a bit like a machine gun."
+      }
+    ],
+    "charities": [
+      { "name": "BirdLife International", "url": "https://www.birdlife.org", "blurb": "Protects important bird areas worldwide, including African wetlands where shoebills live." }
+    ]
+  },
+  {
+    "id": "aye-aye",
+    "name": "Aye-aye",
+    "scientificName": "Daubentonia madagascariensis",
+    "wikipediaTitle": "Aye-aye",
+    "group": "mammal",
+    "regions": ["africa"],
+    "range": "Rainforests and dry forests of Madagascar",
+    "status": "EN",
+    "coordinate": { "latitude": -15.5, "longitude": 49.8 },
+    "mapSpan": 14,
+    "tagline": "The lemur that taps for its dinner",
+    "lede": "At night in Madagascar's forests, a strange tapping sound echoes from the trees. It's an aye-aye, a lemur with bat-like ears, staring eyes and one impossibly thin finger, searching for grubs hidden inside the wood. It's one of the most unusual primates on Earth.",
+    "home": "Aye-ayes live only on Madagascar, the huge island off Africa's east coast. They are found in several types of forest, from humid rainforest to dry deciduous woods, and sometimes in plantations near villages. By day they sleep in round nests of leaves and twigs, built high in the forks of trees.",
+    "anatomy": "An aye-aye is about the size of a house cat, with coarse dark fur, a long bushy tail, large orange eyes and huge, mobile ears. Its front teeth never stop growing, like a rodent's, which led early scientists to think it was a squirrel. Its most remarkable feature is the skeletal, very thin middle finger on each hand, which can rotate in a ball-and-socket joint. It also has a small extra 'pseudo-thumb' on each wrist that may help it grip.",
+    "life": "Aye-ayes are nocturnal and mostly solitary. To find food, an aye-aye taps on bark with its long middle finger, listening for hollow tunnels where beetle larvae live. It then gnaws a hole with its teeth and hooks out the grub with the same finger. This way of foraging, called percussive foraging, is extremely rare in mammals. It also eats nectar, seeds, fungi and the flesh of coconuts and other fruit.",
+    "family": "Females come into breeding condition at different times of the year and call loudly to attract males, who compete to mate. A single baby is born after about five and a half months in a nest. Young aye-ayes grow slowly, are weaned at about seven months, and stay with their mother for up to two years, learning the difficult skill of tap-foraging. Females have a baby only every two to three years.",
+    "remarkable": "The aye-aye is the only primate known to find food by tapping and listening, an approach otherwise used by woodpeckers.\n\nThat skinny middle finger is also used to scoop out coconut milk and pulp, and for grooming.",
+    "outlook": "Aye-ayes are endangered. Madagascar has lost most of its original forest, and aye-ayes are sometimes killed because, in some regions, they are believed to bring bad luck or death. They also raid crops such as coconuts and lychees. Protected areas and community education are helping, along with breeding programs in zoos.",
+    "people": "In parts of Madagascar, local beliefs, called fady, hold that an aye-aye pointing its long finger at someone marks them for death, so aye-ayes have been killed on sight. Elsewhere, taboos protect them. European scientists described the aye-aye in the 1780s and argued for decades about whether it was a rodent. Today, zoos such as the Duke Lemur Center study and breed them, and conservation groups work with communities to reduce conflict.",
+    "relatives": "The aye-aye is a lemur, part of a group of primates found only on Madagascar, but it is so unusual that it is the only living member of its family, Daubentoniidae. A larger relative, the giant aye-aye, lived on Madagascar until perhaps a thousand years ago and was two to three times heavier. Lemurs are distant cousins of monkeys and apes, and their ancestors probably rafted to Madagascar from Africa tens of millions of years ago.",
+    "didYouKnow": "An aye-aye's middle finger can tap on wood up to about 8 times a second while it listens for hidden grubs.",
+    "facts": [
+      { "label": "Length", "value": "30–37 cm + tail" },
+      { "label": "Weight", "value": "About 2.5 kg" },
+      { "label": "Lifespan", "value": "20+ years" },
+      { "label": "Diet", "value": "Grubs, nuts, nectar, fruit" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does an aye-aye find grubs inside wood?",
+        "choices": ["It taps the bark and listens for hollow tunnels", "It smells them through the bark", "It waits for them to crawl out", "It peels off all the bark"],
+        "explanation": "This tap-and-listen method is called percussive foraging."
+      },
+      {
+        "prompt": "What is unusual about the aye-aye's middle finger?",
+        "choices": ["It is extremely thin and can rotate in a ball-and-socket joint", "It has a sharp claw like a cat's", "It is webbed for swimming", "It is twice as thick as the others"],
+        "explanation": "The skeletal middle finger taps, probes and scoops out food."
+      },
+      {
+        "prompt": "Why have aye-ayes sometimes been killed in Madagascar?",
+        "choices": ["Some local beliefs say they bring bad luck", "They attack livestock", "Their fur is valuable", "They spread disease"],
+        "explanation": "Fady, local taboos, in some regions link aye-ayes with bad luck or death."
+      }
+    ],
+    "charities": [
+      { "name": "Durrell Wildlife Conservation Trust", "url": "https://www.durrell.org", "blurb": "Works with communities across Madagascar to protect lemurs and their forests." }
+    ]
+  },
+  {
+    "id": "saiga",
+    "name": "Saiga Antelope",
+    "scientificName": "Saiga tatarica",
+    "wikipediaTitle": "Saiga antelope",
+    "group": "mammal",
+    "regions": ["asia", "europe"],
+    "range": "Dry steppes of Kazakhstan, Mongolia, Uzbekistan and southern Russia",
+    "status": "NT",
+    "coordinate": { "latitude": 48.5, "longitude": 60.0 },
+    "mapSpan": 30,
+    "tagline": "The antelope with a built-in air filter",
+    "lede": "With its big, droopy, trunk-like nose, the saiga looks like a creature from another planet. It's actually a tough survivor of the Ice Age, roaming the cold, windy steppes of Central Asia in huge herds, and one of conservation's most dramatic comeback stories.",
+    "home": "Saigas live on open steppe and semi-desert grasslands, mostly in Kazakhstan, with smaller populations in Russia, Uzbekistan and western Mongolia. Summers there are hot and dusty and winters bitterly cold. Herds migrate long distances between summer and winter ranges, following fresh grass and avoiding deep snow.",
+    "anatomy": "A saiga is a small antelope, about the size of a goat, with a sandy coat in summer that turns thick and pale in winter. Its most famous feature is its large, flexible nose, which hangs over its mouth. Inside are bony passages lined with mucus that filter dust in summer and warm the frigid air in winter before it reaches the lungs. Males have amber, ridged horns, which have made them targets for poachers.",
+    "life": "Saigas graze on grasses, herbs and shrubs, including plants that are poisonous to other animals. They can run at up to around 80 km/h and are good swimmers. Herds can number in the thousands during migration. In winter they travel south to areas with less snow, and in spring they move north again, often covering many kilometres a day.",
+    "family": "The mating season, or rut, is in late autumn, when males fight for groups of females and barely eat, many dying over winter. In spring, females gather in huge calving areas and give birth within a few days of each other, often to twins. Calves lie hidden on the ground for their first days and can run with the herd within about a week. Females can breed in their first year.",
+    "remarkable": "Saigas breed fast for a large mammal, which helps populations bounce back after disasters.\n\nIn 2015, a bacterial disease triggered by unusually warm, humid weather killed more than 200,000 saigas in a few weeks, around two-thirds of the global population. Yet by 2022 their numbers had recovered to well over a million.",
+    "outlook": "In 2023, after a remarkable recovery driven by anti-poaching work in Kazakhstan, the IUCN moved the saiga from critically endangered to near threatened. It still faces poaching for its horns, used in traditional medicine, and new fences, roads and railways that block migration routes. Disease outbreaks remain a threat.",
+    "people": "Saigas were hunted heavily after the collapse of the Soviet Union, when poaching for horns crashed numbers by more than 90 percent. Kazakhstan responded with ranger patrols, protected areas and partnerships with conservation groups, and the saiga became a national symbol of conservation success. Today, scientists fit saigas with satellite collars to map their migrations, and farmers sometimes clash with growing herds that graze on crops.",
+    "relatives": "The saiga's relationships are still debated; it is placed among the antelopes and is related to goats and sheep, with the Tibetan antelope, or chiru, among its closer relatives. During the last Ice Age, saigas lived across a vast area from Britain to Alaska, alongside woolly mammoths. A separate subspecies, the Mongolian saiga, lives only in western Mongolia and is smaller.",
+    "didYouKnow": "Saiga calves are born at almost the same time across a huge herd, which overwhelms predators with more newborns than they can catch.",
+    "facts": [
+      { "label": "Shoulder height", "value": "60–80 cm" },
+      { "label": "Weight", "value": "26–69 kg" },
+      { "label": "Lifespan", "value": "6–10 years" },
+      { "label": "Diet", "value": "Grasses, herbs, shrubs" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the saiga's big nose help with?",
+        "choices": ["Filtering dust and warming cold air", "Smelling water underground", "Digging for roots", "Making loud calls"],
+        "explanation": "Its nose filters summer dust and warms winter air before it reaches the lungs."
+      },
+      {
+        "prompt": "What happened to saigas in 2015?",
+        "choices": ["A disease killed about two-thirds of them in weeks", "They were all moved to zoos", "They migrated to Africa", "Their numbers doubled"],
+        "explanation": "A bacterial disease triggered by warm, humid weather caused a mass die-off."
+      },
+      {
+        "prompt": "Why were saigas heavily poached?",
+        "choices": ["For their horns, used in traditional medicine", "For their wool", "For their eggs", "As racing animals"],
+        "explanation": "Male saiga horns are sought for traditional medicine."
+      }
+    ],
+    "charities": [
+      { "name": "Saiga Conservation Alliance", "url": "https://saiga-conservation.org", "blurb": "Connects scientists and communities across saiga range to protect the species." }
+    ]
+  },
+  {
+    "id": "star-nosed-mole",
+    "name": "Star-nosed Mole",
+    "scientificName": "Condylura cristata",
+    "wikipediaTitle": "Star-nosed mole",
+    "group": "mammal",
+    "regions": ["naEast"],
+    "range": "Wet soils and marshes of eastern Canada and the northeastern United States",
+    "status": "LC",
+    "coordinate": { "latitude": 46.0, "longitude": -72.0 },
+    "mapSpan": 18,
+    "tagline": "The world's fastest eater has a star for a nose",
+    "lede": "On the end of its nose, the star-nosed mole wears 22 pink, fleshy tentacles arranged like a star. It's not for smelling. It's one of the most sensitive touch organs in the animal kingdom, and it lets this little mole find and eat food faster than any other mammal.",
+    "home": "Star-nosed moles live in wet, poorly drained areas: marshes, swamps, the edges of streams and ponds, and wet meadows, from Labrador and Manitoba south through the eastern United States. They dig shallow tunnels that often open directly into water, and they are excellent swimmers.",
+    "anatomy": "The mole is about the size of a hamster, with dense, water-repellent dark fur, tiny eyes, big shovel-like front feet and a thick tail that swells with fat in winter. The star on its nose has 22 rays covered with around 25,000 tiny sensory domes called Eimer's organs, served by more than 100,000 nerve fibres, about five times as many touch nerves as in a human hand. Its eyesight is very poor.",
+    "life": "The mole hunts by sweeping its star across the ground, touching up to a dozen spots a second. When it feels something edible, such as a worm, insect larva or small crustacean, it can identify and eat it in as little as a quarter of a second. It also hunts underwater, where it blows bubbles out of its nose and sniffs them back in to smell prey, something few mammals can do.",
+    "family": "Star-nosed moles mate in late winter or early spring. After about 45 days, the female gives birth to a litter of usually four or five young in a nest of dry leaves and grass, in a mound or under a log above the water line. The babies are born hairless, with their stars folded up. They leave the nest at about three weeks and become independent soon after. Moles can breed when they are around ten months old.",
+    "remarkable": "In experiments, star-nosed moles found and swallowed food faster than any other mammal tested, earning a place in record books.\n\nTheir underwater sniffing, blowing bubbles onto objects and inhaling them again, was only discovered in 2006.",
+    "outlook": "Star-nosed moles are widespread and common, though rarely seen. They depend on wetlands, so draining marshes and polluting streams removes their homes. Protecting wetlands, which also filter water and store floodwater, protects them and many other species.",
+    "people": "Few people ever see a star-nosed mole, but its bizarre face has made it a favourite of neuroscientists. Researcher Kenneth Catania has studied it for decades, showing how its brain devotes huge space to its nose and how its star works like a touch-based eye, with a sensitive 'fovea' in the centre. Its face also appears in books, cartoons and science museums as an icon of strange evolution.",
+    "relatives": "The star-nosed mole is the only member of its genus. It belongs to the mole family, Talpidae, which includes the eastern mole, the hairy-tailed mole and European moles, along with shrew-moles and desmans, aquatic moles of Europe. Moles are related to shrews and hedgehogs. Fossils suggest the star-nosed mole's lineage has lived in North America for millions of years.",
+    "didYouKnow": "The star-nosed mole can find, identify and swallow a piece of food in about a quarter of a second.",
+    "facts": [
+      { "label": "Length", "value": "15–20 cm with tail" },
+      { "label": "Weight", "value": "About 55 g" },
+      { "label": "Lifespan", "value": "3–4 years" },
+      { "label": "Diet", "value": "Worms, insect larvae, crustaceans" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the star on the mole's nose mainly for?",
+        "choices": ["Touch: sensing prey", "Smelling flowers", "Digging tunnels", "Attracting mates"],
+        "explanation": "Its 22 rays are covered with tens of thousands of touch sensors."
+      },
+      {
+        "prompt": "How does the mole smell underwater?",
+        "choices": ["It blows bubbles and sniffs them back in", "It holds its breath and waits", "It uses its tail", "It can't smell underwater"],
+        "explanation": "It exhales bubbles onto objects and inhales them to pick up scents."
+      },
+      {
+        "prompt": "Where do star-nosed moles live?",
+        "choices": ["Wet soils, marshes and stream edges", "Dry deserts", "High mountain peaks", "Inside trees"],
+        "explanation": "They need wet ground and often tunnel straight into water."
+      }
+    ],
+    "charities": [
+      { "name": "Nature Conservancy of Canada", "url": "https://www.natureconservancy.ca", "blurb": "Protects wetlands and other natural areas across Canada." }
+    ]
+  },
+  {
+    "id": "hoatzin",
+    "name": "Hoatzin",
+    "scientificName": "Opisthocomus hoazin",
+    "wikipediaTitle": "Hoatzin",
+    "group": "bird",
+    "regions": ["southAmerica"],
+    "range": "Swamps, oxbow lakes and riverbanks of the Amazon and Orinoco basins",
+    "status": "LC",
+    "coordinate": { "latitude": -3.5, "longitude": -73.0 },
+    "mapSpan": 25,
+    "tagline": "The stink bird with clawed chicks",
+    "lede": "The hoatzin looks like a punk-rock pheasant, with a spiky crest, bare blue face and red eyes. It digests leaves like a cow, smells like manure, and its chicks climb with claws on their wings. Few birds are as strange.",
+    "home": "Hoatzins live in the lowland rainforests of the Amazon and Orinoco river basins, from Colombia and Venezuela to Bolivia and Brazil. They never stray far from water, gathering in noisy groups in trees and shrubs overhanging slow rivers, swamps and lakes.",
+    "anatomy": "A hoatzin is about the size of a pheasant, with a small head, a ragged crest, a long tail, chestnut wings and a buff belly. Its face is bare and bright blue, and its eyes are maroon. It is a weak flier, managing only short, clumsy flights between branches. Most unusually, it has a huge crop, a pouch in its throat, where leaves are fermented by bacteria; the crop is so big that its flight muscles and breastbone are reduced.",
+    "life": "Hoatzins eat mostly leaves, buds and flowers of marsh plants, an unusual diet for a bird. Bacteria in the crop break down the tough leaves, much as they do in a cow's stomach, which takes a long time, so hoatzins spend much of the day resting with full crops. The fermentation gives them a strong, musty smell like manure, earning them the nickname 'stinkbird'. Few people hunt them for food because of this.",
+    "family": "Hoatzins nest in groups, building flimsy platforms of sticks in branches over water. Pairs are often helped by older offspring, which share incubation and feeding. The female lays two or three eggs. If a predator such as a snake or monkey approaches, the chicks drop into the water, swim underwater, and later climb back up to the nest using two claws on each wing, along with their feet and bill. The claws are lost as they grow.",
+    "remarkable": "The hoatzin is the only bird known to rely on foregut fermentation, the way cows and other ruminants digest plants.\n\nIts clawed chicks are often compared to the ancient bird Archaeopteryx, though the claws evolved again rather than being passed down directly.",
+    "outlook": "Hoatzins are common and widespread, and their smell protects them from much hunting. They depend on healthy riverside forests, so deforestation and damming of rivers are long-term concerns, but for now the species is not threatened.",
+    "people": "The hoatzin is the national bird of Guyana and appears on its coat of arms. Local names include 'stinkbird' and 'Canje pheasant'. Scientists study the hoatzin's gut bacteria, which resemble those of cows more than those of other birds, to understand how animals digest plants. Birdwatchers on Amazon river trips often see groups of hoatzins hissing and flapping clumsily as boats pass.",
+    "relatives": "The hoatzin is so unusual that it is the only living member of its own order, Opisthocomiformes. Scientists have linked it at various times to chickens, cuckoos, turacos and pigeons, but its true relationships remain uncertain; it seems to have split from other birds very long ago. Fossil hoatzin relatives have been found in Africa and Europe, suggesting the group once lived widely and that hoatzins may have crossed the Atlantic by rafting.",
+    "didYouKnow": "Hoatzin chicks can dive into the water to escape a predator and then climb back up to their nest using claws on their wings.",
+    "facts": [
+      { "label": "Length", "value": "About 65 cm" },
+      { "label": "Weight", "value": "About 800 g" },
+      { "label": "Lifespan", "value": "Up to ~8 years" },
+      { "label": "Diet", "value": "Leaves, buds, flowers" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the hoatzin digest leaves?",
+        "choices": ["Bacteria ferment them in its large crop", "It swallows stones to grind them", "It only eats soft fruit instead", "It regurgitates them for its chicks"],
+        "explanation": "Like a cow, it ferments food with bacteria, in its crop."
+      },
+      {
+        "prompt": "What can hoatzin chicks do to escape danger?",
+        "choices": ["Dive into water and climb back with wing claws", "Fly away immediately", "Play dead", "Spray a bad smell"],
+        "explanation": "Chicks have two claws on each wing to climb back to the nest."
+      },
+      {
+        "prompt": "Why is the hoatzin nicknamed the 'stinkbird'?",
+        "choices": ["Fermenting leaves make it smell like manure", "It lives in sewers", "It eats rotten fish", "It sprays enemies"],
+        "explanation": "Its fermenting diet gives it a strong, musty smell."
+      }
+    ],
+    "charities": [
+      { "name": "Rainforest Trust", "url": "https://www.rainforesttrust.org", "blurb": "Buys and protects threatened tropical forests with local partners." }
+    ]
+  }
+]

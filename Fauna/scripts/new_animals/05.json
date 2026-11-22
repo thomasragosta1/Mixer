@@ -1,0 +1,247 @@
+[
+  {
+    "id": "coelacanth",
+    "name": "Coelacanth",
+    "scientificName": "Latimeria chalumnae",
+    "wikipediaTitle": "West Indian Ocean coelacanth",
+    "group": "fish",
+    "regions": ["africa", "openOcean"],
+    "range": "Deep rocky slopes off the Comoros, South Africa, Mozambique, Tanzania and Madagascar",
+    "status": "CR",
+    "coordinate": { "latitude": -11.7, "longitude": 43.3 },
+    "mapSpan": 20,
+    "tagline": "The fish that came back from extinction",
+    "lede": "Scientists knew the coelacanth only from fossils and believed it had died out with the dinosaurs, 66 million years ago. Then, in 1938, a fisherman off South Africa pulled one up in his net. It's one of the most famous zoological discoveries of the 20th century.",
+    "home": "West Indian Ocean coelacanths live along steep, rocky underwater slopes, usually between about 100 and 500 metres deep, off the Comoros Islands, South Africa, Mozambique, Tanzania, Kenya and Madagascar. By day they shelter in volcanic caves, sometimes in groups, and at night they drift out to hunt.",
+    "anatomy": "A coelacanth can grow to about 2 metres long and weigh around 90 kilograms. It has steel-blue skin dotted with white spots, unique to each fish, and thick, armour-like scales. Its fins are fleshy and lobed, supported by bones, and move in an alternating pattern like the legs of a walking animal. It has a hinged joint in its skull that lets it open its mouth very wide, and an organ in its snout that detects electric fields.",
+    "life": "Coelacanths are slow, drifting predators that save energy by moving with currents. They hunt fish, squid and other animals at night, sometimes standing on their heads, perhaps to sense prey with their electric organ. Their slow metabolism suits the cold, low-oxygen deep water, and they can stay almost motionless for long periods.",
+    "family": "Coelacanths give birth to live young. Eggs about the size of oranges develop inside the mother, and the pups, around 35 centimetres long, are born fully formed. Pregnancy is thought to last around five years, among the longest of any animal. Studies of growth rings in their scales suggest coelacanths may not mature until about 55 years old and can live for around 100 years.",
+    "remarkable": "Coelacanths belong to a lineage that is more closely related to four-legged animals, including humans, than to most other fish.\n\nTheir fleshy fins move in the same alternating pattern that our ancestors may have used when they first walked onto land.",
+    "outlook": "The West Indian Ocean coelacanth is critically endangered. With perhaps a few hundred left around the Comoros, every individual matters. They are caught accidentally by fishers using deep lines, and deep-water trawling and coastal development threaten their habitat. Local fishers have been encouraged to release any coelacanths they catch.",
+    "people": "In 1938, museum curator Marjorie Courtenay-Latimer spotted a strange blue fish in a fisherman's catch near East London, South Africa. Ichthyologist J.L.B. Smith identified it as a coelacanth and named it after her. A second one was not found until 1952, in the Comoros, where local fishers had known the fish for generations. The coelacanth appears on Comorian banknotes and stamps.",
+    "relatives": "There are two living coelacanths: this species and the Indonesian coelacanth, discovered in 1997 when a scientist on honeymoon spotted one in a fish market in Sulawesi. Coelacanths are lobe-finned fish, related to lungfish, and both are closer to land vertebrates than to ray-finned fish such as salmon or tuna. Fossil coelacanths date back about 400 million years.",
+    "didYouKnow": "A female coelacanth may be pregnant for about five years, one of the longest pregnancies of any animal.",
+    "facts": [
+      { "label": "Length", "value": "Up to ~2 m" },
+      { "label": "Weight", "value": "Up to ~90 kg" },
+      { "label": "Lifespan", "value": "Around 100 years" },
+      { "label": "Diet", "value": "Fish, squid" }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why was finding a living coelacanth in 1938 so surprising?",
+        "choices": ["It was thought extinct for 66 million years", "It was a new colour", "It was found in a river", "It could fly"],
+        "explanation": "It was known only from fossils."
+      },
+      {
+        "prompt": "How do coelacanths have babies?",
+        "choices": ["They give birth to live young", "They lay eggs on rocks", "They build nests", "The father carries them"],
+        "explanation": "Eggs develop inside the mother, and pups are born fully formed."
+      },
+      {
+        "prompt": "What are coelacanths more closely related to than most fish?",
+        "choices": ["Four-legged animals, including humans", "Sharks", "Jellyfish", "Octopuses"],
+        "explanation": "They are lobe-finned fish, close to the ancestors of land animals."
+      }
+    ],
+    "charities": [
+      { "name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works to protect marine life and coastal habitats in East Africa and beyond." }
+    ]
+  },
+  {
+    "id": "greenland-shark",
+    "name": "Greenland Shark",
+    "scientificName": "Somniosus microcephalus",
+    "wikipediaTitle": "Greenland shark",
+    "group": "fish",
+    "regions": ["arctic", "naEast", "europe", "openOcean"],
+    "range": "Cold, deep waters of the North Atlantic and Arctic, including the Gulf of St. Lawrence",
+    "status": "VU",
+    "coordinate": { "latitude": 68.0, "longitude": -55.0 },
+    "mapSpan": 35,
+    "tagline": "A shark that may be older than the United States",
+    "lede": "Some Greenland sharks swimming today were probably born before the United States existed. These slow, ghostly giants of the Arctic are the longest-lived vertebrates known, possibly reaching 400 years or more.",
+    "home": "Greenland sharks live in the cold waters of the North Atlantic and Arctic Oceans, around Greenland, Iceland, Norway and northern Canada. They are usually found deep, often hundreds of metres down, though in winter they may come close to the surface. They also visit the deep channels of the Gulf of St. Lawrence.",
+    "anatomy": "Greenland sharks are among the largest sharks, typically 4 to 5 metres long and possibly larger. They are thick-bodied and grey-brown, with small fins and a short, rounded snout. Their flesh contains high levels of a chemical called TMAO, which protects their proteins in the cold and deep, but makes the raw meat toxic to people. Many have tiny parasitic crustaceans attached to their eyes, which can damage their vision.",
+    "life": "Greenland sharks are some of the slowest-swimming fish recorded, cruising at around 1 km/h. Yet their stomachs have contained seals, fish, squid and even parts of polar bears and reindeer, suggesting they ambush sleeping seals or scavenge carcasses. They live in near-freezing water, where everything happens slowly, including their growth, which may be around 1 centimetre a year.",
+    "family": "Very little is known about Greenland shark reproduction. Females give birth to live young after the eggs hatch inside them, and pups are thought to be around 40 centimetres long at birth. Based on growth rates, females may not reach maturity until they are around 150 years old, one of the latest ages of maturity for any animal.",
+    "remarkable": "In 2016, scientists estimated the ages of Greenland sharks using radiocarbon dating of the lenses in their eyes, which form before birth. The largest, about 5 metres long, was estimated to be around 390 years old, with a wide range of uncertainty.\n\nThat makes them the longest-lived animals with backbones known.",
+    "outlook": "Greenland sharks are listed as vulnerable. Because they grow and mature so slowly, they cannot recover quickly from losses. Many are caught as bycatch in fisheries for halibut and shrimp. In the past, they were hunted heavily for their liver oil, used for lamps and machinery.",
+    "people": "In Iceland, Greenland shark meat is cured by fermenting and drying it for months to remove its toxins, producing hákarl, a famously strong-smelling traditional food. Inuit stories tell of the shark's origin from the urine-soaked cloth of a sea goddess's hair. Scientists now study Greenland sharks to understand how they live so long, which could shed light on ageing.",
+    "relatives": "The Greenland shark belongs to the sleeper sharks, family Somniosidae, named for their slow movements. Its relatives include the Pacific sleeper shark, which is similar in size, and the southern sleeper shark. Sleeper sharks are part of a larger group of dogfish sharks. Some deep-sea relatives glow in the dark.",
+    "didYouKnow": "Scientists estimate the age of Greenland sharks by carbon dating proteins in the lenses of their eyes.",
+    "facts": [
+      { "label": "Length", "value": "4–5 m, maybe more" },
+      { "label": "Speed", "value": "About 1 km/h cruising" },
+      { "label": "Lifespan", "value": "Possibly 400 years" },
+      { "label": "Diet", "value": "Fish, seals, carrion" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How long can Greenland sharks live?",
+        "choices": ["Possibly around 400 years", "About 20 years", "About 50 years", "Only 5 years"],
+        "explanation": "They are the longest-lived vertebrates known."
+      },
+      {
+        "prompt": "How did scientists estimate their age?",
+        "choices": ["By radiocarbon dating the lenses of their eyes", "By counting their teeth", "By measuring their fins", "By tagging them at birth"],
+        "explanation": "Eye lens proteins form before birth and don't change."
+      },
+      {
+        "prompt": "At about what age might females first breed?",
+        "choices": ["Around 150 years", "Around 5 years", "Around 1 year", "Around 20 years"],
+        "explanation": "Their growth is incredibly slow."
+      }
+    ],
+    "charities": [
+      { "name": "Shark Trust", "url": "https://www.sharktrust.org", "blurb": "Works to protect sharks and rays worldwide through science and advocacy." }
+    ]
+  },
+  {
+    "id": "blue-dragon",
+    "name": "Blue Dragon",
+    "scientificName": "Glaucus atlanticus",
+    "wikipediaTitle": "Glaucus atlanticus",
+    "group": "marineInvertebrate",
+    "regions": ["openOcean", "oceania"],
+    "range": "Warm open oceans worldwide, floating at the surface",
+    "status": "NE",
+    "coordinate": { "latitude": -28.0, "longitude": 154.0 },
+    "mapSpan": 60,
+    "tagline": "A tiny sea slug that steals stings",
+    "lede": "The blue dragon is a sea slug no longer than your thumb, coloured electric blue and silver, floating upside-down on the ocean surface. It hunts venomous jellyfish like the Portuguese man o' war, and then reuses their stinging cells as its own weapons.",
+    "home": "Blue dragons live on the surface of warm and temperate oceans around the world, drifting with winds and currents. They spend their lives floating far from land, but storms sometimes wash them ashore in large numbers, on beaches in Australia, South Africa, Europe and the Americas.",
+    "anatomy": "A blue dragon is about 3 centimetres long, with a flattened body and six arm-like appendages branching into finger-like tips called cerata. It floats upside-down, held at the surface by a bubble of air in its stomach. Its blue underside faces up, blending with the water when seen from above, while its silvery-grey back faces down, blending with the bright surface when seen from below, a camouflage called countershading.",
+    "life": "Blue dragons feed on floating creatures, especially the Portuguese man o' war and other blue drifters like by-the-wind sailors. They are immune to their prey's venom. As they eat, they collect the prey's unfired stinging cells, called nematocysts, and store them in the tips of their cerata, concentrating them so that a blue dragon's sting can be more painful than the man o' war's.",
+    "family": "Blue dragons are hermaphrodites: each has both male and female reproductive organs. When two meet, they mate and both lay eggs. They release strings of eggs that float, or attach them to floating debris or the remains of their prey. The larvae drift in the plankton before growing into tiny dragons.",
+    "remarkable": "By stealing and storing stinging cells from venomous prey, the blue dragon turns its food into its defence.\n\nIts upside-down life on the surface, buoyed by a swallowed air bubble, is unusual among sea slugs, most of which crawl on the seafloor.",
+    "outlook": "Blue dragons have not been assessed by the IUCN and are widespread across the world's oceans. Because they live at the very surface, they could be affected by ocean pollution, including oil and plastics, and by changes to ocean currents. Little is known about their populations.",
+    "people": "When blue dragons wash up on beaches, they can sting people who pick them up, and lifeguards in Australia and elsewhere warn swimmers to look but not touch. Their striking colours have made them internet favourites, and photographs of them often go viral after storms bring them ashore.",
+    "relatives": "Blue dragons are nudibranchs, a large group of soft-bodied sea slugs known for their bright colours. Many nudibranchs also steal stinging cells from the jellyfish-like animals they eat. A closely related species, Glaucus marginatus, was found in 2014 to actually be several separate species. Sea slugs are molluscs, related to snails, which have lost their shells.",
+    "didYouKnow": "A blue dragon floats upside-down at the ocean surface, kept up by an air bubble in its stomach.",
+    "facts": [
+      { "label": "Length", "value": "About 3 cm" },
+      { "label": "Floats", "value": "Upside-down" },
+      { "label": "Sting", "value": "Borrowed from prey" },
+      { "label": "Diet", "value": "Portuguese man o' war" }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the blue dragon get its sting?",
+        "choices": ["It stores stinging cells from the jellyfish-like animals it eats", "It makes its own venom", "It has sharp spines", "It doesn't sting"],
+        "explanation": "It steals unfired stinging cells from prey like the man o' war."
+      },
+      {
+        "prompt": "How does a blue dragon stay afloat?",
+        "choices": ["A bubble of air in its stomach", "Floating on seaweed", "Swimming constantly", "Clinging to jellyfish"],
+        "explanation": "A swallowed air bubble keeps it at the surface."
+      },
+      {
+        "prompt": "What kind of animal is a blue dragon?",
+        "choices": ["A sea slug", "A fish", "A jellyfish", "A crab"],
+        "explanation": "It is a nudibranch, a soft-bodied sea slug."
+      }
+    ],
+    "charities": [
+      { "name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns to protect ocean life and reduce plastic pollution." }
+    ]
+  },
+  {
+    "id": "vampire-squid",
+    "name": "Vampire Squid",
+    "scientificName": "Vampyroteuthis infernalis",
+    "wikipediaTitle": "Vampire squid",
+    "group": "marineInvertebrate",
+    "regions": ["openOcean"],
+    "range": "Deep, low-oxygen waters of tropical and temperate oceans",
+    "status": "LC",
+    "coordinate": { "latitude": 36.6, "longitude": -122.3 },
+    "mapSpan": 50,
+    "tagline": "The gentle 'vampire' of the deep",
+    "lede": "Its scientific name means 'vampire squid from hell', but this small deep-sea animal is no bloodsucker. The vampire squid drifts in the dark, eating 'marine snow', the flakes of dead material that fall from above, and it turns itself inside out when threatened.",
+    "home": "Vampire squid live in the deep ocean, typically 600 to 1,200 metres down, in a layer of water with very little oxygen called the oxygen minimum zone. Few predators can survive there. They are found in tropical and temperate oceans worldwide, including off California, where researchers have studied them closely.",
+    "anatomy": "A vampire squid is about 30 centimetres long, with a soft, dark reddish-black body, large blue or red eyes, and eight arms connected by a web of skin, like a cloak. Rows of soft spines line the arms. It has two long retractable filaments for catching food, and its body is covered in light-producing organs called photophores. Its blood is especially good at absorbing oxygen, letting it survive where most animals would suffocate.",
+    "life": "Unlike nearly all other cephalopods, the vampire squid is not a hunter. It drifts with very little effort and uses its long filaments to collect marine snow, particles of dead plankton, droppings and other debris. It wraps these in mucus from its arms and eats the balls. Its slow metabolism suits its food-poor, oxygen-poor home.",
+    "family": "Little is known about vampire squid reproduction. Females appear to spawn many times over their lives rather than once, which is unusual among cephalopods; most squid and octopuses breed once and die. Eggs are thought to drift in the water, and hatchlings look like tiny adults with extra fins that are lost as they grow.",
+    "remarkable": "When threatened, the vampire squid pulls its webbed arms up over its body, exposing the spiny undersides, in a posture called 'pineapple'.\n\nInstead of ink, it can release a cloud of glowing mucus that lasts for minutes, confusing predators while it slips away.",
+    "outlook": "Vampire squid are considered least concern and are widespread in the deep ocean. Because their habitat is so remote, they face few direct threats, though deep-sea mining and changes in ocean oxygen and temperature could affect them in the future.",
+    "people": "The vampire squid was first described in 1903 by German biologist Carl Chun, who thought it was an octopus. For decades it was known only from damaged specimens in nets. Since the 1990s, remotely operated vehicles, especially those of the Monterey Bay Aquarium Research Institute, have filmed living vampire squid, revealing their surprising lifestyle.",
+    "relatives": "The vampire squid is neither a squid nor an octopus. It is the only living member of its own order, Vampyromorphida, a lineage that sits between the two. Its ancestors date back over 160 million years, and its relatives once included many shallow-water species. It is sometimes described as a living fossil, having survived by moving into deep water where few competitors live.",
+    "didYouKnow": "Instead of squirting ink, a vampire squid can release a cloud of glowing mucus to confuse predators.",
+    "facts": [
+      { "label": "Length", "value": "About 30 cm" },
+      { "label": "Depth", "value": "600–1,200 m" },
+      { "label": "Defence", "value": "Glowing mucus" },
+      { "label": "Diet", "value": "Marine snow" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the vampire squid eat?",
+        "choices": ["Marine snow, falling flakes of dead material", "Blood", "Fish it hunts", "Seaweed"],
+        "explanation": "It collects falling debris with long filaments."
+      },
+      {
+        "prompt": "What can it release instead of ink?",
+        "choices": ["A cloud of glowing mucus", "Poison darts", "Bubbles", "Sand"],
+        "explanation": "The glowing mucus can confuse predators for minutes."
+      },
+      {
+        "prompt": "Why do few predators find vampire squid?",
+        "choices": ["It lives where there is very little oxygen", "It lives in rivers", "It is invisible", "It's too big"],
+        "explanation": "It lives in the oxygen minimum zone of the deep ocean."
+      }
+    ],
+    "charities": [
+      { "name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns to protect ocean habitats, including the deep sea." }
+    ]
+  },
+  {
+    "id": "atlantic-horseshoe-crab",
+    "name": "Atlantic Horseshoe Crab",
+    "scientificName": "Limulus polyphemus",
+    "wikipediaTitle": "Atlantic horseshoe crab",
+    "group": "marineInvertebrate",
+    "regions": ["naEast", "centralAmerica"],
+    "range": "Atlantic coast from Maine to the Gulf of Mexico and the Yucatán",
+    "status": "VU",
+    "coordinate": { "latitude": 39.0, "longitude": -75.1 },
+    "mapSpan": 22,
+    "tagline": "A living fossil with blue blood that keeps us safe",
+    "lede": "Horseshoe crabs have crawled onto beaches to spawn for more than 400 million years, long before dinosaurs. Today, their bright blue blood is used to test every injectable medicine and vaccine for dangerous bacteria, so you have probably been protected by one.",
+    "home": "Atlantic horseshoe crabs live along the Atlantic coast of North America, from Maine to the Gulf of Mexico and the Yucatán Peninsula. They spend most of the year on the sea floor in bays and coastal waters, and each spring and early summer they come ashore to spawn. Delaware Bay hosts the largest gathering in the world.",
+    "anatomy": "Despite the name, horseshoe crabs are not crabs; they are more closely related to spiders and scorpions. They have a smooth, horseshoe-shaped shell, a long, pointed tail called a telson, used to steer and flip over, and ten legs underneath. They have ten eyes, including two large compound eyes on top of the shell, and light sensors on their tail. Their blood is blue because it contains copper-based hemocyanin.",
+    "life": "Horseshoe crabs feed on clams, worms and other small animals on the seafloor, crushing food with the bristly bases of their legs, since they have no jaws. Young horseshoe crabs live in shallow water near beaches, molting many times as they grow, and move to deeper water as adults. They can live for 20 years or more.",
+    "family": "On high tides around new and full moons in late spring, horseshoe crabs crowd onto beaches. Each female digs nests in the sand and lays clusters of tiny green eggs, about 4,000 at a time and up to 80,000 or more in a season, while males cling to her and fertilise them. The eggs hatch in a few weeks, and the young take about ten years to mature.",
+    "remarkable": "Horseshoe crab blood contains cells that clot in the presence of bacterial toxins. A test made from it, called LAL, is used to check vaccines, injections and medical implants for contamination.\n\nCrabs are caught, partly drained of blood and released, though some die afterwards.",
+    "outlook": "The Atlantic horseshoe crab is vulnerable. It has been overharvested for bait and fertiliser and for the medical industry, and beaches where it spawns are being lost to coastal development and erosion. Its eggs are vital food for migrating shorebirds such as the red knot, which has declined as crab numbers fell. A synthetic alternative to LAL is now available and spreading.",
+    "people": "In the 1800s and early 1900s, millions of horseshoe crabs were harvested and ground into fertiliser. Today, volunteers count spawning crabs on Delaware Bay beaches and 'Just flip 'em', turning over crabs stuck on their backs. Scientists studying the horseshoe crab's eyes won a Nobel Prize in 1967 for discoveries about how vision works.",
+    "relatives": "There are four living horseshoe crab species: the Atlantic horseshoe crab and three species in Asia. They are the last survivors of a group that dates back more than 445 million years. Horseshoe crabs are chelicerates, the group that includes spiders, scorpions, ticks and mites, and their closest living relatives may be arachnids.",
+    "didYouKnow": "Horseshoe crab blood is blue and is used to test vaccines and injectable medicines for dangerous bacterial toxins.",
+    "facts": [
+      { "label": "Length", "value": "Up to ~60 cm with tail" },
+      { "label": "Eyes", "value": "10" },
+      { "label": "Lifespan", "value": "20+ years" },
+      { "label": "Diet", "value": "Clams, worms" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What are horseshoe crabs most closely related to?",
+        "choices": ["Spiders and scorpions", "Crabs and lobsters", "Fish", "Turtles"],
+        "explanation": "They are chelicerates, like spiders and scorpions."
+      },
+      {
+        "prompt": "Why is horseshoe crab blood valuable to medicine?",
+        "choices": ["It detects bacterial toxins in vaccines and injections", "It cures diseases", "It is used to make antibiotics", "It stops bleeding"],
+        "explanation": "The LAL test clots in the presence of bacterial toxins."
+      },
+      {
+        "prompt": "Which migrating bird depends on horseshoe crab eggs?",
+        "choices": ["The red knot", "The bald eagle", "The snowy owl", "The common loon"],
+        "explanation": "Red knots refuel on crab eggs during migration."
+      }
+    ],
+    "charities": [
+      { "name": "Ecological Research & Development Group", "url": "https://www.horseshoecrab.org", "blurb": "Works to conserve the world's four horseshoe crab species." }
+    ]
+  }
+]

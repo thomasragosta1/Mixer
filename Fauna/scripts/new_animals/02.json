@@ -1,0 +1,247 @@
+[
+  {
+    "id": "pink-fairy-armadillo",
+    "name": "Pink Fairy Armadillo",
+    "scientificName": "Chlamyphorus truncatus",
+    "wikipediaTitle": "Pink fairy armadillo",
+    "group": "mammal",
+    "regions": ["southAmerica"],
+    "range": "Sandy plains and dry scrub of central Argentina",
+    "status": "DD",
+    "coordinate": { "latitude": -34.0, "longitude": -67.0 },
+    "mapSpan": 12,
+    "tagline": "A pocket-sized sand swimmer with a pink shell",
+    "lede": "The smallest armadillo in the world could sit in the palm of your hand. It has a rosy pink shell, a fringe of silky white fur and huge digging claws, and it spends almost its entire life 'swimming' through sand beneath the deserts of Argentina.",
+    "home": "Pink fairy armadillos live only in central Argentina, in dry grasslands, sandy plains and thorny scrub, where the soil is loose enough to tunnel through. They spend nearly all their time underground, coming up mostly at night, which is why so little is known about them.",
+    "anatomy": "This armadillo is only about 10 to 12 centimetres long. Its pale pink shell is thin and flexible and attached to the body only along a narrow strip of the back, so it works more like a cloak than armour. The pink colour comes from blood vessels showing through, which may help release heat. The rear end is covered by a flat, vertical plate, perhaps used to pack down sand behind it. Its front claws are enormous for its size, and its eyes are tiny.",
+    "life": "Pink fairy armadillos dig with remarkable speed, burying themselves in seconds when disturbed. They feed mostly on ants and their larvae, plus worms, snails, insects and plant roots. They seem to dig near ant colonies and tunnel through sand in search of prey. Because they are so secretive and nocturnal, almost everything about their daily lives comes from a handful of observations.",
+    "family": "Very little is known about how pink fairy armadillos reproduce. Like other armadillos, they probably give birth to a single baby, or very few, in a burrow, and the young are thought to have soft shells that harden over time. Almost no wild births have ever been observed, and the species has rarely survived for long in captivity, which has made it hard to study.",
+    "remarkable": "The pink fairy armadillo can bury itself completely in just a few seconds, using its front claws to dig and its body to wriggle forward through sand.\n\nIt is so rarely seen that some Argentinian farmers who have worked the land for decades have never spotted one.",
+    "outlook": "The species is listed as data deficient: there simply isn't enough information to know how many there are. Possible threats include farming, which compacts or changes the soil, predation by pet dogs and cats, and collection for the illegal pet trade, where most die quickly. Researchers are now using camera traps and local reports to learn more.",
+    "people": "In Argentina it is called 'pichiciego', which roughly means 'little blind armadillo'. It became famous online for its fairy-like look, but scientists warn that interest in keeping it as a pet is harmful, since wild-caught animals almost always die, often from stress or the wrong diet. Local naturalists and farmers who report sightings are among the most important sources of information for researchers.",
+    "relatives": "There are about 20 species of armadillo, all in the Americas, ranging from this tiny species to the giant armadillo, which can weigh over 30 kilograms. The pink fairy armadillo's closest relative is the larger greater fairy armadillo of the Chaco region. Armadillos are related to sloths and anteaters, part of a group of mammals that evolved in South America. Their extinct relatives, the glyptodonts, were armoured giants the size of small cars.",
+    "didYouKnow": "The pink fairy armadillo's shell is attached to its body only along a thin strip on its back, a bit like wearing a cape.",
+    "facts": [
+      { "label": "Length", "value": "10–12 cm" },
+      { "label": "Weight", "value": "About 120 g" },
+      { "label": "Active", "value": "Mostly at night" },
+      { "label": "Diet", "value": "Ants, larvae, worms, roots" }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the pink fairy armadillo spend most of its life?",
+        "choices": ["Underground in sandy soil", "In treetops", "In rivers", "In caves"],
+        "explanation": "It tunnels through loose, sandy soil, rarely coming up."
+      },
+      {
+        "prompt": "What makes its shell look pink?",
+        "choices": ["Blood vessels showing through", "Pink fur", "Mud it rolls in", "A pigment from its food"],
+        "explanation": "The thin shell lets blood vessels show through."
+      },
+      {
+        "prompt": "Why is it listed as data deficient?",
+        "choices": ["Too little is known to judge how many there are", "It was only just discovered", "It is extinct", "It lives only in zoos"],
+        "explanation": "It is so secretive that scientists lack the data to assess it."
+      }
+    ],
+    "charities": [
+      { "name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works to protect grasslands and dry forests across South America." }
+    ]
+  },
+  {
+    "id": "fossa",
+    "name": "Fossa",
+    "scientificName": "Cryptoprocta ferox",
+    "wikipediaTitle": "Fossa (animal)",
+    "group": "mammal",
+    "regions": ["africa"],
+    "range": "Forests throughout Madagascar",
+    "status": "VU",
+    "coordinate": { "latitude": -20.0, "longitude": 46.5 },
+    "mapSpan": 16,
+    "tagline": "Madagascar's lemur-hunting acrobat",
+    "lede": "Part cat, part mongoose, part something else entirely, the fossa is the largest predator on Madagascar. Lean, muscular and astonishingly agile in the trees, it is the main hunter of lemurs, and it looks like no other carnivore on Earth.",
+    "home": "Fossas live across Madagascar in almost every kind of forest, from the humid rainforests of the east to the dry deciduous forests of the west and the spiny forests of the south. They need large areas, and a single fossa may range over many square kilometres.",
+    "anatomy": "A fossa has a long, slender body, short reddish-brown fur, a small head with rounded ears, and a tail about as long as its body, used for balance. Its semi-retractable claws and flexible ankles, which can rotate to grip trunks, let it run down trees head-first and leap between branches. It walks on the soles of its feet, like a bear, rather than on its toes like a cat.",
+    "life": "Fossas hunt both day and night, on the ground and in the trees. Lemurs make up a large part of their diet, especially sifakas, but they also eat tenrecs, rodents, birds, reptiles and sometimes domestic chickens. They usually hunt alone, though males are sometimes seen cooperating to catch large lemurs. Fossas mark their territory with scent glands.",
+    "family": "Fossa mating is unusual. A female climbs a traditional mating tree and several males gather below, competing to join her; mating can last for hours and be repeated over days, with different males. After about three months, she gives birth to two to four blind, helpless cubs in a den, such as a hollow tree or rock crevice. The young stay with her for over a year. Young females temporarily develop features that make them look like males, which may protect them from harassment.",
+    "remarkable": "Fossas are so agile that they can chase lemurs through the treetops, one of the few predators able to do so.\n\nThey can climb down trees head-first, thanks to ankles that rotate backwards, a trick shared with squirrels.",
+    "outlook": "Fossas are vulnerable. Madagascar has lost much of its forest, and fossas are killed by farmers for taking poultry and sometimes hunted for meat. Feral dogs and cats compete with them and may spread disease. Because they need so much space, large protected forests are essential to their survival.",
+    "people": "In Malagasy folklore, fossas are feared and blamed for killing livestock or even babies, stories that have little basis but fuel persecution. In Madagascar's protected areas, such as Kirindy Forest, fossas have become a highlight for visitors. Scientists fit them with GPS collars to learn how far they travel, and the animated film 'Madagascar' made the fossa better known worldwide, as a villain.",
+    "relatives": "Fossas were once classified as cats, then as civets, but genetic studies show they belong to a family found only in Madagascar, Eupleridae, along with other local carnivores such as the falanouc and the ring-tailed vontsira. All of them descended from a single mongoose-like ancestor that reached Madagascar from Africa around 20 million years ago and evolved in isolation. A larger giant fossa lived on the island until relatively recently.",
+    "didYouKnow": "Fossas can turn their ankles backwards, letting them run headfirst down tree trunks like a squirrel.",
+    "facts": [
+      { "label": "Length", "value": "70–80 cm + tail" },
+      { "label": "Weight", "value": "5.5–10 kg" },
+      { "label": "Lifespan", "value": "Up to ~20 years" },
+      { "label": "Diet", "value": "Lemurs, tenrecs, birds" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the fossa's main prey?",
+        "choices": ["Lemurs", "Fish", "Insects", "Fruit"],
+        "explanation": "Lemurs, especially sifakas, are a big part of its diet."
+      },
+      {
+        "prompt": "How can a fossa run down trees head-first?",
+        "choices": ["Its ankles can rotate backwards", "It has sticky pads", "It slides on its belly", "It can't; it jumps down"],
+        "explanation": "Flexible ankles let its claws grip trunks while descending."
+      },
+      {
+        "prompt": "Where does the fossa live?",
+        "choices": ["Only on Madagascar", "Across Africa", "In South American rainforests", "In Indonesia"],
+        "explanation": "Fossas, like lemurs, are found only on Madagascar."
+      }
+    ],
+    "charities": [
+      { "name": "Durrell Wildlife Conservation Trust", "url": "https://www.durrell.org", "blurb": "Protects Madagascar's forests and wildlife with local communities." }
+    ]
+  },
+  {
+    "id": "dhole",
+    "name": "Dhole",
+    "scientificName": "Cuon alpinus",
+    "wikipediaTitle": "Dhole",
+    "group": "mammal",
+    "regions": ["asia"],
+    "range": "Forests of India, Southeast Asia and parts of China and Central Asia",
+    "status": "EN",
+    "coordinate": { "latitude": 11.7, "longitude": 76.6 },
+    "mapSpan": 30,
+    "tagline": "The whistling hunting dog of Asia",
+    "lede": "Rust-red, fox-faced and highly social, dholes are wild dogs that hunt in coordinated packs and talk to each other with whistles. They're among Asia's most skilled predators, and among its least known.",
+    "home": "Dholes once ranged from Central Asia to Southeast Asia, but today they survive in scattered populations, with strongholds in the forests of central and southern India. They live in dry and moist forests, scrub and alpine meadows, wherever there is enough prey, such as deer.",
+    "anatomy": "A dhole is about the size of a border collie, with a reddish coat, pale underside, rounded ears and a bushy, black-tipped tail. It has one fewer molar tooth on each side of its lower jaw than wolves and dogs, and its strong jaws are adapted for slicing meat. Dholes have a wide range of calls, including a distinctive whistle used to regroup a pack that has scattered while hunting, as well as screams, clucks and mews.",
+    "life": "Dholes live in packs, usually of five to twelve, sometimes more than thirty. They hunt mainly during the day, chasing deer such as chital and sambar, wild pigs and smaller animals. Pack members cooperate, driving prey into water or ambush and taking down animals much larger than themselves. They share food and are less aggressive with each other at kills than many other predators.",
+    "family": "In most packs only one female breeds. After about two months, she gives birth in a den, often an old burrow or a rock cave, to a litter that is often around four to six pups, sometimes more. The whole pack helps raise the pups, regurgitating meat for them and for the mother, and adults guard the den while others hunt. Pups start following the pack at around three months.",
+    "remarkable": "Dholes communicate with a whistle that is unusual among wild dogs and may help them coordinate in dense forest where they cannot see each other.\n\nThey are bold enough to drive tigers and leopards away from kills when the pack is large.",
+    "outlook": "Dholes are endangered, with perhaps fewer than 2,500 adults left. They have lost most of their range to habitat loss and declining prey, and are threatened by diseases from domestic dogs, such as rabies and distemper, and by persecution from farmers. Protected areas in India now hold the largest populations.",
+    "people": "Dholes appear in Rudyard Kipling's 'The Jungle Book' as the fearsome 'red dogs'. In parts of India and Bhutan they were persecuted as pests, and bounties were once paid for them. Today, India's tiger reserves, such as Nagarhole and Bandipur, are among the best places to see them, and researchers use camera traps and genetic analysis of droppings to study them.",
+    "relatives": "The dhole is the only living member of its genus, Cuon, within the dog family, Canidae, which also includes wolves, jackals, foxes and the African wild dog. Its closest relatives appear to be the African wild dog and the wolves and jackals of the genus Canis. During the Ice Age, dholes lived across Europe and even reached North America, and fossils have been found as far west as Spain.",
+    "didYouKnow": "Dholes use a whistle-like call to find each other again after a pack splits up during a hunt.",
+    "facts": [
+      { "label": "Length", "value": "88–113 cm + tail" },
+      { "label": "Weight", "value": "10–20 kg" },
+      { "label": "Lifespan", "value": "Up to ~10 years" },
+      { "label": "Diet", "value": "Deer, wild pigs" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What unusual sound do dholes use to regroup?",
+        "choices": ["A whistle", "A howl like a wolf", "A bark like a dog", "They're silent"],
+        "explanation": "Their whistle-like call helps scattered packs find each other."
+      },
+      {
+        "prompt": "How do dholes usually hunt?",
+        "choices": ["In cooperative packs", "Alone at night", "By ambush from trees", "By scavenging only"],
+        "explanation": "Packs work together to take down prey larger than themselves."
+      },
+      {
+        "prompt": "Which classic book features dholes as 'red dogs'?",
+        "choices": ["The Jungle Book", "White Fang", "Black Beauty", "Watership Down"],
+        "explanation": "Kipling's The Jungle Book describes the feared 'red dogs'."
+      }
+    ],
+    "charities": [
+      { "name": "Wildlife Conservation Society", "url": "https://www.wcs.org", "blurb": "Studies and protects wildlife, including dholes and tigers, across Asia." }
+    ]
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "scientificName": "Gulo gulo",
+    "wikipediaTitle": "Wolverine",
+    "group": "mammal",
+    "regions": ["naWest", "naEast", "arctic", "europe", "asia"],
+    "range": "Boreal forest, tundra and mountains of Canada, Alaska, Scandinavia and Russia",
+    "status": "LC",
+    "coordinate": { "latitude": 62.0, "longitude": -120.0 },
+    "mapSpan": 40,
+    "tagline": "Small bear-like muscle with a giant appetite",
+    "lede": "The wolverine is the largest land-dwelling member of the weasel family, built like a small bear and famous for its strength, stamina and fearlessness. It roams huge snowy territories, crossing mountains in a single day, and is one of the hardest animals in North America to see.",
+    "home": "Wolverines live in cold, remote places: boreal forest, tundra and high mountains across northern Canada, Alaska, Scandinavia, Russia and Siberia, with small numbers in the western United States. They depend on deep snow that lasts into spring, which they use for dens and food storage. In eastern Canada they have become very rare.",
+    "anatomy": "A wolverine has a stocky body, short legs, a bushy tail and dark brown fur with a pale band along each side. Its fur sheds frost, which is why it was used to line parkas. Huge paws act as snowshoes, and strong, curved claws help it climb and dig. Its powerful jaws and a special upper molar turned sideways let it crunch frozen meat and bone. Despite weighing only around 10 to 18 kilograms, it is immensely strong.",
+    "life": "Wolverines are scavengers and hunters, eating carrion such as caribou and moose killed by wolves or winter, as well as hares, rodents, birds and eggs. They sometimes take larger prey weakened by deep snow. They store food in snow and crevices to eat later. Wolverines travel enormous distances; one may cover a territory of hundreds to over a thousand square kilometres, moving tirelessly over mountains.",
+    "family": "Wolverines mate in summer, but the embryos don't implant until winter, a process called delayed implantation. In late winter, the female digs a den deep in snow, often among boulders, and gives birth to usually two or three kits with white fur. The snow den protects them from cold and predators. The kits grow quickly, leave the den in spring, and stay with their mother into autumn. Males often visit their families.",
+    "remarkable": "Wolverines have been tracked climbing thousands of metres up mountains in a single day, including one in Montana that climbed a steep peak in less than 90 minutes.\n\nThey can chase away much larger predators, including bears and wolves, from a carcass.",
+    "outlook": "Wolverines are not threatened globally, but they are rare and declining in many places. They need large, undisturbed areas and spring snow for denning, so a warming climate that shrinks snowpack is a concern. In eastern Canada, wolverines are listed as endangered and may have nearly disappeared from Quebec and Labrador. In the US, they are listed as threatened.",
+    "people": "Wolverines feature in the stories of many Indigenous peoples of the North, sometimes as tricksters. Trappers prized their frost-resistant fur and resented them for raiding traplines. Today, they are mascots for sports teams and lend their name to a famous comic book character. Researchers use hair snags, camera traps and snow tracking to study them, and Indigenous knowledge helps locate populations in remote areas.",
+    "relatives": "The wolverine is the only member of its genus, Gulo, in the weasel family, Mustelidae, which also includes badgers, otters, martens, fishers and ferrets. Its closest relatives are the martens and the fisher. Wolverines evolved in Eurasia and spread to North America during the Ice Ages. They are sometimes called skunk bears or gluttons, which is the meaning of their scientific name.",
+    "didYouKnow": "Wolverine fur resists frost, so northern peoples traditionally used it to line the hoods of their parkas.",
+    "facts": [
+      { "label": "Length", "value": "65–105 cm + tail" },
+      { "label": "Weight", "value": "9–25 kg" },
+      { "label": "Lifespan", "value": "7–12 years wild" },
+      { "label": "Diet", "value": "Carrion, hares, rodents" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What family does the wolverine belong to?",
+        "choices": ["The weasel family", "The bear family", "The dog family", "The cat family"],
+        "explanation": "It is the largest land-dwelling member of the weasel family."
+      },
+      {
+        "prompt": "Where do female wolverines den with their kits?",
+        "choices": ["In deep snow", "In hollow trees", "Underwater lodges", "In caves by the sea"],
+        "explanation": "Snow dens protect kits from cold and predators."
+      },
+      {
+        "prompt": "Why was wolverine fur used for parka hoods?",
+        "choices": ["It resists frost", "It glows in the dark", "It is the softest fur", "It repels insects"],
+        "explanation": "Wolverine fur sheds frost, keeping the face clear."
+      }
+    ],
+    "charities": [
+      { "name": "Wildlife Conservation Society Canada", "url": "https://www.wcscanada.org", "blurb": "Studies and protects wolverines and other wildlife across northern Canada." }
+    ]
+  },
+  {
+    "id": "kea",
+    "name": "Kea",
+    "scientificName": "Nestor notabilis",
+    "wikipediaTitle": "Kea",
+    "group": "bird",
+    "regions": ["oceania"],
+    "range": "Mountains and forests of New Zealand's South Island",
+    "status": "EN",
+    "coordinate": { "latitude": -43.5, "longitude": 170.5 },
+    "mapSpan": 6,
+    "tagline": "The alpine parrot that takes apart cars",
+    "lede": "The kea is the world's only alpine parrot, a clever, curious and mischievous bird that lives among snowy peaks. It's famous for pulling apart car wipers, stealing sandwiches and solving puzzles that stump many other animals.",
+    "home": "Kea live in the mountains and high forests of New Zealand's South Island, from beech forest up to the alpine zone above the tree line. They often gather around ski fields, mountain huts, car parks and roads, where curious tourists and food draw them in.",
+    "anatomy": "Kea are large parrots, olive-green with dark edges to their feathers, and when they fly they reveal brilliant orange-red feathers under their wings. Their long, curved upper beak is a powerful tool for digging roots, tearing open logs and, sometimes, prying apart rubber and metal. They have strong feet for walking and climbing on rocks. Males are larger, with longer beaks.",
+    "life": "Kea are omnivores, eating roots, leaves, berries, nectar, insects and grubs, and occasionally scavenging carcasses. They are intensely curious and playful, and they learn quickly. Kea live in groups and play with each other, tumbling, wrestling and even making a 'play call', a special warble that makes other kea more playful, a bit like laughter.",
+    "family": "Kea nest in burrows or crevices on the ground, often among tree roots or rocks. The female lays two to five eggs and incubates them while the male brings food. Chicks fledge after about three months, and young kea spend years learning from older birds. Males may have more than one mate. Nests on the ground are vulnerable to introduced stoats, rats and possums.",
+    "remarkable": "In experiments, kea have solved complex puzzles, used tools and even shown an understanding of probability, choosing the jar more likely to give a reward.\n\nTheir play call is one of the few known examples of contagious, laughter-like play in birds.",
+    "outlook": "Kea are endangered, with perhaps 3,000 to 7,000 left. Introduced predators raid nests, lead from old roofs and buildings poisons birds that chew on them, and some are hit by cars or harmed when fed junk food. In the past, around 150,000 were killed for bounties because farmers believed they attacked sheep.",
+    "people": "From the 1860s to 1970, New Zealand paid a bounty on kea because some were seen pecking at sheep, and huge numbers were killed. Kea gained full protection in 1986. Today they are national icons, beloved and exasperating to visitors whose cars and backpacks they explore. The Kea Conservation Trust works to protect nests, remove lead from buildings and teach people not to feed kea. In 2017 the kea was named New Zealand's Bird of the Year.",
+    "relatives": "The kea's closest relative is the kākā, a forest parrot of New Zealand, and both are related to the kākāpō. Together they form an ancient family of parrots found only in New Zealand. Kea and kākā split a few million years ago, possibly when the rise of the Southern Alps and glaciers separated alpine and forest populations. A related parrot on Norfolk Island and Phillip Island became extinct in the 1800s.",
+    "didYouKnow": "When kea hear another kea's 'play call', they often start playing too, as if laughter were contagious.",
+    "facts": [
+      { "label": "Length", "value": "About 48 cm" },
+      { "label": "Weight", "value": "About 1 kg" },
+      { "label": "Lifespan", "value": "15–20 years wild" },
+      { "label": "Diet", "value": "Roots, berries, insects" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes the kea unique among parrots?",
+        "choices": ["It's the world's only alpine parrot", "It can't fly", "It lives underwater", "It's the smallest parrot"],
+        "explanation": "Kea live high in New Zealand's mountains."
+      },
+      {
+        "prompt": "What does the kea's 'play call' do?",
+        "choices": ["Makes other kea start playing", "Warns of predators", "Attracts prey", "Marks territory"],
+        "explanation": "It's contagious, a bit like laughter."
+      },
+      {
+        "prompt": "Why were many kea killed in the past?",
+        "choices": ["Bounties, because farmers thought they attacked sheep", "For their feathers", "For food", "They spread disease"],
+        "explanation": "About 150,000 kea were killed for bounties until 1970."
+      }
+    ],
+    "charities": [
+      { "name": "Kea Conservation Trust", "url": "https://www.keaconservation.co.nz", "blurb": "Protects kea nests, removes lead hazards, and studies kea in the wild." }
+    ]
+  }
+]

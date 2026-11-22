@@ -1,0 +1,247 @@
+[
+  {
+    "id": "glass-frog",
+    "name": "Reticulated Glass Frog",
+    "scientificName": "Hyalinobatrachium valerioi",
+    "wikipediaTitle": "Hyalinobatrachium valerioi",
+    "group": "amphibian",
+    "regions": ["centralAmerica", "southAmerica"],
+    "range": "Rainforest streams from Costa Rica to Ecuador",
+    "status": "LC",
+    "coordinate": { "latitude": 9.0, "longitude": -83.5 },
+    "mapSpan": 14,
+    "tagline": "A frog you can see straight through",
+    "lede": "Turn a glass frog over and you can see its heart beating, its liver and its bones through its belly. These tiny tree frogs of Central and South American rainforests are among the most transparent animals on land, and the reticulated glass frog has another surprise: dedicated fathers.",
+    "home": "Reticulated glass frogs live in humid lowland and foothill rainforests from Costa Rica and Panama to Colombia and Ecuador. They spend their lives on leaves overhanging clear, fast-flowing streams, where they call, mate and lay their eggs.",
+    "anatomy": "This glass frog is tiny, around 2 to 2.6 centimetres long. Its back is lime green, covered in a net-like pattern of yellow spots that may mimic its own eggs. Its belly skin and muscles are see-through, revealing the internal organs. Its large, forward-facing eyes are golden, and its fingers and toes have sticky pads for clinging to wet leaves.",
+    "life": "Glass frogs are active at night, hunting small insects and spiders on leaves near streams. By day they sleep stuck flat to the undersides of leaves. When resting, they hide most of their red blood cells in their liver, which makes their bodies far more transparent and helps them blend in with the leaf beneath them.",
+    "family": "Males call from the undersides of leaves above streams. A female lays a clutch of eggs on a leaf, and the male then guards it day and night for weeks, keeping the eggs moist, warding off predatory wasps and flies, and sometimes kicking them away. When the tadpoles hatch, they drop into the stream below, where they hide in sediment and grow until they become froglets.",
+    "remarkable": "In 2022, scientists discovered that sleeping glass frogs pull almost 90 percent of their red blood cells out of circulation and pack them into their liver, becoming two to three times more transparent.\n\nThey do this without forming blood clots, which interests medical researchers working on clotting problems.",
+    "outlook": "The reticulated glass frog is not threatened, but many other glass frog species are. All depend on clean streams and intact forest, and amphibians in the region have been hit hard by chytrid, a deadly fungal disease. Deforestation and pollution of streams are ongoing threats.",
+    "people": "Glass frogs have become favourites of nature photographers and night-walk tours in Costa Rica and Panama, where guides search stream-side leaves with flashlights. Their transparency makes them important to scientists studying camouflage and blood. Several new glass frog species are still being discovered each decade in South American forests.",
+    "relatives": "Glass frogs make up the family Centrolenidae, with around 150 species found from southern Mexico to Bolivia and Argentina. Not all are equally transparent; some have see-through bellies only. Their closest relatives are a group of South American frogs, and they are distant cousins of the more familiar tree frogs.",
+    "didYouKnow": "When a glass frog sleeps, it hides most of its red blood cells in its liver to make its body nearly invisible.",
+    "facts": [
+      { "label": "Length", "value": "2–2.6 cm" },
+      { "label": "Active", "value": "At night" },
+      { "label": "Eggs guarded by", "value": "Fathers" },
+      { "label": "Diet", "value": "Small insects, spiders" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What can you see through a glass frog's belly?",
+        "choices": ["Its heart, organs and bones", "Nothing; it's solid green", "Only its eggs", "Glowing spots"],
+        "explanation": "Its belly skin and muscles are transparent."
+      },
+      {
+        "prompt": "Who guards the eggs?",
+        "choices": ["The father", "The mother", "Neither parent", "Ants"],
+        "explanation": "Males guard egg clutches for weeks."
+      },
+      {
+        "prompt": "How do sleeping glass frogs become more transparent?",
+        "choices": ["They pack their red blood cells into their liver", "They hold their breath", "They change colour to white", "They shed their skin"],
+        "explanation": "Hiding red blood cells makes their bodies much clearer."
+      }
+    ],
+    "charities": [
+      { "name": "Amphibian Ark", "url": "https://www.amphibianark.org", "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction." }
+    ]
+  },
+  {
+    "id": "olm",
+    "name": "Olm",
+    "scientificName": "Proteus anguinus",
+    "wikipediaTitle": "Olm",
+    "group": "amphibian",
+    "regions": ["europe"],
+    "range": "Flooded caves of the Dinaric Alps, mainly in Slovenia and Croatia",
+    "status": "VU",
+    "coordinate": { "latitude": 45.8, "longitude": 14.2 },
+    "mapSpan": 6,
+    "tagline": "The blind cave salamander once called a baby dragon",
+    "lede": "Deep in the flooded caves of the Balkans lives a pale, pink, blind salamander that can go a decade without eating and may live for over a century. When floods washed olms out of caves centuries ago, local people believed they were baby dragons.",
+    "home": "Olms live only in underground waters of the Dinaric Alps, a limestone region stretching along the Adriatic, mainly in Slovenia and Croatia, with smaller populations in Bosnia and Herzegovina and Italy. They inhabit caves, underground rivers and lakes in total darkness, where the water stays cool all year.",
+    "anatomy": "An olm is long and slender, about 20 to 30 centimetres, with pale, pinkish-white skin and three tufts of red, feathery gills on each side of its head. Its eyes are tiny, undeveloped and covered by skin, so it is blind. It has small legs with only three toes on the front feet and two on the back. Like the axolotl, it keeps its gills and other juvenile features for life.",
+    "life": "In darkness, olms rely on smell, hearing, and sensitivity to electric fields and vibrations to find small crustaceans, snails and insect larvae. They have an extremely slow metabolism, and one olm in a lab survived about ten years without food. Some studies suggest olms rarely move: one individual was recorded staying in the same spot for more than seven years.",
+    "family": "Olms reproduce very rarely. In the wild, females are thought to lay eggs only about every 12 years. In captivity, a female lays around 35 to 70 eggs and guards them among stones, a process that can take about four to six months before they hatch. Young olms take around 14 years to reach maturity. Their lifespan may exceed 100 years.",
+    "remarkable": "The olm is the only cave vertebrate in Europe and one of the longest-lived amphibians known; models based on captive animals suggest a lifespan of over 100 years.\n\nIn 2016, a female in Slovenia's Postojna Cave laid eggs, and the hatchlings became a national sensation.",
+    "outlook": "Olms are vulnerable. Because they live in underground water, they are easily harmed by pollution from farms, industry and sewage that seeps into caves through porous limestone. Changes to water flow and collection for the pet trade have also hurt them. Protecting the land above caves protects the olms below.",
+    "people": "In 1689, Slovenian naturalist Janez Vajkard Valvasor recorded local beliefs that olms were the offspring of dragons living deep in the mountains. The olm appears on a Slovenian coin and is a national symbol; Postojna Cave displays live olms to visitors in a darkened aquarium. Scientists study the olm's longevity and starvation resistance for clues about ageing and metabolism.",
+    "relatives": "The olm is the only European member of the family Proteidae; its closest relatives are the mudpuppies and waterdogs of North America, which also keep their gills for life. A black olm subspecies, with dark skin and functional eyes, lives in a small area of southern Slovenia and was only described in 1986. Olms have lived in caves for millions of years, evolving their pale skin and blindness.",
+    "didYouKnow": "An olm in a lab survived about ten years without eating.",
+    "facts": [
+      { "label": "Length", "value": "20–30 cm" },
+      { "label": "Eyes", "value": "Covered by skin" },
+      { "label": "Lifespan", "value": "Possibly 100+ years" },
+      { "label": "Diet", "value": "Small crustaceans, snails" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What did people once think olms were?",
+        "choices": ["Baby dragons", "Lost fish", "Giant worms", "Water spirits' pets"],
+        "explanation": "Floods washed them out of caves, and they were said to be dragon offspring."
+      },
+      {
+        "prompt": "How long can an olm survive without food?",
+        "choices": ["About ten years", "One week", "One month", "A day"],
+        "explanation": "Their slow metabolism lets them go years without eating."
+      },
+      {
+        "prompt": "Where do olms live?",
+        "choices": ["Underground waters in caves", "Mountain lakes", "Tropical rivers", "The open ocean"],
+        "explanation": "They live in the flooded caves of the Dinaric Alps."
+      }
+    ],
+    "charities": [
+      { "name": "Amphibian Ark", "url": "https://www.amphibianark.org", "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction." }
+    ]
+  },
+  {
+    "id": "hellbender",
+    "name": "Hellbender",
+    "scientificName": "Cryptobranchus alleganiensis",
+    "wikipediaTitle": "Hellbender",
+    "group": "amphibian",
+    "regions": ["naEast"],
+    "range": "Clear, rocky streams of the eastern United States, from New York to Georgia and Missouri",
+    "status": "VU",
+    "coordinate": { "latitude": 36.0, "longitude": -83.0 },
+    "mapSpan": 14,
+    "tagline": "The snot otter that breathes through its wrinkles",
+    "lede": "The hellbender is North America's largest salamander, a flat, wrinkly, brown giant that can grow longer than your arm. It has some of the best nicknames in nature, including 'snot otter' and 'lasagna lizard', and it breathes almost entirely through its skin.",
+    "home": "Hellbenders live in cool, clear, fast-flowing streams with big flat rocks, mostly in the Appalachian and Ozark regions of the eastern United States. They need clean, well-oxygenated water, and they spend most of their lives hiding under rocks on the stream bottom.",
+    "anatomy": "A hellbender can reach about 60 centimetres long. Its flat, broad head and body help it hide under rocks and stay put in strong currents, and its brown, mottled colouring blends in with the stream bed. Wrinkled folds of skin along its sides greatly increase the surface area through which it absorbs oxygen from the water. It has small eyes and poor eyesight but can sense light through its skin.",
+    "life": "Hellbenders hunt mostly at night, feeding mainly on crayfish, along with small fish, insects and worms. They sit in ambush under rocks and suck in prey with a sudden gape. When oxygen in the water is low, they sway their bodies to move more water across their skin. Adults usually stay in a small home range for years.",
+    "family": "In late summer, a male prepares a nest cavity under a large rock. One or more females lay long strings of 150 to 450 eggs there, and the male fertilises them outside the body. The male then guards the eggs for two to three months, aerating them and chasing off intruders, though he sometimes eats some of them. The larvae have external gills, which they lose after about 18 months.",
+    "remarkable": "Because they breathe mostly through their skin, hellbenders are extremely sensitive to pollution and silt, making them indicators of stream health.\n\nThey have been around in similar form for millions of years, earning them the label 'living fossil'.",
+    "outlook": "Hellbenders are listed as vulnerable, and some populations have declined sharply. Sediment from farming, logging and construction fills the spaces under rocks they need, while dams and pollution degrade streams. Zoos raise young hellbenders for release, and people are urged never to move rocks in hellbender streams.",
+    "people": "No one is sure how the hellbender got its name; one story says early settlers thought it looked like a creature 'from hell, bent on returning'. It was named the state amphibian of Pennsylvania in 2019 after a campaign by students. Zoos such as the Saint Louis Zoo breed hellbenders, and many anglers once killed them wrongly thinking they harmed trout fishing.",
+    "relatives": "The hellbender belongs to the giant salamanders, family Cryptobranchidae, along with the Japanese giant salamander and the Chinese giant salamanders, which can exceed 1.5 metres and are the world's largest amphibians. Their ancestors date back more than 160 million years, to the age of dinosaurs. Two subspecies are recognised: the eastern hellbender and the Ozark hellbender, which is federally endangered in the US.",
+    "didYouKnow": "Hellbenders are nicknamed 'snot otters' because of the slimy mucus that coats their skin.",
+    "facts": [
+      { "label": "Length", "value": "Up to ~60 cm" },
+      { "label": "Weight", "value": "Up to ~2.5 kg" },
+      { "label": "Lifespan", "value": "30+ years" },
+      { "label": "Diet", "value": "Crayfish, small fish" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a hellbender get most of its oxygen?",
+        "choices": ["Through its wrinkly skin", "Through gills", "By gulping air at the surface", "Through its tail"],
+        "explanation": "Skin folds increase the area for absorbing oxygen."
+      },
+      {
+        "prompt": "What is the hellbender's main food?",
+        "choices": ["Crayfish", "Leaves", "Frogs' eggs only", "Algae"],
+        "explanation": "Crayfish make up much of its diet."
+      },
+      {
+        "prompt": "Who guards hellbender eggs?",
+        "choices": ["The male", "The female", "Both parents", "No one"],
+        "explanation": "Males guard nests under rocks for months."
+      }
+    ],
+    "charities": [
+      { "name": "Save The Frogs!", "url": "https://www.savethefrogs.com", "blurb": "Protects amphibian populations through education, research and habitat projects." }
+    ]
+  },
+  {
+    "id": "ocean-sunfish",
+    "name": "Ocean Sunfish",
+    "scientificName": "Mola mola",
+    "wikipediaTitle": "Ocean sunfish",
+    "group": "fish",
+    "regions": ["openOcean", "naEast", "europe"],
+    "range": "Temperate and tropical oceans worldwide, including summer visits to Nova Scotia",
+    "status": "VU",
+    "coordinate": { "latitude": 36.0, "longitude": -10.0 },
+    "mapSpan": 60,
+    "tagline": "A giant swimming head",
+    "lede": "The ocean sunfish looks like a fish that forgot to grow a back half. It's one of the heaviest bony fish in the world, as large as a car, and it spends time lying flat at the surface, sunbathing.",
+    "home": "Ocean sunfish roam temperate and tropical oceans around the world, from the Atlantic to the Pacific and Indian Oceans. In summer, some travel north to cooler waters, including off Nova Scotia and Britain. They dive hundreds of metres to feed, then return to the surface.",
+    "anatomy": "A sunfish has a tall, flattened, disc-shaped body with long fins above and below and no true tail. Instead, it has a rounded, rudder-like structure called a clavus. Adults can be over 3 metres tall from fin tip to fin tip and weigh more than 2 tonnes. Its mouth is small, with teeth fused into a beak. Its thick skin is covered in mucus and often hosts many parasites.",
+    "life": "Sunfish swim by flapping their top and bottom fins together, like wings. They eat jellyfish and other gelatinous animals, along with small fish, squid and crustaceans, diving deep to find them. After dives into cold water, they bask on their sides at the surface to warm up, which also lets seabirds pick parasites from their skin. Fish such as wrasses clean them, too.",
+    "family": "Ocean sunfish produce more eggs than any other known vertebrate. A single female was found to carry an estimated 300 million eggs. The eggs are released into open water, where most are eaten. Hatchlings are tiny and spiky, looking more like pufferfish. Young sunfish grow extremely fast; one in an aquarium gained around 370 kilograms in about 15 months.",
+    "remarkable": "The ocean sunfish grows from a larva a few millimetres long to an adult over 60 million times heavier, one of the greatest size increases of any animal.\n\nIts lazy surface basking hides an athletic side: it regularly dives hundreds of metres.",
+    "outlook": "Ocean sunfish are vulnerable, mainly because many are caught by accident in fishing nets and lines, especially drift nets. They also swallow plastic bags, mistaking them for jellyfish. In some countries, such as Japan and Taiwan, they are eaten. Reducing bycatch in fisheries is key to their future.",
+    "people": "The sunfish's scientific name, Mola, means 'millstone' in Latin, after its round, grey shape. In German it is called Schwimmender Kopf, 'swimming head'. Divers in Bali and the Galápagos seek out sunfish when they rise to cleaning stations. In 2017 scientists described a new species, the hoodwinker sunfish, which had been hiding in plain sight among museum specimens.",
+    "relatives": "There are a few species of sunfish in the family Molidae, including the southern sunfish, a close relative that holds the record for the heaviest bony fish, and the sharptail mola. Sunfish are related to pufferfish and porcupinefish, which also have fused, beak-like teeth. Their unusual body shape evolved from more typical fish ancestors that lost their tails.",
+    "didYouKnow": "An ocean sunfish can carry an estimated 300 million eggs, more than any other known vertebrate.",
+    "facts": [
+      { "label": "Height", "value": "Up to ~3 m fin to fin" },
+      { "label": "Weight", "value": "Up to ~2 tonnes" },
+      { "label": "Eggs", "value": "~300 million" },
+      { "label": "Diet", "value": "Jellyfish, squid, small fish" }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why do sunfish lie flat at the surface?",
+        "choices": ["To warm up after deep dives", "Because they can't swim", "To sleep", "To lay eggs"],
+        "explanation": "Basking warms them and lets birds clean parasites."
+      },
+      {
+        "prompt": "What is a main threat to ocean sunfish?",
+        "choices": ["Being caught by accident in fishing gear", "Lack of sunlight", "Polar bears", "Freezing water"],
+        "explanation": "Bycatch in nets and lines kills many sunfish."
+      },
+      {
+        "prompt": "What does Mola mean in Latin?",
+        "choices": ["Millstone", "Moon", "Swimmer", "Giant"],
+        "explanation": "Its round, grey shape resembles a millstone."
+      }
+    ],
+    "charities": [
+      { "name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns to reduce bycatch and protect ocean wildlife." }
+    ]
+  },
+  {
+    "id": "leafy-seadragon",
+    "name": "Leafy Seadragon",
+    "scientificName": "Phycodurus eques",
+    "wikipediaTitle": "Leafy seadragon",
+    "group": "fish",
+    "regions": ["oceania", "openOcean"],
+    "range": "Kelp and seagrass beds along southern and western Australia",
+    "status": "LC",
+    "coordinate": { "latitude": -35.6, "longitude": 137.0 },
+    "mapSpan": 16,
+    "tagline": "A swimming piece of seaweed",
+    "lede": "Drifting through kelp forests off southern Australia, the leafy seadragon looks exactly like a floating clump of seaweed. Covered in leaf-shaped flaps, it's one of the most beautifully camouflaged animals in the sea, and the father carries the eggs.",
+    "home": "Leafy seadragons live only along Australia's southern and western coasts, from Kangaroo Island and Adelaide to Perth. They drift among kelp forests, seagrass meadows and rocky reefs, usually in water a few to around 30 metres deep, often staying in one small area for long periods.",
+    "anatomy": "A leafy seadragon grows to about 35 centimetres long. Its body is yellow-brown to green, and from its head and body sprout leaf-like flaps of skin that sway with the water. These flaps are only for camouflage, not swimming. It moves using tiny, almost transparent fins on its neck and back, which beat so fast they are hard to see, so it seems to glide. It has a long, tube-like snout.",
+    "life": "Leafy seadragons feed on tiny crustaceans called mysids, or sea lice, sucking them up through their long snouts like a vacuum. They eat thousands a day. Their camouflage is their main defence; they drift slowly and rarely move far, relying on looking like seaweed to avoid predators.",
+    "family": "As in seahorses, the male cares for the eggs. During courtship, pairs swim side by side. The female transfers up to around 250 bright pink eggs onto a spongy patch under the male's tail, where they become attached. He carries them for about four to six weeks until they hatch into tiny, fully formed seadragons that must fend for themselves. Very few survive to adulthood.",
+    "remarkable": "A leafy seadragon's leaf-like flaps are not fins at all; they are pure camouflage, and its real fins are nearly invisible.\n\nIn the wild, they can be extremely hard to spot even when divers know exactly where to look.",
+    "outlook": "Leafy seadragons are not currently threatened, but they are fully protected in South Australia and Western Australia. Pollution, runoff and the loss of seagrass and kelp forests threaten their habitat, and storms can wash them ashore. Collection for the aquarium trade is tightly controlled.",
+    "people": "The leafy seadragon is the official marine emblem of South Australia, and Adelaide's divers count it as a highlight. Citizen scientists take part in 'Dragon Search' programs, photographing seadragons and reporting sightings to help track populations. Each seadragon's facial markings can be used to recognise individuals.",
+    "relatives": "Leafy seadragons belong to the family Syngnathidae, along with seahorses, pipefish and the other seadragons. Their closest relatives are the weedy seadragon, which is common along Australia's southern coast, and the ruby seadragon, discovered only in 2015 from museum specimens and first filmed alive in 2016. All these fish have tube-shaped snouts and males that care for eggs.",
+    "didYouKnow": "Seadragon fathers carry the eggs, which stick to a spongy patch under their tails until they hatch.",
+    "facts": [
+      { "label": "Length", "value": "Up to ~35 cm" },
+      { "label": "Eggs", "value": "Up to ~250" },
+      { "label": "Lifespan", "value": "Up to ~10 years" },
+      { "label": "Diet", "value": "Tiny crustaceans (mysids)" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What are the leafy seadragon's leaf-like flaps for?",
+        "choices": ["Camouflage", "Swimming", "Breathing", "Catching prey"],
+        "explanation": "They make it look like floating seaweed."
+      },
+      {
+        "prompt": "Who carries the eggs?",
+        "choices": ["The male", "The female", "They float freely", "Both parents in turn"],
+        "explanation": "Eggs attach under the male's tail until they hatch."
+      },
+      {
+        "prompt": "Where do leafy seadragons live?",
+        "choices": ["Along southern and western Australia", "Around Hawaii", "In the Arctic", "In the Caribbean"],
+        "explanation": "They are found only on Australia's southern and western coasts."
+      }
+    ],
+    "charities": [
+      { "name": "Australian Marine Conservation Society", "url": "https://www.marineconservation.org.au", "blurb": "Campaigns to protect Australia's oceans, reefs and marine life." }
+    ]
+  }
+]

@@ -3256,5 +3256,2575 @@
         "blurb": "Runs the Albatross Task Force, working with fishers to stop seabird bycatch."
       }
     ]
+  },
+  {
+    "id": "shoebill",
+    "name": "Shoebill",
+    "scientificName": "Balaeniceps rex",
+    "wikipediaTitle": "Shoebill",
+    "group": "bird",
+    "regions": [
+      "africa"
+    ],
+    "range": "Papyrus swamps of East and Central Africa, from South Sudan to Zambia",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 1.5,
+      "longitude": 31.5
+    },
+    "mapSpan": 18,
+    "tagline": "A prehistoric stare in the papyrus",
+    "lede": "Standing still as a statue in a swamp, the shoebill looks less like a bird than a dinosaur that forgot to go extinct. Its enormous clog-shaped bill, cold yellow eyes and slow, deliberate movements have made it one of Africa's most sought-after birds.",
+    "home": "Shoebills live in vast freshwater swamps and marshes thick with papyrus and reeds, in countries such as Uganda, South Sudan, Zambia, Tanzania and the Democratic Republic of the Congo. They prefer places where floating vegetation lets them stand over water rich in fish, and they are thinly spread, each bird needing a large area.",
+    "anatomy": "The shoebill stands up to about 1.4 metres tall, with grey plumage, long legs and broad wings that span over 2 metres. Its bill is its most famous feature: around 24 centimetres long and 10 wide, with sharp edges and a hooked tip that can grip and slice slippery prey.\n\nIts eyes face forward more than most birds', giving it good depth perception for striking at fish. Long toes spread its weight so it can stand on floating plants without sinking. Shoebills have unusually long legs and toes for a bird their size, and they can stand on one leg for long periods.\n\nTheir plumage is a soft slate grey, darker on the back, and young birds are browner. Their eyes, which may be bluish in young birds, turn pale yellow or grey as they age, giving adults their famously unsettling stare. Despite their bulky look, they weigh only around 4 to 7 kilograms.",
+    "life": "Shoebills are patient ambush hunters. A bird may stand motionless for long periods, watching the water, then lunge forward and collapse onto its prey, scooping up fish, plants and mud all at once. Lungfish are a favourite, along with catfish, frogs, water snakes and even baby crocodiles.\n\nAfter a strike, it shakes away the weeds and swallows the catch, often decapitating it first with the bill's sharp edge. Shoebills are mostly solitary, even outside the breeding season, and each bird keeps to its own patch of swamp. They prefer murky, poorly oxygenated water, where fish such as lungfish must rise to the surface to breathe, making them easier to catch.\n\nA shoebill will sometimes move to a new spot by flying low over the reeds, its huge wings flapping slowly; it flaps only about 150 times a minute, one of the slowest wingbeats of any bird. On hot days, shoebills cool themselves by fluttering the skin of their throats.",
+    "family": "Shoebills breed in the dry season, building a large nest of grass and reeds on a floating mat of vegetation or a small island.\n\nThe female usually lays two eggs, and both parents incubate them for about a month, cooling the eggs on hot days by pouring bills full of water over them. Usually only one chick survives; the older chick often outcompetes or attacks its sibling. Young shoebills take about three to four months to fly.",
+    "remarkable": "When greeting a mate or a familiar person, a shoebill bows its head and clatters its bill loudly, a sound that has been compared to a machine gun.\n\nIt is one of the few birds that can make such a noise. Shoebills are also strikingly calm around people who stay still, which has made them famous with photographers.",
+    "outlook": "With perhaps a few thousand shoebills left, the species is listed as vulnerable. Its swamps are being drained for farming and grazing, burned, and disturbed, and chicks and eggs are taken for the illegal wildlife trade.\n\nProtected wetlands such as Uganda's Mabamba Swamp now draw birdwatchers, and the income gives local communities a reason to protect the birds.",
+    "people": "Ancient Egyptians may have known the shoebill, and images resembling it appear in their art. European scientists described it in the 1850s, naming it Balaeniceps rex, roughly 'whale-headed king', for its bill.\n\nIn Uganda, local guides take visitors by canoe through papyrus channels in search of shoebills, and former fishers have become guides and guardians. Some zoos now keep and breed shoebills, though breeding them in captivity has proved difficult.",
+    "relatives": "The shoebill is the only living member of its family, Balaenicipitidae. It was long thought to be a stork, then a relative of herons, but genetic studies show its closest relatives are pelicans and the hamerkop, another unusual African waterbird that builds enormous nests.\n\nShoebill-like birds once lived more widely; fossils of a relative have been found in Egypt and dated to millions of years ago.",
+    "didYouKnow": "A shoebill can stand so still for so long that photographers sometimes mistake it for a statue until it blinks.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "1.1–1.4 m"
+      },
+      {
+        "label": "Wingspan",
+        "value": "2.3–2.6 m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "35+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Lungfish, catfish, frogs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a shoebill usually hunt?",
+        "choices": [
+          "It stands still for a long time, then lunges",
+          "It dives from high in the air",
+          "It chases fish underwater",
+          "It hunts in large flocks"
+        ],
+        "explanation": "Shoebills are patient ambush hunters that strike suddenly after waiting motionless."
+      },
+      {
+        "prompt": "How do shoebills keep their eggs cool on hot days?",
+        "choices": [
+          "They pour bills full of water over them",
+          "They bury them in mud",
+          "They move them into shade",
+          "They sit on them less"
+        ],
+        "explanation": "Parents carry water in their huge bills and pour it over the eggs."
+      },
+      {
+        "prompt": "What sound does a shoebill make when greeting?",
+        "choices": [
+          "A loud clattering of its bill",
+          "A high whistle",
+          "A deep booming call",
+          "It is completely silent"
+        ],
+        "explanation": "Bill-clattering sounds a bit like a machine gun."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "Protects important bird areas worldwide, including African wetlands where shoebills live."
+      }
+    ]
+  },
+  {
+    "id": "aye-aye",
+    "name": "Aye-aye",
+    "scientificName": "Daubentonia madagascariensis",
+    "wikipediaTitle": "Aye-aye",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Rainforests and dry forests of Madagascar",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -15.5,
+      "longitude": 49.8
+    },
+    "mapSpan": 14,
+    "tagline": "The lemur that taps for its dinner",
+    "lede": "At night in Madagascar's forests, a strange tapping sound echoes from the trees. It's an aye-aye, a lemur with bat-like ears, staring eyes and one impossibly thin finger, searching for grubs hidden inside the wood. It's one of the most unusual primates on Earth.",
+    "home": "Aye-ayes live only on Madagascar, the huge island off Africa's east coast. They are found in several types of forest, from humid rainforest to dry deciduous woods, and sometimes in plantations near villages.\n\nBy day they sleep in round nests of leaves and twigs, built high in the forks of trees.",
+    "anatomy": "An aye-aye is about the size of a house cat, with coarse dark fur, a long bushy tail, large orange eyes and huge, mobile ears. Its front teeth never stop growing, like a rodent's, which led early scientists to think it was a squirrel.\n\nIts most remarkable feature is the skeletal, very thin middle finger on each hand, which can rotate in a ball-and-socket joint. It also has a small extra 'pseudo-thumb' on each wrist that may help it grip. The aye-aye's large ears can swivel independently, helping it pinpoint the faint sounds of insect larvae moving inside wood.\n\nIts eyes are adapted to see in very low light. Its incisor teeth are coated with hard enamel only on the front, so they wear into sharp chisels. The skin of its hands is sensitive, and its unusual thumb-like extra digit on each wrist, discovered only in 2019, may help it grip branches.",
+    "life": "Aye-ayes are nocturnal and mostly solitary. To find food, an aye-aye taps on bark with its long middle finger, listening for hollow tunnels where beetle larvae live. It then gnaws a hole with its teeth and hooks out the grub with the same finger.\n\nThis way of foraging, called percussive foraging, is extremely rare in mammals. It also eats nectar, seeds, fungi and the flesh of coconuts and other fruit. An aye-aye may travel more than a kilometre in a night, moving through the canopy and sometimes along the ground. It builds several nests in its home range, sleeping in a different one on different days.\n\nMales have large, overlapping home ranges, while females keep smaller areas apart from each other. Aye-ayes communicate with scent marks and a range of calls, including a sharp 'ey-ey' that may be the origin of their name.",
+    "family": "Females come into breeding condition at different times of the year and call loudly to attract males, who compete to mate. A single baby is born after about five and a half months in a nest.\n\nYoung aye-ayes grow slowly, are weaned at about seven months, and stay with their mother for up to two years, learning the difficult skill of tap-foraging. Females have a baby only every two to three years.",
+    "remarkable": "The aye-aye is the only primate known to find food by tapping and listening, an approach otherwise used by woodpeckers. That skinny middle finger is also used to scoop out coconut milk and pulp, and for grooming.",
+    "outlook": "Aye-ayes are endangered. Madagascar has lost most of its original forest, and aye-ayes are sometimes killed because, in some regions, they are believed to bring bad luck or death.\n\nThey also raid crops such as coconuts and lychees. Protected areas and community education are helping, along with breeding programs in zoos.",
+    "people": "In parts of Madagascar, local beliefs, called fady, hold that an aye-aye pointing its long finger at someone marks them for death, so aye-ayes have been killed on sight. Elsewhere, taboos protect them.\n\nEuropean scientists described the aye-aye in the 1780s and argued for decades about whether it was a rodent. Today, zoos such as the Duke Lemur Center study and breed them, and conservation groups work with communities to reduce conflict.",
+    "relatives": "The aye-aye is a lemur, part of a group of primates found only on Madagascar, but it is so unusual that it is the only living member of its family, Daubentoniidae.\n\nA larger relative, the giant aye-aye, lived on Madagascar until perhaps a thousand years ago and was two to three times heavier. Lemurs are distant cousins of monkeys and apes, and their ancestors probably rafted to Madagascar from Africa tens of millions of years ago.",
+    "didYouKnow": "An aye-aye's middle finger can tap on wood up to about 8 times a second while it listens for hidden grubs.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "30–37 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "About 2.5 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Grubs, nuts, nectar, fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does an aye-aye find grubs inside wood?",
+        "choices": [
+          "It taps the bark and listens for hollow tunnels",
+          "It smells them through the bark",
+          "It waits for them to crawl out",
+          "It peels off all the bark"
+        ],
+        "explanation": "This tap-and-listen method is called percussive foraging."
+      },
+      {
+        "prompt": "What is unusual about the aye-aye's middle finger?",
+        "choices": [
+          "It is extremely thin and can rotate in a ball-and-socket joint",
+          "It has a sharp claw like a cat's",
+          "It is webbed for swimming",
+          "It is twice as thick as the others"
+        ],
+        "explanation": "The skeletal middle finger taps, probes and scoops out food."
+      },
+      {
+        "prompt": "Why have aye-ayes sometimes been killed in Madagascar?",
+        "choices": [
+          "Some local beliefs say they bring bad luck",
+          "They attack livestock",
+          "Their fur is valuable",
+          "They spread disease"
+        ],
+        "explanation": "Fady, local taboos, in some regions link aye-ayes with bad luck or death."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Durrell Wildlife Conservation Trust",
+        "url": "https://www.durrell.org",
+        "blurb": "Works with communities across Madagascar to protect lemurs and their forests."
+      }
+    ]
+  },
+  {
+    "id": "saiga",
+    "name": "Saiga Antelope",
+    "scientificName": "Saiga tatarica",
+    "wikipediaTitle": "Saiga antelope",
+    "group": "mammal",
+    "regions": [
+      "asia",
+      "europe"
+    ],
+    "range": "Dry steppes of Kazakhstan, Mongolia, Uzbekistan and southern Russia",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 48.5,
+      "longitude": 60.0
+    },
+    "mapSpan": 30,
+    "tagline": "The antelope with a built-in air filter",
+    "lede": "With its big, droopy, trunk-like nose, the saiga looks like a creature from another planet. It's actually a tough survivor of the Ice Age, roaming the cold, windy steppes of Central Asia in huge herds, and one of conservation's most dramatic comeback stories.",
+    "home": "Saigas live on open steppe and semi-desert grasslands, mostly in Kazakhstan, with smaller populations in Russia, Uzbekistan and western Mongolia.\n\nSummers there are hot and dusty and winters bitterly cold. Herds migrate long distances between summer and winter ranges, following fresh grass and avoiding deep snow.",
+    "anatomy": "A saiga is a small antelope, about the size of a goat, with a sandy coat in summer that turns thick and pale in winter. Its most famous feature is its large, flexible nose, which hangs over its mouth. Inside are bony passages lined with mucus that filter dust in summer and warm the frigid air in winter before it reaches the lungs.\n\nMales have amber, ridged horns, which have made them targets for poachers. In winter, a saiga's coat becomes long, thick and pale, nearly white, with a fluffy fringe along the belly, keeping out temperatures well below minus 30 degrees.\n\nIn summer, it moults to a short, thin, sandy coat. The male's horns are slightly translucent and ringed with ridges. During the rut, a male's nose swells even larger and is thought to help amplify his roaring calls to impress females.",
+    "life": "Saigas graze on grasses, herbs and shrubs, including plants that are poisonous to other animals. They can run at up to around 80 km/h and are good swimmers. Herds can number in the thousands during migration.\n\nIn winter they travel south to areas with less snow, and in spring they move north again, often covering many kilometres a day. Saigas move in a distinctive way, running with their heads held low, which may help them breathe the dusty steppe air.\n\nThey need to drink in summer, so herds often travel to lakes and rivers, but they can also get water from plants and snow. Wolves and, for calves, foxes, eagles and stray dogs are their main predators. Harsh winters with deep snow or ice crusts can cause large numbers to starve.",
+    "family": "The mating season, or rut, is in late autumn, when males fight for groups of females and barely eat, many dying over winter. In spring, females gather in huge calving areas and give birth within a few days of each other, often to twins.\n\nCalves lie hidden on the ground for their first days and can run with the herd within about a week. Females can breed in their first year.",
+    "remarkable": "Saigas breed fast for a large mammal, which helps populations bounce back after disasters.\n\nIn 2015, a bacterial disease triggered by unusually warm, humid weather killed more than 200,000 saigas in a few weeks, around two-thirds of the global population. Yet by 2022 their numbers had recovered to well over a million.",
+    "outlook": "In 2023, after a remarkable recovery driven by anti-poaching work in Kazakhstan, the IUCN moved the saiga from critically endangered to near threatened.\n\nIt still faces poaching for its horns, used in traditional medicine, and new fences, roads and railways that block migration routes. Disease outbreaks remain a threat.",
+    "people": "Saigas were hunted heavily after the collapse of the Soviet Union, when poaching for horns crashed numbers by more than 90 percent. Kazakhstan responded with ranger patrols, protected areas and partnerships with conservation groups, and the saiga became a national symbol of conservation success.\n\nToday, scientists fit saigas with satellite collars to map their migrations, and farmers sometimes clash with growing herds that graze on crops.",
+    "relatives": "The saiga's relationships are still debated; it is placed among the antelopes and is related to goats and sheep, with the Tibetan antelope, or chiru, among its closer relatives.\n\nDuring the last Ice Age, saigas lived across a vast area from Britain to Alaska, alongside woolly mammoths. A separate subspecies, the Mongolian saiga, lives only in western Mongolia and is smaller.",
+    "didYouKnow": "Saiga calves are born at almost the same time across a huge herd, which overwhelms predators with more newborns than they can catch.",
+    "facts": [
+      {
+        "label": "Shoulder height",
+        "value": "60–80 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "26–69 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "6–10 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Grasses, herbs, shrubs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the saiga's big nose help with?",
+        "choices": [
+          "Filtering dust and warming cold air",
+          "Smelling water underground",
+          "Digging for roots",
+          "Making loud calls"
+        ],
+        "explanation": "Its nose filters summer dust and warms winter air before it reaches the lungs."
+      },
+      {
+        "prompt": "What happened to saigas in 2015?",
+        "choices": [
+          "A disease killed about two-thirds of them in weeks",
+          "They were all moved to zoos",
+          "They migrated to Africa",
+          "Their numbers doubled"
+        ],
+        "explanation": "A bacterial disease triggered by warm, humid weather caused a mass die-off."
+      },
+      {
+        "prompt": "Why were saigas heavily poached?",
+        "choices": [
+          "For their horns, used in traditional medicine",
+          "For their wool",
+          "For their eggs",
+          "As racing animals"
+        ],
+        "explanation": "Male saiga horns are sought for traditional medicine."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Saiga Conservation Alliance",
+        "url": "https://saiga-conservation.org",
+        "blurb": "Connects scientists and communities across saiga range to protect the species."
+      }
+    ]
+  },
+  {
+    "id": "star-nosed-mole",
+    "name": "Star-nosed Mole",
+    "scientificName": "Condylura cristata",
+    "wikipediaTitle": "Star-nosed mole",
+    "group": "mammal",
+    "regions": [
+      "naEast"
+    ],
+    "range": "Wet soils and marshes of eastern Canada and the northeastern United States",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 46.0,
+      "longitude": -72.0
+    },
+    "mapSpan": 18,
+    "tagline": "The world's fastest eater has a star for a nose",
+    "lede": "On the end of its nose, the star-nosed mole wears 22 pink, fleshy tentacles arranged like a star. It's not for smelling. It's one of the most sensitive touch organs in the animal kingdom, and it lets this little mole find and eat food faster than any other mammal.",
+    "home": "Star-nosed moles live in wet, poorly drained areas: marshes, swamps, the edges of streams and ponds, and wet meadows, from Labrador and Manitoba south through the eastern United States. They dig shallow tunnels that often open directly into water, and they are excellent swimmers.",
+    "anatomy": "The mole is about the size of a hamster, with dense, water-repellent dark fur, tiny eyes, big shovel-like front feet and a thick tail that swells with fat in winter. The star on its nose has 22 rays covered with around 25,000 tiny sensory domes called Eimer's organs, served by more than 100,000 nerve fibres, about five times as many touch nerves as in a human hand.\n\nIts eyesight is very poor. The star is not used for digging; when burrowing, the mole folds its rays over its nostrils to protect them.\n\nEach of the 22 rays is numbered by scientists, and the two lowest, small rays, numbers 11, work like a fovea, the sharp centre of an eye: the mole moves its star to touch interesting objects with these rays for a closer feel. Its brain devotes an enormous area to processing touch from the star.",
+    "life": "The mole hunts by sweeping its star across the ground, touching up to a dozen spots a second. When it feels something edible, such as a worm, insect larva or small crustacean, it can identify and eat it in as little as a quarter of a second.\n\nIt also hunts underwater, where it blows bubbles out of its nose and sniffs them back in to smell prey, something few mammals can do. Star-nosed moles are active day and night, all year round, and they don't hibernate. In winter, they hunt under ice in ponds and streams and travel through tunnels beneath the snow.\n\nTheir tunnels often lead into water, and they can swim using all four feet and their tail. Their main predators include hawks, owls, foxes, skunks, weasels and large fish such as pike, which can catch them while they swim.",
+    "family": "Star-nosed moles mate in late winter or early spring. After about 45 days, the female gives birth to a litter of usually four or five young in a nest of dry leaves and grass, in a mound or under a log above the water line.\n\nThe babies are born hairless, with their stars folded up. They leave the nest at about three weeks and become independent soon after. Moles can breed when they are around ten months old.",
+    "remarkable": "In experiments, star-nosed moles found and swallowed food faster than any other mammal tested, earning a place in record books. Their underwater sniffing, blowing bubbles onto objects and inhaling them again, was only discovered in 2006.",
+    "outlook": "Star-nosed moles are widespread and common, though rarely seen. They depend on wetlands, so draining marshes and polluting streams removes their homes. Protecting wetlands, which also filter water and store floodwater, protects them and many other species.",
+    "people": "Few people ever see a star-nosed mole, but its bizarre face has made it a favourite of neuroscientists. Researcher Kenneth Catania has studied it for decades, showing how its brain devotes huge space to its nose and how its star works like a touch-based eye, with a sensitive 'fovea' in the centre.\n\nIts face also appears in books, cartoons and science museums as an icon of strange evolution.",
+    "relatives": "The star-nosed mole is the only member of its genus. It belongs to the mole family, Talpidae, which includes the eastern mole, the hairy-tailed mole and European moles, along with shrew-moles and desmans, aquatic moles of Europe. Moles are related to shrews and hedgehogs.\n\nFossils suggest the star-nosed mole's lineage has lived in North America for millions of years.",
+    "didYouKnow": "The star-nosed mole can find, identify and swallow a piece of food in about a quarter of a second.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "15–20 cm with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "About 55 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "3–4 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Worms, insect larvae, crustaceans"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the star on the mole's nose mainly for?",
+        "choices": [
+          "Touch: sensing prey",
+          "Smelling flowers",
+          "Digging tunnels",
+          "Attracting mates"
+        ],
+        "explanation": "Its 22 rays are covered with tens of thousands of touch sensors."
+      },
+      {
+        "prompt": "How does the mole smell underwater?",
+        "choices": [
+          "It blows bubbles and sniffs them back in",
+          "It holds its breath and waits",
+          "It uses its tail",
+          "It can't smell underwater"
+        ],
+        "explanation": "It exhales bubbles onto objects and inhales them to pick up scents."
+      },
+      {
+        "prompt": "Where do star-nosed moles live?",
+        "choices": [
+          "Wet soils, marshes and stream edges",
+          "Dry deserts",
+          "High mountain peaks",
+          "Inside trees"
+        ],
+        "explanation": "They need wet ground and often tunnel straight into water."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Nature Conservancy of Canada",
+        "url": "https://www.natureconservancy.ca",
+        "blurb": "Protects wetlands and other natural areas across Canada."
+      }
+    ]
+  },
+  {
+    "id": "hoatzin",
+    "name": "Hoatzin",
+    "scientificName": "Opisthocomus hoazin",
+    "wikipediaTitle": "Hoatzin",
+    "group": "bird",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Swamps, oxbow lakes and riverbanks of the Amazon and Orinoco basins",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -3.5,
+      "longitude": -73.0
+    },
+    "mapSpan": 25,
+    "tagline": "The stink bird with clawed chicks",
+    "lede": "The hoatzin looks like a punk-rock pheasant, with a spiky crest, bare blue face and red eyes. It digests leaves like a cow, smells like manure, and its chicks climb with claws on their wings. Few birds are as strange.",
+    "home": "Hoatzins live in the lowland rainforests of the Amazon and Orinoco river basins, from Colombia and Venezuela to Bolivia and Brazil. They never stray far from water, gathering in noisy groups in trees and shrubs overhanging slow rivers, swamps and lakes.",
+    "anatomy": "A hoatzin is about the size of a pheasant, with a small head, a ragged crest, a long tail, chestnut wings and a buff belly. Its face is bare and bright blue, and its eyes are maroon. It is a weak flier, managing only short, clumsy flights between branches.\n\nMost unusually, it has a huge crop, a pouch in its throat, where leaves are fermented by bacteria; the crop is so big that its flight muscles and breastbone are reduced.",
+    "life": "Hoatzins eat mostly leaves, buds and flowers of marsh plants, an unusual diet for a bird. Bacteria in the crop break down the tough leaves, much as they do in a cow's stomach, which takes a long time, so hoatzins spend much of the day resting with full crops.\n\nThe fermentation gives them a strong, musty smell like manure, earning them the nickname 'stinkbird'. Few people hunt them for food because of this. Hoatzins are noisy and social, living in groups of up to several dozen birds. They hiss, groan and croak, and their wheezing calls fill riverbanks at dawn and dusk.\n\nBecause their food takes so long to digest, they spend much of the day perched, often resting their full crops on a special patch of hard skin on their breastbone, like a built-in cushion. They rarely fly more than a few dozen metres at a time.",
+    "family": "Hoatzins nest in groups, building flimsy platforms of sticks in branches over water. Pairs are often helped by older offspring, which share incubation and feeding. The female lays two or three eggs.\n\nIf a predator such as a snake or monkey approaches, the chicks drop into the water, swim underwater, and later climb back up to the nest using two claws on each wing, along with their feet and bill. The claws are lost as they grow.",
+    "remarkable": "The hoatzin is the only bird known to rely on foregut fermentation, the way cows and other ruminants digest plants. Its clawed chicks are often compared to the ancient bird Archaeopteryx, though the claws evolved again rather than being passed down directly.",
+    "outlook": "Hoatzins are common and widespread, and their smell protects them from much hunting. They depend on healthy riverside forests, so deforestation and damming of rivers are long-term concerns, but for now the species is not threatened.",
+    "people": "The hoatzin is the national bird of Guyana and appears on its coat of arms. Local names include 'stinkbird' and 'Canje pheasant'. Scientists study the hoatzin's gut bacteria, which resemble those of cows more than those of other birds, to understand how animals digest plants.\n\nBirdwatchers on Amazon river trips often see groups of hoatzins hissing and flapping clumsily as boats pass. Some Indigenous communities in the Amazon have traditionally eaten hoatzin eggs, and in parts of the region the birds' feathers and other body parts were used in folk remedies.\n\nScientists who analysed the hoatzin's digestive system in the 1980s and 1990s were surprised to find bacteria and chemistry so similar to cattle's. The hoatzin's odd appearance has made it a favourite in children's books about strange animals.",
+    "relatives": "The hoatzin is so unusual that it is the only living member of its own order, Opisthocomiformes. Scientists have linked it at various times to chickens, cuckoos, turacos and pigeons, but its true relationships remain uncertain; it seems to have split from other birds very long ago.\n\nFossil hoatzin relatives have been found in Africa and Europe, suggesting the group once lived widely and that hoatzins may have crossed the Atlantic by rafting.",
+    "didYouKnow": "Hoatzin chicks can dive into the water to escape a predator and then climb back up to their nest using claws on their wings.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 65 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 800 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to ~8 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves, buds, flowers"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the hoatzin digest leaves?",
+        "choices": [
+          "Bacteria ferment them in its large crop",
+          "It swallows stones to grind them",
+          "It only eats soft fruit instead",
+          "It regurgitates them for its chicks"
+        ],
+        "explanation": "Like a cow, it ferments food with bacteria, in its crop."
+      },
+      {
+        "prompt": "What can hoatzin chicks do to escape danger?",
+        "choices": [
+          "Dive into water and climb back with wing claws",
+          "Fly away immediately",
+          "Play dead",
+          "Spray a bad smell"
+        ],
+        "explanation": "Chicks have two claws on each wing to climb back to the nest."
+      },
+      {
+        "prompt": "Why is the hoatzin nicknamed the 'stinkbird'?",
+        "choices": [
+          "Fermenting leaves make it smell like manure",
+          "It lives in sewers",
+          "It eats rotten fish",
+          "It sprays enemies"
+        ],
+        "explanation": "Its fermenting diet gives it a strong, musty smell."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests with local partners."
+      }
+    ]
+  },
+  {
+    "id": "pink-fairy-armadillo",
+    "name": "Pink Fairy Armadillo",
+    "scientificName": "Chlamyphorus truncatus",
+    "wikipediaTitle": "Pink fairy armadillo",
+    "group": "mammal",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Sandy plains and dry scrub of central Argentina",
+    "status": "DD",
+    "coordinate": {
+      "latitude": -34.0,
+      "longitude": -67.0
+    },
+    "mapSpan": 12,
+    "tagline": "A pocket-sized sand swimmer with a pink shell",
+    "lede": "The smallest armadillo in the world could sit in the palm of your hand. It has a rosy pink shell, a fringe of silky white fur and huge digging claws, and it spends almost its entire life 'swimming' through sand beneath the deserts of Argentina.",
+    "home": "Pink fairy armadillos live only in central Argentina, in dry grasslands, sandy plains and thorny scrub, where the soil is loose enough to tunnel through. They spend nearly all their time underground, coming up mostly at night, which is why so little is known about them.",
+    "anatomy": "This armadillo is only about 10 to 12 centimetres long. Its pale pink shell is thin and flexible and attached to the body only along a narrow strip of the back, so it works more like a cloak than armour.\n\nThe pink colour comes from blood vessels showing through, which may help release heat. The rear end is covered by a flat, vertical plate, perhaps used to pack down sand behind it. Its front claws are enormous for its size, and its eyes are tiny.",
+    "life": "Pink fairy armadillos dig with remarkable speed, burying themselves in seconds when disturbed. They feed mostly on ants and their larvae, plus worms, snails, insects and plant roots. They seem to dig near ant colonies and tunnel through sand in search of prey.\n\nBecause they are so secretive and nocturnal, almost everything about their daily lives comes from a handful of observations. Pink fairy armadillos are thought to be mostly solitary and nocturnal, emerging to the surface after dark, especially after rain, when the soil is soft.\n\nThey have been seen moving through sand by sweeping their front claws in a swimming motion, almost like breaststroke. Their low body temperature and slow metabolism may help them save energy in the harsh desert climate, where nights can be cold and days very hot.",
+    "family": "Very little is known about how pink fairy armadillos reproduce. Like other armadillos, they probably give birth to a single baby, or very few, in a burrow, and the young are thought to have soft shells that harden over time.\n\nAlmost no wild births have ever been observed, and the species has rarely survived for long in captivity, which has made it hard to study.",
+    "remarkable": "The pink fairy armadillo can bury itself completely in just a few seconds, using its front claws to dig and its body to wriggle forward through sand. It is so rarely seen that some Argentinian farmers who have worked the land for decades have never spotted one.",
+    "outlook": "The species is listed as data deficient: there simply isn't enough information to know how many there are.\n\nPossible threats include farming, which compacts or changes the soil, predation by pet dogs and cats, and collection for the illegal pet trade, where most die quickly. Researchers are now using camera traps and local reports to learn more.",
+    "people": "In Argentina it is called 'pichiciego', which roughly means 'little blind armadillo'. It became famous online for its fairy-like look, but scientists warn that interest in keeping it as a pet is harmful, since wild-caught animals almost always die, often from stress or the wrong diet.\n\nLocal naturalists and farmers who report sightings are among the most important sources of information for researchers. Because it rarely survives in captivity, very few pink fairy armadillos have ever been kept in zoos, and none have lived there long.\n\nResearchers in Argentina have begun using hair samples, footprints and reports from rural communities to map where it lives. Social media has turned it into an online celebrity, prompting scientists to remind people that admiring it from afar is the best way to help.",
+    "relatives": "There are about 20 species of armadillo, all in the Americas, ranging from this tiny species to the giant armadillo, which can weigh over 30 kilograms. The pink fairy armadillo's closest relative is the larger greater fairy armadillo of the Chaco region.\n\nArmadillos are related to sloths and anteaters, part of a group of mammals that evolved in South America. Their extinct relatives, the glyptodonts, were armoured giants the size of small cars.",
+    "didYouKnow": "The pink fairy armadillo's shell is attached to its body only along a thin strip on its back, a bit like wearing a cape.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "10–12 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 120 g"
+      },
+      {
+        "label": "Active",
+        "value": "Mostly at night"
+      },
+      {
+        "label": "Diet",
+        "value": "Ants, larvae, worms, roots"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the pink fairy armadillo spend most of its life?",
+        "choices": [
+          "Underground in sandy soil",
+          "In treetops",
+          "In rivers",
+          "In caves"
+        ],
+        "explanation": "It tunnels through loose, sandy soil, rarely coming up."
+      },
+      {
+        "prompt": "What makes its shell look pink?",
+        "choices": [
+          "Blood vessels showing through",
+          "Pink fur",
+          "Mud it rolls in",
+          "A pigment from its food"
+        ],
+        "explanation": "The thin shell lets blood vessels show through."
+      },
+      {
+        "prompt": "Why is it listed as data deficient?",
+        "choices": [
+          "Too little is known to judge how many there are",
+          "It was only just discovered",
+          "It is extinct",
+          "It lives only in zoos"
+        ],
+        "explanation": "It is so secretive that scientists lack the data to assess it."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect grasslands and dry forests across South America."
+      }
+    ]
+  },
+  {
+    "id": "fossa",
+    "name": "Fossa",
+    "scientificName": "Cryptoprocta ferox",
+    "wikipediaTitle": "Fossa (animal)",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Forests throughout Madagascar",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -20.0,
+      "longitude": 46.5
+    },
+    "mapSpan": 16,
+    "tagline": "Madagascar's lemur-hunting acrobat",
+    "lede": "Part cat, part mongoose, part something else entirely, the fossa is the largest predator on Madagascar. Lean, muscular and astonishingly agile in the trees, it is the main hunter of lemurs, and it looks like no other carnivore on Earth.",
+    "home": "Fossas live across Madagascar in almost every kind of forest, from the humid rainforests of the east to the dry deciduous forests of the west and the spiny forests of the south. They need large areas, and a single fossa may range over many square kilometres.",
+    "anatomy": "A fossa has a long, slender body, short reddish-brown fur, a small head with rounded ears, and a tail about as long as its body, used for balance.\n\nIts semi-retractable claws and flexible ankles, which can rotate to grip trunks, let it run down trees head-first and leap between branches. It walks on the soles of its feet, like a bear, rather than on its toes like a cat. A fossa's head looks somewhat like a puma's, with large, forward-facing eyes and prominent whiskers.\n\nIts retractable claws are curved and sharp, and its tail is nearly the length of its body, acting as a counterweight when climbing. Fossas have well-developed scent glands under the tail and on the chest, used to mark their territory. They can rotate their hind feet to grip tree trunks.",
+    "life": "Fossas hunt both day and night, on the ground and in the trees. Lemurs make up a large part of their diet, especially sifakas, but they also eat tenrecs, rodents, birds, reptiles and sometimes domestic chickens. They usually hunt alone, though males are sometimes seen cooperating to catch large lemurs. Fossas mark their territory with scent glands.\n\nFossas have large home ranges, which can exceed 20 square kilometres for males. They are active at different times of day depending on the season and prey availability. On the ground, they move with a bounding gait; in trees, they can leap gaps of several metres. They are skilled at hunting sifakas, among the largest lemurs, sometimes chasing them through the canopy at high speed.",
+    "family": "Fossa mating is unusual. A female climbs a traditional mating tree and several males gather below, competing to join her; mating can last for hours and be repeated over days, with different males.\n\nAfter about three months, she gives birth to two to four blind, helpless cubs in a den, such as a hollow tree or rock crevice. The young stay with her for over a year. Young females temporarily develop features that make them look like males, which may protect them from harassment.",
+    "remarkable": "Fossas are so agile that they can chase lemurs through the treetops, one of the few predators able to do so. They can climb down trees head-first, thanks to ankles that rotate backwards, a trick shared with squirrels.",
+    "outlook": "Fossas are vulnerable. Madagascar has lost much of its forest, and fossas are killed by farmers for taking poultry and sometimes hunted for meat. Feral dogs and cats compete with them and may spread disease.\n\nBecause they need so much space, large protected forests are essential to their survival. Researchers estimate there may be only a few thousand adult fossas left. Because fossas need such large territories, even big protected areas may hold only a few dozen.",
+    "people": "In Malagasy folklore, fossas are feared and blamed for killing livestock or even babies, stories that have little basis but fuel persecution. In Madagascar's protected areas, such as Kirindy Forest, fossas have become a highlight for visitors.\n\nScientists fit them with GPS collars to learn how far they travel, and the animated film 'Madagascar' made the fossa better known worldwide, as a villain.",
+    "relatives": "Fossas were once classified as cats, then as civets, but genetic studies show they belong to a family found only in Madagascar, Eupleridae, along with other local carnivores such as the falanouc and the ring-tailed vontsira.\n\nAll of them descended from a single mongoose-like ancestor that reached Madagascar from Africa around 20 million years ago and evolved in isolation. A larger giant fossa lived on the island until relatively recently.",
+    "didYouKnow": "Fossas can turn their ankles backwards, letting them run headfirst down tree trunks like a squirrel.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "70–80 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "5.5–10 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to ~20 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Lemurs, tenrecs, birds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the fossa's main prey?",
+        "choices": [
+          "Lemurs",
+          "Fish",
+          "Insects",
+          "Fruit"
+        ],
+        "explanation": "Lemurs, especially sifakas, are a big part of its diet."
+      },
+      {
+        "prompt": "How can a fossa run down trees head-first?",
+        "choices": [
+          "Its ankles can rotate backwards",
+          "It has sticky pads",
+          "It slides on its belly",
+          "It can't; it jumps down"
+        ],
+        "explanation": "Flexible ankles let its claws grip trunks while descending."
+      },
+      {
+        "prompt": "Where does the fossa live?",
+        "choices": [
+          "Only on Madagascar",
+          "Across Africa",
+          "In South American rainforests",
+          "In Indonesia"
+        ],
+        "explanation": "Fossas, like lemurs, are found only on Madagascar."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Durrell Wildlife Conservation Trust",
+        "url": "https://www.durrell.org",
+        "blurb": "Protects Madagascar's forests and wildlife with local communities."
+      }
+    ]
+  },
+  {
+    "id": "dhole",
+    "name": "Dhole",
+    "scientificName": "Cuon alpinus",
+    "wikipediaTitle": "Dhole",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests of India, Southeast Asia and parts of China and Central Asia",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 11.7,
+      "longitude": 76.6
+    },
+    "mapSpan": 30,
+    "tagline": "The whistling hunting dog of Asia",
+    "lede": "Rust-red, fox-faced and highly social, dholes are wild dogs that hunt in coordinated packs and talk to each other with whistles. They're among Asia's most skilled predators, and among its least known.",
+    "home": "Dholes once ranged from Central Asia to Southeast Asia, but today they survive in scattered populations, with strongholds in the forests of central and southern India. They live in dry and moist forests, scrub and alpine meadows, wherever there is enough prey, such as deer.",
+    "anatomy": "A dhole is about the size of a border collie, with a reddish coat, pale underside, rounded ears and a bushy, black-tipped tail. It has one fewer molar tooth on each side of its lower jaw than wolves and dogs, and its strong jaws are adapted for slicing meat.\n\nDholes have a wide range of calls, including a distinctive whistle used to regroup a pack that has scattered while hunting, as well as screams, clucks and mews. Dholes have relatively short legs and a long body, with large rounded ears that help them hear in dense forest.\n\nTheir coat varies from rusty red in the south to paler, thicker fur in colder regions. They have a broad, short muzzle and strong jaws, and their teeth are adapted for slicing meat rather than crushing bone. Their bushy tail often ends in a black tip.",
+    "life": "Dholes live in packs, usually of five to twelve, sometimes more than thirty. They hunt mainly during the day, chasing deer such as chital and sambar, wild pigs and smaller animals. Pack members cooperate, driving prey into water or ambush and taking down animals much larger than themselves.\n\nThey share food and are less aggressive with each other at kills than many other predators. Dholes often hunt in the early morning and late afternoon, when it is cooler. Pack members spread out through the forest and use calls to coordinate, sometimes driving deer into water where they can be surrounded.\n\nAfter a kill, they eat quickly, allowing young members to feed first. Dholes are also known to den in communal burrows, and packs can include several adults helping with pups.",
+    "family": "In most packs only one female breeds. After about two months, she gives birth in a den, often an old burrow or a rock cave, to a litter that is often around four to six pups, sometimes more.\n\nThe whole pack helps raise the pups, regurgitating meat for them and for the mother, and adults guard the den while others hunt. Pups start following the pack at around three months.",
+    "remarkable": "Dholes communicate with a whistle that is unusual among wild dogs and may help them coordinate in dense forest where they cannot see each other. They are bold enough to drive tigers and leopards away from kills when the pack is large.",
+    "outlook": "Dholes are endangered, with perhaps fewer than 2,500 adults left. They have lost most of their range to habitat loss and declining prey, and are threatened by diseases from domestic dogs, such as rabies and distemper, and by persecution from farmers. Protected areas in India now hold the largest populations.",
+    "people": "Dholes appear in Rudyard Kipling's 'The Jungle Book' as the fearsome 'red dogs'. In parts of India and Bhutan they were persecuted as pests, and bounties were once paid for them.\n\nToday, India's tiger reserves, such as Nagarhole and Bandipur, are among the best places to see them, and researchers use camera traps and genetic analysis of droppings to study them.",
+    "relatives": "The dhole is the only living member of its genus, Cuon, within the dog family, Canidae, which also includes wolves, jackals, foxes and the African wild dog.\n\nIts closest relatives appear to be the African wild dog and the wolves and jackals of the genus Canis. During the Ice Age, dholes lived across Europe and even reached North America, and fossils have been found as far west as Spain.",
+    "didYouKnow": "Dholes use a whistle-like call to find each other again after a pack splits up during a hunt.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "88–113 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "10–20 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to ~10 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Deer, wild pigs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What unusual sound do dholes use to regroup?",
+        "choices": [
+          "A whistle",
+          "A howl like a wolf",
+          "A bark like a dog",
+          "They're silent"
+        ],
+        "explanation": "Their whistle-like call helps scattered packs find each other."
+      },
+      {
+        "prompt": "How do dholes usually hunt?",
+        "choices": [
+          "In cooperative packs",
+          "Alone at night",
+          "By ambush from trees",
+          "By scavenging only"
+        ],
+        "explanation": "Packs work together to take down prey larger than themselves."
+      },
+      {
+        "prompt": "Which classic book features dholes as 'red dogs'?",
+        "choices": [
+          "The Jungle Book",
+          "White Fang",
+          "Black Beauty",
+          "Watership Down"
+        ],
+        "explanation": "Kipling's The Jungle Book describes the feared 'red dogs'."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Studies and protects wildlife, including dholes and tigers, across Asia."
+      }
+    ]
+  },
+  {
+    "id": "wolverine",
+    "name": "Wolverine",
+    "scientificName": "Gulo gulo",
+    "wikipediaTitle": "Wolverine",
+    "group": "mammal",
+    "regions": [
+      "naWest",
+      "naEast",
+      "arctic",
+      "europe",
+      "asia"
+    ],
+    "range": "Boreal forest, tundra and mountains of Canada, Alaska, Scandinavia and Russia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 62.0,
+      "longitude": -120.0
+    },
+    "mapSpan": 40,
+    "tagline": "Small bear-like muscle with a giant appetite",
+    "lede": "The wolverine is the largest land-dwelling member of the weasel family, built like a small bear and famous for its strength, stamina and fearlessness. It roams huge snowy territories, crossing mountains in a single day, and is one of the hardest animals in North America to see.",
+    "home": "Wolverines live in cold, remote places: boreal forest, tundra and high mountains across northern Canada, Alaska, Scandinavia, Russia and Siberia, with small numbers in the western United States.\n\nThey depend on deep snow that lasts into spring, which they use for dens and food storage. In eastern Canada they have become very rare.",
+    "anatomy": "A wolverine has a stocky body, short legs, a bushy tail and dark brown fur with a pale band along each side. Its fur sheds frost, which is why it was used to line parkas. Huge paws act as snowshoes, and strong, curved claws help it climb and dig.\n\nIts powerful jaws and a special upper molar turned sideways let it crunch frozen meat and bone. Despite weighing only around 10 to 18 kilograms, it is immensely strong. Wolverines have a strong sense of smell, able to locate carcasses buried under deep snow.\n\nTheir jaws and neck muscles are powerful enough to crush bone and tear frozen meat. Their claws are semi-retractable, helping them climb trees and steep rock. A wolverine's thick fur is dark brown, with light stripes along the sides that meet above the tail, and many have a pale patch on the chest.",
+    "life": "Wolverines are scavengers and hunters, eating carrion such as caribou and moose killed by wolves or winter, as well as hares, rodents, birds and eggs. They sometimes take larger prey weakened by deep snow. They store food in snow and crevices to eat later.\n\nWolverines travel enormous distances; one may cover a territory of hundreds to over a thousand square kilometres, moving tirelessly over mountains. Wolverines are mostly solitary, but they are known to keep in touch with family members and sometimes share food.\n\nThey use scent marking extensively, leaving musky signals on trees, rocks and caches. In winter, they can travel tens of kilometres in a day across snow, and their large feet let them move easily where other predators sink. They are active day and night, alternating periods of activity and rest.",
+    "family": "Wolverines mate in summer, but the embryos don't implant until winter, a process called delayed implantation. In late winter, the female digs a den deep in snow, often among boulders, and gives birth to usually two or three kits with white fur.\n\nThe snow den protects them from cold and predators. The kits grow quickly, leave the den in spring, and stay with their mother into autumn. Males often visit their families.",
+    "remarkable": "Wolverines have been tracked climbing thousands of metres up mountains in a single day, including one in Montana that climbed a steep peak in less than 90 minutes. They can chase away much larger predators, including bears and wolves, from a carcass.",
+    "outlook": "Wolverines are not threatened globally, but they are rare and declining in many places. They need large, undisturbed areas and spring snow for denning, so a warming climate that shrinks snowpack is a concern.\n\nIn eastern Canada, wolverines are listed as endangered and may have nearly disappeared from Quebec and Labrador. In the US, they are listed as threatened.",
+    "people": "Wolverines feature in the stories of many Indigenous peoples of the North, sometimes as tricksters. Trappers prized their frost-resistant fur and resented them for raiding traplines.\n\nToday, they are mascots for sports teams and lend their name to a famous comic book character. Researchers use hair snags, camera traps and snow tracking to study them, and Indigenous knowledge helps locate populations in remote areas.",
+    "relatives": "The wolverine is the only member of its genus, Gulo, in the weasel family, Mustelidae, which also includes badgers, otters, martens, fishers and ferrets.\n\nIts closest relatives are the martens and the fisher. Wolverines evolved in Eurasia and spread to North America during the Ice Ages. They are sometimes called skunk bears or gluttons, which is the meaning of their scientific name.",
+    "didYouKnow": "Wolverine fur resists frost, so northern peoples traditionally used it to line the hoods of their parkas.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "65–105 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "9–25 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "7–12 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Carrion, hares, rodents"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What family does the wolverine belong to?",
+        "choices": [
+          "The weasel family",
+          "The bear family",
+          "The dog family",
+          "The cat family"
+        ],
+        "explanation": "It is the largest land-dwelling member of the weasel family."
+      },
+      {
+        "prompt": "Where do female wolverines den with their kits?",
+        "choices": [
+          "In deep snow",
+          "In hollow trees",
+          "Underwater lodges",
+          "In caves by the sea"
+        ],
+        "explanation": "Snow dens protect kits from cold and predators."
+      },
+      {
+        "prompt": "Why was wolverine fur used for parka hoods?",
+        "choices": [
+          "It resists frost",
+          "It glows in the dark",
+          "It is the softest fur",
+          "It repels insects"
+        ],
+        "explanation": "Wolverine fur sheds frost, keeping the face clear."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society Canada",
+        "url": "https://www.wcscanada.org",
+        "blurb": "Studies and protects wolverines and other wildlife across northern Canada."
+      }
+    ]
+  },
+  {
+    "id": "kea",
+    "name": "Kea",
+    "scientificName": "Nestor notabilis",
+    "wikipediaTitle": "Kea",
+    "group": "bird",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Mountains and forests of New Zealand's South Island",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -43.5,
+      "longitude": 170.5
+    },
+    "mapSpan": 6,
+    "tagline": "The alpine parrot that takes apart cars",
+    "lede": "The kea is the world's only alpine parrot, a clever, curious and mischievous bird that lives among snowy peaks. It's famous for pulling apart car wipers, stealing sandwiches and solving puzzles that stump many other animals.",
+    "home": "Kea live in the mountains and high forests of New Zealand's South Island, from beech forest up to the alpine zone above the tree line. They often gather around ski fields, mountain huts, car parks and roads, where curious tourists and food draw them in.",
+    "anatomy": "Kea are large parrots, olive-green with dark edges to their feathers, and when they fly they reveal brilliant orange-red feathers under their wings. Their long, curved upper beak is a powerful tool for digging roots, tearing open logs and, sometimes, prying apart rubber and metal. They have strong feet for walking and climbing on rocks.\n\nMales are larger, with longer beaks. Kea have strong legs and feet for walking and hopping across rocks and snow, and they rarely need to fly far. Their olive-green feathers are edged with dark lines, giving a scaled look, while their underwings and rump flash bright orange-red in flight. Their long, curved upper beak is sharp and powerful, and their tongue is muscular, helping them manipulate objects with surprising precision.",
+    "life": "Kea are omnivores, eating roots, leaves, berries, nectar, insects and grubs, and occasionally scavenging carcasses. They are intensely curious and playful, and they learn quickly. Kea live in groups and play with each other, tumbling, wrestling and even making a 'play call', a special warble that makes other kea more playful, a bit like laughter. Kea are highly social, especially young birds, which roam in groups exploring and testing everything around them.\n\nAdults defend territories during the breeding season. Kea can survive harsh alpine winters, feeding on roots, seeds and insects buried in snow or rock. They are known to dig up the roots of mountain plants and to visit carcasses of sheep or deer, which once fuelled their bad reputation with farmers.",
+    "family": "Kea nest in burrows or crevices on the ground, often among tree roots or rocks. The female lays two to five eggs and incubates them while the male brings food.\n\nChicks fledge after about three months, and young kea spend years learning from older birds. Males may have more than one mate. Nests on the ground are vulnerable to introduced stoats, rats and possums.",
+    "remarkable": "In experiments, kea have solved complex puzzles, used tools and even shown an understanding of probability, choosing the jar more likely to give a reward. Their play call is one of the few known examples of contagious, laughter-like play in birds.",
+    "outlook": "Kea are endangered, with perhaps 3,000 to 7,000 left. Introduced predators raid nests, lead from old roofs and buildings poisons birds that chew on them, and some are hit by cars or harmed when fed junk food.\n\nIn the past, around 150,000 were killed for bounties because farmers believed they attacked sheep. Volunteers now build predator traps around kea nesting areas and fit nests with cameras, and early results show far more chicks surviving where stoats are controlled.",
+    "people": "From the 1860s to 1970, New Zealand paid a bounty on kea because some were seen pecking at sheep, and huge numbers were killed. Kea gained full protection in 1986.\n\nToday they are national icons, beloved and exasperating to visitors whose cars and backpacks they explore. The Kea Conservation Trust works to protect nests, remove lead from buildings and teach people not to feed kea. In 2017 the kea was named New Zealand's Bird of the Year.",
+    "relatives": "The kea's closest relative is the kākā, a forest parrot of New Zealand, and both are related to the kākāpō. Together they form an ancient family of parrots found only in New Zealand.\n\nKea and kākā split a few million years ago, possibly when the rise of the Southern Alps and glaciers separated alpine and forest populations. A related parrot on Norfolk Island and Phillip Island became extinct in the 1800s.",
+    "didYouKnow": "When kea hear another kea's 'play call', they often start playing too, as if laughter were contagious.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 48 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 1 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "15–20 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Roots, berries, insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes the kea unique among parrots?",
+        "choices": [
+          "It's the world's only alpine parrot",
+          "It can't fly",
+          "It lives underwater",
+          "It's the smallest parrot"
+        ],
+        "explanation": "Kea live high in New Zealand's mountains."
+      },
+      {
+        "prompt": "What does the kea's 'play call' do?",
+        "choices": [
+          "Makes other kea start playing",
+          "Warns of predators",
+          "Attracts prey",
+          "Marks territory"
+        ],
+        "explanation": "It's contagious, a bit like laughter."
+      },
+      {
+        "prompt": "Why were many kea killed in the past?",
+        "choices": [
+          "Bounties, because farmers thought they attacked sheep",
+          "For their feathers",
+          "For food",
+          "They spread disease"
+        ],
+        "explanation": "About 150,000 kea were killed for bounties until 1970."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Kea Conservation Trust",
+        "url": "https://www.keaconservation.co.nz",
+        "blurb": "Protects kea nests, removes lead hazards, and studies kea in the wild."
+      }
+    ]
+  },
+  {
+    "id": "secretarybird",
+    "name": "Secretarybird",
+    "scientificName": "Sagittarius serpentarius",
+    "wikipediaTitle": "Secretarybird",
+    "group": "bird",
+    "regions": [
+      "africa"
+    ],
+    "range": "Open grasslands and savannas south of the Sahara",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -2.3,
+      "longitude": 34.8
+    },
+    "mapSpan": 40,
+    "tagline": "The eagle on stilts that kicks snakes",
+    "lede": "Imagine an eagle on a model's legs, wearing a crest of quill pens. The secretarybird strides across the African savanna hunting on foot, and when it finds a snake, it stamps it to death with kicks so fast they are hard to see.",
+    "home": "Secretarybirds live in open grasslands and savannas from Senegal and Sudan to South Africa.\n\nThey avoid dense forest and true desert, preferring places where they can walk through short grass and see prey. They roost and nest at night on the flat tops of thorny acacia trees.",
+    "anatomy": "Standing over a metre tall, the secretarybird is a grey bird of prey with black flight feathers, black 'trousers' on its upper legs, and long, bare, pink legs. Its face has bare orange-red skin, and a crest of long black feathers sticks out from the back of its head.\n\nIts legs are the longest of any bird of prey, and its short toes are tipped with blunt claws for stamping rather than grabbing. A secretarybird's legs are long, with thick scales protecting the lower legs from snake bites.\n\nIts head looks like an eagle's, with a hooked beak and large eyes framed by orange-red skin and long eyelashes. Its tail has two very long central feathers that trail behind in flight. Despite its height, a secretarybird weighs only around 3 to 4 kilograms.",
+    "life": "Secretarybirds hunt mostly on foot, walking 20 or more kilometres a day through grass. They eat insects, rodents, lizards, small birds and, famously, snakes, including venomous ones.\n\nWhen they find prey, they stamp on it with powerful kicks. Studies of a captive bird measured kicks that hit with a force about five times its own body weight, landing in about 15 milliseconds. Secretarybirds walk across grasslands in a slow, deliberate way, stamping on tufts of grass to flush out prey.\n\nWhen they spot a snake, they jump and kick repeatedly, aiming for the head. They often hunt in pairs or small family groups. At night they fly up to roost in trees, usually acacias, and they return to the ground in the morning to hunt again.",
+    "family": "Pairs are thought to mate for life and defend territories. They build huge, flat nests of sticks on top of trees, often reusing them for years. The female lays one to three eggs, and both parents incubate and then feed the chicks by regurgitating food.\n\nYoung secretarybirds stay in the nest for around two to three months, and older chicks sometimes kill younger siblings when food is scarce.",
+    "remarkable": "A secretarybird's kicks are so fast and precise that scientists have studied them to understand how animals control rapid, accurate strikes, which may help design better robots. It can also fly well, soaring high on thermals despite spending most of its time walking.",
+    "outlook": "In 2020, the IUCN listed secretarybirds as endangered after major declines. Grasslands are being converted to farms and settlements, and the birds suffer from overgrazing, fires, power lines, poisoning and disturbance.\n\nBush encroachment, where shrubs take over open grassland, also reduces suitable habitat. Collisions with fences and power lines kill many young birds. In South Africa, researchers are tracking secretarybirds with GPS tags to learn where they travel and what dangers they meet.",
+    "people": "The name may come from its crest feathers, said to resemble the quill pens that 18th-century office clerks tucked behind their ears.\n\nAnother theory traces it to an Arabic phrase for 'hunter bird'. The secretarybird appears on the coat of arms of South Africa and of Sudan, symbolising strength and protection. Farmers once valued it for controlling snakes and rodents.",
+    "relatives": "The secretarybird is the only living member of its family, Sagittariidae. It is a bird of prey, related to eagles, hawks and kites, but it evolved its own long-legged, ground-hunting lifestyle.\n\nFossils show that relatives once lived in Europe. Its closest living counterpart in hunting style is not a raptor at all: the seriemas of South America, which also stride across grasslands and kill snakes by beating them.",
+    "didYouKnow": "A secretarybird's kick can land in about 15 milliseconds, roughly ten times faster than the blink of an eye.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "About 1.3 m"
+      },
+      {
+        "label": "Wingspan",
+        "value": "1.9–2.1 m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "10–15 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Snakes, rodents, insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a secretarybird kill snakes?",
+        "choices": [
+          "By stamping on them with fast kicks",
+          "By dropping them from the sky",
+          "By squeezing them",
+          "With venom"
+        ],
+        "explanation": "It stamps prey with powerful, precise kicks."
+      },
+      {
+        "prompt": "Where does its name possibly come from?",
+        "choices": [
+          "Its crest looks like quill pens tucked behind an ear",
+          "It keeps careful nests",
+          "It was found in an office",
+          "It sorts its food"
+        ],
+        "explanation": "One theory compares its crest to clerks' quill pens."
+      },
+      {
+        "prompt": "How does the secretarybird mostly hunt?",
+        "choices": [
+          "On foot, walking through grass",
+          "Diving into water",
+          "From high perches at night",
+          "In large flocks"
+        ],
+        "explanation": "It walks long distances each day looking for prey."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "Works across Africa to protect threatened birds and grasslands."
+      }
+    ]
+  },
+  {
+    "id": "superb-lyrebird",
+    "name": "Superb Lyrebird",
+    "scientificName": "Menura novaehollandiae",
+    "wikipediaTitle": "Superb lyrebird",
+    "group": "bird",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Wet forests of southeastern Australia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -37.8,
+      "longitude": 145.4
+    },
+    "mapSpan": 10,
+    "tagline": "The forest's greatest mimic",
+    "lede": "The superb lyrebird can imitate almost anything it hears: other birds, koalas, dogs, even camera shutters and chainsaws. In Australia's misty forests, a single male can perform a concert of borrowed sounds while displaying a tail shaped like an ancient lyre.",
+    "home": "Superb lyrebirds live in wet eucalyptus forests and rainforests of southeastern Australia, from southern Queensland through New South Wales to Victoria.\n\nA population was introduced to Tasmania in the 1930s and 1940s. They spend most of their time on the forest floor among ferns and leaf litter.",
+    "anatomy": "A superb lyrebird is about the size of a pheasant, brown above and greyish below, with strong legs and feet for scratching through soil.\n\nMales have a spectacular tail of 16 feathers: two broad, curved outer feathers shaped like the arms of a lyre, two thin central ones, and twelve lacy, silvery filmy feathers. The bird's voice box, called the syrinx, has the most complex muscles of any songbird, allowing its astonishing range of sounds.",
+    "life": "Lyrebirds forage by raking leaf litter and soil with their feet, eating worms, insects, spiders and other small creatures. A single bird may turn over huge amounts of soil each year, helping to break down leaf litter and reduce fuel for bushfires.\n\nThey are shy and fast runners, and prefer to run rather than fly, though they glide down slopes and roost in trees at night. Male superb lyrebirds sing most intensely in winter, when they are trying to attract females, and some may sing for hours each day.\n\nTheir songs mix their own calls with mimicry of other birds, and young males learn their repertoire by listening to older males. Females also sing and mimic, though less often. Lyrebirds are mostly solitary outside the breeding season and defend territories.",
+    "family": "In winter, males build display mounds of soil in the forest and perform elaborate shows, throwing their tail forward over their head like a shimmering veil while singing and dancing.\n\nFemales build a domed nest of sticks and ferns on the ground or a stump and raise a single chick alone. The egg takes about 50 days to hatch, and the chick stays in the nest for around six weeks.",
+    "remarkable": "Lyrebirds can mimic sounds so accurately that recordings fool other birds. Some lyrebirds in New England National Park in New South Wales sing flute-like tunes that may trace back to a pet lyrebird taught by a flute-playing farmer in the 1930s, passed from bird to bird ever since.",
+    "outlook": "Superb lyrebirds are not threatened, but the 2019–2020 bushfires burned a large part of their range, and introduced foxes and cats prey on them. Their recovery after fires is being watched closely by scientists.\n\nEncouragingly, surveys after the 2019–2020 fires found lyrebirds surviving in unburnt gullies and returning to recovering forest, and their digging helps the burnt forest floor recover by mixing ash and leaf litter into the soil.",
+    "people": "The superb lyrebird appears on the Australian 10-cent coin and on many stamps. David Attenborough's famous film of a lyrebird imitating a camera shutter, car alarm and chainsaw made it world famous. Walkers in forests near Melbourne and Sydney often hear their calls.\n\nIn the 1930s, lyrebirds in Sherbrooke Forest near Melbourne became famous for letting visitors come close, and they have since starred in many documentaries. Recordings of lyrebirds near towns copying car alarms, construction noise and camera clicks are regularly shared online. Tourists visiting Sherbrooke Forest near Melbourne can sometimes see them close to the walking tracks.",
+    "relatives": "There are two species of lyrebird: the superb lyrebird and the smaller Albert's lyrebird of the rainforests near the Queensland–New South Wales border.\n\nLyrebirds belong to one of the oldest branches of songbirds, and their closest relatives are the Australian scrub-birds. Songbirds as a whole are thought to have originated in Australia before spreading worldwide.",
+    "didYouKnow": "Lyrebirds in one Australian national park still sing flute-like melodies that may have been learned from a flute-playing farmer nearly a century ago.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "74–98 cm with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "About 1 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to ~30 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Worms, insects, spiders"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the superb lyrebird famous for?",
+        "choices": [
+          "Mimicking sounds, including machines",
+          "Diving underwater",
+          "Building bowers of blue objects",
+          "Migrating to Antarctica"
+        ],
+        "explanation": "It can imitate other birds, animals and even chainsaws."
+      },
+      {
+        "prompt": "Which Australian coin features the lyrebird?",
+        "choices": [
+          "The 10-cent coin",
+          "The $1 coin",
+          "The 5-cent coin",
+          "The $2 coin"
+        ],
+        "explanation": "The superb lyrebird appears on the 10-cent coin."
+      },
+      {
+        "prompt": "How do lyrebirds help the forest?",
+        "choices": [
+          "Raking leaf litter, which reduces bushfire fuel",
+          "Pollinating flowers",
+          "Spreading seeds by flying long distances",
+          "Eating invasive plants"
+        ],
+        "explanation": "Their digging breaks down leaf litter on the forest floor."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife Australia",
+        "url": "https://www.birdlife.org.au",
+        "blurb": "Protects Australian birds and their habitats, including bushfire recovery work."
+      }
+    ]
+  },
+  {
+    "id": "gharial",
+    "name": "Gharial",
+    "scientificName": "Gavialis gangeticus",
+    "wikipediaTitle": "Gharial",
+    "group": "reptile",
+    "regions": [
+      "asia"
+    ],
+    "range": "Large rivers of northern India and Nepal",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 26.7,
+      "longitude": 78.5
+    },
+    "mapSpan": 12,
+    "tagline": "The crocodile with a pot on its nose",
+    "lede": "With a snout as thin as a broom handle, lined with more than a hundred needle-sharp teeth, the gharial is built for one thing: catching fish. Males wear a strange bulbous knob on the tip of their snout, and it is one of the most endangered crocodilians on Earth.",
+    "home": "Gharials live in large, fast-flowing rivers with deep pools and sandbanks, mainly in northern India and Nepal.\n\nThe Chambal River in India holds the largest remaining population. They once lived in river systems from Pakistan to Myanmar, but have vanished from most of them.",
+    "anatomy": "Gharials are among the longest crocodilians, with males reaching 5 metres or more. Their long, narrow snout cuts through water with little resistance, ideal for snapping sideways at fish. Adult males develop a hollow growth on the tip of the snout called a ghara, after a type of Indian pot, which they use to make buzzing sounds and bubbles to attract females.\n\nTheir legs are relatively weak, so they rarely walk far on land. A gharial's long snout is lined with about 110 sharp, interlocking teeth, ideal for gripping slippery fish.\n\nIts eyes and nostrils sit on top of its head, so it can watch and breathe while mostly submerged. Its body is olive green to grey, and its back is armoured with bony plates. The male's ghara grows as he matures and is a sign of breeding maturity.",
+    "life": "Gharials spend most of their time in water and come out to bask on sandbanks. They eat almost entirely fish, sweeping their heads sideways to snap at passing prey, and juveniles eat insects and frogs. Unlike many crocodiles, gharials are not considered dangerous to people, since their thin jaws cannot easily tackle large animals.\n\nGharials spend most of their time in water, coming out only to bask and nest. They need deep pools where they can swim and hide, and sandy riverbanks where they can sun themselves. In winter, they bask for longer periods to warm up. They are mostly solitary, though they gather at good basking sites. Their population has been affected by changes in river flow due to dams.",
+    "family": "During the breeding season, a dominant male defends a stretch of river with several females. Females dig nests in sandbanks and lay around 30 to 50 eggs, among the largest of any crocodilian.\n\nAfter about two months, the hatchlings call from inside their eggs, and the mother digs them out and guards them in the water for weeks. Males sometimes help guard the young and carry them on their backs.",
+    "remarkable": "The male's ghara acts as a sound resonator, making a loud humming buzz, and also helps produce bubbles during courtship. A gharial's snout contains over 100 interlocking teeth, ideal for gripping slippery fish.",
+    "outlook": "Gharials are critically endangered, with perhaps several hundred breeding adults. Dams, sand mining, water diversion and fishing nets have destroyed or fragmented their rivers. Captive breeding and release programs since the 1970s have saved them from extinction, but released animals need healthy rivers to survive.\n\nIn recent years, hatchlings have been found again in some rivers where gharials had disappeared, a sign that release programmes can work when rivers are protected, and local 'gharial guardians' now watch over nesting beaches.",
+    "people": "In Hindu tradition, the goddess Ganga is often shown riding a makara, a mythical creature sometimes associated with the gharial.\n\nIn the 1970s, gharials had fallen to fewer than 200 in the wild, prompting India to start breeding programs and to create the National Chambal Sanctuary. The Madras Crocodile Bank Trust and other groups now monitor gharials and work with river communities.",
+    "relatives": "The gharial belongs to the family Gavialidae. Genetic studies suggest its closest living relative is the false gharial, or tomistoma, of Southeast Asia, which also has a slender snout.\n\nTogether they are related to crocodiles and alligators. Fossil gharial relatives once lived in many parts of the world, including South America and Africa, some reaching enormous sizes.",
+    "didYouKnow": "The gharial's name comes from 'ghara', the Hindi word for the round pot that the knob on a male's snout resembles.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "3.5–6 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~250 kg"
+      },
+      {
+        "label": "Teeth",
+        "value": "Over 100"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do gharials mainly eat?",
+        "choices": [
+          "Fish",
+          "Deer",
+          "Fruit",
+          "Birds"
+        ],
+        "explanation": "Their thin snouts are built for catching fish."
+      },
+      {
+        "prompt": "What is the 'ghara' on a male's snout used for?",
+        "choices": [
+          "Making buzzing sounds and bubbles",
+          "Breathing underwater",
+          "Digging nests",
+          "Storing food"
+        ],
+        "explanation": "It works as a resonator during courtship."
+      },
+      {
+        "prompt": "Where does the largest gharial population live?",
+        "choices": [
+          "The Chambal River in India",
+          "The Amazon",
+          "The Nile",
+          "Lake Victoria"
+        ],
+        "explanation": "The Chambal River holds the most gharials today."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Madras Crocodile Bank Trust",
+        "url": "https://www.madrascrocodilebank.org",
+        "blurb": "Breeds and studies crocodilians in India, including the gharial."
+      }
+    ]
+  },
+  {
+    "id": "thorny-devil",
+    "name": "Thorny Devil",
+    "scientificName": "Moloch horridus",
+    "wikipediaTitle": "Thorny devil",
+    "group": "reptile",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Sandy deserts and scrub of central and western Australia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -25.0,
+      "longitude": 128.0
+    },
+    "mapSpan": 22,
+    "tagline": "A spiky lizard that drinks through its skin",
+    "lede": "Covered head to tail in cone-shaped spikes, the thorny devil looks fearsome but is a small, slow, harmless lizard. It eats thousands of ants a day, carries a fake head on its neck, and can drink water simply by standing in damp sand.",
+    "home": "Thorny devils live in the arid interior of Australia, in sandy deserts, spinifex grasslands and dry scrub across Western Australia, South Australia and the Northern Territory. They are active during the day in spring and autumn and shelter in burrows during extreme heat or cold.",
+    "anatomy": "A thorny devil is about the size of a hand, with its body covered in sharp, conical spines. Its colours of yellow, tan and reddish brown camouflage it against desert sand, and it can darken or lighten to match its surroundings and temperature.\n\nOn the back of its neck is a spiny lump called a false head. Between its scales runs a network of tiny grooves that draw water across its skin to its mouth. The thorny devil's spikes are made of keratin and grow from its scales.\n\nIts colour can change slightly, becoming paler in warm weather and darker when it is cold or stressed, helping it control body temperature and blend in. The grooves between its scales act like tiny straws, drawing water by capillary action. Its tail is also covered in spikes.",
+    "life": "Thorny devils eat almost nothing but small black ants, licking them up one at a time, and can eat thousands in a single meal. They walk with a slow, jerky, rocking movement, which may help them look like a windblown leaf to predators.\n\nWhen threatened, a thorny devil tucks its real head between its front legs, leaving the spiky false head sticking up as a decoy. Thorny devils are slow-moving and active mostly in mild weather, avoiding the hottest and coldest parts of the day. They shelter in shallow burrows they dig themselves or under bushes. They often return to the same ant trails to feed, eating ant after ant for long periods. Their main predators include birds such as bustards, and goannas.",
+    "family": "Thorny devils mate in late winter and spring. The female digs a burrow up to about 30 centimetres deep and lays a clutch of around 3 to 10 eggs, then fills in the burrow to hide it. The eggs hatch after three to four months, and the tiny hatchlings dig their way to the surface, already looking like miniature adults and immediately starting to eat ants.\n\nHatchlings are only about 6 centimetres long and weigh under 2 grams, yet they already have their full coat of spikes. They grow slowly and take three to five years to reach adult size, eating ants from their very first days above ground.",
+    "remarkable": "A thorny devil can gather water from damp sand, dew or rain through capillary action: tiny channels between its scales carry water to the corners of its mouth, where it swallows it. Scientists study this system for ideas on collecting water in dry places.",
+    "outlook": "Thorny devils are common in suitable habitat and not considered threatened. Their main dangers are predators such as birds of prey and goannas, road traffic, and land clearing in some areas.",
+    "people": "The thorny devil is an icon of the Australian outback, appearing on stamps and in wildlife documentaries.\n\nIts scientific name, Moloch horridus, refers to Moloch, a fearsome deity from ancient texts, a reflection of its intimidating look rather than its gentle nature. In Aboriginal traditions of Western Australia, the thorny devil appears in stories and is known by several names, including ngiyari.",
+    "relatives": "The thorny devil is the only species in its genus. It belongs to the dragon lizards, family Agamidae, along with bearded dragons and frilled lizards.\n\nA strikingly similar lizard, the horned lizard of North American deserts, also eats ants and can drink through its skin, but the two are not closely related; their similarities evolved independently in similar environments.",
+    "didYouKnow": "A thorny devil can eat thousands of ants in a single meal, licking them up one by one.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 21 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "30–90 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to ~20 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Small black ants"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a thorny devil drink?",
+        "choices": [
+          "Grooves in its skin carry water to its mouth",
+          "It drinks from rivers",
+          "It eats cactus",
+          "It doesn't need water"
+        ],
+        "explanation": "Capillary channels between its scales move water to its mouth."
+      },
+      {
+        "prompt": "What is the 'false head' used for?",
+        "choices": [
+          "A decoy when the real head is tucked away",
+          "Storing fat",
+          "Hearing",
+          "Attracting mates"
+        ],
+        "explanation": "It tucks its real head down and presents the spiky lump."
+      },
+      {
+        "prompt": "What does the thorny devil eat?",
+        "choices": [
+          "Mostly small black ants",
+          "Seeds",
+          "Mice",
+          "Other lizards"
+        ],
+        "explanation": "It is an ant specialist."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Protects Australian wildlife and habitats across a network of sanctuaries."
+      }
+    ]
+  },
+  {
+    "id": "blandings-turtle",
+    "name": "Blanding's Turtle",
+    "scientificName": "Emydoidea blandingii",
+    "wikipediaTitle": "Blanding's turtle",
+    "group": "reptile",
+    "regions": [
+      "naEast"
+    ],
+    "range": "Wetlands of the Great Lakes region, southern Ontario and Quebec, and Nova Scotia",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 44.6,
+      "longitude": -78.5
+    },
+    "mapSpan": 16,
+    "tagline": "The smiling turtle that can live 80 years",
+    "lede": "With a bright yellow throat and a mouth that curves into a permanent smile, Blanding's turtle is one of the friendliest-looking reptiles in North America. It is also remarkably long-lived, with some individuals still breeding in their seventies.",
+    "home": "Blanding's turtles live in shallow, plant-rich wetlands, marshes, ponds and slow streams around the Great Lakes, in southern Ontario and Quebec, and in parts of the northern United States.\n\nAn isolated population lives in Nova Scotia, far from the rest. They often travel between several wetlands during a year.",
+    "anatomy": "Blanding's turtle has a high, domed, dark shell speckled with yellow flecks and a long neck with a bright yellow chin and throat. Its bottom shell, the plastron, has a hinge, so it can partly close the front of its shell, like a box turtle.\n\nIts mouth curves upward in a way that looks like a smile. Adults are around 18 to 27 centimetres long. Blanding's turtle has a high, rounded shell and a long neck that it can stretch far out of its shell. The hinge on its plastron lets it partially close its shell, although adults cannot shut it completely like box turtles.\n\nIts yellow throat and chin are bright and easy to spot. Hatchlings are dark grey, with a less domed shell, and gain their yellow spots as they grow.",
+    "life": "Blanding's turtles are omnivores, eating crayfish, insects, snails, frogs, fish and plants. They often bask on logs and banks, and spend winter hibernating underwater in wetlands, staying active even under ice. They are known for travelling long distances overland between wetlands, sometimes more than a kilometre, which brings them into contact with roads.\n\nBlanding's turtles are often seen basking on logs, sedge tussocks and muskrat lodges in spring. They move between different wetlands during the year, using some for feeding, others for overwintering and nesting. They are most active in the morning and late afternoon. Their slow movement on land makes them vulnerable when crossing roads, especially during the nesting season in June.",
+    "family": "Blanding's turtles mature very slowly, often not breeding until they are around 14 to 20 years old. In June, females leave the water to lay about 10 eggs in sandy or gravelly soil, sometimes travelling far to find a good spot. As with many turtles, warmer nests produce females. Hatchlings emerge in late summer or autumn and head for water.\n\nOnly a tiny fraction survive to adulthood. Hatchlings are about the size of a large coin, with dark shells and long tails. In their first years they hide among dense plants in shallow water, where they are hunted by herons, fish, frogs and snapping turtles. Very few eggs ever produce an adult turtle, which is why each adult female matters so much.",
+    "remarkable": "Blanding's turtles show very little sign of ageing: older females can still lay eggs and appear as healthy as younger ones. Scientists study them to understand how some animals seem to avoid the usual effects of age.",
+    "outlook": "Blanding's turtles are endangered. Losing even a few adult females each year can cause a population to decline, because they take so long to replace.\n\nRoads, wetland drainage, development and nest predators such as raccoons are major threats. In Canada, the Great Lakes/St. Lawrence and Nova Scotia populations are both listed as endangered.",
+    "people": "The species is named after William Blanding, a 19th-century naturalist from Philadelphia. In Ontario and Nova Scotia, volunteers protect nests with wire cages, help turtles across roads and track individuals.\n\nTurtle crossing signs and underpasses help reduce road deaths. In Nova Scotia's Kejimkujik National Park, a long-running recovery program has followed individual turtles for decades.",
+    "relatives": "Blanding's turtle is the only species in its genus. It belongs to the pond turtle family, Emydidae, which includes painted turtles, sliders and box turtles.\n\nIts closest relatives are thought to be the European pond turtle and the western pond turtle. The Nova Scotia population was likely cut off from the main population thousands of years ago, after the last ice age, when the climate was warmer.",
+    "didYouKnow": "Some Blanding's turtles are still laying eggs at over 70 years old.",
+    "facts": [
+      {
+        "label": "Shell length",
+        "value": "18–27 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "0.75–1.4 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "75+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Crayfish, insects, plants"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How old can Blanding's turtles be when they still lay eggs?",
+        "choices": [
+          "Over 70 years old",
+          "No older than 10",
+          "About 2 years",
+          "They lay eggs only once"
+        ],
+        "explanation": "They show remarkably little sign of ageing."
+      },
+      {
+        "prompt": "What colour is a Blanding's turtle's throat?",
+        "choices": [
+          "Bright yellow",
+          "Red",
+          "Blue",
+          "Black"
+        ],
+        "explanation": "Its yellow chin and throat make it easy to recognise."
+      },
+      {
+        "prompt": "Why are adult females so important to protect?",
+        "choices": [
+          "They take many years to replace",
+          "They lay hundreds of eggs a year",
+          "Males can't swim",
+          "They guard the nest for years"
+        ],
+        "explanation": "Slow maturity means each lost adult is hard to replace."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Turtle Survival Alliance",
+        "url": "https://turtlesurvival.org",
+        "blurb": "Works worldwide to save turtles and tortoises from extinction."
+      }
+    ]
+  },
+  {
+    "id": "glass-frog",
+    "name": "Reticulated Glass Frog",
+    "scientificName": "Hyalinobatrachium valerioi",
+    "wikipediaTitle": "Hyalinobatrachium valerioi",
+    "group": "amphibian",
+    "regions": [
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "Rainforest streams from Costa Rica to Ecuador",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 9.0,
+      "longitude": -83.5
+    },
+    "mapSpan": 14,
+    "tagline": "A frog you can see straight through",
+    "lede": "Turn a glass frog over and you can see its heart beating, its liver and its bones through its belly. These tiny tree frogs of Central and South American rainforests are among the most transparent animals on land, and the reticulated glass frog has another surprise: dedicated fathers.",
+    "home": "Reticulated glass frogs live in humid lowland and foothill rainforests from Costa Rica and Panama to Colombia and Ecuador. They spend their lives on leaves overhanging clear, fast-flowing streams, where they call, mate and lay their eggs.",
+    "anatomy": "This glass frog is tiny, around 2 to 2.6 centimetres long. Its back is lime green, covered in a net-like pattern of yellow spots that may mimic its own eggs. Its belly skin and muscles are see-through, revealing the internal organs.\n\nIts large, forward-facing eyes are golden, and its fingers and toes have sticky pads for clinging to wet leaves. Transparency is rare on land because blood, bones and organs usually absorb and scatter light. Glass frogs reduce this by making their skin and muscles very clear and by tucking organs into a compact, reflective sac.\n\nTheir bones are greenish in some species. Their green backs are not transparent but match the colour of the leaves they rest on, so from above they look like part of the leaf, and from below their see-through bellies let light pass.",
+    "life": "Glass frogs are active at night, hunting small insects and spiders on leaves near streams. By day they sleep stuck flat to the undersides of leaves. When resting, they hide most of their red blood cells in their liver, which makes their bodies far more transparent and helps them blend in with the leaf beneath them. Reticulated glass frogs are territorial.\n\nMales defend their calling sites on leaves above streams with short, high-pitched calls, and sometimes wrestle intruders, hanging upside-down from leaves as they grapple. A single male may guard several egg clutches laid by different females on his leaf. Because they depend on streamside vegetation, they are found only where forest and clean water meet.",
+    "family": "Males call from the undersides of leaves above streams. A female lays a clutch of eggs on a leaf, and the male then guards it day and night for weeks, keeping the eggs moist, warding off predatory wasps and flies, and sometimes kicking them away.\n\nWhen the tadpoles hatch, they drop into the stream below, where they hide in sediment and grow until they become froglets. Male reticulated glass frogs often guard eggs from several females at once and may sit on or beside them for weeks, even through the day. Researchers have found that eggs left without a guarding father are far more likely to dry out or be eaten by wasps and fly larvae, so this care makes a real difference.",
+    "remarkable": "In 2022, scientists discovered that sleeping glass frogs pull almost 90 percent of their red blood cells out of circulation and pack them into their liver, becoming two to three times more transparent. They do this without forming blood clots, which interests medical researchers working on clotting problems.",
+    "outlook": "The reticulated glass frog is not threatened, but many other glass frog species are.\n\nAll depend on clean streams and intact forest, and amphibians in the region have been hit hard by chytrid, a deadly fungal disease. Deforestation and pollution of streams are ongoing threats.",
+    "people": "Glass frogs have become favourites of nature photographers and night-walk tours in Costa Rica and Panama, where guides search stream-side leaves with flashlights.\n\nTheir transparency makes them important to scientists studying camouflage and blood. Several new glass frog species are still being discovered each decade in South American forests.",
+    "relatives": "Glass frogs make up the family Centrolenidae, with around 150 species found from southern Mexico to Bolivia and Argentina. Not all are equally transparent; some have see-through bellies only.\n\nTheir closest relatives are a group of South American frogs, and they are distant cousins of the more familiar tree frogs.",
+    "didYouKnow": "When a glass frog sleeps, it hides most of its red blood cells in its liver to make its body nearly invisible.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "2–2.6 cm"
+      },
+      {
+        "label": "Active",
+        "value": "At night"
+      },
+      {
+        "label": "Eggs guarded by",
+        "value": "Fathers"
+      },
+      {
+        "label": "Diet",
+        "value": "Small insects, spiders"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What can you see through a glass frog's belly?",
+        "choices": [
+          "Its heart, organs and bones",
+          "Nothing; it's solid green",
+          "Only its eggs",
+          "Glowing spots"
+        ],
+        "explanation": "Its belly skin and muscles are transparent."
+      },
+      {
+        "prompt": "Who guards the eggs?",
+        "choices": [
+          "The father",
+          "The mother",
+          "Neither parent",
+          "Ants"
+        ],
+        "explanation": "Males guard egg clutches for weeks."
+      },
+      {
+        "prompt": "How do sleeping glass frogs become more transparent?",
+        "choices": [
+          "They pack their red blood cells into their liver",
+          "They hold their breath",
+          "They change colour to white",
+          "They shed their skin"
+        ],
+        "explanation": "Hiding red blood cells makes their bodies much clearer."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction."
+      }
+    ]
+  },
+  {
+    "id": "olm",
+    "name": "Olm",
+    "scientificName": "Proteus anguinus",
+    "wikipediaTitle": "Olm",
+    "group": "amphibian",
+    "regions": [
+      "europe"
+    ],
+    "range": "Flooded caves of the Dinaric Alps, mainly in Slovenia and Croatia",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 45.8,
+      "longitude": 14.2
+    },
+    "mapSpan": 6,
+    "tagline": "The blind cave salamander once called a baby dragon",
+    "lede": "Deep in the flooded caves of the Balkans lives a pale, pink, blind salamander that can go a decade without eating and may live for over a century. When floods washed olms out of caves centuries ago, local people believed they were baby dragons.",
+    "home": "Olms live only in underground waters of the Dinaric Alps, a limestone region stretching along the Adriatic, mainly in Slovenia and Croatia, with smaller populations in Bosnia and Herzegovina and Italy. They inhabit caves, underground rivers and lakes in total darkness, where the water stays cool all year.",
+    "anatomy": "An olm is long and slender, about 20 to 30 centimetres, with pale, pinkish-white skin and three tufts of red, feathery gills on each side of its head. Its eyes are tiny, undeveloped and covered by skin, so it is blind. It has small legs with only three toes on the front feet and two on the back.\n\nLike the axolotl, it keeps its gills and other juvenile features for life. An olm's pale skin lacks pigment, but it can produce dark coloration if exposed to light for a long time. It has three toes on its front legs and two on its hind legs, which are small compared with its long body.\n\nIts lungs are small and used only occasionally; it breathes mainly through its gills and skin. Its eyes are covered with skin, but young olms are born with small eyes that shrink as they grow.",
+    "life": "In darkness, olms rely on smell, hearing, and sensitivity to electric fields and vibrations to find small crustaceans, snails and insect larvae. They have an extremely slow metabolism, and one olm in a lab survived about ten years without food.\n\nSome studies suggest olms rarely move: one individual was recorded staying in the same spot for more than seven years. Olms spend almost all their time moving slowly through water-filled cracks and pools deep underground. They are very sensitive to light and will move away from it; prolonged exposure can darken their skin.\n\nThey can detect very small amounts of chemicals in the water and even the Earth's magnetic field, which may help them navigate. Because food is scarce in caves, they eat large meals when they can and store nutrients.",
+    "family": "Olms reproduce very rarely. In the wild, females are thought to lay eggs only about every 12 years. In captivity, a female lays around 35 to 70 eggs and guards them among stones, a process that can take about four to six months before they hatch.\n\nYoung olms take around 14 years to reach maturity. Their lifespan may exceed 100 years.",
+    "remarkable": "The olm is the only cave vertebrate in Europe and one of the longest-lived amphibians known; models based on captive animals suggest a lifespan of over 100 years. In 2016, a female in Slovenia's Postojna Cave laid eggs, and the hatchlings became a national sensation.",
+    "outlook": "Olms are vulnerable. Because they live in underground water, they are easily harmed by pollution from farms, industry and sewage that seeps into caves through porous limestone.\n\nChanges to water flow and collection for the pet trade have also hurt them. Protecting the land above caves protects the olms below.",
+    "people": "In 1689, Slovenian naturalist Janez Vajkard Valvasor recorded local beliefs that olms were the offspring of dragons living deep in the mountains.\n\nThe olm appears on a Slovenian coin and is a national symbol; Postojna Cave displays live olms to visitors in a darkened aquarium. Scientists study the olm's longevity and starvation resistance for clues about ageing and metabolism.",
+    "relatives": "The olm is the only European member of the family Proteidae; its closest relatives are the mudpuppies and waterdogs of North America, which also keep their gills for life.\n\nA black olm subspecies, with dark skin and functional eyes, lives in a small area of southern Slovenia and was only described in 1986. Olms have lived in caves for millions of years, evolving their pale skin and blindness.",
+    "didYouKnow": "An olm in a lab survived about ten years without eating.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "20–30 cm"
+      },
+      {
+        "label": "Eyes",
+        "value": "Covered by skin"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Possibly 100+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Small crustaceans, snails"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What did people once think olms were?",
+        "choices": [
+          "Baby dragons",
+          "Lost fish",
+          "Giant worms",
+          "Water spirits' pets"
+        ],
+        "explanation": "Floods washed them out of caves, and they were said to be dragon offspring."
+      },
+      {
+        "prompt": "How long can an olm survive without food?",
+        "choices": [
+          "About ten years",
+          "One week",
+          "One month",
+          "A day"
+        ],
+        "explanation": "Their slow metabolism lets them go years without eating."
+      },
+      {
+        "prompt": "Where do olms live?",
+        "choices": [
+          "Underground waters in caves",
+          "Mountain lakes",
+          "Tropical rivers",
+          "The open ocean"
+        ],
+        "explanation": "They live in the flooded caves of the Dinaric Alps."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Coordinates rescue and conservation breeding for amphibians facing extinction."
+      }
+    ]
+  },
+  {
+    "id": "hellbender",
+    "name": "Hellbender",
+    "scientificName": "Cryptobranchus alleganiensis",
+    "wikipediaTitle": "Hellbender",
+    "group": "amphibian",
+    "regions": [
+      "naEast"
+    ],
+    "range": "Clear, rocky streams of the eastern United States, from New York to Georgia and Missouri",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 36.0,
+      "longitude": -83.0
+    },
+    "mapSpan": 14,
+    "tagline": "The snot otter that breathes through its wrinkles",
+    "lede": "The hellbender is North America's largest salamander, a flat, wrinkly, brown giant that can grow longer than your arm. It has some of the best nicknames in nature, including 'snot otter' and 'lasagna lizard', and it breathes almost entirely through its skin.",
+    "home": "Hellbenders live in cool, clear, fast-flowing streams with big flat rocks, mostly in the Appalachian and Ozark regions of the eastern United States. They need clean, well-oxygenated water, and they spend most of their lives hiding under rocks on the stream bottom.",
+    "anatomy": "A hellbender can reach about 60 centimetres long. Its flat, broad head and body help it hide under rocks and stay put in strong currents, and its brown, mottled colouring blends in with the stream bed.\n\nWrinkled folds of skin along its sides greatly increase the surface area through which it absorbs oxygen from the water. It has small eyes and poor eyesight but can sense light through its skin.",
+    "life": "Hellbenders hunt mostly at night, feeding mainly on crayfish, along with small fish, insects and worms. They sit in ambush under rocks and suck in prey with a sudden gape. When oxygen in the water is low, they sway their bodies to move more water across their skin.\n\nAdults usually stay in a small home range for years. Hellbenders are mostly nocturnal, staying under rocks by day and coming out at night to hunt. They can live in the same stretch of stream for many years, defending their favourite shelter rocks from rivals. In the breeding season, males become more active and may fight. Hellbenders are sensitive to changes in water temperature and oxygen, so they are most common in cool, fast streams.",
+    "family": "In late summer, a male prepares a nest cavity under a large rock. One or more females lay long strings of 150 to 450 eggs there, and the male fertilises them outside the body.\n\nThe male then guards the eggs for two to three months, aerating them and chasing off intruders, though he sometimes eats some of them. The larvae have external gills, which they lose after about 18 months.",
+    "remarkable": "Because they breathe mostly through their skin, hellbenders are extremely sensitive to pollution and silt, making them indicators of stream health. They have been around in similar form for millions of years, earning them the label 'living fossil'.",
+    "outlook": "Hellbenders are listed as vulnerable, and some populations have declined sharply. Sediment from farming, logging and construction fills the spaces under rocks they need, while dams and pollution degrade streams.\n\nZoos raise young hellbenders for release, and people are urged never to move rocks in hellbender streams. Volunteers in several states now help scientists survey streams, and in some places specially designed concrete 'nest boxes' are placed in rivers to give hellbenders safe places to breed.",
+    "people": "No one is sure how the hellbender got its name; one story says early settlers thought it looked like a creature 'from hell, bent on returning'. It was named the state amphibian of Pennsylvania in 2019 after a campaign by students. Zoos such as the Saint Louis Zoo breed hellbenders, and many anglers once killed them wrongly thinking they harmed trout fishing.\n\nIn the past, many anglers believed hellbenders were poisonous or harmful to fish populations, and killed them when caught on fishing lines. Today, education campaigns explain that they are harmless and important to stream ecosystems. Programmes such as 'Hellbender Rescue' and partnerships between zoos and state agencies raise young hellbenders and release them into streams where populations have declined.",
+    "relatives": "The hellbender belongs to the giant salamanders, family Cryptobranchidae, along with the Japanese giant salamander and the Chinese giant salamanders, which can exceed 1.5 metres and are the world's largest amphibians.\n\nTheir ancestors date back more than 160 million years, to the age of dinosaurs. Two subspecies are recognised: the eastern hellbender and the Ozark hellbender, which is federally endangered in the US.",
+    "didYouKnow": "Hellbenders are nicknamed 'snot otters' because of the slimy mucus that coats their skin.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to ~60 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~2.5 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "30+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Crayfish, small fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a hellbender get most of its oxygen?",
+        "choices": [
+          "Through its wrinkly skin",
+          "Through gills",
+          "By gulping air at the surface",
+          "Through its tail"
+        ],
+        "explanation": "Skin folds increase the area for absorbing oxygen."
+      },
+      {
+        "prompt": "What is the hellbender's main food?",
+        "choices": [
+          "Crayfish",
+          "Leaves",
+          "Frogs' eggs only",
+          "Algae"
+        ],
+        "explanation": "Crayfish make up much of its diet."
+      },
+      {
+        "prompt": "Who guards hellbender eggs?",
+        "choices": [
+          "The male",
+          "The female",
+          "Both parents",
+          "No one"
+        ],
+        "explanation": "Males guard nests under rocks for months."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Save The Frogs!",
+        "url": "https://www.savethefrogs.com",
+        "blurb": "Protects amphibian populations through education, research and habitat projects."
+      }
+    ]
+  },
+  {
+    "id": "ocean-sunfish",
+    "name": "Ocean Sunfish",
+    "scientificName": "Mola mola",
+    "wikipediaTitle": "Ocean sunfish",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "naEast",
+      "europe"
+    ],
+    "range": "Temperate and tropical oceans worldwide, including summer visits to Nova Scotia",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 36.0,
+      "longitude": -10.0
+    },
+    "mapSpan": 60,
+    "tagline": "A giant swimming head",
+    "lede": "The ocean sunfish looks like a fish that forgot to grow a back half. It's one of the heaviest bony fish in the world, as large as a car, and it spends time lying flat at the surface, sunbathing.",
+    "home": "Ocean sunfish roam temperate and tropical oceans around the world, from the Atlantic to the Pacific and Indian Oceans.\n\nIn summer, some travel north to cooler waters, including off Nova Scotia and Britain. They dive hundreds of metres to feed, then return to the surface.",
+    "anatomy": "A sunfish has a tall, flattened, disc-shaped body with long fins above and below and no true tail. Instead, it has a rounded, rudder-like structure called a clavus. Adults can be over 3 metres tall from fin tip to fin tip and weigh more than 2 tonnes.\n\nIts mouth is small, with teeth fused into a beak. Its thick skin is covered in mucus and often hosts many parasites. A sunfish's skeleton is made mostly of cartilage, which is lighter than bone, and its thick skin is rough, like sandpaper.\n\nIts fins are long and stiff, moved by powerful muscles. Its body is flattened side to side, and its clavus acts like a rudder. Sunfish have a small mouth and teeth fused into a beak-like plate, useful for cutting jellyfish and other soft prey.",
+    "life": "Sunfish swim by flapping their top and bottom fins together, like wings. They eat jellyfish and other gelatinous animals, along with small fish, squid and crustaceans, diving deep to find them.\n\nAfter dives into cold water, they bask on their sides at the surface to warm up, which also lets seabirds pick parasites from their skin. Fish such as wrasses clean them, too. Ocean sunfish spend much of their time in the open ocean, diving to depths of 200 to 600 metres to feed, and sometimes deeper.\n\nTracking studies show they travel long distances, following warm currents and food. They often come to the surface to bask, either to warm up after cold dives or to let birds and fish clean parasites from their skin. They are surprisingly fast swimmers when they need to be.",
+    "family": "Ocean sunfish produce more eggs than any other known vertebrate. A single female was found to carry an estimated 300 million eggs. The eggs are released into open water, where most are eaten.\n\nHatchlings are tiny and spiky, looking more like pufferfish. Young sunfish grow extremely fast; one in an aquarium gained around 370 kilograms in about 15 months.",
+    "remarkable": "The ocean sunfish grows from a larva a few millimetres long to an adult over 60 million times heavier, one of the greatest size increases of any animal. Its lazy surface basking hides an athletic side: it regularly dives hundreds of metres.",
+    "outlook": "Ocean sunfish are vulnerable, mainly because many are caught by accident in fishing nets and lines, especially drift nets. They also swallow plastic bags, mistaking them for jellyfish.\n\nIn some countries, such as Japan and Taiwan, they are eaten. Reducing bycatch in fisheries is key to their future. Researchers now tag sunfish with satellite tags to track their migrations and learn which fishing areas are most dangerous for them, information that can help fisheries reduce bycatch.",
+    "people": "The sunfish's scientific name, Mola, means 'millstone' in Latin, after its round, grey shape. In German it is called Schwimmender Kopf, 'swimming head'. Divers in Bali and the Galápagos seek out sunfish when they rise to cleaning stations.\n\nIn 2017 scientists described a new species, the hoodwinker sunfish, which had been hiding in plain sight among museum specimens.",
+    "relatives": "There are a few species of sunfish in the family Molidae, including the southern sunfish, a close relative that holds the record for the heaviest bony fish, and the sharptail mola.\n\nSunfish are related to pufferfish and porcupinefish, which also have fused, beak-like teeth. Their unusual body shape evolved from more typical fish ancestors that lost their tails.",
+    "didYouKnow": "An ocean sunfish can carry an estimated 300 million eggs, more than any other known vertebrate.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "Up to ~3 m fin to fin"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~2 tonnes"
+      },
+      {
+        "label": "Eggs",
+        "value": "~300 million"
+      },
+      {
+        "label": "Diet",
+        "value": "Jellyfish, squid, small fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why do sunfish lie flat at the surface?",
+        "choices": [
+          "To warm up after deep dives",
+          "Because they can't swim",
+          "To sleep",
+          "To lay eggs"
+        ],
+        "explanation": "Basking warms them and lets birds clean parasites."
+      },
+      {
+        "prompt": "What is a main threat to ocean sunfish?",
+        "choices": [
+          "Being caught by accident in fishing gear",
+          "Lack of sunlight",
+          "Polar bears",
+          "Freezing water"
+        ],
+        "explanation": "Bycatch in nets and lines kills many sunfish."
+      },
+      {
+        "prompt": "What does Mola mean in Latin?",
+        "choices": [
+          "Millstone",
+          "Moon",
+          "Swimmer",
+          "Giant"
+        ],
+        "explanation": "Its round, grey shape resembles a millstone."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to reduce bycatch and protect ocean wildlife."
+      }
+    ]
+  },
+  {
+    "id": "leafy-seadragon",
+    "name": "Leafy Seadragon",
+    "scientificName": "Phycodurus eques",
+    "wikipediaTitle": "Leafy seadragon",
+    "group": "fish",
+    "regions": [
+      "oceania",
+      "openOcean"
+    ],
+    "range": "Kelp and seagrass beds along southern and western Australia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -35.6,
+      "longitude": 137.0
+    },
+    "mapSpan": 16,
+    "tagline": "A swimming piece of seaweed",
+    "lede": "Drifting through kelp forests off southern Australia, the leafy seadragon looks exactly like a floating clump of seaweed. Covered in leaf-shaped flaps, it's one of the most beautifully camouflaged animals in the sea, and the father carries the eggs.",
+    "home": "Leafy seadragons live only along Australia's southern and western coasts, from Kangaroo Island and Adelaide to Perth. They drift among kelp forests, seagrass meadows and rocky reefs, usually in water a few to around 30 metres deep, often staying in one small area for long periods.",
+    "anatomy": "A leafy seadragon grows to about 35 centimetres long. Its body is yellow-brown to green, and from its head and body sprout leaf-like flaps of skin that sway with the water. These flaps are only for camouflage, not swimming.\n\nIt moves using tiny, almost transparent fins on its neck and back, which beat so fast they are hard to see, so it seems to glide. It has a long, tube-like snout. A leafy seadragon's body is covered in bony plates, like armour, under its skin.\n\nIts leaf-like appendages grow from these plates and help break up its outline. It has no tail fin and cannot curl its tail to grip things like a seahorse can. Its snout is long and tube-like, ending in a small mouth that sucks up tiny crustaceans.",
+    "life": "Leafy seadragons feed on tiny crustaceans called mysids, or sea lice, sucking them up through their long snouts like a vacuum. They eat thousands a day. Their camouflage is their main defence; they drift slowly and rarely move far, relying on looking like seaweed to avoid predators.\n\nLeafy seadragons spend most of their time drifting slowly among seaweed and seagrass, usually alone or in pairs. They have small home ranges and may stay in the same area for weeks. They rely on their camouflage to avoid predators and to approach their prey. When disturbed, they move slowly away rather than darting, keeping up their disguise.",
+    "family": "As in seahorses, the male cares for the eggs. During courtship, pairs swim side by side. The female transfers up to around 250 bright pink eggs onto a spongy patch under the male's tail, where they become attached. He carries them for about four to six weeks until they hatch into tiny, fully formed seadragons that must fend for themselves. Very few survive to adulthood.\n\nEach newborn seadragon is about 2 centimetres long and immediately begins hunting tiny plankton. Only a small fraction survive their first weeks, when fish and other predators eat many of them. Those that survive grow quickly and can reach their adult size within about a year.",
+    "remarkable": "A leafy seadragon's leaf-like flaps are not fins at all; they are pure camouflage, and its real fins are nearly invisible. In the wild, they can be extremely hard to spot even when divers know exactly where to look.",
+    "outlook": "Leafy seadragons are not currently threatened, but they are fully protected in South Australia and Western Australia.\n\nPollution, runoff and the loss of seagrass and kelp forests threaten their habitat, and storms can wash them ashore. Collection for the aquarium trade is tightly controlled.",
+    "people": "The leafy seadragon is the official marine emblem of South Australia, and Adelaide's divers count it as a highlight.\n\nCitizen scientists take part in 'Dragon Search' programs, photographing seadragons and reporting sightings to help track populations. Each seadragon's facial markings can be used to recognise individuals.",
+    "relatives": "Leafy seadragons belong to the family Syngnathidae, along with seahorses, pipefish and the other seadragons.\n\nTheir closest relatives are the weedy seadragon, which is common along Australia's southern coast, and the ruby seadragon, discovered only in 2015 from museum specimens and first filmed alive in 2016. All these fish have tube-shaped snouts and males that care for eggs.",
+    "didYouKnow": "Seadragon fathers carry the eggs, which stick to a spongy patch under their tails until they hatch.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to ~35 cm"
+      },
+      {
+        "label": "Eggs",
+        "value": "Up to ~250"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to ~10 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Tiny crustaceans (mysids)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What are the leafy seadragon's leaf-like flaps for?",
+        "choices": [
+          "Camouflage",
+          "Swimming",
+          "Breathing",
+          "Catching prey"
+        ],
+        "explanation": "They make it look like floating seaweed."
+      },
+      {
+        "prompt": "Who carries the eggs?",
+        "choices": [
+          "The male",
+          "The female",
+          "They float freely",
+          "Both parents in turn"
+        ],
+        "explanation": "Eggs attach under the male's tail until they hatch."
+      },
+      {
+        "prompt": "Where do leafy seadragons live?",
+        "choices": [
+          "Along southern and western Australia",
+          "Around Hawaii",
+          "In the Arctic",
+          "In the Caribbean"
+        ],
+        "explanation": "They are found only on Australia's southern and western coasts."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Australian Marine Conservation Society",
+        "url": "https://www.marineconservation.org.au",
+        "blurb": "Campaigns to protect Australia's oceans, reefs and marine life."
+      }
+    ]
+  },
+  {
+    "id": "coelacanth",
+    "name": "Coelacanth",
+    "scientificName": "Latimeria chalumnae",
+    "wikipediaTitle": "West Indian Ocean coelacanth",
+    "group": "fish",
+    "regions": [
+      "africa",
+      "openOcean"
+    ],
+    "range": "Deep rocky slopes off the Comoros, South Africa, Mozambique, Tanzania and Madagascar",
+    "status": "CR",
+    "coordinate": {
+      "latitude": -11.7,
+      "longitude": 43.3
+    },
+    "mapSpan": 20,
+    "tagline": "The fish that came back from extinction",
+    "lede": "Scientists knew the coelacanth only from fossils and believed it had died out with the dinosaurs, 66 million years ago. Then, in 1938, a fisherman off South Africa pulled one up in his net. It's one of the most famous zoological discoveries of the 20th century.",
+    "home": "West Indian Ocean coelacanths live along steep, rocky underwater slopes, usually between about 100 and 500 metres deep, off the Comoros Islands, South Africa, Mozambique, Tanzania, Kenya and Madagascar. By day they shelter in volcanic caves, sometimes in groups, and at night they drift out to hunt.",
+    "anatomy": "A coelacanth can grow to about 2 metres long and weigh around 90 kilograms. It has steel-blue skin dotted with white spots, unique to each fish, and thick, armour-like scales.\n\nIts fins are fleshy and lobed, supported by bones, and move in an alternating pattern like the legs of a walking animal. It has a hinged joint in its skull that lets it open its mouth very wide, and an organ in its snout that detects electric fields.",
+    "life": "Coelacanths are slow, drifting predators that save energy by moving with currents. They hunt fish, squid and other animals at night, sometimes standing on their heads, perhaps to sense prey with their electric organ. Their slow metabolism suits the cold, low-oxygen deep water, and they can stay almost motionless for long periods. Coelacanths are mostly solitary but gather in caves during the day, sometimes in groups of a dozen or more.\n\nAt night, they drift slowly along steep underwater slopes, hunting fish and squid. They seem to have small home ranges, returning to the same caves day after day. Scientists using submersibles have identified individuals by their spot patterns, which change little over time.",
+    "family": "Coelacanths give birth to live young. Eggs about the size of oranges develop inside the mother, and the pups, around 35 centimetres long, are born fully formed.\n\nPregnancy is thought to last around five years, among the longest of any animal. Studies of growth rings in their scales suggest coelacanths may not mature until about 55 years old and can live for around 100 years.",
+    "remarkable": "Coelacanths belong to a lineage that is more closely related to four-legged animals, including humans, than to most other fish. Their fleshy fins move in the same alternating pattern that our ancestors may have used when they first walked onto land.",
+    "outlook": "The West Indian Ocean coelacanth is critically endangered. With perhaps a few hundred left around the Comoros, every individual matters. They are caught accidentally by fishers using deep lines, and deep-water trawling and coastal development threaten their habitat.\n\nLocal fishers have been encouraged to release any coelacanths they catch. In the Comoros, protected marine areas and fishing education programmes have helped reduce accidental catches, and divers and submersibles now monitor the caves where coelacanths shelter.",
+    "people": "In 1938, museum curator Marjorie Courtenay-Latimer spotted a strange blue fish in a fisherman's catch near East London, South Africa. Ichthyologist J.L.B. Smith identified it as a coelacanth and named it after her. A second one was not found until 1952, in the Comoros, where local fishers had known the fish for generations. The coelacanth appears on Comorian banknotes and stamps.\n\nIn the Comoros, where coelacanths were known to local fishers as 'gombessa', they were occasionally caught on hand lines but were not prized as food because their flesh is oily and tastes bad. After 1952, scientists and collectors offered rewards for specimens, leading to many being caught.\n\nToday, education programmes encourage fishers to avoid deep fishing in coelacanth habitat and to release any accidentally caught fish.",
+    "relatives": "There are two living coelacanths: this species and the Indonesian coelacanth, discovered in 1997 when a scientist on honeymoon spotted one in a fish market in Sulawesi.\n\nCoelacanths are lobe-finned fish, related to lungfish, and both are closer to land vertebrates than to ray-finned fish such as salmon or tuna. Fossil coelacanths date back about 400 million years.",
+    "didYouKnow": "A female coelacanth may be pregnant for about five years, one of the longest pregnancies of any animal.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to ~2 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~90 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Around 100 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish, squid"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why was finding a living coelacanth in 1938 so surprising?",
+        "choices": [
+          "It was thought extinct for 66 million years",
+          "It was a new colour",
+          "It was found in a river",
+          "It could fly"
+        ],
+        "explanation": "It was known only from fossils."
+      },
+      {
+        "prompt": "How do coelacanths have babies?",
+        "choices": [
+          "They give birth to live young",
+          "They lay eggs on rocks",
+          "They build nests",
+          "The father carries them"
+        ],
+        "explanation": "Eggs develop inside the mother, and pups are born fully formed."
+      },
+      {
+        "prompt": "What are coelacanths more closely related to than most fish?",
+        "choices": [
+          "Four-legged animals, including humans",
+          "Sharks",
+          "Jellyfish",
+          "Octopuses"
+        ],
+        "explanation": "They are lobe-finned fish, close to the ancestors of land animals."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect marine life and coastal habitats in East Africa and beyond."
+      }
+    ]
+  },
+  {
+    "id": "greenland-shark",
+    "name": "Greenland Shark",
+    "scientificName": "Somniosus microcephalus",
+    "wikipediaTitle": "Greenland shark",
+    "group": "fish",
+    "regions": [
+      "arctic",
+      "naEast",
+      "europe",
+      "openOcean"
+    ],
+    "range": "Cold, deep waters of the North Atlantic and Arctic, including the Gulf of St. Lawrence",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 68.0,
+      "longitude": -55.0
+    },
+    "mapSpan": 35,
+    "tagline": "A shark that may be older than the United States",
+    "lede": "Some Greenland sharks swimming today were probably born before the United States existed. These slow, ghostly giants of the Arctic are the longest-lived vertebrates known, possibly reaching 400 years or more.",
+    "home": "Greenland sharks live in the cold waters of the North Atlantic and Arctic Oceans, around Greenland, Iceland, Norway and northern Canada.\n\nThey are usually found deep, often hundreds of metres down, though in winter they may come close to the surface. They also visit the deep channels of the Gulf of St. Lawrence.",
+    "anatomy": "Greenland sharks are among the largest sharks, typically 4 to 5 metres long and possibly larger. They are thick-bodied and grey-brown, with small fins and a short, rounded snout. Their flesh contains high levels of a chemical called TMAO, which protects their proteins in the cold and deep, but makes the raw meat toxic to people.\n\nMany have tiny parasitic crustaceans attached to their eyes, which can damage their vision. Greenland sharks have small eyes, and many have a parasitic copepod attached to their eyes, which may impair their vision. They have a strong sense of smell, which helps them find food in the dark.\n\nTheir skin is covered in small, tooth-like scales that reduce drag. Their teeth are pointed in the upper jaw and blade-like in the lower jaw, useful for gripping and cutting chunks from large prey.",
+    "life": "Greenland sharks are some of the slowest-swimming fish recorded, cruising at around 1 km/h. Yet their stomachs have contained seals, fish, squid and even parts of polar bears and reindeer, suggesting they ambush sleeping seals or scavenge carcasses. They live in near-freezing water, where everything happens slowly, including their growth, which may be around 1 centimetre a year.\n\nGreenland sharks spend most of their time in deep, cold water, but they sometimes rise to the surface, especially in winter. They are slow swimmers but can make sudden movements to capture prey. Their diet includes fish such as cod and halibut, and they also scavenge carcasses of whales, seals and other animals. They are thought to be largely solitary.",
+    "family": "Very little is known about Greenland shark reproduction. Females give birth to live young after the eggs hatch inside them, and pups are thought to be around 40 centimetres long at birth.\n\nBased on growth rates, females may not reach maturity until they are around 150 years old, one of the latest ages of maturity for any animal.",
+    "remarkable": "In 2016, scientists estimated the ages of Greenland sharks using radiocarbon dating of the lenses in their eyes, which form before birth.\n\nThe largest, about 5 metres long, was estimated to be around 390 years old, with a wide range of uncertainty. That makes them the longest-lived animals with backbones known.",
+    "outlook": "Greenland sharks are listed as vulnerable. Because they grow and mature so slowly, they cannot recover quickly from losses. Many are caught as bycatch in fisheries for halibut and shrimp. In the past, they were hunted heavily for their liver oil, used for lamps and machinery.\n\nScientists tag Greenland sharks with satellite trackers to learn where they travel. Some have been followed for long journeys between Greenland and Canada. Better data could help fisheries avoid accidentally catching these ancient animals.",
+    "people": "In Iceland, Greenland shark meat is cured by fermenting and drying it for months to remove its toxins, producing hákarl, a famously strong-smelling traditional food. Inuit stories tell of the shark's origin from the urine-soaked cloth of a sea goddess's hair.\n\nScientists now study Greenland sharks to understand how they live so long, which could shed light on ageing.",
+    "relatives": "The Greenland shark belongs to the sleeper sharks, family Somniosidae, named for their slow movements.\n\nIts relatives include the Pacific sleeper shark, which is similar in size, and the southern sleeper shark. Sleeper sharks are part of a larger group of dogfish sharks. Some deep-sea relatives glow in the dark.",
+    "didYouKnow": "Scientists estimate the age of Greenland sharks by carbon dating proteins in the lenses of their eyes.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "4–5 m, maybe more"
+      },
+      {
+        "label": "Speed",
+        "value": "About 1 km/h cruising"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Possibly 400 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish, seals, carrion"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How long can Greenland sharks live?",
+        "choices": [
+          "Possibly around 400 years",
+          "About 20 years",
+          "About 50 years",
+          "Only 5 years"
+        ],
+        "explanation": "They are the longest-lived vertebrates known."
+      },
+      {
+        "prompt": "How did scientists estimate their age?",
+        "choices": [
+          "By radiocarbon dating the lenses of their eyes",
+          "By counting their teeth",
+          "By measuring their fins",
+          "By tagging them at birth"
+        ],
+        "explanation": "Eye lens proteins form before birth and don't change."
+      },
+      {
+        "prompt": "At about what age might females first breed?",
+        "choices": [
+          "Around 150 years",
+          "Around 5 years",
+          "Around 1 year",
+          "Around 20 years"
+        ],
+        "explanation": "Their growth is incredibly slow."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to protect sharks and rays worldwide through science and advocacy."
+      }
+    ]
+  },
+  {
+    "id": "blue-dragon",
+    "name": "Blue Dragon",
+    "scientificName": "Glaucus atlanticus",
+    "wikipediaTitle": "Glaucus atlanticus",
+    "group": "marineInvertebrate",
+    "regions": [
+      "openOcean",
+      "oceania"
+    ],
+    "range": "Warm open oceans worldwide, floating at the surface",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -28.0,
+      "longitude": 154.0
+    },
+    "mapSpan": 60,
+    "tagline": "A tiny sea slug that steals stings",
+    "lede": "The blue dragon is a sea slug no longer than your thumb, coloured electric blue and silver, floating upside-down on the ocean surface. It hunts venomous jellyfish like the Portuguese man o' war, and then reuses their stinging cells as its own weapons.",
+    "home": "Blue dragons live on the surface of warm and temperate oceans around the world, drifting with winds and currents. They spend their lives floating far from land, but storms sometimes wash them ashore in large numbers, on beaches in Australia, South Africa, Europe and the Americas.",
+    "anatomy": "A blue dragon is about 3 centimetres long, with a flattened body and six arm-like appendages branching into finger-like tips called cerata. It floats upside-down, held at the surface by a bubble of air in its stomach.\n\nIts blue underside faces up, blending with the water when seen from above, while its silvery-grey back faces down, blending with the bright surface when seen from below, a camouflage called countershading. The cerata on a blue dragon's arms are finger-like projections that contain branches of its digestive system.\n\nThe stinging cells it collects travel through its gut and end up in sacs at the tips of the cerata, where they can be fired at attackers. Blue dragons have a radula, a toothed tongue-like organ, and sharp jaws to cut through the tissue of their prey.",
+    "life": "Blue dragons feed on floating creatures, especially the Portuguese man o' war and other blue drifters like by-the-wind sailors. They are immune to their prey's venom.\n\nAs they eat, they collect the prey's unfired stinging cells, called nematocysts, and store them in the tips of their cerata, concentrating them so that a blue dragon's sting can be more painful than the man o' war's. Blue dragons drift with ocean currents, and large numbers can gather together when winds push them along with their prey.\n\nThey feed by biting into the bodies of floating cnidarians such as the Portuguese man o' war and the blue button. They are often found in 'blue fleets', groups of floating animals that includes their prey, the by-the-wind sailor and the violet sea snail.",
+    "family": "Blue dragons are hermaphrodites: each has both male and female reproductive organs. When two meet, they mate and both lay eggs. They release strings of eggs that float, or attach them to floating debris or the remains of their prey. The larvae drift in the plankton before growing into tiny dragons.\n\nA single blue dragon can lay many strings of eggs during its life, and because each animal can lay eggs, populations can grow quickly when food is plentiful. Scientists still know little about how long blue dragons live or how they find mates in the vast open ocean, but the blue fleets that gather in certain winds may help bring them together.",
+    "remarkable": "By stealing and storing stinging cells from venomous prey, the blue dragon turns its food into its defence. Its upside-down life on the surface, buoyed by a swallowed air bubble, is unusual among sea slugs, most of which crawl on the seafloor.",
+    "outlook": "Blue dragons have not been assessed by the IUCN and are widespread across the world's oceans.\n\nBecause they live at the very surface, they could be affected by ocean pollution, including oil and plastics, and by changes to ocean currents. Little is known about their populations.",
+    "people": "When blue dragons wash up on beaches, they can sting people who pick them up, and lifeguards in Australia and elsewhere warn swimmers to look but not touch. Their striking colours have made them internet favourites, and photographs of them often go viral after storms bring them ashore.",
+    "relatives": "Blue dragons are nudibranchs, a large group of soft-bodied sea slugs known for their bright colours. Many nudibranchs also steal stinging cells from the jellyfish-like animals they eat.\n\nA closely related species, Glaucus marginatus, was found in 2014 to actually be several separate species. Sea slugs are molluscs, related to snails, which have lost their shells.",
+    "didYouKnow": "A blue dragon floats upside-down at the ocean surface, kept up by an air bubble in its stomach.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 3 cm"
+      },
+      {
+        "label": "Floats",
+        "value": "Upside-down"
+      },
+      {
+        "label": "Sting",
+        "value": "Borrowed from prey"
+      },
+      {
+        "label": "Diet",
+        "value": "Portuguese man o' war"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the blue dragon get its sting?",
+        "choices": [
+          "It stores stinging cells from the jellyfish-like animals it eats",
+          "It makes its own venom",
+          "It has sharp spines",
+          "It doesn't sting"
+        ],
+        "explanation": "It steals unfired stinging cells from prey like the man o' war."
+      },
+      {
+        "prompt": "How does a blue dragon stay afloat?",
+        "choices": [
+          "A bubble of air in its stomach",
+          "Floating on seaweed",
+          "Swimming constantly",
+          "Clinging to jellyfish"
+        ],
+        "explanation": "A swallowed air bubble keeps it at the surface."
+      },
+      {
+        "prompt": "What kind of animal is a blue dragon?",
+        "choices": [
+          "A sea slug",
+          "A fish",
+          "A jellyfish",
+          "A crab"
+        ],
+        "explanation": "It is a nudibranch, a soft-bodied sea slug."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect ocean life and reduce plastic pollution."
+      }
+    ]
+  },
+  {
+    "id": "vampire-squid",
+    "name": "Vampire Squid",
+    "scientificName": "Vampyroteuthis infernalis",
+    "wikipediaTitle": "Vampire squid",
+    "group": "marineInvertebrate",
+    "regions": [
+      "openOcean"
+    ],
+    "range": "Deep, low-oxygen waters of tropical and temperate oceans",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 36.6,
+      "longitude": -122.3
+    },
+    "mapSpan": 50,
+    "tagline": "The gentle 'vampire' of the deep",
+    "lede": "Its scientific name means 'vampire squid from hell', but this small deep-sea animal is no bloodsucker. The vampire squid drifts in the dark, eating 'marine snow', the flakes of dead material that fall from above, and it turns itself inside out when threatened.",
+    "home": "Vampire squid live in the deep ocean, typically 600 to 1,200 metres down, in a layer of water with very little oxygen called the oxygen minimum zone.\n\nFew predators can survive there. They are found in tropical and temperate oceans worldwide, including off California, where researchers have studied them closely.",
+    "anatomy": "A vampire squid is about 30 centimetres long, with a soft, dark reddish-black body, large blue or red eyes, and eight arms connected by a web of skin, like a cloak. Rows of soft spines line the arms. It has two long retractable filaments for catching food, and its body is covered in light-producing organs called photophores.\n\nIts blood is especially good at absorbing oxygen, letting it survive where most animals would suffocate. The vampire squid's eyes are huge relative to its body, among the largest of any animal for its size, helping it detect faint light in the deep sea.\n\nIt has photophores all over its body that can produce flashes of light, and light organs at the tips of its arms. Its skin can change colour, from dark red to black. The webbing between its arms makes it look like it is wearing a cloak.",
+    "life": "Unlike nearly all other cephalopods, the vampire squid is not a hunter. It drifts with very little effort and uses its long filaments to collect marine snow, particles of dead plankton, droppings and other debris. It wraps these in mucus from its arms and eats the balls.\n\nIts slow metabolism suits its food-poor, oxygen-poor home. Vampire squid move slowly, using fins on the sides of their bodies to swim, and they can drift with very little energy. When threatened, they can swim quickly with jet propulsion for short distances. They spend most of their time in the oxygen minimum zone, where few predators can reach them. Their slow metabolism helps them survive on the limited food that falls from above.",
+    "family": "Little is known about vampire squid reproduction. Females appear to spawn many times over their lives rather than once, which is unusual among cephalopods; most squid and octopuses breed once and die.\n\nEggs are thought to drift in the water, and hatchlings look like tiny adults with extra fins that are lost as they grow.",
+    "remarkable": "When threatened, the vampire squid pulls its webbed arms up over its body, exposing the spiny undersides, in a posture called 'pineapple'. Instead of ink, it can release a cloud of glowing mucus that lasts for minutes, confusing predators while it slips away.",
+    "outlook": "Vampire squid are considered least concern and are widespread in the deep ocean. Because their habitat is so remote, they face few direct threats, though deep-sea mining and changes in ocean oxygen and temperature could affect them in the future.\n\nResearchers are studying how low-oxygen zones in the ocean are changing as the climate warms. Because the vampire squid is adapted to these zones, it could help scientists understand how deep-sea life copes with changes in oxygen.",
+    "people": "The vampire squid was first described in 1903 by German biologist Carl Chun, who thought it was an octopus. For decades it was known only from damaged specimens in nets.\n\nSince the 1990s, remotely operated vehicles, especially those of the Monterey Bay Aquarium Research Institute, have filmed living vampire squid, revealing their surprising lifestyle.",
+    "relatives": "The vampire squid is neither a squid nor an octopus. It is the only living member of its own order, Vampyromorphida, a lineage that sits between the two.\n\nIts ancestors date back over 160 million years, and its relatives once included many shallow-water species. It is sometimes described as a living fossil, having survived by moving into deep water where few competitors live.",
+    "didYouKnow": "Instead of squirting ink, a vampire squid can release a cloud of glowing mucus to confuse predators.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 30 cm"
+      },
+      {
+        "label": "Depth",
+        "value": "600–1,200 m"
+      },
+      {
+        "label": "Defence",
+        "value": "Glowing mucus"
+      },
+      {
+        "label": "Diet",
+        "value": "Marine snow"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the vampire squid eat?",
+        "choices": [
+          "Marine snow, falling flakes of dead material",
+          "Blood",
+          "Fish it hunts",
+          "Seaweed"
+        ],
+        "explanation": "It collects falling debris with long filaments."
+      },
+      {
+        "prompt": "What can it release instead of ink?",
+        "choices": [
+          "A cloud of glowing mucus",
+          "Poison darts",
+          "Bubbles",
+          "Sand"
+        ],
+        "explanation": "The glowing mucus can confuse predators for minutes."
+      },
+      {
+        "prompt": "Why do few predators find vampire squid?",
+        "choices": [
+          "It lives where there is very little oxygen",
+          "It lives in rivers",
+          "It is invisible",
+          "It's too big"
+        ],
+        "explanation": "It lives in the oxygen minimum zone of the deep ocean."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect ocean habitats, including the deep sea."
+      }
+    ]
+  },
+  {
+    "id": "atlantic-horseshoe-crab",
+    "name": "Atlantic Horseshoe Crab",
+    "scientificName": "Limulus polyphemus",
+    "wikipediaTitle": "Atlantic horseshoe crab",
+    "group": "marineInvertebrate",
+    "regions": [
+      "naEast",
+      "centralAmerica"
+    ],
+    "range": "Atlantic coast from Maine to the Gulf of Mexico and the Yucatán",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 39.0,
+      "longitude": -75.1
+    },
+    "mapSpan": 22,
+    "tagline": "A living fossil with blue blood that keeps us safe",
+    "lede": "Horseshoe crabs have crawled onto beaches to spawn for more than 400 million years, long before dinosaurs. Today, their bright blue blood is used to test every injectable medicine and vaccine for dangerous bacteria, so you have probably been protected by one.",
+    "home": "Atlantic horseshoe crabs live along the Atlantic coast of North America, from Maine to the Gulf of Mexico and the Yucatán Peninsula.\n\nThey spend most of the year on the sea floor in bays and coastal waters, and each spring and early summer they come ashore to spawn. Delaware Bay hosts the largest gathering in the world.",
+    "anatomy": "Despite the name, horseshoe crabs are not crabs; they are more closely related to spiders and scorpions. They have a smooth, horseshoe-shaped shell, a long, pointed tail called a telson, used to steer and flip over, and ten legs underneath. They have ten eyes, including two large compound eyes on top of the shell, and light sensors on their tail.\n\nTheir blood is blue because it contains copper-based hemocyanin. A horseshoe crab's shell is divided into two main parts: the front part, which covers the head and legs, and the back part, which covers the gills.\n\nIts gills, called book gills, are arranged like the pages of a book and can be used to swim. It has five pairs of walking legs and a pair of small pincers near the mouth for handling food. Its tail is not used for stinging but for steering and flipping over.",
+    "life": "Horseshoe crabs feed on clams, worms and other small animals on the seafloor, crushing food with the bristly bases of their legs, since they have no jaws. Young horseshoe crabs live in shallow water near beaches, molting many times as they grow, and move to deeper water as adults. They can live for 20 years or more.\n\nAtlantic horseshoe crabs spend most of their lives on the seafloor, burrowing into sand and mud in search of food. Young horseshoe crabs live in shallow, protected waters and gradually move deeper as they grow. Adults migrate to beaches to spawn, often returning to the same areas year after year. They can tolerate a wide range of temperatures and salinities.",
+    "family": "On high tides around new and full moons in late spring, horseshoe crabs crowd onto beaches.\n\nEach female digs nests in the sand and lays clusters of tiny green eggs, about 4,000 at a time and up to 80,000 or more in a season, while males cling to her and fertilise them. The eggs hatch in a few weeks, and the young take about ten years to mature.",
+    "remarkable": "Horseshoe crab blood contains cells that clot in the presence of bacterial toxins. A test made from it, called LAL, is used to check vaccines, injections and medical implants for contamination. Crabs are caught, partly drained of blood and released, though some die afterwards.",
+    "outlook": "The Atlantic horseshoe crab is vulnerable. It has been overharvested for bait and fertiliser and for the medical industry, and beaches where it spawns are being lost to coastal development and erosion.\n\nIts eggs are vital food for migrating shorebirds such as the red knot, which has declined as crab numbers fell. A synthetic alternative to LAL is now available and spreading.",
+    "people": "In the 1800s and early 1900s, millions of horseshoe crabs were harvested and ground into fertiliser. Today, volunteers count spawning crabs on Delaware Bay beaches and 'Just flip 'em', turning over crabs stuck on their backs.\n\nScientists studying the horseshoe crab's eyes won a Nobel Prize in 1967 for discoveries about how vision works.",
+    "relatives": "There are four living horseshoe crab species: the Atlantic horseshoe crab and three species in Asia. They are the last survivors of a group that dates back more than 445 million years.\n\nHorseshoe crabs are chelicerates, the group that includes spiders, scorpions, ticks and mites, and their closest living relatives may be arachnids.",
+    "didYouKnow": "Horseshoe crab blood is blue and is used to test vaccines and injectable medicines for dangerous bacterial toxins.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to ~60 cm with tail"
+      },
+      {
+        "label": "Eyes",
+        "value": "10"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Clams, worms"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What are horseshoe crabs most closely related to?",
+        "choices": [
+          "Spiders and scorpions",
+          "Crabs and lobsters",
+          "Fish",
+          "Turtles"
+        ],
+        "explanation": "They are chelicerates, like spiders and scorpions."
+      },
+      {
+        "prompt": "Why is horseshoe crab blood valuable to medicine?",
+        "choices": [
+          "It detects bacterial toxins in vaccines and injections",
+          "It cures diseases",
+          "It is used to make antibiotics",
+          "It stops bleeding"
+        ],
+        "explanation": "The LAL test clots in the presence of bacterial toxins."
+      },
+      {
+        "prompt": "Which migrating bird depends on horseshoe crab eggs?",
+        "choices": [
+          "The red knot",
+          "The bald eagle",
+          "The snowy owl",
+          "The common loon"
+        ],
+        "explanation": "Red knots refuel on crab eggs during migration."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Ecological Research & Development Group",
+        "url": "https://www.horseshoecrab.org",
+        "blurb": "Works to conserve the world's four horseshoe crab species."
+      }
+    ]
+  },
+  {
+    "id": "coconut-crab",
+    "name": "Coconut Crab",
+    "scientificName": "Birgus latro",
+    "wikipediaTitle": "Coconut crab",
+    "group": "marineInvertebrate",
+    "regions": [
+      "oceania",
+      "asia",
+      "africa"
+    ],
+    "range": "Tropical islands of the Indian and Pacific Oceans, such as Christmas Island",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -10.5,
+      "longitude": 105.6
+    },
+    "mapSpan": 60,
+    "tagline": "The giant crab that climbs trees",
+    "lede": "The coconut crab is the largest land-living arthropod in the world, with a leg span of up to a metre. It climbs palm trees, cracks coconuts with its claws, and has one of the strongest pinches of any animal.",
+    "home": "Coconut crabs live on tropical islands across the Indian and Pacific Oceans, from Zanzibar to the Pacific islands.\n\nThey are most common on remote islands with few people, such as Christmas Island and parts of the Cook Islands and Tuamotus. They live in burrows and rock crevices near the coast and in forests.",
+    "anatomy": "Coconut crabs can weigh over 4 kilograms. Their bodies come in a range of colours, from orange-red to purplish-blue. Their huge front claws are powerful enough to crack open coconuts; a study measured a pinching force of over 3,000 newtons, among the strongest of any animal.\n\nAdults breathe air using special branchiostegal lungs, and they would drown if kept underwater for long. They have an excellent sense of smell. Coconut crabs have a hard exoskeleton, with a large, powerful pair of claws.\n\nTheir abdomen is soft, unlike true crabs, but it is protected by being tucked under the body. They breathe through lungs that are adapted for air, and they cannot survive long underwater. They have a keen sense of smell, which helps them find food from far away.",
+    "life": "Coconut crabs are mostly active at night. They eat fruit, nuts, seeds, the pith of fallen trees, and carrion, as well as other crabs and occasionally small animals. They can climb trees and open coconuts by tearing off the husk and hammering at the shell. They often hoard food in their burrows and can live for 60 years or more.\n\nCoconut crabs are mostly nocturnal, hiding in burrows or crevices during the day to avoid heat and predators. They can climb trees, including coconut palms, and often drop back to the ground from high branches. They are scavengers and will eat almost anything, including fruit, nuts, carrion and other crabs. They often bury food in their burrows and return later to eat it.",
+    "family": "Coconut crabs mate on land, and the female carries her fertilised eggs under her abdomen for weeks. She then goes to the shore and releases them into the sea at high tide, where they hatch into tiny larvae that drift in the ocean for about a month.\n\nThe young then settle on the shore and, like hermit crabs, live in snail shells for protection before growing a hard shell of their own and moving inland.",
+    "remarkable": "Young coconut crabs start life like hermit crabs, using borrowed shells, but adults outgrow this and develop their own tough armour. Some scientists have suggested coconut crabs may have scavenged the remains of the aviator Amelia Earhart on Nikumaroro Island, though there is no proof.",
+    "outlook": "Coconut crabs are listed as vulnerable. They are hunted for food on many islands, and their large size makes them easy targets. Because they grow slowly and take years to mature, populations recover poorly.\n\nSome islands now limit harvest or protect breeding areas. On some islands, such as parts of Vanuatu and the Cook Islands, communities have set aside areas where coconut crabs cannot be harvested, and these areas help larger crabs survive and breed.",
+    "people": "Coconut crabs are considered a delicacy on some Pacific islands, sometimes eaten for celebrations. They are also called robber crabs, for their habit of stealing shiny objects such as pots and silverware from houses and tents.\n\nOn Christmas Island, coconut crabs share the island with the famous migrating red crabs, and both are protected in the national park.",
+    "relatives": "The coconut crab is a giant relative of hermit crabs and belongs to the same family as land hermit crabs, Coenobitidae. Its ancestors lived in the sea and gradually adapted to life on land.\n\nDespite its name, it is not a true crab; hermit crabs and coconut crabs belong to a separate group that evolved a crab-like shape independently, a process called carcinisation.",
+    "didYouKnow": "Coconut crabs are nicknamed 'robber crabs' because they steal shiny objects like pots and cutlery.",
+    "facts": [
+      {
+        "label": "Leg span",
+        "value": "Up to ~1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to ~4 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "60+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Coconuts, fruit, carrion"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What record does the coconut crab hold?",
+        "choices": [
+          "Largest land-living arthropod",
+          "Fastest crab",
+          "Deepest-diving crab",
+          "Smallest crab"
+        ],
+        "explanation": "With a leg span up to about a metre, it's the biggest land arthropod."
+      },
+      {
+        "prompt": "How do young coconut crabs protect themselves?",
+        "choices": [
+          "By living in borrowed snail shells",
+          "By burrowing deep in sand",
+          "By hiding in coconuts",
+          "By staying in the sea"
+        ],
+        "explanation": "Like hermit crabs, young ones use shells for protection."
+      },
+      {
+        "prompt": "Why are they called 'robber crabs'?",
+        "choices": [
+          "They steal shiny objects",
+          "They raid bird nests",
+          "They take other crabs' shells",
+          "They steal coconuts from monkeys"
+        ],
+        "explanation": "They're known for carrying off pots and silverware."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Island Conservation",
+        "url": "https://www.islandconservation.org",
+        "blurb": "Restores island ecosystems by removing invasive species."
+      }
+    ]
+  },
+  {
+    "id": "atlas-moth",
+    "name": "Atlas Moth",
+    "scientificName": "Attacus atlas",
+    "wikipediaTitle": "Atlas moth",
+    "group": "insect",
+    "regions": [
+      "asia"
+    ],
+    "range": "Tropical and subtropical forests of South and Southeast Asia",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 3.0,
+      "longitude": 101.5
+    },
+    "mapSpan": 30,
+    "tagline": "A moth with snake heads on its wings",
+    "lede": "The atlas moth is one of the largest moths on Earth, with wings as big as a dinner plate. The tips of its forewings look uncannily like snake heads, and like the luna moth, the adult never eats a single meal.",
+    "home": "Atlas moths live in tropical and subtropical forests across South and Southeast Asia, from India and Sri Lanka to southern China, Malaysia and Indonesia. They are most common in humid lowland forests but can also be found in gardens and farmland near forest.",
+    "anatomy": "Atlas moths have a wingspan of up to around 25 centimetres and one of the largest wing surface areas of any insect. Their wings are reddish-brown with triangular, see-through 'windows' outlined in black, and intricate patterns of white, pink, yellow and purple. The curved tips of the forewings resemble the heads of snakes, complete with an 'eye'.\n\nMales have large, feathery antennae, while females are larger with heavier bodies. The atlas moth's wings are covered in tiny scales, like those of butterflies, which create its colours and patterns.\n\nIts body is large and furry, which helps it keep warm. Its forewing tips are curved and patterned to look like snake heads, and the translucent windows in its wings may help confuse predators. Its antennae are large and feathery in males.",
+    "life": "Adult atlas moths have no working mouthparts, so they can't eat or drink. They live for only about one to two weeks, surviving on fat stored as caterpillars. During that time, they barely move by day, saving energy. Females release pheromones at night, and males can detect them from kilometres away with their feathery antennae.\n\nAtlas moths are mostly active at night and spend the day resting on tree trunks or leaves, where their colours and patterns help them blend in. They are weak fliers and spend most of their short adult lives resting to save energy. Males fly at night in search of females, guided by scent. After mating and egg-laying, adults die within a few days.",
+    "family": "After mating, a female lays around 100 to 200 eggs on the leaves of host plants, such as cinnamon, citrus, guava and other trees. The caterpillars are pale green with a powdery white coating and fleshy spines, and grow to over 10 centimetres long. When disturbed, they can spray a bad-tasting liquid.\n\nAfter several weeks of eating, they spin a silk cocoon wrapped in a leaf and emerge as adults about a month later. Atlas moth caterpillars molt several times as they grow and become covered in a white, waxy powder that may help protect them from predators and moisture.\n\nThey eat a wide range of plants, which helps the species survive in gardens and farmland. The caterpillar's cocoon is tough and papery, wrapped in leaves, and the adult escapes through a one-way opening at one end. Females often stay near the cocoon they emerged from, waiting for males to find them.",
+    "remarkable": "When threatened, an atlas moth drops to the ground and slowly flaps its wings, making the snake-head tips move as if a cobra were rearing up. In Cantonese, its name means 'snake's head moth'.",
+    "outlook": "The atlas moth has not been assessed by the IUCN and is still common in many areas.\n\nForest loss reduces its habitat, but it can survive in some modified landscapes. It is widely bred by butterfly houses and hobbyists around the world.",
+    "people": "In parts of India, atlas moths have been raised for their silk, which is brown and woolly, though less fine than that of the domestic silkworm.\n\nTheir empty cocoons have been used as purses in Taiwan. The atlas moth is a star of butterfly houses and insect zoos, where visitors can see adults resting on branches.",
+    "relatives": "The atlas moth belongs to the giant silk moths, family Saturniidae, the same family as the luna moth, the cecropia moth and the Hercules moth of Australia and New Guinea, which has an even larger wing area. Its name may come from the Titan Atlas of Greek mythology, or from the map-like patterns on its wings.",
+    "didYouKnow": "Adult atlas moths have no mouths: they live for only one to two weeks on energy stored as caterpillars.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "Up to ~25 cm"
+      },
+      {
+        "label": "Adult life",
+        "value": "1–2 weeks"
+      },
+      {
+        "label": "Eggs",
+        "value": "100–200"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves (caterpillars only)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do the tips of the atlas moth's wings look like?",
+        "choices": [
+          "Snake heads",
+          "Eagle wings",
+          "Flowers",
+          "Leaves"
+        ],
+        "explanation": "The curved tips mimic rearing snakes."
+      },
+      {
+        "prompt": "How long does an adult atlas moth live?",
+        "choices": [
+          "About one to two weeks",
+          "About a year",
+          "One day",
+          "Three months"
+        ],
+        "explanation": "Without mouths, adults live only on stored energy."
+      },
+      {
+        "prompt": "What family does the atlas moth belong to?",
+        "choices": [
+          "The giant silk moths",
+          "The butterflies",
+          "The beetles",
+          "The bees"
+        ],
+        "explanation": "It's a saturniid, like the luna moth."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect tropical forests across South and Southeast Asia."
+      }
+    ]
+  },
+  {
+    "id": "orchid-mantis",
+    "name": "Orchid Mantis",
+    "scientificName": "Hymenopus coronatus",
+    "wikipediaTitle": "Hymenopus coronatus",
+    "group": "insect",
+    "regions": [
+      "asia"
+    ],
+    "range": "Rainforests of Southeast Asia, including Malaysia, Indonesia and Thailand",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 4.5,
+      "longitude": 114.5
+    },
+    "mapSpan": 25,
+    "tagline": "A predator dressed as a flower",
+    "lede": "The orchid mantis looks like a delicate pink-and-white flower, with petal-shaped legs. But it's not hiding among orchids; it's posing as a flower itself, and insects that come looking for nectar become its prey.",
+    "home": "Orchid mantises live in the warm, humid rainforests of Southeast Asia, in countries such as Malaysia, Indonesia, Thailand and Vietnam. They perch on leaves and flowering plants, often in bright, open spots where pollinating insects are active.",
+    "anatomy": "Female orchid mantises grow to around 6 to 7 centimetres long, while males are much smaller, under 3 centimetres. Their bodies are white to pale pink, and their walking legs have wide, flat lobes that look like flower petals. They have large compound eyes and sharp, spiked forelegs for grabbing prey.\n\nYoung nymphs are orange and black, looking like stink bugs or assassin bugs, which may protect them from predators. An orchid mantis has a triangular head with large compound eyes, which give it good vision for detecting movement.\n\nIts forelegs are folded like those of other praying mantises, with spines for gripping prey. Its petal-like legs are flattened and lobed, making it look like a flower. Its colour can range from white to pink, and it can change slightly to match its surroundings.",
+    "life": "Orchid mantises are ambush predators. They sit still on leaves or flowers, swaying gently, waiting for insects such as bees, flies and butterflies to approach. Research has shown that pollinators are actually more attracted to the mantis than to real flowers, so it's not just camouflage but active lure, a type of deception called aggressive mimicry.\n\nOrchid mantises are mostly active during the day, when pollinators are flying. They stay in one place for long periods, waiting for prey to come within reach. When an insect lands near them, they strike with their forelegs in a fraction of a second. They are solitary and can be cannibalistic, especially females, which sometimes eat males after mating.",
+    "family": "After mating, the female lays her eggs in a frothy case called an ootheca, attached to a branch or leaf. The case hardens and protects the eggs, which hatch after about five to six weeks into tiny nymphs.\n\nThey grow by molting several times, gradually changing from orange and black to pink and white, and reach adulthood in a few months. Female orchid mantises are much larger than males and live longer. Males reach adulthood sooner and must find a female quickly, guided partly by scent.\n\nBecause females sometimes eat males, males approach cautiously. Mantis nymphs are hunters from the moment they hatch, eating tiny flies and other insects. Young orchid mantises are highly cannibalistic, so siblings soon spread out across the forest, each looking for a good place to ambush its prey.",
+    "remarkable": "In experiments, orchid mantises attracted more pollinators than the real flowers growing around them, making them one of the few known animals that mimics a flower to lure prey without hiding among flowers. They can change colour slightly, from white to pink, to match their surroundings.",
+    "outlook": "The orchid mantis has not been assessed by the IUCN, and its wild populations are poorly known.\n\nLike many rainforest insects, it is threatened by deforestation for agriculture and logging. Captive breeding by hobbyists has made it a popular pet insect, which reduces the need for wild collection.",
+    "people": "The orchid mantis was described by European scientists in the 1700s, and 19th-century travellers in Southeast Asia wrote of 'flowers' that turned out to be mantises. Today, it is one of the most popular insects in the pet trade and a favourite subject for macro photographers.",
+    "relatives": "Orchid mantises belong to the order Mantodea, with around 2,400 species of praying mantises worldwide. Many mantises use camouflage, mimicking leaves, sticks, bark or flowers.\n\nOther flower mantises live in Africa and Asia, such as the spiny flower mantis and the devil's flower mantis. Mantises are related to cockroaches and termites.",
+    "didYouKnow": "Pollinating insects are more attracted to the orchid mantis than to real orchids.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Females 6–7 cm"
+      },
+      {
+        "label": "Males",
+        "value": "Under 3 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "6–8 months"
+      },
+      {
+        "label": "Diet",
+        "value": "Bees, flies, butterflies"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the orchid mantis mimic?",
+        "choices": [
+          "A flower",
+          "A leaf",
+          "A stick",
+          "A bird dropping"
+        ],
+        "explanation": "Its petal-shaped legs and colours make it look like a flower."
+      },
+      {
+        "prompt": "What do pollinators do when they see an orchid mantis?",
+        "choices": [
+          "Come closer, thinking it's a flower",
+          "Fly away fast",
+          "Ignore it",
+          "Attack it"
+        ],
+        "explanation": "Pollinators are lured in, then caught."
+      },
+      {
+        "prompt": "What do young orchid mantis nymphs look like?",
+        "choices": [
+          "Orange and black bugs",
+          "Tiny pink flowers",
+          "Green leaves",
+          "White spiders"
+        ],
+        "explanation": "Nymphs look like stink bugs or assassin bugs."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests in Southeast Asia and beyond."
+      }
+    ]
+  },
+  {
+    "id": "green-darner",
+    "name": "Common Green Darner",
+    "scientificName": "Anax junius",
+    "wikipediaTitle": "Anax junius",
+    "group": "insect",
+    "regions": [
+      "naEast",
+      "naWest",
+      "centralAmerica"
+    ],
+    "range": "Ponds and wetlands across North America, from southern Canada to Central America",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 43.5,
+      "longitude": -79.5
+    },
+    "mapSpan": 40,
+    "tagline": "A dragonfly that migrates like a monarch",
+    "lede": "The common green darner is one of the biggest and fastest dragonflies in North America. Each autumn, millions of them migrate south, and like monarchs, it takes several generations to complete the round trip.",
+    "home": "Green darners live across North America, from southern Canada to Central America, around ponds, lakes, marshes and slow streams.\n\nIn the north, they arrive in spring from the south, breed through summer, and their offspring head south in autumn. Some populations in the south stay year-round.",
+    "anatomy": "A green darner is about 7 to 8 centimetres long, with a wingspan around 10 centimetres. Its thorax is bright green, and males have a blue abdomen, while females have reddish-brown or purplish abdomens. Huge compound eyes, made of around 30,000 lenses, nearly wrap around its head, giving it almost 360-degree vision.\n\nIts four wings move independently, letting it hover, fly backwards and turn sharply. Green darners have a long, slender abdomen and a robust thorax packed with flight muscles. Their wings are clear and veined, allowing them to fly with great agility. Their legs are spiny and used to catch prey in flight. Their nymphs have a hinged lower jaw called a labium, which can shoot out to grab prey.",
+    "life": "Green darners are fierce predators. Adults catch flying insects such as mosquitoes, flies, moths and even other dragonflies in mid-air, using their spiny legs like a basket. Dragonflies are among the most successful hunters of any animals, catching the majority of prey they chase. Darners can fly at up to around 50 km/h.\n\nGreen darners are often seen patrolling over ponds and fields, flying back and forth in search of prey. They can fly long distances during migration, sometimes in large swarms. They are most active on warm, sunny days. Adults live for a few weeks, during which they feed, mate and lay eggs. Migration is triggered by changes in temperature and day length.",
+    "family": "Pairs often fly in tandem, the male gripping the female behind her head. The female lays eggs by slicing into plant stems below the water surface, often still attached to the male, which guards her. The eggs hatch into aquatic nymphs, which live underwater for months, hunting tadpoles, insect larvae and small fish with an extendable jaw.\n\nFinally, the nymph climbs a stem, splits its skin and emerges as an adult. Green darner nymphs breathe through gills inside their rear ends, drawing water in and out. By forcing the water out quickly, they can shoot forward like a jet to escape predators. Nymphs can take a few months to almost a year to develop, depending on temperature.\n\nWhen they are ready, they climb out of the water, often at night, and split their skin. The new adult pumps fluid into its wings to expand them and takes several hours before it can fly.",
+    "remarkable": "A 2020 study using chemical tracers in wings found that green darners make an annual migration across three generations: one flies south in autumn, one breeds in the south over winter, and one returns north in spring. It was the first time scientists mapped a full insect migration cycle like this outside of butterflies.",
+    "outlook": "Green darners are common and widespread. Like other dragonflies, they depend on clean wetlands and are affected by pollution, pesticides and wetland loss. Their migration means changes anywhere along their route, from Canada to Mexico, can affect them.",
+    "people": "The green darner is the official state insect of Washington. Its name comes from 'darning needle', an old nickname for dragonflies based on folk tales that they would sew shut the lips of children who told lies. Citizen scientists help track dragonfly migration through projects like the Migratory Dragonfly Partnership.",
+    "relatives": "Green darners belong to the darner family, Aeshnidae, which includes some of the largest dragonflies on Earth. Dragonflies and damselflies form the order Odonata.\n\nTheir ancestors include giant griffinflies of over 300 million years ago, such as Meganeuropsis, with wingspans around 70 centimetres, the largest insects that ever lived.",
+    "didYouKnow": "Green darners' huge eyes contain about 30,000 lenses, giving them nearly all-around vision.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "7–8 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "About 10 cm"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to ~50 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Flying insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How many generations does the green darner migration take?",
+        "choices": [
+          "Three",
+          "One",
+          "Ten",
+          "It doesn't migrate"
+        ],
+        "explanation": "One generation goes south, one breeds there, one returns north."
+      },
+      {
+        "prompt": "Where do green darner nymphs live?",
+        "choices": [
+          "Underwater",
+          "In tree bark",
+          "In soil",
+          "Inside flowers"
+        ],
+        "explanation": "Nymphs are aquatic predators for months."
+      },
+      {
+        "prompt": "Where does the name 'darner' come from?",
+        "choices": [
+          "Folk tales of dragonflies sewing lips shut",
+          "Its dark colour",
+          "The sound it makes",
+          "A scientist's name"
+        ],
+        "explanation": "Old stories called dragonflies 'darning needles'."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://www.xerces.org",
+        "blurb": "Runs the Migratory Dragonfly Partnership and protects invertebrates."
+      }
+    ]
+  },
+  {
+    "id": "hercules-beetle",
+    "name": "Hercules Beetle",
+    "scientificName": "Dynastes hercules",
+    "wikipediaTitle": "Dynastes hercules",
+    "group": "insect",
+    "regions": [
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "Rainforests of Central and South America and the Lesser Antilles",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": -84.0
+    },
+    "mapSpan": 35,
+    "tagline": "The longest beetle, with a giant pincer horn",
+    "lede": "Named after the mighty hero of Greek myth, the Hercules beetle is one of the largest beetles in the world. Males wield a huge pincer made of two horns, longer than their bodies, which they use to wrestle rivals.",
+    "home": "Hercules beetles live in rainforests from southern Mexico through Central America to Bolivia and Brazil, and on islands of the Lesser Antilles. Adults are often found on rotting trees and fallen fruit, while larvae live inside decaying wood on the forest floor.",
+    "anatomy": "Male Hercules beetles can reach up to about 17 centimetres long, including their horns, making them among the longest beetles in the world. Males have a long horn from the thorax curving forward over a shorter horn on the head, together forming a pincer.\n\nTheir wing covers can change colour from olive-yellow to black depending on humidity, because of tiny structures that absorb water. Females are smaller and have no horns. Hercules beetles have a hard exoskeleton that protects their bodies.\n\nMales have a large horn on their thorax and a smaller horn on their head, which together form a pincer. Their wing covers, called elytra, protect their delicate flight wings. Their legs are strong and have hooks that help them climb trees and grip branches.",
+    "life": "Adult Hercules beetles feed on rotting fruit and sap. They are mostly active at night. Males use their horns to fight rivals for females, lifting and throwing each other off branches. Despite their size, they can fly. Their horns are strong and flexible, and scientists have studied them to understand how they resist breaking.\n\nAdult Hercules beetles are mostly nocturnal and spend the day hiding under leaves or in leaf litter. At night, they search for food and mates. Males fight by locking horns and trying to flip each other over. Females lay eggs in rotting wood, where larvae will have plenty of food.",
+    "family": "After mating, the female lays her eggs in rotting wood. The larvae, which are large white grubs, live inside decaying logs for one to two years, eating the soft wood and growing to over 11 centimetres long and about 100 grams in weight, much heavier than the adults.\n\nThen they pupate in a chamber in the wood or soil and emerge as adults, which live for only a few months. Hercules beetle larvae go through three stages, called instars, growing larger each time they molt. In the final stage, a larva can be longer than an adult's body and much heavier.\n\nWhen it is ready to pupate, it builds a chamber in the soil or wood, using its own droppings and saliva to strengthen the walls. Males need a larger chamber than females to make space for their growing horns. They emerge as adults after about two months.",
+    "remarkable": "The Hercules beetle's wing covers change from yellowish to black in humid air, thanks to a network of microscopic pores that fill with water and change how light is reflected. Scientists have proposed using this effect to make humidity sensors.",
+    "outlook": "The Hercules beetle has not been assessed by the IUCN. Its larvae depend on large, rotting logs, so deforestation and the removal of dead wood threaten it.\n\nIt is also collected for the pet and display trade, especially in Japan, where large beetles are popular pets.",
+    "people": "Hercules beetles are among the most popular pet insects in Japan, where they are bred in captivity and sold in shops. They are also prized by collectors around the world.\n\nTheir strength has inspired claims that they can carry 850 times their own weight, though this is an exaggeration; they are still extremely strong for their size.",
+    "relatives": "The Hercules beetle is a rhinoceros beetle, part of the scarab beetle family, Scarabaeidae, which also includes dung beetles and June beetles.\n\nIts close relatives include the eastern Hercules beetle of the southeastern United States, a smaller cousin. Beetles are the most diverse group of animals, with around 400,000 known species.",
+    "didYouKnow": "A Hercules beetle's grub can weigh about 100 grams, much more than the adult beetle it becomes.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to ~17 cm with horn"
+      },
+      {
+        "label": "Larva weight",
+        "value": "Up to ~100 g"
+      },
+      {
+        "label": "Adult life",
+        "value": "A few months"
+      },
+      {
+        "label": "Diet",
+        "value": "Rotting fruit, sap"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do male Hercules beetles use their horns for?",
+        "choices": [
+          "Wrestling rivals",
+          "Digging for food",
+          "Climbing trees",
+          "Breathing"
+        ],
+        "explanation": "Males lift and throw rivals off branches."
+      },
+      {
+        "prompt": "Where do Hercules beetle larvae live?",
+        "choices": [
+          "Inside rotting wood",
+          "Underwater",
+          "Inside fruit",
+          "On leaves"
+        ],
+        "explanation": "Grubs eat decaying logs for one to two years."
+      },
+      {
+        "prompt": "What makes their wing covers change colour?",
+        "choices": [
+          "Humidity",
+          "Temperature",
+          "Their mood",
+          "Age"
+        ],
+        "explanation": "Microscopic pores fill with water in humid air."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests across Central and South America."
+      }
+    ]
   }
 ]

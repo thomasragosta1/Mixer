@@ -1,0 +1,62 @@
+{
+  "glass-frog": {
+    "life": "Reticulated glass frogs are territorial. Males defend their calling sites on leaves above streams with short, high-pitched calls, and sometimes wrestle intruders, hanging upside-down from leaves as they grapple. A single male may guard several egg clutches laid by different females on his leaf. Because they depend on streamside vegetation, they are found only where forest and clean water meet.",
+    "anatomy": "Transparency is rare on land because blood, bones and organs usually absorb and scatter light. Glass frogs reduce this by making their skin and muscles very clear and by tucking organs into a compact, reflective sac. Their bones are greenish in some species. Their green backs are not transparent but match the colour of the leaves they rest on, so from above they look like part of the leaf, and from below their see-through bellies let light pass."
+  },
+  "olm": {
+    "life": "Olms spend almost all their time moving slowly through water-filled cracks and pools deep underground. They are very sensitive to light and will move away from it; prolonged exposure can darken their skin. They can detect very small amounts of chemicals in the water and even the Earth's magnetic field, which may help them navigate. Because food is scarce in caves, they eat large meals when they can and store nutrients.",
+    "anatomy": "An olm's pale skin lacks pigment, but it can produce dark coloration if exposed to light for a long time. It has three toes on its front legs and two on its hind legs, which are small compared with its long body. Its lungs are small and used only occasionally; it breathes mainly through its gills and skin. Its eyes are covered with skin, but young olms are born with small eyes that shrink as they grow."
+  },
+  "hellbender": {
+    "life": "Hellbenders are mostly nocturnal, staying under rocks by day and coming out at night to hunt. They can live in the same stretch of stream for many years, defending their favourite shelter rocks from rivals. In the breeding season, males become more active and may fight. Hellbenders are sensitive to changes in water temperature and oxygen, so they are most common in cool, fast streams.",
+    "people": "In the past, many anglers believed hellbenders were poisonous or harmful to fish populations, and killed them when caught on fishing lines. Today, education campaigns explain that they are harmless and important to stream ecosystems. Programmes such as 'Hellbender Rescue' and partnerships between zoos and state agencies raise young hellbenders and release them into streams where populations have declined."
+  },
+  "ocean-sunfish": {
+    "life": "Ocean sunfish spend much of their time in the open ocean, diving to depths of 200 to 600 metres to feed, and sometimes deeper. Tracking studies show they travel long distances, following warm currents and food. They often come to the surface to bask, either to warm up after cold dives or to let birds and fish clean parasites from their skin. They are surprisingly fast swimmers when they need to be.",
+    "anatomy": "A sunfish's skeleton is made mostly of cartilage, which is lighter than bone, and its thick skin is rough, like sandpaper. Its fins are long and stiff, moved by powerful muscles. Its body is flattened side to side, and its clavus acts like a rudder. Sunfish have a small mouth and teeth fused into a beak-like plate, useful for cutting jellyfish and other soft prey."
+  },
+  "leafy-seadragon": {
+    "life": "Leafy seadragons spend most of their time drifting slowly among seaweed and seagrass, usually alone or in pairs. They have small home ranges and may stay in the same area for weeks. They rely on their camouflage to avoid predators and to approach their prey. When disturbed, they move slowly away rather than darting, keeping up their disguise.",
+    "anatomy": "A leafy seadragon's body is covered in bony plates, like armour, under its skin. Its leaf-like appendages grow from these plates and help break up its outline. It has no tail fin and cannot curl its tail to grip things like a seahorse can. Its snout is long and tube-like, ending in a small mouth that sucks up tiny crustaceans."
+  },
+  "coelacanth": {
+    "life": "Coelacanths are mostly solitary but gather in caves during the day, sometimes in groups of a dozen or more. At night, they drift slowly along steep underwater slopes, hunting fish and squid. They seem to have small home ranges, returning to the same caves day after day. Scientists using submersibles have identified individuals by their spot patterns, which change little over time.",
+    "people": "In the Comoros, where coelacanths were known to local fishers as 'gombessa', they were occasionally caught on hand lines but were not prized as food because their flesh is oily and tastes bad. After 1952, scientists and collectors offered rewards for specimens, leading to many being caught. Today, education programmes encourage fishers to avoid deep fishing in coelacanth habitat and to release any accidentally caught fish."
+  },
+  "greenland-shark": {
+    "life": "Greenland sharks spend most of their time in deep, cold water, but they sometimes rise to the surface, especially in winter. They are slow swimmers but can make sudden movements to capture prey. Their diet includes fish such as cod and halibut, and they also scavenge carcasses of whales, seals and other animals. They are thought to be largely solitary.",
+    "anatomy": "Greenland sharks have small eyes, and many have a parasitic copepod attached to their eyes, which may impair their vision. They have a strong sense of smell, which helps them find food in the dark. Their skin is covered in small, tooth-like scales that reduce drag. Their teeth are pointed in the upper jaw and blade-like in the lower jaw, useful for gripping and cutting chunks from large prey."
+  },
+  "blue-dragon": {
+    "life": "Blue dragons drift with ocean currents, and large numbers can gather together when winds push them along with their prey. They feed by biting into the bodies of floating cnidarians such as the Portuguese man o' war and the blue button. They are often found in 'blue fleets', groups of floating animals that includes their prey, the by-the-wind sailor and the violet sea snail.",
+    "anatomy": "The cerata on a blue dragon's arms are finger-like projections that contain branches of its digestive system. The stinging cells it collects travel through its gut and end up in sacs at the tips of the cerata, where they can be fired at attackers. Blue dragons have a radula, a toothed tongue-like organ, and sharp jaws to cut through the tissue of their prey."
+  },
+  "vampire-squid": {
+    "life": "Vampire squid move slowly, using fins on the sides of their bodies to swim, and they can drift with very little energy. When threatened, they can swim quickly with jet propulsion for short distances. They spend most of their time in the oxygen minimum zone, where few predators can reach them. Their slow metabolism helps them survive on the limited food that falls from above.",
+    "anatomy": "The vampire squid's eyes are huge relative to its body, among the largest of any animal for its size, helping it detect faint light in the deep sea. It has photophores all over its body that can produce flashes of light, and light organs at the tips of its arms. Its skin can change colour, from dark red to black. The webbing between its arms makes it look like it is wearing a cloak."
+  },
+  "atlantic-horseshoe-crab": {
+    "life": "Atlantic horseshoe crabs spend most of their lives on the seafloor, burrowing into sand and mud in search of food. Young horseshoe crabs live in shallow, protected waters and gradually move deeper as they grow. Adults migrate to beaches to spawn, often returning to the same areas year after year. They can tolerate a wide range of temperatures and salinities.",
+    "anatomy": "A horseshoe crab's shell is divided into two main parts: the front part, which covers the head and legs, and the back part, which covers the gills. Its gills, called book gills, are arranged like the pages of a book and can be used to swim. It has five pairs of walking legs and a pair of small pincers near the mouth for handling food. Its tail is not used for stinging but for steering and flipping over."
+  },
+  "coconut-crab": {
+    "life": "Coconut crabs are mostly nocturnal, hiding in burrows or crevices during the day to avoid heat and predators. They can climb trees, including coconut palms, and often drop back to the ground from high branches. They are scavengers and will eat almost anything, including fruit, nuts, carrion and other crabs. They often bury food in their burrows and return later to eat it.",
+    "anatomy": "Coconut crabs have a hard exoskeleton, with a large, powerful pair of claws. Their abdomen is soft, unlike true crabs, but it is protected by being tucked under the body. They breathe through lungs that are adapted for air, and they cannot survive long underwater. They have a keen sense of smell, which helps them find food from far away."
+  },
+  "atlas-moth": {
+    "life": "Atlas moths are mostly active at night and spend the day resting on tree trunks or leaves, where their colours and patterns help them blend in. They are weak fliers and spend most of their short adult lives resting to save energy. Males fly at night in search of females, guided by scent. After mating and egg-laying, adults die within a few days.",
+    "anatomy": "The atlas moth's wings are covered in tiny scales, like those of butterflies, which create its colours and patterns. Its body is large and furry, which helps it keep warm. Its forewing tips are curved and patterned to look like snake heads, and the translucent windows in its wings may help confuse predators. Its antennae are large and feathery in males."
+  },
+  "orchid-mantis": {
+    "life": "Orchid mantises are mostly active during the day, when pollinators are flying. They stay in one place for long periods, waiting for prey to come within reach. When an insect lands near them, they strike with their forelegs in a fraction of a second. They are solitary and can be cannibalistic, especially females, which sometimes eat males after mating.",
+    "anatomy": "An orchid mantis has a triangular head with large compound eyes, which give it good vision for detecting movement. Its forelegs are folded like those of other praying mantises, with spines for gripping prey. Its petal-like legs are flattened and lobed, making it look like a flower. Its colour can range from white to pink, and it can change slightly to match its surroundings."
+  },
+  "green-darner": {
+    "life": "Green darners are often seen patrolling over ponds and fields, flying back and forth in search of prey. They can fly long distances during migration, sometimes in large swarms. They are most active on warm, sunny days. Adults live for a few weeks, during which they feed, mate and lay eggs. Migration is triggered by changes in temperature and day length.",
+    "anatomy": "Green darners have a long, slender abdomen and a robust thorax packed with flight muscles. Their wings are clear and veined, allowing them to fly with great agility. Their legs are spiny and used to catch prey in flight. Their nymphs have a hinged lower jaw called a labium, which can shoot out to grab prey."
+  },
+  "hercules-beetle": {
+    "life": "Adult Hercules beetles are mostly nocturnal and spend the day hiding under leaves or in leaf litter. At night, they search for food and mates. Males fight by locking horns and trying to flip each other over. Females lay eggs in rotting wood, where larvae will have plenty of food.",
+    "anatomy": "Hercules beetles have a hard exoskeleton that protects their bodies. Males have a large horn on their thorax and a smaller horn on their head, which together form a pincer. Their wing covers, called elytra, protect their delicate flight wings. Their legs are strong and have hooks that help them climb trees and grip branches."
+  }
+}

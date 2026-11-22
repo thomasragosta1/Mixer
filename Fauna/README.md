@@ -33,7 +33,7 @@ Fauna/
   Store/        AppStore: daily rollover, queue, unlocks, journal, streak, JSON persistence
   Services/     WikiImages (Wikipedia REST → Wikimedia thumbnails, cached), Reminders (notifications)
   Views/        Today (article), Quiz, Journal, Focus, Onboarding, Components (theme, chips, map, scale)
-  Resources/    animals.json (38 animals, ~4-minute articles, 114 questions), assets, privacy manifest
+  Resources/    animals.json (68 animals, ~4-minute articles, 204 questions), assets, privacy manifest
 scripts/        validate_content.py, make_icon.py, merge_longreads.py (+ longreads/: the longer sections)
 ```
 

@@ -1,0 +1,247 @@
+[
+  {
+    "id": "coconut-crab",
+    "name": "Coconut Crab",
+    "scientificName": "Birgus latro",
+    "wikipediaTitle": "Coconut crab",
+    "group": "marineInvertebrate",
+    "regions": ["oceania", "asia", "africa"],
+    "range": "Tropical islands of the Indian and Pacific Oceans, such as Christmas Island",
+    "status": "VU",
+    "coordinate": { "latitude": -10.5, "longitude": 105.6 },
+    "mapSpan": 60,
+    "tagline": "The giant crab that climbs trees",
+    "lede": "The coconut crab is the largest land-living arthropod in the world, with a leg span of up to a metre. It climbs palm trees, cracks coconuts with its claws, and has one of the strongest pinches of any animal.",
+    "home": "Coconut crabs live on tropical islands across the Indian and Pacific Oceans, from Zanzibar to the Pacific islands. They are most common on remote islands with few people, such as Christmas Island and parts of the Cook Islands and Tuamotus. They live in burrows and rock crevices near the coast and in forests.",
+    "anatomy": "Coconut crabs can weigh over 4 kilograms. Their bodies come in a range of colours, from orange-red to purplish-blue. Their huge front claws are powerful enough to crack open coconuts; a study measured a pinching force of over 3,000 newtons, among the strongest of any animal. Adults breathe air using special branchiostegal lungs, and they would drown if kept underwater for long. They have an excellent sense of smell.",
+    "life": "Coconut crabs are mostly active at night. They eat fruit, nuts, seeds, the pith of fallen trees, and carrion, as well as other crabs and occasionally small animals. They can climb trees and open coconuts by tearing off the husk and hammering at the shell. They often hoard food in their burrows and can live for 60 years or more.",
+    "family": "Coconut crabs mate on land, and the female carries her fertilised eggs under her abdomen for weeks. She then goes to the shore and releases them into the sea at high tide, where they hatch into tiny larvae that drift in the ocean for about a month. The young then settle on the shore and, like hermit crabs, live in snail shells for protection before growing a hard shell of their own and moving inland.",
+    "remarkable": "Young coconut crabs start life like hermit crabs, using borrowed shells, but adults outgrow this and develop their own tough armour.\n\nSome scientists have suggested coconut crabs may have scavenged the remains of the aviator Amelia Earhart on Nikumaroro Island, though there is no proof.",
+    "outlook": "Coconut crabs are listed as vulnerable. They are hunted for food on many islands, and their large size makes them easy targets. Because they grow slowly and take years to mature, populations recover poorly. Some islands now limit harvest or protect breeding areas.",
+    "people": "Coconut crabs are considered a delicacy on some Pacific islands, sometimes eaten for celebrations. They are also called robber crabs, for their habit of stealing shiny objects such as pots and silverware from houses and tents. On Christmas Island, coconut crabs share the island with the famous migrating red crabs, and both are protected in the national park.",
+    "relatives": "The coconut crab is a giant relative of hermit crabs and belongs to the same family as land hermit crabs, Coenobitidae. Its ancestors lived in the sea and gradually adapted to life on land. Despite its name, it is not a true crab; hermit crabs and coconut crabs belong to a separate group that evolved a crab-like shape independently, a process called carcinisation.",
+    "didYouKnow": "Coconut crabs are nicknamed 'robber crabs' because they steal shiny objects like pots and cutlery.",
+    "facts": [
+      { "label": "Leg span", "value": "Up to ~1 m" },
+      { "label": "Weight", "value": "Up to ~4 kg" },
+      { "label": "Lifespan", "value": "60+ years" },
+      { "label": "Diet", "value": "Coconuts, fruit, carrion" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What record does the coconut crab hold?",
+        "choices": ["Largest land-living arthropod", "Fastest crab", "Deepest-diving crab", "Smallest crab"],
+        "explanation": "With a leg span up to about a metre, it's the biggest land arthropod."
+      },
+      {
+        "prompt": "How do young coconut crabs protect themselves?",
+        "choices": ["By living in borrowed snail shells", "By burrowing deep in sand", "By hiding in coconuts", "By staying in the sea"],
+        "explanation": "Like hermit crabs, young ones use shells for protection."
+      },
+      {
+        "prompt": "Why are they called 'robber crabs'?",
+        "choices": ["They steal shiny objects", "They raid bird nests", "They take other crabs' shells", "They steal coconuts from monkeys"],
+        "explanation": "They're known for carrying off pots and silverware."
+      }
+    ],
+    "charities": [
+      { "name": "Island Conservation", "url": "https://www.islandconservation.org", "blurb": "Restores island ecosystems by removing invasive species." }
+    ]
+  },
+  {
+    "id": "atlas-moth",
+    "name": "Atlas Moth",
+    "scientificName": "Attacus atlas",
+    "wikipediaTitle": "Atlas moth",
+    "group": "insect",
+    "regions": ["asia"],
+    "range": "Tropical and subtropical forests of South and Southeast Asia",
+    "status": "NE",
+    "coordinate": { "latitude": 3.0, "longitude": 101.5 },
+    "mapSpan": 30,
+    "tagline": "A moth with snake heads on its wings",
+    "lede": "The atlas moth is one of the largest moths on Earth, with wings as big as a dinner plate. The tips of its forewings look uncannily like snake heads, and like the luna moth, the adult never eats a single meal.",
+    "home": "Atlas moths live in tropical and subtropical forests across South and Southeast Asia, from India and Sri Lanka to southern China, Malaysia and Indonesia. They are most common in humid lowland forests but can also be found in gardens and farmland near forest.",
+    "anatomy": "Atlas moths have a wingspan of up to around 25 centimetres and one of the largest wing surface areas of any insect. Their wings are reddish-brown with triangular, see-through 'windows' outlined in black, and intricate patterns of white, pink, yellow and purple. The curved tips of the forewings resemble the heads of snakes, complete with an 'eye'. Males have large, feathery antennae, while females are larger with heavier bodies.",
+    "life": "Adult atlas moths have no working mouthparts, so they can't eat or drink. They live for only about one to two weeks, surviving on fat stored as caterpillars. During that time, they barely move by day, saving energy. Females release pheromones at night, and males can detect them from kilometres away with their feathery antennae.",
+    "family": "After mating, a female lays around 100 to 200 eggs on the leaves of host plants, such as cinnamon, citrus, guava and other trees. The caterpillars are pale green with a powdery white coating and fleshy spines, and grow to over 10 centimetres long. When disturbed, they can spray a bad-tasting liquid. After several weeks of eating, they spin a silk cocoon wrapped in a leaf and emerge as adults about a month later.",
+    "remarkable": "When threatened, an atlas moth drops to the ground and slowly flaps its wings, making the snake-head tips move as if a cobra were rearing up.\n\nIn Cantonese, its name means 'snake's head moth'.",
+    "outlook": "The atlas moth has not been assessed by the IUCN and is still common in many areas. Forest loss reduces its habitat, but it can survive in some modified landscapes. It is widely bred by butterfly houses and hobbyists around the world.",
+    "people": "In parts of India, atlas moths have been raised for their silk, which is brown and woolly, though less fine than that of the domestic silkworm. Their empty cocoons have been used as purses in Taiwan. The atlas moth is a star of butterfly houses and insect zoos, where visitors can see adults resting on branches.",
+    "relatives": "The atlas moth belongs to the giant silk moths, family Saturniidae, the same family as the luna moth, the cecropia moth and the Hercules moth of Australia and New Guinea, which has an even larger wing area. Its name may come from the Titan Atlas of Greek mythology, or from the map-like patterns on its wings.",
+    "didYouKnow": "Adult atlas moths have no mouths: they live for only one to two weeks on energy stored as caterpillars.",
+    "facts": [
+      { "label": "Wingspan", "value": "Up to ~25 cm" },
+      { "label": "Adult life", "value": "1–2 weeks" },
+      { "label": "Eggs", "value": "100–200" },
+      { "label": "Diet", "value": "Leaves (caterpillars only)" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do the tips of the atlas moth's wings look like?",
+        "choices": ["Snake heads", "Eagle wings", "Flowers", "Leaves"],
+        "explanation": "The curved tips mimic rearing snakes."
+      },
+      {
+        "prompt": "How long does an adult atlas moth live?",
+        "choices": ["About one to two weeks", "About a year", "One day", "Three months"],
+        "explanation": "Without mouths, adults live only on stored energy."
+      },
+      {
+        "prompt": "What family does the atlas moth belong to?",
+        "choices": ["The giant silk moths", "The butterflies", "The beetles", "The bees"],
+        "explanation": "It's a saturniid, like the luna moth."
+      }
+    ],
+    "charities": [
+      { "name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works to protect tropical forests across South and Southeast Asia." }
+    ]
+  },
+  {
+    "id": "orchid-mantis",
+    "name": "Orchid Mantis",
+    "scientificName": "Hymenopus coronatus",
+    "wikipediaTitle": "Hymenopus coronatus",
+    "group": "insect",
+    "regions": ["asia"],
+    "range": "Rainforests of Southeast Asia, including Malaysia, Indonesia and Thailand",
+    "status": "NE",
+    "coordinate": { "latitude": 4.5, "longitude": 114.5 },
+    "mapSpan": 25,
+    "tagline": "A predator dressed as a flower",
+    "lede": "The orchid mantis looks like a delicate pink-and-white flower, with petal-shaped legs. But it's not hiding among orchids; it's posing as a flower itself, and insects that come looking for nectar become its prey.",
+    "home": "Orchid mantises live in the warm, humid rainforests of Southeast Asia, in countries such as Malaysia, Indonesia, Thailand and Vietnam. They perch on leaves and flowering plants, often in bright, open spots where pollinating insects are active.",
+    "anatomy": "Female orchid mantises grow to around 6 to 7 centimetres long, while males are much smaller, under 3 centimetres. Their bodies are white to pale pink, and their walking legs have wide, flat lobes that look like flower petals. They have large compound eyes and sharp, spiked forelegs for grabbing prey. Young nymphs are orange and black, looking like stink bugs or assassin bugs, which may protect them from predators.",
+    "life": "Orchid mantises are ambush predators. They sit still on leaves or flowers, swaying gently, waiting for insects such as bees, flies and butterflies to approach. Research has shown that pollinators are actually more attracted to the mantis than to real flowers, so it's not just camouflage but active lure, a type of deception called aggressive mimicry.",
+    "family": "After mating, the female lays her eggs in a frothy case called an ootheca, attached to a branch or leaf. The case hardens and protects the eggs, which hatch after about five to six weeks into tiny nymphs. They grow by molting several times, gradually changing from orange and black to pink and white, and reach adulthood in a few months.",
+    "remarkable": "In experiments, orchid mantises attracted more pollinators than the real flowers growing around them, making them one of the few known animals that mimics a flower to lure prey without hiding among flowers.\n\nThey can change colour slightly, from white to pink, to match their surroundings.",
+    "outlook": "The orchid mantis has not been assessed by the IUCN, and its wild populations are poorly known. Like many rainforest insects, it is threatened by deforestation for agriculture and logging. Captive breeding by hobbyists has made it a popular pet insect, which reduces the need for wild collection.",
+    "people": "The orchid mantis was described by European scientists in the 1700s, and 19th-century travellers in Southeast Asia wrote of 'flowers' that turned out to be mantises. Today, it is one of the most popular insects in the pet trade and a favourite subject for macro photographers.",
+    "relatives": "Orchid mantises belong to the order Mantodea, with around 2,400 species of praying mantises worldwide. Many mantises use camouflage, mimicking leaves, sticks, bark or flowers. Other flower mantises live in Africa and Asia, such as the spiny flower mantis and the devil's flower mantis. Mantises are related to cockroaches and termites.",
+    "didYouKnow": "Pollinating insects are more attracted to the orchid mantis than to real orchids.",
+    "facts": [
+      { "label": "Length", "value": "Females 6–7 cm" },
+      { "label": "Males", "value": "Under 3 cm" },
+      { "label": "Lifespan", "value": "6–8 months" },
+      { "label": "Diet", "value": "Bees, flies, butterflies" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the orchid mantis mimic?",
+        "choices": ["A flower", "A leaf", "A stick", "A bird dropping"],
+        "explanation": "Its petal-shaped legs and colours make it look like a flower."
+      },
+      {
+        "prompt": "What do pollinators do when they see an orchid mantis?",
+        "choices": ["Come closer, thinking it's a flower", "Fly away fast", "Ignore it", "Attack it"],
+        "explanation": "Pollinators are lured in, then caught."
+      },
+      {
+        "prompt": "What do young orchid mantis nymphs look like?",
+        "choices": ["Orange and black bugs", "Tiny pink flowers", "Green leaves", "White spiders"],
+        "explanation": "Nymphs look like stink bugs or assassin bugs."
+      }
+    ],
+    "charities": [
+      { "name": "Rainforest Trust", "url": "https://www.rainforesttrust.org", "blurb": "Protects threatened tropical forests in Southeast Asia and beyond." }
+    ]
+  },
+  {
+    "id": "green-darner",
+    "name": "Common Green Darner",
+    "scientificName": "Anax junius",
+    "wikipediaTitle": "Anax junius",
+    "group": "insect",
+    "regions": ["naEast", "naWest", "centralAmerica"],
+    "range": "Ponds and wetlands across North America, from southern Canada to Central America",
+    "status": "LC",
+    "coordinate": { "latitude": 43.5, "longitude": -79.5 },
+    "mapSpan": 40,
+    "tagline": "A dragonfly that migrates like a monarch",
+    "lede": "The common green darner is one of the biggest and fastest dragonflies in North America. Each autumn, millions of them migrate south, and like monarchs, it takes several generations to complete the round trip.",
+    "home": "Green darners live across North America, from southern Canada to Central America, around ponds, lakes, marshes and slow streams. In the north, they arrive in spring from the south, breed through summer, and their offspring head south in autumn. Some populations in the south stay year-round.",
+    "anatomy": "A green darner is about 7 to 8 centimetres long, with a wingspan around 10 centimetres. Its thorax is bright green, and males have a blue abdomen, while females have reddish-brown or purplish abdomens. Huge compound eyes, made of around 30,000 lenses, nearly wrap around its head, giving it almost 360-degree vision. Its four wings move independently, letting it hover, fly backwards and turn sharply.",
+    "life": "Green darners are fierce predators. Adults catch flying insects such as mosquitoes, flies, moths and even other dragonflies in mid-air, using their spiny legs like a basket. Dragonflies are among the most successful hunters of any animals, catching the majority of prey they chase. Darners can fly at up to around 50 km/h.",
+    "family": "Pairs often fly in tandem, the male gripping the female behind her head. The female lays eggs by slicing into plant stems below the water surface, often still attached to the male, which guards her. The eggs hatch into aquatic nymphs, which live underwater for months, hunting tadpoles, insect larvae and small fish with an extendable jaw. Finally, the nymph climbs a stem, splits its skin and emerges as an adult.",
+    "remarkable": "A 2020 study using chemical tracers in wings found that green darners make an annual migration across three generations: one flies south in autumn, one breeds in the south over winter, and one returns north in spring.\n\nIt was the first time scientists mapped a full insect migration cycle like this outside of butterflies.",
+    "outlook": "Green darners are common and widespread. Like other dragonflies, they depend on clean wetlands and are affected by pollution, pesticides and wetland loss. Their migration means changes anywhere along their route, from Canada to Mexico, can affect them.",
+    "people": "The green darner is the official state insect of Washington. Its name comes from 'darning needle', an old nickname for dragonflies based on folk tales that they would sew shut the lips of children who told lies. Citizen scientists help track dragonfly migration through projects like the Migratory Dragonfly Partnership.",
+    "relatives": "Green darners belong to the darner family, Aeshnidae, which includes some of the largest dragonflies on Earth. Dragonflies and damselflies form the order Odonata. Their ancestors include giant griffinflies of over 300 million years ago, such as Meganeuropsis, with wingspans around 70 centimetres, the largest insects that ever lived.",
+    "didYouKnow": "Green darners' huge eyes contain about 30,000 lenses, giving them nearly all-around vision.",
+    "facts": [
+      { "label": "Length", "value": "7–8 cm" },
+      { "label": "Wingspan", "value": "About 10 cm" },
+      { "label": "Speed", "value": "Up to ~50 km/h" },
+      { "label": "Diet", "value": "Flying insects" }
+    ],
+    "quiz": [
+      {
+        "prompt": "How many generations does the green darner migration take?",
+        "choices": ["Three", "One", "Ten", "It doesn't migrate"],
+        "explanation": "One generation goes south, one breeds there, one returns north."
+      },
+      {
+        "prompt": "Where do green darner nymphs live?",
+        "choices": ["Underwater", "In tree bark", "In soil", "Inside flowers"],
+        "explanation": "Nymphs are aquatic predators for months."
+      },
+      {
+        "prompt": "Where does the name 'darner' come from?",
+        "choices": ["Folk tales of dragonflies sewing lips shut", "Its dark colour", "The sound it makes", "A scientist's name"],
+        "explanation": "Old stories called dragonflies 'darning needles'."
+      }
+    ],
+    "charities": [
+      { "name": "Xerces Society", "url": "https://www.xerces.org", "blurb": "Runs the Migratory Dragonfly Partnership and protects invertebrates." }
+    ]
+  },
+  {
+    "id": "hercules-beetle",
+    "name": "Hercules Beetle",
+    "scientificName": "Dynastes hercules",
+    "wikipediaTitle": "Dynastes hercules",
+    "group": "insect",
+    "regions": ["centralAmerica", "southAmerica"],
+    "range": "Rainforests of Central and South America and the Lesser Antilles",
+    "status": "NE",
+    "coordinate": { "latitude": 10.0, "longitude": -84.0 },
+    "mapSpan": 35,
+    "tagline": "The longest beetle, with a giant pincer horn",
+    "lede": "Named after the mighty hero of Greek myth, the Hercules beetle is one of the largest beetles in the world. Males wield a huge pincer made of two horns, longer than their bodies, which they use to wrestle rivals.",
+    "home": "Hercules beetles live in rainforests from southern Mexico through Central America to Bolivia and Brazil, and on islands of the Lesser Antilles. Adults are often found on rotting trees and fallen fruit, while larvae live inside decaying wood on the forest floor.",
+    "anatomy": "Male Hercules beetles can reach up to about 17 centimetres long, including their horns, making them among the longest beetles in the world. Males have a long horn from the thorax curving forward over a shorter horn on the head, together forming a pincer. Their wing covers can change colour from olive-yellow to black depending on humidity, because of tiny structures that absorb water. Females are smaller and have no horns.",
+    "life": "Adult Hercules beetles feed on rotting fruit and sap. They are mostly active at night. Males use their horns to fight rivals for females, lifting and throwing each other off branches. Despite their size, they can fly. Their horns are strong and flexible, and scientists have studied them to understand how they resist breaking.",
+    "family": "After mating, the female lays her eggs in rotting wood. The larvae, which are large white grubs, live inside decaying logs for one to two years, eating the soft wood and growing to over 11 centimetres long and about 100 grams in weight, much heavier than the adults. Then they pupate in a chamber in the wood or soil and emerge as adults, which live for only a few months.",
+    "remarkable": "The Hercules beetle's wing covers change from yellowish to black in humid air, thanks to a network of microscopic pores that fill with water and change how light is reflected.\n\nScientists have proposed using this effect to make humidity sensors.",
+    "outlook": "The Hercules beetle has not been assessed by the IUCN. Its larvae depend on large, rotting logs, so deforestation and the removal of dead wood threaten it. It is also collected for the pet and display trade, especially in Japan, where large beetles are popular pets.",
+    "people": "Hercules beetles are among the most popular pet insects in Japan, where they are bred in captivity and sold in shops. They are also prized by collectors around the world. Their strength has inspired claims that they can carry 850 times their own weight, though this is an exaggeration; they are still extremely strong for their size.",
+    "relatives": "The Hercules beetle is a rhinoceros beetle, part of the scarab beetle family, Scarabaeidae, which also includes dung beetles and June beetles. Its close relatives include the eastern Hercules beetle of the southeastern United States, a smaller cousin. Beetles are the most diverse group of animals, with around 400,000 known species.",
+    "didYouKnow": "A Hercules beetle's grub can weigh about 100 grams, much more than the adult beetle it becomes.",
+    "facts": [
+      { "label": "Length", "value": "Up to ~17 cm with horn" },
+      { "label": "Larva weight", "value": "Up to ~100 g" },
+      { "label": "Adult life", "value": "A few months" },
+      { "label": "Diet", "value": "Rotting fruit, sap" }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do male Hercules beetles use their horns for?",
+        "choices": ["Wrestling rivals", "Digging for food", "Climbing trees", "Breathing"],
+        "explanation": "Males lift and throw rivals off branches."
+      },
+      {
+        "prompt": "Where do Hercules beetle larvae live?",
+        "choices": ["Inside rotting wood", "Underwater", "Inside fruit", "On leaves"],
+        "explanation": "Grubs eat decaying logs for one to two years."
+      },
+      {
+        "prompt": "What makes their wing covers change colour?",
+        "choices": ["Humidity", "Temperature", "Their mood", "Age"],
+        "explanation": "Microscopic pores fill with water in humid air."
+      }
+    ],
+    "charities": [
+      { "name": "Rainforest Trust", "url": "https://www.rainforesttrust.org", "blurb": "Protects threatened tropical forests across Central and South America." }
+    ]
+  }
+]
