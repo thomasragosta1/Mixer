@@ -316,8 +316,8 @@ struct AnimalArticleView: View {
                     } action: { visible in
                         unlockCardVisible = visible
                     }
-            } else if mode == .journal {
-                PracticeCard(animal: animal, passed: store.hasPassedQuiz(animal))
+            } else if mode == .journal, store.hasPassedQuiz(animal) {
+                RetakeCard(animal: animal)
             }
         }
         .padding(.horizontal, 22)
@@ -603,30 +603,35 @@ private struct UnlockCard: View {
     }
 }
 
-/// End of a Journal article: re-take the quiz for practice.
-private struct PracticeCard: View {
+/// End of a Journal article, for animals whose quiz you've passed: take it again for practice.
+private struct RetakeCard: View {
     let animal: Animal
-    let passed: Bool
     @State private var showQuiz = false
 
     var body: some View {
-        VStack(spacing: 14) {
-            Image(systemName: passed ? "checkmark.seal.fill" : "questionmark.bubble.fill")
-                .font(.system(size: 30, weight: .semibold))
-                .foregroundStyle(passed ? Color.faunaGold : Color.faunaMoss)
-            Text("Practice quiz")
-                .font(FaunaFont.display(24))
-            Text(passed ? "You've passed this one before. See if it stuck. Just for fun; it doesn't unlock anything." : "Three questions about the \(animal.name), just for fun. It doesn't unlock anything.")
-                .font(.callout)
-                .foregroundStyle(.secondary)
-                .multilineTextAlignment(.center)
-            Button { showQuiz = true } label: { Text("Start quiz") }
-                .buttonStyle(ProminentPillStyle(tint: .faunaMoss))
+        Button { showQuiz = true } label: {
+            HStack(spacing: 14) {
+                Image(systemName: "arrow.counterclockwise.circle.fill")
+                    .font(.system(size: 28))
+                    .foregroundStyle(Color.faunaMoss)
+                VStack(alignment: .leading, spacing: 2) {
+                    Text("Retake the quiz")
+                        .font(.headline)
+                        .foregroundStyle(.primary)
+                    Text("You passed this one. See if it stuck.")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.bold))
+                    .foregroundStyle(.tertiary)
+            }
+            .padding(16)
+            .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 20, style: .continuous))
         }
+        .buttonStyle(PressableStyle())
         .fullScreenCover(isPresented: $showQuiz) { QuizView(animal: animal, practice: true) }
-        .padding(24)
-        .frame(maxWidth: .infinity)
-        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 26, style: .continuous))
     }
 }
 
