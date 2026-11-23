@@ -42,9 +42,9 @@ final class StressTests: XCTestCase {
             model.close()
             throw XCTSkip("Recording didn't start here: \(why)")
         }
-        stressSpin(1.2)
+        await stressSpin(1.2)
         model.stopRecording()
-        waitForSave(model)
+        await waitForSave(model)
         guard model.project.tracks[0].audioFileName != nil else {
             model.close()
             throw XCTSkip("This simulator's microphone delivered no audio")
@@ -55,27 +55,27 @@ final class StressTests: XCTestCase {
         model.seek(to: 0.3)
         await model.startRecording()
         XCTAssertTrue(model.isRecording)
-        stressSpin(0.3)
+        await stressSpin(0.3)
         model.stopRecording()
-        waitForSave(model)
+        await waitForSave(model)
         XCTAssertEqual(model.duration, first, accuracy: 0.1, "recording over the middle keeps what comes after")
 
         model.undo()
-        stressSpin(0.3)
+        await stressSpin(0.3)
         XCTAssertEqual(model.duration, first, accuracy: 0.1)
         model.undo()
-        stressSpin(0.3)
+        await stressSpin(0.3)
         XCTAssertNil(model.project.tracks[0].audioFileName, "undoing the first take empties the track")
         model.redo()
-        stressSpin(0.3)
+        await stressSpin(0.3)
         XCTAssertNotNil(model.project.tracks[0].audioFileName)
         XCTAssertNil(model.errorMessage)
         model.close()
     }
 
-    private func waitForSave(_ model: ProjectViewModel) {
+    private func waitForSave(_ model: ProjectViewModel) async {
         let end = Date().addingTimeInterval(5)
-        while model.isSaving && Date() < end { stressSpin(0.02) }
+        while model.isSaving && Date() < end { await stressSpin(0.02) }
     }
 
     private func runSessions(_ seeds: Range<Int>) async throws {
@@ -118,9 +118,19 @@ private func stressLog(_ text: String) {
     fputs("STRESS " + text + "\n", stderr)
 }
 
+/// Waits while the app gets on with its work. Spinning the run loop alone is
+/// not enough inside an async test: the test itself runs as a main-queue job,
+/// and a run loop nested in a main-queue job doesn't drain the main queue, so
+/// the app's main-actor tasks (a save finishing, an export clearing its
+/// progress) would only run once the test next suspends. Each slice therefore
+/// also suspends briefly.
 @MainActor
-private func stressSpin(_ seconds: TimeInterval) {
-    RunLoop.main.run(until: Date().addingTimeInterval(seconds))
+private func stressSpin(_ seconds: TimeInterval) async {
+    let end = Date().addingTimeInterval(seconds)
+    repeat {
+        RunLoop.main.run(until: min(end, Date().addingTimeInterval(0.01)))
+        try? await Task.sleep(nanoseconds: 2_000_000)
+    } while Date() < end
 }
 
 private struct SeededRNG: RandomNumberGenerator {
@@ -217,29 +227,29 @@ private final class StressSession {
 
     func run() async -> [String] {
         stressLog("s=\(seed) begin mode=\(model.project.mode.rawValue) tracks=\(model.visibleLanes.count) hosted=\(hosted)")
-        open()
+        await open()
         let steps = 18 + pick(14)
         for _ in 0..<steps { await step() }
 
         if chance(0.35) {
             // Leave (sometimes in the middle of something) and come back.
-            if chance(0.5) { settle(3) }
+            if chance(0.5) { await settle(3) }
             note("close and reopen")
-            closeModel()
-            stressSpin(0.15)
+            await closeModel()
+            await stressSpin(0.15)
             do {
                 model = ProjectViewModel(project: try store.load(id: model.project.id), store: store, settings: settings)
             } catch {
                 problems.append("couldn't reopen the project: \(error)")
-                return finish(checkDisk: false)
+                return await finish(checkDisk: false)
             }
-            open()
+            await open()
             for _ in 0..<(4 + pick(6)) { await step() }
         }
-        return finish(checkDisk: true)
+        return await finish(checkDisk: true)
     }
 
-    private func open() {
+    private func open() async {
         if hosted {
             let current = model
             let controller = UIHostingController(rootView: NavigationStack { ProjectView(model: current) })
@@ -251,12 +261,12 @@ private final class StressSession {
             w.makeKeyAndVisible()
             window = w
             host = controller
-            stressSpin(0.25)
+            await stressSpin(0.25)
         }
         model.activate()
     }
 
-    private func closeModel() {
+    private func closeModel() async {
         model.close()
         window?.isHidden = true
         window?.rootViewController = nil
@@ -264,16 +274,16 @@ private final class StressSession {
         host = nil
     }
 
-    private func finish(checkDisk: Bool) -> [String] {
-        settle(3)
+    private func finish(checkDisk: Bool) async -> [String] {
+        await settle(3)
         let end = Date().addingTimeInterval(8)
-        while (!model.cleanupProgress.isEmpty || model.exportProgress != nil) && Date() < end { stressSpin(0.05) }
+        while (!model.cleanupProgress.isEmpty || model.exportProgress != nil) && Date() < end { await stressSpin(0.05) }
         collect()
         let id = model.project.id
         note("close")
-        closeModel()
+        await closeModel()
         // Let anything that finishes after closing land.
-        stressSpin(0.3)
+        await stressSpin(0.3)
         if checkDisk { checkProjectOnDisk(id) }
         UserDefaults.standard.removePersistentDomain(forName: suiteName)
         if !problems.isEmpty {
@@ -335,9 +345,9 @@ private final class StressSession {
         trail.append("\(stepIndex) \(action)")
     }
 
-    private func settle(_ limit: TimeInterval) {
+    private func settle(_ limit: TimeInterval) async {
         let end = Date().addingTimeInterval(limit)
-        while model.isSaving && Date() < end { stressSpin(0.02) }
+        while model.isSaving && Date() < end { await stressSpin(0.02) }
     }
 
     /// Picks up an error alert the app raised, as a person would see it.
@@ -378,7 +388,7 @@ private final class StressSession {
             m.beginScrub()
             for _ in 0..<3 {
                 m.scrub(to: unit() * (m.duration + 0.5) - 0.2)
-                stressSpin(0.01)
+                await stressSpin(0.01)
             }
             m.endScrub()
         case 17..<24:
@@ -463,9 +473,9 @@ private final class StressSession {
                 m.toggleCleanup(l)
             }
         case 95..<96:
-            export()
+            await export()
         case 96..<98:
-            sessionEvent()
+            await sessionEvent()
         case 98..<99:
             note("settings")
             switch pick(3) {
@@ -482,7 +492,7 @@ private final class StressSession {
             default: note("reset clip"); m.resetClip(pick(Project.trackCount + 1))
             }
         }
-        stressSpin(0.015)
+        await stressSpin(0.015)
         host?.view.layoutIfNeeded()
         collect()
     }
@@ -578,7 +588,7 @@ private final class StressSession {
                 note("pads x\(hits)")
                 for _ in 0..<hits {
                     m.hitPad(pick(DrumKit.padCount))
-                    stressSpin(0.02)
+                    await stressSpin(0.02)
                 }
             case 3..<6:
                 if !m.isSaving { await drumTake() }
@@ -606,7 +616,7 @@ private final class StressSession {
                 note("pad sound \(pad)")
                 m.previewPadSettings(track: armed, pad: pad, sound)
                 m.hitPad(pad)
-                stressSpin(0.02)
+                await stressSpin(0.02)
                 switch pick(3) {
                 case 0: m.endPadPreview()
                 case 1: m.applyPadSettings(track: armed, pad: pad, sound)
@@ -635,9 +645,9 @@ private final class StressSession {
         let hits = 1 + pick(6)
         for _ in 0..<hits {
             m.hitPad(pick(DrumKit.padCount))
-            stressSpin(0.03 + 0.05 * unit())
+            await stressSpin(0.03 + 0.05 * unit())
         }
-        endTake()
+        await endTake()
     }
 
     private func audioTake() async {
@@ -656,12 +666,12 @@ private final class StressSession {
             }
             return
         }
-        stressSpin(0.25 + 0.3 * unit())
-        endTake()
+        await stressSpin(0.25 + 0.3 * unit())
+        await endTake()
     }
 
     /// Takes end the ways they do on a phone: stop, the play button, or a call coming in.
-    private func endTake() {
+    private func endTake() async {
         let m = model
         switch pick(10) {
         case 0:
@@ -678,10 +688,10 @@ private final class StressSession {
             m.stopRecording()
         }
         if m.isRecording { m.stopRecording() }
-        if chance(0.8) { settle(3) }
+        if chance(0.8) { await settle(3) }
     }
 
-    private func export() {
+    private func export() async {
         let m = model
         guard m.hasAnyAudio, m.exportProgress == nil else { return }
         let recorded = m.visibleLanes.filter { !m.project.tracks[$0].isEmpty }
@@ -694,19 +704,19 @@ private final class StressSession {
             m.export(.track(l))
         }
         let end = Date().addingTimeInterval(30)
-        while m.exportProgress != nil && Date() < end { stressSpin(0.05) }
+        while m.exportProgress != nil && Date() < end { await stressSpin(0.05) }
         if m.exportProgress != nil { problems.append("step \(stepIndex): export didn't finish in 30 s") }
         m.exportedURLs = []
     }
 
-    private func sessionEvent() {
+    private func sessionEvent() async {
         let m = model
         let fire = AudioSessionManager.shared.onEvent
         switch pick(5) {
         case 0:
             note("interruption")
             fire?(.interruptionBegan)
-            stressSpin(0.05)
+            await stressSpin(0.05)
             fire?(.interruptionEnded(shouldResume: true))
         case 1:
             note("output device lost")
