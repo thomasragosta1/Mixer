@@ -103,11 +103,17 @@ for i in range(0, len(titles), 40):
 bad = 0
 for t, src in result.items():
     u = thumb(src["original"], 1280, src["width"])
-    try:
-        urllib.request.urlopen(urllib.request.Request(u, headers=UA, method="HEAD"), timeout=30)
-    except Exception as e:
-        bad += 1; print(f"WARN {t}: thumbnail failed {e}: {u}")
-    time.sleep(0.2)
+    for i in range(4):
+        try:
+            urllib.request.urlopen(urllib.request.Request(u, headers=UA, method="HEAD"), timeout=30)
+            break
+        except urllib.error.HTTPError as e:
+            if e.code == 429 and i < 3:
+                time.sleep(5 * (i + 1)); continue
+            bad += 1; print(f"WARN {t}: thumbnail failed {e}: {u}"); break
+        except Exception as e:
+            bad += 1; print(f"WARN {t}: thumbnail failed {e}: {u}"); break
+    time.sleep(1.0)
 
 # Keep earlier entries for anything that failed this time.
 for t, v in existing.items():
