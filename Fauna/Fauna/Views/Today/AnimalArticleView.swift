@@ -312,7 +312,11 @@ struct AnimalArticleView: View {
                 UnlockCard(animal: animal, start: onStartQuiz)
                     .id("unlock")
                     .onGeometryChange(for: Bool.self) { geo in
-                        geo.frame(in: .global).minY < UIScreen.main.bounds.height - 60
+                        // Swap the floating button for the card only once the card's own
+                        // "Unlock another animal" button (in its lower half) is clear of the
+                        // tab bar, so there's never a moment with neither button usable.
+                        let f = geo.frame(in: .global)
+                        return f.minY + f.height * 0.75 < UIScreen.main.bounds.height - 100
                     } action: { visible in
                         unlockCardVisible = visible
                     }
