@@ -209,15 +209,20 @@ actor WikiImages {
 
     /// Original when it's already small enough; otherwise a standard-width Commons thumbnail.
     private static func url(for source: Source, width: Int) -> URL {
-        if source.width > 0, source.width <= width { return source.original }
-        var s = source.original.absoluteString
-        guard let range = s.range(of: "/wikipedia/commons/") else { return source.original }
+        // Wikimedia now appends tracking parameters (?utm_source=...) to file URLs; a thumbnail
+        // path built on top of them is rejected, so drop the query first.
+        var bare = URLComponents(url: source.original, resolvingAgainstBaseURL: false)
+        bare?.query = nil
+        let original = bare?.url ?? source.original
+        if source.width > 0, source.width <= width { return original }
+        var s = original.absoluteString
+        guard let range = s.range(of: "/wikipedia/commons/") else { return original }
         s.replaceSubrange(range, with: "/wikipedia/commons/thumb/")
-        let name = source.original.lastPathComponent
-            .addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? source.original.lastPathComponent
+        let name = original.lastPathComponent
+            .addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? original.lastPathComponent
         let suffix = name.lowercased().hasSuffix(".svg") || name.lowercased().hasSuffix(".tif")
             || name.lowercased().hasSuffix(".tiff") ? ".png" : ""
-        return URL(string: s + "/\(width)px-" + name + suffix) ?? source.original
+        return URL(string: s + "/\(width)px-" + name + suffix) ?? original
     }
 
     /// Commons metadata is HTML; reduce it to plain text.

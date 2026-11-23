@@ -33,6 +33,7 @@ def file_from_upload(url):
     return parts[-1]
 
 def thumb(original, width, orig_width):
+    original = original.split("?")[0]
     if orig_width and orig_width <= width:
         return original
     s = original.replace("/wikipedia/commons/", "/wikipedia/commons/thumb/", 1)
@@ -44,6 +45,8 @@ def thumb(original, width, orig_width):
 animals = json.loads((ROOT / "Fauna/Resources/animals.json").read_text())
 out_path = ROOT / "Fauna/Resources/photos.json"
 existing = json.loads(out_path.read_text()) if out_path.exists() else {}
+for v in existing.values():
+    v["original"] = v["original"].split("?")[0]
 files = {}
 for a in animals:
     t = a["wikipediaTitle"]
@@ -85,7 +88,7 @@ for i in range(0, len(titles), 40):
         if "fair use" in lic.lower() or "non-free" in lic.lower():
             print(f"WARN {t}: {f} is not free ({lic})"); continue
         result[t] = {
-            "original": ii["url"], "width": ii.get("width", 0),
+            "original": ii["url"].split("?")[0], "width": ii.get("width", 0),
             "credit": {
                 "file": f,
                 "author": plain(meta.get("Artist", {}).get("value"))[:80],
