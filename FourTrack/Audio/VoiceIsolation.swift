@@ -183,12 +183,14 @@ enum VoiceIsolation {
         out.reserveCapacity(wanted)
         var toSkip = latencyFrames + (start - readStart)
         var energy: Double = 0
+        var stalled = 0
         while engine.manualRenderingSampleTime < renderTotal {
             if isCancelled() { throw CleanupPipeline.Failure.cancelled }
             let remaining = renderTotal - engine.manualRenderingSampleTime
             let frames = AVAudioFrameCount(min(AVAudioFramePosition(buffer.frameCapacity), remaining))
             switch try engine.renderOffline(frames, to: buffer) {
             case .success:
+                stalled = 0
                 guard let data = buffer.floatChannelData?[0] else { throw Failure.renderFailed }
                 var chunk = UnsafeBufferPointer(start: data, count: Int(buffer.frameLength))[...]
                 if toSkip > 0 {
@@ -202,6 +204,11 @@ enum VoiceIsolation {
                     out.append(s)
                 }
             case .insufficientDataFromInputNode, .cannotDoInCurrentContext:
+                // A render that never moves on would hold its thread forever
+                // (and Clean Up would show "Cleaning…" for good): give up and
+                // let Cleanup fall back to RNNoise instead.
+                stalled += 1
+                if stalled > 2_000 { throw Failure.renderFailed }
                 continue
             case .error:
                 throw Failure.renderFailed

@@ -291,9 +291,9 @@ final class CloudSync {
         let source = store.fileURL(out.fileName, in: out.projectID)
         let base = Self.outgoingFolder.appendingPathComponent(name)
         Task {
-            let ok = await Task.detached(priority: .utility) { () -> Bool in
+            let ok = await offMain(qos: .utility) { () -> Bool in
                 (try? SyncAudio.stage(source, as: base)) != nil
-            }.value
+            }
             staging.remove(name)
             guard var current = disk.ledger.outgoing[name], current.fingerprint == out.fingerprint else {
                 removeStaged(name)
@@ -373,10 +373,10 @@ final class CloudSync {
         try? FileManager.default.removeItem(at: copy)
         // The asset file only lives for this callback: copy it now, convert after.
         guard (try? FileManager.default.copyItem(at: url, to: copy)) != nil else { return }
-        let ok = await Task.detached(priority: .utility) { () -> Bool in
+        let ok = await offMain(qos: .utility) { () -> Bool in
             defer { try? FileManager.default.removeItem(at: copy) }
             return (try? SyncAudio.restore(copy, to: target)) != nil
-        }.value
+        }
         if ok { tryApplyIncoming(projectID) }
     }
 

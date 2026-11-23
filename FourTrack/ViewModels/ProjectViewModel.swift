@@ -668,7 +668,7 @@ final class ProjectViewModel {
         let projectID = project.id
         Self.splicing.insert(projectID)
         Task {
-            let outcome = await Task.detached(priority: .userInitiated) { () -> Result<SpliceOutcome, Error> in
+            let outcome = await offMain(qos: .userInitiated) { () -> Result<SpliceOutcome, Error> in
                 do {
                     let result = try Splicer.splice(.init(
                         trackURL: existing,
@@ -684,7 +684,7 @@ final class ProjectViewModel {
                 } catch {
                     return .failure(error)
                 }
-            }.value
+            }
             Self.splicing.remove(projectID)
             self.didSplice(index: index, route: pending.route, outcome: outcome)
         }
@@ -1037,7 +1037,7 @@ final class ProjectViewModel {
         let generation = drumRenderGeneration[index]
         isSaving = true
         Task {
-            let outcome = await Task.detached(priority: .userInitiated) { () -> Result<[Float], Error> in
+            let outcome = await offMain(qos: .userInitiated) { () -> Result<[Float], Error> in
                 do {
                     if hits.isEmpty {
                         try? FileManager.default.removeItem(at: url)
@@ -1051,7 +1051,7 @@ final class ProjectViewModel {
                 } catch {
                     return .failure(error)
                 }
-            }.value
+            }
             guard generation == self.drumRenderGeneration[index] else { return }
             self.isSaving = false
             self.livePeaks = []
@@ -1601,7 +1601,7 @@ final class ProjectViewModel {
                     self?.cleanupProgress[index] = job.value
                 }
             }
-            let outcome = await Task.detached(priority: .userInitiated) { () -> Error? in
+            let outcome = await offMain(qos: .userInitiated) { () -> Error? in
                 do {
                     try CleanupEngine.render(
                         input: input,
@@ -1613,7 +1613,7 @@ final class ProjectViewModel {
                 } catch {
                     return error
                 }
-            }.value
+            }
             poll.cancel()
             self.didCleanup(index: index, projectID: projectID, generation: generation, error: outcome)
         }
@@ -1680,7 +1680,7 @@ final class ProjectViewModel {
                     self?.exportProgress = progressBox.value
                 }
             }
-            let result = await Task.detached(priority: .userInitiated) { () -> Result<[URL], Error> in
+            let result = await offMain(qos: .userInitiated) { () -> Result<[URL], Error> in
                 do {
                     let report: @Sendable (Double) -> Void = { progressBox.value = $0 }
                     switch kind {
@@ -1694,7 +1694,7 @@ final class ProjectViewModel {
                 } catch {
                     return .failure(error)
                 }
-            }.value
+            }
             poll.cancel()
             self.exportProgress = nil
             switch result {
@@ -1797,6 +1797,17 @@ final class ProjectViewModel {
                 try? PeakGenerator.write(computed, to: cache)
             }
         }
+    }
+}
+
+/// Runs blocking work (file I/O, offline rendering) on a GCD queue instead of
+/// Swift's cooperative thread pool. That pool has about one thread per core:
+/// a couple of long blocking jobs (Clean Up renders, a splice) could occupy all
+/// of it, and every other background job, an export included, then waited
+/// behind them. On a phone that looked like Export hanging on "Exporting…".
+func offMain<T: Sendable>(qos: DispatchQoS.QoSClass = .userInitiated, _ work: @escaping @Sendable () -> T) async -> T {
+    await withCheckedContinuation { continuation in
+        DispatchQueue.global(qos: qos).async { continuation.resume(returning: work()) }
     }
 }
 

@@ -97,7 +97,7 @@ final class ProjectsViewModel {
         let peaksURL = store.peaksURL(project: project.id, track: slot)
         let scoped = source.startAccessingSecurityScopedResource()
         defer { if scoped { source.stopAccessingSecurityScopedResource() } }
-        let outcome = await Task.detached(priority: .userInitiated) { () -> Result<Void, Error> in
+        let outcome = await offMain(qos: .userInitiated) { () -> Result<Void, Error> in
             do {
                 try AudioImporter.importAudio(from: source, to: destination)
                 let peaks = try PeakGenerator.peaks(ofFileAt: destination)
@@ -106,7 +106,7 @@ final class ProjectsViewModel {
             } catch {
                 return .failure(error)
             }
-        }.value
+        }
         switch outcome {
         case .success:
             var track = Track(index: slot, name: String(title.prefix(30)))
