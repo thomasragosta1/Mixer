@@ -12,11 +12,11 @@ final class MoreUITests: XCTestCase {
     }
 
     private func any(_ app: XCUIApplication, _ text: String) -> XCUIElement {
-        app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS %@", text)).firstMatch
+        app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS[c] %@", text)).firstMatch
     }
 
     private func button(_ app: XCUIApplication, _ text: String) -> XCUIElement {
-        app.buttons.matching(NSPredicate(format: "label CONTAINS %@", text)).firstMatch
+        app.buttons.matching(NSPredicate(format: "label CONTAINS[c] %@", text)).firstMatch
     }
 
     private func pill(_ app: XCUIApplication) -> XCUIElement { button(app, "Unlock the next animal") }

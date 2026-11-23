@@ -17,11 +17,11 @@ final class FaunaUITests: XCTestCase {
 
     /// Labels of buttons can start with an icon's name, so match on what they contain.
     private func element(_ app: XCUIApplication, containing text: String) -> XCUIElement {
-        app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS %@", text)).firstMatch
+        app.descendants(matching: .any).matching(NSPredicate(format: "label CONTAINS[c] %@", text)).firstMatch
     }
 
     private func button(_ app: XCUIApplication, containing text: String) -> XCUIElement {
-        app.buttons.matching(NSPredicate(format: "label CONTAINS %@", text)).firstMatch
+        app.buttons.matching(NSPredicate(format: "label CONTAINS[c] %@", text)).firstMatch
     }
 
     private func unlockPill(_ app: XCUIApplication) -> XCUIElement {
@@ -42,6 +42,14 @@ final class FaunaUITests: XCTestCase {
             app.swipeUp()
         }
         return element.exists
+    }
+
+    /// Waits until an element can actually be tapped (not mid-animation), then taps it.
+    private func tapWhenReady(_ element: XCUIElement, timeout: TimeInterval = 10) {
+        XCTAssertTrue(element.waitForExistence(timeout: timeout), "\(element) never appeared")
+        let deadline = Date().addingTimeInterval(timeout)
+        while !element.isHittable && Date() < deadline { RunLoop.current.run(until: Date().addingTimeInterval(0.2)) }
+        element.tap()
     }
 
     private func openQuiz(_ app: XCUIApplication) {
@@ -111,13 +119,14 @@ final class FaunaUITests: XCTestCase {
     func testOnboardingBugsInEasternNorthAmerica() {
         let app = launch("-FaunaOnboarding")
         app.buttons["Get started"].tap()
-        button(app, containing: "Insects & Bugs").tap()
+        tapWhenReady(button(app, containing: "Insects & Bugs"))
+        XCTAssertTrue(app.staticTexts["8 animals to discover"].waitForExistence(timeout: 5))
         let east = button(app, containing: "Eastern North America")
         scroll(app, to: east)
-        east.tap()
+        tapWhenReady(east)
         XCTAssertTrue(app.staticTexts["5 animals to discover"].waitForExistence(timeout: 5))
-        app.buttons["Continue"].tap()
-        app.buttons["Not now"].tap()
+        tapWhenReady(app.buttons["Continue"])
+        tapWhenReady(app.buttons["Not now"])
         XCTAssertTrue(unlockPill(app).waitForExistence(timeout: 10))
         let bugs = ["Monarch Butterfly", "Rusty Patched Bumble Bee", "Luna Moth", "Common Eastern Firefly", "Common Green Darner"]
         XCTAssertTrue(bugs.contains { app.staticTexts[$0].exists }, "today's animal isn't an eastern bug")
@@ -135,7 +144,7 @@ final class FaunaUITests: XCTestCase {
     func testUnlockOpensTheQuiz() {
         let app = launch("-FaunaDemo")
         openQuiz(app)
-        XCTAssertTrue(app.staticTexts["About the Red Panda"].exists)
+        XCTAssertTrue(element(app, containing: "About the Red Panda").exists)
         XCTAssertEqual(app.buttons.matching(NSPredicate(format: "identifier BEGINSWITH 'quiz.choice'")).count, 4)
     }
 
@@ -168,7 +177,7 @@ final class FaunaUITests: XCTestCase {
         let app = launch("-FaunaDemo")
         let name = passAndMeetNext(app)
         XCTAssertTrue(app.staticTexts[name].waitForExistence(timeout: 10), "Today should show the \(name)")
-        XCTAssertFalse(app.staticTexts["About the Red Panda"].exists)
+        XCTAssertFalse(element(app, containing: "About the Red Panda").exists)
         XCTAssertTrue(unlockPill(app).waitForExistence(timeout: 10), "you can keep going")
     }
 
@@ -323,10 +332,18 @@ final class FaunaUITests: XCTestCase {
         let app = launch("-FaunaDemo", "-FaunaTab", "focus")
         let reset = app.buttons["Reset journal"]
         XCTAssertTrue(scroll(app, to: reset))
+        let listFrame = reset.frame
         reset.tap()
-        let confirm = app.buttons.matching(identifier: "Reset journal").element(boundBy: 1)
-        XCTAssertTrue(confirm.waitForExistence(timeout: 5), "no confirmation before erasing progress")
-        confirm.tap()
+        // The confirmation adds a second "Reset journal" button; tap that one, not the list row.
+        let deadline = Date().addingTimeInterval(5)
+        var confirm: XCUIElement?
+        while confirm == nil && Date() < deadline {
+            confirm = app.buttons.matching(identifier: "Reset journal").allElementsBoundByIndex
+                .first { $0.frame != listFrame && $0.isHittable }
+            if confirm == nil { RunLoop.current.run(until: Date().addingTimeInterval(0.25)) }
+        }
+        XCTAssertNotNil(confirm, "no confirmation before erasing progress")
+        confirm?.tap()
         tab(app, "Journal")
         XCTAssertTrue(app.staticTexts["1"].waitForExistence(timeout: 5), "only today's animal remains")
     }

@@ -40,13 +40,13 @@ struct QuizView: View {
                 switch phase {
                 case .asking:
                     if items.indices.contains(index) {
-                        question(items[index])
+                        ScrollIfNeeded { question(items[index]) }
                             .id(items[index].id)
                             .transition(.asymmetric(insertion: .move(edge: .trailing).combined(with: .opacity),
                                                     removal: .move(edge: .leading).combined(with: .opacity)))
                     }
                 case .results:
-                    results
+                    ScrollIfNeeded { results }
                         .transition(.opacity.combined(with: .scale(scale: 0.96)))
                 }
             }
@@ -380,5 +380,19 @@ private struct Shake: GeometryEffect {
     var animatableData: CGFloat
     func effectValue(size: CGSize) -> ProjectionTransform {
         ProjectionTransform(CGAffineTransform(translationX: 9 * sin(animatableData * .pi * 4), y: 0))
+    }
+}
+
+/// Lays content out to fill the screen, but scrolls when it can't fit, as with the largest
+/// accessibility text sizes; otherwise the quiz's buttons end up off screen and unreachable.
+private struct ScrollIfNeeded<Content: View>: View {
+    @ViewBuilder let content: Content
+
+    var body: some View {
+        ViewThatFits(in: .vertical) {
+            content
+            ScrollView { content }
+                .scrollIndicators(.hidden)
+        }
     }
 }
