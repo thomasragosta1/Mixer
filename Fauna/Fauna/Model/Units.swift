@@ -47,6 +47,9 @@ enum UnitText {
         let tons = Rule(factor: 1.10231, unit: "ton", unitPlural: "tons")
         let mph = Rule(factor: 0.621371, unit: "mph", unitPlural: "mph")
         let mps = Rule(factor: 2.23694, unit: "mph", unitPlural: "mph")
+        // Areas: "20 square kilometres" must not be converted like a length.
+        let sqmi = Rule(factor: 0.386102, unit: "sq mi", unitPlural: "sq mi")
+        let sqmiWord = Rule(factor: 0.386102, unit: "square mile", unitPlural: "square miles")
         let inWord = Rule(factor: 1 / 2.54, unit: "inch", unitPlural: "inches",
                           promote: (36, 1 / 12, "foot", "feet"))
         return [
@@ -59,6 +62,9 @@ enum UnitText {
             "kilometre": miWord, "kilometres": miWord, "kilometer": miWord, "kilometers": miWord,
             "gram": ozWord, "grams": ozWord,
             "kilogram": lbWord, "kilograms": lbWord,
+            "km²": sqmi,
+            "square kilometre": sqmiWord, "square kilometres": sqmiWord,
+            "square kilometer": sqmiWord, "square kilometers": sqmiWord,
         ]
     }()
 

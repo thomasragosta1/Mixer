@@ -1,0 +1,62 @@
+name: Fauna tests
+
+# Logic tests (store, units, content) and UI tests (onboarding, quiz, journal, focus) on an
+# iPhone simulator. Runs when the tests change, or by hand from the Actions tab.
+on:
+  push:
+    paths:
+      - "Fauna/FaunaTests/**"
+      - "Fauna/FaunaUITests/**"
+      - .github/workflows/fauna-tests.yml
+  workflow_dispatch:
+
+concurrency:
+  group: fauna-tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  test:
+    name: Logic and UI tests
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Select Xcode
+        run: |
+          XC=""
+          for v in 27 26 16; do
+            XC=$(ls -d /Applications/Xcode_$v*.app 2>/dev/null | grep -v -i beta | sort -V | tail -1)
+            [ -n "$XC" ] && break
+          done
+          sudo xcode-select -s "$XC/Contents/Developer"
+          xcodebuild -version
+
+      - name: Run tests
+        run: |
+          UDID=$(xcrun simctl list devices available -j | python3 -c "import json,sys; d=json.load(sys.stdin)['devices']; print(next(x['udid'] for k,v in sorted(d.items(), reverse=True) if 'iOS' in k for x in v if x['name'].startswith('iPhone') and 'Pro' in x['name'] and 'Max' not in x['name']))")
+          set +e
+          xcodebuild test \
+            -project Fauna/Fauna.xcodeproj \
+            -scheme Fauna \
+            -destination "id=$UDID" \
+            -derivedDataPath build \
+            -resultBundlePath TestResults.xcresult \
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee test.log | grep -E "error:|Test Case .*(passed|failed)|Executed [0-9]+ test|TEST (SUCCEEDED|FAILED)|\*\* TEST"
+          status=${PIPESTATUS[0]}
+          set -e
+          echo "---- failures ----"
+          grep -E "error: -\[|XCTAssert|failed \(" test.log | head -200 || true
+          echo "---- summary ----"
+          grep -E "Executed [0-9]+ test" test.log | tail -3 || true
+          exit $status
+
+      - name: Upload results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fauna-test-results
+          path: |
+            TestResults.xcresult
+            test.log
+          retention-days: 7

@@ -177,6 +177,8 @@ struct QuizView: View {
         .animation(.spring(response: 0.35, dampingFraction: 0.7), value: picked)
         .accessibilityLabel(item.choices[i])
         .accessibilityValue(picked == nil ? "" : (isCorrect ? "Correct answer" : (isPicked ? "Your answer, incorrect" : "")))
+        // For UI tests; identifiers are never spoken by VoiceOver.
+        .accessibilityIdentifier(isCorrect ? "quiz.choice.correct" : "quiz.choice.wrong")
     }
 
     private func feedback(_ item: Item, wasRight: Bool) -> some View {

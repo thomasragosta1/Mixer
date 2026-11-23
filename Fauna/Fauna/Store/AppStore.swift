@@ -195,7 +195,9 @@ final class AppStore {
     func refreshDay(now: Date = .now) {
         guard state.hasOnboarded else { return }
         let key = Self.dayKey(for: now)
-        guard key != state.dayKey || state.todayChain.isEmpty else { return }
+        // Also re-pick when today's animal no longer exists (an update renamed or removed it),
+        // so Today is never left empty until midnight.
+        guard key != state.dayKey || todayAnimals.isEmpty else { return }
         var next = state
         next.dayKey = key
         next.todayChain = []
