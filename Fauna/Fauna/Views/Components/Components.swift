@@ -302,20 +302,19 @@ struct PhotoCreditLine: View {
     @State private var credit: PhotoCredit?
 
     var body: some View {
-        Group {
-            if let credit {
-                Button {
-                    openURL(credit.pageURL)
-                } label: {
-                    Text(credit.line)
-                        .font(.caption2)
-                        .lineLimit(1)
-                        .foregroundStyle(onDark ? Color.white.opacity(0.85) : Color.secondary)
-                }
-                .buttonStyle(.plain)
-                .accessibilityHint("Opens the photo's page on Wikimedia Commons")
-            }
+        // Always render something: SwiftUI doesn't run .task on a view with no content,
+        // so an empty placeholder would never load the credit.
+        Button {
+            if let credit { openURL(credit.pageURL) }
+        } label: {
+            Text(credit?.line ?? "Photo: Wikimedia Commons")
+                .font(.caption2)
+                .lineLimit(1)
+                .foregroundStyle(onDark ? Color.white.opacity(0.85) : Color.secondary)
         }
+        .buttonStyle(.plain)
+        .disabled(credit == nil)
+        .accessibilityHint("Opens the photo's page on Wikimedia Commons")
         .task(id: animal.id) {
             credit = await WikiImages.shared.credit(for: animal.wikipediaTitle)
         }
