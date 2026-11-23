@@ -52,12 +52,19 @@ actor WikiImages {
         config.timeoutIntervalForRequest = 20
         session = URLSession(configuration: config)
         memory.countLimit = 80
+        // Photo files and credits are resolved at build time (scripts/fetch_photos.py) and
+        // bundled, so the app doesn't need to look them up. Runtime lookup is the fallback.
+        var known: [String: Source] = [:]
+        if let url = Bundle.main.url(forResource: "photos", withExtension: "json"),
+           let data = try? Data(contentsOf: url),
+           let bundled = try? JSONDecoder().decode([String: Source].self, from: data) {
+            known = bundled
+        }
         if let data = UserDefaults.standard.data(forKey: Self.defaultsKey),
            let saved = try? JSONDecoder().decode([String: Source].self, from: data) {
-            sources = saved
-        } else {
-            sources = [:]
+            known.merge(saved) { bundled, _ in bundled }
         }
+        sources = known
     }
 
     // MARK: Public

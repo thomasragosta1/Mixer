@@ -25,6 +25,9 @@ jobs:
       - name: Check content
         run: python3 Fauna/scripts/validate_content.py
 
+      - name: Resolve photos and credits
+        run: python3 Fauna/scripts/fetch_photos.py
+
       - name: Select Xcode
         run: |
           XC=""
@@ -53,9 +56,6 @@ jobs:
             grep -B2 -A6 "error:" build.log | head -300
             exit 1
           fi
-
-      - name: Check Wikipedia titles still have photos
-        run: python3 Fauna/scripts/validate_content.py --online
 
       - name: Screenshots
         run: |
@@ -115,7 +115,7 @@ jobs:
           cp shots/contact-sheet.jpg Fauna/docs/screenshots/
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add Fauna/docs/screenshots
+          git add Fauna/docs/screenshots Fauna/Fauna/Resources/photos.json
           if git diff --cached --quiet; then echo "No changes"; exit 0; fi
           git commit -m "Fauna: update screenshots [skip ci]"
           for i in 1 2 3; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 5; done
@@ -213,6 +213,9 @@ jobs:
               sys.exit(1)
           print(f"App Store Connect app found for {spelled}")
           PY
+
+      - name: Resolve photos and credits
+        run: python3 Fauna/scripts/fetch_photos.py
 
       - name: Select Xcode
         run: |
