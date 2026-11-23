@@ -174,13 +174,19 @@ struct FocusView: View {
             Label {
                 VStack(alignment: .leading, spacing: 4) {
                     Text("About Fauna").font(.headline)
-                    Text("Articles are condensed from Wikipedia and shared under CC BY-SA 4.0. Photos come from Wikimedia Commons. Donation links go straight to each organization's own website; Fauna never handles money.")
+                    Text("Articles are adapted from Wikipedia under CC BY-SA 4.0. Photos come from Wikimedia Commons, each under its own license. Donation links go straight to each organization's own website; Fauna never handles money.")
                         .font(.caption)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
                 }
             } icon: {
                 Image(systemName: "leaf.fill").foregroundStyle(Color.faunaMoss)
+            }
+            NavigationLink {
+                SourcesView()
+            } label: {
+                Label("Sources & Licenses", systemImage: "doc.text.magnifyingglass")
+                    .font(.subheadline.weight(.semibold))
             }
             Divider()
             Button(role: .destructive) {

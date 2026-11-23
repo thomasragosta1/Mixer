@@ -1,24 +1,48 @@
 import UIKit
 
-/// Finds the lead photo of a Wikipedia article and loads it, with memory and disk caching.
-///
-/// Photos come from Wikimedia Commons through the Wikipedia REST summary API. Resolved URLs are
-/// remembered in UserDefaults, so after the first look an animal's photo loads straight from cache.
+/// Who took a photo and under what license, as recorded on Wikimedia Commons.
+struct PhotoCredit: Codable, Hashable {
+    /// Commons file name, e.g. "Red_Panda_(24986761703).jpg".
+    let file: String
+    let author: String
+    let license: String
+    let licenseURL: URL?
+    /// The file's page on Commons, which carries the full attribution.
+    let pageURL: URL
+
+    /// "Photo: Jane Smith, CC BY-SA 4.0"
+    var line: String {
+        let who = author.isEmpty ? "Wikimedia Commons" : author
+        return license.isEmpty ? "Photo: \(who)" : "Photo: \(who), \(license)"
+    }
+}
+
+/// Finds the lead photo of a Wikipedia article, checks that it is a freely licensed file on
+/// Wikimedia Commons (not a 'fair use' upload, which can't be reused), records its author and
+/// license, and loads it at a standard width with memory and disk caching.
 actor WikiImages {
     static let shared = WikiImages()
 
     /// Wikimedia serves thumbnails at a set of standard widths.
     enum Size: Int { case card = 500, hero = 1280, full = 1920 }
 
+    /// Everything needed to load and credit one article's photo.
+    private struct Source: Codable {
+        let original: URL
+        let width: Int
+        let credit: PhotoCredit
+    }
+
     private let session: URLSession
     private let memory = NSCache<NSString, UIImage>()
-    private var resolved: [String: URL]
+    private var sources: [String: Source]
     private var inflight: [String: Task<UIImage?, Never>] = [:]
+    private var resolving: [String: Task<Source?, Never>] = [:]
     /// Wikipedia rate-limits bursts, so at most a few lookups run at once.
     private var activeLookups = 0
     private var waiting: [CheckedContinuation<Void, Never>] = []
     private let maxLookups = 3
-    private static let defaultsKey = "WikiImages.resolved.v1"
+    private static let defaultsKey = "WikiImages.sources.v2"
 
     init() {
         let config = URLSessionConfiguration.default
@@ -28,16 +52,23 @@ actor WikiImages {
         config.timeoutIntervalForRequest = 20
         session = URLSession(configuration: config)
         memory.countLimit = 80
-        let saved = UserDefaults.standard.dictionary(forKey: Self.defaultsKey) as? [String: String] ?? [:]
-        resolved = saved.compactMapValues(URL.init(string:))
+        if let data = UserDefaults.standard.data(forKey: Self.defaultsKey),
+           let saved = try? JSONDecoder().decode([String: Source].self, from: data) {
+            sources = saved
+        } else {
+            sources = [:]
+        }
     }
+
+    // MARK: Public
 
     func image(for title: String, size: Size) async -> UIImage? {
         let key = "\(title)#\(size.rawValue)"
         if let hit = memory.object(forKey: key as NSString) { return hit }
         if let running = inflight[key] { return await running.value }
         let task = Task<UIImage?, Never> { [session] in
-            guard let url = await self.imageURL(for: title, size: size) else { return nil }
+            guard let source = await self.source(for: title) else { return nil }
+            let url = Self.url(for: source, width: size.rawValue)
             guard let (data, response) = try? await session.data(from: url),
                   (response as? HTTPURLResponse)?.statusCode ?? 200 < 400,
                   let image = UIImage(data: data) else { return nil }
@@ -50,6 +81,11 @@ actor WikiImages {
         return image
     }
 
+    /// Author and license for the article's photo, or nil if it has no reusable photo.
+    func credit(for title: String) async -> PhotoCredit? {
+        await source(for: title)?.credit
+    }
+
     /// Warms the cache for animals the reader is about to see.
     func prefetch(_ titles: [String], size: Size) {
         for title in titles {
@@ -57,30 +93,74 @@ actor WikiImages {
         }
     }
 
-    private func imageURL(for title: String, size: Size) async -> URL? {
-        let key = "\(title)#\(size.rawValue)"
-        if let url = resolved[key] { return url }
-        let path = title.replacingOccurrences(of: " ", with: "_")
-            .addingPercentEncoding(withAllowedCharacters: Self.pathSafe) ?? title
-        guard let api = URL(string: "https://en.wikipedia.org/api/rest_v1/page/summary/\(path)") else { return nil }
+    // MARK: Resolving
+
+    private func source(for title: String) async -> Source? {
+        if let known = sources[title] { return known }
+        if let running = resolving[title] { return await running.value }
+        let task = Task<Source?, Never> { await self.resolve(title) }
+        resolving[title] = task
+        let source = await task.value
+        resolving[title] = nil
+        if let source {
+            sources[title] = source
+            if let data = try? JSONEncoder().encode(sources) {
+                UserDefaults.standard.set(data, forKey: Self.defaultsKey)
+            }
+        }
+        return source
+    }
+
+    private func resolve(_ title: String) async -> Source? {
         await acquireLookup()
         defer { releaseLookup() }
-        var summary: Summary?
+        let path = Self.pathComponent(title)
+
+        // 1. The article's lead image.
+        var file: String?
+        if let summary: Summary = await fetch("https://en.wikipedia.org/api/rest_v1/page/summary/\(path)"),
+           let lead = summary.originalimage?.source, lead.contains("/wikipedia/commons/") {
+            file = Self.fileName(fromUploadURL: lead)
+        }
+        // 2. A lead image hosted on English Wikipedia itself is usually 'fair use' and can't be
+        //    reused, so take the first Commons photo in the article instead.
+        if file == nil, let media: MediaList = await fetch("https://en.wikipedia.org/api/rest_v1/page/media-list/\(path)") {
+            file = media.items.first { item in
+                item.type == "image" && (item.srcset?.contains { $0.src.contains("/wikipedia/commons/") } ?? false)
+            }?.title.replacingOccurrences(of: "File:", with: "")
+        }
+        guard let file else { return nil }
+
+        // 3. Size and license from Commons.
+        let fileTitle = "File:" + file
+        guard let encoded = fileTitle.addingPercentEncoding(withAllowedCharacters: Self.querySafe),
+              let info: CommonsQuery = await fetch("https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&prop=imageinfo&iiprop=url%7Csize%7Cextmetadata&titles=\(encoded)"),
+              let ii = info.query?.pages.first?.imageinfo?.first,
+              let original = URL(string: ii.url) else { return nil }
+        let meta = ii.extmetadata ?? [:]
+        let license = Self.plain(meta["LicenseShortName"]?.value)
+        guard !license.lowercased().contains("fair use"), !license.lowercased().contains("non-free") else { return nil }
+        let credit = PhotoCredit(
+            file: file,
+            author: String(Self.plain(meta["Artist"]?.value).prefix(80)),
+            license: license,
+            licenseURL: meta["LicenseUrl"]?.value.flatMap { URL(string: Self.plain($0)) },
+            pageURL: URL(string: ii.descriptionurl ?? "") ?? URL(string: "https://commons.wikimedia.org/wiki/\(Self.pathComponent(fileTitle))")!)
+        return Source(original: original, width: ii.width ?? 0, credit: credit)
+    }
+
+    private func fetch<T: Decodable>(_ urlString: String) async -> T? {
+        guard let url = URL(string: urlString) else { return nil }
         for attempt in 0..<4 {
-            guard let (data, response) = try? await session.data(from: api) else { return nil }
+            guard let (data, response) = try? await session.data(from: url) else { return nil }
             let status = (response as? HTTPURLResponse)?.statusCode ?? 200
             if status == 429 || status >= 500 {
                 try? await Task.sleep(for: .seconds(Double(1 << attempt)))
                 continue
             }
-            summary = try? JSONDecoder().decode(Summary.self, from: data)
-            break
+            return try? JSONDecoder().decode(T.self, from: data)
         }
-        guard let summary else { return nil }
-        guard let url = Self.pick(summary, width: size.rawValue) else { return nil }
-        resolved[key] = url
-        UserDefaults.standard.set(resolved.mapValues(\.absoluteString), forKey: Self.defaultsKey)
-        return url
+        return nil
     }
 
     private func acquireLookup() async {
@@ -99,28 +179,85 @@ actor WikiImages {
         }
     }
 
+    // MARK: Helpers
+
     private static let pathSafe = CharacterSet(charactersIn:
         "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-.()'")
 
-    /// Uses the original when it's already small; otherwise asks Wikimedia for a standard-width thumbnail.
-    private static func pick(_ s: Summary, width: Int) -> URL? {
-        if let original = s.originalimage, original.width <= width {
-            return URL(string: original.source)
-        }
-        guard let thumb = s.thumbnail?.source, var components = URLComponents(string: thumb) else {
-            return s.originalimage.flatMap { URL(string: $0.source) }
-        }
-        var parts = components.percentEncodedPath.split(separator: "/", omittingEmptySubsequences: false).map(String.init)
-        if let last = parts.last, let px = last.range(of: "px-"), last[..<px.lowerBound].allSatisfy(\.isNumber) {
-            parts[parts.count - 1] = "\(width)" + last[px.lowerBound...]
-            components.percentEncodedPath = parts.joined(separator: "/")
-        }
-        return components.url
+    private static let querySafe = CharacterSet(charactersIn:
+        "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-.~:()")
+
+    private static func pathComponent(_ title: String) -> String {
+        title.replacingOccurrences(of: " ", with: "_")
+            .addingPercentEncoding(withAllowedCharacters: pathSafe) ?? title
     }
 
+    /// ".../commons/a/ab/File.jpg" or ".../commons/thumb/a/ab/File.jpg/320px-File.jpg" -> "File.jpg"
+    private static func fileName(fromUploadURL s: String) -> String? {
+        guard let url = URL(string: s) else { return nil }
+        let parts = url.pathComponents
+        if let i = parts.firstIndex(of: "thumb"), parts.count > i + 3 { return parts[i + 3] }
+        return parts.last
+    }
+
+    /// Original when it's already small enough; otherwise a standard-width Commons thumbnail.
+    private static func url(for source: Source, width: Int) -> URL {
+        if source.width > 0, source.width <= width { return source.original }
+        var s = source.original.absoluteString
+        guard let range = s.range(of: "/wikipedia/commons/") else { return source.original }
+        s.replaceSubrange(range, with: "/wikipedia/commons/thumb/")
+        let name = source.original.lastPathComponent
+            .addingPercentEncoding(withAllowedCharacters: .urlPathAllowed) ?? source.original.lastPathComponent
+        let suffix = name.lowercased().hasSuffix(".svg") || name.lowercased().hasSuffix(".tif")
+            || name.lowercased().hasSuffix(".tiff") ? ".png" : ""
+        return URL(string: s + "/\(width)px-" + name + suffix) ?? source.original
+    }
+
+    /// Commons metadata is HTML; reduce it to plain text.
+    private static func plain(_ html: String?) -> String {
+        guard var s = html else { return "" }
+        s = s.replacingOccurrences(of: "<[^>]+>", with: "", options: .regularExpression)
+        for (entity, char) in [("&amp;", "&"), ("&quot;", "\""), ("&#39;", "'"), ("&nbsp;", " "), ("&lt;", "<"), ("&gt;", ">")] {
+            s = s.replacingOccurrences(of: entity, with: char)
+        }
+        return s.split(whereSeparator: \.isWhitespace).joined(separator: " ")
+    }
+
+    // MARK: API shapes
+
     private struct Summary: Decodable {
-        struct Image: Decodable { let source: String; let width: Int; let height: Int }
-        let thumbnail: Image?
+        struct Image: Decodable { let source: String }
         let originalimage: Image?
+    }
+
+    private struct MediaList: Decodable {
+        struct Item: Decodable {
+            struct Src: Decodable { let src: String }
+            let title: String
+            let type: String
+            let srcset: [Src]?
+        }
+        let items: [Item]
+    }
+
+    private struct CommonsQuery: Decodable {
+        struct Query: Decodable { let pages: [Page] }
+        struct Page: Decodable { let imageinfo: [Info]? }
+        struct Info: Decodable {
+            let url: String
+            let descriptionurl: String?
+            let width: Int?
+            let extmetadata: [String: Meta]?
+        }
+        /// Values are almost always strings; anything else is ignored rather than failing the decode.
+        struct Meta: Decodable {
+            let value: String?
+            private enum Key: CodingKey { case value }
+            init(from decoder: Decoder) throws {
+                let c = try decoder.container(keyedBy: Key.self)
+                value = try? c.decode(String.self, forKey: .value)
+            }
+        }
+        let query: Query?
     }
 }

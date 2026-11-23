@@ -222,6 +222,16 @@ struct RangeMap: View {
                     ProgressView().tint(.white)
                 }
                 marker
+                // Apple requires its maps to be credited.
+                Text("\u{F8FF}Maps")
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(.white.opacity(0.85))
+                    .padding(.horizontal, 6)
+                    .padding(.vertical, 3)
+                    .background(.black.opacity(0.3), in: Capsule())
+                    .padding(8)
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topTrailing)
+                    .accessibilityLabel("Apple Maps")
             }
             .task(id: animal.id) {
                 let size = CGSize(width: max(geo.size.width, 1), height: max(geo.size.height, 1))
@@ -281,5 +291,33 @@ actor RangeSnapshots {
         memory.setObject(img, forKey: key as NSString)
         if let file, let data = img.jpegData(compressionQuality: 0.8) { try? data.write(to: file) }
         return img
+    }
+}
+
+/// "Photo: Jane Smith, CC BY-SA 4.0", loaded from Wikimedia Commons; taps open the file's page.
+struct PhotoCreditLine: View {
+    let animal: Animal
+    var onDark = false
+    @Environment(\.openURL) private var openURL
+    @State private var credit: PhotoCredit?
+
+    var body: some View {
+        Group {
+            if let credit {
+                Button {
+                    openURL(credit.pageURL)
+                } label: {
+                    Text(credit.line)
+                        .font(.caption2)
+                        .lineLimit(1)
+                        .foregroundStyle(onDark ? Color.white.opacity(0.85) : Color.secondary)
+                }
+                .buttonStyle(.plain)
+                .accessibilityHint("Opens the photo's page on Wikimedia Commons")
+            }
+        }
+        .task(id: animal.id) {
+            credit = await WikiImages.shared.credit(for: animal.wikipediaTitle)
+        }
     }
 }

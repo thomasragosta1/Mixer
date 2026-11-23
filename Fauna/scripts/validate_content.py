@@ -65,6 +65,8 @@ if "--online" in sys.argv:
                 data = json.load(urllib.request.urlopen(req, timeout=20))
                 img = (data.get("originalimage") or data.get("thumbnail") or {}).get("source")
                 if not img: fail(f"{a['id']}: no image for '{a['wikipediaTitle']}'")
+                elif "/wikipedia/commons/" not in img:
+                    print(f"WARN {a['id']}: lead image isn't on Commons (likely fair use); the app will use the next Commons photo")
                 else: print(f"ok  {a['id']:28} {data.get('title')}")
                 break
             except urllib.error.HTTPError as e:

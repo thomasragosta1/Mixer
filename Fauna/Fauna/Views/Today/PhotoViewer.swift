@@ -57,13 +57,8 @@ struct PhotoViewer: View {
                         Text(animal.scientificName)
                             .font(.subheadline.italic())
                             .foregroundStyle(.white.opacity(0.7))
-                        Button {
-                            openURL(animal.wikipediaURL)
-                        } label: {
-                            Label("Photo from Wikimedia Commons, via Wikipedia", systemImage: "arrow.up.right")
-                                .font(.caption)
-                                .foregroundStyle(.white.opacity(0.7))
-                        }
+                        PhotoCreditLine(animal: animal, onDark: true)
+                            .padding(.top, 2)
                     }
                     .foregroundStyle(.white)
                     .frame(maxWidth: .infinity, alignment: .leading)

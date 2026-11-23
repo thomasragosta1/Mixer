@@ -133,6 +133,14 @@ struct AnimalArticleView: View {
                 LinearGradient(colors: [.black.opacity(0.35), .clear], startPoint: .top, endPoint: .center)
                     .frame(height: topInset * 2)
                     .frame(maxHeight: .infinity, alignment: .top)
+                PhotoCreditLine(animal: animal, onDark: true)
+                    .padding(.horizontal, 8)
+                    .padding(.vertical, 4)
+                    .background(.black.opacity(0.35), in: Capsule())
+                    .padding(.leading, 12)
+                    .padding(.trailing, 56)
+                    .padding(.bottom, 14)
+                    .frame(maxWidth: .infinity, alignment: .leading)
                 Image(systemName: "arrow.up.left.and.arrow.down.right")
                     .font(.footnote.weight(.bold))
                     .foregroundStyle(.white)
@@ -330,7 +338,7 @@ struct AnimalArticleView: View {
     }
 
     private var sourceFooter: some View {
-        VStack(alignment: .leading, spacing: 10) {
+        VStack(alignment: .leading, spacing: 12) {
             Divider()
             Button {
                 openURL(animal.wikipediaURL)
@@ -341,7 +349,7 @@ struct AnimalArticleView: View {
                     VStack(alignment: .leading, spacing: 2) {
                         Text("Read the full article on Wikipedia")
                             .font(.subheadline.weight(.semibold))
-                        Text("Text condensed from Wikipedia (CC BY-SA 4.0). Photo from Wikimedia Commons.")
+                        Text("This article is adapted and condensed from the Wikipedia article \u{201C}\(animal.wikipediaTitle)\u{201D} by its contributors, under CC BY-SA 4.0. Changes were made. This text is available under the same license.")
                             .font(.caption)
                             .foregroundStyle(.secondary)
                             .multilineTextAlignment(.leading)
@@ -354,6 +362,12 @@ struct AnimalArticleView: View {
                 .foregroundStyle(.primary)
             }
             .buttonStyle(PressableStyle())
+            HStack(spacing: 14) {
+                Link("CC BY-SA 4.0 license", destination: URL(string: "https://creativecommons.org/licenses/by-sa/4.0/")!)
+                PhotoCreditLine(animal: animal)
+            }
+            .font(.caption2)
+            .padding(.leading, 36)
         }
     }
 }

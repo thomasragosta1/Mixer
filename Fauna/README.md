@@ -46,7 +46,7 @@ scripts/        validate_content.py, make_icon.py, merge_longreads.py (+ longrea
 - **One daily animal, unlimited bonus animals** as long as you keep passing quizzes. Bonus animals come from the same queue, so the notification schedule is rebuilt after each unlock.
 - **"Day" is the device's local calendar day.** The app rolls over at midnight, on launch, and when it returns to the foreground.
 - **Donations open in Safari** rather than in-app, to stay clearly inside App Store rules for charitable giving.
-- **Attribution:** article text is a condensed adaptation of Wikipedia (CC BY-SA 4.0), photos are from Wikimedia Commons; both are credited under every article with a link to the source. Per-photo author credits are a good next step before an App Store release.
+- **Licensing:** article text is adapted from Wikipedia under CC BY-SA 4.0 and is shared under the same license (credited at the end of every article, with the license linked). Photos are used only if they're freely licensed files on Wikimedia Commons; each shows its author and license on the photo, in the full-screen viewer and under Focus > Sources & Licenses. Wikipedia 'fair use' lead images are skipped in favour of the article's next Commons photo. Maps are credited to Apple.
 
 ## Next steps
 
