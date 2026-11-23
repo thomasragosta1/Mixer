@@ -49,7 +49,9 @@ struct AnimalArticleView: View {
                 .allowsHitTesting(false)
                 .accessibilityHidden(true)
         }
-        .safeAreaInset(edge: .bottom, spacing: 0) {
+        // An overlay, not a safe-area inset: showing or hiding it must never change the
+        // page's layout, or the scroll position jumps.
+        .overlay(alignment: .bottom) {
             if mode == .today, let onStartQuiz, store.canUnlockAnywhere, !unlockCardVisible {
                 UnlockPill(action: onStartQuiz)
                     .padding(.horizontal, 20)
@@ -334,7 +336,8 @@ struct AnimalArticleView: View {
         }
         .padding(.horizontal, 22)
         .padding(.top, 24)
-        .padding(.bottom, 48)
+        // Room for the floating unlock button, so it never covers the end of the page.
+        .padding(.bottom, mode == .today ? 110 : 48)
     }
 
     private var sourceFooter: some View {
