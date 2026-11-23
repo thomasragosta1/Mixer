@@ -91,7 +91,8 @@ enum UnitText {
 
             var factor = rule.factor
             var unit = (b ?? a) * factor == 1 ? rule.unit : rule.unitPlural
-            if let p = rule.promote, max(a, b ?? a) * factor >= p.limit {
+            // Promote on the value as it will be shown, so 31.7 oz (shown as 32) becomes 2 lb.
+            if let p = rule.promote, rounded(max(a, b ?? a) * factor) >= p.limit {
                 factor *= p.factor
                 unit = p.plural
             }
@@ -114,15 +115,19 @@ enum UnitText {
     /// Two significant figures for small values, whole numbers in the middle, rounded tens and
     /// hundreds for big ones, so converted numbers don't look falsely precise.
     private static func format(_ v: Double) -> String {
-        let rounded: Double
+        // Below 1, keep two significant figures so tiny weights don't round to "0 oz".
+        if v > 0, v < 1 { return v.formatted(.number.precision(.significantDigits(1...2))) }
+        return rounded(v).formatted(.number.precision(.fractionLength(0...2)))
+    }
+
+    private static func rounded(_ v: Double) -> Double {
         switch v {
-        case ..<1: rounded = (v * 100).rounded() / 100
-        case ..<10: rounded = (v * 10).rounded() / 10
-        case ..<100: rounded = v.rounded()
-        case ..<1000: rounded = (v / 5).rounded() * 5
-        case ..<10000: rounded = (v / 50).rounded() * 50
-        default: rounded = (v / 100).rounded() * 100
+        case ..<1: (v * 100).rounded() / 100
+        case ..<10: (v * 10).rounded() / 10
+        case ..<100: v.rounded()
+        case ..<1000: (v / 5).rounded() * 5
+        case ..<10000: (v / 50).rounded() * 50
+        default: (v / 100).rounded() * 100
         }
-        return rounded.formatted(.number.precision(.fractionLength(0...2)))
     }
 }

@@ -49,8 +49,8 @@
         "prompt": "Where do axolotls live in the wild?",
         "choices": [
           "The canals of Xochimilco, Mexico City",
-          "Mountain streams in the Andes",
-          "Caves in southern Europe",
+          "Cold mountain streams high in the Peruvian Andes",
+          "Flooded limestone caves in southern Europe",
           "Rice paddies in Japan"
         ],
         "explanation": "Wild axolotls survive only in the canals and wetlands of Xochimilco, at the edge of Mexico City."
@@ -58,10 +58,10 @@
       {
         "prompt": "What does neoteny mean for an axolotl?",
         "choices": [
-          "It keeps its juvenile features, like gills, as an adult",
+          "It keeps juvenile features, like gills, as an adult",
           "It can change color to match its surroundings",
           "It sleeps through the whole winter",
-          "It lays eggs on land"
+          "It lays its eggs on land"
         ],
         "explanation": "Axolotls stay in their larval form for life, keeping their feathery gills even when they breed."
       },
@@ -69,9 +69,9 @@
         "prompt": "Which of these can an axolotl regrow?",
         "choices": [
           "A lost limb, without scarring",
-          "Only its tail tip",
-          "Nothing at all",
-          "Only its teeth"
+          "Only the very tip of its tail, and only once",
+          "Its gills, but never a whole leg or arm",
+          "Only its teeth and claws"
         ],
         "explanation": "Axolotls can regenerate whole limbs, their tails, parts of the spinal cord, heart and brain."
       }
@@ -146,8 +146,8 @@
         "prompt": "Where do eastern monarchs spend the winter?",
         "choices": [
           "Fir forests in the mountains of central Mexico",
-          "Underground in Canadian meadows",
-          "Florida swamps",
+          "Sheltered underground in Canadian meadows until the spring thaw",
+          "Cypress swamps along the Gulf coast of Florida",
           "Caribbean beaches"
         ],
         "explanation": "They gather by the millions in oyamel fir forests high in central Mexico."
@@ -157,7 +157,7 @@
         "choices": [
           "To warn predators that they are toxic",
           "To attract bees",
-          "To stay warm in the sun",
+          "To soak up warmth from the sun",
           "To hide among autumn leaves"
         ],
         "explanation": "Toxins from milkweed make monarchs taste bad, and their orange wings advertise it."
@@ -226,9 +226,9 @@
         "prompt": "Where does the bee's name come from?",
         "choices": [
           "A rusty-orange patch on the workers' abdomen",
-          "The rust-colored flowers it visits",
-          "Its nests in old metal machinery",
-          "The color of its queen's wings"
+          "The rust-coloured prairie flowers it visits most often",
+          "Its nests in old metal farm machinery",
+          "The colour of its queen's wings in late summer light"
         ],
         "explanation": "Workers and males carry a small rusty patch in the middle of their backs."
       },
@@ -246,8 +246,8 @@
         "prompt": "What is buzz pollination?",
         "choices": [
           "Vibrating flight muscles to shake pollen loose",
-          "Flying in a figure-eight to signal others",
-          "Humming to attract a mate",
+          "Flying in a figure-eight to show nestmates where flowers are",
+          "Humming loudly at the entrance of the nest to attract a mate",
           "Collecting pollen only at night"
         ],
         "explanation": "Bumble bees vibrate on a flower so pollen shakes free, which crops like tomatoes need."
@@ -331,8 +331,8 @@
         "prompt": "How long does an adult luna moth live?",
         "choices": [
           "About a week",
-          "About a year",
-          "One hour",
+          "About a year, overwintering as an adult",
+          "Just one hour after leaving its cocoon",
           "Three months"
         ],
         "explanation": "With no way to eat, the adult lives for roughly seven to ten days."
@@ -398,9 +398,9 @@
         "prompt": "Which coin features the common loon?",
         "choices": [
           "The Canadian one-dollar coin",
-          "The US quarter",
+          "The US quarter from the state of Minnesota",
           "The British pound",
-          "The euro"
+          "The euro coin minted for Finland and the Baltic states"
         ],
         "explanation": "The loon on Canada's dollar coin is why it's nicknamed the 'loonie'."
       },
@@ -410,7 +410,7 @@
           "Their legs are set far back on their bodies",
           "They have no toes",
           "Their wings are too heavy",
-          "They are blind out of the water"
+          "They are nearly blind out of water"
         ],
         "explanation": "Legs placed far back are great for diving but make walking almost impossible."
       },
@@ -486,16 +486,16 @@
         "choices": [
           "A puffling",
           "A pufflet",
-          "A cygnet",
-          "A squab"
+          "A cygnet, like the young of swans",
+          "A downy squab"
         ],
         "explanation": "Puffin chicks are called pufflings."
       },
       {
         "prompt": "What happens to a puffin's colorful bill in winter?",
         "choices": [
-          "It sheds its colorful outer plates and looks duller",
-          "It turns bright blue",
+          "It sheds its colourful outer plates and looks duller",
+          "It turns bright blue to match the winter sea and sky",
           "It grows longer",
           "It stays exactly the same"
         ],
@@ -505,9 +505,9 @@
         "prompt": "How do puffins carry fish back to their chick?",
         "choices": [
           "Many at once, held crosswise in the bill",
-          "Swallowed whole, then coughed up",
+          "Swallowed whole at sea, then coughed up for the chick",
           "Clutched in their feet",
-          "One at a time only"
+          "One at a time only, flying back and forth all day"
         ],
         "explanation": "A rough tongue and mouth spines let puffins hold a whole row of fish."
       }
@@ -581,8 +581,8 @@
         "prompt": "How do beavers get food in winter when the pond freezes?",
         "choices": [
           "They store branches underwater near the lodge",
-          "They hibernate without eating",
-          "They migrate south",
+          "They hibernate in the lodge without eating until spring",
+          "They migrate south to rivers that stay open all winter",
           "They hunt fish under the ice"
         ],
         "explanation": "In autumn beavers stockpile branches underwater to eat all winter."
@@ -591,9 +591,9 @@
         "prompt": "Why are beaver dams good for other wildlife?",
         "choices": [
           "They create wetlands that many species need",
-          "They keep predators away from rivers",
+          "They keep predators like wolves and bears away from rivers",
           "They make water warmer for fish",
-          "They don't help other wildlife"
+          "They don't help other wildlife; they mostly crowd it out of the river"
         ],
         "explanation": "Beaver ponds become rich wetlands for fish, birds, amphibians and insects."
       }
@@ -744,8 +744,8 @@
         "prompt": "Why do snapping turtles snap on land?",
         "choices": [
           "Their shell is too small to hide in",
-          "They are always hungry",
-          "They can't see well in daylight",
+          "They are always hungry and snap at anything that moves nearby",
+          "They can't see well in bright daylight away from water",
           "To communicate with other turtles"
         ],
         "explanation": "They can't retract fully into their small shell, so on land they defend themselves by striking."
@@ -755,8 +755,8 @@
         "choices": [
           "The temperature of the nest",
           "The size of the egg",
-          "The mother's age",
-          "The time of year it hatches"
+          "The mother's age when she laid the eggs",
+          "The time of year the eggs are laid and hatch"
         ],
         "explanation": "Like many turtles, snappers have temperature-dependent sex determination."
       },
@@ -839,8 +839,8 @@
         "prompt": "How do spring peepers survive winter?",
         "choices": [
           "They partly freeze, protected by glucose",
-          "They migrate south",
-          "They live deep in warm caves",
+          "They fly south to the Gulf coast with migrating birds",
+          "They shelter deep in warm caves with other frogs",
           "They stay active under the ice"
         ],
         "explanation": "Glucose acts like antifreeze in their cells while ice forms in their bodies."
@@ -914,9 +914,9 @@
         "prompt": "Why do lobsters turn red when cooked?",
         "choices": [
           "Heat releases a red pigment called astaxanthin",
-          "They absorb color from the water",
-          "Boiling burns the shell",
-          "They are red all along, hidden by mud"
+          "They absorb colour from the water",
+          "Boiling burns the shell, leaving a reddish scorch",
+          "They were red all along, hidden under a layer of mud"
         ],
         "explanation": "Astaxanthin is bound to proteins in the shell until heat frees it."
       },
@@ -934,8 +934,8 @@
         "prompt": "How do lobsters taste their food?",
         "choices": [
           "With tiny hairs on their legs",
-          "With their eyes",
-          "With their tail fan",
+          "With their eyes, which can sense chemicals",
+          "With taste buds along the inside of their tail fan",
           "They can't taste at all"
         ],
         "explanation": "Sensory hairs on their legs let lobsters taste what they walk on."
@@ -1010,8 +1010,8 @@
         "choices": [
           "For balance and as a scarf against the cold",
           "To swim through rivers",
-          "To dig dens",
-          "To signal danger to other cats"
+          "To dig dens in deep snow on the high mountain slopes",
+          "To signal danger to other snow leopards across a valley"
         ],
         "explanation": "The thick tail helps balance on cliffs and wraps around the face for warmth."
       },
@@ -1094,9 +1094,9 @@
         "prompt": "What helps a red panda grip bamboo?",
         "choices": [
           "An extended wrist bone, a 'false thumb'",
-          "Sticky paw pads",
+          "Sticky pads on its paws that cling to smooth stems",
           "Its prehensile tail",
-          "Hooked claws on its back feet"
+          "Hooked claws on its back feet that lock around the stems"
         ],
         "explanation": "A wrist bone that acts like a thumb lets it hold bamboo stems."
       },
@@ -1179,8 +1179,8 @@
         "prompt": "How does a pangolin defend itself?",
         "choices": [
           "It rolls into a tight, scaly ball",
-          "It sprays a bad smell",
-          "It runs very fast",
+          "It sprays a foul-smelling liquid from glands near its tail",
+          "It runs very fast and hides in the nearest burrow",
           "It bites with sharp teeth"
         ],
         "explanation": "Rolled up, its overlapping scales protect its soft belly."
@@ -1188,7 +1188,7 @@
       {
         "prompt": "Why are pangolins so heavily trafficked?",
         "choices": [
-          "For their meat and scales used in traditional medicine",
+          "For meat, and scales used in traditional medicine",
           "As racing animals",
           "For their wool",
           "Because they damage crops"
@@ -1254,9 +1254,9 @@
         "prompt": "Who usually leads an elephant herd?",
         "choices": [
           "The oldest female, the matriarch",
-          "The biggest male",
+          "The biggest male, who fights off any challengers",
           "The youngest calf",
-          "Herds have no leader"
+          "Herds have no leader and simply follow the rains"
         ],
         "explanation": "A matriarch leads her family using decades of experience."
       },
@@ -1264,9 +1264,9 @@
         "prompt": "What is one purpose of an elephant's huge ears?",
         "choices": [
           "Releasing heat to stay cool",
-          "Storing water",
+          "Storing water for the long dry season",
           "Scaring away birds",
-          "Smelling food"
+          "Funnelling smells towards the trunk"
         ],
         "explanation": "Flapping their ears helps elephants cool down in the African heat."
       },
@@ -1341,8 +1341,8 @@
         "choices": [
           "Reduce glare from the sun",
           "Scare away hyenas",
-          "Help it see at night",
-          "Show its age"
+          "Help it see in the dark at night",
+          "Show its age: they darken every year"
         ],
         "explanation": "The dark lines likely cut sun glare, helping cheetahs focus on prey in daylight."
       },
@@ -1351,8 +1351,8 @@
         "choices": [
           "They grip the ground like running spikes",
           "To climb trees faster",
-          "So they can dig dens",
-          "They are too big to retract"
+          "So they can dig dens for their cubs in hard ground",
+          "They're too big and thick to fit back into their sheaths"
         ],
         "explanation": "Semi-retractable claws give extra traction during high-speed chases."
       },
@@ -1445,8 +1445,8 @@
         "prompt": "What can an okapi do with its long tongue?",
         "choices": [
           "Clean its own ears and eyelids",
-          "Catch flying insects",
-          "Breathe underwater",
+          "Catch flying insects out of the air, like a chameleon",
+          "Breathe while wading through deep forest rivers",
           "Make loud whistles"
         ],
         "explanation": "Its long, flexible tongue can reach its eyes and ears."
@@ -1510,8 +1510,8 @@
         "prompt": "What does 'orangutan' mean?",
         "choices": [
           "Person of the forest",
-          "Red ape",
-          "Tree climber",
+          "Red ape of the mountain forests",
+          "Old man who climbs trees",
           "King of the jungle"
         ],
         "explanation": "It comes from Malay words meaning 'person of the forest'."
@@ -1595,8 +1595,8 @@
         "prompt": "How does a platypus find prey with its eyes closed?",
         "choices": [
           "It senses electric fields with its bill",
-          "It listens for heartbeats",
-          "It uses echolocation",
+          "It listens for the heartbeats of prey buried in the riverbed",
+          "It uses echolocation, clicking like a bat or dolphin",
           "It smells underwater"
         ],
         "explanation": "Electroreceptors in its bill detect the electric signals of moving prey."
@@ -1616,8 +1616,8 @@
         "choices": [
           "Venomous spurs on their hind ankles",
           "Poisonous fur",
-          "Sharp teeth",
-          "Electric shocks in their tails"
+          "Sharp teeth that they keep for their whole lives",
+          "A tail that gives off small electric shocks to stun prey"
         ],
         "explanation": "Males carry a venomous spur on each hind leg."
       }
@@ -1690,9 +1690,9 @@
         "prompt": "How do male kākāpō attract mates?",
         "choices": [
           "Deep booming calls from hollows they dig",
-          "Bright feather dances",
+          "Dancing to show off bright breeding feathers",
           "Building elaborate nests",
-          "Bringing gifts of fruit"
+          "Bringing gifts of fruit and seeds to the females' nests"
         ],
         "explanation": "Males boom from bowl-shaped hollows night after night."
       },
@@ -1700,9 +1700,9 @@
         "prompt": "What triggers a kākāpō breeding season?",
         "choices": [
           "Years when rimu trees produce lots of fruit",
-          "Every spring, without fail",
+          "Every spring, as soon as the days start getting longer",
           "The first snowfall",
-          "A full moon"
+          "A full moon in the middle of the southern summer"
         ],
         "explanation": "They only breed in mast years when trees like rimu fruit heavily."
       }
@@ -1776,8 +1776,8 @@
         "choices": [
           "In the dark Antarctic winter",
           "In the Antarctic summer",
-          "Only every five years",
-          "Whenever the sea freezes"
+          "Only every five years, when the ice is thickest",
+          "Whenever the sea freezes far enough out from the coast"
         ],
         "explanation": "Emperors are the only penguins that breed through the Antarctic winter."
       },
@@ -1786,8 +1786,8 @@
         "choices": [
           "They shuffle so each takes a turn in the middle",
           "The biggest stay in the middle",
-          "They take turns diving into the sea",
-          "They don't huddle"
+          "They take turns diving into the much warmer sea under the ice",
+          "They don't huddle; each keeps its own small space"
         ],
         "explanation": "The huddle slowly rotates so every penguin gets time in the warm centre."
       }
@@ -1851,8 +1851,8 @@
         "choices": [
           "Black",
           "White",
-          "Pink",
-          "Blue"
+          "Pale pink",
+          "Blue-grey"
         ],
         "explanation": "Black skin absorbs heat; the transparent fur only looks white."
       },
@@ -1955,9 +1955,9 @@
         "prompt": "How deep can narwhals dive?",
         "choices": [
           "More than 1,500 metres",
-          "About 10 metres",
+          "About 10 metres, staying near the surface to breathe",
           "100 metres at most",
-          "They don't dive"
+          "They stay in the top few metres of the sea"
         ],
         "explanation": "Narwhals are among the deepest-diving mammals in the ocean."
       }
@@ -2031,9 +2031,9 @@
         "prompt": "How does a blue whale filter its food from the water?",
         "choices": [
           "Through baleen plates in its mouth",
-          "With rows of sharp teeth",
-          "Through its blowhole",
-          "Using its tail"
+          "With rows of small, sharp teeth",
+          "Through its blowhole, which works like a sieve",
+          "By straining water through its gills like a shark"
         ],
         "explanation": "Baleen plates trap krill while water is pushed out."
       },
@@ -2216,8 +2216,8 @@
         "choices": [
           "They look like jellyfish and get eaten",
           "They block their nesting beaches",
-          "They scare away their mates",
-          "They change the water temperature"
+          "They scare away their mates during the breeding season",
+          "They change the temperature of the water near nesting beaches"
         ],
         "explanation": "Floating plastic bags are easily mistaken for jellyfish."
       }
@@ -2281,9 +2281,9 @@
         "prompt": "What kind of animal is a whale shark?",
         "choices": [
           "A fish, the largest in the sea",
-          "A whale",
+          "A whale that looks like a shark",
           "A dolphin",
-          "A ray"
+          "A ray, closely related to the giant manta"
         ],
         "explanation": "Despite the name, it's a shark, and the world's biggest fish."
       },
@@ -2301,9 +2301,9 @@
         "prompt": "How do researchers tell individual whale sharks apart?",
         "choices": [
           "By their unique pattern of spots",
-          "By the shape of their teeth",
-          "By the songs they sing",
-          "By the color of their eyes"
+          "By the shape and number of their teeth",
+          "By the songs they sing, which are unique to each one",
+          "By the colour of their eyes"
         ],
         "explanation": "Each spot pattern is unique, like a fingerprint."
       }
@@ -2387,8 +2387,8 @@
         "choices": [
           "In tiny pools held by bromeliad leaves",
           "In large rivers",
-          "In the ocean",
-          "Inside the father's mouth"
+          "In the ocean, drifting with the currents",
+          "Inside the father's mouth until they turn into frogs"
         ],
         "explanation": "The mother carries each tadpole up to its own little bromeliad pool."
       }
@@ -2473,7 +2473,7 @@
         "choices": [
           "Their leafy diet gives them very little energy",
           "They have weak bones",
-          "They're always sleepy from fruit",
+          "They're always sleepy from fermenting fruit",
           "They're blind"
         ],
         "explanation": "Slow movement saves energy on a low-calorie diet of leaves."
@@ -2538,8 +2538,8 @@
         "prompt": "How can you tell a jaguar from a leopard?",
         "choices": [
           "Jaguar rosettes have spots inside them",
-          "Jaguars have stripes",
-          "Leopards are always bigger",
+          "Jaguars have stripes on their legs and back",
+          "Leopards are always bigger and heavier than jaguars",
           "Jaguars have no spots"
         ],
         "explanation": "Jaguar rosettes usually contain small dots; leopard rosettes don't."
@@ -2558,9 +2558,9 @@
         "prompt": "What do jaguars think of water?",
         "choices": [
           "They love it and are strong swimmers",
-          "They avoid it completely",
+          "They avoid it completely and never learn to swim",
           "They only drink at night",
-          "They are afraid of rivers"
+          "They are afraid of rivers and cross them only by fallen trees"
         ],
         "explanation": "Jaguars swim well and hunt caimans and fish in rivers."
       }
@@ -2633,9 +2633,9 @@
         "prompt": "How do condors fly so efficiently?",
         "choices": [
           "They soar on rising air and rarely flap",
-          "They flap very fast",
+          "They flap very fast, like a hummingbird, to stay up",
           "They only fly downhill",
-          "They ride on other birds"
+          "They ride in the slipstream of flocks of other birds"
         ],
         "explanation": "Condors flap only about one percent of the time, riding air currents."
       },
@@ -2644,8 +2644,8 @@
         "choices": [
           "About one chick every two years",
           "Ten chicks a year",
-          "Twice a year",
-          "Only once in their lives"
+          "Twice a year, after the rains in spring and autumn",
+          "Only once in their lives, at about 50 years old"
         ],
         "explanation": "Their slow breeding makes populations vulnerable to losses."
       }
@@ -2718,8 +2718,8 @@
         "prompt": "How do marine iguanas get rid of extra salt?",
         "choices": [
           "They sneeze it out through their noses",
-          "They sweat it out",
-          "They drink fresh water from streams",
+          "They sweat it out through their skin while basking",
+          "They drink fresh water from streams on the islands",
           "They don't need to"
         ],
         "explanation": "Salt glands connected to the nostrils let them sneeze out salt."
@@ -2728,9 +2728,9 @@
         "prompt": "What can marine iguanas do when food is scarce?",
         "choices": [
           "Shrink their bodies, even their bones",
-          "Hibernate for a year",
+          "Hibernate for a whole year in burrows in the lava",
           "Switch to eating insects",
-          "Migrate to South America"
+          "Swim across to the coast of South America"
         ],
         "explanation": "During El Niño famines they can shrink in length."
       }
@@ -2802,7 +2802,7 @@
       {
         "prompt": "What is a 'hedgehog highway'?",
         "choices": [
-          "A small hole in a garden fence so hedgehogs can pass",
+          "A gap in a garden fence so hedgehogs can pass",
           "A road sign warning drivers",
           "A tunnel under a motorway",
           "A trail of food left out at night"
@@ -2878,8 +2878,8 @@
         "prompt": "What makes a Komodo dragon's bite so deadly?",
         "choices": [
           "Venom from glands in its jaw",
-          "Electric shocks",
-          "Teeth as long as a knife",
+          "Electric shocks delivered through its teeth",
+          "Teeth as long as a kitchen knife",
           "Poison on its skin"
         ],
         "explanation": "Venom glands in the lower jaw cause bleeding and shock."
@@ -2888,9 +2888,9 @@
         "prompt": "What can female Komodo dragons sometimes do?",
         "choices": [
           "Lay fertile eggs without a male",
-          "Change into males",
+          "Change into males when there are none on the island",
           "Fly short distances",
-          "Breathe underwater"
+          "Breathe underwater for hours while hunting fish"
         ],
         "explanation": "This is called parthenogenesis and has been seen in zoos."
       },
@@ -2985,9 +2985,9 @@
         "prompt": "What hits the prey a second time after a strike?",
         "choices": [
           "A collapsing bubble in the boiling water",
-          "The shrimp's tail",
+          "The shrimp's tail, flicking forward a split second later",
           "A second shrimp",
-          "A jet of ink"
+          "A jet of ink fired straight at the prey's eyes"
         ],
         "explanation": "The strike creates a cavitation bubble that collapses with force."
       }
@@ -3051,8 +3051,8 @@
         "choices": [
           "A rising J-shaped swoop",
           "A perfect circle",
-          "A zigzag",
-          "A straight line down"
+          "A zigzag that looks like lightning",
+          "A straight line down towards the grass"
         ],
         "explanation": "The J-shaped swoop earned it the nickname 'Big Dipper firefly'."
       },
@@ -3070,9 +3070,9 @@
         "prompt": "What is a major threat to fireflies?",
         "choices": [
           "Artificial light at night",
-          "Cold winters",
+          "Cold winters that freeze the soil solid",
           "Too many flowers",
-          "Rain"
+          "Rain that washes away the eggs in spring"
         ],
         "explanation": "Light pollution drowns out the flashes they use to find mates."
       }
@@ -3136,16 +3136,16 @@
         "prompt": "How do many ruby-throats reach Central America in autumn?",
         "choices": [
           "A nonstop flight across the Gulf of Mexico",
-          "Riding on the backs of geese",
-          "Hopping island to island over months",
-          "They don't migrate"
+          "Riding on the backs of migrating geese",
+          "Hopping from island to island across the Caribbean over several months",
+          "They don't migrate; they stay through the winter at feeders"
         ],
         "explanation": "Many fly about 800 km across the Gulf in one go."
       },
       {
         "prompt": "Why can the male's red throat look black?",
         "choices": [
-          "Its color comes from structure, which depends on the angle",
+          "Its colour comes from structure, so it depends on the angle",
           "It changes with its mood",
           "It gets dirty from nectar",
           "It fades at night"
@@ -3157,7 +3157,7 @@
         "choices": [
           "They enter torpor, slowing their heart and cooling down",
           "They huddle in large groups",
-          "They fly all night to stay warm",
+          "They keep flying all night long so their muscles generate enough heat",
           "They eat continuously"
         ],
         "explanation": "Torpor saves precious energy overnight."
@@ -3222,7 +3222,7 @@
         "prompt": "What record does the wandering albatross hold?",
         "choices": [
           "The longest wingspan of any living bird",
-          "The fastest flight",
+          "The fastest level flight of any seabird on Earth",
           "The heaviest flying bird",
           "The deepest dive"
         ],
@@ -3244,7 +3244,7 @@
           "Dynamic soaring between wind layers",
           "Riding on ships",
           "Swimming most of the way",
-          "Flapping very fast in short bursts"
+          "Flapping very fast in short bursts, then gliding"
         ],
         "explanation": "Dynamic soaring extracts energy from changes in wind speed."
       }
@@ -3309,7 +3309,7 @@
           "It stands still for a long time, then lunges",
           "It dives from high in the air",
           "It chases fish underwater",
-          "It hunts in large flocks"
+          "It hunts in large flocks that drive fish into the shallows"
         ],
         "explanation": "Shoebills are patient ambush hunters that strike suddenly after waiting motionless."
       },
@@ -3328,7 +3328,7 @@
         "choices": [
           "A loud clattering of its bill",
           "A high whistle",
-          "A deep booming call",
+          "A deep booming call that carries across the swamp",
           "It is completely silent"
         ],
         "explanation": "Bill-clattering sounds a bit like a machine gun."
@@ -3393,7 +3393,7 @@
         "choices": [
           "It taps the bark and listens for hollow tunnels",
           "It smells them through the bark",
-          "It waits for them to crawl out",
+          "It waits beside the hole for them to crawl out at dusk",
           "It peels off all the bark"
         ],
         "explanation": "This tap-and-listen method is called percussive foraging."
@@ -3401,8 +3401,8 @@
       {
         "prompt": "What is unusual about the aye-aye's middle finger?",
         "choices": [
-          "It is extremely thin and can rotate in a ball-and-socket joint",
-          "It has a sharp claw like a cat's",
+          "It's very thin and turns on a ball-and-socket joint",
+          "It has a sharp, curved claw like a cat's",
           "It is webbed for swimming",
           "It is twice as thick as the others"
         ],
@@ -3414,7 +3414,7 @@
           "Some local beliefs say they bring bad luck",
           "They attack livestock",
           "Their fur is valuable",
-          "They spread disease"
+          "They spread disease to the chickens and dogs in villages"
         ],
         "explanation": "Fady, local taboos, in some regions link aye-ayes with bad luck or death."
       }
@@ -3480,7 +3480,7 @@
           "Filtering dust and warming cold air",
           "Smelling water underground",
           "Digging for roots",
-          "Making loud calls"
+          "Making loud calls that carry across the steppe"
         ],
         "explanation": "Its nose filters summer dust and warms winter air before it reaches the lungs."
       },
@@ -3500,7 +3500,7 @@
           "For their horns, used in traditional medicine",
           "For their wool",
           "For their eggs",
-          "As racing animals"
+          "As racing animals for festivals held across the steppe"
         ],
         "explanation": "Male saiga horns are sought for traditional medicine."
       }
@@ -3565,7 +3565,7 @@
           "Touch: sensing prey",
           "Smelling flowers",
           "Digging tunnels",
-          "Attracting mates"
+          "Attracting mates during spring"
         ],
         "explanation": "Its 22 rays are covered with tens of thousands of touch sensors."
       },
@@ -3575,7 +3575,7 @@
           "It blows bubbles and sniffs them back in",
           "It holds its breath and waits",
           "It uses its tail",
-          "It can't smell underwater"
+          "It can't smell underwater at all"
         ],
         "explanation": "It exhales bubbles onto objects and inhales them to pick up scents."
       },
@@ -3648,7 +3648,7 @@
         "prompt": "How does the hoatzin digest leaves?",
         "choices": [
           "Bacteria ferment them in its large crop",
-          "It swallows stones to grind them",
+          "It swallows small stones that grind the leaves in its gizzard",
           "It only eats soft fruit instead",
           "It regurgitates them for its chicks"
         ],
@@ -3660,7 +3660,7 @@
           "Dive into water and climb back with wing claws",
           "Fly away immediately",
           "Play dead",
-          "Spray a bad smell"
+          "Spray a bad-smelling liquid at snakes and monkeys"
         ],
         "explanation": "Chicks have two claws on each wing to climb back to the nest."
       },
@@ -3733,7 +3733,7 @@
         "prompt": "Where does the pink fairy armadillo spend most of its life?",
         "choices": [
           "Underground in sandy soil",
-          "In treetops",
+          "Curled up in the treetops of dry forests",
           "In rivers",
           "In caves"
         ],
@@ -3743,7 +3743,7 @@
         "prompt": "What makes its shell look pink?",
         "choices": [
           "Blood vessels showing through",
-          "Pink fur",
+          "Pink fur that grows thicker in winter",
           "Mud it rolls in",
           "A pigment from its food"
         ],
@@ -3829,8 +3829,8 @@
         "choices": [
           "Its ankles can rotate backwards",
           "It has sticky pads",
-          "It slides on its belly",
-          "It can't; it jumps down"
+          "It slides down on its belly",
+          "It can't; it always jumps down from branch to branch"
         ],
         "explanation": "Flexible ankles let its claws grip trunks while descending."
       },
@@ -3913,7 +3913,7 @@
         "prompt": "How do dholes usually hunt?",
         "choices": [
           "In cooperative packs",
-          "Alone at night",
+          "Alone at night, ambushing deer at waterholes",
           "By ambush from trees",
           "By scavenging only"
         ],
@@ -3993,7 +3993,7 @@
         "choices": [
           "The weasel family",
           "The bear family",
-          "The dog family",
+          "The dog and wolf family",
           "The cat family"
         ],
         "explanation": "It is the largest land-dwelling member of the weasel family."
@@ -4077,7 +4077,7 @@
         "prompt": "What makes the kea unique among parrots?",
         "choices": [
           "It's the world's only alpine parrot",
-          "It can't fly",
+          "It's the only parrot that can't fly at all",
           "It lives underwater",
           "It's the smallest parrot"
         ],
@@ -4097,7 +4097,7 @@
         "prompt": "Why were many kea killed in the past?",
         "choices": [
           "Bounties, because farmers thought they attacked sheep",
-          "For their feathers",
+          "For their bright orange underwing feathers, sold to collectors",
           "For food",
           "They spread disease"
         ],
@@ -4162,7 +4162,7 @@
         "prompt": "How does a secretarybird kill snakes?",
         "choices": [
           "By stamping on them with fast kicks",
-          "By dropping them from the sky",
+          "By carrying them high and dropping them onto rocks",
           "By squeezing them",
           "With venom"
         ],
@@ -4183,7 +4183,7 @@
         "choices": [
           "On foot, walking through grass",
           "Diving into water",
-          "From high perches at night",
+          "From high perches at night, swooping on rodents",
           "In large flocks"
         ],
         "explanation": "It walks long distances each day looking for prey."
@@ -4248,7 +4248,7 @@
         "choices": [
           "Mimicking sounds, including machines",
           "Diving underwater",
-          "Building bowers of blue objects",
+          "Building bowers decorated with blue objects",
           "Migrating to Antarctica"
         ],
         "explanation": "It can imitate other birds, animals and even chainsaws."
@@ -4268,7 +4268,7 @@
         "choices": [
           "Raking leaf litter, which reduces bushfire fuel",
           "Pollinating flowers",
-          "Spreading seeds by flying long distances",
+          "Spreading seeds by flying long distances between valleys and ridges",
           "Eating invasive plants"
         ],
         "explanation": "Their digging breaks down leaf litter on the forest floor."
@@ -4343,7 +4343,7 @@
         "choices": [
           "Making buzzing sounds and bubbles",
           "Breathing underwater",
-          "Digging nests",
+          "Digging nests in the sandbanks along the river",
           "Storing food"
         ],
         "explanation": "It works as a resonator during courtship."
@@ -4419,7 +4419,7 @@
           "Grooves in its skin carry water to its mouth",
           "It drinks from rivers",
           "It eats cactus",
-          "It doesn't need water"
+          "It gets all the water it needs from the ants it eats"
         ],
         "explanation": "Capillary channels between its scales move water to its mouth."
       },
@@ -4429,7 +4429,7 @@
           "A decoy when the real head is tucked away",
           "Storing fat",
           "Hearing",
-          "Attracting mates"
+          "Attracting mates by flashing it in the breeding season"
         ],
         "explanation": "It tucks its real head down and presents the spiky lump."
       },
@@ -4514,7 +4514,7 @@
           "Bright yellow",
           "Red",
           "Blue",
-          "Black"
+          "Black with white speckles"
         ],
         "explanation": "Its yellow chin and throat make it easy to recognise."
       },
@@ -4590,7 +4590,7 @@
           "Its heart, organs and bones",
           "Nothing; it's solid green",
           "Only its eggs",
-          "Glowing spots"
+          "Glowing spots that light up at night"
         ],
         "explanation": "Its belly skin and muscles are transparent."
       },
@@ -4685,7 +4685,7 @@
           "About ten years",
           "One week",
           "One month",
-          "A day"
+          "A day or two, like most salamanders"
         ],
         "explanation": "Their slow metabolism lets them go years without eating."
       },
@@ -4695,7 +4695,7 @@
           "Underground waters in caves",
           "Mountain lakes",
           "Tropical rivers",
-          "The open ocean"
+          "Shallow coastal lagoons of the Adriatic Sea"
         ],
         "explanation": "They live in the flooded caves of the Dinaric Alps."
       }
@@ -4857,7 +4857,7 @@
           "Being caught by accident in fishing gear",
           "Lack of sunlight",
           "Polar bears",
-          "Freezing water"
+          "Freezing water that traps them under the ice in winter"
         ],
         "explanation": "Bycatch in nets and lines kills many sunfish."
       },
@@ -4867,7 +4867,7 @@
           "Millstone",
           "Moon",
           "Swimmer",
-          "Giant"
+          "Giant of the sea"
         ],
         "explanation": "Its round, grey shape resembles a millstone."
       }
@@ -5019,7 +5019,7 @@
           "It was thought extinct for 66 million years",
           "It was a new colour",
           "It was found in a river",
-          "It could fly"
+          "It was the first fish ever seen giving birth to live young"
         ],
         "explanation": "It was known only from fossils."
       },
@@ -5029,7 +5029,7 @@
           "They give birth to live young",
           "They lay eggs on rocks",
           "They build nests",
-          "The father carries them"
+          "The father carries the eggs in a pouch until they hatch"
         ],
         "explanation": "Eggs develop inside the mother, and pups are born fully formed."
       },
@@ -5106,7 +5106,7 @@
         "choices": [
           "Possibly around 400 years",
           "About 20 years",
-          "About 50 years",
+          "About 50 years, like most other large sharks",
           "Only 5 years"
         ],
         "explanation": "They are the longest-lived vertebrates known."
@@ -5116,7 +5116,7 @@
         "choices": [
           "By radiocarbon dating the lenses of their eyes",
           "By counting their teeth",
-          "By measuring their fins",
+          "By counting growth rings in their fin spines, like tree rings",
           "By tagging them at birth"
         ],
         "explanation": "Eye lens proteins form before birth and don't change."
@@ -5191,7 +5191,7 @@
         "prompt": "Where does the blue dragon get its sting?",
         "choices": [
           "It stores stinging cells from the jellyfish-like animals it eats",
-          "It makes its own venom",
+          "It makes its own venom in glands along its body",
           "It has sharp spines",
           "It doesn't sting"
         ],
@@ -5201,7 +5201,7 @@
         "prompt": "How does a blue dragon stay afloat?",
         "choices": [
           "A bubble of air in its stomach",
-          "Floating on seaweed",
+          "Riding on rafts of floating seaweed across the ocean",
           "Swimming constantly",
           "Clinging to jellyfish"
         ],
@@ -5277,7 +5277,7 @@
         "choices": [
           "Marine snow, falling flakes of dead material",
           "Blood",
-          "Fish it hunts",
+          "Fish it hunts with its glowing arm tips",
           "Seaweed"
         ],
         "explanation": "It collects falling debris with long filaments."
@@ -5286,7 +5286,7 @@
         "prompt": "What can it release instead of ink?",
         "choices": [
           "A cloud of glowing mucus",
-          "Poison darts",
+          "A spray of poison darts from its arm tips",
           "Bubbles",
           "Sand"
         ],
@@ -5362,7 +5362,7 @@
         "prompt": "What are horseshoe crabs most closely related to?",
         "choices": [
           "Spiders and scorpions",
-          "Crabs and lobsters",
+          "Crabs and lobsters, as their name suggests",
           "Fish",
           "Turtles"
         ],
@@ -5373,7 +5373,7 @@
         "choices": [
           "It detects bacterial toxins in vaccines and injections",
           "It cures diseases",
-          "It is used to make antibiotics",
+          "It is the raw material for most of the world's antibiotics",
           "It stops bleeding"
         ],
         "explanation": "The LAL test clots in the presence of bacterial toxins."
@@ -5460,7 +5460,7 @@
         "choices": [
           "By living in borrowed snail shells",
           "By burrowing deep in sand",
-          "By hiding in coconuts",
+          "By hiding inside hollowed-out coconut shells on the beach",
           "By staying in the sea"
         ],
         "explanation": "Like hermit crabs, young ones use shells for protection."
@@ -5534,7 +5534,7 @@
         "prompt": "What do the tips of the atlas moth's wings look like?",
         "choices": [
           "Snake heads",
-          "Eagle wings",
+          "The eyes of a large owl",
           "Flowers",
           "Leaves"
         ],
@@ -5554,7 +5554,7 @@
         "prompt": "What family does the atlas moth belong to?",
         "choices": [
           "The giant silk moths",
-          "The butterflies",
+          "The swallowtail butterflies",
           "The beetles",
           "The bees"
         ],
@@ -5631,7 +5631,7 @@
           "Come closer, thinking it's a flower",
           "Fly away fast",
           "Ignore it",
-          "Attack it"
+          "Attack it to drive it off the flowers"
         ],
         "explanation": "Pollinators are lured in, then caught."
       },
@@ -5727,7 +5727,7 @@
         "choices": [
           "Folk tales of dragonflies sewing lips shut",
           "Its dark colour",
-          "The sound it makes",
+          "The sound its wings make as it darts over ponds",
           "A scientist's name"
         ],
         "explanation": "Old stories called dragonflies 'darning needles'."
@@ -5792,7 +5792,7 @@
         "prompt": "What do male Hercules beetles use their horns for?",
         "choices": [
           "Wrestling rivals",
-          "Digging for food",
+          "Digging into rotten fruit to feed",
           "Climbing trees",
           "Breathing"
         ],
