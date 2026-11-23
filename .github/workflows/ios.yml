@@ -15,7 +15,7 @@ on:
         type: boolean
         default: true
       only:
-        description: Run only this test (e.g. FourTrackTests/StressTests); empty runs everything
+        description: "Run only this test (e.g. FourTrackTests/StressTests); 'all' runs every test including the 500 stress sessions; empty runs everything but the stress sessions"
         type: string
         default: ""
 
@@ -44,7 +44,7 @@ jobs:
     name: App tests and TestFlight
     needs: core
     runs-on: macos-15
-    timeout-minutes: 60
+    timeout-minutes: 135
     env:
       ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
       ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
@@ -72,7 +72,7 @@ jobs:
           xcodebuild -version
 
       - name: App tests in the simulator
-        timeout-minutes: 40
+        timeout-minutes: 120
         env:
           ONLY: ${{ inputs.only }}
         run: |
@@ -82,7 +82,7 @@ jobs:
           xcrun simctl boot "$UDID" 2>/dev/null || true
           xcrun simctl privacy "$UDID" grant microphone com.fourtrack.app || true
           # The stress sessions are long: they run only when asked for by name.
-          if [ -n "$ONLY" ]; then SELECT="-only-testing:$ONLY"; else SELECT="-skip-testing:FourTrackTests/StressTests"; fi
+          if [ "$ONLY" = "all" ]; then SELECT=""; elif [ -n "$ONLY" ]; then SELECT="-only-testing:$ONLY"; else SELECT="-skip-testing:FourTrackTests/StressTests"; fi
           set +e
           xcodebuild test \
             -project FourTrack.xcodeproj \
