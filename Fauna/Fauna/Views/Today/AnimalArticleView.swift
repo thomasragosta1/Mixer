@@ -282,15 +282,15 @@ struct AnimalArticleView: View {
             DidYouKnowCard(text: store.measured(animal.didYouKnow), tint: accent)
                 .id("didYouKnow")
 
-            if let people = animal.people, !people.isEmpty {
-                ArticleSection(title: "People and the \(animal.name)", symbol: "person.2.fill", tint: accent) {
-                    Paragraph(store.measured(people))
-                }
-            }
-
             if let relatives = animal.relatives, !relatives.isEmpty {
                 ArticleSection(title: "Relatives and origins", symbol: "tree.fill", tint: accent) {
                     Paragraph(store.measured(relatives))
+                }
+            }
+
+            if let people = animal.people, !people.isEmpty {
+                ArticleSection(title: "People and the \(animal.name)", symbol: "person.2.fill", tint: accent) {
+                    Paragraph(store.measured(people))
                 }
             }
 
