@@ -10,8 +10,7 @@ on:
       - "docs/**"
       # Fauna is a separate app with its own workflow.
       - "Fauna/**"
-      - .github/workflows/fauna.yml
-      - .github/workflows/fauna-tests.yml
+      - ".github/workflows/fauna*.yml"
   workflow_dispatch:
     inputs:
       upload:
