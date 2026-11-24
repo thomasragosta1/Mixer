@@ -212,8 +212,10 @@ final class MoreUITests: XCTestCase {
         XCTAssertTrue(scroll(app, to: jaguar))
         sleep(2) // let the photos load, since they're what used to steal taps
         jaguar.coordinate(withNormalizedOffset: CGVector(dx: 0.97, dy: 0.5)).tap()
-        XCTAssertTrue(app.staticTexts["Jaguar"].waitForExistence(timeout: 10))
-        XCTAssertFalse(app.staticTexts["Luna Moth"].exists, "the card to the right opened instead")
+        // The hero photo's label exists only on an open article (the journal behind it also
+        // contains both names, so names alone can't tell which article opened).
+        XCTAssertTrue(app.descendants(matching: .any)["Photo of the Jaguar"].firstMatch.waitForExistence(timeout: 10))
+        XCTAssertFalse(app.descendants(matching: .any)["Photo of the Luna Moth"].firstMatch.exists, "the card to the right opened instead")
     }
 
     func testLeftEdgeOfARightCardOpensThatAnimal() {
@@ -222,8 +224,8 @@ final class MoreUITests: XCTestCase {
         XCTAssertTrue(scroll(app, to: luna))
         sleep(2)
         luna.coordinate(withNormalizedOffset: CGVector(dx: 0.03, dy: 0.5)).tap()
-        XCTAssertTrue(app.staticTexts["Luna Moth"].waitForExistence(timeout: 10))
-        XCTAssertFalse(app.staticTexts["Jaguar"].exists, "the card to the left opened instead")
+        XCTAssertTrue(app.descendants(matching: .any)["Photo of the Luna Moth"].firstMatch.waitForExistence(timeout: 10))
+        XCTAssertFalse(app.descendants(matching: .any)["Photo of the Jaguar"].firstMatch.exists, "the card to the left opened instead")
     }
 
     // MARK: Accessibility
