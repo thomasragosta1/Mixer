@@ -42,7 +42,7 @@ jobs:
             -destination "id=$UDID" \
             -derivedDataPath build \
             -resultBundlePath TestResults.xcresult \
-            CODE_SIGNING_ALLOWED=NO 2>&1 | tee test.log | grep -E "error:|Test Case .*(passed|failed)|Executed [0-9]+ test|TEST (SUCCEEDED|FAILED)|\*\* TEST"
+            CODE_SIGNING_ALLOWED=NO 2>&1 | tee test.log | grep -E "error:|EDGE-TAP|Test Case .*(passed|failed)|Executed [0-9]+ test|TEST (SUCCEEDED|FAILED)|\*\* TEST"
           status=${PIPESTATUS[0]}
           set -e
           echo "---- failures ----"

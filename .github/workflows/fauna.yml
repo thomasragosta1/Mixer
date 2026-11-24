@@ -5,6 +5,11 @@ on:
     paths:
       - "Fauna/**"
       - .github/workflows/fauna.yml
+      # Test-only and drafting changes don't change the app, so they don't need a build
+      # (and a build would hold up the test run waiting for a Mac).
+      - "!Fauna/FaunaTests/**"
+      - "!Fauna/FaunaUITests/**"
+      - "!Fauna/scripts/new_animals/drafts/**"
   workflow_dispatch:
 
 concurrency:

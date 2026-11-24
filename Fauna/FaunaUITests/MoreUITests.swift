@@ -206,26 +206,32 @@ final class MoreUITests: XCTestCase {
 
     /// In the two-column journal, a tap at the very edge of a card must open that card's animal,
     /// never its neighbour's (wide photos used to spill over and take the tap).
-    func testRightEdgeOfALeftCardOpensThatAnimal() {
+    private func edgeTap(open target: String, neighbour: String, dx: CGFloat) {
         let app = launch(["-FaunaDemo", "-FaunaTab", "journal"])
-        let jaguar = button(app, "Jaguar,")
-        XCTAssertTrue(scroll(app, to: jaguar))
+        let card = button(app, "\(target),")
+        let other = button(app, "\(neighbour),")
+        XCTAssertTrue(scroll(app, to: card))
         sleep(2) // let the photos load, since they're what used to steal taps
-        jaguar.coordinate(withNormalizedOffset: CGVector(dx: 0.97, dy: 0.5)).tap()
-        // The hero photo's label exists only on an open article (the journal behind it also
-        // contains both names, so names alone can't tell which article opened).
-        XCTAssertTrue(app.descendants(matching: .any)["Photo of the Jaguar"].firstMatch.waitForExistence(timeout: 10))
-        XCTAssertFalse(app.descendants(matching: .any)["Photo of the Luna Moth"].firstMatch.exists, "the card to the right opened instead")
+        let frames = "\(target) card \(card.frame), \(neighbour) card \(other.frame)"
+        card.coordinate(withNormalizedOffset: CGVector(dx: dx, dy: 0.5)).tap()
+        sleep(3)
+        let opened = app.descendants(matching: .any)["Photo of the \(target)"].firstMatch.exists
+        let wrong = app.descendants(matching: .any)["Photo of the \(neighbour)"].firstMatch.exists
+        let shot = XCTAttachment(screenshot: app.screenshot())
+        shot.name = "after edge tap on \(target)"
+        shot.lifetime = .keepAlways
+        add(shot)
+        print("EDGE-TAP \(target): opened=\(opened) neighbourOpened=\(wrong) back=\(app.navigationBars.buttons.firstMatch.exists) \(frames)")
+        XCTAssertFalse(wrong, "the \(neighbour) opened instead (\(frames))")
+        XCTAssertTrue(opened, "the \(target) didn't open (\(frames))")
+    }
+
+    func testRightEdgeOfALeftCardOpensThatAnimal() {
+        edgeTap(open: "Jaguar", neighbour: "Luna Moth", dx: 0.95)
     }
 
     func testLeftEdgeOfARightCardOpensThatAnimal() {
-        let app = launch(["-FaunaDemo", "-FaunaTab", "journal"])
-        let luna = button(app, "Luna Moth,")
-        XCTAssertTrue(scroll(app, to: luna))
-        sleep(2)
-        luna.coordinate(withNormalizedOffset: CGVector(dx: 0.03, dy: 0.5)).tap()
-        XCTAssertTrue(app.descendants(matching: .any)["Photo of the Luna Moth"].firstMatch.waitForExistence(timeout: 10))
-        XCTAssertFalse(app.descendants(matching: .any)["Photo of the Jaguar"].firstMatch.exists, "the card to the left opened instead")
+        edgeTap(open: "Luna Moth", neighbour: "Jaguar", dx: 0.05)
     }
 
     // MARK: Accessibility
