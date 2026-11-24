@@ -29,6 +29,8 @@ struct TodayView: View {
             // Warm tomorrow's photo so the next day opens instantly.
             let titles = store.upcomingDailyAnimals(count: 2).map(\.wikipediaTitle)
             await WikiImages.shared.prefetch(titles, size: .hero)
+            // Whenever the reader moves on, top up the animals kept ready for offline reading.
+            if !ProcessInfo.processInfo.arguments.contains("-FaunaDemo") { OfflineLibrary.prepare(store) }
         }
     }
 }

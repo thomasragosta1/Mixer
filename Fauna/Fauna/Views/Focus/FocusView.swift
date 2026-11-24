@@ -43,6 +43,7 @@ struct FocusView: View {
     @State private var reminderTime = Date()
     @State private var notificationsDenied = false
     @State private var confirmReset = false
+    @State private var offlineReady: Int?
 
     var body: some View {
         NavigationStack {
@@ -63,6 +64,7 @@ struct FocusView: View {
             .background(Color(.systemGroupedBackground))
             .navigationTitle("Focus")
             .onAppear(perform: load)
+            .task { offlineReady = OfflineLibrary.readyCount(store) }
             .onChange(of: groups) { _, _ in saveFocus() }
             .onChange(of: regions) { _, _ in saveFocus() }
             .confirmationDialog("Start your journal over?", isPresented: $confirmReset, titleVisibility: .visible) {
@@ -181,6 +183,12 @@ struct FocusView: View {
                 }
             } icon: {
                 Image(systemName: "leaf.fill").foregroundStyle(Color.faunaMoss)
+            }
+            if let offlineReady {
+                Label("\(offlineReady) new animals ready to read offline, photos included.",
+                      systemImage: "arrow.down.circle")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
             }
             NavigationLink {
                 SourcesView()

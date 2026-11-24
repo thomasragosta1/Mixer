@@ -40,6 +40,13 @@ struct SourcesView: View {
             }
 
             Section {
+                Text("New animals are published to Fauna's public library on GitHub, and the app checks for them every few hours. It downloads photos and maps for the animals you're likely to meet next, so you can keep reading offline. These downloads carry no information about you.")
+                    .font(.subheadline)
+            } header: {
+                Text("Updates")
+            }
+
+            Section {
                 Text("Wikipedia is a trademark of the Wikimedia Foundation. Fauna is an independent app and isn't affiliated with or endorsed by Wikipedia, the Wikimedia Foundation, or the conservation organizations it links to.")
                     .font(.footnote)
                     .foregroundStyle(.secondary)

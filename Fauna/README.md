@@ -14,11 +14,17 @@ One remarkable animal, every day. A native SwiftUI iPhone app that turns Wikiped
 - **Help.** Each animal links to one or two real organizations working on it (Xerces Society, Red Panda Network, Snow Leopard Trust, Polar Bears International, and others). Links open the charity's own site in Safari; the app never handles money.
 - **Journal.** Animals you've met as photo cards with a seal for passed quizzes, your streak, and blurred, locked tiles for everything still out there.
 
+## Content updates and offline reading
+
+- **The library is two JSON files**, `Fauna/Resources/animals.json` and `photos.json`. They're bundled in the app, and the app also checks for newer copies of the same files in this public repository every few hours (`Services/ContentSync.swift`). Downloads are conditional (ETag), validated before use (a truncated or broken file is ignored), and saved to Application Support. So publishing new animals is just pushing an updated `animals.json`; no App Store update needed. A plain file beats a hosted database here: the content is read-only, a few megabytes even at 365 animals, and needs no server, accounts or cost.
+- **Offline:** every animal's text is always on the device. Photos and range maps need the network, so `Services/OfflineLibrary.swift` keeps the next 40 animals the reader is likely to meet (today's, then the daily queue, then the rest of their focus) ready with card and hero photos and maps saved to disk. That keeps at least 30 unmet animals fully readable offline. Focus › About shows how many are ready.
+- Content is served from the `claude/wizardly-cray-v2bapl` branch for now; point `ContentSync.baseURL` at a dedicated branch before release.
+
 ## Run it
 
 1. Open `Fauna/Fauna.xcodeproj` in Xcode 16 or later (the project uses folder-synced groups, so new files in `Fauna/Fauna/` are picked up automatically).
 2. Pick your team under **Signing & Capabilities** and change the bundle ID (placeholder: `com.fauna.daily`).
-3. Run on an iPhone or simulator (iOS 17+). Photos need a network connection the first time; they're cached after that.
+3. Run on an iPhone or simulator (iOS 17+). Photos need a network connection the first time; upcoming animals' photos are saved for offline reading.
 
 Launch arguments for demos and screenshots: `-FaunaDemo` (sample history), `-FaunaTab journal|focus`, `-FaunaQuiz`, `-FaunaScrollTo facts|didYouKnow|help|unlock`, `-FaunaOnboarding`.
 

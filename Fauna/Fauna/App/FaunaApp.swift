@@ -54,11 +54,25 @@ struct RootView: View {
         .onChange(of: scenePhase) { _, phase in
             guard phase == .active else { return }
             store.refreshDay()
-            Task { await Reminders.reschedule(store) }
+            Task {
+                await Reminders.reschedule(store)
+                await refreshContent()
+            }
         }
+        .task { await refreshContent() }
         .onReceive(NotificationCenter.default.publisher(for: .NSCalendarDayChanged).receive(on: RunLoop.main)) { _ in
             store.refreshDay()
         }
+    }
+}
+
+extension RootView {
+    /// Picks up newly published animals and prepares upcoming ones for offline reading.
+    /// Demo and onboarding launches (screenshots, UI tests) stay on the bundled library.
+    fileprivate func refreshContent() async {
+        let args = ProcessInfo.processInfo.arguments
+        guard !args.contains("-FaunaDemo"), !args.contains("-FaunaOnboarding") else { return }
+        await OfflineLibrary.refresh(store)
     }
 }
 

@@ -50,8 +50,9 @@ struct JournalEntry: Codable, Hashable, Identifiable {
 @MainActor
 @Observable
 final class AppStore {
-    let library: [Animal]
-    private let byID: [String: Animal]
+    /// Every animal Fauna knows about: the bundled library, or a newer one published since.
+    private(set) var library: [Animal]
+    private var byID: [String: Animal]
     private let fileURL: URL?
 
     private var stateStorage: AppState
@@ -71,7 +72,7 @@ final class AppStore {
 
     enum Tab: Hashable { case today, journal, focus }
 
-    init(library: [Animal] = AnimalLibrary.load(), fileURL: URL? = AppStore.defaultFileURL) {
+    init(library: [Animal] = ContentSync.initialLibrary(), fileURL: URL? = AppStore.defaultFileURL) {
         self.library = library
         self.byID = Dictionary(uniqueKeysWithValues: library.map { ($0.id, $0) })
         self.fileURL = fileURL
@@ -253,6 +254,34 @@ final class AppStore {
         state = fresh
         rebuildQueue()
         refreshDay()
+    }
+
+    // MARK: - Library updates and offline use
+
+    /// Switches to a newly published library. New animals join the end of the queue (shuffled,
+    /// if they match the focus); animals that no longer exist leave it. The journal is kept as
+    /// is: entries for removed animals are simply not shown.
+    func applyLibrary(_ animals: [Animal]) {
+        guard !animals.isEmpty, animals != library else { return }
+        library = animals
+        byID = Dictionary(animals.map { ($0.id, $0) }, uniquingKeysWith: { first, _ in first })
+        var next = state
+        next.queue.removeAll { byID[$0] == nil }
+        let known = Set(next.queue).union(next.journal.map(\.animalID)).union(next.todayChain)
+        next.queue += animals.filter { !known.contains($0.id) && matchesFocus($0) }.map(\.id).shuffled()
+        state = next
+        refreshDay()
+    }
+
+    /// The animals most likely to be read next, in order: today's, then the queue, then any
+    /// other unmet animals. Their photos and maps are prepared ahead so Fauna works offline.
+    func upcomingForOffline(count: Int) -> [Animal] {
+        var ids = Array(state.todayChain.suffix(1)) + state.queue
+        let met = metIDs
+        ids += library.filter { !met.contains($0.id) && matchesFocus($0) }.map(\.id)
+        ids += library.filter { !met.contains($0.id) }.map(\.id)
+        var seen = Set<String>()
+        return ids.filter { seen.insert($0).inserted }.compactMap { byID[$0] }.prefix(count).map { $0 }
     }
 
     /// Animals the next few daily reminders will introduce, in order (tomorrow first).

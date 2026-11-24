@@ -15,6 +15,9 @@ struct AnimalPhoto: View {
                     Image(uiImage: image)
                         .resizable()
                         .scaledToFill()
+                        // A photo scaled to fill spills past its frame; it must never take taps,
+                        // or a wide photo steals them from the card beside it.
+                        .allowsHitTesting(false)
                         .transition(.opacity.animation(.easeOut(duration: 0.45)))
                 } else {
                     Image(systemName: animal.group.symbol)
@@ -210,6 +213,7 @@ struct ConservationScale: View {
 struct RangeMap: View {
     let animal: Animal
     @State private var image: UIImage?
+    @State private var unavailable = false
 
     var body: some View {
         GeometryReader { geo in
@@ -221,6 +225,13 @@ struct RangeMap: View {
                         .scaledToFill()
                         .frame(width: geo.size.width, height: geo.size.height)
                         .transition(.opacity)
+                } else if unavailable {
+                    // Offline and never rendered before: say so instead of spinning forever.
+                    Label("Map appears when you're online", systemImage: "wifi.slash")
+                        .font(.footnote.weight(.semibold))
+                        .foregroundStyle(.white.opacity(0.7))
+                        .frame(maxHeight: .infinity, alignment: .top)
+                        .padding(.top, 14)
                 } else {
                     ProgressView().tint(.white)
                 }
@@ -240,6 +251,7 @@ struct RangeMap: View {
                 let size = CGSize(width: max(geo.size.width, 1), height: max(geo.size.height, 1))
                 let loaded = await RangeSnapshots.shared.image(for: animal, size: size)
                 withAnimation(.easeOut(duration: 0.3)) { image = loaded }
+                unavailable = loaded == nil
             }
         }
         .clipped()
@@ -270,6 +282,14 @@ actor RangeSnapshots {
         try? FileManager.default.createDirectory(at: d, withIntermediateDirectories: true)
         return d
     }()
+
+    /// Renders maps ahead of time so they're there offline.
+    func prefetch(_ animals: [Animal], size: CGSize) async {
+        for animal in animals {
+            if Task.isCancelled { return }
+            _ = await image(for: animal, size: size)
+        }
+    }
 
     func image(for animal: Animal, size: CGSize) async -> UIImage? {
         let key = "\(animal.id)-\(Int(size.width))x\(Int(size.height))-v1"

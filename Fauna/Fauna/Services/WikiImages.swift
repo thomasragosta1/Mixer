@@ -60,6 +60,11 @@ actor WikiImages {
            let bundled = try? JSONDecoder().decode([String: Source].self, from: data) {
             known = bundled
         }
+        // A newer published copy (see ContentSync) covers animals added since this build.
+        if let data = ContentSync.cachedPhotos(),
+           let published = try? JSONDecoder().decode([String: Source].self, from: data) {
+            known.merge(published) { _, published in published }
+        }
         if let data = UserDefaults.standard.data(forKey: Self.defaultsKey),
            let saved = try? JSONDecoder().decode([String: Source].self, from: data) {
             known.merge(saved) { bundled, _ in bundled }
@@ -73,12 +78,19 @@ actor WikiImages {
         let key = "\(title)#\(size.rawValue)"
         if let hit = memory.object(forKey: key as NSString) { return hit }
         if let running = inflight[key] { return await running.value }
+        let file = Self.diskURL(for: key)
         let task = Task<UIImage?, Never> { [session] in
+            // Card and hero photos are kept on disk, so animals already prepared show their
+            // photos without a connection.
+            if let file, let data = try? Data(contentsOf: file), let image = UIImage(data: data) {
+                return await image.byPreparingForDisplay() ?? image
+            }
             guard let source = await self.source(for: title) else { return nil }
             let url = Self.url(for: source, width: size.rawValue)
             guard let (data, response) = try? await session.data(from: url),
                   (response as? HTTPURLResponse)?.statusCode ?? 200 < 400,
                   let image = UIImage(data: data) else { return nil }
+            if let file, size != .full { try? data.write(to: file, options: .atomic) }
             return await image.byPreparingForDisplay() ?? image
         }
         inflight[key] = task
@@ -91,6 +103,34 @@ actor WikiImages {
     /// Author and license for the article's photo, or nil if it has no reusable photo.
     func credit(for title: String) async -> PhotoCredit? {
         await source(for: title)?.credit
+    }
+
+    /// Whether an animal's card and hero photos are already saved on the device.
+    nonisolated func isAvailableOffline(_ title: String) -> Bool {
+        [Size.card, .hero].allSatisfy { size in
+            Self.diskURL(for: "\(title)#\(size.rawValue)").map { FileManager.default.fileExists(atPath: $0.path) } ?? false
+        }
+    }
+
+    /// Downloads card and hero photos for these animals, one at a time so Wikimedia isn't
+    /// flooded. Returns how many of them are now fully available offline.
+    @discardableResult
+    func makeAvailableOffline(_ titles: [String]) async -> Int {
+        var ready = 0
+        for title in titles {
+            if Task.isCancelled { break }
+            if !isAvailableOffline(title) {
+                for size in [Size.card, .hero] { _ = await image(for: title, size: size) }
+            }
+            if isAvailableOffline(title) { ready += 1 }
+        }
+        return ready
+    }
+
+    /// Adopts newly published photo files and credits (see ContentSync).
+    func updateSources(from data: Data) {
+        guard let published = try? JSONDecoder().decode([String: Source].self, from: data) else { return }
+        sources.merge(published) { _, published in published }
     }
 
     /// Warms the cache for animals the reader is about to see.
@@ -187,6 +227,23 @@ actor WikiImages {
     }
 
     // MARK: Helpers
+
+    /// Saved photos live in Application Support (not Caches, which iOS may empty) and are
+    /// excluded from backups, since they can always be downloaded again.
+    private static let photoDirectory: URL? = {
+        guard let support = try? FileManager.default.url(for: .applicationSupportDirectory, in: .userDomainMask,
+                                                          appropriateFor: nil, create: true) else { return nil }
+        var dir = support.appendingPathComponent("Photos", isDirectory: true)
+        try? FileManager.default.createDirectory(at: dir, withIntermediateDirectories: true)
+        var values = URLResourceValues()
+        values.isExcludedFromBackup = true
+        try? dir.setResourceValues(values)
+        return dir
+    }()
+
+    private static func diskURL(for key: String) -> URL? {
+        photoDirectory?.appendingPathComponent(ContentSync.hash(Data(key.utf8)) + ".img")
+    }
 
     private static let pathSafe = CharacterSet(charactersIn:
         "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-.()'")
