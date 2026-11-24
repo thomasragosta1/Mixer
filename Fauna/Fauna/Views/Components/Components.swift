@@ -23,6 +23,9 @@ struct AnimalPhoto: View {
                 }
             }
             .clipped()
+            // clipped() only trims the drawing: a wide photo scaled to fill still takes taps
+            // beyond the frame, stealing them from neighbouring cards. Limit taps to the frame.
+            .contentShape(Rectangle())
             .task(id: animal.id + "\(size.rawValue)") {
                 image = nil
                 let loaded = await WikiImages.shared.image(for: animal.wikipediaTitle, size: size)

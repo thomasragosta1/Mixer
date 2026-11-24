@@ -249,8 +249,12 @@ final class FaunaUITests: XCTestCase {
         let app = launch("-FaunaDemo", "-FaunaTab", "journal")
         let card = button(app, containing: "Red Panda,")
         XCTAssertTrue(card.waitForExistence(timeout: 10))
-        card.tap()
+        // Tap near the edge next to the neighbouring card, where a wide photo used to steal taps.
+        card.coordinate(withNormalizedOffset: CGVector(dx: 0.92, dy: 0.5)).tap()
         XCTAssertTrue(unlockPill(app).waitForExistence(timeout: 10))
+        XCTAssertTrue(app.tabBars.buttons["Today"].isSelected, "should switch to Today")
+        XCTAssertTrue(app.staticTexts["Red Panda"].exists, "Today should show today's animal")
+        XCTAssertFalse(app.navigationBars["Journal"].exists)
     }
 
     func testJournalOpensAPastAnimal() {

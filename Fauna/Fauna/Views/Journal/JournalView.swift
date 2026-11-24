@@ -164,6 +164,7 @@ private struct JournalCard: View {
                     .padding(10)
             }
             .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .contentShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
             .shadow(color: .black.opacity(0.12), radius: 10, y: 6)
             .accessibilityElement(children: .combine)
             .accessibilityLabel("\(animal.name), met \(date.formatted(date: .abbreviated, time: .omitted))")
@@ -196,6 +197,7 @@ private struct LockedCard: View {
                 .environment(\.colorScheme, .dark)
             }
             .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .contentShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
             .accessibilityElement(children: .ignore)
             .accessibilityLabel("Undiscovered \(animal.group.singular.lowercased())")
     }
