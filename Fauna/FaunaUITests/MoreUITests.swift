@@ -185,6 +185,24 @@ final class MoreUITests: XCTestCase {
         XCTAssertTrue(scroll(app, to: any(app, "Apple Maps imagery")))
     }
 
+    func testAnyJournalAnimalCanBeQuizzed() {
+        // The Atlantic Puffin is in the demo journal but its quiz was never taken.
+        let app = launch(["-FaunaDemo", "-FaunaTab", "journal"])
+        let card = button(app, "Atlantic Puffin,")
+        XCTAssertTrue(scroll(app, to: card))
+        card.tap()
+        let take = button(app, "Take the quiz")
+        XCTAssertTrue(scroll(app, to: take), "every journal article ends with its quiz")
+        XCTAssertFalse(button(app, "Unlock the next animal").exists, "no floating button outside Today")
+        take.tap()
+        XCTAssertTrue(app.staticTexts["1 of 3"].waitForExistence(timeout: 10))
+        answerCorrectly(app)
+        XCTAssertTrue(app.buttons["Done"].waitForExistence(timeout: 10))
+        XCTAssertFalse(button(app, "Meet the ").exists, "journal quizzes don't unlock animals")
+        app.buttons["Done"].tap()
+        XCTAssertTrue(scroll(app, to: button(app, "Retake the quiz")), "and can be taken again")
+    }
+
     // MARK: Accessibility
 
     func testLargestTextSizeStillWorks() {

@@ -330,8 +330,8 @@ struct AnimalArticleView: View {
                     } action: { visible in
                         unlockCardVisible = visible
                     }
-            } else if mode == .journal, store.hasPassedQuiz(animal) {
-                RetakeCard(animal: animal)
+            } else if mode == .journal {
+                QuizCard(animal: animal, passed: store.hasPassedQuiz(animal))
             }
         }
         .padding(.horizontal, 22)
@@ -624,22 +624,25 @@ private struct UnlockCard: View {
     }
 }
 
-/// End of a Journal article, for animals whose quiz you've passed: take it again for practice.
-private struct RetakeCard: View {
+/// End of a Journal article: take the animal's quiz, as often as you like. It never unlocks a
+/// new animal (that happens on Today), but passing it marks the animal in your journal.
+private struct QuizCard: View {
     let animal: Animal
+    let passed: Bool
     @State private var showQuiz = false
 
     var body: some View {
         Button { showQuiz = true } label: {
             HStack(spacing: 14) {
-                Image(systemName: "arrow.counterclockwise.circle.fill")
+                Image(systemName: passed ? "arrow.counterclockwise.circle.fill" : "questionmark.circle.fill")
                     .font(.system(size: 28))
                     .foregroundStyle(Color.faunaMoss)
                 VStack(alignment: .leading, spacing: 2) {
-                    Text("Retake the quiz")
+                    Text(passed ? "Retake the quiz" : "Take the quiz")
                         .font(.headline)
                         .foregroundStyle(.primary)
-                    Text("You passed this one. See if it stuck.")
+                    Text(passed ? "You passed this one. See if it stuck."
+                                : "\(min(3, animal.quiz.count)) quick questions about the \(animal.name).")
                         .font(.subheadline)
                         .foregroundStyle(.secondary)
                 }

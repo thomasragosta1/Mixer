@@ -347,7 +347,7 @@ struct QuizView: View {
     }
 
     private var successMessage: String {
-        if practice { return "Still sharp. The \(animal.name) is yours." }
+        if practice { return "The \(animal.name) is yours." }
         guard unlocked != nil else { return "You've discovered every animal in Fauna. Come back tomorrow." }
         let today = store.state.todayChain.count
         return "Your next animal is ready. That's \(today) today, and you can keep going as long as you like."
