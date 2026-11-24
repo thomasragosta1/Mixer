@@ -48,7 +48,31 @@ for a in animals:
                 ["lede", "home", "anatomy", "life", "family", "remarkable", "outlook", "people", "relatives"])
     if not 600 <= words <= 1200: fail(f"{aid}: article is {words} words; aim for 4-5 minutes (650-1100)")
 
-print(f"{len(animals)} animals, {sum(len(a['quiz']) for a in animals)} questions")
+# Repeated facts: a sentence whose key words mostly reappear in another sentence of the same
+# article usually says the same thing twice. Warnings only, since some overlap is natural
+# (an opening line that previews a fact, say); look at each one.
+import re
+STOP = set("the a an and or of to in on at for with by from as is are was were be been its it their they "
+           "this that these those which who can may also than then into over about up out only more most "
+           "some many much very such not no but if so all each other one two three has have had do does "
+           "it's just even like around while when where how what why there here because".split())
+SECTIONS = ["lede", "home", "anatomy", "life", "family", "remarkable", "didYouKnow", "relatives", "people", "outlook"]
+def keywords(s):
+    return {w for w in re.findall(r"[a-z0-9]+", s.lower()) if w not in STOP and len(w) > 2}
+repeats = 0
+for a in animals:
+    sents = [(k, s.strip()) for k in SECTIONS
+             for s in re.split(r"(?<=[.!?])\s+", a.get(k, "").replace("\n\n", " ")) if len(s.split()) >= 5]
+    for i in range(len(sents)):
+        wi = keywords(sents[i][1])
+        for j in range(i + 1, len(sents)):
+            wj = keywords(sents[j][1])
+            shared = wi & wj
+            if wi and wj and len(shared) >= 5 and len(shared) / min(len(wi), len(wj)) >= 0.7:
+                repeats += 1
+                print(f"WARNING: {a['id']}: possible repeat\n  [{sents[i][0]}] {sents[i][1]}\n  [{sents[j][0]}] {sents[j][1]}")
+
+print(f"{len(animals)} animals, {sum(len(a['quiz']) for a in animals)} questions, {repeats} possible repeated facts")
 from collections import Counter
 print("groups:", dict(Counter(a["group"] for a in animals)))
 print("regions:", dict(Counter(r for a in animals for r in a["regions"])))
