@@ -1,0 +1,58 @@
+name: Fauna draft animals
+
+# Drafts new animals from Wikipedia with the Claude API (scripts/draft_animals.py) and commits
+# them to scripts/new_animals/drafts/ for review. Nothing goes live until a draft batch is
+# reviewed and merged into animals.json. Run it from the Actions tab.
+on:
+  workflow_dispatch:
+    inputs:
+      count:
+        description: How many animals to draft
+        type: number
+        default: 25
+
+concurrency:
+  group: fauna-draft
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  draft:
+    name: Draft animals
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install the Anthropic SDK
+        run: pip install --quiet anthropic
+
+      - name: Check the API key is set
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$ANTHROPIC_API_KEY" ]; then
+            echo "::error::Add an ANTHROPIC_API_KEY repository secret (Settings > Secrets and variables > Actions)."
+            exit 1
+          fi
+
+      - name: Draft
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python3 Fauna/scripts/draft_animals.py --count "${{ inputs.count }}"
+
+      - name: Commit the drafts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Fauna/scripts/new_animals/drafts
+          git diff --cached --quiet && exit 0
+          git commit -m "Fauna: draft new animals for review [skip ci]"
+          for i in 1 2 3; do git pull --rebase --quiet && git push && exit 0; sleep 5; done
+          exit 1
