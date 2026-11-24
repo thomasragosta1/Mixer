@@ -2,8 +2,12 @@ name: Fauna draft animals
 
 # Drafts new animals from Wikipedia with the Claude API (scripts/draft_animals.py) and commits
 # them to scripts/new_animals/drafts/ for review. Nothing goes live until a draft batch is
-# reviewed and merged into animals.json. Run it from the Actions tab.
+# reviewed and merged into animals.json. Start a batch by changing the count in
+# Fauna/scripts/new_animals/draft-request.json and pushing, or from the Actions tab.
 on:
+  push:
+    paths:
+      - Fauna/scripts/new_animals/draft-request.json
   workflow_dispatch:
     inputs:
       count:
@@ -45,7 +49,12 @@ jobs:
       - name: Draft
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python3 Fauna/scripts/draft_animals.py --count "${{ inputs.count }}"
+        run: |
+          COUNT="${{ inputs.count }}"
+          if [ -z "$COUNT" ]; then
+            COUNT=$(python3 -c "import json; print(json.load(open('Fauna/scripts/new_animals/draft-request.json'))['count'])")
+          fi
+          python3 Fauna/scripts/draft_animals.py --count "$COUNT"
 
       - name: Commit the drafts
         run: |

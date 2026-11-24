@@ -264,6 +264,8 @@ def main():
     p.add_argument("--count", type=int, default=25)
     p.add_argument("--workers", type=int, default=4)
     args = p.parse_args()
+    if args.count <= 0:
+        print("Count is 0: nothing to draft."); return
 
     library = json.loads(LIBRARY.read_text())
     drafted = [d for f in sorted(DRAFTS.glob("*.json")) for d in json.loads(f.read_text())] if DRAFTS.exists() else []
