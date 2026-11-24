@@ -211,6 +211,10 @@ final class MoreUITests: XCTestCase {
         let card = button(app, "\(target),")
         let other = button(app, "\(neighbour),")
         XCTAssertTrue(scroll(app, to: card))
+        // Bring the row well clear of the tab bar, so the tap lands on the card itself.
+        for _ in 0..<6 where card.frame.maxY > app.frame.height * 0.7 {
+            app.swipeUp(velocity: .slow)
+        }
         sleep(2) // let the photos load, since they're what used to steal taps
         let frames = "\(target) card \(card.frame), \(neighbour) card \(other.frame)"
         card.coordinate(withNormalizedOffset: CGVector(dx: dx, dy: 0.5)).tap()
