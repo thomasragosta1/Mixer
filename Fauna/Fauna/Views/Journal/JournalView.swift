@@ -85,7 +85,9 @@ struct JournalView: View {
                 // Out of the animals met, since those are the quizzes there are to take.
                 StatTile(value: "\(store.state.quizPassedIDs.filter(store.metIDs.contains).count)/\(met)", label: "quizzes passed",
                          symbol: "checkmark.seal.fill", tint: .faunaMoss)
-                StatTile(value: "\(Set(store.journalAnimals.map { $0.animal.group }).count)", label: "kinds of animal",
+                // The seven groups Focus filters by (mammals, birds, fish, insects...), so say so.
+                StatTile(value: "\(Set(store.journalAnimals.map { $0.animal.group }).count)/\(AnimalGroup.allCases.count)",
+                         label: "groups, like birds or fish",
                          symbol: "square.grid.2x2.fill", tint: .blue)
             }
         }
