@@ -82,7 +82,8 @@ struct JournalView: View {
             HStack(spacing: 12) {
                 StatTile(value: "\(store.streak)", label: "day streak",
                          symbol: "flame.fill", tint: .orange)
-                StatTile(value: "\(store.state.quizPassedIDs.count)", label: "quizzes passed",
+                // Out of the animals met, since those are the quizzes there are to take.
+                StatTile(value: "\(store.state.quizPassedIDs.filter(store.metIDs.contains).count)/\(met)", label: "quizzes passed",
                          symbol: "checkmark.seal.fill", tint: .faunaMoss)
                 StatTile(value: "\(Set(store.journalAnimals.map { $0.animal.group }).count)", label: "kinds of animal",
                          symbol: "square.grid.2x2.fill", tint: .blue)

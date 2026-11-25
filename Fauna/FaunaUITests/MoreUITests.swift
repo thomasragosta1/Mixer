@@ -105,8 +105,8 @@ final class MoreUITests: XCTestCase {
         tab(app, "Journal")
         XCTAssertTrue(app.staticTexts["13"].waitForExistence(timeout: 5), "12 met + 1")
         let passed = app.descendants(matching: .any)
-            .matching(NSPredicate(format: "label CONTAINS '7' AND label CONTAINS 'quizzes passed'")).firstMatch
-        XCTAssertTrue(passed.exists, "6 passed + Red Panda")
+            .matching(NSPredicate(format: "label CONTAINS '7/13' AND label CONTAINS 'quizzes passed'")).firstMatch
+        XCTAssertTrue(passed.exists, "6 passed + Red Panda, out of 13 met")
     }
 
     func testQuizWorksAfterSwitchingToImperial() {
