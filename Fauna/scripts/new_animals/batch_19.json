@@ -1,0 +1,877 @@
+[
+ {
+  "id": "northern-pike",
+  "name": "Northern Pike",
+  "scientificName": "Esox lucius",
+  "wikipediaTitle": "Northern pike",
+  "group": "fish",
+  "regions": [
+   "europe",
+   "asia",
+   "naEast",
+   "naWest"
+  ],
+  "range": "Fresh waters across the Northern Hemisphere, from North America to Europe and Russia",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 55.0,
+   "longitude": 20.0
+  },
+  "mapSpan": 80,
+  "tagline": "The freshwater ambush hunter shaped like a spear",
+  "lede": "Long, spotted and armed with backward-pointing teeth, the northern pike hangs motionless among the weeds until a fish strays too close. Then it explodes forward in a burst of speed few fish can match. It is the top predator of countless lakes and rivers across the north of the world.",
+  "home": "Pike live in fresh water throughout the Northern Hemisphere, across North America, Europe and Russia. In Europe they reach beyond the Arctic Circle in Norway, Sweden, Finland and Russia, and range south through the British Isles and central and eastern Europe, though they are absent from Portugal, Italy and most of Spain. In North America they occur across much of Canada and the northern United States, including the Great Lakes basin and the upper Mississippi.\n\nThey favour sluggish streams and shallow, weedy bays of lakes and reservoirs, but also turn up in cold, clear, rocky waters. Rich underwater vegetation is essential, both for spawning and as cover for young pike. Unusually, some live in the brackish Baltic Sea, keeping to the low-salinity surface water and returning to rivers afterwards.",
+  "anatomy": "A typical pike is 40 to 55 centimetres long, but the largest recorded reach about 150 centimetres and 28.4 kg. Pike in Eurasia grow bigger than those in North America, and coastal Eurasian fish bigger than inland ones. The body is usually olive green, shading to yellow and white on the belly, with rows of short, pale, bar-like spots along the flanks and dark spots on the fins, which are sometimes reddish. Young pike are green with yellow stripes that later break up into spots.\n\nThe head carries large sensory pores, part of the lateral line system that senses movement in the water, and pike use it to follow the swirls left by swimming prey. A rare mutation called the silver pike lacks the spots and looks silvery or bluish white.",
+  "life": "Pike are classic ambush hunters. A pike holds itself perfectly still by flickering the rear rays of its fins, bends its body into an S and launches itself with its broad tail, dorsal and anal fins. It seizes prey sideways, pins it with its sharp teeth, then turns it to swallow it headfirst. Fish and frogs make up most of the diet, but insects, crayfish, leeches, small mammals and birds are taken too.\n\nYoung pike start on water fleas and tiny crustaceans and switch to fish once they reach 4 to 8 centimetres. Cannibalism is common when food is short, and big pike happily eat smaller ones, which is why the young need dense weed to hide in. Large pike roam wide territories in open water, following schools of prey fish, and pike are least active at night.",
+  "family": "Pike can breed at about 2 years old. They spawn in spring, once the water first reaches about 9 °C, with males arriving at the weedy breeding grounds weeks before the females and staying on afterwards. Females scatter large numbers of sticky yellow to orange eggs, each about 3 mm across, over the vegetation.\n\nThe eggs will not hatch in water below 6 °C. They take 5 to 16 days depending on temperature, and the newly hatched young rest on the bottom for a while before swimming free. Only around 5% survive from free-swimming larva to 75 mm. Pike usually live 10 to 15 years, occasionally up to 25.",
+  "remarkable": "Pike sometimes tackle prey far larger than anyone would expect. One was seen trying to drown and eat a great crested grebe, another choked to death on a tufted duck it had killed, and a large pike was suspected in the death of an adult mute swan in Northern Ireland. Young pike have even been found dead after trying to swallow another pike of their own size, a scene the poet Ted Hughes wrote about.",
+  "outlook": "The northern pike is widespread and common across its native range. Its main conflict with people comes where it has been moved beyond that range. In parts of western North America, pike stocked or released for sport fishing threaten bass, trout and salmon, and managers have even poisoned whole lakes to remove them. California requires anglers to cut the head off any pike they catch, and in south-central Alaska, where pike were illegally introduced, most areas have no catch limit.\n\nElsewhere, anglers increasingly release pike alive. The fish's skin is covered in protective mucus that dry hands can damage, leading to infections, so careful handling matters.",
+  "people": "The name comes from the pike, a long pointed pole-weapon, and the fish has collected many others: jack, jackfish, pickerel, slough shark and hammer handle among them. An older name, luce, gave rise to the scientific name Esox lucius.\n\nPike flesh is white and mild and has been cooked since Roman times, but it is full of awkward Y-shaped bones, so de-boning is a prized skill and small pike are often turned into quenelles. In Britain and Ireland the pike is admired as a sporting fish, and in Finland landing one of 10 kg or more marks you out as a master fisherman. In the Finnish epic Kalevala, the sage Väinämöinen builds a magical kantele, a stringed instrument, from the jawbone of a giant pike.",
+  "relatives": "The northern pike belongs to the genus Esox, the pikes. Its larger North American relative, the muskellunge, looks similar but has dark markings on a lighter background, and the two can interbreed to produce the tiger muskellunge, whose males are always sterile.\n\nIn Italy, fish long thought to be a colour form of the northern pike were recognised in 2011 as a separate species, the southern pike, Esox cisalpinus.",
+  "didYouKnow": "The angling world record for a northern pike is a 25 kg fish caught on Greffern Lake in Germany in 1986.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Usually 40–55 cm"
+   },
+   {
+    "label": "Max weight",
+    "value": "28.4 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "10–15 years, up to 25"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly fish and frogs"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does a pike usually swallow its prey?",
+    "choices": [
+     "Headfirst, after turning it",
+     "Tail first, straight after the strike",
+     "Sideways, exactly as it was caught, without turning it",
+     "In small torn-off pieces"
+    ],
+    "explanation": "It catches prey sideways, pins it with its teeth, then turns it to swallow it headfirst."
+   },
+   {
+    "prompt": "What did the sage Väinämöinen make from a giant pike's jawbone in the Kalevala?",
+    "choices": [
+     "A kantele",
+     "A fishing spear",
+     "A crown for the king of the northern lakes",
+     "A boat"
+    ],
+    "explanation": "In the Finnish epic he builds a magical stringed instrument, a kantele, from the jawbone."
+   },
+   {
+    "prompt": "Where in Europe is the northern pike absent?",
+    "choices": [
+     "Portugal and Italy",
+     "The British Isles",
+     "Northern Norway, Sweden and Finland above the Arctic Circle",
+     "Eastern Europe"
+    ],
+    "explanation": "Pike range across most of Europe but are missing from Portugal, Italy and most of Spain."
+   }
+  ],
+  "charities": [
+   {
+    "name": "The Wildlife Trusts",
+    "url": "https://www.wildlifetrusts.org",
+    "blurb": "A federation of UK charities protecting rivers, lakes and wetlands and the wildlife in them."
+   },
+   {
+    "name": "The Nature Conservancy",
+    "url": "https://www.nature.org",
+    "blurb": "Protects lands and fresh waters around the world, including lakes and rivers across North America."
+   }
+  ]
+ },
+ {
+  "id": "hippopotamus",
+  "name": "Hippopotamus",
+  "scientificName": "Hippopotamus amphibius",
+  "wikipediaTitle": "Hippopotamus",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Rivers, lakes and swamps across sub-Saharan Africa",
+  "status": "VU",
+  "coordinate": {
+   "latitude": -5.0,
+   "longitude": 28.0
+  },
+  "mapSpan": 50,
+  "tagline": "The 'river horse' whose closest kin are whales",
+  "lede": "By day the hippopotamus lies half-sunk in rivers and lakes, only its eyes, ears and nostrils breaking the surface. By night it lumbers ashore to graze. This barrel-shaped giant is one of the most dangerous animals in Africa, and, surprisingly, a distant cousin of the whales.",
+  "home": "Hippos live in sub-Saharan Africa, from The Gambia in the west through the northern Congo basin, Uganda, Tanzania and Kenya to Ethiopia, Somalia and Sudan, and south to South Africa. They need water deep enough to submerge in, close to grassland, and prefer still rivers and lakes with gently sloping banks, though they also enter estuaries and mangrove swamps.\n\nThe species once ranged far more widely. During warm spells of the Ice Age hippos lived in southern Europe and as far north as Britain, and a few thousand years ago they wallowed in the lakes of a green Sahara. They lived along the Egyptian Nile for much of history, but had become rare there by 1600.",
+  "anatomy": "After elephants and some rhinoceroses, the hippo is the largest land mammal. Bulls average about 1.5 tonnes and cows about 1.3 tonnes, while exceptional males reach 2.66 tonnes. An adult is 2.9 to 5 metres long and about 1.4 metres tall at the shoulder, on short legs with webbed toes. Dense bones let it sink and walk along the bottom, and its nostrils and ears close underwater while clear membranes protect the eyes.\n\nThe mouth can open to 100 to 110 degrees. The lower canines grow throughout life to 50 centimetres and are weapons, not tools for eating; the hippo crops grass with its hard, flattened lips. Its skin is about 6 centimetres thick, nearly hairless and purplish grey, and it oozes a red-orange fluid often called 'blood sweat'. This contains two acidic pigments that act as a sunscreen and slow the growth of bacteria.",
+  "life": "Hippos spend the day in water or mud to keep cool, then leave at dusk to graze, walking 3 to 5 km a night and eating around 40 kg of grass before returning by dawn. Whether they can truly swim is debated: they move by walking or bouncing along the bottom, and adults must surface at least every 6 minutes, even rising to breathe in their sleep without seeming to wake.\n\nPods can hold over 100 animals, yet adults form almost no social bonds. A territorial bull controls a stretch of water and the cows in it, tolerating younger males that defer to him. Hippos 'yawn' as a threat, and spin their tails while defecating to spray dung around. Their best-known call, the 'wheeze honk', carries a long way, and a hippo can call with its head half above water so the sound travels through air and water at once.",
+  "family": "Cows mature at 5 to 6 years and bulls at around 7.5. Mating takes place in the water, and after a pregnancy of about 8 months the cow gives birth alone, on land or in shallow water, returning to the group within 10 to 14 days. Calves weigh about 50 kg at birth and suckle on land or underwater.\n\nMothers are fiercely protective, and in deep water calves ride on their backs. Young may be left in nurseries watched by a few adults, where they play together. Calves are weaned by about a year, and a cow usually has a single calf every couple of years. Lions, spotted hyenas and Nile crocodiles take young hippos. Hippos typically live 40 to 50 years, and two in captivity reached 65.",
+  "remarkable": "For a long time hippos were classified alongside pigs. Blood proteins, DNA and fossils have since shown that their closest living relatives are whales, dolphins and porpoises. The two lineages came from a shared semiaquatic ancestor, and hippos still have some whale-like traits: their vocal folds sit horizontally, much like those of baleen whales, and they make clicks underwater that may work like echolocation.",
+  "outlook": "The hippo is listed as Vulnerable, with a population estimated in 2017 at 115,000 to 130,000. Loss of access to fresh water and poaching for meat and for the canine teeth, used as a substitute for elephant ivory, are the main threats. The steepest collapse was in the Democratic Republic of the Congo, where numbers in Virunga National Park fell from around 29,000 in the mid-1970s to under 1,000 by 2005 during the Second Congo War, before beginning to recover under ranger protection.\n\nIn an odd twist, Colombia now has a wild herd of around 100 hippos, descended from animals that escaped from Pablo Escobar's estate after his death, and ecologists want them removed.",
+  "people": "The name comes from the Ancient Greek for 'river horse'. Hippos are notoriously aggressive, charging boats and capsizing them; in 2014 a hippo overturned a boat in Niger and 13 people died. They also raid crops, bringing them into conflict with farmers.\n\nIn ancient Egypt the god Set took the form of a red hippo, while the goddess Taweret, with a hippo's head on a pregnant woman's body, stood for fierce maternal love. The Behemoth of the Book of Job is thought to be a hippo. In 1850 a hippo named Obaysch arrived at London Zoo, drew up to 10,000 visitors a day and inspired a dance tune, the 'Hippopotamus Polka'.",
+  "relatives": "The hippo is one of only two living members of the family Hippopotamidae; the other is the much smaller pygmy hippopotamus. Both belong to the even-toed hoofed mammals, and their ancestors are thought to have entered Africa from Asia around 35 million years ago.\n\nMany other hippos have vanished. Hippopotamus gorgops, of the Early Pleistocene, weighed over 4 tonnes, dwarf hippos lived on Mediterranean islands such as Cyprus, Crete and Malta, and three small species survived on Madagascar until within the last 1,000 years.",
+  "didYouKnow": "Hippos sometimes visit cleaning stations, opening their mouths wide to invite small fish to pick parasites off them.",
+  "facts": [
+   {
+    "label": "Weight",
+    "value": "About 1.5 t (bulls)"
+   },
+   {
+    "label": "Length",
+    "value": "2.9–5 m"
+   },
+   {
+    "label": "Lifespan",
+    "value": "40–50 years"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly grass"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What are the hippo's closest living relatives?",
+    "choices": [
+     "Whales and dolphins",
+     "Pigs",
+     "Rhinoceroses and elephants, its fellow giants of the savanna",
+     "Tapirs"
+    ],
+    "explanation": "DNA and fossils show hippos and cetaceans share a semiaquatic ancestor."
+   },
+   {
+    "prompt": "What does the hippo's red 'blood sweat' do?",
+    "choices": [
+     "Acts as a sunscreen",
+     "Cools it as it evaporates",
+     "Attracts mates during the breeding season in the wet months",
+     "Repels crocodiles"
+    ],
+    "explanation": "Its pigments absorb ultraviolet light and slow the growth of bacteria."
+   },
+   {
+    "prompt": "How does a hippo mainly gather its food?",
+    "choices": [
+     "Cropping grass with its lips",
+     "Uprooting water plants with its tusks",
+     "Catching fish in the shallows at dusk with its huge jaws",
+     "Browsing tree leaves"
+    ],
+    "explanation": "It grazes grass with its hard lips; its tusks are weapons, not feeding tools."
+   }
+  ],
+  "charities": [
+   {
+    "name": "African Wildlife Foundation",
+    "url": "https://www.awf.org",
+    "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+   }
+  ]
+ },
+ {
+  "id": "shingleback-lizard",
+  "name": "Shingleback Lizard",
+  "scientificName": "Tiliqua rugosa",
+  "wikipediaTitle": "Tiliqua rugosa",
+  "group": "reptile",
+  "regions": [
+   "oceania"
+  ],
+  "range": "Arid and semi-arid southern and western Australia",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -31.0,
+   "longitude": 130.0
+  },
+  "mapSpan": 35,
+  "tagline": "The two-headed-looking skink that mates for years",
+  "lede": "Armoured in thick scales like a pinecone, with a stumpy tail shaped just like its head, the shingleback looks as if it could walk off in either direction. This slow, heavy Australian skink flashes a bright blue tongue at enemies. And unlike almost any other lizard, it returns to the same partner year after year.",
+  "home": "Shinglebacks are found only in Australia, across arid and semi-arid country in the south and west. The range runs from Broome in Western Australia across the southern part of the continent and north into Queensland, and includes inland Victoria and New South Wales, though not their coasts.\n\nThey live in shrublands, eucalyptus forests, desert grasslands and sandy dunes, sheltering under low bushes. Being cold-blooded, they love to bask in open spots, so they are often seen on roadsides and paddock edges. Each has a home range of about 4 hectares, may travel up to 500 metres a day, and keeps to the same patch for years, sometimes sharing burrows when the weather turns hot and dry.",
+  "anatomy": "A shingleback measures 26 to 31 centimetres from snout to vent and is very heavy for its length. Its colour varies from dark brown to cream, and its large, rough scales give it the armoured look behind names like shingleback and pinecone lizard. The head is triangular, with small reddish-brown eyes and a vivid blue tongue inside a pink mouth.\n\nThe fat tail stores energy for winter. Unlike many skinks, the shingleback cannot shed its tail to escape. It sheds its skin in one piece, eye coverings included, rubbing against objects for hours to help it off. Males are stockier with bigger heads, but females generally grow larger.",
+  "life": "Shinglebacks are omnivores that eat snails, insects, carrion, plants and flowers, crushing snail shells easily with their strong jaws. Being slow themselves, they mostly eat slow-moving food, and they eat more plants than other blue-tongued skinks. Near people they will also take sausage, chicken, strawberries and banana.\n\nIn winter they enter brumation, a hibernation-like state in which they can go without food but still need water every day. They are generally peaceful and recognise individuals by scent, though unpaired males fight intruders. Threatened, a shingleback gapes, shows its blue tongue and hisses, and will bite hard if pushed. Its sense of smell is keen enough to detect the smoke of bushfires, which sets it pacing and flicking its tongue.",
+  "family": "Pairs reunite each spring, between September and November, and some have been recorded returning to each other every year for up to 20 years. A male must follow a female around for a couple of weeks before she accepts him. While she feeds, he trails behind her, eating less himself and keeping watch for rivals and danger.\n\nShinglebacks give birth to live young, nourished in the womb through a well-developed placenta. Breeding runs from December to April, with a pregnancy of 3 to 5 months. A litter is usually 2 or 3 large babies, together weighing about a quarter as much as their mother. The newborns eat their afterbirth and stay near their parents for several months, forming a colony of relatives. Shinglebacks usually live 10 to 15 years, but some reach 50 in the wild.",
+  "remarkable": "Shinglebacks have an excellent sense of direction. Moved away from home, they can find their way back using a kind of celestial compass built from polarised light and magnetic cues, though only from up to about 800 metres outside their home range. When one of a pair is killed, the survivor has even been seen apparently grieving for its partner.",
+  "outlook": "The shingleback is listed as Least Concern, with a stable population and no significant threats over most of its range. It is protected in Australia and can only be exported legally with a federal permit. The Rottnest Island subspecies, however, is considered Vulnerable.\n\nNatural predators include dingoes, carpet pythons, brown falcons, laughing kookaburras and large snakes, and today introduced foxes and cats are probably a greater danger. Ticks and nematodes often hide under its scales or in its ears, and young kangaroo soft ticks, normally parasites of red kangaroos, can grow to adulthood on shinglebacks that share the kangaroos' shady resting spots.",
+  "people": "Some herpetologists say this lizard has more common names than any other. Besides shingleback and bobtail, it is called the two-headed skink, stumpy-tailed lizard, pinecone lizard, bogeye and sleepy lizard, and the Noongar people call it yoorn. Bobtail is the usual name in Western Australia.\n\nShinglebacks are popular pets among Australian reptile keepers, being docile and easy to feed, though some states require a permit. Their bite is not venomous but can still hurt and bruise. Aboriginal Australians once hunted them for food.",
+  "relatives": "The shingleback is one of the blue-tongued skinks of the genus Tiliqua, though it eats more plants and moves more slowly than its relatives. It was first described by John Edward Gray in 1825 under the name Trachydosaurus rugosus. Four subspecies are recognised: the eastern shingleback of eastern Australia, the western shingleback or bobtail, the Rottnest Island bobtail and the Shark Bay shingleback.",
+  "didYouKnow": "A shingleback's hearing is remarkably sensitive, with some thresholds close to the best a human can manage.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "26–31 cm (snout–vent)"
+   },
+   {
+    "label": "Lifespan",
+    "value": "10–15 years, up to 50"
+   },
+   {
+    "label": "Young",
+    "value": "Usually 2–3, born live"
+   },
+   {
+    "label": "Diet",
+    "value": "Snails, insects, plants"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What is unusual about how shinglebacks pair up?",
+    "choices": [
+     "Pairs often reunite for years",
+     "Females mate with many males each season",
+     "Males guard harems of up to a dozen females on large territories",
+     "They never meet a mate twice"
+    ],
+    "explanation": "Unlike most lizards they are monogamous, and some pairs reunite every year for up to 20 years."
+   },
+   {
+    "prompt": "Why might a shingleback's tail look like its head?",
+    "choices": [
+     "To confuse predators",
+     "To attract mates",
+     "To help it steer when digging burrows in loose sand",
+     "So it can shed it in danger"
+    ],
+    "explanation": "The head-like tail probably confuses predators; it cannot be shed."
+   },
+   {
+    "prompt": "How do shinglebacks reproduce?",
+    "choices": [
+     "They give birth to live young",
+     "They lay eggs in sand",
+     "They bury leathery eggs inside termite mounds to keep them warm",
+     "They lay eggs in burrows"
+    ],
+    "explanation": "They are viviparous, feeding their unborn young through a placenta."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Australian Wildlife Conservancy",
+    "url": "https://www.australianwildlife.org",
+    "blurb": "Manages large areas of Australian bush to protect native species from feral predators and habitat loss."
+   }
+  ]
+ },
+ {
+  "id": "hyacinth-macaw",
+  "name": "Hyacinth Macaw",
+  "scientificName": "Anodorhynchus hyacinthinus",
+  "wikipediaTitle": "Hyacinth macaw",
+  "group": "bird",
+  "regions": [
+   "southAmerica"
+  ],
+  "range": "Pantanal, cerrado and eastern Amazon of Brazil, Bolivia and Paraguay",
+  "status": "VU",
+  "coordinate": {
+   "latitude": -14.0,
+   "longitude": -52.0
+  },
+  "mapSpan": 30,
+  "tagline": "The world's longest parrot, with a nut-cracking beak",
+  "lede": "A metre of cobalt-blue feathers, the hyacinth macaw is the longest parrot on Earth. Bright yellow rings circle its eyes, and a strip of yellow sits beneath a beak that can crush nuts too hard for a heavy hammer. Its noisy, fearless curiosity has also made it an easy target for trappers.",
+  "home": "Hyacinth macaws live in three main areas of central and eastern South America: the Pantanal wetlands of Brazil and neighbouring eastern Bolivia and north-eastern Paraguay; the cerrado savannas of Brazil's eastern interior; and open country along the Tocantins, Xingu and Tapajós rivers and on Marajó island in the eastern Amazon. Smaller, scattered populations may exist elsewhere.\n\nThey prefer semi-open, lightly wooded country and usually avoid dense, humid forest, keeping to its edges or to riverbanks. Across the range they use savanna grasslands, dry thorn forest called caatinga, and palm swamps. In Bolivia, most birds live in the swampy San Matías protected area, where locals sometimes feed them maize as if they were chickens.",
+  "anatomy": "At about 1 metre from head to tail tip, the hyacinth macaw is the largest macaw and the largest flying parrot. It weighs 1.2 to 1.7 kg, and each wing is about 39 to 43 centimetres long. The plumage is mostly blue, lighter above, with black on much of the underside of the wings and tail, and the tail is long and pointed.\n\nIts beak is powerful enough to open coconuts, Brazil nut pods and macadamia nuts, which take around 300 psi of pressure to crack; few other birds can manage the macadamia at all. Its dry, smooth tongue contains a bone, making it a handy tool for getting into fruits.",
+  "life": "The diet is mostly nuts from a few palm species; in the Pantanal it eats almost nothing but the nuts of the acuri and bocaiuva palms. It also takes fruit and other plant matter, travelling over a large area to find the ripest food. Acuri nuts are so hard that the macaws can only feed on them once they have passed through the gut of cattle.\n\nWild and captive birds have been seen using simple tools, holding a chewed leaf or piece of wood against a hard nut to stop it slipping while they gnaw. Hand-raised birds do it too, so it is unclear whether the habit is learned or innate, and older birds open seeds more efficiently than young ones. Pairs often fly together.",
+  "family": "Nesting runs from July to December, in tree hollows or cliff cavities. In the Pantanal, 90% of nests are in the manduvi tree, but only trees around 60 years old or more have hollows big enough, so competition is fierce. The pair enlarges an existing hole and partly fills it with wood chips.\n\nThe female lays 1 or 2 eggs and incubates them for about a month while the male tends to her. The second egg hatches days after the first, and usually only the older chick survives. Chicks fledge at around 110 days, depend on their parents until 6 months old and begin breeding at 7 years. In captivity the species can live for over 50 years.",
+  "remarkable": "The hyacinth macaw has a tangled relationship with the toco toucan. The toucan spreads 83% of the seeds of the manduvi tree, on which the macaw depends for nest holes. Yet the same toucan is also the macaw's worst egg thief, responsible for 53% of the eggs lost to predators.",
+  "outlook": "The species is listed as Vulnerable. About 10,000 birds were taken from the wild in the 1980s, half of them for the Brazilian market, and in 1987 the wild population was estimated at around 3,000. By 2004 it had recovered to an estimated 6,500. Habitat loss to cattle ranching, mechanised farming and hydroelectric schemes, grass fires that destroy nest trees, and illegal trapping remain the main threats. Relying on just one or two palm species and on very old nest trees leaves the bird especially exposed.\n\nIt is protected by law in Brazil and Bolivia, and international trade is banned under CITES Appendix I. The Hyacinth Macaw Project in Mato Grosso do Sul rings birds and puts up artificial nests, and many Pantanal ranchers now keep trappers off their land.",
+  "people": "The English naturalist Henry Walter Bates described the bird in 1863 crushing palm nuts to a pulp, and Charles Darwin called it a 'splendid bird' with an 'enormous beak'. The Kayapo people use its feathers for headdresses, and up to 10 macaws may be needed for one.\n\nAs a pet it is known as a 'gentle giant', calmer and less aggressive than other macaws, but it needs a room of its own, a stainless steel cage and constant company, and a young bird can cost US$10,000. In 2025 it was made the symbolic bird of the Brazilian state of Mato Grosso do Sul.",
+  "relatives": "The hyacinth macaw belongs to the South American genus Anodorhynchus, which holds one other living species, the smaller Lear's macaw, with which it can be confused, and a third that is probably extinct. It was first described by John Latham in 1790 as Psittacus hyacinthinus, from a stuffed bird displayed in the Leverian Museum.\n\nParrots as a whole are among the most threatened birds, and in the American tropics 46 of 145 species face a serious risk of extinction.",
+  "didYouKnow": "Hyacinth macaws have escaped or been released in Florida, but there is no evidence that they breed there.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "About 1 m"
+   },
+   {
+    "label": "Weight",
+    "value": "1.2–1.7 kg"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly palm nuts"
+   },
+   {
+    "label": "Lifespan",
+    "value": "Over 50 years (captive)"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which bird spreads the seeds of the macaw's nest tree but also eats many of its eggs?",
+    "choices": [
+     "Toco toucan",
+     "Harpy eagle",
+     "Southern caracara, which raids nests across the Pantanal",
+     "Jabiru"
+    ],
+    "explanation": "The toco toucan disperses most manduvi seeds yet is the main predator of the macaw's eggs."
+   },
+   {
+    "prompt": "How do hyacinth macaws get at the hardest acuri nuts?",
+    "choices": [
+     "After cattle pass them",
+     "By dropping them onto rocks from a great height",
+     "By soaking them in water",
+     "By waiting for them to rot"
+    ],
+    "explanation": "Acuri nuts are too hard until they have passed through the gut of cattle."
+   },
+   {
+    "prompt": "How many chicks usually survive from a hyacinth macaw clutch?",
+    "choices": [
+     "One",
+     "Two",
+     "Three or four, raised with help from older siblings",
+     "None, most years"
+    ],
+    "explanation": "The second chick hatches later and usually cannot compete with the first."
+   }
+  ],
+  "charities": [
+   {
+    "name": "World Parrot Trust",
+    "url": "https://www.parrots.org",
+    "blurb": "Works to save wild parrots, including the hyacinth macaw, and to improve the welfare of captive birds."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Protects wild places such as the Pantanal and fights the illegal wildlife trade."
+   }
+  ]
+ },
+ {
+  "id": "ocellaris-clownfish",
+  "name": "Ocellaris Clownfish",
+  "scientificName": "Amphiprion ocellaris",
+  "wikipediaTitle": "Ocellaris clownfish",
+  "group": "fish",
+  "regions": [
+   "asia",
+   "oceania"
+  ],
+  "range": "Coral reefs of the eastern Indian Ocean and western Pacific",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 2.0,
+   "longitude": 115.0
+  },
+  "mapSpan": 50,
+  "tagline": "The real-life Nemo, safe among stinging tentacles",
+  "lede": "Bright orange with three white bands, the ocellaris clownfish spends its life tucked among the stinging tentacles of a sea anemone. It is the fish behind the hero of Finding Nemo. And every clownfish starts out male, with the biggest fish in each group being the only female.",
+  "home": "This clownfish lives in the eastern Indian Ocean and the western Pacific, including the waters of northern Australia, Southeast Asia and Japan. It is found in small groups on outer reef slopes and in sheltered lagoons, no deeper than about 15 metres.\n\nIn the wild it makes its home in just three species of sea anemone, Heteractis magnifica, Stichodactyla gigantea and Stichodactyla mertensii. It is completely dependent on its anemone and fiercely defends it.",
+  "anatomy": "The ocellaris clownfish grows to about 11 centimetres, and females are larger than males. The body is stocky, oval and flattened from side to side. It is usually orange to reddish brown, with three white bands edged in thin black lines: one just behind the eye, one across the middle of the body that bulges forward towards the head, and one around the base of the tail. Every fin is also trimmed in black. In some places, such as Australia's Northern Territory, the fish are black with white bands.\n\nA protective coat of mucus stops the anemone's tentacles from stinging it, allowing the clownfish to shelter where most fish would be stung.",
+  "life": "Clownfish are active by day. They feed on plankton and algae, especially copepods and other zooplankton, which makes them omnivores. How much a fish eats depends on its rank: smaller, lower-ranking fish face so much aggression that they have less energy to forage and take bigger risks when they leave the anemone, so the larger fish venture farther and eat more.\n\nThe partnership with the anemone works both ways. The tentacles shelter the clownfish and its eggs from predators, which pick off clownfish in open water. In return, the clownfish fans the anemone, removes its parasites, may lure prey towards the tentacles and chases off reef fish that would nibble them.",
+  "family": "Each anemone holds a strict hierarchy. The largest fish is the breeding female, the next largest is her mate, and the rest are smaller, non-breeding males that wait their turn. Lower-ranked fish stay small, their growth and breeding held back by those above them. If the female disappears, her mate changes sex to become the new female, and the next male in line moves up to breed.\n\nBefore spawning, the male prepares a nest beside the anemone so the tentacles guard it. The female lays her eggs over 1 to 2 hours and leaves, and the male fertilises and tends them, fanning them and eating any that are infertile or infected with fungus. They hatch in about 6 to 8 days. The larvae drift near the surface at first, then as juveniles sink to the reef to find an anemone of their own.",
+  "remarkable": "Finding a home is a young clownfish's hardest task. A newcomer that enters an occupied anemone starts at the very bottom of the social ladder and is often attacked by the residents, sometimes chased out to search elsewhere. Scientists think the size of the dominant fish, which is linked to the size of the anemone, limits how many fish a group can hold.",
+  "outlook": "The ocellaris clownfish is collected in large numbers for the tropical aquarium trade, and this heavy demand has put pressure on wild populations through overexploitation. Interest soared after the release of Finding Nemo in 2003, which boosted demand for this and other clownfish species.\n\nOn the other hand, the species breeds easily in captivity, which has made it a common subject of scientific research. Its fate in the wild is tied to the health of the reefs and anemones it depends on.",
+  "people": "Marlin and his son Nemo, the heroes of the Pixar film Finding Nemo, are ocellaris clownfish, as is Marlin's late wife, Coral. The species is also known as the false percula clownfish or common clownfish.\n\nIn home reef aquariums, clownfish readily adopt anemones they would never meet in the wild, such as Entacmaea quadricolor, and may even settle in corals instead of an anemone. Only certain colours are in demand in the trade.",
+  "relatives": "The ocellaris clownfish belongs to the damselfish family, Pomacentridae. Its sister species is the orange clownfish, Amphiprion percula, which looks almost identical at first sight. The two can be told apart by the thicker black outlines of the percula, while the ocellaris has a taller dorsal fin and usually 11 dorsal spines rather than 10.\n\nThere are 28 species of clownfish. Their ancestors could probably withstand the stings of only one kind of anemone, and as new species arose they evolved resistance to many different hosts.",
+  "didYouKnow": "Although it lives in full-strength seawater in the wild, the ocellaris clownfish can be raised in captivity in brackish water at less than half that salinity.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Up to 11 cm"
+   },
+   {
+    "label": "Depth",
+    "value": "To 15 m"
+   },
+   {
+    "label": "Diet",
+    "value": "Plankton and algae"
+   },
+   {
+    "label": "Eggs hatch",
+    "value": "In 6–8 days"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What happens if the female of a clownfish group disappears?",
+    "choices": [
+     "Her mate becomes female",
+     "The group abandons the anemone",
+     "A juvenile from a neighbouring anemone moves in to replace her",
+     "The males stop breeding"
+    ],
+    "explanation": "The dominant male changes sex, and the next male in line becomes the breeding male."
+   },
+   {
+    "prompt": "What protects a clownfish from its anemone's stings?",
+    "choices": [
+     "A coat of mucus",
+     "Thick armoured scales",
+     "Swimming only between the tentacles and never touching them",
+     "Its black fin edges"
+    ],
+    "explanation": "Its mucus coating prevents the tentacles from stinging it."
+   },
+   {
+    "prompt": "Which film made this species famous?",
+    "choices": [
+     "Finding Nemo",
+     "The Little Mermaid",
+     "Shark Tale",
+     "The Reef, a story about a coral lagoon in danger"
+    ],
+    "explanation": "Marlin and Nemo in the 2003 Pixar film are ocellaris clownfish."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Coral Reef Alliance",
+    "url": "https://www.coralreefalliance.org",
+    "blurb": "Works with communities to protect coral reefs and the fish that depend on them."
+   }
+  ]
+ },
+ {
+  "id": "hispaniolan-solenodon",
+  "name": "Hispaniolan Solenodon",
+  "scientificName": "Solenodon paradoxus",
+  "wikipediaTitle": "Hispaniolan solenodon",
+  "group": "mammal",
+  "regions": [
+   "centralAmerica"
+  ],
+  "range": "Forests of Hispaniola, in the Dominican Republic and Haiti",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 18.8,
+   "longitude": -70.8
+  },
+  "mapSpan": 6,
+  "tagline": "A venomous shrew-like relic from the age of dinosaurs",
+  "lede": "Picture an oversized shrew with a long, bendy snout, a naked tail and a venomous bite. The Hispaniolan solenodon snuffles through Caribbean forests at night, one of very few mammals that make venom. So secretive is it that few people on its own island have ever seen one.",
+  "home": "The solenodon lives only on Hispaniola, in the Dominican Republic and parts of southern Haiti. It usually keeps to undisturbed moist forest below 1,000 metres, though it is sometimes found higher up or near farmland. Its distribution is patchy, inside and outside protected areas such as the Jaragua, Del Este and Sierra de Baoruco national parks; in Haiti it is known from La Visite National Park and the Massif de la Hotte.\n\nThere are two subspecies: one in the northern Dominican Republic, and another in the far south of the country and on Haiti's Tiburon Peninsula. Genetic studies suggest the two have been separate for at least 300,000 years, and the northern population is far more genetically diverse.",
+  "anatomy": "Adults are 49 to 72 centimetres long including a 20 to 25 centimetre tail, and weigh about 800 g, making them the largest living members of the shrew-like insectivores. The fur is mostly dusky brown, paler underneath, with reddish fur on the sides of the head and throat, while the tail, legs, snout and eyelids are bare. The front legs are stronger than the back, and all have strong digging claws.\n\nThe long snout bristles with whiskers up to 7 centimetres long and is held up by a unique bone, the os proboscidis, found in no other solenodon. Tiny eyes and ears are half hidden in the fur. Venomous saliva flows through an almost closed groove in the second lower incisor, which gives the animal its name: solenodon means 'grooved teeth'.",
+  "life": "Solenodons are nocturnal and spend the day in burrows, hollow logs, trees or caves. A burrow may have many chambers and tunnels and is shared by an adult pair and up to 6 younger family members. When they come out, they run on the soles of their feet in an erratic zigzag.\n\nThey feed mainly on millipedes, ground beetles, crickets, katydids, cockroaches and other arthropods, but also take worms, snails, mice and small reptiles, plus a little fruit and leaf litter. They root in the soil with their snouts and rip open rotten logs with their claws. They chirp, squeal and squeak to one another, and have been reported to make echolocation clicks. Scent glands on the thighs help them communicate.",
+  "family": "Solenodons breed all year, though a female is receptive only briefly, about once every 10 days. After a pregnancy of more than 84 days she gives birth to 1 to 3 young, but usually only two survive, because she has just two teats, set near the groin. The babies are born blind and hairless, weighing 40 to 55 g.\n\nThe mother carries her young about for their first 2 months; how long they take to be fully weaned is unknown. In captivity solenodons have lived for more than 11 years.",
+  "remarkable": "Its venom is potent: in tests, doses of around half a milligram per gram of body weight killed mice within 2 to 6 minutes. Genome studies show the solenodon evolved venom independently of venomous shrews, yet recruited similar families of genes to do it, a striking case of evolution arriving at the same answer twice.",
+  "outlook": "The species was long listed as Endangered, but in 2020 the IUCN downlisted it to Least Concern as more became known about its population and range. Threats remain: national parks in both countries are being cleared for farming and charcoal, and introduced dogs, cats and small Asian mongooses, brought in to control rats in sugar cane fields, can all kill solenodons. With no native land predators, it never evolved defences and is a slow, clumsy runner; its only natural enemies are owls.\n\nIt is fully protected by law. Since 2009, projects involving the EDGE programme, Durrell, BirdLife International and local partners have studied it and raised awareness in both countries.",
+  "people": "Science first met the animal in 1833, when a puzzling specimen from Haiti reached the Russian Academy of Sciences; its curator, Johann Friedrich von Brandt, named it Solenodon paradoxus. It was later thought extinct until naturalists rediscovered it in the Dominican Republic in 1907, and by 1964 it was again feared lost. In 1981 it was declared 'functionally extinct' in Haiti, surviving only in remote southern mountains. Its local name is agouta.",
+  "relatives": "Solenodons belong to an ancient lineage that split from other placental mammals about 73.6 to 78 million years ago, in the Late Cretaceous. The only other living species is the Cuban solenodon; a smaller sister species, Marcano's solenodon, died out on Hispaniola after European colonisation.\n\nTogether with the Hispaniolan hutia, a rat-like rodent, the solenodon is one of only two native land mammals surviving on the island.",
+  "didYouKnow": "In 2007 the EDGE of Existence programme named the Hispaniolan solenodon one of its top ten focal species.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "49–72 cm incl. tail"
+   },
+   {
+    "label": "Weight",
+    "value": "About 800 g"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly arthropods"
+   },
+   {
+    "label": "Active",
+    "value": "At night"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does the solenodon deliver its venom?",
+    "choices": [
+     "Through a grooved lower tooth",
+     "Through spurs on its hind feet",
+     "By spraying it from scent glands on its thighs",
+     "Through its claws"
+    ],
+    "explanation": "Venomous saliva flows through a groove in its second lower incisor."
+   },
+   {
+    "prompt": "Why do usually only two of a solenodon's young survive?",
+    "choices": [
+     "The mother has only two teats",
+     "The father eats the weakest",
+     "The largest pup pushes its siblings out of the burrow soon after birth",
+     "Owls take the rest"
+    ],
+    "explanation": "A female has just two teats, so she can only feed two young."
+   },
+   {
+    "prompt": "What does the name solenodon mean?",
+    "choices": [
+     "Grooved teeth",
+     "Paradox animal",
+     "Night digger of the Caribbean forest floor",
+     "Long nose"
+    ],
+    "explanation": "It refers to the groove in the tooth that carries its venom."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Durrell Wildlife Conservation Trust",
+    "url": "https://www.durrell.org",
+    "blurb": "Saves threatened species from extinction and has worked to protect Hispaniola's solenodons."
+   }
+  ]
+ },
+ {
+  "id": "king-penguin",
+  "name": "King Penguin",
+  "scientificName": "Aptenodytes patagonicus",
+  "wikipediaTitle": "King penguin",
+  "group": "bird",
+  "regions": [
+   "antarctica",
+   "openOcean"
+  ],
+  "range": "Subantarctic islands of the Southern Ocean, from the Falklands to Macquarie Island",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -50.0,
+   "longitude": 30.0
+  },
+  "mapSpan": 80,
+  "tagline": "The orange-cheeked diver with a 14-month nursery",
+  "lede": "Standing nearly a metre tall with blazing orange cheeks, the king penguin is the second largest penguin in the world. It hunts in the dark depths of the Southern Ocean, and raising a single chick takes it well over a year. Its colonies, crowded with woolly brown youngsters, can hold hundreds of thousands of birds.",
+  "home": "King penguins breed on subantarctic islands between 45 and 55°S, including South Georgia, the Crozet, Kerguelen and Prince Edward Islands, Macquarie Island, the Falklands and the Argentine part of Tierra del Fuego. The largest populations are on the Crozet Islands, with around 455,000 pairs. Where they go outside the breeding season is unknown, and stray birds have turned up on the Antarctic Peninsula and in South Africa, Australia and New Zealand.\n\nThe total population is estimated at 2.23 million pairs and is increasing. Single colonies are vast: St Andrew's Bay on South Georgia holds over 150,000 pairs.",
+  "anatomy": "Kings stand 70 to 100 centimetres tall and weigh 9.3 to 18 kg, up to about 20 kg before moulting. They are about 25% shorter and a third lighter than the emperor penguin. The cheek patch is solid bright orange, the upper chest orange-yellow, and the bill long and straight with orange markings on the lower half, while the back is a grizzled sooty grey rather than black. Males are slightly larger, but the sexes look alike and are best told apart by their calls.\n\nChicks look nothing like their parents, wrapped in heavy dark brown down. Kings can also smell the feathers and droppings of their own kind, which may help them sense their colony.",
+  "life": "Fish make up about 80% of the diet for most of the year, mainly lanternfish, along with squid and krill; in July and August fish drop to around 30%. By day kings dive to 100 to 300 metres, staying under for about 5 minutes, but at night they keep above 30 metres. The deepest recorded dive is 343 metres, and the longest lasted 552 seconds.\n\nMost dives are flat-bottomed: the bird descends to a set depth and hunts there for about half the dive before returning. They swim at 6.5 to 10 km/h and porpoise, leaping clear of the water, to breathe without slowing. On land they waddle or toboggan on their bellies. Predators include leopard seals and orcas at sea, and giant petrels and skuas that take eggs and chicks.",
+  "family": "Kings first breed at around 5 to 6 years old. Each season a pair stays faithful, but fewer than 30% keep the same partner the following year. They build no nest. The female lays a single pear-shaped egg of about 300 g, and both parents take turns, in shifts of 6 to 18 days, balancing it on their feet under a fold of belly skin for about 55 days.\n\nThe chick then sits on its parents' feet for 30 to 40 days before joining a crèche guarded by a few adults while the parents fish. Fed on regurgitated fish, it is almost full-grown by April, then fasts and loses weight through winter before fledging in late spring. The whole cycle takes 14 to 16 months, so a pair usually succeeds only once every two years, or twice in three.",
+  "remarkable": "That long cycle is a clever bit of timing. Rather than rushing a youngster through one summer, as smaller penguins do, kings carry their young through the harshest season, so that by the time it is finally ready to go to sea, it is summer again and food is plentiful.",
+  "outlook": "The king penguin is listed as Least Concern, and its numbers have grown since it was protected. In the early 1920s whalers on South Georgia and the Falklands nearly wiped it out, burning millions of oily penguins as fuel for the fires that rendered whale blubber, since the islands had no trees.\n\nThe future is less certain. One huge colony on Île aux Cochons in the Crozets fell from about half a million pairs in the 1980s to about 60,000 in 2017, possibly because warming is pushing its food farther away. Kings rely on the Antarctic Convergence for 80% of their food, and as it shifts south they may need to travel an extra 200 km; some projections suggest 70% of the population could disappear within 80 years. Commercial fishing for lanternfish adds further pressure.",
+  "people": "The English illustrator John Frederick Miller engraved and named the species in 1778. Kings were once harvested for blubber, oil, meat and feathers, but today they are fully protected, and tourism at breeding sites is tightly restricted.\n\nThey are flagship birds in zoos around the world. At Edinburgh Zoo, a king penguin called Sir Nils Olav holds the rank of major general as mascot of the Royal Norwegian Guard. In Japan, Lala became a viral star for walking to a market to fetch fish wearing a special backpack, and in 2024 Pesto, a chick at Sea Life Melbourne, became famous for his enormous size.",
+  "relatives": "The king penguin's closest relative is the larger emperor penguin, with which it shares the genus Aptenodytes and the habit of incubating on its feet. The two rarely meet in the wild, but can be told apart by the king's longer, straighter bill, larger flippers and sleeker body.\n\nThe International Ornithologists' Union recognises no subspecies, though some authorities separate South Atlantic birds from those of the Indian Ocean and Macquarie Island.",
+  "didYouKnow": "In 1936 king penguins were released in northern Norway, and they were seen there until 1949.",
+  "facts": [
+   {
+    "label": "Height",
+    "value": "70–100 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "9.3–18 kg"
+   },
+   {
+    "label": "Deepest dive",
+    "value": "343 m"
+   },
+   {
+    "label": "Diet",
+    "value": "Lanternfish, squid, krill"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How long does a king penguin take to raise a chick from egg to fledging?",
+    "choices": [
+     "14–16 months",
+     "6 months",
+     "3 months, during the short southern summer when fish are easy to catch",
+     "2 years"
+    ],
+    "explanation": "Its long breeding cycle means pairs usually succeed only every other year."
+   },
+   {
+    "prompt": "Where does a king penguin keep its egg during incubation?",
+    "choices": [
+     "On its feet",
+     "In a stone nest",
+     "In a burrow dug into soft peat on the hillside above the beach",
+     "In a crèche"
+    ],
+    "explanation": "It balances the egg on its feet under a fold of belly skin."
+   },
+   {
+    "prompt": "What colour is a king penguin chick's down?",
+    "choices": [
+     "Dark brown",
+     "Pale grey with a black and white mask",
+     "White",
+     "Black"
+    ],
+    "explanation": "Chicks are wrapped in heavy dark brown down, unlike their parents."
+   }
+  ],
+  "charities": [
+   {
+    "name": "BirdLife International",
+    "url": "https://www.birdlife.org",
+    "blurb": "A global partnership protecting birds and their habitats, including seabirds of the Southern Ocean."
+   }
+  ]
+ },
+ {
+  "id": "red-bellied-piranha",
+  "name": "Red-bellied Piranha",
+  "scientificName": "Pygocentrus nattereri",
+  "wikipediaTitle": "Red-bellied piranha",
+  "group": "fish",
+  "regions": [
+   "southAmerica"
+  ],
+  "range": "Amazon, Paraguay, Paraná and Essequibo river basins of South America",
+  "status": "NE",
+  "coordinate": {
+   "latitude": -12.0,
+   "longitude": -58.0
+  },
+  "mapSpan": 40,
+  "tagline": "A fearsome reputation, but mostly a timid scavenger",
+  "lede": "Few fish are as feared as the red-bellied piranha, star of horror films and tall tales of bloodthirsty shoals. The truth is tamer. It is mostly a timid scavenger that schools for safety and happily eats fruit, seeds and insects.",
+  "home": "The red-bellied piranha ranges more widely than any other piranha, through the rivers of Argentina, Brazil, Bolivia, Colombia, Ecuador, Guyana, Suriname, Paraguay, Peru, Uruguay and Venezuela. It lives in the Amazon, Paraguay, Paraná and Essequibo basins and smaller coastal rivers of north-eastern Brazil, in rivers, streams, oxbow lakes, reservoirs, floodplains and flooded forests.\n\nIt prefers warm water of 15 to 35 °C but can survive brief spells as cold as 10 °C. It is found mainly in whitewater rivers, but also in blackwater and clearwater. Introduced to China, probably through the aquarium trade, it was first detected there in 1990 and has since become invasive.",
+  "anatomy": "Adults can reach 50 centimetres and 3.9 kg, though they rarely exceed 35 centimetres. The body is deep and flattened from side to side, mostly grey with silver-flecked scales, and grown fish have the reddish belly that gives the species its name. Females have a slightly deeper red belly than males. The pectoral and pelvic fins range from red to orange, the base of the anal fin is usually black, and dark spots sometimes appear behind the gills. Juveniles are silver with darker spots.\n\nThe piranha can make sounds by rapidly contracting special muscles, with its swim bladder probably acting as a resonator.",
+  "life": "Red-bellied piranhas are omnivores. They eat insects, worms, crustaceans, snails and fish, but also fruit, nuts, seeds, leaves and debris, and in the rainy season, when food is plentiful, they live mostly on plants and insects. In the wild they tend to take only weak, injured, dying or dead animals, playing a role rather like vultures on land. Small piranhas forage by day, larger ones at dawn and dusk, lurking in dark places or among plants to ambush prey.\n\nThey travel in shoals, but mainly for protection from dolphins, caimans, large fish and wading birds such as herons and storks, and there is no evidence that they hunt cooperatively. Rare feeding frenzies, when a school strips a large animal within minutes, are usually triggered by provocation or starvation. They make three kinds of call, linked to face-offs, fights over food and chasing.",
+  "family": "Breeding is tied to the floods of the rainy season, with two reproductive seasons a year. Piranhas can breed at about a year old. Ready to spawn, they actually lose their red colouring and move into flooded grasses at the margins of lakes. Nests about 4 to 5 centimetres deep are dug among the water grasses, and females lay several thousand eggs, often around 5,000, which stick to the plant stems.\n\nAdults swim side by side in tight circles over the nest, not courting but guarding it from egg thieves such as smaller characins. The eggs hatch in 2 to 3 days, and the young hide in the vegetation until they are big enough to turn from hiding to hunting.",
+  "remarkable": "Much of the piranha's bloodthirsty image goes back to Theodore Roosevelt. After his expedition to Brazil, the former US president told of a cow devoured to the bones within minutes. It later emerged that the scene had been staged by local guides, who had penned piranhas in a stretch of river and starved them for over a week before driving the cow in.",
+  "outlook": "The red-bellied piranha is widespread and locally abundant, and in parts of its range it is among the commonest fish. Collecting for the aquarium trade may pose a small local risk.\n\nThe bigger concern runs the other way: where it is introduced elsewhere in the Americas, it tends to harm local fish, partly because of its aggressive behaviour. No piranhas live wild in the United States, but a single red-bellied piranha turned up in a golf-course lake in Simi Valley, California, in 1998, and California and Washington now ban the species and watch for it.",
+  "people": "The species name nattereri honours the naturalist Johann Natterer. Hollywood has made the most of the fish's reputation, from Joe Dante's 1978 film Piranha, which cast it much as Jaws cast sharks, to Piranha 3D in 2010 and its sequel.\n\nRed-bellied piranhas are popular aquarium fish. They are messy eaters that need clean water and dim hiding places, will refuse rotten meat and need not be fed every day. Young ones often nip each other's fins, which grow back surprisingly fast, and hungry piranhas may eat each other.",
+  "relatives": "The red-bellied piranha belongs to the family Serrasalmidae, which also includes the pacus. These are medium to large fish with deep, flattened bodies and long dorsal fins, and most members of the family that are not piranhas mainly eat plants. Within the family it is placed in the genus Pygocentrus, set apart by its unusual teeth and the width of its head.",
+  "didYouKnow": "Red-bellied piranhas are almost immune to gas bubble disease, which devastates nearly every other fish sharing their waters.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Usually under 35 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "Up to 3.9 kg"
+   },
+   {
+    "label": "Diet",
+    "value": "Omnivore and scavenger"
+   },
+   {
+    "label": "Eggs",
+    "value": "Several thousand"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Why do red-bellied piranhas mostly gather in shoals?",
+    "choices": [
+     "For protection",
+     "To hunt large animals together",
+     "To keep warm in cooler blackwater rivers during the dry season",
+     "To spawn"
+    ],
+    "explanation": "Shoaling mainly guards them against dolphins, caimans and birds; there is no evidence of pack hunting."
+   },
+   {
+    "prompt": "How was the 'feeding frenzy' shown to Theodore Roosevelt staged?",
+    "choices": [
+     "Piranhas were penned and starved",
+     "Trained piranhas were used",
+     "Cattle blood was poured into the river upstream for several days beforehand",
+     "A different species was swapped in"
+    ],
+    "explanation": "Local guides corralled the fish and starved them for over a week before driving in a cow."
+   },
+   {
+    "prompt": "What happens to a piranha's colour when it is ready to breed?",
+    "choices": [
+     "It loses its red",
+     "It turns bright red",
+     "Its fins turn black and gold and its belly turns silver",
+     "It turns pale blue"
+    ],
+    "explanation": "Breeding fish lose their red colouring and move into flooded grasses."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Buys and protects threatened tropical forests, including flooded forests of the Amazon."
+   },
+   {
+    "name": "Wildlife Conservation Society",
+    "url": "https://www.wcs.org",
+    "blurb": "Protects wildlife and wild places worldwide, including Amazon rivers and freshwater fish."
+   }
+  ]
+ },
+ {
+  "id": "indri",
+  "name": "Indri",
+  "scientificName": "Indri indri",
+  "wikipediaTitle": "Indri",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Eastern rainforests of Madagascar",
+  "status": "CR",
+  "coordinate": {
+   "latitude": -17.5,
+   "longitude": 48.8
+  },
+  "mapSpan": 10,
+  "tagline": "Madagascar's singing lemur, sacred in local legend",
+  "lede": "Every morning the eastern rainforests of Madagascar ring with eerie, wailing songs that carry far across the canopy. They belong to the indri, a big black-and-white lemur that bounds between tree trunks. Revered in Malagasy legend as an ancestor, it is now in grave danger.",
+  "home": "The indri lives in lowland and montane rainforest along Madagascar's eastern coast, from the Anjanaharibe-Sud Special Reserve in the north to the Mangoro River in the south. Strangely, it is missing from the Masoala Peninsula and Marojejy National Park, even though forests where indris do live lie less than 40 km away.\n\nIt is a creature of the trees, sleeping 10 to 30 metres above the ground, alone or in pairs, and eating little that does not grow on trees. Family groups move 300 to 700 metres a day through their territory, travelling farthest in midsummer as they search for fruit.",
+  "anatomy": "Along with the diademed sifaka, the indri is the largest living lemur. It averages about 6.5 kg and can weigh 9.5 kg or perhaps more, with a head and body length of 64 to 72 centimetres; with its legs stretched out it reaches nearly 120 centimetres. Unlike any other living lemur, it has only a stub of a tail.\n\nThe indri is a vertical clinger and leaper, holding its body upright and launching itself from trunk to trunk with long, muscular legs. Its silky fur is mostly black, with white patches on the limbs, neck, crown and lower back, and its large greenish eyes sit in a bare dark face framed by round, fuzzy ears. Colour varies from place to place, and some northern indris are almost entirely black.",
+  "life": "The indri is active by day and eats plants, mainly young, tender leaves, along with seeds, fruit and flowers. It plucks food with its teeth and pulls branches towards its mouth with its hands. Members of the laurel family feature heavily in its diet. Mature females get first access to food and forage higher in the trees than males.\n\nIndri society is led by females, who push males to lower branches and poorer feeding spots and usually lead the group when it travels. Groups are small, typically a mated pair with their growing young, though in fragmented forests several generations may stay together. Young females play-wrestle silently for up to 15 minutes, and the whole group uses shared toilet spots. A roar warns of hawks overhead, and a honk warns of a fossa on the ground.",
+  "family": "Indris are monogamous for the long term, seeking a new mate only when their partner dies. They mature late, at 7 to 9 years, and females give birth only every 2 to 3 years, after a pregnancy of 120 to 150 days. The single infant is usually born in May or June.\n\nThe mother does most of the caring, but the father stays with the family and helps. Babies are born mostly or completely black and develop any white markings at 4 to 6 months. The infant clings to its mother's belly for 4 or 5 months before moving onto her back, starts to show independence at 8 months and is fully independent only at 2 years or more.",
+  "remarkable": "The indri's song lasts from 45 seconds to more than 3 minutes. It begins with a roar from the whole group, followed by long notes of up to 5 seconds, then a descending wail, often sung as a duet by the adult pair. Neighbouring groups answer one another in turn, perhaps marking territories and sharing news. A group sings almost daily, up to 7 times a day, mostly between 7 and 11 in the morning, climbing to the treetops first so the sound carries up to 4 km.",
+  "outlook": "The indri is critically endangered. Estimates of its numbers range from 1,000 to 10,000, and the population may shrink by 80% over the next three generations, around 36 years. Slash-and-burn farming, firewood gathering and logging destroy and fragment its forest, even inside protected areas.\n\nHunting is also a threat, despite traditional taboos. As old beliefs erode, some people find ways around them, selling indri meat they are forbidden to eat or buying it when they are forbidden to kill, and in some regions it is prized as a delicacy. Captive breeding offers no fallback: only one indri has ever lived more than a year in captivity, and none has bred.",
+  "people": "Malagasy people revere the indri and protect it with fady, or taboos. One legend tells of a man who went hunting and never returned; his son went looking and vanished too, and the villagers found only two large lemurs in the trees, the first indris. In some versions only the son is transformed, and the indri's wail is the father mourning him.\n\nIts local name, babakoto, is usually translated as 'ancestor' or 'father', and may mean 'father of a little boy'. Each morning indris sit facing the rising sun, legs crossed and palms out, and many Malagasy believe they worship it. The name indri probably comes from the Malagasy endrina, not, as an old story claims, from a word meaning 'there it is'.",
+  "relatives": "The indri is related to the sifakas and, like all lemurs, is native only to Madagascar. It was first described by the French naturalist Pierre Sonnerat. In 2005 Colin Groves listed two subspecies, a dark northern form and a paler southern one, but later work suggests the colour simply changes gradually across the range.",
+  "didYouKnow": "The first film of wild indris was made by luring them with recorded calls, for David Attenborough's 1961 BBC series Zoo Quest to Madagascar.",
+  "facts": [
+   {
+    "label": "Head–body",
+    "value": "64–72 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "About 6.5 kg"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly young leaves"
+   },
+   {
+    "label": "Song range",
+    "value": "Up to 4 km"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What is unusual about the indri's tail?",
+    "choices": [
+     "It is just a stub",
+     "It is longer than its body",
+     "It is striped black and white like a ring-tailed lemur's",
+     "It can grip branches"
+    ],
+    "explanation": "It is the only living lemur with merely a rudimentary tail."
+   },
+   {
+    "prompt": "Who leads an indri group?",
+    "choices": [
+     "The dominant female",
+     "The oldest male",
+     "Whichever young male wins the wrestling bouts each spring",
+     "No one"
+    ],
+    "explanation": "Indris live in a female-dominated society, and the dominant female usually leads."
+   },
+   {
+    "prompt": "What does the Malagasy name 'babakoto' usually translate as?",
+    "choices": [
+     "Ancestor or father",
+     "Singer of the forest",
+     "There it is, as pointed out to an early French explorer",
+     "Sun watcher"
+    ],
+    "explanation": "Babakoto is most often translated as 'ancestor' or 'father'."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Durrell Wildlife Conservation Trust",
+    "url": "https://www.durrell.org",
+    "blurb": "Works with communities in Madagascar and elsewhere to save threatened species."
+   },
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Buys and protects threatened tropical forests, including in Madagascar."
+   }
+  ]
+ },
+ {
+  "id": "laughing-kookaburra",
+  "name": "Laughing Kookaburra",
+  "scientificName": "Dacelo novaeguineae",
+  "wikipediaTitle": "Laughing kookaburra",
+  "group": "bird",
+  "regions": [
+   "oceania"
+  ],
+  "range": "Eastern Australia, introduced to Tasmania, south-west Australia and New Zealand",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -30.0,
+   "longitude": 148.0
+  },
+  "mapSpan": 30,
+  "tagline": "The giant kingfisher whose laugh fills the Australian bush",
+  "lede": "At dawn and dusk the Australian bush erupts with manic laughter, swelling into a raucous chorus. The laughing kookaburra, the heaviest kingfisher in the world, is announcing that this patch of woodland belongs to its family. That family may include grown-up children who stay home to help raise their siblings.",
+  "home": "The laughing kookaburra is native to eastern Australia, from Cape York Peninsula in the north to Cape Otway in the south, on both sides of the Great Dividing Range, and west through Victoria to South Australia's Yorke Peninsula and Flinders Ranges. Partly because of its reputation for killing snakes, it was introduced to south-west Western Australia from 1883, to Tasmania from 1906, and to Kangaroo and Flinders islands. In the 1860s Governor George Grey released birds on Kawau Island in New Zealand, and a small population now breeds north of Auckland.\n\nIt lives in open eucalypt forest and woodland, especially where the ground is grassy and open, and it needs tree holes to nest. It is also at home on farmland with trees along roads and fences, and in city parks and gardens, and it stays in the same territory all year.",
+  "anatomy": "This is a stocky bird 41 to 47 centimetres long, with a big head, brown eyes and a long, heavy bill, black above and pale below. Females are usually bigger, averaging about 352 g against the male's 307 g. The head and underparts are white or cream, with a dark brown stripe through each eye. The wings and back are brown with sky-blue spots on the shoulders, and the rusty tail is barred with dark brown and tipped with white.\n\nIts voice box, a tracheo-bronchial syrinx, has two sources of vibration, letting it produce two notes at the same time, each with many harmonics.",
+  "life": "Kookaburras hunt by perching on a branch or wire and waiting, then dropping onto prey on the ground. They take mice and other small mammals, insects, earthworms, snails, yabbies, small fish, frogs, lizards, small birds and, most famously, snakes, sometimes venomous ones much longer than themselves. In gardens they even snatch goldfish from ponds.\n\nThe laugh is a territorial call. One bird begins with a low chuckle, then throws back its head and cackles, and the rest of the family joins in, with neighbouring groups answering in turn without overlapping. Calling increases in the months before breeding. Kookaburras also defend borders with displays, swooping back and forth along territory edges in 'trapeze flights' that can last half an hour.",
+  "family": "Kookaburras pair for life and live in family groups. A breeding pair may be helped by up to five grown offspring from earlier years, which defend the territory, incubate the eggs and feed the chicks. Nests are in unlined tree holes or dug into termite nests in trees, and egg-laying peaks from September to November.\n\nThe female usually lays 3 white eggs about 2 days apart, and they hatch after 24 to 26 days. Chicks carry a hook on the bill, and when food is short they fight with it; the smallest may be killed by its older siblings. Young fledge at 32 to 40 days and are fed by the group for 6 to 10 weeks more.",
+  "remarkable": "The famous laugh is not instinctive but learned. After the young leave the nest, the adult male sings short snatches of the call and the fledglings try to copy him, usually without success at first. These singing lessons last about 2 weeks before the young can take part in the family's dawn and dusk chorus.",
+  "outlook": "The International Union for Conservation of Nature lists the laughing kookaburra as Least Concern, given its large range and population. Estimates suggest there could be as many as 65 million birds, though that may be far too high: Birdata recorded a 50% drop in sightings between 2000 and 2019, suggesting a marked decline. The New Zealand population is probably fewer than 500 birds.",
+  "people": "The kookaburra is famously bold around people. In suburbs it will eat from people's hands, let them rub its belly, or swoop in to snatch food without warning. In the 19th century it was usually called the laughing jackass, and 'kookaburra' became the official name only in 1926; it comes from the Wiradjuri word gugubarra.\n\nMarion Sinclair wrote the popular children's song 'Kookaburra' in 1934. Recordings of the call have been edited into Hollywood films for decades, beginning with the Tarzan series in the 1930s, usually to set a jungle scene.",
+  "relatives": "The laughing kookaburra belongs to the tree kingfisher subfamily Halcyoninae. Its genus, Dacelo, is an anagram of Alcedo, the Latin for kingfisher, and holds four kookaburras: the blue-winged kookaburra, which also lives in Australia, and two New Guinea species, the rufous-bellied and spangled kookaburras. Compared with the blue-winged, the laughing kookaburra has a darker eye, a shorter bill and smaller, duller blue patches.\n\nThe species name novaeguineae, 'of New Guinea', is a mistake. Pierre Sonnerat claimed to have seen the bird there in 1776, but he never visited New Guinea and the kookaburra does not live there.",
+  "didYouKnow": "A lone laughing kookaburra has lived wild in the English county of Suffolk since at least 2015.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "41–47 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "About 300–350 g"
+   },
+   {
+    "label": "Clutch",
+    "value": "Usually 3 eggs"
+   },
+   {
+    "label": "Diet",
+    "value": "Small animals, incl. snakes"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How do young kookaburras learn to laugh?",
+    "choices": [
+     "Lessons from the adult male",
+     "They are born knowing the call",
+     "By copying neighbouring families across the territory border at dawn",
+     "From their siblings"
+    ],
+    "explanation": "The adult male sings parts of the call and the fledglings practise for about 2 weeks."
+   },
+   {
+    "prompt": "What is wrong with the kookaburra's scientific name?",
+    "choices": [
+     "It doesn't live in New Guinea",
+     "It names the wrong genus",
+     "It was first given to a different bird and then moved across by mistake",
+     "It is misspelled"
+    ],
+    "explanation": "Novaeguineae means 'of New Guinea', but the species does not occur there."
+   },
+   {
+    "prompt": "Who helps a breeding pair raise its chicks?",
+    "choices": [
+     "Their grown offspring",
+     "Unrelated neighbours",
+     "Blue-winged kookaburras sharing the same tree hollow",
+     "No one"
+    ],
+    "explanation": "Up to five grown young from earlier years help incubate and feed the chicks."
+   }
+  ],
+  "charities": [
+   {
+    "name": "BirdLife Australia",
+    "url": "https://www.birdlife.org.au",
+    "blurb": "Australia's largest bird conservation organisation, protecting native birds and their habitats."
+   }
+  ]
+ }
+]
