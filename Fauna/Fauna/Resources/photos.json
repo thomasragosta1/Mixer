@@ -1462,6 +1462,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/1/14/Bubo_bubo_3_%28Martin_Mecnarowski%29.jpg",
   "width": 850
  },
+ "Eurasian lynx": {
+  "credit": {
+   "author": "Aconcagua (talk)",
+   "file": "Lynx_Nationalpark_Bayerischer_Wald_01.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Lynx_Nationalpark_Bayerischer_Wald_01.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/49/Lynx_Nationalpark_Bayerischer_Wald_01.jpg",
+  "width": 3872
+ },
  "Eurasian otter": {
   "credit": {
    "author": "Bernard Landgraf",
@@ -3232,6 +3243,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Red_Panda_%2824986761703%29.jpg",
   "width": 3900
+ },
+ "Red-bellied piranha": {
+  "credit": {
+   "author": "H. Zell",
+   "file": "Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg",
+  "width": 6000
  },
  "Red-billed quelea": {
   "credit": {
