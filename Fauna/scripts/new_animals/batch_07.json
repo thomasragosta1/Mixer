@@ -1,0 +1,878 @@
+[
+ {
+  "id": "polyphemus-moth",
+  "name": "Polyphemus Moth",
+  "scientificName": "Antheraea polyphemus",
+  "wikipediaTitle": "Antheraea polyphemus",
+  "group": "insect",
+  "regions": [
+   "naEast",
+   "naWest"
+  ],
+  "range": "Across Canada and the United States, except Arizona and Nevada",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 42.0,
+   "longitude": -92.0
+  },
+  "mapSpan": 50,
+  "tagline": "A giant silk moth that stares back with owl's eyes",
+  "lede": "Disturb a resting Polyphemus moth and it flicks its forewings apart, revealing two huge purplish eyes on the wings beneath. This big tan silk moth, named after the one-eyed giant of Greek myth, never eats a single meal as an adult. Its caterpillar has already done all the feeding.",
+  "home": "The Polyphemus moth is one of the most widespread giant silk moths in North America. It is found across much of Canada, right up into subarctic regions, and in every state of the continental United States except Arizona and Nevada. It lives in deciduous hardwood forests, orchards and wetlands, and is also at home in towns and suburbs.\n\nWhat it needs most is the right trees. Its favourite host plants are American elm, birch and willow, but its caterpillars can also survive on oak, maple, hickory, beech, honey locust, walnut, sassafras, citrus and fruit trees such as plum, peach, cherry and pear. Biologists describe it as highly polyphagous: it eats from a wide variety of plants.",
+  "anatomy": "This is a large moth, with a wingspan of 10 to 15 centimetres. Its colour varies a surprising amount, from reddish cinnamon to dark brown, but it is almost always some shade of brown. Each hindwing carries a big yellow eyespot ringed with blue and black, and the edges of the wings have a black and white stripe.\n\nTelling males from females is easy. Males have very bushy, feathery antennae, covered in tiny hair-like sensors that can pick up the scent of a female from far away. Females have less bushy antennae and a slightly plumper abdomen, because they are carrying eggs. Like other members of its family, the adult has only vestigial mouthparts, so it cannot feed at all.",
+  "life": "The caterpillar is the eating machine of this species. Over its first eight weeks it can eat a total of 86,000 times its own weight in leaves. It moults several times as it grows, and in its final stage it is bright green with silver spots along its sides and can reach about 8 to 10 centimetres long.\n\nA caterpillar that is prodded makes clicking sounds with its serrated jaws, clicking 50 to 55 times for more than a minute if a predator keeps up its attack. If that fails, it throws up a fluid that may gum up the attacker's mouth or taste unpleasant, then drinks the fluid back in, ready for the next encounter. The adult moths are mostly nocturnal and become active at dusk.",
+  "family": "A female starts releasing a scent called a pheromone on the evening she emerges, and males can fly great distances to find her, drawn most strongly in the last two hours before sunrise. The pair mate on the same day the female leaves her cocoon, and mating can last from under an hour to many hours. If she fails to attract a male, she stops calling after 2 to 3 days and lays her eggs unfertilised. Adults live for less than a week, the female spending most of that time laying eggs singly or in twos and threes on the undersides of leaves, while the male may mate several more times.\n\nThe flat, light-brown eggs hatch into small yellow caterpillars. A fully grown caterpillar spins a cocoon of brown silk, usually wrapped in leaves of its host tree for camouflage, and transforms inside it. Across most of the United States there are two broods a year, one in early spring and one in late summer, and males usually emerge several days before females. A newly emerged moth must pump fluid into its crumpled wings to expand them.",
+  "remarkable": "The hindwing eyespots are a startle display. Resting moths look like dull brown leaves, but when threatened they suddenly expose the eyes, and the pattern is thought to resemble the face of a great horned owl. A bird that pecks at the fake eyes damages only the wing, and the moth can still fly.",
+  "outlook": "The Polyphemus moth has not been assessed for the IUCN Red List, but it faces plenty of dangers. Parasitoid wasps lay their eggs in young caterpillars, and the larvae eat them from the inside. A tachinid fly, Compsilura concinnata, that was introduced to North America to control the spongy moth also attacks this native species. Squirrels eat the pupae, and pruning trees can remove cocoons.\n\nThe spongy moth causes trouble in another way too: its outbreaks trigger chemical defences in quaking aspen that make the trees unusable as food for Polyphemus caterpillars. Light pollution is a further worry. Streetlamps can act like a vacuum cleaner for night-flying insects, disorienting them, disrupting feeding, mating and egg laying, and drawing in predators.",
+  "people": "The moth was first described by the Dutch naturalist Pieter Cramer in 1776, and its name comes from Polyphemus, the cyclops of Greek myth, because of its great eyespots.\n\nIn the late 1950s an amateur moth enthusiast, Gary Botting, crossed it with Antheraea yamamai from Japan and later Antheraea mylitta from India. He did this by moving the scent sacs from Polyphemus females onto females of the other species, so that Polyphemus males would mate with them. The hybrids won him a United States National Science Fair prize, and after he consulted the geneticist J.B.S. Haldane and the entomologist Helen Spurway, the moth was moved out of the genus Telea and into Antheraea.",
+  "relatives": "The Polyphemus moth belongs to the Saturniidae, the family of giant silk moths, whose adults all have reduced mouthparts and short lives. Its genus, Antheraea, also includes Asian silk moths such as the Japanese Antheraea yamamai and the Indian Antheraea mylitta.\n\nIts North American neighbours in the same family include the cecropia moth, the promethea moth and the pale green luna moth. Breeders find the Polyphemus moth much harder to rear than those species.",
+  "didYouKnow": "Kept together in a cage, a male and female Polyphemus moth tend to ignore each other unless a food plant, especially oak leaves, is put in with them.",
+  "facts": [
+   {
+    "label": "Wingspan",
+    "value": "10–15 cm"
+   },
+   {
+    "label": "Adult life",
+    "value": "Less than a week"
+   },
+   {
+    "label": "Broods",
+    "value": "Usually 2 a year"
+   },
+   {
+    "label": "Caterpillar diet",
+    "value": "Leaves of many trees"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which bird's face are the moth's eyespots thought to resemble?",
+    "choices": [
+     "Great horned owl",
+     "Bald eagle",
+     "Barn owl",
+     "A hawk, whose outline frightens off songbirds"
+    ],
+    "explanation": "The pattern on the hindwings resembles the head of a great horned owl, startling predators."
+   },
+   {
+    "prompt": "How long does an adult Polyphemus moth live?",
+    "choices": [
+     "Less than a week",
+     "About a month",
+     "A whole summer",
+     "Up to a year, sheltering in tree bark over winter"
+    ],
+    "explanation": "Adults have vestigial mouthparts and cannot eat, so they live for less than a week."
+   },
+   {
+    "prompt": "What does a Polyphemus caterpillar do first when prodded?",
+    "choices": [
+     "Clicks its jaws",
+     "Rolls into a ball",
+     "Sprays acid",
+     "Drops from the branch on a silk thread and dangles"
+    ],
+    "explanation": "It clicks its serrated jaws, then regurgitates fluid if the attack continues."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Xerces Society",
+    "url": "https://xerces.org",
+    "blurb": "Protects insects and other invertebrates and the habitats they depend on."
+   }
+  ]
+ },
+ {
+  "id": "african-wild-dog",
+  "name": "African Wild Dog",
+  "scientificName": "Lycaon pictus",
+  "wikipediaTitle": "African wild dog",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Savannas and dry country of southern and eastern Africa, patchily elsewhere",
+  "status": "EN",
+  "coordinate": {
+   "latitude": -12.0,
+   "longitude": 30.0
+  },
+  "mapSpan": 45,
+  "tagline": "Africa's painted wolf, a pack that shares everything",
+  "lede": "Every African wild dog wears its own patchwork coat of black, brown, white and yellow, as if no two had been painted by the same hand. These lean, big-eared hunters live in close-knit packs that run down antelope together, feed one another and raise their pups as a team.",
+  "home": "African wild dogs live mainly in southern and eastern Africa. They are rare in North Africa and mostly gone from West Africa, where the only population that may still be viable is in Senegal's Niokolo-Koba National Park. In East Africa their distribution is patchy.\n\nThey prefer savannas and arid country and generally avoid forest, probably because they hunt by sight and need open ground for long chases. Still, they travel through scrub, woodland and mountains after prey. A forest-dwelling population lives in Ethiopia's Bale Mountains up to 2,400 metres, a pack has been seen on the summit of Kilimanjaro, and one dog was found dead at 4,050 metres on the Sanetti Plateau.",
+  "anatomy": "The African wild dog is the largest wild canine in Africa and the bulkiest of its kind on the continent. It stands 60 to 75 centimetres at the shoulder, with a body 71 to 112 centimetres long plus a tail of 29 to 41 centimetres, and weighs 18 to 36 kg. Females are slightly smaller than males. Compared with wolves and jackals it is lean and tall, with very large rounded ears.\n\nIt has only four toes on its front feet, having lost the first digit, which lengthens its stride. Its coat is made entirely of stiff bristles with no soft underfur, and the colour patterns vary so much that individuals can recognise each other 50 to 100 metres away. The two sides of one dog often carry different markings. The tail is usually white at the tip, black in the middle and brown at the base. Its premolars are huge for its size, and its cheek teeth have blade-like edges for slicing meat fast.",
+  "life": "Wild dogs live in permanent packs of 2 to 27 adults plus yearlings, and solitary living is extremely rare. They hunt mainly medium-sized antelopes such as impala, Thomson's gazelle and kudu, mostly at dawn and dusk. A pack approaches quietly, then chases at up to 66 km/h for 10 to 60 minutes, covering about 2 kilometres on average. Large prey is bitten on the legs and flanks until it stops running.\n\nUnlike most social predators, wild dogs regurgitate meat for adult pack members as well as for pups. Lions are a major cause of death, killing dogs and leaving them uneaten, and spotted hyenas follow packs to steal their kills.",
+  "family": "Each pack has separate pecking orders for males and females, and the dominant pair usually does all the breeding. Unusually for a carnivore, males stay in the pack they were born into while young females leave to join other packs, so males often outnumber females three to one.\n\nAfter a pregnancy of 69 to 73 days, the dominant female gives birth to 6 to 16 pups, around 10 on average, which is more than any other member of the dog family. She stays near the den while the rest of the pack hunts. The pups leave the den at about three weeks old and are weaned at five weeks, after which they live on meat brought up by the adults. At a kill, pups old enough for solid food are allowed to eat first, even before the dominant pair.",
+  "remarkable": "Wild dogs in Botswana's Okavango Delta seem to vote on when to go hunting. Before a hunt they gather in an excited rally, and the pack is more likely to leave the more individuals give a short, sharp sneeze. If a dominant dog starts it, about three sneezes are enough; if a lower-ranking dog starts, it takes about ten.",
+  "outlook": "The African wild dog has been listed as Endangered since 1990. Around 6,600 adults survive in 39 separate populations, and the largest probably holds fewer than 250 animals. Habitat fragmentation, conflict with people and outbreaks of disease are the main threats, and the species has been wiped out from large parts of North and West Africa. In the Chinko area of the Central African Republic, numbers fell from 160 to 26 between 2012 and 2017.\n\nBecause the dogs avoid mating with relatives, small isolated populations may run out of suitable partners, and computer models suggest such groups could vanish within a century. Since 2003 the African Wild Dog Conservancy has worked with local herders in northeastern and coastal Kenya, revealing an important refuge for the dogs there.",
+  "people": "The species goes by many names, including painted dog, painted wolf and Cape hunting dog. Some conservation groups avoid 'wild dog' because it may give a bad impression; research suggests 'painted dog' does most to improve how people see it.\n\nWild dogs appear on cosmetic palettes from predynastic Egypt, and the Hunters Palette shows men wearing their tails on their belts. Shepherds in Ethiopia's Tigray Region once drove them off with pebbles, fearing that a wounded dog would flick its blood at an attacker and kill him. The San people see the wild dog as the ultimate hunter, and a San myth tells how the moon cursed the hare to be hunted by wild dogs forever.",
+  "relatives": "The African wild dog is the only living member of the genus Lycaon, a name from the Greek for 'wolf-like', while pictus is Latin for 'painted'. It was first described in 1820 by Coenraad Jacob Temminck, who thought it was a kind of hyena. Its lineage split from that of wolves and the dhole of Asia about 1.7 million years ago.\n\nGenome studies have found evidence of ancient interbreeding between the African wild dog and the dhole, even though their ranges are now far apart. The oldest known fossil of the species, about 200,000 years old, comes from a cave in Israel.",
+  "didYouKnow": "An African wild dog separated from its pack can become depressed, and may even die as a result.",
+  "facts": [
+   {
+    "label": "Shoulder height",
+    "value": "60–75 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "18–36 kg"
+   },
+   {
+    "label": "Top speed",
+    "value": "Up to 66 km/h"
+   },
+   {
+    "label": "Litter size",
+    "value": "6–16 pups"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How do wild dogs in the Okavango Delta 'vote' on going hunting?",
+    "choices": [
+     "By sneezing",
+     "By howling",
+     "By wagging their tails",
+     "By touching noses in a circle until the leader walks off"
+    ],
+    "explanation": "The more dogs that give a short, sharp sneeze during a rally, the more likely the pack is to set off."
+   },
+   {
+    "prompt": "Which wild dogs usually leave the pack they were born into?",
+    "choices": [
+     "Young females",
+     "Young males",
+     "The oldest dogs",
+     "Nobody, since packs stay together for generations"
+    ],
+    "explanation": "Males stay in their birth pack while young females disperse to join other packs."
+   },
+   {
+    "prompt": "About how many pups are in an average wild dog litter?",
+    "choices": [
+     "10",
+     "2",
+     "4",
+     "A single pup, carried everywhere by its mother"
+    ],
+    "explanation": "Litters hold 6 to 16 pups, around 10 on average, more than any other member of the dog family."
+   }
+  ],
+  "charities": [
+   {
+    "name": "African Wildlife Foundation",
+    "url": "https://www.awf.org",
+    "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+   },
+   {
+    "name": "Endangered Wildlife Trust",
+    "url": "https://www.ewt.org.za",
+    "blurb": "A South African charity that runs a long-standing programme to protect wild dogs."
+   }
+  ]
+ },
+ {
+  "id": "australian-box-jellyfish",
+  "name": "Australian Box Jellyfish",
+  "scientificName": "Chironex fleckeri",
+  "wikipediaTitle": "Chironex fleckeri",
+  "group": "marineInvertebrate",
+  "regions": [
+   "oceania",
+   "asia"
+  ],
+  "range": "Coastal waters from northern Australia to Southeast Asia",
+  "status": "NE",
+  "coordinate": {
+   "latitude": -8.0,
+   "longitude": 128.0
+  },
+  "mapSpan": 40,
+  "tagline": "Nearly invisible, and the deadliest jellyfish known",
+  "lede": "It is pale, almost transparent and has no brain, yet the Australian box jellyfish has been called the most lethal jellyfish in the world. Its trailing tentacles carry millions of stinging cells, each ready to fire a microscopic dart of venom at the slightest touch.",
+  "home": "This jellyfish lives in coastal waters from northern Australia and Papua New Guinea north to Indonesia, East Timor, the Philippines, Malaysia, Singapore, Cambodia and Vietnam. In Australia it is found along the northern coasts from Exmouth in Western Australia to Agnes Water in Queensland, though its full range further north has never been properly mapped.\n\nIt is abundant in northern Australian waters during the warmer months of the year, when the jellyfish are believed to drift into estuaries to breed. They hunt by day, and at night they have been seen resting on the sea floor.",
+  "anatomy": "The Australian box jellyfish is the largest of the cubozoans, the box jellyfish. Its cube-shaped bell is usually about 16 centimetres across but can reach 35 centimetres. It is pale blue with faint markings, and from certain angles it looks eerily like a human head or skull. Because it is virtually see-through, it is almost impossible to spot in the water.\n\nFrom each of the bell's four corners trails a cluster of 15 tentacles. While the animal swims, they contract to about 15 centimetres long and 5 millimetres thick; when it hunts, they stretch thin to about 3 metres. The tentacles are packed with stinging cells called cnidocytes, triggered by a combination of pressure and the chemicals found in animal flesh. Like other box jellyfish it has four clusters of eyes, 24 eyes in all, and some of them seem able to form images, even though it has no central nervous system.",
+  "life": "Box jellyfish feed on prawns and small fish, as well as crabs, shrimps and other small drifting animals. They respond strongly to light. They are drawn to white, red, orange, yellow, green and blue light, and blue in particular seems to switch on feeding: their pulsing slows and they stream out their tentacles. Black objects, by contrast, make them swim away.\n\nVery few animals can eat them. Green sea turtles and leatherback turtles are among their only known predators, protected by thick skin that the stinging cells cannot pierce.",
+  "family": "The box jellyfish can reproduce both sexually and by budding. In spring, mature adults leave their usual coastal waters and move into freshwater rivers to find a mate. Males and females release sperm and eggs into the water, and the parents die soon afterwards.\n\nThe fertilised eggs develop into tiny larvae called planulae, which settle as small polyps. Each polyp has two tentacles, which it uses to hook itself onto a hidden surface while it feeds on plankton. The polyps then bud off clones of themselves, and the original and the new polyps eventually transform into small medusae, the free-swimming jellyfish form, which head back out to sea to grow up.",
+  "remarkable": "Its venom is among the fastest-acting known. It makes the walls of cells leaky, so potassium floods out into the blood, which can cause the heart to stop within two to five minutes. About 3 metres of tentacle is enough to deliver a fatal dose to a person, and one animal is said to hold enough venom to kill 60 adults.",
+  "outlook": "The Australian box jellyfish has not been assessed for the IUCN Red List. For this animal the usual worry is reversed: the concern is keeping people safe from it rather than the other way around. Along the coast of North Queensland, warning signs are put up in the warmer months and few people swim then. At popular beaches, net enclosures are placed in the water so that people can swim while the jellyfish are kept out.\n\nMost encounters are mild. Of 225 stings studied in Australia's Top End between 1991 and 2004, only 8% needed hospital treatment and there was a single death. Most deaths in recent decades have been children, whose smaller bodies put them at greater risk.",
+  "people": "The species was named in 1955 after Hugo Flecker, a toxicologist in North Queensland. When a 5-year-old boy died after being stung in shallow water at Cardwell that January, Flecker collected an unknown box-shaped jellyfish and sent it to Ronald Southcott in Adelaide, who described it as new. The name Chironex joins Chiron, the centaur of Greek myth, with the Latin nex, 'murder', and is sometimes translated as 'hand of death'. In Australia the species has caused at least 64 deaths since the first report in 1883, and it is nicknamed the sea wasp.\n\nFirst aid has changed over time. Until 2005, pressure bandages were used, but research showed they made the stinging cells fire. Vinegar is now recommended, because its acetic acid permanently disables stinging cells that have not yet fired. In 2019 the first antidote for the sting was discovered in Australia.",
+  "relatives": "Box jellyfish, or cubozoans, are named for their cube-shaped bells, and many of them carry similarly toxic venom. A close relative, Chironex yamaguchii, was described from Japan in 2009 and is also found in the Philippines and is dangerously venomous too. Another northern Australian box jellyfish, the tiny Irukandji, Carukia barnesi, shares the same waters during the warm season.",
+  "didYouKnow": "Days after a sting, survivors can develop an extremely itchy rash that may last for weeks.",
+  "facts": [
+   {
+    "label": "Bell width",
+    "value": "Usually 16 cm, up to 35 cm"
+   },
+   {
+    "label": "Tentacles",
+    "value": "60, up to 3 m long"
+   },
+   {
+    "label": "Eyes",
+    "value": "24, in 4 clusters"
+   },
+   {
+    "label": "Diet",
+    "value": "Prawns and small fish"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which animals are among the box jellyfish's few known predators?",
+    "choices": [
+     "Sea turtles",
+     "Sharks",
+     "Dolphins",
+     "Saltwater crocodiles, which hunt them in river mouths"
+    ],
+    "explanation": "Green and leatherback turtles have skin too thick for the stinging cells to pierce."
+   },
+   {
+    "prompt": "What is now recommended to pour on a box jellyfish sting?",
+    "choices": [
+     "Vinegar",
+     "Fresh water",
+     "Milk",
+     "Methylated spirits, rubbed in hard to dissolve the venom"
+    ],
+    "explanation": "Vinegar's acetic acid permanently disables stinging cells that have not yet fired."
+   },
+   {
+    "prompt": "Where do adult box jellyfish go to spawn?",
+    "choices": [
+     "Into rivers",
+     "Out to the open ocean",
+     "Onto coral reefs",
+     "Down into deep trenches far beyond the continental shelf"
+    ],
+    "explanation": "In spring, mature adults move into freshwater rivers to find a mate."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Australian Marine Conservation Society",
+    "url": "https://www.marineconservation.org.au",
+    "blurb": "Australia's national charity dedicated to protecting ocean wildlife."
+   }
+  ]
+ },
+ {
+  "id": "alligator-snapping-turtle",
+  "name": "Alligator Snapping Turtle",
+  "scientificName": "Macrochelys temminckii",
+  "wikipediaTitle": "Alligator snapping turtle",
+  "group": "reptile",
+  "regions": [
+   "naEast"
+  ],
+  "range": "Rivers draining to the Gulf of Mexico in the southeastern United States",
+  "status": "EN",
+  "coordinate": {
+   "latitude": 33.0,
+   "longitude": -91.0
+  },
+  "mapSpan": 16,
+  "tagline": "A spiked river giant that fishes with its tongue",
+  "lede": "Lying motionless on a murky riverbed, its jaws hanging open, the alligator snapping turtle looks like a mossy rock. Inside its grey mouth a small pink lure wriggles like a worm. When a fish swims in to investigate, the jaws slam shut with tremendous speed and force.",
+  "home": "The alligator snapping turtle is found only in the United States, mainly in the fresh waters of the southeast. Its range runs from the Florida Panhandle west to East Texas and north to southeastern Kansas, Missouri, southeastern Iowa, western Illinois, southern Indiana, western Kentucky and western Tennessee. It lives almost entirely in rivers and lakes that drain into the Gulf of Mexico, and is rarely found in isolated ponds or wetlands.\n\nWithin its rivers it keeps to favourite spots with plenty of cover: undercut banks, root balls, sunken trees and beaver lodges under overhanging trees and shrubs. An individual's home range averages about 750 metres, and females roam more widely than males. Only nesting females usually venture onto dry land.",
+  "anatomy": "This is the largest freshwater turtle in North America and one of the heaviest in the world. Adults usually have a shell 35 to 81 centimetres long and weigh 8 to 80 kg, with males larger than females, and they keep growing throughout life. One kept at the Shedd Aquarium in Chicago weighed 113 kg, and an unverified giant of 183 kg was reported from Kansas in 1937. Among freshwater turtles, only a few giant softshells of Asia reach similar sizes.\n\nIts head is huge and heavy, and its long, thick shell carries three ridges of large spiked plates, giving it a look reminiscent of an armoured dinosaur. The spikes flatten out with age. It is grey, brown, black or olive-green, often coated in algae, with a yellow starburst pattern and a ring of fleshy, fringed 'eyelashes' around each eye that help break up its outline.",
+  "life": "The alligator snapping turtle is an opportunist that will eat almost anything it can catch or find dead. Fish are its most frequent food, along with molluscs, crayfish, amphibians, snakes, water birds, carrion and other turtles; in one Louisiana study, other turtles made up nearly 80% of adults' stomach contents. It sometimes grabs muskrats, squirrels, raccoons or opossums that come too near the water, and has even killed small alligators.\n\nIt also eats a surprising amount of plant food. In one study, acorns of water, overcup and willow oaks made up 56% of the diet by volume, and willow oak acorns sprouted faster after passing through a turtle, so it may help spread oak trees upstream. It hunts mostly at night, and rarely basks, instead controlling its temperature by moving up or down in the water.",
+  "family": "Alligator snappers mature at around 12 years old. They mate once a year in spring, and about two months later the female crawls ashore and digs a nest, often well away from the water so that floods will not drown the eggs. She lays 10 to 50 eggs, some females every year and others every other year. The temperature of the nest decides the sex of the young, with warmer nests producing more males.\n\nThe eggs take 100 to 140 days to hatch, and the young emerge in early autumn. Eggs are eaten by birds and mammals, and young turtles are taken mainly by northern river otters, but big adults have few enemies. Their lifespan in the wild is unknown: 80 to 120 years is thought likely, and some believe they could reach 200. In captivity they usually live 20 to 70 years.",
+  "remarkable": "The turtle's tongue has a worm-shaped pink appendage on its tip, which it wiggles to lure fish into its open mouth, a trick called aggressive mimicry. Its bite is formidable: one study measured forces of up to 1,872 newtons in large turtles, and it can bite through a broom handle.",
+  "outlook": "The IUCN lists the alligator snapping turtle as Endangered, and wild populations in the United States are at historic lows. The main cause is harvesting for meat, and harvest rates have risen by 209% since 1998. Rules set a minimum size for turtles that can be taken but no maximum, so the largest breeding adults can be removed. Collection for the pet trade and habitat destruction add to the pressure.\n\nSeveral states, including Indiana, Illinois, Kentucky and Missouri, now protect it, and international trade has been regulated under CITES since 2023. In 2024, turtles bred in Oklahoma were announced for release into Kansas's Neosho River to restore them there.",
+  "people": "Its name comes from its immensely powerful jaws and the rough ridges on its shell, which recall an alligator's skin; it is also called the loggerhead snapper. Despite its reputation, it is not usually quick to bite, but if provoked it can sever fingers, and handlers grip large ones by the shell behind the head and above the tail. No human deaths have been recorded.\n\nIt is bred for the exotic pet trade, and released pets have turned up far from home. Escapees have been caught in Germany, Hungary and the Czech Republic, they are now considered invasive in Italy, and established populations exist in South Africa. In 2024 a male nicknamed Fluffy was found in a tarn in Cumbria, England.",
+  "relatives": "The species belongs to the snapping turtle family, the Chelydridae. It is often confused with the common snapping turtle, which has a smoother shell, but the two are not closely related and sit in separate genera. Its own genus, Macrochelys, was long thought to hold only one species, but research has shown that the turtles of Florida's Suwannee River are a distinct species, the Suwannee snapping turtle. The two lineages split between about 3 and 9 million years ago. The scientific name honours the Dutch zoologist Coenraad Jacob Temminck.",
+  "didYouKnow": "In 2013 an alligator snapping turtle turned up in a reservoir in Oregon, the first ever found in the state, far outside its natural range.",
+  "facts": [
+   {
+    "label": "Shell length",
+    "value": "35–81 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "8–80 kg, rarely more"
+   },
+   {
+    "label": "Clutch",
+    "value": "10–50 eggs"
+   },
+   {
+    "label": "Lifespan",
+    "value": "Probably 80–120 years"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does the alligator snapping turtle lure fish?",
+    "choices": [
+     "With a worm-like tongue tip",
+     "With glowing eyes",
+     "By splashing its tail",
+     "By releasing a scent that smells like rotting meat into the water"
+    ],
+    "explanation": "A pink, worm-shaped appendage on its tongue wiggles to attract fish into its open mouth."
+   },
+   {
+    "prompt": "What decides whether a hatchling is male or female?",
+    "choices": [
+     "Nest temperature",
+     "Its father's size",
+     "The day it hatches",
+     "How deep the mother buries each egg in the sandy bank"
+    ],
+    "explanation": "Sex depends on incubation temperature, with warmer nests producing more males."
+   },
+   {
+    "prompt": "Which plant food can make up a large share of its diet?",
+    "choices": [
+     "Acorns",
+     "Water lilies",
+     "Algae",
+     "Wild rice"
+    ],
+    "explanation": "In one study, oak acorns made up 56% of the diet by volume."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Turtle Survival Alliance",
+    "url": "https://turtlesurvival.org",
+    "blurb": "Works to protect threatened turtles and tortoises around the world."
+   },
+   {
+    "name": "The Nature Conservancy",
+    "url": "https://www.nature.org",
+    "blurb": "Protects rivers, wetlands and other habitats across the United States and beyond."
+   }
+  ]
+ },
+ {
+  "id": "chinese-giant-salamander",
+  "name": "Chinese Giant Salamander",
+  "scientificName": "Andrias davidianus",
+  "wikipediaTitle": "Chinese giant salamander",
+  "group": "amphibian",
+  "regions": [
+   "asia"
+  ],
+  "range": "Rocky mountain streams of central and southern China",
+  "status": "CR",
+  "coordinate": {
+   "latitude": 30.0,
+   "longitude": 109.0
+  },
+  "mapSpan": 22,
+  "tagline": "A living fossil the length of a grown man",
+  "lede": "Hidden in the crevices of cold mountain streams lives an amphibian that can grow as long as a person. The Chinese giant salamander is a flat, wrinkled, almost blind giant from a family that goes back 170 million years.",
+  "home": "Chinese giant salamanders were once widespread in central, south-western and southern China, from Qinghai in the west to Jiangsu in the east and south to Guangxi and Guangdong, especially in the basins of the Yangtze, Yellow and Pearl Rivers. Today their range is badly broken up. They have also been introduced to Kyoto Prefecture in Japan, and possibly to Taiwan.\n\nThey are entirely aquatic, living in clear, rocky hill streams and lakes in forested country, usually between 300 and 800 metres up. They favour narrow, fast, shallow streams, on average about 6 metres wide and 1 metre deep, and shelter in dark, muddy or rocky holes along the banks. Some live in underground rivers, and in parts of China only these hidden populations remain.",
+  "anatomy": "It has a broad, flat head with a wide mouth, tiny lidless eyes and a row of paired bumps running around the head and throat. The skin is dark and wrinkled, usually brown with mottling, though some are reddish or black, and white or orange albinos have been recorded. When threatened, it oozes a sticky white secretion that repels predators.\n\nAn average adult weighs 25 to 30 kg and is about 1.3 metres long, and the largest can reach 1.8 metres. One kept on a farm at Zhangjiajie measured 1.8 metres and weighed 59 kg. Its eyesight is very poor, so it relies on a line of sensory nodes along its body that detect the slightest vibrations in the water.",
+  "life": "It eats almost anything it can overpower: freshwater crabs, shrimps, fish, frogs, insects, millipedes, worms and even water shrews. Cannibalism is common, and in one study other giant salamanders made up 28% of the food by weight. It is most active from early evening into the night.\n\nAdults hunt by creeping slowly towards prey, then gaping their huge, flat jaws open so suddenly that water and prey rush into the mouth. They keep their lips slightly parted as they close, so the water drains out and the meal stays in. A missing cheek bone gives the salamander an especially strong bite, and a stretchy, well-lubricated gullet lets it swallow whole crabs. It can also go without food for years, living off its body's reserves.",
+  "family": "Both males and females hold territories in the stream. Breeding begins when the water warms to about 20 °C, with mating between July and September. Courtship includes knocking bellies, rolling over, riding and mouth-to-mouth posturing. The female lays 400 to 500 eggs in an underwater breeding cave, and the male guards them for 50 to 60 days until they hatch.\n\nThe larvae are about 3 centimetres long when they hatch, and keep their feathery external gills until they are around 20 centimetres long and 3 years old. They mature at 5 to 6 years, at 40 to 50 centimetres long. Captive animals have lived at least 60 years, though claims of 200-year-old salamanders are considered unreliable.",
+  "remarkable": "The Chinese giant salamander can bark, whine, hiss and cry, and some of its calls sound strikingly like a crying young child. That is why its Chinese name, wawayu, means 'infant fish'.",
+  "outlook": "The Chinese giant salamander is Critically Endangered. The wild population has fallen by more than 80% since the 1950s, mainly because it is eaten as a luxury food and used in traditional medicine. It has been legally protected since 1989, but the fine for poaching is tiny compared with restaurant prices of up to 250 to 400 US dollars a kilogram. By 2000, about 90% of its habitat had been destroyed by dams, mining, pollution, deforestation and silt.\n\nA four-year survey published in 2018 failed to confirm wild salamanders at any of 97 sites across 16 provinces, though later researchers questioned how thorough it was. A ranavirus has killed many animals, and salamanders stop feeding in water above 20 °C and die at 35 °C, leaving them vulnerable to climate change.",
+  "people": "The species is farmed on a huge scale in China. In 2011, farms in Shaanxi Province alone held 2.6 million giant salamanders, far more than the estimated wild population of fewer than 50,000, and many thousands of families in the Qinling Mountains rely on them for income. Yet most breeding stock is still caught in the wild, because farmed animals are hard to breed. Releases of farmed salamanders, mostly from Yellow River stock, have spread disease and mixed lineages into rivers where they do not belong.\n\nOutside China it is a rare sight in zoos and aquariums. Prague Zoo holds the largest individual in Europe, at 155 centimetres, and London Zoo cares for animals seized from illegal imports.",
+  "relatives": "Giant salamanders belong to the family Cryptobranchidae, which also includes the Japanese giant salamander and the much smaller hellbender of North America. Genetic studies have shown that what was long treated as one Chinese species is really a group of separate lineages that split between about 5 and 10 million years ago. Several are now recognised as species of their own, including the South China giant salamander, which is slightly larger, and the Jiangxi and Qimen giant salamanders.\n\nThese lineages can still hybridise with each other and with the Japanese species. In Kyoto, introduced Chinese salamanders are interbreeding with the native Japanese giant salamander.",
+  "didYouKnow": "Some dams that once cut through its streams have been fitted with stairs, so that the salamanders can climb past and return to their home stretch of river.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Usually 1.3 m, up to 1.8 m"
+   },
+   {
+    "label": "Weight",
+    "value": "25–30 kg on average"
+   },
+   {
+    "label": "Eggs",
+    "value": "400–500 per clutch"
+   },
+   {
+    "label": "Lifespan",
+    "value": "At least 60 years"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What does the Chinese name 'wawayu' mean?",
+    "choices": [
+     "Infant fish",
+     "River dragon",
+     "Mud king",
+     "Old man of the mountain stream"
+    ],
+    "explanation": "Some of its calls sound like a crying child, so it is called the 'infant fish'."
+   },
+   {
+    "prompt": "Which parent guards the eggs?",
+    "choices": [
+     "The male",
+     "The female",
+     "Both, taking turns",
+     "Neither, since the eggs are scattered loose among stones"
+    ],
+    "explanation": "The female lays 400 to 500 eggs in a breeding cave, and the male guards them until they hatch."
+   },
+   {
+    "prompt": "How does the salamander find prey despite poor eyesight?",
+    "choices": [
+     "It senses vibrations",
+     "By echolocation",
+     "With heat-sensing pits",
+     "By tasting the water with a long forked tongue"
+    ],
+    "explanation": "A line of sensory nodes along its body detects the slightest movements in the water."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Amphibian Ark",
+    "url": "https://www.amphibianark.org",
+    "blurb": "Helps zoos and partners save amphibian species that are at risk of extinction."
+   },
+   {
+    "name": "Zoological Society of London",
+    "url": "https://www.zsl.org",
+    "blurb": "A conservation charity whose scientists have surveyed wild giant salamanders in China."
+   }
+  ]
+ },
+ {
+  "id": "american-white-pelican",
+  "name": "American White Pelican",
+  "scientificName": "Pelecanus erythrorhynchos",
+  "wikipediaTitle": "American white pelican",
+  "group": "bird",
+  "regions": [
+   "naWest",
+   "naEast",
+   "centralAmerica"
+  ],
+  "range": "Breeds on inland lakes of North America, winters south to Costa Rica",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 42.0,
+   "longitude": -102.0
+  },
+  "mapSpan": 50,
+  "tagline": "A giant white fisher that rounds up its catch in teams",
+  "lede": "A line of American white pelicans swimming in step across a lake looks almost choreographed. Working together, the huge white birds drive shoals of fish into the shallows, then scoop them up in their enormous pouched bills.",
+  "home": "American white pelicans breed in colonies on islands in remote freshwater and brackish lakes across the interior of North America. The most northerly colony sits on islands in the rapids of the Slave River on the border of Alberta and the Northwest Territories, and the most southerly ones are in southeastern Ontario and western Nevada. About 10 to 20% of the whole population nests on Gunnison Island in Utah's Great Salt Lake.\n\nCanada is a stronghold. Around 180,000 birds, some 40% of the world's population, arrive each spring to breed, and half of them nest in Manitoba, mostly on Lakes Winnipeg, Manitoba and Winnipegosis. In winter the pelicans move to the Pacific and Gulf of Mexico coasts, from central California and Florida south to Costa Rica, and along the Mississippi as far north as St. Paul, Minnesota. They prefer estuaries, bays and lakes to the open shore, and they cross deserts and mountains on migration but avoid the open ocean.",
+  "anatomy": "This is one of the longest birds in North America, rivalling the trumpeter swan at 130 to 180 centimetres from bill tip to tail. Its wingspan of 2.4 to 3 metres is second only to the California condor's among North American birds, and lets it soar effortlessly on migration. Most adults weigh between 5 and 9 kg, and the bill alone can be up to 39 centimetres long in males.\n\nThe plumage is almost all brilliant white, apart from black flight feathers that show mainly when the bird flies. In the breeding season the huge, flat-topped bill, the pouch, the bare skin around the eye and the feet turn vivid orange, and the breast takes on a yellowish tinge. Males and females look alike except that males are bigger. Young birds are light grey with darker brownish napes and wing feathers.",
+  "life": "Unlike the brown pelican, the American white pelican never dives for food. It catches fish while swimming, eating more than 1.8 kg a day, from minnows to pickerel weighing well over a kilogram. Carp, chub, perch, trout, catfish and shiners are typical prey, along with crayfish and amphibians. Birds nesting on salty lakes, where food is scarce, may fly long distances to richer feeding grounds.\n\nPelicans like to feed in groups of a dozen or more, cooperating to corral fish for one another. In deep water, where fish can escape by diving, they prefer to fish alone. They are also thieves at times, snatching fish from other pelicans, gulls and cormorants, and once from a great blue heron while both birds were flying.",
+  "family": "The birds arrive at their colonies in March or April, and some sites hold up to 10,000 pairs. After about a week of courtship, the pair builds a shallow scrape on the ground lined with twigs, reeds and other debris, and the female lays usually two or three eggs. Both parents incubate them for about a month.\n\nThe chicks hatch naked, then grow white down. They leave the nest at 3 to 4 weeks, by which time usually only one chick per nest is still alive, and spend the next month in a creche, or pod, with other youngsters while they moult and learn to fly. The parents go on feeding them for about three more weeks, and by September or October the birds head south. Wild pelicans can live more than 16 years, and one in captivity lived over 34 years.",
+  "remarkable": "In the breeding season both males and females grow a flattened, horny plate on top of the upper bill, about a third of the way back from the tip. No other pelican in the world grows one, and the bird sheds it once mating and egg laying are over.",
+  "outlook": "The species is listed as Least Concern and populations are stable or slightly increasing, though it was not always so. Numbers fell sharply in the mid-20th century because of DDT, endrin and other pesticides and the widespread draining and pollution of wetlands. Stricter environmental laws allowed a strong recovery, and by the 1980s there were more than 100,000 adults.\n\nHabitat loss is the biggest known cause of nesting failure, with floods and droughts recurring problems. Entanglement in fishing gear, disturbance by boats, poaching, shoreline erosion at colonies and occasional mass poisonings from pesticides still take a toll. Nesting pelicans may abandon their nests if a person gets too close, but they stand their ground against birds such as gulls, jabbing at them with their bills.",
+  "people": "The species was described in 1789 by the German naturalist Johann Friedrich Gmelin, who based it on the 'rough-billed pelican' described a few years earlier by the English ornithologist John Latham from specimens brought to London from New York and Hudson Bay. The scientific name means 'red-billed pelican'.\n\nIn the United States it is protected under the Migratory Bird Treaty Act of 1918, and California lists it as a species of special concern. In Canada it is a conservation priority, with efforts focused on monitoring and protecting habitat. Pelicans are a familiar sight in Manitoba, even in cities, and since 2015 several groups have been visiting a bird sanctuary at Useless Bay in Washington State.",
+  "relatives": "The American white pelican is one of eight species of pelican, all in the genus Pelecanus within the order Pelecaniformes. Its best-known relative in the Americas is the brown pelican. No subspecies of the American white pelican are recognised.",
+  "didYouKnow": "A stray American white pelican reached Colombia's San Andrés Island in 1997, probably swept there by Hurricane Marco the previous November.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "130–180 cm"
+   },
+   {
+    "label": "Wingspan",
+    "value": "2.4–3 m"
+   },
+   {
+    "label": "Weight",
+    "value": "Usually 5–9 kg"
+   },
+   {
+    "label": "Food",
+    "value": "Over 1.8 kg of fish a day"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does the American white pelican catch fish?",
+    "choices": [
+     "While swimming",
+     "By plunge-diving",
+     "By wading on stilt-like legs",
+     "By snatching them from the air above waterfalls"
+    ],
+    "explanation": "Unlike the brown pelican it never dives, scooping up fish from the surface, often in cooperative groups."
+   },
+   {
+    "prompt": "What grows on the bird's bill in the breeding season?",
+    "choices": [
+     "A horny plate",
+     "A red wattle",
+     "A long hook",
+     "A row of white feathers along the pouch edge"
+    ],
+    "explanation": "Both sexes grow a flattened horn on the upper bill, unique among pelicans, and shed it after egg laying."
+   },
+   {
+    "prompt": "Which Canadian province holds about half of the pelicans that breed in Canada?",
+    "choices": [
+     "Manitoba",
+     "Ontario",
+     "Alberta",
+     "British Columbia"
+    ],
+    "explanation": "Most nest on Manitoba's three largest lakes: Winnipeg, Manitoba and Winnipegosis."
+   }
+  ],
+  "charities": [
+   {
+    "name": "National Audubon Society",
+    "url": "https://www.audubon.org",
+    "blurb": "Protects birds and the places they need across the Americas."
+   },
+   {
+    "name": "Nature Conservancy of Canada",
+    "url": "https://www.natureconservancy.ca",
+    "blurb": "Protects lakes, wetlands and other natural areas across Canada."
+   }
+  ]
+ },
+ {
+  "id": "american-paddlefish",
+  "name": "American Paddlefish",
+  "scientificName": "Polyodon spathula",
+  "wikipediaTitle": "American paddlefish",
+  "group": "fish",
+  "regions": [
+   "naEast"
+  ],
+  "range": "Large rivers of the Mississippi basin and nearby Gulf Coast drainages",
+  "status": "VU",
+  "coordinate": {
+   "latitude": 37.0,
+   "longitude": -91.0
+  },
+  "mapSpan": 22,
+  "tagline": "A shark-tailed river relic with an electric snout",
+  "lede": "Cruising slowly through muddy rivers with its mouth gaping wide, the American paddlefish looks like a shark that has swallowed a canoe paddle. That flat snout is a sensor, studded with tens of thousands of receptors that pick up the faint electrical signals of the tiny animals it eats.",
+  "home": "The American paddlefish is native to the Mississippi River basin. It once ranged from the Missouri and Yellowstone Rivers in the northwest to the Ohio and Allegheny in the northeast, and south through the Gulf Coast drainages from the San Jacinto River in Texas to the Tombigbee and Alabama Rivers. At the edges of its range it reached the Great Lakes, and was found in Lake Huron and Lake Helen in Canada until about 1917.\n\nIt lives in large, free-flowing rivers with braided channels, backwaters and oxbow lakes, most often in deep, slow areas such as side channels, bayous and the water below dams. It is a powerful traveller, and individuals have been recorded moving more than 3,200 kilometres within a river system. Today it is found in 22 US states.",
+  "anatomy": "Paddlefish are among the largest and longest-lived freshwater fishes in North America. An average adult is about 1.5 metres long and weighs 27 kg. The largest on record, speared in Iowa in 1916, was 2.16 metres long and weighed over 90 kg.\n\nThe skin is smooth and scaleless, and the skeleton is almost entirely cartilage. The flat, paddle-shaped snout, or rostrum, is about a third of the body length and grows out of the skull rather than the jaws; newly hatched paddlefish do not have one at all. The deeply forked tail has its upper lobe extended by the spine, like a shark's. The eyes are tiny, and the body is bluish grey to black above, fading to a whitish belly. Adults have no teeth.",
+  "life": "Paddlefish are filter feeders, living mainly on zooplankton such as copepods, water fleas and mayfly nymphs. The receptors on the snout, head and gill covers are similar to the electrical sensors of sharks and rays, and they can detect not just a swarm of plankton but the swimming movements of individual animals. When it finds a swarm, the paddlefish swims forward with its mouth wide open, forcing water through comb-like gill rakers that strain out the food.\n\nElectrical sensing seems to have largely replaced eyesight, and paddlefish barely react to shadows or changes in light. Even so, fish with damaged snouts can still feed and stay healthy, because sensory pores cover nearly half of the skin from the snout to the gill covers.",
+  "family": "Paddlefish mature late. Females usually begin spawning at 7 to 10 years old, some as late as 16 to 18, and then breed only every second or third year; males breed more often, from about 7. In spring they migrate upstream to spawn on clean gravel bars that are only underwater during floods. Spawning happens only when three conditions coincide: water of 13 to 16 °C, lengthening days and a suitable rise in the river. Historically, that happened only once every 4 or 5 years.\n\nFemales and males release eggs and sperm into the water together. The sticky eggs attach to the gravel and hatch in about a week, and the larvae drift downstream to calm water. Young paddlefish are weak swimmers, so they grow fast, about 2.5 centimetres a week, reaching 25 to 30 centimetres by late September. They are typically aged by counting growth rings in a jawbone, like a tree, which suggests some live 60 years or more.",
+  "remarkable": "The American paddlefish is the last living member of its entire family. Paddlefish fossils go back 125 million years, and its only other modern relative, the Chinese paddlefish of the Yangtze, was last seen in 2003 and is thought to have died out by 2010.",
+  "outlook": "The American paddlefish is listed as Vulnerable, and US assessors warn its population could fall by at least 30% within three generations. Dams, such as those on the Missouri River, block migrations to spawning grounds, and channel straightening and wing dykes have destroyed spawning and nursery habitat. Many populations now survive only through stocking. Invasive zebra mussels filter out the plankton paddlefish depend on, and pollution adds to the pressure.\n\nPoaching is a serious problem because the roe can be made into caviar much like sevruga sturgeon caviar from the Caspian Sea. As Caspian supplies ran short, American paddlefish became a target, and several people have been prosecuted for selling it labelled as Caspian caviar. International trade is regulated under CITES.",
+  "people": "Paddlefish go by many names, including Mississippi paddlefish, spoonbill and spoon-billed cat. Because they eat plankton, they will not take bait, so anglers catch them by snagging, a popular sport in states such as Missouri, Montana and Oklahoma. The rod-and-reel record was set in 2025 at Lake of the Ozarks, Missouri, with a fish of 74.8 kg.\n\nThe species is also farmed. Missouri began hatchery breeding in the 1960s, and from 1970 paddlefish were sent to the Soviet Union and later raised in Romania, Hungary, Ukraine, Germany, Bulgaria and elsewhere. China now imports about 4.5 million eggs and larvae a year, raising some in carp ponds for restaurants and others for caviar.",
+  "relatives": "Paddlefish form the family Polyodontidae, the sister group of the sturgeons; together they make up the order Acipenseriformes, one of the oldest surviving lineages of ray-finned fish. The two families split roughly 141 million years ago. The genus name Polyodon means 'many-toothed', probably after the comb-like gill rakers, and spathula refers to the paddle-shaped snout.\n\nIn 2020, scientists crossed Russian sturgeon eggs with paddlefish sperm, producing hybrids nicknamed sturddlefish. It was the first successful cross between fish from different families.",
+  "didYouKnow": "In 1788, one of the first naturalists to describe the paddlefish suggested that it was a kind of shark.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "About 1.5 m on average"
+   },
+   {
+    "label": "Weight",
+    "value": "About 27 kg on average"
+   },
+   {
+    "label": "Lifespan",
+    "value": "30 years, some 60 or more"
+   },
+   {
+    "label": "Diet",
+    "value": "Zooplankton"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What does the paddlefish's snout mainly do?",
+    "choices": [
+     "Senses electrical signals",
+     "Digs up the riverbed",
+     "Acts as a rudder",
+     "Stuns small fish with a sharp sideways blow"
+    ],
+    "explanation": "It is covered with tens of thousands of electroreceptors that detect plankton."
+   },
+   {
+    "prompt": "How do anglers usually catch paddlefish?",
+    "choices": [
+     "By snagging",
+     "With live minnows",
+     "With bright spinners",
+     "With dough baits flavoured with fish oil and garlic"
+    ],
+    "explanation": "As filter feeders, they will not take bait or lures."
+   },
+   {
+    "prompt": "What was the only other paddlefish species of modern times?",
+    "choices": [
+     "The Chinese paddlefish",
+     "The Danube paddlefish",
+     "The Congo paddlefish",
+     "The Amazon paddlefish"
+    ],
+    "explanation": "The Chinese paddlefish was last seen in 2003 and is thought to have gone extinct by 2010."
+   }
+  ],
+  "charities": [
+   {
+    "name": "The Nature Conservancy",
+    "url": "https://www.nature.org",
+    "blurb": "Works to protect and restore great rivers such as the Mississippi."
+   }
+  ]
+ },
+ {
+  "id": "leafcutter-ant",
+  "name": "Leafcutter Ant",
+  "scientificName": "Atta",
+  "wikipediaTitle": "Atta (ant)",
+  "group": "insect",
+  "regions": [
+   "southAmerica",
+   "centralAmerica",
+   "naWest"
+  ],
+  "range": "Warm parts of the Americas, from the southern United States to South America",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 0.0,
+   "longitude": -65.0
+  },
+  "mapSpan": 70,
+  "tagline": "Tiny farmers that have grown the same fungus for ages",
+  "lede": "A river of green flows across the forest floor: thousands of ants, each holding a fragment of leaf high above its head like a sail. Leafcutter ants of the genus Atta do not eat these leaves. They are farmers, and the leaves are compost for an underground garden of fungus.",
+  "home": "Atta ants live in South America, Central America and the warmer south of North America, including the Caribbean. One species, the Texas leafcutter ant, reaches the southern United States.\n\nTheir nests are vast underground cities of tunnels and chambers, holding gardens and decomposing plant material. Mature colonies can contain millions of workers, and the ants strongly reshape the land around them. As people and climate change break up tropical and subtropical habitats across the Americas, these ants are becoming more abundant.",
+  "anatomy": "An Atta colony is made of several castes that look and act differently. Workers, the great majority, are wingless females that cannot reproduce. They gather food, dig the nest and care for the queen and young. Soldiers are a larger form of worker, with formidable spines and very large heads that hold the muscles for their powerful pincer-like jaws.\n\nDrones are winged males, larger than the workers, whose only job is to mate with a queen. Atta ants do not sting, but they can bite hard. Like all ants they undergo complete metamorphosis, passing from egg to larva to pupa to adult.",
+  "life": "Workers cut pieces of leaves and other fresh plant material and carry them back to the nest, where a special fungus, Leucocoprinus gongylophorus, grows on them. The whole colony, from larvae to adults, feeds on swollen tips the fungus produces, and the ants provide for all of the fungus's needs in return. Workers also drink plant sap as they cut. They avoid leaves containing chemicals that would harm the fungus, and often travel well past nearer plants of the same kind, sometimes switching from one plant species to another for no obvious reason.\n\nCertain workers ride on the leaf fragments as they are carried home. These hitchhikers guard the carriers against a parasitic phorid fly and clean the leaf before it enters the nest. Ants trapped in a collapsed tunnel make a tapping sound, and their nestmates come to dig them out.",
+  "family": "A new colony begins with a mating flight, when a queen leaves her home nest followed by many drones, one or more of which mate with her. Before leaving, she tucks a small piece of the home colony's fungus into a small pocket below her head. She then loses her wings, digs a hole and uses the fungus to seed a new garden, fertilising it with her droppings.\n\nWhile waiting for the garden to grow, she lives on her body fat, the breakdown of her now useless wing muscles, and about 90% of the eggs she lays. The rest hatch into the first workers, who expand the nest. A queen can lay more than 25,000 eggs a day and 150 million in her lifetime. Queens live up to 15 years and workers about 7, but drones survive only 1 to 2 weeks.",
+  "remarkable": "Leafcutter ants have farmed the same lineage of fungus for about 25 million years. Over that time the fungus lost the ability to produce spores, and the ants took over its reproduction entirely, carrying cuttings from nest to nest.",
+  "outlook": "Atta ants are not assessed as a group on the IUCN Red List, and many are thriving as forests are cleared and fragmented. Their main natural enemies include an army ant, Nomamyrmex esenbeckii, that raids Atta colonies, and birds, bats and ground mammals that snap up queens searching for nest sites after mating. Nine-banded armadillos often eat Texas leafcutter ants.\n\nThe ants are ecosystem engineers. They carry organic matter underground, aerate the soil and increase nutrients and nitrogen fixation. Soil above their nests gives off 15 to 60% more carbon dioxide than nearby soil, from all the decaying plant material inside. By trimming understorey plants they can open gaps in a closed forest canopy, and seeds they carry underground sometimes sprout and grow.",
+  "people": "Many people regard Atta ants as major pests, because they can strip ornamental, garden and crop plants of every leaf. Since they eat only their fungus, common insecticides may not affect them as much as other ants.\n\nThey are also food. Drones, the winged males, are a prized delicacy in southern Mexico, in states such as Oaxaca, Puebla and Chiapas, where they are eaten as a high-protein main dish or as a taco filling, described as smoky and earthy with a crunchy texture. In Brazil the flying adults, called tanajuras, are also enjoyed, and catching and cooking them is part of local heritage in Tianguá. The Guane people of central Colombia ate them from the 7th century and used their sharp jaws as stitches. Princess Atta of the film A Bug's Life is named after the genus.",
+  "relatives": "Atta belongs to the ant subfamily Myrmicinae. The name leafcutter ant is shared with a second genus, Acromyrmex, and the two split from a common ancestor about 10 million years ago. Their closest relatives are other fungus-growing ants, the Trachymyrmex group and Sericomyrmex, which branched off about 17 million years ago. Fungus farming in this ant lineage began around 50 million years ago. Atta soldiers should not be confused with army ants, which are a different group altogether.",
+  "didYouKnow": "A study of one Atta species found that even the larvae come in two distinct forms, gardeners and nurses on one hand and general nest workers on the other.",
+  "facts": [
+   {
+    "label": "Colony size",
+    "value": "Millions of workers"
+   },
+   {
+    "label": "Queen lifespan",
+    "value": "Up to 15 years"
+   },
+   {
+    "label": "Eggs",
+    "value": "25,000+ a day"
+   },
+   {
+    "label": "Diet",
+    "value": "Fungus they grow"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What do leafcutter ants actually eat?",
+    "choices": [
+     "Fungus",
+     "Leaves",
+     "Tree sap only",
+     "Other insects that they catch on the leaves they cut"
+    ],
+    "explanation": "The leaves feed a fungus garden, and the ants eat the fungus."
+   },
+   {
+    "prompt": "Why do small workers ride on leaf fragments?",
+    "choices": [
+     "To guard against flies",
+     "To save energy",
+     "To steer the leaf",
+     "To mark the trail home with scent from their feet"
+    ],
+    "explanation": "Hitchhikers protect carriers from a parasitic phorid fly and clean the leaf."
+   },
+   {
+    "prompt": "How long do Atta drones live?",
+    "choices": [
+     "1 to 2 weeks",
+     "About 7 years",
+     "Up to 15 years",
+     "A single day"
+    ],
+    "explanation": "Drones exist only to mate and live just 1 to 2 weeks."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Buys and protects threatened tropical forests with local partners."
+   }
+  ]
+ },
+ {
+  "id": "amazon-river-dolphin",
+  "name": "Amazon River Dolphin",
+  "scientificName": "Inia geoffrensis",
+  "wikipediaTitle": "Amazon river dolphin",
+  "group": "mammal",
+  "regions": [
+   "southAmerica"
+  ],
+  "range": "Amazon and Orinoco river basins of South America",
+  "status": "EN",
+  "coordinate": {
+   "latitude": -3.5,
+   "longitude": -63.0
+  },
+  "mapSpan": 30,
+  "tagline": "The pink dolphin that swims through flooded forests",
+  "lede": "In the wet season, when the Amazon spills into the forest, pink dolphins swim among the drowned tree trunks. The boto is the largest river dolphin in the world, a flexible, curious animal that can bend its neck and steer through the branches.",
+  "home": "Amazon river dolphins live in six South American countries, Bolivia, Brazil, Colombia, Ecuador, Peru and Venezuela, across an area of about 7 million square kilometres in the Amazon and Orinoco basins. Waterfalls and very shallow water mark the edges of their range, and a population above the rapids of the Madeira River in Bolivia is isolated from the rest.\n\nThey use almost every kind of watery habitat: main rivers, channels, tributaries, lakes and the bases of rapids. In the dry season they stay in the main river channels. When the rivers rise, they spread into flooded forests and plains, and they are thought to live at higher densities than any other cetacean.",
+  "anatomy": "Adult males average about 2.3 metres long and 154 kg, reaching up to 2.55 metres and 185 kg; females are smaller, averaging about 2 metres and 100 kg. That makes this the only river dolphin in which males are bigger than females.\n\nNewborns are dark grey, adolescents light grey, and adults turn pink, from repeated scraping of the skin surface. Males are usually pinker than females because they fight more often. Unlike ocean dolphins, its neck vertebrae are not fused, so it can turn its head 90 degrees. Its dorsal fin is low but very long, and its big, paddle-like flippers allow tight turns at the cost of speed. The long, thin snout holds 25 to 28 pairs of teeth in each jaw, shaped differently for grabbing and crushing.",
+  "life": "Botos eat a wider range of food than any other toothed whale, including at least 53 species of fish such as croakers, cichlids, tetras and piranhas, as well as river turtles and freshwater crabs, whose shells their teeth can crack. Each eats about 5.5% of its body weight a day, and it is most active at dawn and dusk. Sometimes they hunt alongside tucuxi dolphins and giant otters, attacking shoals together.\n\nIn murky water they rely on echolocation, sending out 30 to 80 clicks a second. Their clicks are weaker than those of similar-sized whales, which helps them avoid a confusing jumble of echoes among tree trunks. They usually travel alone or in pairs at a leisurely 1.5 to 3.2 km/h, and are curious and fearless, holding fishermen's oars and playing with sticks, clay, turtles and snakes.",
+  "family": "Males compete fiercely for females, and many are scarred by bites and rake marks. As part of courtship, adult males carry objects in their mouths, such as branches, floating plants or balls of hardened clay, apparently to impress females.\n\nCalves are born between May and June, during the flood season, after a pregnancy of about 11 months. A newborn is about 80 centimetres long. Mothers and calves stay in the flooded forest longer than males, which may protect the young from male aggression and from jaguars, bull sharks, black caimans and anacondas. Nursing lasts about a year, calves become independent at 2 to 3 years, and births are 15 to 36 months apart. One captive male, Baby, lived at least 46 years at Duisburg Zoo in Germany.",
+  "remarkable": "Male botos have been seen performing a strange ritual: one male turns upside down and urinates into the air, while another chases the stream with its snout. Researchers think this may be a way of sending chemical messages, in an animal with a poor sense of smell.",
+  "outlook": "The Amazon river dolphin was listed as Endangered in 2018, with a falling population. Dolphins drown in fishing nets or are killed by fishermen who see them as competitors for fish. Since 2000, carcasses have also been used as bait to catch a scavenging catfish, the piracatinga, and in one survey 73% of dead dolphins found had been killed for bait or abandoned in nets. Dams, mercury pollution from mining and industry, and deforestation add to the threats.\n\nIn September 2023, 154 dolphins died in Brazil's Lake Tefé during a drought, when the water reached 40 °C. Bolivia declared the species a national treasure in 2012, and by early 2024, 11 of the 14 countries with river dolphins had signed a Global Declaration for River Dolphins.",
+  "people": "In Amazon folklore, a boto can become a handsome young man at night who seduces girls and returns to the river by morning; females are said to become beautiful, wealthy-looking women. These shapeshifters are called encantados. Local tales say killing a dolphin brings bad luck, and eating one is worse, and that the dolphin is the guardian of the Amazonian manatee.\n\nSeveral hundred botos were captured for zoos and aquariums between the 1950s and 1970s, but they proved difficult to train and died young. Of more than 70 imported into the United States, only 20 survived, and the last one there, Chuckles, died in 2002.",
+  "relatives": "The species was described in 1817 by Henri de Blainville and belongs to its own family, the Iniidae. It was once placed in a single superfamily with all the other river dolphins, but that grouping did not reflect true relationships, and it now sits in the superfamily Inioidea. No one is sure how its ancestors reached the Amazon basin, perhaps from the Pacific before the Andes rose, or from the Atlantic. Two subspecies are widely recognised: the Amazon river dolphin and the Bolivian river dolphin of the upper Madeira. Some scientists also recognise an Orinoco subspecies, and a separate Araguaian river dolphin has been proposed, though neither is widely accepted.",
+  "didYouKnow": "Botos sometimes take advantage of the disturbance made by passing boats to catch confused fish.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Males up to 2.55 m"
+   },
+   {
+    "label": "Weight",
+    "value": "Males up to 185 kg"
+   },
+   {
+    "label": "Diet",
+    "value": "At least 53 kinds of fish"
+   },
+   {
+    "label": "Pregnancy",
+    "value": "About 11 months"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Why do adult Amazon river dolphins turn pink?",
+    "choices": [
+     "Repeated skin abrasion",
+     "Eating pink crabs",
+     "Warm water",
+     "Blood vessels that widen as they chase fast prey"
+    ],
+    "explanation": "The pink colour comes from repeated scraping of the skin, so males, which fight more, are pinker."
+   },
+   {
+    "prompt": "What do male botos carry in their mouths during courtship?",
+    "choices": [
+     "Branches or clay balls",
+     "Live fish",
+     "Turtle shells",
+     "Pebbles polished smooth by the river current"
+    ],
+    "explanation": "Males carry objects such as branches, floating plants or balls of hardened clay as a display."
+   },
+   {
+    "prompt": "What are dolphin shapeshifters called in Amazon folklore?",
+    "choices": [
+     "Encantados",
+     "Curupiras",
+     "Iaras",
+     "Sacis"
+    ],
+    "explanation": "Legend says the boto becomes a human at night; these shapeshifters are called encantados."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works to protect river dolphins and freshwater habitats in the Amazon."
+   }
+  ]
+ },
+ {
+  "id": "christmas-island-red-crab",
+  "name": "Christmas Island Red Crab",
+  "scientificName": "Gecarcoidea natalis",
+  "wikipediaTitle": "Christmas Island red crab",
+  "group": "marineInvertebrate",
+  "regions": [
+   "oceania"
+  ],
+  "range": "Christmas Island and the Cocos (Keeling) Islands, Indian Ocean",
+  "status": "NE",
+  "coordinate": {
+   "latitude": -10.5,
+   "longitude": 105.6
+  },
+  "mapSpan": 8,
+  "tagline": "Millions of crabs march to the sea in a red tide",
+  "lede": "Once a year, Christmas Island turns red. Millions of land crabs pour out of the forest at once, carpeting roads, gardens and cliffs as they march to the sea to breed, and the island's people close roads and build bridges to let them through.",
+  "home": "The Christmas Island red crab is found only on Christmas Island and the Cocos (Keeling) Islands in the Indian Ocean. Christmas Island once held an estimated 43.7 million adults, at densities of up to about half a crab per square metre. Numbers on the Cocos (Keeling) Islands are much lower, and genetic evidence suggests those crabs are fairly recent arrivals from Christmas Island.\n\nFor most of the year the crabs live in the island's forests. Each digs a burrow, usually staying in the same one all year, and defends it from intruders.",
+  "anatomy": "This is a large crab, with a shell up to 116 millimetres wide. Most are bright red, though some are orange and a few are a much rarer purple. The two claws are usually the same size, and if one is injured or lost it grows back.\n\nMales are generally bigger than females and have larger claws. Adult females have a much broader abdomen, which becomes noticeable after about 3 years of age and serves as a brood pouch for their eggs. Like most land crabs, red crabs breathe with gills, and they must work hard to avoid drying out.",
+  "life": "Red crabs are active by day but avoid direct sunlight, and they are almost completely inactive at night. In the dry season they plug the entrance of their burrows to keep the air inside humid, and stay underground for about 3 months until the rains return. Outside the breeding season they are solitary.\n\nThey are opportunistic, omnivorous scavengers. They mostly eat fallen leaves, fruit, flowers and seedlings, but will also eat dead animals, including other red crabs, the introduced giant African land snail and even human rubbish. Because they dominate the forest floor, they have almost no competition for food, and adults have no natural predators on the island, though coconut crabs have been filmed eating them.",
+  "family": "The start of the wet season, usually in October or November, triggers the migration, and its timing is linked to the phases of the moon. The journey to the coast takes at least a week. Males arrive first, dig burrows on the shore and fight off other males, and mating takes place in or near the burrows. The males then head back to the forest, while the females stay in the burrows for about two weeks, carrying their eggs in their brood pouch.\n\nThe females release their eggs into the sea exactly at the turn of the high tide during the last quarter of the moon. The eggs hatch the moment they touch the water, and the larvae spend 3 to 4 weeks at sea before gathering near the shore as tiny crabs just 5 millimetres across. These then make a 9-day trek inland, hide in the forest litter for their first 3 years, and mature at 4 to 5 years. Red crabs live about 12 years.",
+  "remarkable": "The spawning is a feast for the ocean. Clouds of larvae swirl along the shore, and fish, manta rays and whale sharks visit Christmas Island during the breeding season to eat them by the millions.",
+  "outlook": "As of 2020 the red crab had not been assessed for the IUCN Red List. Its biggest threat is the yellow crazy ant, an invasive species accidentally introduced from Africa, which is believed to have killed 10 to 15 million red crabs in recent years and displaced 15 to 20 million in total, roughly a quarter to a third of the population.\n\nRoads are another danger. Thousands of crabs are crushed by vehicles during each migration. Park rangers set up aluminium barriers that funnel crabs into small tunnels under busy roads, and a 5-metre-high crab bridge carries them over Murray Road. Authorities close roads and set up detours when needed.",
+  "people": "The island's human residents have grown increasingly tolerant of the crabs, and now drive more carefully during the migration. The crabs' tough shells can puncture car tyres and have caused accidents, so protecting them protects drivers too.\n\nUnlike many crabs, red crabs are not eaten. Their small size, high water content and poor meat mean people do not consider them edible. Curiously, early inhabitants of Christmas Island rarely mentioned the crabs at all.",
+  "relatives": "The red crab is one of the land crabs, which breathe with gills yet live most of their lives away from the sea. It shares Christmas Island with the much larger coconut crab, also called the robber crab, which has been filmed hunting red crabs.\n\nThe red crabs of Christmas Island and the Cocos (Keeling) Islands are so closely related that, for conservation purposes, they can be managed as a single population.",
+  "didYouKnow": "Their huge numbers today may be partly due to the extinction in 1903 of Maclear's rat, a native rodent that may once have kept the crabs in check.",
+  "facts": [
+   {
+    "label": "Shell width",
+    "value": "Up to 116 mm"
+   },
+   {
+    "label": "Population",
+    "value": "About 43.7 million adults"
+   },
+   {
+    "label": "Lifespan",
+    "value": "About 12 years"
+   },
+   {
+    "label": "Diet",
+    "value": "Leaves, fruit, scavenged food"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What triggers the red crab's annual migration?",
+    "choices": [
+     "The wet season",
+     "The first full moon of spring",
+     "Rising temperatures",
+     "Ships arriving at the island's harbour"
+    ],
+    "explanation": "The start of the wet season, usually in October or November, sets them off, timed by the moon."
+   },
+   {
+    "prompt": "Which invasive animal has killed millions of red crabs?",
+    "choices": [
+     "Yellow crazy ant",
+     "Brown rat",
+     "Cane toad",
+     "A feral cat population brought by early settlers"
+    ],
+    "explanation": "The yellow crazy ant is believed to have killed 10 to 15 million red crabs."
+   },
+   {
+    "prompt": "How long do young crabs spend at sea as larvae?",
+    "choices": [
+     "3 to 4 weeks",
+     "1 day",
+     "About a year",
+     "6 months, drifting across the Indian Ocean"
+    ],
+    "explanation": "The larvae spend 3 to 4 weeks at sea before returning to land as tiny crabs."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Australian Marine Conservation Society",
+    "url": "https://www.marineconservation.org.au",
+    "blurb": "Australia's national charity dedicated to protecting ocean wildlife."
+   }
+  ]
+ }
+]
