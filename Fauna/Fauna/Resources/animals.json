@@ -20656,5 +20656,889 @@
         "blurb": "Works to protect coasts, mangroves and wildlife across Africa and beyond."
       }
     ]
+  },
+  {
+    "id": "malayan-tapir",
+    "name": "Malayan Tapir",
+    "scientificName": "Tapirus indicus",
+    "wikipediaTitle": "Malayan tapir",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Lowland rainforests of Sumatra, Peninsular Malaysia, Thailand and Myanmar",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 4.0,
+      "longitude": 101.0
+    },
+    "mapSpan": 20,
+    "tagline": "The saddle-backed giant of Southeast Asian forests",
+    "lede": "Black at both ends and white in the middle, the Malayan tapir looks like an animal wearing a saddle blanket. It is the biggest of the world's tapirs and the only one left outside the Americas, a shy, nose-led browser of the Southeast Asian rainforest.",
+    "home": "Malayan tapirs live in primary and secondary lowland tropical forest in Sumatra, Peninsular Malaysia, Myanmar and Thailand. They like to stay near water, bathing and swimming often, yet they can also climb steep slopes.\n\nTheir range was once much larger. In historical times they reached as far north as China, and remains from the Niah Caves in Sarawak show they lived on Borneo until at least 8,000 years ago. Pleistocene fossils from Java, found alongside grassland grazers, suggest the species first evolved in more open country before retreating into closed forest.",
+    "anatomy": "This is the largest of the four living tapirs: 1.8 to 2.5 metres long, 90 to 110 centimetres tall at the shoulder, and usually 250 to 320 kg, though some adults reach 540 kg.\n\nFemales tend to be bigger than males. It has a stubby tail of 5 to 10 centimetres, four toes on each front foot and three on each hind foot, and a long, flexible proboscis supported by a skull with unusual features, including a large crest and retracted nasal bones. The pale patch from shoulders to rump breaks up its outline, so that a sleeping tapir can be mistaken for a large rock. Its eyesight is very poor, and the corneas often carry a bluish haze, so it relies on excellent smell and hearing.",
+    "life": "Tapirs are mostly solitary and active at night. Each marks out a large territory by spraying urine on plants, though neighbours' areas overlap, and they follow well-worn paths bulldozed through the undergrowth. They browse tender shoots and leaves from more than 115 plant species, about 30 of them favourites, moving slowly and stopping often to eat and sniff the scent marks of other tapirs. They talk in high-pitched squeaks and whistles.\n\nWhen frightened a tapir can run fast, and if cornered it fights with strong jaws and sharp teeth. Its size means it has few natural predators, and even reports of tigers killing tapirs are scarce.",
+    "family": "Breeding usually happens in April, May or June. After a pregnancy of about 390 to 395 days, the female gives birth to a single calf weighing around 6.8 kg, generally one every two years. Calves are the largest of any tapir at birth and grow quickly. Like all young tapirs, the calf wears a brown coat with white stripes and spots that blends into dappled forest light.\n\nThis fades to adult colours between four and seven months of age. Weaning comes at six to eight months, when the youngster is nearly full-grown, and maturity at about three years. Malayan tapirs can live up to 30 years, in the wild as well as in zoos.",
+    "remarkable": "Despite its gentle diet, a tapir's bite is formidable. In 1998 a captive female severed a zookeeper's arm at the mid-bicep, most likely because the keeper stood between her and her calf.",
+    "outlook": "The Malayan tapir has been listed as Endangered on the IUCN Red List since 2008, with fewer than 2,500 mature individuals thought to remain. The main threat is deforestation, as large areas of forest in Thailand and Malaysia have been cleared for oil palm plantations.\n\nFragmentation pushes tapirs out of their forests and onto roads. In Peninsular Malaysia, 142 tapirs were displaced between 2006 and 2010; some were rescued and moved, but 15 died in collisions with vehicles. Reintroducing the tapir to Borneo has been suggested as a conservation measure.",
+    "people": "The species goes by many names, including Asian tapir, oriental tapir, piebald tapir and black-and-white tapir. It was named Tapirus indicus by Anselme Gaëtan Desmarest in 1819, drawing on a description by Pierre-Médard Diard.\n\nA stone carving from a Buddhist site in Madhya Pradesh, India, dating to the 2nd century BC, is believed to show a tapir, described as a sturdy, attacking animal with short limbs, a small trunk and erect oval ears. Fossils confirm that tapirs once lived in India too.",
+    "relatives": "Tapirs belong to the perissodactyls, the odd-toed hoofed mammals. A comparison of mitochondrial DNA from 16 species in this group shows that the Malayan tapir is the sister to the tapirs of the Americas, and that it was the first to branch off, around 25 million years ago in the Late Oligocene.\n\nBecause of this deep split, Colin Groves and Peter Grubb placed it in a genus of its own, Acrocodia, in 2011.",
+    "didYouKnow": "All-black Malayan tapirs exist: two were seen in Malaysia's Jerangau Forest Reserve in 2000, and another was recorded in Pahang state in 2016.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1.8–2.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "250–320 kg"
+      },
+      {
+        "label": "Gestation",
+        "value": "390–395 days"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 30 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the tapir's black-and-white pattern help it?",
+        "choices": [
+          "It breaks up its outline",
+          "It reflects heat",
+          "It attracts mates",
+          "It warns predators that its flesh is poisonous to eat"
+        ],
+        "explanation": "The pattern disrupts its outline, so a resting tapir can be mistaken for a rock."
+      },
+      {
+        "prompt": "How long is a Malayan tapir's pregnancy?",
+        "choices": [
+          "About 13 months",
+          "About 6 months",
+          "About 9 months",
+          "About 2 years, the longest of any land mammal"
+        ],
+        "explanation": "Gestation lasts about 390 to 395 days, a little over a year."
+      },
+      {
+        "prompt": "Which island did the Malayan tapir inhabit until at least 8,000 years ago?",
+        "choices": [
+          "Borneo",
+          "Japan",
+          "Sri Lanka",
+          "New Guinea, north of Australia"
+        ],
+        "explanation": "Remains from the Niah Caves in Sarawak show tapirs lived on Borneo into the early Holocene."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect forests and wildlife across Southeast Asia and the world."
+      },
+      {
+        "name": "Fauna & Flora",
+        "url": "https://www.fauna-flora.org",
+        "blurb": "Supports local partners protecting threatened species and habitats, including in Sumatra."
+      }
+    ]
+  },
+  {
+    "id": "humpback-anglerfish",
+    "name": "Humpback Anglerfish",
+    "scientificName": "Melanocetus johnsonii",
+    "wikipediaTitle": "Humpback anglerfish",
+    "group": "fish",
+    "regions": [
+      "openOcean"
+    ],
+    "range": "Deep tropical and temperate waters of all the world's oceans",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": -30.0
+    },
+    "mapSpan": 80,
+    "tagline": "A deep-sea ambusher with its own glowing lure",
+    "lede": "In black water hundreds of metres down, a small, round fish with a mouthful of needles dangles a glowing lure from its forehead and waits. The humpback anglerfish is an ambush hunter so patient and so efficient that it can swallow prey heavier than itself.",
+    "home": "This anglerfish lives in the mesopelagic and bathypelagic zones, mostly between 200 and 1,500 metres deep, where little or no sunlight reaches. It tends to live shallower than its relatives: 65% of recorded specimens came from 1,000 metres or less.\n\nIt has the widest range of any species in its genus, found in temperate and tropical waters of all the oceans and in the South and East China Seas. In 2014 its known range stretched south when the first Antarctic specimen turned up in the stomach of an Antarctic toothfish caught in the Ross Sea.",
+    "anatomy": "Females are soft-bodied, dark brown or black, with short, globe-shaped bodies and huge heads. The mouth is wide and almost vertical, lined with long, pointed teeth, and many small spines sit in the skin beneath the dorsal fin. The eyes are tiny and lie under the skin, hinting that sight matters little. The sexes are wildly different in size.\n\nFemales grow to about 153 millimetres, while males reach only 15.5 to 28 millimetres. Males have no lure but large eyes and nostrils, probably for finding scattered mates. Only eight males have ever been collected.",
+    "life": "Only about 5% of the food made in the sunlit surface waters sinks down to the deep, so meals are rare, and the humpback anglerfish waits rather than chases. Its lure, the esca, sits on a modified fin spine called the illicium and glows thanks to bacteria named Enterovibrio escacola living on it.\n\nWhen something comes close, a stretchy stomach lets it eat almost anything. One fish weighing 8.8 grams was found with three snipe eels totalling 12.3 grams inside it. Laboratory tests on trawled fish showed a very low metabolic rate and an ability to adjust oxygen use, letting it survive long periods with little or no oxygen.",
+    "family": "Finding a partner in the vast dark is hard, and males track females by scent, which lingers in the still deep water. Unlike many deep-sea anglerfish, this species' males are not parasitic. A male clings to a female only briefly with a special set of tooth-like denticles, then lets go and swims off to look for other mates.\n\nFertilisation happens outside the body: the female releases eggs and the male immediately releases sperm over them. Both sexes can reach maturity without ever meeting the other, unlike parasitic species, whose males usually attach before they mature.",
+    "remarkable": "In February 2025, an expedition off Tenerife filmed and photographed a living female at the ocean surface in daylight, slowly making its way upwards about 2 kilometres from the coast. It may be the first time the species has been recorded in such conditions.",
+    "outlook": "The humpback anglerfish is classed as Least Concern by the IUCN. People do not eat it, so it is not hunted, but some are caught as bycatch in trawls, and that bycatch may grow as commercial fisheries push further into the deep sea.\n\nThe small number of known specimens probably reflects how hard it is to sample such widely scattered deep-sea fish.",
+    "people": "The first specimen was found near Madeira on 24 December 1863 by the English naturalist James Yate Johnson. Albert Günther of the Natural History Museum in London described it as a new genus, struck by its extraordinary form and its lack of pelvic fins, and named it after Johnson.\n\nIts other common names include viperfish and fangtoothfish. The Danish naturalist Christian Frederik Lütken was the first to suggest that the lure was central to how anglerfish feed. In 2014 the Monterey Bay Aquarium Research Institute filmed a female swimming slowly at about 580 metres in Monterey Canyon, using its remotely operated submersible Doc Ricketts.",
+    "relatives": "The species belongs to the black seadevils, family Melanocetidae, a name meaning 'black sea monster'.\n\nFor years, small anglerfish without lures were placed in separate groups, until the British ichthyologist Charles Tate Regan realised in 1924 that a little fish attached to a larger one was a male, revealing the extreme size difference between the sexes. Several former species, including M. ferox and M. krechi, are now treated as the same species.",
+    "didYouKnow": "The glowing microbes on its lure have genomes about half the size of a typical free-living bacterium, yet they can survive without their host.",
+    "facts": [
+      {
+        "label": "Female length",
+        "value": "Up to 153 mm"
+      },
+      {
+        "label": "Male length",
+        "value": "15.5–28 mm"
+      },
+      {
+        "label": "Depth",
+        "value": "Mostly 200–1,500 m"
+      },
+      {
+        "label": "Hunting",
+        "value": "Sit-and-wait ambush"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes the anglerfish's lure glow?",
+        "choices": [
+          "Bacteria living on it",
+          "Reflected moonlight",
+          "A chemical from its liver",
+          "Tiny crystals that store light from the surface waters"
+        ],
+        "explanation": "The glow comes from symbiotic Enterovibrio escacola bacteria on the esca."
+      },
+      {
+        "prompt": "How do male humpback anglerfish differ from many other anglerfish males?",
+        "choices": [
+          "They attach only briefly",
+          "They are larger than females",
+          "They have brighter lures",
+          "They fuse permanently with the female and share her blood"
+        ],
+        "explanation": "Males are non-parasitic: they cling to a female briefly to mate, then swim off."
+      },
+      {
+        "prompt": "Where was the first humpback anglerfish found?",
+        "choices": [
+          "Near Madeira",
+          "Off Japan",
+          "In the Ross Sea",
+          "In Monterey Canyon, off the coast of California"
+        ],
+        "explanation": "James Yate Johnson found the first specimen near Madeira in 1863."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect ocean life, including from destructive and wasteful fishing."
+      }
+    ]
+  },
+  {
+    "id": "mandrill",
+    "name": "Mandrill",
+    "scientificName": "Mandrillus sphinx",
+    "wikipediaTitle": "Mandrill",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Rainforests of Cameroon, Equatorial Guinea, Gabon and Congo",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -0.5,
+      "longitude": 11.5
+    },
+    "mapSpan": 10,
+    "tagline": "The world's largest and most colourful monkey",
+    "lede": "With a scarlet stripe down its nose, ridged blue cheeks and a rump in red, pink, blue and purple, the adult male mandrill wears more colour than almost any other mammal. It is also the largest monkey in the world, and it lives in some of the biggest groups any wild primate forms.",
+    "home": "Mandrills live in west-central Africa: southern Cameroon, mainland Equatorial Guinea, Gabon and parts of the Republic of the Congo. The Sanaga River marks the northern edge of the range and separates them from their close relative, the drill, while the Ogooué and Ivindo Rivers bound it to the east.\n\nThey prefer primary rainforest but also use gallery forests surrounded by savanna, mountains, riverbanks and even cultivated fields. They favour thick bush full of gingers and other perennial plants. Mostly ground-dwellers, they will still feed as high as the canopy.",
+    "anatomy": "The mandrill is stocky, with a big head, a long muzzle and a short, stumpy tail. Males measure 70 to 95 centimetres in head and body and weigh 19 to 30 kg; females are 55 to 70 centimetres and 10 to 15 kg, making the mandrill the most sexually dimorphic primate. Male canines reach 4.5 centimetres.\n\nThe coat is grizzled olive-brown with a yellow-orange beard. The red colour comes from blood vessels close to the skin's surface, while the blue is structural, produced by parallel arrangements of collagen fibres. In males, the blue skin is raised over ridged swellings of bone. Females' faces are duller, darkened by melanin.",
+    "life": "Mandrills are active by day, awake for around 10 hours, and often choose a new tree to sleep in each night. They eat more than a hundred plant species; at Lopé National Park in Gabon, fruit made up about half the diet and seeds about a quarter.\n\nAdult males are among the few primates strong enough to bite through the hard shells of Detarium seeds. They also eat ants, termites, crickets, spiders, snails, scorpions, frogs, rodents and birds' eggs, and occasionally catch young bay duikers, sometimes hunting together and sharing the kill. Threat displays include staring with the mouth open, head bobbing and slapping the ground.",
+    "family": "Hordes are built around related females, and a mother's rank shapes the rank of her offspring. Adult males are mostly solitary, joining hordes when females are ready to mate. Mating peaks in the dry season, and after about 175 days of pregnancy most infants are born between January and March, weighing about 640 grams.\n\nBabies ride on their mothers' bellies and are weaned at about 230 days. Males leave their horde after six years and reach full size at ten. Wild mandrills seem to live 12 to 14 years, but in captivity they can reach 30 to 40.",
+    "remarkable": "Mandrill groups can be enormous. At Lopé, hordes averaged about 620 animals and some reached 845, possibly the largest cohesive groups of any wild primate. One horde of around 700 used a home range of 182 square kilometres.",
+    "outlook": "Since 2019 the IUCN has listed the mandrill as Vulnerable, with the population suspected to have fallen by more than 30 percent over 24 years. The main threats are habitat destruction and hunting for bushmeat, which appears to have shrunk group sizes in Cameroon and Equatorial Guinea.\n\nGabon is the species' most important refuge, with few people and vast rainforests; about 10 percent of its forest lies in national parks, 13 of which were created in 2002. The mandrill is on CITES Appendix I, which bans commercial trade in wild-caught animals.",
+    "people": "Conrad Gessner first depicted the mandrill in the 1550s, thinking it a kind of hyena, and Linnaeus named it Simia sphinx in 1758. The word mandrill, recorded from 1744, joins 'man' with 'drill', a West African word for an ape, and seems at first to have meant the chimpanzee.\n\nCharles Darwin wrote that no other mammal is coloured in so extraordinary a manner as the adult male mandrill. At Colchester Zoo in England, captive mandrills have invented a facepalm gesture to signal they do not want to be disturbed.",
+    "relatives": "Mandrills and drills share the genus Mandrillus and were long thought to be baboons. Studies of anatomy and DNA instead found that their closest relatives are the white-eyelid mangabeys of the genus Cercocebus.\n\nMandrillus and Cercocebus split around 4.5 million years ago, and the mandrill and drill parted about 3.17 million years ago. No fossils of Mandrillus have been found.",
+    "didYouKnow": "When a male mandrill becomes dominant, his face and rump turn redder and his flanks fatten, and these changes partly reverse if he loses his rank.",
+    "facts": [
+      {
+        "label": "Male weight",
+        "value": "19–30 kg"
+      },
+      {
+        "label": "Female weight",
+        "value": "10–15 kg"
+      },
+      {
+        "label": "Group size",
+        "value": "Up to about 845"
+      },
+      {
+        "label": "Lifespan",
+        "value": "12–14 years (wild)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What causes the blue colour on a mandrill's face?",
+        "choices": [
+          "Collagen fibres in the skin",
+          "Blue pigment in the fur",
+          "Blood vessels near the surface",
+          "A powder from crushed berries that it rubs on itself"
+        ],
+        "explanation": "The blue is structural colour, made by parallel arrangements of collagen fibres."
+      },
+      {
+        "prompt": "Apart from the drill, which monkeys are the mandrill's closest relatives?",
+        "choices": [
+          "White-eyelid mangabeys",
+          "Baboons",
+          "Guenons",
+          "Colobus monkeys of the East African coast"
+        ],
+        "explanation": "Anatomy and DNA show mandrills are closest to the mangabeys of the genus Cercocebus."
+      },
+      {
+        "prompt": "Which country is the mandrill's most important stronghold?",
+        "choices": [
+          "Gabon",
+          "Kenya",
+          "Nigeria",
+          "Madagascar"
+        ],
+        "explanation": "Gabon's vast rainforests and low human population make it the species' key refuge."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places worldwide, including Central Africa's rainforests."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to conserve forests and wildlife in the Congo Basin and beyond."
+      }
+    ]
+  },
+  {
+    "id": "oilbird",
+    "name": "Oilbird",
+    "scientificName": "Steatornis caripensis",
+    "wikipediaTitle": "Oilbird",
+    "group": "bird",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Caves and forests of northern South America and Trinidad",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 4.0,
+      "longitude": -68.0
+    },
+    "mapSpan": 30,
+    "tagline": "A fruit-eating cave bird that clicks like a bat",
+    "lede": "Deep in South American caves, thousands of birds shriek in the dark, then pour out at dusk to hunt not insects but fruit. The oilbird is the world's only nocturnal flying fruit-eater, and it finds its way through pitch-black caverns by clicking, like a bat.",
+    "home": "Oilbirds range from Guyana and Trinidad and Tobago through Venezuela, Colombia, Ecuador, Peru, Bolivia and Brazil, from sea level up to 3,400 metres. They need two things: caves for breeding and roosting, and forest full of fruiting trees.\n\nWhere caves are missing, they use narrow gorges and grottos with good rock shelves; one Ecuadorian canyon held about a hundred birds. In parts of their range they migrate seasonally in search of fruit, and strays have turned up in Costa Rica, Panama and Aruba.",
+    "anatomy": "The oilbird is large and slim, 40 to 49 centimetres long with a wingspan of 95 centimetres, and weighs 350 to 475 grams. Its flattened, strongly hooked bill is framed by chestnut bristles up to 5 centimetres long. The plumage is reddish-brown with white spots, and the cinnamon underparts carry black-edged white diamonds.\n\nThe tiny feet are good only for clinging to vertical rock. Long, slotted wings with low wing-loading let it fly slowly, hover and twist through tight cave passages. Its eyes gather more light than any other bird's, and its retina packs about 1,000,000 rod cells per square millimetre, the densest of any vertebrate, arranged in layers as in deep-sea fish.",
+    "life": "By day oilbirds rest on cave ledges; at night they fly out to feed. In darkness too deep even for their eyes they use echolocation, sending out sharp clicks of around 2 kHz that people can hear. Among birds, only some swifts share this trick. Inside caves they also scream harshly, especially when someone shines a light.\n\nA study in Colombia found they ate fruit from 52 plant species, mostly oily palms and laurels. GPS loggers revealed that non-breeding birds roost in caves only one night in three, spending the others in forest trees. Cave roosters stay busy all night guarding ledges from rivals, while forest roosters rest more but are more exposed to predators.",
+    "family": "Oilbirds nest in colonies inside caves, usually above a stream or the sea. The nest is a heap of droppings, on which the female lays 2 to 4 glossy white eggs that soon become stained brown.\n\nThe eggs average about 41 by 33 millimetres and are rounded with a pointed smaller end. Parents feed the chicks so much fruit that they grow extremely fat, reaching up to 600 grams before they fly, around a third heavier than the adults.",
+    "remarkable": "Because they swallow fruit whole and carry it long distances, oilbirds are perhaps the most important dispersers of large seeds in their forests. Seeds they regurgitate pile up on cave floors and sometimes sprout there, though the young plants cannot survive in the dark.",
+    "outlook": "The IUCN lists the oilbird as Least Concern as of 2021, with a stable population estimated at 20,000 to 50,000 mature birds. Key colonies are protected.\n\nVenezuela's Guácharo Cave was the country's first national monument and may hold 15,000 birds or more, Colombia has a national park named after its own oilbird cave, and Dunston Cave in Trinidad holds about 130. Birds have also been reported elsewhere along the Andes, including near Ecuador's Cueva de los Tayos, and as far south as Carrasco National Park in Bolivia.",
+    "people": "The bird's name recalls a grim harvest. Alexander von Humboldt, who first studied the species at the Cueva del Guácharo near Caripe, described how once a year local Indigenous people knocked down nests with poles, killed thousands of fat chicks and melted their fat in clay pots to make oil.\n\nIn Spanish it is called guácharo or tayo, both words of Indigenous origin. In Trinidad it was once known as diablotin, French for 'little devil', probably for its cries, likened to those of tortured men.",
+    "relatives": "The oilbird is the only living member of its genus, family and order, Steatornithiformes. It belongs to the Strisores with the nightjars, and was once grouped in their order, but nightjars eat insects while the oilbird is a fruit specialist.\n\nIts genus name, Steatornis, means 'fat bird', and caripensis means 'of Caripe'. Fossils show the family was once widespread: Prefica nivea came from the Green River Formation in Wyoming, and another species from the Upper Eocene was found in France.",
+    "didYouKnow": "The oilbird's feathers are softer than most birds' but not as soft as an owl's, since a fruit-eater has no need to fly silently.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "40–49 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "95 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "350–475 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Oily fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do oilbirds find their way in dark caves?",
+        "choices": [
+          "By echolocation clicks",
+          "By following air currents",
+          "By smell alone",
+          "By brushing the walls with their long whiskers as they fly"
+        ],
+        "explanation": "They send out audible clicks of around 2 kHz and listen for the echoes."
+      },
+      {
+        "prompt": "What does the oilbird mainly eat?",
+        "choices": [
+          "Fruit",
+          "Moths",
+          "Bats",
+          "Small fish snatched from underground streams"
+        ],
+        "explanation": "It is a specialist fruit-eater, favouring oily palm and laurel fruits."
+      },
+      {
+        "prompt": "How did the oilbird get its name?",
+        "choices": [
+          "Its fat chicks were boiled for oil",
+          "It nests near oil seeps",
+          "Its feathers are oily",
+          "Its droppings were burned in lamps by early European settlers"
+        ],
+        "explanation": "Chicks were once harvested from caves and their fat melted down to make oil."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and the places they need."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests with local partners."
+      }
+    ]
+  },
+  {
+    "id": "maned-wolf",
+    "name": "Maned Wolf",
+    "scientificName": "Chrysocyon brachyurus",
+    "wikipediaTitle": "Maned wolf",
+    "group": "mammal",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Grasslands and savannas of central South America",
+    "status": "NT",
+    "coordinate": {
+      "latitude": -16.0,
+      "longitude": -52.0
+    },
+    "mapSpan": 30,
+    "tagline": "South America's long-legged, fruit-loving wild dog",
+    "lede": "It looks like a red fox on stilts, but the maned wolf is neither fox nor wolf. The tallest of all wild canids stalks the South American grasslands at dusk on absurdly long black legs, and much of what it eats is fruit.",
+    "home": "Maned wolves live in open and semi-open country, especially grasslands with scattered bushes and trees, in the Cerrado of Brazil and in Paraguay, northern Argentina, Bolivia east and north of the Andes, and the Pampas del Heath of far south-eastern Peru.\n\nThey are very rare in Uruguay and may have vanished there because of habitat loss. They favour grasslands, scrub prairies and forest. Fossils from Lagoa Santa in Minas Gerais, Brazil, suggest the species evolved in this region.",
+    "anatomy": "The largest canine in South America weighs 20 to 30 kg and stands up to 110 centimetres at the shoulder. The coat is reddish-brown to golden orange, with long black legs, a white tuft at the tail tip and a white bib under the throat. A black mane runs from the neck to the shoulders and can be raised to make the animal look bigger when threatened.\n\nIts head is small for its body, with large, mobile ears, and its long legs probably help it see over tall grass. Rare black individuals exist; the first photo of a black adult was taken by a camera trap in Minas Gerais in 2013.",
+    "life": "Maned wolves are most active around twilight, with peaks between 8 and 10 in the morning and evening, though cold or cloudy weather can keep them moving all day. They are solitary. A monogamous pair defends a territory of about 30 square kilometres, criss-crossed by paths they patrol at night, yet the two may rarely meet outside the mating season.\n\nThey are omnivores, catching rodents, rabbits, birds, reptiles and insects, but plant food makes up most of the diet. A tomato-like fruit, the wolf apple, forms 40 to 90% of it, and the wolf spreads the seeds in its droppings. Besides scent marking, maned wolves give a loud call known as roar-barking.",
+    "family": "Mating takes place between November and April. After 60 to 65 days the female has two to six pups, which weigh 340 to 430 grams, open their eyes at about nine days and turn from black to red at ten weeks. They suckle for up to four months, and parents also feed them regurgitated food from three weeks until about ten months.\n\nFemales do most of the caring. Pups are fully grown at a year, when they mature and leave home. Lifespan in the wild is unknown; in captivity it is 12 to 15 years, and one at São Paulo Zoo reached 22.",
+    "remarkable": "Its urine smells strongly of hops or cannabis, probably because of a pyrazine also found in those plants, which has earned it the nickname 'skunk wolf'. At Rotterdam Zoo the smell once sent police hunting for cannabis smokers.",
+    "outlook": "The IUCN lists the maned wolf as Near Threatened because its numbers are declining, though its wide range and adaptability keep it out of a higher category. Brazilian authorities consider it Vulnerable.\n\nDeforestation, roadkill on busy highways and spreading cities are the main problems, and domestic dogs pass on diseases and sometimes attack them. Hunting the maned wolf is illegal in Brazil, Argentina and Uruguay. It breeds in many zoos: in 2012 there were 3,288 in more than 300 institutions worldwide.",
+    "people": "Attitudes vary from fear to tolerance. It is often blamed for stealing chickens, and was once wrongly accused of killing cattle, sheep and pigs. In parts of Brazil its teeth, heart, ears and even dried droppings are thought to cure ailments or bring luck, and in Bolivia a saddle of its leather is said to ward off misfortune.\n\nIn Brazilian cities people tend to like it, and it has become a flagship for protecting the Cerrado. It appears on Brazil's 200-reais banknote, released in 2020.",
+    "relatives": "Its genus name, Chrysocyon, means 'golden dog', and it is the only species in it. Molecular studies consistently find that its closest living relative is the bush dog, a very differently built animal; the two lineages split about 3 million years ago.\n\nThe maned wolf also shared an ancestor around seven million years ago with the extinct Falkland Islands wolf.",
+    "didYouKnow": "Feeding captive maned wolves a meat-heavy diet gave them bladder stones, so zoos now serve fruit, vegetables and a special low-cystine food.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "20–30 kg"
+      },
+      {
+        "label": "Shoulder height",
+        "value": "Up to 110 cm"
+      },
+      {
+        "label": "Territory",
+        "value": "About 30 km²"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly fruit, plus small animals"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which fruit makes up much of the maned wolf's diet?",
+        "choices": [
+          "Wolf apple",
+          "Wild banana",
+          "Cashew",
+          "Prickly pear cactus fruit from the Andes"
+        ],
+        "explanation": "The tomato-like wolf apple forms 40 to 90% of its diet."
+      },
+      {
+        "prompt": "What is the maned wolf's closest living relative?",
+        "choices": [
+          "The bush dog",
+          "The red fox",
+          "The grey wolf",
+          "The coyote of the North American prairies"
+        ],
+        "explanation": "Despite looking very different, the bush dog is its closest relative."
+      },
+      {
+        "prompt": "Why is it nicknamed the 'skunk wolf'?",
+        "choices": [
+          "Its urine smells like cannabis",
+          "It sprays enemies",
+          "It eats skunks",
+          "Its black and white tail looks like a skunk's when raised"
+        ],
+        "explanation": "Its scent marks have a strong smell likened to hops or cannabis."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect the Cerrado and other threatened South American landscapes."
+      }
+    ]
+  },
+  {
+    "id": "philippine-eagle",
+    "name": "Philippine Eagle",
+    "scientificName": "Pithecophaga jefferyi",
+    "wikipediaTitle": "Philippine eagle",
+    "group": "bird",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests of Luzon, Samar, Leyte and Mindanao in the Philippines",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 10.5,
+      "longitude": 124.5
+    },
+    "mapSpan": 14,
+    "tagline": "The giant, shaggy-crested eagle of Philippine forests",
+    "lede": "With a shaggy crest that bristles like a mane and a huge, arched blue-grey bill, the Philippine eagle is one of the most imposing birds of prey alive. It is the national bird of the Philippines, and one of the rarest raptors on Earth.",
+    "home": "This eagle is found only in the Philippines, on eastern Luzon, Samar, Leyte and Mindanao. Mindanao holds most of them, with between 82 and 233 breeding pairs, while Samar has about six pairs, Leyte two and Luzon a few. It lives in dipterocarp and mid-montane forest, often on steep ground, from the lowlands to above 1,800 metres.\n\nEach pair needs a large home range: on Mindanao, nests were on average about 13 kilometres apart, giving each pair roughly 133 square kilometres. Only about 9,220 square kilometres of old-growth forest remain within its range.",
+    "anatomy": "Measured by length and wing surface, it is the largest living eagle. Museum specimens average 95 centimetres for males and 105 centimetres for females, and adults weigh 4.7 to 8.0 kg, with the male about 10% smaller. The wingspan is 184 to 220 centimetres, and the wings are fairly short but broad.\n\nIts back is dark brown and its underside white, with a dark face, yellow legs and dark claws. Its legs tie for the longest of any eagle, at 12.2 to 14.5 centimetres, and its deep, narrow bill rivals the Steller's sea eagle's as the biggest of any eagle. Its usual call is a loud, high-pitched whistle.",
+    "life": "Having evolved without competing predators, the Philippine eagle is the top hunter in its forests. Prey has ranged from a 10-gram bat to a 14-kg Philippine deer.\n\nOn Mindanao the main food is the Philippine flying lemur, or colugo, which can make up 90% of the diet in places; on Luzon, where colugos are absent, it takes macaques, reptiles and giant cloud rats. It hunts by sitting motionless near the canopy or by gliding from perch to perch, working its way down through the branches. Pairs sometimes hunt monkeys together, one bird distracting the troop while the other strikes from behind.",
+    "family": "Pairs mate for life. Courtship includes soaring together, diving chases and mutual talon presentation, in which the female flips over in mid-air to meet the male's talons. The stick nest, around 1.5 metres across, sits 30 metres or more up a tall tree. Usually a single egg is laid.\n\nBoth parents feed the chick and shield it from sun and rain. It fledges at four or five months, but its parents care for it for a total of 20 months, so the whole breeding cycle takes two years. Females mature at five years and males at seven. Wild eagles are thought to live 30 to 60 years.",
+    "remarkable": "Young eagles appear to teach themselves to hunt. Juveniles have been seen gripping knotholes, poking their heads into tree cavities, attacking objects for practice and even hanging upside down to improve their balance, all while their parents are away.",
+    "outlook": "The IUCN lists the Philippine eagle as Critically Endangered, with between 180 and 600 thought to survive. Deforestation from logging and farming is the biggest threat, along with mining, pollution, pesticides, poaching and traps set for deer.\n\nSince 2019 more than 20 eagles have been rescued, mostly with gunshot wounds; killing one can bring up to 12 years in prison. The Philippine Eagle Foundation in Davao City breeds the eagles in captivity and carried out the first experimental release of a captive-bred bird.",
+    "people": "It was first called the monkey-eating eagle, after reports from Samar that it fed only on monkeys, and its genus name, Pithecophaga, means 'monkey eater'. In 1978 it was renamed the Philippine eagle, and in 1995 it became the national bird.\n\nIts local names include háribon, 'bird king', and manaul, after a legendary bird of Visayan myth said to have created the islands by dropping boulders to end a war between the sky and the sea. The eagle features on the country's 1,000-peso banknote. Charles Lindbergh campaigned for its protection in the late 1960s and early 1970s.",
+    "relatives": "A 1919 study of its skeleton suggested the harpy eagle of the Americas as its nearest relative, but DNA studies in 2005 showed it is actually closest to the snake eagles, such as the bateleur, and it now sits in their subfamily, Circaetinae. Its species name commemorates Jeffery Whitehead, father of the naturalist John Whitehead, whose servant Juan collected the first specimen in 1896.",
+    "didYouKnow": "In 2019 two Philippine eagles were loaned to Singapore as part of a diplomacy programme, and each was issued its own specially printed passport.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "86–102 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "184–220 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "4.7–8.0 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "30–60 years (est.)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the Philippine eagle's main prey on Mindanao?",
+        "choices": [
+          "Flying lemurs",
+          "Macaques",
+          "Fruit bats",
+          "Large fish taken from mountain rivers and lakes"
+        ],
+        "explanation": "Philippine flying lemurs, or colugos, can make up 90% of its diet there."
+      },
+      {
+        "prompt": "Which birds are the Philippine eagle's closest relatives?",
+        "choices": [
+          "Snake eagles",
+          "Harpy eagles",
+          "Sea eagles",
+          "Vultures of the Old World tropics"
+        ],
+        "explanation": "DNA studies placed it with the snake eagles, such as the bateleur."
+      },
+      {
+        "prompt": "How long does one breeding cycle take?",
+        "choices": [
+          "Two years",
+          "Six months",
+          "One year",
+          "Five years, the longest of any bird"
+        ],
+        "explanation": "Parents care for their single chick for 20 months, so they breed only every other year."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and the places they need."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests with local partners."
+      }
+    ]
+  },
+  {
+    "id": "meerkat",
+    "name": "Meerkat",
+    "scientificName": "Suricata suricatta",
+    "wikipediaTitle": "Meerkat",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Arid open country of south-western Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -25.5,
+      "longitude": 21.0
+    },
+    "mapSpan": 18,
+    "tagline": "Desert mongooses that take turns standing guard",
+    "lede": "Standing bolt upright on its hind legs, tail braced for balance, a meerkat scans the Kalahari for danger while its family digs for beetles below. These small mongooses live in close-knit packs where everyone has a job, from babysitter to sentry.",
+    "home": "Meerkats live in south-western Botswana, western and southern Namibia and northern and western South Africa, just reaching into south-western Angola. They choose arid, open country with stony, often chalky ground and few trees, including savannahs, open plains and rocky dry riverbeds in places such as the Karoo, where rain averages less than 600 millimetres a year.\n\nA pack's home range averages 5 square kilometres and contains many burrows. Typical burrows are 5 metres across with around 15 entrances and two or three levels of tunnels up to 1.5 metres deep; one giant had about 90 holes. Meerkats often share them with Cape ground squirrels and yellow mongooses.",
+    "anatomy": "The meerkat is slim, with a broad head, large eyes, a pointed snout, long legs and a thin tapering tail. Head and body measure 24 to 35 centimetres, and it weighs 0.62 to 0.97 kg. The soft coat is light grey to yellowish-brown, with faint bands across the back.\n\nIts black, crescent-shaped ears can close to keep out soil, and its long, curved front claws are built for digging. Body temperature runs at about 38.3 °C by day and 36.3 °C at night. A remarkably low metabolic rate helps it save water and food, and in winter it balances heat loss partly by sunbathing.",
+    "life": "Packs hold two to 30 animals and are active by day, mostly in the early morning and late afternoon. They forage for five to eight hours daily, spreading out but staying in sight and earshot, while some stand sentry. Beetles, moths and butterflies are the main food, along with scorpions, whose venom they are immune to, plus reptiles, eggs, small birds, and roots and melons dug up for their water.\n\nTheir vocal repertoire is rich: one study recorded 12 kinds of call combinations. Different alarms signal a predator on the ground, which makes others scan and approach, or one in the air, which makes them crouch.",
+    "family": "Usually only the dominant pair breeds, while subordinate 'helpers' look after the young. Births peak in the rainy months, and a dominant female can have up to four litters a year. After 60 to 70 days, three to seven pups are born, weighing about 100 grams.\n\nAdults actively teach. They remove the sting from a scorpion and show pups how to handle it, and a mother may run about with prey in her mouth for the youngsters to catch. Pups forage on their own at about 12 weeks. Wild meerkats live five to 15 years; the captive record is 20.6 years.",
+    "remarkable": "Meerkat life is surprisingly violent. Clashes between packs cause severe injuries, and 19% of meerkats are killed by their own kind, the highest rate recorded for any mammal.\n\nDominant females often kill the litters of subordinates, and subordinates sometimes kill dominant females' pups.",
+    "outlook": "The meerkat is listed as Least Concern on the IUCN Red List, and the population seems stable. Low rainfall is the main danger and can wipe out whole packs.\n\nStudies in the Kalahari show that hotter days reduce pup growth and survival and are linked with more tuberculosis, a worry as temperatures climb. Meerkats live in protected areas including the Kgalagadi Transfrontier Park and the Makgadikgadi Pan.",
+    "people": "The name comes from Afrikaans, though its origins are uncertain; one idea links it to an old Dutch word for a kind of monkey. Meerkats are fairly tame, but they make poor pets, being aggressive at times and having a strong, ferret-like smell.\n\nIn rural South Africa they are welcomed for killing rodents in homes and caterpillar pests on farms. Meerkats are widely shown on television and in films. The long-running Kalahari Meerkat Project, founded by Tim Clutton-Brock, studies their cooperation and moved to the Kuruman River Reserve in 1993.",
+    "relatives": "The meerkat, also called the suricate, is a mongoose of the family Herpestidae. It belongs to the group of social mongooses alongside the dwarf mongooses, banded mongooses, kusimanses and the Liberian mongoose, and diverged from the rest of that group between 22.6 and 15.6 million years ago.\n\nMeerkat fossils from the last 2.59 million years are known from South Africa, and three subspecies are recognised.",
+    "didYouKnow": "Burrow temperatures lag about eight hours behind the outside air, so the tunnels are coolest by day and warmest at night.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "24–35 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "0.62–0.97 kg"
+      },
+      {
+        "label": "Pack size",
+        "value": "2–30"
+      },
+      {
+        "label": "Lifespan",
+        "value": "5–15 years (wild)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do adult meerkats help pups learn to eat scorpions?",
+        "choices": [
+          "They remove the sting first",
+          "They let pups get stung",
+          "They feed only dead ones",
+          "They roll the scorpion in sand until its venom dries out"
+        ],
+        "explanation": "Adults remove the stinger and show pups how to handle the prey."
+      },
+      {
+        "prompt": "What share of meerkats are killed by other meerkats?",
+        "choices": [
+          "19%",
+          "1%",
+          "5%",
+          "Nearly half of all adults"
+        ],
+        "explanation": "At 19%, it is the highest recorded rate of death by members of the same species among mammals."
+      },
+      {
+        "prompt": "What does a meerkat do when it hears an alarm for a predator in the air?",
+        "choices": [
+          "Crouches down",
+          "Climbs a tree",
+          "Runs towards the call",
+          "Stands tall and barks back at the predator"
+        ],
+        "explanation": "Aerial alarms make meerkats crouch, while ground alarms make them scan and approach."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Works to conserve threatened species and ecosystems across southern Africa."
+      }
+    ]
+  },
+  {
+    "id": "north-atlantic-right-whale",
+    "name": "North Atlantic Right Whale",
+    "scientificName": "Eubalaena glacialis",
+    "wikipediaTitle": "North Atlantic right whale",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "openOcean"
+    ],
+    "range": "Coastal waters of the western North Atlantic, Florida to Canada",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 38.0,
+      "longitude": -70.0
+    },
+    "mapSpan": 35,
+    "tagline": "A rare Atlantic giant, once the 'right' whale to hunt",
+    "lede": "A broad black back with no fin, a heart-shaped blow and a head crusted with white patches: the North Atlantic right whale is unmistakable, and desperately rare. Only around 380 remain, including about 70 breeding females, sharing their migration route with some of the busiest shipping in the ocean.",
+    "home": "The western population spends spring, summer and autumn feeding between Massachusetts and Newfoundland, especially in the Bay of Fundy, the Gulf of Maine and Cape Cod Bay, and some travel up into the Gulf of St Lawrence. In winter, whales head south to give birth off Georgia and Florida.\n\nRight whales once ranged along European coasts too, from France and the Hebrides to Norway and the Baltic. The eastern population now numbers in the low teens at most, and scientists believe it may become functionally extinct within two decades. Some whales may live mainly around Iceland.",
+    "anatomy": "Adults average 13 to 18 metres and 40,000 to 90,000 kg, with females larger than males; the biggest measured reached 18.5 metres. The skin is dark grey to black, sometimes with white patches on the belly or throat.\n\nThere is no dorsal fin, the flippers are short paddles, and the long, arching mouth starts above the eye. The head makes up a quarter of the body, and a V-shaped blowhole produces the heart-shaped spout.\n\nOn each side of the upper jaw hang 200 to 270 baleen plates, each about 3 metres long. The rough white patches on the head, called callosities, are hardened skin that is present even before birth and is home to colonies of whale lice. Up to 45% of the body weight is blubber.",
+    "life": "Right whales feed mostly on copepods, along with krill, pteropods and larval barnacles, swimming slowly through dense patches at or just below the surface. Sei whales, basking sharks and minke whales sometimes feed beside them without conflict. They navigate, find food and communicate using low-frequency sounds.\n\nTheir liveliest gatherings are surface active groups, in which several males crowd around a single female to mate. The only known natural predator is the killer whale, with a single recorded case.",
+    "family": "Breeding is promiscuous. Females first give birth at about nine or ten years old after a year-long pregnancy. Calves are 4 to 4.6 metres long at birth and weigh around 1,400 kg. The gap between births has grown since the 1990s and now averages three to six years.\n\nLifespan is believed to be at least 70 years, and age can be read from earwax after death. Yet a 2024 study found the average lifespan to be only 22 years, with just 10% of whales living beyond 47.",
+    "remarkable": "A male known as Porter, seen off Cape Cod in May 1999, turned up in a fjord in northern Norway that September and was back off Cape Cod by the following winter, having travelled more than 11,460 kilometres.",
+    "outlook": "The species is protected under the US Endangered Species Act and Canada's Species at Risk Act, and listed on CITES Appendix I. Ship strikes and entanglement in fixed fishing gear such as lobster pots and gillnets are the two greatest threats, together causing nearly half of all deaths since 1970.\n\nAn unusual mortality event has been running since 2017, a year with 35 deaths and serious injuries. Shipping lanes in the Bay of Fundy and off Boston have been moved, and vessel speed limits imposed along the US east coast. Ship noise, linked to chronic stress, and climate-driven shifts in their copepod prey add to the pressure.",
+    "people": "Their name reflects how 'right' they were for whalers: slow, coastal and so fatty that they floated when killed, so blubber could be stripped beside the boat. Basque whalers hunted them in the Bay of Biscay from the 11th century and reached eastern Canada by 1530.\n\nAmerican whalers from Nantucket and New Bedford took up to a hundred a year, once 29 in a single day in Cape Cod Bay in 1700. By 1935 there may have been fewer than 100 left. A global ban on hunting came in 1937, and Madeira took the last two in 1967.",
+    "relatives": "Eubalaena glacialis means 'good, or true, whale of the ice'. It is one of three right whale species in the genus Eubalaena, all once treated as a single species, and is slightly smaller on average than its North Pacific cousin.\n\nBones credited to an 18th-century 'Swedenborg whale' were long thought to belong to this species, but DNA tests in 2013 showed they came from a bowhead.",
+    "didYouKnow": "After the September 11 attacks, a sudden drop in vessel traffic in the Bay of Fundy coincided with lower levels of stress hormones in the whales' faeces.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "13–18 m"
+      },
+      {
+        "label": "Weight",
+        "value": "40,000–90,000 kg"
+      },
+      {
+        "label": "Calf at birth",
+        "value": "4–4.6 m"
+      },
+      {
+        "label": "Population",
+        "value": "About 380 (2026)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What are the white patches on a right whale's head?",
+        "choices": [
+          "Hardened skin called callosities",
+          "Barnacle shells",
+          "Scars from fishing gear",
+          "Patches of fat that show through the skin in cold water"
+        ],
+        "explanation": "Callosities are rough patches of hardened skin, home to whale lice."
+      },
+      {
+        "prompt": "Where do western North Atlantic right whales give birth?",
+        "choices": [
+          "Off Georgia and Florida",
+          "Off Iceland",
+          "In the Bay of Biscay",
+          "In the Gulf of Mexico near the Mississippi delta"
+        ],
+        "explanation": "They migrate south in winter to calve off the coasts of Georgia and Florida."
+      },
+      {
+        "prompt": "Why were right whales so easy for whalers to catch?",
+        "choices": [
+          "They floated when killed",
+          "They followed ships",
+          "They sang loudly",
+          "They slept at the surface in large groups every night"
+        ],
+        "explanation": "Their slow speed, coastal habits and buoyant blubber made them easy targets."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns for policies that protect whales and other ocean life."
+      },
+      {
+        "name": "International Fund for Animal Welfare",
+        "url": "https://www.ifaw.org",
+        "blurb": "Works to protect animals, including whales threatened by ships and fishing gear."
+      }
+    ]
+  },
+  {
+    "id": "razorbill",
+    "name": "Razorbill",
+    "scientificName": "Alca torda",
+    "wikipediaTitle": "Razorbill",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "naEast",
+      "arctic"
+    ],
+    "range": "Cliffs, islands and seas of the North Atlantic",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 58.0,
+      "longitude": -25.0
+    },
+    "mapSpan": 50,
+    "tagline": "The great auk's last living relative",
+    "lede": "Black above, white below, with a deep, blade-like bill crossed by a thin white line, the razorbill is a sharp-dressed seabird of the North Atlantic. It is the closest living relative of the great auk, which vanished in the mid-19th century.",
+    "home": "Razorbills breed on islands, rocky shores and cliffs around the North Atlantic, from Maine in eastern North America to western Europe between north-western Russia and northern France. Most of the world's population, perhaps 60 to 70%, breeds in Iceland.\n\nThey thrive in water below 15 °C and, unlike other auks, often feed in large, less salty estuaries. Outside the breeding season they live entirely at sea. North American birds move offshore and south from the Labrador Sea to New England, while European birds gather in the North Sea and some reach the western Mediterranean.",
+    "anatomy": "This is a large, thick-set auk, 37 to 39 centimetres long and weighing 505 to 890 grams. In breeding plumage the head, neck, back and feet are black and the belly white, and a fine white line runs from the eye to the bill. In winter the throat and cheeks turn white and the face line fades.\n\nThe black bill is deep and flattened sideways with a blunt end, and carries several vertical grooves near the curved tip, one marked with a broken white line. Its tail is long for an auk, with the central feathers slightly longer. Males and females look alike, though males are usually bigger.",
+    "life": "Razorbills dive by flapping their half-folded wings, spreading out rather than hunting in groups. Most feeding happens around 25 metres down, but they can reach 120 metres, and a single dive can yield several fish.\n\nThey eat schooling mid-water fish such as capelin, sandeels, sprats, herring and young cod, plus some crustaceans and worms, and spend about 44% of their time foraging. Great black-backed gulls, peregrine falcons, ravens and crows take adults, and in the far north Arctic foxes and polar bears can raid colonies. Diving is a razorbill's best escape.",
+    "family": "Females choose their mates, often letting males compete, and pairs then stay together for life, courting with bill-touching and flights to keep their bond. Birds first breed at three to five years old. Rather than open ledges, they nest in crevices or among boulders, which suffer less predation, and reuse the same site each year.\n\nNests sit a few metres apart, so colonies are less quarrelsome than those of guillemots, and before laying a male guards his mate by knocking rival males away with his bill. The single egg, laid in late April or May, is incubated by both parents for about 35 days.\n\nOnce it hatches, one parent always stays with the chick while the other fetches food, often some 12 kilometres away. After 17 to 23 days the chick, still unable to fly, jumps from the cliff and heads to sea with its father. The average lifespan is about 13 years.",
+    "remarkable": "One razorbill ringed in the United Kingdom in 1967 lived for at least 41 years, the record for the species. With yearly survival rates of 89 to 95%, long lives are not unusual.",
+    "outlook": "In the early 20th century razorbills were taken for eggs, meat and feathers, sharply reducing their numbers, until the United States protected them under the Migratory Bird Treaty Act.\n\nToday the IUCN records the population as fluctuating: it fell between 2015 and 2021 and now seems stable or rising, at an estimated 838,000 to 1,600,000 mature birds. Oil spills, damage to breeding sites, drowning in fishing nets and overfishing of their prey remain threats. Poorer food has sometimes driven razorbills far outside their usual range.",
+    "people": "On the remote Scottish islands of St Kilda, men scaled the cliffs to collect razorbill eggs until the late 1920s, burying them in peat ash to be eaten later. Older names for the bird include auk, razor-billed auk and lesser auk.\n\nLinnaeus named the genus in 1758, with Stora Karlsö, an island off Gotland in Sweden, as the type locality. Both parts of the scientific name come from Scandinavian words for the bird: Alca from Norwegian alke and torda from a Gotland dialect word.",
+    "relatives": "The razorbill is the only living member of the genus Alca, in the auk family, Alcidae.\n\nIts tribe, Alcini, also includes the common and thick-billed murres and the little auk, and some ornithologists would return the great auk to Alca. The genus was far more diverse in the Pliocene, with fossil species found in the United States, Belgium and Italy.",
+    "didYouKnow": "Before egg-laying, razorbills gather in large flocks that dive and swim in circles, then all surface together, heads first with bills open.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "37–39 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "505–890 g"
+      },
+      {
+        "label": "Dive depth",
+        "value": "Up to 120 m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 13 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a razorbill chick leave its nest?",
+        "choices": [
+          "It jumps from the cliff",
+          "Its parents carry it",
+          "It waits until it can fly",
+          "It climbs down the rocks at night while gulls are asleep"
+        ],
+        "explanation": "At 17 to 23 days old it leaps from the cliff and goes to sea with its father."
+      },
+      {
+        "prompt": "Which extinct bird was the razorbill's closest relative?",
+        "choices": [
+          "Great auk",
+          "Dodo",
+          "Moa",
+          "Labrador duck of North America"
+        ],
+        "explanation": "The razorbill is the closest living relative of the great auk."
+      },
+      {
+        "prompt": "Where does most of the world's razorbill population breed?",
+        "choices": [
+          "Iceland",
+          "Norway",
+          "Greenland",
+          "The rocky coasts of Maine and Nova Scotia"
+        ],
+        "explanation": "Perhaps 60 to 70% of all razorbills breed in Iceland."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, protecting seabird colonies and coasts."
+      },
+      {
+        "name": "National Audubon Society",
+        "url": "https://www.audubon.org",
+        "blurb": "Protects birds and their habitats across the Americas, including Atlantic seabirds."
+      }
+    ]
+  },
+  {
+    "id": "northern-elephant-seal",
+    "name": "Northern Elephant Seal",
+    "scientificName": "Mirounga angustirostris",
+    "wikipediaTitle": "Northern elephant seal",
+    "group": "mammal",
+    "regions": [
+      "naWest",
+      "openOcean"
+    ],
+    "range": "Eastern North Pacific, breeding from California to Baja California",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 36.0,
+      "longitude": -128.0
+    },
+    "mapSpan": 35,
+    "tagline": "Huge-nosed deep divers, back from the brink",
+    "lede": "On winter beaches from California to Mexico, giant bulls with drooping noses rear up and slam into each other, fighting for the right to a harem. Hunted to the brink in the 19th century, northern elephant seals have made one of the great comebacks in the ocean.",
+    "home": "Northern elephant seals live in the eastern Pacific and spend most of their lives at sea, coming ashore only to give birth, breed and moult. Most rookeries are on offshore islands or remote mainland beaches between Point Reyes in California and Isla Natividad in Mexico, including the Channel Islands, Año Nuevo and Isla Guadalupe.\n\nThe breeding range has spread north, with births recorded in British Columbia from 2009. After breeding, males migrate north to feed along the continental shelf from Washington to the western Aleutians, while females range over the open north-eastern Pacific, as far west as Hawaii.",
+    "anatomy": "Males typically weigh 1,500 to 2,300 kg and measure 4 to 5 metres, some reaching 3,700 kg. Females weigh 400 to 900 kg, about a third as much, and measure 2.5 to 3.6 metres. Adult males have a large proboscis, which gives the species its name, and bare, speckled pink, white and brown skin on the neck and chest that thickens into a shield for fights.\n\nAs true seals, they have no external ears and cannot turn their hind flippers forward, so they move on land with an awkward lunge. Their large black eyes are rich in low-light pigments, but their whiskers, which sense movement in the water, are their main tool for finding prey in the dark.",
+    "life": "Females hunt mid-water prey in the open ocean, diving on average to about 500 metres and as deep as 1,735 metres, and may dive almost continuously for 20 hours or more a day. Males plunge straight to the sea floor and forage along the bottom.\n\nPrey includes lanternfish, deep-water squid, hake, small sharks, rays and ratfish. To stay down so long, an elephant seal stores oxygen-rich red blood cells in its spleen, which contracts during dives and releases them gradually. Orcas and great white sharks hunt them, mostly taking pups.",
+    "family": "Bulls arrive on the beaches in December and January and fight for rank; a top bull may hold a harem of 30 to 100 cows and could sire more than 500 pups in a lifetime, while many males never mate. Males fast for three months ashore.\n\nEach female nurses a single pup for four weeks, mating in her last days ashore, and delayed implantation lets her time the next birth. Pups are weaned abruptly at 136 to 181 kg, then spend about 12 more weeks on shore learning to swim in the surf. A few females reach 23 years and males 14, but most die younger.",
+    "remarkable": "Bulls threaten each other with a throaty call likened to drumming, an outboard motor or a motorcycle idling in a gymnasium. Despite appearances, the huge nose plays no part in making this sound.",
+    "outlook": "Hunting for blubber oil from the 18th century nearly wiped them out; the population may have fallen to just 20 to 40 animals, and the species was thought extinct in 1884. Protected by Mexico from 1922 and later by US law, including the Marine Mammal Protection Act of 1972, numbers have recovered to more than 200,000.\n\nThe bottleneck left them with little genetic diversity. The Californian population still grows by about 6% a year, but the largest Baja California colonies are shrinking, possibly as warming changes migration. The 1997–98 El Niño may have killed about 80% of that year's pups, and H5N1 bird flu was confirmed in pups at Año Nuevo in February 2026.",
+    "people": "In 1874 Charles Melville Scammon recorded that a single 5.5-metre bull caught on Santa Barbara Island yielded about 795 litres of oil. In 1892 a Smithsonian expedition found a remnant group of eight on Guadalupe Island, and promptly killed several for its collections.\n\nToday the rookeries are a spectacle. At Año Nuevo no seals were seen until 1955, yet thousands of pups are now born there each year, and Piedras Blancas near San Simeon, empty before 1990, has become the largest mainland rookery.",
+    "relatives": "Mirounga angustirostris is one of two elephant seals. Bulls of the southern elephant seal are larger on average, while females of both species are similar in size, so the southern species is even more lopsided between the sexes.\n\nBoth belong to the Phocidae, the true seals, rather than the sea lions of the Otariidae. Their ancestors were land mammals whose feet evolved into flippers over many thousands of years.",
+    "didYouKnow": "Some pups, known as super weaners, grow exceptionally large by suckling from other females as well as their own mothers.",
+    "facts": [
+      {
+        "label": "Male weight",
+        "value": "1,500–2,300 kg"
+      },
+      {
+        "label": "Female weight",
+        "value": "400–900 kg"
+      },
+      {
+        "label": "Dive depth",
+        "value": "Up to 1,735 m"
+      },
+      {
+        "label": "Population",
+        "value": "Over 200,000"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do elephant seals mainly find prey in the dark?",
+        "choices": [
+          "With their whiskers",
+          "By echolocation",
+          "By smell",
+          "By following the glow of bioluminescent plankton swarms"
+        ],
+        "explanation": "Their whiskers act as sensors of water movement and play the main role in locating prey."
+      },
+      {
+        "prompt": "How small did the population fall in the 19th century?",
+        "choices": [
+          "Perhaps 20 to 40 animals",
+          "About 2,000",
+          "About 10,000",
+          "Roughly half of today's numbers, about 100,000"
+        ],
+        "explanation": "Hunting may have left only 20 to 40 animals, causing a genetic bottleneck."
+      },
+      {
+        "prompt": "Where do male northern elephant seals feed?",
+        "choices": [
+          "Along the continental shelf",
+          "Near Hawaii",
+          "In Antarctic waters",
+          "In shallow lagoons off the coast of Mexico"
+        ],
+        "explanation": "Males migrate north to forage on the sea floor along the shelf from Washington to the Aleutians."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Marine Mammal Center",
+        "url": "https://www.marinemammalcenter.org",
+        "blurb": "Rescues and rehabilitates seals and sea lions along the California coast."
+      }
+    ]
   }
 ]
