@@ -1,4 +1,15 @@
 {
+ "Aardvark": {
+  "credit": {
+   "author": "Kelly Abram",
+   "file": "Orycteropus_afer_175359469.jpg",
+   "license": "CC BY 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Orycteropus_afer_175359469.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Orycteropus_afer_175359469.jpg",
+  "width": 1328
+ },
  "African bush elephant": {
   "credit": {
    "author": "Giles Laurent",
@@ -241,6 +252,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Canada_lynx_by_Michael_Zahra_%28cropped%29.jpg",
   "width": 2608
  },
+ "Capybara": {
+  "credit": {
+   "author": "Giles Laurent",
+   "file": "Capybaracropped.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Capybaracropped.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/71/Capybaracropped.jpg",
+  "width": 6458
+ },
  "Cheetah": {
   "credit": {
    "author": "AfricanConservation",
@@ -384,6 +406,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Gharial_%28Gavialis_gangeticus%29_male.jpg",
   "width": 3564
  },
+ "Giant anteater": {
+  "credit": {
+   "author": "Malene Thyssen",
+   "file": "Myresluger2.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Myresluger2.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Myresluger2.jpg",
+  "width": 850
+ },
  "Glaucus atlanticus": {
   "credit": {
    "author": "Taro Taylor from Sydney, Australia",
@@ -438,6 +471,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/5/54/Hoatzin_%28Opisthocomus_hoazin%29_Rio_Napo.jpg",
   "width": 2501
+ },
+ "Honey badger": {
+  "credit": {
+   "author": "Sumeet Moghe",
+   "file": "Honey_Badger.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Honey_Badger.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/42/Honey_Badger.jpg",
+  "width": 6830
  },
  "Humpback whale": {
   "credit": {
@@ -603,6 +647,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg",
   "width": 3649
+ },
+ "Naked mole-rat": {
+  "credit": {
+   "author": "Kein keen",
+   "file": "Webs180130-rat.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Webs180130-rat.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Webs180130-rat.jpg",
+  "width": 720
  },
  "Narwhal": {
   "credit": {
