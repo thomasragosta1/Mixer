@@ -1,0 +1,819 @@
+[
+  {
+    "id": "atlantic-bluefin-tuna",
+    "name": "Atlantic Bluefin Tuna",
+    "scientificName": "Thunnus thynnus",
+    "wikipediaTitle": "Atlantic bluefin tuna",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "europe",
+      "naEast"
+    ],
+    "range": "North Atlantic Ocean and the Mediterranean Sea",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 40.0,
+      "longitude": -35.0
+    },
+    "mapSpan": 60,
+    "tagline": "A warm-blooded giant that crosses oceans to spawn",
+    "lede": "The Atlantic bluefin tuna is built like a torpedo and can weigh more than half a tonne. It roams the whole width of an ocean, dives into the dark below 1,000 metres and runs its body several degrees warmer than the water around it. After decades of overfishing pushed it towards collapse, it has become one of the great comeback stories of the sea.",
+    "home": "Atlantic bluefins live on both sides of the Atlantic and throughout the Mediterranean Sea, although they have disappeared from the Black Sea. They forage across vast distances, from warm southern waters to the cold, food-rich seas of the far North Atlantic.\n\nThere are two main breeding populations. The eastern stock spawns in the western Mediterranean, especially around the Balearic Islands, while the western stock spawns in the Gulf of Mexico, and a third spawning area may exist in the Slope Sea off the northeastern United States. Satellite tags show that most fish, however far they wander, return to the area where they were born to breed. Their distribution also shifts north and south as the climate of the North Atlantic warms and cools, which explains the recent rise in sightings around Britain.",
+    "anatomy": "The bluefin has a robust, diamond-shaped body, a conical head and a fairly large mouth. It is dark blue above and grey below, with a golden shimmer along its flanks and bright yellow finlets near the tail. Its pectoral fins are relatively short, and a small 'pineal window' in the head is thought to help it navigate its huge range.\n\nFully grown adults average 2 to 2.5 metres long and weigh about 225 to 250 kg. The largest one caught under game-fishing rules, off Prince Edward Island in Canada, weighed 679 kg and measured 3.84 metres. Its power comes from massive muscles linked by a pair of tendons to a crescent-shaped tail. The body stays stiff while only the tail flicks, which makes each stroke very efficient, and its blood carries unusually high levels of haemoglobin to keep those muscles supplied with oxygen.",
+    "life": "Bluefins hunt small schooling fish such as sardines, herring, mackerel and eels, along with squid and crustaceans. They travel and feed in schools sorted by size, and bursts of speed from their white muscle let them run down fast prey.\n\nThe species carries more than 70 kinds of parasite, none known to harm it. Once grown, an Atlantic bluefin has very few enemies: only the largest billfishes, toothed whales and some open-ocean sharks can tackle an adult.",
+    "family": "Bluefins gather in great numbers to spawn, and over several days a female releases her eggs into the open water, where males fertilise them. A big female can shed up to 40 million eggs at a time. The eggs hatch in about two days, and within a week the larvae are tiny fish that already eat one another. Only about 40% survive their first week, and roughly 0.1% their first year, which is why adults time their spawning to particular places and phases of the moon.\n\nIn the Gulf of Mexico spawning runs from mid-April to mid-June, in water of 24 to 29 °C, while in the Mediterranean it happens from June to August. Eastern fish are thought to mature a year or two earlier than western ones. Most bluefins in one survey were under 15 years old, but the very largest may live to 50.",
+    "remarkable": "All tunas are warm-blooded to some degree, but the bluefin is the best at it of any fish. A heat-exchanging network of blood vessels called a rete mirabile passes warmth from blood leaving its core muscles to cold blood arriving from the gills, so the heat stays inside its body instead of leaking into the sea. This is what lets the bluefin hunt in the chilly North Atlantic, where few other large predatory fish can keep up.",
+    "outlook": "Demand for its meat drove severe overfishing. In 2009 the International Commission for the Conservation of Atlantic Tunas reported that stocks had fallen by 72% in the eastern Atlantic and 82% in the western Atlantic over 40 years. A proposal to ban international trade in the species was voted down in 2010, and Greenpeace placed it on its seafood red list that year.\n\nStricter quotas and better enforcement have since paid off. In 2021 the IUCN moved the species from Endangered to Least Concern, and by 2026 it was being described as back from the brink, helped by its huge egg output, favourable ocean conditions and recovering prey. Some regional stocks, including the western fish that spawn in the Gulf of Mexico, remain depleted, and the 2010 Deepwater Horizon oil spill struck that spawning ground at its busiest season.",
+    "people": "People have eaten bluefin for an extraordinarily long time: its bones turn up in Middle Palaeolithic layers of Gorham's Cave in Gibraltar. Around the Mediterranean, elaborate mazes of nets known as tonnara in Italy and almadraba in Spain trapped spawning tuna for more than a thousand years. In Britain it was long called the tunny, and the word 'tuna', from the Spanish atún, caught on in California in the early 1900s.\n\nToday about 80% of the Atlantic and Pacific bluefin caught are eaten in Japan, where it is prized for sushi and sashimi. One Atlantic bluefin caught off the eastern United States sold for US$247,000 at Tokyo's Tsukiji market in 2008. Canadian fishermen began fattening wild-caught young tuna in pens in the 1970s, and such ranching now takes place across the Mediterranean.",
+    "relatives": "Carl Linnaeus described the species in 1758 as Scomber thynnus. It belongs to the mackerel family, Scombridae, and its closest relative is the Pacific bluefin tuna. The southern bluefin looks similar but is actually closer to the yellowfin and bigeye tunas; the resemblance arose through convergent evolution. Alongside marlins and swordfish, the Atlantic bluefin ranks among the largest of the spiny-finned fishes.",
+    "didYouKnow": "In 1934, off Liverpool in Nova Scotia, six anglers taking turns battled a single bluefin for 62 hours, the longest recorded fight between people and a tuna.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "2–2.5 m (adults)"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 680 kg"
+      },
+      {
+        "label": "Dives",
+        "value": "Over 1,000 m deep"
+      },
+      {
+        "label": "Eggs",
+        "value": "Up to 40 million"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the western stock of Atlantic bluefin spawn?",
+        "choices": [
+          "Gulf of Mexico",
+          "Black Sea",
+          "Around the Balearic Islands",
+          "In the cold waters off Prince Edward Island"
+        ],
+        "explanation": "Western fish spawn in the Gulf of Mexico; eastern fish spawn in the western Mediterranean."
+      },
+      {
+        "prompt": "How does the bluefin keep its core muscles warm?",
+        "choices": [
+          "A heat-exchanging web of blood vessels",
+          "Basking at the surface",
+          "Shivering its fins",
+          "Eating oily prey that releases heat as it digests"
+        ],
+        "explanation": "A rete mirabile passes heat from outgoing to incoming blood so it isn't lost to the sea."
+      },
+      {
+        "prompt": "Roughly what share of caught bluefin is eaten in Japan?",
+        "choices": [
+          "About 80%",
+          "About 10%",
+          "About 50%",
+          "Almost none, since most is canned for Europe"
+        ],
+        "explanation": "About 80% of Atlantic and Pacific bluefin caught are consumed in Japan."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns for science-based fishing limits that let ocean wildlife recover."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works on sustainable fisheries and ocean conservation worldwide."
+      }
+    ]
+  },
+  {
+    "id": "seven-spot-ladybird",
+    "name": "Seven-spot Ladybird",
+    "scientificName": "Coccinella septempunctata",
+    "wikipediaTitle": "Coccinella septempunctata",
+    "group": "insect",
+    "regions": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "range": "Europe, most of Asia and North Africa; introduced to North America",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": 50.0
+    },
+    "mapSpan": 80,
+    "tagline": "The aphid hunter in a scarlet, seven-spotted coat",
+    "lede": "Seven black spots on scarlet wing cases make this one of the most recognisable insects on Earth. Behind the cheerful colours is a tireless predator of aphids, so useful to farmers that it has been carried across continents to guard their crops.",
+    "home": "The seven-spot ladybird is native to the Palearctic, ranging across Europe, including Britain and European Russia, most of Asia from the Middle East to China, Japan, the Koreas, India and Pakistan, and North Africa. It thrives wherever the climate is temperate, plants are plentiful and aphids gather.\n\nIt turns up in forests, grasslands, farmland, marshes, parks and gardens, on everything from herbs and crops to trees and shrubs, from sea level up to about 1,500 metres. It has also been introduced to South Africa and North America, where it is now found across the whole United States and southern Canada.",
+    "anatomy": "The adult is a small, oval, domed beetle 6.5 to 7.8 millimetres long and about 4 millimetres wide. Its hardened forewings, the elytra, are orange-red, with three black spots on each side and a seventh straddling the join just behind the head. Two small white patches sit just in front of that central spot, and there are more white marks on the shield over its thorax. The size and position of the spots vary a little between individuals, and the colours double as a warning: the redder the wings and the bigger the spots, the more toxic the beetle tends to be.\n\nThe eggs are about 1 millimetre long, orange or yellow and spindle-shaped. Larvae look nothing like the adults: they are long, segmented and mostly dull black, growing from 1 to 2 millimetres at hatching to about 8 millimetres.",
+    "life": "Both adults and larvae feed on aphids, taking at least 24 different species. They find them by smell, homing in on the alarm signals aphids give off and on chemicals released by plants under aphid attack. Some aphids are best avoided: the lupin aphid absorbs toxins from its food plant that can stupefy the ladybird and stunt its growth. When aphids run short, the beetles survive on pollen, nectar, thrips and whitefly, though they cannot breed on that diet.\n\nAdults have few enemies. As well as their warning colours, they defend themselves by reflex bleeding, oozing a foul-tasting fluid laced with alkaloids from their leg joints. Birds, small mammals, spiders and other ladybirds still take some, and parasitic wasps lay their eggs inside them. In winter adults gather in clusters to hibernate, drawn together by a scent one of them releases, which also guarantees partners when spring comes.",
+    "family": "The seven-spot develops from egg through four larval stages and a pupa to the adult in about six weeks, and in good conditions it can fit in five generations a year. Adults are ready to breed 10 to 14 days after emerging, and unmated females release a scent that draws in males.\n\nIn summer, females lay clusters of about 10 to 30 eggs on leaves and stems, using smell to avoid spots where other seven-spots have already laid. Over her life a female lays 250 to 500 eggs. Larvae hatch after about four days and start by eating their own eggshells and any infertile eggs nearby. There is no parental care. An adult can live for one to two years, depending on whether it survives the winter.",
+    "remarkable": "During the English heatwave of 1976, a warm spring had produced a glut of aphids, and then the drought shrivelled their food plants. Ladybirds that had multiplied on the feast took to the air in search of food, and an estimated 23.65 billion seven-spots piled up along the south and east coasts. Healthy ones can fly 120 kilometres at a height of 1,000 metres, but these were too exhausted to cross the sea. Locals called it 'the year of the ladybird', and the thirsty beetles even bit people in an effort to take in moisture.",
+    "outlook": "The seven-spot ladybird has not been evaluated by the IUCN. It is common across much of its range, but in parts of Europe it is declining because of the harlequin ladybird from Asia, which resists disease better, competes for the same food and even eats seven-spots. The harlequin reached the south coast of England in 2004.\n\nIn North America the roles are reversed. There, the seven-spot is the newcomer, and together with the harlequin it is thought to have contributed to sharp declines in native ladybirds, including other members of its own genus.",
+    "people": "Legend says that medieval farmers prayed to the Virgin Mary to save their crops from pests, and red beetles arrived to eat them. The farmers called them 'The Beetle of Our Lady', which became 'ladybird' and 'ladybug', and the red wings were linked to the red cloak Mary wears in paintings. In Sweden the insect is called nyckelpiga, 'key helper', and in Spain mariquita, from Maria.\n\nIt is the national insect of Finland and the official insect of five US states: Massachusetts, New Hampshire, Delaware, Ohio and Tennessee. Repeated efforts were made between 1956 and 1971 to release it in North America to fight aphids, and breeding programmes around the world now mass-rear it for release on farmland.",
+    "relatives": "Carl Linnaeus named the species in 1758. Coccinella comes from the Latin coccineus, 'scarlet', and septempunctata simply means 'seven-spotted'. It is one of roughly 5,000 species in the ladybird family, Coccinellidae. Its relatives include the invasive harlequin ladybird, which eats a broader range of food, and the nine-spotted ladybug, the state insect of New York.",
+    "didYouKnow": "Despite deliberate releases, the seven-spot only became established in the United States in 1973, when a population turned up in New Jersey, apparently brought in by accident with waste from John F. Kennedy International Airport.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "6.5–7.8 mm"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly aphids"
+      },
+      {
+        "label": "Lifespan",
+        "value": "1–2 years"
+      },
+      {
+        "label": "Eggs",
+        "value": "250–500 per female"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the seven-spot ladybird's 'reflex bleeding'?",
+        "choices": [
+          "Oozing foul fluid from its leg joints",
+          "Shedding its wing cases",
+          "Playing dead",
+          "Flashing its hind wings to startle an attacker into fleeing"
+        ],
+        "explanation": "It releases a bitter, alkaloid-rich fluid from its leg joints to deter predators."
+      },
+      {
+        "prompt": "Roughly how many seven-spots swarmed England's coasts in 1976?",
+        "choices": [
+          "About 23 billion",
+          "About 2 million",
+          "About 230 million",
+          "Nearly a trillion, covering every beach in Britain"
+        ],
+        "explanation": "An estimated 23.65 billion piled up on the south and east coasts during the heatwave."
+      },
+      {
+        "prompt": "Which country has the seven-spot as its national insect?",
+        "choices": [
+          "Finland",
+          "Sweden",
+          "Malta",
+          "Spain"
+        ],
+        "explanation": "It is the national insect of Finland."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Works to protect insects and other invertebrates and the habitats they need."
+      }
+    ]
+  },
+  {
+    "id": "bat-eared-fox",
+    "name": "Bat-eared Fox",
+    "scientificName": "Otocyon megalotis",
+    "wikipediaTitle": "Bat-eared fox",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Dry grasslands and savannas of eastern and southern Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -12.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 55,
+    "tagline": "A termite-eating fox that hunts with its huge ears",
+    "lede": "Picture a small fox wearing ears far too big for its head, and you have the bat-eared fox. Instead of chasing rabbits or birds, it spends its time listening for termites underground, and it carries a mouthful of teeth unlike any other dog's.",
+    "home": "Bat-eared foxes live in the dry and semi-dry country of eastern and southern Africa, in two separate populations roughly 1,000 kilometres apart that were probably joined during the Pleistocene. One subspecies ranges from southern Sudan, Ethiopia and Somalia through Uganda and Kenya to southwestern Tanzania; the other runs from Angola, Namibia and Botswana through South Africa to the Cape, and east into Zimbabwe and Mozambique.\n\nThey favour short grassland, open acacia woodland and the drier parts of the savanna, especially bare ground where grazing antelope and other hoofed animals keep the grass short. They dig dens to escape heat and wind as well as to raise their young, rest in the shade of acacias, and duck into tall grass or thick shrubs when threatened. A home range covers 0.3 to 3.5 square kilometres.",
+    "anatomy": "This is a small canid, weighing 3 to 5.3 kg, with a head and body 46 to 66 centimetres long and a bushy tail of 23 to 34 centimetres. Its ears measure 11 to 13 centimetres and help it shed heat as well as hear. The coat is tan with grey-tipped guard hairs, pale on the throat and belly, with dark legs and a black muzzle, face mask and tail tip; the insides of the ears are white. Unusually for a canid, females are generally larger than males.\n\nIts teeth are small and blunt, with strong roots but little shearing edge, suited to crunching insects rather than slicing meat. It has 46 to 50 teeth in total, the highest number known in any land mammal that is not a marsupial, including more molars than any other placental mammal. A step-shaped bony ledge on the lower jaw anchors a muscle that lets it open and shut its mouth five times a second.",
+    "life": "The bat-eared fox is the only truly insect-eating member of the dog family, and harvester termites can make up 80 to 90% of its diet. It also eats other termites, ants, dung beetles, crickets, grasshoppers, millipedes, scorpions and spiders, along with occasional rodents, lizards, eggs, fruit and even desert truffles. It refuses snouted harvester termites, probably because it cannot cope with their chemical defences. It hunts mainly by sound, walking slowly with its nose low and its ears tilted forward, and it will raid termite mounds that aardvarks have broken open.\n\nAround the Serengeti it is active mostly at night, while in South Africa it switches to daytime foraging in winter. These are sociable animals that forage, play and rest together, groom each other at length and talk with their ears and tails; an arched tail signals excitement, aggression or play.",
+    "family": "Most pairs are monogamous, though some groups include one male and up to three related females. After a pregnancy of 60 to 70 days the female gives birth to one to six pups, born in the southern spring. She nurses them for 14 to 15 weeks, spending much of her time foraging to keep up her milk, but she does not carry food back to them.\n\nThe young leave their family at 5 to 6 months old and are mature at 8 to 9 months. Bat-eared foxes have lived up to 9 years in the wild and 14 to 17 years in captivity.",
+    "remarkable": "In most of the dog family the mother does the bulk of the childcare, but bat-eared foxes reverse the roles. The father grooms the pups, huddles with them, guards the den, chaperones them on outings and carries them between dens. How much time a male spends at the den is directly linked to how many of his pups survive.",
+    "outlook": "The bat-eared fox is listed as Least Concern by the IUCN and by the South African National Biodiversity Institute, and parts of its range lie within protected areas. There are no major threats to the species, though hunting, drought and diseases such as canine distemper, parvovirus and rabies can cut numbers locally for a while.\n\nLarge carnivores, big birds of prey and rock pythons all take bat-eared foxes. Black-backed jackals are the main danger to pups, and adults gang up to mob them away from breeding areas.",
+    "people": "The 'bat' in its name probably refers to the Egyptian slit-faced bat, a common bat in the same region that also has very large ears. It goes by many other names, including big-eared fox, black-eared fox, Delalande's fox and motlosi.\n\nBy eating harvester termites, which are considered pests, the fox does farmers a favour. It has been hunted for its fur in Botswana, and it is kept in zoos in North America, South Africa, Europe and Asia.",
+    "relatives": "Its scientific name means 'big-eared ear-dog': Otocyon comes from the Greek for ear and dog, and megalotis from the Greek for large ear. First described as Canis megalotis because it resembles a jackal, it was later given its own genus, of which it is the only living member. Genetically it is a sister to all other fox-like canids rather than a true fox, and it is similar in size to its close relatives the Cape fox and the raccoon dog.\n\nIts fossil record is thin. An extinct relative, now usually placed in the genus Prototocyon, is known from Olduvai Gorge in Tanzania, and the oldest fossils of the bat-eared fox itself, from Kenya, are about 300,000 years old.",
+    "didYouKnow": "When termites are plentiful, feeding gatherings of up to 15 bat-eared foxes from different families can form without any fighting over food.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "3–5.3 kg"
+      },
+      {
+        "label": "Ears",
+        "value": "11–13 cm long"
+      },
+      {
+        "label": "Teeth",
+        "value": "46–50"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly harvester termites"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which parent does most of the pup care in bat-eared foxes?",
+        "choices": [
+          "The father",
+          "The mother",
+          "Older siblings",
+          "Unrelated helpers from neighbouring family groups"
+        ],
+        "explanation": "Males groom, guard, huddle with and carry the pups."
+      },
+      {
+        "prompt": "How does a bat-eared fox mainly locate its prey?",
+        "choices": [
+          "By listening",
+          "By sight",
+          "By smell alone",
+          "By feeling vibrations in the sand through its paws"
+        ],
+        "explanation": "It finds insects mainly by sound, walking slowly with its ears tilted forward."
+      },
+      {
+        "prompt": "What makes up most of the bat-eared fox's diet?",
+        "choices": [
+          "Harvester termites",
+          "Rodents",
+          "Wild fruit",
+          "Small birds and their eggs taken from ground nests"
+        ],
+        "explanation": "Harvester termites can make up 80 to 90% of what it eats."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Protects species and ecosystems across southern Africa."
+      }
+    ]
+  },
+  {
+    "id": "elkhorn-coral",
+    "name": "Elkhorn Coral",
+    "scientificName": "Acropora palmata",
+    "wikipediaTitle": "Elkhorn coral",
+    "group": "marineInvertebrate",
+    "regions": [
+      "centralAmerica",
+      "naEast"
+    ],
+    "range": "Shallow reefs of Florida, the Bahamas and the Caribbean",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 18.0,
+      "longitude": -74.0
+    },
+    "mapSpan": 25,
+    "tagline": "The antler-shaped coral that built the Caribbean's reefs",
+    "lede": "Elkhorn coral grows in thick, flattened branches that look like the antlers of an elk, forming thickets just below the surface of Caribbean seas. For thousands of years it was a foundation of the region's reefs. Within a single human lifetime, it has all but vanished from many of them.",
+    "home": "Elkhorn coral grows in clear, shallow water throughout the Bahamas, Florida and the Caribbean, reaching as far as the northern coast of Venezuela. Its northernmost outpost lies off Broward County in Florida, and today it survives in places such as the southern Florida coast and the Bay Islands of Honduras.\n\nIt lives between 1 and 5 metres deep, in rough, wave-washed water. That depth gives its partner algae plenty of sunlight, and the constant pounding of the surf actually helps it spread, by snapping off pieces that can grow into new colonies.",
+    "anatomy": "Each colony builds a hard skeleton of calcium carbonate in the shape of broad, branching antlers, dull brownish-yellow in colour. A large colony can stand more than 2 metres high and spread up to 13 metres wide, and its thick branches interlock into a dense lattice.\n\nIt is one of the fastest-growing corals. Colonies typically add 5 to 10 centimetres a year, healthy branches can lengthen by up to 13 centimetres, and a colony can reach full size in 10 to 12 years. Colonies can live for centuries, although growth slows sharply when they are stressed.",
+    "life": "Most of the coral's food comes from zooxanthellae, single-celled algae living inside its cells. They use sunlight to turn carbon dioxide and water into sugars and oxygen, which they share with their host in return for shelter. Because it relies so heavily on light, elkhorn coral suffers when the water turns cloudy.\n\nIt can also hunt. At night it reaches out with its tentacles to catch zooplankton, the tiny animals that sink to the depths by day and rise towards the surface after dark. Feeding at night saves energy, and during bleaching or long spells of murky water this filter feeding helps keep it alive.",
+    "family": "Each colony is a simultaneous hermaphrodite, producing both eggs and sperm, but it seldom fertilises itself: two genetically different parents are needed. Spawning happens once a year, for just a few nights after a full moon in July, August or September. The colonies release eggs and sperm into the water, and the larvae that result settle on hard surfaces to start new colonies. Success rates are low.\n\nMost new colonies form another way. Storms, heavy waves or passing boats break off branches, which are carried elsewhere, take hold and grow. These new colonies are clones of their parent, and unlike spawning, this fragmentation can happen at any time of year.",
+    "remarkable": "Elkhorn coral evolved during the Pliocene, between about 5.2 and 2.58 million years ago, and its speed and its knack for spreading by fragments made it a chief architect of Caribbean reefs. For the last 5,000 years it formed the southeastern reefs together with staghorn and star corals. Its growth rate even let reefs keep pace with rising sea levels, and since its decline no other coral has taken over that role.",
+    "outlook": "Elkhorn coral dominated the Caribbean in the early 1980s, but its numbers fell by around 97% between 1980 and 2006. Rising sea temperatures make it expel its algae and bleach, ocean acidification weakens its skeleton, and overfishing removes the fish that graze down smothering seaweed. Untreated sewage spreads white pox, a contagious disease whose lesions can grow by 10.5 square centimetres a day; one outbreak in 2005 wiped out 75% of Caribbean corals.\n\nIt was listed as threatened under the US Endangered Species Act in 2006, alongside staghorn coral, and kept at that level in 2014 partly over fears that a more severe listing would discourage restoration. After the marine heatwave of 2023, it is considered functionally extinct on Florida's Coral Reef.",
+    "people": "Elkhorn thickets are valuable to people as well as fish. Their tangled branches shelter young fish and protect them from predators, making reefs richer and more attractive to tourists. They also act as natural breakwaters, absorbing the energy of storm waves before they hit the shore and reducing damage to coastal homes.\n\nIn 2009 US recovery funding paid for a network of coral nurseries off southern Florida and the US Virgin Islands. New research suggests nursery-grown fragments can be planted on reefs after just two weeks instead of months or years, making restoration roughly 30 times cheaper.",
+    "relatives": "Elkhorn coral belongs to the genus Acropora, a large group of branching reef-building corals. Its closest companion in the Caribbean is staghorn coral, which shares its habitat and many of its traits and is listed with it under US law. The two even interbreed, producing a hybrid known as Acropora prolifera.",
+    "didYouKnow": "Only about half of all elkhorn coral colonies are genetically unique individuals, because so many are clones grown from broken fragments.",
+    "facts": [
+      {
+        "label": "Growth",
+        "value": "5–10 cm a year"
+      },
+      {
+        "label": "Depth",
+        "value": "1–5 m"
+      },
+      {
+        "label": "Colony size",
+        "value": "Over 2 m high, 13 m wide"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Centuries"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do most new elkhorn coral colonies form?",
+        "choices": [
+          "From broken fragments",
+          "From floating larvae",
+          "By self-fertilisation",
+          "By releasing eggs at every full moon of the year"
+        ],
+        "explanation": "Fragmentation by storms, waves and boats is its most common way of reproducing."
+      },
+      {
+        "prompt": "Where does elkhorn coral get most of its food?",
+        "choices": [
+          "Algae in its tissues",
+          "Small fish",
+          "Seaweed",
+          "Sunlight soaked up directly by its limestone skeleton"
+        ],
+        "explanation": "Zooxanthellae algae living in its cells photosynthesise and share their sugars."
+      },
+      {
+        "prompt": "By roughly how much did elkhorn coral decline between 1980 and 2006?",
+        "choices": [
+          "About 97%",
+          "About 25%",
+          "About 50%",
+          "Barely at all, though it moved into deeper water"
+        ],
+        "explanation": "Disease, warming, algae and human activity cut its numbers by about 97%."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Coral Reef Alliance",
+        "url": "https://www.coralreefalliance.org",
+        "blurb": "Works with communities to reduce local threats to coral reefs."
+      },
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects lands and waters worldwide, including Caribbean reef restoration."
+      }
+    ]
+  },
+  {
+    "id": "chinese-alligator",
+    "name": "Chinese Alligator",
+    "scientificName": "Alligator sinensis",
+    "wikipediaTitle": "Chinese alligator",
+    "group": "reptile",
+    "regions": [
+      "asia"
+    ],
+    "range": "A few ponds and wetlands in southeastern Anhui, China",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 30.9,
+      "longitude": 118.7
+    },
+    "mapSpan": 8,
+    "tagline": "A shy, snail-eating alligator that may have inspired dragons",
+    "lede": "Small, dark and armoured from snout to belly, the Chinese alligator spends half the year dormant in underground tunnels and the warm months crunching snails by night. Once it ranged as far as Japan; now it clings on in a handful of ponds, and it may have helped inspire the Chinese dragon.",
+    "home": "The Chinese alligator is found only in China. It once lived throughout the Yangtze river system, but by the late 1980s it was confined to small ponds in six counties of southeastern Anhui province, and it may survive in neighbouring Jiangsu and Zhejiang. The IUCN puts the area it occupies at about 5 square kilometres. It is the only member of the alligator family living in the Eastern Hemisphere.\n\nIt lives in freshwater wetlands and ponds where subtropical and temperate climates meet, at the foot of hills with grass and shrubs. Habitat loss has pushed some alligators higher than they would choose, into colder places where the soil is poor for digging.",
+    "anatomy": "This is one of the smallest crocodilians, 1.5 to 2.1 metres long and 36 to 45 kg as an adult, less than half the size of the American alligator. Females are about three-quarters the length of males. The largest reported male was 2.46 metres long and weighed 84 kg.\n\nAdults are almost entirely black or dark grey. The snout is short, broad and slightly upturned, the head is sturdy, and a bony wall divides the nostrils. Unlike its American cousin it is armoured even on the belly, with up to 17 rows of scales, and it has bony plates on its upper eyelids. Its toes are not webbed, and its 72 to 76 teeth are dull, which suits a diet of shelled animals.",
+    "life": "From late October to mid-April it lies dormant in burrows dug with its head and front legs beside ponds. These tunnels are often 10 to 25 metres long, with several chambers, pools and entrances, and they never get colder than 10 °C. In spring it basks, and through the summer it feeds at night and shelters by day, avoiding both heat and people. It is docile and does not normally attack humans.\n\nIt eats whatever is available, mostly fish and invertebrates such as snails, mussels, clams, crustaceans and insects, plus rodents and waterbirds when it can. In one 1985 study, snails made up 63% of its diet. It is a chatty reptile, hissing, whining and slapping its head on the water at close range and bellowing over long distances, always at low pitches under 500 hertz that carry well through dense vegetation.",
+    "family": "Mating peaks in mid-June. Both sexes gather at ponds for bellowing choruses that last about 10 minutes, and females mate only with males bigger than themselves. Many clutches have more than one father. In July or August the female piles rotting leaves into a nest 40 to 70 centimetres high, often on an island under thick cover, and lays usually 20 to 30 eggs at night. At about 6 centimetres long and 45 grams, they are the smallest eggs of any crocodilian.\n\nThe eggs incubate for about 70 days at around 25 to 26 °C, and the temperature decides whether each hatchling will be male or female. In September the mother helps her young out and carries them to the water. Hatchlings are just 20 to 22 centimetres long, with pale speckles, and have only about two months to feed before their first winter, when they depend on their mother's protection. Females mature at 4 to 7 years, and the species can live beyond 50 years, reaching 70 in captivity.",
+    "remarkable": "The wild and captive fortunes of this alligator could hardly be more different. In 1998 the largest group left in the wild was 11 animals in a single farmland pond, and fewer than 130 survived in 2001. Yet captive breeding, begun in the 1970s, had produced at least 20,000 Chinese alligators by 2016, about 15,000 of them at one breeding centre near Xuancheng in Anhui.",
+    "outlook": "The species is listed as Critically Endangered by the IUCN, and China has given it the highest level of legal protection since 1972. Its wetlands were drained for rice paddies and dams, and in the 1970s and 1980s people killed alligators as pests, out of fear or for meat thought to cure colds. Floods, poisoned rats and a snail-killing chemical used on farms from 1958 took a toll too.\n\nCaptive-bred alligators are now being returned to the wild, starting with six in 2007, and the wild population had grown to about 300 by 2017. With so few left, inbreeding remains a serious worry.",
+    "people": "The alligator appears in the Classic of Poetry, composed between the 11th and 7th centuries BCE. Marco Polo, the first outsider to write about it, saw it in the late 1200s and reported that it hid in caverns by day, hunted at night and was prized for its meat, skin and gall bladder. It was once called the muddy dragon.\n\nSome writers think it inspired the Chinese dragon, a helpful water creature of royal power and good fortune. The gentle animal wakes as the rainy season begins and returns underground as rivers fall, and drums may once have imitated its bellows, linked to the dragon's power of summoning rain. Its burrows are less welcome to farmers, since they can damage dykes.",
+    "relatives": "The French naturalist Albert-Auguste Fauvel described it scientifically in 1879. It and the American alligator are the only living members of the genus Alligator, in the family Alligatoridae. Its oldest known fossil, about 3 million years old, comes from Japan and shows it was once larger, at least 2 metres long, and Pleistocene fossils show it ranged from Shandong to the Taiwan Strait.",
+    "didYouKnow": "Chinese alligators bellow most often in the early morning, between about 6 and 7 am.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1.5–2.1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "36–45 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "50+ years (70 in captivity)"
+      },
+      {
+        "label": "Wild population",
+        "value": "About 300 (2017)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which food made up most of the Chinese alligator's diet in a 1985 study?",
+        "choices": [
+          "Snails",
+          "Fish",
+          "Ducks",
+          "Young turtles dug from riverbank nests"
+        ],
+        "explanation": "Snails made up 63% of its diet in that study."
+      },
+      {
+        "prompt": "What decides whether a Chinese alligator hatchling is male or female?",
+        "choices": [
+          "Incubation temperature",
+          "The father's size",
+          "Nest height",
+          "Which of several males fathered that particular egg"
+        ],
+        "explanation": "Like many reptiles, it has temperature-dependent sex determination."
+      },
+      {
+        "prompt": "In which Chinese province do wild Chinese alligators mainly survive?",
+        "choices": [
+          "Anhui",
+          "Shandong",
+          "Yunnan",
+          "Guangdong, near the mouth of the Pearl River"
+        ],
+        "explanation": "It is confined to small ponds in southeastern Anhui."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Saves wildlife and wild places worldwide through science and conservation action."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect threatened species and their habitats around the world."
+      }
+    ]
+  },
+  {
+    "id": "arctic-tern",
+    "name": "Arctic Tern",
+    "scientificName": "Sterna paradisaea",
+    "wikipediaTitle": "Arctic tern",
+    "group": "bird",
+    "regions": [
+      "arctic",
+      "europe",
+      "openOcean",
+      "antarctica"
+    ],
+    "range": "Breeds around the Arctic; winters at the edge of Antarctic ice",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": -25.0
+    },
+    "mapSpan": 80,
+    "tagline": "The pole-to-pole flyer with two summers a year",
+    "lede": "The Arctic tern weighs about 100 grams, yet it makes the longest migration known in the animal kingdom, flying from the far north to the edge of Antarctica and back every year. By chasing the sun between hemispheres, it lives through two summers a year and sees more daylight than any other creature.",
+    "home": "Arctic terns breed right around the top of the world, in the Arctic and subarctic of Europe, Asia and North America, south to Brittany in France and Massachusetts in the United States. They nest in colonies on coasts and islands, and sometimes inland on tundra near water.\n\nAfter breeding they head south and spend the southern summer at sea, reaching the northern edge of the Antarctic ice. They usually travel far enough offshore that they are rarely seen from land outside the nesting season.",
+    "anatomy": "This is a slim, medium-sized seabird, 33 to 36 centimetres long with a wingspan of 76 to 85 centimetres and a weight of 86 to 127 grams. Its long, narrow wings and deeply forked tail suit a life of endless flight. In the breeding season it is grey above and pale grey below, with a black cap and nape, white cheeks and a dark red bill, legs and webbed feet. The tips of the pale grey upper wings are almost see-through.\n\nIn winter the crown turns whiter and the bill darker. Young birds have black bills and legs and scaly-looking wings. It closely resembles the common tern but has a longer tail, a bill of one colour and a more nasal, rasping call.",
+    "life": "Arctic terns feed mostly on small fish, especially young shoaling species such as herring, cod, sand lances and capelin, along with crustaceans like amphipods, crabs and krill. They also take molluscs, marine worms and berries, and catch insects on the breeding grounds. They snatch food from just below the surface or plunge-dive, and may swoop at other birds, including other terns, auks and grebes, to make them drop their catch.\n\nThe migration is far longer than a straight line suggests. Although the shortest distance between breeding and wintering grounds is 19,000 kilometres, the birds take winding routes that ride the prevailing winds. A 2010 tracking study found that terns from Greenland and Iceland flew 70,900 kilometres a year on average, and birds from the Netherlands about 48,700 kilometres, following the coasts of Europe and Africa.",
+    "family": "Arctic terns usually start breeding at three or four years old, mate for life and return to the same colony year after year. Courtship begins with a 'high flight', in which the female chases the male high into the sky, followed by 'fish flights' as he offers her fish. The nest is just a scrape in the ground, where the pair raise one to three mottled eggs, usually two, taking turns to incubate them for 22 to 27 days.\n\nThe downy chicks are up and exploring within a few days, are brooded for about ten days, and fly at 21 to 24 days old. Parents bring them bigger fish than they eat themselves, and help them on the first journey south. Colonies are defended fiercely: Arctic terns dive at intruders, including people, and strike the head hard enough to draw blood. Many birds live 15 to 30 years, and the record is 31.",
+    "remarkable": "Between 2015 and 2017, a tern from the Farne Islands in northeast England wearing a tiny light-logging tag flew 96,000 kilometres in just 10 months. It went down the Atlantic, across the Indian Ocean and halfway over the South Pacific before returning along the Antarctic coast, a journey more than twice the circumference of the Earth. Over a lifetime an Arctic tern may cover around 2.4 million kilometres, the same as flying to the Moon and back more than three times.",
+    "outlook": "With more than 2 million birds, over half of them in Europe, and a huge breeding range, the Arctic tern is listed as Least Concern, though its numbers are thought to be falling. In the late 1800s, New England's colonies were reduced by hunting for feathers to decorate hats, and in western Greenland numbers have dropped sharply since 1950 because of continued exploitation.\n\nFood shortages are a growing problem. In Iceland the species was moved to Vulnerable in 2018 after sand eel stocks crashed. At colonies, herring gulls steal eggs and cats take chicks.",
+    "people": "The Arctic tern has appeared on stamps from Canada, Finland, Iceland, Cuba, the Faroe Islands, Åland and Alderney. A European fleet of polar-orbiting weather satellites is named EPS-Sterna in honour of its travels, and the bird once starred in a sketch on the comedy show Whose Line Is It Anyway?\n\nScots names such as pictarnie and tarrock are thought to imitate its call, and because Arctic and common terns are so hard to tell apart, the two share most of their folk names.",
+    "relatives": "The Arctic tern belongs to the gull and tern family, Laridae, and has no recognised subspecies. Its genus name, Sterna, comes from the Old English for tern, and paradisaea from the Late Latin for paradise. Its closest look-alikes are the common tern, with which it often nests in mixed colonies, and the roseate tern, which is slightly paler and shorter-winged.",
+    "didYouKnow": "A chick ringed on the Farne Islands in the summer of 1982 turned up in Melbourne, Australia, that October, just three months after leaving the nest.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "76–85 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "86–127 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "15–30 years"
+      },
+      {
+        "label": "Migration",
+        "value": "Up to 96,000 km a year"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why does the Arctic tern see more daylight than any other creature?",
+        "choices": [
+          "It follows summer between the poles",
+          "It sleeps only in winter",
+          "It flies above the clouds",
+          "It roosts on floating ice that never sees darkness"
+        ],
+        "explanation": "Migrating between Arctic and Antarctic summers gives it two summers a year."
+      },
+      {
+        "prompt": "How many eggs does an Arctic tern usually lay?",
+        "choices": [
+          "Two",
+          "One",
+          "Five",
+          "Six, laid one at a time over a fortnight"
+        ],
+        "explanation": "It lays one to three eggs, most often two."
+      },
+      {
+        "prompt": "What colour is the breeding adult's bill?",
+        "choices": [
+          "Dark red",
+          "Yellow",
+          "Black",
+          "Orange with a black tip, like a common tern's"
+        ],
+        "explanation": "Breeding adults have a dark red bill, legs and feet."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds, their habitats and migration routes."
+      },
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "Protects seabird colonies and other bird habitats across the UK."
+      }
+    ]
+  },
+  {
+    "id": "atlantic-salmon",
+    "name": "Atlantic Salmon",
+    "scientificName": "Salmo salar",
+    "wikipediaTitle": "Atlantic salmon",
+    "group": "fish",
+    "regions": [
+      "europe",
+      "naEast",
+      "openOcean"
+    ],
+    "range": "Rivers of northern Europe and northeastern North America, and the North Atlantic",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 58.0,
+      "longitude": -25.0
+    },
+    "mapSpan": 55,
+    "tagline": "The leaper that returns home from the sea to spawn",
+    "lede": "The Atlantic salmon starts life in the gravel of a cold river, grows fat at sea, then battles back upstream to breed in the very stream where it hatched. Unlike its Pacific cousins, it does not have to die after spawning, and a lucky few make the round trip more than once.",
+    "home": "Atlantic salmon live in the northern Atlantic Ocean and the rivers that drain into it. They breed in rivers from northern Portugal to Norway, Iceland and Greenland, and in North America from Connecticut to northern Labrador and Arctic Canada. In Europe they still reach south to Spain and east to the Pechora River in Russia, and since the early 2000s a warming climate has let them colonise Svalbard, at 78° north.\n\nAt sea, many fish from both sides of the ocean gather to feed off West Greenland. They do not so much swim thousands of kilometres as ride surface currents that carry them in a loop back towards home. Some populations never go to sea at all, living out their lives in large lakes; a landlocked population in Lake Ontario was wiped out by 1896.",
+    "anatomy": "The Atlantic salmon is the largest species in its genus and the third-largest member of the salmon family. After two years at sea a typical fish is 71 to 76 centimetres long and weighs 3.6 to 5.4 kg, but fish that spend four or more winters at sea, or spawn repeatedly, grow much bigger. The heaviest on record, netted in 1960 in the estuary of the river Hope in Scotland, weighed 49.44 kg, and a fish netted in Norway in 1925 measured 160.65 centimetres.\n\nYoung salmon in rivers are marked with blue and red spots. Adults are sleek and silver-blue, with black spots mostly above the line along their sides and a tail that is usually unspotted, and spawning males flush green or red. At sea, iron in the lateral line may let them sense the Earth's magnetic field.",
+    "life": "Young salmon begin hunting within days of using up their yolk, starting on tiny invertebrates and later taking small fish, and some even eat salmon eggs. At sea they feed on plankton and on the young of fish such as herring. Once they weigh more than about 250 grams they are safe from birds and most fish, but seals, Greenland sharks, skates, cod, halibut and people still take them.\n\nWhen they are ready to breed, salmon find their way back to their home river, possibly by recognising its smell, and only about 5% end up in the wrong one. Once back in fresh water they stop eating altogether. Adult Atlantic salmon are considered more aggressive than other salmon species.",
+    "family": "The female digs a nest, called a redd, in a gravelly stream bed by beating her tail to blast away stones. She and a male release eggs and milt just upstream, and she then sweeps gravel over the fertilised eggs. Hatchlings, called alevins, live off their yolk sacs before becoming fry and then parr, spending anywhere from one to eight years in fresh water depending on how far north the river lies.\n\nAt about 15 centimetres long, parr turn silver and become smolts, adjust their bodies to salt water and head downriver between March and June, preferring an ebbing tide. Having fed and grown in the ocean, they eventually head home to breed. Breeding takes a huge toll, and only 5 to 10% survive to return to sea and spawn again.",
+    "remarkable": "Fish from a single river do not all come back at the same age. Some mature as parr without ever leaving fresh water, while others spend one, two or as many as five winters at sea first. This spread works like an insurance policy: if drought leaves a river too low in one year, the fish that stayed out at sea can return to breed in a wetter one.",
+    "outlook": "The IUCN lists the Atlantic salmon as Near Threatened, and the European population has been assessed as Vulnerable. Logging, dams, mills and farming had destroyed more than half of North America's salmon runs by 1850. In the 1950s a drift-net fishery grew up off Greenland and the Faroe Islands, and catches there collapsed from four million fish in 1979 to 700,000 in 1990. Deaths at sea in the western Atlantic more than doubled from about 1990, and some Maine rivers now hold populations listed as endangered.\n\nSalmon that escape from fish farms interbreed with wild fish and dilute their local adaptations. Restoration is slow but under way: more than 3,100 salmon returned to Maine's Penobscot River in 2011, and since 2006 Ontario has released about 6 million young salmon into Lake Ontario and its streams.",
+    "people": "Salmon has been caught for food for thousands of years, from stone and wooden weirs in New England to hand-made gill nets in European rivers. In medieval Scotland it was so valued that King Robert I set a minimum size for fish traps in 1318 so that young fish could pass. Today it is a prized catch for fly anglers, while nearly all the salmon people eat comes from farms in countries such as Norway, Chile, Canada, the UK and the Faroe Islands.\n\nLinnaeus named it Salmo salar in 1758. Salar has been read as 'leaper' but more likely means 'resident of salt water', and the fish has many folk names, including grilse for a fish returning after one winter at sea and kelt for one that has just spawned.",
+    "relatives": "The Atlantic salmon belongs to the salmon family, Salmonidae, which also includes trout and the Pacific salmon. Only the Siberian taimen and the Chinook salmon grow larger. Where they share spawning streams, Atlantic salmon sometimes hybridise with brown trout, their close relative in the same genus. Unlike most Pacific salmon, which die after spawning once, the Atlantic salmon can breed again.",
+    "didYouKnow": "Fish scales from a pond in coastal New Jersey show that Atlantic salmon lived there around 10,000 years ago.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "71–76 cm (typical)"
+      },
+      {
+        "label": "Record weight",
+        "value": "49.44 kg"
+      },
+      {
+        "label": "In fresh water",
+        "value": "1–8 years as a youngster"
+      },
+      {
+        "label": "Diet",
+        "value": "Invertebrates, plankton, small fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is a young salmon called when it turns silver and heads to sea?",
+        "choices": [
+          "A smolt",
+          "An alevin",
+          "A kelt",
+          "A fry, once its yolk sac is used up"
+        ],
+        "explanation": "Parr become smolts as they prepare for salt water."
+      },
+      {
+        "prompt": "What does the species name 'salar' most likely mean?",
+        "choices": [
+          "Resident of salt water",
+          "Leaper",
+          "Silver fish",
+          "Red-fleshed one, after its meat"
+        ],
+        "explanation": "Salar is often read as 'leaper', but more likely means 'resident of salt water'."
+      },
+      {
+        "prompt": "Which fish do Atlantic salmon sometimes hybridise with?",
+        "choices": [
+          "Brown trout",
+          "Chinook salmon",
+          "Siberian taimen",
+          "Atlantic herring met on the Greenland feeding grounds"
+        ],
+        "explanation": "In shared spawning streams they can cross with brown trout."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Atlantic Salmon Federation",
+        "url": "https://www.asf.ca",
+        "blurb": "Works to conserve and restore wild Atlantic salmon and their rivers."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works on healthy rivers and sustainable fisheries around the world."
+      }
+    ]
+  },
+  {
+    "id": "plain-tiger",
+    "name": "Plain Tiger",
+    "scientificName": "Danaus chrysippus",
+    "wikipediaTitle": "Danaus chrysippus",
+    "group": "insect",
+    "regions": [
+      "africa",
+      "asia",
+      "oceania"
+    ],
+    "range": "Open country across Africa, southern Asia and parts of Australia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 5.0,
+      "longitude": 55.0
+    },
+    "mapSpan": 80,
+    "tagline": "A bad-tasting butterfly that half of Africa copies",
+    "lede": "Bold orange wings rimmed in black and white tell every bird in the neighbourhood that the plain tiger tastes vile. The warning works so well that a crowd of other butterflies have evolved to look like it, and people have been painting it for thousands of years.",
+    "home": "The plain tiger is found throughout Africa, across most of Asia including the Indian subcontinent, on many South Pacific islands and in parts of Australia. Three subspecies divide the range: one in Asia, the Mediterranean and northern tropical Africa; one from the Cape Verde Islands through tropical Africa to Yemen and Oman; and one in southern Africa, Madagascar and islands such as Saint Helena and the Seychelles.\n\nIt prefers dry, open country and does less well in jungle. It turns up in deserts, mountains, deciduous forests and the gardens and parks of towns and cities, from sea level to about 1,500 metres.",
+    "anatomy": "This medium-sized butterfly has a wingspan of about 7 to 8 centimetres and a black body dotted with white, about 23 millimetres long, with antennae of about 12 millimetres. The wings are a rich brownish orange, brighter on top than underneath. The tip of each forewing is black with a white band, the hindwing carries three black spots, and all the wings are edged in black with a row of white half-moons.\n\nMales and females look much alike, but the male has large scent glands on his hindwings, which show from below as a black spot with a white centre. The exact colours and patterns vary within and between populations, and it can be confused with the Indian fritillary, which shares some of its range.",
+    "life": "Caterpillars feed mainly on milkweeds and their relatives, such as Asclepias and Calotropis. Adults drink nectar from many flowers, including lantana, periwinkle and yellow bells, and also visit dead plant stems to suck up chemicals called pyrrolizidine alkaloids. These alkaloids are now thought to be the main source of the butterfly's bad taste, since many of its larval food plants lack the heart toxins once credited with it.\n\nBirds are the main predators of adults, especially the fiscal shrike in eastern Africa, while spiders, assassin bugs, ants and mantises attack the young stages. Losses are huge: up to 84% of eggs may be eaten, and as many as 97% of caterpillars can die before their final stage. Caterpillars even eat one another.",
+    "family": "Females lay their eggs one at a time on the undersides of leaves, usually close to the ground. Each ridged, dome-shaped egg is about 1.7 millimetres long, white at first and slowly turning brown, and hatches in three to five days. The caterpillar passes through five stages, growing from about 4 millimetres to 36 millimetres in 12 to 20 days, and from its second stage on it is grey, striped with yellow and black.\n\nThe pupa, about 17 millimetres long, darkens from pale green to dark brown over 9 to 15 days. Adult life is short: males live about 10 to 15 days and females 7 to 12. In courtship the male fans out brush-like hair-pencils on his hindwings to release a scent he makes from the plant alkaloids, and males that cannot get those chemicals struggle to find mates.",
+    "remarkable": "Some plain tiger females carry a bacterium called Spiroplasma that is passed from mother to young and kills the male offspring as embryos or tiny caterpillars, so infected females produce only daughters. Treating them with antibiotics brings back sons. A shortage of males caused by this bacterium may even have pushed plain tiger females to mate with another lineage long ago, giving rise to the dorippus tiger.",
+    "outlook": "Spread across three continents and at home in gardens and city parks as well as wild country, the plain tiger is a widespread and adaptable butterfly. Its range of larval and nectar plants is broad, and the plants it relies on vary from region to region and season to season.\n\nScientists also watch it as evolution in action. In Kampala, Uganda, its genes show opposing pressures on males and females linked to mimicry, keeping several colour forms in balance.",
+    "people": "The plain tiger may be one of the first butterflies ever depicted in art. A 3,500-year-old ancient Egyptian fresco in Luxor contains the oldest known picture of the species. It is also known as the African queen and the African monarch.\n\nBecause it visits garden flowers such as lantana and periwinkle, it is a familiar sight to many people in towns across Africa and Asia.",
+    "relatives": "The plain tiger belongs to the milkweed butterflies, the Danainae, within the brush-footed butterfly family. Despite their likeness, the common tiger is not a close relative. The lesser wanderer was once treated as a subspecies, and one African subspecies is well on its way to becoming a species of its own.\n\nIts look is borrowed widely. Tasty butterflies such as the mocker swallowtail and the danaid eggfly copy it to fool predators, while in Uganda other bad-tasting species share its pattern, so that a bird that learns from one avoids them all.",
+    "didYouKnow": "Female plain tigers have been recorded mating up to four times.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "7–8 cm"
+      },
+      {
+        "label": "Adult life",
+        "value": "About 7–15 days"
+      },
+      {
+        "label": "Larval food",
+        "value": "Milkweeds"
+      },
+      {
+        "label": "Altitude",
+        "value": "Up to about 1,500 m"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do male plain tigers use plant alkaloids for?",
+        "choices": [
+          "Making courtship scent",
+          "Building cocoons",
+          "Digesting nectar",
+          "Darkening their wings to soak up more morning sunlight"
+        ],
+        "explanation": "Males turn pyrrolizidine alkaloids into pheromones released from their hair-pencils."
+      },
+      {
+        "prompt": "What does the bacterium Spiroplasma do to the plain tiger?",
+        "choices": [
+          "Kills male offspring",
+          "Turns its wings orange",
+          "Speeds up its growth",
+          "Lets caterpillars eat plants that would otherwise poison them"
+        ],
+        "explanation": "Infected females produce all-female broods because the males die young."
+      },
+      {
+        "prompt": "Where is the oldest known picture of the plain tiger?",
+        "choices": [
+          "Luxor, Egypt",
+          "Delhi, India",
+          "Kampala, Uganda",
+          "A sea cave on Saint Helena"
+        ],
+        "explanation": "A 3,500-year-old Egyptian fresco in Luxor shows the species."
+      }
+    ],
+    "charities": [
+      {
+        "name": "IUCN",
+        "url": "https://www.iucn.org",
+        "blurb": "Assesses the status of species worldwide and guides conservation action."
+      },
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Protects species and ecosystems across southern Africa."
+      }
+    ]
+  },
+  {
+    "id": "bighorn-sheep",
+    "name": "Bighorn Sheep",
+    "scientificName": "Ovis canadensis",
+    "wikipediaTitle": "Bighorn sheep",
+    "group": "mammal",
+    "regions": [
+      "naWest"
+    ],
+    "range": "Mountains and deserts of western Canada, the western US and northern Mexico",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 40.0,
+      "longitude": -112.0
+    },
+    "mapSpan": 30,
+    "tagline": "Cliff-dwelling sheep whose rams fight with their heads",
+    "lede": "Before the autumn rut, the mountains of western North America ring with the crack of horn on horn as bighorn rams square up and slam their heads together. The great curled horns of a ram can weigh as much as all the bones in his body. Agile on sheer rock, these sheep turn cliffs into their fortress.",
+    "home": "Bighorns live in the West, from southwestern Canada through the western United States to northern Mexico. Rocky Mountain bighorns live in the Rockies of the US and Canada, Sierra Nevada bighorns only in that range in California, and desert bighorns in the hot deserts of the southwestern US and northwestern Mexico.\n\nThey graze alpine meadows, grassy mountainsides and foothills, always near rugged cliffs and bluffs where they can escape predators. Because they cannot move through deep snow, they prefer drier slopes that get less than about 150 centimetres of snow a year, and they spend winter lower down than in summer.",
+    "anatomy": "Rams typically weigh 58 to 143 kg, stand 90 to 105 centimetres at the shoulder and measure 1.6 to 1.85 metres from nose to tail. Ewes are smaller, at 34 to 91 kg. Size varies a lot: Rocky Mountain rams occasionally top 230 kg, while Sierra Nevada rams reach only about 90 kg. The coat ranges from light brown to greyish or deep chocolate, with a white rump and white lining down the backs of all four legs.\n\nRams carry massive curled horns, a pair weighing up to 14 kg, while ewes have shorter, straighter ones. A ram's skull is built for collisions, with large horn cores, enlarged sinuses and internal bony partitions that absorb the impact and protect the brain. Horn tips are often worn away, or 'broomed', by years of sparring. Glands near the eyes, in the groin and on each foot produce secretions that may help signal dominance.",
+    "life": "Bighorns graze on grasses and browse shrubs, particularly in autumn and winter, and visit natural salt licks for minerals. Females tend to keep walking as they feed, perhaps to stay alert for predators and protect their lambs, while males eat and then rest to chew the cud, which helps them digest more and grow bigger.\n\nThey live in large herds without a single leader. Lambs fall prey to coyotes, bobcats, lynxes, wolverines and golden eagles, and bighorns of every age are hunted by bears, wolves and especially mountain lions, the predator best able to follow them over broken rock. Falls and rockslides kill some too, a risk of living on steep ground.",
+    "family": "Before the rut, rams sort out who may mate by fighting. Two rivals walk apart, turn to face each other, then leap and lunge into a head-on collision. The most successful courting tactic is tending, in which a ram follows and guards a ewe in season; others try to fight a tending ram for his ewe, or block a ewe's path before she comes into season. Ewes have their own stable pecking order linked to age.\n\nThe rut peaks in November, and after a six-month pregnancy the ewe gives birth to a single lamb, rarely twins, in May. Pregnant Rocky Mountain ewes climb to alpine areas to give birth, probably where predators are fewer. Lambs weigh 3.6 to 4.5 kg, walk within hours and are weaned at four to six months, and those born early in the season survive best. Ewes usually live 10 to 14 years and rams 9 to 12.",
+    "remarkable": "In 1936 the Boy Scouts of Arizona launched a statewide campaign to save the state's bighorns, after Major Frederick Russell Burnham pointed out that fewer than 150 were left in its mountains. National conservation groups joined in, and on 18 January 1939 more than 600,000 hectares were set aside as the Kofa and Cabeza Prieta National Wildlife Refuges.",
+    "outlook": "Two hundred years ago there were an estimated 150,000 to 200,000 bighorns. Unregulated hunting, habitat loss, overgrazing and diseases caught from domestic livestock caused a crash, at its worst between about 1870 and 1950. The Sierra Nevada bighorn is now listed as endangered by the US government.\n\nDisease remains the biggest problem. Bacteria carried harmlessly by domestic sheep cause pneumonia outbreaks that can kill up to 90% of a herd, followed by years in which most lambs die. Restoration since the 1940s has had limited success, and most of the bighorn's former range is still empty. Because they are so sensitive to human disturbance, bighorns are seen as good indicators of the health of the land.",
+    "people": "Bighorns were among the most admired animals of the Apsaalooka, or Crow, people, whose homeland centred on what is now the Bighorn Mountains. In one legend a young man pushed off a cliff is rescued by bighorns, takes the name of their leader, Big Metal, and is given their strength and sure-footedness. Lewis and Clark called the animal 'argalia', after the Asian argali, and noted that the Shoshone made bows from its horns.\n\nToday hunting of rams is allowed but tightly controlled in Canada and the US, and many people travel just to watch bighorns. The Rocky Mountain bighorn is the provincial mammal of Alberta and the state animal of Colorado, and the desert bighorn is the state mammal of Nevada.",
+    "relatives": "Wild sheep crossed into Alaska from Siberia over the Bering land bridge about 750,000 years ago, and their split from their closest Asian relative, the snow sheep, happened about 600,000 years ago. The bighorn is one of two North American mountain sheep, alongside the Dall sheep of Alaska and northwestern Canada, and the two have interbred in the past. In 1940 bighorns were divided into seven subspecies, but DNA studies since 1993 support only three; one former form, the Badlands bighorn, has been extinct since 1925.",
+    "didYouKnow": "In 1983 the bighorn ram was one of ten animals in Andy Warhol's 'Endangered Species' portfolio of prints, alongside the giant panda and the bald eagle.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "Rams 58–143 kg"
+      },
+      {
+        "label": "Horns",
+        "value": "Up to 14 kg a pair"
+      },
+      {
+        "label": "Lifespan",
+        "value": "9–14 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Grasses and shrubs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What protects a bighorn ram's brain when he clashes heads?",
+        "choices": [
+          "Enlarged sinuses and bony partitions",
+          "A thick layer of fat",
+          "Horns that bend on impact",
+          "Extra-long neck bones that soak up the force like springs"
+        ],
+        "explanation": "Large horn cores, sinuses and internal bony partitions absorb the impact."
+      },
+      {
+        "prompt": "What is the main source of the diseases that kill bighorn herds?",
+        "choices": [
+          "Domestic sheep",
+          "Mountain lions",
+          "Elk",
+          "Ticks carried north by migrating songbirds"
+        ],
+        "explanation": "Bacteria carried by domestic sheep cause deadly pneumonia outbreaks."
+      },
+      {
+        "prompt": "Which US state has the Rocky Mountain bighorn as its state animal?",
+        "choices": [
+          "Colorado",
+          "Arizona",
+          "Nevada",
+          "Montana, home of the Little Bighorn River"
+        ],
+        "explanation": "It is Colorado's state animal; Nevada's state mammal is the desert bighorn."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wild Sheep Foundation",
+        "url": "https://www.wildsheepfoundation.org",
+        "blurb": "Works to restore and protect wild sheep populations in North America."
+      },
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects lands and waters across North America and beyond."
+      }
+    ]
+  }
+]
