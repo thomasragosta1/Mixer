@@ -1,0 +1,914 @@
+[
+  {
+    "id": "red-knot",
+    "name": "Red Knot",
+    "scientificName": "Calidris canutus",
+    "wikipediaTitle": "Red knot",
+    "group": "bird",
+    "regions": [
+      "arctic",
+      "europe",
+      "southAmerica",
+      "oceania"
+    ],
+    "range": "Breeds on high Arctic tundra, winters on coasts from Shetland to Tierra del Fuego",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": -40.0
+    },
+    "mapSpan": 80,
+    "tagline": "A sandpiper that flies the length of the planet",
+    "lede": "Every spring, plump grey-and-cinnamon sandpipers drop out of the sky onto the beaches of Delaware Bay, thin and exhausted after thousands of kilometres. The red knot is one of the longest-distance migrants in the animal kingdom, and its survival hangs on arriving just as horseshoe crabs come ashore to spawn.",
+    "home": "Red knots breed in the high Arctic, on tundra and in the Arctic Cordillera of northern Canada, Greenland and Russia, nesting on dry, stony ground in uplands, often near ridges and not far from wetlands. After the short Arctic summer they spread to coasts around the world, wintering anywhere from Shetland at 60° N to Tierra del Fuego at 55° S.\n\nEach of the six subspecies has its own route. Birds from Siberia's Taymyr Peninsula pass through western Europe to winter in western and southern Africa, Chukchi breeders fly to eastern Australia and New Zealand, and the American subspecies rufa travels from the Canadian low Arctic to the southern tip of South America.",
+    "anatomy": "The red knot is a stocky sandpiper 23 to 26 centimetres long, with a wingspan of 47 to 53 centimetres and a weight of 100 to 200 g depending on subspecies. It has a small head, a short neck, short dark legs and a straight dark bill no longer than its head. In winter it is plain pale grey; in breeding plumage the face, throat and breast turn a rich cinnamon below mottled grey upperparts. In flight a white wing bar and grey rump stand out.\n\nIts body is remarkably flexible. The bill carries pressure-sensing organs called Herbst corpuscles that detect shellfish buried in wet sand from tiny changes in water pressure. The muscular gizzard thickens when the bird eats hard shells and shrinks when it eats soft food, a change that can happen in as little as 6 days.",
+    "life": "Outside the breeding season, knots gather in enormous flocks on mudflats and probe for prey they cannot see, pacing along the shore and sometimes ploughing forward with the bill pushed about 1 centimetre into soft mud. They swallow bivalves, snails and small crabs whole and crush them in the gizzard; on European coasts a small clam called Macoma is a favourite.\n\nTheir calls are simple: a low knutt from feeding flocks and a double knuup-knuup on migration. Long journeys are broken into hops of about 2,400 km between staging sites that the birds revisit every year. Before setting off, a knot builds up its flight muscles, lets its leg muscles and gut shrink, and increases its fat by more than half.",
+    "family": "Males reach the tundra first and start displaying straight away, circling high on quivering wings while singing a fluty poor-me, then tumbling to the ground with wings held up. Each male scrapes out three to five shallow nests lined with leaves, lichens and moss. The female usually lays four olive eggs, and both parents share incubation equally for about 22 days, the off-duty bird feeding in flocks with others.\n\nThe chicks hatch together, covered in camouflaged down, and leave the nest within a day to find their own insects; crane flies make up nearly half their prey in Taymyr. The female departs before the young can fly, leaving the male in charge. Once the chicks have fledged he leaves too, and the youngsters make their first migration entirely on their own.",
+    "remarkable": "In Delaware Bay, the knot's whole migration comes down to a single meal. The birds arrive in spring extremely thin, with shrunken gizzards that cannot cope with hard shells, just as horseshoe crabs crowd the beaches to spawn. Gorging on the soft, rich eggs during a stay of about 10 to 14 days, a knot can nearly double its body weight before flying on to the Arctic. The bay supports an estimated 50 to 80 percent of all migrating rufa knots each year.",
+    "outlook": "Globally the red knot is listed as Near Threatened, with a population of about 1.1 million. The American subspecies has fared worst: counts in Tierra del Fuego and Delaware Bay fell by about 75 percent from the 1980s to the 2000s, largely because horseshoe crabs were overharvested for fishing bait. In 2003 scientists warned that rufa could vanish by 2010; it survived, and in 2014 it was listed as threatened under the US Endangered Species Act.\n\nHarvest quotas, a large crab sanctuary off the mouth of Delaware Bay and beach closures have helped numbers stabilise, though at a low level. Climate change is a growing worry. Rising seas and warming are eroding Arctic breeding habitat, and knots born in warmer years are smaller, with shorter bills that struggle to reach deeply buried shellfish.",
+    "people": "The name knot is probably an echo of the bird's grunting call, and was first written down as 'Knottys' in 1452. Linnaeus's species name canutus came from a 16th-century suggestion by William Camden that the bird was named after King Canute, who in legend commanded the tide, because knots feed along the water's edge.\n\nIndividual birds have become famous through ringing. A rufa knot tagged B95, nicknamed Moonbird, was at least 20 years old at his last sighting in 2014, and a bird ringed in northern Scotland in 1978 was seen alive in the Netherlands more than 27 years later.",
+    "relatives": "The red knot was described by Linnaeus in 1758 and is the type species of Calidris, the large and varied genus of sandpipers. It is one of the bigger members, behind the great knot and the male ruff and about the same size as the surfbird, and genetic work has shown that the surfbird is the closest relative of the two knots.\n\nSix subspecies are recognised, from the large roselaari to the small piersmai. The Siberian canutus appears to be the oldest population, splitting off roughly 20,000 years ago as ice sheets advanced and retreated.",
+    "didYouKnow": "Early in incubation, a red knot flushed from its nest by people may stay away for hours, but late in incubation it sits tight on the eggs.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "23–26 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "47–53 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "100–200 g"
+      },
+      {
+        "label": "Migration",
+        "value": "Over 14,000 km each way"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which eggs fuel red knots at Delaware Bay?",
+        "choices": [
+          "Horseshoe crab eggs",
+          "Sea turtle eggs",
+          "Gull eggs",
+          "Fish eggs washed up from deep water by spring storms"
+        ],
+        "explanation": "Knots arrive as horseshoe crabs spawn and gorge on their soft, rich eggs."
+      },
+      {
+        "prompt": "Which parent stays with the chicks after the other leaves?",
+        "choices": [
+          "The male",
+          "The female",
+          "Neither, chicks are left at hatching",
+          "Both parents stay until the autumn migration begins"
+        ],
+        "explanation": "The female leaves before the young fledge, and the male looks after them."
+      },
+      {
+        "prompt": "What lets a red knot detect shellfish buried in sand?",
+        "choices": [
+          "Pressure sensors in its bill",
+          "Keen eyesight",
+          "Its sense of smell",
+          "Listening for the clicking sounds shellfish make underground"
+        ],
+        "explanation": "Herbst corpuscles in the bill pick up tiny changes in water pressure."
+      }
+    ],
+    "charities": [
+      {
+        "name": "National Audubon Society",
+        "url": "https://www.audubon.org",
+        "blurb": "Protects birds and the places they need across the Americas, including shorebird stopover sites."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership working to conserve birds and their habitats along migration flyways."
+      }
+    ]
+  },
+  {
+    "id": "resplendent-quetzal",
+    "name": "Resplendent Quetzal",
+    "scientificName": "Pharomachrus mocinno",
+    "wikipediaTitle": "Resplendent quetzal",
+    "group": "bird",
+    "regions": [
+      "centralAmerica"
+    ],
+    "range": "Montane cloud forests from southern Mexico to western Panama",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 14.5,
+      "longitude": -89.0
+    },
+    "mapSpan": 15,
+    "tagline": "The sacred emerald bird of the cloud forest",
+    "lede": "In the dripping cloud forests of Central America, a flash of emerald and crimson glides between the trees, trailing green plumes longer than its body. The resplendent quetzal was sacred to the Maya and Aztecs, and today it flies on Guatemala's flag and lends its name to the country's money.",
+    "home": "Quetzals live from southern Mexico, in Oaxaca and Chiapas, to western Panama, in moist montane rainforest between about 900 and 3,200 metres. They keep to the canopy and subcanopy but also use ravines and cliffs, and they need decaying trees and stumps for nesting. The two subspecies are separated by the Nicaraguan depression, a lowland 50 km wide that holds Lake Managua and Lake Nicaragua: mocinno lives to the north, costaricensis in Costa Rica and western Panama.\n\nThe birds move up and down the mountains with the seasons. After breeding in lower montane forest they shift for three to four months, from July to October, to the Pacific slopes, then cross the continental divide to the Atlantic side.",
+    "anatomy": "The largest of the trogons, the quetzal is 36 to 40 centimetres long and weighs about 210 g. In breeding males, green upper tail coverts stream out behind for anywhere from 31 centimetres to just over 1 metre, with a median of 75 centimetres; costaricensis birds are a little smaller, with shorter plumes. Males have a green body, a red lower breast and belly, a helmet-like crest and a yellow bill half hidden by fine feathers. Females are duller, with a bronze-green head, a grey belly and bill, and a shorter tail.\n\nThe green is a trick of the light. The pigment in the feathers is brown melanin, and their structure makes them shimmer from gold-green to blue-violet, which helps the bird vanish among wet canopy leaves. Its skin is so thin and easily torn that dense plumage protects it, and its large eyes suit the dim forest interior.",
+    "life": "Quetzals are specialist fruit eaters, taking 41 to 43 kinds of fruit, and over half of what they eat comes from the laurel family, including wild avocados. They pluck fruit from branch tips by hovering or stalling in mid-air, swallow it whole and later bring up the large stones, spreading the seeds of at least 32 tree species. They also eat wasps, ants, larvae, frogs, lizards and snails.\n\nMostly solitary, shy and quiet, adults keep out of sight of ornate hawk-eagles, golden eagles, other hawks and owls, while emerald toucanets, brown jays, weasels, squirrels and kinkajous raid nests. In the breeding season they become vocal, with a whole repertoire of calls and a melodious song of mellow, slurred notes.",
+    "family": "Pairs are monogamous and defend territories of 6 to 10 hectares in Guatemala, breeding roughly between March and June depending on the country. They carve a nest hole in a rotting tree or take over an old woodpecker hole, often reusing sites, and the female lays one to three pale blue eggs, often in two clutches a year. Nest failure is high, at 67 to 78 percent.\n\nIncubation lasts 17 to 19 days. The male usually sits by day and the female by night, and a sitting male's long plumes fold forward out of the hole like a fern sprouting from the trunk. Both parents feed the chicks, mostly on insects, lizards, snails and small frogs, though the female often abandons the brood near the end and leaves the male to finish. Young fly after about a month, but a male takes 3 years to grow his full tail.",
+    "remarkable": "For centuries, quetzals were said to die soon after capture, which made the bird a symbol of liberty: Guatemala's national anthem includes a line about preferring death to slavery. The real cause turned out to be iron absorbed from drinking water. Once keepers learned to avoid iron in the diet and to give tannic acid, zoos such as Miguel Álvarez del Toro Zoo in Chiapas could keep them, and captive breeding was announced in 2004.",
+    "outlook": "The quetzal is listed as Near Threatened, with an estimated 20,000 to 49,999 birds and a generally falling trend, though some populations are stable or even growing. Deforestation, fragmentation and clearing for farms are the main threats, and by 2001 the species survived in only 11 small, isolated forest patches.\n\nBecause its range is remote, more monitoring is needed, and the results could move it into a higher threat category. Cloud forests are among the most threatened ecosystems in the world, but quetzals live in several protected areas, including the Children's Eternal Rainforest, and attract birdwatchers and ecotourists.",
+    "people": "To the Aztec and Maya the quetzal was bound to Quetzalcoatl, the feathered-serpent god of life, light, knowledge and the winds, and its green plumes stood for the new growth of spring. Rulers and nobles wore diadems of quetzal feathers. Killing the bird was forbidden, so catchers plucked the long plumes and let it go, and the feathers were valuable enough to be used as money, which is why Guatemala's currency is called the quetzal.\n\nA K'iche' Maya legend tells that a quetzal landed on the body of the prince Tecún Umán after he fell fighting the conquistador Pedro de Alvarado, staining its breast red with his blood. The bird, the story goes, has not sung since, and will sing again only when the land is free.",
+    "relatives": "Pablo de La Llave described the species in 1832, naming it after the Mexican naturalist José Mariano Mociño. It is one of five quetzals in the genus Pharomachrus, from Greek words meaning 'long mantle', within the trogon family. The quetzal group is thought to have spread out from the Andes, and the resplendent is the youngest species.\n\nSome scholars think the crested quetzal is so close that it could be a subspecies or that the two form a superspecies, and there is ongoing debate about whether costaricensis deserves to be a species of its own.",
+    "didYouKnow": "The word quetzal comes from the Nahuatl quetzalli, meaning 'tall upstanding plume'.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "36–40 cm"
+      },
+      {
+        "label": "Tail plumes",
+        "value": "Up to about 1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "About 210 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly fruit, especially laurels"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What colour is the pigment in a quetzal's green feathers?",
+        "choices": [
+          "Brown",
+          "Green",
+          "Blue",
+          "Red, which turns green when the feathers get wet"
+        ],
+        "explanation": "The feathers contain brown melanin; their structure makes them shine green."
+      },
+      {
+        "prompt": "What made captive quetzals die so quickly?",
+        "choices": [
+          "Iron in their water",
+          "Lack of sunlight",
+          "Loneliness",
+          "Being fed seeds instead of the fruit they usually prefer"
+        ],
+        "explanation": "They absorbed iron from drinking water; keepers now avoid iron and give tannic acid."
+      },
+      {
+        "prompt": "Which country has the quetzal on its flag?",
+        "choices": [
+          "Guatemala",
+          "Mexico",
+          "Costa Rica",
+          "Panama"
+        ],
+        "explanation": "The quetzal is Guatemala's national animal and appears on its flag and coat of arms."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests, including in Central America."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership working to conserve birds and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "orca",
+    "name": "Orca",
+    "scientificName": "Orcinus orca",
+    "wikipediaTitle": "Orca",
+    "group": "mammal",
+    "regions": [
+      "openOcean",
+      "arctic",
+      "antarctica",
+      "naWest"
+    ],
+    "range": "All oceans and most seas, commonest in cooler coastal waters",
+    "status": "DD",
+    "coordinate": {
+      "latitude": 20.0,
+      "longitude": -150.0
+    },
+    "mapSpan": 80,
+    "tagline": "The ocean's top predator, with its own family dialects",
+    "lede": "Black and white, with a fin like a raised sword, the orca is the largest of the dolphins and the top predator of every ocean. It hunts in family teams with tactics passed down through generations, and different groups speak their own dialects and eat entirely different prey.",
+    "home": "Orcas are found in all oceans and most seas, from the polar ice edge to the tropics, though they are commonest in cooler coastal waters at higher latitudes. The densest populations live off the Norwegian coast, along the Aleutian Islands and in the Gulf of Alaska, and in the Southern Ocean around Antarctica.\n\nWorldwide there are probably at least 50,000, including roughly 25,000 in the Antarctic. Their movements are poorly understood: the same whales appear off British Columbia and Washington each summer, yet where they spend the rest of the year remains unknown.",
+    "anatomy": "Males are usually 6 to 8 metres long and weigh more than 6 tonnes, and the largest reach 10 metres and over 10 tonnes; females are smaller, typically 5 to 7 metres. A male's dorsal fin is a tall triangle up to about 1.8 metres high, more than twice the height of the female's curved fin. The body is black with a white lower jaw and belly, oval white patches above and behind the eyes, and a grey saddle behind the fin. Calves are born about 2.4 metres long, with patches that look yellow or orange.\n\nOrcas have strong, interlocking teeth, good eyesight in and out of water and sophisticated echolocation. A layer of blubber 7.6 to 10 centimetres thick keeps them warm, and the heart slows from about 60 beats a minute at the surface to 30 when submerged.",
+    "life": "With no natural predators, orcas hunt in groups like wolf packs and eat an average of 227 kg a day. Each population specialises. Resident orcas of the northeast Pacific live mainly on salmon, especially Chinook, while transients hunt seals, sea lions and dolphins. Off Norway, orcas herd herring into a tight ball with bubbles and flashes of their white bellies, then stun the fish with tail slaps. Others take sharks and rays, flip great white sharks upside down to paralyse them and eat their livers, or wear down the calves of large whales, including blue whales.\n\nIn Antarctica, some orcas swim in formation to make waves that wash seals off ice floes. At Península Valdés and the Crozet Islands they deliberately beach themselves to snatch sea lions and elephant seals, a technique that takes young whales years to learn.",
+    "family": "Resident orca society is unlike that of any other known mammal: sons and daughters stay with their mother for life. A matriline, averaging 5.5 animals, is led by the eldest female, and because females can reach 90, up to six generations may travel together. Related matrilines form pods, pods with similar calls form clans, and each pod has its own dialect of 7 to 17 call types that calves learn from their family. Males mate with females from other pods.\n\nFemales begin breeding at around 10 to 13 and usually have one calf about every 5 years after a pregnancy of 15 to 18 months. Between 37 and 50 percent of calves die in their first 7 months. Fertility drops sharply after about 40, and orcas are among the few animals that go through menopause and live for decades afterwards; wild females average 50 to 80 years, males around 30.",
+    "remarkable": "Orcas have more cortical neurons than any other mammal, humans included, and their hunting methods and dialects are passed on by learning, which scientists describe as culture. They even seem to teach deliberately: off the Crozet Islands, mothers push calves onto the beach to practise and pull them back if needed. In 2025, a Salish Sea orca was seen tearing off strands of bull kelp and rolling them over its body, the first recorded tool use by a killer whale.",
+    "outlook": "The IUCN lists the orca as Data Deficient, because several types may turn out to be separate species, some of them endangered. The main threats are dwindling prey, pollution, oil spills, noise and conflict with boats. As top predators, orcas concentrate toxins such as PCBs; some in the Norwegian Arctic carry more than polar bears. After the Exxon Valdez spill, one transient group in Alaska fell to seven animals that had still not reproduced by 2009.\n\nThe southern residents of Washington and British Columbia, which depend on declining Chinook salmon, were listed as endangered in the United States in 2005 and numbered only about 75 by 2019.",
+    "people": "The name killer whale may come from Basque sailors who called them whale killers after seeing them attack larger whales. Peoples of the Pacific Northwest give orcas a central place in art and belief: to the Haida they were the most powerful animals in the ocean, and the Lummi call them qwe'lhol'mechen, 'our relations under the waves'. In Western cultures they were long feared, and fishermen once shot them as pests.\n\nAttitudes shifted after 1964, when a captured orca named Moby Doll proved gentle, and the photo-identification work of Michael Bigg revealed orca family life. Captivity remains controversial. Wild orcas have never killed a person, though captive animals have, and since 2020 orcas off Iberia have damaged hundreds of boats, often biting their rudders.",
+    "relatives": "Orcinus orca is the only living species in its genus and one of 35 species in the oceanic dolphin family, which appeared about 11 million years ago. Despite resemblances to false killer whales and pilot whales, its exact place in the family is unclear, with different genetic studies pointing to snubfin dolphins or to other branches.\n\nThe species itself may be several. Off western North America, fish-eating residents, mammal-eating transients and offshores rarely mix, and in 2024 researchers proposed raising residents and transients to full species. Four types, A to D, are known around Antarctica, and some of these may also prove distinct.",
+    "didYouKnow": "At Eden in Australia, orcas once helped whalers hunt larger whales, and a male called Old Tom was reportedly seen there every winter from the 1840s to 1930.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Males 6–8 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Males over 6 t"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 56 km/h"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Females 50–80 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Who leads a resident orca family group?",
+        "choices": [
+          "The eldest female",
+          "The largest male",
+          "The strongest young male",
+          "Whichever orca finds the most fish that season"
+        ],
+        "explanation": "Resident matrilines are led by the eldest female, the matriarch."
+      },
+      {
+        "prompt": "How do some Antarctic orcas catch seals resting on ice floes?",
+        "choices": [
+          "By making waves",
+          "By ramming the ice from below",
+          "By luring them with fish",
+          "By waiting under the ice until the seals fall asleep and slip off"
+        ],
+        "explanation": "They swim together to create waves that wash the seals into the water."
+      },
+      {
+        "prompt": "What is the orca's IUCN status?",
+        "choices": [
+          "Data Deficient",
+          "Endangered",
+          "Least Concern",
+          "Critically Endangered across most of its range"
+        ],
+        "explanation": "It is Data Deficient because several orca types may be separate species."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and the wildlife that depends on them."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and habitats, including whales and the seas they live in."
+      }
+    ]
+  },
+  {
+    "id": "rock-ptarmigan",
+    "name": "Rock Ptarmigan",
+    "scientificName": "Lagopus muta",
+    "wikipediaTitle": "Rock ptarmigan",
+    "group": "bird",
+    "regions": [
+      "arctic",
+      "europe",
+      "asia",
+      "naWest"
+    ],
+    "range": "Arctic and Subarctic tundra and mountains, with outposts in the Alps, Pyrenees and Japan",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 68.0,
+      "longitude": 10.0
+    },
+    "mapSpan": 80,
+    "tagline": "The grouse that turns white for winter",
+    "lede": "On bare Arctic mountainsides, a plump grouse turns from mottled grey-brown in summer to snow white in winter, vanishing against rock and snow alike. The rock ptarmigan thrives in some of the harshest places any bird lives, and even its feet are wrapped in feathers.",
+    "home": "Rock ptarmigans breed across Arctic and Subarctic Eurasia and North America, including Greenland, on rocky mountainsides and tundra. Beyond the Arctic they hang on in isolated mountain populations in Scotland, the Pyrenees, the Alps, Bulgaria, the Urals, the Pamirs, the Altai and Japan, where they live only in the Japanese Alps and on Mount Haku. They prefer higher, barer ground than the willow ptarmigan.\n\nSouthern birds barely move, dropping to lower, sheltered sites in winter, but in the far north they wander widely. Birds have crossed the 300 km Denmark Strait from Greenland to Iceland, carrying Greenland minerals in their gizzards. In Britain the species once lived in the Lake District, but now survives only in the Scottish Highlands.",
+    "anatomy": "The rock ptarmigan is 34 to 36 centimetres long, with a wingspan of 54 to 60 centimetres and a weight of 440 to 640 g, about 10 percent smaller than the willow ptarmigan. It moults to match the seasons. In winter it is entirely white except for black outer tail feathers and a black line through the eye. In summer the breeding male is greyish above with white wings and belly, while the female is mottled grey and brown.\n\nMales have bright red combs above the eyes. The legs and feet are densely feathered. The bird can store little fat, so it must feed often in winter, and long blind-ended guts called ceca help it squeeze nutrition from poor food.",
+    "life": "Ptarmigans eat buds, catkins, leaves, flowers, berries and seeds, changing menu through the year. In Alaska, winter food is aspen, dwarf birch and willow buds and catkins; in spring they turn to crowberries and lingonberries; early summer brings the widest choice, including willow leaves and the flowers of Dryas, and late summer more berries and seeds. Chicks eat insects, larvae and snails.\n\nIn its remote habitat the rock ptarmigan has few predators, chiefly gyrfalcons, golden eagles and Arctic foxes, and it can be surprisingly approachable. On Franz Josef Land in the Russian High Arctic, a small population survives the dark polar winter by feeding on the rich plants that grow on and beneath seabird cliffs.",
+    "family": "In spring, males defend territories with snores, rattles and chases. In the aerial display a male flies fast on rapid wingbeats, glides upwards with tail fanned and then sails down, belting out a rasping call often compared to a stick dragged along a picket fence. On the ground he fans his tail, stretches his neck, lowers his wings and circles a female.\n\nThe red comb matters. In a study in Nunavut, males with larger, better-conditioned combs mated more often, and males with two mates had larger combs than those with one. Rock ptarmigans can breed at 6 months old and commonly raise up to six chicks, so hunting has little effect on their numbers.",
+    "remarkable": "The Svalbard subspecies is the only rock ptarmigan that fattens up significantly for winter. Most rock ptarmigans carry no more than 20 g of fat at any time, enough to last about 2 days without food, but Svalbard birds put on about 100 g, enough for up to 10 days of starvation. Food there is scarcer than anywhere else in the range, and the extra weight does not seem to make walking any more costly.",
+    "outlook": "With its huge Arctic range and fast breeding, the rock ptarmigan is widespread, but some populations have declined. Its range in Britain has shrunk since the 1800s, and in Iceland, where ptarmigan is a traditional festive dish, hunting was banned in 2003 and 2004 because numbers had fallen. Hunting has been allowed again since 2005 on a limited number of days set each year, and all trade in the birds is illegal there.\n\nIn Japan the raichō is protected nationwide. During the last ice age the species was far more widespread across continental Europe.",
+    "people": "The rock ptarmigan is the official bird of Nunavut, where it is called aqiggiq, and the official game bird of Newfoundland and Labrador. In Japan its name, raichō, means 'thunder bird', and it is the emblem of Gifu, Nagano and Toyama Prefectures. It has been introduced to New Zealand, South Georgia and the Kerguelen and Crozet Islands, while attempts in the Faroes and Ireland failed.\n\nIn 1797 Thomas Bewick called it the White Grouse and noted that its dark meat tasted somewhat like hare, sometimes bitter from the hill plants it eats. It even has its own song, 'The Ptarmigan's Cry', by the heavy metal artist Sgaile.",
+    "relatives": "The rock ptarmigan belongs to the grouse tribe and is easily confused with the willow ptarmigan in winter. It can be told apart by its slimmer bill, its liking for higher and barer ground and, in males, black lores. There are 23 recognised subspecies, from the Aleutian Islands to the Alps, the Pyrenees and Japan.\n\nThe genus name Lagopus means 'hare-foot', after the feathered legs. The species name muta means 'mute' in Neo-Latin, a nod to the male's simple croaking song, and was long misspelt mutus until it was realised that Lagopus is feminine.",
+    "didYouKnow": "The word ptarmigan comes from the Gaelic tarmachan, 'croaker', and its silent p was added by people who wrongly thought the word was Greek.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "34–36 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "54–60 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "440–640 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Buds, leaves, berries, seeds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the rock ptarmigan's Japanese name raichō mean?",
+        "choices": [
+          "Thunder bird",
+          "Snow bird",
+          "Mountain chicken",
+          "White ghost of the high mountain peaks"
+        ],
+        "explanation": "Raichō means 'thunder bird'; it is protected throughout Japan."
+      },
+      {
+        "prompt": "Which subspecies builds up large fat reserves for winter?",
+        "choices": [
+          "Svalbard",
+          "Scottish",
+          "Japanese",
+          "The Alpine one living above the Swiss tree line"
+        ],
+        "explanation": "Svalbard birds gain about 100 g of fat, enough for up to 10 days without food."
+      },
+      {
+        "prompt": "What does the genus name Lagopus mean?",
+        "choices": [
+          "Hare-foot",
+          "Rock bird",
+          "Mute",
+          "Snow walker of the northern tundra"
+        ],
+        "explanation": "It refers to the bird's feathered legs and feet."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, protecting birds including those of the Scottish uplands."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership working to conserve birds and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "pallas-cat",
+    "name": "Pallas's Cat",
+    "scientificName": "Otocolobus manul",
+    "wikipediaTitle": "Pallas's cat",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Cold, rocky steppes and mountains from the Caucasus to Mongolia and Tibet",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": 95.0
+    },
+    "mapSpan": 45,
+    "tagline": "The fluffy, grumpy-looking cat of the high steppe",
+    "lede": "With its flat face, low-set ears and dense, smoky fur, Pallas's cat looks permanently unimpressed. About the size of a house cat but far stockier, it hunts pikas and voles across the cold, high steppes of Central Asia, and has become one of the internet's favourite wild animals.",
+    "home": "Pallas's cat, or manul, lives in widely scattered places from the Caucasus and the Iranian Plateau through the Hindu Kush, the Himalayas and the Tibetan Plateau to Mongolia, the Altai-Sayan region and the mountains of southern Siberia. It favours rocky montane grassland and shrubland, scree slopes and ravines where snow lies no deeper than about 15 to 20 centimetres.\n\nIts climate is harsh. In the centre of its range air temperatures swing across 80 °C between summer and winter, falling to −50 °C. The cat has been recorded remarkably high: its droppings were found at 5,593 metres in Nepal's Shey Phoksundo National Park, the highest record yet.",
+    "anatomy": "Pallas's cat has a head-and-body length of 46 to 65 centimetres and a bushy tail of 21 to 31 centimetres, and it weighs 2.5 to 4.5 kg. Its long, dense fur, with up to 9,000 hairs in every square centimetre, makes it look stout and plush. The coat is light grey tinged with ochre, greyer and plainer in winter, with small black spots on the forehead, two black zigzag lines on each cheek, thin dark bars across the lower back and a ringed tail with a black tip.\n\nThe rounded ears sit low on the sides of the head, so the cat can peer over a rock while showing very little of itself, which gives its face a fierce look. Its legs are short, its claws short and sharp, and its bite powerful for its size.",
+    "life": "Pallas's cat is solitary and a specialised hunter of small mammals. It stalks or ambushes pikas, voles, gerbils and ground squirrels near burrow entrances, and scoops rodents out of shallow burrows with its paws; it also takes birds, beetles and grasshoppers. In Mongolia it switched to Brandt's vole when that species boomed between 2017 and 2020.\n\nIt shelters in caves, rock crevices and old marmot burrows. In central Mongolia, 29 radio-collared cats used 101 dens over two years. Home ranges vary enormously, from about 7 to 125 square kilometres for females and up to 207 square kilometres for males, and cats there were mostly active at dawn and dusk in summer but by day in autumn. They mark their ground with urine, droppings and scrapes.",
+    "family": "Females mature at about a year old, and pregnancy lasts 66 to 75 days. Between late April and late May the female gives birth to two to six kittens in a den among rocks or in an old marmot burrow with at least two entrances; in Iran one used hollows in ancient junipers. The fuzzy kittens open their eyes at about two weeks.\n\nBy 2 months they weigh 500 to 600 g, and their fur grows steadily longer. They begin hunting at about 5 months and are fully grown by 6 to 7 months. In zoos the species is notoriously hard to raise: almost half of the kittens born in North American member zoos died within 30 days, the highest rate for any small wild cat.",
+    "remarkable": "Unlike most small cats, Pallas's cat has round pupils that shrink to tiny circles in bright sunlight rather than narrowing into slits. Within its subfamily it shares this trait only with the puma, the jaguarundi and the cheetah. Framed by white rings around the eyes, the round pupils give the manul a stare unlike any other small cat's.",
+    "outlook": "Pallas's cat has been listed as Least Concern since 2020 because of its wide range and assumed large population, but some populations are in trouble. It was once hunted for fur in huge numbers, more than 10,000 skins a year in China, Mongolia and Russia. International trade ended in 1988, but domestic trade in skins and body parts for medicine continues in Mongolia, where it may still be hunted.\n\nPoisoning campaigns against rodents and pikas destroy its prey, as on the Tibetan Plateau, where more than 54,000 square kilometres of grassland were poisoned between 2005 and 2009. Herding dogs, traps, poaching, mining and new roads add to the pressure. China lists it as Endangered, and Mongolia as Near Threatened.",
+    "people": "Manul is the cat's Mongolian name, and Pallas's cat honours the naturalist Peter Simon Pallas, who described it in 1776 from near Lake Baikal; the English name was coined by William Thomas Blanford. The species has been kept in zoos since the early 1950s, and by 2018, 177 lived in 60 zoos across Europe, Russia, North America and Japan.\n\nIt has also become an online celebrity. A Russian meme from 2008 shows a manul with a caption inviting you to pet the cat, Moscow Zoo made it its mascot in 2012, and a Novosibirsk Zoo manul called Zelenogorsk went viral for holding his own tail in his paws.",
+    "relatives": "Pallas described the cat as Felis manul, but in 1842 Johann Friedrich von Brandt proposed the genus name Otocolobus, which Reginald Pocock accepted in 1907. Genetic studies suggest it split from its relatives several million years ago, from the line leading to the genus Prionailurus according to nuclear DNA, or to Felis according to mitochondrial DNA.\n\nSince 2017 cat specialists have recognised two subspecies: manul in the west and north of Central Asia, from Iran to Mongolia, and nigripectus in the Himalayas from Kashmir to Bhutan.",
+    "didYouKnow": "In 2011, a Pallas's cat at Cincinnati Zoo became the first of her kind to be artificially inseminated, giving birth to four kittens 69 days later.",
+    "facts": [
+      {
+        "label": "Head and body",
+        "value": "46–65 cm"
+      },
+      {
+        "label": "Tail",
+        "value": "21–31 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2.5–4.5 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Pikas and rodents"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What shape are Pallas's cat's pupils in bright sunlight?",
+        "choices": [
+          "Small round dots",
+          "Vertical slits",
+          "Horizontal bars",
+          "Narrow crescents pointing down towards the nose"
+        ],
+        "explanation": "Its pupils contract to small circles, a trait it shares with the puma, jaguarundi and cheetah."
+      },
+      {
+        "prompt": "Which language gives us the name manul?",
+        "choices": [
+          "Mongolian",
+          "Russian",
+          "Tibetan",
+          "Persian, from an old word for a mountain ghost"
+        ],
+        "explanation": "Manul is the cat's name in Mongolian."
+      },
+      {
+        "prompt": "What is Pallas's cat's main prey?",
+        "choices": [
+          "Pikas and rodents",
+          "Fish",
+          "Young deer",
+          "Lizards and snakes caught basking on sunny rocks"
+        ],
+        "explanation": "It is a specialised hunter of small mammals, ambushing them near their burrows."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places worldwide, including the steppes and mountains of Central Asia."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and habitats, including in Mongolia and the Himalayas."
+      }
+    ]
+  },
+  {
+    "id": "philippine-tarsier",
+    "name": "Philippine Tarsier",
+    "scientificName": "Carlito syrichta",
+    "wikipediaTitle": "Philippine tarsier",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests of the southeastern Philippines, including Bohol, Samar, Leyte and Mindanao",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": 125.0
+    },
+    "mapSpan": 8,
+    "tagline": "A fist-sized primate with enormous eyes",
+    "lede": "Small enough to sit in a human fist, the Philippine tarsier peers out of the night with the largest eyes, for its size, of any mammal. It can swivel its head 180 degrees, leap 3 metres between trees and call in ultrasound far too high for us to hear.",
+    "home": "The Philippine tarsier is found only in the southeastern Philippines, with established populations on Bohol, Samar, Leyte and Mindanao and others on smaller islands such as Maripipi, Siargao, Basilan and Dinagat. It lives in primary and secondary forest from sea level to about 700 metres, favouring dense, low vegetation such as tall grass, bushes and bamboo, and perches on average about 2 metres above the ground.\n\nRecent studies found home ranges averaging 6.45 hectares for males and 2.45 hectares for females. In a night a tarsier may travel up to 1.5 km through the forest, and by day it sleeps in dark hollows close to the ground, deep in thick bush.",
+    "anatomy": "Standing just 85 to 160 millimetres tall, it is one of the smallest primates. Males weigh 80 to 160 g, and females are usually lighter. The fur is thin, rough and grey to dark brown, and the thin, nearly bald tail, about twice the length of the body, ends in a tuft and helps with balance.\n\nThe eyes are fixed in the skull and cannot move, so instead the tarsier turns its round head. In bright light the pupils shrink to tiny spots; in darkness they fill almost the whole eye. The thin, mobile ears are almost always twitching after sounds. Long fingers end in rounded pads that grip almost any surface, and the second and third toes carry sharp claws used for grooming.",
+    "life": "Tarsiers are hunters. They eat mainly live insects, especially crickets and grasshoppers, along with spiders, small crustaceans and the occasional small lizard or bird, grabbing prey and bringing it to the mouth with both hands. Clinging upright to trunks, they leap from branch to branch, powered by the long ankle bones that give the family its name.\n\nThey are solitary and shy, crossing paths only now and then at night. Calls include a piercing single-note loud call and a soft, bird-like trill of contentment; when several chirp together, the sound resembles locusts. Owls, small carnivores and large birds prey on them, and feral cats from nearby villages are a major threat.",
+    "family": "The mating season runs from April to May, and a pregnancy of about 6 months produces a single baby. It is born furry and with its eyes open, with a body about 70 millimetres long and a 115-millimetre tail. The mother carries it in her mouth, and the newborn can already cling to branches, beginning to leap in less than a month.\n\nFemales have several pairs of nipples, but only the pair on the chest gives milk; the others serve as anchor points for the infant. Babies nurse for about 60 days and reach maturity at 2 years. Tarsiers can live for 24 years in the wild. Depending on the population, they may pair with one partner or several.",
+    "remarkable": "Philippine tarsiers talk in ultrasound. They can call at around 70 kHz and hear frequencies above 90 kHz, well beyond the limit of human hearing. Infants use these silent calls as distress signals when separated from their mothers, and males use them to call their mates in the breeding season. Females also mark their mates with scent from a gland around the mouth.",
+    "outlook": "The Philippine tarsier was last assessed by the IUCN in 2008 as Near Threatened, after a decline estimated at under 30 percent over about 20 years, driven by habitat loss and poaching for the pet trade. Illegal logging, firewood cutting, slash-and-burn farming and spreading towns and roads are eating into its forests. On Bohol, where it was a common sight in the south until the 1960s, the Philippine Tarsier Foundation estimates only about 700 remain.\n\nTarsiers do badly in captivity, where poor diet, bright lights and stress shorten their lives, and roadside displays may encourage tourists to buy them illegally. The species is protected under Philippine law, and the foundation runs a sanctuary at Corella on Bohol.",
+    "people": "Locally the tarsier goes by many names, including mawumag in Cebuano and other Visayan languages, magô in Waray, and mamag, magau and malmag. It first reached Western scientists through the missionary J. G. Camel, whose description was published by J. Petiver in 1705 and later formed the basis of Linnaeus's name Simia syrichta.\n\nIn Sarangani province, indigenous people leave tarsiers alone because they believe the animals bring bad luck, a superstition that, together with thick forest, has helped protect them. Today the tarsier is a flagship species for conservation, and Endangered Species International has created a sanctuary on Mindanao.",
+    "relatives": "Tarsiers belong to the family Tarsiidae, a lineage around 45 million years old. Until 2010 all living tarsiers were placed in the genus Tarsius, but a revision by Shekelle and Groves moved the Philippine species into its own genus, Carlito, named after the Filipino conservationist Carlito Pizarras. The other genera are Tarsius of Sulawesi and Cephalopachus of Sundaland.\n\nThree subspecies are recognised, on Leyte and Samar, on Bohol, and on Mindanao, though how distinct they really are has long been debated.",
+    "didYouKnow": "Tarsiers groom one another, with females removing dead skin and parasites from adult males and from their own young.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "85–160 mm"
+      },
+      {
+        "label": "Weight",
+        "value": "80–160 g"
+      },
+      {
+        "label": "Leap",
+        "value": "At least 3 m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 24 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a tarsier look around, since its eyes cannot move?",
+        "choices": [
+          "It turns its head",
+          "It moves its ears",
+          "It uses echolocation",
+          "It hops in a circle while keeping its body upright"
+        ],
+        "explanation": "Its eyes are fixed in the skull, so it rotates its head instead."
+      },
+      {
+        "prompt": "How does a mother tarsier carry her baby?",
+        "choices": [
+          "In her mouth",
+          "On her back",
+          "Clinging to her belly",
+          "In a fold of skin like a pouch on her side"
+        ],
+        "explanation": "Females carry their infants in their mouths."
+      },
+      {
+        "prompt": "Who is the tarsier's genus, Carlito, named after?",
+        "choices": [
+          "A conservationist",
+          "A Spanish explorer",
+          "A Philippine president",
+          "An old Visayan spirit said to guard the night forest"
+        ],
+        "explanation": "It honours the Filipino conservationist Carlito Pizarras."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests, including in the Philippines."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and habitats, including the forests of Southeast Asia."
+      }
+    ]
+  },
+  {
+    "id": "snow-bunting",
+    "name": "Snow Bunting",
+    "scientificName": "Plectrophenax nivalis",
+    "wikipediaTitle": "Snow bunting",
+    "group": "bird",
+    "regions": [
+      "arctic",
+      "europe",
+      "naEast",
+      "asia"
+    ],
+    "range": "Breeds right around the Arctic, winters in northern temperate fields and shores",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 65.0,
+      "longitude": -30.0
+    },
+    "mapSpan": 80,
+    "tagline": "The songbird that lives farthest north",
+    "lede": "When the Arctic is still locked in snow and the temperature can drop to −30 °C, the first migrant to return is a small black-and-white bunting. The snow bunting is the most northerly recorded perching bird in the world, and in winter its flocks swirl over fields and shores like blown snowflakes.",
+    "home": "Snow buntings breed right around the Arctic, on high tundra in North America, Ellesmere Island, Greenland, Iceland, Norway, Russia, Siberia, Novaya Zemlya and Franz Josef Land. Small isolated populations live on a few mountain tops further south, including the Cairngorms of Scotland, the Saint Elias Mountains on the Alaska–Yukon border and the Cape Breton Highlands. There seems to be no northern limit to the range, while in the south it is limited by day length.\n\nIn winter, buntings move to the northern temperate zone, from southern Canada and the northern United States to the coasts and plains of northern Europe and east into central Asia. There they roam open farmland, barren fields and lakeshores in flocks that can number in the hundreds.",
+    "anatomy": "The snow bunting is a ground-dwelling bird about 15 centimetres long, with a wingspan of 32 to 38 centimetres and a weight of 30 to 40 g; it is fairly large and long-winged for a bunting. In summer the male is white with a black back and black wingtips, and his yellow bill turns all black. The female has brown fringes to her black back feathers. In winter both sexes wear broad orange-brown fringes.\n\nInstead of moulting into breeding colours, snow buntings let the brown feather tips wear away in spring to reveal the black beneath. Unlike most perching birds, they have feathered legs, a protection against the cold. Apart from the common raven, no other passerine winters as far north.",
+    "life": "From autumn to spring, snow buntings eat seeds of weeds and grasses such as knotweed, ragweed, goosefoot and goldenrod, often picking them from stems poking through the snow. In summer they add crowberry, bilberry, poppy and saxifrage seeds and invertebrates such as butterflies, flies, wasps and spiders. They even flip stones to uncover basking spiders, and sometimes catch insects in flight.\n\nTheir call is a rippling whistle, per-r-r-rit, and the male's song a brief, loud warble. Each male's song is unique, built from repeating motifs and lasting about 2 seconds, and how often he sings reveals how well he forages, since singing time competes with feeding time. Females use this to choose good providers.",
+    "family": "Males reach the Arctic first, at the beginning of April, to claim the best nest sites; females follow four to six weeks later as the snow begins to melt. In Greenland a male defends his territory with loud calls and head-lowered threats, and courts by rising 10 to 15 metres, gliding and singing loudly. Pairs are monogamous, and the male shadows his mate during her fertile period.\n\nThe nest is tucked into a rock crack or crevice, safe from predators but cold. The female lays blue-green, brown-spotted eggs once the air rises above 0 °C, and the male brings her food while she sits so she can keep the eggs warm. They hatch in 12 to 13 days, the nestlings are fed only on invertebrates, and the young can fly 12 to 14 days later.",
+    "remarkable": "Snow buntings migrate by night and steer by the Earth's magnetic field, without relying on any visual cues. Only birds with enough stored energy pick the right seasonal direction. Before heading north they feast, raising their fat mass by 30 percent while lean mass falls by 15 percent, and they enlarge their breast muscles, which also lets them shiver harder to stay warm on arrival.",
+    "outlook": "Snow buntings remain widespread, but climate change is a concern. For the past 40 years the Arctic oscillation, a regional climate pattern, has stayed in its positive phase, bringing warmer springs. These trigger earlier breeding that can miss the peak of the insects the chicks need, reducing hatching success, and warmer conditions may draw competing species north.\n\nThere may be some gains too, since higher temperatures could allow more second broods to survive. During the last ice age, the species was widespread throughout continental Europe.",
+    "people": "Linnaeus described the snow bunting in 1758 from Lapland, calling it Emberiza nivalis; nivalis is Latin for 'snow-white'. Its current genus name, Plectrophenax, coined by the Norwegian-born zoologist Leonhard Stejneger in 1882, joins Greek words for 'cock's spur' and 'impostor'.\n\nFor birdwatchers in winter, the challenge is telling it from look-alikes. The Lapland longspur has little white in the wing and a drier, more rattling call than the bunting's liquid ripple, and the horned lark has a black-and-yellow head pattern and no white on its wings.",
+    "relatives": "The snow bunting was once placed with the American sparrows and Old World buntings in the family Emberizidae, but it now belongs to the smaller family Calcariidae with the longspurs. Its closest relative is McKay's bunting of the Bering Sea region, which is even whiter; the two hybridise in Alaska, and some authors treat them as one species.\n\nFour subspecies differ slightly in the plumage of breeding males: nivalis in Arctic Europe and North America, insulae in Iceland, the Faroes and Scotland, vlasowae in Arctic Asia, and the slightly larger townsendi of the Aleutians and Kamchatka. A hybrid with a Lapland longspur was photographed in Newfoundland and Labrador in 2011.",
+    "didYouKnow": "In autumn, female snow buntings leave the Arctic first and winter further south than males, while juveniles linger longest.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 15 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "32–38 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "30–40 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Seeds and invertebrates"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do male snow buntings get their black breeding plumage?",
+        "choices": [
+          "The brown tips wear off",
+          "A spring moult",
+          "A change of diet",
+          "They roll in dark soil to cover their winter feathers"
+        ],
+        "explanation": "The brown fringes wear away to reveal the black feather centres beneath."
+      },
+      {
+        "prompt": "Which other passerine winters as far north as the snow bunting?",
+        "choices": [
+          "The common raven",
+          "The house sparrow",
+          "The horned lark",
+          "The Lapland longspur, which often flocks alongside it"
+        ],
+        "explanation": "Apart from the common raven, no other passerine winters so far north."
+      },
+      {
+        "prompt": "How do snow buntings find their way on migration?",
+        "choices": [
+          "Earth's magnetic field",
+          "Following rivers",
+          "Steering by the stars",
+          "Following older birds along familiar coastlines by day"
+        ],
+        "explanation": "They migrate at night and sense the geomagnetic field, without using visual cues."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, protecting birds including those of the Cairngorms."
+      },
+      {
+        "name": "National Audubon Society",
+        "url": "https://www.audubon.org",
+        "blurb": "Protects birds and the places they need across the Americas."
+      }
+    ]
+  },
+  {
+    "id": "proboscis-monkey",
+    "name": "Proboscis Monkey",
+    "scientificName": "Nasalis larvatus",
+    "wikipediaTitle": "Proboscis monkey",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Mangroves, swamps and riverside forests of Borneo",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 1.0,
+      "longitude": 114.0
+    },
+    "mapSpan": 12,
+    "tagline": "Borneo's big-nosed, pot-bellied swimmer",
+    "lede": "Few faces are as unforgettable as that of a male proboscis monkey, whose fleshy nose can be more than 10 centimetres long and hangs down past his mouth. This pot-bellied monkey of Borneo's mangroves is perhaps the most aquatic of all primates, as at home in a river as in the treetops.",
+    "home": "The proboscis monkey lives only on Borneo and is found in all three countries that share the island: Brunei, Indonesia and Malaysia. It is restricted to lowland habitats that may be reached by tides, especially mangroves, riverine forest and dipterocarp forest, but also uses swamp forests, nipa and nibong palm swamps, heath forest, limestone hills, rubber plantations and even steep cliffs. It rarely strays more than a kilometre from water.\n\nGroups follow a daily rhythm tied to rivers. They sleep in neighbouring trees near the bank, forage there in the morning and then move inland to rest, returning to the river to feed again as night approaches.",
+    "anatomy": "This is one of the largest monkeys in Asia, and the sexes differ hugely. Males measure 66 to 76 centimetres in head-and-body length and usually weigh 16 to 22.5 kg, up to 30 kg; females are 53 to 62 centimetres long and weigh 7 to 12 kg. The coat is orange, reddish-brown or brick-red on the back and paler below, and both sexes have a bulging, pot-bellied stomach and many webbed toes.\n\nThe male's huge nose is supported by special cartilage, and one idea is that it evolved because females prefer males with louder calls, which a bigger nose amplifies. Females have smaller noses, still large for a primate, and youngsters' noses are upturned. Babies are born with a blue face that darkens to grey at about 2.5 months and turns cream like the adults' by about 8.5 months.",
+    "life": "Proboscis monkeys eat mainly young leaves and unripe fruit, with some flowers, seeds and insects, from at least 55 plant species. They eat mostly fruit from January to May and mostly leaves from June to December, and occasionally chew the cud to digest more efficiently. Their days are spent resting, travelling, feeding and keeping watch.\n\nA typical group has one adult male, several females and their young, though there are all-male groups and lone males. Groups gather at sleeping sites at night into bands of up to 60, then split and rejoin in a loose fission-fusion society. Males honk to keep the group together, and both sexes roar, snarl and shake branches in disputes. Predators include false gharials and possibly pythons, saltwater crocodiles, Sunda clouded leopards and eagles.",
+    "family": "Females mature at about 5 years. At one site, mating took place mainly between February and November and births between March and May. Both sexes invite mating with a pouting face, and pregnancy lasts about 166 to 200 days. Births usually happen at night or in the early morning, and the mother eats the placenta and licks her baby clean.\n\nOther group members are allowed to hold the infant. Young start eating solid food at 6 weeks and are weaned at 7 months, while a young male's nose grows slowly until adulthood. Resident males may hold a group for 6 to 8 years; when one is replaced, infants risk being killed by the newcomer. Young males leave to join all-male groups, and females sometimes move too.",
+    "remarkable": "For a primate, the proboscis monkey is an astonishing swimmer. It regularly crosses rivers, can swim up to 20 metres underwater, and will jump from overhanging branches straight into the water. Where it can, it crosses at narrow points or through the canopy, perhaps to avoid the crocodiles and false gharials waiting below.",
+    "outlook": "The proboscis monkey is listed as Endangered by the IUCN and in Appendix I of CITES. Its population fell by more than half in the 36 to 40 years up to 2008, as logging and oil palm plantations destroyed its forests, and in some areas it is hunted as a delicacy and for traditional Chinese medicine. The largest populations remain in Kalimantan, with far fewer in Sarawak, Brunei and Sabah.\n\nIt is protected by law throughout Borneo and occurs in 16 protected areas, including Tanjung Puting and Kutai National Parks in Indonesia and Bako National Park and the Lower Kinabatangan Wildlife Sanctuary in Malaysia.",
+    "people": "Westerners first learned of the proboscis monkey from Baron Friedrich von Wurmb in 1781, who later sent specimens to Stamford Raffles. Its genus name, Nasalis, comes from the Latin nasus, 'nose', and in English it is also called the long-nosed monkey.\n\nIt shares its forests with the Bornean orangutan and with other monkeys such as the silvery lutung. In Malaysia it is protected by federal law and by state laws in Sarawak and Sabah.",
+    "relatives": "The proboscis monkey is the only species in the genus Nasalis and belongs to the Colobinae, a subfamily of Old World monkeys. Two subspecies have been described, larvatus over most of the range and orientalis in northeast Kalimantan, though the difference is small and not all authorities accept it.\n\nIn Sabah, proboscis monkeys squeezed by oil palm clearing into small patches of riverside forest have formed mixed groups with silvery lutungs, and a possible hybrid has been seen in the Lower Kinabatangan. The two lineages split roughly 9 million years ago, so confirmed hybrids would be a surprise and a concern for conservation.",
+    "didYouKnow": "Female proboscis monkeys arrange themselves in a strict linear pecking order.",
+    "facts": [
+      {
+        "label": "Length (male)",
+        "value": "66–76 cm"
+      },
+      {
+        "label": "Weight (male)",
+        "value": "16–22.5 kg"
+      },
+      {
+        "label": "Nose (male)",
+        "value": "Over 10 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves and fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "On which island does the proboscis monkey live?",
+        "choices": [
+          "Borneo",
+          "Sumatra",
+          "Java",
+          "Sulawesi and the small islands around it"
+        ],
+        "explanation": "It is found only on Borneo, in Brunei, Indonesia and Malaysia."
+      },
+      {
+        "prompt": "What colour is a newborn proboscis monkey's face?",
+        "choices": [
+          "Blue",
+          "Cream",
+          "Red",
+          "Black with pale pink patches around the eyes"
+        ],
+        "explanation": "Babies have blue faces that turn grey and then cream as they grow."
+      },
+      {
+        "prompt": "Why might male proboscis monkeys have such big noses?",
+        "choices": [
+          "Females prefer louder calls",
+          "To smell ripe fruit",
+          "To keep cool",
+          "To help them breathe while swimming long distances underwater"
+        ],
+        "explanation": "A bigger nose may make a louder call, which females seem to prefer."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect Borneo's forests and wildlife, among many other places."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests, including in Borneo."
+      }
+    ]
+  },
+  {
+    "id": "southern-cassowary",
+    "name": "Southern Cassowary",
+    "scientificName": "Casuarius casuarius",
+    "wikipediaTitle": "Southern cassowary",
+    "group": "bird",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Rainforests of New Guinea, nearby Indonesian islands and northeastern Australia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -7.0,
+      "longitude": 142.0
+    },
+    "mapSpan": 25,
+    "tagline": "A helmeted giant of the rainforest floor",
+    "lede": "A helmeted, blue-faced bird as tall as a person stalks the rainforests of New Guinea and northern Australia, red wattles swinging at its throat. The southern cassowary is one of the heaviest birds on Earth, and each foot carries a dagger-like claw.",
+    "home": "The southern cassowary lives in Indonesia, Papua New Guinea and northeastern Australia. It mainly inhabits tropical rainforest but also uses nearby savannah forest and mangroves, generally below about 1,100 metres in Australia and 500 metres in New Guinea. Its total range covers some 396,000 square kilometres.\n\nCassowaries are strong swimmers and can cross rivers and streams. People have traded live cassowaries for hundreds or perhaps thousands of years, and some birds probably escaped or were released far from where they came from, which blurs the picture of their natural range.",
+    "anatomy": "Southern cassowaries usually stand 1.5 to 1.8 metres tall, and the largest modern birds reach about 2 metres and 85 kg; on average only ostriches are heavier. Females are larger and dominant, weighing roughly 47 to 76 kg against 29 to 55 kg for males, with a taller casque, bigger bill and brighter skin. The plumage is stiff, bristly and black, the face blue, the long neck red at the back, and two red wattles up to 18 centimetres long hang from the throat. On top of the head sits a brown, horn-like casque 13 to 20 centimetres high.\n\nThe three-toed feet are thick and powerful, and the inner toe bears a claw up to 12 centimetres long. Strong legs let a cassowary run at up to 50 km/h and jump nearly 2 metres straight up.",
+    "life": "Cassowaries forage on the forest floor for fallen fruit and seeds, and can safely digest some fruits that are toxic to other animals. Their droppings show they often eat Davidsonia plums and fruits of the palm, quandong, laurel and myrtle families. They also take fungi, snails and insects, small animals such as fish, frogs, birds and mammals, and carrion, and when food is scarce they have been seen eating soil, perhaps for minerals.\n\nThey are solitary and generally quiet, communicating with hisses and rumbles, but give a thunderous call in the breeding season. Chicks keep in touch with their father using high-pitched whistles and chirps.",
+    "family": "Pairs form only in the breeding season, usually in late winter or spring. The male builds a ground nest, a mattress of plants 5 to 10 centimetres thick and up to 1 metre wide that lets moisture drain away, and the female lays three to five eggs, each about 12 to 16 centimetres long and weighing around 600 g. They are granular and bright pea-green at first, fading with age.\n\nAfter that, the female's job is done. The male incubates the eggs alone for about 50 days and then raises the striped, fluffy chicks, which can walk and explore within hours of hatching. Young become independent at 9 to 12 months, and take 4 to 5 years to grow the full casque and adult plumage, when they usually start breeding.",
+    "remarkable": "The cassowary's fearsome reputation is mostly undeserved. A 2003 study of 221 attacks found that 150 were against people, and 75 percent of those came from birds that had been fed by humans; most involved birds expecting or snatching food. Only two human deaths have been recorded since 1900, one in Queensland in 1926 when two boys tried to club a bird, and one in Florida in 2019 when a captive bird's owner fell.",
+    "outlook": "The IUCN evaluated the southern cassowary as Least Concern in 2018, and a 2002 study estimated 10,000 to 20,000 birds, but it faces habitat loss from logging, hunting, feral animals that eat its eggs, and road traffic. In Australia it is listed as Endangered under federal law, with around 5,000 birds estimated in 2023, when a draft recovery plan was published.\n\nVehicle strikes are a major cause of death, and feeding by people draws birds onto roads. Queensland has trialled AI cameras that detect cassowaries near roads and trigger warning signs. Some scientists argue that the Australian population has stabilised, thanks to protected habitat and laws that stopped rapid forest loss.",
+    "people": "The name cassowary, and the scientific name Casuarius, come from the Malay name kesuari. Linnaeus described the bird in 1758 as Struthio casuarius, from a specimen from the island of Seram. In the late 1800s, Queensland hunters such as Archibald Meston shot and weighed birds they claimed reached 119 kg, far above typical weights, and Meston even reported a white bird he took for an albino.\n\nThe writer Karl Brandt has suggested that Aboriginal encounters with cassowaries may have inspired the myth of the bunyip. Southern cassowaries have been bred in zoos around the world.",
+    "relatives": "The southern cassowary is one of three living cassowaries, alongside the northern and dwarf cassowaries, and is the type species of the genus Casuarius. Cassowaries are ratites, related to the emu, ostrich, rhea and kiwi, and are the sister lineage of the emus within the family Casuariidae.\n\nSeveral subspecies have been described, mostly from the colours of the bare head and neck, but these fade in museum specimens and vary with age and between individuals. Most authorities now treat the species as having no subspecies, and its many old scientific names are considered synonyms.",
+    "didYouKnow": "In 2026, scientists discovered that southern cassowary casques glow under ultraviolet light, in patterns different from those of northern cassowaries.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "1.5–1.8 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 85 kg"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 50 km/h"
+      },
+      {
+        "label": "Claw",
+        "value": "Up to 12 cm"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Who incubates southern cassowary eggs?",
+        "choices": [
+          "The male",
+          "The female",
+          "Both parents in turn",
+          "Nobody, the eggs are buried in warm rotting leaves"
+        ],
+        "explanation": "The male incubates the eggs alone for about 50 days and raises the chicks."
+      },
+      {
+        "prompt": "What colour are freshly laid cassowary eggs?",
+        "choices": [
+          "Pea-green",
+          "White",
+          "Speckled brown",
+          "Pale blue with dark red spots at the narrow end"
+        ],
+        "explanation": "They start bright pea-green and fade with age."
+      },
+      {
+        "prompt": "What lay behind most cassowary attacks on people?",
+        "choices": [
+          "Birds expecting food",
+          "Defending chicks",
+          "Defending territory",
+          "Mistaking people for predators during the breeding season"
+        ],
+        "explanation": "Most attacks involved birds that had been fed by people expecting or snatching food."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership working to conserve birds and their habitats, including in Australia and New Guinea."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests, including in New Guinea."
+      }
+    ]
+  },
+  {
+    "id": "pronghorn",
+    "name": "Pronghorn",
+    "scientificName": "Antilocapra americana",
+    "wikipediaTitle": "Pronghorn",
+    "group": "mammal",
+    "regions": [
+      "naWest"
+    ],
+    "range": "Open plains of western North America, from southern Canada to Mexico",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 40.0,
+      "longitude": -107.0
+    },
+    "mapSpan": 30,
+    "tagline": "The fastest runner in the Americas",
+    "lede": "Across the open plains of the American West, a tan-and-white animal can outrun anything else on the continent. The pronghorn is the fastest land mammal in the Americas, reaching 88.5 km/h, and despite its nickname it is not an antelope at all but the last survivor of an ancient North American family.",
+    "home": "Pronghorns live west of the Mississippi, from southern Alberta and Saskatchewan through the western United States into Mexico, where the Sonoran subspecies ranges from Baja California Sur through Sonora to San Luis Potosí. They have disappeared from Iowa, Minnesota and Manitoba. They prefer open country between about 910 and 1,800 metres, with the densest populations where 254 to 406 millimetres of rain falls a year, and most stay within 8 km of water.\n\nSome make epic journeys. In Idaho, researchers tracked a migration route of more than 260 km from the foothills of the Pioneer Mountains through Craters of the Moon National Monument to the Continental Divide, a route that narrows at one point to a bottleneck only about 180 metres wide.",
+    "anatomy": "Adult males are 1.3 to 1.5 metres long, stand 82 to 104 centimetres at the shoulder and weigh 40 to 65 kg; females are as tall but lighter, at 34 to 48 kg. The coat is tan with bold white on the rump, sides, belly, chest and throat, and the very large eyes, set high in the skull, give a 320° field of view. Each foot has two hooves and no dewclaws.\n\nThe horns are unique. A permanent bony core is covered by a keratin sheath that is shed and regrown every year, and in males the sheath, averaging about 25 centimetres, carries a forward-pointing prong. Females' horns are small, sometimes barely visible, and very rarely pronged. Males also have a patch of black hair at the angle of the jaw.",
+    "life": "Pronghorns eat a wide variety of plants, including some that are unpalatable or poisonous to livestock. In one study forbs made up 62 percent of the diet, shrubs 23 and grasses 15; another found cacti made up 40 percent. Like cattle, they chew the cud.\n\nTheir predators include cougars, wolves, coyotes, grizzly bears and bobcats, and golden eagles take fawns. When a pronghorn spots danger, the white hair on its rump flares open, exposing glands that release a smell like buttered popcorn and warning others by sight and scent; people have smelled it 20 to 30 metres downwind. Built for running rather than jumping, pronghorns tend to slip under fences instead of leaping them.",
+    "family": "Pronghorns gather in mixed herds in winter, then split in spring into bachelor groups, female harems and solitary adult males. Some males defend a territory, others a harem, and they may switch strategy. Females choose in different ways: some visit several males, some provoke fights between males and mate with the winner, and some stay quietly with one. A courting male approaches softly vocalising and waving his head to show his cheek patches.\n\nThey breed in mid-September, and pregnancy lasts 7 to 8 months, unusually long for a North American hoofed animal. Twins are common, and newborns weigh 2 to 4 kg. For their first 3 weeks or so fawns hide in vegetation, meeting their mothers for only 20 to 25 minutes a day. Pronghorns mature at 15 to 16 months and live up to 10 years, rarely 15.",
+    "remarkable": "The pronghorn's real gift is stamina. It can run at 56 km/h for 6.5 km and at 68 km/h for 1.5 km. Although slower than a cheetah, it holds high speed far longer, thanks to an oversized windpipe, heart and lungs, a large blood volume, very light bones, hollow hair and cushioned hooves. It has at least 13 distinct gaits, with a stride of nearly 7.3 metres at full stretch.\n\nWhy it evolved such speed is debated. One idea links it to the extinct cat Miracinonyx, but fossils suggest pronghorn ancestors were already built for running before that predator appeared.",
+    "outlook": "Around 1900, conservationists of the Boone and Crockett Club feared the pronghorn would go extinct, and by the 1920s hunting had cut the population to about 13,000. Refuges followed, including the Charles Alexander Sheldon Antelope Refuge in Nevada, created with the National Audubon Society and greatly expanded by President Franklin Roosevelt in 1936. With habitat protection and hunting limits, numbers recovered to an estimated 500,000 to 1,000,000.\n\nToday pronghorns are legally hunted for food and population control, and no major range-wide threat exists, though fences and roads block migration corridors and bluetongue disease from sheep has caused local declines. The Sonoran and Baja California subspecies are endangered, with fewer than 300 Sonoran pronghorns left in the United States.",
+    "people": "Plains peoples and those of the Northwest Plateau hunted pronghorns as a principal food, and the animal features prominently in Native American mythology. Lewis and Clark described how the Mandan drove herds into a large pen through gradually narrowing fences of bushes, and were struck by the animal's 'wonderful fleetness'. Clark was among the first Euro-Americans to describe killing one, near the mouth of the Niobrara River.\n\nSpanish explorers saw pronghorns in the 16th century, but George Ord gave the formal description only in 1815. The species is the symbol of the American Society of Mammalogists, and pronghorns once outnumbered people in Wyoming.",
+    "relatives": "Despite names like American antelope and prairie antelope, the pronghorn is not an antelope; it resembles Old World antelopes through parallel evolution. It is the only surviving member of the family Antilocapridae, and its closest living relatives are the giraffe and the okapi. During the Pleistocene about 11 other antilocaprids roamed North America, many with long or spectacularly twisted horns, and three other genera still existed when humans arrived.\n\nRecognised subspecies include the Rocky Mountain, Mexican, Oregon, Sonoran and critically endangered Baja California pronghorns.",
+    "didYouKnow": "Unlike deer, pronghorns have a gallbladder.",
+    "facts": [
+      {
+        "label": "Top speed",
+        "value": "88.5 km/h"
+      },
+      {
+        "label": "Weight (male)",
+        "value": "40–65 kg"
+      },
+      {
+        "label": "Shoulder height",
+        "value": "82–104 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 10 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What are the pronghorn's closest living relatives?",
+        "choices": [
+          "Giraffe and okapi",
+          "African antelopes",
+          "Deer",
+          "Mountain goats and bighorn sheep of the Rockies"
+        ],
+        "explanation": "Despite its looks, the pronghorn's closest living relatives are the giraffe and okapi."
+      },
+      {
+        "prompt": "What does a pronghorn's alarm scent smell like to people?",
+        "choices": [
+          "Buttered popcorn",
+          "Rotten eggs",
+          "Pine resin",
+          "Wet dog after a long walk in the rain"
+        ],
+        "explanation": "The main compound in the rump gland smells like buttered popcorn."
+      },
+      {
+        "prompt": "What happens to the pronghorn's horn sheath every year?",
+        "choices": [
+          "It is shed and regrown",
+          "It grows a new prong",
+          "Nothing at all",
+          "It splits lengthways into two separate spikes"
+        ],
+        "explanation": "The keratin sheath over the bony core is shed and regrown annually."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places, and has helped map pronghorn migration routes in Idaho."
+      },
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Conserves lands and waters, including grasslands and migration corridors in the American West."
+      }
+    ]
+  }
+]
