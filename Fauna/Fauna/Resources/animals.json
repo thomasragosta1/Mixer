@@ -7983,5 +7983,1424 @@
         "blurb": "Works to protect South America's grasslands and forests, including the Cerrado and Pantanal."
       }
     ]
+  },
+  {
+    "id": "american-bullfrog",
+    "name": "American Bullfrog",
+    "scientificName": "Lithobates catesbeianus",
+    "wikipediaTitle": "American bullfrog",
+    "group": "amphibian",
+    "regions": [
+      "naEast"
+    ],
+    "range": "Ponds, lakes and swamps of eastern North America, introduced worldwide",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 38.0,
+      "longitude": -88.0
+    },
+    "mapSpan": 35,
+    "tagline": "A frog that bellows like a bull and swallows bats",
+    "lede": "On summer nights the deep, droning call of the male bullfrog rolls across North American ponds, sounding uncannily like a distant bull. Behind that voice is a big, hungry frog that will try to eat almost anything that fits in its mouth, and quite a few things that barely do.",
+    "home": "The bullfrog is native to eastern North America and is common in every US state east of the Mississippi. Its natural range runs from the Canadian Maritime Provinces west to Idaho and Texas, and north to Michigan, Minnesota and Montana. It favours large, permanent water: swamps, ponds and lakes, but also garden pools, koi ponds, canals, ditches, reservoirs and culverts.\n\nPeople have carried it far beyond that range. It now lives across much of the western United States and in more than 40 countries, from Mexico, Cuba and Brazil to Belgium, Italy, China, Japan and South Korea, often after escaping from frog farms or being released on purpose.",
+    "anatomy": "This is the largest true frog in North America. Adults usually measure 9 to 15 centimetres from snout to vent, and big individuals weigh up to 500 g, with a few recorded at 800 g and 20 centimetres. The back is olive green, plain or mottled with greyish brown, and the belly is off-white blotched with yellow or grey.\n\nThe eye is prominent with a brown iris and a horizontal pupil. The round eardrum sits just behind the eye. In males it is larger than the eye, while in females it is about the same size, and males also have yellow throats. The front legs are short and sturdy, the hind legs long, and all the back toes but the fourth are webbed.",
+    "life": "Bullfrogs are opportunistic ambush predators. Stomach studies have turned up rodents, small snakes and lizards, other frogs, crayfish, small birds, scorpions, tarantulas and several kinds of bat, along with the snails, worms and insects most frogs eat.\n\nUnusually for their family, they also take many aquatic animals such as fish, tadpoles and water beetles. They lunge with eyes closed, flick out a sticky tongue and clamp down with strong jaws, stuffing large prey in with their hands.\n\nThey even aim slightly behind submerged prey to allow for the bending of light at the water's surface. Herons, river otters, predatory fish, snakes and alligators all hunt bullfrogs. A frog in trouble leaps for deep water, and a trapped one may let out a piercing scream that startles its attacker.",
+    "family": "The breeding season lasts two to three months. Males gather in shifting groups called choruses, calling from territories spaced 3 to 6 metres apart. Dominant males float high with lungs inflated, showing off their yellow throats, and rivals wrestle belly to belly, while quieter 'satellite' males wait at the edges for a vacancy.\n\nFemales choose their mate and initiate contact. A female lays a floating sheet of up to 20,000 eggs among shallow vegetation, covering up to a square metre.\n\nThe eggs hatch in three to five days in warm water. Tadpoles may take a few months to become frogs in the south, but up to 3 years in the cold north. Wild bullfrogs live 8 to 10 years, and one reached almost 16 in captivity.",
+    "remarkable": "The bullfrog seems to shrug off defences that stop other predators. Frogs in New Mexico regularly eat stinging wasps without learning to avoid them, others swallow spiny sticklebacks, and they may be partly resistant to the venom of copperheads and cottonmouths.\n\nAdults even eat the dragonfly nymphs, giant water bugs and garter snakes that would otherwise prey on their own young.",
+    "outlook": "In its native range the bullfrog is widespread and plentiful. Elsewhere it is a serious invasive species. Its appetite and huge clutches harm native frogs, and in California it is thought to be a factor in the decline of the California red-legged frog.\n\nIt is also relatively immune to the chytrid fungus that is devastating amphibians worldwide, so it can carry the disease into new areas without falling ill. Since 2016 the European Union has banned importing, breeding, selling or releasing it, and small populations in England are being controlled by Natural England.",
+    "people": "Bullfrogs are eaten widely, especially in the southern United States. The traditional hunt is by canoe at night: hunters follow the call, dazzle the frog with a light and spear it with a gig. Only the hind legs are usually eaten, and cooked they resemble small chicken drumsticks.\n\nDuring the Great Depression one businessman promoted bullfrog farming as a way to make money, but captive frogs refuse artificial food and readily escape, and the scheme largely failed. The bullfrog is a standard dissection specimen in schools and is the state amphibian of Missouri, Ohio and Oklahoma. In 2023 wildlife officials in Utah began posting tips on catching and cooking the invasive frogs.",
+    "relatives": "The bullfrog belongs to the Ranidae, the true frogs. Some scientists place it in the genus Lithobates, while others prefer the older name Rana catesbeiana.\n\nIts close relatives include the green frog, leopard frog and wood frog of North America. The species name honours the English naturalist Mark Catesby.",
+    "didYouKnow": "Bullfrogs that catch mice tend to swim underwater with them, so the mouse spends its energy struggling for air rather than fighting back.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "9–15 cm snout to vent"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 500 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "8–10 years wild"
+      },
+      {
+        "label": "Eggs",
+        "value": "Up to 20,000 per clutch"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where did the bullfrog get its common name?",
+        "choices": [
+          "From the male's call",
+          "From its bulky shape",
+          "From its habit of charging rivals",
+          "From a Native American word meaning big frog of the pond"
+        ],
+        "explanation": "The male's breeding call sounds like a bellowing bull."
+      },
+      {
+        "prompt": "How can you tell a male bullfrog from a female?",
+        "choices": [
+          "His eardrum is larger than his eye",
+          "He has red eyes",
+          "He is much bigger",
+          "He has webbing on all four of his front toes as well as his back toes"
+        ],
+        "explanation": "Males have eardrums larger than their eyes and yellow throats; females are actually the larger sex."
+      },
+      {
+        "prompt": "Why do conservationists worry about bullfrogs spreading the chytrid fungus?",
+        "choices": [
+          "They carry it without falling ill",
+          "They eat infected snails",
+          "They are farmed for it",
+          "It makes them grow far larger and more aggressive than normal frogs"
+        ],
+        "explanation": "Being relatively immune, they can spread the fungus to native frogs that are vulnerable."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps save threatened amphibian species through conservation breeding and research."
+      },
+      {
+        "name": "Save The Frogs",
+        "url": "https://www.savethefrogs.com",
+        "blurb": "Works to protect amphibian populations and the wetlands they depend on."
+      }
+    ]
+  },
+  {
+    "id": "adelie-penguin",
+    "name": "Adélie Penguin",
+    "scientificName": "Pygoscelis adeliae",
+    "wikipediaTitle": "Adélie penguin",
+    "group": "bird",
+    "regions": [
+      "antarctica"
+    ],
+    "range": "Coasts and pack ice all around Antarctica",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -70.0,
+      "longitude": 0.0
+    },
+    "mapSpan": 60,
+    "tagline": "Antarctica's feisty little penguin in a tuxedo",
+    "lede": "Small, stubborn and endlessly curious, the Adélie penguin is the classic tuxedoed penguin of the Antarctic coast. It nests further south than almost any other bird, steals stones for its nest, and has been known to march straight up to predators many times its size.",
+    "home": "Adélies live right around the Antarctic continent, the most widespread penguin there, and along with the emperor penguin the most southerly of all. They are one of only four penguin species that nest on the continent itself, with colonies also on islands such as the South Orkneys, South Shetlands and South Georgia. They rarely venture north of 60°S, though stray birds have reached Australia, New Zealand and South America.\n\nTo breed they need bare, rocky ground swept free of snow by wind or sun, and they will not nest on ice. Early in the season a colony can be 100 km from open water. In winter they move into the pack ice, mostly north of about 73°S where there is at least some daylight.",
+    "anatomy": "An Adélie stands 70 to 73 centimetres long and weighs 3.8 to 8.2 kg. The head, throat and back are black and the underparts snowy white, with a bold white ring around each dark eye. Black feathers cover most of the beak, leaving only the tip bare, and the legs and feet are pink.\n\nMales and females look alike, though females have shorter wings and beaks. Like its relatives it has long, stiff tail feathers that sweep the ground as it walks and serve as a prop. Young birds have white chins and throats and lack the full eye ring until they are at least a year old.",
+    "life": "Adélies feed mainly on Antarctic krill and ice krill, along with Antarctic silverfish, lanternfish, amphipods and squid, and they actively seek out jellyfish. Old eggshell preserved in colonies shows a sudden switch from fish to krill about 200 years ago, probably because the hunting of fur seals and whales left more krill for penguins. They usually swim at about 8 km/h and can leap some 3 metres out of the water onto rock or ice.\n\nTheir food and water are salty, so they have nasal salt glands and can concentrate their waste far more than most birds. Ross Sea birds travel about 13,000 km a year, following the edge of the sea ice to stay in daylight through the polar winter, and one trek was tracked at 17,600 km.",
+    "family": "Breeding runs from October to February. Pairs build rough nests of piled stones and lay two eggs, which the parents incubate for 32 to 34 days in shifts that typically last 12 days. The sitting bird does not eat and does not even leave the nest to defecate, squirting droppings outwards instead.\n\nChicks hatch in silvery-grey down and stay in the nest for 22 days before joining crèches with other chicks. Parents regurgitate krill for them, first removing some of the salt in their stomachs to protect the young. At 50 to 60 days the young moult into juvenile plumage and head to sea.",
+    "remarkable": "Adélies are famously bold. Members of Robert Falcon Scott's expedition watched them strut up to howling sled dogs, and one bird angrily beat a man's shins with its flippers after he rescued it.\n\nIn 2018 a BBC film crew recorded an Adélie charging a giant petrel and standing guard over a group of emperor penguin chicks until the predator retreated.",
+    "outlook": "The IUCN lists the Adélie as Least Concern, with more than 10 million mature birds. A 2014 census using satellite images of guano-stained ground found about 3.79 million breeding pairs in 251 colonies, a 53% rise in 20 years, and a colony of 1.5 million was discovered in 2018.\n\nYet on the Antarctic Peninsula, shrinking sea ice has cut numbers by 65% in 25 years. Leopard seals hunt adults, while skuas, giant petrels and gulls take eggs and chicks. In 2024 more than 532 Adélies were found dead on Heroína Island, with H5N1 bird flu suspected.",
+    "people": "The penguin is named after Adélie Land, which the French explorer Jules Dumont d'Urville named after his wife Adèle; his crew collected the first specimens around 1840. Explorers on Scott's 1910 expedition grew fond of the birds.\n\nApsley Cherry-Garrard described them as 'extraordinarily like children' in The Worst Journey in the World. The surgeon George Murray Levick studied them at Cape Adare, the largest Adélie rookery in the world. His notes on their unruly sex lives were judged too indecent to print and stayed unpublished until 2012.",
+    "relatives": "The Adélie is one of three brush-tailed penguins in the genus Pygoscelis, alongside the chinstrap and gentoo. DNA suggests it branched off about 19 million years ago, and the other two evolved some 5 million years later.\n\nThe genus name comes from Greek words for 'rump' and 'leg'. Young Adélies can resemble chinstraps, but they lack the black chinstrap line and have a shorter, feathered bill.",
+    "didYouKnow": "The salt and nitrogen in Adélie droppings carry nutrients from the sea onto land, making the soils around their rookeries habitable for bacteria.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "70–73 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "3.8–8.2 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Krill, fish, squid"
+      },
+      {
+        "label": "Migration",
+        "value": "About 13,000 km a year"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Who was the Adélie penguin ultimately named after?",
+        "choices": [
+          "An explorer's wife",
+          "A French queen",
+          "A ship",
+          "A scientist who first counted the colonies from satellite images"
+        ],
+        "explanation": "It is named after Adélie Land, which Jules Dumont d'Urville named for his wife Adèle."
+      },
+      {
+        "prompt": "What do Adélie penguins build their nests from?",
+        "choices": [
+          "Stones",
+          "Ice blocks",
+          "Seaweed and feathers",
+          "Moss gathered from inland valleys and carried back to the coast"
+        ],
+        "explanation": "They nest on bare rocky ground and pile up stones."
+      },
+      {
+        "prompt": "Why did Adélies switch from fish to krill about 200 years ago?",
+        "choices": [
+          "Seal and whale hunting left more krill",
+          "The sea froze over",
+          "Fish became poisonous",
+          "They moved their colonies thousands of kilometres north"
+        ],
+        "explanation": "The decline of fur seals and baleen whales left a surplus of krill for penguins."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats, including Antarctic seabirds."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and oceans, including the Southern Ocean."
+      }
+    ]
+  },
+  {
+    "id": "alligator-gar",
+    "name": "Alligator Gar",
+    "scientificName": "Atractosteus spatula",
+    "wikipediaTitle": "Alligator gar",
+    "group": "fish",
+    "regions": [
+      "naEast",
+      "centralAmerica"
+    ],
+    "range": "Rivers, lakes and bays of the southern United States and northeastern Mexico",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 31.0,
+      "longitude": -93.0
+    },
+    "mapSpan": 20,
+    "tagline": "An armoured living fossil with a crocodile's grin",
+    "lede": "With its broad snout, double row of fangs and body clad in bony armour, the alligator gar looks like something out of the age of dinosaurs. In a sense it is: its lineage goes back more than 100 million years, and it can still gulp air at the surface like its distant ancestors.",
+    "home": "Alligator gar live mainly in the southern United States, in reservoirs and lakes, the backwaters of lowland rivers, and the brackish water of estuaries, bayous and bays along the Gulf of Mexico.\n\nTheir range runs through the lower Mississippi Valley and Gulf Coast states and south into Tamaulipas and northern Veracruz in Mexico. They tolerate everything from fresh swamps to salty marshes. They once lived as far north as Kansas, Nebraska, Ohio and Iowa but have vanished there; the most northerly verified catch was in Illinois in 1922.",
+    "anatomy": "This is the largest gar and one of the largest freshwater fish in North America. Adults commonly reach 1.8 metres and over 45 kg, and anecdotal reports speak of 3 metres. The biggest officially recorded fish, netted in Mississippi in 2011, was 2.57 metres long and weighed 148 kg. The torpedo-shaped body is brown or olive above, fading to grey or yellow beneath.\n\nIts scales are ganoid: diamond-shaped plates of bone coated in ganoin, a material essentially equivalent to tooth enamel, which makes them nearly impenetrable. Its swim bladder is laced with blood vessels and works as a lung, so the gar can breathe air in stagnant, oxygen-poor water where other fish would suffocate.",
+    "life": "Alligator gar are solitary and seem sluggish, but they are voracious ambush predators that hunt mostly at night. A gar hangs just below the surface until prey drifts close, then lunges sideways and impales it on its teeth. It eats mainly forage fish such as gizzard shad, plus crustaceans and waterfowl, and in brackish water it feeds heavily on blue crabs.\n\nIt will also grab turtles and small mammals floating at the surface, and scavenge. On hot summer days in the southern states gars are often seen breaking the surface to gulp air. Stomach studies have even turned up fishing tackle and boat-engine parts.",
+    "family": "Gars are slow to mature: most females do not breed until after their first decade, and males at about half that age. Spawning needs spring warmth, long days and, crucially, floods that spill rivers over their floodplains, where drowned vegetation shelters the young.\n\nWhen the water reaches 20 to 28 °C, males crowd around a female in the weedy shallows, writhing and bumping until she releases her eggs, an average of about 150,000 per spawn. The sticky eggs cling to plants and hatch within a few days. The fish is long-lived: the record Mississippi gar was thought to be 50 to 70 years old, and possibly over 95.",
+    "remarkable": "The alligator gar's bright red eggs are poisonous to humans. Together with its armoured scales and large size, this means the fish has few natural enemies even in its native waters.",
+    "outlook": "Habitat loss, culling and unrestricted fishing have wiped alligator gar out of much of their historic range. For nearly half a century US authorities treated them as 'trash fish' to be eliminated for the sake of game fish, but since the 1980s they have gained protection.\n\nSeveral states now monitor populations and regulate catches, Texas introduced a one-a-day bag limit in 2009, and federal hatcheries raise young fish for restocking. Outside its range the fish can become a problem. Released aquarium gars are invasive in mainland China and have turned up in Hong Kong, Singapore, India, Cyprus and Thailand.",
+    "people": "Native Americans and Caribbean peoples used the hard scales as arrowheads and breastplates, and settlers tanned gar skin into tough leather to cover wooden ploughs. In Arkansas gar oil was used to repel gnats.\n\nToday the fish is prized by anglers and bowfishers. The rod-and-reel world record, landed in Texas in 2023, weighed about 128 kg. It is also eaten, as fried gar balls or grilled fillets in the southern United States, and scales are made into jewellery. Large gars were once sold to Japanese collectors for as much as US$40,000, until Japan banned them in 2018.",
+    "relatives": "Gars belong to the Lepisosteidae, the only surviving gar family, with seven species, all in North and Central America.\n\nTheir closest living relatives are the bowfins. Gars are often called living fossils because they keep ancient features such as a spiral valve in the gut, also found in sharks, and an air-breathing swim bladder. Lacépède first described the species in 1803, as Lepisosteus spatula; it was moved to the genus Atractosteus in 1976.",
+    "didYouKnow": "Despite a fearsome reputation, there are no confirmed attacks by alligator gar on people; the only known injuries come from captured fish thrashing about on boat decks.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Commonly 1.8 m"
+      },
+      {
+        "label": "Record",
+        "value": "2.57 m, 148 kg"
+      },
+      {
+        "label": "Eggs",
+        "value": "About 150,000 per spawn"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How can an alligator gar survive in stagnant, oxygen-poor water?",
+        "choices": [
+          "Its swim bladder works as a lung",
+          "It buries itself in mud",
+          "It slows its heart",
+          "It absorbs oxygen through its bony scales whenever it rests near the bottom"
+        ],
+        "explanation": "A blood-rich swim bladder lets it gulp and breathe air at the surface."
+      },
+      {
+        "prompt": "What is unusual about alligator gar eggs?",
+        "choices": [
+          "They are poisonous to humans",
+          "They float in chains",
+          "They are guarded by both parents",
+          "They can survive for years in dried mud until the next flood arrives"
+        ],
+        "explanation": "The bright red eggs are poisonous if eaten."
+      },
+      {
+        "prompt": "What do alligator gar need to trigger spawning?",
+        "choices": [
+          "Flooding",
+          "Full moon",
+          "Cold water",
+          "A drop in salinity"
+        ],
+        "explanation": "Floods spread rivers over the floodplain, creating sheltered, weedy nurseries."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects rivers, floodplains and other habitats across the United States and beyond."
+      }
+    ]
+  },
+  {
+    "id": "deaths-head-hawkmoth",
+    "name": "Death's-head Hawkmoth",
+    "scientificName": "Acherontia atropos",
+    "wikipediaTitle": "Acherontia atropos",
+    "group": "insect",
+    "regions": [
+      "africa",
+      "europe",
+      "asia"
+    ],
+    "range": "Africa, the Mediterranean and Middle East, migrating north into Europe",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 15.0,
+      "longitude": 20.0
+    },
+    "mapSpan": 70,
+    "tagline": "A squeaking moth with a skull on its back",
+    "lede": "On the back of this big night-flying moth sits a pale pattern that looks unmistakably like a human skull. For centuries that mark has made it a symbol of death and bad luck, though the moth itself is harmless, apart from a taste for honey.",
+    "home": "The death's-head hawkmoth is native to much of Africa, down to the southern tip, and to the Mediterranean and the Middle East. It reaches as far east as India and as far west as the Canary Islands and the Azores. It is also a strong migrant.\n\nEach year moths fly north into Europe, and recent mild winters have brought them increasingly into southern Great Britain, though few manage to survive the winter there. After an exceptionally warm summer in 2019, one even turned up above the Arctic Circle in northern Sweden. Powerful fliers, they have been found on ships far out at sea.",
+    "anatomy": "This is the largest moth in the British Isles, with a wingspan of 8 to 12 centimetres. The forewings are mottled dark and pale brown, and the hindwings are yellow or orange-buff crossed by two wavy dark bands. The stout, downy abdomen carries yellow stripes that resemble a hornet's. The famous skull is a patch of short yellowish hairs on the thorax.\n\nAt rest the forewings fold down over the hindwings, hiding the bright colours. A 2020 study noted that seen upside down, the moth looks like a face with eyes, the 'skull' forming a nose, which probably helps deter or confuse predators. Females are larger and bulkier than males, with thicker antennae.",
+    "life": "Unlike most moths, which make sounds by rubbing body parts together, death's-head hawkmoths squeak. The moth sucks in air so that a flap between mouth and throat vibrates, and the squeak comes out as it breathes out, each cycle taking about a fifth of a second.\n\nNo one is sure why. It may startle predators, or it may help the moth raid beehives, since it mimics the piping a queen bee uses to make workers freeze. It flies late at night, so although striking it is seldom seen. It is a minor pest of beehives and crops.",
+    "family": "There are several generations a year, and in Africa the broods are continuous. Females lay single eggs under old leaves of nightshade plants, especially potato, but also on lantana, olive relatives and others. The caterpillar is stout, with seven diagonal blue lines and a curled horn at the rear covered in small bumps. In its last stage it can be green, brown or yellow.\n\nFully grown caterpillars reach about 12 to 13 centimetres. If disturbed they click their jaws or bite, though the bite cannot harm human skin. They pupate in a chamber about the size of a large hen's egg, 20 to 25 centimetres underground, and in the north the pupa is how the species survives winter.",
+    "remarkable": "The moth's names are steeped in death. Atropos was the Greek Fate who cut the thread of each human life, and Acheron was a river of the Greek underworld, a name sometimes used for the underworld itself.",
+    "outlook": "The death's-head hawkmoth is common across much of Africa and southern Europe, and no major threats to it are known.\n\nIts range appears to be creeping north as European winters grow milder, bringing more moths into Britain, though in the north most still fail to survive the cold months. Because it flies so late at night, many people living within its range never notice it.",
+    "people": "Its skull mark has given the moth a sinister reputation. Superstitions hold that it brings bad luck or death to any house it enters, and in South Africa some people have wrongly believed it has a fatal sting. John Keats called it the 'death-moth' in his Ode to Melancholy, and it appears in Bram Stoker's Dracula, the painting The Hireling Shepherd and the surrealist film Un Chien Andalou.\n\nIts best-known role is in The Silence of the Lambs, where the killer uses the moth as a calling card. The script names a related species, but the moths on screen are this one.",
+    "relatives": "The species was named by Carl Linnaeus in 1758 and belongs to the hawkmoth family, Sphingidae.\n\nIt is the best known of three death's-head hawkmoths in the genus Acherontia; the other two are A. lachesis and A. styx, and all three can squeak. A similar upside-down 'face' illusion is found in the convolvulus hawkmoth.",
+    "didYouKnow": "Unlike those of many other hawkmoths, the pupa of the death's-head hawkmoth has its proboscis completely fused to the body.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "8–12 cm"
+      },
+      {
+        "label": "Caterpillar",
+        "value": "12–13 cm"
+      },
+      {
+        "label": "Food plant",
+        "value": "Potato and nightshades"
+      },
+      {
+        "label": "Active",
+        "value": "Late at night"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the death's-head hawkmoth make its squeak?",
+        "choices": [
+          "By forcing air past a throat flap",
+          "By rubbing its wings",
+          "By clicking its legs",
+          "By vibrating the hairs of the skull-shaped patch on its thorax"
+        ],
+        "explanation": "Air sucked in and out makes a flap between mouth and throat vibrate."
+      },
+      {
+        "prompt": "Which film used this moth as a killer's calling card?",
+        "choices": [
+          "The Silence of the Lambs",
+          "Psycho",
+          "Jaws",
+          "The Mothman Prophecies, in its opening scene on a bridge"
+        ],
+        "explanation": "The script named a related species, but the moths filmed were Acherontia atropos."
+      },
+      {
+        "prompt": "Where does the caterpillar turn into a pupa?",
+        "choices": [
+          "Underground",
+          "Inside a beehive",
+          "Hanging from a leaf",
+          "Inside a silk cocoon spun on the stem of a potato plant"
+        ],
+        "explanation": "It pupates in a chamber 20 to 25 centimetres below ground."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Works to save insects and other invertebrates and the habitats they need."
+      }
+    ]
+  },
+  {
+    "id": "aardwolf",
+    "name": "Aardwolf",
+    "scientificName": "Proteles cristatus",
+    "wikipediaTitle": "Aardwolf",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Dry plains and shrubland of East and Southern Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -10.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 55,
+    "tagline": "The gentle hyena that lives on termites",
+    "lede": "The aardwolf looks like a slim, scaled-down striped hyena, but it has none of the family's bone-crunching habits. It lives almost entirely on termites, licking up hundreds of thousands in a single night with a tongue tough enough to shrug off their bites.",
+    "home": "Aardwolves live in two separate populations, one in Southern Africa and one in East and Northeast Africa, with none in the miombo woodland between. They favour open, dry plains and bushland and avoid mountains. Above all they need harvester termites of the family Hodotermitidae, which feed on dead grass and are most common in heavily grazed grassland, savanna and farmland.\n\nA pair holds a territory of 1 to 4 square kilometres with up to 10 dens. Most are old burrows dug by aardvarks, springhares or porcupines, which the aardwolves rotate through over about six months.",
+    "anatomy": "An aardwolf is 55 to 80 centimetres long plus a bushy, black-tipped tail of 20 to 30 centimetres, and stands about 40 to 50 centimetres at the shoulder. Most weigh 7 to 10 kg, making it the smallest living hyena.\n\nIts yellowish coat has black vertical stripes, its lower legs are black, and a long mane runs down its neck and back that it raises to look bigger when threatened. It has large ears like a striped hyena's but, unlike other hyenas, five toes on each front foot. Its cheek teeth are small and peg-like, and its canines are used mainly for fighting. Older aardwolves often lose teeth, which hardly matters on a diet of soft insects.",
+    "life": "Aardwolves are shy, nocturnal and mostly solitary foragers. They find termites by sound and by the smell of the soldiers' defensive secretions, then lap them off the ground rather than digging into the mound as an aardvark does. One animal may eat up to 250,000 termites a night, swallowing sand that helps grind its food. It leaves the colony alive, and returns to the same nests every few months.\n\nOn summer nights an aardwolf covers 8 to 12 km. In the coldest part of winter it may feed by day instead, on a harvester termite active in the afternoon. Both sexes mark their territory with a black paste from their anal glands, up to 200 marks a night.",
+    "family": "Pairs are monogamous, but dominant males often slip into weaker neighbours' territories to mate, and females may accept them. After a pregnancy of 89 to 92 days, two to five cubs are born in the rainy season, when termites are most active. They are born with their eyes open but helpless, weighing 200 to 350 g.\n\nThe cubs spend 6 to 8 weeks in the den, and the father may guard them for up to six hours a night while the mother feeds. They start foraging under supervision at 3 months and are usually independent at 4 months, maturing at 1.5 to 2 years. The oldest known aardwolf lived almost 19 years at Frankfurt Zoo.",
+    "remarkable": "Unlike other hyenas, the aardwolf neither hunts large animals nor scavenges. When one is seen hunched over a carcass, it is eating beetles and maggots rather than meat, and it will only eat meat if it is finely ground or cooked.",
+    "outlook": "The IUCN lists the aardwolf as Least Concern. Its numbers are not falling and it is widespread in eastern Africa, although even where food is plentiful there is no more than one per square kilometre.\n\nSome farmers kill aardwolves in the mistaken belief that they take livestock, when in fact they help by eating harmful termites. Others are killed for their fur, by dogs or by insecticides.",
+    "people": "The name means 'earth-wolf' in Afrikaans and Dutch. It is also called maanhaarjakkals, 'mane-jackal', and sometimes the civet hyena, because like the African civet it secretes a strong-smelling substance from its anal glands.\n\nWhen cornered it may spray this foul liquid at an attacker. The aardwolf is rarely kept in zoos: the southern form lived in 15 zoos worldwide in 2026, and the eastern form in just one, in Novosibirsk.",
+    "relatives": "The aardwolf is the only living member of the subfamily Protelinae within the hyena family, and it was once given its own family. It split from the other three hyenas early, though fossils and genes disagree on when by 10 million years.\n\nA 2021 study found eastern and southern aardwolves different enough that some scientists now treat them as two species. Its genus name, Proteles, means 'complete in front', after its five front toes.",
+    "didYouKnow": "When chased, an aardwolf may try to throw off a predator by doubling back along its own tracks.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "55–80 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "7–10 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly termites"
+      },
+      {
+        "label": "Termites eaten",
+        "value": "Up to 250,000 a night"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the name 'aardwolf' mean?",
+        "choices": [
+          "Earth-wolf",
+          "Termite eater",
+          "Striped dog",
+          "Night hunter of the dry plains"
+        ],
+        "explanation": "It means 'earth-wolf' in Afrikaans and Dutch."
+      },
+      {
+        "prompt": "How does an aardwolf usually feed on termites?",
+        "choices": [
+          "It licks them off the ground",
+          "It digs into the mound",
+          "It breaks open dead wood",
+          "It waits at the mound entrance and snaps them up with its sharp canine teeth"
+        ],
+        "explanation": "Unlike the aardvark, it laps surface-foraging termites up with its broad tongue."
+      },
+      {
+        "prompt": "Which is the aardwolf's closest family?",
+        "choices": [
+          "The hyenas",
+          "The dogs",
+          "The aardvarks",
+          "The civets, which share its anal glands"
+        ],
+        "explanation": "It belongs to the hyena family, Hyaenidae, as the smallest living member."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Protects threatened species and ecosystems in southern Africa."
+      }
+    ]
+  },
+  {
+    "id": "antarctic-krill",
+    "name": "Antarctic Krill",
+    "scientificName": "Euphausia superba",
+    "wikipediaTitle": "Antarctic krill",
+    "group": "marineInvertebrate",
+    "regions": [
+      "antarctica",
+      "openOcean"
+    ],
+    "range": "Throughout the Southern Ocean, north to the Antarctic Convergence",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -62.0,
+      "longitude": -40.0
+    },
+    "mapSpan": 70,
+    "tagline": "A thumb-sized shrimp that feeds the whole Antarctic",
+    "lede": "Antarctic krill are barely longer than a thumb, yet together they may outweigh almost any other animal species on Earth. Whales, seals, penguins and seabirds all depend on them, making this little glowing crustacean the hub of life in the Southern Ocean.",
+    "home": "Antarctic krill live only in the Southern Ocean, all the way around Antarctica and north as far as the Antarctic Convergence, where cold polar water sinks beneath warmer subantarctic water at roughly 55°S. That area covers about 32 million square kilometres, more than three-quarters of which freezes over in winter. The water stays between about −1.3 and 3 °C.\n\nKrill live in swarms that can hold 10,000 to 30,000 animals in each cubic metre. Carried by the currents that circle the continent, they form a single stock all around Antarctica. The largest swarms are visible from space: one covered 450 square kilometres to a depth of 200 metres and held an estimated 2 million tonnes of krill.",
+    "anatomy": "An adult grows to about 6 centimetres and weighs up to 2 grams. The body is transparent enough that the gut often shows green with the algae inside it. The six front pairs of legs form a 'feeding basket' with a mesh as fine as 1 micrometre, and tufts of rake-like bristles on the tips scrape algae from ice.\n\nKrill also carry light organs on the eyestalks, legs and belly that flash yellow-green for 2 to 3 seconds. Each has a reflector and lens, and muscles can swivel it like a torch. The light may hide the krill's shadow from predators below, or help with mating and schooling.",
+    "life": "Krill feed mainly on tiny diatoms, filtering them from the water and cracking their glassy shells in a grinding stomach, but they also eat copepods and other small zooplankton. In spring they graze the green film of algae on the underside of the pack ice, zig-zagging across it; one krill can clear about a square foot in 10 minutes.\n\nSwarms rise and sink between the surface and around 100 metres up to three times a day, and this movement helps stir nutrient-rich deep water upwards. Threatened krill flip backwards in a move called lobstering, reaching over 0.6 metres per second and reacting to a visual alarm in only 55 milliseconds.",
+    "family": "Spawning peaks from January to March. The male attaches a packet of sperm to the female, who releases 6,000 to 10,000 eggs at a time. The eggs, 0.6 millimetres across, sink as deep as 2,000 to 3,000 metres before hatching, and the larvae then swim back up to the light, a journey that takes about three weeks and is powered by their remaining yolk.\n\nThey pass through a long series of larval stages and look like adults at about 15 millimetres. Krill mature after two to three years and moult every 13 to 20 days. They can live up to six years.",
+    "remarkable": "When food runs short, krill can actually shrink, getting smaller after each moult, which is exceptional for an animal this size. Their eyes do not shrink, though, so a krill whose eyes look too big for its body is a sign that it is starving.",
+    "outlook": "The species remains enormously abundant, with an estimated total biomass of about 500 million tonnes, but it faces mounting pressure. The krill fishery takes around 100,000 tonnes a year, mainly by South Korea, Norway, Japan and Poland, and the risk of overfishing is a growing concern.\n\nWarming is shrinking the pack ice that young krill use as shelter from predators, and in poor ice years barrel-shaped salps move in to take their place. Ocean acidification is another threat, since raised carbon dioxide can disrupt egg development and stop juveniles hatching.",
+    "people": "Much of what is known about krill development comes from the voyages of the British research ship RRS Discovery. Krill are often called 'light-shrimp' because of their glowing organs. The catch is used as animal food and fishing bait.\n\nA 2025 study found that krill carry many unknown viruses, including ones that can infect farmed shrimp and fish, so using krill in aquaculture feed carries a risk of spreading disease.",
+    "relatives": "Antarctic krill belong to the krill family of shrimp-like crustaceans. Other species dominate elsewhere: Meganyctiphanes norvegica in the North Atlantic and Euphausia pacifica in the Pacific.\n\nTheir genome is about 48 billion letters long, one of the largest in the animal kingdom and the largest ever assembled. Most of it is repetitive DNA rather than extra genes.",
+    "didYouKnow": "Crabeater seals, the most abundant seals in the world, have multi-lobed teeth that work like a sieve, and krill make up 98% of their diet.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 6 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 2 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 6 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Diatoms and plankton"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do krill do when food is scarce?",
+        "choices": [
+          "Shrink after moulting",
+          "Hibernate in the ice",
+          "Eat their own eggs only",
+          "Migrate thousands of kilometres north to warmer subantarctic waters"
+        ],
+        "explanation": "They can get smaller after each moult, though their eyes stay the same size."
+      },
+      {
+        "prompt": "What is 'lobstering'?",
+        "choices": [
+          "A fast backwards escape",
+          "A way of feeding on ice",
+          "A mating dance",
+          "The way swarms arrange themselves into tight balls when whales are nearby"
+        ],
+        "explanation": "Krill flip their rear ends to shoot backwards away from predators."
+      },
+      {
+        "prompt": "Why is shrinking pack ice bad for young krill?",
+        "choices": [
+          "It shelters them from predators",
+          "It keeps the water warm",
+          "It holds their eggs",
+          "It is the only place they can moult safely"
+        ],
+        "explanation": "The ice's cave-like structures help young krill hide from predators."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and marine life."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and oceans, including the Southern Ocean."
+      }
+    ]
+  },
+  {
+    "id": "aldabra-giant-tortoise",
+    "name": "Aldabra Giant Tortoise",
+    "scientificName": "Aldabrachelys gigantea",
+    "wikipediaTitle": "Aldabra giant tortoise",
+    "group": "reptile",
+    "regions": [
+      "africa"
+    ],
+    "range": "Aldabra Atoll and other islands of the Seychelles",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -9.4,
+      "longitude": 46.4
+    },
+    "mapSpan": 8,
+    "tagline": "A garden-sized grazer that can outlive its keepers",
+    "lede": "Giant tortoises once lumbered across islands all over the western Indian Ocean. Sailors ate almost all of them, and by 1840 only one population was left, on the remote coral atoll of Aldabra. Today some 180,000 of these huge, slow reptiles live there, and a few may be older than any person alive.",
+    "home": "The main population lives on the islands of Aldabra Atoll in the Seychelles, which has been protected from human influence and holds the largest giant tortoise population in the world. Smaller groups live on Frégate Island and in the Sainte Anne Marine National Park, where they are a tourist attraction, and 50 young tortoises have been released on Aride Island.\n\nAnother population lives on Changuu, near Zanzibar, and others are kept in parks on Mauritius and Rodrigues. They use grassland, low scrub, mangrove swamps and coastal dunes.",
+    "anatomy": "This is one of the largest tortoises in the world, similar in size to the Galápagos giant tortoise. Males average a shell length of 122 centimetres and a weight of 250 kg; females are smaller, averaging 91 centimetres and 159 kg. The high, domed shell is brown or tan, and stocky, heavily scaled legs carry the weight.\n\nThe neck is remarkably long, letting the tortoise reach branches up to a metre off the ground. Shell shape varies with habitat. Tortoises that feed on the ground have domed shells that curve down over the neck, while those that browse higher have flatter shells with the front raised so the neck can stretch up.",
+    "life": "Aldabra tortoises are mostly herbivores, eating grasses, leaves, woody stems and fruit, though they sometimes take small invertebrates and carrion, even dead tortoises. Fresh water is scarce on the atoll, so they get most of their moisture from food. They live alone or in herds, mostly on open grassland, and are busiest in the morning.\n\nIn the heat of the day they dig wallows, shelter under trees or in small caves, or soak in pools. As the largest animal in its world, the tortoise acts rather like an elephant, felling trees as it feeds and opening paths used by other animals.",
+    "family": "Mating takes place from February to May. Between July and September females dig a nest about 30 centimetres deep and lay 9 to 25 hard-shelled eggs, often fewer than half of them fertile, and may lay several clutches a year.\n\nAfter about eight months the tiny young hatch between October and December, fully independent from the start. These tortoises are among the longest-lived animals. Some are thought to be over 200, though this is hard to prove because they outlive the people watching them. A tortoise named Esmeralda is the second-oldest verified giant tortoise, at 182 years.",
+    "remarkable": "Grazing tortoises have shaped their own landscape. 'Tortoise turf' on Aldabra is a mix of more than 20 grasses and herbs, many of them naturally dwarfed and setting seed close to the ground, out of reach of the tortoises' close-cropping jaws.",
+    "outlook": "The Aldabra tortoise has an unusually long history of organised conservation. In the late 19th century Albert Günther of the British Museum, with the help of Charles Darwin and other scientists, worked with the government of Mauritius to set up a reserve.\n\nToday Aldabra's isolation and protection keep the main population secure, while the Nature Protection Trust of Seychelles has run captive breeding and reintroduction for the related Seychelles forms. Genetic studies can now trace which island zoo tortoises came from.",
+    "people": "Giant tortoises were once found on many Indian Ocean islands and Madagascar, but European sailors overexploited them, and every population except Aldabra's had seemingly vanished by 1840. One famous tortoise, Adwaita, was said to be among four taken by British seamen as gifts for Robert Clive of the East India Company.\n\nHe lived at Calcutta Zoo from 1875 until his death in 2006, at a reputed 255 years old. In 2020 a female on Frégate Island was filmed hunting and eating a young lesser noddy, a seabird.",
+    "relatives": "The species belongs to the tortoise family Testudinidae. Its closest known relative is the extinct Aldabrachelys abrupta of Madagascar, from which it split about 4.5 million years ago.\n\nSeveral Seychelles tortoises, including Arnold's and the Seychelles giant tortoise, are now treated as subspecies of it. The Mascarene Islands had their own giant tortoises in an unrelated genus, Cylindraspis, all now extinct.",
+    "didYouKnow": "At Tulsa Zoo, Aldabra tortoise eggs kept at 30 °C hatch in an average of 107 days.",
+    "facts": [
+      {
+        "label": "Shell length",
+        "value": "Males average 122 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "Males average 250 kg"
+      },
+      {
+        "label": "Eggs",
+        "value": "9–25 per clutch"
+      },
+      {
+        "label": "Population",
+        "value": "About 180,000 on Aldabra"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is 'tortoise turf'?",
+        "choices": [
+          "Grazed, dwarfed grassland",
+          "A type of nest",
+          "A tortoise reserve",
+          "The thick mat of fallen leaves under shade trees where tortoises sleep"
+        ],
+        "explanation": "It is a mix of more than 20 grasses and herbs shaped by the tortoises' grazing."
+      },
+      {
+        "prompt": "How do Aldabra tortoises get most of their water?",
+        "choices": [
+          "From their food",
+          "From rain pools",
+          "From the sea",
+          "By licking dew off rocks at dawn before the heat of the day"
+        ],
+        "explanation": "Fresh water is scarce on the atoll, so they rely on moisture in plants."
+      },
+      {
+        "prompt": "What famous scientist helped set up an early reserve for these tortoises?",
+        "choices": [
+          "Charles Darwin",
+          "Isaac Newton",
+          "Gregor Mendel",
+          "Alfred Russel Wallace, after his travels through the islands of Southeast Asia"
+        ],
+        "explanation": "Albert Günther enlisted Darwin and others to help establish a preserve."
+      }
+    ],
+    "charities": [
+      {
+        "name": "IUCN",
+        "url": "https://www.iucn.org",
+        "blurb": "The global authority on the status of the natural world and the measures needed to safeguard it."
+      },
+      {
+        "name": "Fauna & Flora",
+        "url": "https://www.fauna-flora.org",
+        "blurb": "Works with partners worldwide to protect threatened species and ecosystems."
+      }
+    ]
+  },
+  {
+    "id": "american-flamingo",
+    "name": "American Flamingo",
+    "scientificName": "Phoenicopterus ruber",
+    "wikipediaTitle": "American flamingo",
+    "group": "bird",
+    "regions": [
+      "centralAmerica",
+      "southAmerica",
+      "naEast"
+    ],
+    "range": "Caribbean coasts, the Yucatán, northern South America and the Galápagos",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 18.0,
+      "longitude": -75.0
+    },
+    "mapSpan": 40,
+    "tagline": "The rosiest flamingo, and Florida's comeback bird",
+    "lede": "Rosy-pink from head to toe, the American flamingo is the brightest of its family and the only flamingo native to North America. It feeds with its head upside down in salty lagoons, sieving mud and water through a bill built like a strainer.",
+    "home": "American flamingos breed in the West Indies, including Cuba, Hispaniola, the Bahamas and Turks and Caicos, along the northern coast of the Yucatán Peninsula, in coastal Colombia, Venezuela and northern Brazil, and on the Galápagos Islands. They favour saline lagoons, mudflats and shallow brackish lakes, such as the Petenes mangroves of the Yucatán.\n\nThey migrate only short distances, moving when food runs low or when high water makes wading impossible. Hurricanes sometimes blow flocks far north: in 2023 Hurricane Idalia scattered flamingos across the eastern United States as far as Ohio, Pennsylvania and Wisconsin.",
+    "anatomy": "Adults stand 120 to 145 centimetres tall. Males average 2.8 kg and females 2.2 kg. They are smaller than greater flamingos but the largest in the Americas, and far pinker. The wing coverts are red, the flight feathers black, the legs entirely pink, and the pink-and-white bill has an extensive black tip.\n\nThe call is a goose-like honking. The downward-bent bill is lined with fine plates called lamellae that filter food from water, while long legs and big webbed feet let the bird wade and stir up the bottom. A salt gland in the beak removes excess salt through the nostrils, since the bird mostly drinks salt water.",
+    "life": "Flamingos eat small crustaceans such as brine shrimp, molluscs, worms, insect larvae, small fish, seeds, algae, diatoms and decaying leaves. They also swallow mud to extract its microorganisms. The bird holds its head underwater for long periods while feeding, which means holding its breath. They live in warm places and lose heat by panting.\n\nAt night they tuck their heads under a wing, and the famous one-legged stance probably helps too: tucking a leg against the body cuts the surface through which heat escapes.",
+    "family": "American flamingos are usually monogamous while nesting, though they often mate with other birds. Males start courtship but females control it, and pairs walk in step, heads up or dipped in a mock feeding pose. Some nest as trios or quartets, and in a trio of two males and a female, the junior male may become the chief incubator.\n\nThe female lays a single chalky-white egg on a mud mound between May and August. Both parents incubate for 28 to 32 days in shifts of up to 60 hours. Chicks leave the nest at 7 to 11 days to join crèches but are fed by their parents for months, mostly at night. Most first breed at 6 years old.",
+    "remarkable": "With a life expectancy of 40 years, the American flamingo is one of the longest-lived birds.",
+    "outlook": "The American flamingo is widespread across the Caribbean region, but Florida's flocks show how quickly it can disappear. Large flocks of up to a thousand birds were seen there through the 19th century, but heavy hunting caused a collapse around 1900, and for decades afterwards only a handful appeared at a time.\n\nEscapees from captive birds confused the picture until a 2018 study confirmed that Florida's flamingos are native and called for their federal protection as a threatened species. Some Florida birds are now thought to live there all year round. Elsewhere, the bird is a rare vagrant to Puerto Rico, Anguilla, Barbados and Honduras.",
+    "people": "The flamingo is an icon of Florida, but that image owes more to marketing than to nature. It probably began with the Flamingo Hotel, a popular 1920s hotel in Miami Beach named after the exotic bird, and was boosted by the captive flock at Hialeah Park.\n\nFlamingo souvenirs followed. The naturalists John James Audubon and Mark Catesby both recorded the bird, and Catesby's Bahamas flamingo helped Linnaeus describe the species in 1758. It was once known as the rosy flamingo.",
+    "relatives": "The American flamingo's closest relative is the paler greater flamingo of the Old World, once treated as the same species; the Chilean flamingo is also closely related.\n\nTwo subspecies are recognised: one from the Caribbean to northeastern Brazil, and a smaller Galápagos form, whose birds also lay smaller eggs. The genus name Phoenicopterus is the Latin word for a flamingo, and ruber means 'red'.",
+    "didYouKnow": "When two females in a flamingo trio both lay an egg in the same nest, one will try to destroy the other's egg or roll it out.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "120–145 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2.2–2.8 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 40 years"
+      },
+      {
+        "label": "Clutch",
+        "value": "1 egg"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a flamingo filter food from water?",
+        "choices": [
+          "With plates lining its bill",
+          "With its tongue alone",
+          "With its feet",
+          "With bristles on its throat that trap anything larger than a grain of sand"
+        ],
+        "explanation": "Fine plates called lamellae on the bill strain food from the water."
+      },
+      {
+        "prompt": "Where did Florida's link with flamingos probably begin?",
+        "choices": [
+          "A Miami Beach hotel",
+          "A state law",
+          "A football team",
+          "A painting by John James Audubon that hung in the state capitol"
+        ],
+        "explanation": "The 1920s Flamingo Hotel made the bird a symbol of South Florida."
+      },
+      {
+        "prompt": "What probably helps explain the flamingo's one-legged stance?",
+        "choices": [
+          "Saving body heat",
+          "Resting tired joints",
+          "Spotting fish",
+          "Showing off to rivals and possible mates during the breeding season"
+        ],
+        "explanation": "Tucking a leg against the body reduces heat lost through the legs."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats."
+      },
+      {
+        "name": "National Audubon Society",
+        "url": "https://www.audubon.org",
+        "blurb": "Protects birds and the places they need across the Americas."
+      }
+    ]
+  },
+  {
+    "id": "american-eel",
+    "name": "American Eel",
+    "scientificName": "Anguilla rostrata",
+    "wikipediaTitle": "American eel",
+    "group": "fish",
+    "regions": [
+      "naEast",
+      "openOcean",
+      "centralAmerica"
+    ],
+    "range": "Atlantic rivers and coasts from Venezuela to Greenland, spawning in the Sargasso Sea",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 35.0,
+      "longitude": -70.0
+    },
+    "mapSpan": 60,
+    "tagline": "A river fish that is born and dies in the open ocean",
+    "lede": "Every American eel begins life as a speck in the Sargasso Sea, in the middle of the Atlantic. It drifts to the coast as a see-through larva, spends decades in rivers and lakes, and then swims all the way back to the ocean to spawn once and die.",
+    "home": "The American eel lives in all the fresh water it can reach, along with estuaries and coastal seas, from Venezuela north to Greenland and Iceland. Inland it reaches the Great Lakes and the Mississippi as far as Minnesota and Wisconsin, and it is found in the Chesapeake Bay, the Hudson and the Saint Lawrence.\n\nIt is a bottom dweller, hiding by day in mud, sand, gravel, burrows or weed. In winter it buries itself in mud and becomes torpid below 5 °C. Eels are remarkably mobile: they can wriggle through tiny streams or across wet grass, and small ones can climb vertical barriers.",
+    "anatomy": "Adults reach 1.22 metres and 7.5 kg, with females larger and paler than males and having smaller eyes. The long, snake-like body is coated in mucus, so the eel looks naked and slimy. It does have scales, but they are tiny, buried in the skin and laid in an irregular pattern like parquet flooring.\n\nLong dorsal and anal fins merge into the small tail, and there are no pelvic fins. Colour ranges from olive green or brown to greenish-yellow, with a pale belly. Eels from clear water tend to be lighter than those from dark, tannin-stained streams.",
+    "life": "Eels feed at night, finding food mainly by smell. Small eels eat mostly aquatic insect larvae, especially stoneflies, while larger ones turn to fish and crayfish. They also take worms, clams, soft-shelled crabs, frogs and plants. Feeding slows or stops in winter.\n\nYoung eels are eaten by bass and other predatory fish, and older eels fall prey to bald eagles, gulls and other fish-eating birds. Adult rainbow snakes eat nothing but American eels, which is why the snake is also called the eel moccasin.",
+    "family": "Spawning happens far offshore in the Sargasso Sea, and each eel breeds only once. A female releases 0.5 to 4 million eggs, the largest up to 8.5 million, and dies afterwards. The eggs hatch within a week into flat, transparent larvae called leptocephali, which the Gulf Stream carries to the coast over 7 to 12 months.\n\nNear shore they become clear glass eels, then darken into elvers and head upriver. As yellow eels they feed and grow for about 10 to 25 years. Finally they turn into silver eels: the gut shrinks, the fins and eyes enlarge and the skin thickens, ready for the long journey back to sea.",
+    "remarkable": "The whole American eel population breeds in a single mixed pool in the Sargasso Sea, yet some eels travel as far as 6,000 kilometres between that spawning ground and the rivers where they grow up.",
+    "outlook": "The IUCN regards the American eel as at very high risk of extinction in the wild. Hydroelectric dams block its migrations and their turbines kill eels heading downstream, and the water below dams is often low in oxygen, which eels tolerate poorly.\n\nHeavy metals, dioxins and PCBs build up in their fatty tissue. Ontario has ended commercial eel fishing, and the eel's huge runs in the St Lawrence and Ottawa rivers have dwindled. Scientists are testing LED lights to steer migrating eels away from hydroelectric plants.",
+    "people": "Eels were once abundant in eastern rivers and an important fishery for Indigenous peoples. In the 1980s and early 1990s the American eel was one of the three most valuable species to Ontario's fishing industry, sometimes worth almost half the whole commercial catch from Lake Ontario.\n\nCatches there fell from about 223,000 kg in the early 1980s to 11,000 kg in 2002, and most US eels are now exported to Europe. In 1926 the biologist Marie Poland Fish described eggs she watched hatch into eels.",
+    "relatives": "American eels are freshwater eels of the family Anguillidae, part of the elopomorphs, an ancient group of bony fish. Like all anguillid eels they hunt mainly at night.\n\nThey can be told apart from other eels by counts that stay fixed throughout life, averaging about 107 vertebrae. The species is facultatively catadromous, which means that most individuals live in fresh water and breed at sea.",
+    "didYouKnow": "Greenpeace International added the American eel to its seafood red list in 2010.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 1.22 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 7.5 kg"
+      },
+      {
+        "label": "Eggs",
+        "value": "0.5–4 million"
+      },
+      {
+        "label": "Spawning ground",
+        "value": "Sargasso Sea"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where do all American eels spawn?",
+        "choices": [
+          "The Sargasso Sea",
+          "The Great Lakes",
+          "The Gulf of Mexico",
+          "The mouth of the Saint Lawrence River where it meets the Atlantic"
+        ],
+        "explanation": "Spawning happens far offshore in the Sargasso Sea."
+      },
+      {
+        "prompt": "Which snake eats only American eels as an adult?",
+        "choices": [
+          "The rainbow snake",
+          "The cottonmouth",
+          "The garter snake",
+          "The northern water snake, which hunts them in shallow streams"
+        ],
+        "explanation": "Its diet earns the rainbow snake the name eel moccasin."
+      },
+      {
+        "prompt": "What happens to a female eel after she spawns?",
+        "choices": [
+          "She dies",
+          "She returns to her river",
+          "She guards the eggs",
+          "She spawns again every year for the rest of her long life"
+        ],
+        "explanation": "American eels breed only once and die after spawning."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects rivers and coasts and works to reconnect waterways for migrating fish."
+      },
+      {
+        "name": "Nature Conservancy of Canada",
+        "url": "https://www.natureconservancy.ca",
+        "blurb": "Protects natural areas and the species they sustain across Canada."
+      }
+    ]
+  },
+  {
+    "id": "giant-squid",
+    "name": "Giant Squid",
+    "scientificName": "Architeuthis dux",
+    "wikipediaTitle": "Giant squid",
+    "group": "marineInvertebrate",
+    "regions": [
+      "openOcean"
+    ],
+    "range": "Deep continental and island slopes in all the world's oceans",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": -30.0
+    },
+    "mapSpan": 80,
+    "tagline": "The real kraken, hunting in the dark with giant eyes",
+    "lede": "Hundreds of metres down, where sunlight barely reaches, the giant squid hunts with eyes up to 27 centimetres across. For centuries it was known only from rotting carcasses on beaches and beaks pulled from the stomachs of whales, and nobody photographed a living adult in the wild until 2004.",
+    "home": "The giant squid lives in every ocean, usually near the steep slopes of continents and islands. It turns up most often in the North Atlantic, around Newfoundland, Norway, the northern British Isles, Spain, the Azores and Madeira, and also off southern Africa, Japan, New Zealand and Australia.\n\nSpecimens are rare in tropical and polar waters. Exactly how deep it lives is still uncertain. Trawled specimens and the diving habits of sperm whales suggest a broad band somewhere between about 300 and 1,000 metres, in cold water where light is scarce.",
+    "anatomy": "Like all squid, it has a mantle, or torso, eight arms and two much longer feeding tentacles, the longest known in any cephalopod. Females reach about 5 metres from the rear fins to the arm tips, with males a little shorter, and the tentacles add up to 10 metres more. The mantle is about 2 metres long and is not known to exceed 2.25 metres.\n\nBecause so much of its length is slender arm, it is surprisingly light: the heaviest females are estimated at about 275 kg and males at 150 kg. The arms and tentacles carry hundreds of stalked suckers, 2 to 5 centimetres wide, each rimmed with a sharp, finely serrated ring of chitin.\n\nIts pupils can be 9 centimetres wide; it probably cannot see colour but can pick out small differences in tone. Instead of a swim bladder, its body is filled with an ammonium chloride solution lighter than seawater, which keeps it afloat and gives its flesh a taste like salty liquorice. It swims by jet propulsion, pushing water out through its siphon, and steers with small fins.",
+    "life": "Giant squid feed on deep-sea fish such as the orange roughy and on other squid. They seize prey with the two tentacles, draw it to a powerful parrot-like beak, and shred it with the radula, a tongue covered in small, file-like teeth. They seem to hunt alone, since only single animals have ever been caught in nets.\n\nTheir enemies include sperm whales, pilot whales, southern sleeper sharks and, in some regions, killer whales, and whales often carry circular sucker scars around their heads. Giant squid may also attack each other: a 9-metre squid that washed up in Galicia, Spain, in 2016 had been badly wounded by a rival, and beak fragments of other giant squid have been found in the stomachs of squid in Tasmania.",
+    "family": "Little is known about how giant squid breed. They are thought to mature at about three years old, and males mature at a smaller size than females. A female can carry more than 5 kg of tiny eggs, each only 0.5 to 1.4 millimetres long, which glands in her body coat in a gelatinous material to hold them together once laid.\n\nThe male has a prehensile penis more than 90 centimetres long, and may inject packets of sperm into the female's arms. Young squid have been found in surface waters off New Zealand and southern Japan. A squid's age can be read from growth rings in the statolith, a tiny stone in its balance organ, rather like counting the rings of a tree.",
+    "remarkable": "Scientists once proposed as many as 17 species of giant squid. Then a study of mitochondrial DNA from squid around the world found only 181 differing base pairs out of 20,331, so little variation that all giant squid appear to belong to one global population and a single species, probably spread far and wide as larvae drifting on ocean currents.",
+    "outlook": "Nobody knows how many giant squid there are. One estimate, based on beaks found in dead sperm whales, suggests the whales eat between 4.3 and 131 million giant squid a year, which would mean the squid number well into the millions.\n\nThey cannot be kept in aquariums because of their size, depth and needs. In 2022 a live squid found off Japan was taken to the Echizen Matsushima Aquarium, but it died and was put on display instead.",
+    "people": "Aristotle described a huge squid he called teuthus in the fourth century BC, and Pliny the Elder wrote of one with a head 'as big as a cask'. Sailors' tales may lie behind the Norse kraken, the Caribbean Lusca and Scylla of Greek myth, though the historian Otto Latva argues the squid was only turned into a monster by 19th-century writers.\n\nMany squid stranded in Newfoundland in the 1870s were turned into manure or animal feed. A squid nicknamed Archie, 8.62 metres long, has been displayed at the Natural History Museum in London since 2006.\n\nIn 2012 a Japanese and American team filmed a live adult off the Ogasawara Islands, luring it with lights that mimicked a glowing jellyfish. The squid also appears in Moby-Dick and Twenty Thousand Leagues Under the Seas.",
+    "relatives": "Its closest relatives are thought to be four obscure 'neosquids' in the family Neoteuthidae, and together the two families form the superfamily Architeuthoidea. The giant squid is the second-largest mollusc alive.\n\nIt is longer than the colossal squid, but the colossal squid is much heavier, with a mantle nearly twice as long, and some extinct cephalopods may have been bigger still.",
+    "didYouKnow": "The squid expert Frederick Aldrich proposed that giant squid strandings come in roughly 90-year cycles, and used the idea to correctly predict a small wave of strandings between 1961 and 1968.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 5 m, plus tentacles"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 275 kg"
+      },
+      {
+        "label": "Eye",
+        "value": "Up to 27 cm across"
+      },
+      {
+        "label": "Depth",
+        "value": "About 300–1,000 m"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What keeps the giant squid buoyant?",
+        "choices": [
+          "An ammonium chloride solution",
+          "A gas-filled swim bladder",
+          "Oil stored in its liver",
+          "Air it gulps at the surface and traps under its mantle"
+        ],
+        "explanation": "Its body is filled with an ammonium chloride solution that is lighter than seawater."
+      },
+      {
+        "prompt": "Which animal is the giant squid's chief predator?",
+        "choices": [
+          "Sperm whale",
+          "Great white shark",
+          "Colossal squid",
+          "Leatherback turtles diving down the continental slopes"
+        ],
+        "explanation": "Sperm whales hunt giant squid, and often carry sucker scars around their heads."
+      },
+      {
+        "prompt": "What did a worldwide study of giant squid DNA suggest?",
+        "choices": [
+          "Only one species exists",
+          "There are at least 17 species",
+          "They are closest to octopuses",
+          "Atlantic and Pacific squid split apart millions of years ago"
+        ],
+        "explanation": "Squid from around the world differed so little that they appear to be a single global species."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and the life in them."
+      }
+    ]
+  },
+  {
+    "id": "japanese-giant-salamander",
+    "name": "Japanese Giant Salamander",
+    "scientificName": "Andrias japonicus",
+    "wikipediaTitle": "Japanese giant salamander",
+    "group": "amphibian",
+    "regions": [
+      "asia"
+    ],
+    "range": "Mountain streams and rivers of western Honshu, Shikoku and northern Kyushu, Japan",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 34.8,
+      "longitude": 133.5
+    },
+    "mapSpan": 8,
+    "tagline": "A wrinkled river giant that can live for decades",
+    "lede": "In the cool mountain streams of western Japan lives an amphibian up to 1.5 metres long, a wrinkled, mottled giant that never leaves the water. It hunts at night by feeling ripples, can go weeks without a meal, and may live for nearly 80 years.",
+    "home": "This salamander is found only in southwestern Japan, west of Gifu Prefecture on Honshu, and in parts of Shikoku and Kyushu. Okayama, Hyogo, Shimane, Tottori, Yamaguchi, Mie, Ehime, Gifu and Ōita Prefectures hold strong populations.\n\nSome populations in Wakayama Prefecture may have been introduced by people. It lives in fast-flowing water, from rivers 20 to 50 metres wide down to headwater streams only 0.5 to 4 metres across. Smaller breeding adults tend to use the little streams, perhaps to avoid bigger rivals, and animals move between a river's main channel and its tributaries. Headwaters seem to be important nurseries for larvae and juveniles.\n\nAdults can thrive in streams running through rice paddies, which are full of frogs to eat, but those streams usually have dams and concrete banks that hurt breeding.",
+    "anatomy": "It can grow to 150 centimetres and 25 kg. The largest wild individual on record was 136 centimetres long and weighed 26.3 kg. Its brown and black mottled skin blends with stream beds, and is covered in small warts, especially on the head.\n\nThe eyes are tiny, lidless and nearly useless, but the mouth stretches across the whole head and can open as wide as the body. Loose folds of skin along the neck and sides increase its surface area, and capillaries in the skin swap oxygen and carbon dioxide with the water.\n\nSensory cells run over its body from head to tail, with hair-like shapes that pick up tiny vibrations, much like the hair cells in the human inner ear. In the breeding season, males develop swollen cloacal glands, and they generally have broader heads than females.",
+    "life": "The salamander is entirely aquatic and almost entirely nocturnal. It has no gills as an adult and is so large that it needs clear, cool, flowing water rich in oxygen. Rather than climbing out onto land like many salamanders after metamorphosis, it simply pokes its head above the surface to breathe air, and also absorbs oxygen through its skin.\n\nAdults eat freshwater crabs and other crustaceans, worms, insects, frogs and other small amphibians, fish and even small mammals. Its metabolism is very slow and it has no natural competitors. When threatened, it can release a strong-smelling, milky substance.",
+    "family": "Breeding takes place in late August and early September. Mature males travel upstream looking for nest sites, and because good sites are scarce, only large, competitive males win one and become 'den masters'. A den master cleans his den and drives off intruders, but lets in a female ready to spawn.\n\nAs she lays her eggs and he releases sperm, smaller males lurking nearby often rush in to join, so a female may mate with several males. The female and the other males then leave, and the den master stays.\n\nHe fans water over the eggs with his tail and kicks with his back legs to sweep out debris, which would otherwise build up and let water mould take hold. He keeps guarding the young until the following spring, when the larvae disperse. One captive salamander lived 52 years at Natura Artis Magistra zoo in the Netherlands.",
+    "remarkable": "Den masters have been seen eating eggs and larvae that were unfertilised, dead or infected with water mould. Researchers call this 'hygienic filial cannibalism', and think that by removing the bad ones, the father stops mould spreading to his healthy offspring.",
+    "outlook": "The Japanese giant salamander is listed as Vulnerable by the IUCN and by Japan's Ministry of the Environment, and is on CITES Appendix I. Pollution, silting rivers, dams and concrete banks all harm it: concrete removes nesting sites and dams block its movements and fragment populations.\n\nHeavier rainstorms with climate change may lead to still more flood defences. A major problem is interbreeding with the Chinese giant salamander, probably introduced to Japan for food in 1972. In a study of the Kamo River in Kyoto from 2011 to 2013, 95% of the salamanders caught were hybrids.\n\nThere is no government recovery programme; volunteers led by groups such as the Japanese Giant Salamander Society and the Hanzaki Research Institute survey populations. Hiroshima City Asa Zoological Park was the first in Japan to breed the species, and sent offspring to the National Zoo in the United States.",
+    "people": "In Japanese it is ōsanshōuo, meaning 'giant salamander', and local names include hanzaki, hanzake and ankou. Philipp Franz von Siebold, the physician on Dejima Island in Nagasaki, shipped one to Leiden in the Netherlands in the 1820s, the first known to Europeans.\n\nIt was once hunted for food, but that stopped with protection laws after the Second World War, and since 1952 it has been a Special Natural Monument. It appears in legend and art, including an ukiyo-e print by Utagawa Kuniyoshi, and may have inspired the kappa, a water creature of Japanese folklore.\n\nEvery year on 8 August the town of Yubara in Okayama holds a festival in its honour, with a dark male float and a red female float. There it is called hanzaki, from the belief that it survives even when torn in half.",
+    "relatives": "It is one of only six species of giant salamander and the third-largest amphibian in the world, smaller only than its close relatives the Chinese giant salamander and the South China giant salamander.\n\nIt can be told from the Chinese species by the larger, more numerous bumps on its head and throat, its rounder snout and its slightly shorter tail. The American hellbender is a more distant cousin with even more prominent skin folds along its sides.",
+    "didYouKnow": "The town of Nichinan in Tottori Prefecture has a Japanese giant salamander as its official mascot, named Ossanshouo.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 25 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Possibly nearly 80 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Crabs, frogs, fish, insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Who guards the eggs of the Japanese giant salamander?",
+        "choices": [
+          "The den master male",
+          "The female",
+          "Both parents in turn",
+          "Nobody, because the eggs are buried in gravel and left"
+        ],
+        "explanation": "The male den master stays with the eggs, fanning and cleaning them until the larvae leave."
+      },
+      {
+        "prompt": "How does the salamander find prey despite its poor eyesight?",
+        "choices": [
+          "Sensory cells in its skin",
+          "Heat-sensing pits",
+          "Echolocation clicks",
+          "A long forked tongue that tastes the water as it swims"
+        ],
+        "explanation": "Hair-like sensory cells over its body detect tiny vibrations in the water."
+      },
+      {
+        "prompt": "What is one of the biggest conservation problems for this salamander?",
+        "choices": [
+          "Hybridising with Chinese giant salamanders",
+          "Being eaten by bullfrogs",
+          "Competition with trout",
+          "Disease carried by pet turtles released into mountain streams"
+        ],
+        "explanation": "Introduced Chinese giant salamanders interbreed with the native species, and hybrids are spreading."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps zoos and partners worldwide save threatened amphibians through conservation breeding."
+      }
+    ]
+  },
+  {
+    "id": "bar-tailed-godwit",
+    "name": "Bar-tailed Godwit",
+    "scientificName": "Limosa lapponica",
+    "wikipediaTitle": "Bar-tailed godwit",
+    "group": "bird",
+    "regions": [
+      "arctic",
+      "europe",
+      "asia",
+      "oceania"
+    ],
+    "range": "Breeds on Arctic tundra; winters on coasts from western Europe and Africa to Australia and New Zealand",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 20.0,
+      "longitude": 160.0
+    },
+    "mapSpan": 80,
+    "tagline": "The bird that flies across the Pacific without stopping",
+    "lede": "Each autumn, bar-tailed godwits leave Alaska and fly across the Pacific to New Zealand and Australia without once landing to feed. To make it, they pack on more fat for their size than any other migratory bird so far studied, and even shrink their digestive organs to save weight.",
+    "home": "All bar-tailed godwits breed in the Arctic, on coasts and tundra from Scandinavia across Siberia to Alaska, and fly south for the northern winter to mudflats and estuaries. European birds make the shortest trips, some only as far as the North Sea, while others reach India, the Persian Gulf or southern Africa. Siberian birds of the subspecies menzbieri winter in northern and western Australia, and Alaskan birds, baueri, go to eastern Australia and New Zealand.\n\nOn the way north, Australasian birds stop in the Yellow Sea, especially at the Yalu Jiang coastal wetland, the most important staging site of all. Alaskan birds rest and refuel there for about 41 days before flying roughly 7,000 km on to their breeding grounds.",
+    "anatomy": "The bar-tailed godwit is 37 to 41 centimetres long with a wingspan of 70 to 80 centimetres.\n\nFemales are bigger: males weigh 190 to 400 g and females 260 to 630 g. It has blue-grey legs and a long, slightly upturned bill, pink at the base and black at the tip, which is shorter in males. In breeding plumage the male's neck, breast and belly are an unbroken brick red, with dark brown upperparts, while the female is duller, with a chestnut to cinnamon belly.\n\nFull breeding colours take three years to appear. In winter both sexes are plain grey-brown with darker feather centres that give a streaky look, and whitish underneath. The black-and-white barred tail, which gives the bird its name, separates it from the black-tailed godwit.",
+    "life": "In wetlands, up to 70% of the godwit's food is bristle-worms, along with small clams and crustaceans. At the Yellow Sea staging site it eats mostly a small bivalve, Potamocorbula laevis, which it swallows whole.\n\nGodwits feed by day and by night, picking food from the surface or probing deep into the mud with a twist of the bill, and birds feeding in flocks catch more than those feeding alone. The sexes forage differently.\n\nAt New Zealand's Manawatū Estuary, short-billed males mostly took small snails at the surface while females went for deeply buried worms, and in the Wadden Sea males relied almost entirely on mud shrimps. Godwits seem able to read the weather, leaving New Zealand early when winds are favourable and riding high-pressure systems over the Tasman Sea.",
+    "family": "Young godwits first fly north to breed at 2 to 4 years old. Both parents build the nest, a shallow cup in moss on a slightly raised, drier patch of tundra, often hidden among tussocks. The female lays two to five eggs, usually four, and the pair share incubation for 20 to 21 days, the male sitting by day and the female by night. The chicks fly at about 28 days old.\n\nIn the breeding season males perform ceremonial song flights to show females they are still unpaired. Each flight has four stages: a climb, a 'limping' flight, a glide and a descent. Godwits have at least nine different calls, built mostly from repeated notes lasting a fraction of a second.",
+    "remarkable": "Satellite tags have revealed record after record. In 2007 a female known as E7 flew 11,680 km non-stop from western Alaska to the Piako River in New Zealand in eight days, completing a 174-day round trip of 29,280 km.\n\nIn 2021 a male, 4BBRW, flew 13,000 km from Alaska to New South Wales. Then in 2022 a juvenile called B6 left Alaska on 13 October and reached Tasmania at least 13,560 km later, after 11 days and 1 hour in the air.",
+    "outlook": "The species is listed as Near Threatened and is declining, with a global population of about 1.1 million birds in 2025. The main cause is the loss of tidal mudflats in the Yellow Sea to seawalls and land reclamation, which has cut the food available to migrating birds. Adult survival in both Australasian subspecies fell between 2005 and 2012.\n\nBirds of the baueri subspecies in New Zealand dropped from over 100,000 in the late 1980s to 67,500 in 2018, and in 2024 both baueri and menzbieri were listed as Endangered under Australian law. Godwits are easily spooked, and disturbance at high-tide roosts stops them from resting. Fewer birds have used East African estuaries since 1979.",
+    "people": "Carl Linnaeus described the bird in 1758 as Scolopax limosa. Its genus name Limosa is Latin for 'muddy', after its favourite habitat, and lapponica refers to Lapland. The English word 'godwit' was first recorded around 1416. It may imitate the bird's call, or come from Old English words meaning 'good creature', perhaps a nod to how good it was to eat.\n\nToday the bird is protected under New Zealand's 1953 Wildlife Act and the agreement on African-Eurasian migratory waterbirds. Much of what is known about its journeys comes from birds fitted with surgically implanted satellite transmitters, seven of which were tracked from New Zealand to the Yellow Sea.",
+    "relatives": "The bar-tailed godwit belongs to the sandpiper family, Scolopacidae, and shares the genus Limosa with three other godwits.\n\nFive subspecies are recognised, from the small lapponica in Europe to the large baueri of Alaska, though one Siberian form, yamalensis, may not be truly distinct. Its closest lookalike is the Asian dowitcher.",
+    "didYouKnow": "Godwits that nested in southern Alaska leave New Zealand first, and six months later they leave Alaska in the same order they arrived.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "37–41 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "70–80 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "190–630 g"
+      },
+      {
+        "label": "Longest flight",
+        "value": "At least 13,560 km non-stop"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes up most of the godwit's diet in wetlands?",
+        "choices": [
+          "Bristle-worms",
+          "Small fish",
+          "Seeds",
+          "Insects snapped up in mid-air over the tundra"
+        ],
+        "explanation": "Up to 70% of its wetland diet is bristle-worms."
+      },
+      {
+        "prompt": "How do godwits prepare for their long non-stop flights?",
+        "choices": [
+          "They store huge fat loads",
+          "They swallow stones",
+          "They grow extra feathers",
+          "They sleep for weeks beforehand to slow their heartbeat"
+        ],
+        "explanation": "They carry more fat than any other migratory bird studied and shrink their digestive organs."
+      },
+      {
+        "prompt": "What is the main cause of the godwit's decline?",
+        "choices": [
+          "Loss of Yellow Sea mudflats",
+          "Hunting in Alaska",
+          "Oil spills",
+          "Competition from great knots for the same small clams"
+        ],
+        "explanation": "Seawalls and reclamation have destroyed vital feeding grounds at its staging sites."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats, including migratory flyways."
+      }
+    ]
+  },
+  {
+    "id": "atlantic-wolffish",
+    "name": "Atlantic Wolffish",
+    "scientificName": "Anarhichas lupus",
+    "wikipediaTitle": "Atlantic wolffish",
+    "group": "fish",
+    "regions": [
+      "naEast",
+      "europe",
+      "arctic"
+    ],
+    "range": "Rocky sea floors of the cold North Atlantic, from Cape Cod and Greenland to the Bay of Biscay",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 60.0,
+      "longitude": -20.0
+    },
+    "mapSpan": 50,
+    "tagline": "A fanged, scowling fish that crunches sea urchins",
+    "lede": "The Atlantic wolffish has a scowling face, a mouth bristling with fangs, and rows of crushing molars behind them. It spends most of its life tucked into rocky crevices on the cold floor of the North Atlantic, coming out to crack open shellfish that few other animals can tackle.",
+    "home": "On the western side of the Atlantic, wolffish range from the Davis Strait off Nunavut past Greenland, Newfoundland and Nova Scotia south to Cape Cod, with occasional sightings as far as New Jersey. The densest populations are on Georges Bank, in the Gulf of Maine and in the Great South Channel.\n\nIn the east they live from Russia's White Sea and Novaya Zemlya through the Nordic countries and the British Isles to the Bay of Biscay. They are bottom dwellers on hard ground, often hiding in nooks and small caves, and rarely move far from home. They live at depths of 20 to 500 metres, usually in water between -1 and 11 °C, and make a natural antifreeze that keeps their blood flowing in near-freezing seas.",
+    "anatomy": "The largest Atlantic wolffish on record was 1.5 metres long and weighed almost 18 kg. Its body is long and slippery, rounded at the front and flattened towards the tail, with tiny scales buried almost out of sight in the skin. It is usually purplish-brown, dull olive green or bluish grey.\n\nA long, even fin runs the full length of its back, and another runs underneath from the vent to the tail, as in blennies. The pectoral fins are large and rounded, but there are no pelvic fins at all. With this build it swims slowly, wriggling from side to side like an eel.",
+    "life": "Wolffish feed on hard-shelled animals: molluscs, crustaceans and echinoderms. Favourite foods include large whelks, cockles, sea clams, big hermit crabs, starfish and sea urchins, and they do not eat other fish.\n\nBy eating so many green crabs and sea urchins, whose numbers can explode and damage the sea floor, wolffish help keep their habitat healthy. Because they share the bottom with other species, how well wolffish are doing is also seen as a sign of the health of fish such as Atlantic cod.",
+    "family": "Unlike many fish, which scatter eggs into the open sea for males to fertilise, wolffish fertilise their eggs inside the female's body, and both parents are involved in caring for the brood. The eggs are laid on the sea floor, often in shallow water, in loose, sticky clumps among seaweed and stones.\n\nAt 5.5 to 6 millimetres across, yellowish and opaque, they are among the largest fish eggs known. The male stays to guard the nest for as long as four months, until the young are strong enough to fend for themselves. Atlantic wolffish mature late, at about six years old.",
+    "remarkable": "Its teeth set it apart from every other member of its family. Each jaw is armed at the front with four to six strong, conical fangs.\n\nBehind them the upper jaw has three rows of crushing teeth, with four pairs of molars in the middle row, and the lower jaw has two rows of molars. Even its throat is scattered with serrated teeth.",
+    "outlook": "In United States waters, wolffish are caught mostly as bycatch, and their numbers are falling fast, probably because of overfishing. Landings by US boats peaked at 1,207 tonnes in 1983, then dropped by 95% to 64.7 tonnes in 2007. The US National Marine Fisheries Service lists the wolffish as a Species of Concern.\n\nIn 2008 the Conservation Law Foundation and two scientists petitioned for its protection under the US Endangered Species Act, asking for closed areas and catch-and-release rules, but in 2009 the government decided listing was not warranted. In 2014 the Baltic Sea population was classed as Endangered on the IUCN scale by HELCOM, the Baltic marine protection body.",
+    "people": "The fish goes by many names, including seawolf, Atlantic catfish, ocean catfish, devil fish, woof and sea cat. In Britain it has been sold as 'Scotch halibut' and 'Scarborough woof', and it is a popular choice for fish and chips.\n\nIn Iceland and Norway it is steinbítur or steinbit, meaning 'stone biter', after its jaws. Carl Linnaeus described it in 1758, giving its home as the 'northern English Ocean'. Its species name, lupus, is Latin for 'wolf', a reference to its canine-like front teeth.",
+    "relatives": "The Atlantic wolffish belongs to the wolffish family, Anarhichadidae, and is the type species of its genus, Anarhichas. Two close relatives share the North Atlantic: the spotted wolffish, which is also eaten, and the northern wolffish, whose loose, jelly-like flesh is not.\n\nIts Pacific relative is known as the wolf eel. Despite its size, the wolffish keeps the body shape and fins of the much smaller blennies.",
+    "didYouKnow": "A single Atlantic wolffish was recorded far from home in the Gulf of Genoa, in the western Mediterranean, in 1958.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to almost 18 kg"
+      },
+      {
+        "label": "Depth",
+        "value": "20–500 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Shellfish, crabs, urchins"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the Icelandic name 'steinbítur' mean?",
+        "choices": [
+          "Stone biter",
+          "Sea wolf",
+          "Devil fish",
+          "Cold-water cod, from an old Norse fishing word"
+        ],
+        "explanation": "The name refers to its strong jaws, which crush hard-shelled prey."
+      },
+      {
+        "prompt": "Which of these does the Atlantic wolffish not eat?",
+        "choices": [
+          "Other fish",
+          "Sea urchins",
+          "Whelks",
+          "Hermit crabs pulled out of their borrowed shells"
+        ],
+        "explanation": "It eats hard-shelled invertebrates and does not eat other fish."
+      },
+      {
+        "prompt": "How does the wolffish keep its blood flowing in near-freezing water?",
+        "choices": [
+          "Natural antifreeze",
+          "Thick blubber",
+          "Constant swimming",
+          "Basking in warmer shallow water during the day to soak up heat"
+        ],
+        "explanation": "It produces a natural antifreeze in its blood."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns for sustainable fisheries and less bycatch in the world's oceans."
+      },
+      {
+        "name": "Marine Conservation Society",
+        "url": "https://www.mcsuk.org",
+        "blurb": "The UK charity working for healthy seas and sustainable seafood."
+      }
+    ]
+  },
+  {
+    "id": "little-barrier-giant-weta",
+    "name": "Little Barrier Giant Wētā",
+    "scientificName": "Deinacrida heteracantha",
+    "wikipediaTitle": "Deinacrida heteracantha",
+    "group": "insect",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Hauturu (Little Barrier Island) and predator-free islands off northern New Zealand",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -36.2,
+      "longitude": 175.1
+    },
+    "mapSpan": 5,
+    "tagline": "New Zealand's biggest wētā, saved by island-hopping",
+    "lede": "The wētāpunga is a huge, wingless, cricket-like insect with a broad brown body and spiny back legs, the largest of all New Zealand's giant wētā. After vanishing from the mainland, it clung on in a single place, Hauturu, until conservationists began carrying it to new island homes.",
+    "home": "Wētāpunga once lived in forests across the warmer parts of the North Island, including Northland and Auckland, but died out there during the 19th century. They survived only on Hauturu, or Little Barrier Island, which covers just 3,083 hectares off the coast.\n\nThere they live in trees, from second-growth forest on the lower slopes, dominated by silver fern, nīkau palm, māhoe and kohekohe, up to tall kauri forest at middle heights. They shelter under loose bark and in the hollows of māhoe and pōhutukawa trees.",
+    "anatomy": "The wētāpunga is the largest member of its genus. Females are far bigger than males: an average adult female weighs 32 g and is about 65 millimetres long, while males average only 7.4 g. In captivity, a female full of eggs can reach 70 g. It has a broad body, a round head and short jaws.\n\nIts hind legs are long and powerful, with strong, sharp spines set alternately along their edges, and can deliver a hard kick. The body is brown above and yellowish beneath. It has a stridulatory organ: pegs on the hind legs rub against ridges on the abdomen to make a rasping defensive sound, with peaks at about 20 kHz and 40 to 50 kHz.",
+    "life": "The wētāpunga mostly eats the leaves of forest plants. Adults are solitary and nomadic, moving to new spots from time to time, and do most of their feeding and travelling at night, high above the ground. Males roam farther than females, and at night a male may trail a female, staying about 25 centimetres behind her.\n\nMany animals hunt them. Polynesian rats, or kiore, take juveniles at night, as do tuatara, geckos and North Island brown kiwi. By day, saddlebacks, kingfishers and long-tailed cuckoos prey on them, so the insects are under pressure around the clock.",
+    "family": "The wētāpunga's life is not tied to the seasons, and it can live for up to two years. Pairs mate in most months except the winter months of June to August. There is no courtship and no mating song; males and females recognise each other by touch alone.\n\nFemales lay eggs at night in moist soil, singly or in groups of five, 2 to 3 centimetres deep, and keep laying for the rest of their lives. Eggs laid between October and December hatch the following March and April, after about 125 days, though only 36% survive to hatch.\n\nThe young moult through a series of stages called instars, each lasting about five to six weeks. A female's egg-laying tube becomes visible at the third, and the sexes look clearly different by the sixth.",
+    "remarkable": "Wētāpunga go through ten instars, one more than other members of their genus. That extra stage lengthens their growing time as nymphs, and it is the reason they end up so much larger than their relatives.",
+    "outlook": "Wētāpunga were common on Hauturu in the 1950s but declined sharply afterwards, mainly because of predators rather than habitat loss. Feral cats lived on the island until they were wiped out in the 1980s, and rat numbers rose after that.\n\nWhen the kiore were removed in 2004, the wētāpunga population grew fourfold within six years. The IUCN lists it as Vulnerable. Since 2008 the Department of Conservation has run a captive breeding programme, with animals bred at Butterfly Creek and Auckland Zoo and released on Motuora and Tiritiri Matangi Islands.\n\nBy 2018 some 4,300 captive-bred wētāpunga had been released in the Hauraki Gulf, and in 2023 more than 300 juveniles went to two islands in the Bay of Islands. In 2022 New Zealand's own threat ranking changed to 'Threatened – Nationally increasing', thanks to populations on seven predator-free islands.",
+    "people": "Its Māori name, wētāpunga, is widely used in New Zealand. The Scottish zoologist Adam White described the species in 1842, noting hind legs nearly twice the length of the insect. In 1882 William Colenso named it again as Hemideina gigantea, a name later dropped as a duplicate.\n\nColenso's specimen, collected in 1839, is the oldest known insect specimen of a New Zealand species kept in New Zealand. The animals released on Tiritiri Matangi have been watched closely: an adult female found there in 2016 could only have descended from the first 25 released in 2011.",
+    "relatives": "The wētāpunga is one of the giant wētā in the genus Deinacrida, part of the family Anostostomatidae in the order Orthoptera, which also includes crickets and grasshoppers. Compared with crickets, wētā have fairly short antennae and heavy, kicking hind legs.",
+    "didYouKnow": "Wētāpunga mating begins in the morning and can carry on throughout the day.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 65 mm (female)"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 70 g in captivity"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 2 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Forest leaves"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where did the wētāpunga survive after dying out on the mainland?",
+        "choices": [
+          "Little Barrier Island",
+          "Stewart Island",
+          "The Chatham Islands",
+          "In caves beneath the volcanic cones of Auckland"
+        ],
+        "explanation": "It survived only on Hauturu, or Little Barrier Island, until translocations began."
+      },
+      {
+        "prompt": "Removing which predator led to a fourfold rise in wētāpunga numbers?",
+        "choices": [
+          "The Polynesian rat",
+          "The stoat",
+          "The feral cat",
+          "The brushtail possum, brought from Australia for fur"
+        ],
+        "explanation": "After kiore were removed in 2004, the population grew fourfold in six years."
+      },
+      {
+        "prompt": "How do male and female wētāpunga recognise each other?",
+        "choices": [
+          "By touch",
+          "By song",
+          "By scent trails",
+          "By flashing pale leg patches in the moonlight"
+        ],
+        "explanation": "They have no courtship or mating calls and recognise each other by contact alone."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Forest & Bird",
+        "url": "https://www.forestandbird.org.nz",
+        "blurb": "New Zealand's largest independent conservation charity, protecting native species and wild places."
+      }
+    ]
+  },
+  {
+    "id": "binturong",
+    "name": "Binturong",
+    "scientificName": "Arctictis binturong",
+    "wikipediaTitle": "Binturong",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests of South and Southeast Asia, from India and Nepal to Indonesia and the Philippines",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 12.0,
+      "longitude": 105.0
+    },
+    "mapSpan": 40,
+    "tagline": "The shaggy bearcat that smells of buttered popcorn",
+    "lede": "Shaggy, black and unhurried, the binturong looks like a cross between a bear and a cat, which is why it is often called the bearcat. It clambers through Asian forest canopies with the help of a gripping tail, and wherever it goes it leaves a scent like hot buttered popcorn.",
+    "home": "The binturong lives in India, Nepal, Bangladesh, Bhutan, Myanmar, Thailand, Malaysia, Laos, Cambodia, Vietnam, China, Indonesia and the Philippines. It is found from sea level to 3,000 metres, but mostly in primary and secondary lowland forest. In Assam it keeps to foothills and forested hills, in Laos to evergreen forest, and in Malaysia it has been recorded in regrown forest around a palm estate.\n\nRadio-collared binturongs in Thailand moved between 25 metres and about 2.7 km a day in the dry season, and up to 4.1 km in the wet season. In Khao Yai National Park a female's home range was about 4 square kilometres and a male's 4.5 to 20.5 square kilometres.",
+    "anatomy": "The binturong's body is 71 to 84 centimetres long, its tail another 66 to 69 centimetres, and it weighs about 9 to 20 kg. The thick, bushy tail is muscular at the base and curls inwards at the tip.\n\nIts coarse black coat, often speckled with white or buff, can make some animals look straw-coloured or grey, and it is so dense that a predator struggles to bite through it. The ears are short and rounded with white edges and black tufts, and long white whiskers frame a short, pointed face.\n\nIts short, stout legs end in bare soles and five clawed toes, and the third and fourth toes are joined. Females are larger than males and dominant over them. Though it eats mostly fruit, it has the skull, sharp teeth and strong bite of a true carnivore.",
+    "life": "Binturongs are omnivores, eating small mammals, birds, insects and fruit, and occasionally fish and earthworms, though most of their diet is probably plants. Figs are especially important. They are considered a keystone species because they spread the seeds of strangler figs, roughening the tough seed coat as it passes through the gut. They are most active at night and around dawn and dusk.\n\nThey seldom leap but climb skilfully and slowly, walking along the tops of branches or hanging beneath them, and must come to the ground from time to time to cross between trees. Tigers and dholes sometimes kill them. A cornered binturong growls, hisses, screams and howls, and may urinate or defecate on its attacker.",
+    "family": "Binturongs breed all year round. Males mature at about 30 months and females at about 28, and mating takes place up in the canopy. During mating the female makes a loud, coarse purring sound. Gestation lasts 84 to 99 days.\n\nFemales can delay implantation, holding a fertilised egg back from attaching to the womb until conditions are right, so they can mate whenever they meet a partner and give birth when food and temperatures are favourable. Litters range from one to six young, usually two. The newborns, sometimes called binlets, weigh 280 to 340 g and are helpless at first, relying on their mother until fully developed. Binturongs live about 18 years and stay fertile for 15 of them.",
+    "remarkable": "The popcorn smell comes from its urine, which contains 2-acetyl-1-pyrroline, the same compound released when popcorn pops or food browns at high heat. Separate scent glands make an oily musk.\n\nAs the binturong drags its tail over branches, it smears both together, and the sticky oil helps the scent cling to bark for longer in the humid rainforest.",
+    "outlook": "The binturong is listed as Vulnerable. Its biggest threat is the loss of forest to logging and plantations, which has been especially severe in the lowlands of the Sundaic region and shows no sign of slowing. It can survive in damaged forest, but there it seems to face more hunting.\n\nIn Southeast Asia it is hunted for meat and for skins used in traditional medicine, young are taken for the pet trade, and some are used to produce kopi luwak coffee. It is on CITES Appendix III. Captive breeding is complicated by poor pedigree records, and a 2006 study found low genetic diversity in captive animals. Since 2016 the Bearcat Study Program on Palawan has monitored wild binturongs.",
+    "people": "The name binturong comes from the Malay words běnturong and těnturun. In Western Malayo-Polynesian languages it may combine kitan, meaning squirrel, and ma-tuRun, 'the one who descends'.\n\nStamford Raffles named the species Viverra binturong in 1822 from a specimen collected in Malacca, and in 1824 Coenraad Jacob Temminck created the genus Arctictis, Greek for 'bear-weasel'.",
+    "relatives": "Despite its nicknames, the binturong is neither bear nor cat but a viverrid, related to civets. It is the only species in its genus and belongs to the subfamily Paradoxurinae with three other genera, including the palm civets; its line split off about 15.9 million years ago.\n\nNine subspecies have been proposed, forming a northern group in Indochina and a southern group in the Sunda region, separated by the Isthmus of Kra. During the Pleistocene a land bridge probably linked them, until rising seas cut them apart. Unlike most carnivorans, the male binturong has no penis bone.",
+    "didYouKnow": "In captivity, binturongs often rest curled up with their heads tucked under their tails.",
+    "facts": [
+      {
+        "label": "Body length",
+        "value": "71–84 cm"
+      },
+      {
+        "label": "Tail",
+        "value": "66–69 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 9–20 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 18 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What gives the binturong its popcorn smell?",
+        "choices": [
+          "A chemical in its urine",
+          "The figs it eats",
+          "Bacteria in its fur",
+          "Oil from glands behind its ears that it rubs onto leaves"
+        ],
+        "explanation": "Its urine contains 2-acetyl-1-pyrroline, the same compound made when popcorn pops."
+      },
+      {
+        "prompt": "Which plants rely on binturongs to spread their seeds?",
+        "choices": [
+          "Strangler figs",
+          "Durians",
+          "Rattan palms",
+          "Bamboo that flowers only once every few decades"
+        ],
+        "explanation": "Binturongs are key dispersers of strangler fig seeds."
+      },
+      {
+        "prompt": "What can female binturongs do to time their births?",
+        "choices": [
+          "Delay implantation",
+          "Lay eggs",
+          "Hibernate",
+          "Store sperm for several years in a special pouch"
+        ],
+        "explanation": "A fertilised egg can wait before attaching to the womb until conditions are good."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places across Asia and around the world."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests with local partners."
+      }
+    ]
+  },
+  {
+    "id": "greater-blue-ringed-octopus",
+    "name": "Greater Blue-ringed Octopus",
+    "scientificName": "Hapalochlaena lunulata",
+    "wikipediaTitle": "Greater blue-ringed octopus",
+    "group": "marineInvertebrate",
+    "regions": [
+      "asia",
+      "oceania"
+    ],
+    "range": "Shallow reefs and rubble of the Indo-West Pacific, from Sri Lanka to Vanuatu",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": 125.0
+    },
+    "mapSpan": 50,
+    "tagline": "A tiny octopus whose blue rings mean deadly danger",
+    "lede": "Barely 10 centimetres long with its arms stretched out, the greater blue-ringed octopus can deliver a bite that may kill a person. When it is disturbed, its skin lights up with flashing electric-blue rings, a warning that it ranks among the most venomous animals in the sea.",
+    "home": "This octopus lives on the sea floor in tropical and subtropical waters of the Indo-West Pacific, from Sri Lanka to the Philippines and from Australia to Papua New Guinea, the Solomon Islands and Vanuatu. It prefers shallow water over a mixed seabed of rubble, reef and sand.\n\nLike all octopuses it has a den, which it leaves only to hunt or find a mate. The entrance is easy to spot, because it is littered with leftovers from meals: empty shells and pieces of crab.",
+    "anatomy": "Despite its name, it is small, never more than 10 centimetres including the arms, and weighs about 80 g on average. The head is slightly flattened and pointed, and the eight arms are fairly short. Its skin varies with its surroundings, from yellow ochre to light brown, or whitish when it is resting. Around 60 blue rings are scattered over its body.\n\nEach is roughly circular, 7 to 8 millimetres across, sits on a darker blotch and is outlined in black for contrast. The rings are larger than in its relatives, which is where the 'greater' in its name comes from. Blue lines also run through its eyes.",
+    "life": "It lives alone, feeding on small crabs, shrimp and molluscs, and on small injured fish when it can catch them. It pounces on its prey, grabs it with its arms and pulls it to its mouth, then pierces the shell with its horny beak and injects venom that paralyses the muscles.\n\nIts saliva carries two kinds of venom. One is used to subdue crustaceans before eating them. The other, tetrodotoxin, is mainly for defence; it is made in glands linked to the beak, and is the same toxin found in pufferfish.\n\nMales seem unable to tell the sex of another octopus until mating begins: male-to-female mating lasts around 160 minutes, but when a male mounts another male it ends after about 30 seconds without any sperm being passed.",
+    "family": "The breeding season varies from place to place. A male approaches a female and strokes her with a specially modified arm called the hectocotylus, then climbs onto her back, sometimes covering her completely. He slips the arm under her mantle and passes packets of sperm into her oviduct.\n\nMales die after mating. The female lays between 50 and 100 eggs and carries them under her arms for several weeks until they hatch into tiny drifting young. She refuses to eat while guarding them, and dies.\n\nThe hatchlings spend a short time in the plankton before settling on the sea floor. About the size of a pea at hatching, they grow to the size of a golf ball, mature quickly and breed the following autumn. They live for about 2 years.",
+    "remarkable": "Its warning display is made with muscles, not pigment. Each flash lasts about a third of a second. The shimmering blue comes from layered reflective cells tucked into pouch-like folds of skin, and muscles around each ring pull these pouches open to expose the iridescence.\n\nAt the same moment, brown pigment cells darken on either side of the ring to make the blue stand out even more.",
+    "outlook": "Little is known about the numbers of the greater blue-ringed octopus. It is spread across a vast stretch of the tropical Indian and Pacific Oceans, and its short life and quick maturity mean each generation is replaced rapidly.\n\nBecause it depends on shallow reef, rubble and sand, the health of these coastal habitats matters for its future.",
+    "people": "For people, the bite is the danger. It is painless, but symptoms appear anywhere from 15 minutes to four hours later, and children are more sensitive. First comes tingling and numbness in the face, lips, tongue and limbs, often with sweating, severe headache, dizziness, trouble speaking and weakness.\n\nAfter about eight hours, blood pressure can fall and the muscles become paralysed. Death, usually from paralysis of the breathing muscles, can follow between 20 minutes and 24 hours after symptoms start, and throughout it all the victim stays fully conscious. About 2 milligrams of pure tetrodotoxin is estimated to be a lethal dose, and there is no known antidote.",
+    "relatives": "It is one of four species of blue-ringed octopus in the genus Hapalochlaena, part of the large octopus family Octopodidae. All of them are extremely venomous.\n\nThe greater blue-ringed octopus is protected from its own poison by mutations in the gene for a sodium channel in its nerves, which stop tetrodotoxin from binding there.",
+    "didYouKnow": "Tetrodotoxin is not broken down by heating or boiling.",
+    "facts": [
+      {
+        "label": "Size",
+        "value": "Up to 10 cm with arms"
+      },
+      {
+        "label": "Weight",
+        "value": "About 80 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 2 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Crabs, shrimp, molluscs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why is it called the 'greater' blue-ringed octopus?",
+        "choices": [
+          "Its rings are larger",
+          "It is the largest octopus",
+          "It is the most venomous",
+          "It lives in deeper water than the others in its genus"
+        ],
+        "explanation": "Its blue rings, 7 to 8 millimetres across, are larger than those of its relatives."
+      },
+      {
+        "prompt": "Which toxin does it use mainly for defence?",
+        "choices": [
+          "Tetrodotoxin",
+          "Cyanide",
+          "Botulinum",
+          "A protein venom similar to that of cone snails"
+        ],
+        "explanation": "Tetrodotoxin, also found in pufferfish, is made in glands linked to its beak."
+      },
+      {
+        "prompt": "What happens to the female after she lays her eggs?",
+        "choices": [
+          "She guards them and dies",
+          "She abandons them",
+          "She lays more every month",
+          "She buries them in sand and goes back to hunting crabs"
+        ],
+        "explanation": "She carries the eggs under her arms, refuses to eat, and dies."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Coral Reef Alliance",
+        "url": "https://www.coralreefalliance.org",
+        "blurb": "Works with communities to protect and restore coral reefs."
+      }
+    ]
   }
 ]

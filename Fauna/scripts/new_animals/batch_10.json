@@ -1,0 +1,263 @@
+[
+{
+ "id": "giant-squid",
+ "name": "Giant Squid",
+ "scientificName": "Architeuthis dux",
+ "wikipediaTitle": "Giant squid",
+ "group": "marineInvertebrate",
+ "regions": ["openOcean"],
+ "range": "Deep continental and island slopes in all the world's oceans",
+ "status": "LC",
+ "coordinate": {"latitude": 0.0, "longitude": -30.0},
+ "mapSpan": 80,
+ "tagline": "The real kraken, hunting in the dark with giant eyes",
+ "lede": "Hundreds of metres down, where sunlight barely reaches, the giant squid hunts with eyes up to 27 centimetres across. For centuries it was known only from rotting carcasses on beaches and beaks pulled from the stomachs of whales, and nobody photographed a living adult in the wild until 2004.",
+ "home": "The giant squid lives in every ocean, usually near the steep slopes of continents and islands. It turns up most often in the North Atlantic, around Newfoundland, Norway, the northern British Isles, Spain, the Azores and Madeira, and also off southern Africa, Japan, New Zealand and Australia. Specimens are rare in tropical and polar waters.\n\nExactly how deep it lives is still uncertain. Trawled specimens and the diving habits of sperm whales suggest a broad band somewhere between about 300 and 1,000 metres, in cold water where light is scarce.",
+ "anatomy": "Like all squid, it has a mantle, or torso, eight arms and two much longer feeding tentacles, the longest known in any cephalopod. Females reach about 5 metres from the rear fins to the arm tips, with males a little shorter, and the tentacles add up to 10 metres more. The mantle is about 2 metres long and is not known to exceed 2.25 metres. Because so much of its length is slender arm, it is surprisingly light: the heaviest females are estimated at about 275 kg and males at 150 kg.\n\nThe arms and tentacles carry hundreds of stalked suckers, 2 to 5 centimetres wide, each rimmed with a sharp, finely serrated ring of chitin. Its pupils can be 9 centimetres wide; it probably cannot see colour but can pick out small differences in tone. Instead of a swim bladder, its body is filled with an ammonium chloride solution lighter than seawater, which keeps it afloat and gives its flesh a taste like salty liquorice. It swims by jet propulsion, pushing water out through its siphon, and steers with small fins.",
+ "life": "Giant squid feed on deep-sea fish such as the orange roughy and on other squid. They seize prey with the two tentacles, draw it to a powerful parrot-like beak, and shred it with the radula, a tongue covered in small, file-like teeth. They seem to hunt alone, since only single animals have ever been caught in nets.\n\nTheir enemies include sperm whales, pilot whales, southern sleeper sharks and, in some regions, killer whales, and whales often carry circular sucker scars around their heads. Giant squid may also attack each other: a 9-metre squid that washed up in Galicia, Spain, in 2016 had been badly wounded by a rival, and beak fragments of other giant squid have been found in the stomachs of squid in Tasmania.",
+ "family": "Little is known about how giant squid breed. They are thought to mature at about three years old, and males mature at a smaller size than females. A female can carry more than 5 kg of tiny eggs, each only 0.5 to 1.4 millimetres long, which glands in her body coat in a gelatinous material to hold them together once laid.\n\nThe male has a prehensile penis more than 90 centimetres long, and may inject packets of sperm into the female's arms. Young squid have been found in surface waters off New Zealand and southern Japan. A squid's age can be read from growth rings in the statolith, a tiny stone in its balance organ, rather like counting the rings of a tree.",
+ "remarkable": "Scientists once proposed as many as 17 species of giant squid. Then a study of mitochondrial DNA from squid around the world found only 181 differing base pairs out of 20,331, so little variation that all giant squid appear to belong to one global population and a single species, probably spread far and wide as larvae drifting on ocean currents.",
+ "outlook": "Nobody knows how many giant squid there are. One estimate, based on beaks found in dead sperm whales, suggests the whales eat between 4.3 and 131 million giant squid a year, which would mean the squid number well into the millions.\n\nThey cannot be kept in aquariums because of their size, depth and needs. In 2022 a live squid found off Japan was taken to the Echizen Matsushima Aquarium, but it died and was put on display instead.",
+ "people": "Aristotle described a huge squid he called teuthus in the fourth century BC, and Pliny the Elder wrote of one with a head 'as big as a cask'. Sailors' tales may lie behind the Norse kraken, the Caribbean Lusca and Scylla of Greek myth, though the historian Otto Latva argues the squid was only turned into a monster by 19th-century writers. Many squid stranded in Newfoundland in the 1870s were turned into manure or animal feed.\n\nA squid nicknamed Archie, 8.62 metres long, has been displayed at the Natural History Museum in London since 2006. In 2012 a Japanese and American team filmed a live adult off the Ogasawara Islands, luring it with lights that mimicked a glowing jellyfish. The squid also appears in Moby-Dick and Twenty Thousand Leagues Under the Seas.",
+ "relatives": "Its closest relatives are thought to be four obscure 'neosquids' in the family Neoteuthidae, and together the two families form the superfamily Architeuthoidea. The giant squid is the second-largest mollusc alive. It is longer than the colossal squid, but the colossal squid is much heavier, with a mantle nearly twice as long, and some extinct cephalopods may have been bigger still.",
+ "didYouKnow": "The squid expert Frederick Aldrich proposed that giant squid strandings come in roughly 90-year cycles, and used the idea to correctly predict a small wave of strandings between 1961 and 1968.",
+ "facts": [
+  {"label": "Length", "value": "About 5 m, plus tentacles"},
+  {"label": "Weight", "value": "Up to about 275 kg"},
+  {"label": "Eye", "value": "Up to 27 cm across"},
+  {"label": "Depth", "value": "About 300–1,000 m"}
+ ],
+ "quiz": [
+  {"prompt": "What keeps the giant squid buoyant?", "choices": ["An ammonium chloride solution", "A gas-filled swim bladder", "Oil stored in its liver", "Air it gulps at the surface and traps under its mantle"], "explanation": "Its body is filled with an ammonium chloride solution that is lighter than seawater."},
+  {"prompt": "Which animal is the giant squid's chief predator?", "choices": ["Sperm whale", "Great white shark", "Colossal squid", "Leatherback turtles diving down the continental slopes"], "explanation": "Sperm whales hunt giant squid, and often carry sucker scars around their heads."},
+  {"prompt": "What did a worldwide study of giant squid DNA suggest?", "choices": ["Only one species exists", "There are at least 17 species", "They are closest to octopuses", "Atlantic and Pacific squid split apart millions of years ago"], "explanation": "Squid from around the world differed so little that they appear to be a single global species."}
+ ],
+ "charities": [
+  {"name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns to protect and restore the world's oceans and the life in them."}
+ ]
+},
+{
+ "id": "japanese-giant-salamander",
+ "name": "Japanese Giant Salamander",
+ "scientificName": "Andrias japonicus",
+ "wikipediaTitle": "Japanese giant salamander",
+ "group": "amphibian",
+ "regions": ["asia"],
+ "range": "Mountain streams and rivers of western Honshu, Shikoku and northern Kyushu, Japan",
+ "status": "VU",
+ "coordinate": {"latitude": 34.8, "longitude": 133.5},
+ "mapSpan": 8,
+ "tagline": "A wrinkled river giant that can live for decades",
+ "lede": "In the cool mountain streams of western Japan lives an amphibian up to 1.5 metres long, a wrinkled, mottled giant that never leaves the water. It hunts at night by feeling ripples, can go weeks without a meal, and may live for nearly 80 years.",
+ "home": "This salamander is found only in southwestern Japan, west of Gifu Prefecture on Honshu, and in parts of Shikoku and Kyushu. Okayama, Hyogo, Shimane, Tottori, Yamaguchi, Mie, Ehime, Gifu and Ōita Prefectures hold strong populations. Some populations in Wakayama Prefecture may have been introduced by people.\n\nIt lives in fast-flowing water, from rivers 20 to 50 metres wide down to headwater streams only 0.5 to 4 metres across. Smaller breeding adults tend to use the little streams, perhaps to avoid bigger rivals, and animals move between a river's main channel and its tributaries. Headwaters seem to be important nurseries for larvae and juveniles. Adults can thrive in streams running through rice paddies, which are full of frogs to eat, but those streams usually have dams and concrete banks that hurt breeding.",
+ "anatomy": "It can grow to 150 centimetres and 25 kg. The largest wild individual on record was 136 centimetres long and weighed 26.3 kg. Its brown and black mottled skin blends with stream beds, and is covered in small warts, especially on the head. The eyes are tiny, lidless and nearly useless, but the mouth stretches across the whole head and can open as wide as the body.\n\nLoose folds of skin along the neck and sides increase its surface area, and capillaries in the skin swap oxygen and carbon dioxide with the water. Sensory cells run over its body from head to tail, with hair-like shapes that pick up tiny vibrations, much like the hair cells in the human inner ear. In the breeding season, males develop swollen cloacal glands, and they generally have broader heads than females.",
+ "life": "The salamander is entirely aquatic and almost entirely nocturnal. It has no gills as an adult and is so large that it needs clear, cool, flowing water rich in oxygen. Rather than climbing out onto land like many salamanders after metamorphosis, it simply pokes its head above the surface to breathe air, and also absorbs oxygen through its skin.\n\nAdults eat freshwater crabs and other crustaceans, worms, insects, frogs and other small amphibians, fish and even small mammals. Its metabolism is very slow and it has no natural competitors. When threatened, it can release a strong-smelling, milky substance.",
+ "family": "Breeding takes place in late August and early September. Mature males travel upstream looking for nest sites, and because good sites are scarce, only large, competitive males win one and become 'den masters'. A den master cleans his den and drives off intruders, but lets in a female ready to spawn. As she lays her eggs and he releases sperm, smaller males lurking nearby often rush in to join, so a female may mate with several males.\n\nThe female and the other males then leave, and the den master stays. He fans water over the eggs with his tail and kicks with his back legs to sweep out debris, which would otherwise build up and let water mould take hold. He keeps guarding the young until the following spring, when the larvae disperse. One captive salamander lived 52 years at Natura Artis Magistra zoo in the Netherlands.",
+ "remarkable": "Den masters have been seen eating eggs and larvae that were unfertilised, dead or infected with water mould. Researchers call this 'hygienic filial cannibalism', and think that by removing the bad ones, the father stops mould spreading to his healthy offspring.",
+ "outlook": "The Japanese giant salamander is listed as Vulnerable by the IUCN and by Japan's Ministry of the Environment, and is on CITES Appendix I. Pollution, silting rivers, dams and concrete banks all harm it: concrete removes nesting sites and dams block its movements and fragment populations. Heavier rainstorms with climate change may lead to still more flood defences.\n\nA major problem is interbreeding with the Chinese giant salamander, probably introduced to Japan for food in 1972. In a study of the Kamo River in Kyoto from 2011 to 2013, 95% of the salamanders caught were hybrids. There is no government recovery programme; volunteers led by groups such as the Japanese Giant Salamander Society and the Hanzaki Research Institute survey populations. Hiroshima City Asa Zoological Park was the first in Japan to breed the species, and sent offspring to the National Zoo in the United States.",
+ "people": "In Japanese it is ōsanshōuo, meaning 'giant salamander', and local names include hanzaki, hanzake and ankou. Philipp Franz von Siebold, the physician on Dejima Island in Nagasaki, shipped one to Leiden in the Netherlands in the 1820s, the first known to Europeans. It was once hunted for food, but that stopped with protection laws after the Second World War, and since 1952 it has been a Special Natural Monument.\n\nIt appears in legend and art, including an ukiyo-e print by Utagawa Kuniyoshi, and may have inspired the kappa, a water creature of Japanese folklore. Every year on 8 August the town of Yubara in Okayama holds a festival in its honour, with a dark male float and a red female float. There it is called hanzaki, from the belief that it survives even when torn in half.",
+ "relatives": "It is one of only six species of giant salamander and the third-largest amphibian in the world, smaller only than its close relatives the Chinese giant salamander and the South China giant salamander. It can be told from the Chinese species by the larger, more numerous bumps on its head and throat, its rounder snout and its slightly shorter tail. The American hellbender is a more distant cousin with even more prominent skin folds along its sides.",
+ "didYouKnow": "The town of Nichinan in Tottori Prefecture has a Japanese giant salamander as its official mascot, named Ossanshouo.",
+ "facts": [
+  {"label": "Length", "value": "Up to 1.5 m"},
+  {"label": "Weight", "value": "Up to about 25 kg"},
+  {"label": "Lifespan", "value": "Possibly nearly 80 years"},
+  {"label": "Diet", "value": "Crabs, frogs, fish, insects"}
+ ],
+ "quiz": [
+  {"prompt": "Who guards the eggs of the Japanese giant salamander?", "choices": ["The den master male", "The female", "Both parents in turn", "Nobody, because the eggs are buried in gravel and left"], "explanation": "The male den master stays with the eggs, fanning and cleaning them until the larvae leave."},
+  {"prompt": "How does the salamander find prey despite its poor eyesight?", "choices": ["Sensory cells in its skin", "Heat-sensing pits", "Echolocation clicks", "A long forked tongue that tastes the water as it swims"], "explanation": "Hair-like sensory cells over its body detect tiny vibrations in the water."},
+  {"prompt": "What is one of the biggest conservation problems for this salamander?", "choices": ["Hybridising with Chinese giant salamanders", "Being eaten by bullfrogs", "Competition with trout", "Disease carried by pet turtles released into mountain streams"], "explanation": "Introduced Chinese giant salamanders interbreed with the native species, and hybrids are spreading."}
+ ],
+ "charities": [
+  {"name": "Amphibian Ark", "url": "https://www.amphibianark.org", "blurb": "Helps zoos and partners worldwide save threatened amphibians through conservation breeding."}
+ ]
+},
+{
+ "id": "bar-tailed-godwit",
+ "name": "Bar-tailed Godwit",
+ "scientificName": "Limosa lapponica",
+ "wikipediaTitle": "Bar-tailed godwit",
+ "group": "bird",
+ "regions": ["arctic", "europe", "asia", "oceania"],
+ "range": "Breeds on Arctic tundra; winters on coasts from western Europe and Africa to Australia and New Zealand",
+ "status": "NT",
+ "coordinate": {"latitude": 20.0, "longitude": 160.0},
+ "mapSpan": 80,
+ "tagline": "The bird that flies across the Pacific without stopping",
+ "lede": "Each autumn, bar-tailed godwits leave Alaska and fly across the Pacific to New Zealand and Australia without once landing to feed. To make it, they pack on more fat for their size than any other migratory bird so far studied, and even shrink their digestive organs to save weight.",
+ "home": "All bar-tailed godwits breed in the Arctic, on coasts and tundra from Scandinavia across Siberia to Alaska, and fly south for the northern winter to mudflats and estuaries. European birds make the shortest trips, some only as far as the North Sea, while others reach India, the Persian Gulf or southern Africa. Siberian birds of the subspecies menzbieri winter in northern and western Australia, and Alaskan birds, baueri, go to eastern Australia and New Zealand.\n\nOn the way north, Australasian birds stop in the Yellow Sea, especially at the Yalu Jiang coastal wetland, the most important staging site of all. Alaskan birds rest and refuel there for about 41 days before flying roughly 7,000 km on to their breeding grounds.",
+ "anatomy": "The bar-tailed godwit is 37 to 41 centimetres long with a wingspan of 70 to 80 centimetres. Females are bigger: males weigh 190 to 400 g and females 260 to 630 g. It has blue-grey legs and a long, slightly upturned bill, pink at the base and black at the tip, which is shorter in males.\n\nIn breeding plumage the male's neck, breast and belly are an unbroken brick red, with dark brown upperparts, while the female is duller, with a chestnut to cinnamon belly. Full breeding colours take three years to appear. In winter both sexes are plain grey-brown with darker feather centres that give a streaky look, and whitish underneath. The black-and-white barred tail, which gives the bird its name, separates it from the black-tailed godwit.",
+ "life": "In wetlands, up to 70% of the godwit's food is bristle-worms, along with small clams and crustaceans. At the Yellow Sea staging site it eats mostly a small bivalve, Potamocorbula laevis, which it swallows whole. Godwits feed by day and by night, picking food from the surface or probing deep into the mud with a twist of the bill, and birds feeding in flocks catch more than those feeding alone.\n\nThe sexes forage differently. At New Zealand's Manawatū Estuary, short-billed males mostly took small snails at the surface while females went for deeply buried worms, and in the Wadden Sea males relied almost entirely on mud shrimps. Godwits seem able to read the weather, leaving New Zealand early when winds are favourable and riding high-pressure systems over the Tasman Sea.",
+ "family": "Young godwits first fly north to breed at 2 to 4 years old. Both parents build the nest, a shallow cup in moss on a slightly raised, drier patch of tundra, often hidden among tussocks. The female lays two to five eggs, usually four, and the pair share incubation for 20 to 21 days, the male sitting by day and the female by night. The chicks fly at about 28 days old.\n\nIn the breeding season males perform ceremonial song flights to show females they are still unpaired. Each flight has four stages: a climb, a 'limping' flight, a glide and a descent. Godwits have at least nine different calls, built mostly from repeated notes lasting a fraction of a second.",
+ "remarkable": "Satellite tags have revealed record after record. In 2007 a female known as E7 flew 11,680 km non-stop from western Alaska to the Piako River in New Zealand in eight days, completing a 174-day round trip of 29,280 km. In 2021 a male, 4BBRW, flew 13,000 km from Alaska to New South Wales. Then in 2022 a juvenile called B6 left Alaska on 13 October and reached Tasmania at least 13,560 km later, after 11 days and 1 hour in the air.",
+ "outlook": "The species is listed as Near Threatened and is declining, with a global population of about 1.1 million birds in 2025. The main cause is the loss of tidal mudflats in the Yellow Sea to seawalls and land reclamation, which has cut the food available to migrating birds. Adult survival in both Australasian subspecies fell between 2005 and 2012.\n\nBirds of the baueri subspecies in New Zealand dropped from over 100,000 in the late 1980s to 67,500 in 2018, and in 2024 both baueri and menzbieri were listed as Endangered under Australian law. Godwits are easily spooked, and disturbance at high-tide roosts stops them from resting. Fewer birds have used East African estuaries since 1979.",
+ "people": "Carl Linnaeus described the bird in 1758 as Scolopax limosa. Its genus name Limosa is Latin for 'muddy', after its favourite habitat, and lapponica refers to Lapland. The English word 'godwit' was first recorded around 1416. It may imitate the bird's call, or come from Old English words meaning 'good creature', perhaps a nod to how good it was to eat.\n\nToday the bird is protected under New Zealand's 1953 Wildlife Act and the agreement on African-Eurasian migratory waterbirds. Much of what is known about its journeys comes from birds fitted with surgically implanted satellite transmitters, seven of which were tracked from New Zealand to the Yellow Sea.",
+ "relatives": "The bar-tailed godwit belongs to the sandpiper family, Scolopacidae, and shares the genus Limosa with three other godwits. Five subspecies are recognised, from the small lapponica in Europe to the large baueri of Alaska, though one Siberian form, yamalensis, may not be truly distinct. Its closest lookalike is the Asian dowitcher.",
+ "didYouKnow": "Godwits that nested in southern Alaska leave New Zealand first, and six months later they leave Alaska in the same order they arrived.",
+ "facts": [
+  {"label": "Length", "value": "37–41 cm"},
+  {"label": "Wingspan", "value": "70–80 cm"},
+  {"label": "Weight", "value": "190–630 g"},
+  {"label": "Longest flight", "value": "At least 13,560 km non-stop"}
+ ],
+ "quiz": [
+  {"prompt": "What makes up most of the godwit's diet in wetlands?", "choices": ["Bristle-worms", "Small fish", "Seeds", "Insects snapped up in mid-air over the tundra"], "explanation": "Up to 70% of its wetland diet is bristle-worms."},
+  {"prompt": "How do godwits prepare for their long non-stop flights?", "choices": ["They store huge fat loads", "They swallow stones", "They grow extra feathers", "They sleep for weeks beforehand to slow their heartbeat"], "explanation": "They carry more fat than any other migratory bird studied and shrink their digestive organs."},
+  {"prompt": "What is the main cause of the godwit's decline?", "choices": ["Loss of Yellow Sea mudflats", "Hunting in Alaska", "Oil spills", "Competition from great knots for the same small clams"], "explanation": "Seawalls and reclamation have destroyed vital feeding grounds at its staging sites."}
+ ],
+ "charities": [
+  {"name": "BirdLife International", "url": "https://www.birdlife.org", "blurb": "A global partnership protecting birds and their habitats, including migratory flyways."}
+ ]
+},
+{
+ "id": "atlantic-wolffish",
+ "name": "Atlantic Wolffish",
+ "scientificName": "Anarhichas lupus",
+ "wikipediaTitle": "Atlantic wolffish",
+ "group": "fish",
+ "regions": ["naEast", "europe", "arctic"],
+ "range": "Rocky sea floors of the cold North Atlantic, from Cape Cod and Greenland to the Bay of Biscay",
+ "status": "NE",
+ "coordinate": {"latitude": 60.0, "longitude": -20.0},
+ "mapSpan": 50,
+ "tagline": "A fanged, scowling fish that crunches sea urchins",
+ "lede": "The Atlantic wolffish has a scowling face, a mouth bristling with fangs, and rows of crushing molars behind them. It spends most of its life tucked into rocky crevices on the cold floor of the North Atlantic, coming out to crack open shellfish that few other animals can tackle.",
+ "home": "On the western side of the Atlantic, wolffish range from the Davis Strait off Nunavut past Greenland, Newfoundland and Nova Scotia south to Cape Cod, with occasional sightings as far as New Jersey. The densest populations are on Georges Bank, in the Gulf of Maine and in the Great South Channel. In the east they live from Russia's White Sea and Novaya Zemlya through the Nordic countries and the British Isles to the Bay of Biscay.\n\nThey are bottom dwellers on hard ground, often hiding in nooks and small caves, and rarely move far from home. They live at depths of 20 to 500 metres, usually in water between -1 and 11 °C, and make a natural antifreeze that keeps their blood flowing in near-freezing seas.",
+ "anatomy": "The largest Atlantic wolffish on record was 1.5 metres long and weighed almost 18 kg. Its body is long and slippery, rounded at the front and flattened towards the tail, with tiny scales buried almost out of sight in the skin. It is usually purplish-brown, dull olive green or bluish grey.\n\nA long, even fin runs the full length of its back, and another runs underneath from the vent to the tail, as in blennies. The pectoral fins are large and rounded, but there are no pelvic fins at all. With this build it swims slowly, wriggling from side to side like an eel.",
+ "life": "Wolffish feed on hard-shelled animals: molluscs, crustaceans and echinoderms. Favourite foods include large whelks, cockles, sea clams, big hermit crabs, starfish and sea urchins, and they do not eat other fish.\n\nBy eating so many green crabs and sea urchins, whose numbers can explode and damage the sea floor, wolffish help keep their habitat healthy. Because they share the bottom with other species, how well wolffish are doing is also seen as a sign of the health of fish such as Atlantic cod.",
+ "family": "Unlike many fish, which scatter eggs into the open sea for males to fertilise, wolffish fertilise their eggs inside the female's body, and both parents are involved in caring for the brood. The eggs are laid on the sea floor, often in shallow water, in loose, sticky clumps among seaweed and stones.\n\nAt 5.5 to 6 millimetres across, yellowish and opaque, they are among the largest fish eggs known. The male stays to guard the nest for as long as four months, until the young are strong enough to fend for themselves. Atlantic wolffish mature late, at about six years old.",
+ "remarkable": "Its teeth set it apart from every other member of its family. Each jaw is armed at the front with four to six strong, conical fangs. Behind them the upper jaw has three rows of crushing teeth, with four pairs of molars in the middle row, and the lower jaw has two rows of molars. Even its throat is scattered with serrated teeth.",
+ "outlook": "In United States waters, wolffish are caught mostly as bycatch, and their numbers are falling fast, probably because of overfishing. Landings by US boats peaked at 1,207 tonnes in 1983, then dropped by 95% to 64.7 tonnes in 2007. The US National Marine Fisheries Service lists the wolffish as a Species of Concern.\n\nIn 2008 the Conservation Law Foundation and two scientists petitioned for its protection under the US Endangered Species Act, asking for closed areas and catch-and-release rules, but in 2009 the government decided listing was not warranted. In 2014 the Baltic Sea population was classed as Endangered on the IUCN scale by HELCOM, the Baltic marine protection body.",
+ "people": "The fish goes by many names, including seawolf, Atlantic catfish, ocean catfish, devil fish, woof and sea cat. In Britain it has been sold as 'Scotch halibut' and 'Scarborough woof', and it is a popular choice for fish and chips. In Iceland and Norway it is steinbítur or steinbit, meaning 'stone biter', after its jaws.\n\nCarl Linnaeus described it in 1758, giving its home as the 'northern English Ocean'. Its species name, lupus, is Latin for 'wolf', a reference to its canine-like front teeth.",
+ "relatives": "The Atlantic wolffish belongs to the wolffish family, Anarhichadidae, and is the type species of its genus, Anarhichas. Two close relatives share the North Atlantic: the spotted wolffish, which is also eaten, and the northern wolffish, whose loose, jelly-like flesh is not. Its Pacific relative is known as the wolf eel. Despite its size, the wolffish keeps the body shape and fins of the much smaller blennies.",
+ "didYouKnow": "A single Atlantic wolffish was recorded far from home in the Gulf of Genoa, in the western Mediterranean, in 1958.",
+ "facts": [
+  {"label": "Length", "value": "Up to 1.5 m"},
+  {"label": "Weight", "value": "Up to almost 18 kg"},
+  {"label": "Depth", "value": "20–500 m"},
+  {"label": "Diet", "value": "Shellfish, crabs, urchins"}
+ ],
+ "quiz": [
+  {"prompt": "What does the Icelandic name 'steinbítur' mean?", "choices": ["Stone biter", "Sea wolf", "Devil fish", "Cold-water cod, from an old Norse fishing word"], "explanation": "The name refers to its strong jaws, which crush hard-shelled prey."},
+  {"prompt": "Which of these does the Atlantic wolffish not eat?", "choices": ["Other fish", "Sea urchins", "Whelks", "Hermit crabs pulled out of their borrowed shells"], "explanation": "It eats hard-shelled invertebrates and does not eat other fish."},
+  {"prompt": "How does the wolffish keep its blood flowing in near-freezing water?", "choices": ["Natural antifreeze", "Thick blubber", "Constant swimming", "Basking in warmer shallow water during the day to soak up heat"], "explanation": "It produces a natural antifreeze in its blood."}
+ ],
+ "charities": [
+  {"name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns for sustainable fisheries and less bycatch in the world's oceans."},
+  {"name": "Marine Conservation Society", "url": "https://www.mcsuk.org", "blurb": "The UK charity working for healthy seas and sustainable seafood."}
+ ]
+},
+{
+ "id": "little-barrier-giant-weta",
+ "name": "Little Barrier Giant Wētā",
+ "scientificName": "Deinacrida heteracantha",
+ "wikipediaTitle": "Deinacrida heteracantha",
+ "group": "insect",
+ "regions": ["oceania"],
+ "range": "Hauturu (Little Barrier Island) and predator-free islands off northern New Zealand",
+ "status": "VU",
+ "coordinate": {"latitude": -36.2, "longitude": 175.1},
+ "mapSpan": 5,
+ "tagline": "New Zealand's biggest wētā, saved by island-hopping",
+ "lede": "The wētāpunga is a huge, wingless, cricket-like insect with a broad brown body and spiny back legs, the largest of all New Zealand's giant wētā. After vanishing from the mainland, it clung on in a single place, Hauturu, until conservationists began carrying it to new island homes.",
+ "home": "Wētāpunga once lived in forests across the warmer parts of the North Island, including Northland and Auckland, but died out there during the 19th century. They survived only on Hauturu, or Little Barrier Island, which covers just 3,083 hectares off the coast.\n\nThere they live in trees, from second-growth forest on the lower slopes, dominated by silver fern, nīkau palm, māhoe and kohekohe, up to tall kauri forest at middle heights. They shelter under loose bark and in the hollows of māhoe and pōhutukawa trees.",
+ "anatomy": "The wētāpunga is the largest member of its genus. Females are far bigger than males: an average adult female weighs 32 g and is about 65 millimetres long, while males average only 7.4 g. In captivity, a female full of eggs can reach 70 g.\n\nIt has a broad body, a round head and short jaws. Its hind legs are long and powerful, with strong, sharp spines set alternately along their edges, and can deliver a hard kick. The body is brown above and yellowish beneath. It has a stridulatory organ: pegs on the hind legs rub against ridges on the abdomen to make a rasping defensive sound, with peaks at about 20 kHz and 40 to 50 kHz.",
+ "life": "The wētāpunga mostly eats the leaves of forest plants. Adults are solitary and nomadic, moving to new spots from time to time, and do most of their feeding and travelling at night, high above the ground. Males roam farther than females, and at night a male may trail a female, staying about 25 centimetres behind her.\n\nMany animals hunt them. Polynesian rats, or kiore, take juveniles at night, as do tuatara, geckos and North Island brown kiwi. By day, saddlebacks, kingfishers and long-tailed cuckoos prey on them, so the insects are under pressure around the clock.",
+ "family": "The wētāpunga's life is not tied to the seasons, and it can live for up to two years. Pairs mate in most months except the winter months of June to August. There is no courtship and no mating song; males and females recognise each other by touch alone.\n\nFemales lay eggs at night in moist soil, singly or in groups of five, 2 to 3 centimetres deep, and keep laying for the rest of their lives. Eggs laid between October and December hatch the following March and April, after about 125 days, though only 36% survive to hatch. The young moult through a series of stages called instars, each lasting about five to six weeks. A female's egg-laying tube becomes visible at the third, and the sexes look clearly different by the sixth.",
+ "remarkable": "Wētāpunga go through ten instars, one more than other members of their genus. That extra stage lengthens their growing time as nymphs, and it is the reason they end up so much larger than their relatives.",
+ "outlook": "Wētāpunga were common on Hauturu in the 1950s but declined sharply afterwards, mainly because of predators rather than habitat loss. Feral cats lived on the island until they were wiped out in the 1980s, and rat numbers rose after that. When the kiore were removed in 2004, the wētāpunga population grew fourfold within six years. The IUCN lists it as Vulnerable.\n\nSince 2008 the Department of Conservation has run a captive breeding programme, with animals bred at Butterfly Creek and Auckland Zoo and released on Motuora and Tiritiri Matangi Islands. By 2018 some 4,300 captive-bred wētāpunga had been released in the Hauraki Gulf, and in 2023 more than 300 juveniles went to two islands in the Bay of Islands. In 2022 New Zealand's own threat ranking changed to 'Threatened – Nationally increasing', thanks to populations on seven predator-free islands.",
+ "people": "Its Māori name, wētāpunga, is widely used in New Zealand. The Scottish zoologist Adam White described the species in 1842, noting hind legs nearly twice the length of the insect. In 1882 William Colenso named it again as Hemideina gigantea, a name later dropped as a duplicate.\n\nColenso's specimen, collected in 1839, is the oldest known insect specimen of a New Zealand species kept in New Zealand. The animals released on Tiritiri Matangi have been watched closely: an adult female found there in 2016 could only have descended from the first 25 released in 2011.",
+ "relatives": "The wētāpunga is one of the giant wētā in the genus Deinacrida, part of the family Anostostomatidae in the order Orthoptera, which also includes crickets and grasshoppers. Compared with crickets, wētā have fairly short antennae and heavy, kicking hind legs.",
+ "didYouKnow": "Wētāpunga mating begins in the morning and can carry on throughout the day.",
+ "facts": [
+  {"label": "Length", "value": "About 65 mm (female)"},
+  {"label": "Weight", "value": "Up to 70 g in captivity"},
+  {"label": "Lifespan", "value": "Up to 2 years"},
+  {"label": "Diet", "value": "Forest leaves"}
+ ],
+ "quiz": [
+  {"prompt": "Where did the wētāpunga survive after dying out on the mainland?", "choices": ["Little Barrier Island", "Stewart Island", "The Chatham Islands", "In caves beneath the volcanic cones of Auckland"], "explanation": "It survived only on Hauturu, or Little Barrier Island, until translocations began."},
+  {"prompt": "Removing which predator led to a fourfold rise in wētāpunga numbers?", "choices": ["The Polynesian rat", "The stoat", "The feral cat", "The brushtail possum, brought from Australia for fur"], "explanation": "After kiore were removed in 2004, the population grew fourfold in six years."},
+  {"prompt": "How do male and female wētāpunga recognise each other?", "choices": ["By touch", "By song", "By scent trails", "By flashing pale leg patches in the moonlight"], "explanation": "They have no courtship or mating calls and recognise each other by contact alone."}
+ ],
+ "charities": [
+  {"name": "Forest & Bird", "url": "https://www.forestandbird.org.nz", "blurb": "New Zealand's largest independent conservation charity, protecting native species and wild places."}
+ ]
+},
+{
+ "id": "binturong",
+ "name": "Binturong",
+ "scientificName": "Arctictis binturong",
+ "wikipediaTitle": "Binturong",
+ "group": "mammal",
+ "regions": ["asia"],
+ "range": "Forests of South and Southeast Asia, from India and Nepal to Indonesia and the Philippines",
+ "status": "VU",
+ "coordinate": {"latitude": 12.0, "longitude": 105.0},
+ "mapSpan": 40,
+ "tagline": "The shaggy bearcat that smells of buttered popcorn",
+ "lede": "Shaggy, black and unhurried, the binturong looks like a cross between a bear and a cat, which is why it is often called the bearcat. It clambers through Asian forest canopies with the help of a gripping tail, and wherever it goes it leaves a scent like hot buttered popcorn.",
+ "home": "The binturong lives in India, Nepal, Bangladesh, Bhutan, Myanmar, Thailand, Malaysia, Laos, Cambodia, Vietnam, China, Indonesia and the Philippines. It is found from sea level to 3,000 metres, but mostly in primary and secondary lowland forest. In Assam it keeps to foothills and forested hills, in Laos to evergreen forest, and in Malaysia it has been recorded in regrown forest around a palm estate.\n\nRadio-collared binturongs in Thailand moved between 25 metres and about 2.7 km a day in the dry season, and up to 4.1 km in the wet season. In Khao Yai National Park a female's home range was about 4 square kilometres and a male's 4.5 to 20.5 square kilometres.",
+ "anatomy": "The binturong's body is 71 to 84 centimetres long, its tail another 66 to 69 centimetres, and it weighs about 9 to 20 kg. The thick, bushy tail is muscular at the base and curls inwards at the tip. Its coarse black coat, often speckled with white or buff, can make some animals look straw-coloured or grey, and it is so dense that a predator struggles to bite through it.\n\nThe ears are short and rounded with white edges and black tufts, and long white whiskers frame a short, pointed face. Its short, stout legs end in bare soles and five clawed toes, and the third and fourth toes are joined. Females are larger than males and dominant over them. Though it eats mostly fruit, it has the skull, sharp teeth and strong bite of a true carnivore.",
+ "life": "Binturongs are omnivores, eating small mammals, birds, insects and fruit, and occasionally fish and earthworms, though most of their diet is probably plants. Figs are especially important. They are considered a keystone species because they spread the seeds of strangler figs, roughening the tough seed coat as it passes through the gut.\n\nThey are most active at night and around dawn and dusk. They seldom leap but climb skilfully and slowly, walking along the tops of branches or hanging beneath them, and must come to the ground from time to time to cross between trees. Tigers and dholes sometimes kill them. A cornered binturong growls, hisses, screams and howls, and may urinate or defecate on its attacker.",
+ "family": "Binturongs breed all year round. Males mature at about 30 months and females at about 28, and mating takes place up in the canopy. During mating the female makes a loud, coarse purring sound. Gestation lasts 84 to 99 days.\n\nFemales can delay implantation, holding a fertilised egg back from attaching to the womb until conditions are right, so they can mate whenever they meet a partner and give birth when food and temperatures are favourable. Litters range from one to six young, usually two. The newborns, sometimes called binlets, weigh 280 to 340 g and are helpless at first, relying on their mother until fully developed. Binturongs live about 18 years and stay fertile for 15 of them.",
+ "remarkable": "The popcorn smell comes from its urine, which contains 2-acetyl-1-pyrroline, the same compound released when popcorn pops or food browns at high heat. Separate scent glands make an oily musk. As the binturong drags its tail over branches, it smears both together, and the sticky oil helps the scent cling to bark for longer in the humid rainforest.",
+ "outlook": "The binturong is listed as Vulnerable. Its biggest threat is the loss of forest to logging and plantations, which has been especially severe in the lowlands of the Sundaic region and shows no sign of slowing. It can survive in damaged forest, but there it seems to face more hunting. In Southeast Asia it is hunted for meat and for skins used in traditional medicine, young are taken for the pet trade, and some are used to produce kopi luwak coffee.\n\nIt is on CITES Appendix III. Captive breeding is complicated by poor pedigree records, and a 2006 study found low genetic diversity in captive animals. Since 2016 the Bearcat Study Program on Palawan has monitored wild binturongs.",
+ "people": "The name binturong comes from the Malay words běnturong and těnturun. In Western Malayo-Polynesian languages it may combine kitan, meaning squirrel, and ma-tuRun, 'the one who descends'. Stamford Raffles named the species Viverra binturong in 1822 from a specimen collected in Malacca, and in 1824 Coenraad Jacob Temminck created the genus Arctictis, Greek for 'bear-weasel'.",
+ "relatives": "Despite its nicknames, the binturong is neither bear nor cat but a viverrid, related to civets. It is the only species in its genus and belongs to the subfamily Paradoxurinae with three other genera, including the palm civets; its line split off about 15.9 million years ago. Nine subspecies have been proposed, forming a northern group in Indochina and a southern group in the Sunda region, separated by the Isthmus of Kra. During the Pleistocene a land bridge probably linked them, until rising seas cut them apart. Unlike most carnivorans, the male binturong has no penis bone.",
+ "didYouKnow": "In captivity, binturongs often rest curled up with their heads tucked under their tails.",
+ "facts": [
+  {"label": "Body length", "value": "71–84 cm"},
+  {"label": "Tail", "value": "66–69 cm"},
+  {"label": "Weight", "value": "About 9–20 kg"},
+  {"label": "Lifespan", "value": "About 18 years"}
+ ],
+ "quiz": [
+  {"prompt": "What gives the binturong its popcorn smell?", "choices": ["A chemical in its urine", "The figs it eats", "Bacteria in its fur", "Oil from glands behind its ears that it rubs onto leaves"], "explanation": "Its urine contains 2-acetyl-1-pyrroline, the same compound made when popcorn pops."},
+  {"prompt": "Which plants rely on binturongs to spread their seeds?", "choices": ["Strangler figs", "Durians", "Rattan palms", "Bamboo that flowers only once every few decades"], "explanation": "Binturongs are key dispersers of strangler fig seeds."},
+  {"prompt": "What can female binturongs do to time their births?", "choices": ["Delay implantation", "Lay eggs", "Hibernate", "Store sperm for several years in a special pouch"], "explanation": "A fertilised egg can wait before attaching to the womb until conditions are good."}
+ ],
+ "charities": [
+  {"name": "Wildlife Conservation Society", "url": "https://www.wcs.org", "blurb": "Protects wildlife and wild places across Asia and around the world."},
+  {"name": "Rainforest Trust", "url": "https://www.rainforesttrust.org", "blurb": "Buys and protects threatened tropical forests with local partners."}
+ ]
+},
+{
+ "id": "greater-blue-ringed-octopus",
+ "name": "Greater Blue-ringed Octopus",
+ "scientificName": "Hapalochlaena lunulata",
+ "wikipediaTitle": "Greater blue-ringed octopus",
+ "group": "marineInvertebrate",
+ "regions": ["asia", "oceania"],
+ "range": "Shallow reefs and rubble of the Indo-West Pacific, from Sri Lanka to Vanuatu",
+ "status": "NE",
+ "coordinate": {"latitude": -2.0, "longitude": 125.0},
+ "mapSpan": 50,
+ "tagline": "A tiny octopus whose blue rings mean deadly danger",
+ "lede": "Barely 10 centimetres long with its arms stretched out, the greater blue-ringed octopus can deliver a bite that may kill a person. When it is disturbed, its skin lights up with flashing electric-blue rings, a warning that it ranks among the most venomous animals in the sea.",
+ "home": "This octopus lives on the sea floor in tropical and subtropical waters of the Indo-West Pacific, from Sri Lanka to the Philippines and from Australia to Papua New Guinea, the Solomon Islands and Vanuatu. It prefers shallow water over a mixed seabed of rubble, reef and sand.\n\nLike all octopuses it has a den, which it leaves only to hunt or find a mate. The entrance is easy to spot, because it is littered with leftovers from meals: empty shells and pieces of crab.",
+ "anatomy": "Despite its name, it is small, never more than 10 centimetres including the arms, and weighs about 80 g on average. The head is slightly flattened and pointed, and the eight arms are fairly short. Its skin varies with its surroundings, from yellow ochre to light brown, or whitish when it is resting.\n\nAround 60 blue rings are scattered over its body. Each is roughly circular, 7 to 8 millimetres across, sits on a darker blotch and is outlined in black for contrast. The rings are larger than in its relatives, which is where the 'greater' in its name comes from. Blue lines also run through its eyes.",
+ "life": "It lives alone, feeding on small crabs, shrimp and molluscs, and on small injured fish when it can catch them. It pounces on its prey, grabs it with its arms and pulls it to its mouth, then pierces the shell with its horny beak and injects venom that paralyses the muscles.\n\nIts saliva carries two kinds of venom. One is used to subdue crustaceans before eating them. The other, tetrodotoxin, is mainly for defence; it is made in glands linked to the beak, and is the same toxin found in pufferfish. Males seem unable to tell the sex of another octopus until mating begins: male-to-female mating lasts around 160 minutes, but when a male mounts another male it ends after about 30 seconds without any sperm being passed.",
+ "family": "The breeding season varies from place to place. A male approaches a female and strokes her with a specially modified arm called the hectocotylus, then climbs onto her back, sometimes covering her completely. He slips the arm under her mantle and passes packets of sperm into her oviduct. Males die after mating.\n\nThe female lays between 50 and 100 eggs and carries them under her arms for several weeks until they hatch into tiny drifting young. She refuses to eat while guarding them, and dies. The hatchlings spend a short time in the plankton before settling on the sea floor. About the size of a pea at hatching, they grow to the size of a golf ball, mature quickly and breed the following autumn. They live for about 2 years.",
+ "remarkable": "Its warning display is made with muscles, not pigment. Each flash lasts about a third of a second. The shimmering blue comes from layered reflective cells tucked into pouch-like folds of skin, and muscles around each ring pull these pouches open to expose the iridescence. At the same moment, brown pigment cells darken on either side of the ring to make the blue stand out even more.",
+ "outlook": "Little is known about the numbers of the greater blue-ringed octopus. It is spread across a vast stretch of the tropical Indian and Pacific Oceans, and its short life and quick maturity mean each generation is replaced rapidly. Because it depends on shallow reef, rubble and sand, the health of these coastal habitats matters for its future.",
+ "people": "For people, the bite is the danger. It is painless, but symptoms appear anywhere from 15 minutes to four hours later, and children are more sensitive. First comes tingling and numbness in the face, lips, tongue and limbs, often with sweating, severe headache, dizziness, trouble speaking and weakness. After about eight hours, blood pressure can fall and the muscles become paralysed.\n\nDeath, usually from paralysis of the breathing muscles, can follow between 20 minutes and 24 hours after symptoms start, and throughout it all the victim stays fully conscious. About 2 milligrams of pure tetrodotoxin is estimated to be a lethal dose, and there is no known antidote.",
+ "relatives": "It is one of four species of blue-ringed octopus in the genus Hapalochlaena, part of the large octopus family Octopodidae. All of them are extremely venomous. The greater blue-ringed octopus is protected from its own poison by mutations in the gene for a sodium channel in its nerves, which stop tetrodotoxin from binding there.",
+ "didYouKnow": "Tetrodotoxin is not broken down by heating or boiling.",
+ "facts": [
+  {"label": "Size", "value": "Up to 10 cm with arms"},
+  {"label": "Weight", "value": "About 80 g"},
+  {"label": "Lifespan", "value": "About 2 years"},
+  {"label": "Diet", "value": "Crabs, shrimp, molluscs"}
+ ],
+ "quiz": [
+  {"prompt": "Why is it called the 'greater' blue-ringed octopus?", "choices": ["Its rings are larger", "It is the largest octopus", "It is the most venomous", "It lives in deeper water than the others in its genus"], "explanation": "Its blue rings, 7 to 8 millimetres across, are larger than those of its relatives."},
+  {"prompt": "Which toxin does it use mainly for defence?", "choices": ["Tetrodotoxin", "Cyanide", "Botulinum", "A protein venom similar to that of cone snails"], "explanation": "Tetrodotoxin, also found in pufferfish, is made in glands linked to its beak."},
+  {"prompt": "What happens to the female after she lays her eggs?", "choices": ["She guards them and dies", "She abandons them", "She lays more every month", "She buries them in sand and goes back to hunting crabs"], "explanation": "She carries the eggs under her arms, refuses to eat, and dies."}
+ ],
+ "charities": [
+  {"name": "Coral Reef Alliance", "url": "https://www.coralreefalliance.org", "blurb": "Works with communities to protect and restore coral reefs."}
+ ]
+}
+]
