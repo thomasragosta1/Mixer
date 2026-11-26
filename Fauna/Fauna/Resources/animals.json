@@ -23354,5 +23354,907 @@
         "blurb": "The global authority on the status of species, including work on invasive predators."
       }
     ]
+  },
+  {
+    "id": "stellers-sea-eagle",
+    "name": "Steller's Sea Eagle",
+    "scientificName": "Haliaeetus pelagicus",
+    "wikipediaTitle": "Steller's sea eagle",
+    "group": "bird",
+    "regions": [
+      "asia"
+    ],
+    "range": "Coasts and rivers of the Russian Far East, wintering south to Japan and Korea",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 55.0,
+      "longitude": 150.0
+    },
+    "mapSpan": 30,
+    "tagline": "The heaviest eagle on Earth, built for salmon and sea ice",
+    "lede": "Picture a dark eagle as heavy as a small dog, with snow-white shoulders and a vast yellow bill, perched on drifting ice in the Sea of Okhotsk. Steller's sea eagle is usually the heaviest eagle in the world, and it lives almost entirely on fish snatched from cold northern waters.",
+    "home": "This eagle breeds only in the Russian Far East: on the Kamchatka Peninsula, around the coasts of the Sea of Okhotsk, along the lower Amur River, on northern Sakhalin and on the Shantar Islands.\n\nIt nests on big rocky outcrops or at the tops of tall trees beside the sea and large rivers. Kamchatka alone holds around 4,000 birds. In winter, drifting ice on the Sea of Okhotsk pushes thousands of eagles south.\n\nMost spend the cold months in the southern Kuril Islands and on Hokkaidō in Japan, with smaller numbers reaching Korea and China. The ice reaches Hokkaidō in late January, numbers in the Nemuro Strait peak in late February, and the birds head north again between late March and late April, adults usually leaving before the young.",
+    "anatomy": "Females weigh 6.2 to 9.5 kg and males 4.9 to 6.8 kg. Adults measure 85 to 105 cm from bill to tail, and the wings span 1.95 to 2.5 metres, among the widest of any living eagle. The bill is probably the largest of any eagle alive today.\n\nAdults are dark brown to black, with bold white on the shoulders, thighs, under the tail and across the diamond-shaped tail itself. Eyes, bill and feet are yellow. Uniquely among sea eagles, even juveniles have a yellow bill, and the species has 14 tail feathers rather than 12.\n\nThe soles of the feet are covered in rough spicules that help it hold slippery fish, and its talons are shorter and more strongly curved than those of eagles that hunt in forests and fields.",
+    "life": "Steller's sea eagles are apex predators that feed mainly on salmon and trout, especially pink and chum salmon, and they quite often take fish of 6 to 7 kg. Along the coast they also catch seabirds such as murres, kittiwakes and gulls, and they will kill mammals as large as sables, mink and Arctic foxes. In winter, carrion becomes an important food.\n\nMost hunting is done from a perch 5 to 30 metres above the water, followed by a dive; the eagles also hunt while circling low on the wing, or simply stand in shallow water or on an ice floe and grab fish as they pass. On Kamchatka, gatherings of as many as 700 eagles have been reported.\n\nTheir calls include a deep barking cry and honking notes rather like those of Canada geese.",
+    "family": "A pair builds several bulky nests of sticks, up to 1.5 metres tall and 2.5 metres across, usually 15 to 20 metres above the ground. Courtship happens in February and March and is mostly a soaring flight above the breeding area.\n\nBetween April and May the female lays 1 to 3 greenish-white eggs, usually 2, each weighing around 160 g. The chicks hatch after 39 to 45 days, covered in white down, and usually only one survives. In summer the parents bring them two or three live fish a day, each 20 to 30 cm long.\n\nThe young fledge in August or early September, gain adult plumage at about 4 years, and first breed a year or two after that. Sables, ermines and crows may raid nests, and a brown bear was once seen eating a fledgling.",
+    "remarkable": "A single wandering Steller's sea eagle has toured North America since August 2020, when it turned up near Denali National Park in Alaska. A bird photographed in Texas soon afterwards, the first record for the lower 48 states, is presumed to be the same individual.\n\nIt was later confirmed in New Brunswick, Quebec and Nova Scotia, and from spring 2024 it was seen showing nesting behaviour in Newfoundland, chasing off the local bald eagles.",
+    "outlook": "The IUCN lists Steller's sea eagle as Vulnerable, with a population estimated at around 5,000 and falling, including some 3,200 breeding pairs. It is legally protected, classed as a national treasure in Japan, and most Russian birds live in protected areas. The main threats are habitat change, industrial pollution and overfishing, which removes their food.\n\nHeavy flooding, perhaps linked to climate change, once caused almost total nesting failure on Russian rivers because the parents could not catch fish for their chicks. Some eagles are still persecuted in Russia for stealing animals from trappers, and on Hokkaidō birds that scavenge deer carcasses left by hunters risk lead poisoning from swallowed shot.",
+    "people": "The bird is named after the German naturalist Georg Wilhelm Steller. Peter Simon Pallas first described it in 1811 as Aquila pelagica, from the Ancient Greek pelagos, the open sea, and in 1824 Coenraad Jacob Temminck called it Falco leucopterus, the white-winged eagle. It is also known as the Pacific sea eagle and the white-shouldered eagle.\n\nIn Russian it has been called beloplechii orlan, the white-shouldered sea eagle, and in Japanese it is ō-washi, the great eagle. Its feet are formidable: one wildlife vet was badly hurt when a female gripped his arm and drove her talons right through it.",
+    "relatives": "Steller's sea eagle is the largest member of the genus Haliaeetus, the sea and fish eagles, where George Robert Gray placed it in 1849; no subspecies are recognised. A 1996 genetic study found that it split from the line leading to the bald eagle and white-tailed eagle around 3 to 4 million years ago.\n\nAll three share yellow eyes, bills and talons, unlike their next closest relative, Pallas's fish eagle. Young Steller's sea eagles can look much like young white-tailed eagles, which breed across the same range, but they are bulkier, darker and far more massive in the bill.",
+    "didYouKnow": "Small murre and cormorant chicks are sometimes carried alive to the eagles' nests in Russia, where they peck at fish scraps until they too are eaten.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "4.9–9.5 kg"
+      },
+      {
+        "label": "Wingspan",
+        "value": "1.95–2.5 m"
+      },
+      {
+        "label": "Length",
+        "value": "85–105 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly salmon and other fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Who is Steller's sea eagle named after?",
+        "choices": [
+          "A German naturalist",
+          "A Russian sea captain",
+          "A Japanese emperor",
+          "The Danish explorer who first mapped the Kamchatka coast"
+        ],
+        "explanation": "It honours the German naturalist Georg Wilhelm Steller."
+      },
+      {
+        "prompt": "How do the soles of its feet help it hunt?",
+        "choices": [
+          "Rough spicules grip fish",
+          "They are webbed",
+          "They stay warm",
+          "Long feathers cover them so it can stand on ice without slipping"
+        ],
+        "explanation": "Bumpy spicules on the soles help it hold slippery fish."
+      },
+      {
+        "prompt": "How many eggs does a typical clutch contain?",
+        "choices": [
+          "Two",
+          "Six",
+          "One",
+          "Four"
+        ],
+        "explanation": "Clutches hold 1 to 3 eggs, usually 2, though often only one chick survives."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and the places they need."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife, rivers and seas, including in the Russian Far East."
+      }
+    ]
+  },
+  {
+    "id": "przewalskis-horse",
+    "name": "Przewalski's Horse",
+    "scientificName": "Equus ferus przewalskii",
+    "wikipediaTitle": "Przewalski's horse",
+    "group": "mammal",
+    "regions": [
+      "asia",
+      "europe"
+    ],
+    "range": "Reintroduced to the steppes of Mongolia and China, with free-ranging herds in Europe",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 46.5,
+      "longitude": 100.0
+    },
+    "mapSpan": 40,
+    "tagline": "The wild horse that came back from zoos to the steppe",
+    "lede": "Short, stocky and the colour of dry grass, with a mane that stands up like a brush, Przewalski's horse looks as if it has stepped out of the Stone Age. It vanished from the wild in the late 1960s, survived only in zoos, and now runs free across the Mongolian steppe once more.",
+    "home": "Przewalski's horse is native to the steppes of Central Asia. By the time scientists described it, the last wild herds clung to the arid Dzungarian Basin in the Gobi Desert, favouring salty districts and gathering at natural wells in spring and summer. Some experts think this harsh place was a last refuge, the horses having been pushed out of richer steppe by hunting and by livestock grazing.\n\nSince the 1990s horses bred in zoos have been returned to Mongolia, to Hustai National Park, Takhin Tal, Khomiin Tal and the Great Gobi B Strictly Protected Area, and to the Kalamely Mountain area of China. Herds also roam the abandoned Chernobyl exclusion zone, Hortobágy National Park in Hungary, and, since 2023, the Iberian Highlands of Spain.",
+    "anatomy": "This is a compact, short-legged horse, much smaller than most domestic breeds. It stands about 122 to 142 cm at the shoulder, measures about 2.1 metres long and weighs around 300 kg. The coat is dun, shading from dark brown around the mane to pale brown on the flanks and yellowish-white on the belly and muzzle, and the legs are often faintly striped.\n\nThe mane is short and erect and does not reach as far forward as a domestic horse's. The tail is about 90 cm long, with a longer bony dock and shorter hair than a domestic tail. Its hooves are longer at the front and have much thicker soles than those of feral horses, which helps on hard ground.",
+    "life": "These horses graze and browse a wide range of plants. In the Chernobyl zone they eat mainly grasses and herbs such as couch grass, sedges, clovers and vetches, switching favourites through the seasons.\n\nIn winter they nibble willow, wild pear, apple, pine, rose and alder, dig through ice and snow to reach buried grass, and eat more slowly than at other times of year. They live in family groups of one adult stallion, 1 to 3 mares and their young.\n\nThe stallion herds and defends the family, while the mares often take the lead, and partners stay together for years. Stallions without mares, young or old, form bachelor groups, and several families may join into a larger herd. Few predators trouble them, though the Himalayan wolf is one.",
+    "family": "Mating takes place in late spring or early summer. Stallions do not seek mares until they are about 5, when they gather their own group or challenge another stallion for his. Mares can give birth from the age of 3, after a pregnancy of 11 to 12 months. A foal can stand about an hour after it is born and starts grazing within a few weeks, but it is not weaned for 8 to 13 months.\n\nYoung horses mature at 2 and leave their family at 2 or 3 years old, the females joining other harems. Life is not easy for foals: about a quarter die young, and most of those deaths are caused by the lead stallion killing foals.",
+    "remarkable": "In 2020 a cloned Przewalski's horse was born, made from skin cells of a stallion called Kuporovic. He had been born in Britain in 1975 and died in the United States in 1998, but his tissue had been frozen at the San Diego Zoo's Frozen Zoo to save his genes.\n\nThe foal was named Kurt after the geneticist Kurt Benirschke, whose idea the Frozen Zoo was, and in 2021 he joined a breeding herd at the San Diego Zoo Safari Park.",
+    "outlook": "The last wild horse in its native land, a lone stallion, was seen in 1969, and the species was declared extinct in the wild. The captive herd had a narrow start: 28 foals brought to Europe in 1902 and a few others. Many died in the Second World War, and by the end of the 1950s only 12 horses were left in the world's zoos.\n\nA wild-caught mare added in 1957 brought vital fresh genes. Careful breeding exchanges, helped from 1977 by a foundation in Rotterdam, raised numbers to over 1,500 by the early 1990s. In 1992, 16 horses were released in Mongolia. The IUCN moved the species from extinct in the wild to Critically Endangered in 2008, and then to Endangered in 2011.",
+    "people": "The horse is named after Nikolai Przhevalsky, a Russian colonel and explorer of Polish descent, who obtained the skull and hide of one shot in the Gobi in 1878. He may never have seen a live one up close: he watched herds only from a distance and bought specimens from Kirghiz hunters.\n\nIvan Polyakov formally described it in 1881. Mongolians call it the takhi, and it is also known as the Mongolian wild horse and the Dzungarian horse. Ancient bones of its lineage have been found at sites of the Botai culture of Central Asia, about 5,500 years old, whose people kept horses for meat and milk.",
+    "relatives": "Scientists still argue over its rank: a species of its own, Equus przewalskii, a subspecies of the wild horse Equus ferus alongside the domestic horse and the extinct tarpan, or even a branch of domestic horses. It has 33 pairs of chromosomes against the domestic horse's 32, the highest number of any equine, yet the two can interbreed and have fertile foals.\n\nGenetic studies suggest the two lines split tens of thousands of years ago, long before horses were domesticated. It was long called the last truly wild horse, unlike feral mustangs and brumbies, but a 2018 study found the Botai horses appeared to be its ancestors, raising the possibility that today's herds descend from horses people once kept.",
+    "didYouKnow": "At Le Villaret in France's Cévennes National Park, Przewalski's horses choose their own mates and find their own food, so that their foals are ready for life in Mongolia.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "122–142 cm at shoulder"
+      },
+      {
+        "label": "Weight",
+        "value": "About 300 kg"
+      },
+      {
+        "label": "Chromosomes",
+        "value": "33 pairs"
+      },
+      {
+        "label": "Gestation",
+        "value": "11–12 months"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How many chromosome pairs does Przewalski's horse have?",
+        "choices": [
+          "33",
+          "32",
+          "24",
+          "About 50, the same as a zebra"
+        ],
+        "explanation": "It has 33 pairs, one more than the domestic horse."
+      },
+      {
+        "prompt": "When was the last wild Przewalski's horse seen before reintroduction began?",
+        "choices": [
+          "1969",
+          "1881",
+          "1945",
+          "In 1992, just before the first releases"
+        ],
+        "explanation": "A single stallion seen in 1969 was the last record in its native habitat."
+      },
+      {
+        "prompt": "Who is the cloned foal Kurt named after?",
+        "choices": [
+          "A geneticist",
+          "His keeper",
+          "A Mongolian herder",
+          "The explorer who first brought the horse to Europe"
+        ],
+        "explanation": "He is named after Kurt Benirschke, who came up with the idea of the Frozen Zoo."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Protects wildlife and wild places worldwide, including the grasslands of Mongolia."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Runs field conservation programmes across Asia's steppes and deserts."
+      }
+    ]
+  },
+  {
+    "id": "superb-fairywren",
+    "name": "Superb Fairywren",
+    "scientificName": "Malurus cyaneus",
+    "wikipediaTitle": "Superb fairywren",
+    "group": "bird",
+    "regions": [
+      "oceania"
+    ],
+    "range": "South-eastern Australia and Tasmania, including suburban gardens and parks",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -35.0,
+      "longitude": 147.0
+    },
+    "mapSpan": 25,
+    "tagline": "Tiny, electric blue and fond of giving flowers",
+    "lede": "In spring the male superb fairywren turns an iridescent blue that seems almost to glow, and he bounces across lawns and flower beds with his tail cocked high. Small and busy, it is one of the most familiar birds of south-eastern Australia, as at home in a city park as in the bush.",
+    "home": "Superb fairywrens are common across the wetter, fertile south-east of Australia: from south-eastern South Australia, Kangaroo Island and the tip of the Eyre Peninsula, through all of Victoria and Tasmania, and along coastal New South Wales and Queensland past Brisbane, reaching inland to the Dawson River and Blackall. They live almost anywhere with some dense undergrowth for shelter, from grassland with scattered shrubs to woodland, heath and gardens.\n\nUnlike most fairywrens they do well in towns, and colonies live in Sydney's Hyde Park and Royal Botanic Gardens. Even weeds such as lantana and blackberry give them cover. They avoid dense forest, alpine country, and pine and eucalyptus plantations, which lack undergrowth.",
+    "anatomy": "This is a tiny bird, about 14 cm long and weighing 8 to 13 g, with a narrow, pointed bill and a tail of around 5.9 cm, which is held upright and helps it balance. Its short, rounded wings give a quick lift-off but are no good for long flights. The breeding male has a bright blue forehead, ear tufts, back and tail, set off by a black mask, throat and breast and brown wings.\n\nFemales, young birds and males outside the breeding season are plain fawn with paler bellies, although males keep a greyish-blue tail and a black bill. The male's blue shines because the barbs of his feathers are flattened and twisted, and it reflects ultraviolet light strongly, which other fairywrens can see.",
+    "life": "Superb fairywrens eat mostly insects, including ants, grasshoppers, shield bugs, flies, weevils and larvae, plus a few seeds, flowers and fruits. They feed by hop-searching on the ground or in shrubs below about 2 metres, always staying near cover and foraging in groups for safety. In winter, when food is scarce, ants become an important fallback.\n\nTheir main song, sung by both sexes, is a high, rapid reel lasting 1 to 4 seconds. Males also give a second song when they hear predatory birds such as grey butcherbirds.\n\nIt is not an alarm call and actually gives away the singer's position, and nobody yet knows why they do it. To lure predators away from chicks, adults may perform a 'rodent-run', scurrying low with feathers fluffed while calling.",
+    "family": "Fairywrens breed cooperatively. A pair, or a group of 3 to 5 birds, defends a small territory all year, and helpers that hatched there assist with guarding and feeding the young. Group members roost side by side and preen one another.\n\nThe domed nest of grass and spider web is hidden in thick plants less than 1 metre off the ground. The female lays 3 or 4 white eggs speckled with reddish-brown and incubates them for 14 days. Chicks hatch blind and naked, open their eyes at 5 or 6 days, and are fully feathered by day 10.\n\nThe whole group feeds them, and by about day 40 they can feed themselves, but they often stay on for a year or more to help raise later broods. Horsfield's bronze cuckoo commonly lays its eggs in their nests.",
+    "remarkable": "Early naturalists, seeing one blue male surrounded by brown birds, assumed he kept a harem. The truth is stranger. Pairs bond for life, yet both partners regularly mate with other birds, so many chicks are fathered by males from outside the group.\n\nIn the breeding season males pluck yellow petals, which contrast with their blue, and show them to females, often in neighbouring territories and sometimes even outside the breeding season.",
+    "outlook": "The superb fairywren remains common and widespread, and has adapted well to suburbs: in one study on a Canberra university campus it even outcompeted the introduced house sparrow. It does need patches of dense, preferably native, undergrowth, so places stripped of undergrowth suit it poorly.\n\nIts nests face many predators, including magpies, butcherbirds, kookaburras, currawongs, crows and ravens, as well as introduced red foxes, cats and black rats.",
+    "people": "William Anderson, surgeon and naturalist on Captain Cook's third voyage, collected the first specimen in 1777 at Adventure Bay on Bruny Island, Tasmania. Its tail reminded him of a wagtail, and his assistant William Ellis described it in 1782. Settlers in Sydney called it the superb warbler, later the blue wren, and it was also nicknamed the Mormon wren because of the many brown birds around each blue one.\n\nThe Ngarrindjeri people call it waatji pulyeri, 'little one of the lignum bush', and the Gunai call it deeydgun, 'little bird with long tail'. In 2021 it was voted Australian Bird of the Year, beating the tawny frogmouth by just 666 votes out of more than 400,000.",
+    "relatives": "The superb fairywren is one of 12 species in the genus Malurus, found in Australia and lowland New Guinea. Its closest relative is the splendid fairywren; together these 'blue wrens' are related to the purple-crowned fairywren.\n\nDespite the name, fairywrens are not true wrens. They were once placed with flycatchers and then warblers, and DNA now links their family to the honeyeaters and pardalotes. There are 6 subspecies groups: larger, darker birds on Tasmania and on Flinders and King islands, and smaller, paler ones on the mainland and Kangaroo Island. Fairywrens reached Tasmania during an ice age, when low seas joined it to the mainland.",
+    "didYouKnow": "Fairywrens living near noisy miners in Canberra learn to flee at the miners' alarm calls while ignoring their other calls, but wrens elsewhere do not react.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "14 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "8–13 g"
+      },
+      {
+        "label": "Clutch",
+        "value": "3–4 eggs"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do male superb fairywrens show to females?",
+        "choices": [
+          "Yellow petals",
+          "Shiny pebbles",
+          "Blue berries",
+          "Freshly caught caterpillars held in the bill"
+        ],
+        "explanation": "Males pluck yellow petals and present them to females as part of courtship."
+      },
+      {
+        "prompt": "Which bird did it narrowly beat to become Australian Bird of the Year in 2021?",
+        "choices": [
+          "Tawny frogmouth",
+          "Kookaburra",
+          "Emu",
+          "The rainbow lorikeet of the east coast"
+        ],
+        "explanation": "It won by just 666 votes over the tawny frogmouth."
+      },
+      {
+        "prompt": "Why was it once called the 'Mormon wren'?",
+        "choices": [
+          "Blue males were seen with many brown birds",
+          "It sang hymns",
+          "It came from Utah",
+          "It built its nests in the roofs of church buildings around Sydney"
+        ],
+        "explanation": "Observers wrongly assumed all the brown birds around a blue male were his wives."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats, with partners in Australia."
+      },
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects land and water around the world, including Australian bushland."
+      }
+    ]
+  },
+  {
+    "id": "pygmy-hippopotamus",
+    "name": "Pygmy Hippopotamus",
+    "scientificName": "Choeropsis liberiensis",
+    "wikipediaTitle": "Pygmy hippopotamus",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Forests and swamps of West Africa, mainly Liberia",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 6.5,
+      "longitude": -9.5
+    },
+    "mapSpan": 15,
+    "tagline": "A secretive hippo of the West African rainforest",
+    "lede": "Deep in the swampy forests of Liberia lives a hippo that spends the day hidden in rivers and slips out at dusk to browse along shadowy forest trails. The pygmy hippopotamus is so shy and nocturnal that almost everything we know about it has been learned in zoos.",
+    "home": "Pygmy hippos live in the forests and swamps of West Africa, mainly in Liberia, with small populations in Sierra Leone, Guinea and Ivory Coast. They have disappeared from Nigeria and possibly from Guinea-Bissau. Some live in protected areas such as Sierra Leone's Gola Forest Reserve.\n\nBy day they lie hidden in rivers, resting in the same spot for several days before moving on, and some use dens in riverbanks, though no one has seen one dig. Field studies suggest a male ranges over about 1.85 square kilometres, and a female over 0.4 to 0.6.",
+    "anatomy": "The pygmy hippo has the same barrel-shaped body, stubby legs and four toes per foot as the common hippo, but it stands only about 75 to 100 cm at the shoulder, measures 150 to 175 cm long and weighs 180 to 275 kg, less than a quarter of its big cousin's weight. Its skin is greenish-black or brown, fading to creamy grey below, with a thin outer layer over a very thick dermis that dries out and cracks quickly.\n\nLike the common hippo, it oozes a pinkish secretion that is often called 'blood sweat', although it is neither blood nor sweat; it is thought to act as an antiseptic and sunscreen. Its eyes and nostrils sit less high on the head, its toes are more spread and less webbed for walking on the forest floor, and strong valves close its ears and nostrils underwater.",
+    "life": "At dusk the pygmy hippo leaves the water to feed, following game trails through thick vegetation and spending about 6 hours a day foraging. It eats herbs, ferns, broad-leaved plants, shoots, sedges and fallen fruit, but rarely grass, which is scarce in deep forest, and little water vegetation. It marks its trails by vigorously wagging its tail as it defecates, scattering its dung.\n\nUnlike the sociable common hippo, it lives alone or in pairs, or as a mother with her calf, and individuals that meet usually ignore each other rather than fight. In many ways it behaves more like a tapir, a likeness that evolved independently.\n\nIt is generally docile, although there have been a few attacks on people. Leopards, pythons and crocodiles prey on the young.",
+    "family": "Breeding has never been studied in the wild, so most of what is known comes from zoos, where pygmy hippos breed as monogamous pairs and calves are born in every month of the year. Animals mature at 3 to 5 years old; the youngest known mother, at Zoo Basel in Switzerland, was 3 years and 3 months old. Mating and birth can happen on land or in water.\n\nAfter a pregnancy of 190 to 210 days, the mother usually has a single calf weighing 4.5 to 6.2 kg, though twins are known. Calves can swim almost at once.\n\nUntil weaning at 6 to 8 months, a calf hides alone in the water while its mother forages, and she returns about three times a day to call it and let it suckle. In zoos, pygmy hippos live 30 to 55 years.",
+    "remarkable": "In 1927 the tyre magnate Harvey Firestone gave a pygmy hippo named Billy to the American president Calvin Coolidge. Coolidge passed him on to the National Zoo in Washington, and according to the zoo, Billy is a common ancestor of most of the pygmy hippos living in United States zoos today.",
+    "outlook": "In a 2015 assessment, the IUCN estimated that fewer than 2,500 pygmy hippos remain in the wild. The biggest threat is the loss of forest to logging, settlement and farming, which also splits the survivors into small, isolated groups with less genetic diversity.\n\nThey are also hunted illegally for bushmeat in Liberia, where their meat is said to be as good as wild boar, and the effects of West Africa's civil wars on them are unknown. The species was named one of the top 10 focal species of the EDGE project in 2007, which highlights evolutionarily distinct animals at risk. Because pygmy hippos breed well in zoos, their survival in captivity is more secure than in the wild.",
+    "people": "The common hippo has been known to Europeans since ancient times, but the pygmy hippo was unknown outside West Africa until the 19th century, and poorly known even within its range. Liberians called it the water cow, and early reports mistook it for a wild hog. The American scientist Samuel G. Morton described it in 1843 from skulls sent to him in Monrovia.\n\nPygmy hippos became established in European zoos in 1911. One West African folk tale says the pygmy hippo carries a shining diamond in its mouth to light its way through the forest at night. In 2024 a baby pygmy hippo at a zoo in Thailand, Moo Deng, whose name means 'bouncy pork', became a worldwide internet star.",
+    "relatives": "The pygmy hippo is one of only two living members of the hippo family; the other is the common hippopotamus. Its genus name, Choeropsis, means 'resembling a pig', but hippos are not related to pigs. Their closest living relatives are whales and dolphins, which share a semi-aquatic ancestor with them from around 60 million years ago.\n\nA separate subspecies once lived in Nigeria's Niger Delta, named after the colonial officer Ian Heslop, who shot specimens in 1935 and 1943; it is probably extinct. The dwarf hippos that lived on Mediterranean islands such as Crete, Malta, Sicily and Cyprus were similar in size but were shrunken descendants of full-sized hippos, not close relatives.",
+    "didYouKnow": "Some West African villagers once believed that pygmy hippo calves did not suckle, but instead licked secretions from their mother's skin.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "75–100 cm at shoulder"
+      },
+      {
+        "label": "Weight",
+        "value": "180–275 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "30–55 years in zoos"
+      },
+      {
+        "label": "Diet",
+        "value": "Ferns, leaves, shoots and fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which animals are hippos' closest living relatives?",
+        "choices": [
+          "Whales and dolphins",
+          "Pigs",
+          "Tapirs",
+          "The peccaries of South American forests"
+        ],
+        "explanation": "Hippos and cetaceans share a semi-aquatic ancestor from about 60 million years ago."
+      },
+      {
+        "prompt": "What is the pygmy hippo's so-called 'blood sweat'?",
+        "choices": [
+          "A skin secretion",
+          "Real blood",
+          "Ordinary sweat",
+          "A warning dye it releases only when frightened"
+        ],
+        "explanation": "It is a pinkish secretion, neither blood nor sweat, thought to protect the skin."
+      },
+      {
+        "prompt": "Which US president was given a pygmy hippo called Billy?",
+        "choices": [
+          "Calvin Coolidge",
+          "Theodore Roosevelt",
+          "Abraham Lincoln",
+          "Franklin D. Roosevelt, during his first term"
+        ],
+        "explanation": "Harvey Firestone gave Billy to Calvin Coolidge in 1927."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Fauna & Flora",
+        "url": "https://www.fauna-flora.org",
+        "blurb": "Works with partners to protect threatened species and forests, including in West Africa."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Protects wildlife and forests worldwide."
+      }
+    ]
+  },
+  {
+    "id": "sword-billed-hummingbird",
+    "name": "Sword-billed Hummingbird",
+    "scientificName": "Ensifera ensifera",
+    "wikipediaTitle": "Sword-billed hummingbird",
+    "group": "bird",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Andean cloud forests from western Venezuela to Bolivia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": -77.0
+    },
+    "mapSpan": 30,
+    "tagline": "The only bird with a bill longer than its body",
+    "lede": "In the misty forests of the high Andes, a large green hummingbird hovers beneath a hanging passionflower and slides an absurdly long bill up into its tube. The sword-billed hummingbird and that flower have evolved together so closely that each relies on the other.",
+    "home": "The sword-billed hummingbird lives in the Andes from western Venezuela through Colombia, Ecuador and Peru to Bolivia. It is a bird of humid and wet mountain forest, forest edges, shrubland, gardens and patches of páramo grassland between 1,700 and 3,500 metres, and it is most common between 2,400 and 3,100 metres.\n\nMost birds stay put all year, but in Colombia and north-western Venezuela some move uphill at the start of the wet season and come back down in the dry season. Its range closely follows that of a group of passionflowers, the subgenus Tacsonia, whose blooms supply much of its food.",
+    "anatomy": "This is one of the biggest hummingbirds: adults measure 13 to 14 cm without the bill and weigh 10 to 15 g. The bill adds another 8 to 12 cm. It is black, heavy and slightly upturned, the largest of any hummingbird, and the longest relative to body length of any bird. It is the only bird known whose bill is longer than the rest of its body, not counting the tail.\n\nMales are bronze-green above with coppery heads, a small white spot behind the eye, dusky throats, glittering green underparts, a dark grey belly and a forked tail. For its size it carries a heavier load on its wings than most hummingbirds.",
+    "life": "The swordbill is a nectar specialist, feeding mostly from flowers with long tubes, such as angel's trumpets, thorn apples, several passionflowers, fuchsias and nightshades. It probes each flower from below. It is a trap-liner, visiting a particular series of flowers in the same regular order, like a postman on a round. It also catches flying insects by keeping its bill open.\n\nLike other hummingbirds it can hover and fly backwards. When it perches, it holds its bill angled steeply upwards to ease the strain of carrying it and to keep its balance. Its call is a low, guttural, slightly trilled 'trrr'.",
+    "family": "Sword-billed hummingbirds breed from February to March. The female builds a small cup-shaped nest of moss, which is usually hung among root fibres high above the ground. The sexes differ.\n\nFemales have longer bills than males, while males have longer wings and tails. Females also have white undersides speckled with green, greyish throats and bellies, and a less deeply forked tail edged with greyish white. Young birds look like females.",
+    "remarkable": "The bird and the passionflower Passiflora mixta evolved together. The position of the flower's pollen-bearing anthers and stigma, and the length of its tube, put its nectar out of reach of almost every animal except this hummingbird, whose bill is almost exactly as long as the tube.\n\nThe bird pushes its bill in, drinks, backs off to hover for a few seconds, and then feeds again. The flower depends on the bird for pollination, and the bird gains a rich, reliable meal. Some insects cheat by piercing the base of the flower instead. If the hummingbird declined, the passionflower would very likely suffer too.",
+    "outlook": "The IUCN lists the sword-billed hummingbird as Least Concern, because it has a large range, no significant decline and no major threats. No one has counted its total numbers, as it is spread widely and seldom seen.\n\nIt has adapted to man-made habitats in some places and occurs in several protected areas. The most likely future threats are climate change and the clearing of forests, which could shrink its habitat and reduce the flowers it feeds on, especially its partner passionflower.",
+    "people": "The French naturalist Auguste Boissonneau first described the bird in 1839 as Ornismya ensifera, from specimens collected near Bogotá in Colombia. René Lesson moved it to its own genus, Ensifera, in 1843.\n\nBoth names come from the Latin ensis, a sword, and ferre, to carry, so the bird is literally a 'sword-bearer'. The International Ornithologists' Union uses sword-billed hummingbird as its official name, but it is also simply called the swordbill or swordbill hummingbird.",
+    "relatives": "The sword-billed hummingbird is the only species in the genus Ensifera, and no subspecies are recognised today. In 1939 Willoughby Lowe described a bluer subspecies, Ensifera ensifera caerulescens, from a single specimen in the Royal Albert Memorial Museum, but it was later merged back into the species, because the bird probably had unusual or faded plumage.\n\nWith no close relatives sharing its genus, the swordbill stands alone among hummingbirds. Its own evolutionary story is bound up instead with the passionflowers of the subgenus Tacsonia, with which it diversified in the Andes.",
+    "didYouKnow": "The BBC series Planet Earth II filmed a sword-billed hummingbird flying through the forest for its 'Jungles' episode.",
+    "facts": [
+      {
+        "label": "Body length",
+        "value": "13–14 cm without bill"
+      },
+      {
+        "label": "Bill",
+        "value": "8–12 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "10–15 g"
+      },
+      {
+        "label": "Altitude",
+        "value": "1,700–3,500 m"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the sword-billed hummingbird preen?",
+        "choices": [
+          "With its feet",
+          "With its bill",
+          "By dust bathing",
+          "By rubbing itself against wet moss on branches"
+        ],
+        "explanation": "Its bill is too long to groom with, so it scratches and preens with its feet."
+      },
+      {
+        "prompt": "Which plant has coevolved with the sword-billed hummingbird?",
+        "choices": [
+          "A passionflower",
+          "An orchid",
+          "A sunflower",
+          "A tall red bromeliad of the cloud forest"
+        ],
+        "explanation": "Passiflora mixta's long tube can be reached almost only by this hummingbird."
+      },
+      {
+        "prompt": "What does the name Ensifera mean?",
+        "choices": [
+          "Sword-bearer",
+          "Long nose",
+          "Green jewel",
+          "Bird that drinks from the deepest flowers"
+        ],
+        "explanation": "It comes from the Latin ensis, sword, and ferre, to carry."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests, including in the Andes."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and the places they need."
+      }
+    ]
+  },
+  {
+    "id": "quokka",
+    "name": "Quokka",
+    "scientificName": "Setonix brachyurus",
+    "wikipediaTitle": "Quokka",
+    "group": "mammal",
+    "regions": [
+      "oceania"
+    ],
+    "range": "South-western Western Australia, especially Rottnest and Bald islands",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -33.5,
+      "longitude": 116.5
+    },
+    "mapSpan": 10,
+    "tagline": "The 'smiling' marsupial of Rottnest Island",
+    "lede": "With round ears, a bright face and a mouth that seems to curl into a grin, the quokka has become one of the most photographed animals in Australia. This little relative of the kangaroo thrives on two small islands off Western Australia but has grown scarce on the mainland.",
+    "home": "Quokkas live only in a small corner of south-western Australia. The biggest population is on Rottnest Island, just off Perth, where between 8,000 and 12,000 were estimated in 2007, and a smaller one of 600 to 1,000 lives on Bald Island near Albany. Neither island has foxes, cats or dingoes.\n\nOn the mainland, scattered groups live in forest and coastal heath between Perth and Albany, only in places with at least 600 mm of rain a year and thick plant cover for food and shelter. One colony shares Two Peoples Bay Nature Reserve with the critically endangered Gilbert's potoroo, and in late 2024 a new population was found in the Perth Hills, its exact location kept secret.\n\nOn Rottnest, quokkas use everything from scrub to gardens and sleep by day under prickly Acanthocarpus bushes.",
+    "anatomy": "A quokka is about the size of a domestic cat, weighing 2.5 to 5 kg, with a body 40 to 54 cm long and a tail of 25 to 30 cm, which is short for a member of the kangaroo family. It has a stocky build, strong hind legs, rounded ears and a short, broad head.\n\nIts coarse fur is grizzled brown, fading to buff underneath. Although it looks like a miniature kangaroo, it can climb small trees and shrubs to about 1.5 metres. Its famous smile is an accident of its face shape, not an expression.",
+    "life": "Quokkas are herbivores and are active mainly at night. They eat grasses, sedges and leaves, and one study found a small shrub called Guichenotia ledifolia among their favourite foods. Like cattle, they chew the cud. They need a lot of water, yet on Rottnest, which has little fresh water, they get most of it from plants.\n\nThe end of summer and autumn is a hard time on the island: as vegetation dies back and surface water dries up, many quokkas starve. During the hottest part of the day they shelter under shrubs. On Rottnest, snakes are their only predator.",
+    "family": "Quokkas have a promiscuous mating system, and females usually mate again about a day after giving birth. After a pregnancy of only about a month, a single young, called a joey, is born. It spends 6 months in its mother's pouch, then follows her and drinks her milk for another 2 months, being fully weaned at about 8 months.\n\nFemales mature at roughly 18 months and can give birth twice a year, producing around 17 joeys in a lifetime, though usually only one young is successfully raised each year. Quokkas live for an average of 10 years.",
+    "remarkable": "When a mother quokka carrying a joey is chased by a predator, she may drop her baby on the ground and keep running. The abandoned joey makes noises that may draw the hunter's attention towards it, giving the mother a chance to escape.",
+    "outlook": "The quokka is listed as Vulnerable on the IUCN Red List. When Europeans settled the region, quokkas were abundant across some 41,200 square kilometres; by 1992 their mainland range had shrunk by more than half. About 4,000 now live on the mainland, mostly in groups of fewer than 50.\n\nIntroduced foxes, cats and dogs, clearfell logging, farming, housing, and the clearing and burning of swamps have all driven the decline. Climate change is making the south-west hotter and drier, and severe bushfires are a grave danger because quokkas are slow to recolonise burnt land. In 2015 a fire near Northcliffe killed an estimated 90% of a local population of 500.",
+    "people": "The name quokka comes from a Noongar word, probably gwaga or gawaga. In 1658 the Dutch mariner Samuel Volckertszoon reported 'a wild cat' on Rottnest, and in 1696 the explorer Willem de Vlamingh took the animals for giant rats and named the island 't Eylandt 't Rottenest, 'the rat nest island'. The island's older name is Wadjemup.\n\nIn the mid-2010s quokkas went viral as 'the world's happiest animals', and the quokka selfie drew celebrities from Chris Hemsworth to Roger Federer, boosting tourism to Rottnest. Touching or feeding them is illegal: bread and other human food can make them sick, a few dozen people are bitten each year, and an infringement notice for feeding carries a 300 dollar fine.",
+    "relatives": "The quokka is a macropod, a member of the same family as kangaroos and wallabies, and it is the only species in its genus, Setonix. Like its larger cousins it is a grazing and browsing marsupial whose young develop in a pouch, but its small size, short tail and climbing ability set it apart.",
+    "didYouKnow": "In zoos, fewer quokkas stay visible from the paths in walk-through enclosures, which suggests they learn to keep out of visitors' way.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "2.5–5 kg"
+      },
+      {
+        "label": "Length",
+        "value": "40–54 cm + tail"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 10 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Grasses, sedges and leaves"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What did Willem de Vlamingh mistake quokkas for?",
+        "choices": [
+          "Giant rats",
+          "Wild pigs",
+          "Small deer",
+          "A kind of tree-climbing kangaroo from Java"
+        ],
+        "explanation": "He named Rottnest the 'rat nest island' after them."
+      },
+      {
+        "prompt": "How long does a quokka joey stay in its mother's pouch?",
+        "choices": [
+          "6 months",
+          "2 weeks",
+          "1 year",
+          "Until it is fully grown at about 18 months"
+        ],
+        "explanation": "The joey lives in the pouch for 6 months and is weaned at about 8 months."
+      },
+      {
+        "prompt": "Why do quokkas appear to smile?",
+        "choices": [
+          "The shape of their face",
+          "They are happy",
+          "They are panting",
+          "They bare their teeth to warn off rival males"
+        ],
+        "explanation": "The 'smile' is a coincidence of facial structure, not an expression."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF-Australia",
+        "url": "https://www.wwf.org.au",
+        "blurb": "Works to protect Australia's threatened species and habitats."
+      },
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Manages sanctuaries that protect native Australian mammals from feral predators."
+      }
+    ]
+  },
+  {
+    "id": "takahe",
+    "name": "Takahē",
+    "scientificName": "Porphyrio hochstetteri",
+    "wikipediaTitle": "Takahē",
+    "group": "bird",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Fiordland's Murchison Mountains and predator-free sanctuaries across New Zealand",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -43.5,
+      "longitude": 171.0
+    },
+    "mapSpan": 15,
+    "tagline": "A giant flightless rail that came back from extinction",
+    "lede": "Plump and glossy blue-green, with a massive scarlet bill and crayfish-red legs, the takahē looks like a moorhen that grew too big to fly. Written off as extinct at the end of the 19th century, it was found again in a remote Fiordland valley in 1948.",
+    "home": "Takahē are birds of alpine grassland. Fossils show they once lived right across the South Island, but by the time they were rediscovered they survived only in the Murchison Mountains of Fiordland National Park, New Zealand's largest national park, where they still live. Each bird holds a territory in the tussock until snow arrives, then moves down into forest or scrub.\n\nSince 1984 takahē have been moved to five predator-free islands, Maud, Mana, Kapiti, Tiritiri Matangi and Motutapu, and to fenced sanctuaries such as Maungatautari and Zealandia. In 2023, 18 birds were released in the Upper Whakatipu Waimāori Valley on Ngāi Tahu land, followed by 6 more that October.",
+    "anatomy": "The takahē is the largest living member of the rail family. It averages 63 cm long and stands about 50 cm tall. Males average about 2.7 kg and females 2.3 kg, with a range of 1.8 to 4.2 kg.\n\nIt is stocky, with short, strong legs and a huge bill that can give a painful bite. It cannot fly, but it sometimes uses its small wings to help it scramble up slopes. The silky, iridescent plumage is navy blue on the head, neck and underside, peacock blue on the wings, and teal and green on the back, turning olive towards a tail that is white underneath.\n\nA bright red shield covers the forehead above a carmine bill. Sexes look alike, though females are a little smaller. Chicks are covered in jet-black down and have big brown legs.",
+    "life": "Takahē eat grass, shoots and insects, but mostly the leaves of tall Chionochloa tussocks and other alpine grasses. A favourite trick is to pluck a stalk of snow grass, hold it in one foot, eat the soft lower part and throw the rest away. One bird at Zealandia was even seen eating a paradise duckling. They are noisy birds.\n\nTheir warning call, a deep 'womph', was likened by the men who rediscovered them to someone whistling over a rifle cartridge case, and they also give a loud 'clowp'. Their contact call is easily mistaken for a weka's, but is deeper and more resonant.",
+    "family": "Takahē pairs are monogamous and stay together for at least 12 years and probably for life. They build a bulky nest under bushes and scrub and lay 1 to 3 buff eggs. Between a quarter and four fifths of chicks survive, depending on the site. Immature birds are a duller version of the adults, with a dark bill that reddens as they age. They can live 18 years in the wild and 22 in sanctuaries.\n\nBecause they live long, breed slowly and take several years to mature, the tiny population has suffered from inbreeding and low fertility, so rangers remove infertile eggs and rear chicks in captivity, which has raised the number of chicks per pair from 0.43 to 0.66.",
+    "remarkable": "After a female was caught by a dog called Rough near Lake Te Anau in 1898, no more takahē could be found, and the species was presumed extinct. Fifty years later an Invercargill doctor, Geoffrey Orbell, followed up reports of strange footprints near the lake.\n\nOn 20 November 1948 his expedition found living takahē in the Murchison Mountains, caught two, photographed them and let them go.",
+    "outlook": "Over-hunting, habitat loss and introduced mammals brought the takahē close to extinction. Red deer compete for the tussock it eats and stoats prey on it. In Fiordland the population fell from about 400 to 118 by 1982, until deer were culled by helicopter hunters and the alpine grassland began to recover.\n\nNumbers have risen steadily since, from 263 in 2013 to 418 in 2019 and around 500 by 2023, growing by about 8% a year. In 2016 New Zealand's own threat ranking was eased from Nationally Critical to Nationally Vulnerable. Setbacks still happen: in 2015 hunters culling the similar-looking pūkeko accidentally shot 4 takahē, about 5% of the population at the time.",
+    "people": "Māori knew the takahē well and travelled long distances to hunt it, and its bones turn up in South Island middens. The name comes from the Māori verb takahi, to stamp or trample. Europeans first knew it only from fossil bones, which the anatomist Richard Owen named Notornis, 'southern bird', in 1848. In 1850 a party of sealers in Dusky Sound chased one with their dogs.\n\nIt ran fast, screamed and fought, and after a few days on board their schooner it was roasted and eaten, the crew declaring it delicious. Walter Mantell rescued the skin for science. Another specimen, bought by a museum in Dresden for 105 pounds, was destroyed when the city was bombed in the Second World War.",
+    "relatives": "The takahē belongs to Porphyrio, the swamphen genus, and its close relative the pūkeko, or Australasian swamphen, is common in New Zealand, although it arrived from Australia only a few hundred years ago. A second species, the North Island takahē or moho, was taller and more slender and died out in the 14th century.\n\nThe South Island bird's scientific name, hochstetteri, honours the Austrian geologist Ferdinand von Hochstetter. A genetic study published in 2024 suggested that the two takahē species are each other's closest relatives, descended from one ancestor that colonised New Zealand and split between 4 and 1.5 million years ago.",
+    "didYouKnow": "At the Burwood breeding centre, staff once fed takahē chicks using hand puppets that played recorded adult calls, so the birds would not imprint on people.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 63 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "1.8–4.2 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 18 years wild"
+      },
+      {
+        "label": "Population",
+        "value": "About 500 (2023)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the Māori word takahi mean?",
+        "choices": [
+          "To stamp or trample",
+          "Blue bird",
+          "Mountain spirit",
+          "The one who runs faster than the hunting dogs"
+        ],
+        "explanation": "The bird's name comes from the verb takahi, to stamp or trample."
+      },
+      {
+        "prompt": "In which year was the takahē rediscovered?",
+        "choices": [
+          "1948",
+          "1898",
+          "1850",
+          "In 1982, during a survey of red deer"
+        ],
+        "explanation": "Geoffrey Orbell's expedition found living birds on 20 November 1948."
+      },
+      {
+        "prompt": "Which introduced animal competes with takahē for food?",
+        "choices": [
+          "Red deer",
+          "Stoats",
+          "Rabbits",
+          "Feral goats brought ashore by early whalers"
+        ],
+        "explanation": "Red deer eat the same tussock grasses; stoats are predators."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Forest & Bird",
+        "url": "https://www.forestandbird.org.nz",
+        "blurb": "New Zealand's largest independent conservation organisation, protecting native birds and habitats."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and the places they need."
+      }
+    ]
+  },
+  {
+    "id": "ring-tailed-lemur",
+    "name": "Ring-tailed Lemur",
+    "scientificName": "Lemur catta",
+    "wikipediaTitle": "Ring-tailed lemur",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Gallery forests and spiny scrub of southern and south-western Madagascar",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -23.5,
+      "longitude": 45.0
+    },
+    "mapSpan": 10,
+    "tagline": "Madagascar's sunbathing, stink-fighting primate",
+    "lede": "On cool mornings in southern Madagascar, ring-tailed lemurs sit upright with palms open and eyes gently closed, turning their soft white bellies to the sun. Then the troop sets off across the ground, long black-and-white tails held high.",
+    "home": "Like all lemurs, the ring-tailed lemur lives only on Madagascar, in the south and south-west of the island. It reaches higher into the mountains than other lemurs and lives in deciduous forest, dry scrub, humid mountain forest and especially gallery forest along rivers, much of which has been cleared for cattle pasture.\n\nIts range spans remarkable extremes, from -12 °C on the Andringitra Massif, where the lemurs grow thicker coats, to 48 °C in the spiny forest of Beza Mahafaly. It can be seen in five national parks, including Isalo and Andringitra, and in reserves such as Berenty, sharing its range with as many as 24 other lemur species.",
+    "anatomy": "This is a fairly large lemur, averaging 2.2 kg, with a body 39 to 46 cm long and a tail of 56 to 63 cm. It has a slender frame and a narrow, fox-like muzzle. The bushy tail is ringed with 12 or 13 white and 13 or 14 black bands and always ends in black. It cannot grip with it; the tail is used for balance, signalling and keeping the troop together.\n\nEven where its fur is white, the skin beneath is dark grey or black, and leathery palms and soles help it walk on the ground. Its lower front teeth form a toothcomb, used for grooming.\n\nBoth sexes have scent glands on the inner forearm, and males also have glands near the armpit and a horny spur over each wrist gland, which they scrape on tree trunks to leave scented grooves.",
+    "life": "Ring-tailed lemurs are active only by day and spend more time on the ground than any other lemur, up to a third of their time, travelling mostly on foot. Troops usually number 6 to 25, averaging 13 to 15, and roam home ranges of 6 to 35 hectares.\n\nFemales dominate males in every situation, including first pick of food, and enforce it by lunging, cuffing and biting. Young males leave their birth troop at 3 to 5 years old.\n\nThey eat mainly fruit and leaves, above all from the tamarind tree, which can make up half their diet in the dry season, plus flowers, bark, sap, spiders, insects and even soil from termite mounds. They are among the most vocal primates, purring in contentment and clicking and yapping together to mob predators such as the fossa.",
+    "family": "Mating happens from mid-April to mid-May, and each female is receptive for just 4 to 6 hours. Females in a troop come into season on different days, which reduces competition for males. After about 135 days, usually one infant, occasionally twins, is born in September or October, weighing about 70 g. It clings to its mother's chest for the first week or two, then rides on her back.\n\nInfants eat solid food from 2 months, are weaned by 5 months and mature at 2.5 to 3 years. The whole troop helps look after the young. Life is tough: up to half die in their first year. The oldest known wild lemur, a female at Berenty, lived 20 years, and one in captivity reached 27.",
+    "remarkable": "Rival males settle disputes with stink fights. Each male draws his tail through the secretions of his forearm and armpit glands until it is soaked in scent, then waves it at his opponent.\n\nRing-tailed lemurs also scent-mark trees by doing a handstand, gripping the trunk with their feet as high as possible while they rub their scent on.",
+    "outlook": "The IUCN listed the ring-tailed lemur as Endangered in 2014, and in 2017 only about 2,000 were estimated to remain in the wild. It has also been on CITES Appendix I since 1977, which bans trade in wild-caught animals.\n\nAs the most recognisable lemur, it serves as a flagship for Madagascar's wildlife. The greatest threat is habitat loss: about 90% of Madagascar's original forest is gone, cleared for pasture, farming, charcoal, timber and mining. Lemurs are also hunted for bushmeat and fur, taken as pets, and killed by feral dogs and cats. Droughts hit hard too: after a severe drought in 1991 and 1992, one reserve's population fell by 31%. Captive breeding is very successful, should reintroduction ever be needed.",
+    "people": "In Malagasy the ring-tailed lemur is called maky or hira. It is the symbol of Madagascar National Parks, and a clothing brand named Maki is called after it, even though the company's logo shows a different lemur, a sifaka.\n\nThe word lemur comes from the Latin lemures, the ghosts of Roman legend, and was first chosen by Carl Linnaeus for the slow, nocturnal slender loris. Lemurs were long dismissed as unintelligent, but experiments show ring-tailed lemurs can learn sequences, grasp simple arithmetic and pick tools by how well they work.",
+    "relatives": "The ring-tailed lemur is the only species in the genus Lemur, within the family Lemuridae, one of five lemur families. Its closest relatives appear to be the bamboo lemurs, which share similar scent glands and chromosomes, while the true lemurs and the ruffed lemurs are more distant cousins.\n\nAll lemurs are thought to descend from a small group of ancestors that rafted across the sea to Madagascar between 50 and 80 million years ago. When Linnaeus listed the genus Lemur in 1758, it held three species: the ring-tailed lemur, a loris, and an animal now known to be a colugo, not a primate at all.",
+    "didYouKnow": "Females mark territory by holding their tails up in display and leaving just a few drops of urine, mostly at the edges of the troop's range.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "About 2.2 kg"
+      },
+      {
+        "label": "Tail",
+        "value": "56–63 cm"
+      },
+      {
+        "label": "Troop size",
+        "value": "Usually 6–25"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 27 years in captivity"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which sex is dominant in a ring-tailed lemur troop?",
+        "choices": [
+          "Females",
+          "Males",
+          "Neither",
+          "Whichever animal is oldest, male or female"
+        ],
+        "explanation": "Females dominate males in all circumstances, including access to food."
+      },
+      {
+        "prompt": "What does a male do in a 'stink fight'?",
+        "choices": [
+          "Waves a scented tail at a rival",
+          "Sprays urine",
+          "Rolls in rotten fruit",
+          "Rubs dung on his chest before wrestling in the trees"
+        ],
+        "explanation": "Males soak their tails in gland secretions and wave them at opponents."
+      },
+      {
+        "prompt": "Which tree's fruit can make up half the ring-tailed lemur's diet?",
+        "choices": [
+          "Tamarind",
+          "Baobab",
+          "Mango",
+          "The wild figs that grow along riverbanks"
+        ],
+        "explanation": "Tamarind, called kily locally, can form up to 50% of the diet in the dry season."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Durrell Wildlife Conservation Trust",
+        "url": "https://www.durrell.org",
+        "blurb": "Saves threatened species from extinction, with long-running work in Madagascar."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places, including Madagascar's forests."
+      }
+    ]
+  },
+  {
+    "id": "toco-toucan",
+    "name": "Toco Toucan",
+    "scientificName": "Ramphastos toco",
+    "wikipediaTitle": "Toco toucan",
+    "group": "bird",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Savannas, gallery forests and wetlands from the Guianas to northern Argentina",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -15.0,
+      "longitude": -52.0
+    },
+    "mapSpan": 40,
+    "tagline": "A giant orange bill that doubles as a radiator",
+    "lede": "Glossy black with a white bib and a beak that seems far too big for it, the toco toucan is one of the best-known birds of the Americas. That brilliant orange bill is more than decoration: it is a living cooling system for the tropical heat.",
+    "home": "The toco toucan is found only in South America, from the Guianas south to northern Argentina and Uruguay, with scattered populations in the north around the Rio Branco and along the lower Amazon to around Manaus. Unlike other toucans, which keep to closed forest, it prefers drier, more open country: gallery forests, savannas, woodlands, the Chaco, plantations and orchards, up to 1,750 metres. It is especially common in Brazil's cerrado and in the Pantanal wetlands.\n\nIts range seems to be spreading. It has only recently reached Uruguay and was rediscovered in Argentina's Tucumán in the early 2010s after being thought lost there. Home ranges average 86 hectares, and the birds can fly across water more than 5 km wide.",
+    "anatomy": "The toco is the largest toucan, averaging 56 cm long and around 540 g. Its body is glossy black, with a white throat and upper breast, a white rump and red feathers under the tail. The brown eye sits in a narrow blue ring within bare yellow to orange skin.\n\nThe bill is orange, reddest along the top, with a black band at the base and a large black oval at the tip. It measures about 20 cm in males and 18 cm in females, and it has the largest size relative to the body of any bird, making up 30 to 50% of the toucan's surface area.\n\nThough it looks heavy, it is light because the inside is mostly hollow, and the tongue inside it is almost as long and very flat. Apart from size, males and females look the same.",
+    "life": "Toco toucans are mainly fruit eaters, taking figs, oranges, guavas, peppers and whatever sugary fruit is available. They also eat caterpillars, termites, lizards, and the eggs and chicks of other birds, raiding the nests of caciques, parrots and even hyacinth macaws, and killing nestlings by snapping their necks with a sideways flick of the bill.\n\nBecause they pass many seeds undamaged in their droppings, they carry seeds hundreds of metres from the parent plant. They are less sociable than other toucans, feeding alone or in small groups and flying in single file with an undulating mix of flapping and gliding.\n\nAfter breeding they can form large flocks. Their calls are grunts, croaks and snores like those of toads, up to 50 notes a minute, and they also make noise by tapping their bills on branches.",
+    "family": "During the nesting season toco toucans become secretive. Partners preen each other and tap their bills together, and males show off by fanning the red feathers under their tail. Breeding times vary with region, from September to February in south-eastern Brazil and Paraguay to December to June in Bolivia. Nests are made in tree cavities, stream banks or termite mounds, sometimes in holes dug by woodpeckers or flickers.\n\nThe female lays 2 to 4 eggs, and both parents incubate them for 17 to 18 days. Chicks beg loudly when the parents are away. They are fed mostly insects at first, with more fruit as they grow, and fledge 43 to 52 days after hatching. Young birds are duller, with shorter bills.",
+    "remarkable": "The toucan can steer blood into or away from the network of vessels just under its bill's thin horny sheath, turning the bill into an adjustable radiator. It normally accounts for 30 to 60% of the bird's heat loss, and in a strong breeze it can shed as much as the toucan's entire resting heat output, a far bigger share than a duck's bill can manage.\n\nWhen roosting, toucans tuck their bills under their wings, which may insulate them and reduce heat loss while they sleep.",
+    "outlook": "BirdLife International considers the toco toucan to be of Least Concern. It has a large range, is fairly common, and probably benefits from the clearing of tropical forest, since it likes open country; it even lives around airports and new roads. It is hunted for meat and caught for the pet trade, though the effect on its numbers is unknown.\n\nIn the past, the big flocks that gather after breeding were hunted heavily, and the bills were kept as souvenirs. A 2023 study found it was the second most commonly traded toucan between 1975 and 2018, and the most expensive.",
+    "people": "The French naturalist Pierre Belon wrote the first European account in 1555, working only from a bill. Seeing its serrated edge, he guessed the toucan was a web-footed, fish-eating bird, an idea that lasted until the 18th century. The name toco comes from Tucá or Tucán, the Guarani word for toucan, which may mean 'bone-nose'.\n\nA Brazilian legend tells how the birds made the toucan their king after seeing his bill poking out of a hole, then mocked him as 'nothing but nose' when he came out. The toco toucan starred in a famous Guinness advertising campaign and is the symbol of the Brazilian Social Democracy Party.",
+    "relatives": "The toco toucan is one of 8 species in the genus Ramphastos and one of more than 40 in the toucan family. Its genus name comes from a misspelling of the Ancient Greek for 'snouted'. DNA studies suggest it branched off early, rather than belonging to the group of croaking, keel-billed toucans where it was once placed.\n\nTwo subspecies are recognised, one of them albogularis, found in Paraguay, southern and eastern Brazil, northern Bolivia and northern Argentina, which is said to have a whiter throat and shorter bill. Its croaking calls can be confused with those of the red-breasted and channel-billed toucans, though they are deeper. The oldest remains are about 20,000 years old, from Lagoa Santa in Brazil.",
+    "didYouKnow": "Toco toucans spread over 83% of the seeds of the manduvi tree, where hyacinth macaws nest, yet they also eat more than half of the macaws' lost eggs.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 56 cm"
+      },
+      {
+        "label": "Bill",
+        "value": "16–21.5 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 540 g"
+      },
+      {
+        "label": "Eggs",
+        "value": "2–4"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What did Pierre Belon guess about the toucan from its bill alone?",
+        "choices": [
+          "It ate fish",
+          "It ate honey",
+          "It could not fly",
+          "It dug burrows in riverbanks with its bill"
+        ],
+        "explanation": "He thought the serrated bill belonged to a web-footed, fish-eating bird."
+      },
+      {
+        "prompt": "What does the toco toucan's bill help it do in hot weather?",
+        "choices": [
+          "Shed body heat",
+          "Store water",
+          "Shade its chicks",
+          "Collect dew from leaves so it can drink at dawn"
+        ],
+        "explanation": "The bill works as a radiator, losing heat through blood vessels under its surface."
+      },
+      {
+        "prompt": "How long do the parents incubate their eggs?",
+        "choices": [
+          "17–18 days",
+          "5–6 days",
+          "About 2 months",
+          "Around 40 days, swapping each morning"
+        ],
+        "explanation": "Both parents incubate the 2 to 4 eggs for 17 to 18 days."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and the places they need."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect the Pantanal, the cerrado and other South American habitats."
+      }
+    ]
+  },
+  {
+    "id": "sand-cat",
+    "name": "Sand Cat",
+    "scientificName": "Felis margarita",
+    "wikipediaTitle": "Sand cat",
+    "group": "mammal",
+    "regions": [
+      "africa",
+      "asia"
+    ],
+    "range": "Sandy and stony deserts of North Africa and south-west and Central Asia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 25.0,
+      "longitude": 35.0
+    },
+    "mapSpan": 60,
+    "tagline": "A desert kitten with furry slippers and superb hearing",
+    "lede": "With its broad, flat head, low-set ears and large greenish-yellow eyes ringed in white, the sand cat looks like a kitten that never grew up. Yet this little hunter thrives in some of the harshest deserts on Earth, far from any water, and will tackle venomous vipers.",
+    "home": "Sand cats live in sandy and stony deserts across North Africa and south-west and Central Asia, but in scattered pockets rather than one continuous range. They have been recorded in Western Sahara, Morocco, Algeria, Libya, Niger, Chad and Egypt, across the Arabian Peninsula and the Middle East, and in Iran, Pakistan, and the Karakum and Kyzylkum deserts of Central Asia.\n\nIn Israel the species has not been recorded since the turn of the century. They prefer flat or gently rolling ground with sparse grass and small bushes, and avoid bare, shifting dunes, which hold little prey. By day they rest in burrows about 1.5 metres deep, often taken over from foxes, porcupines or gerbils.",
+    "anatomy": "The sand cat stands 24 to 36 cm at the shoulder, with a body 39 to 52 cm long, a tail of 23 to 31 cm, and a weight of 1.5 to 3.4 kg. It has a flat, wide head and short legs.\n\nIts fur is pale sandy, lighter on the belly, with a faint reddish line across each cheek, dark bars on the legs and a black-tipped tail with a few dark rings. Its white whiskers are up to 8 cm long.\n\nThick fur covers the soles of its feet, and long hairs between the toes form a cushion that insulates the pads on hot sand and makes its tracks hard to find and follow. In Central Asia the winter coat grows hairs up to 51 mm long. Its front claws are short and very sharp, and its hind claws small and blunt.",
+    "life": "Sand cats are solitary and hunt mainly at night, sometimes travelling 5 to 10 km in a single night; in winter they may bask in the sun by day. They run fast with the belly held low, with occasional leaps, and can sprint at 30 to 40 km per hour.\n\nHome ranges in Israel and Morocco covered 13 to 35 square kilometres. They eat small rodents such as jirds, jerboas and gerbils, young hares, birds such as larks, lizards and venomous horned vipers, and they bury what they cannot finish.\n\nThey get the moisture they need from their prey but will drink if they find water. They mark territory with urine, scent and scratches, bury their droppings, and make loud, high-pitched rasping calls, especially when seeking a mate.",
+    "family": "A female is in season for 5 to 6 days, during which she calls often and scent-marks. After a pregnancy of 59 to 66 days she gives birth to 2 or 3 kittens, each weighing 39 to 80 g, with spotted, pale yellow or reddish fur.\n\nIn some areas females have two litters a year. The kittens grow quickly, reaching three-quarters of adult size within 5 months, become fully independent by the end of their first year and mature soon after. In zoos sand cats can live up to 13 years, though of 228 kittens born in zoos worldwide by 2007, only 61% survived their first month, mostly because first-time mothers neglected them. How long they live in the wild is unknown.",
+    "remarkable": "The sand cat's outer ear looks like a house cat's, but its ear canal is about twice as wide, and the bony chambers behind it are greatly enlarged.\n\nIts ears take in sound about five times more readily than a domestic cat's, and its hearing is about 8 decibels more sensitive, helping it locate prey moving underground. Long white hairs guard the ear opening against blowing sand.",
+    "outlook": "The IUCN moved the sand cat from Near Threatened to Least Concern in 2016, because its estimated global population is above the threshold for a threatened category, although how fast it may be declining is unknown. It is listed on CITES Appendix II, and hunting it is banned in several countries, including Algeria, Iran, Niger and Pakistan, but it has no legal protection in Egypt, Morocco, Oman or Saudi Arabia.\n\nIt is threatened by habitat damage, poisoned baits set for other predators, drought and desertification that hit its prey, traps around oases, attacks by dogs, capture for the pet trade, and diseases from domestic cats. In Saudi Arabia several were found caught in wire fences around protected areas.",
+    "people": "Victor Loche described the first known sand cat in 1858 from the northern Algerian Sahara, and named it after General Jean Auguste Margueritte; the original specimen has since been lost. The explorer Wilfred Thesiger found a sand cat skin at an oasis in Arabia's Rub' al Khali in 1948, helping link the African and Asian parts of its range.\n\nThe Toubou people of the Sahara report sand cats slipping into their camps at night to drink fresh camel milk. From the mid-1960s sand cats were caught in Pakistan and exported to zoos, until permits stopped in 1974. In captivity they are very prone to respiratory disease and must be kept in dry enclosures with steady humidity and temperature.",
+    "relatives": "The sand cat belongs to the small-cat genus Felis. Genetic studies suggest the jungle cat was the first of the group to branch off, followed by the black-footed cat and then the sand cat.\n\nSince 2017 two subspecies have been recognised: the Saharan sand cat of North Africa, which is smaller and brighter yellow with bolder markings, and the larger, greyer sand cat of the Arabian Peninsula and Central Asia. A fossil jaw from a Late Pleistocene cave at El Harhoura in Morocco shows the species has a long history in the region.",
+    "didYouKnow": "In 2018 several sand cats in the Moroccan Sahara were found resting in brown-necked ravens' nests built in umbrella thorn acacias.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "1.5–3.4 kg"
+      },
+      {
+        "label": "Length",
+        "value": "39–52 cm + tail"
+      },
+      {
+        "label": "Speed",
+        "value": "30–40 km/h"
+      },
+      {
+        "label": "Litter",
+        "value": "2–3 kittens"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why do sand cats have thick fur on the soles of their feet?",
+        "choices": [
+          "To insulate the pads",
+          "To grip tree bark",
+          "To dig faster",
+          "To leave scent trails that guide their kittens home"
+        ],
+        "explanation": "The fur cushions and insulates the pads against hot sand."
+      },
+      {
+        "prompt": "Who does the scientific name margarita honour?",
+        "choices": [
+          "A French general",
+          "The describer's wife",
+          "A Saharan queen",
+          "The Algerian guide who found the first specimen"
+        ],
+        "explanation": "It is named after General Jean Auguste Margueritte."
+      },
+      {
+        "prompt": "How does the sand cat usually get the water it needs?",
+        "choices": [
+          "From its prey",
+          "From dew",
+          "From desert melons",
+          "By digging down to underground springs at night"
+        ],
+        "explanation": "It satisfies its moisture needs from its prey, drinking only when water is available."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Panthera",
+        "url": "https://www.panthera.org",
+        "blurb": "Works to conserve the world's wild cats and their landscapes."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Protects wildlife and wild places worldwide."
+      }
+    ]
   }
 ]
