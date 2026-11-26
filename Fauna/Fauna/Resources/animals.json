@@ -26947,5 +26947,917 @@
         "blurb": "Works worldwide to conserve wildlife, including Danube sturgeon restocking."
       }
     ]
+  },
+  {
+    "id": "tiger-shark",
+    "name": "Tiger Shark",
+    "scientificName": "Galeocerdo cuvier",
+    "wikipediaTitle": "Tiger shark",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "oceania",
+      "centralAmerica",
+      "asia"
+    ],
+    "range": "Tropical and subtropical coastal seas worldwide, especially around Pacific islands",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 5.0,
+      "longitude": 170.0
+    },
+    "mapSpan": 80,
+    "tagline": "The striped shark with the widest menu in the sea",
+    "lede": "Striped like its namesake when young and armed with teeth that can saw through a turtle's shell, the tiger shark has the broadest diet of any shark. Seals, sea snakes, dolphins, seabirds and even other sharks are all on the menu of this solitary night hunter.",
+    "home": "Tiger sharks live mainly in tropical and subtropical waters around the world, often close to the coast. They are nomads that follow warm currents and keep nearer the equator in the colder months. By day they tend to stay in the deep water along reefs, then move into channels and shallows at night to hunt.\n\nIn the western Pacific they range from Japan to New Zealand, and they turn up in the Gulf of Mexico, the Caribbean and off Africa, India, Australia and Indonesia. A few have been recorded at depths approaching 900 metres.\n\nThe largest known gathering is around Fuvahmulah, an island in the Maldives, where researchers have identified at least 239 individuals, many of them adult females. The warm water and steady food supply there seem to make it a favoured place to carry young.",
+    "anatomy": "Adults are commonly 3.5 to 4.7 metres long and weigh 300 to 900 kg, and females are the larger sex. Exceptional females can pass 5 metres and 1,300 kg, and one pregnant female caught off Australia reportedly measured 5.5 metres.\n\nIt is the second-largest predatory shark after the great white. The back is grey-blue to light green-grey and the belly white or pale yellow, so the shark blends in whether seen from above or below.\n\nIts teeth are distinctive, with coarse serrations and a tip that points sideways, ideal for slicing through bone and shell, and they are replaced throughout life. Pits on the wedge-shaped snout sense the weak electric fields of prey, a line of sense organs along each flank picks up vibrations, and a reflective layer behind the retina sharpens its night vision.",
+    "life": "Young tiger sharks feed mostly on small fish, jellyfish and squid. At around 2.3 metres their diet widens dramatically to include sea turtles, dugongs, dolphins, seals, seabirds and rays. Adult sea turtles turned up in up to 20.8% of stomachs in one study, and dugong tissue was found in 15 of 85 sharks caught off Australia.\n\nA tiger shark usually cruises slowly, which together with its dull colouring makes it hard to spot, then closes the gap with a sudden burst of speed. It often circles a target and prods it with its snout before biting, swallowing small prey whole and working through large prey over time. It also scavenges, feeding on dead whales, sometimes alongside great whites.\n\nIts only recorded natural enemy is the orca, which flips the shark upside down so that it goes limp and drowns.",
+    "family": "Males mature at 2.3 to 2.9 metres and females at 2.5 to 3.5 metres. Females mate only once every three years, and the male grips her with his teeth during mating.\n\nIn the Northern Hemisphere mating takes place between March and May, and the pups are born between April and June the following year. Uniquely among sharks, the unborn young grow inside sacks filled with a nourishing fluid, without any placental link to their mother. Pregnancy lasts up to 16 months, and a litter can hold anywhere from 10 to 80 pups, each 51 to 76 centimetres long at birth.\n\nAs they grow, their tails become more symmetrical and their heads broader, suiting a life of longer journeys and bigger prey. Nobody knows how long they live, but it is more than 12 years.",
+    "remarkable": "The tiger shark is known as the 'garbage can of the sea'. Around Hawaii, the remains of horses, goats, sheep, dogs, cats and rats are fairly common in its stomach. One held two flying foxes, and another, being tagged off Queensland, coughed up an echidna.\n\nBecause it bites so readily, it also swallows things that are not food at all, including car licence plates, oil cans, tyres and baseballs.",
+    "outlook": "The IUCN lists the tiger shark as Near Threatened because of finning and fishing. It is killed for its fins, meat, skin and liver, which is rich in vitamin A, and it is caught both on purpose and as bycatch.\n\nSeveral populations have fallen where fishing is heavy, and continued demand for fins could push them lower. In 2010 Greenpeace added it to its seafood red list of species likely to come from unsustainable fisheries. Warming Atlantic currents are also shifting its migration routes further north.",
+    "people": "The tiger shark ranks second only to the great white in recorded bites on people, yet such attacks remain rare. Hawaii typically sees 3 or 4 bites a year, despite thousands of swimmers and surfers each day; one survivor, surfer Bethany Hamilton, lost her left arm to a tiger shark at the age of 13.\n\nEncounters there rise between September and November, when females are thought to arrive to give birth. Between 1959 and 1976, Hawaii culled 4,668 tiger sharks to protect tourism, without reducing encounters. Today feeding sharks there is illegal except for traditional cultural practices. At 'Tiger Beach' off Grand Bahama, divers now swim with them outside cages.",
+    "relatives": "The species was first described in 1822 as Squalus cuvier, honouring the naturalist Georges Cuvier. Its genus name, Galeocerdo, combines Greek words for 'shark' and 'fox'. It is the only living member of its genus and of the family Galeocerdonidae, and the largest member of the ground sharks, an order of more than 270 species that also includes catsharks and hammerheads.\n\nThe genus goes back to the Eocene, and fossils of the modern species date to about 13.8 million years ago. Some Pliocene tiger sharks may have reached 8 metres.",
+    "didYouKnow": "In 2026 researchers identified Olowalu in Hawaii as the first known tiger shark mating site, used in the same winter season when humpback whales raise their calves nearby.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "3.5–4.7 m"
+      },
+      {
+        "label": "Weight",
+        "value": "300–900 kg"
+      },
+      {
+        "label": "Litter",
+        "value": "10–80 pups"
+      },
+      {
+        "label": "Depth",
+        "value": "Down to about 900 m"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the tiger shark's only recorded natural predator?",
+        "choices": [
+          "The orca",
+          "The great white shark",
+          "The saltwater crocodile",
+          "The sperm whale, hunting in deep water"
+        ],
+        "explanation": "Orcas flip tiger sharks upside down so they go limp, then kill them."
+      },
+      {
+        "prompt": "How do unborn tiger shark pups get their nourishment?",
+        "choices": [
+          "From fluid-filled sacks",
+          "Through a placenta",
+          "By eating their siblings",
+          "By eating unfertilised eggs the mother keeps producing"
+        ],
+        "explanation": "The young grow inside sacks of nourishing fluid, with no placental link."
+      },
+      {
+        "prompt": "Where is the largest known gathering of tiger sharks?",
+        "choices": [
+          "Fuvahmulah, Maldives",
+          "Tiger Beach, Grand Bahama",
+          "Orpheus Island",
+          "Olowalu, Hawaii"
+        ],
+        "explanation": "At least 239 individuals have been identified around Fuvahmulah."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to safeguard sharks and rays through science, education and better fisheries policy."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns for policies that protect ocean wildlife from overfishing and bycatch."
+      }
+    ]
+  },
+  {
+    "id": "rhinoceros-beetle",
+    "name": "Rhinoceros Beetle",
+    "scientificName": "Dynastinae",
+    "wikipediaTitle": "Dynastinae",
+    "group": "insect",
+    "regions": [
+      "asia",
+      "europe",
+      "africa",
+      "centralAmerica"
+    ],
+    "range": "Woodlands around the world, from Europe and Asia to the Americas and Madagascar",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 15.0,
+      "longitude": 100.0
+    },
+    "mapSpan": 80,
+    "tagline": "Horned giants of the beetle world that cannot bite",
+    "lede": "Rhinoceros beetles are among the biggest beetles alive, and the males carry horns that make them look like tiny armoured rhinos. For all their fearsome looks they are completely harmless to people, saving their strength for wrestling matches with each other.",
+    "home": "More than 1,500 species of rhinoceros beetle are known, in 225 genera, and between them they live in many parts of the world. Well-known members include the European rhinoceros beetle, the Japanese rhinoceros beetle, the Atlas beetle and the Hercules beetle, and one whole tribe of the group is found only in Madagascar.\n\nTheir lives are tied to trees. The young live inside rotting wood, while adults gather on trees that ooze sap and on fallen fruit. When the sun is up, adults usually hide under logs or tuck themselves into vegetation, out of sight of the few predators big enough to eat them.",
+    "anatomy": "The largest species grow to more than 15 centimetres long. In most species only the males carry horns: one on the head and another jutting forward from the middle of the thorax.\n\nThey use these for fighting other males and for digging, and the size of a male's horn is a good guide to how well fed and healthy he is. The whole body is wrapped in a thick exoskeleton. A pair of hard wing covers protects a second pair of thin, membranous wings, which let the beetle fly, although not very efficiently given its bulk.\n\nBecause they cannot bite or sting, their best defence is sheer size. If disturbed, some species make a loud, hissing squeak by rubbing the abdomen against the tips of the wing covers.",
+    "life": "Adults feed on nectar, plant sap and fruit, while the larvae eat rotting wood. Rhinoceros beetles are usually described as creatures of the night or of dusk, but research on the Japanese rhinoceros beetle by Ryo Shibata and Wataru Kojima shows that their timetable is surprisingly flexible.\n\nOn oak trees, the beetles keep to the expected pattern, arriving after sunset and returning to refuges underground before sunrise to avoid daytime predators. On ash trees, by contrast, they stay out and feed all day. The reason is the sap: to reach it on ash, the beetles must patiently shave away the bark, a job so slow that they cannot afford to stop at dawn.",
+    "family": "Like all beetles, rhinoceros beetles pass through four stages: egg, larva, pupa and adult. The larval stage, spent chewing through decaying wood, can last several years, far longer than the adult's life above ground. Among Japanese rhinoceros beetles, males battle for control of sap sites, using their horns to pry rivals off the tree.\n\nHolding a site gives a male the chance to mate with females that come to feed. In this and other species that defend mating sites, bigger males with bigger horns win more contests and mate more often. Smaller males tend to avoid the giants and rely on other tactics to reach females.",
+    "remarkable": "Some rhinoceros beetles have been claimed, on anecdotal evidence, to lift up to 850 times their own weight. Even if the true figure is lower, it hints at the power packed into these armoured bodies, and at why their horn-locking contests are so hard fought.",
+    "outlook": "Most rhinoceros beetles have never had their conservation status assessed. One concern is an illegal trade in rhino beetles, part of a wider network of insect trafficking that supplies exotic pet keepers and trophy collectors willing to pay for rare and popular specimens.\n\nThis trade puts real pressure on wild populations, yet insect trafficking remains largely unregulated and attracts far less attention than the smuggling of elephants or rhinos.",
+    "people": "In parts of Asia rhinoceros beetles are popular pets, being clean, easy to keep and safe to handle. Males are also pitted against each other in gambling fights; to get them to lock horns, handlers use a female beetle or a small noisemaker that imitates her mating call.\n\nEntomologist Séverin Tchibozo has suggested that the larvae, at about 40% protein, compared with roughly 20% for chicken, could feed many people. Engineers in the United States and South Korea have even studied how the Japanese species flies.\n\nA few species are pests. The coconut rhinoceros beetle can do serious damage in plantations, and some larvae attack healthy trees or root vegetables. Most species, though, prefer trees already sick or dying, and a fungus called Metarhizium majus is used to control infestations in crops.",
+    "relatives": "Rhinoceros beetles form the subfamily Dynastinae within the scarab beetle family, Scarabaeidae, and are also known as Hercules beetles, unicorn beetles or horn beetles. The subfamily is divided into tribes.\n\nThe Dynastini hold many of the giants, including the elephant, Mars and Atlas beetles and the five-horned rhinoceros beetle, while the Oryctini include the European and coconut rhinoceros beetles and the ox beetle. Smaller relatives include the masked chafers and rice beetles. The largest fossil scarab, Oryctoantiquus borealis from the Eocene, was a rhinoceros beetle.",
+    "didYouKnow": "The Japanese rhinoceros beetle is known in Japan as the kabutomushi.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Over 15 cm in the largest"
+      },
+      {
+        "label": "Species",
+        "value": "Over 1,500"
+      },
+      {
+        "label": "Larval food",
+        "value": "Rotting wood"
+      },
+      {
+        "label": "Adult food",
+        "value": "Nectar, sap and fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do rhinoceros beetle larvae feed on?",
+        "choices": [
+          "Rotting wood",
+          "Living leaves",
+          "Animal dung",
+          "Other insect larvae they find in the soil"
+        ],
+        "explanation": "The larvae live inside decaying wood and eat it, sometimes for several years."
+      },
+      {
+        "prompt": "Why do Japanese rhinoceros beetles feed by day on ash trees?",
+        "choices": [
+          "They must shave bark to reach sap",
+          "Ash trees have no predators",
+          "Ash sap only flows at noon",
+          "Their eyes cannot see well in the dark under ash leaves"
+        ],
+        "explanation": "Reaching ash sap is so slow that the beetles cannot stop at dawn."
+      },
+      {
+        "prompt": "In most species, which rhinoceros beetles have horns?",
+        "choices": [
+          "Only the males",
+          "Only the females",
+          "Both sexes",
+          "Only the larvae, which lose them when they pupate"
+        ],
+        "explanation": "Males use the horns to fight rivals and to dig."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Works to save invertebrates and the habitats they depend on."
+      },
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates through science, advocacy and habitat work."
+      }
+    ]
+  },
+  {
+    "id": "amur-leopard",
+    "name": "Amur Leopard",
+    "scientificName": "Panthera pardus orientalis",
+    "wikipediaTitle": "Amur leopard",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "South-west Primorye in the Russian Far East and neighbouring north-east China",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 43.2,
+      "longitude": 131.0
+    },
+    "mapSpan": 10,
+    "tagline": "A snow-country leopard clawing back from the brink",
+    "lede": "In the snowy forests where Russia meets China lives one of the rarest big cats on Earth. The Amur leopard wears a long, pale coat for the bitter winters, and after dwindling to a couple of dozen animals it is slowly making a comeback.",
+    "home": "In the Russian Far East, Amur leopards occupy about 7,000 square kilometres, and they are well adapted to the cold and heavy snow there. They favour mountains, including south-facing rocky slopes that stay free of snow in winter, and they stick to places where sika deer live.\n\nThey slip back and forth between Russia, China and possibly North Korea across the Tumen River, despite a tall wire border fence. In China they live in broadleaved and conifer forest at 600 to 1,200 metres, where the yearly average temperature is about 1.5 °C.\n\nThey once ranged across eastern Siberia, Manchuria, the Korean Peninsula and north-east China close to Beijing, and in the late 19th century they even entered the city of Seoul. The last known leopard in South Korea was caught in 1970.",
+    "anatomy": "This leopard is easy to tell from its relatives by its thick, pale cream fur. Its rosettes are large, about 5 centimetres across, and widely spaced, with thick unbroken rings and dark centres. The hair on the back is 20 to 25 mm long in summer but grows to 70 mm in winter, when the coat ranges from light yellow to a rich yellowish-red with a golden sheen.\n\nSummer fur is brighter, with a more vivid pattern. It is a fairly small leopard. Males measure 107 to 136 centimetres, plus a tail of 82 to 90 centimetres, stand 64 to 78 centimetres at the shoulder and weigh 32 to 48 kg. Females weigh 25 to 42.5 kg.",
+    "life": "Amur leopards live alone, except for mothers with cubs. Camera traps show they are active mostly by day and at dawn and dusk, matching the habits of their prey. They are creatures of habit, keeping a territory in a river basin bounded by natural features and using the same hunting trails and resting spots for years.\n\nRoe deer and sika deer are the main prey, along with wapiti, musk deer, elk and wild boar, and they also take hares, badgers, birds and mice. In one reserve they have even caught young Asian black bear cubs.\n\nDeer farms offer easy meals, and females with cubs are often found near them. Siberian tigers share some of their range and can kill leopards when prey is scarce, so leopards keep to higher ground there.",
+    "family": "Amur leopards mature at 2 to 3 years and can breed until 10 to 15. After a pregnancy of about 3 months, they give birth to 2 or 3 cubs, each weighing 500 to 700 grams. The cubs open their eyes at about a week old, leave the den in their second month and start eating meat, and are weaned at 3 months, when they begin to learn to hunt.\n\nThey stay with their mother for 18 months to 2 years. One radio-collared female who gave birth in late June kept within an area of about 3 square kilometres for a month, moving her cubs three times. In captivity, some Amur leopards have lived for 21 years.",
+    "remarkable": "In 2007 only 19 to 26 Amur leopards were thought to survive in the wild. Camera-trap surveys in 2014 and 2015 counted 92 along the Russian-Chinese border, and by 2023 the population was thought to number 128 to 130 adults and sub-adults, a rare piece of good news for a big cat on the edge.",
+    "outlook": "The IUCN lists the Amur leopard as Critically Endangered. Poaching of leopards and their prey is the main threat; in 1999, skins were offered for 500 to 1,000 US dollars near a Russian reserve. Fires set by farmers burn about 19% of south-west Primorye each year, turning conifer forest into open grassland that leopards avoid.\n\nWith so few animals, genetic diversity is very low, and cub survival fell from 1.9 per female in 1973 to 1.0 in 1991. A wild leopard was found with canine distemper in 2015. The leopard is listed on CITES Appendix I, and Russian and Chinese biologists have monitored it together since 2014. Conservationists persuaded planners to reroute an oil pipeline away from its habitat.",
+    "people": "The name 'Amur leopard' was coined in 1930 by the zoologist Reginald Pocock, after a skin from Amur Bay. It is also called the Siberian, Far Eastern or Korean leopard. On the Korean Peninsula it was hunted for its skin, and at least 624 were killed during the Japanese occupation between 1910 and 1945.\n\nIn the 20th century, large deer farms spread across its habitat to supply antler velvet to Asian pharmacies. A captive breeding programme began in 1961 from nine wild-born founders, and 173 Amur leopards lived in zoos worldwide by 2011. The cat's plight featured in the documentary The Last Leopard.",
+    "relatives": "The Amur leopard is a subspecies of the leopard, Panthera pardus. It was first described in 1857 by Hermann Schlegel, from a skin from Korea.\n\nIn 2017 the North Chinese leopard was merged into it, although a 2024 study suggested that the North Chinese form may be distinct after all. Leopards from Russia's Primorsky Krai and North Korea cannot be told apart genetically, which suggests the population in the region was split up less than a century ago.",
+    "didYouKnow": "Studies for a planned reintroduction found that three patches of coastal forest in the southern Sikhote-Alin mountains could support about 72 adult leopards.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "32–48 kg (males)"
+      },
+      {
+        "label": "Tail",
+        "value": "82–90 cm"
+      },
+      {
+        "label": "Winter fur",
+        "value": "Up to 70 mm long"
+      },
+      {
+        "label": "Wild population",
+        "value": "About 130 (2023)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How long can the hair on an Amur leopard's back grow in winter?",
+        "choices": [
+          "Up to 70 mm",
+          "Up to 10 mm",
+          "Up to 25 mm",
+          "Up to 200 mm, longer than any other cat"
+        ],
+        "explanation": "Back hair is 20 to 25 mm in summer but up to 70 mm in winter."
+      },
+      {
+        "prompt": "What is the main threat to Amur leopards?",
+        "choices": [
+          "Poaching",
+          "Road accidents",
+          "Disease from deer farms",
+          "Competition with brown bears over winter food"
+        ],
+        "explanation": "Poaching of the leopards and their prey is the biggest danger."
+      },
+      {
+        "prompt": "About how many Amur leopards were thought to survive in the wild in 2007?",
+        "choices": [
+          "19 to 26",
+          "About 130",
+          "Around 500",
+          "Over 2,000 across Russia and China"
+        ],
+        "explanation": "Numbers have since risen to about 130 adults and sub-adults."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works with partners in Russia and China to protect the Amur leopard's forests."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Supports anti-poaching and monitoring work for big cats in the Russian Far East."
+      }
+    ]
+  },
+  {
+    "id": "giant-isopod",
+    "name": "Giant Isopod",
+    "scientificName": "Bathynomus",
+    "wikipediaTitle": "Giant isopod",
+    "group": "marineInvertebrate",
+    "regions": [
+      "centralAmerica",
+      "oceania",
+      "asia",
+      "openOcean"
+    ],
+    "range": "Deep, cold seafloor of the western Atlantic and the Indo-Pacific",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 24.0,
+      "longitude": -88.0
+    },
+    "mapSpan": 40,
+    "tagline": "A woodlouse supersized for the deep-sea dark",
+    "lede": "Imagine a woodlouse up to 50 centimetres long, plodding over the cold mud of the deep sea. Giant isopods are the scavengers of the ocean floor, built to feast on whatever sinks from above and then wait, sometimes for years, for the next meal.",
+    "home": "Giant isopods live in the western Atlantic from the US state of Georgia to Brazil, including the Gulf of Mexico and the Caribbean, and across the Indo-Pacific. No species lives in both oceans, and none is known from the eastern Atlantic or eastern Pacific. The richest area found so far, with five species, is off eastern Australia.\n\nMost live between 170 and 2,140 metres down, where it is dark, cold and under great pressure, and the deepest record is 2,500 metres. Over 80% of Bathynomus giganteus are found between 365 and 730 metres. They prefer cold water; one species stops feeding below 3 °C, which may explain why they are missing from colder seas. They seem to favour muddy or clay bottoms and live alone.",
+    "anatomy": "Giant isopods are a classic case of deep-sea gigantism. 'Giant' species are usually 8 to 15 centimetres long as adults, while 'supergiants' are typically 17 to 50 centimetres. The best known, B. giganteus, is usually 19 to 36 centimetres, and the largest confirmed specimen was about 50 centimetres.\n\nThe flattened body is protected by a hard, chalky shell of overlapping plates, and like some woodlice it can roll into a ball to shield its soft underside. Its large compound eyes, each with nearly 4,000 facets, sit far apart on the head, and it has two pairs of antennae.\n\nOf its seven pairs of legs, the first is modified to pass food to four sets of jaws. Flat limbs under the abdomen work both as paddles for swimming and as gills.",
+    "life": "Giant isopods are important clean-up crews on the deep seabed, feeding mostly on dead whales, fish and squid. They may also catch slow-moving animals such as sea cucumbers and sponges, and perhaps even live fish. A study of the gut contents of 1,651 B. giganteus found fish were eaten most often, followed by squid, octopus, shrimps and squat lobsters.\n\nFood is scarce in the deep, so when they find a carcass they gorge until they can barely move. An enlarged stomach and the ability to slow their metabolism drastically help them through long famines, and they store reserves of fat in their bodies. They are also known to raid trawl nets and eat the fish caught inside.",
+    "family": "When ready to breed, a female grows a brood pouch from overlapping plates on her underside. The young do not go through a larval stage. Instead they leave the pouch as miniature adults, called mancas, lacking only their last pair of legs.\n\nYoung are most plentiful in autumn and winter, suggesting a seasonal peak in breeding. As of 2021, only two egg-carrying females had ever been caught, so mothers may hide in pits in the seabed and stop feeding while their eggs develop. Females of B. giganteus are thought to live about 7.7 years and males about 6.",
+    "remarkable": "Giant isopods can go astonishingly long without eating, and have survived more than 5 years without food in captivity. The most famous was 'No. 1' at Toba Aquarium in Japan, who became a celebrity by refusing every meal his keepers offered and lived for 5 years without eating until his death in 2014.",
+    "outlook": "Giant isopods have not been assessed for the IUCN Red List. Large numbers die as bycatch in deep-water fisheries, such as those for monkfish: 14 industrial fishing trips in 2001 caught 55,475 of them.\n\nEven when thrown back, between 50 and 100% are thought to die from the stress of capture, and most fisheries do not record the bycatch at all. Large amounts of plastic have been found in the stomachs of giant isopods from the Gulf of Mexico.",
+    "people": "The genus was first described in 1879 by the French zoologist Alphonse Milne-Edwards, after Alexander Agassiz collected a young male in the Gulf of Mexico. The find caused excitement among scientists and the public, because the idea that the deep ocean was lifeless had only recently been overturned. No female was found until 1891.\n\nToday giant isopods are kept in public aquariums and are sometimes eaten as a novelty, for example in ramen. In Vietnam they are sought after as a delicacy, although there is not much meat for their size.",
+    "relatives": "Giant isopods make up the genus Bathynomus and are related to the far smaller woodlice found on land. Species are told apart mainly by the number and shape of spines on the tail.\n\nBathynomus is thought to have existed for more than 160 million years, and fossils are known from Italy, Japan and Spain. Species off Australia, Mexico and India look almost identical despite their long separation, which is linked to the near-darkness of their habitat. Off Australia, deeper water holds fewer species but larger ones.",
+    "didYouKnow": "Giant isopods are a pale lilac or pinkish colour.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "8–50 cm"
+      },
+      {
+        "label": "Depth",
+        "value": "Mostly 170–2,140 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Scavenger"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 6–9 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which land animals are giant isopods related to?",
+        "choices": [
+          "Woodlice",
+          "Beetles",
+          "Scorpions",
+          "Centipedes, which share their many legs"
+        ],
+        "explanation": "Giant isopods are deep-sea relatives of the much smaller woodlice."
+      },
+      {
+        "prompt": "How long did Toba Aquarium's famous giant isopod go without eating?",
+        "choices": [
+          "About 5 years",
+          "About 5 weeks",
+          "About 6 months",
+          "About 20 years, a record for any animal"
+        ],
+        "explanation": "'No. 1' refused food for 5 years until his death in 2014."
+      },
+      {
+        "prompt": "What are newly emerged young giant isopods called?",
+        "choices": [
+          "Mancas",
+          "Nymphs",
+          "Tadpoles",
+          "Larvae that drift in the plankton"
+        ],
+        "explanation": "Mancas are miniature adults lacking only their last pair of legs."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to reduce bycatch and protect deep-sea habitats from destructive fishing."
+      },
+      {
+        "name": "Marine Conservation Society",
+        "url": "https://www.mcsuk.org",
+        "blurb": "Works for cleaner, better-protected seas and sustainable fishing."
+      }
+    ]
+  },
+  {
+    "id": "nile-crocodile",
+    "name": "Nile Crocodile",
+    "scientificName": "Crocodylus niloticus",
+    "wikipediaTitle": "Nile crocodile",
+    "group": "reptile",
+    "regions": [
+      "africa"
+    ],
+    "range": "Rivers, lakes and swamps of eastern, central and southern Africa and Madagascar",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 50,
+    "tagline": "Africa's biggest predator, and a devoted parent",
+    "lede": "Africa's largest predator lies almost invisible in the shallows, waiting hours, days or even weeks for the right moment to strike. Yet the Nile crocodile is also surprisingly social, and it guards its eggs and young with a care rare among reptiles.",
+    "home": "Nile crocodiles live in 26 African countries, from the Nile's tributaries in Sudan and Lake Nasser in Egypt south to Angola, Botswana's Okavango Delta and South Africa. They use almost any water: rivers, lakes, marshes, dams, brackish streams and estuaries, with savanna, semi-desert or forest alongside. They have salt glands and sometimes enter the sea; one was seen 11 km off South Africa's St Lucia Bay in 1917.\n\nLake Turkana in Kenya holds one of the largest undisturbed populations. An isolated population lives in western and southern Madagascar, where some have taken to living in caves. Crocodiles in West and Central Africa, once counted as Nile crocodiles, are now usually treated as a separate species.",
+    "anatomy": "Adult males are usually 3.5 to 5 metres long and weigh 225 to 750 kg, and females are around 30% smaller. The largest accurately measured male, shot in Tanzania, was 6.45 metres long and weighed over 1,000 kg. It is the second-largest living reptile, after the saltwater crocodile.\n\nAdults are dark bronze above with faded black spots and stripes, yellowish-green on the flanks, and have green eyes; youngsters are grey or brown with dark bands. The eyes, ears and nostrils sit on top of the head, so the rest of the body can stay hidden.\n\nIts 64 to 68 cone-shaped teeth are made for gripping, not tearing, and its bite has been measured at 22 kN. Yet the muscles that open the jaws are so weak that a person can hold them shut.",
+    "life": "Nile crocodiles live in a strict hierarchy based on size, and the biggest males get the best basking spots and first access to food. They eat mainly fish, reptiles, birds and mammals, taking almost all of it by ambush.\n\nLand animals are approached almost fully submerged, then seized in a sudden lunge, dragged under and drowned. Groups herd fish against the bank or form a line across a river to block migrating shoals, and they share big carcasses, twisting off chunks in a 'death roll'.\n\nFor their size they eat little; an adult's stomach is not much larger than a basketball, and many are found with empty stomachs. They spend long sunny hours basking with their jaws open. On land they can briefly reach 14 km/h, but they swim at up to 30 to 35 km/h.",
+    "family": "Nile crocodiles mature at 12 to 16 years. In the breeding season males bellow, slap their snouts on the water and blow water from their noses. The female digs a nest up to 0.5 metres deep in a sandy bank during the dry season and lays 25 to 80 eggs, then guards them through about 90 days of incubation, often in a trance-like state; males sometimes help defend the nest.\n\nWhen the young begin chirping inside their eggs, the mother digs them out, may gently crack the shells in her mouth, and carries the hatchlings to water. They are about 30 centimetres long and weigh about 70 grams.\n\nShe protects them for up to 2 years, but they must hunt for themselves. Only about 1% of hatchlings reach adulthood. Nile crocodiles may live 70 to 100 years.",
+    "remarkable": "A Nile crocodile's sex is set not by its genes but by the temperature of its nest.\n\nIf the eggs average below 31.7 °C or above 34.5 °C during the middle third of incubation, the hatchlings will be female. Males hatch only within that narrow window.",
+    "outlook": "The IUCN lists the Nile crocodile as Least Concern, with an estimated 250,000 to 500,000 in the wild. That recovery followed heavy losses: between the 1950s and 1980s, an estimated 3 million were killed for the leather trade.\n\nToday the main threats are habitat loss, pollution, hunting and entanglement in fishing nets. Pollution, apparently from the coal industry, has been linked to crocodile deaths along South Africa's Olifants River. Ranching for skins has become a sustainable industry in Zimbabwe and South Africa. As top predators, crocodiles also keep fish-eating catfish and lungfish in check.",
+    "people": "With the saltwater crocodile, the Nile crocodile is thought to kill hundreds of people each year, more than all other crocodilians combined, largely because it lives close to people across most of its range. One huge male in Burundi, nicknamed Gustave, is believed to have killed hundreds.\n\nThe Greek historian Herodotus saw it in Egypt's Lake Moeris and claimed that a bird he called the trochilus cleaned leeches from its mouth, though modern observers have seen only a few sandpipers doing anything similar. In Swahili it is called mamba. Its meat is widely considered unappetising, with a greasy texture and an unpleasant smell.",
+    "relatives": "The name Crocodylus comes from Greek words for 'pebble' and 'worm', a nod to its rough skin, and niloticus means 'from the Nile'. DNA studies show that it is more closely related to the American, Cuban, Morelet's and Orinoco crocodiles than to the West African crocodile it was once lumped with.\n\nFossils show the species appeared in Kenya roughly 7 to 5 million years ago, and extinct relatives in Tanzania and Kenya grew to about 7.5 metres.",
+    "didYouKnow": "To escape dry, cool spells in the south of their range, young crocodiles may dig tunnels, one of which measured 3.65 metres long.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "3.5–5 m (males)"
+      },
+      {
+        "label": "Weight",
+        "value": "225–750 kg (males)"
+      },
+      {
+        "label": "Clutch",
+        "value": "25–80 eggs"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Possibly 70–100 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What decides whether a Nile crocodile hatchling is male or female?",
+        "choices": [
+          "Nest temperature",
+          "The father's genes",
+          "The mother's age",
+          "How long the eggs stay buried before the rains"
+        ],
+        "explanation": "Only a narrow band of nest temperatures produces males."
+      },
+      {
+        "prompt": "Which crocodiles are Nile crocodiles most closely related to?",
+        "choices": [
+          "Those of the Americas",
+          "The West African crocodile",
+          "The dwarf crocodile",
+          "The saltwater crocodiles of Asia and Australia"
+        ],
+        "explanation": "DNA shows its closest relatives are the American, Cuban, Morelet's and Orinoco crocodiles."
+      },
+      {
+        "prompt": "Roughly how many Nile crocodiles were killed for leather between the 1950s and 1980s?",
+        "choices": [
+          "3 million",
+          "30,000",
+          "300,000",
+          "30 million, almost every crocodile in Africa"
+        ],
+        "explanation": "The population was severely depleted before laws and trade rules allowed a recovery."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Protects species and ecosystems in southern and eastern Africa."
+      }
+    ]
+  },
+  {
+    "id": "darwins-frog",
+    "name": "Darwin's Frog",
+    "scientificName": "Rhinoderma darwinii",
+    "wikipediaTitle": "Darwin's frog",
+    "group": "amphibian",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Temperate rainforests of southern Chile and neighbouring Argentina",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -40.0,
+      "longitude": -72.5
+    },
+    "mapSpan": 10,
+    "tagline": "The frog whose father raises tadpoles in his throat",
+    "lede": "Charles Darwin found this little pointy-nosed frog in Chile during the voyage of the Beagle, and it guards one of the strangest secrets in the amphibian world. The father carries his tadpoles inside his own vocal sac until they emerge as tiny froglets.",
+    "home": "Darwin's frog lives in Chile and Argentina, mainly in the Valdivian temperate rainforest. In Chile its range runs from Concepción Province south to Palena Province, and in Argentina it is found in Neuquén and Río Negro provinces. It lives in forest glades and woodland at up to about 1,100 metres, in bogs and beside slow-moving streams.\n\nIts ideal home seems to be a mix of grass, moss, fallen wood and young trees and bushes within mature native forest. Short vegetation holds moisture, keeps the soil cool and offers cover from predators. The frog lives in several protected areas, including Lanín and Nahuel Huapi national parks in Argentina, but its populations are fragmented and it is poor at spreading to new places.",
+    "anatomy": "This is a small frog, just 2.2 to 3.1 centimetres from snout to vent. Its snout stretches into a fleshy point, giving the head a triangular shape, and its limbs are long and slender. The front feet are not webbed, though some toes on the hind feet usually are. The upper side is brown or green, sometimes with faint V-shaped marks.\n\nFemales are usually brown and tend to sit on brown surfaces, while males are far more variable; brooding fathers are often partly or wholly green. The belly is black with big white blotches, in a pattern unique to each frog. Captive males have been seen to change from brown to green over a year, probably to match their green surroundings.",
+    "life": "Darwin's frogs eat small invertebrates, including those that feed on plants, those that feed on rotting matter, and a smaller share of predators. They seem to catch each kind roughly in proportion to how common it is, although spiders, the main predatory prey, are good at escaping.\n\nTheir habitats tend to be rich in plant-eating invertebrates, which may be what draws them there. They hunt by sitting still and waiting for food to come within reach. This 'sit and wait' style saves energy and also helps them avoid predators. To attract females, males call using irregular, complex sounds that scientists call non-linear vocal phenomena.",
+    "family": "Females lay about 4 to 10 eggs at a time in leaf litter, occasionally as many as 40. Around 3 to 4 weeks later, when the male notices the embryos starting to wriggle, he scoops the eggs into his mouth and moves them into his vocal sac, which can hold 5 to 8 young.\n\nThey hatch about 3 days later and feed on their yolk and on secretions from the sac's wall until they turn into frogs and hop out of his mouth. It was once thought that brooding fathers stop eating, but in 1888 G. B. Howes dissected one and found beetles and flies in its stomach. He concluded that this devoted father does not go hungry.",
+    "remarkable": "In captivity, male Darwin's frogs will adopt eggs that are not their own, standing guard over them and even fending off the real father before swallowing the young to brood.\n\nIn one experiment, a foster father took in 8 tadpoles and produced 2 frogs. Such fostering is very rare in amphibians. Scientists suggest that males may be practising their brooding skills, or showing off to future mates that they are proven parents.",
+    "outlook": "The IUCN has listed Darwin's frog as Endangered since 2018, up from Vulnerable. A survey from 2008 to 2012 found it at just 36 of 223 sites where it had been recorded, and its total range is estimated at only 264 square kilometres. Native forest is being cleared for pine and eucalyptus plantations, and suitable habitat shrank by up to 40% between 1970 and 2010.\n\nClimate change and more frequent wildfires add to the pressure. The frog is also vulnerable to chytridiomycosis, a deadly fungal disease of amphibians. Oddly, infected populations seem to breed faster, perhaps as frogs pour more energy into reproduction while they can. Captive colonies have been set up at Chile's National Zoo and at Concepción Zoo as a safeguard.",
+    "people": "Darwin collected the frog during his visit to Chile aboard HMS Beagle, and in 1841 the French zoologist André Marie Constant Duméril and his assistant Gabriel Bibron gave it its scientific name in his honour.\n\nIn 2017 the IUCN's Amphibian Specialist Group launched a conservation strategy shared between Chile and Argentina, aiming to fill key gaps in knowledge about the species by 2028. The frog has also been used to study why animals in more seasonal climates grow larger, and the results supported the idea that hibernation helps them conserve body mass.",
+    "relatives": "Darwin's frog, also called the southern Darwin's frog, belongs to the small family Rhinodermatidae. Its only close relative with the same brooding habit, the northern Darwin's frog, Rhinoderma rufum, has not been seen since 1981 and is presumed extinct.\n\nThat may leave this species as the only living frog in the world whose males raise their young inside the vocal sac.",
+    "didYouKnow": "Male Darwin's frogs have been heard calling for mates even while they are carrying tadpoles in their vocal sac.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "2.2–3.1 cm"
+      },
+      {
+        "label": "Eggs",
+        "value": "Usually 4–10"
+      },
+      {
+        "label": "Brood",
+        "value": "5–8 young per father"
+      },
+      {
+        "label": "Diet",
+        "value": "Small invertebrates"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does a male Darwin's frog raise his young?",
+        "choices": [
+          "In his vocal sac",
+          "In a pouch on his back",
+          "In a foam nest",
+          "In a pool he digs beside a slow stream"
+        ],
+        "explanation": "He moves the developing eggs into his vocal sac, where the tadpoles grow into froglets."
+      },
+      {
+        "prompt": "What did G. B. Howes find inside a brooding male in 1888?",
+        "choices": [
+          "Beetles and flies",
+          "Nothing at all",
+          "Dead tadpoles",
+          "Small stones swallowed to help him sink"
+        ],
+        "explanation": "It showed that brooding fathers keep eating."
+      },
+      {
+        "prompt": "What has happened to the northern Darwin's frog?",
+        "choices": [
+          "Presumed extinct since 1981",
+          "Found only in zoos",
+          "Thriving in Argentina",
+          "Merged with the southern species after DNA tests"
+        ],
+        "explanation": "It has not been seen since 1981."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps zoos and partners run conservation breeding for threatened amphibians."
+      },
+      {
+        "name": "Save The Frogs",
+        "url": "https://www.savethefrogs.com",
+        "blurb": "Works to protect amphibian populations and their habitats worldwide."
+      }
+    ]
+  },
+  {
+    "id": "northern-lapwing",
+    "name": "Northern Lapwing",
+    "scientificName": "Vanellus vanellus",
+    "wikipediaTitle": "Northern lapwing",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "range": "Farmland, short grassland and mudflats across temperate Europe and Asia",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": 40.0
+    },
+    "mapSpan": 70,
+    "tagline": "The crested 'peewit' that tumbles over spring fields",
+    "lede": "With a wispy crest, a glossy green back and a call that gave it the old name peewit, the northern lapwing is one of the great characters of open farmland. In spring the males hurl themselves around the sky in wild, tumbling display flights.",
+    "home": "The northern lapwing is common across the temperate belt of Europe and Siberia. It breeds on cultivated land and other open places with short vegetation. Over most of its range it is highly migratory, wintering as far south as North Africa, northern India, Nepal, Bhutan and parts of China, although lowland birds in the far west of Europe stay put all year.\n\nIt migrates mainly by day, often in large flocks, and in winter gathers in huge numbers on open ground, especially ploughed fields and mudflats. Storms occasionally carry lapwings across the Atlantic, and they have been seen in Canada in December 1927 and January 1966.",
+    "anatomy": "A lapwing is 28 to 33 centimetres long, with a wingspan of 67 to 87 centimetres, and weighs 128 to 330 grams. It has broad, rounded wings, a crest, and the shortest legs of any lapwing. From a distance it looks black and white, but close up the back shines with green.\n\nThe male has a long crest and a black crown, throat and breast, which stand out sharply against an otherwise white face. Females and young birds have shorter crests and less distinct head markings, but otherwise look much the same. In flight the big, rounded wings give the bird a floppy, irregular action.",
+    "life": "Lapwings feed mainly on insects and other small invertebrates. They often forage in mixed flocks with golden plovers and black-headed gulls. The gulls frequently steal food from the plovers but also give them some protection from predators.\n\nThey are noisy birds in the breeding season. The usual contact call is a loud, shrill 'pee-wit', while males in display give a wheezy 'pee-wit, wit wit, eeze wit' as they twist and dive. They also make squeaking and mewing sounds.",
+    "family": "Lapwings nest on the ground, laying 3 or 4 eggs in a simple scrape. Both the nest and the chicks are defended fiercely against any intruder, including horses and cattle that wander too close.\n\nEven so, many nests and chicks are lost to predators. By fitting chicks with radio tags and tracking them automatically, researchers have found that chicks are taken both by day and at night, and that mammals cause the most losses.",
+    "remarkable": "Lapwings have a clever trick for finding food: they beat the ground with one foot until earthworms rise to the surface, a technique known as worm charming. Like golden plovers, they also prefer to feed at night when the moon is out.",
+    "outlook": "In England and Wales numbers fell between 1987 and 1998, and since 2009 the lapwing has held red-list conservation status in the United Kingdom. Intensive farming is the main cause: rough grassland and mixed farms have been lost, and spring-sown crops replaced by autumn-sown ones, while heavier grazing may be to blame in the uplands.\n\nNatural England offers grants for uncropped fallow plots of at least 2 hectares in arable fields, ideally within 2 km of grazed grassland, managed without fertiliser or pesticides. Further east, breeding habitat has been lost in Armenia, and large numbers are shot along migration routes in the Middle East. The species is covered by the African-Eurasian Migratory Waterbird Agreement.",
+    "people": "The lapwing goes by many names, including peewit, pewit, tuit, tewit, green plover and pyewipe. 'Lapwing' may come from the lapping sound of its wings, from an Old English word meaning 'to totter' because of its wavering flight, or from its habit of luring predators away from the nest by trailing a wing as if broken. 'Plover's eggs' were an expensive delicacy in Victorian Europe and appear in Evelyn Waugh's Brideshead Revisited.\n\nIn the Netherlands, especially Friesland, people compete to find the year's first lapwing egg; searching is allowed between 1 March and 9 April, but taking the eggs is now forbidden. In 1990 the lapwing was declared the national bird of the Republic of Ireland, where it is called pilibín, 'little Philip'.",
+    "relatives": "Carl Linnaeus described the northern lapwing in 1758 as Tringa vanellus. It now sits with the other lapwings in the genus Vanellus, introduced by Mathurin Jacques Brisson in 1760.\n\nVanellus is Medieval Latin for this bird and comes from vannus, a winnowing fan. No subspecies are recognised.",
+    "didYouKnow": "Over the last century the first Dutch lapwing egg of the year has been found earlier and earlier, a shift put down to fertiliser use and climate change making grass grow sooner.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "28–33 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "67–87 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "128–330 g"
+      },
+      {
+        "label": "Clutch",
+        "value": "3–4 eggs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is worm charming?",
+        "choices": [
+          "Beating the ground with one foot",
+          "Singing to lure worms",
+          "Probing mud with a long bill",
+          "Splashing water over soil to flood worms out"
+        ],
+        "explanation": "The drumming brings earthworms up to the surface."
+      },
+      {
+        "prompt": "Which country made the lapwing its national bird?",
+        "choices": [
+          "Ireland",
+          "Netherlands",
+          "Wales",
+          "Armenia"
+        ],
+        "explanation": "It was declared the Republic of Ireland's national bird in 1990."
+      },
+      {
+        "prompt": "What does the genus name Vanellus come from?",
+        "choices": [
+          "A winnowing fan",
+          "A crested helmet",
+          "The bird's peewit call",
+          "An old word for a tottering drunk"
+        ],
+        "explanation": "It derives from vannus, Latin for a winnowing fan."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds, their habitats and migration routes."
+      },
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "Protects birds and nature in the UK, including farmland waders like the lapwing."
+      }
+    ]
+  },
+  {
+    "id": "asian-arowana",
+    "name": "Asian Arowana",
+    "scientificName": "Scleropages formosus",
+    "wikipediaTitle": "Asian arowana",
+    "group": "fish",
+    "regions": [
+      "asia"
+    ],
+    "range": "Blackwater rivers and swamp forests of Southeast Asia",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 1.0,
+      "longitude": 108.0
+    },
+    "mapSpan": 25,
+    "tagline": "The 'dragonfish' prized as a living lucky charm",
+    "lede": "Clad in huge metallic scales of red, gold or green, with two barbels on its chin, the Asian arowana looks like a dragon in miniature. That resemblance has made it one of the most sought-after aquarium fish in the world, and has brought it close to disaster in the wild.",
+    "home": "Asian arowanas live in Southeast Asia, in blackwater rivers and slow-moving water flowing through forested swamps and wetlands. Each natural colour variety comes from its own area. The green, the most common, lives in Indonesia, Vietnam, Myanmar, Thailand, Cambodia and Malaysia.\n\nThe red-tailed golden comes from northern Sumatra, the gold crossback from parts of Peninsular Malaysia, and the prized super red only from the upper Kapuas River and nearby lakes in the Indonesian part of Borneo. By day they shelter among the roots of Pandanus plants or other cover, coming out to feed at night. They are usually seen alone or in small groups.",
+    "anatomy": "Asian arowanas grow up to 90 centimetres long. They have long bodies, big, elongated pectoral fins, and dorsal and anal fins set far back near the large tail. The mouth slants upward with a very wide gape, and two barbels hang from the tip of the prominent lower jaw. Teeth grow on many bones of the mouth, even the tongue.\n\nThe scales are large and, in some varieties, metallic, with a mosaic of raised ribs. Green arowanas are dark green on the back with silvery or golden-green sides and a bright emerald patch behind the eye. Mature super reds have metallic red gill covers, scales and fins, from gold-tinged to deep red; in young fish, a darker back predicts a deeper red later on.",
+    "life": "Adult arowanas hunt other fish, while juveniles feed on insects. They take most of their food near the surface, cruising the upper part of the water column.\n\nThey are territorial towards their own kind, which is why aquarists keep them only with fish of similar size and only in very large tanks. Unlike most fish, they are slow to mature, reaching breeding age only after 3 or 4 years.",
+    "family": "Females produce only 30 to 100 eggs, but each is quite large. Once the eggs are fertilised, the father takes over: he broods both the eggs and the newly hatched young inside his mouth, an investment in a few well-protected offspring rather than thousands of tiny ones left to chance.",
+    "remarkable": "Arowanas are freshwater fish that cannot survive in the sea, so how did they reach so many islands?\n\nGenetic studies show that the ancestors of Asian arowanas split from those of Australian arowanas about 140 million years ago, before the supercontinent Gondwana had fully broken up. They are thought to have reached Asia riding on the Indian subcontinent or smaller drifting landmasses, and they have changed little since.",
+    "outlook": "The IUCN lists the Asian arowana as Endangered. It was placed on CITES Appendix I in 1975 and is one of only eight fish species there. Habitat destruction is probably a greater threat than collecting; the fish is now uncommon in the Malay Peninsula, where it was once widespread. The red and gold varieties, rarer and more in demand, are thought to be the most endangered.\n\nSince 1989, CITES has allowed trade in fish bred on farms for at least two generations. Each legal fish comes with certificates and an implanted microchip. The United States lists it under its Endangered Species Act, and keeping one is banned in Florida and New Mexico.",
+    "people": "In Chinese culture the arowana is a symbol of good luck and prosperity, thanks to its likeness to the Chinese dragon: the big metallic scales and double barbels match, and the large pectoral fins are said to make it look like 'a dragon in full flight'. In feng shui, its association with water and with the colours red and gold makes it a favourite for home aquariums, and some believe a fish can save its owner from death by dying in their place.\n\nIts popularity has soared since the late 1970s, and hobbyists may pay thousands of US dollars for one. There are over 150 registered farms, and the trade is worth over 200 million US dollars a year. According to author Emily Voigt, the fish has even been the cause of kidnappings and murder.",
+    "relatives": "The Asian arowana belongs to the bonytongues, family Osteoglossidae, and is also called the Asian bonytongue. It was first described in 1840 by Salomon Müller and Hermann Schlegel.\n\nIts closest relatives are the two Australian arowanas, which have 32 to 36 lateral line scales compared with its 21 to 26. A 2003 study proposed splitting it into four species by colour, but most researchers reject this and treat it as one species.",
+    "didYouKnow": "DNA markers have been found that reveal the sex and colour strain of an immature arowana, helping fish farmers manage their stock.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 90 cm"
+      },
+      {
+        "label": "Eggs",
+        "value": "30–100"
+      },
+      {
+        "label": "Maturity",
+        "value": "3–4 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish; insects when young"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which parent carries the eggs and young in its mouth?",
+        "choices": [
+          "The father",
+          "The mother",
+          "Both parents in turn",
+          "Neither; the eggs are hidden among Pandanus roots"
+        ],
+        "explanation": "The male broods both eggs and larvae in his mouth."
+      },
+      {
+        "prompt": "Why is the arowana seen as lucky in Chinese culture?",
+        "choices": [
+          "It looks like a dragon",
+          "It is always gold",
+          "It can live for centuries",
+          "Its scales were once used as coins across Southeast Asia"
+        ],
+        "explanation": "Its metallic scales, barbels and large fins recall the Chinese dragon."
+      },
+      {
+        "prompt": "About how long ago did Asian and Australian arowanas split?",
+        "choices": [
+          "140 million years ago",
+          "14 million years ago",
+          "1.4 million years ago",
+          "14,000 years ago, at the end of the Ice Age"
+        ],
+        "explanation": "The split happened in the Early Cretaceous, on the edge of Gondwana."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect the rivers and forests of Southeast Asia and the wildlife in them."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests, including swamp forests in Southeast Asia."
+      }
+    ]
+  },
+  {
+    "id": "orange-oakleaf",
+    "name": "Orange Oakleaf",
+    "scientificName": "Kallima inachus",
+    "wikipediaTitle": "Kallima inachus",
+    "group": "insect",
+    "regions": [
+      "asia"
+    ],
+    "range": "Wet forests of tropical Asia, from Pakistan and India to southern China, Taiwan and Japan",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 25.0,
+      "longitude": 95.0
+    },
+    "mapSpan": 40,
+    "tagline": "A butterfly that hides by becoming a dead leaf",
+    "lede": "Few insects pull off a disguise as complete as the orange oakleaf's. In flight it is a flash of deep blue and bright orange, but the moment it lands and closes its wings, it seems to turn into a dry, dead leaf.",
+    "home": "The orange oakleaf lives in tropical Asia, from Pakistan to Japan. It is found in India, Nepal, Bhutan, Bangladesh and Myanmar, and in southern China, Thailand, Laos, Vietnam and Taiwan.\n\nIn Pakistan it lives in the lower Himalaya around Islamabad and Abbottabad, and in India it flies in the Himalaya at low elevations as well as in central India and the Western and Eastern Ghats. It prefers dense forest with good rainfall, keeping to undergrowth and stream beds. It usually lives below about 1,800 metres, though it has been recorded up to 2,400 metres in very wet, forested mountains.\n\nIn the Kumaon Himalaya it uses tropical deciduous forest and subtropical evergreen forest, and a survey of Chongqing in China between 1998 and 2004 found it in moist broadleaved forest.",
+    "anatomy": "The wingspan is 85 to 110 millimetres. Seen from above, the forewing has a black tip, a broad orange band and a deep blue base, with two small white spots, while the hindwing is mostly blue with brownish patches near the edge. The undersides are a completely different story, patterned in shades of biscuit, buff, brown, yellow and black.\n\nFemales are usually larger than males, with a longer point to the forewing tip and a redder underside. The species comes in two seasonal forms: the wet-season form is smaller, with richer, darker colours.\n\nThe caterpillar is velvety black, covered in long yellowish hairs, with eleven reddish spines on each segment. The pupa is simple and light brownish, with a gently keeled thorax, a row of small conical points along the abdomen and slate-grey speckling.",
+    "life": "The orange oakleaf is a strong flier. Adults feed on tree sap and over-ripe fruit and also sip minerals from damp ground, a habit known as mud-puddling. Birds hunt them often.\n\nWhen threatened, the butterfly flies off erratically, then suddenly drops into the foliage and sits motionless with its wings shut, leaving its pursuer searching in vain. Its enemies include birds, ants, spiders, wasps and even bacteria. The caterpillars are not fussy, feeding on plants from many families, including nettles, knotweeds, peach and several kinds of Strobilanthes.",
+    "family": "In the Himalaya the butterfly has several broods a year and flies from April to October; in India it has been recorded on the wing until December. In Chongqing, China, one generation took about 50 days from egg to adult: about 6 days as an egg, 36 as a caterpillar moulting 5 or 6 times, and 10 as a pupa.\n\nIn the Emei mountains of China there are three generations a year. Most adults of the second generation enter a resting state called diapause from early July and wait out the winter as butterflies. In captive breeding, females have laid about 246 eggs on average, rising to about 280 when given extra nutrition.",
+    "remarkable": "The underside is one of the most convincing leaf disguises in nature and a classic example of camouflage.\n\nA narrow dark line runs from the forewing tip to the hindwing like a leaf's midrib, with thinner side lines for veins, and scattered dark dots mimic the fungus and lichen that grow on dead tropical leaves. The ground colour varies so much between individuals that no two 'leaves' look the same.",
+    "outlook": "The orange oakleaf has not been assessed by the IUCN. In India it is considered 'not rare', but in China it is regarded as rare, which has prompted a good deal of research there into breeding it in captivity.\n\nExperiments show that caterpillar survival drops at 30 °C, so breeding programmes keep temperatures below that.",
+    "people": "Its common names, orange oakleaf, Indian oakleaf and dead leaf, all come from its leafy disguise, and the butterfly is a favourite textbook example of camouflage. The naturalist Bingham described it in fine detail in 1905.\n\nMore recently, Chinese scientists have sequenced its mitochondrial DNA, which is 15,183 base pairs long, and used it to study how insects pause their development through winter.",
+    "relatives": "Kallima inachus belongs to the Nymphalidae, the large family of brush-footed butterflies. Its leaf-like masquerade is shared across its genus, Kallima, which is why the whole group is known as the oakleaf or dead leaf butterflies.",
+    "didYouKnow": "In captive breeding, the caterpillar stage has been shortened from about 36 days in the wild to as little as 16.8 days.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "85–110 mm"
+      },
+      {
+        "label": "Egg to adult",
+        "value": "About 50 days"
+      },
+      {
+        "label": "Altitude",
+        "value": "Mostly below 1,800 m"
+      },
+      {
+        "label": "Adult food",
+        "value": "Sap and ripe fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the orange oakleaf resemble with its wings closed?",
+        "choices": [
+          "A dry leaf",
+          "A wasp",
+          "A bird dropping",
+          "A bright orange flower with a blue centre"
+        ],
+        "explanation": "The underside mimics a dead leaf, complete with midrib, veins and spots."
+      },
+      {
+        "prompt": "What does the butterfly do when chased by a bird?",
+        "choices": [
+          "Drops into foliage and keeps still",
+          "Flashes eyespots and hisses",
+          "Releases a foul smell",
+          "Flies straight up above the forest canopy until the bird gives up"
+        ],
+        "explanation": "Once it settles with its wings shut, birds often cannot find it."
+      },
+      {
+        "prompt": "How does the wet-season form differ from the dry-season form?",
+        "choices": [
+          "It is smaller",
+          "It is larger",
+          "It has no orange band",
+          "It has no blue at all on the upper side of its wings"
+        ],
+        "explanation": "The wet-season form is smaller, with richer, darker colours."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects butterflies and other invertebrates through science and habitat work."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to conserve Asia's forests and the wildlife that depends on them."
+      }
+    ]
+  },
+  {
+    "id": "hyrax",
+    "name": "Hyrax",
+    "scientificName": "Procaviidae",
+    "wikipediaTitle": "Hyrax",
+    "group": "mammal",
+    "regions": [
+      "africa",
+      "asia"
+    ],
+    "range": "Rocky hills, cliffs and forests across Africa and into the Middle East",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 60,
+    "tagline": "A furry rock-dweller whose kin include elephants",
+    "lede": "Sunbathing in a huddle on a warm rock, a hyrax looks like an oversized pika or marmot. In fact these small, plump herbivores are cousins of elephants and manatees, and share a surprising number of features with them.",
+    "home": "Almost all hyraxes live in Africa; the exception is the rock hyrax, whose range extends into the Middle East. The two kinds of rock-dwelling hyrax live on rocky outcrops, from cliffs in Ethiopia to the isolated granite hills called koppies in southern Africa. Other species, the tree hyraxes, live in forest. Hyraxes do not dig their own dens.\n\nInstead they shelter in existing holes and crevices of all shapes and sizes. The soles of their feet are rubbery pads full of sweat glands, which may help them grip as they scamper up steep rock faces.",
+    "anatomy": "Modern hyraxes are 30 to 70 centimetres long and weigh 2 to 5 kg. They are well furred and rotund, with short tails and stumpy toes tipped with hoof-like nails, four on each front foot and three on each hind foot. The two upper incisors form small tusks that keep growing throughout life, while the four lower incisors are deeply grooved 'comb teeth'.\n\nHyraxes are poor at controlling their body temperature, so they make up for it by huddling together and basking in the sun. Their kidneys are very efficient at saving water, which helps in dry country. They store fat around the kidneys and reproductive organs rather than in the belly.",
+    "life": "Hyraxes are herbivores, but rather than cropping plants with their front teeth like most grazers and browsers, they slice leaves and grass with the molars at the sides of the jaw. They have complex stomachs with several chambers, where bacteria help break down tough plant material, although they digest fibre less well than hoofed animals do.\n\nTheir chewing looks like a cow chewing the cud, but they cannot bring food back up, and the motion may be a sign of tension when they feel threatened. They live in small family groups with a single male that fiercely defends the territory. Other males live alone on the edges of these territories.",
+    "family": "Females give birth to up to four young after a long pregnancy of seven to eight months, depending on the species. The young are weaned at 1 to 5 months old and reach maturity at 16 to 17 months.\n\nWhere there is plenty of space, a dominant male may have sole access to several groups of females, each with its own range, while outsider males mate only with younger females. Hyraxes live for 9 to 14 years.",
+    "remarkable": "Hyraxes use a shared latrine, and over generations their thick urine dries and builds up into massive middens that can be thousands of years old. The hardened material, called hyraceum, preserves a record of past environments that scientists can read, and it has also been used in traditional medicine and in perfumes.",
+    "outlook": "Hyraxes as a group have not been assessed as a whole by the IUCN. Their classification is still being worked out: in 1995 taxonomists recognised 11 or more species, but by 2013 they recognised only four, treating the rest as subspecies.\n\nOver 50 species and subspecies have been described, and many of these forms are considered highly endangered. New discoveries are still being made, such as a West African tree hyrax described only recently.",
+    "people": "The name hyrax comes from Ancient Greek for 'shrew-mouse', and in southern Africa they are called dassies. Hyraxes appear in the Hebrew Bible, where Leviticus says they are not kosher.\n\nEarly English translators had never seen one, so Bible versions call them coneys, rabbits, hares, damans or rock badgers. One proposed origin for the name 'Spain' is the Phoenician I-Shpania, meaning 'land of hyraxes', although the Carthaginians are thought to have used it for rabbits.",
+    "relatives": "Hyraxes form the order Hyracoidea, whose only living family is the Procaviidae. Together with elephants and the sea cows, they form a group called Paenungulata. Male hyraxes, like elephants and manatees, keep their testes inside the body, and their tusks grow from incisors, as an elephant's do.\n\nHyraxes are sometimes called the elephant's closest living relative, but the sea cows hold that title. The group was once far more varied. The extinct Titanohyrax may have weighed 600 to 1,300 kg, as much as a water buffalo, before the rise of antelopes and cattle pushed hyraxes into narrower niches.",
+    "didYouKnow": "The most recently identified hyrax, a tree hyrax living between the Volta and Niger rivers, makes a barking call unlike the shrieks of hyraxes elsewhere in Africa's forests.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "30–70 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2–5 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "9–14 years"
+      },
+      {
+        "label": "Gestation",
+        "value": "7–8 months"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which animals are hyraxes related to?",
+        "choices": [
+          "Elephants and manatees",
+          "Rats and mice",
+          "Rabbits and hares",
+          "Pikas, which share their rocky mountain homes"
+        ],
+        "explanation": "Hyraxes belong to the Paenungulata, with elephants and sea cows."
+      },
+      {
+        "prompt": "What is hyraceum?",
+        "choices": [
+          "Hardened hyrax urine",
+          "A hyrax's tusk",
+          "A fossil hyrax",
+          "A thick oil from glands on a hyrax's back"
+        ],
+        "explanation": "Urine middens build up over thousands of years and have been used in perfumes."
+      },
+      {
+        "prompt": "How do hyraxes make up for poor body temperature control?",
+        "choices": [
+          "Huddling and basking",
+          "Hibernating in burrows they dig",
+          "Sweating through their ears",
+          "Panting like dogs"
+        ],
+        "explanation": "They huddle together and sun themselves to stay warm."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Protects species and ecosystems in southern and eastern Africa."
+      }
+    ]
   }
 ]
