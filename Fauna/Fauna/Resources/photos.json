@@ -10,6 +10,39 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Orycteropus_afer_175359469.jpg",
   "width": 1328
  },
+ "Aardwolf": {
+  "credit": {
+   "author": "Stefan Haag",
+   "file": "Aardwolf,_Buffalo_Springs_National_Park,_Kenya_1_(cropped).jpg",
+   "license": "CC BY 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Aardwolf,_Buffalo_Springs_National_Park,_Kenya_1_(cropped).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Aardwolf%2C_Buffalo_Springs_National_Park%2C_Kenya_1_%28cropped%29.jpg",
+  "width": 1213
+ },
+ "Acherontia atropos": {
+  "credit": {
+   "author": "Didier Descouens",
+   "file": "Acherontia_atropos_MHNT_dos.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Acherontia_atropos_MHNT_dos.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/81/Acherontia_atropos_MHNT_dos.jpg",
+  "width": 5931
+ },
+ "Adélie penguin": {
+  "credit": {
+   "author": "Godot13",
+   "file": "Hope_Bay-2016-Trinity_Peninsula–Adélie_penguin_(Pygoscelis_adeliae)_04.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_(Pygoscelis_adeliae)_04.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Hope_Bay-2016-Trinity_Peninsula%E2%80%93Ad%C3%A9lie_penguin_%28Pygoscelis_adeliae%29_04.jpg",
+  "width": 2500
+ },
  "African bush elephant": {
   "credit": {
    "author": "Giles Laurent",
@@ -20,6 +53,116 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg",
   "width": 8213
+ },
+ "African wild dog": {
+  "credit": {
+   "author": "AfricanConservation",
+   "file": "African_Wild_Dog_at_Working_with_Wildlife.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:African_Wild_Dog_at_Working_with_Wildlife.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/75/African_Wild_Dog_at_Working_with_Wildlife.jpg",
+  "width": 2011
+ },
+ "Aldabra giant tortoise": {
+  "credit": {
+   "author": "Yotcmdr",
+   "file": "Giant_Tortoise.JPG",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Giant_Tortoise.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/16/Giant_Tortoise.JPG",
+  "width": 2608
+ },
+ "Alligator gar": {
+  "credit": {
+   "author": "Greg Hume",
+   "file": "Alligator_Gar_10.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Alligator_Gar_10.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/16/Alligator_Gar_10.JPG",
+  "width": 3274
+ },
+ "Alligator snapping turtle": {
+  "credit": {
+   "author": "Gary M. Stolz/U.S. Fish and Wildlife Service",
+   "file": "Alligator_snapping_turtle.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Alligator_snapping_turtle.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/88/Alligator_snapping_turtle.jpg",
+  "width": 917
+ },
+ "Amazon river dolphin": {
+  "credit": {
+   "author": "Oceancetaceen",
+   "file": "Amazonas-Flussdelfin_Orinoko3.jpg",
+   "license": "CC BY-SA 2.0 de",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Amazonas-Flussdelfin_Orinoko3.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/99/Amazonas-Flussdelfin_Orinoko3.jpg",
+  "width": 2608
+ },
+ "American alligator": {
+  "credit": {
+   "author": "User:Postdlf",
+   "file": "American_Alligator.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:American_Alligator.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/03/American_Alligator.jpg",
+  "width": 1944
+ },
+ "American bison": {
+  "credit": {
+   "author": "Jack Dykinga",
+   "file": "American_bison_k5680-1.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/8d/American_bison_k5680-1.jpg",
+  "width": 2700
+ },
+ "American bullfrog": {
+  "credit": {
+   "author": "Carl D. Howe",
+   "file": "North-American-bullfrog1.jpg",
+   "license": "CC BY-SA 2.5",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:North-American-bullfrog1.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/aa/North-American-bullfrog1.jpg",
+  "width": 2287
+ },
+ "American eel": {
+  "credit": {
+   "author": "Clinton & Charles Robertson from RAF Lakenheath, UK & San Marcos, TX, USA & UK",
+   "file": "American_eel_(Anguilla_rostrata)_(4015394951).jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:American_eel_(Anguilla_rostrata)_(4015394951).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/American_eel_%28Anguilla_rostrata%29_%284015394951%29.jpg",
+  "width": 800
+ },
+ "American flamingo": {
+  "credit": {
+   "author": "JeffreyGammon",
+   "file": "American_Flamingo_JG.jpg",
+   "license": "CC BY 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:American_Flamingo_JG.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/21/American_Flamingo_JG.jpg",
+  "width": 3849
  },
  "American lobster": {
   "credit": {
@@ -43,6 +186,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Newfoundland_Pine_Marten.jpg",
   "width": 960
  },
+ "American paddlefish": {
+  "credit": {
+   "author": "U.S. Fish and Wildlife Service",
+   "file": "Paddlefish-USFWS-Fish-and-Aquatic-Conservation-2160x1440.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Paddlefish-USFWS-Fish-and-Aquatic-Conservation-2160x1440.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/67/Paddlefish-USFWS-Fish-and-Aquatic-Conservation-2160x1440.jpg",
+  "width": 2160
+ },
  "American pika": {
   "credit": {
    "author": "sevenstar",
@@ -53,6 +207,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ochotona_princeps_rockies.JPG",
   "width": 1313
+ },
+ "American white pelican": {
+  "credit": {
+   "author": "Manjith Kainickara",
+   "file": "American_White_Pelican.jpg",
+   "license": "CC BY-SA 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:American_White_Pelican.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/32/American_White_Pelican.jpg",
+  "width": 2210
  },
  "Anax junius": {
   "credit": {
@@ -65,6 +230,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Common_Green_Darner_Anax_junius_JG.jpg",
   "width": 1923
  },
+ "Andean cock-of-the-rock": {
+  "credit": {
+   "author": "Charles J. Sharp",
+   "file": "Andean_cock-of-the-rock_(Rupicola_peruvianus_sanguinolentus)_male_Antioquia.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Andean_cock-of-the-rock_(Rupicola_peruvianus_sanguinolentus)_male_Antioquia.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/72/Andean_cock-of-the-rock_%28Rupicola_peruvianus_sanguinolentus%29_male_Antioquia.jpg",
+  "width": 3092
+ },
  "Andean condor": {
   "credit": {
    "author": "Greg Hume",
@@ -76,6 +252,39 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AndeanCondorMale.jpg",
   "width": 3137
  },
+ "Antarctic krill": {
+  "credit": {
+   "author": "Krill666.jpg: Uwe Kils I am willing to give the image in 1700 resolution to Wiki",
+   "file": "Antarctic_krill_(Euphausia_superba).jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Antarctic_krill_(Euphausia_superba).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Antarctic_krill_%28Euphausia_superba%29.jpg",
+  "width": 1869
+ },
+ "Antheraea polyphemus": {
+  "credit": {
+   "author": "[User:Kadoka1]Template:Stephen Lody Photography",
+   "file": "Polyphemus_Moth_Antheraea_polyphemus.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Polyphemus_Moth_Antheraea_polyphemus.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Polyphemus_Moth_Antheraea_polyphemus.JPG",
+  "width": 4000
+ },
+ "Arapaima gigas": {
+  "credit": {
+   "author": "Shizhao",
+   "file": "Arapaima_gigas_at_Beijing_aquarium.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Arapaima_gigas_at_Beijing_aquarium.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Arapaima_gigas_at_Beijing_aquarium.JPG",
+  "width": 2853
+ },
  "Arctic fox": {
   "credit": {
    "author": "Jonatan Pie (unsplash.com/@r3dmax)",
@@ -86,6 +295,28 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg",
   "width": 3115
+ },
+ "Arctic tern": {
+  "credit": {
+   "author": "Charles J. Sharp",
+   "file": "Arctic_tern_(Sterna_paradisaea)_Flatey_3.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Arctic_tern_(Sterna_paradisaea)_Flatey_3.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Arctic_tern_%28Sterna_paradisaea%29_Flatey_3.jpg",
+  "width": 5830
+ },
+ "Atlantic bluefin tuna": {
+  "credit": {
+   "author": "Unknown authorUnknown author",
+   "file": "Bluefin-big.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Bluefin-big.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bluefin-big.jpg",
+  "width": 1728
  },
  "Atlantic horseshoe crab": {
   "credit": {
@@ -109,6 +340,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/c/c4/Puffin_%28Fratercula_arctica%29.jpg",
   "width": 3317
  },
+ "Atlantic salmon": {
+  "credit": {
+   "author": "User:Wolfgang Striewski",
+   "file": "Wst_atlantischer_lachs_stoer_001.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Wst_atlantischer_lachs_stoer_001.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/82/Wst_atlantischer_lachs_stoer_001.jpg",
+  "width": 850
+ },
+ "Atlantic wolffish": {
+  "credit": {
+   "author": "Bjørn Christian Tørrissen",
+   "file": "Anarhichas-lupus-Atlanterhavsparken.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Anarhichas-lupus-Atlanterhavsparken.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/90/Anarhichas-lupus-Atlanterhavsparken.jpg",
+  "width": 5472
+ },
  "Atlas moth": {
   "credit": {
    "author": "Quartl",
@@ -119,6 +372,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/6/6d/Attacus_atlas_qtl3.jpg",
   "width": 2257
+ },
+ "Atta (ant)": {
+  "credit": {
+   "author": "Christian R. Linder",
+   "file": "Attacolombica01.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Attacolombica01.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Attacolombica01.jpg",
+  "width": 5472
  },
  "Axolotl": {
   "credit": {
@@ -153,6 +417,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
   "width": 4007
  },
+ "Bar-tailed godwit": {
+  "credit": {
+   "author": "Andreas Trepte",
+   "file": "Bar-tailed_Godwit.jpg",
+   "license": "CC BY-SA 2.5",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Bar-tailed_Godwit.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Bar-tailed_Godwit.jpg",
+  "width": 2279
+ },
+ "Bat-eared fox": {
+  "credit": {
+   "author": "Yathin S Krishnappa",
+   "file": "Otocyon_megalotis_-_Etosha_2014.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Otocyon_megalotis_-_Etosha_2014.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/84/Otocyon_megalotis_-_Etosha_2014.jpg",
+  "width": 3000
+ },
  "Beluga whale": {
   "credit": {
    "author": "Javier Yaya Tur / CIUDAD DE LAS ARTES Y LAS CIENCIAS from Valencia, España",
@@ -163,6 +449,39 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Oceanogr%C3%A0fic_29102004.jpg",
   "width": 1925
+ },
+ "Bighorn sheep": {
+  "credit": {
+   "author": "Jwanamaker",
+   "file": "New_Mexico_Bighorn_Sheep.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:New_Mexico_Bighorn_Sheep.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/97/New_Mexico_Bighorn_Sheep.JPG",
+  "width": 5184
+ },
+ "Binturong": {
+  "credit": {
+   "author": "Tassilo Rau",
+   "file": "Binturong_in_Overloon.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Binturong_in_Overloon.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Binturong_in_Overloon.jpg",
+  "width": 800
+ },
+ "Black mamba": {
+  "credit": {
+   "author": "TimVickers",
+   "file": "Dendroaspis_polylepis_(14).jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Dendroaspis_polylepis_(14).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/76/Dendroaspis_polylepis_%2814%29.jpg",
+  "width": 2475
  },
  "Black-footed ferret": {
   "credit": {
@@ -207,6 +526,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/4/49/Bombus_affinis%2C_F%2C_side%2C_sky_meadows%2C_virginia_2014-09-22-18.05.02_ZS_PMax_%2815169110488%29.jpg",
   "width": 5488
+ },
+ "Bombyx mori": {
+  "credit": {
+   "author": "Oakenking at en.wikipedia",
+   "file": "Pairedmoths.jpg",
+   "license": "CC BY-SA 2.5",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Pairedmoths.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/47/Pairedmoths.jpg",
+  "width": 540
  },
  "Bornean orangutan": {
   "credit": {
@@ -274,6 +604,61 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/9/92/Male_cheetah_facing_left_in_South_Africa.jpg",
   "width": 4181
  },
+ "Chinese alligator": {
+  "credit": {
+   "author": "Greg Hume",
+   "file": "ChineseAlligator15.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:ChineseAlligator15.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/cb/ChineseAlligator15.JPG",
+  "width": 3100
+ },
+ "Chinese giant salamander": {
+  "credit": {
+   "author": "Petr Hamerník",
+   "file": "Velemlok_čínský_zoo_praha_1.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg",
+  "width": 5172
+ },
+ "Chironex fleckeri": {
+  "credit": {
+   "author": "Avispa marina.jpg: Guido Gautsch, Toyota, Japan derivative work: Mithril (talk)",
+   "file": "Avispa_marina_cropped.png",
+   "license": "CC BY-SA 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Avispa_marina_cropped.png"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Avispa_marina_cropped.png",
+  "width": 572
+ },
+ "Christmas Island red crab": {
+  "credit": {
+   "author": "DIAC images",
+   "file": "Christmas_Island_(5774532171).jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Christmas_Island_(5774532171).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/Christmas_Island_%285774532171%29.jpg",
+  "width": 4790
+ },
+ "Coccinella septempunctata": {
+  "credit": {
+   "author": "Photographer: Dominik Stodulski Graphic Processing: User:MathKnight",
+   "file": "7-Spotted-Ladybug-Coccinella-septempunctata-sq1.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:7-Spotted-Ladybug-Coccinella-septempunctata-sq1.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/08/7-Spotted-Ladybug-Coccinella-septempunctata-sq1.jpg",
+  "width": 1248
+ },
  "Coconut crab": {
   "credit": {
    "author": "Drew Avery",
@@ -329,6 +714,39 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/9/9c/2009-Coyote-Yosemite.jpg",
   "width": 565
  },
+ "Crown-of-thorns starfish": {
+  "credit": {
+   "author": "John Hepburn",
+   "file": "Acanthaster_planci_460468243_(closeup).jpg",
+   "license": "CC BY 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Acanthaster_planci_460468243_(closeup).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Acanthaster_planci_460468243_%28closeup%29.jpg",
+  "width": 1356
+ },
+ "Danaus chrysippus": {
+  "credit": {
+   "author": "Jeevan Jose, Kerala, India",
+   "file": "Danaus_chrysippus_Female_by_kadavoor.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Danaus_chrysippus_Female_by_kadavoor.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Danaus_chrysippus_Female_by_kadavoor.jpg",
+  "width": 2234
+ },
+ "Deinacrida heteracantha": {
+  "credit": {
+   "author": "Auckland Museum",
+   "file": "Deinacrida_heteracantha_(female)_Holotype_specimen_from_the_Auckland_Museum.jpg",
+   "license": "CC BY 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Deinacrida_heteracantha_(female)_Holotype_specimen_from_the_Auckland_Museum.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Deinacrida_heteracantha_%28female%29_Holotype_specimen_from_the_Auckland_Museum.jpg",
+  "width": 7087
+ },
  "Dhole": {
   "credit": {
    "author": "Davidvraju",
@@ -350,6 +768,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Dynastes_hercules_ecuatorianus_MHNT.jpg",
   "width": 5861
+ },
+ "Elkhorn coral": {
+  "credit": {
+   "author": "",
+   "file": "Elkhorn_coral.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Elkhorn_coral.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Elkhorn_coral.jpg",
+  "width": 700
  },
  "Emperor penguin": {
   "credit": {
@@ -417,6 +846,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Myresluger2.jpg",
   "width": 850
  },
+ "Giant squid": {
+  "credit": {
+   "author": "NTNU Vitenskapsmuseet",
+   "file": "Giant_squid_Ranheim.jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Giant_squid_Ranheim.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Giant_squid_Ranheim.jpg",
+  "width": 1161
+ },
  "Glaucus atlanticus": {
   "credit": {
    "author": "Taro Taylor from Sydney, Australia",
@@ -438,6 +878,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0b/%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D1%8F%D1%81%D1%8B%D1%82%D1%8C_%28Strix_nebulosa%2C_m%29%2C_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D0%B4.jpg",
   "width": 3304
+ },
+ "Greater blue-ringed octopus": {
+  "credit": {
+   "author": "Jens Petersen",
+   "file": "Hapalochlaena_lunulata2.JPG",
+   "license": "CC BY 2.5",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.5",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Hapalochlaena_lunulata2.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Hapalochlaena_lunulata2.JPG",
+  "width": 1118
  },
  "Greenland shark": {
   "credit": {
@@ -526,6 +977,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg",
   "width": 727
+ },
+ "Japanese giant salamander": {
+  "credit": {
+   "author": "Salamandra2021",
+   "file": "Japanese_giant_salamander_in_Tottori_Prefecture,_Japan.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Japanese_giant_salamander_in_Tottori_Prefecture,_Japan.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Japanese_giant_salamander_in_Tottori_Prefecture%2C_Japan.jpg",
+  "width": 4608
  },
  "Kea": {
   "credit": {
