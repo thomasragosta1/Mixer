@@ -44,6 +44,8 @@ for a in animals:
     if not ch: fail(f"{aid}: needs a charity")
     for c in ch:
         if not c.get("url", "").startswith("https://"): fail(f"{aid}: charity url must be https")
+    import re as _re
+    if _re.search(r"vaccin", json.dumps(a), _re.I): fail(f"{aid}: mentions vaccines; leave them out")
     words = sum(len(a.get(k, "").split()) for k in
                 ["lede", "home", "anatomy", "life", "family", "remarkable", "outlook", "people", "relatives"])
     if not 600 <= words <= 1200: fail(f"{aid}: article is {words} words; aim for 4-5 minutes (650-1100)")

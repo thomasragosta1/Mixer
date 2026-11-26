@@ -207,16 +207,16 @@
     "coordinate": { "latitude": 39.0, "longitude": -75.1 },
     "mapSpan": 22,
     "tagline": "A living fossil with blue blood that keeps us safe",
-    "lede": "Horseshoe crabs have crawled onto beaches to spawn for more than 400 million years, long before dinosaurs. Today, their bright blue blood is used to test every injectable medicine and vaccine for dangerous bacteria, so you have probably been protected by one.",
+    "lede": "Horseshoe crabs have crawled onto beaches to spawn for more than 400 million years, long before dinosaurs. Today, their bright blue blood is used to test injectable medicines for dangerous bacteria, so you have probably been protected by one.",
     "home": "Atlantic horseshoe crabs live along the Atlantic coast of North America, from Maine to the Gulf of Mexico and the Yucatán Peninsula. They spend most of the year on the sea floor in bays and coastal waters, and each spring and early summer they come ashore to spawn. Delaware Bay hosts the largest gathering in the world.",
     "anatomy": "Despite the name, horseshoe crabs are not crabs; they are more closely related to spiders and scorpions. They have a smooth, horseshoe-shaped shell, a long, pointed tail called a telson, used to steer and flip over, and ten legs underneath. They have ten eyes, including two large compound eyes on top of the shell, and light sensors on their tail. Their blood is blue because it contains copper-based hemocyanin.",
     "life": "Horseshoe crabs feed on clams, worms and other small animals on the seafloor, crushing food with the bristly bases of their legs, since they have no jaws. Young horseshoe crabs live in shallow water near beaches, molting many times as they grow, and move to deeper water as adults. They can live for 20 years or more.",
     "family": "On high tides around new and full moons in late spring, horseshoe crabs crowd onto beaches. Each female digs nests in the sand and lays clusters of tiny green eggs, about 4,000 at a time and up to 80,000 or more in a season, while males cling to her and fertilise them. The eggs hatch in a few weeks, and the young take about ten years to mature.",
-    "remarkable": "Horseshoe crab blood contains cells that clot in the presence of bacterial toxins. A test made from it, called LAL, is used to check vaccines, injections and medical implants for contamination.\n\nCrabs are caught, partly drained of blood and released, though some die afterwards.",
+    "remarkable": "Horseshoe crab blood contains cells that clot in the presence of bacterial toxins. A test made from it, called LAL, is used to check injections and medical implants for contamination.\n\nCrabs are caught, partly drained of blood and released, though some die afterwards.",
     "outlook": "The Atlantic horseshoe crab is vulnerable. It has been overharvested for bait and fertiliser and for the medical industry, and beaches where it spawns are being lost to coastal development and erosion. Its eggs are vital food for migrating shorebirds such as the red knot, which has declined as crab numbers fell. A synthetic alternative to LAL is now available and spreading.",
     "people": "In the 1800s and early 1900s, millions of horseshoe crabs were harvested and ground into fertiliser. Today, volunteers count spawning crabs on Delaware Bay beaches and 'Just flip 'em', turning over crabs stuck on their backs. Scientists studying the horseshoe crab's eyes won a Nobel Prize in 1967 for discoveries about how vision works.",
     "relatives": "There are four living horseshoe crab species: the Atlantic horseshoe crab and three species in Asia. They are the last survivors of a group that dates back more than 445 million years. Horseshoe crabs are chelicerates, the group that includes spiders, scorpions, ticks and mites, and their closest living relatives may be arachnids.",
-    "didYouKnow": "Horseshoe crab blood is blue and is used to test vaccines and injectable medicines for dangerous bacterial toxins.",
+    "didYouKnow": "Horseshoe crab blood is blue and is used to test injectable medicines for dangerous bacterial toxins.",
     "facts": [
       { "label": "Length", "value": "Up to ~60 cm with tail" },
       { "label": "Eyes", "value": "10" },
@@ -231,7 +231,7 @@
       },
       {
         "prompt": "Why is horseshoe crab blood valuable to medicine?",
-        "choices": ["It detects bacterial toxins in vaccines and injections", "It cures diseases", "It is used to make antibiotics", "It stops bleeding"],
+        "choices": ["It detects bacterial toxins in injections", "It cures diseases", "It is used to make antibiotics", "It stops bleeding"],
         "explanation": "The LAL test clots in the presence of bacterial toxins."
       },
       {
