@@ -8,13 +8,19 @@ path = root / "Fauna/Resources/animals.json"
 animals = json.loads(path.read_text())
 have = {a["id"] for a in animals}
 added = 0
-for f in sorted((root / "scripts/new_animals").glob("*.json")):
+# Only the batch files named on the command line, so drafts still being written stay out.
+files = [Path(a).resolve() for a in sys.argv[1:] if not a.startswith("--")]
+if not files: sys.exit("usage: add_animals.py BATCH.json [...] [--replace]")
+replace = "--replace" in sys.argv
+for f in files:
     entries = json.loads(f.read_text())
     if not isinstance(entries, list):  # e.g. draft-request.json
         continue
     for a in entries:
         if a["id"] not in have:
             animals.append(a); have.add(a["id"]); added += 1
+        elif replace:
+            animals[[x["id"] for x in animals].index(a["id"])] = a; added += 1
 # Extensions: {id: {field: "paragraph to append"}}. They have all been merged already, and the
 # repeat clean-up (scripts/dedupe) edited some of them afterwards, so re-applying them would
 # bring the repeats back. Only apply them with --extensions.
