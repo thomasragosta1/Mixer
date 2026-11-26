@@ -205,6 +205,20 @@ final class MoreUITests: XCTestCase {
         XCTAssertTrue(scroll(app, to: button(app, "Retake the quiz")), "and can be taken again")
     }
 
+    func testJournalCanShowOnlyQuizzesToTake() {
+        // In the demo, the puffin's quiz was never taken and the axolotl's was passed.
+        let app = launch(["-FaunaDemo", "-FaunaTab", "journal"])
+        let toTake = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Quiz to take'")).firstMatch
+        XCTAssertTrue(toTake.waitForExistence(timeout: 10), "the filter sits above the journal")
+        toTake.tap()
+        XCTAssertTrue(scroll(app, to: button(app, "Atlantic Puffin,")), "an untaken quiz stays listed")
+        for _ in 0..<8 { app.swipeUp() }
+        XCTAssertFalse(button(app, "Axolotl,").exists, "a passed quiz is hidden")
+        for _ in 0..<12 { app.swipeDown() }
+        app.buttons["All"].tap()
+        XCTAssertTrue(scroll(app, to: button(app, "Axolotl,")), "All shows it again")
+    }
+
     /// In the two-column journal, a tap at the very edge of a card must open that card's animal,
     /// never its neighbour's (wide photos used to spill over and take the tap).
     private func edgeTap(open target: String, neighbour: String, dx: CGFloat) {

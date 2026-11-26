@@ -128,6 +128,9 @@ final class AppStore {
 
     func hasPassedQuiz(_ animal: Animal) -> Bool { state.quizPassedIDs.contains(animal.id) }
 
+    /// Journal animals whose quiz hasn't been passed yet (never taken, or taken and missed).
+    var quizzesToTake: [JournalItem] { journalAnimals.filter { !hasPassedQuiz($0.animal) } }
+
     /// The ordinal of today's daily animal: "Day 12" means the twelfth day you've opened Fauna.
     var dayNumber: Int {
         Set(state.journal.filter { $0.source == .daily }.map { Self.dayKey(for: $0.date) }).count

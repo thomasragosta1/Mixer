@@ -4,6 +4,7 @@ import SwiftUI
 struct JournalView: View {
     @Environment(AppStore.self) private var store
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
+    @State private var filter = JournalFilter.all
 
     var body: some View {
         NavigationStack {
@@ -13,8 +14,20 @@ struct JournalView: View {
                     if !store.journalAnimals.isEmpty {
                         VStack(alignment: .leading, spacing: 14) {
                             Eyebrow("Animals you've met")
+                            Picker("Show", selection: $filter) {
+                                Text("All").tag(JournalFilter.all)
+                                Text("Quiz to take (\(store.quizzesToTake.count))").tag(JournalFilter.quizToTake)
+                            }
+                            .pickerStyle(.segmented)
+                            .accessibilityIdentifier("journal.filter")
+                            if filter == .quizToTake && store.quizzesToTake.isEmpty {
+                                Label("You've passed every quiz so far.", systemImage: "checkmark.seal.fill")
+                                    .font(.subheadline)
+                                    .foregroundStyle(.secondary)
+                                    .padding(.vertical, 8)
+                            }
                             LazyVGrid(columns: columns, spacing: 14) {
-                                ForEach(store.journalAnimals) { item in
+                                ForEach(filter == .all ? store.journalAnimals : store.quizzesToTake) { item in
                                     if item.animal.id == store.currentAnimal?.id {
                                         // Today's animal lives on Today, where its quiz unlocks the next one.
                                         Button {
@@ -95,6 +108,8 @@ struct JournalView: View {
         .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 26, style: .continuous))
     }
 }
+
+private enum JournalFilter: Hashable { case all, quizToTake }
 
 private struct StatTile: View {
     let value: String

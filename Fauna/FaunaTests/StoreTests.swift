@@ -283,6 +283,22 @@ final class StoreTests: XCTestCase {
         XCTAssertEqual(store.journalAnimals.map(\.animal.id), ["okapi", "axolotl"])
     }
 
+    func testQuizzesToTakeListsJournalAnimalsNotYetPassed() {
+        let store = AppStore(fileURL: nil)
+        var s = AppState()
+        s.journal = [
+            JournalEntry(animalID: "axolotl", date: day(-3), source: .daily),
+            JournalEntry(animalID: "okapi", date: day(-2), source: .daily),
+            JournalEntry(animalID: "platypus", date: day(-1), source: .daily),
+        ]
+        s.quizPassedIDs = ["okapi"]
+        store.state = s
+        XCTAssertEqual(store.quizzesToTake.map(\.animal.id), ["platypus", "axolotl"])
+        s.quizPassedIDs = ["okapi", "axolotl", "platypus"]
+        store.state = s
+        XCTAssertTrue(store.quizzesToTake.isEmpty)
+    }
+
     func testDayKeyIsZeroPadded() {
         let date = cal.date(from: DateComponents(year: 2026, month: 1, day: 5, hour: 12))!
         XCTAssertEqual(AppStore.dayKey(for: date), "2026-01-05")
