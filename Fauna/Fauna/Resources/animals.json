@@ -10278,5 +10278,633 @@
         "blurb": "Australia's national charity dedicated to protecting ocean wildlife."
       }
     ]
+  },
+  {
+    "id": "american-alligator",
+    "name": "American Alligator",
+    "scientificName": "Alligator mississippiensis",
+    "wikipediaTitle": "American alligator",
+    "group": "reptile",
+    "regions": [
+      "naEast"
+    ],
+    "range": "Freshwater wetlands of the southeastern United States, from North Carolina to Texas",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 30.5,
+      "longitude": -86.0
+    },
+    "mapSpan": 18,
+    "tagline": "The swamp giant whose bellow makes the water dance",
+    "lede": "A broad-snouted relic of the swamps, the American alligator roars so deeply that droplets leap from the water around it. Hunted to the edge a century ago, it has come back so strongly that it now turns up on golf courses across the American South.",
+    "home": "American alligators live in the freshwater wetlands of the southeastern United States, from the Lowcountry of South Carolina south to the Everglades and west to South Texas, with populations in North Carolina, Georgia, Florida, Louisiana, Alabama, Mississippi, Arkansas, Oklahoma and Texas. They use swamps, rivers, ponds, lakes, marshy prairies and canals, and females and juveniles also turn up in seasonal wetlands.\n\nThey can wander into brackish water, but the salt glands on their tongues don't work, so they tolerate salt far less well than the American crocodile. They cope with cold far better, though: no other crocodilian lives so far from the equator. When the surface freezes, an alligator pokes its snout up through the ice to breathe and can stay like that for several days.",
+    "anatomy": "Adult males are usually 3.4 to 4.8 metres long and can weigh up to 450 kg, while females reach 2.6 to 3.35 metres. Alligators are olive, brown, grey or black above, among the darkest of all crocodilians, with cream undersides.\n\nTheir U-shaped snout is broader than a crocodile's, and when the jaws close, the upper jaw covers the lower teeth, hiding the fourth tooth that stays visible in crocodiles. An alligator has 74 to 80 teeth and replaces them roughly once a year.\n\nIts bite was once the strongest ever measured in a laboratory, at up to 13,172 newtons, yet the muscles that open the jaws are so weak that a captured animal's mouth can be held shut with tape. In water it swims with side-to-side sweeps of its tail, helped by webbed hind feet, and it can shift its lungs within its body to dive, rise and roll.",
+    "life": "Alligators are apex predators that take fish, amphibians, reptiles, birds, mammals and even other alligators, while hatchlings mostly eat invertebrates. Their teeth grip but cannot slice, so they swallow stones and let a gizzard grind their food.\n\nThey have also been seen eating wild grapes, elderberries and citrus fruit, and groups have been watched herding fish towards a bank, taking turns at pushing and catching. They are noisy reptiles. Adults growl, hiss and cough at rivals, and both sexes bellow in deep, intermittent roars.\n\nIn the breeding season, males produce infrasound so powerful that the surface over their backs sprinkles upwards, a display known as the water dance. Bellowing choruses are often felt more than heard, and can be set off by tubas, sonic booms and large aircraft.",
+    "family": "Breeding begins in spring. The female builds a mound of plants, sticks, leaves and mud near the water and lays 20 to 50 white eggs about the size of a goose egg.\n\nThe rotting vegetation keeps them warm, and the temperature decides the hatchlings' sex: warmer nests on levees produce males, cooler marsh nests produce females. She guards the nest for the 65-day incubation, digs the young out when she hears them yelp, and carries them to the water in her mouth.\n\nHatchlings are striped with yellow bands for camouflage and stay in pods near their mother, who may protect them for a year or longer. Males mature at about 11.6 years and females at about 15.8, and alligators typically live to 50, possibly beyond 70.",
+    "remarkable": "Alligators are among the first reptiles recorded using tools. In Florida and Louisiana they have been seen balancing sticks on their heads in the nesting season, apparently luring birds that come looking for building material.\n\nA later experiment failed to show that they do this more often near bird colonies, so the purpose of the trick is still debated.",
+    "outlook": "From the 19th to the mid-20th century, alligators were hunted and poached so heavily that their survival was in doubt. Alabama banned hunting them in 1938, and in 1967 the species was listed as endangered.\n\nWith federal and state protection it recovered so well that it was taken off the endangered list in 1987, and it is now rated Least Concern. Trade in alligators is still regulated, partly so that skins of threatened crocodilians can't be passed off as alligator.",
+    "people": "The name comes from the Spanish el lagarto, 'the lizard'. Fatal attacks on people are rare but do happen as homes spread into low-lying land: Florida has documented 257 attacks since 1948, an estimated 23 of them deadly. Alligator farming is a growing industry in Georgia, Florida, Texas and Louisiana, which together produce some 45,000 hides a year.\n\nAlligator wrestling, first practised by the Miccosukee and Seminole peoples to catch food, became a tourist show from the late 1880s. The alligator is the state reptile of Florida, Louisiana and Mississippi, and the University of Florida's teams have been the Gators since 1911, after a printer put an alligator emblem on a batch of football pennants.",
+    "relatives": "The American alligator is one of only two living alligators; the other is the much smaller Chinese alligator. Together they form the subfamily Alligatorinae, the sister group of the caimans.\n\nIt was first described in 1801 by the French zoologist François Marie Daudin, and Georges Cuvier created the genus Alligator for it in 1807. Fossils identical to the modern species appear throughout the Pleistocene, though how far back its lineage stretches is still debated.",
+    "didYouKnow": "American alligators bellow in B flat, at a frequency of about 58 Hz.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Males 3.4–4.8 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 450 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Typically 50 years"
+      },
+      {
+        "label": "Clutch",
+        "value": "20–50 eggs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What decides whether an alligator hatchling is male or female?",
+        "choices": [
+          "The nest's temperature",
+          "The mother's age",
+          "Which egg is laid first",
+          "The amount of salt in the water around the nest site"
+        ],
+        "explanation": "Warmer nests produce males and cooler nests produce females."
+      },
+      {
+        "prompt": "How can you tell an alligator from a crocodile when its mouth is shut?",
+        "choices": [
+          "Its fourth tooth is hidden",
+          "Its snout is narrow and pointed",
+          "Its tail is shorter than its body",
+          "Its eyes are set on the sides of its head like a lizard's"
+        ],
+        "explanation": "In an alligator the upper jaw covers the lower teeth, hiding the fourth tooth."
+      },
+      {
+        "prompt": "Why was the alligator taken off the US endangered list in 1987?",
+        "choices": [
+          "It had fully recovered",
+          "It was reclassified as a lizard",
+          "Hunting had been made legal",
+          "Its range was found to extend far into Mexico and Cuba"
+        ],
+        "explanation": "Protection allowed numbers to recover so well that it was no longer considered endangered."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects wetlands and other natural lands across the United States and beyond."
+      }
+    ]
+  },
+  {
+    "id": "arapaima",
+    "name": "Arapaima",
+    "scientificName": "Arapaima gigas",
+    "wikipediaTitle": "Arapaima gigas",
+    "group": "fish",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Amazon and Tocantins–Araguaia river basins of South America",
+    "status": "DD",
+    "coordinate": {
+      "latitude": -4.0,
+      "longitude": -60.0
+    },
+    "mapSpan": 28,
+    "tagline": "A giant armoured fish that must gulp air to survive",
+    "lede": "Every 5 to 15 minutes, a shadow rises through a murky Amazon lake and gulps air with a loud smack. The arapaima is one of the largest freshwater fish on Earth, a living relic clad in armour-like scales, and its need to breathe at the surface very nearly cost it everything.",
+    "home": "The arapaima is native to the basins of the Amazon and the Tocantins–Araguaia rivers, and is known from Brazil and Peru, with small populations also recorded in Ecuador, Colombia and Guyana. Its life follows the flood.\n\nWhen the rivers rise, it moves into the flooded forest, where prey is plentiful for adults and young alike. As the water falls, it retreats to lower forest and then to lakes, where it may be cut off until the next high water. It has also spread far beyond its home.\n\nIntroduced to the Madre de Dios region of Peru for fish farming in 1976, it escaped when ponds overflowed and reached Bolivian rivers within about a decade. It has been taken to East Asia too, and is farmed in Thailand and Malaysia and found in Java and Sumatra.",
+    "anatomy": "Arapaima commonly reach 2 metres, with reports of exceptional fish up to 4.5 metres, and adults may weigh 200 kg. The body is streamlined, with the dorsal and anal fins set far back towards the tail. It is mostly grey to grey-green, but mature males develop red colouring over as much as 70% of the body, a sign of age that may help attract mates.\n\nIts scales are a natural armour, with a hard mineralised outer layer over a tough, flexible inner layer of collagen, and they help protect it from piranhas. Each is typically 5 to 7 centimetres across and can reach 10 centimetres. To breathe, it uses a modified swim bladder lined with lung-like tissue.\n\nYoung fish switch from water-breathing to air-breathing just 8 to 9 days after hatching, and their gills change shape as they do.",
+    "life": "The arapaima is a specialised carnivore that eats mainly fish, including several families of catfish, along with invertebrates. Young fish favour insects and fish larvae. It will also take birds, mammals, fruits and seeds from the water's surface, and its growth swings with the seasons as food comes and goes.\n\nIt grows remarkably fast, putting on about 10 kg in its first year. Growth slows once it matures at around 5 years old, when it is about 1.65 metres long. In the high-water season, lakes hold dense gatherings of arapaima, which find safety, food and partners there.",
+    "family": "Spawning happens in lakes and river channels between August and March, when the water is low. Pairs use their mouths to dig a nest in the bottom and lay small, separate batches of eggs, usually fewer than 500 at a time, which spreads the risk in an unpredictable environment. If breeding fails, a pair may try again.\n\nThe male does most of the parenting, guarding the young for three to six months. Both parents have a gland on the head that releases a secretion of around 400 substances, including hormones and proteins, which helps them communicate with their offspring and also nourishes the newly hatched fry. In captivity arapaima live 15 to 20 years; their lifespan in the wild is unknown.",
+    "remarkable": "The arapaima is caught in what has been called the biodiversity conservation paradox. In its native rivers it has declined and vanished from some areas, while escaped farm fish are spreading as an invader elsewhere.\n\nIn Bolivia its arrival has been linked to falling numbers of native fish, and the Beni River has few natural barriers to stop it moving further.",
+    "outlook": "Overfishing hit the arapaima hard, made worse because a fish that must surface regularly is easy to harpoon. Habitat loss and broken migration routes have left some populations isolated and inbred. The IUCN lists it as Data Deficient because too little is known about its numbers, and its trade has been controlled under CITES since 1975.\n\nThere is good news too. Brazil banned arapaima fishing from 1996 to 1999, then allowed it only in designated areas under careful management, and stocks there rose from 2,500 in 1999 to over 170,000 in 2017. Illegal fishing remains a problem, making up about 77% of the harvest in the lower Amazon.",
+    "people": "The fish goes by several names. In Brazil it is the pirarucu, from an Indigenous word for 'red fish', which may refer to the red flecks near its tail or the reddish-orange colour of its meat. In Bolivia and Peru it is called paiche.\n\nIt is an important traditional food for communities around the Amazon, and fishing and fish farming provide many jobs in the region. Its big, tough scales are commonly used as nail files, and young fish are sold into the ornamental trade in Europe, North America, South America and Asia.",
+    "relatives": "The arapaima belongs to an ancient group of carnivorous bony-tongued fishes. For a long time it was thought to be the only species in its genus, but others, such as Arapaima leptosoma and Arapaima agassizii, have since been recognised.\n\nBecause specimens are rare and several type specimens have been lost, how many species there really are remains unclear. A fossil of an arapaima, or something very like one, about 13 million years old has been found in the Villavieja Formation of Colombia.",
+    "didYouKnow": "In arapaima only the left ovary or left testis develops, sitting close to the swim bladder.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Commonly 2 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 200 kg"
+      },
+      {
+        "label": "Breathing",
+        "value": "Gulps air every 5–15 min"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why does an arapaima have to come to the surface?",
+        "choices": [
+          "To breathe air",
+          "To catch flying insects",
+          "To warm itself in the sun",
+          "To scrape parasites off its scales on floating plants"
+        ],
+        "explanation": "It relies on a lung-like swim bladder and must gulp air every 5 to 15 minutes."
+      },
+      {
+        "prompt": "Which parent mainly guards arapaima young?",
+        "choices": [
+          "The male",
+          "The female",
+          "Neither parent",
+          "Both equally, taking turns every few hours"
+        ],
+        "explanation": "Males provide most of the parental care, guarding the young for three to six months."
+      },
+      {
+        "prompt": "What does the Brazilian name 'pirarucu' mean?",
+        "choices": [
+          "Red fish",
+          "Giant fish",
+          "Air eater",
+          "Fish that no hunter catches twice"
+        ],
+        "explanation": "It comes from an Indigenous word for 'red fish'."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works across the Amazon to protect rivers, forests and freshwater wildlife."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places in the Amazon and around the world."
+      }
+    ]
+  },
+  {
+    "id": "domestic-silk-moth",
+    "name": "Domestic Silk Moth",
+    "scientificName": "Bombyx mori",
+    "wikipediaTitle": "Bombyx mori",
+    "group": "insect",
+    "regions": [
+      "asia"
+    ],
+    "range": "Domesticated in China and now reared worldwide; unknown in the wild",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 33.0,
+      "longitude": 112.0
+    },
+    "mapSpan": 40,
+    "tagline": "The flightless moth behind 5,000 years of silk",
+    "lede": "For at least 5,000 years, people have raised a small white moth for the thread its caterpillar spins. The domestic silk moth has been shaped so thoroughly by that partnership that it can no longer fly, has lost its colour, and exists nowhere in the wild.",
+    "home": "The domestic silk moth lives only in human care. It was domesticated from the wild silk moth, Bombyx mandarina, which ranges from northern India through northern China, Korea and Japan to the far east of Russia, and the domestic form derives from Chinese rather than Japanese or Korean stock.\n\nToday it is reared wherever silk is made, and breeds fall into three types by how often they produce a brood. Univoltine moths, mainly in and around Europe, have a single brood a year, and their eggs must pass the winter before hatching.\n\nBivoltine varieties of East Asia breed faster, helped by warmer climates. Polyvoltine moths, found only in the tropics, can run through up to eight generations a year, with eggs hatching in 9 to 12 days.",
+    "anatomy": "The adult moth has a wingspan of 3 to 5 centimetres and a white, hairy body. Females are 2 to 3 times bulkier than males because they carry so many eggs. Like all adult moths in its family, it has reduced mouthparts and never feeds.\n\nIts wings are too small for its heavy body, so although some moths can briefly lift off, none can manage sustained flight. The caterpillar, the silkworm, spins its cocoon from raw silk made in its salivary glands.\n\nA single cocoon is one thread between 300 and about 900 metres long, with fine, lustrous fibres about 10 micrometres across. The silkworm's genome, published in 2008, holds at least 3,000 genes found in no other genome, including sucrase genes apparently acquired from bacteria that let it cope with toxic mulberry leaves.",
+    "life": "Silkworms are fussy eaters, feeding almost entirely on mulberry leaves and preferring white mulberry, whose scent compound cis-jasmone attracts them. Researchers have since developed artificial diets, and some strains have been bred to eat other foods. A silkworm passes through five stages, moulting four times, and turns slightly yellow with tight skin just before it starts to spin.\n\nCenturies of breeding have made the domestic moth bigger, faster-growing and better at digesting its food, and tolerant of handling and crowding. It has also lost any fear of predators. Because males cannot fly off to find females, as wild Bombyx males do, people have to bring the sexes together.",
+    "family": "Eggs take about 14 days to hatch and are kept in incubators to help them along. After its last larval stage, the silkworm seals itself in its cocoon, where the final moult into a pupa takes place in safety. If it survives, the moth releases enzymes that dissolve a hole in the cocoon so it can climb out.\n\nThose enzymes break the long thread into short lengths, so in conventional silk farming the cocoons are put in boiling water before the moth can emerge. The heat kills the pupa and loosens the silk for unwinding. Damaged cocoons are still used as stuffing for duvets and jackets.",
+    "remarkable": "The silk moth is a working laboratory animal as well as a farm animal.\n\nScientists have engineered silkworms that make spider silk, used them to discover antibiotics such as lysocin E, and built a pavilion at the MIT Media Lab with the help of 6,500 of them. Hundreds of strains are kept, and over 400 inherited mutations have been described.",
+    "outlook": "As a domesticated insect, the silk moth has no conservation status and depends entirely on people. Its main threats are diseases in rearing houses: the fungus Beauveria bassiana, which strikes in cold, humid conditions; a virus that causes grasserie; pébrine, caused by a microsporidian parasite; and flacherie, which matters greatly in India.\n\nSilk farming has also drawn criticism from animal welfare campaigners. Mahatma Gandhi opposed it on the principle of ahimsa, not harming any living thing, and that idea led to Ahimsa silk, made from the cocoons of wild and semi-wild moths that have been allowed to emerge.",
+    "people": "The oldest archaeological evidence of silk moth domestication comes from the Yangshao culture of northern China. Carp were raised in ponds on early silk farms and fed silkworm larvae and droppings, so fish farming and silk farming went hand in hand. Silk making spread from China to India, Korea, Nepal and Japan, and then to the West.\n\nChina guarded the secret closely; one story tells of a princess who smuggled silkworms in her hair when she married a prince of Khotan. Silk is under 0.2% of world fibre production but enormously valuable, and it takes over 100 kg of mulberry leaves to make 1 kg of raw silk.\n\nChina produces 70% of it. The pupae are eaten as beondegi in Korea, roasted by street vendors in China and fried with chilli in Assam, and in a Vietnamese folk tale silkworms began as the soul of a young woman who wished to go on helping people.",
+    "relatives": "Bombyx mori belongs to the family Bombycidae. Its closest relative is the wild silk moth, Bombyx mandarina, with which it can still breed and sometimes produce hybrids; whether it can cross with other Bombyx species is unknown.\n\nOnly a few moths have been exploited for fabric, mainly Bombyx and the Antheraea moths of the family Saturniidae. Its genetics hold a quirk too: in females, paired chromosomes are held together during egg formation without any crossing over between them.",
+    "didYouKnow": "Teachers in the United States, China, South Africa, Iran and other countries raise silk moths in classrooms so pupils can watch an insect's whole life cycle.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "3–5 cm"
+      },
+      {
+        "label": "Cocoon thread",
+        "value": "300–900 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Mulberry leaves"
+      },
+      {
+        "label": "Domesticated",
+        "value": "Over 5,000 years ago"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why can't the domestic silk moth fly?",
+        "choices": [
+          "Its body is too heavy",
+          "It has no wings",
+          "Its wings are glued shut by silk",
+          "Breeders clip its wings so it cannot escape the farm"
+        ],
+        "explanation": "Its wings are too small to carry its big, heavy body in sustained flight."
+      },
+      {
+        "prompt": "What do silkworms almost exclusively eat?",
+        "choices": [
+          "Mulberry leaves",
+          "Cotton flowers",
+          "Oak bark",
+          "Fallen fruit and the sap of young trees"
+        ],
+        "explanation": "Silkworms feed almost entirely on mulberry, preferring white mulberry."
+      },
+      {
+        "prompt": "Which country produces most of the world's silk?",
+        "choices": [
+          "China",
+          "India",
+          "Japan",
+          "Italy, thanks to its centuries-old farms"
+        ],
+        "explanation": "China produces about 70% of the world's silk."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates and the habitats they need."
+      },
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Campaigns to protect bugs and the places they live."
+      }
+    ]
+  },
+  {
+    "id": "american-bison",
+    "name": "American Bison",
+    "scientificName": "Bison bison",
+    "wikipediaTitle": "American bison",
+    "group": "mammal",
+    "regions": [
+      "naWest"
+    ],
+    "range": "Prairies, plains and parklands of North America, mainly in parks and reserves",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 46.0,
+      "longitude": -106.0
+    },
+    "mapSpan": 35,
+    "tagline": "North America's heaviest land animal, back from the brink",
+    "lede": "Before the 1870s, perhaps 60 million bison thundered across North America. Within a few years almost all were gone, slaughtered in one of the most deliberate wildlife massacres in history. Today the shaggy giant is the national mammal of the United States, and its slow return is one of conservation's great comebacks.",
+    "home": "Around 11,000 years ago, bison roamed a vast belt of grassland from Alaska to the Gulf of Mexico and east almost to the Atlantic coast. Today they live in river valleys, prairies and plains, on open and semi-open grassland, sagebrush and scrub, and in hilly country where slopes are gentle.\n\nSome herds go much higher: Yellowstone bison are often found above 2,400 metres, and in Yukon they summer on alpine plateaus above the treeline. After many reintroductions, bison roam free again in parts of the United States, Canada and Mexico. Wood bison sent from Alberta have even been established in Yakutia, Russia, since 2006.",
+    "anatomy": "Bison are North America's heaviest land animals. Males can reach 3.5 metres from head to rump, plus a tail of up to 95 centimetres, and stand around 2 metres at the shoulder. The heaviest wild bull on record weighed 1,270 kg, while females are much smaller, typically 360 to 640 kg.\n\nThe head and forequarters are massive, topped by a hump, and both sexes carry short, curved horns up to 60 centimetres long. The dark brown winter coat is long and shaggy, replaced in summer by a lighter one.\n\nThere are two forms: the plains bison, smaller with a rounded hump, and the larger wood bison, with a taller, square hump. Calves are paler than adults for their first 2 months, and white bison, though extremely rare, do exist.",
+    "life": "Bison are mostly grazers, eating grasses and sedges and turning to sagebrush in hard times, and they drink or eat snow every day. Herds migrate, sometimes uphill and downhill with the seasons; in Wyoming's Hayden Valley they average about 3 km a day in summer.\n\nIn autumn they rub their horns on aromatic trees such as cedar and pine, perhaps to coat themselves in scents that deter insects, and they roll in dusty or muddy hollows called wallows, which boost plant and animal variety on the prairie. Their size protects them from most predators, but wolves hunt weak cows and calves, especially in late winter.\n\nWhen wolves attack in the open, cows with young calves lead the escape while bulls guard the rear. Bison look sluggish but can run at 65 to 70 km/h.",
+    "family": "Females and their young live in maternal herds, while young males leave at about three years old to live alone or in bachelor groups. During the summer rut, a dominant bull 'tends' a cow, following her, chasing off rivals and even blocking her view of other males with his body. Bulls take no part in raising calves.\n\nAfter a pregnancy of 285 days, a cow gives birth to a single reddish-brown calf, which nurses for at least 7 or 8 months and sometimes until the next calf arrives. Cows can breed at three years old. Calves born early in the season tend to grow larger and more dominant. Bison live around 15 years in the wild and up to 25 in captivity.",
+    "remarkable": "Bison may have helped draw the map of North America. Their seasonal trails, beaten hard by countless hoofs following ridges and watersheds, became paths for Indigenous hunters and warriors, then routes for explorers and pioneers.\n\nSeveral east–west buffalo traces, such as the one through the Cumberland Gap, were later followed by railways.",
+    "outlook": "By 1889 the species had been reduced to just 541 animals. Every modern plains bison descends from about 100 survivors in six herds, five kept by private ranchers and one by the New York Zoological Park, plus a wild herd of 25 in Yellowstone.\n\nCareful protection raised numbers from 325 in 1884 to about 500,000 in 2017, though most live in commercial herds and only about 15,000 are considered truly wild and free-ranging. Genetics are a lingering problem. Ranchers once crossed bison with cattle, and many herds still carry a little cattle DNA, so perhaps only 12,000 to 15,000 pure bison remain.",
+    "people": "For the Indigenous peoples of the Great Plains, the bison provided food, clothing, shelter and tools, with more than 150 uses for its parts, and it remains a sacred animal. Its destruction was pursued partly to break those nations, and the Crow chief Plenty Coups said that when the buffalo went away, the hearts of his people fell to the ground.\n\nToday the Inter Tribal Bison Council, formed in 1990, brings together 56 tribes restoring herds on tribal lands. In American English, 'buffalo' and 'bison' are both correct, though in British English buffalo means the African or water buffalo. The bison appears on the Manitoba flag and the famous buffalo nickel, and was named the US national mammal in 2016.",
+    "relatives": "There are two living bison, the American and the European. The American is slightly heavier, with shorter legs and a hairier body; it grazes more and browses less, and it fights by charging rather than locking horns.\n\nGenetic studies show that the closest living relatives of bison are yaks. Bison first appeared in Asia about 2.6 million years ago and reached North America from Siberia across Beringia between 195,000 and 135,000 years ago. The modern species is thought to have evolved from the extinct Bison antiquus.",
+    "didYouKnow": "Between 1980 and 1999, bison injured more than three times as many people in Yellowstone National Park as bears did.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "Up to 1,270 kg (wild)"
+      },
+      {
+        "label": "Shoulder height",
+        "value": "Around 2 m"
+      },
+      {
+        "label": "Speed",
+        "value": "65–70 km/h"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 15 years wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which animals are the bison's closest living relatives?",
+        "choices": [
+          "Yaks",
+          "Water buffalo",
+          "Moose",
+          "Musk oxen, which share their shaggy coats"
+        ],
+        "explanation": "Genetic evidence shows that yaks are the closest living relatives of bison."
+      },
+      {
+        "prompt": "How many American bison were left by 1889?",
+        "choices": [
+          "541",
+          "About 5,000",
+          "About 60,000",
+          "None in the wild, only a few in European zoos"
+        ],
+        "explanation": "Mass slaughter reduced the species to just 541 animals."
+      },
+      {
+        "prompt": "What did the bison become in 2016?",
+        "choices": [
+          "The US national mammal",
+          "An endangered species",
+          "Canada's national animal",
+          "The first animal protected by law in every US state"
+        ],
+        "explanation": "In 2016 the American bison was named the national mammal of the United States."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Has returned bison to more than a dozen nature preserves across the United States."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places across North America and beyond."
+      }
+    ]
+  },
+  {
+    "id": "crown-of-thorns-starfish",
+    "name": "Crown-of-thorns Starfish",
+    "scientificName": "Acanthaster planci",
+    "wikipediaTitle": "Crown-of-thorns starfish",
+    "group": "marineInvertebrate",
+    "regions": [
+      "oceania",
+      "asia",
+      "africa",
+      "centralAmerica"
+    ],
+    "range": "Coral reefs of the Indo-Pacific, from the Red Sea to Central America",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": 140.0
+    },
+    "mapSpan": 80,
+    "tagline": "A spiny, many-armed starfish that eats coral reefs",
+    "lede": "Bristling with venomous spines and up to 21 arms, the crown-of-thorns starfish crawls over coral and digests it alive. On a healthy reef it is just another resident, but in plague years its numbers explode and whole stretches of reef are stripped white.",
+    "home": "The crown-of-thorns starfish has a vast Indo-Pacific range. It lives wherever there are coral reefs or hard coral communities, from the Red Sea and the coast of East Africa across the Indian Ocean and the Pacific to the west coast of Central America, and is perhaps most common around Australia.\n\nYoung starfish settle on coralline algae and live hidden among dead coral rubble and other concealed surfaces. For their first two years they stay out of sight, coming out at night to feed, and solitary adults usually remain secretive too. Often the only clue to one is a fresh white feeding scar on nearby coral.",
+    "anatomy": "Adults are usually 25 to 35 centimetres across, making this one of the largest starfish in the world. Although it starts life with the five-fold symmetry typical of starfish, it ends up with many arms.\n\nIts colour depends on diet and region: purple, purple-blue, reddish grey, brown with red-tipped spines, or green with yellow tips. The upper surface is covered with stiff, very sharp spines 4 to 5 centimetres long, which give it its crown-like look.\n\nBeneath them the body is soft and membranous; taken out of water, it collapses and leaks fluid, recovering its shape if put back alive. Two rows of tube feet run to the tip of each arm, letting it grip and bend around the complex shapes of coral. Unusually, it has true image-forming vision.",
+    "life": "This starfish is a coral predator. It climbs onto a living colony, presses close to the surface, and pushes its stomach out through its mouth over an area almost as wide as itself. Digestive enzymes liquefy the coral tissue, which it absorbs, leaving a white skeleton that algae soon cover.\n\nOne starfish can consume up to 6 square metres of living coral a year. It prefers branching and table corals such as Acropora and avoids rounder corals such as Porites, and small crabs living among branching corals can fend it off.\n\nIts spines are a strong defence, and its tissues carry saponins, bitter, detergent-like chemicals. Fish that try juveniles often mouth them and spit them out. About 11 species have been reported eating healthy adults, including triggerfish, pufferfish, the painted shrimp and the giant Triton's trumpet snail.",
+    "family": "In early to midsummer, starfish gather high on the reef and release eggs and sperm together, apparently prompted by a spawning pheromone. Large females are astonishingly fertile: one 40 centimetres across can produce 47 to 53 million eggs. The larvae swim and filter-feed on tiny green algae for around 11 days or more before settling, usually on coralline algae, and turning into five-armed starfish less than 1 millimetre wide.\n\nThe young eat coralline algae at first, then switch to coral and grow fast, maturing at about 20 centimetres across by the end of their second year. In aquariums, most died of old age between 5 and 7.5 years.",
+    "remarkable": "At low densities, crown-of-thorns starfish may actually help reefs. Because they pick and choose what they eat, they stop fast-growing corals from swamping slower-growing kinds, and some ecologists think they play a real part in keeping reefs diverse. The trouble comes only when their numbers soar.",
+    "outlook": "The species itself is not at risk; the worry is the reefs it eats. Outbreaks, with densities of 140 to 1,000 starfish per hectare, were confirmed at 21 reef locations from the Red Sea to French Polynesia between the 1960s and 1980s.\n\nSuggested causes include overfishing of predators such as tritons and the humphead wrasse, nutrient run-off from land, and warmer seas helping larvae. After an outbreak, bare skeletons are overgrown by algae, branching corals may collapse into rubble, and fish that depend on coral lose out. People fight back with divers who inject the starfish with sodium bisulfate, bile salts or household vinegar.\n\nIn 2018 volunteer divers culled 47,000 of them on the Swains Reefs of the Great Barrier Reef, and a robot called COTSBot has been built to hunt them.",
+    "people": "The starfish is named after the crown of thorns in the Bible, which its spiny back resembles. Those spines cannot inject anything, but when one pierces skin it leaves saponin-laden tissue in the wound, causing sharp pain for hours, bleeding, nausea and swelling that can last a week or more.\n\nBrittle spine tips can snap off and may have to be removed surgically. Alarm about the starfish began when high numbers were found around Green Island, off Cairns, in the early 1960s. Some popular books claimed the whole Great Barrier Reef was dying, and fierce disagreements among scientists over the cause became known as the 'starfish wars'.",
+    "relatives": "Georg Eberhard Rumphius first described the species in 1705 from Ambon in Indonesia, and Linnaeus named it formally in 1767 in honour of Janus Plancus. Its family, Acanthasteridae, appears to be derived from the starfish family Oreasteridae, and its sibling species is Acanthaster brevispinus, a less specialised starfish of soft seabeds.\n\nGenetic work suggests that what was called A. planci is really a complex of four species: one each in the northern Indian Ocean, the southern Indian Ocean, the Pacific and the Red Sea. The Pacific form has been named Acanthaster solaris.",
+    "didYouKnow": "A polyp-like cnidarian of the genus Paracorynactis has been seen swallowing whole a crown-of-thorns starfish up to 34 centimetres across.",
+    "facts": [
+      {
+        "label": "Diameter",
+        "value": "25–35 cm"
+      },
+      {
+        "label": "Arms",
+        "value": "Up to 21"
+      },
+      {
+        "label": "Spines",
+        "value": "4–5 cm long"
+      },
+      {
+        "label": "Diet",
+        "value": "Hard coral polyps"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the crown-of-thorns starfish eat coral?",
+        "choices": [
+          "It pushes its stomach out over it",
+          "It bites off branches",
+          "It drills holes with its spines",
+          "It sucks out the polyps one at a time through hollow arms"
+        ],
+        "explanation": "It spreads its stomach over the coral and digests the living tissue."
+      },
+      {
+        "prompt": "What causes the pain of a crown-of-thorns spine wound?",
+        "choices": [
+          "Saponins left in the wound",
+          "Venom pumped through the spine",
+          "Stinging cells like a jellyfish's",
+          "Bacteria on the spines that multiply rapidly in the skin"
+        ],
+        "explanation": "The spine leaves saponin-laden tissue in the wound, causing sharp pain."
+      },
+      {
+        "prompt": "Which household liquid can be used to kill the starfish?",
+        "choices": [
+          "Vinegar",
+          "Bleach",
+          "Milk",
+          "Salty water left over from boiling pasta"
+        ],
+        "explanation": "Divers inject household vinegar, which causes the starfish to disintegrate."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Coral Reef Alliance",
+        "url": "https://www.coralreefalliance.org",
+        "blurb": "Works with communities to protect and restore coral reefs."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect coral reefs and oceans across the Indo-Pacific."
+      }
+    ]
+  },
+  {
+    "id": "black-mamba",
+    "name": "Black Mamba",
+    "scientificName": "Dendroaspis polylepis",
+    "wikipediaTitle": "Black mamba",
+    "group": "reptile",
+    "regions": [
+      "africa"
+    ],
+    "range": "Savannas, woodlands and rocky hills of sub-Saharan Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -10.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 50,
+    "tagline": "Africa's longest venomous snake, with an inky-black mouth",
+    "lede": "The black mamba is not black. It is grey, olive or brown, and earns its name from the inside of its mouth, which it flashes wide open when cornered. Long, fast and armed with venom that can kill within hours, it is the most feared snake in Africa, yet it would almost always rather flee.",
+    "home": "Black mambas live across a wide sweep of sub-Saharan Africa, from Burkina Faso and Cameroon east to Ethiopia, Eritrea and Somalia and south to South Africa, Namibia and Angola. Records from Senegal in the 1950s have never been confirmed. They favour fairly dry country such as light woodland, scrub, rocky outcrops and semi-arid savanna, but also live in moist savanna and lowland forest.\n\nThey are rarely found above 1,000 metres, though they have been recorded at 1,800 metres in Kenya. A mamba shelters in termite mounds, old burrows, rock crevices and tree cracks, and often keeps a permanent lair that it returns to again and again.",
+    "anatomy": "This is a long, slender snake with a coffin-shaped head and a slight brow ridge. Adults usually measure 2 to 3 metres, and some have reached 4.3 to 4.5 metres, making it the longest venomous snake in Africa and second in the world only to the king cobra. Despite that length it is light: one study of seven snakes found an average weight of 1.03 kg.\n\nIts colour ranges from olive and yellowish-brown to khaki and gunmetal, sometimes with a purplish sheen, over a greyish-white belly. Young snakes are paler and darken with age. The inside of the mouth is dark bluish-grey to nearly black. Its fangs, up to 6.5 millimetres long, sit at the front of the upper jaw.",
+    "life": "Black mambas are active by day and live both on the ground and in trees. In South Africa they bask from about 7 to 10 in the morning and again from 2 to 4 in the afternoon, often at the same spot.\n\nThey hunt mostly small warm-blooded animals such as birds, especially fledglings, rodents, squirrels and hyraxes, and occasionally other snakes. A mamba bites and lets go, waiting for its prey to be paralysed before swallowing it, and can digest a meal in 8 to 10 hours. They are skittish and seldom let people come closer than about 40 metres.\n\nA threatened mamba usually slips away into a hole or brush. Cornered, it gapes, spreads a narrow hood and hisses, and any sudden movement may trigger a burst of rapid strikes. Its speed is often exaggerated, but it can reach 16 km/h over short distances.",
+    "family": "The breeding season runs from September to February. Rival males wrestle, twining their bodies together and pushing with their necks to force each other down, a contest sometimes mistaken for courtship. Mating itself can last more than two hours.\n\nThe female lays a clutch of 6 to 17 long, oval eggs. Hatchlings are already 40 to 60 centimetres long and dangerous from the start, and they grow fast, reaching 2 metres within their first year. Black mambas have been recorded living 11 years and may live longer.",
+    "remarkable": "The black mamba's venom contains mambalgins, toxins that block certain pain-sensing channels in the nervous system and have a painkilling effect. Researchers are interested in them as possible new analgesics, so one of the world's most dreaded venoms might one day help relieve pain.",
+    "outlook": "The black mamba is rated Least Concern by the IUCN, thanks to its huge range and no documented decline.\n\nIts main natural enemies are birds of prey, especially brown snake eagles, which kill adults up to at least 2.7 metres long; tawny and martial eagles, mongooses, honey badgers and Nile crocodiles also take them. Mongooses and honey badgers have some resistance to its venom. Young mambas fall prey to Cape file snakes, southern ground hornbills, marsh owls and hooded vultures.",
+    "people": "The venom is mostly neurotoxic. Symptoms such as a metallic taste and drooping eyelids can appear within 10 minutes, a bite can cause collapse within 45 minutes, and without antivenom, death from respiratory failure usually follows in 7 to 15 hours. In a South African survey from 1957 to 1979, 21 of 75 people confirmed as bitten by black mambas died.\n\nAfter a mamba-specific antivenom was introduced in 1962, deaths fell sharply. Most bites happen in the breeding season, when the snakes are most irritable. The word mamba comes from the Zulu imamba. In Tanzania the Ngindo name ndemalunyayo means 'grass-cutter', and in some languages its name means 'dassie catcher', after the rock hyraxes it sometimes hunts.",
+    "relatives": "Albert Günther formally described the black mamba in 1864 from a specimen collected by John Kirk on David Livingstone's Second Zambezi expedition, still kept at the Natural History Museum in London. It belongs to the family Elapidae.\n\nIts genus name, Dendroaspis, means 'tree asp', and polylepis means 'many scales'. For 50 years it was lumped together with the eastern green mamba, until the two were split again in 1946. A 2016 genetic study showed they are each other's closest relatives, with Jameson's mamba more distant.",
+    "didYouKnow": "Unlike many venomous snakes, the black mamba usually causes little swelling at the bite, and the first sign may be just a tingling sensation.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Usually 2–3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "About 1–1.6 kg"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 16 km/h"
+      },
+      {
+        "label": "Clutch",
+        "value": "6–17 eggs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the black mamba get its name?",
+        "choices": [
+          "The colour of its mouth",
+          "Its black scales",
+          "Its dark eyes",
+          "The black termite mounds where it lays its eggs"
+        ],
+        "explanation": "The inside of its mouth is dark bluish-grey to nearly black; its body is not."
+      },
+      {
+        "prompt": "Which venomous snake is longer than the black mamba?",
+        "choices": [
+          "The king cobra",
+          "The green mamba",
+          "The puff adder",
+          "The reticulated python, which is also more venomous"
+        ],
+        "explanation": "The black mamba is the second-longest venomous snake, after the king cobra."
+      },
+      {
+        "prompt": "What does a black mamba usually do when a person approaches?",
+        "choices": [
+          "Slips away",
+          "Chases them",
+          "Plays dead",
+          "Climbs a tree and waits to drop onto the intruder"
+        ],
+        "explanation": "It seldom lets people closer than about 40 metres and usually retreats into cover."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Protects threatened species and ecosystems across southern and East Africa."
+      },
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      }
+    ]
+  },
+  {
+    "id": "andean-cock-of-the-rock",
+    "name": "Andean Cock-of-the-rock",
+    "scientificName": "Rupicola peruvianus",
+    "wikipediaTitle": "Andean cock-of-the-rock",
+    "group": "bird",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Andean cloud forests from Venezuela to Bolivia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -4.0,
+      "longitude": -76.0
+    },
+    "mapSpan": 25,
+    "tagline": "Peru's blazing national bird, a dancer of the cloud forest",
+    "lede": "Deep in the misty ravines of the Andes, flame-orange males with crests like feathered discs gather to show off before watching females. The Andean cock-of-the-rock stages one of the most extravagant performances in South America's forests, and it is the national bird of Peru.",
+    "home": "The Andean cock-of-the-rock lives in the cloud forests of the Andes, across a range of about 260,000 square kilometres in Venezuela, Colombia, Ecuador, Peru and Bolivia. It keeps mostly to ravines and forested streams in the mountains, between 500 and 2,400 metres up, usually in the lower and middle levels of the forest, though it climbs higher into fruiting trees and sometimes crosses clearings.\n\nIt has four subspecies. R. p. aequatorialis is the most widespread, from eastern Colombia and western Venezuela through eastern Ecuador to eastern Peru.\n\nThe nominate form lives only in the Andes of central Peru, sanguinolentus in western Colombia and north-western Ecuador, and saturatus in south-eastern Peru and western Bolivia. Despite its colours the bird is shy and easily missed, often glimpsed only as it bursts from cover or speeds down a valley.",
+    "anatomy": "This is a large perching bird, about 32 centimetres long and weighing around 265 grams, with the heaviest males reaching 300 grams. Males and females look very different. The male is brilliant scarlet or orange, with a large disc-shaped crest, a black tail and wings, and pale grey feathers over the shoulders.\n\nThe female is far drabber, a darker, browner bird with a smaller crest. The male's bill is yellowish, while the female's is dark with a small yellow tip. Eye colour varies with sex and subspecies, from red, orange, yellow or bluish-white in males to whitish, reddish or brown in females.",
+    "life": "Cocks-of-the-rock eat mainly fruit, especially from the laurel, custard-apple and coffee families, along with insects, and lizards and frogs have also been recorded in their diet. Oddly, they seem to pass over high-protein fruits in favour of others. They are among the many birds known to follow swarms of army ants.\n\nA foraging bird that is disturbed, or one in flight, gives a loud, questioning 'tank?'. Their showy habits draw attention, and predators are attracted to the display grounds by the noisy, conspicuous males. Hawk-eagles, forest-falcons, hawks and owls hunt them, as do jaguars, mountain lions, ocelots and boa constrictors.",
+    "family": "Males are polygamous and play no part in nesting. Instead they gather at communal display grounds called leks, where they pair off for 'confrontation displays', facing each other while bowing, jumping and flapping their wings, snapping their bills and giving squawks and grunts.\n\nWhen a female approaches, the show becomes a frenzy of colour and very strange sounds. The males are easily disturbed, so all this is hard to watch. Breeding times vary: in Colombia it usually runs from February to July, in Ecuador from July to February. The female does the rest alone.\n\nShe builds a cup-shaped nest of mud, plant matter and her own saliva, plastered to a rock face or cave entrance in a forest ravine. She usually lays two white eggs and incubates them for about 25 to 28 days, then raises the chicks by herself.",
+    "remarkable": "The display grounds change the forest around them. Seeds swallowed by the birds are dropped around leks and nests, where they sprout and grow, so the variety of these plants rises there and falls in the surrounding forest.\n\nEven abandoned nests get a second life: a white-capped dipper was found laying its eggs in an old cock-of-the-rock nest.",
+    "outlook": "No one knows how many Andean cocks-of-the-rock there are, or whether their numbers are rising or falling. The species is patchily distributed and its forest is being destroyed, but its range is large enough that the IUCN rates it as Least Concern.",
+    "people": "The Andean cock-of-the-rock is the national bird of Peru, and in Quechua it is called tunki. Both young and adult birds have occasionally been kept as pets.\n\nIts scientific name describes where it nests. Rupicola comes from the Latin rupes, 'rock' or 'cliff', and cola, 'inhabiting', after its habit of nesting on rock walls, while peruvianus means 'of Peru'. Older books spell it peruviana, but because Latin names ending in -cola were masculine or neuter, peruvianus is the form now used.",
+    "relatives": "The species was first described by the English ornithologist John Latham in 1790. It is one of only two species in the genus Rupicola; the other is the Guianan cock-of-the-rock, its closest relative.\n\nBoth belong to the Cotingidae, the cotingas, a family of tropical forest birds that mostly eat fruit. Cotingas are suboscines, a branch of the perching birds separate from the songbirds proper.",
+    "didYouKnow": "One study found that males display at the same level of light in the morning as in the afternoon, suggesting brightness sets their schedule.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 32 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 265 g"
+      },
+      {
+        "label": "Altitude",
+        "value": "500–2,400 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Fruit and insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Who builds the Andean cock-of-the-rock's nest?",
+        "choices": [
+          "The female alone",
+          "The male alone",
+          "Both parents together",
+          "Several males working as a team at the lek"
+        ],
+        "explanation": "The female builds the nest, incubates the eggs and raises the young on her own."
+      },
+      {
+        "prompt": "Which country has the Andean cock-of-the-rock as its national bird?",
+        "choices": [
+          "Peru",
+          "Bolivia",
+          "Colombia",
+          "Venezuela, where it appears on banknotes"
+        ],
+        "explanation": "It is the national bird of Peru, where it is called tunki in Quechua."
+      },
+      {
+        "prompt": "What does the genus name Rupicola mean?",
+        "choices": [
+          "Rock-dweller",
+          "Red crest",
+          "Fruit eater",
+          "Bird that dances at sunrise in the mist"
+        ],
+        "explanation": "It comes from Latin words meaning 'rock' and 'inhabiting', after its rock-wall nests."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests, including in the Andes."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership of conservation groups protecting birds and their habitats."
+      }
+    ]
   }
 ]
