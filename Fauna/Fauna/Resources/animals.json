@@ -17130,5 +17130,898 @@
         "blurb": "Works to safeguard sharks, skates and rays through science, education and policy."
       }
     ]
+  },
+  {
+    "id": "fennec-fox",
+    "name": "Fennec Fox",
+    "scientificName": "Vulpes zerda",
+    "wikipediaTitle": "Fennec fox",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Sandy deserts of the Sahara, from Morocco and Mauritania to Sudan and Sinai",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 24.0,
+      "longitude": 10.0
+    },
+    "mapSpan": 40,
+    "tagline": "The smallest fox, with the biggest ears for its size",
+    "lede": "The fennec fox is the smallest of all foxes, a sand-coloured scrap of a canid with ears so large they look borrowed. Those ears are working tools: they shed heat under the Saharan sun and pick up the faint sounds of prey moving beneath the sand.",
+    "home": "Fennecs live throughout the Sahara, from Morocco and Mauritania in the west to northern Sudan, Egypt and the Sinai Peninsula in the east. They favour small sand dunes and wide, treeless stretches of sand where only grasses, sedges and small shrubs grow.\n\nThe golden jackal and Rüppell's fox share parts of this range, but the fennec seems to cope with harsher climates than either and can burrow in grainier ground, which gives it an edge. Families dig dens in the sand, either in the open or among plants that hold the dunes steady.\n\nIn firmer soil a den can sprawl over 120 square metres with as many as 15 entrances, and neighbouring families sometimes link their dens together. In soft, loose sand the den is simpler, a single tunnel leading to a single chamber.",
+    "anatomy": "Females measure about 34.5 to 39.5 centimetres from nose to rump, with a tail of 23 to 25 centimetres and ears 9 to 9.5 centimetres long, and weigh 1 to 1.9 kg.\n\nMales are slightly larger, with ears around 10 centimetres. No other member of the dog family has ears so big relative to its body. The coat is the colour of sand, reflecting sunlight by day and keeping the fox warm through cold desert nights. The ears have reddish stripes on the back and are so thickly furred inside that the ear opening cannot be seen.\n\nDark streaks run from the inner corner of each large, dark eye down the slender muzzle, and the tapering tail ends in a black tip. Dense fur on the pads of the feet lets it walk on scorching sand, and large, dense kidneys help it hold on to water when there is none to drink.",
+    "life": "Fennecs are mostly active at night, which spares them the worst of the daytime heat and cuts the water they would lose by panting. They are omnivores, eating small rodents, geckos and skinks, small birds and their eggs, insects, fruits, leaves, roots and tubers.\n\nMost of their water comes from their food, though they will drink when they find it. A fennec hunts alone, digging for insects and small animals, and some have been seen burying prey to eat later or foraging near villages.\n\nIn the Algerian Sahara, 114 droppings examined by researchers held more than 400 insects along with date palm fruit and the remains of birds, mammals and reptiles. Pharaoh eagle-owls take fennec pups, and jackals and striped hyenas are reported to prey on adults too.",
+    "family": "Fennec foxes mate for life. In captivity they mature at about nine months and mate between January and April; a female is in season for only about 24 hours, usually once a year.\n\nAfter a pregnancy of 50 to 52 days, occasionally up to 63, she gives birth between March and June to one to four pups, whose eyes open after 8 to 11 days. Once his mate is pregnant the male turns protective and brings her food while she is pregnant and nursing, and both parents care for the young. The family keeps in touch by barking, purring, yapping and squeaking.\n\nPups are weaned at 61 to 70 days and looked after until they are 16 or 17 weeks old, and they stay with the family even after the next litter arrives. Wild fennecs live about 10 years; the oldest known captive male reached 14.",
+    "remarkable": "Nomads say the fennec is so fast, and so quick to change direction, that even their Saluki hunting dogs can hardly ever catch one. For an animal weighing under 2 kg, that agility, together with its deep burrows, is the main defence against the larger hunters of the desert.",
+    "outlook": "The fennec fox is listed as Least Concern on the IUCN Red List. Nobody knows precisely how many there are, since estimates rest on how often they are seen, but those sightings suggest it is not under threat of extinction. It is listed on CITES Appendix II and protected by law in Morocco and Western Sahara, Algeria, Tunisia and Egypt, where it occurs in several protected areas.\n\nIn North Africa fennecs are often trapped to be exhibited or sold to tourists, and the spread of permanent settlements in southern Morocco has pushed them out of parts of that region. Roadbuilding, seismic surveys, mining, oil fields and growing towns are seen as possible future threats.",
+    "people": "The word fennec comes from the Arabic fanak, which probably has Persian roots. The fennec is the national animal of Algeria, whose national football team is nicknamed Les Fennecs. A fennec appears in The Little Prince, Antoine de Saint-Exupéry's 1943 novella about a pilot stranded in the Sahara, and more recently as Fenneko in the anime series Aggretsuko.\n\nThe Roman poet Martial wrote of the 'long-eared fox' as a popular pet, so fennecs were probably kept in the Roman Empire. Today they are still kept as exotic pets in some parts of the world, and much of what is known about their social lives comes from captive animals, which live in family groups and are notably playful when young.",
+    "relatives": "The fennec was first described in 1780 as Canis zerda, placed among the dogs, and collected a long string of other scientific names before becoming Vulpes zerda in 1978. Molecular studies confirmed that it belongs with the true foxes in Vulpes, despite some unusual features of body and behaviour.\n\nIts closest living relative is Blanford's fox. Both belong to a loose group of eight 'desert foxes', along with the corsac, pale, kit, Tibetan, Rüppell's and Cape foxes, which share sandy coats, big ears, pigmented eyes and specialised kidneys suited to dry country.",
+    "didYouKnow": "A fennec fox has 42 teeth, with small, narrow canines.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "34.5–39.5 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "1–1.9 kg"
+      },
+      {
+        "label": "Ears",
+        "value": "Up to 10 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 10 years wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Besides hearing prey, what do the fennec's huge ears help it do?",
+        "choices": [
+          "Shed heat",
+          "Store water",
+          "Attract mates from across the dunes",
+          "Steer when running"
+        ],
+        "explanation": "The ears give off heat, helping the fox stay cool in the Sahara."
+      },
+      {
+        "prompt": "Which country has the fennec fox as its national animal?",
+        "choices": [
+          "Algeria",
+          "Egypt",
+          "Morocco",
+          "Mauritania"
+        ],
+        "explanation": "The fennec is Algeria's national animal, and its football team is nicknamed Les Fennecs."
+      },
+      {
+        "prompt": "Which fox is the fennec's closest living relative?",
+        "choices": [
+          "Blanford's fox",
+          "Red fox",
+          "Arctic fox",
+          "Rüppell's fox, its desert neighbour"
+        ],
+        "explanation": "DNA evidence shows Blanford's fox is its closest living relative."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      }
+    ]
+  },
+  {
+    "id": "giant-tube-worm",
+    "name": "Giant Tube Worm",
+    "scientificName": "Riftia pachyptila",
+    "wikipediaTitle": "Riftia",
+    "group": "marineInvertebrate",
+    "regions": [
+      "openOcean",
+      "centralAmerica"
+    ],
+    "range": "Deep-sea hydrothermal vents of the East Pacific Rise and Galápagos Rift",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 2.0,
+      "longitude": -95.0
+    },
+    "mapSpan": 40,
+    "tagline": "A mouthless worm that lives on volcanic chemicals",
+    "lede": "On the dark floor of the Pacific, where hot water gushes from cracks in the crust, the giant tube worm grows in crimson-tipped thickets taller than a person. It has no mouth and no gut. Bacteria living inside its body make its food from chemicals in the vent water.",
+    "home": "Giant tube worms live only around deep-sea hydrothermal vents on the East Pacific Rise and the Galápagos Rift, geologically active stretches of sea floor where hot, mineral-rich fluid seeps out. They cluster in large colonies, and a patch around a single vent can span tens of metres. They favour vents that pour out plenty of sulfide at temperatures up to 54 °C.\n\nThey share these oases with other large animals that stay put, each in its own niche. Riftia needs strong flow, warmth and lots of sulfide, while the clam Calyptogena magnifica prefers calmer, cooler spots, and the mussel Bathymodiolus thermophilus is flexible enough to grow almost anywhere, even on the tube worms' own tubes.",
+    "anatomy": "A giant tube worm can reach 3 metres long, though its body is only about 4 centimetres across. It lives inside a flexible tube of chitin, closed at the bottom, which can be 2 metres long and is unusually thick at the base. The tubes resist attack by bacteria and take years to decompose, and the worm can adjust both ends to jostle for the best position in a crowded colony. Tubes grow by 10 to 85 centimetres a year.\n\nAt the top is a feathery red plume, coloured by haemoglobin and packed with blood vessels, which soaks up chemicals from the water. If touched or threatened, the worm pulls the plume into its tube and plugs the opening with a stiff collar.\n\nBelow the plume, a muscular band holds the heart, the brain and the genital openings. The middle of the body is filled by the trophosome, a spongy organ crammed with bacteria and sulfur granules, and the rear end anchors the worm in its tube.",
+    "life": "The plume takes in hydrogen sulfide, carbon dioxide and oxygen. Special haemoglobins in the worm's blood carry oxygen and sulfide together without being poisoned, and deliver them to the trophosome, where the bacteria use them to make carbohydrates, a process called chemosynthesis.\n\nAs the bacteria grow larger and older they move to the edge of their host cells, where the worm digests them. The arrangement suits both partners.\n\nAt vents, oxygen comes from seawater and sulfide from vent fluid, and when the two meet they react into forms the bacteria cannot use; inside the worm, the bacteria get both at once. The worm also concentrates nitrate in its blood to 100 times the level in the surrounding sea, which the bacteria turn into building blocks for proteins.",
+    "family": "Each worm is either male or female. Males release sperm bundled into torch-shaped clusters of around 340 to 350 cells, which swim into a female's tube to reach her eggs.\n\nThe young start life as free-swimming larvae with a mouth and gut but no bacteria. They drift on currents near the sea floor, can survive at least 38 days and travel 100 to 200 km in search of an active vent.\n\nOnce a larva settles, it is fixed there for life. It picks up bacteria from the surrounding water; those that reach the gut take hold, the gut is remodelled into the trophosome, and the rest of the digestive system disappears. A settled worm will die if its vent goes quiet, and since most vents last less than 10 years, claims that Riftia lives for centuries are unlikely.",
+    "remarkable": "The giant tube worm has the fastest growth rate of any known marine invertebrate. It can colonise a fresh vent, reach maturity and grow to 1.5 metres in less than two years, a pace that suits an animal whose home may be buried by lava or simply switch off within a decade.",
+    "outlook": "Because vents are patchy and short-lived, and active sites along a rift can lie hundreds of kilometres apart, Riftia survives through a constant cycle of colonies dying out and new ones forming. It is among the first animals to move into a new vent, but these frequent local extinctions and fresh starts may explain why its populations show little genetic variety compared with other vent species. The first colony ever studied shows how changeable this world is.\n\nWhen scientists returned in 1985, clams and mussels had displaced many of the worms, and by 2002 a lava flow had destroyed the site entirely, although a new colony had grown up nearby.",
+    "people": "Nobody expected to find them. In 1977 a geological expedition led by Jack Corliss went to the Galápagos Rift to prove that hot springs existed on the sea floor. The vents release water at around 350 to 380 °C, and they were assumed to be lifeless.\n\nInstead the team found crabs, mussels, clams and so many giant tube worms that they named the spot the 'Rose Garden', the roses being the worms' red plumes. The colony later found near the ruined site was named 'Rosebud'.\n\nThe partnership between Riftia and its bacteria was the first symbiosis ever described between a marine invertebrate and chemosynthetic bacteria, and Colleen Cavanaugh was the first to recognise chemosynthesis inside the trophosome. It showed that a whole ecosystem can run without sunlight, which reaches none of the deep sea.",
+    "relatives": "Riftia is the only species in its genus, part of the family Siboglinidae of bristle worms, or polychaetes. The name Riftia refers to the rift where the vents form, and pachyptila means 'thick feather', after the plume. It is also called the giant beardworm.\n\nRelated tube worms such as Lamellibrachia and Escarpia live at cold seeps, which are far more stable than vents, and have been measured at more than a century old. Another, smaller vent tube worm, Tevnia, may pave the way for Riftia by settling at new vents first.",
+    "didYouKnow": "The bacteria a young tube worm swallows travel to its gut through a duct that passes through its brain.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 3 m"
+      },
+      {
+        "label": "Tube growth",
+        "value": "10–85 cm a year"
+      },
+      {
+        "label": "Diet",
+        "value": "None; fed by bacteria"
+      },
+      {
+        "label": "Habitat",
+        "value": "Hydrothermal vents"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does an adult giant tube worm get its food?",
+        "choices": [
+          "From bacteria inside its body",
+          "By filtering plankton",
+          "By grazing bacterial mats",
+          "By catching shrimps with its sticky plume"
+        ],
+        "explanation": "Adults have no mouth or gut; bacteria in the trophosome make food from vent chemicals."
+      },
+      {
+        "prompt": "What did scientists name the first tube worm colony they found?",
+        "choices": [
+          "The Rose Garden",
+          "The Red Forest",
+          "Rosebud",
+          "The Galápagos Garden of the Deep"
+        ],
+        "explanation": "The red plumes reminded them of roses; Rosebud was a later colony nearby."
+      },
+      {
+        "prompt": "What gives the tube worm's plume its red colour?",
+        "choices": [
+          "Haemoglobin",
+          "Iron sulfide",
+          "Bacteria",
+          "Carotenoids"
+        ],
+        "explanation": "The plume is full of blood vessels carrying haemoglobin."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans."
+      }
+    ]
+  },
+  {
+    "id": "saltwater-crocodile",
+    "name": "Saltwater Crocodile",
+    "scientificName": "Crocodylus porosus",
+    "wikipediaTitle": "Saltwater crocodile",
+    "group": "reptile",
+    "regions": [
+      "asia",
+      "oceania"
+    ],
+    "range": "Coasts, estuaries and rivers from eastern India to northern Australia and Micronesia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": 120.0
+    },
+    "mapSpan": 50,
+    "tagline": "The largest living reptile, at home in the open sea",
+    "lede": "The saltwater crocodile is the largest reptile alive today, a heavy-jawed ambusher that can lie still for hours and then explode from the water. Unlike most of its relatives it is comfortable at sea, riding ocean currents between coasts and islands across tropical Asia and Australia.",
+    "home": "Saltwater crocodiles live in coastal mangrove swamps, river deltas, brackish wetlands and freshwater rivers from India's east coast, Sri Lanka and Bangladesh through Myanmar, Malaysia, Indonesia and the Philippines to Papua New Guinea, the Solomon Islands, Vanuatu, Palau and the north coast of Australia.\n\nIn India they survive in places such as the Sundarbans, the Andaman and Nicobar Islands and Bhitarkanika Wildlife Sanctuary in Odisha. Other crocodiles have salt glands too, but most rarely venture to sea. Salties do.\n\nIn Australia, 8 of 20 crocodiles fitted with satellite tags headed into open ocean, and one travelled 590 km along the coast in 25 days, mostly by drifting with the current and waiting in sheltered bays when it turned. Some spend weeks at sea, long enough for barnacles to grow on their scales.",
+    "anatomy": "Adult males usually measure 3.5 to 5 metres and weigh 200 to 1,100 kg, and the biggest reach about 6 metres and 1,000 to 1,500 kg. Because weight rises roughly with the cube of length, a 6-metre crocodile weighs more than twice as much as a 5-metre one.\n\nFemales are far smaller, typically 2.7 to 3.1 metres and 76 to 103 kg; the largest female on record was about 4.3 metres. The snout is broad, twice as long as it is wide at the base, with a pair of ridges running from the eyes down its centre. The scales are oval, and the bony plates on the neck are small or missing altogether.\n\nIts brain is tiny, as little as 0.05% of its body weight, yet salties learn difficult tasks quickly and can track the seasonal routes of their prey.",
+    "life": "Salties spend much of the day loafing in the water or basking, and prefer to hunt at night. Their sluggishness lets them go months without food. They can stay underwater for long periods by slowing the heart, with voluntary dives of up to 2 hours recorded.\n\nA hunting crocodile sinks, swims quietly up to its target and lunges. Small prey is swallowed whole; larger animals are dragged under and drowned, then torn apart by spinning in a 'death roll'.\n\nYoung crocodiles eat fish, frogs, insects and crabs, while adults take almost anything: mud crabs, magpie geese, monkeys, wallabies, sea turtles, small sharks, wild boar, water buffalo and even tigers. They are among the least social and most territorial crocodilians, though some individuals keep up associations for as long as five years.",
+    "family": "Males mature at about 3.3 metres and 16 years old, females at 2.1 metres and 12 to 14 years. They breed in the wet season. The female builds a mound of mud and plants, often in an exposed spot beside a tidal river or swamp, and lays 40 to 60 eggs, sometimes up to 90. She guards the nest for around 80 to 98 days, though floods drown many clutches.\n\nAs in all crocodilians, temperature decides the hatchlings' sex: nests at 28 to 30 °C produce only females, while at 30 to 32 °C about 86% are males. When the young call from inside the eggs, the mother digs them out, may roll eggs gently in her mouth to help them hatch, and carries the babies to the water in her jaws.\n\nShe stays with them for months, but monitor lizards, barramundi, birds, snakes and other crocodiles take a heavy toll, and only about 1% of hatchlings reach adulthood. Survivors can live upwards of 70 years.",
+    "remarkable": "The saltwater crocodile has the strongest bite of any living animal. A 4.59-metre, 531 kg individual tested by scientists clamped down with a force of 16,414 newtons, beating the previous record set by an American alligator.\n\nYet the muscles that open its jaws are so weak that a few layers of duct tape can hold them shut.",
+    "outlook": "The species has been listed as Least Concern on the IUCN Red List since 1996, but its recovery is recent.\n\nIts skin is the most valuable of any crocodilian, and unregulated hunting in the 20th century, at its peak from 1940 to 1970, cut the population of northern Australia by 95% by 1971. It is now fully protected in Western Australia, the Northern Territory and Queensland, and international trade is controlled under CITES. Illegal killing continues in some countries, and in places such as Sri Lanka and Palau few large adults remain.\n\nHabitat loss is a growing problem; in the Andaman Islands, freshwater nesting areas are being turned into farmland. The danger it poses to people, and the hostility that follows, may be the greatest obstacle to protecting it.",
+    "people": "Of all crocodilians, the saltie and the Nile crocodile are the most likely to prey on people. In Australia one or two fatal attacks are reported each year, a toll kept low by warning signs, while many attacks elsewhere probably go unreported. About half of attacks seem to be territorial rather than predatory, and people often escape them. The crocodile also holds a deep place in local cultures.\n\nOn Timor it is holy, and legend says the island itself was formed by a giant crocodile. The Larrakia people of northern Australia regard themselves as crocodile descendants and do not eat its meat, and Aboriginal rock art of the species up to 3,000 years old survives in caves in Kakadu and Arnhem Land.",
+    "relatives": "The species was named Crocodilus porosus by Johann Schneider in 1801. Its closest living relatives are the Siamese crocodile and the mugger crocodile, and fossils from northern Queensland show it was already around in the Pliocene.\n\nThe genus Crocodylus probably arose in Africa before spreading to Southeast Asia and the Americas. It goes by many names: estuarine crocodile, Indo-Pacific crocodile, marine crocodile, sea crocodile and, informally, the saltie.",
+    "didYouKnow": "Saltwater crocodiles are partly resistant to cane toad toxins, which can kill freshwater crocodiles, and can eat the toads in small amounts.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Males up to about 6 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 1,000–1,500 kg"
+      },
+      {
+        "label": "Clutch",
+        "value": "40–60 eggs"
+      },
+      {
+        "label": "Lifespan",
+        "value": "70+ years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Roughly what share of saltwater crocodile hatchlings survive to adulthood?",
+        "choices": [
+          "About 1%",
+          "About 10%",
+          "About 25%",
+          "About half, thanks to the mother's care"
+        ],
+        "explanation": "Despite the mother's protection, predators take so many that only about 1% survive."
+      },
+      {
+        "prompt": "What decides whether a hatchling is male or female?",
+        "choices": [
+          "Nest temperature",
+          "Which parent guards it",
+          "The size of the egg",
+          "The amount of salt in the water near the nest"
+        ],
+        "explanation": "As in all crocodilians, the temperature of the nest determines the sex."
+      },
+      {
+        "prompt": "Which island is said in legend to have been formed by a giant crocodile?",
+        "choices": [
+          "Timor",
+          "Borneo",
+          "Sri Lanka",
+          "Palau"
+        ],
+        "explanation": "The saltwater crocodile is considered holy on Timor."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Protects wildlife and habitats worldwide, including Asia's coastal wetlands."
+      }
+    ]
+  },
+  {
+    "id": "common-swift",
+    "name": "Common Swift",
+    "scientificName": "Apus apus",
+    "wikipediaTitle": "Common swift",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "range": "Breeds from Portugal and Ireland to China; winters in Africa south of the Sahara",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 80,
+    "tagline": "A bird that may stay airborne for 10 months straight",
+    "lede": "A common swift can stay in the air for 10 months without landing. It eats, drinks, sleeps and often mates on the wing, and no other bird spends so much of its life in flight. On summer evenings in European towns, the screams of these dark, scythe-winged birds echo around the rooftops.",
+    "home": "Swifts breed from Portugal and Ireland east to China and Siberia, north to Norway, Finland and sub-Arctic Russia, and south to Morocco, Algeria, Israel, Lebanon and Syria, but not on the Indian Subcontinent. In autumn they head for equatorial and southern Africa, though not the Cape. Swifts from Sweden, tracked with geolocators, winter in the Congo region.\n\nWestern birds travel through Iberia and down Africa's Atlantic coast, avoiding a crossing of the Sahara, before turning south-east to their wintering grounds. Eastern birds go via the eastern Mediterranean, Turkey and the Levant, using the Great Rift Valley as an aerial highway rich in insects. Stray swifts turn up as far away as North America, Greenland, the Caribbean and Brazil.",
+    "anatomy": "A common swift is 16 to 17 centimetres long with a wingspan of 38 to 40 centimetres. It is blackish-brown all over apart from a small pale patch on the chin, too small to see at a distance, and it has a short forked tail.\n\nIts long, narrow wings sweep back like a crescent or a boomerang and are longer than its body. The legs are very short and used mainly for clinging to vertical surfaces. Swifts never land on the ground by choice, where they would be vulnerable, though contrary to popular belief they can take off from level ground. Their flight is fast, with deep, quick wingbeats and long glides, and the top recorded horizontal speed is 111.6 km/h.",
+    "life": "Swifts live on insects caught in flight. Feeding flocks over wetlands, lakes and flooded gravel pits can number 2,000 birds, gathered from as far as 100 km away; swifts nesting in western Scotland are thought to cross to Lough Neagh in Northern Ireland to feast on its abundant flies. In bad weather on migration they follow rivers, where food is easier to find.\n\nTheir call is a piercing scream in two pitches, the higher one made by females. On summer evenings groups of 10 to 20 form 'screaming parties' that race around the colony, answered by birds in the nests. Radar studies show swifts often climb together in flocks at dusk and descend together at dawn, which may help them share information.",
+    "family": "Pairs can stay together for years and often return to the same nest site and partner each spring, repairing whatever damage the nest has suffered during their 40-week absence. The nest is made of airborne material caught in flight and glued together with saliva.\n\nSwifts fly straight into the nest hole and leave it with a short free fall. If food runs out, young swifts can survive for a few days by letting their body temperature and metabolism drop into torpor. Breeding takes up about 3 to 3.5 months, and the birds spend a similar time in Africa.\n\nIn late summer, failed breeders, fledglings and year-old birds leave first, followed by breeding males and finally the females, which stay to rebuild their fat reserves. Departure is triggered by the first day with less than 17 hours of light, so birds in Finland leave late, in the second half of August.",
+    "remarkable": "Over a lifetime a swift covers millions of kilometres, and it uses the weather to do so. In spring it rides the warm south-westerly airflow ahead of low-pressure fronts, and on the way back it travels on the north-easterly winds behind them.",
+    "outlook": "Swifts once nested mainly in tree holes and cliffs, and some still do: around 600 nest in old woodpecker holes in Poland's Białowieża Forest. But ancient forest has almost entirely vanished from their range, and most now nest in buildings, under roof tiles, beneath window sills and above all under eaves and in gables.\n\nNestboxes help too; a small colony on an RSPB reserve in the Caledonian Forest at Abernethy, Scotland, uses a mix of woodpecker holes and boxes. The weather along their journey has a huge influence on when they arrive. In Central Europe swifts usually return in the second half of April or early May, and later further north, but in any one place the date can vary from year to year.",
+    "people": "The scientific name Apus is Latin for swift, from the Greek for 'without feet', because people once believed swifts were swallows with no feet. The German name, Mauersegler, means 'wall-glider'. The heraldic martlet, a bird drawn without feet and used on the arms of younger sons, may have been inspired by the swift, though it is usually thought to be the house martin.\n\nIn medieval Italy people encouraged swifts to nest in towers and buildings by leaving holes, called rondonare, in walls and under eaves. The young were harvested for food, but rules said at least one chick had to be left in each nest.",
+    "relatives": "Swifts resemble swallows and martins, and sometimes hunt alongside them, but the likeness is the result of convergent evolution. They belong to a different order, Apodiformes, and their nearest relatives are the hummingbirds of the Americas and the treeswifts of Southeast Asia. Linnaeus described the bird in 1758 as Hirundo apus, placing it with the swallows; Scopoli moved it to Apus in 1777.\n\nIn the air a swift can be told from a swallow by its shrill scream, its anchor-shaped silhouette, its entirely dark underside and its short tail fork. A subspecies that lived in Central Europe during the last ice age has been named Apus apus palapus.",
+    "didYouKnow": "Clothes moths and carpet beetles living in swift nests can eat almost everything in them except the feather shafts.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "16–17 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "38–40 cm"
+      },
+      {
+        "label": "Top speed",
+        "value": "111.6 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Flying insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the name Apus mean?",
+        "choices": [
+          "Without feet",
+          "Sky screamer",
+          "Wall-glider",
+          "Little swallow of the towers"
+        ],
+        "explanation": "It comes from the Greek for 'without feet'; Mauersegler, 'wall-glider', is the German name."
+      },
+      {
+        "prompt": "Where do swifts from Sweden spend the winter?",
+        "choices": [
+          "The Congo region",
+          "Southern Spain",
+          "India",
+          "The Cape, at Africa's southern tip"
+        ],
+        "explanation": "Geolocator tracking showed Swedish swifts winter in the Congo region."
+      },
+      {
+        "prompt": "Which birds are the common swift's closest relatives?",
+        "choices": [
+          "Hummingbirds and treeswifts",
+          "Swallows and martins",
+          "Nightjars",
+          "Falcons"
+        ],
+        "explanation": "Its likeness to swallows is convergent; its real relatives are hummingbirds and treeswifts."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, working to save birds like the swift."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats along migration routes."
+      }
+    ]
+  },
+  {
+    "id": "great-hammerhead",
+    "name": "Great Hammerhead",
+    "scientificName": "Sphyrna mokarran",
+    "wikipediaTitle": "Great hammerhead",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "centralAmerica",
+      "asia",
+      "oceania"
+    ],
+    "range": "Warm tropical seas worldwide, between about 40°N and 37°S",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 20.0,
+      "longitude": -80.0
+    },
+    "mapSpan": 80,
+    "tagline": "A hammer-headed hunter that pins stingrays to the sand",
+    "lede": "The great hammerhead is the biggest of the hammerhead sharks, a solitary hunter with a towering, sickle-shaped fin and a head stretched into a broad, flat blade. It sweeps that 'hammer' over the sea floor, searching for stingrays hidden in the sand.",
+    "home": "Great hammerheads live in warm waters around the world, between about 40°N and 37°S. In the Atlantic they range from North Carolina to Uruguay, including the Gulf of Mexico and the Caribbean, and from Morocco to Senegal and into the Mediterranean. They are found all around the rim of the Indian Ocean, and in the Pacific from the Ryukyu Islands to Australia, New Caledonia and French Polynesia, and from Baja California to Peru.\n\nThey can be found close inshore in water less than 1 metre deep, and down to 80 metres offshore. They favour coral reefs but also use continental shelves, island terraces, lagoons and deep water near land. They are migratory, and some populations move towards the poles in summer.",
+    "anatomy": "Great hammerheads average about 4.6 metres long and the longest on record was 6.1 metres. A typical adult weighs over 230 kg, and a small number, mostly or all females, grow much larger; the heaviest known, a pregnant female carrying 55 pups, weighed 580 kg. The head, called a cephalofoil, is 23 to 27% as wide as the body is long.\n\nIts front edge is almost straight, with notches in the middle and near each end, unlike the arched heads of the scalloped and smooth hammerheads. The first dorsal fin is very tall and strongly curved, and the pelvic fins are sickle-shaped too.\n\nThe teeth are triangular and heavily serrated, with 17 rows on each side of the upper jaw. The underside of the cephalofoil is lined with electroreceptors, and the head also works as a hydrofoil, letting the shark wheel round sharply to strike.",
+    "life": "Great hammerheads hunt mainly at dawn and dusk. They eat crabs, lobsters, squid, octopus and many bony fish, from sardines and groupers to porcupinefish, as well as smaller sharks, and they are known to be cannibals.\n\nTheir speciality is rays, especially stingrays. One shark caught off Florida had 96 venomous stingray spines lodged in and around its mouth, which did not seem to bother it. In the Bahamas, a great hammerhead was seen knocking a southern stingray to the bottom with a blow from above, pinning it with its head and pivoting to bite each side of its disc before eating it.\n\nAt Rangiroa Atoll they pick off grey reef sharks exhausted from chasing mates. Other reef sharks give them a wide berth; bull sharks prey on juveniles, but only killer whales hunt the adults.",
+    "family": "Unlike most sharks, which mate on or near the bottom, great hammerheads have been seen mating near the surface; one pair in the Bahamas spiralled upwards around each other and mated as they reached it. Females breed every two years.\n\nOnce the young use up their yolk, the yolk sac turns into a placenta-like link with the mother, and after 11 months she gives birth to between 6 and 55 pups, usually 20 to 40. Newborns are 50 to 70 centimetres long and have a rounded front edge to the head.\n\nMales mature at 2.3 to 2.8 metres and females at 2.5 to 3 metres. Most live 20 to 30 years, though one large female caught at Boca Grande was thought to be 40 to 50 years old.",
+    "remarkable": "Great hammerheads often swim on their side. Sharks fitted with motion loggers in a 2016 study spent up to 90% of their time tilted over in this 'rolled swimming' posture, using their huge dorsal fin as a wing to generate lift.\n\nThe trick cuts drag by about 10%, and with it the energy the shark spends moving.",
+    "outlook": "The great hammerhead is listed as Critically Endangered on the IUCN Red List. It is naturally scarce and slow to reproduce, which makes it extremely vulnerable to overfishing.\n\nIts large fins are prized for shark fin soup, and it is caught on longlines, nets and trawls, with its skin used for leather, its liver oil for vitamins and its carcass for fishmeal. As bycatch it fares badly, with over 90% dying in northwest Atlantic and Gulf of Mexico fisheries, where numbers have fallen by half since the 1990s.\n\nCatch rates in the Indian Ocean fell 73% between 1978 and 2003. Beach shark nets in Australia and South Africa also kill them, and because few fisheries record hammerhead species separately, the full scale of the decline is hard to measure.",
+    "people": "With its size and cutting teeth, a great hammerhead could seriously injure a person, and it has a reputation, perhaps undeserved, as the most dangerous hammerhead. Divers usually find it shy or uninterested, though some have been approached closely or even charged as they entered the water.\n\nAs of 2011 the International Shark Attack File listed 34 bites by all hammerhead species, none fatal, and only one, a provoked bite, has been confirmed as a great hammerhead's. The German naturalist Eduard Rüppell described the species in 1837 as Zygaena mokarran, taking its name from the Arabic word for the shark, which means 'horned'.",
+    "relatives": "For many years the great hammerhead went by the scientific name Sphyrna tudes, until in 1950 Enrico Tortonese showed that the specimens behind that name were actually smalleye hammerheads. Sphyrna mokarran then became its valid name, within the hammerhead family Sphyrnidae.\n\nOlder studies assumed hammerhead heads grew gradually wider over time, but DNA shows that the great and smooth hammerheads form the earliest branch of the genus, meaning the first hammerheads already had large heads. Fossil teeth from the Gatun Formation in Panama suggest that great hammerheads once preyed on juvenile megalodon sharks.",
+    "didYouKnow": "Yellow jacks have been seen rubbing themselves against great hammerheads' flanks, possibly to scrape off parasites.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Average 4.6 m"
+      },
+      {
+        "label": "Litter",
+        "value": "6–55 pups"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20–30 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Rays, fish, sharks"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the great hammerhead's favourite prey?",
+        "choices": [
+          "Stingrays",
+          "Seals",
+          "Tuna",
+          "Jellyfish drifting near the surface"
+        ],
+        "explanation": "It specialises in rays, especially stingrays, which it finds with its electroreceptors."
+      },
+      {
+        "prompt": "What is 'rolled swimming'?",
+        "choices": [
+          "Swimming on its side",
+          "Spinning to tear prey",
+          "Rolling in sand to remove parasites",
+          "Swimming upside down"
+        ],
+        "explanation": "Tilting on its side and using its dorsal fin for lift cuts drag by about 10%."
+      },
+      {
+        "prompt": "How often do female great hammerheads breed?",
+        "choices": [
+          "Every two years",
+          "Every year",
+          "Every five years",
+          "Only once in a lifetime"
+        ],
+        "explanation": "Females breed every two years after an 11-month pregnancy."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to safeguard sharks through science, education and policy."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans."
+      }
+    ]
+  },
+  {
+    "id": "asian-giant-hornet",
+    "name": "Asian Giant Hornet",
+    "scientificName": "Vespa mandarinia",
+    "wikipediaTitle": "Asian giant hornet",
+    "group": "insect",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests and low mountains of East, South and Southeast Asia and the Russian Far East",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 33.0,
+      "longitude": 115.0
+    },
+    "mapSpan": 50,
+    "tagline": "The world's largest hornet, a terror to honey bees",
+    "lede": "The Asian giant hornet is the biggest hornet in the world, armoured, orange-headed and armed with a 6-millimetre sting. In autumn its workers raid the nests of other wasps and bees, slaughtering the adults and carrying off the young to feed their own larvae.",
+    "home": "The hornet is native to temperate and tropical East Asia, South Asia, mainland Southeast Asia and parts of the Russian Far East, from Korea, China, Taiwan and Japan, where it is common, to Laos, Thailand, Cambodia, Myanmar, Vietnam, Nepal, India and Pakistan. It prefers low mountains and forests and almost completely avoids plains and high altitudes.\n\nOf all hornets it is the most dependent on green space, and it is entirely absent from heavily built-up areas. Unlike most hornets, it nests almost exclusively underground, digging its own chamber, taking over old rodent tunnels or using hollows near rotting pine roots. Nests in the open air are extremely rare.",
+    "anatomy": "Queens can exceed 50 mm long, while workers measure 35 to 40 mm and males up to 38 mm. The wingspan ranges from 35 to 76 mm. The head is light orange, with brown antennae and dark eyes, and the orange jaws carry a black tooth used for digging.\n\nThe thorax is dark brown and the abdomen is banded in dark brown or black and yellow-orange. Females have a sting about 6 mm long; males have none. The venom contains a tissue-damaging peptide called mastoparan-M and a neurotoxin, mandaratoxin.\n\nDrop for drop it is not the deadliest wasp venom, but each sting delivers a large dose, and many stings at once can kill a person even without an allergy. The entomologist Masato Ono described being stung as feeling 'like a hot nail being driven into my leg'.",
+    "life": "The hornet hunts medium and large insects: bees, other wasps and hornets, beetles, hornworms and, especially in late summer and autumn, mantises, a key protein source for the larvae of future queens and males. Because some of its prey are crop pests, it is sometimes regarded as beneficial.\n\nAdults can only drink the juices of their victims; they chew the most nutritious parts, such as flight muscles, into a paste for the larvae, which in turn secrete a liquid that feeds the adults. Hornets can fly up to 100 km in a day at up to 40 km/h. In autumn workers hunt in groups.\n\nA scout marks a bee hive or wasp nest with scent from a gland on its abdomen, the only social wasp known to do so, and nestmates follow. A single hornet can kill up to 40 bees a minute with its large jaws, and fewer than 50 can destroy a colony of tens of thousands within hours, since bee stings are useless against an armoured insect five times their size.",
+    "family": "Colonies follow a yearly cycle. Queens emerge from hibernation in early to mid-April and feed on oak sap, where a pecking order among them decides who drinks first. In late April mated queens look for nest sites, and each raises a first brood of about 40 small workers on her own.\n\nBy early August a nest holds three combs with 500 cells and around 100 workers. New males and queens appear from mid-September and mid-October, and once they leave the nest they never return. Males wait outside the entrance and intercept the emerging queens in midair to mate, though up to 65% of queens fight them off. The mated queens then go into hibernation, while the old queens die in late October.",
+    "remarkable": "Japanese honey bees have evolved a deadly defence. When a hornet scout arrives, around 100 bees gather at the entrance and let it in, then hundreds mob it in a tight ball and vibrate their flight muscles.\n\nThe temperature inside the ball reaches 46 °C and carbon dioxide builds up; the bees can survive the combination, but the hornet cannot. Western honey bees, introduced to Japan for their productivity, have no such defence.",
+    "outlook": "The hornet is so dominant, and so common where people leave the land undisturbed, that no conservation efforts are aimed at it. Its main natural enemies are rival hornet colonies, crested honey buzzards and, occasionally, mantises. The worry has run the other way.\n\nIn 2019 it turned up in North America, around Vancouver and in Whatcom County, Washington, and genetic tests revealed at least three separate introductions. Officials feared it could devastate bee populations. Nests were tracked down and destroyed in 2020 and 2021, and in December 2024 Washington State declared the hornet eradicated from North America.",
+    "people": "In some mountain villages of Japan, nests are dug up and the larvae fried as a delicacy. In the Chūbu region grubs are cooked with rice to make hebo-gohan, adults are skewered and fried with their stings still attached, and the Kushihara Hebo Matsuri festival celebrates wasp cuisine.\n\nThe hornets are also farmed in Nagaland and Manipur in eastern India, and the silk of their larval cocoons is being studied for possible uses as fibres, sponges, films and gels. When it reached North America the media nicknamed it the 'murder hornet'.\n\nIn 2022 the Entomological Society of America adopted the name northern giant hornet to avoid language linked to xenophobia. The scare also swamped insect identification centres in the eastern United States with thousands of samples, not one of them this species.",
+    "relatives": "The species belongs to Vespa, the genus of true hornets, and is one of eight species in the V. tropica group; its closest relative is V. soror. Fossils from the Shanwang Formation show it has existed since the Miocene.\n\nIts Korean name, jangsumalbeol, means 'general hornet', and in Taiwan it is called the 'giant tiger head bee'. Forms once treated as subspecies, japonica, magnifica and nobilis, are now regarded only as informal names for colour variants. The smaller Asian hornet, a different species, also preys on honey bees and has been spreading through Europe.",
+    "didYouKnow": "Asian giant hornets can apparently spray venom into a person's eyes, and one case in Japan caused long-term damage.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Queens over 50 mm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "Up to 76 mm"
+      },
+      {
+        "label": "Sting",
+        "value": "About 6 mm"
+      },
+      {
+        "label": "Diet",
+        "value": "Insects, sap, honey"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do Japanese honey bees kill a hornet scout?",
+        "choices": [
+          "By cooking it in a ball of bees",
+          "By stinging its eyes",
+          "By sealing the hive",
+          "By luring it into sticky resin traps"
+        ],
+        "explanation": "Hundreds of bees surround the hornet and vibrate their muscles until heat and carbon dioxide kill it."
+      },
+      {
+        "prompt": "Where does the Asian giant hornet usually build its nest?",
+        "choices": [
+          "Underground",
+          "Hanging from branches",
+          "Inside houses",
+          "In hollow logs beside rivers"
+        ],
+        "explanation": "Unlike most hornets, it nests almost exclusively underground."
+      },
+      {
+        "prompt": "What name did the Entomological Society of America adopt for it in 2022?",
+        "choices": [
+          "Northern giant hornet",
+          "Murder hornet",
+          "Giant tiger head bee",
+          "Great Asian wasp"
+        ],
+        "explanation": "It chose 'northern giant hornet' to avoid potentially discriminatory language."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates, including the pollinators hornets prey on."
+      }
+    ]
+  },
+  {
+    "id": "fishing-cat",
+    "name": "Fishing Cat",
+    "scientificName": "Prionailurus viverrinus",
+    "wikipediaTitle": "Fishing cat",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Wetlands and mangroves of South and Southeast Asia, from Pakistan to Java",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 18.0,
+      "longitude": 90.0
+    },
+    "mapSpan": 40,
+    "tagline": "A wild cat that dives for its dinner",
+    "lede": "The fishing cat is a wild cat built for wetlands. About twice the size of a domestic cat, with partly webbed paws, it stalks the edges of swamps, creeks and mangroves, scooping fish from the shallows or plunging in after them.",
+    "home": "Fishing cats are found patchily across South and Southeast Asia, from Pakistan's Sindh Province and the Nepal Terai through India, Sri Lanka, Bangladesh, Myanmar and Thailand, with the island of Java as the southern limit. They live in densely vegetated wetlands around slow-moving water: swamps, marshes and oxbow lakes, as well as salty tidal creeks and mangrove forests.\n\nMost records come from the lowlands. Along these waters they keep to thick cover in forest, scrub, reed beds and grassland. Females use home ranges of about 4 to 6 square kilometres, males much larger ones of 16 to 22 square kilometres.",
+    "anatomy": "The fishing cat is the largest member of its genus, a stocky, muscular cat with medium to short legs, a head and body 57 to 78 centimetres long and a short tail of 20 to 30 centimetres ringed with black near the tip. Males weigh 8 to 17 kg and females 5 to 9 kg.\n\nIts coat ranges from yellowish tawny to ashy grey, with black spots and stripes: two lines on each cheek, two running from above the eyes down the neck, and two rows of spots across the throat. The belly is paler. The short, rounded ears sit low on the head and carry a white spot on the back. Its tongue is about 12 centimetres long, with large papillae near the front.",
+    "life": "Fishing cats are thought to be mostly nocturnal. Fish make up about three-quarters of the diet in India's Keoladeo National Park, and about three-fifths in the Godavari River delta, where they catch flathead grey mullet, green chromide and tilapia. They also eat birds, rodents, insects, crabs, molluscs, snakes and other reptiles, amphibians and even cattle carcasses.\n\nThey prefer shallow water, spending about half their hunting time lying in wait before grabbing prey from the water or diving in after fish further from the bank. Adults live alone and mark their ranges by rubbing their cheeks, heads, chins and necks on objects, spraying pungent urine and sharpening their claws. They make 'chuckling' sounds.",
+    "family": "In the wild fishing cats probably mate in January and February, though sometimes as late as June, and most kittens are seen in March and April. In captivity pregnancy lasts 63 to 70 days, and a litter has one to four kittens, usually two or three, each weighing about 170 g.\n\nThe kittens are moving about actively at a month old and begin playing in water and eating solid food at about two months, but are not fully weaned until six months. They reach adult size at about eight and a half months, get their adult canine teeth by 11 months and can breed at about 15 months. In captivity they live up to 10 years.",
+    "remarkable": "Its coat is built for water. A short, dense underlayer is thought to act as a waterproof barrier and insulation, while longer guard hairs over it give the spotted pattern a glossy sheen.\n\nWith this and its claws, which never fully retract into their sheaths, it is a proficient swimmer that can cover long distances, even underwater.",
+    "outlook": "The fishing cat has been listed as Vulnerable on the IUCN Red List since 2016, after its population was thought to have fallen by about 30% between 2010 and 2015. The main threats are the destruction of wetlands through pollution, farming and settlement, and killing by local people, often in retaliation.\n\nIn Andhra Pradesh mangroves are being converted into commercial aquaculture ponds, and in Thailand and Cambodia only an estimated 6% of coastal wetlands remain undisturbed. Overfishing of local fish stocks adds to the pressure.\n\nIt is listed on CITES Appendix II and hunting is banned in most range countries, including India, Bangladesh, Nepal, Sri Lanka and Thailand. In coastal Andhra Pradesh, conservation groups work with villagers on ways of earning a living that do not destroy habitat, and a Fishing Cat Conservation Alliance links national efforts.",
+    "people": "The fishing cat was described scientifically in 1833 by Edward Turner Bennett, from a skin sent from India by Josiah Marshall Heath. Today it is the state animal of West Bengal. Its marshland habitat in India can legally be used for agriculture, which brings it into frequent conflict with people.\n\nIn captivity it is prone to several serious illnesses, including carnivore protoparvovirus, which damages the kidneys, spleen and gut and can kill, as well as canine distemper and a form of cancer. Young captive cats have also died from the roundworm Toxocara cati.",
+    "relatives": "The genus Prionailurus, named by Nikolai Severtzov in 1858, holds the spotted wild cats of Asia. Genetic studies suggest the rusty-spotted cat was the first of this lineage to branch off, followed by the flat-headed cat and then the fishing cat, which split from the line leading to the leopard cat within the last few million years.\n\nCats from the north coast of West Java were described in 1936 as a separate subspecies with a slightly shorter skull, and there is some evidence that the Javan fishing cat can be told apart by skull measurements.",
+    "didYouKnow": "In Sri Lanka, fishing cats have been recorded living in tea estates.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "57–78 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "5–17 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly fish"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 10 years (captive)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes up most of the fishing cat's diet?",
+        "choices": [
+          "Fish",
+          "Rodents",
+          "Birds",
+          "Crabs and other shellfish from the mud"
+        ],
+        "explanation": "Fish made up about three-quarters of its diet in Keoladeo National Park."
+      },
+      {
+        "prompt": "Which Indian state has the fishing cat as its state animal?",
+        "choices": [
+          "West Bengal",
+          "Kerala",
+          "Assam",
+          "Andhra Pradesh"
+        ],
+        "explanation": "The fishing cat is the state animal of West Bengal."
+      },
+      {
+        "prompt": "How is the fishing cat listed on the IUCN Red List?",
+        "choices": [
+          "Vulnerable",
+          "Endangered",
+          "Least Concern",
+          "Critically Endangered"
+        ],
+        "explanation": "It has been listed as Vulnerable since 2016 after a decline of about 30%."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places across Asia and the rest of the world."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to conserve wetlands and mangroves and the species that depend on them."
+      }
+    ]
+  },
+  {
+    "id": "great-white-shark",
+    "name": "Great White Shark",
+    "scientificName": "Carcharodon carcharias",
+    "wikipediaTitle": "Great white shark",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "naWest",
+      "africa",
+      "oceania"
+    ],
+    "range": "Cool to tropical seas worldwide, especially off North America, southern Africa and Australasia",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -34.0,
+      "longitude": 25.0
+    },
+    "mapSpan": 80,
+    "tagline": "A warm-bodied hunter with a conveyor belt of teeth",
+    "lede": "Few animals carry a reputation like the great white shark. Built like a torpedo and armed with rows of serrated teeth, it ambushes seals from below and roams across whole oceans, sometimes swimming from one continent to another and back.",
+    "home": "White sharks live in tropical, temperate and even colder waters worldwide, both along coasts and in the open ocean. The main populations are in the northwestern and northeastern Pacific, the western North Atlantic, the Mediterranean, and the waters of southern Africa and Australasia. They travel in response to food and changing temperatures, and perhaps to mate. One shark tagged off South Africa swam to Australia's northwestern coast and back, a journey of 20,000 km, in under nine months.\n\nIn the northeastern Pacific they move between the coasts of the United States and Mexico and the waters around Hawaii, and in the western Atlantic they gather between the Gulf of Maine and Cape Hatteras in summer before shifting south towards Florida and the Gulf of Mexico.",
+    "anatomy": "The white shark has a stocky body, a short conical snout, a large triangular first dorsal fin and a tail with two lobes of similar size. It is grey above and white below.\n\nFemales mature at 4.6 to 4.9 metres and weigh 1,000 to 1,900 kg; males are smaller, maturing at 3.4 to 4 metres. The longest reliably measured was 6.02 metres, and the heaviest 2,530 kg. Around 300 triangular teeth up to 7.5 centimetres long are arranged like a conveyor belt, with back teeth moving forward to replace those at the front.\n\nThe jaws are attached only by muscle and tendon, so they can thrust forward. A huge, double-lobed, oily liver makes up almost 30% of the body weight, keeping the shark buoyant and storing energy.",
+    "life": "White sharks eat fish, squid, seals, dolphins, seabirds and sea turtles, and scavenge whale carcasses. Young sharks eat mainly fish and squid; only sharks longer than about 3 metres take marine mammals, and their teeth broaden and become more serrated as their diet changes.\n\nThey prefer fatty prey, and often target newly weaned seals, which are blubbery but inexperienced. Off South Africa a shark may rise from around 20 metres down and burst partly or fully out of the water, clearing up to about 3 metres.\n\nMost of the time they cruise at around 3 to 5 km/h, but they can sprint at over 24 km/h. Though generally solitary, they gather at feeding sites, where they use at least 20 kinds of body language to sort out rank and settle disputes over food with 'splash fights', slapping water at each other with their tails.",
+    "family": "Little is known about how white sharks mate; two accounts from New Zealand describe pairs rolling belly to belly. The eggs hatch inside the mother, and the embryos feed first on their yolk, then on a milky secretion from the uterus, and finally on unfertilised eggs.\n\nAfter about 12 months she gives birth to two to ten pups, 1 to 1.6 metres long, usually in spring or summer in shallow water around islands, and then waits at least two more years before giving birth again. They grow slowly.\n\nMales take about 26 years to mature and females about 33, and growth levels off after 40. White sharks are thought to live longer than 70 years, and adults have an annual survival rate above 90%. Their main enemies are orcas, which flip them upside down to send them into a trance-like state and then eat their energy-rich livers.",
+    "remarkable": "The white shark is partly warm-blooded. A network of blood vessels called a rete mirabile captures heat from its working muscles and keeps it inside the body instead of losing it through the gills.\n\nIn one study its stomach stayed at 24.7 to 26.8 °C in water of only about 13 to 16 °C, letting the shark stay active and hunt in cold seas.",
+    "outlook": "In 2018 the IUCN assessed the white shark as Vulnerable, citing a fall of 30 to 49% since about 1859. The biggest threats are accidental capture and the nets and traps set to protect beaches in Australia and South Africa, though sharks released from such gear usually survive.\n\nA 2025 study put the global population at a minimum of about 5,800, though one of its authors suspects the real number is closer to 20,000. South Africa has protected the species since 1991, and Australia gave it national protection in 1999; around eastern Australia and New Zealand there are thought to be 2,500 to 6,750.",
+    "people": "Before the 1970s white sharks were known mostly to biologists and fishermen. The 1971 documentary Blue Water, White Death introduced them to the public, and Peter Benchley's 1974 novel Jaws and Steven Spielberg's 1975 film fixed the image of a fearsome man-eater. White sharks are responsible for more recorded bites on humans than any other shark, with 351 unprovoked bites since 1580 as of 2024, 59 of them fatal, yet they do not seem to find people suitable prey.\n\nCage diving and boat tours now draw visitors to places where white sharks gather, usually using chum to bring them close; supporters argue the tours fund research and make living sharks more valuable than dead ones. Long before, in 1554, Guillaume Rondelet named it Lamia, after a child-eating monster of Greek myth, and identified it as the fish that swallowed Jonah.",
+    "relatives": "The white shark is the only living member of the genus Carcharodon, from Greek words meaning 'sharp tooth'. It belongs to the family Lamnidae, alongside the mako sharks, the porbeagle and the salmon shark. It appears in the fossil record around 6 to 5 million years ago in the Pacific.\n\nIts ancestry traces to an extinct shark, Carcharodon hastalis, whose teeth lacked serrations. A Pacific population of that species evolved into C. hubbelli, which gradually developed serrated teeth and gave rise to the modern white shark, and by the end of the Pliocene this had spread worldwide, replacing the much larger megalodon.",
+    "didYouKnow": "White sharks can tolerate high levels of toxic mercury and arsenic in their blood, and heal quickly from even severe wounds.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to about 6 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 2,530 kg"
+      },
+      {
+        "label": "Teeth",
+        "value": "About 300"
+      },
+      {
+        "label": "Lifespan",
+        "value": "70+ years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which part of a white shark do orcas target when they kill one?",
+        "choices": [
+          "The liver",
+          "The fins",
+          "The heart",
+          "The jaws, which they tear away"
+        ],
+        "explanation": "Orcas flip the sharks over and eat their energy-rich livers."
+      },
+      {
+        "prompt": "What is a 'splash fight'?",
+        "choices": [
+          "A tail-slapping contest over food",
+          "A mating ritual",
+          "A way to stun fish",
+          "A display young sharks use to call their mothers"
+        ],
+        "explanation": "Rival sharks slap water at each other with their tails until one gives up the prey."
+      },
+      {
+        "prompt": "Which 1974 novel shaped the white shark's fearsome image?",
+        "choices": [
+          "Jaws",
+          "Moby-Dick",
+          "The Old Man and the Sea",
+          "Blue Water, White Death"
+        ],
+        "explanation": "Peter Benchley's Jaws and its 1975 film made the species famous; Blue Water, White Death was a documentary."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to safeguard sharks through science, education and policy."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans."
+      }
+    ]
+  },
+  {
+    "id": "european-mantis",
+    "name": "European Mantis",
+    "scientificName": "Mantis religiosa",
+    "wikipediaTitle": "European mantis",
+    "group": "insect",
+    "regions": [
+      "europe",
+      "africa",
+      "asia",
+      "naEast"
+    ],
+    "range": "Europe, Asia and Africa; introduced to North America",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": 20.0
+    },
+    "mapSpan": 70,
+    "tagline": "A patient ambusher whose mate may become dinner",
+    "lede": "The European mantis holds its spiked front legs folded beneath its head as if in prayer, which is how mantises earned the name praying mantis. The pose is deceptive. It is a patient ambush hunter, and its mobile, triangular head can swivel to fix huge eyes on anything that moves.",
+    "home": "The European mantis is found across Europe, Asia and Africa, and has been introduced to North America, where it lives across much of the northeastern United States, Ontario, Quebec and the west coast. Genetic studies show that the mantises of Ontario and Quebec descend from two closely related lineages from western France. In Europe it is moving north.\n\nGermany has two confirmed stable populations, in Rhineland-Palatinate and Baden-Württemberg, and there are more and more records from Latvia and Estonia. Once absent from the British Isles, it breeds on the Channel Islands, especially Jersey, and has now been recorded in Cornwall, the Isle of Wight and Oxfordshire. Females prefer to lay their eggs on solid surfaces in warm, sunny spots.",
+    "anatomy": "Females are usually larger and heavier than males, 6 to 8 centimetres long against 5 to 7, and adult females are generally too heavy to take off, though both sexes have two pairs of wings. Males have bigger eyes and antennae and more prominent simple eyes, and are more active and agile, while females are more powerful. Colour varies through shades of green, yellow and brown, and occasionally black.\n\nWhen threatened, a mantis spreads its wings and bends its front legs to reveal a pair of black eyespots with pale centres, making itself look larger. It also has a single ear on the underside of its body, between the hind legs, that is sensitive to low and high frequencies and even ultrasound.",
+    "life": "The mantis eats almost any insect small enough to catch, especially grasshoppers, crickets and cockroaches, and sometimes molluscs, spiders, centipedes or millipedes and worms. It waits motionless, then shoots out its front legs and traps the prey between rows of spikes.\n\nIt takes only living, moving prey and does not kill it first, simply starting to eat whatever part is nearest its mouth. Mantises also eat each other outside of mating, so captive ones have to be kept apart. Hunting depends on sight.\n\nEach compound eye holds 8,000 to 10,000 facets, sharpest in a forward-facing zone, and the fields of the two eyes overlap by up to 70°, giving it stereo vision. It also judges distance by peering, swaying its head from side to side. Mantises are excellent at spotting movement but almost unable to see objects that stay still.",
+    "family": "Mantises usually mate in September or October. A male that spots a female freezes, turns his head to watch her and then creeps up from behind, stopping whenever she moves and sometimes rocking gently, perhaps to mimic leaves; the approach can take hours. He then jumps onto her back, and mating can last four to five hours.\n\nAfterwards he drops to the ground, moves about 50 centimetres away and freezes for a few minutes before leaving. About 11 days later the female produces an egg case, or ootheca, holding around 100 to 200 eggs, which overwinters and hatches the following spring once temperatures reach at least 17 °C.\n\nThe nymphs look like tiny adults and grow about 6 mm at each stage, moulting up to eight times, with females usually needing one more moult than males. Males live 7 to 8 months, females 11 to 12.",
+    "remarkable": "Female mantises really do eat their mates. It was long thought to happen only in captivity, but a 1992 field study recorded cannibalism in 31% of natural pairings.\n\nHungry females are more likely to attack, sometimes before mating has even begun, yet a headless male can carry on mating, and his body gives the female extra nutrients for a larger egg case.",
+    "outlook": "Globally the European mantis is assessed by the IUCN as Least Concern. In Germany, however, it is listed as endangered on the national Red List, based on an assessment from 1998, and there it should not be caught or kept as a pet.\n\nLife is precarious for the young. Hatching depends heavily on warmth and humidity, and only about 10% of nymphs survive their first stage, killed by a lack of suitably small food, low temperatures or dry air.",
+    "people": "Despite being an introduced species there, the European mantis is the official state insect of Connecticut. Its mating habits have fascinated scientists for more than a century. So have its colours.\n\nIn 1904 Di Cesnola noticed that green mantises sat on fresh green grass and brown ones on grass burnt by the sun; when he moved them to backgrounds that did not match, almost all were killed by predators such as birds, which suggests the colours serve as camouflage. In 1907 Przibram found that temperature could trigger a colour change. More than 100 years on, there is still no agreed explanation of how or why the colours vary.",
+    "relatives": "The European mantis belongs to the family Mantidae, the largest family in the order Mantodea, the mantises. Like other mantises it develops through incomplete metamorphosis, so its young resemble small adults rather than grubs.\n\nThe black eyespots on its front legs are a distinctive feature that helps tell it apart from other species. Some closely related mantids are larger and need more moults, 9 to 11, to reach adulthood.",
+    "didYouKnow": "Newly hatched mantises see poorly, but their vision improves greatly within three days as the lenses of their eyes harden.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "5–8 cm"
+      },
+      {
+        "label": "Eggs",
+        "value": "100–200 per case"
+      },
+      {
+        "label": "Lifespan",
+        "value": "7–12 months"
+      },
+      {
+        "label": "Diet",
+        "value": "Live insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a male European mantis approach a female?",
+        "choices": [
+          "Slowly, from behind",
+          "With a dance",
+          "By calling",
+          "By offering her a freshly caught grasshopper"
+        ],
+        "explanation": "He creeps up from behind, freezing whenever she moves, to avoid being attacked."
+      },
+      {
+        "prompt": "Where is the European mantis's ear?",
+        "choices": [
+          "On its underside, between the hind legs",
+          "On its antennae",
+          "On its front legs",
+          "Behind its eyes"
+        ],
+        "explanation": "It has a single ear on the underside of its body, sensitive even to ultrasound."
+      },
+      {
+        "prompt": "Which US state has the European mantis as its official insect?",
+        "choices": [
+          "Connecticut",
+          "Ohio",
+          "Maine",
+          "Pennsylvania"
+        ],
+        "explanation": "Although introduced, it is the official state insect of Connecticut."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Europe's only organisation devoted to saving invertebrates."
+      },
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates and the habitats they need."
+      }
+    ]
+  },
+  {
+    "id": "gelada",
+    "name": "Gelada",
+    "scientificName": "Theropithecus gelada",
+    "wikipediaTitle": "Gelada",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Highland grasslands and gorges of the Ethiopian plateau",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 11.0,
+      "longitude": 38.5
+    },
+    "mapSpan": 8,
+    "tagline": "Ethiopia's grass-eating 'bleeding-heart' monkey",
+    "lede": "On the high plateaus of Ethiopia, geladas spend their days sitting in the grass, eating and chattering to one another. They are the only primates that live mainly by grazing, and the males wear a vivid red patch on their chests that has earned the species the nickname bleeding-heart monkey.",
+    "home": "Geladas live only in the Ethiopian Highlands, in high grasslands cut by deep gorges, at 1,800 to 4,400 metres above sea level. The grasslands have scattered trees, bushes and thickets, and are cooler and less arid than the lowlands, so the dry season rarely leaves the monkeys short of food, though they face frost in the dry season and hailstorms in the wet.\n\nTheir day follows the cliffs. They sleep on ledges, climb to the plateau tops at sunrise to feed and socialise, spend the late morning and midday foraging and travelling, and become sociable again in the evening before descending to the cliffs for the night. Leopards, servals, hyenas, lammergeiers and domestic dogs all hunt them.",
+    "anatomy": "Geladas are large, robust monkeys with coarse buff to dark-brown hair, nearly black arms and feet, and a short tail ending in a tuft.\n\nMales average 18.5 kg and females 11 kg, with a head and body 50 to 75 centimetres long and a tail of 30 to 50 centimetres. Adult males carry a long, heavy cape of hair over their backs. The face is hairless and dark, with pale eyelids and a short muzzle that looks more like a chimpanzee's than a baboon's.\n\nBoth sexes have a bare, hourglass-shaped patch of skin on the chest. In males it is bright red and framed by white hair. In females it is less striking, but when a female is ready to mate it brightens and a 'necklace' of fluid-filled blisters forms on it.",
+    "life": "Grass blades make up as much as 90% of a gelada's diet. Geladas eat both blades and seeds, preferring seeds when they can get them, and dig for roots and rhizomes with their hands. They also eat flowers, herbs, fruits and thistles, and in the dry season prefer herbs to grass. They feed more like hoofed animals than primates and can chew as effectively as a zebra.\n\nTheir society has several layers. A reproductive unit holds up to 12 females, their young and one to four males, while all-male units hold 2 to 15 bachelors. Several units make up a band, bands can come together in herds of up to 60 units, and one to four bands form a community.\n\nFemales usually stay in their birth unit for life and bond closely with relatives, and together they can choose to back or reject a male trying to take over.",
+    "family": "Geladas can breed at any time of year, and most births happen at night. Newborns have red faces, closed eyes and black hair and weigh about 464 g. A mother carries her infant on her belly for the first five weeks and then on her back, and it moves about on its own at about five months.\n\nOther females take a keen interest in babies and sometimes even kidnap them, and over 85% of infants survive to their fourth birthday. Females mature at about three years and give birth a year later.\n\nMales reach puberty at four to five but usually cannot breed until eight to ten, when they try to take over a unit of their own. If a new male takes over, females pregnant by the old leader have an 80% chance of miscarrying, which is known as the Bruce effect. A deposed leader may stay on as a babysitter, protecting the infants he fathered. Geladas live around 15 years in the wild.",
+    "remarkable": "Gelada conversation is unusually rich. Adults have calls for contact, reassurance, appeasement, aggression and more, with a complexity thought to approach that of humans, and their call sequences obey Menzerath's law: calls are shortened when strung into longer sequences.\n\nResearchers have even watched a subordinate male and a female mate in secret, both suppressing their usual mating cries so the dominant male would not hear.",
+    "outlook": "The IUCN assessed the gelada as Least Concern in 2008, but numbers had fallen from an estimated 440,000 in the 1970s to around 200,000. It is listed on CITES Appendix II. The main threats are the spread of farmland into its range and shooting by farmers, who see it as a crop pest; near Simien National Park in 2005 each gelada caused an average of 100 kg of crop damage, with barley a favourite.\n\nIn the past geladas were also trapped for laboratories and hunted for their capes, which were made into clothing. New protected areas have been proposed, including a Blue Nile Gorges National Park and an Indeltu Gorges Reserve.",
+    "people": "In Amharic the monkey is called č̣əlada, and in Oromo jaldeessa daabee. In English it has also been known as the gelada baboon or the bleeding-heart baboon, though its relationship to true baboons is not straightforward. Geladas threaten one another by flipping the upper lip back over the nostrils to bare their teeth and gums and pulling back the scalp to flash their pale eyelids.\n\nThey are surprisingly relaxed around Ethiopian wolves: in most encounters the monkeys did not move at all, even when a wolf walked through the middle of the herd, yet they always fled to the cliffs from aggressive domestic dogs.",
+    "relatives": "The gelada is the only living species in the genus Theropithecus, from Greek words meaning 'beast-ape'. Its close relatives are the baboons of the genus Papio, and some genetic research suggests it should be grouped with them, though the exact relationships among baboons, geladas and Lophocebus mangabeys remain uncertain.\n\nThere are two subspecies, the northern gelada and the eastern or southern gelada. The genus was once far more widespread. Fossils of larger extinct species, such as T. brumpti, T. darti and T. oswaldi, have been found across Africa as well as in Spain and India.",
+    "didYouKnow": "A female gelada may mate up to five times a day, usually around midday.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "Males avg 18.5 kg"
+      },
+      {
+        "label": "Length",
+        "value": "50–75 cm + tail"
+      },
+      {
+        "label": "Diet",
+        "value": "Up to 90% grass"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 15 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes up most of the gelada's diet?",
+        "choices": [
+          "Grass",
+          "Fruit",
+          "Insects",
+          "Roots dug from the cliff ledges"
+        ],
+        "explanation": "Grass blades make up as much as 90% of what geladas eat."
+      },
+      {
+        "prompt": "What is unusual about a male gelada's chest?",
+        "choices": [
+          "A bright red patch of bare skin",
+          "A pouch for storing food",
+          "A mane of white hair",
+          "A row of bony plates that protect its heart"
+        ],
+        "explanation": "The hourglass-shaped red patch gives it the nickname bleeding-heart monkey."
+      },
+      {
+        "prompt": "What often happens to pregnancies when a new male takes over a unit?",
+        "choices": [
+          "They end in miscarriage",
+          "They last longer",
+          "Twins are born",
+          "The females leave to join another band"
+        ],
+        "explanation": "Females pregnant by the old leader have an 80% chance of miscarrying, the Bruce effect."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Protects wildlife and habitats worldwide, including Africa's highlands."
+      }
+    ]
   }
 ]
