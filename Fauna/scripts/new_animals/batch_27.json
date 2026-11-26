@@ -1,0 +1,904 @@
+[
+ {
+  "id": "antlions",
+  "name": "Antlions",
+  "scientificName": "Myrmeleontidae",
+  "wikipediaTitle": "Antlion",
+  "group": "insect",
+  "regions": [
+   "africa",
+   "asia",
+   "europe",
+   "naEast"
+  ],
+  "range": "Dry, sandy ground worldwide, most diverse in the tropics",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 10.0,
+   "longitude": 20.0
+  },
+  "mapSpan": 80,
+  "tagline": "Sand-pit hunters that grow into fragile night fliers",
+  "lede": "At the bottom of a neat cone of sand, a pair of sickle-shaped jaws waits for an ant to lose its footing. The antlion larva builds one of the simplest and most efficient traps in the animal kingdom, then may spend years sitting in it. The winged adult that finally emerges looks so different that people often mistake it for a dragonfly.",
+  "home": "There are about 2,000 species of antlion, found in most parts of the world. The greatest variety lives in the tropics and other warm regions, but a few species reach cold-temperate places, such as the European Euroleon nostras.\n\nMost favour dry, loose ground where a larva can dig easily and stay sheltered from rain: open woodland floors, scrubby dunes, the bases of hedges, river banks and road verges, and even the dusty ground under raised buildings and in vacant lots. Not every species digs a pit. Some larvae hide under leaves, debris or bits of wood, or tuck themselves into cracks and ambush prey from there.",
+  "anatomy": "Adults range from small to very large, with wingspans from 2 to 15 centimetres. Some of the biggest belong to the African genus Palpares, while Europe's largest, Acanthaclisis occitanica, spans about 11 centimetres. They have two pairs of long, narrow, net-veined, see-through wings and a slender abdomen. Unlike damselflies, they carry prominent antennae with clubbed tips, and they are feeble fliers.\n\nThe larva looks nothing like its parent. It has a plump, spindle-shaped body, three pairs of legs, and a large, flat, square head on a slender mobile neck, armed with enormous sickle-like jaws. Grooves in the jaws form closed canals for injecting venom and digestive enzymes, and forward-pointing bristles anchor it so it can overpower prey bigger than itself. Strangest of all, the larva has no anus: all its waste is stored until it pupates.",
+  "life": "Larvae feed mainly on ants and other small arthropods, even small spiders. A pit-builder marks out a circle, then crawls backwards in a spiral, using its abdomen as a plough and flicking sand away with its head. The finished funnel, typically about 5 centimetres deep and 7.5 centimetres across, has walls at the steepest angle loose sand can hold. When an ant slips over the rim, the larva showers it with sand from below, collapsing the slope and bringing the victim tumbling into its jaws. It sucks out the liquefied insides and flicks the dry husk out of the pit.\n\nThe larva senses prey through ground vibrations, judging direction from tiny differences in timing picked up by tufts of hair on its sides. Because meals arrive unpredictably, larvae have low metabolic rates and can survive many months without eating. Disturbed larvae often play dead for up to an hour, a trick that raised survival by 20% in one study. Adults fly mostly at dusk or after dark; some eat pollen and nectar, others hunt small arthropods.",
+  "family": "A female tests a laying site by tapping it with the tip of her abdomen, then inserts her ovipositor and lays an egg. The larval stage can last several years, finishing sooner when food is plentiful, and in cooler climates larvae burrow deeper and stay inactive through winter.\n\nA full-grown larva spins a round cocoon of sand glued with silk, sometimes several centimetres underground, using some of its stored waste to make the silk. About a month later the adult digs its way to the surface, and within roughly twenty minutes its wings are fully open. It usually lives about 25 days, occasionally up to 45, and spends that short time searching for a mate.",
+  "remarkable": "Antlions show the greatest size difference between larva and adult of any insect that undergoes complete metamorphosis. The adult is considerably larger than the larva that made it, which is possible only because its exoskeleton is extremely thin, flimsy and low in density.",
+  "outlook": "As a family of some 2,000 species, antlions have no single conservation status. Pit-builders depend on patches of loose, dry, sheltered ground, the kind found on dunes, verges and waste ground. Apart from the pit-building species, the biology of most antlions has been little studied, so much about them is still unknown.",
+  "people": "The name antlion goes back to classical antiquity, though its meaning is uncertain; the 'lion' part may simply mean hunter. The 2nd-century Physiologus described the Myrmecoleon, a mythical ant–lion hybrid said to starve because its lion half would eat only meat and its ant half only grain. In North America the larva is called a doodlebug for the winding trails it draws in sand, and in the southern United States people recite a chant to coax it out of its hole, a custom also recorded in Africa, the Caribbean, China and Australia.\n\nIn Japan the insect and its pit are called arijigoku, 'ant hell', now slang for any inescapable trap. The naturalist Jean-Henri Fabre wrote that the hunter 'turns his neck into a catapult'. Antlions also turn up in the game SimAnt and inspired the Pokémon Trapinch, and the sarlacc of Star Wars is often compared to them.",
+  "relatives": "Antlions belong to the Neuroptera, the lacewings and their kin, which is why adults are sometimes called antlion lacewings. Within the superfamily Myrmeleontoidea their closest living relatives are the owlflies, with the Nymphidae more distant. How to divide the family is still disputed, and one 2018 revision even folded the owlflies in as a subfamily.\n\nFossils are scarce, but Mesozoic specimens show antlions arose more than 150 million years ago. Only 3 tribes of antlion build funnel pits, and the same trap evolved separately in the larvae of a family of flies, the Vermileonidae.",
+  "didYouKnow": "In Japan, larvae of Gatzara jezoensis wait on bare rock for years, often becoming coated in lichen, at densities of up to 344 per square metre.",
+  "facts": [
+   {
+    "label": "Wingspan",
+    "value": "2–15 cm"
+   },
+   {
+    "label": "Species",
+    "value": "About 2,000"
+   },
+   {
+    "label": "Adult life",
+    "value": "About 25 days"
+   },
+   {
+    "label": "Larval diet",
+    "value": "Mainly ants"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What is the antlion larva called in North America?",
+    "choices": [
+     "Doodlebug",
+     "Sandhopper",
+     "Pit viper",
+     "Sand wolf, after its habit of hunting at noon"
+    ],
+    "explanation": "It is named for the winding, doodle-like trails it leaves in the sand."
+   },
+   {
+    "prompt": "What is unusual about the antlion larva's body?",
+    "choices": [
+     "It has no anus",
+     "It has no legs",
+     "It has eight eyes on stalks",
+     "It breathes through gills along its sides"
+    ],
+    "explanation": "Its waste is stored throughout larval life, and some is used to spin silk for the cocoon."
+   },
+   {
+    "prompt": "How long does an adult antlion usually live?",
+    "choices": [
+     "About 25 days",
+     "About a year",
+     "Several years",
+     "Only a few hours, without ever feeding at all"
+    ],
+    "explanation": "Adults typically live about 25 days, occasionally up to 45."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Buglife",
+    "url": "https://www.buglife.org.uk",
+    "blurb": "Works to save invertebrates and the habitats they depend on."
+   },
+   {
+    "name": "Xerces Society",
+    "url": "https://xerces.org",
+    "blurb": "Protects insects and other invertebrates through science and advocacy."
+   }
+  ]
+ },
+ {
+  "id": "japanese-macaque",
+  "name": "Japanese Macaque",
+  "scientificName": "Macaca fuscata",
+  "wikipediaTitle": "Japanese macaque",
+  "group": "mammal",
+  "regions": [
+   "asia"
+  ],
+  "range": "Forests of Honshu, Shikoku, Kyushu and smaller Japanese islands",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 35.5,
+   "longitude": 136.0
+  },
+  "mapSpan": 15,
+  "tagline": "The snow monkey, the world's most northerly primate",
+  "lede": "Steam rising from a pool, snow on the rocks, and a red-faced monkey soaking up to its chin: the snow monkey is one of the most recognisable primates on Earth. No other non-human primate lives farther north or in a colder climate. It is also famous for inventing new habits and passing them on, from washing food to rolling snowballs for fun.",
+  "home": "Japanese macaques live on three of Japan's four main islands, Honshu, Shikoku and Kyushu, all south of the boundary known as Blakiston's Line, and on several smaller islands. The northernmost troops live on the Shimokita Peninsula at the tip of Honshu, where snow covers the ground for months, and the southernmost on Yakushima Island. A 1989 study estimated 114,431 animals in the wild.\n\nThey use subtropical forest in the south and subarctic mountain forest in the north, but warm temperate evergreen broadleaf forest and cool temperate deciduous broadleaf forest are their most important habitats. A troop of about 150 moved from Kyoto to a Texas ranch in 1972 lost many members at first, then learned to eat mesquite beans and cactus fruit and grew to 500 to 600 animals by 1995.",
+  "anatomy": "Males average about 11.3 kg and 57 centimetres tall, females about 8.4 kg and 52 centimetres, and macaques from colder areas tend to be heavier. The face and rump are pink to red, the rest of the body is covered in brown or grey hair, and the tail is a short stump under 10 centimetres long. The coat thickens as temperatures fall, letting them cope with −20 °C.\n\nThey mostly walk on all fours and divide their time between the ground and the trees, with females more arboreal than males. They leap well and are strong swimmers, with swims of over half a kilometre reported. Females can live up to 32 years and males up to 28, long for a macaque.",
+  "life": "Japanese macaques are active by day and eat more than 213 species of plants, along with insects, bark, soil, flowers, fungi and a little nectar. On Yakushima they eat fruit in summer and herbs in winter, while northern troops fatten up on fruit and nuts before the lean months; when favourite foods run out they dig up roots or even eat fish. A typical day is split fairly evenly between resting, travelling, feeding and grooming one another, and in winter they huddle together on their sleeping grounds for warmth.\n\nSociety is built around females, who stay in their birth troop for life and inherit their rank from their mother, while males leave before maturity and may drift between several groups. Grooming holds relationships together, and soft 'coo' calls keep the troop in contact as it moves. Troops in different areas even develop their own accents, with calls of noticeably different pitch.",
+  "family": "In the mating season the faces of both sexes turn red, and a pair travels, feeds and rests together for an average of 16 days. A female may partner with about four males in a season, and it is she who decides whether mating happens.\n\nShe gives birth on the ground, usually in a secluded spot at the edge of the troop. The infant, born with dark brown hair, rides on her belly for about four weeks and then on her back as well, and may still be carried after its first birthday. It eats solid food at five to six weeks and is fully weaned by 18 months. Other females, especially those without young of their own, sometimes help, and in some troops older males carry and groom babies.",
+  "remarkable": "On Koshima Island, researchers watched a young female named Imo begin washing sweet potatoes in water instead of brushing off the sand, and later dipping them in salty seawater. Others copied her, the habit passed down the generations, and eventually nearly the whole troop washed and seasoned its food. Imo also worked out how to separate wheat from sand by throwing handfuls into water and scooping up the floating grain.",
+  "outlook": "Hunting macaques was banned in 1947, and with protection, replanting of forests and the loss of their old predator the Japanese wolf, numbers have grown greatly since the 1940s. Replacing natural forest with timber plantations is a newer threat. Now living closer to farms, macaques have become a major crop pest, causing about 900 million yen of damage in 2019. Over 20,000 are culled each year, and there are concerns this is shrinking their range.",
+  "people": "In Japan it is Nihonzaru, 'Japanese monkey', or simply saru, since it is the country's only native monkey. It runs through Shinto belief, folklore and art: the 'three wise monkeys' carved over a door of the Tōshō-gū shrine in Nikkō are macaques, and the monkey appears in the tale of Momotarō and the fable of The Crab and the Monkey. Edo-period artists painted it, and netsuke clasps were carved in its shape.\n\nAt Jigokudani Monkey Park, macaques visit hot springs in winter, a habit encouraged in the 1960s to keep them away from crops. Bathing is linked with lower stress, and high-ranking females dominate the pools.",
+  "relatives": "The Japanese macaque is an Old World monkey in the genus Macaca. Two subspecies are recognised: the mainland form and M. fuscata yakui, found only on Yakushima Island at the southern edge of the range. The transplanted Texas troop now lives in a sanctuary near Dilley, where it shares space with six other species of macaque.",
+  "didYouKnow": "In 2021 a nine-year-old female called Yakei overthrew the dominant males of a 677-strong troop at Takasakiyama, becoming its first female leader in 70 years of records.",
+  "facts": [
+   {
+    "label": "Weight",
+    "value": "Males about 11.3 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "Up to 32 years"
+   },
+   {
+    "label": "Diet",
+    "value": "Over 213 plant species"
+   },
+   {
+    "label": "Cold limit",
+    "value": "About −20 °C"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What did the female Imo start doing on Koshima Island?",
+    "choices": [
+     "Washing sweet potatoes",
+     "Fishing with sticks",
+     "Building snow shelters",
+     "Cracking nuts open with stones on the beach rocks"
+    ],
+    "explanation": "She washed sweet potatoes in water, and the habit spread through her troop."
+   },
+   {
+    "prompt": "When was hunting Japanese macaques banned?",
+    "choices": [
+     "1947",
+     "1972",
+     "1989",
+     "1603, at the start of the Edo period"
+    ],
+    "explanation": "The 1947 ban helped macaque numbers grow strongly from the 1940s."
+   },
+   {
+    "prompt": "Which macaques stay in their birth troop for life?",
+    "choices": [
+     "Females",
+     "Males",
+     "Only alpha males",
+     "Neither sex, as both leave before they reach maturity"
+    ],
+    "explanation": "Troops are matrilineal: females stay, while males move out before maturity."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works worldwide to conserve wildlife and the forests they live in."
+   }
+  ]
+ },
+ {
+  "id": "pistol-shrimp",
+  "name": "Pistol Shrimp",
+  "scientificName": "Alpheidae",
+  "wikipediaTitle": "Alpheidae",
+  "group": "marineInvertebrate",
+  "regions": [
+   "asia",
+   "oceania",
+   "centralAmerica",
+   "africa"
+  ],
+  "range": "Coral reefs, seagrass flats and oyster reefs in warm and temperate seas",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 0.0,
+   "longitude": 120.0
+  },
+  "mapSpan": 80,
+  "tagline": "A tiny shrimp with a claw that fires a shock wave",
+  "lede": "A shrimp just a few centimetres long can stun a fish without touching it. The pistol shrimp snaps its oversized claw so fast that it fires a bubble through the water, and the crackle of whole colonies doing it can swamp a navy's sonar.",
+  "home": "The family Alpheidae, the snapping, pistol or cracker shrimps, is found around the world. Most species live in tropical and temperate coastal seas, where they dig burrows on coral reefs, in submerged seagrass flats and among oyster reefs. A few break the pattern: the genus Betaeus lives in cold seas, and Potamalpheops, found across the globe, includes species living in freshwater caves.\n\nOther species set up home inside living sponges, and some share their burrows with goby fish.",
+  "anatomy": "Snapping shrimp grow to 3 to 5 centimetres long. In many species one claw on the first pair of legs is hugely enlarged, more than half the size of the body, and it may be on either the left or right side. It works like a pistol: a joint lets the 'hammer' part cock back to a right angle, and when released it slams into the other half of the claw.\n\nSeveral features power the snap, including sticky pads that hold the claw open while tension builds and a tooth that fits into a socket on the opposite finger. In Alpheus and Synalpheus, which have the strongest snaps, an outgrowth of the shell called the orbital hood covers the eyes; experiments suggest it acts as a helmet against the shock waves of neighbours' snaps. Around half of all species lack the big claw altogether and are known as non-snapping shrimp.",
+  "life": "The snapping claw is a multi-tool, used for hunting, communicating, fending off predators, burrowing and even boring into rock. A hunting shrimp hides in its burrow with its antennae stretched out. When it feels a fish pass, it edges out, cocks its claw and fires, then drags the stunned prey back inside to eat.\n\nSome species team up with gobies. The shrimp builds and maintains a shared burrow, while the goby, with far better eyesight, keeps watch. Outside, the shrimp keeps an antenna touching the fish, and a flick of the goby's tail sends both diving for cover.",
+  "family": "Snapping shrimp keep the same mate. A male stays close to a young female around her puberty moult, when she is soft-bodied and would be in mortal danger searching for a partner. Pairs guard each other, defend their shelter together and protect their young, and heavier partners do better. The larvae pass through three stages: nauplius, zoea and postlarva.\n\nIn the genus Synalpheus some species, such as Synalpheus regalis, go further, living in sponge colonies of over 300 that are all offspring of a single large queen and possibly one male. Workers care for the young while mostly male soldiers defend the colony with their huge claws, much like social insects. This eusocial lifestyle appears to have evolved independently in different Synalpheus species.",
+  "remarkable": "The snap creates a cavitation bubble that shoots out at 25 metres per second and collapses with a peak sound pressure of about 218 decibels, enough to kill small fish and break small glass jars, all in less than a millisecond. As it collapses it gives off a faint flash of light, called sonoluminescence. If that light came from heat, the bubble would need to exceed 5,000 kelvin, close to the temperature of the Sun's surface. It was the first animal known to make light this way.",
+  "outlook": "As a family of hundreds of species, pistol shrimp have no single conservation status. Their fortunes are tied to the coral reefs, seagrass meadows and oyster reefs where most of them burrow, habitats they share with the gobies and sponges they live alongside.",
+  "people": "Colonies of snapping shrimp crackle so loudly that they are a major source of noise in the ocean. The din can interfere with sonar, underwater communication and anti-submarine warfare, and the shrimp competes with sperm whales and beluga whales for the title of loudest animal in the sea.\n\nAll three common names, pistol, snapping and cracker shrimp, refer to that sound. The flash of light from the bubble is far too faint to see with the naked eye, and is most likely a by-product of the shock wave with no use to the shrimp.",
+  "relatives": "Alpheidae belongs to the Caridea, a large group of shrimps. The two biggest genera are Alpheus, with over 330 species, and Synalpheus, with over 160. Counts for the whole family range from about 620 species to around 1,119, and a 2021 genetic study found that several genera, including Alpheus itself, are not natural groups.\n\nSnapping seems to have arisen more than once within the family, and it also occurs in some members of the related Palaemonidae, such as Periclimenaeus. Mantis shrimp, a separate group of crustaceans, were later found to make light-emitting bubbles too, when their club-like forelimbs strike.",
+  "didYouKnow": "When a pistol shrimp loses its snapping claw, its small claw grows into a new snapper and a small claw regrows in place of the lost one, a switch thought to be unique in nature.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "3–5 cm"
+   },
+   {
+    "label": "Species",
+    "value": "About 620–1,119"
+   },
+   {
+    "label": "Bubble speed",
+    "value": "25 m/s"
+   },
+   {
+    "label": "Snap length",
+    "value": "Under 1 millisecond"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What does a pistol shrimp use to stun prey?",
+    "choices": [
+     "A bubble fired by its claw",
+     "Venom in its antennae",
+     "An electric shock",
+     "A sharp jab from the spines along its tail fan"
+    ],
+    "explanation": "The snapping claw fires a cavitation bubble that stuns or kills small fish."
+   },
+   {
+    "prompt": "Which fish shares burrows with some pistol shrimp?",
+    "choices": [
+     "Gobies",
+     "Clownfish",
+     "Moray eels",
+     "Seahorses that guard the burrow entrance"
+    ],
+    "explanation": "The shrimp digs the burrow and the sharp-eyed goby keeps watch."
+   },
+   {
+    "prompt": "What does the collapsing bubble briefly give off?",
+    "choices": [
+     "A flash of light",
+     "A puff of ink",
+     "A cloud of bacteria",
+     "An electric charge strong enough to stun a diver"
+    ],
+    "explanation": "The faint flash, called sonoluminescence, was the first known case of an animal making light this way."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Coral Reef Alliance",
+    "url": "https://www.coralreefalliance.org",
+    "blurb": "Works with communities to protect coral reefs around the world."
+   },
+   {
+    "name": "Oceana",
+    "url": "https://oceana.org",
+    "blurb": "Campaigns to protect and restore the world's oceans."
+   }
+  ]
+ },
+ {
+  "id": "green-iguana",
+  "name": "Green Iguana",
+  "scientificName": "Iguana iguana",
+  "wikipediaTitle": "Green iguana",
+  "group": "reptile",
+  "regions": [
+   "centralAmerica",
+   "southAmerica"
+  ],
+  "range": "Southern Mexico to Paraguay and Brazil, plus Caribbean islands",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 5.0,
+   "longitude": -70.0
+  },
+  "mapSpan": 50,
+  "tagline": "A tree-top plant-eater with a dragon's crest",
+  "lede": "Stretched along a branch above a river, a green iguana can look like part of the tree until it lets go, splashes down and swims off. It is probably the largest member of the iguana family, a plant-eater with a crest of spines, and the most traded reptile in the world.",
+  "home": "The green iguana's native range runs from southern Mexico through Central America to central Brazil, Paraguay and Bolivia, and includes Caribbean islands such as Grenada, Aruba, Curaçao, Bonaire, Trinidad and Tobago, St. Lucia, Montserrat and Saba. It is active by day, lives mostly in trees and is often found near water, though it also digs burrows up to 2.4 metres deep.\n\nPeople have carried it far beyond, to Puerto Rico, Hispaniola, Grand Cayman, Florida, Texas, Hawaii, Fiji, Singapore, Thailand, Taiwan and Japan's Ishigaki Island, and it is invasive in many of these places.",
+  "anatomy": "Adults usually reach 1.2 to 1.7 metres from nose to tail tip, most of it tail, with a body of 30 to 42 centimetres. A typical male weighs about 4 kg and a female 1.2 to 3 kg, while a few big males exceed 8 kg and 2 metres. A row of spines runs down the back and tail, and a large dewlap under the throat helps regulate temperature and is used in displays.\n\nDespite the name, colour varies: bluish in Peru, red in western Costa Rica, orange in Mexico, and anything from lavender to black on some islands. Its leaf-shaped, serrated teeth can shred leaves and human skin. A gland in the nose expels excess potassium and salt from its plant diet. Iguanas see colour sharply, including ultraviolet, and a pale 'third eye' on top of the head senses light and movement from above.",
+  "life": "Green iguanas are mainly herbivores, eating leaves, flowers, fruit and growing shoots; in Panama the wild plum is a favourite. Young iguanas eat adults' droppings to pick up the gut microbes they need to digest tough plants. They are agile climbers and can fall 15 metres unhurt, grabbing at leaves with their hind claws to break the drop. In water they let their legs hang limp and drive themselves with the tail.\n\nThreatened, an iguana flees, diving into water if it can. Cornered, it extends its dewlap, puffs up, hisses and bobs its head, then lashes its whip-like tail, bites and claws. Head bobs carry meaning, used to greet another iguana or court a mate. Like many lizards, it can shed its tail to escape and grow a new one. At least 108 kinds of vertebrate are known to prey on it.",
+  "family": "Males have large scent-producing pores under their thighs, taller crests and spines, and heavy jowls, and show off with head bobs and tail whipping. Females lay one clutch a year of 20 to 71 eggs in a deep burrow, often at communal nesting sites, during a synchronised nesting period. In Panama they have been seen sharing nest sites with American crocodiles. Apart from defending the burrow while she digs, the mother gives no care.\n\nHatchlings emerge after 10 to 15 weeks, looking much like small females without spines. Young iguanas stay in family groups for their first year, and males in these groups shield females from predators with their own bodies, apparently the only reptile known to do this.",
+  "remarkable": "In 1995, after Hurricanes Luis and Marilyn, 15 or more green iguanas washed up on Anguilla aboard a raft of uprooted trees, on an island where the species had never been recorded. They had probably drifted for three weeks across 320 km of ocean from Guadeloupe, and were breeding within two years, direct proof that reptiles can colonise new islands by rafting.",
+  "outlook": "The green iguana is listed as Least Concern by the IUCN, with development and habitat loss noted as a possible future worry, and international trade is regulated under CITES. In parts of Central and South America it has become rare through hunting for food; Nicaragua partly closed its markets in 1976, and Panama acted to protect iguanas by the late 1960s.\n\nElsewhere the problem is too many. In Florida they burrow into canals and seawalls and eat rare native plants, Taiwan set a control quota of 120,000 in 2025, and Puerto Rico's population was put at 4 million in 2012.",
+  "people": "The word iguana comes from iwana, the Taíno name for the animal. Green iguanas and black iguanas have been eaten in Central and South America for 7,000 years, and they are still called gallina de palo, 'chicken of the tree', because they are said to taste like chicken. The Moche people of ancient Peru often depicted them in their art.\n\nBetween 1996 and 2012 green iguanas made up 46% of the US reptile trade, but many pets die within a few years because they need heat, space and ultraviolet light. Their teeth gave the dinosaur Iguanodon, 'iguana tooth', its name.",
+  "relatives": "Carl Linnaeus described the species in 1758. It probably originated in South America before spreading through Central America and the Caribbean, and genetic studies show a deep split between Central and South American populations. Some researchers now treat certain island forms as separate species, such as the southern Antillean horned iguana and the Saban black iguana, while others keep them all within the green iguana.\n\nClose relatives include the Lesser Antillean iguana and the rock iguanas of the genus Cyclura, a few of which may match it in weight.",
+  "didYouKnow": "During cold snaps in southern Florida, chilled iguanas lose their grip and drop from trees, an event local media have called a 'frozen iguana shower'.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "1.2–1.7 m"
+   },
+   {
+    "label": "Weight",
+    "value": "Males about 4 kg"
+   },
+   {
+    "label": "Clutch",
+    "value": "20–71 eggs"
+   },
+   {
+    "label": "Diet",
+    "value": "Leaves, flowers, fruit"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which dinosaur was named after the green iguana's teeth?",
+    "choices": [
+     "Iguanodon",
+     "Velociraptor",
+     "Triceratops",
+     "Stegosaurus, for the spines along its back"
+    ],
+    "explanation": "Iguanodon means 'iguana tooth'."
+   },
+   {
+    "prompt": "How did green iguanas reach Anguilla in 1995?",
+    "choices": [
+     "On a raft of trees",
+     "As escaped pets",
+     "In a cargo of fruit",
+     "Released by settlers who wanted them to eat insects on farms"
+    ],
+    "explanation": "A raft of uprooted trees carried them about 320 km after two hurricanes."
+   },
+   {
+    "prompt": "What is the green iguana's nickname where it is eaten?",
+    "choices": [
+     "Chicken of the tree",
+     "River dragon",
+     "Green ghost",
+     "King of the branches and the riverbank"
+    ],
+    "explanation": "It is called gallina de palo because it is said to taste like chicken."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Protects threatened tropical forests with local partners."
+   },
+   {
+    "name": "Wildlife Conservation Society",
+    "url": "https://www.wcs.org",
+    "blurb": "Saves wildlife and wild places across the Americas and beyond."
+   }
+  ]
+ },
+ {
+  "id": "goliath-frog",
+  "name": "Goliath Frog",
+  "scientificName": "Conraua goliath",
+  "wikipediaTitle": "Goliath frog",
+  "group": "amphibian",
+  "regions": [
+   "africa"
+  ],
+  "range": "Fast rivers and waterfalls of Cameroon and Equatorial Guinea",
+  "status": "EN",
+  "coordinate": {
+   "latitude": 3.0,
+   "longitude": 10.5
+  },
+  "mapSpan": 8,
+  "tagline": "The world's largest frog, a nest-digging river giant",
+  "lede": "The goliath frog is the largest living frog, a river giant that can weigh more than 3 kg and stretch beyond 80 centimetres with its legs extended. It has no mating call, and it may owe its size to construction work, digging out nest pools on riverbanks.",
+  "home": "This frog has a small range in Cameroon and Equatorial Guinea, mainly near waterfalls and rapids in a band of dense equatorial forest running roughly parallel to the coast. It has been found in the Sanaga basin, near the Nachtigal cascades and Sakbayeme rapids, and in the Kienke, Ntem and Mbía basins, where it was very abundant in the rapids and cascades.\n\nIts year is shaped by two seasons: a dry season from November to April and a rainy season from May to October, which change river levels and where the frogs can breed.",
+  "anatomy": "The heaviest verified specimen, caught in the Muni River system in 1960, weighed 3,305 g with a snout-to-vent length of 34 centimetres; the longest measured 35.6 centimetres. Claims of bigger ones are dubious. Males and females look alike. The back is greenish-brown and granular, the belly yellow to orange, and the toes are fully webbed. Its eyes can be nearly 2.5 centimetres across.\n\nIt has acute hearing but no vocal sac. Its lungs are about a third the volume of other frogs' and its heart is smaller, suiting a low-energy, sit-and-wait hunter, while extensive folds of skin help with breathing. Despite the adults' bulk, its eggs and tadpoles are no bigger than those of ordinary frogs.",
+  "life": "Goliath frogs eat a wide range of prey caught both on land and in water, an omnivorous diet with a strong preference for meat. Smaller frogs, under about 400 g, take worms, spiders, millipedes, insects, crustaceans, snails, fish, small mammals, reptiles and amphibians, including newts and smaller frogs. Frogs over 1 kg stick mostly to invertebrates, especially millipedes.\n\nThey are ambush hunters, relying on stealth and surprise, and have a low metabolic rate. Though they lack a vocal sac, they can call by opening the mouth, producing a high-pitched sound of about 4.4 kHz.",
+  "family": "Females lay masses of several hundred to a few thousand eggs, each about 3.5 millimetres, attached to plants, rocks or wood underwater. The frogs make 3 kinds of semicircular nest: cleared rock pools in the riverbed, existing washouts dammed off from the river, and pools dug into gravel banks, about 1 metre wide and 10 centimetres deep. Riverbed nests risk being washed out, while bank nests may dry up, so the choice depends on the season. Adults guard nests at night; the male probably builds and the female guards.\n\nTadpoles start feeding on leaves in their second month, grow legs in the third, and finish metamorphosis after about 85 to 95 days as froglets just 35 millimetres long. Goliath frogs can live 15 years in the wild.",
+  "remarkable": "Digging a nest more than a metre across and rolling aside heavy stones is gruelling work, and researchers think it may help explain why the goliath frog grew so big. Larger frogs are probably better at shifting the rocks and gravel, and nests let them breed in more places and over a longer season.",
+  "outlook": "The goliath frog is endangered, mainly because it is hunted for food, with deforestation, agriculture, habitat degradation and climate change adding pressure. Hunters dazzle frogs with lanterns at night and catch them in mesh nets. The IUCN has called for conservation work with local communities to keep hunting sustainable. Many have been exported for zoos and the pet trade, and Equatorial Guinea limits exports to 300 a year.\n\nParasites take a toll too, including a blood-dwelling nematode spread by mosquitoes, and the deadly chytrid fungus is a wider threat to amphibians.",
+  "people": "People are the only known predators of adult goliath frogs, which are too big for most other hunters. In Nkombia, villagers also try to net frogs resting on rocks by day, though this often fails because the frogs can leap 1.2 to 3 metres high and escape. The species is also known as the giant slippery frog and the goliath bullfrog.\n\nIn captivity, goliath frogs have proved shy and nervous. They may live up to 21 years there, longer than in the wild, yet no one has managed to breed them.",
+  "relatives": "The goliath frog belongs to the family Conrauidae. Its nest-building habit is shared with several other very large frogs, including male African bullfrogs, gladiator frogs and the Bornean giant river frog, which supports the idea that digging and big bodies go together.",
+  "didYouKnow": "Within a day of being laid, the jelly around a goliath frog's egg mass turns yellow and the eggs turn dark grey-brown.",
+  "facts": [
+   {
+    "label": "Snout–vent",
+    "value": "Up to about 35 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "Up to about 3.3 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "Up to 15 years wild"
+   },
+   {
+    "label": "Tadpole stage",
+    "value": "85–95 days"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What does the goliath frog lack that most frogs use to call?",
+    "choices": [
+     "A vocal sac",
+     "Webbed toes",
+     "Eyelids",
+     "A tympanum, the eardrum behind each eye"
+    ],
+    "explanation": "Without a vocal sac it makes no mating calls."
+   },
+   {
+    "prompt": "What is the main threat to the goliath frog?",
+    "choices": [
+     "Hunting for food",
+     "Volcanic eruptions",
+     "Cane toads",
+     "Oil spills along the coast of Cameroon"
+    ],
+    "explanation": "Hunting is the primary threat, with habitat loss adding pressure."
+   },
+   {
+    "prompt": "What may help explain the goliath frog's huge size?",
+    "choices": [
+     "Digging nest pools",
+     "Its cold habitat",
+     "Eating fruit",
+     "Living high in mountain lakes with no predators"
+    ],
+    "explanation": "Building nests means moving heavy stones, which bigger frogs may do better."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Amphibian Ark",
+    "url": "https://www.amphibianark.org",
+    "blurb": "Helps save threatened amphibians through conservation breeding and partnerships."
+   },
+   {
+    "name": "Save The Frogs",
+    "url": "https://www.savethefrogs.com",
+    "blurb": "Works to protect amphibian populations worldwide."
+   }
+  ]
+ },
+ {
+  "id": "bee-eaters",
+  "name": "Bee-eaters",
+  "scientificName": "Meropidae",
+  "wikipediaTitle": "Bee-eater",
+  "group": "bird",
+  "regions": [
+   "africa",
+   "asia",
+   "europe",
+   "oceania"
+  ],
+  "range": "Open country and forest edges from southern Europe and Africa to Australia",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 5.0,
+   "longitude": 35.0
+  },
+  "mapSpan": 80,
+  "tagline": "Jewel-bright birds that catch the insects that sting",
+  "lede": "A flash of green, gold and rose, a snap of the bill, and a bee-eater is back on its perch, beating a wasp against a branch. These slender, jewel-coloured birds specialise in prey that fights back, and they live in some of the most complex societies of any bird.",
+  "home": "There are 31 species of bee-eater in three genera. The family's centre is Africa, with many species in Asia and single species in Europe (the European bee-eater), Australia (the rainbow bee-eater) and Madagascar (the olive bee-eater). The genus Nyctyornis lives from India and southern China to Sumatra and Borneo, and Meropogon has a single species on Sulawesi.\n\nBee-eaters are not fussy about habitat. They need only a high perch to watch from and soil they can tunnel into. One species, the blue-headed bee-eater, hunts inside closed rainforest, and several others live along forest edges. Those breeding in temperate Europe, Asia and Australia migrate, and the southern carmine bee-eater makes a three-stage journey around southern Africa each year.",
+  "anatomy": "Bee-eaters are slender, short-necked and short-legged, with large heads and long, down-curved, sharply pointed bills used like forceps. Many have elongated central tail feathers. The plumage is usually bright and often largely green, though the carmine bee-eaters are mainly rose-coloured and three equatorial African species have no green at all. Many Merops species have a black bar through the eye.\n\nWing shape matches lifestyle: short, rounded wings belong to sedentary species that hunt in forest and reed-beds, long pointed ones to migrants. They fly strongly and directly and turn quickly, but rarely hover. Their weak feet manage barely a shuffle on the ground, though sharp claws help them cling to vertical banks and dig. Males and females usually look alike, but some differ in ultraviolet colours humans cannot see.",
+  "life": "Almost all prey is caught in flight, usually in a sally from an exposed perch, and European bee-eaters can spot a bee 60 metres away. Larger insects are carried back and beaten against the perch, and stinging ones are then rubbed, with the bird's eyes closed, to squeeze out the venom and sting. The skill is innate: a captive juvenile was stung on its first five tries but handled bees like an adult after ten. Across 20 studies, bees and wasps averaged 70% of the diet, though dragonflies, beetles, cicadas, moths and much else are eaten too, and the birds cough up black pellets of indigestible remains.\n\nBee-eaters are highly social, and perched pairs often sit touching. The red-throated and white-fronted bee-eaters live in year-round colonies of clans, helpers and offspring, with some birds even stealing prey from neighbours.",
+  "family": "Pairs are monogamous for at least a season, and sedentary species may stay together for years. Courtship is usually modest, though males often feed females, supplying much of the energy for eggs. Both partners dig the burrow into a cliff or flat ground, loosening soil with the bill and kicking it out with the feet, a job that can take 20 days and blunt the bill.\n\nAbout five white eggs are laid, one a day, on the bare floor. Both parents incubate by day but only the female at night, and the eggs hatch after about 20 days into blind, naked, pink chicks, which stay in the increasingly smelly burrow for about 30 days. In colonial species, breeding pairs may be assisted by up to five helpers.",
+  "remarkable": "Beekeepers have long blamed bee-eaters for raiding hives, but studies tell a gentler story. The birds mostly hunt over pastures and meadows up to 12 km from the colony, entering apiaries mainly in cold, rainy spells when bees stay home. In one Libyan study, bees sometimes foraged more when the birds were present than when they were absent.",
+  "outlook": "All bee-eaters are rated Least Concern by the IUCN. Most live in open country and have spread as land has been farmed, though some forest species have declined with habitat loss, such as forest cleared for oil palm in Malaysia. Nests are destroyed by trampling cattle, floods and damaged riverbanks, and some birds are shot or trapped; poachers in Cyprus alone kill an estimated 4,000 to 6,000 European bee-eaters a year. Natural enemies include birds of prey, snakes and rats, while honeyguides lay eggs in their nests and their chicks kill the young bee-eaters.",
+  "people": "Aristotle and Virgil both advised beekeepers to kill bee-eaters, and Aristotle knew they nested at the end of tunnels up to 2 metres long. In Greek myth, Apollo turned the Theban Botres into a bee-eater. Ancient Egyptians used bee-eater fat to keep biting flies away, and a relief in Queen Hatshepsut's mortuary temple probably shows a little green bee-eater.\n\nIn Hinduism the bird in flight was likened to a bow with its bill as an arrow, giving a Sanskrit name meaning 'Vishnu's bow'. Bee-eaters have appeared on the stamps of at least 38 countries.",
+  "relatives": "The family name Meropidae comes from Merops, Ancient Greek for 'bee-eater', and the English word dates from 1668. Bee-eaters belong to the Coraciiformes, and genetic studies show they are closer to the rollers and ground rollers than to kingfishers, todies and motmots, though the lineages split at least 40 million years ago.\n\nMost species belong to the genus Merops. The Asian, African and Arabian green bee-eaters were once treated as a single species, and some authorities still do.",
+  "didYouKnow": "Carmine bee-eaters sometimes hunt by riding on the backs of bustards.",
+  "facts": [
+   {
+    "label": "Species",
+    "value": "31"
+   },
+   {
+    "label": "Clutch",
+    "value": "About 5 eggs"
+   },
+   {
+    "label": "Incubation",
+    "value": "About 20 days"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly bees and wasps"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does a bee-eater deal with a bee's sting?",
+    "choices": [
+     "Rubs it out on a perch",
+     "Swallows it whole",
+     "Feeds it to its chicks",
+     "Soaks the bee in water until the venom washes out"
+    ],
+    "explanation": "It beats the insect and rubs it on a perch to discharge the venom and sting."
+   },
+   {
+    "prompt": "How far away can a European bee-eater spot a bee?",
+    "choices": [
+     "60 metres",
+     "6 metres",
+     "600 metres",
+     "2 kilometres, using its ultraviolet vision"
+    ],
+    "explanation": "European bee-eaters can spot a bee 60 metres away."
+   },
+   {
+    "prompt": "Where do bee-eaters nest?",
+    "choices": [
+     "In burrows they dig",
+     "In mud cups",
+     "In tree holes",
+     "In floating nests woven from reeds on lakes"
+    ],
+    "explanation": "Both partners dig a tunnel into a bank or flat ground."
+   }
+  ],
+  "charities": [
+   {
+    "name": "BirdLife International",
+    "url": "https://www.birdlife.org",
+    "blurb": "A global partnership protecting birds and their habitats."
+   },
+   {
+    "name": "RSPB",
+    "url": "https://www.rspb.org.uk",
+    "blurb": "Protects birds and nature in the UK and along migration routes."
+   }
+  ]
+ },
+ {
+  "id": "wels-catfish",
+  "name": "Wels Catfish",
+  "scientificName": "Silurus glanis",
+  "wikipediaTitle": "Wels catfish",
+  "group": "fish",
+  "regions": [
+   "europe",
+   "asia"
+  ],
+  "range": "Rivers and lakes of central and eastern Europe to western Asia",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 47.0,
+   "longitude": 30.0
+  },
+  "mapSpan": 40,
+  "tagline": "Europe's whiskered river giant, which can catch pigeons",
+  "lede": "Lurking in a sunken tree at the bottom of a slow river, the wels catfish waits for darkness. It is one of the largest freshwater fish in Europe, a slimy, whiskered giant that can top 2.5 metres, and in France some have taken to lunging onto riverbanks to grab pigeons.",
+  "home": "The wels is native to central, southern and eastern Europe, in the basins of the Baltic, Black and Caspian Seas. Introduced as a prized sport fish, it now ranges from the United Kingdom to western China, including Spain, Italy, France and Greece, and may even have a population in Santa Catarina, Brazil, after farmed fish escaped in a flood.\n\nIt favours large, warm lakes and deep, slow rivers, sheltering in holes in the riverbed and among sunken trees. One unusual population lives in abandoned cooling ponds and channels close to the Chernobyl power plant, where the fish appear healthy and remain top predators.",
+  "anatomy": "Most adults are about 1.3 to 1.6 metres long, and fish over 2 metres are rare. A 1.5-metre wels weighs 15 to 20 kg, while a 2.2-metre fish can reach 65 kg. The heaviest authenticated specimen, from Italy's river Po in 2010, weighed 134.97 kg, and the longest on record, from a Polish reservoir in 2025, measured 2.92 metres. Only the Atlantic and beluga sturgeons grow bigger in the fresh waters of Europe and western Asia.\n\nIts wide mouth holds rows of small teeth, with 2 long barbels on the upper jaw and 4 shorter ones below. A long anal fin runs back to the tail, and the dorsal fin is small and set far forward. The skin is very slimy, black in clear water and greenish-brown in muddy water, with a pale belly. Its long body even lets it swim backwards like an eel.",
+  "life": "The wels hunts mostly at night, relying on keen hearing and smell, though a reflective layer in the eye helps it see in the dark. It whips up an eddy with its pectoral fins to disorient a victim, then sucks it in and swallows it whole. It eats worms, snails, insects, crustaceans and fish, and big individuals take eels, frogs, snakes, rats, voles, coypu, ducks and even other catfish.\n\nOn the river Tarn, where the species was introduced in 1983, wels were filmed in 2012 deliberately beaching themselves to snatch birds at the water's edge, succeeding in 28% of attempts. This behaviour has not been reported in its native range. Wels have also been seen feeding at the surface by day on dead Asian clams after mass die-offs.",
+  "family": "A female can produce up to 30,000 eggs per kilogram of body weight. The male guards the nest until the eggs hatch, which takes 3 to 10 days depending on water temperature, and if the water level drops he has been seen splashing the eggs with his tail to keep them wet.\n\nIn warm parts of Central and Southern Europe, wels typically live 20 to 30 years. In cold water their metabolism slows and they live far longer: a 2-metre fish caught in Sweden was estimated to be at least 70 years old, four times the age of similar-sized fish from warmer waters.",
+  "remarkable": "The wels won its place in Europe by outlasting a rival. Around 5.3 million years ago the dominant catfish of eastern Europe was Soldatov's catfish, and the wels may have been confined to a single refuge in the Black Sea and Caspian region. As the climate cooled and dried in the Pliocene, the more adaptable wels spread and gradually replaced its relative, which now survives only in eastern Asia.",
+  "outlook": "The wels is not considered globally endangered, but its northern populations have long been shrinking. It vanished from Denmark in the 1700s and Finland in the 1800s, and in Sweden it survives only in a few lakes and rivers, where it is considered near threatened and genetic diversity is low.\n\nWhere introduced it can cause harm. Since it was released into Spain's Mequinenza Reservoir in 1974 it has spread through the Ebro basin, where some once-abundant native barbels have disappeared through competition and predation.",
+  "people": "The English name comes from the German Wels, from the same ancient root as the word whale, and the fish is also called the sheatfish. Young wels are eaten and the species is farmed in ponds, but fish over 15 kg are fatty and can build up toxic contaminants, so big ones are prized instead as hard-fighting sport fish. Anglers attract them with a clonk, a tool that makes a distinctive sound in the water.\n\nTales of man-eating catfish go back centuries. TV presenter Jeremy Wade concluded that local wels were too small to eat an adult, though one he caught tried to bite his calf. In 2025, police in Bavaria shot a wels that had bitten five swimmers in the Brombachsee.",
+  "relatives": "The wels belongs to the genus Silurus. Its only native European relative is Aristotle's catfish of Greece. Others include the Amur catfish of East Asia, now introduced to European rivers, the giant Lake Biwa catfish of Japan, and Soldatov's catfish from the Amur River in Russia.\n\nThe earliest identifiable wels fossils come from Ukraine, with possibly older but poorly preserved remains from the same region dating back 6 to 7 million years.",
+  "didYouKnow": "Albino wels catfish exist and are occasionally caught by anglers.",
+  "facts": [
+   {
+    "label": "Typical length",
+    "value": "1.3–1.6 m"
+   },
+   {
+    "label": "Record weight",
+    "value": "134.97 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "20–30 years, 70+ in cold water"
+   },
+   {
+    "label": "Diet",
+    "value": "Fish, frogs, birds and more"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What have introduced wels catfish in France learned to catch?",
+    "choices": [
+     "Pigeons",
+     "Rabbits",
+     "Swans",
+     "Bats flying low over the river at dusk"
+    ],
+    "explanation": "On the river Tarn they beach themselves to grab pigeons at the water's edge."
+   },
+   {
+    "prompt": "How does the male wels care for the eggs?",
+    "choices": [
+     "He guards the nest",
+     "He mouth-broods them",
+     "He buries them in mud",
+     "He moves them to a new nest each night to avoid predators"
+    ],
+    "explanation": "He guards the nest and may splash the eggs to keep them wet."
+   },
+   {
+    "prompt": "Where was a wels estimated to be at least 70 years old?",
+    "choices": [
+     "Sweden",
+     "Spain",
+     "Greece",
+     "Brazil, in the Itajaí-Açu river"
+    ],
+    "explanation": "Cold water slows their metabolism and greatly extends their lives."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works to protect rivers, lakes and freshwater wildlife worldwide."
+   }
+  ]
+ },
+ {
+  "id": "stalk-eyed-flies",
+  "name": "Stalk-eyed Flies",
+  "scientificName": "Diopsidae",
+  "wikipediaTitle": "Stalk-eyed fly",
+  "group": "insect",
+  "regions": [
+   "asia",
+   "africa"
+  ],
+  "range": "Humid streamside vegetation, mainly in the Old World tropics",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 0.0,
+   "longitude": 60.0
+  },
+  "mapSpan": 80,
+  "tagline": "Tiny flies with eyes on stalks, judged by choosy females",
+  "lede": "Imagine having your eyes perched on the tips of long horns sticking out from the sides of your head. Male stalk-eyed flies live like that, and the wider their eyes, the more females gather around them at night. These tiny flies have become a textbook example of how mate choice can drive extravagant ornaments.",
+  "home": "More than 100 species of stalk-eyed fly are known, with the greatest diversity in the tropics of Africa and Asia; the best-known species come from Southeast Asia and southern Africa. Two species have been described from North America, and a European species was recently found in Hungary.\n\nAdults usually live on low vegetation in humid places, often near streams and rivers. At night they roost on root hairs dangling over stream banks, gathering in small groups and returning to the same spots each day.",
+  "anatomy": "Stalk-eyed flies are small, about 4 to 12 millimetres long. Their triangular heads carry long sideways projections with the compound eyes at the tips, and unusually the antennae sit on the stalks as well. Females have eyestalks too, but much shorter ones than males. Two African genera, Centrioncus and Teloglabrus, lack stalks altogether.\n\nThe back of the thorax bears a pair of stout spines, and the front legs have thick thighs armed with spines beneath. Despite the odd layout, each eye sees more than a hemisphere, and about 70% of the facets in one eye have a partner in the other looking the same way. That gives wide binocular vision, reaching over 135° in front and below.",
+  "life": "Adults scavenge fungi and bacteria from decaying vegetation, and the family as a whole feeds on both decaying plants and animals. Larvae eat rotting or fresh plant matter, and one species, Diopsis macrophthalma, is a pest of rice and sorghum in tropical Africa.\n\nTheir behaviour is driven by sight. By day they may defend temporary territories with threat displays. When evenly matched males meet at the evening roost, they square up in ritualised contests, facing each other with front legs spread and comparing eye spans, and the dominant male drives his rival away. They react most strongly to other flies about 50 millimetres away, and will even threaten their own reflection in a mirror.",
+  "family": "Mating usually happens in the early morning near the roosts. Females strongly prefer to roost and mate with long-stalked males, and those males are also better at winning contests to control the roosting groups. In peninsular Malaysia, researchers counting flies on 40 root hairs along a 200-metre stretch of stream found that males with the widest eyes were joined by the most females.\n\nIn the laboratory, after 13 generations of breeding for long or short eye spans, daughters of long-eyed lines preferred long-eyed males, while daughters of short-eyed lines preferred short ones. Because the females had been kept apart from males, the preference had to be inherited rather than learned.",
+  "remarkable": "Shortly after emerging from its pupa, a stalk-eyed fly gulps air and pumps it through ducts in its head to the tips of the eyestalks, stretching them out while they are still soft and transparent. In effect, it inflates its own face into shape.",
+  "outlook": "Stalk-eyed flies as a group have no conservation assessment. Their lives centre on humid, streamside vegetation and the hanging roots where they roost and mate, so they depend on stream banks staying shaded and damp. Much of what is known comes from a handful of well-studied species.",
+  "people": "Carl Linnaeus named the genus Diopsis in 1775, and the flies have since become stars of evolutionary research. Their exaggerated eyes are now regarded as a classic case of sexual selection, an idea that was once controversial. Studies also show the trait is an honest signal: some males grow wide eyes whatever the conditions, while in others eye span shrinks as food gets poorer, so a female choosing wide eyes is choosing good genes.\n\nIn some populations a selfish gene on the X chromosome skews broods towards daughters. Males carrying a gene that suppresses it have longer eyestalks, so females that pick them produce more sons.",
+  "relatives": "True stalk-eyed flies form the family Diopsidae within the order Diptera, the true flies. It has two subfamilies: the Diopsinae, all with stalked eyes, and the Centrioncinae, African flies with ordinary eyes, once treated as a separate family. Some flies in other families, such as Drosophilidae, Platystomatidae, Richardiidae and Tephritidae, have similar heads, but their antennae stay in the middle of the face.\n\nTheir distinctive shape makes fossils easy to recognise. Prosphyracephala, preserved in Eocene Baltic amber, already had stalked eyes and is the earliest-branching member of the Diopsinae.",
+  "didYouKnow": "Adult male stalk-eyed flies have lost two of the plates on the upper side of the abdomen, tergites seven and eight.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "4–12 mm"
+   },
+   {
+    "label": "Species",
+    "value": "More than 100"
+   },
+   {
+    "label": "Diet",
+    "value": "Fungi and bacteria"
+   },
+   {
+    "label": "Roost",
+    "value": "Root hairs by streams"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What do female stalk-eyed flies look for in a mate?",
+    "choices": [
+     "Long eyestalks",
+     "Bright wings",
+     "A loud buzz",
+     "The largest gift of food brought to the roost"
+    ],
+    "explanation": "Females prefer males with the widest eye spans."
+   },
+   {
+    "prompt": "How does a newly emerged fly lengthen its eyestalks?",
+    "choices": [
+     "It pumps air into them",
+     "They grow over months",
+     "It stretches them with its legs",
+     "It eats fungi that release growth chemicals"
+    ],
+    "explanation": "It swallows air and pumps it to the tips while the stalks are still soft."
+   },
+   {
+    "prompt": "Where do stalk-eyed flies roost at night?",
+    "choices": [
+     "On root hairs by streams",
+     "In rotting logs",
+     "Under stones",
+     "High in the forest canopy, under leaves"
+    ],
+    "explanation": "They gather on dangling root hairs along stream banks."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Xerces Society",
+    "url": "https://xerces.org",
+    "blurb": "Protects insects and other invertebrates through science and advocacy."
+   },
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Protects threatened tropical forests with local partners."
+   }
+  ]
+ },
+ {
+  "id": "bactrian-camel",
+  "name": "Bactrian Camel",
+  "scientificName": "Camelus bactrianus",
+  "wikipediaTitle": "Bactrian camel",
+  "group": "mammal",
+  "regions": [
+   "asia"
+  ],
+  "range": "Steppes and deserts of Central Asia, mostly in domestic herds",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 44.0,
+   "longitude": 100.0
+  },
+  "mapSpan": 40,
+  "tagline": "The two-humped camel that carried the Silk Road",
+  "lede": "With two humps, a shaggy mane and feet built for sand, the Bactrian camel kept the caravans of the Silk Road moving for centuries. It shrugs off winters of −30 °C and summers of 50 °C, and it can go months without a drink.",
+  "home": "Bactrian camels are native to the steppes of Central Asia and take their name from Bactria, an ancient region there. Their habitat ranges from rocky mountain massifs to flat steppe, stony plains, sand dunes and arid desert, especially the Gobi. Plants are sparse and water scarce, so herds gather near rivers after rain or at the foot of mountains, where springs flow in summer and snow lies in winter.\n\nThe population of about 2 million is mainly domesticated, bred across Central Asia, the Middle East and parts of China and Mongolia. In the late 19th century, small feral herds even roamed the deserts of the south-western United States after imported pack camels were turned loose.",
+  "anatomy": "The Bactrian is the largest living camel, although shorter at the shoulder than the dromedary. It stands 160 to 180 centimetres at the shoulder and about 213 centimetres at the top of the humps, with a head-and-body length of 225 to 350 centimetres. Males weigh about 600 kg and females 480 kg, and the heaviest reach 1,000 kg.\n\nThe humps are fat, not water; they stand plump and upright when the camel is well fed and shrink and lean sideways when food is short. The woolly coat, dark brown to sandy beige, includes a mane and beard of hair up to 25 centimetres long, and is shed in great patches, as if sloppily shorn. Long eyelashes and closable nostrils keep out sand, and two broad toes on each foot spread wide to walk on it.",
+  "life": "Bactrian camels graze by day and sleep in the open at night. Tough mouths let them eat dry, thorny, salty or bitter plants, and salt-loving plants are a necessary part of their diet. In hard times they will eat carcasses, bones and skin, and they have even eaten rope, sandals and tents. Swallowed food is later brought back up as cud and chewed again.\n\nWhen water is available they may drink up to 57 litres, and a thirsty camel in the hot season can take in 200 litres in a day. In winter they are among the few animals that regularly eat snow to meet their water needs. Moving faster than a walk, they pace, stepping with both legs on one side together, and have reached 65 km/h, though sustained speeds are nearer 40 km/h. Their eyesight is good and their sense of smell excellent.",
+  "family": "Males in the rut can be violent, biting, spitting and trying to sit on rivals. Females ovulate only after mating, triggered by the seminal fluid itself. After a pregnancy of about 13 months, a female gives birth to one calf, or occasionally two, usually every other year.\n\nCalves average 36 kg at birth and can stand and run soon after. They nurse for about 18 months and stay with their mother for three to five years until mature, often helping to raise younger siblings. Lifespan is estimated at up to 50 years, though domestic camels have not been recorded beyond 35.",
+  "remarkable": "The domestic Bactrian camel is not a tamed version of the wild Bactrian camel. The two are separate species whose lineages split around 1 million years ago, and both are related to an extinct giant camel, Camelus knoblochi, which died out about 20,000 years ago. The wild Bactrian camel is the only truly wild camel species left in the Old World.",
+  "outlook": "Because almost all Bactrian camels are domestic, the species' future is bound up with the herders who keep them. In Mongolia, breeding is managed by pairing females with experienced bulls in the rut, Kazakhstan and Uzbekistan increasingly use artificial insemination, and large farms in China's Xinjiang aim to conserve the breed's genetics. Genetic studies reveal several population bottlenecks in both wild and domestic Bactrians over the past 350,000 years.",
+  "people": "Domesticated around 2500 BCE, the Bactrian camel became a mainstay of transport on the Silk Road. It can carry 170 to 250 kg for 47 km a day, and the Indian Army uses it to patrol Ladakh, where it carries 170 kg above 5,200 metres. Camels are also ridden and kept for milk and wool, and in early medieval Bukhara the male camel appeared on coins as an emblem linked to Verethragna, god of war and victory.\n\nAristotle described both one- and two-humped camels in the 4th century BCE. The 2003 Mongolian docudrama The Story of the Weeping Camel follows herders persuading a mother to accept her rejected white calf.",
+  "relatives": "The Bactrian camel shares the genus Camelus with the dromedary and the wild Bactrian camel, in the family Camelidae, and Linnaeus gave it its scientific name in 1758. Camelids first appeared in North America about 30 million years ago, and by about 2 million years ago a Bactrian-like form had crossed the Bering Strait into Asia; their American relatives now survive only in South America.\n\nBactrians and dromedaries often interbreed and produce fertile young, especially where they meet in Iran, Afghanistan and northern Punjab, but their DNA differs enough to keep them separate species.",
+  "didYouKnow": "A camel from the 19th-century United States Camel Corps was later sold to Ringling Brothers and appeared in several early Hollywood films.",
+  "facts": [
+   {
+    "label": "Shoulder height",
+    "value": "160–180 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "300–1,000 kg"
+   },
+   {
+    "label": "Gestation",
+    "value": "About 13 months"
+   },
+   {
+    "label": "Load",
+    "value": "170–250 kg"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What are a Bactrian camel's humps made of?",
+    "choices": [
+     "Fat",
+     "Water",
+     "Muscle",
+     "Spongy bone that stores minerals for winter"
+    ],
+    "explanation": "The humps store fat, not water as is sometimes thought."
+   },
+   {
+    "prompt": "When was the Bactrian camel domesticated?",
+    "choices": [
+     "Around 2500 BCE",
+     "Around 500 CE",
+     "Around 10,000 BCE",
+     "In the 1800s, for the United States Camel Corps"
+    ],
+    "explanation": "It was domesticated around 2500 BCE and later carried Silk Road caravans."
+   },
+   {
+    "prompt": "How does a Bactrian camel move faster than a walk?",
+    "choices": [
+     "It paces",
+     "It trots",
+     "It hops",
+     "It gallops with front and back legs moving in pairs"
+    ],
+    "explanation": "It steps with both legs on the same side together."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works to conserve wildlife and landscapes, including the steppes of Central Asia."
+   },
+   {
+    "name": "Wildlife Conservation Society",
+    "url": "https://www.wcs.org",
+    "blurb": "Protects wildlife and wild places across Asia and beyond."
+   }
+  ]
+ },
+ {
+  "id": "sea-butterflies",
+  "name": "Sea Butterflies",
+  "scientificName": "Thecosomata",
+  "wikipediaTitle": "Sea butterfly",
+  "group": "marineInvertebrate",
+  "regions": [
+   "openOcean"
+  ],
+  "range": "Open oceans worldwide, drifting in the plankton",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 0.0,
+   "longitude": -30.0
+  },
+  "mapSpan": 80,
+  "tagline": "Tiny swimming snails that fly through the open sea",
+  "lede": "Not every snail crawls. Sea butterflies have turned their foot into a pair of wings and spend their whole lives flapping through the open ocean, many of them no bigger than a lentil. They are among the most abundant snails on the planet, and a vital link in ocean food chains.",
+  "home": "Sea butterflies are holoplanktonic, meaning they spend their entire lives drifting and swimming in open water rather than on the seabed or shore. They travel with the currents through the world's oceans, and they are eaten by fish that are in turn hunted by penguins and polar bears, so their reach extends from polar seas to the warm tropics.\n\nThe community shifts on a daily rhythm. By day many sea butterflies shelter more than 100 metres down; at night they rise to feed near the surface, and by morning they have sunk back to deeper water.",
+  "anatomy": "Sea butterflies are small sea snails, ranging in size from a lentil to, at the very largest, an orange. Most carry a calcified shell, but it is very light and is usually transparent, fragile and less than 1 centimetre long, so the animals are hard to spot. Shells are symmetrical and come in many shapes: coiled, needle-like, triangular or globular. Several families have lost the shell and the gill completely or almost completely.\n\nThe foot has become two wing-like lobes called parapodia, which push the animal through the water with slow flapping. The wings are highly flexible because their muscles are arranged differently from those of other snails, and they are stiffened by fluid under pressure, a hydrostatic skeleton. That flexibility reduces drag and helps them carry the weight of a shell as they climb.",
+  "life": "Sea butterflies swim with a 'clap-and-fling' stroke. In Limacina helicina, a sharp rotation of the body drives the fast power stroke, then the shell twists back the other way for a slower recovery stroke, so the animal climbs along a sawtooth path. To sink to deeper water, they simply hold their wings up.\n\nMostly herbivorous, they are largely passive plankton feeders that float belly-up and secrete a fine mucus web to catch plankton and other particles drifting in the water. The web can be up to 5 centimetres wide, many times larger than the animal itself. Some forage more actively at times, and if disturbed, a sea butterfly simply abandons its web and flaps slowly away.",
+  "family": "The shell begins early in life. In the largest group, the Euthecosomata, it is present at every stage, from larva to adult. In the Cymbuliidae the young shed their larval shell and grow a soft, cartilage-like 'pseudoconch' in its place, while adult Desmopteridae have no rigid covering at all. The wings themselves are a product of growing up, developing from the foot as the animal matures.\n\nBeyond this, little has been documented about sea butterflies' habits and behaviour, a reflection of how hard such tiny, fragile drifters are to study.",
+  "remarkable": "Tiny as they are, sea butterflies help shape the chemistry of the planet. Their shells are made of aragonite, a form of calcium carbonate, and the group accounts for as much as 12% of global carbonate flux, making it a significant part of the ocean's carbon and calcium cycles.",
+  "outlook": "As a suborder containing many species, sea butterflies have no single conservation status. Their sheer numbers make them a cornerstone of the open ocean, and their fragile shells and dependence on currents mean their fortunes are tied to the condition of the sea itself.",
+  "people": "For people, sea butterflies matter mostly through the animals that eat them. They are food for seabirds, whales and many commercially important fish. But fish that eat them in large quantities can develop 'black gut', which makes them impossible to sell. Their common name comes from the way they appear to fly through the water on beating wings.",
+  "relatives": "Sea butterflies form the Thecosomata within the order Pteropoda, alongside their sister group, the sea angels or Gymnosomata, whose adults have no shell. Sea angels feed only on sea butterflies. The pteropod order fell out of favour for some years, but recent molecular evidence suggests it should be revived. Classifications within the group differ: one divides it into Euthecosomata and Pseudothecosomata, while Bouchet and Rocroi's 2005 scheme places families such as the Limacinidae and Cavoliniidae together in the superfamily Cavolinioidea.\n\nGeologically they are a young group, known from the Late Paleocene. Their shells are chemically unstable, so few survive as fossils, and most of those that do were laid down in shallow, tropical seas.",
+  "didYouKnow": "The name Thecosomata comes from Ancient Greek words meaning 'case' and 'body'.",
+  "facts": [
+   {
+    "label": "Shell size",
+    "value": "Usually under 1 cm"
+   },
+   {
+    "label": "Feeding web",
+    "value": "Up to 5 cm wide"
+   },
+   {
+    "label": "Daytime depth",
+    "value": "Often below 100 m"
+   },
+   {
+    "label": "Carbonate role",
+    "value": "Up to 12% of global flux"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What has the sea butterfly's foot become?",
+    "choices": [
+     "Two wing-like lobes",
+     "A sucker",
+     "A spiral shell",
+     "A long tentacle used for catching passing fish"
+    ],
+    "explanation": "The foot forms two flapping parapodia used for swimming."
+   },
+   {
+    "prompt": "How do sea butterflies catch food?",
+    "choices": [
+     "With a mucus web",
+     "With stinging cells",
+     "By grazing on rocks",
+     "By filtering seawater through comb-like plates on their gills"
+    ],
+    "explanation": "They secrete a mucus web up to 5 centimetres wide to trap plankton."
+   },
+   {
+    "prompt": "Which animals feed only on sea butterflies?",
+    "choices": [
+     "Sea angels",
+     "Polar bears",
+     "Penguins",
+     "Sperm whales diving to the deep scattering layer"
+    ],
+    "explanation": "Their shell-less relatives, the sea angels, depend entirely on them."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Oceana",
+    "url": "https://oceana.org",
+    "blurb": "Campaigns to protect and restore the world's oceans."
+   },
+   {
+    "name": "Marine Conservation Society",
+    "url": "https://www.mcsuk.org",
+    "blurb": "Works for cleaner, healthier seas and the wildlife in them."
+   }
+  ]
+ }
+]
