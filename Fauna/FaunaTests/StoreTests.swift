@@ -15,6 +15,15 @@ final class StoreTests: XCTestCase {
 
     private func day(_ offset: Int) -> Date { cal.date(byAdding: .day, value: offset, to: .now)! }
 
+    /// A kind-and-place pair no animal has, for testing an empty focus.
+    private func emptyFocus() -> (AnimalGroup, Region)? {
+        let library = AnimalLibrary.load()
+        for g in AnimalGroup.allCases {
+            for r in Region.allCases where !library.contains(where: { $0.group == g && $0.regions.contains(r) }) { return (g, r) }
+        }
+        return nil
+    }
+
     private func tempURL() -> URL {
         FileManager.default.temporaryDirectory.appendingPathComponent("fauna-test-\(UUID().uuidString).json")
     }
@@ -174,8 +183,9 @@ final class StoreTests: XCTestCase {
         }
     }
 
-    func testImpossibleFocusStillGivesADailyAnimal() {
-        let store = onboarded(groups: [.fish], regions: [.antarctica])
+    func testImpossibleFocusStillGivesADailyAnimal() throws {
+        let empty = try XCTUnwrap(emptyFocus(), "every kind lives in every place")
+        let store = onboarded(groups: [empty.0], regions: [empty.1])
         XCTAssertTrue(store.focusPool.isEmpty)
         XCTAssertNotNil(store.currentAnimal)
         store.refreshDay(now: day(1))

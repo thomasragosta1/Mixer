@@ -7,7 +7,7 @@ final class ContentTests: XCTestCase {
     private var animals: [Animal] { Self.animals }
 
     func testLibraryLoadsAllAnimals() {
-        XCTAssertEqual(animals.count, 68)
+        XCTAssertGreaterThanOrEqual(animals.count, 68)
     }
 
     func testIDsAreUnique() {

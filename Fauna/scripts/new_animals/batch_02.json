@@ -1,0 +1,350 @@
+[
+  {
+    "id": "canada-jay",
+    "name": "Canada Jay",
+    "scientificName": "Perisoreus canadensis",
+    "wikipediaTitle": "Canada jay",
+    "group": "bird",
+    "regions": [
+      "naEast",
+      "naWest",
+      "arctic"
+    ],
+    "range": "Boreal forests across Canada and Alaska, and mountain forests south to Arizona",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 55.0,
+      "longitude": -100.0
+    },
+    "mapSpan": 35,
+    "tagline": "The 'whisky jack' that nests in the snow",
+    "lede": "Fluffy, grey and fearless, the Canada jay will land on a hiker's hand to steal a sandwich. Behind the cheek is a remarkable survival plan: it hides thousands of morsels every summer, glued in place with sticky spit, then lives on them through the northern winter, raising chicks while snow still covers the forest.",
+    "home": "Canada jays live year-round in the boreal forest of North America, from Alaska east to Newfoundland and Labrador and north to the tree line. They also live in the subalpine forests of the Rocky Mountains, south to New Mexico and Arizona, and in the northern Great Lakes states, the Adirondacks and New England.\n\nThey stay on the same territory all their lives and don't migrate, even in the coldest winters.",
+    "anatomy": "The Canada jay is a fairly large songbird, but small for a jay: 25 to 33 centimetres long, with a wingspan of about 45 centimetres and a weight of only 65 to 70 grams. Its feathers are soft and fluffy, medium grey on the back and paler underneath, with a whitish head and a darker grey nape.\n\nIt has a short, black bill and a big, enlarged salivary gland, which produces the sticky saliva it uses to store food.",
+    "life": "Canada jays will eat almost anything. They hunt insects, spiders, worms, mice, shrews, eggs and nestling birds, and have even caught a small warbler in mid-air. They also eat berries, fungi, carrion and whatever campers leave unguarded.\n\nThey are 'scatterhoarders'. Through summer and autumn, each bird stores thousands of bits of food, rolling each one in its mouth into a ball coated with saliva, then sticking it into bark, under lichen or among conifer needles, each in a different place. Months later, it finds them again from memory.\n\nThe saliva-coated balls stick to whatever they touch, so the bird can wedge food high in a tree, safe from mice and squirrels and above the winter snow.",
+    "family": "Pairs mate for life, and usually begin breeding at two years old. Unusually, they nest in late winter, in February or March, when the forest is still deep in snow. The male picks a site in a conifer, often a black spruce, and the pair build a thick, well-insulated cup of twigs, bark and feathers.\n\nThe female lays two to four eggs. While she incubates, the male feeds her from their stores. After the chicks fledge in spring, the strongest young bird drives its siblings away and stays with its parents through the next winter.\n\nLife is hard for young jays. In studies in Ontario and Quebec, about half of the dominant juveniles that stayed with their parents died by spring, and 85 percent of the young driven away died before mid-October. Adults that hold a territory do much better, losing only about 15 to 18 percent a year.",
+    "remarkable": "Its sticky stores let the Canada jay survive winters that drive most songbirds south, and give it a head start on breeding. Because chicks hatch so early, there is time to stock up the territory again before the next winter arrives.",
+    "outlook": "The Canada jay is listed as Least Concern and is common across the boreal forest. Research in Algonquin Park, Ontario, suggests that warmer autumns may be a threat at the southern edge of its range: when the weather swings above freezing, stored food can rot before winter.",
+    "people": "Its many nicknames, including camp robber, moose bird, lumberjack and whisky jack, come from its habit of visiting camps and following hunters. 'Whisky jack' comes from Wisakedjak, a benevolent trickster figure in the stories of several First Nations, including the Cree.\n\nIn 2016, an online vote and expert panel organised by Canadian Geographic chose the Canada jay as Canada's national bird, although it hasn't been officially adopted.",
+    "relatives": "Despite its name, the Canada jay is not closely related to the blue jay. It belongs to the genus Perisoreus, with two Eurasian birds, the Siberian jay and the Sichuan jay, and its closest relatives are thought to be the azure-winged magpies.\n\nAll are members of the crow family, Corvidae, which also includes ravens, crows and magpies, birds known for their intelligence and excellent memories.",
+    "didYouKnow": "Canada jays lay their eggs in late winter, when temperatures can still drop below minus 20 degrees.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "25–33 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "65–70 g"
+      },
+      {
+        "label": "Wingspan",
+        "value": "About 45 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Almost anything: insects, eggs, berries"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do Canada jays store food for the winter?",
+        "choices": [
+          "Coat it in sticky saliva and hide it in trees",
+          "Bury it in one big pile underground",
+          "Freeze it in lake ice",
+          "Hide it in old woodpecker holes in groups of ten"
+        ],
+        "explanation": "Each bit of food is rolled into a saliva-coated ball and stuck to bark or needles, in thousands of different spots."
+      },
+      {
+        "prompt": "When do Canada jays nest?",
+        "choices": [
+          "In late winter, while snow covers the forest",
+          "In midsummer",
+          "In autumn",
+          "Only after the snow has fully melted"
+        ],
+        "explanation": "They nest in February or March and live on their stored food."
+      },
+      {
+        "prompt": "Where does the name 'whisky jack' come from?",
+        "choices": [
+          "Wisakedjak, a figure in First Nations stories",
+          "A lumber camp in Ontario where it stole whisky",
+          "Its call",
+          "A 19th-century naturalist"
+        ],
+        "explanation": "Whisky jack is an anglicised version of Wisakedjak, a trickster figure in Cree and other traditions."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Birds Canada",
+        "url": "https://www.birdscanada.org",
+        "blurb": "Canada's national bird conservation charity, running surveys and protecting habitat with volunteers."
+      }
+    ]
+  },
+  {
+    "id": "northern-gannet",
+    "name": "Northern Gannet",
+    "scientificName": "Morus bassanus",
+    "wikipediaTitle": "Northern gannet",
+    "group": "bird",
+    "regions": [
+      "naEast",
+      "europe",
+      "openOcean"
+    ],
+    "range": "North Atlantic coasts, from Quebec and Newfoundland to Scotland, Ireland and Norway",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 52.0,
+      "longitude": -30.0
+    },
+    "mapSpan": 40,
+    "tagline": "A seabird that dives like a dart at 85 km/h",
+    "lede": "From 30 metres up, a northern gannet folds its wings and plunges headfirst into the sea, hitting the water at up to 85 km/h. Its body is built like a crash helmet, with air cushions under the skin and nostrils sealed shut, and whole cliffs turn white with tens of thousands of them.",
+    "home": "Northern gannets breed on both sides of the North Atlantic, on coasts warmed by the Gulf Stream. In Canada, their colonies include Bonaventure Island off Quebec's Gaspé Peninsula, home to about 60,000 pairs, and cliffs in Newfoundland and the Gulf of St. Lawrence. In Europe the largest colonies are in Scotland, at the Bass Rock and St. Kilda, and in Ireland and Wales.\n\nThey nest on cliffs and steep offshore islands, which let them launch easily into the wind. In recent decades new colonies have appeared as far north as Russia's Kola Peninsula and Svalbard.",
+    "anatomy": "The northern gannet is the largest seabird of the North Atlantic: 87 to 100 centimetres long, with a wingspan of 170 to 180 centimetres and a weight of 2.3 to 3.6 kg. Adults are brilliant white with black wingtips, a buff-yellow wash on the head, and a long, pointed blue-grey bill outlined in black skin.\n\nYoung gannets are dark grey-brown, flecked with white, and take five years to reach their full white plumage.\n\nTheir long, narrow wings sit far forward on the body, letting them ride air currents with little effort and cruise at 55 to 65 km/h even in calm weather.",
+    "life": "Gannets feed by day, mostly on schooling fish such as mackerel, herring, capelin and sand eels. They often hunt in groups, circling high above a shoal and diving one after another. Most dives are shallow, but a gannet can swim deeper using its wings and feet.\n\nParents feeding chicks may travel up to 320 kilometres from the colony in search of fish. After breeding, adults spread out over the ocean, and many from European colonies winter off West Africa and in the Mediterranean.\n\nGannets are noisy at the colony, greeting and challenging each other with a harsh 'urrah-urrah'. They are also strong, efficient fliers, using their long wings to ride the wind over the waves.",
+    "family": "Gannets usually pair for life and return to the same nest each year, a heap of seaweed, grass and debris. Pairs greet each other with an elaborate display, standing breast to breast, raising their bills skyward and 'fencing' them together.\n\nThe female lays a single egg, and both parents incubate it under their webbed feet, which are richly supplied with blood, for about 44 days. The chick is fed for around three months. Then, still unable to fly well, it jumps off the cliff, swims away from the colony and lives on its fat for a couple of weeks while it learns to fish.",
+    "remarkable": "Diving gannets are protected by a spongy plate of bone at the base of the bill, strong neck muscles, and air sacs under the skin of the chest and shoulders that cushion the impact. Their nostrils are inside the bill and can be closed, and their eyes are protected by a see-through extra eyelid.",
+    "outlook": "The northern gannet is listed as Least Concern, and its numbers grew strongly through the 20th century. In 2022, though, an outbreak of bird flu killed thousands of adults at colonies including Bass Rock and Bonaventure Island, and scientists are watching closely to see how quickly they recover. Plastic rope and fishing line woven into nests also entangle many birds.",
+    "people": "Gannet colonies have been used by people for centuries: there is a written record of one on Lundy, an island off Devon, from 1274. On St. Kilda and in the Outer Hebrides, young gannets, called gugas, were harvested for food, a tradition that continues under licence on the island of Sula Sgeir.\n\nBonaventure Island is now a national park, where visitors can walk among the nests.",
+    "relatives": "The northern gannet is the largest member of the family Sulidae, which includes two other gannets, in southern Africa and Australasia, and the boobies of tropical seas, such as the blue-footed booby.\n\nIts species name, bassanus, honours the Bass Rock, where 16th-century naturalists such as Conrad Gessner first described it.",
+    "didYouKnow": "The Bass Rock in Scotland holds about 75,000 pairs of gannets, so many that the whole island looks white from the mainland.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "87–100 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "170–180 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2.3–3.6 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Mackerel, herring, sand eels"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a northern gannet catch fish?",
+        "choices": [
+          "It plunges headfirst into the sea from high up",
+          "It skims the surface with its open bill",
+          "It steals fish from other seabirds",
+          "It walks along the shore at low tide looking for stranded fish"
+        ],
+        "explanation": "Gannets dive from up to 30 metres, hitting the water at up to 85 km/h."
+      },
+      {
+        "prompt": "What helps protect a gannet when it hits the water?",
+        "choices": [
+          "Air sacs under the skin and a spongy bone plate",
+          "Extra-thick feathers",
+          "It closes its eyes",
+          "A layer of fat on its chest that hardens when it dives"
+        ],
+        "explanation": "Air cushions under the skin, a spongy plate at the base of the bill and strong neck muscles absorb the impact."
+      },
+      {
+        "prompt": "What does a young gannet do when it first leaves the nest?",
+        "choices": [
+          "Jumps off the cliff and swims away",
+          "Flies straight to Africa",
+          "Stays with its parents for a year",
+          "Walks to the top of the colony to practise flapping"
+        ],
+        "explanation": "Still unable to fly well, it leaps from the cliff and lives on its fat at sea while learning to fish."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, protecting seabird colonies and the seas they feed in."
+      }
+    ]
+  },
+  {
+    "id": "great-grey-owl",
+    "name": "Great Grey Owl",
+    "scientificName": "Strix nebulosa",
+    "wikipediaTitle": "Great grey owl",
+    "group": "bird",
+    "regions": [
+      "naEast",
+      "naWest",
+      "europe",
+      "asia"
+    ],
+    "range": "Northern forests of Canada, Alaska, Scandinavia and Siberia, plus mountains of the western US",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 58.0,
+      "longitude": -110.0
+    },
+    "mapSpan": 50,
+    "tagline": "The biggest owl face, built like a satellite dish",
+    "lede": "The great grey owl is the world's longest owl, with the largest facial disc of any bird of prey. That huge face works like a satellite dish, letting it hear a vole moving under half a metre of snow.",
+    "home": "Great grey owls live in the northern forests of both hemispheres: across Canada from Quebec to the Pacific, in Alaska, and from Finland and Sweden across Russia to the Pacific coast of Asia. In the United States they are found in the Rocky Mountains, the Sierra Nevada, and northern Minnesota.\n\nThey breed in dense coniferous forest next to open areas, such as bogs and meadows, where they hunt. In California and Oregon some nest in mixed oak woodland, in summer heat of 38 degrees.",
+    "anatomy": "This owl is up to about 84 centimetres long, with a wingspan of up to 1.5 metres, yet it usually weighs only 0.6 to 1.9 kg. Its thick, fluffy plumage is grey, barred and streaked with darker grey, and the large, round head has no ear tufts.\n\nThe face is a huge disc of grey rings around small yellow eyes, with a white 'bow tie' just below the bill. Like other owls hunting by sound, its ears are set at different heights on each side of its head, which helps it pinpoint where a sound is coming from.",
+    "life": "Great grey owls hunt mostly small rodents, especially voles and pocket gophers. They usually watch and listen from a low perch, a stump, a branch or a fence post, then glide down silently. They hunt at dawn, dusk and night, but in the far north, with long summer days, they also hunt in daylight.\n\nUnlike most large birds of prey, they don't defend hunting territories, and are relatively unaggressive towards each other. When voles are scarce in the north, large numbers may move south in winter, sometimes appearing near towns and roads.\n\nBesides perch hunting, they fly low and slowly over meadows, bogs and clearings, quartering back and forth in search of movement. They hunt along road verges too, which puts them at risk from traffic.",
+    "family": "Great grey owls don't build nests. They take over old nests of hawks, ravens or eagles, or nest on top of broken-off tree trunks. In Oregon and elsewhere, they readily use wooden nest platforms put up by people, a practice that began in the 1980s.\n\nThe female lays two to five eggs and incubates them while the male brings food. She defends the nest fiercely, and will attack people who come too close. Owlets leave the nest weeks before they can fly, climbing on leaning trees while their parents keep feeding them.\n\nThe eggs hatch after about a month. Young owls stay near their parents through the summer, learning to hunt, and become independent in autumn.",
+    "remarkable": "The great grey owl can find prey it cannot see. It listens from a perch, adjusting its position until it locates a rodent beneath the snow, then dives face-first and breaks through crusts strong enough to support a person, grabbing prey up to 60 centimetres down.",
+    "outlook": "The great grey owl is listed as Least Concern, but it is rare and patchily distributed in many areas. Logging is the biggest threat, because it removes the large trees, leaning snags and dense canopy that adults and young need. Leaving perches and patches of old forest helps.",
+    "people": "Because they hunt by day in places and are surprisingly tolerant of people, great grey owls are a favourite of photographers and birders, and winter 'irruptions' draw crowds. The great grey owl is the provincial bird of Manitoba.\n\nIn the wild they have been recorded living up to about 19 years, and in captivity much longer.",
+    "relatives": "The great grey owl belongs to the genus Strix, the wood owls, which also includes the barred owl, the spotted owl and the tawny owl of Europe. It is the only Strix owl found in both the Eastern and Western Hemispheres.\n\nThere are two recognised subspecies: one in North America and one across northern Europe and Asia.\n\nIn Europe it is also known as the Lapland owl, after the far-northern region of Scandinavia where it breeds.",
+    "didYouKnow": "For all its size, a great grey owl usually weighs less than the smaller-looking snowy owl, because so much of it is feathers.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to about 84 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "Up to 1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "0.6–1.9 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Voles and other rodents"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a great grey owl find prey under deep snow?",
+        "choices": [
+          "By listening, using its huge facial disc",
+          "By smelling it through the snow",
+          "By watching for footprints",
+          "By waiting until the rodent comes out to feed in the moonlight"
+        ],
+        "explanation": "Its large facial disc funnels sound to its ears, so it can locate rodents it can't see."
+      },
+      {
+        "prompt": "Where do great grey owls nest?",
+        "choices": [
+          "In old nests of other large birds, or on broken trees",
+          "In burrows on the ground",
+          "In cliffs",
+          "In nests they weave from moss and grass every spring"
+        ],
+        "explanation": "They don't build their own nests, and also use wooden platforms people put up."
+      },
+      {
+        "prompt": "What makes the great grey owl look so big?",
+        "choices": [
+          "Thick, fluffy feathers",
+          "It's the heaviest owl",
+          "Its very long legs",
+          "It puffs up with air sacs"
+        ],
+        "explanation": "It's the longest owl, but much of its bulk is feathers; it often weighs less than a snowy owl."
+      }
+    ],
+    "charities": [
+      {
+        "name": "International Owl Center",
+        "url": "https://www.internationalowlcenter.org",
+        "blurb": "A Minnesota centre for owl education and conservation."
+      }
+    ]
+  },
+  {
+    "id": "little-brown-bat",
+    "name": "Little Brown Bat",
+    "scientificName": "Myotis lucifugus",
+    "wikipediaTitle": "Little brown bat",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "naWest"
+    ],
+    "range": "Most of North America, from Alaska and Canada to the southern US",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 47.0,
+      "longitude": -95.0
+    },
+    "mapSpan": 40,
+    "tagline": "A tiny bat that can live for over 30 years",
+    "lede": "Once one of the most common bats in North America, the little brown bat weighs less than three coins, eats its weight in insects on a summer night, and can live for more than three decades. Since 2006, a fungal disease has killed millions of them in their winter caves.",
+    "home": "Little brown bats live across most of North America, from Alaska and much of Canada south into the United States. In summer they roost by day in hollow trees, under bark, and very often in buildings: attics, barns and sheds.\n\nIn winter they hibernate in caves and old mines, called hibernacula, where the temperature stays above freezing and the air is humid. Some travel hundreds of kilometres between their summer and winter homes.",
+    "anatomy": "A little brown bat weighs just 5.5 to 12.5 grams and is 8 to 9.5 centimetres long, with a wingspan of 22 to 27 centimetres. Its fur is glossy brown on the back and paler underneath, and its wings and ears are dark.\n\nIt finds its way and its food by echolocation, making high-pitched calls and listening for echoes. It can also see, probably including ultraviolet light, which may help it spot moths, since most moths' wings reflect UV.",
+    "life": "These bats are nocturnal. They leave their roosts at dusk and feed for 1.5 to 3 hours on flying insects, especially midges, mosquitoes, mayflies and moths, often over water. They rest, then feed again before dawn. A nursing mother may eat more than her own body weight in insects in a night.\n\nTo save energy, they let their body temperature drop when resting, a state called torpor. In hibernation, they cool almost to the temperature of the cave and their heart rate falls dramatically, waking only occasionally through the winter.\n\nThey are social bats. A single cave can shelter tens of thousands of hibernating little brown bats, and the largest colony on record held more than 180,000. Since white-nose syndrome arrived, more survivors are hibernating alone rather than in dense clusters.",
+    "family": "Little brown bats mate in autumn, at swarming sites outside caves, before hibernating. Females store the sperm through the winter and become pregnant in spring.\n\nIn early summer, females gather in warm maternity colonies, sometimes of hundreds or thousands of bats, often in attics. Each gives birth to a single pup, which is weaned quickly and can fly within about three weeks.",
+    "remarkable": "For a mammal its size, the little brown bat lives an astonishingly long time. The record is a banded individual that lived about 34 years in the wild. Hibernation, which slows the body for months each year, is thought to help.",
+    "outlook": "The little brown bat is listed as endangered. White-nose syndrome, caused by a fungus that grows on the skin of hibernating bats, was first found in New York in 2006. It wakes the bats repeatedly through winter, burning up their fat, and had killed more than a million little brown bats by 2011. In the northeastern US, surveyed caves lost about 90 percent of their bats.\n\nScientists are testing treatments, and some colonies appear to be surviving. Protecting hibernation sites from disturbance, and summer roosts, is key.",
+    "people": "Because they often live in buildings, little brown bats are among the bats people meet most. Colonies in attics are sometimes treated as pests, and bats can carry rabies, so they should never be handled. But one bat eats thousands of insects a night, and many people now put up bat houses to give them roosts.\n\nCaves with hibernating bats are often closed in winter, because waking bats costs them precious fat.",
+    "relatives": "The little brown bat belongs to the genus Myotis, the 'mouse-eared' bats, one of the largest and most widespread groups of mammals, with over 100 species worldwide. It closely resembles several cousins, including the endangered Indiana bat and the northern long-eared bat.\n\nDespite its name, it is not closely related to the big brown bat, which belongs to a different genus.\n\nExperts tell the little brown bat from the Indiana bat partly by a small spur of cartilage on the edge of the wing membrane near the foot, called the calcar, which has a ridge in the Indiana bat but not in the little brown.",
+    "didYouKnow": "A hibernating little brown bat may breathe only a few times a minute and wake up just once every couple of weeks.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "5.5–12.5 g"
+      },
+      {
+        "label": "Wingspan",
+        "value": "22–27 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to about 34 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Flying insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What has killed millions of little brown bats since 2006?",
+        "choices": [
+          "White-nose syndrome, a fungal disease",
+          "Wind turbines",
+          "A shortage of moths",
+          "Very cold winters that freeze the caves where they hibernate"
+        ],
+        "explanation": "A fungus that grows on hibernating bats wakes them repeatedly, using up their fat."
+      },
+      {
+        "prompt": "How long can a little brown bat live?",
+        "choices": [
+          "Up to about 34 years",
+          "About one year",
+          "Five to six years at most",
+          "Two years"
+        ],
+        "explanation": "A banded bat lived about 34 years, remarkable for such a small mammal."
+      },
+      {
+        "prompt": "Where do female little brown bats raise their pups?",
+        "choices": [
+          "In warm maternity colonies, often in attics",
+          "Alone in tree holes",
+          "In their winter caves",
+          "In nests woven from grass that they hang under bridges"
+        ],
+        "explanation": "Females gather in warm colonies in early summer, often in buildings."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Bat Conservation International",
+        "url": "https://www.batcon.org",
+        "blurb": "Works worldwide to protect bats and their habitats, including research on white-nose syndrome."
+      }
+    ]
+  }
+]

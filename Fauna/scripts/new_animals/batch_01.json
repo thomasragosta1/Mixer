@@ -1,0 +1,517 @@
+[
+  {
+    "id": "arctic-fox",
+    "name": "Arctic Fox",
+    "scientificName": "Vulpes lagopus",
+    "wikipediaTitle": "Arctic fox",
+    "group": "mammal",
+    "regions": [
+      "arctic"
+    ],
+    "range": "Arctic tundra around the North Pole, from Alaska and Canada to Greenland, Scandinavia and Siberia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 70.0,
+      "longitude": -95.0
+    },
+    "mapSpan": 50,
+    "tagline": "The fox with the warmest coat on Earth",
+    "lede": "On the frozen tundra, where winter air can be 90 degrees colder than its body, the Arctic fox curls up in a ball of fur and simply waits out the storm. It can hear a lemming moving under the snow, follow a polar bear for leftovers, and raise the biggest litters of any carnivore.",
+    "home": "Arctic foxes live all the way around the top of the world, on the treeless tundra of Alaska, northern Canada, Greenland, Iceland, Scandinavia and Siberia. Some wander far out onto the sea ice in winter.\n\nTheir homes are dens dug into slightly raised, frost-free ground, often in eskers, long ridges of sand and gravel left behind by melting glaciers. The best dens are mazes of tunnels covering up to 1,000 square metres, with many entrances facing south towards the sun. A good den can be used by generations of foxes for decades.",
+    "anatomy": "An Arctic fox is smaller than a red fox, standing just 25 to 30 centimetres at the shoulder and weighing around 3 kg. Its body is compact and rounded, with a short muzzle, short legs and small, thick ears, all of which keep the surface that loses heat to a minimum.\n\nIts winter coat is twice as long as its summer coat, and 70 percent of it is fine, dense underfur. That gives it the best insulation of any mammal. The fox sheds twice a year, and comes in two colour forms: white foxes turn brown in summer and snowy white in winter, while 'blue' foxes stay dark grey or brown all year. Blue foxes are most common on coasts, especially in Iceland.\n\nIts feet stay just above freezing even on ice, because a network of blood vessels warms only the pads that touch the snow.",
+    "life": "Arctic foxes eat almost any small animal they can catch: lemmings, voles, birds and their eggs, fish and young seals, plus berries, seaweed and insects. They scavenge whatever wolves and polar bears leave behind, and can smell a carcass from 10 kilometres or more away.\n\nThey hunt partly by ear. A fox can hear a lemming tunnelling beneath the snow, then leap high and punch down through it to pin its prey. In autumn they fatten up, sometimes increasing their weight by more than half, and in summer they cache extra food for the lean months ahead.\n\nThey don't hibernate. In a blizzard they curl up tightly, tucking their legs and nose under their bushy tail.",
+    "family": "Arctic foxes pair up for the breeding season, and the pair stays together to raise the young. Breeding happens in April and May, and pups are born about 52 days later.\n\nLitter size depends on food. When lemmings are plentiful, a white fox may have 6 to 18 pups, and litters of up to 25 have been recorded, the largest of any carnivore. When lemmings crash, which happens every 3 to 5 years, many foxes don't breed at all. Coastal blue foxes, with steadier food, have about 5 or 6 pups a year.\n\nPups are born blind and deaf, weighing about 60 to 90 grams, and leave the den at 3 to 4 weeks old. Sometimes older siblings help feed them.",
+    "remarkable": "The Arctic fox's body can cope with a difference of up to 90 to 100 degrees between the air outside and its own core temperature. In winter it also slows its metabolism by about a quarter, burning less fat while food is scarce.",
+    "outlook": "Arctic foxes are listed as Least Concern, with a large, stable population overall. But some local populations are in trouble. In Scandinavia, decades of fur trapping left very few, and protection and captive breeding have been needed to bring them back.\n\nAs the climate warms, red foxes are moving north into Arctic fox country. They're bigger, take over dens and kill Arctic foxes, and warmer winters also disrupt the lemming cycles the foxes depend on.",
+    "people": "For centuries Arctic foxes were trapped for their thick winter fur, and in the early 20th century fox farms were set up on Arctic islands to raise them for pelts. Foxes released on some Alaskan islands devastated seabird colonies, and they have since been removed from many of those islands to let the birds recover.\n\nIn Iceland, where it is the only native land mammal, the Arctic fox has its own research centre and museum in the Westfjords.",
+    "relatives": "The Arctic fox is a 'true fox' in the genus Vulpes, alongside the red fox, the fennec fox and about a dozen others. It was once placed in its own genus, Alopex, but genetic studies show it belongs with the other Vulpes foxes, and it can even hybridise with the red fox in captivity.\n\nIts closest relatives are thought to be the swift fox and kit fox of the North American prairies and deserts, which share its compact build.",
+    "didYouKnow": "An Arctic fox can sniff out a seal's den hidden beneath 150 centimetres of snow.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "46–68 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "1.4–9.4 kg, usually about 3 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "3–4 years wild, up to 11"
+      },
+      {
+        "label": "Diet",
+        "value": "Lemmings, birds, eggs, carrion"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What gives the Arctic fox the best insulation of any mammal?",
+        "choices": [
+          "A winter coat that's 70 percent fine underfur",
+          "A thick layer of fat that doubles in size every autumn",
+          "Hollow hairs that trap warm air",
+          "Sleeping in snow caves all winter"
+        ],
+        "explanation": "Its long winter coat is mostly dense underfur, the warmest coat of any mammal."
+      },
+      {
+        "prompt": "How does an Arctic fox catch a lemming under the snow?",
+        "choices": [
+          "It listens, then leaps and punches through the snow",
+          "It digs a long tunnel to reach the lemming's nest",
+          "It waits for the lemming to come up",
+          "It follows the tracks"
+        ],
+        "explanation": "It hears the lemming tunnelling, then jumps and breaks through the snow to pin it."
+      },
+      {
+        "prompt": "What happens to Arctic fox litters when lemmings are plentiful?",
+        "choices": [
+          "They get bigger, up to 18 pups or more",
+          "They get smaller, because the parents eat more themselves",
+          "Pups are born in autumn",
+          "Only blue foxes breed"
+        ],
+        "explanation": "Litter size follows the lemming supply; in good years white foxes can have 6 to 18 pups, and up to 25 have been recorded."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF-Canada",
+        "url": "https://wwf.ca",
+        "blurb": "Works to protect Arctic wildlife and habitats as the North warms."
+      }
+    ]
+  },
+  {
+    "id": "canada-lynx",
+    "name": "Canada Lynx",
+    "scientificName": "Lynx canadensis",
+    "wikipediaTitle": "Canada lynx",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "naWest",
+      "arctic"
+    ],
+    "range": "Boreal forests of Canada and Alaska, plus pockets of the northern United States",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 56.0,
+      "longitude": -100.0
+    },
+    "mapSpan": 30,
+    "tagline": "A ghost cat that rides the hare cycle",
+    "lede": "Tufted ears, a ruff of long cheek fur and paws as wide as snowshoes: the Canada lynx is built for deep snow. Its whole life is tied to one animal, the snowshoe hare, so closely that when hare numbers boom or crash across the north, lynx numbers follow a year or two later.",
+    "home": "The Canada lynx lives mainly in the dense boreal forest that stretches across Canada and Alaska, the same range as the snowshoe hare. It once lived in 24 US states; today it hangs on in the Rocky Mountains, the Cascades, northern Minnesota and Michigan, and northern New England.\n\nIt prefers thick forest and avoids wide open ground. In Colorado, where lynx had disappeared by the 1970s, a reintroduction programme that began in 1999 has brought them back.",
+    "anatomy": "A Canada lynx stands 48 to 56 centimetres at the shoulder and weighs about 5 to 17 kg, with males larger than females. Its hind legs are longer than its front legs, so its back slopes down towards the head. The tail is stubby, with a completely black tip.\n\nThe fur is long, dense and greyish brown, with few markings. Black tufts about 4 centimetres long sprout from the tips of its triangular ears, and in winter the fur on its cheeks grows into a ruff around the throat.\n\nIts huge paws, covered in thick fur, can spread to 10 centimetres across. They hold up almost twice as much weight as a bobcat's before sinking, letting the lynx move easily over soft snow.",
+    "life": "Lynx hunt mostly at twilight and at night, when hares are active. A lynx may travel 8 to 9 kilometres in a day looking for food, or wait for hours in an 'ambush bed' beside a hare trail, then pounce and kill with a bite to the head or neck.\n\nSnowshoe hares make up 35 to 97 percent of its diet. When hares are scarce, the lynx eats grouse, ptarmigan, ducks, squirrels, voles and sometimes young deer or sheep.\n\nLynx are solitary and keep their distance from each other, especially from others of the same sex. They are also strong swimmers.",
+    "family": "The mating season lasts about a month, from March to early April, and is announced with urine marking and calls. After a pregnancy of two to three months, the female gives birth to between one and eight kittens in a den, often in a hollow log or a tangle of fallen trees.\n\nKittens are weaned at about 12 weeks and stay with their mother through their first winter, learning to hunt. When hares are abundant, more kittens survive; when hares crash, many females have no young at all.",
+    "remarkable": "Snowshoe hare populations rise and fall in a cycle lasting about 8 to 11 years, and densities can drop from thousands to a dozen per square kilometre. Canada lynx numbers rise and fall in step, a pattern so regular that 19th-century fur trading records made it one of the most famous predator and prey cycles in biology.",
+    "outlook": "The Canada lynx is listed as Least Concern, as it is still common across most of Alaska and Canada. In the southern edge of its range, in the contiguous United States, it is listed as threatened, mainly because of logging, roads and warming winters that bring less deep snow, giving bobcats and coyotes an advantage.",
+    "people": "Lynx have been trapped for their fur for centuries, and they still are, under seasons and quotas, in most of Alaska and Canada; Alberta produces nearly a third of Canada's pelts. The Hudson's Bay Company's records of lynx furs, kept since the 1800s, were the data that first revealed the lynx and hare cycle.\n\nThe Newfoundland population is thought to have been separated from the mainland for 20,000 years or more since the last Ice Age, and has a darker coat.",
+    "relatives": "The Canada lynx is one of four living lynx species, along with the bobcat, the Eurasian lynx and the Iberian lynx. It is very similar to the bobcat, but has longer ear tufts, bigger paws, a shorter tail with an all-black tip, and greyer fur.\n\nLynx ancestors reached North America from Asia twice. The first wave, about 2.6 million years ago, evolved into the bobcat; the second, within the last 200,000 years, settled the newly ice-free north and became the Canada lynx.",
+    "didYouKnow": "One Canada lynx was seen swimming about 3 kilometres across the Yukon River.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "73–107 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "5–17 kg"
+      },
+      {
+        "label": "Shoulder height",
+        "value": "48–56 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly snowshoe hares"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which animal makes up most of the Canada lynx's diet?",
+        "choices": [
+          "The snowshoe hare",
+          "The red squirrel, which it catches in the treetops",
+          "White-tailed deer",
+          "Lake trout"
+        ],
+        "explanation": "Snowshoe hares can make up as much as 97 percent of what a lynx eats."
+      },
+      {
+        "prompt": "How do Canada lynx numbers change over the years?",
+        "choices": [
+          "They rise and fall with snowshoe hare numbers",
+          "They stay the same year after year",
+          "They grow every time a forest burns down",
+          "They drop every winter"
+        ],
+        "explanation": "Hares follow an 8 to 11 year cycle, and lynx numbers rise and fall in step."
+      },
+      {
+        "prompt": "How can you tell a Canada lynx from a bobcat?",
+        "choices": [
+          "Longer ear tufts and a tail tip that's all black",
+          "Faint stripes along its legs and back",
+          "It's always smaller",
+          "Its tail is long and bushy"
+        ],
+        "explanation": "The lynx has longer ear tufts, bigger paws, greyer fur and a short tail with a fully black tip."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Nature Conservancy of Canada",
+        "url": "https://www.natureconservancy.ca",
+        "blurb": "Protects forests and other natural areas across Canada, including boreal habitat lynx depend on."
+      }
+    ]
+  },
+  {
+    "id": "fisher",
+    "name": "Fisher",
+    "scientificName": "Pekania pennanti",
+    "wikipediaTitle": "Fisher (animal)",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "naWest"
+    ],
+    "range": "Northern forests from Nova Scotia to British Columbia and south into the US",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": -92.0
+    },
+    "mapSpan": 30,
+    "tagline": "The weasel that dares to hunt porcupines",
+    "lede": "Despite its name, the fisher rarely eats fish, and despite its nickname 'fisher cat', it isn't a cat. It's a large, dark weasel of the northern forests, and one of the very few predators that regularly kills porcupines, by circling around to attack the face, where there are no quills.",
+    "home": "Fishers live in the boreal and mixed forests that run across Canada, from Nova Scotia to the Pacific coast of British Columbia, and north as far as Great Slave Lake. In the United States they live in New England, the Great Lakes states, the Appalachians and parts of the West.\n\nThey like continuous forest where trees cover more than 80 percent of the sky, and avoid open country. Although they're good climbers, they spend most of their time on the forest floor.",
+    "anatomy": "A fisher's body is long, slim and low to the ground, with short legs, a bushy tail and dark brown, almost black, fur that's glossy in winter. Males are much bigger than females: a male can be 90 to 120 centimetres long, tail included, and weigh up to 6 kg, while females weigh only 2 to 2.5 kg.\n\nFishers have sharp, retractable claws and can rotate their hind feet almost backwards, so they can climb down trees head-first, like a squirrel.",
+    "life": "Fishers are generalist hunters, active mostly at dawn and dusk and solitary except when mating. Their main prey are snowshoe hares and porcupines, but they also eat squirrels, mice, birds, carrion, insects, nuts, berries and mushrooms.\n\nAgainst a porcupine, a fisher circles and darts at its face again and again, until the porcupine is exhausted, then flips it over to reach its unprotected belly. A single male may roam a hunting range of 20 square kilometres or more.\n\nA fisher's home range varies with food and habitat, from a few square kilometres to more than 30, and males roam much farther than females, especially in the breeding season. Females are least active while pregnant and gradually get busier after their kits are born.",
+    "family": "A female fisher begins breeding at about a year old, and her cycle takes almost a whole year. She mates in late March or early April, but the fertilised egg doesn't implant in her womb for about ten months.\n\nThe real pregnancy begins in mid-February and lasts about 50 days, and she gives birth to one to six kits, usually in a hollow high in a tree. Just days later, she mates again, so she is almost always carrying her next litter. The kits are blind and helpless at first and stay with their mother until they're about five months old.",
+    "remarkable": "That pause before the embryo implants, called delayed implantation, means a female fisher is pregnant, in one sense or another, for nearly her whole adult life.",
+    "outlook": "Fishers are listed as Least Concern. In the early 20th century, heavy trapping and logging wiped them out of large parts of the United States. Protection and reintroductions, sometimes requested by foresters who wanted fishers back to control porcupines that damage trees, have helped them return to much of their old range, though some western populations remain small.",
+    "people": "Fishers have been trapped for their fur since the 18th century, and their pelts were once so valuable that they became locally extinct in several states. In the 1920s some fur farmers tried to raise them, but the fisher's unusual breeding cycle made it difficult, and most fisher farms closed in the 1940s.\n\nTheir many names come from Indigenous languages: 'pekan' from Abenaki, and 'wejack' from an Algonquian word borrowed by fur traders. Today fishers are turning up in suburbs in the northeastern US, where they're sometimes blamed for missing cats.\n\nUnprovoked attacks on people are extremely rare, though a cornered fisher will defend itself fiercely.",
+    "relatives": "The fisher is a mustelid, part of the weasel family along with martens, otters, badgers and wolverines. It is the only living species in its genus, Pekania, and is closely related to the smaller American marten, which it resembles.\n\nIts ancestors reached North America from Asia between about 2.5 and 5 million years ago.",
+    "didYouKnow": "A fisher can rotate its hind feet almost backwards, letting it run down a tree trunk head-first.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "75–120 cm with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "2–6 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 10 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Hares, porcupines, small animals"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a fisher attack a porcupine?",
+        "choices": [
+          "It goes for the face, where there are no quills",
+          "It waits for the porcupine to fall out of a tree",
+          "It pulls out quills",
+          "It only eats dead porcupines"
+        ],
+        "explanation": "It darts at the porcupine's face repeatedly, then flips it to reach the unprotected belly."
+      },
+      {
+        "prompt": "What is unusual about a female fisher's pregnancy?",
+        "choices": [
+          "The embryo waits about ten months before growing",
+          "It lasts two weeks",
+          "She gives birth in water",
+          "The male carries the young in a pouch until spring"
+        ],
+        "explanation": "Implantation is delayed for about ten months, so she's almost always carrying her next litter."
+      },
+      {
+        "prompt": "What kind of animal is the 'fisher cat'?",
+        "choices": [
+          "A weasel",
+          "A wild cat that lives near rivers and lakes",
+          "An otter",
+          "A raccoon"
+        ],
+        "explanation": "Despite the nickname, the fisher is a mustelid, a member of the weasel family."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Canadian Wildlife Federation",
+        "url": "https://cwf-fcf.org",
+        "blurb": "Works to conserve Canada's wildlife and habitats through research, education and restoration."
+      }
+    ]
+  },
+  {
+    "id": "muskox",
+    "name": "Muskox",
+    "scientificName": "Ovibos moschatus",
+    "wikipediaTitle": "Muskox",
+    "group": "mammal",
+    "regions": [
+      "arctic"
+    ],
+    "range": "Arctic Canada, Greenland and Alaska, with reintroduced herds in Norway and Siberia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 72.0,
+      "longitude": -95.0
+    },
+    "mapSpan": 30,
+    "tagline": "An Ice Age survivor in a coat of qiviut",
+    "lede": "Muskoxen grazed alongside woolly mammoths, and unlike them, they never left. Wrapped in the warmest wool of any animal, a herd of these shaggy giants can stand out an Arctic blizzard, and when wolves come, they back into a tight ring, horns facing out.",
+    "home": "Muskoxen live on the Arctic tundra of northern Canada, in the Northwest Territories and Nunavut, and in Greenland. They were wiped out in Alaska by the early 20th century and have since been reintroduced there, as well as in Yukon and Siberia. A herd brought to Norway's Dovrefjell mountains from Greenland has spread into Sweden.\n\nIn summer they graze in wet river valleys; in winter they move to higher, windswept ground where the snow is thinner.",
+    "anatomy": "A muskox stands 1.1 to 1.5 metres at the shoulder, and a bull can weigh around 300 kg. Both males and females have long, curved horns; in bulls the horn bases meet across the forehead in a thick shield of bone.\n\nThe coat has two layers. Long, coarse guard hairs hang almost to the ground, and beneath them is qiviut, an extraordinarily fine, soft underwool shed each spring. Qiviut is warmer than sheep's wool.\n\nTheir lower legs can be kept cooler than the rest of the body, which cuts heat loss from the extremities, and their blood carries oxygen well even when cold.",
+    "life": "Muskoxen eat grasses, sedges, Arctic willows, lichens and mosses, digging through snow with their hooves to reach food in winter. They save energy by moving slowly and resting a lot.\n\nThey live in herds of about 12 to 24 in winter and 8 to 20 in summer. Instead of holding territories, they mark their trails with scent from glands in front of their eyes. When threatened by wolves or bears, the adults form a defensive line or circle around the calves, facing outwards, and a bull may charge.",
+    "family": "During the late-summer rut, bulls give off the strong musky smell that gives the species its name, and fight by charging and crashing their horns together, a clash that can be heard a long way off. Dominant bulls drive other males out of the herd.\n\nAfter a pregnancy of about eight months, a female gives birth to a single calf in spring, often before the snow has melted. Calves can follow the herd within hours and are protected by the whole group.",
+    "remarkable": "Muskoxen were once spread from the Ural Mountains to Greenland. They survived the end of the last Ice Age, when woolly mammoths and woolly rhinoceroses vanished, and their last natural populations in Eurasia lasted until about 2,700 years ago.\n\nThe first attempt to bring muskoxen back to Europe was made in 1925, on an island off Norway, with animals caught in Greenland by seal-hunting boats. That herd died out, but a later release on the Dovrefjell plateau took hold, inspired by two fossil muskox bones found there by railway workers in 1913.",
+    "outlook": "Muskoxen are listed as Least Concern, with healthy numbers thanks to protection and reintroductions after heavy hunting in the 19th century. Climate change is a growing worry: rain falling on snow in winter can freeze into a hard crust that muskoxen can't dig through, and such events have starved large numbers.",
+    "people": "Its Inuktitut name, umingmak, means 'the bearded one', and muskoxen have long been hunted by Inuit for meat, hides and horn. Qiviut, collected from shed wool, is spun into luxurious yarn, and in Alaska a cooperative of Indigenous knitters makes garments from it.\n\nMuskoxen are not usually aggressive, but they can charge people who get too close.\n\nIn 1967, 14 muskoxen captured on Ellesmere Island were taken to a farm at Kuujjuaq in northern Quebec, to be raised for qiviut. Animals later released there founded wild herds in Nunavik, a region where no ancient muskox remains have ever been found.",
+    "relatives": "Despite the name, the muskox is not an ox. It belongs to the goat and sheep branch of the cattle family and is more closely related to sheep and goats than to cattle; its genus name, Ovibos, means 'sheep-ox'. One of its closest living relatives is the takin of the Himalayas.\n\nIts ancestors evolved in Asia and crossed into North America over the Bering land bridge between about 200,000 and 90,000 years ago.",
+    "didYouKnow": "Qiviut, the muskox's underwool, is so warm and fine that it's among the most expensive natural fibres in the world.",
+    "facts": [
+      {
+        "label": "Shoulder height",
+        "value": "1.1–1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 400 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "12–20 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Grasses, willows, lichens"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do muskoxen do when wolves attack?",
+        "choices": [
+          "They form a ring around the calves, horns out",
+          "They scatter in every direction to confuse the wolves",
+          "They run onto thin ice",
+          "They hide in snow dens"
+        ],
+        "explanation": "The adults line up or circle around the calves, facing outwards with their horns."
+      },
+      {
+        "prompt": "What is qiviut?",
+        "choices": [
+          "The muskox's fine, warm underwool",
+          "A young muskox calf in its first winter",
+          "The muskox's mating call",
+          "A lichen they eat"
+        ],
+        "explanation": "Qiviut is the soft underwool beneath the long guard hairs, warmer than sheep's wool."
+      },
+      {
+        "prompt": "Which animals is the muskox most closely related to?",
+        "choices": [
+          "Sheep and goats",
+          "Domestic cattle and water buffalo",
+          "Moose and caribou",
+          "Bison"
+        ],
+        "explanation": "Despite its name, it belongs to the sheep and goat branch; its genus name means 'sheep-ox'."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WCS Canada",
+        "url": "https://www.wcscanada.org",
+        "blurb": "Wildlife Conservation Society Canada studies and protects northern wildlife and the places they live."
+      }
+    ]
+  },
+  {
+    "id": "beluga-whale",
+    "name": "Beluga Whale",
+    "scientificName": "Delphinapterus leucas",
+    "wikipediaTitle": "Beluga whale",
+    "group": "mammal",
+    "regions": [
+      "arctic",
+      "naEast"
+    ],
+    "range": "Arctic and sub-Arctic seas, including Hudson Bay and the St. Lawrence River",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 64.0,
+      "longitude": -80.0
+    },
+    "mapSpan": 45,
+    "tagline": "The white 'sea canary' with a squishy forehead",
+    "lede": "Belugas are pure white, have no dorsal fin, can turn their heads, and chatter so much that sailors called them sea canaries. In summer they gather in their thousands in Arctic river mouths, and a small population lives year-round in Canada's St. Lawrence River.",
+    "home": "Belugas live in Arctic and sub-Arctic waters all around the North Pole: off Alaska, northern Canada, Greenland, Norway and Russia. In summer, huge numbers move into shallow estuaries and bays, such as the mouth of the Churchill River on Hudson Bay, where thousands gather.\n\nIn winter they move to areas with open water among the pack ice. The St. Lawrence population near Tadoussac, Quebec, is the southernmost in the world.",
+    "anatomy": "Adult belugas are completely white or whitish grey. Calves are born grey, darken to blue-grey, and slowly lose their colour until they turn white at around seven years old or later.\n\nMales grow up to 5.5 metres long and weigh up to 1,600 kg; females are smaller. They have no dorsal fin, which helps them swim under ice, and unlike most whales their neck vertebrae aren't fused, so they can nod and turn their heads.\n\nThe rounded bulge on the forehead, the melon, is filled with fat and helps focus echolocation clicks. A beluga can change its shape by squeezing it with muscles, and hears an extraordinary range of sounds, up to about 120 kHz.",
+    "life": "Belugas are sociable, travelling in pods that average about 10 animals, though individuals often switch pods. They feed on fish such as cod and salmon, plus squid, shrimp and worms, and can dive to about 700 metres.\n\nThey are slow swimmers, but their echolocation lets them find their way, and the breathing holes they need, beneath sheet ice. Their main predators are orcas and polar bears, which sometimes catch belugas trapped in small openings in the ice.\n\nPods are loose and changeable: radio tracking has shown that a beluga can leave one group and be travelling with another hundreds of kilometres away within a few days. Belugas are also playful, and often swim upside down, blow bubbles and carry objects in their mouths.",
+    "family": "Females usually give birth to a single calf every two to three years, after a pregnancy of 14 to 15 months, often in the warmer water of summer estuaries. Calves stay close beside their mothers and nurse for up to two years.\n\nBelugas are long-lived. Earlier estimates put their lifespan at about 30 years, but dating methods based on layers in their teeth have since suggested they can live 60 years or more.",
+    "remarkable": "Belugas make an astonishing variety of whistles, clicks, chirps and squeals, and they can mimic sounds. A captive beluga named NOC was recorded making noises that resembled human speech.",
+    "outlook": "As a species, the beluga is listed as Least Concern, with well over 100,000 animals. Some populations are in serious trouble, though. The St. Lawrence belugas, hunted down to a few hundred, have been slow to recover and are endangered in Canada, harmed by past pollution, shipping noise and declining prey. Cook Inlet belugas in Alaska are critically endangered.",
+    "people": "Inuit and other Arctic peoples have hunted belugas for centuries for their meat, blubber and skin, called muktuk, which is still an important traditional food. Commercial hunting in the 19th and 20th centuries caused steep declines in some regions.\n\nToday, beluga watching is popular in Churchill, Manitoba, where visitors kayak among them, and around Tadoussac, where researchers have photographed and named individual St. Lawrence belugas for decades.",
+    "relatives": "The beluga is one of only two members of the family Monodontidae. Its sole relative is the narwhal, and the two can interbreed: a skull found in Greenland belonged to a beluga and narwhal hybrid. Their closest relatives beyond that are the dolphins and porpoises.\n\nIts scientific name, Delphinapterus leucas, means 'white dolphin without a fin'.\n\nFossils show the family was once more widespread: an extinct relative, Denebola, lived in the warm waters off Baja California, Mexico, millions of years ago.",
+    "didYouKnow": "Unlike most whales, a beluga can turn its head from side to side, because the bones in its neck aren't fused.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "3–5.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 1,600 kg"
+      },
+      {
+        "label": "Dive depth",
+        "value": "Up to about 700 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish, squid, shrimp"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why can a beluga swim easily under sea ice?",
+        "choices": [
+          "It has no dorsal fin",
+          "Its back is covered in hard, armoured plates",
+          "It breathes through its skin",
+          "It sleeps all winter"
+        ],
+        "explanation": "The lack of a dorsal fin lets it swim close beneath the ice."
+      },
+      {
+        "prompt": "What color is a newborn beluga calf?",
+        "choices": [
+          "Grey",
+          "Pure white, like the adults",
+          "Black and white",
+          "Pink"
+        ],
+        "explanation": "Calves are born grey and slowly turn white over several years."
+      },
+      {
+        "prompt": "What is the beluga's only close relative in its family?",
+        "choices": [
+          "The narwhal",
+          "The orca, the largest dolphin",
+          "The bowhead whale",
+          "The harbour porpoise"
+        ],
+        "explanation": "Belugas and narwhals are the only two members of the family Monodontidae."
+      }
+    ],
+    "charities": [
+      {
+        "name": "GREMM",
+        "url": "https://gremm.org",
+        "blurb": "A Quebec research group that studies the St. Lawrence belugas and runs the Marine Mammal Interpretation Centre in Tadoussac."
+      }
+    ]
+  },
+  {
+    "id": "north-american-porcupine",
+    "name": "North American Porcupine",
+    "scientificName": "Erethizon dorsatum",
+    "wikipediaTitle": "North American porcupine",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "naWest"
+    ],
+    "range": "Forests and shrublands from Alaska and Canada to northern Mexico",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": -100.0
+    },
+    "mapSpan": 45,
+    "tagline": "A tree-climbing rodent wearing 30,000 quills",
+    "lede": "Slow, short-sighted and fond of salt, the North American porcupine doesn't need to be fast: it wears about 30,000 barbed quills. Its ancestors rafted across the Atlantic from Africa to South America, then walked north millions of years later.",
+    "home": "North American porcupines live across most of Canada and Alaska and much of the western United States, south into northern Mexico. In the east they range down the Appalachian Mountains to West Virginia and Maryland.\n\nThey are most common in coniferous and mixed forests, but also live in shrublands, tundra edges and deserts. They den in rock crevices, hollow trees and logs.",
+    "anatomy": "This is the second largest rodent in North America after the beaver. It is stocky, with a small face, short legs and a short, thick tail, and its fur is dark brown or black with white highlights.\n\nIts quills are modified hairs, hollow and tipped with tiny backward-facing barbs, and they cover everything except the belly, face and feet. Normally they lie flat; when threatened, the porcupine raises them. They can't be thrown, but they come out easily when touched and work their way deeper into a predator's flesh. Lost quills grow back.\n\nThe quills do a second job in winter, too: lying flat against the body, they add a layer of insulation over the porcupine's thick underfur.",
+    "life": "Porcupines are plant-eaters. In summer they eat leaves, twigs, roots, fruit and flowers; in winter they live mainly on conifer needles and the inner bark of trees, sometimes staying in the same tree for days. They crave salt and will gnaw on anything salty, from road-salted car tyres to wooden tool handles.\n\nThey are mostly active at night and don't hibernate, though they stay close to their dens in winter. Their defence lets them live alone rather than in herds.\n\nFishers, wolverines, coyotes, wolves, black bears, cougars, golden eagles and great horned owls all prey on porcupines, but an attack can cost the predator dearly: embedded quills sometimes injure or even kill it. Porcupines also die from starvation, traffic and falls from trees.",
+    "family": "In autumn, females give off a scent that draws in males, which may fight over a female. Courtship is unusual even by rodent standards: the winning male stands on his hind legs and sprays the female with urine before they mate. After a pregnancy of about seven months, she gives birth to a single baby, called a porcupette, in spring.\n\nPorcupettes are born with soft quills that harden within an hour. They can climb trees within days and stay with their mother through the summer. For a rodent, porcupines live a long time: some reach 30 years.",
+    "remarkable": "Before using its quills, a porcupine warns predators. It chatters its teeth, gives off a strong smell from a patch of skin on its lower back, and turns to present a raised wall of quills. The black and white pattern of the quills is itself a warning.",
+    "outlook": "The North American porcupine is listed as Least Concern and is common across most of its range. It is scarce in some southeastern US states, and small remnant populations survive in north-central Mexico.",
+    "people": "Indigenous peoples across North America have long used porcupine quills, softened and dyed, to decorate baskets, clothing and bags, a craft called quillwork. Porcupines were also eaten, especially by travellers lost in the woods, since they're slow and easy to catch.\n\nSome foresters consider them pests because they strip bark from trees, and dogs often end up with faces full of quills.\n\nPlywood is a particular favourite, because of the salts used to make it, and porcupines have been known to chew through cabins, signs and outhouse seats in search of them.",
+    "relatives": "The North American porcupine is a New World porcupine, related to the prehensile-tailed porcupines of Central and South America. It is not closely related to the porcupines of Africa and Asia; the two groups evolved quills separately.\n\nNew World porcupines descend from rodents that crossed the Atlantic from Africa to South America about 30 million years ago, probably on floating vegetation, and reached North America after the Isthmus of Panama formed about 3 million years ago.",
+    "didYouKnow": "A porcupine's quills can work their way deeper into a predator's body, because of tiny backward-pointing barbs on their tips.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "60–90 cm with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "5–14 kg"
+      },
+      {
+        "label": "Quills",
+        "value": "About 30,000"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves, bark, conifer needles"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Can a porcupine throw its quills?",
+        "choices": [
+          "No, they come out when something touches them",
+          "Yes, it can throw them about a metre",
+          "Only when cornered",
+          "Only its tail quills"
+        ],
+        "explanation": "Quills can't be thrown; they come out easily on contact and stick in with tiny barbs."
+      },
+      {
+        "prompt": "What does a porcupine eat most in winter?",
+        "choices": [
+          "Conifer needles and tree bark",
+          "Small rodents it catches under the snow",
+          "Fish",
+          "Nothing, it hibernates"
+        ],
+        "explanation": "In winter it lives mainly on needles and inner bark, and it doesn't hibernate."
+      },
+      {
+        "prompt": "How did porcupines' ancestors first reach the Americas?",
+        "choices": [
+          "Across the Atlantic from Africa to South America",
+          "Over the Bering land bridge",
+          "Through Greenland",
+          "They evolved in Canada"
+        ],
+        "explanation": "Their ancestors crossed from Africa to South America about 30 million years ago and later moved north."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Canadian Wildlife Federation",
+        "url": "https://cwf-fcf.org",
+        "blurb": "Works to conserve Canada's wildlife and habitats through research, education and restoration."
+      }
+    ]
+  }
+]

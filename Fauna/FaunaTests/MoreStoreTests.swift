@@ -15,6 +15,15 @@ final class MoreStoreTests: XCTestCase {
 
     private func day(_ offset: Int) -> Date { cal.date(byAdding: .day, value: offset, to: .now)! }
 
+    /// A kind-and-place pair no animal has, for testing an empty focus.
+    private func emptyFocus() -> (AnimalGroup, Region)? {
+        let library = AnimalLibrary.load()
+        for g in AnimalGroup.allCases {
+            for r in Region.allCases where !library.contains(where: { $0.group == g && $0.regions.contains(r) }) { return (g, r) }
+        }
+        return nil
+    }
+
     func testDayNumberIgnoresUnlockedAnimals() {
         let store = onboarded()
         for _ in 0..<3 { store.unlockNext(for: store.currentAnimal!, allowOutsideFocus: true) }
@@ -23,8 +32,9 @@ final class MoreStoreTests: XCTestCase {
         XCTAssertEqual(store.dayNumber, 2)
     }
 
-    func testCannotUnlockInsideAnEmptyFocus() {
-        let store = onboarded(groups: [.fish], regions: [.antarctica])
+    func testCannotUnlockInsideAnEmptyFocus() throws {
+        let empty = try XCTUnwrap(emptyFocus(), "every kind lives in every place")
+        let store = onboarded(groups: [empty.0], regions: [empty.1])
         XCTAssertFalse(store.canUnlockInFocus)
         XCTAssertTrue(store.canUnlockAnywhere)
         XCTAssertNil(store.unlockNext(for: store.currentAnimal!, allowOutsideFocus: false))
@@ -176,8 +186,8 @@ final class MoreStoreTests: XCTestCase {
 
     func testUpcomingAnimalsNeverExceedTheQueue() {
         let store = onboarded(groups: [.fish])
-        XCTAssertEqual(store.upcomingDailyAnimals(count: 30).count, store.state.queue.count)
-        XCTAssertLessThan(store.state.queue.count, 30)
+        XCTAssertEqual(store.upcomingDailyAnimals(count: 30).count, min(30, store.state.queue.count))
+        XCTAssertEqual(store.upcomingDailyAnimals(count: 1_000).count, store.state.queue.count)
     }
 
     func testUnknownAnimalLookups() {

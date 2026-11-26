@@ -97,7 +97,7 @@ final class FaunaUITests: XCTestCase {
     func testOnboardingSurpriseMeLandsOnToday() {
         let app = launch("-FaunaOnboarding")
         app.buttons["Get started"].tap()
-        XCTAssertTrue(app.staticTexts["68 animals to discover"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["\(LibraryFacts.total) animals to discover"].waitForExistence(timeout: 5))
         app.buttons["Surprise me"].tap()
         XCTAssertTrue(app.buttons["Not now"].waitForExistence(timeout: 5))
         app.buttons["Not now"].tap()
@@ -112,7 +112,7 @@ final class FaunaUITests: XCTestCase {
         XCTAssertTrue(birds.waitForExistence(timeout: 5))
         birds.tap()
         XCTAssertTrue(app.buttons["Continue"].waitForExistence(timeout: 5))
-        XCTAssertTrue(app.staticTexts["12 animals to discover"].exists)
+        XCTAssertTrue(app.staticTexts["\(LibraryFacts.count(group: "bird")) animals to discover"].exists)
         XCTAssertFalse(app.buttons["Surprise me"].exists)
     }
 
@@ -120,15 +120,15 @@ final class FaunaUITests: XCTestCase {
         let app = launch("-FaunaOnboarding")
         app.buttons["Get started"].tap()
         tapWhenReady(button(app, containing: "Insects & Bugs"))
-        XCTAssertTrue(app.staticTexts["8 animals to discover"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["\(LibraryFacts.count(group: "insect")) animals to discover"].waitForExistence(timeout: 5))
         let east = button(app, containing: "Eastern North America")
         scroll(app, to: east)
         tapWhenReady(east)
-        XCTAssertTrue(app.staticTexts["5 animals to discover"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["\(LibraryFacts.count(group: "insect", region: "naEast")) animals to discover"].waitForExistence(timeout: 5))
         tapWhenReady(app.buttons["Continue"])
         tapWhenReady(app.buttons["Not now"])
         XCTAssertTrue(unlockPill(app).waitForExistence(timeout: 10))
-        let bugs = ["Monarch Butterfly", "Rusty Patched Bumble Bee", "Luna Moth", "Common Eastern Firefly", "Common Green Darner"]
+        let bugs = LibraryFacts.names(group: "insect", region: "naEast")
         XCTAssertTrue(bugs.contains { app.staticTexts[$0].exists }, "today's animal isn't an eastern bug")
     }
 
@@ -242,7 +242,7 @@ final class FaunaUITests: XCTestCase {
         let app = launch("-FaunaDemo", "-FaunaTab", "journal")
         XCTAssertTrue(app.navigationBars["Journal"].waitForExistence(timeout: 10))
         XCTAssertTrue(app.staticTexts["12"].exists)
-        XCTAssertTrue(app.staticTexts["of 68 animals discovered"].exists)
+        XCTAssertTrue(app.staticTexts["of \(LibraryFacts.total) animals discovered"].exists)
     }
 
     func testJournalTodayCardOpensToday() {
@@ -298,7 +298,7 @@ final class FaunaUITests: XCTestCase {
         XCTAssertTrue(app.navigationBars["Focus"].waitForExistence(timeout: 10))
         XCTAssertTrue(button(app, containing: "Mammals").exists)
         XCTAssertTrue(button(app, containing: "Africa").exists)
-        XCTAssertTrue(app.staticTexts["68 animals match"].exists)
+        XCTAssertTrue(app.staticTexts["\(LibraryFacts.total) animals match"].exists)
     }
 
     func testFocusChipUpdatesTheCount() {
@@ -306,9 +306,9 @@ final class FaunaUITests: XCTestCase {
         let birds = button(app, containing: "Birds")
         XCTAssertTrue(birds.waitForExistence(timeout: 10))
         birds.tap()
-        XCTAssertTrue(app.staticTexts["12 animals match"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["\(LibraryFacts.count(group: "bird")) animals match"].waitForExistence(timeout: 5))
         birds.tap()
-        XCTAssertTrue(app.staticTexts["68 animals match"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.staticTexts["\(LibraryFacts.total) animals match"].waitForExistence(timeout: 5))
     }
 
     func testUnitsSetting() {

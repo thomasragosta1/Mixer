@@ -164,14 +164,15 @@ final class MoreUITests: XCTestCase {
         XCTAssertTrue(any(app, "bugs in eastern Canada").waitForExistence(timeout: 10))
     }
 
-    func testImpossibleFocusWarnsInsteadOfBreaking() {
+    func testImpossibleFocusWarnsInsteadOfBreaking() throws {
+        guard let empty = LibraryFacts.emptyCombination else { throw XCTSkip("every kind lives in every place") }
         let app = launch(["-FaunaDemo", "-FaunaTab", "focus"])
-        let fish = button(app, "Fish")
-        XCTAssertTrue(fish.waitForExistence(timeout: 10))
-        fish.tap()
-        let antarctica = button(app, "Antarctica")
-        XCTAssertTrue(scroll(app, to: antarctica))
-        antarctica.tap()
+        let kind = button(app, LibraryFacts.groupTitles[empty.group]!)
+        XCTAssertTrue(kind.waitForExistence(timeout: 10))
+        kind.tap()
+        let place = button(app, LibraryFacts.regionTitles[empty.region]!)
+        XCTAssertTrue(scroll(app, to: place))
+        place.tap()
         XCTAssertTrue(app.staticTexts["No animals match yet"].waitForExistence(timeout: 5))
         tab(app, "Today")
         XCTAssertTrue(pill(app).waitForExistence(timeout: 10), "Today still works")

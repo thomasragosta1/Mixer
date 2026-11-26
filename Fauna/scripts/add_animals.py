@@ -9,13 +9,20 @@ animals = json.loads(path.read_text())
 have = {a["id"] for a in animals}
 added = 0
 for f in sorted((root / "scripts/new_animals").glob("*.json")):
-    for a in json.loads(f.read_text()):
+    entries = json.loads(f.read_text())
+    if not isinstance(entries, list):  # e.g. draft-request.json
+        continue
+    for a in entries:
         if a["id"] not in have:
             animals.append(a); have.add(a["id"]); added += 1
-# Extensions: {id: {field: "paragraph to append"}}, applied once.
+# Extensions: {id: {field: "paragraph to append"}}. They have all been merged already, and the
+# repeat clean-up (scripts/dedupe) edited some of them afterwards, so re-applying them would
+# bring the repeats back. Only apply them with --extensions.
+import sys as _sys
+_apply_extensions = "--extensions" in _sys.argv
 byid = {a["id"]: a for a in animals}
 extended = 0
-for f in sorted((root / "scripts/extensions").glob("*.json")):
+for f in (sorted((root / "scripts/extensions").glob("*.json")) if _apply_extensions else []):
     for aid, fields in json.loads(f.read_text()).items():
         for field, text in fields.items():
             a = byid[aid]
