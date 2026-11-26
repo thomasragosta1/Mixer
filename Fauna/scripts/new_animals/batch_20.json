@@ -1,0 +1,498 @@
+[
+  {
+    "id": "red-lionfish",
+    "name": "Red Lionfish",
+    "scientificName": "Pterois volitans",
+    "wikipediaTitle": "Red lionfish",
+    "group": "fish",
+    "regions": ["asia", "oceania", "naEast", "centralAmerica"],
+    "range": "Indo-Pacific reefs; invasive in the western Atlantic and Caribbean",
+    "status": "LC",
+    "coordinate": {"latitude": 0.0, "longitude": 130.0},
+    "mapSpan": 70,
+    "tagline": "A venomous beauty that conquered the Caribbean",
+    "lede": "Striped in red and white and trailing long, feathery fins like a lion's mane, the red lionfish is one of the most striking fish on a coral reef. It is also one of the most troublesome: carried far from home by the aquarium trade, it has spread across the western Atlantic, where almost nothing eats it.",
+    "home": "The red lionfish is native to the Indo-Pacific, including the western and central Pacific and the waters off western Australia. Linnaeus based his description on a fish from Ambon Island in Indonesia.\n\nOutside that range it has become firmly established. Adults now live along the East Coast of the United States from Cape Hatteras in North Carolina to Florida, in Bermuda and the Bahamas, in the northern Gulf of Mexico, and right across the Caribbean, from Cuba and Puerto Rico to Belize, Honduras, Colombia and Mexico. It has also reached the eastern Mediterranean and the Brazilian island of Fernando de Noronha.",
+    "anatomy": "Adults can reach 47 centimetres, making this one of the largest lionfish species, while juveniles are usually under 2.5 centimetres long. The body is banded with white stripes alternating with red, maroon or brown ones.\n\nIts weapons are its spines: 13 venomous spines along the dorsal fin, 2 on the pelvic fins and 3 on the anal fin. Together with its long, non-venomous fins, they create the mane-like look that gives the fish its name. The larvae look quite different, with a large head, a long triangular snout, serrated head spines and colour only on the pelvic fins.",
+    "life": "Lionfish are mostly solitary and mostly nocturnal, hunting from late afternoon to dawn. They feed largely on crustaceans such as shrimps, crabs, amphipods and isopods, along with other invertebrates and small fish, including young lionfish. A hunting lionfish uses its broad fins to corner prey, then swallows it whole with a quick strike.\n\nOne of its tactics is a slow, unbroken approach. Many small fish swim in bursts with brief pauses, and the lionfish creeps closer during each pause, which lets it catch fish twice as fast as itself. Once within about 9 centimetres, it rapidly expands its mouth, and the low pressure inside sucks the prey in.",
+    "family": "Courtship is the only time lionfish gather, usually one male with several females, and it takes place around nightfall and through the night. Courting fish circle, sidewind, follow and lead one another. The sexes look alike except while breeding.\n\nAfter courtship the female releases two masses of eggs, which the male fertilises before they float to the surface. A female can lay up to 30,000 eggs in one session, and more in warmer months. The embryos produce a sticky mucus that lets them cling to rocks and corals, and they hatch about 36 hours after fertilisation. The larvae swim well, start eating tiny ciliates within four days, and spend about a month drifting before settling. An average red lionfish lives around 10 years.",
+    "remarkable": "Genetic studies suggest the red lionfish began as a hybrid. Its DNA appears to carry contributions from two other lineages, one formed by the common lionfish and another by the luna and Russell's lionfishes, hinting that the species arose when those fish interbred.",
+    "outlook": "Within its native range, moray eels and the ambush-hunting bobbit worm have been seen eating lionfish. In the Atlantic, though, few predators recognise it as food, probably because it is so new there. Lionfish have turned up in the stomachs of Nassau and tiger groupers in the Bahamas, but the Nassau grouper is itself critically endangered and unlikely to make a dent.\n\nAbout 93% of invasive lionfish belong to this species. They eat a huge range of prey, become abundant quickly, and have moved into the role left by overfished snappers and groupers. Scientists link them to falling numbers of other reef fish and to declines in reef diversity, so many organisations now encourage people to catch and eat lionfish.",
+    "people": "The red lionfish probably first escaped into the wild off Florida in the early to mid-1980s, almost certainly from the aquarium trade. Within a few decades it had become one of the best-known marine invaders in the Americas.\n\nIts dorsal spines are purely defensive. A threatened lionfish turns its spines towards the attacker, even if that means swimming upside down. A sting is rarely fatal to people but causes extreme pain, and sometimes headaches, vomiting and difficulty breathing. Soaking the wound in hot water is a common treatment, since few hospitals carry anything specific, but medical help is strongly recommended because some people react badly.",
+    "relatives": "The red lionfish belongs to the scorpionfish family, Scorpaenidae, many of whose members carry venomous spines. It is one of five species in the genus Pterois, and the Atlantic invasion involves two of them: the red lionfish and its close look-alike, the common lionfish, Pterois miles.\n\nLinnaeus first named it Gasterosteus volitans in 1758, and it was later made the type species of Pterois. The name volitans means 'flying', probably after the big, wing-like pectoral fins.",
+    "didYouKnow": "Red lionfish breed every month, which helped their drifting larvae spread rapidly across their new Atlantic range.",
+    "facts": [
+      {"label": "Length", "value": "Up to 47 cm"},
+      {"label": "Venomous spines", "value": "18"},
+      {"label": "Lifespan", "value": "About 10 years"},
+      {"label": "Diet", "value": "Crustaceans and small fish"}
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the species name volitans mean?",
+        "choices": ["Flying", "Striped", "Poisonous", "Lion-maned, after its spreading fins"],
+        "explanation": "Volitans means 'flying', probably a nod to the large, wing-like pectoral fins."
+      },
+      {
+        "prompt": "How did red lionfish most likely reach the Atlantic?",
+        "choices": ["From the aquarium trade", "In ships' ballast water", "By swimming through the Suez Canal and around Africa", "Attached to floating seaweed"],
+        "explanation": "They were almost certainly released or escaped from aquariums off Florida in the 1980s."
+      },
+      {
+        "prompt": "Roughly how many eggs can a female lay in one mating session?",
+        "choices": ["Up to 30,000", "About 50", "About 500", "Over 10 million in a single batch"],
+        "explanation": "A female can release up to 30,000 eggs at a time, and more in warmer months."
+      }
+    ],
+    "charities": [
+      {"name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns to protect and restore the world's oceans and marine life."},
+      {"name": "Coral Reef Alliance", "url": "https://www.coralreefalliance.org", "blurb": "Works with local communities to protect and restore coral reefs."}
+    ]
+  },
+  {
+    "id": "kinkajou",
+    "name": "Kinkajou",
+    "scientificName": "Potos flavus",
+    "wikipediaTitle": "Kinkajou",
+    "group": "mammal",
+    "regions": ["centralAmerica", "southAmerica"],
+    "range": "Tropical forests from southern Mexico to Bolivia and south-eastern Brazil",
+    "status": "LC",
+    "coordinate": {"latitude": -2.0, "longitude": -62.0},
+    "mapSpan": 60,
+    "tagline": "The 'honey bear' that is really a raccoon cousin",
+    "lede": "With a monkey's grasping tail, a teddy-bear face and a tongue long enough to lick nectar from flowers, the kinkajou is a puzzle of a mammal. It is actually a relative of the raccoon, and it spends its nights clambering through the rainforest canopy in search of ripe fruit.",
+    "home": "Kinkajous range from east and south of the Sierra Madre in Mexico, through Central America, to Bolivia east of the Andes and the Atlantic Forest of south-eastern Brazil. They live from sea level up to 2,500 metres.\n\nThey need closed-canopy tropical forest, but many kinds will do: lowland rainforest, montane forest, dry forest, gallery forest along rivers, and secondary forest. During the day they sleep in tree hollows or in shady tangles of leaves, out of direct sunlight.",
+    "anatomy": "A kinkajou has a round head, large eyes that shine green or bright yellow in torchlight, a short pointed snout, short limbs and small rounded ears. Including its tail, it measures 82 to 133 centimetres, of which the tail is 39 to 57 centimetres, and it weighs 1.4 to 4.6 kg. Females are generally smaller than males.\n\nIts fur is short, dense and woolly, in shades from tawny olive to wood brown above and buff to brownish yellow below. Some have a dark stripe down the back. The coat mixes pale hairs with darker, brown-tipped ones that reflect less light, which can create an illusion of spots and lines. The tail is furred right to the tip.",
+    "life": "Kinkajous are strictly nocturnal, busiest between about 7 pm and midnight and again an hour before dawn. They are superb climbers: the tail serves as a fifth hand, though never for holding food, and the ankles and feet can rotate 180°, so a kinkajou can run backwards along a branch or descend a trunk head first.\n\nAbout 90% of the diet is ripe fruit, especially figs. A kinkajou holds soft fruit in its forepaws and scoops out the pulp with its tongue, and it probably helps spread seeds. Leaves, flowers, nectar and herbs make up most of the rest, with the occasional ants, bird eggs or small vertebrates. Its slender 13-centimetre tongue reaches into blossoms for nectar, so it may also act as a pollinator.",
+    "family": "Kinkajous breed throughout the year. After a pregnancy of 112 to 118 days, the female gives birth to one small baby, or occasionally two.\n\nAlthough they usually forage alone, kinkajous sleep in family units and groom one another. Scent glands near the mouth, on the throat and on the belly let them mark their territories and travel routes. They sometimes gather to feed in large groups, and may even forage alongside olingos. In captivity they typically live about 23 years, and the record is 42 years.",
+    "remarkable": "The kinkajou is one of only two carnivorans with a prehensile tail; the other is the binturong of South-east Asia, a much larger animal with similar limb proportions. Despite belonging to the Carnivora and having sharp teeth, it lives mainly on fruit, and its habits mirror those of spider monkeys, which fill a similar role by day where the two overlap.",
+    "outlook": "Kinkajous are seldom seen because of their strict nocturnal habits, but they have a much larger range than olingos and tend to be more common. Still, they are hunted for the pet trade, for meat, and for their skins, which are made into wallets and horse saddles. Because they depend on closed-canopy forest, deforestation is a potential threat.\n\nHonduras has listed the species on Appendix III of CITES, so exports from Honduras need a permit and exports from elsewhere need a certificate of origin.",
+    "people": "The name kinkajou comes from the French quincajou, which was based on an Algonquian name for the wolverine. In English it has also been called the honey bear, night ape and night walker. Captive kinkajous eagerly eat honey, hence that name, though honey is not well recorded in the wild diet.\n\nKinkajous are sometimes kept as exotic pets. They are playful, quiet and have little odour, but they dislike noise, sudden movements and being woken by day, and an agitated one may scream, claw and bite deeply. In El Salvador, Guatemala and Honduras pet kinkajous are called micoleón, 'lion monkey', and escaped pets have been reported living wild in Florida.",
+    "relatives": "The kinkajou belongs to the raccoon family, Procyonidae, along with olingos, coatis, raccoons, the ringtail and the cacomistle, and it is the only member of its genus, Potos. DNA studies show it is the sister group to all the others, having split from them 24 to 21.6 million years ago. Its ancestors probably evolved in North America and moved south after the Isthmus of Panama formed.\n\nOlingos look so similar that many local cultures do not tell them apart, but kinkajous are larger, have shorter muzzles and lack anal scent glands. When food is scarce, the bigger kinkajous drive olingos away.",
+    "didYouKnow": "A 2016 genetic study found five distinct regional lineages of kinkajou, suggesting that some of its eight proposed subspecies might be separate species.",
+    "facts": [
+      {"label": "Length", "value": "82–133 cm incl. tail"},
+      {"label": "Weight", "value": "1.4–4.6 kg"},
+      {"label": "Tongue", "value": "About 13 cm"},
+      {"label": "Diet", "value": "Mostly ripe fruit"}
+    ],
+    "quiz": [
+      {
+        "prompt": "Roughly what share of a kinkajou's diet is fruit?",
+        "choices": ["About 90%", "About 10%", "About half", "Almost none, as it mainly hunts insects and lizards"],
+        "explanation": "Some 90% of its diet is ripe fruit, especially figs."
+      },
+      {
+        "prompt": "Which family does the kinkajou belong to?",
+        "choices": ["The raccoon family", "The weasel family", "The monkey family", "The bear family, as its 'honey bear' nickname suggests"],
+        "explanation": "It is a procyonid, related to raccoons, coatis and olingos."
+      },
+      {
+        "prompt": "How far can a kinkajou rotate its ankles and feet?",
+        "choices": ["180°", "45°", "90°", "A full 360°, like an owl turning its head"],
+        "explanation": "Rotating its feet 180° lets it run backwards along branches and climb down head first."
+      }
+    ],
+    "charities": [
+      {"name": "Rainforest Trust", "url": "https://www.rainforesttrust.org", "blurb": "Buys and protects threatened tropical forests with local partners."},
+      {"name": "Wildlife Conservation Society", "url": "https://www.wcs.org", "blurb": "Protects wildlife and wild places across Latin America and the world."}
+    ]
+  },
+  {
+    "id": "lilac-breasted-roller",
+    "name": "Lilac-breasted Roller",
+    "scientificName": "Coracias caudatus",
+    "wikipediaTitle": "Lilac-breasted roller",
+    "group": "bird",
+    "regions": ["africa"],
+    "range": "Open savanna and woodland across eastern and southern Africa",
+    "status": "LC",
+    "coordinate": {"latitude": -10.0, "longitude": 30.0},
+    "mapSpan": 45,
+    "tagline": "A savanna jewel that tumbles through the sky",
+    "lede": "Lilac, azure, olive and deep purple-blue, the lilac-breasted roller looks like a bird painted by someone who could not choose a colour. It sits on a high perch scanning the savanna, then drops to snatch insects, scorpions and lizards from the ground.",
+    "home": "This roller is found across eastern and southern Africa, from the Red Sea coast of Eritrea through East Africa, including Zanzibar, down to Namibia, Botswana, Zimbabwe and north-eastern South Africa. It lives from sea level to 2,000 metres or more, and has wandered as far as Oman and Yemen. It is most abundant in Kenya.\n\nIts home is open savanna with scattered trees and shrubs, because it needs high perches for hunting and nesting. It is largely absent from treeless places and avoids towns and farmland unless they are abandoned. The southern subspecies is mostly resident, while the northern lilac-throated roller migrates from north-east Kenya to north-west Somalia to breed.",
+    "anatomy": "A sturdy, large-headed bird, it weighs about 104 grams and measures 36 to 38 centimetres, including the 8 to 9 centimetre tail streamers. Its wingspan is 50 to 58 centimetres. The throat is lilac, deepening to a darker lilac breast, with an olive crown and back and lilac-rufous cheeks. In flight the wings flash brilliant azure, black and dark purple-blue.\n\nMales and females look alike, though males may be slightly larger. Juveniles lack the long black outer tail streamers and have rufous-tawny, streaked breasts. Like all rollers, it has syndactyl feet, with the second and third toes fused together.",
+    "life": "Usually alone or in pairs, the roller perches at the top of a tree, a pole or even a large grazing mammal, watching for movement below. It feeds on ground-dwelling insects, spiders, scorpions, centipedes, millipedes and snails, and on small vertebrates including lizards, chameleons, snakes and small birds. Small prey is swallowed on the spot; larger prey is carried to a perch and beaten until it falls apart.\n\nFire is an opportunity. When grassland burns, rollers gather with fiscals, flycatchers, kites, storks, swallows and bee-eaters to pick off animals fleeing the flames, and in parks they hunt slow lizards and snakes crossing the roads. Its call is a harsh, sawing 'rak rak rak', given in flight.",
+    "family": "Pairs are probably monogamous and nest on their own. They do not dig their own holes, instead taking over cavities made by woodpeckers or kingfishers, about 5 metres up in a baobab, palm or other tree, or even in the side of a termite mound. The nest is a flat pad of grass.\n\nThe female lays 2 to 4 eggs, and both parents take turns incubating them for 22 to 24 days. The chicks hatch helpless and are fully feathered after 19 days. The parents are fiercely protective, taking on raptors and other birds that come too close, and one of the pair may fly in a rolling pattern to drive off intruders.",
+    "remarkable": "Its courtship flight is a spectacle. The bird climbs high, sometimes between 69 and 144 metres, then tips forward with closed wings and plunges towards the ground. At top speed it rocks from side to side several times, calling a harsh 'kaaa, kaarsh', before swooping up again. Rival males that meet in the air fight by beating wings and clawing at each other as they climb.",
+    "outlook": "The IUCN lists the lilac-breasted roller as Least Concern, thanks to its large range and stable population. It is less abundant in Kenya than it once was, however, and because it shuns farmland and towns it depends on open savanna staying intact. Outside national parks it is seen less often, sometimes appearing only when farmers burn land and stir up insects.",
+    "people": "The lilac-breasted roller is unofficially considered the national bird of Kenya. Over the years it has collected other names too, including fork-tailed roller, lilac-throated roller, Mosilikatze's roller and troupand.\n\nLinnaeus gave it its scientific name in 1766, basing his account on 'le Rollier d'Angola', a bird described and illustrated by the French zoologist Mathurin Jacques Brisson in 1760. The name caudatus is Latin for 'tailed', after its streamers.",
+    "relatives": "It is one of nine species in the genus Coracias, a group of rollers native to the open woodlands of Africa and western Eurasia. Two subspecies are recognised. The lilac-throated or blue-breasted roller of the Horn of Africa, with a greenish-blue crown and an azure breast, was first described as a separate species, but there is no behavioural or ecological evidence to keep it apart.\n\nIn Kenya's Turkana Basin it can be confused with the sleeker Abyssinian roller, which has dark blue upper tail coverts and distinctly spatulate tail streamers.",
+    "didYouKnow": "Immature lilac-breasted rollers have buffy breasts with just the occasional lilac feather and pale streaks.",
+    "facts": [
+      {"label": "Length", "value": "36–38 cm"},
+      {"label": "Weight", "value": "About 104 g"},
+      {"label": "Wingspan", "value": "50–58 cm"},
+      {"label": "Diet", "value": "Insects and small animals"}
+    ],
+    "quiz": [
+      {
+        "prompt": "Which country unofficially treats this roller as its national bird?",
+        "choices": ["Kenya", "Namibia", "South Africa", "Ethiopia, where it was first described"],
+        "explanation": "It is unofficially considered the national bird of Kenya, where it is most abundant."
+      },
+      {
+        "prompt": "Where does the lilac-breasted roller usually nest?",
+        "choices": ["In an old tree hole", "On open ground", "In a burrow it digs in a riverbank", "In a hanging basket woven from grass"],
+        "explanation": "It takes over cavities made by woodpeckers or kingfishers rather than digging its own."
+      },
+      {
+        "prompt": "Which toes are fused on a roller's foot?",
+        "choices": ["The second and third", "None", "The first and fourth", "All four, forming a single grasping pad"],
+        "explanation": "Rollers have syndactyl feet, with the second and third toes joined."
+      }
+    ],
+    "charities": [
+      {"name": "BirdLife International", "url": "https://www.birdlife.org", "blurb": "A global partnership working to conserve birds and their habitats."},
+      {"name": "African Wildlife Foundation", "url": "https://www.awf.org", "blurb": "Works across Africa to protect wildlife and wild lands with local communities."}
+    ]
+  },
+  {
+    "id": "sea-lamprey",
+    "name": "Sea Lamprey",
+    "scientificName": "Petromyzon marinus",
+    "wikipediaTitle": "Sea lamprey",
+    "group": "fish",
+    "regions": ["europe", "naEast", "openOcean"],
+    "range": "North Atlantic coasts and rivers; invasive in the Great Lakes",
+    "status": "LC",
+    "coordinate": {"latitude": 45.0, "longitude": -35.0},
+    "mapSpan": 70,
+    "tagline": "The jawless 'vampire fish' that drinks blood",
+    "lede": "The sea lamprey has no jaws and no paired fins, just an eel-like body and a round sucking mouth ringed with rows of sharp teeth. It clamps on to living fish and feeds on their blood, which has earned it the nickname 'vampire fish' and made it a notorious invader of North America's Great Lakes.",
+    "home": "The sea lamprey lives in the northern and western Atlantic along the coasts of Europe and North America, as well as in the western Mediterranean and the Black Sea. It has been found as deep as 4,000 metres and tolerates water from 1 to 20 °C. In North America it is native to the Connecticut River basin, and the largest European populations are in north-central Portugal, north-western Spain and western France.\n\nIt is anadromous: adults live in the sea or a large lake and travel up rivers to spawn. Its body copes with a wide range of salinity, and the membranes of its gills change their chemistry as young lampreys move towards salt water. Some populations, like those in the Great Lakes, live entirely in fresh water.",
+    "anatomy": "Adults can reach 120 centimetres and weigh up to 2.3 kg. The body is olive or brownish-yellow on the back and sides with black marbling, and paler underneath. Behind each eye is a row of seven gill openings.\n\nThe mouth is the remarkable part. Jawless and round, it is as wide as or wider than the head, and lined with many concentric rows of sharp, keratinised teeth surrounding a rasping tongue. The lamprey also tolerates very high levels of urea, which lets it feed on sharks and rays, whose blood is rich in this compound that is toxic to most fish.",
+    "life": "A feeding lamprey attaches its suction-cup mouth to a fish's skin and rasps through the flesh with its tongue and teeth. A fluid in its mouth called lamphredin stops the victim's blood from clotting, and many hosts die from blood loss or infection. The lamprey is not choosy, preying on a wide variety of fish.\n\nThe adult feeding stage lasts only 12 to 18 months, but in that time a single lamprey can kill around 18 kg of fish. Its whole lifespan can stretch to 7 years, much of it spent as a burrowing larva.",
+    "family": "Males build nests in the gravel or sand of streams with a moderately strong current, and females lay large numbers of eggs in them. Spawning is the last act of their lives: the adults die soon afterwards.\n\nThe larvae, called ammocoetes, burrow into the soft bottom of quiet water downstream and filter plankton and detritus for several years. Then they metamorphose into the adult form and head for the sea or a lake, though some begin feeding on blood while still in the river. About a year and a half after metamorphosis, the adults return upstream to breed.",
+    "remarkable": "Its genome is one of the strangest among vertebrates. During early development, the lamprey sheds about 20% of its DNA from the cells that build its body, keeping the full set only in the line of cells that will make eggs and sperm. Northern lampreys, the group it belongs to, also have more chromosomes than any other vertebrate, between 164 and 174.",
+    "outlook": "In its native range the sea lamprey coevolved with its hosts, which developed some resistance. Lake Ontario was walled off from the other Great Lakes by Niagara Falls, but once the Welland Canal let lampreys bypass the falls, they reached Lake Erie by 1921 and Lake Superior by 1938. Lake trout, lake whitefish, chub and lake herring had no defences, and together with overfishing the lamprey helped devastate lake trout in the 1930s and 1940s. With those predators gone, the invasive alewife boomed.\n\nThe Great Lakes Fishery Commission, a joint Canada–US body, fights back with electric currents, barriers that let most other fish pass and, most effectively, the selective pesticide TFM, applied to rivers. Researchers are also studying lamprey pheromones as a gentler lure. Meanwhile, in the Connecticut River basin, managers help lampreys past dams, because adults that die after spawning feed native freshwater fish.",
+    "people": "Lampreys are a delicacy in parts of Europe and are sold seasonally in France, Spain and Portugal, which also hold the main fisheries for the species. In Finland they are eaten pickled, and in Latvia sea lampreys are sometimes caught alongside river lampreys.\n\nScientists value the sea lamprey too. Its genome was sequenced in 2013 and serves as a model for studying development and evolution, and two immune genes, CDA1 and CDA2, were first discovered in it before being found across lampreys.",
+    "relatives": "The sea lamprey is a northern lamprey, one of a group of jawless, eel-like fish; despite its shape and its old nickname, it is not an eel. Its genus name, Petromyzon, comes from the Greek for 'stone' and 'to suck', so it means 'stone sucker', while marinus is Latin for 'of the sea'.\n\nThe larvae are so unlike adults that they have their own name, and they tolerate a far narrower range of salt levels than adults can.",
+    "didYouKnow": "Sea lampreys can rid their bodies of excess acid faster than most other saltwater fish, mostly across the surface of their gills.",
+    "facts": [
+      {"label": "Length", "value": "Up to 120 cm"},
+      {"label": "Weight", "value": "Up to 2.3 kg"},
+      {"label": "Lifespan", "value": "Up to 7 years"},
+      {"label": "Diet", "value": "Fish blood (adults)"}
+    ],
+    "quiz": [
+      {
+        "prompt": "What does a lamprey's mouth produce to stop blood clotting?",
+        "choices": ["Lamphredin", "Venom", "Mucus", "A digestive acid that dissolves fish scales"],
+        "explanation": "A fluid called lamphredin keeps the host's blood flowing while the lamprey feeds."
+      },
+      {
+        "prompt": "What happens to sea lampreys after they spawn?",
+        "choices": ["They die", "They return to sea", "They spawn again next year", "They turn back into filter-feeding larvae"],
+        "explanation": "Spawning is followed by the death of the adults."
+      },
+      {
+        "prompt": "Which canal let sea lampreys bypass Niagara Falls?",
+        "choices": ["The Welland Canal", "The Panama Canal", "The Suez Canal", "A short canal dug beside Lake Superior"],
+        "explanation": "Once the Welland Canal was built, lampreys spread from Lake Ontario to the other Great Lakes."
+      }
+    ],
+    "charities": [
+      {"name": "The Nature Conservancy", "url": "https://www.nature.org", "blurb": "Protects lands and waters, including the Great Lakes and their rivers."},
+      {"name": "Nature Conservancy of Canada", "url": "https://www.natureconservancy.ca", "blurb": "Protects natural areas and the species they sustain across Canada."}
+    ]
+  },
+  {
+    "id": "koala",
+    "name": "Koala",
+    "scientificName": "Phascolarctos cinereus",
+    "wikipediaTitle": "Koala",
+    "group": "mammal",
+    "regions": ["oceania"],
+    "range": "Eucalypt woodlands of eastern and south-eastern Australia",
+    "status": "VU",
+    "coordinate": {"latitude": -29.0, "longitude": 149.0},
+    "mapSpan": 25,
+    "tagline": "Australia's sleepy, leaf-eating marsupial icon",
+    "lede": "Dozing up to 20 hours a day in the fork of a gum tree, the koala lives on leaves that would poison most mammals. Its round fluffy ears and teddy-bear face have made it one of the most famous animals on Earth, yet beneath the charm is a creature tuned to survive on almost no energy.",
+    "home": "Koalas live in eastern and south-eastern mainland Australia, in Queensland, New South Wales, Victoria and South Australia, over a range of roughly 1,000,000 square kilometres spanning 30 ecoregions. They have been introduced to several nearby islands, and Magnetic Island marks the northern limit of the range. In the late Pleistocene they lived as far west as south-western Western Australia.\n\nThey usually inhabit open eucalypt woodland, in both tropical and temperate climates. In semi-arid country they keep to trees along streams and creeks, which offer refuge during drought and extreme heat.",
+    "anatomy": "A koala is stout, with a large head and a vestigial tail or none at all. It measures 60 to 90 centimetres and weighs 4 to 15 kg, and koalas from Victoria are twice as heavy as those from Queensland. Males are 50% larger than females and have bald chest patches marking their scent glands. The back fur, light grey to chocolate brown, is the best insulating coat of any marsupial.\n\nSharp curved claws and two opposable digits on each forepaw give a firm grip, while two fused toes on each hind foot work as a grooming comb. Its brain is unusually small, about 19.2 grams, and does not fill the skull, perhaps because its diet cannot fuel a bigger one. A low larynx and extra folds in the soft palate let koalas make surprisingly deep sounds for their size.",
+    "life": "Koalas eat mostly eucalypt leaves and favour around 30 of the more than 600 species available, choosing leaves with more protein and less fibre. They rarely need to drink. A koala clips leaves with its front teeth, grinds them with cusped molars and sometimes brings food back up to chew again. A caecum 200 centimetres long ferments the fibre, food may stay in the gut for 100 hours, and liver enzymes neutralise the toxins.\n\nThe diet is so poor that its metabolic rate is only half that of a typical mammal. It is active mostly at night, spends just 15 minutes a day on social behaviour, and comes down to the ground only 2 or 3 times a night. Males bellow with a series of deep, snoring inhalations and belching exhalations that carries far through the forest.",
+    "family": "Koalas give birth between October and May after a pregnancy of only 33 to 35 days. The newborn joey weighs no more than 0.5 grams, yet crawls into its mother's pouch and latches on to a teat. At about 26 weeks it is fully furred and peeks out, and at 6 or 7 months it leaves the pouch for the first time.\n\nAround then, the mother produces a soft, bacteria-rich pap from her caecum that the joey eats, preparing its gut for eucalyptus. The young rides on her back and stays nearby until it is 1.5 to 2 years old. Females mature at about 3 years and males at about 4, and koalas live 13 to 18 years in the wild. Once their teeth wear down, chewing gets harder, and old koalas may eventually starve.",
+    "remarkable": "Unusually among marsupials, koala milk gets less fatty as the joey grows, and a mother keeps lactating for up to a year to make up for her own low energy. She also never cleans her pouch, which is held shut by a ring of muscle that keeps the young safely inside.",
+    "outlook": "The IUCN moved the koala from Least Concern to Vulnerable in 2014, and in 2022 it was listed as endangered in Queensland, New South Wales and the Australian Capital Territory. Threats include clearing for farming and housing, drought and bushfires, which trap koalas in flammable treetops. Chlamydia bacteria and koala retrovirus cause disease, and cars and dogs kill about 4,000 a year.\n\nPopulation estimates vary hugely, from 92,000 in 2021 to as many as 918,000 using newer survey methods in 2025, compared with 8 to 10 million in the early 1900s. In parts of South Australia and Victoria, such as Cape Otway and French Island, koalas are now so abundant that they overgraze their trees.",
+    "people": "The word koala comes from the Dharug word gula, meaning 'no water'. In Dreamtime stories, the Tharawal people believed the koala helped them reach Australia by rowing their boat, and many tales explain how it lost its tail. Settlers called it the 'native bear', which is why it is still wrongly called the koala bear.\n\nIn the early 20th century koalas were killed in vast numbers for fur: about 8 million between 1888 and 1927. Sanctuaries in Brisbane and Sydney led the first conservation efforts in the 1920s and 1930s. Since then the koala has brought Australian tourism over $1 billion in 1998 alone, starred as Blinky Bill, and inspired 'koala diplomacy' after world leaders held koalas at the 2014 G20 summit in Brisbane.",
+    "relatives": "The koala is the only living member of the family Phascolarctidae. Its closest living relatives are the wombats, and together they sit in the suborder Vombatiformes alongside extinct animals such as marsupial lions and giant wombats. The koala lineage probably branched off around 40 million years ago.\n\nAncient koalas lived in rainforests and ate a broader diet. As Australia dried out in the Miocene and eucalypt woodland spread, the koala's ancestors adapted to it. Its scientific name, Phascolarctos cinereus, means 'ash-coloured pouched bear'.",
+    "didYouKnow": "A koala will not eat plucked eucalyptus leaves laid out on a flat surface, because that does not match its normal feeding routine.",
+    "facts": [
+      {"label": "Length", "value": "60–90 cm"},
+      {"label": "Weight", "value": "4–15 kg"},
+      {"label": "Sleep", "value": "Up to 20 hours a day"},
+      {"label": "Diet", "value": "Eucalyptus leaves"}
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the Dharug word gula, the origin of 'koala', mean?",
+        "choices": ["No water", "Sleepy one", "Tree climber", "Little bear, after its rounded fluffy ears"],
+        "explanation": "Koalas get most of their water from leaves and rarely need to drink."
+      },
+      {
+        "prompt": "What are the koala's closest living relatives?",
+        "choices": ["Wombats", "Bears", "Kangaroos", "Possums, which also live in trees"],
+        "explanation": "Koalas and wombats together form the suborder Vombatiformes."
+      },
+      {
+        "prompt": "How much does a newborn koala weigh?",
+        "choices": ["No more than 0.5 g", "About 50 g", "About 1 kg", "Around 300 g, about the weight of an apple"],
+        "explanation": "The tiny, barely formed joey crawls into the pouch to finish developing."
+      }
+    ],
+    "charities": [
+      {"name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works worldwide to protect forests and wildlife, including Australia's koala habitat."}
+    ]
+  },
+  {
+    "id": "mandarin-duck",
+    "name": "Mandarin Duck",
+    "scientificName": "Aix galericulata",
+    "wikipediaTitle": "Mandarin duck",
+    "group": "bird",
+    "regions": ["asia", "europe"],
+    "range": "Wooded rivers and lakes of East Asia; introduced in Western Europe",
+    "status": "LC",
+    "coordinate": {"latitude": 38.0, "longitude": 127.0},
+    "mapSpan": 40,
+    "tagline": "A dazzling duck that stands for faithful love",
+    "lede": "The drake mandarin duck looks almost too ornate to be real, with a red bill, a white crescent over each eye, orange 'whiskers' and two upright orange sail feathers on its back. In China, Korea and Japan these birds have long stood for love and fidelity.",
+    "home": "Mandarin ducks are native to East and North-east Asia. The Asian birds are migratory, wintering in lowland eastern China and southern Japan. They breed along dense, shrubby, wooded edges of rivers and lakes, mostly at low altitude but up to 1,500 metres in valleys, and in winter also use marshes, flooded fields, coastal lagoons and estuaries.\n\nEscapes from collections founded a large feral population in Great Britain during the 20th century, now about 7,000 birds, with smaller numbers in the parks of Dublin, a large population around Berlin, and isolated groups in North Carolina and Sonoma County, California. In Europe they use more open habitat than at home.",
+    "anatomy": "This is a fairly small duck, 41 to 49 centimetres long with a wingspan of 65 to 75 centimetres, slightly smaller than its American relative the wood duck. The male's breast is purple with two vertical white bars, and his flanks are ruddy. The sails are modified flight feathers whose enlarged inner vane sticks up like the sail of a boat.\n\nThe female is greyish brown, paler below, with a slender white eye-ring, a stripe running back from the eye and a pale tip to her bill. Both sexes have crests. After breeding, the male moults into a drab eclipse plumage that resembles the female's, though his bill stays bright. Ducklings can be told from mallard ducklings because their eye-stripe stops at the eye.",
+    "life": "Mandarins are shy, preferring cover under overhanging trees such as willows, and they gather in smaller flocks than many ducks. They feed by dabbling or walking on land, mainly near dawn and dusk, and spend the day perched in trees or resting on the ground.\n\nTheir diet changes with the seasons. In autumn and winter they eat mostly acorns, beech mast and grain. In spring they switch to insects, snails, fish and water plants, and in summer they add worms, frogs, molluscs and even small snakes. Predators include mink, raccoon dogs, otters, polecats, Eurasian eagle-owls and grass snakes.",
+    "family": "Mandarins breed in densely wooded areas near shallow lakes, marshes or ponds, nesting in tree holes close to water. The female lays a single clutch of 9 to 12 eggs in April or May. The male may guard her during incubation, but he does not sit on the eggs and leaves before they hatch.\n\nSoon after hatching, the mother flies down and coaxes the ducklings to leap from the nest hole to the ground, then leads them to water. Females also often lay eggs in other mandarins' nests: in one reserve in north-east China, 46.1% did so. This saves them effort and risk, and the extra eggs did not harm the hosts' own chances.",
+    "remarkable": "Mandarin ducks have 84 chromosomes, all of a similar shape, while other ducks typically have 80. This may make hybridising with other ducks very difficult or even impossible, and though hybrids with six other species have been reported, none has been verified.",
+    "outlook": "By the 1980s, mass exports and the destruction of forest habitat had cut numbers in eastern Russia and China to below 1,000 pairs each, while Japan still held around 5,000 pairs. China has since protected the species, and a 2009 survey estimated 12,000 to 14,000 birds there.\n\nLogging remains the greatest threat. Hunters also shoot mandarins by accident because they are hard to identify in flight, and some are poached for their beauty. In Britain the introduced population seems to cause no harm, since it fills an empty niche, although it might come to compete with the tree-nesting common goldeneye.",
+    "people": "The German explorer Engelbert Kaempfer described the bird in 1727, writing that he could hardly believe his eyes when shown a picture of the drake until he saw one alive. In China mandarins are called yuanyang, from the words for the male and female, and 'two mandarin ducks playing in water' describes a loving couple. Because the sexes look so different, yuanyang in Cantonese also means an odd pair, as in the drink of that name.\n\nIn Korea, carved wooden wedding ducks are traditional marriage gifts, and in Japan a happily married couple is oshidori fūfu. Mandarins are also popular in zoos and waterfowl collections, where breeders have produced silver and white forms.",
+    "relatives": "The mandarin's only close relative is the North American wood duck; together they form the genus Aix, created in 1828. Linnaeus had placed it in Anas with other ducks in 1758. Aix was Aristotle's word for an unknown diving bird, and galericulata comes from the Latin for a wig.\n\nThe species has no subspecies. A fossil bone from West Runton in England, once thought to show that mandarins ranged far more widely, has been reinterpreted as an unidentified duck.",
+    "didYouKnow": "In 1747 the naturalist George Edwards called it 'the Chinese teal', drawing it from a live bird kept on an estate in Richmond, Surrey.",
+    "facts": [
+      {"label": "Length", "value": "41–49 cm"},
+      {"label": "Wingspan", "value": "65–75 cm"},
+      {"label": "Clutch", "value": "9–12 eggs"},
+      {"label": "Diet", "value": "Acorns, seeds, insects, snails"}
+    ],
+    "quiz": [
+      {
+        "prompt": "What are the drake's orange 'sails'?",
+        "choices": ["Modified flight feathers", "Extra tail feathers", "Flaps of coloured skin", "Crest feathers that fold down over the back in flight"],
+        "explanation": "They are enlarged secondary flight feathers whose vane sticks up like a sail."
+      },
+      {
+        "prompt": "How do newly hatched mandarin ducklings leave the nest?",
+        "choices": ["They leap to the ground", "Their mother carries them", "They wait weeks until they can fly", "They climb down the trunk using their claws"],
+        "explanation": "The mother calls from below and the ducklings jump from the tree hole."
+      },
+      {
+        "prompt": "What does a pair of mandarin ducks symbolise in Chinese culture?",
+        "choices": ["Faithful love", "Wealth", "Good harvests", "A safe journey across rivers and lakes"],
+        "explanation": "They are believed to pair for life, so they stand for conjugal affection and fidelity."
+      }
+    ],
+    "charities": [
+      {"name": "BirdLife International", "url": "https://www.birdlife.org", "blurb": "A global partnership working to conserve birds and their habitats."},
+      {"name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works worldwide to protect forests, rivers and wildlife."}
+    ]
+  },
+  {
+    "id": "swordfish",
+    "name": "Swordfish",
+    "scientificName": "Xiphias gladius",
+    "wikipediaTitle": "Swordfish",
+    "group": "fish",
+    "regions": ["openOcean"],
+    "range": "Tropical and temperate Atlantic, Pacific and Indian Oceans",
+    "status": "LC",
+    "coordinate": {"latitude": 10.0, "longitude": -35.0},
+    "mapSpan": 80,
+    "tagline": "An ocean hunter with heated eyes and a sword",
+    "lede": "Built like a torpedo and armed with a long, flat bill, the swordfish is one of the ocean's great hunters. It warms its own eyes to see better in cold, dark water, and it has been known to drive its sword clean through the hull of a boat.",
+    "home": "Swordfish roam tropical and temperate waters of the Atlantic, Pacific and Indian Oceans, including the Mediterranean. They prefer water of 18 to 22 °C but tolerate anything from 5 to 27 °C, the widest range of any billfish, and they typically move towards cooler regions to feed in summer.\n\nBy day they usually stay at depths of up to 550 metres, and one has been recorded at 2,878 metres. At night they rise to the surface and near-surface waters to feed. They are also often seen basking at the surface with the first dorsal fin out of the water.",
+    "anatomy": "Swordfish commonly reach 3 metres long, and the largest reported measured 4.55 metres and weighed around 650 kg. Females grow larger than males, and Pacific fish are bigger than those of the north-west Atlantic and Mediterranean. The body is long and round, and adults have lost all their teeth and scales; young fish shed their scales at around 1 metre long.\n\nNext to each eye is a special heater organ that keeps the eyes and brain warm, with the eyes 10 to 15 °C above the surrounding water. Warm eyes see far better, which makes the fish a more effective predator. It is one of 22 fish species, along with marlin, tuna and some sharks, known to have a heat-conserving mechanism.",
+    "life": "Contrary to the popular image, swordfish probably do not skewer their prey. Instead they slash at it with the bill to injure it, then rely on speed and agility; small prey is simply swallowed whole. They are certainly among the fastest fish, but the often-quoted 100 km/h is unreliable, and something nearer 36 km/h is more likely.\n\nThey eat mackerel, barracudinas, hake, herring, lanternfish and other open-water fish, plus bottom fish, squid and crustaceans. In one north-west Atlantic study, 82% of stomachs held squid. Swordfish are loners or gather in very loose groups, sometimes 10 metres apart, and they leap clear of the water, perhaps to shake off remoras and lampreys.",
+    "family": "Swordfish spawn in batches in warm water, above about 24 °C in the North Pacific and 23 °C in the North Atlantic, where the Sargasso Sea is a known spawning ground. In the Caribbean and other warm parts of the western Atlantic they spawn all year round.\n\nA large female may carry between 1 million and 29 million eggs, each 1.6 to 1.8 millimetres across, which float in open water. The larvae hatch at 4 millimetres long, and the bill appears when they reach about 1 centimetre. Swordfish mature at 4 to 5 years, and the oldest found in one study were a 16-year-old female and a 12-year-old male. Their age is read from growth rings in their fin rays.",
+    "remarkable": "A wounded swordfish can be dangerous. Harpooned fish have rammed their swords through the planking of small boats, and museums hold hull fragments of large sailing ships with swordfish bills embedded in them, sometimes piercing several layers of heavy timber and even copper sheathing.",
+    "outlook": "Fully grown swordfish have few natural enemies, though killer whales sometimes take them, and shortfin mako sharks will attack them at their peril: makos have been found dead with broken-off swords in their heads. Young swordfish are eaten by many predators, and almost 50 kinds of parasites live on or in them.\n\nPeople are the main predator. After a 1998 'Give Swordfish a Break' campaign in which 750 US chefs dropped North Atlantic swordfish from their menus, a large area of the Atlantic was closed to fishing, and the North Atlantic stock is now fully rebuilt. Stocks in the Indian Ocean and Mediterranean, however, are of high concern, and others are poorly known.",
+    "people": "Swordfish have been fished since ancient times, and in the Strait of Messina they are still hunted from traditional wooden boats called feluccas. Long-lining later spread around the world, while sport anglers developed swordfishing, often dropping baits hundreds of metres deep with glowing lights.\n\nThe firm meat is usually sold as steaks for grilling, and orange-tinted 'pumpkin swordfish' sells at a premium, but health authorities warn about high mercury levels. Swordfish is also at the centre of a long debate over whether it is kosher, since it sheds its scales as it grows. 'Swordfish' was the password in the Marx Brothers film Horse Feathers in 1932.",
+    "relatives": "The swordfish is the only member of its family, Xiphiidae. It looks like marlins and sailfish, but they belong to a different family, and the swordfish lineage split from all other billfish at least as far back as the middle Paleocene. Its closest known relatives are the small, extinct blochiids of the early Eocene.\n\nBoth parts of its scientific name mean 'sword': Xiphias from Greek and gladius from Latin. In some countries it is known as the broadbill.",
+    "didYouKnow": "The International Game Fish Association's all-tackle record swordfish weighed 536 kg and was caught off Chile in 1953.",
+    "facts": [
+      {"label": "Length", "value": "Commonly 3 m"},
+      {"label": "Weight", "value": "Up to about 650 kg"},
+      {"label": "Depth", "value": "Down to 2,878 m"},
+      {"label": "Diet", "value": "Squid and fish"}
+    ],
+    "quiz": [
+      {
+        "prompt": "How do swordfish usually use their bill when hunting?",
+        "choices": ["To slash and injure prey", "To spear prey", "To dig in the seabed", "To stun prey with a burst of electricity from its tip"],
+        "explanation": "They most likely slash at prey to weaken it rather than skewering it."
+      },
+      {
+        "prompt": "Why does a swordfish heat its eyes?",
+        "choices": ["To see better", "To attract mates", "To melt ice", "To keep its blood from freezing in polar waters"],
+        "explanation": "Warmer eyes give sharper vision, making it a more effective predator."
+      },
+      {
+        "prompt": "What do adult swordfish lack?",
+        "choices": ["Teeth and scales", "A tail fin", "Gills", "Fins on the back and belly, since they glide instead"],
+        "explanation": "Swordfish lose all their teeth and scales by adulthood."
+      }
+    ],
+    "charities": [
+      {"name": "Oceana", "url": "https://oceana.org", "blurb": "Campaigns for science-based fishing limits and healthy oceans."},
+      {"name": "Marine Conservation Society", "url": "https://www.mcsuk.org", "blurb": "Works for sustainable seafood and protected seas."}
+    ]
+  },
+  {
+    "id": "leopard-seal",
+    "name": "Leopard Seal",
+    "scientificName": "Hydrurga leptonyx",
+    "wikipediaTitle": "Leopard seal",
+    "group": "mammal",
+    "regions": ["antarctica", "southAmerica", "oceania"],
+    "range": "Antarctic pack ice, wandering to southern coasts and islands",
+    "status": "LC",
+    "coordinate": {"latitude": -65.0, "longitude": -60.0},
+    "mapSpan": 50,
+    "tagline": "The spotted, singing top predator of the ice",
+    "lede": "Sleek, spotted and armed with massive jaws, the leopard seal is the top predator of the Antarctic pack ice. It lurks beneath the floe edge waiting for penguins to enter the water, and its eerie underwater songs fill the Southern Ocean each summer.",
+    "home": "Leopard seals are 'ice-loving' seals that live mainly in the Antarctic pack ice between 50° and 80° south, with higher densities in West Antarctica. A population appears to be resident in Chilean Patagonia, and some consider them residents of New Zealand too, where they breed and are seen year-round.\n\nMost stay in the pack ice all year, but in the southern winter mothers with pups may move north to sub-Antarctic islands and southern coasts. Wanderers have turned up in Australia, South Africa, Brazil, Uruguay, Easter Island and Tristan da Cunha, and one reached the Cook Islands in 1960, the most northerly sighting.",
+    "anatomy": "Leopard seals are long and muscular, 2.4 to 3.5 metres long and 200 to 600 kg, as long as a walrus but usually less than half its weight. Females are up to 50% larger than males. The coat is countershaded, dark grey above with leopard-like spots and white to light grey below, and a thick layer of blubber keeps the seal warm and streamlined.\n\nThe canine teeth are up to 2.5 centimetres long, yet the molars lock together to form a sieve for straining krill. The front flippers are unusually large for a true seal and let it steer with great agility. It has no external ears, but its hearing and short, clear whiskers work together to track prey underwater.",
+    "life": "Young leopard seals eat mostly krill, squid and fish, while adults tackle penguins, including emperor, king, Adélie, gentoo and chinstrap, and other seals such as crabeaters, young elephant seals and fur seal pups. To catch a penguin, the seal patrols the ice edge almost fully submerged, seizes the bird by the feet and beats it against the water. Lacking slicing teeth, it shakes its prey from side to side to tear it apart.\n\nThey are mostly shallow divers but can go deeper than 80 metres, collapsing their lungs on the way down. In winter, juveniles cannot dive deep enough to reach krill, and pairs have been seen hunting fur seal pups together. Their only natural predator is the orca.",
+    "family": "Leopard seals are solitary except for mothers and pups, and their breeding system is polygynous. Mating takes place in the water from December to January, and after an average pregnancy of 274 days the female gives birth to a single pup on the floating pack ice, in a circular hole she has dug in the ice.\n\nThe pup weighs about 30 kg at birth and stays with its mother for around a month before weaning; the father plays no part. Nearly a quarter of pups die in their first year. Females mature at 3 to 7 years and males at 6 or 7, and leopard seals can live up to 26 years.",
+    "remarkable": "In the southern summer, males sing underwater for hours each day, hanging upside down and rocking from side to side with their chests pulsing. Their calls reach 153 to 177 decibels and include trills like birds or crickets and low, haunting moans. Young males use many varied calls, while mature males arrange a few stylised ones into their own distinctive songs.",
+    "outlook": "The IUCN lists the leopard seal as Least Concern. It is widespread and faces no major threats from human activity. A 2012 survey counted 35,000, probably a big underestimate, while other estimates run to 220,000 to 440,000; because the seals spend so long underwater, they are best surveyed by listening. Hunting is regulated by the Convention for the Conservation of Antarctic Seals, and none currently occurs.\n\nBecause it depends on sea ice, the leopard seal may suffer as polar ice shrinks with global warming. Commercial krill fishing, growing tourism, entanglement in marine debris and canine distemper virus are further concerns.",
+    "people": "Encounters with people are rare but memorable. During Shackleton's 1914–1917 expedition, a leopard seal about 3.7 metres long chased Thomas Orde-Lees across the ice until Frank Wild shot it. In 2003 biologist Kirsty Brown was killed while snorkelling near Rothera Research Station, the first recorded human death caused by a leopard seal. The seals also have a habit of attacking the black pontoons of inflatable boats.\n\nOther meetings are gentler. A female leopard seal brought penguins to photographer Paul Nicklen for four days, perhaps trying to feed him. In New Zealand, a female named Owha frequented the North Island coast from 2012 to at least 2022.",
+    "relatives": "The leopard seal is the only species in the genus Hydrurga, named in 1848. It is a true seal and belongs to the Lobodontini, a tribe of Antarctic seals that also includes its closest relatives, the Ross, crabeater and Weddell seals. The interlocking, krill-sieving molars they share are the trait that gives the tribe its name.\n\nHenri de Blainville described the species in 1820 from a stuffed specimen in Le Havre, which he believed came from around the Falkland Islands.",
+    "didYouKnow": "Fossils show that leopard seals also lived along the coast of South Africa during the Late Pleistocene.",
+    "facts": [
+      {"label": "Length", "value": "2.4–3.5 m"},
+      {"label": "Weight", "value": "200–600 kg"},
+      {"label": "Lifespan", "value": "Up to 26 years"},
+      {"label": "Diet", "value": "Penguins, seals, krill, fish"}
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the leopard seal's only natural predator?",
+        "choices": ["The orca", "The southern elephant seal", "The great white shark, which hunts near the ice", "The giant petrel"],
+        "explanation": "Orcas are the only animals known to prey on leopard seals."
+      },
+      {
+        "prompt": "How do leopard seals eat krill?",
+        "choices": ["They sieve it through their teeth", "They lick it off the ice", "They scoop it with their flippers", "They chase single krill one at a time near the ice edge"],
+        "explanation": "Their molars lock together so they can strain krill from the water."
+      },
+      {
+        "prompt": "Which leopard seals sing long underwater songs?",
+        "choices": ["Males", "Pups", "Females", "Both sexes equally, in winter duets under the ice"],
+        "explanation": "Males call for hours each day in summer, linked to breeding."
+      }
+    ],
+    "charities": [
+      {"name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works to protect polar seas and the wildlife that depends on them."}
+    ]
+  },
+  {
+    "id": "north-island-brown-kiwi",
+    "name": "North Island Brown Kiwi",
+    "scientificName": "Apteryx mantelli",
+    "wikipediaTitle": "North Island brown kiwi",
+    "group": "bird",
+    "regions": ["oceania"],
+    "range": "Forests and scrub of the northern two-thirds of New Zealand's North Island",
+    "status": "VU",
+    "coordinate": {"latitude": -38.0, "longitude": 175.5},
+    "mapSpan": 8,
+    "tagline": "A flightless night bird that hunts by touch",
+    "lede": "Shaggy, flightless and nearly blind to the world above it, the North Island brown kiwi feels its way through the night forest with a long bill tipped with sensors. It is the most common kiwi of all, yet it survives in many places only because people trap the predators that kill its chicks.",
+    "home": "This kiwi lives in the northern two-thirds of New Zealand's North Island and nearby islands, in scattered and fragmented populations. It is most abundant in Northland, and sparser in the Coromandel Peninsula, Bay of Plenty, from Gisborne to the northern Ruahine Range, and from Tongariro to Taranaki. Little Barrier Island, Kawau and Ponui Island hold stable populations, and birds have been moved to pest-free islands and mainland sites.\n\nIts favoured habitat is dense lowland and coastal native forest, but it is adaptable. It also uses exotic pine plantations, overgrown pasture, sand dunes, scrub and regenerating forest, and kiwi in pine forests seem to do about as well as those in native forest.",
+    "anatomy": "It is a large brown kiwi with spiky, streaked feathers. Females are noticeably bigger: males weigh 1.44 to 3.06 kg and females 2.06 to 3.85 kg. The long, slightly down-curved bill measures 13 to 20.5 centimetres.\n\nKiwi have the smallest visual field of any bird known to forage by non-visual cues, perhaps because good eyesight is of little use on a dark forest floor and costly to maintain. Instead, the bill tip is packed with pits holding pressure-sensitive receptors that pick up the vibrations of invertebrates moving underground. A kiwi can switch between this remote touch and its sense of smell.",
+    "life": "Kiwi spend most of their waking time foraging, tapping and probing the ground with their bills. Invertebrates such as worms and spiders make up 85 to 95% of the diet, and plant material the rest.\n\nThe commonest call is the 'whistle', given alone or as a duet, and only mates duet. Males give high-pitched, multi-harmonic notes and call more often, while females give lower notes. Calls carry only to nearby birds and neighbours, and are used to defend territories, keep in touch and court, becoming more frequent during breeding and less so during incubation.",
+    "family": "Pairs usually stay together long term. They court with soft grunts, bill-to-bill stretching, chasing, leaping, screeching and snorting. Over about 2 months they prepare a nest in a burrow, rock crevice or hollow tree, lining it with ferns.\n\nThe female's only job is laying. A full clutch is usually 2 eggs, and she may lay up to 7 in a season. The male incubates alone for 74 to 84 days, growing a bare brood patch, and when he leaves to feed he hides the entrance with leaves and dirt. Chicks hatch fully feathered, eat the remains of their egg, and leave the nest within 10 days with no further parental care.",
+    "remarkable": "Relative to its body, the North Island brown kiwi lays one of the largest eggs of any bird. Each egg measures about 12.5 by 7.8 centimetres and weighs 430 grams, a huge energy cost for a female that weighs at most 3.85 kg.",
+    "outlook": "The IUCN assessed this kiwi as Endangered in 2014 and as Vulnerable in 2017. Numbers fell from about 35,000 in 1996 to about 26,600 in 2015, and the species has probably declined by at least 90% since 1900. The main threat is introduced predators: stoats kill young birds, ferrets take adults, especially males, and dogs and cats are deadly too; a single dog once killed around 500 kiwi in 6 weeks. In one study, 94% of chicks died before breeding age where pests were not controlled.\n\nPest control works. Kiwi released into Remutaka Forest Park in 2006 numbered 300 by 2024, and kiwi have returned to Wellington's south coast and hills since 2022, after a 100-year absence.",
+    "people": "The species was described in 1852 by the English zoologist Abraham Dee Bartlett from a specimen collected by the son of Walter Mantell, and its name mantelli honours the collector's father.\n\nIts recovery is a shared effort. Nationwide, only about 5% of kiwi chicks reach adulthood, but before a 2006 pest-poisoning operation in Tongariro Forest by the Department of Conservation and the Animal Health Board, 32 chicks were radio-tagged, and 18 of them survived. With ongoing pest control, the adult population at Tongariro has almost doubled since 1998.",
+    "relatives": "There are five recognised kiwi species, which fall into two groups, spotted and brown, and all split from one another within the last 8 million years. The North Island brown kiwi was once lumped with the tokoeka and the rowi as a single 'brown kiwi', Apteryx australis. Genetic tests in 1994 separated the tokoeka, which kept the name australis, and further tests in 2003 confirmed the rowi as a species too.\n\nThe North Island bird has no subspecies, though a hybrid population of about 2,000 lives on Ponui Island. Its genome was sequenced in 2015.",
+    "didYouKnow": "More kiwi chicks hatch in reused nests than in freshly dug burrows.",
+    "facts": [
+      {"label": "Weight", "value": "1.4–3.9 kg"},
+      {"label": "Bill", "value": "13–20.5 cm"},
+      {"label": "Egg", "value": "About 430 g"},
+      {"label": "Diet", "value": "Worms, spiders, invertebrates"}
+    ],
+    "quiz": [
+      {
+        "prompt": "Which parent incubates the eggs?",
+        "choices": ["The male", "The female", "Both, taking turns", "Neither, as the eggs are buried in warm soil"],
+        "explanation": "The male incubates alone for 74 to 84 days."
+      },
+      {
+        "prompt": "How does the kiwi mainly find buried prey?",
+        "choices": ["Touch and smell", "Sharp eyesight", "Echolocation", "Listening for insects chewing, using its large ears"],
+        "explanation": "Sensors in its bill tip detect vibrations, and it can also use smell."
+      },
+      {
+        "prompt": "Roughly what share of its diet is invertebrates?",
+        "choices": ["85–95%", "About 10%", "About half", "None, as it feeds only on fallen fruit and seeds"],
+        "explanation": "Worms, spiders and other invertebrates make up most of its food."
+      }
+    ],
+    "charities": [
+      {"name": "BirdLife International", "url": "https://www.birdlife.org", "blurb": "A global partnership working to conserve birds and their habitats."}
+    ]
+  },
+  {
+    "id": "atlantic-mudskipper",
+    "name": "Atlantic Mudskipper",
+    "scientificName": "Periophthalmus barbarus",
+    "wikipediaTitle": "Atlantic mudskipper",
+    "group": "fish",
+    "regions": ["africa"],
+    "range": "Mangroves, estuaries and mudflats of tropical West Africa",
+    "status": "LC",
+    "coordinate": {"latitude": 3.0, "longitude": 8.0},
+    "mapSpan": 30,
+    "tagline": "A fish that walks, climbs and breathes on land",
+    "lede": "The Atlantic mudskipper is a fish that would rather be out of the water. It skips, crawls and climbs across the mudflats of West Africa on its fins, breathes through its skin, and keeps its bulging eyes moist by rolling them in little cups of water.",
+    "home": "This mudskipper lives along the tropical Atlantic coast of Africa and most of its offshore islands, in fresh, brackish and salt water. It is found in countries including Ghana, Cameroon, the Democratic Republic of the Congo and Angola, mainly in mangrove swamps, river estuaries and tidal mudflats.\n\nIt spends most of the day on land. In tidal areas it may come out only at low tide to feed, hiding in its burrow when the water rises. Burrows can reach 1.5 metres deep and may hold a pocket of air that it can breathe even when oxygen is scarce. Hot, humid weather suits it best, and its surface temperature ranges from 14 to 35 °C.",
+    "anatomy": "One of the largest mudskippers, it can grow to about 25 centimetres. Its eyes sit close together high on the head, so they stay above the surface when the body is submerged, and each can move independently through 360 degrees. It is told from relatives by having no spots, or only a few white ones, on its back, and more than 90 scales along each side.\n\nIts scaly body is coated in moisture-holding mucus, and it carries water in its gill chambers, opening and closing them at will, so it can breathe on land. It also takes in oxygen through its skin. The pectoral fins let it skip and keep its balance, while the pelvic fins act as a sucker to hold it to surfaces.",
+    "life": "The Atlantic mudskipper is a daytime ambush hunter. It lies submerged with only its eyes showing, then launches on to land with its pectoral fins to grab prey. On land it uses a 'hydrodynamic tongue': it carries water in its mouth, spits it over the prey, then sucks the water and prey back in. Underwater it uses ordinary suction feeding, with a stronger pull and wider gape.\n\nIt eats worms, crickets, flies, beetles, small fish and small crabs, and it feeds more in the dry season, when food is scarcer. Each mudskipper defends a territory about 1 metre long, enclosed by a wall of mud it builds. When threatened on land, it jumps into the water or skips away across the mud.",
+    "family": "Females mature at about 10.2 centimetres long and males at about 10.8 centimetres. Spawning can happen all year but peaks from February or March to May, when food for the young is plentiful. A pair mates inside the male's burrow, and the female lays thousands of eggs on the burrow wall.\n\nThe male then guards and tends the eggs, and the burrow is flooded to trigger hatching. The larvae swim out and drift for 30 to 50 days. Few survive, as eggs and young are heavily preyed on, and juveniles hide in the mud until they are big enough to hold a territory. The average lifespan is about 5 years, and some live up to 15.",
+    "remarkable": "To stop its eyes drying out on land, the mudskipper has water-holding cups beneath them. It rolls its whole body, pulling its eyes down so the cups cover them and touch the wet surface below, then pops them back up. In laboratory tests it rolled far more often in a stronger draught, when its eyes would dry faster.",
+    "outlook": "The Atlantic mudskipper is classed as Least Concern. It tolerates remarkable amounts of pollution, including ammonia, which it can pump out through its gills, and even some cyanide, though cyanide fishing can kill it at every life stage. Local declines have been linked to overfishing, pollution, electric fishing and urban development along the coast.\n\nSome mudskippers live in protected areas, and the main recommended action is to manage how many are caught. Because its numbers affect both its predators and its prey, its decline could ripple through mangrove food webs.",
+    "people": "People along its coast use the Atlantic mudskipper as food, bait and medicine, and it is an important food fish for local communities. It also turns up in the aquarium trade, where keepers feed it frozen bloodworm or brine shrimp, since dried food makes its stomach swell.\n\nScientists use mudskippers as living pollution monitors. Their absorbent bodies pick up heavy metals such as copper and iron, which can be measured in the gut, gills and skin, and their growth can also reveal contamination without harming them.",
+    "relatives": "Mudskippers are oxudercine gobies, fish that live both in water and on land, with eyes set high on the head and canine-like teeth. The Atlantic mudskipper is one of 12 species in the genus Periophthalmus, which have a single row of teeth in the upper jaw and live among mangroves or mudflats.\n\nLinnaeus described it in 1766 as Gobius barbarus. Periophthalmus comes from the Greek for 'around' and 'eye', after its wide field of vision, while barbarus means 'foreign'.",
+    "didYouKnow": "When feeding on land, the Atlantic mudskipper rotates its body and turns its mouth so its jaws come down on prey from above.",
+    "facts": [
+      {"label": "Length", "value": "Up to 25 cm"},
+      {"label": "Lifespan", "value": "Up to 15 years"},
+      {"label": "Burrow", "value": "Up to 1.5 m deep"},
+      {"label": "Diet", "value": "Insects, worms, crabs"}
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the mudskipper's 'hydrodynamic tongue'?",
+        "choices": ["Feeding by squirting and sucking water", "A sticky, extendable tongue", "A tongue that tastes the air", "A flap that seals its gills shut while it is out of the water"],
+        "explanation": "It spits water over prey on land, then sucks the water and prey back into its mouth."
+      },
+      {
+        "prompt": "Who guards the eggs in the burrow?",
+        "choices": ["The male", "The female", "Both parents in turns", "Neither, as the eggs drift away on the tide"],
+        "explanation": "After the female lays her eggs on the burrow wall, the male guards and tends them."
+      },
+      {
+        "prompt": "How does a mudskipper keep its eyes moist on land?",
+        "choices": ["It rolls them into water-filled cups", "It blinks with eyelids", "It produces tears", "It dives underwater every few seconds to rinse them"],
+        "explanation": "Cups of water beneath the eyes cover them as the fish rolls its body."
+      }
+    ],
+    "charities": [
+      {"name": "WWF", "url": "https://www.worldwildlife.org", "blurb": "Works to protect coasts, mangroves and wildlife across Africa and beyond."}
+    ]
+  }
+]
