@@ -1,0 +1,38 @@
+name: Fauna content
+
+# New animals reach phones through ContentSync, so a content change doesn't need an app build.
+# This checks the library, resolves photo files and credits for any new animals, and commits
+# photos.json so the app can download it alongside animals.json.
+on:
+  push:
+    paths:
+      - Fauna/Fauna/Resources/animals.json
+  workflow_dispatch:
+
+concurrency:
+  group: fauna-content-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  content:
+    name: Check content and resolve photos
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check content
+        run: python3 Fauna/scripts/validate_content.py
+      - name: Resolve photos and credits
+        run: python3 Fauna/scripts/fetch_photos.py
+      - name: Commit photos.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Fauna/Fauna/Resources/photos.json
+          git diff --cached --quiet && exit 0
+          git commit -m "Fauna: photo credits for new animals [skip ci]"
+          for i in 1 2 3; do git pull --rebase --quiet && git push && exit 0; sleep 5; done
+          exit 1

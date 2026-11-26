@@ -11,6 +11,11 @@ on:
       - "!Fauna/FaunaUITests/**"
       - "!Fauna/scripts/new_animals/drafts/**"
       - "!Fauna/scripts/new_animals/draft-request.json"
+      # New animals reach phones without an app update (see fauna-content.yml).
+      - "!Fauna/Fauna/Resources/animals.json"
+      - "!Fauna/Fauna/Resources/photos.json"
+      - "!Fauna/scripts/new_animals/*.json"
+      - "!Fauna/scripts/plan/**"
   workflow_dispatch:
 
 concurrency:
