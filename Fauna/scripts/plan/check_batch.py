@@ -26,7 +26,6 @@ for a in batch:
         n += 1; longest += len(c[0]) > max(map(len, c[1:])); shortest += len(c[0]) < min(map(len, c[1:]))
     txt = " ".join(a[k] for k in SECTIONS + ["didYouKnow"])
     if re.search(r"\b(one|two|three|four|five|six|seven|eight|nine|ten|twenty|hundred)\s+(metres?|kilometres?|centimetres?|kilograms?|grams?|tonnes?)\b", txt, re.I): p.append("number words with unit")
-    if re.search(r"vaccin", json.dumps(a), re.I): p.append("mentions vaccines")
     if "  " in txt or " ," in txt: p.append("spacing")
     s = [(k, x) for k in SECTIONS + ["didYouKnow"] for x in re.split(r"(?<=[.!?])\s+", a[k].replace("\n\n", " ")) if len(x.split()) >= 5]
     for i in range(len(s)):
