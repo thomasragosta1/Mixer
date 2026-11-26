@@ -22452,5 +22452,907 @@
         "blurb": "Conserves lands and waters, including grasslands and migration corridors in the American West."
       }
     ]
+  },
+  {
+    "id": "saola",
+    "name": "Saola",
+    "scientificName": "Pseudoryx nghetinhensis",
+    "wikipediaTitle": "Saola",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Wet mountain forests of the Annamite Range in Vietnam and Laos",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 17.5,
+      "longitude": 106.0
+    },
+    "mapSpan": 6,
+    "tagline": "The 'Asian unicorn', found by science only in 1992",
+    "lede": "In 1992, scientists surveying a new national park in Vietnam were handed a skull with a pair of long, straight horns unlike anything they knew. It belonged to the saola, a forest bovid so secretive that no trained scientist has ever watched one in the wild. Today it may be teetering on the edge of extinction.",
+    "home": "The saola lives only in the Annamite Range, the mountain chain along the border of Vietnam and Laos, and has one of the smallest ranges of any large mammal, covering roughly 5,000 square kilometres including four nature reserves. It favours wet evergreen or deciduous forest, especially steep river valleys between about 300 and 1,800 metres above sea level.\n\nIn the northern Annamites it has mostly been reported near streams at around 600 to 1,100 metres, and it is said to move down to the lowlands in winter. Above all, it needs forest that is remote from people.",
+    "anatomy": "A saola stands about 84 centimetres at the shoulder, with a head-and-body length of about 1.5 metres, and weighs roughly 80 to 100 kg.\n\nIts soft, thin coat is chocolate brown, paler on the neck and belly, with a narrow black stripe down the back and bold white patches on the face, throat and sides of the neck. The short tail is banded brown, white and black. Both sexes carry nearly parallel horns, dark brown or black and about 35 to 50 centimetres long, twice the length of the head.\n\nOn each side of the muzzle is a maxillary gland, probably the largest of any animal, covered by a flap and filled with a pungent, greyish-green paste. Its skin thickens to 5 mm around the nape and shoulders, perhaps as armour against predators and the horns of rivals.",
+    "life": "Almost everything known about saola behaviour comes from local hunters and from a handful of captive animals. Villagers say saola are active by day and by night but rest through the hot middle of the day.\n\nThey seem to be mostly solitary, though groups of two or three, and occasionally six or seven, have been reported. A female kept briefly in Laos fed on spleenwort ferns, Homalomena and the leaves of broad-leaved shrubs and trees, and the species is said to eat Schismatoglottis plants that other herbivores ignore.\n\nShe was calm with people but terrified of dogs, snorting and lowering her horns at them. She marked rocks and plants by opening the flaps of her facial glands and smearing on their musky secretion, and occasionally gave short bleats.",
+    "family": "Very little is known about how saola breed. Mating probably happens between late August and mid-November, and single calves appear to be born mainly between mid-April and late June. Pregnancy is guessed to last about 33 weeks, similar to bushbuck and their relatives, though no one has measured it.\n\nVillagers who killed mothers with young reported calves whose horns ranged from 9.5 to nearly 19 centimetres long, which suggests the birth season is spread over at least two or three months. Zoos have taught us nothing about the life cycle, because every saola kept in captivity has died within weeks or months.",
+    "remarkable": "The saola was the first large mammal discovered in the region for 50 years, and it was so unlike any other hoofed animal that it was placed in a genus of its own. DNA has since shown that it is the earliest branch of the wild cattle tribe, having split from the ancestors of buffalo, bison and yaks between about 11 and 16 million years ago.",
+    "outlook": "The saola is listed as Critically Endangered, with an estimated 50 to 300 animals left as of 2015. The last confirmed record is a camera-trap photograph from central Vietnam in 2013, and some fear it is already extinct.\n\nIts biggest threat is snares set for wild boar, sambar and muntjac; conservation groups have removed more than 26,000 of them from saola forests. It is also hunted for meat and traditional medicine, and its forest is being lost and fragmented.\n\nThe Saola Working Group, formed in 2006, and the Saola Foundation are searching remote forests with local trackers, dung-sniffing dogs and a field DNA test, hoping to catch survivors and start a breeding programme. One conservationist warned in 2025 that extinction within a decade is inevitable without such intervention.",
+    "people": "The name comes from a Tai language of Vietnam and is usually translated as 'spindle horn', though it more precisely means 'spinning-wheel post horn', after the parallel wooden posts that hold a spinning wheel. The Hmong in Laos call it 'the polite animal' because it moves so quietly through the forest.\n\nNewspapers dubbed it the 'Asian unicorn' for its rarity and gentle nature, though it has no link to unicorn legends. In local villages a hunter who brings in a saola wins great esteem, which makes protection harder, and the intense scientific interest even encouraged hunters to try to capture live animals. A cartoon saola named Sao La was the mascot of the 2021 Southeast Asian Games.",
+    "relatives": "The saola is the only species in the genus Pseudoryx, a name that nods to its resemblance to the oryx of Arabia and Africa; its species name refers to the Vietnamese provinces of Nghệ An and Hà Tĩnh. Before genetic studies, experts had variously grouped it with goats and sheep or with three different tribes of wild cattle and antelopes.\n\nIt now sits firmly in the tribe Bovini. A 2025 study of its genome found that saola split into northern and southern populations between 5,000 and 20,000 years ago, and that their numbers have stayed small for at least 10,000 years.",
+    "didYouKnow": "A captive saola could stretch its tongue about 16 centimetres, far enough to reach its own eyes, and the tongue's upper surface is covered in fine backward-pointing barbs.",
+    "facts": [
+      {
+        "label": "Shoulder height",
+        "value": "About 84 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "80–100 kg"
+      },
+      {
+        "label": "Horns",
+        "value": "35–50 cm"
+      },
+      {
+        "label": "Population",
+        "value": "50–300 (2015 estimate)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "In what year did scientists first find evidence of the saola?",
+        "choices": [
+          "1992",
+          "1888",
+          "1965",
+          "2013, from a camera-trap photograph in Laos"
+        ],
+        "explanation": "A survey team in Vietnam's Vũ Quang National Park obtained a skull with its strange horns in May 1992."
+      },
+      {
+        "prompt": "What is the biggest threat to the saola?",
+        "choices": [
+          "Snares set for other animals",
+          "Tigers",
+          "Floods",
+          "Disease spread by domestic cattle grazing in its forests"
+        ],
+        "explanation": "Snares meant for wild boar, sambar and muntjac also catch saola; more than 26,000 have been removed."
+      },
+      {
+        "prompt": "Which animals are the saola's closest relatives?",
+        "choices": [
+          "Cattle and buffalo",
+          "Oryx",
+          "Deer",
+          "Goats and sheep of the high mountains"
+        ],
+        "explanation": "DNA places it as the earliest branch of the tribe Bovini, with buffalo, bison and yaks."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Took part in the saola's discovery and works to protect the forests of the Annamites."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Helps search for surviving saola and supports wildlife protection in Southeast Asia."
+      }
+    ]
+  },
+  {
+    "id": "western-barn-owl",
+    "name": "Western Barn Owl",
+    "scientificName": "Tyto alba",
+    "wikipediaTitle": "Western barn owl",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "africa",
+      "asia"
+    ],
+    "range": "Open country across Europe, West Asia and Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 20.0,
+      "longitude": 15.0
+    },
+    "mapSpan": 70,
+    "tagline": "The ghostly, heart-faced owl that screeches, not hoots",
+    "lede": "Pale as a ghost and silent in flight, the western barn owl drifts low over fields at dusk, listening. Its heart-shaped face works like a satellite dish, funnelling the faintest rustle to ears so sharp it can catch a mouse in total darkness.",
+    "home": "The western barn owl is found across most of Europe, West Asia and Africa, with its densest populations in Western and Central Europe and around the Mediterranean. Smaller clusters live in East Africa and Madagascar, and it occurs in scattered pockets across West Africa. People have introduced it to some Pacific islands and Malaysia to control rats.\n\nIt hunts over open wetlands, grassland, savanna, heath and shrubland up to 4,000 metres, as well as farmland and the edges of towns. It needs open ground to hunt over and a cavity to nest in: a hollow tree, a crack in a cliff, or increasingly a barn, farm shed or church tower.",
+    "anatomy": "This is a medium-sized, pale owl about 33 to 35 centimetres long with a wingspan of 80 to 95 centimetres, long wings and a short, square tail. Its back and head are a mottled grey or golden brown finely speckled with black and white, while the underparts range from white to reddish buff.\n\nFemales average about 10% heavier than males and tend to have more spots, which may signal resistance to parasites. Its flight is almost soundless: tiny serrations on the leading edges of its flight feathers and a soft fringe on the trailing edges break up the turbulence that makes noise.\n\nIts ears sit at different heights on its head, which helps it judge both the direction and the distance of a sound. It has a much higher metabolism than other owls its size, so it needs relatively more food.",
+    "life": "Barn owls hunt mainly at dusk and through the night, flying slowly back and forth over rough grass and hovering over likely spots, or watching from a fence post.\n\nWhen they hear prey they drop onto it, driving their talons through grass or snow. In Britain some also hunt by day, especially after a wet or windy night. In damp temperate regions, small mammals make up more than 90% of the diet, mostly voles, mice and shrews. Small prey is swallowed whole, and the bones and fur are later coughed up as pellets, which scientists study to learn what the owls eat.\n\nIn hot, dry places they take more reptiles and birds; on the Cape Verde Islands, geckos are the staple. The barn owl never hoots: its call is a long, eerie, piercing screech, and both young and adults hiss like snakes at intruders.",
+    "family": "Pairs usually stay together for life, returning to the same nest site year after year. In Europe most nesting happens between March and June, and in good rodent years a pair may raise two broods.\n\nThe female lays about five chalky white eggs, sometimes as few as two or as many as nine, one every other day, on a carpet of her own shredded pellets. She incubates for about 30 days while the male brings food, so the chicks hatch days apart. The chicks are half their adult weight at 2 weeks and fledge at about 9 weeks, but rely on their parents until around 13 weeks old.\n\nWild barn owls are short-lived, averaging about four years, and only one young in three survives to breed, mostly because many starve in their first winter. A few wild birds have passed 18 years, and captive ones have lived beyond 25.",
+    "remarkable": "A barn owl does not need to see its prey at all. Experiments show that its facial disc is part of the hearing system: with the ruff feathers removed, an owl can still tell where a sound comes from horizontally but can no longer judge its height.",
+    "outlook": "Globally the barn owl is listed as Least Concern, and as a prolific breeder it can bounce back from short-term crashes. But it has become scarcer in many places. A survey in 1995 to 1997 put Britain's population at 3,000 to 5,000 breeding pairs, out of roughly 150,000 pairs across Europe, where it is a Species of European Concern.\n\nThe main problems are the loss of hedgerows and rough grassland to modern farming, the demolition or sealing of old buildings, collisions with cars on road verges, and poisoning from pesticides and rat poisons. Nest boxes help a great deal, and in Israel and Jordan farmers have used barn owls instead of pesticides to control rodents, a scheme since copied in several other countries.",
+    "people": "The barn owl has collected an extraordinary list of names, including ghost owl, church owl, demon owl, hissing owl, monkey-faced owl and screech owl. Shakespeare's 'scritch-owl' in A Midsummer Night's Dream is this bird, and in Britain its scream was thought to foretell storms: hail in England, snow in Glamorgan, rain in Scotland.\n\nIts reputation was often sinister. In parts of Europe barn owls were killed and nailed to barn doors to ward off curses and lightning, a custom that lasted in France and Switzerland into the 1960s. In Yorkshire, owl broth was once given to children with whooping cough, and a 1979 sighting of a human-like 'Owlman' in Cornwall may have been a barn owl.",
+    "relatives": "The species was named Strix alba by the Italian naturalist Giovanni Antonio Scopoli in 1769; alba is Latin for 'white', because it was far paler than any other owl he knew. It now sits in the genus Tyto with the other barn owls and masked owls, which are distinct from the 'true' owls; in the air, the square tail helps tell them apart. Until recently, barn owls around the world were treated as one species.\n\nGenetic studies in 2016 to 2018 split them into four: the western barn owl, the American barn owl, the eastern barn owl and the Andaman masked owl. The western barn owl's lineage separated from the American barn owl's about 5 million years ago.",
+    "didYouKnow": "Black, or melanistic, western barn owls are thought to occur in only about 1 in every 100,000 birds.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "33–35 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "80–95 cm"
+      },
+      {
+        "label": "Clutch",
+        "value": "About 5 eggs"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly small mammals"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What sound does the western barn owl make?",
+        "choices": [
+          "A long, eerie screech",
+          "A deep hoot",
+          "A loud whistle",
+          "A soft two-note hoot repeated through the night"
+        ],
+        "explanation": "Barn owls never hoot; their call is a long, piercing screech."
+      },
+      {
+        "prompt": "What do barn owls cough up after eating?",
+        "choices": [
+          "Pellets of fur and bone",
+          "Seeds",
+          "Stones",
+          "Undigested insect wings mixed with sand and grit"
+        ],
+        "explanation": "Small prey is swallowed whole, and the indigestible fur and bones come back up as pellets."
+      },
+      {
+        "prompt": "About how long does a wild barn owl live on average?",
+        "choices": [
+          "About 4 years",
+          "About 12 years",
+          "About 25 years",
+          "Over 40 years, like many large birds"
+        ],
+        "explanation": "Wild barn owls average about four years, though captive birds can pass 25."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "Protects farmland and wetland habitats where barn owls hunt in the UK."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership of conservation groups working to protect birds and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "serval",
+    "name": "Serval",
+    "scientificName": "Leptailurus serval",
+    "wikipediaTitle": "Serval",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Wetlands, grasslands and moist savannas across sub-Saharan Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": 25.0
+    },
+    "mapSpan": 60,
+    "tagline": "The long-legged African cat that hunts by ear",
+    "lede": "With legs longer for its size than any other cat's and ears like radar dishes, the serval stalks tall African grass listening for rats it cannot see. When it locates one, it springs high into the air and comes down on its target with its front paws.",
+    "home": "Servals live across much of sub-Saharan Africa, from the Sahel to the far south, with a small population in Morocco and a reintroduced one in Tunisia; they are feared extinct in Algeria. They prefer places near water, such as wetlands and moist savanna, where reeds and tall grass give cover, and they also live in grassland, moorland and bamboo thickets up to 3,800 metres on Mount Kilimanjaro. They avoid rainforest and true desert.\n\nEach serval keeps a home range of 10 to 32 square kilometres, spending most of its time in a few core areas, and the ranges of neighbours overlap widely.",
+    "anatomy": "The serval is a slender, medium-sized cat standing 54 to 62 centimetres at the shoulder and weighing about 8 to 18 kg, with females usually lighter.\n\nIts head-and-body length is 67 to 100 centimetres, and its tail is short, around 30 centimetres, with a black tip. The golden-yellow to buff coat is covered in black spots and stripes, and the backs of its ears are black with a white band. Its exceptional leg length comes mainly from greatly lengthened bones in the feet, and its long toes are unusually mobile.\n\nIts big, closely set ears can each swivel through 180 degrees independently. Servals look a little like caracals but lack their ear tufts and have a rounder skull. Black servals have been seen in the wild, mostly in Kenya.",
+    "life": "Servals are active by day and night, often peaking in early morning, at twilight and around midnight, and rest in shade through the midday heat. They walk 2 to 4 km each night, often along regular trails.\n\nRodents, especially vlei rats, make up 80 to 97% of the diet, and most prey weighs under 200 grams, though they also catch shrews, hares, frogs, insects, reptiles and birds as large as flamingos. A hunting serval may sit motionless for up to 15 minutes, then leap up to 4 metres and stun its prey with a blow from its forepaws before biting the head or neck.\n\nThey are skilled hunters: one study in Ngorongoro found that about half their attempts succeeded, and they averaged 15 to 16 kills a day. Servals are solitary and avoid fights, marking their ranges with urine, droppings and saliva. Like many cats they can purr, and they also chirp, hiss, cackle and growl.",
+    "family": "Females come into heat once or twice a year, and births tend to be timed just before local rodent populations boom. After a pregnancy of 2 to 3 months, the mother gives birth to 1 to 4 kittens in dense cover or an old aardvark or porcupine burrow.\n\nNewborns weigh about 250 grams, are blind, and have soft greyish fur; their eyes open after 9 to 13 days. A mother with young kittens has to hunt almost twice as hard as other servals, and if disturbed she carries the kittens one by one to a safer spot.\n\nAt about six months the young get their permanent canines and begin hunting, and they leave their mother at around a year old. Servals live about 10 years in the wild and up to 20 in captivity.",
+    "remarkable": "In a single bound a serval can rise more than 2 metres off the ground and cover up to 3.6 metres horizontally, enough to catch birds as they try to flee. Guided almost entirely by sound, this pounce from above lets it strike rodents hidden deep in grass.",
+    "outlook": "The serval is listed as Least Concern and occurs in many protected areas, and hunting it is banned or regulated in most countries where it lives. Its main threat is the loss and degradation of the wetlands and grasslands it depends on.\n\nPastoralists sometimes kill servals to protect their livestock, even though servals rarely take farm animals. The trade in serval skins, though declining, continues in countries such as Benin and Senegal, and in West Africa the animal is also used in traditional medicine.",
+    "people": "People have known servals for thousands of years: Ancient Egyptian art shows them as gifts or trade goods brought from Nubia. The name comes from the Portuguese lobo-cerval, meaning lynx, which the French naturalist Buffon applied in 1765 to a spotted cat kept in the royal menagerie at Versailles. Servals are sometimes kept as pets, though ownership is regulated in some countries because they remain wild animals.\n\nIn 1986 the first savannah cat was born from a male serval and a female domestic cat. The breed inherited some tameness from its mother, and it has since become a popular pet, known for its leaping, swimming and dog-like habit of following its owner around.",
+    "relatives": "The serval is the only member of the genus Leptailurus, from Greek words meaning 'delicate cat'. Its closest relatives are the caracal and the African golden cat, which together form one of the eight main lineages of the cat family.\n\nThis group arose about 8.5 million years ago, and its ancestor reached Africa between 8.5 and 5.6 million years ago. The serval was first described scientifically in 1776, and many supposed species were later named from individual skins. Today three subspecies are recognised: one in southern Africa, one in central and West Africa, and one in East Africa.",
+    "didYouKnow": "One serval being chased by dogs escaped by climbing more than 9 metres up a tree, although servals climb only occasionally.",
+    "facts": [
+      {
+        "label": "Shoulder height",
+        "value": "54–62 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "8–18 kg"
+      },
+      {
+        "label": "Leap",
+        "value": "Over 2 m high"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly rodents"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the serval mainly find its prey?",
+        "choices": [
+          "By hearing",
+          "By smell",
+          "By eyesight from treetops",
+          "By feeling ground vibrations through its long toes"
+        ],
+        "explanation": "Its large ears, which swivel independently, let it locate rodents hidden in grass."
+      },
+      {
+        "prompt": "What record does the serval hold among cats?",
+        "choices": [
+          "Longest legs for its size",
+          "Fastest runner",
+          "Loudest roar",
+          "Biggest ears of any wild cat relative to its tail length"
+        ],
+        "explanation": "Thanks to lengthened foot bones, it has the longest legs of any cat relative to body size."
+      },
+      {
+        "prompt": "Which domestic cat breed comes from servals?",
+        "choices": [
+          "The savannah cat",
+          "The Bengal cat",
+          "The Abyssinian",
+          "The Egyptian Mau, first bred in ancient Nubia"
+        ],
+        "explanation": "Savannah cats come from crossing servals with domestic cats; the first was born in 1986."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      }
+    ]
+  },
+  {
+    "id": "short-beaked-echidna",
+    "name": "Short-beaked Echidna",
+    "scientificName": "Tachyglossus aculeatus",
+    "wikipediaTitle": "Short-beaked echidna",
+    "group": "mammal",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Throughout Australia and in eastern New Guinea",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -25.0,
+      "longitude": 135.0
+    },
+    "mapSpan": 45,
+    "tagline": "A spiny, egg-laying mammal with a lightning tongue",
+    "lede": "The short-beaked echidna is a mammal that lays eggs, has no true teeth, and catches ants with a sticky tongue that flicks in and out 100 times a minute. Covered in spines and built like a bulldozer, it is the most widespread native mammal in Australia.",
+    "home": "Short-beaked echidnas live throughout Australia, including Tasmania and Kangaroo Island, and in coastal and highland regions of eastern New Guinea. They can live almost anywhere with a good supply of ants and termites, from forests full of fallen, termite-riddled logs to scrub, grassland, arid inland country and the outer suburbs of cities. They have no fixed nest and do not defend territories.\n\nEach roams a home range of typically 40 to 60 hectares, and neighbours can share ranges and even shelters without trouble. Little is known about their distribution in New Guinea.",
+    "anatomy": "Echidnas are typically 30 to 45 centimetres long and weigh 2 to 7 kg, with a 75 mm snout and no visible neck. Cream-coloured spines up to 5 centimetres long, which are modified hairs made of keratin, cover the back and sides, with honey-coloured to black fur between them.\n\nThe short, powerful limbs end in strong digging claws, and long, backward-curving claws on the hind feet are used to groom between the spines. The mouth opens no wider than 5 mm, but the tongue can reach 18 centimetres beyond the snout, stiffened by a rush of blood and coated in sticky mucus.\n\nThe leathery snout is packed with touch sensors and electroreceptors that can detect weak electric fields. A huge muscle under the skin lets it roll into a spiny ball, helped by one of the shortest spinal cords of any mammal.",
+    "life": "Echidnas use smell and their sensitive snouts to find food, tearing open nests and rotting logs with their claws. They eat mainly ants and termites, preferring termites when available because they carry less indigestible shell, and take beetle larvae and earthworms too.\n\nA 3 kg echidna can eat 200 grams of termites in 10 minutes, swallowing soil along with them. They cannot sweat or pant, so in hot weather they become active at dusk or night; body temperatures above 34 °C are thought to be fatal.\n\nIn winter they hibernate, their body temperature falling as low as 4 °C and their heart slowing to four to seven beats a minute. When threatened, an echidna digs straight down or curls into a ball, and it can swim, using its snout as a snorkel.",
+    "family": "During the mating season, between May and September, a female may be followed by a 'train' of up to 10 males that trail her for as long as 4 weeks.\n\nAfter mating she lays a single soft, leathery egg, 13 to 17 mm across, directly into a pouch on her belly, where it hatches after about 10 days. The tiny hatchling, called a puggle, weighs less than half a gram. Monotremes have no nipples, so the puggle sucks milk from special patches of skin; the milk is rich in iron, which turns it pink.\n\nOnce its spines grow, at two to three months, it is moved out of the pouch into a burrow, and it leaves for good at around six months. Echidnas live about 10 years in the wild on average, and one in a Philadelphia zoo reached 49.",
+    "remarkable": "The short-beaked echidna has the largest prefrontal cortex relative to body size of any mammal, making up half its brain compared with 29% in humans. Its learning ability has been compared with that of a cat or a rat, and it can remember a solution for over a month.",
+    "outlook": "The short-beaked echidna is common and widespread and is not considered threatened. In Australia the biggest dangers are cars and habitat clearance: about a third of echidna deaths reported in Victoria over a decade were caused by vehicles, and fields cleared completely for crops such as wheat have lost their echidnas.\n\nDrainage culverts under roads help them cross safely. Foxes, cats, dingoes, goannas and birds of prey take mostly young animals, and an introduced tapeworm caught at shared water holes can be fatal. In New Guinea, hunting with dogs has increased as old taboos fade, and echidnas seem to have vanished from highland areas.",
+    "people": "Echidnas appear in the art, stories and totems of Aboriginal Australians. One story tells of hunters who threw spears at a wombat in the dark; the wombat used the spears for its own defence and became an echidna. The Noongar people call it nyingarn, and in Pitjantjatjara its name, tjilkamata, can also mean 'slowpoke'.\n\nToday it appears on Australia's 5-cent coin, and an echidna called Millie was a mascot of the 2000 Summer Olympics. Video gamers know Knuckles the Echidna, the superhumanly strong red echidna of the Sonic the Hedgehog games. Older books called it the spiny anteater, though it is only distantly related to true anteaters.",
+    "relatives": "Echidnas and the platypus are the monotremes, the only living mammals that lay eggs. The short-beaked echidna is the only member of its genus, Tachyglossus, meaning 'fast tongue', and shares its family with the larger long-beaked echidnas of New Guinea, which eat mostly worms and grubs.\n\nEchidnas are thought to have split from the platypus around 66 million years ago. George Shaw first described the species in 1792, placing it in the same genus as the giant anteater, and its scientific name went through four revisions before settling. Five subspecies are recognised, differing in hairiness and spine length.",
+    "didYouKnow": "A captive echidna once moved a refrigerator around a scientist's home, and another has been recorded shifting a 13.5 kg stone.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "30–45 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2–7 kg"
+      },
+      {
+        "label": "Tongue",
+        "value": "Up to 18 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 10 years wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is a baby echidna called?",
+        "choices": [
+          "A puggle",
+          "A joey",
+          "A kit",
+          "A spikelet, after its soft early spines"
+        ],
+        "explanation": "Young echidnas are known as puggles."
+      },
+      {
+        "prompt": "How many eggs does a female echidna lay each time she breeds?",
+        "choices": [
+          "One",
+          "Two",
+          "Six",
+          "A clutch of about a dozen, buried in sand"
+        ],
+        "explanation": "Each mating produces a single egg, laid straight into her pouch."
+      },
+      {
+        "prompt": "Why is echidna milk pink?",
+        "choices": [
+          "It is rich in iron",
+          "It contains blood",
+          "It contains plant pigments",
+          "It mixes with red clay from the walls of the burrow"
+        ],
+        "explanation": "Its high iron content gives the milk a pink colour."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect wildlife and habitats around the world, including in Australia and New Guinea."
+      },
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects lands and waters worldwide, including large conservation projects in Australia."
+      }
+    ]
+  },
+  {
+    "id": "common-hoopoe",
+    "name": "Common Hoopoe",
+    "scientificName": "Upupa epops",
+    "wikipediaTitle": "Common hoopoe",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "range": "Open country across Europe, Asia and Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": 40.0
+    },
+    "mapSpan": 80,
+    "tagline": "A crested bird that flies like a giant butterfly",
+    "lede": "Cinnamon pink, barred black and white, and topped with a crest it can raise like a fan, the common hoopoe is impossible to mistake. Its soft 'oop-oop-oop' call gave it its name, and its chicks have a startlingly unpleasant way of seeing off intruders.",
+    "home": "The common hoopoe is the most widespread of the hoopoes, breeding across Europe, Asia, North Africa and northern sub-Saharan Africa. Most European and northern Asian birds migrate to the tropics for the winter, flying mainly at night, and those from Europe usually winter in the Sahel. African populations stay put all year, and stray birds have even reached Alaska.\n\nA hoopoe needs two things: bare or lightly vegetated ground to feed on, and a vertical surface with holes to nest in, such as a tree, cliff, wall or haystack. That lets it live in heathland, wooded steppe, savanna, grassland and forest glades. Migrants cross the Himalayas at great height, and one was recorded at about 6,400 metres by the first Mount Everest expedition.",
+    "anatomy": "Hoopoes are 25 to 32 centimetres long with a wingspan of 44 to 48 centimetres and weigh 46 to 89 grams. The body is cinnamon, the wings are boldly barred black and white, a broad white band crosses the black tail, and the tall crest can be raised or laid flat.\n\nThe long, thin, downcurved bill is black with a fawn base, and strengthened head muscles let the bird open it while it is pushed into soil. The broad, rounded wings are larger in northern migratory birds. In flight the wings half close at the end of each beat or short burst of beats, giving an undulating flight like that of an enormous butterfly.",
+    "life": "Hoopoes usually forage alone on the ground, striding across open earth and stopping to probe deep with the full length of the bill. They find insect larvae, pupae and mole crickets underground and pull them out or dig them up with their strong feet, and they also flip leaves, lever up stones and flake off bark.\n\nCommon prey includes crickets, locusts, beetles, earwigs, cicadas, ant lions and ants, mostly 20 to 30 mm long. Larger prey is beaten against the ground or a favourite stone to kill it and knock off the legs and wings.\n\nOccasionally they chase swarming insects in the air, and they sometimes eat small reptiles, frogs, seeds and berries. Hoopoes love sunbathing, spreading their wings and tail flat on the ground with the head tilted up, a posture long mistaken for defence, and they also take dust and sand baths.",
+    "family": "Pairs are monogamous for a single season and defend territories fiercely; rival males stab at each other with their bills, and birds are sometimes blinded in fights. The nest is a hole with a narrow entrance in a tree or wall.\n\nClutch size rises with latitude, from about four eggs in the tropics to around 12 in northern Europe and Asia. The milky blue eggs soon become stained in the increasingly dirty nest. The female alone incubates for 15 to 18 days while the male feeds her.\n\nBecause incubation starts with the first egg, the chicks hatch at intervals, so if food runs short the smallest may not survive. The young fledge at 26 to 29 days and stay with their parents for about another week.",
+    "remarkable": "A brooding female's preen gland quickly switches to producing a foul liquid that smells of rotting meat, and the nestlings make it too; they rub it into their feathers to deter predators and parasites. From six days old, chicks can also squirt streams of droppings at intruders, hiss like snakes and strike with their bills.",
+    "outlook": "The common hoopoe is listed as Least Concern, but its numbers have been falling steadily since at least 2008 because of habitat loss and hunting, which is a particular concern in southern Europe and Asia.\n\nEuropean populations appear stable overall, yet it is considered extinct in Sweden and in need of active conservation in Poland, and it remains vulnerable in Switzerland despite a recovery there. In Morocco, live birds and body parts are sold unregulated in herbal medicine shops.",
+    "people": "Few birds carry so much history. Hoopoes were sacred in Ancient Egypt, painted on tomb and temple walls, and held a similar status in Minoan Crete. The Bible lists them among unclean birds not to be eaten, while in the Quran a hoopoe brings King Solomon news from Sheba.\n\nIn the Persian poem The Conference of the Birds, a hoopoe leads the birds in their search for a king. The hoopoe is king of the birds in Aristophanes' comedy The Birds, and in Ovid the cruel King Tereus is turned into one.\n\nIn much of Europe hoopoes were seen as thieves, and in Scandinavia as omens of war. Israel chose it as its national bird in 2008 after a survey of 155,000 citizens, and because it eats pests such as processionary moth pupae, it is protected by law in many countries.",
+    "relatives": "Carl Linnaeus named the species Upupa epops in 1758, epops being the Ancient Greek word for the hoopoe; curiously, he first placed it in a genus with the northern bald ibis and the red-billed chough.\n\nIts English and scientific names may echo its call, or may come from the French huppée, meaning 'crested'. Eight subspecies are recognised. The most distinctive, the African hoopoe, has sometimes been treated as a separate species, and some ornithologists regard the Madagascar hoopoe as a subspecies of the common hoopoe rather than a species of its own.",
+    "didYouKnow": "In 2015 at least 50 hoopoes turned up in southwest Ireland, the highest number recorded there since 1965.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "25–32 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "44–48 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "46–89 g"
+      },
+      {
+        "label": "Clutch",
+        "value": "4–12 eggs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the hoopoe's call sound like?",
+        "choices": [
+          "Oop-oop-oop",
+          "Cuckoo",
+          "A harsh caw",
+          "A long rising whistle followed by clicks"
+        ],
+        "explanation": "Its soft 'oop-oop-oop' may have given the bird its name."
+      },
+      {
+        "prompt": "What do hoopoe nestlings do to intruders?",
+        "choices": [
+          "Squirt droppings at them",
+          "Play dead",
+          "Sing loudly",
+          "Puff up their crests and flash bright red mouths"
+        ],
+        "explanation": "From six days old, chicks can direct streams of faeces at intruders, and hiss too."
+      },
+      {
+        "prompt": "Which country made the hoopoe its national bird in 2008?",
+        "choices": [
+          "Israel",
+          "Egypt",
+          "Greece",
+          "Sweden, where it once bred commonly"
+        ],
+        "explanation": "Israel chose the hoopoe after a national survey of 155,000 citizens."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership of conservation groups working to protect birds and their habitats."
+      },
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "Works to protect birds and nature in the UK and along migration routes abroad."
+      }
+    ]
+  },
+  {
+    "id": "siamang",
+    "name": "Siamang",
+    "scientificName": "Symphalangus syndactylus",
+    "wikipediaTitle": "Siamang",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Rainforests of Sumatra and the Malay Peninsula",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 2.0,
+      "longitude": 102.0
+    },
+    "mapSpan": 12,
+    "tagline": "The biggest gibbon, with a throat sac for singing",
+    "lede": "Every morning in the forests of Sumatra and Malaysia, siamang pairs launch into booming, intricately patterned duets, their throat pouches ballooning as they call. These shaggy black apes are the largest of the gibbons and live in close-knit families high in the canopy.",
+    "home": "Siamangs live in the remaining forests of Sumatra and the Malay Peninsula, including a small part of southern Thailand. They range from lowland to mountain forest up to 3,800 metres, though in Sumatra they prefer lowland forest between 500 and 1,000 metres.\n\nTheir range lies entirely within those of the agile gibbon and the lar gibbon, which share their forests. A family defends a home range averaging 23 hectares, and its daily travels are short, often less than 1 km, much shorter than those of the other gibbons living alongside them. In 2002 Bukit Barisan Selatan National Park in Sumatra was estimated to hold 22,390 siamangs.",
+    "anatomy": "The siamang can be twice the size of other gibbons, reaching about 1 metre tall and weighing up to 14 kg. Its long, dense, shaggy coat is the darkest of all gibbons, and its mostly bare face has only a thin moustache.\n\nIts long, gangly arms are longer than its legs, ideal for swinging through the trees. Two features set it apart. The second and third toes on each foot are partly joined by a web of skin, which gives the species its name, syndactylus, meaning 'joined fingers'.\n\nBoth males and females also have a large throat sac that can be inflated to the size of the head; unlike other gibbons, whose vocal sacs spread sideways, the siamang's fuse together and extend down the front of the neck.",
+    "life": "Siamangs eat mainly plants, feeding on at least 160 species. Figs are their staple, and they choose ripe fruit over unripe and young leaves over old, adding flowers, insects and the occasional bird egg. Sumatran siamangs eat more fruit than Malaysian ones, up to 60% of their diet, yet the siamang is still the most leaf-eating of all gibbons.\n\nBy swallowing fruit and dropping the seeds up to 366 metres away, it helps the forest regenerate. More than half the day is spent resting, often lying on a big branch, and grooming is the key social activity, with adult males the keenest groomers.\n\nA group may spend a whole day in one fruiting tree. Calls peak between 9 and 10 in the morning and are aimed mostly at neighbouring groups, accompanied by branch shaking and swinging to show exactly where the family is.",
+    "family": "A group is usually an adult pair with their young, about four animals on average and up to six. Pairs are generally monogamous and spend more time close together than other gibbons do, though some groups in southern Sumatra include two males.\n\nPairs mate over four to five months every two to three years, and pregnancy lasts roughly 6 to 8 months. The mother carries her infant through its first year, but from about 8 months old the father takes on much of the carrying, a bigger role than in other gibbons; the infant still returns to its mother to sleep and nurse.\n\nYoung siamangs travel independently by their third year and leave home at 6 to 8 years, females usually before males. Siamangs can live around 40 years in captivity.",
+    "remarkable": "Mated pairs sing duets with an unusually complex structure, built from four kinds of sound: booms, barks, ululating screams and two-tone screams.\n\nFemales typically give long barks and males the two-tone screams, though both sexes can make all four. New pairs sing more than established ones, perhaps because advertising a strong bond helps defend a territory.",
+    "outlook": "The siamang is endangered. Its biggest threat is habitat loss as forests are cleared for oil palm, coffee and other crops, logged illegally, burned and cut up by roads; since 2002, about 107,000 square kilometres of oil palm have been planted in Indonesia and Malaysia. In Kelantan, on the Malay Peninsula, illegal loggers have encroached on 16 of 37 permanent forest reserves.\n\nSiamangs are also taken for the illegal pet trade. Poachers usually kill the fiercely protective mother to take her baby, and many infants die in transport. The Indonesian population was estimated at 360,000 in the 1980s, and fewer may remain today. The species lives in at least 11 protected areas across Indonesia, Malaysia and Thailand.",
+    "people": "In Indonesia, unlike some other parts of Asia, primates are not hunted for food, so the danger to siamangs from people comes mainly from the pet trade and the loss of their forests. Hunters prefer infants, which make up most of the siamangs offered for sale.\n\nMuch of what we know about wild siamangs comes from long-term field studies, including David Chivers' research in Malaysian rainforests, which showed how they seek out high-energy fruits such as figs and durians and fall back on leaves when fruit is scarce. Observers have also found that siamangs communicate with gestures, pointing and facial expressions as well as sound, to show what they want or plan to do.",
+    "relatives": "The siamang is the only species in the genus Symphalangus, within the gibbon family, Hylobatidae. Two subspecies are recognised, the Sumatran siamang and the Malaysian siamang, which look alike but differ in some behaviours.\n\nThe agile and lar gibbons that share its forests belong to a different genus, Hylobates, and on many mornings the siamang's song follows theirs. Fossil siamangs date back to the Middle Pleistocene.",
+    "didYouKnow": "Potential predators of siamangs include Sumatran tigers, Sunda clouded leopards, pythons and grey-headed fish eagles.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "Up to 1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 14 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Figs, other fruit and leaves"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 40 years (captive)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is unusual about the siamang's feet?",
+        "choices": [
+          "Two toes are joined by skin",
+          "They have no big toe",
+          "They are covered in scales",
+          "They can rotate fully backwards to grip branches"
+        ],
+        "explanation": "Its second and third toes are partly webbed, which gives it the name syndactylus."
+      },
+      {
+        "prompt": "Who does much of the infant carrying from about 8 months?",
+        "choices": [
+          "The father",
+          "Older sisters",
+          "The grandmother",
+          "The whole group, passing it between them in turn"
+        ],
+        "explanation": "Siamang males give more paternal care than other gibbons, carrying older infants."
+      },
+      {
+        "prompt": "What is the siamang's staple food?",
+        "choices": [
+          "Figs",
+          "Insects",
+          "Bird eggs",
+          "Bamboo shoots and roots dug from the forest floor"
+        ],
+        "explanation": "Siamangs eat at least 160 plant species, but figs are their major food."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Works to protect wildlife and wild places across Indonesia and Malaysia."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests with local partners."
+      }
+    ]
+  },
+  {
+    "id": "spectacled-bear",
+    "name": "Spectacled Bear",
+    "scientificName": "Tremarctos ornatus",
+    "wikipediaTitle": "Spectacled bear",
+    "group": "mammal",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Cloud forests and páramo of the Andes, from Venezuela to Argentina",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": -77.0
+    },
+    "mapSpan": 35,
+    "tagline": "South America's only bear, and Paddington's species",
+    "lede": "The spectacled bear is the only bear native to South America and the last survivor of the short-faced bears, a group that once included giants. Named for the pale rings that often frame its eyes, it spends much of its life in the cloud forests of the Andes, climbing tall trees and eating more plants than almost any other bear.",
+    "home": "Spectacled bears live along the Andes in Venezuela, Colombia, Ecuador, Peru, western Bolivia and northwestern Argentina, with occasional wanderers into eastern Panama. Their range is a thin strip more than 4,600 km long but only 200 to 650 km wide.\n\nTheir favourite habitat is humid montane cloud forest, usually between 1,000 and 2,700 metres, but they also use high grasslands called páramo, dry forest and scrub desert, and can climb to the snow line above 5,000 metres. A single population on the Peru–Ecuador border used as wide a range of habitats as brown bears occupy worldwide today.",
+    "anatomy": "This is a mid-sized bear with a blackish coat, which can range from jet black to dark brown or reddish. Most have beige or ginger markings across the face and upper chest, and every bear's pattern is slightly different, so individuals can be told apart, though some have no markings at all.\n\nMales weigh 100 to 200 kg and females only 35 to 82 kg, making it, along with the polar bear, the bear with the greatest size difference between the sexes. Head-and-body length is 1.2 to 2 metres, and the tail just 10 centimetres.\n\nIts 'short face' is an illusion created by a deep snout and short nasal bones. Large jaw muscles and broad, blunt cheek teeth are built for grinding tough plants, and its sense of smell is so keen it can tell from the ground when a tree is laden with ripe fruit.",
+    "life": "Only about 5 to 7% of a spectacled bear's diet is meat. It feeds on bromeliads, cactus, palm nuts and unopened palm leaves, bamboo hearts, frailejón, orchid bulbs, moss, fallen fruit and the inner layer of tree bark, tough foods few other animals can use. It also raids sugarcane, maize and honey.\n\nOccasionally it hunts, taking rabbits, rodents and nesting birds, and one was filmed attacking an adult mountain tapir perhaps twice its weight. It is an expert climber and often builds a platform in a tree to rest, hide and store food. Spectacled bears are solitary but not territorial, and up to nine have been seen feeding near one another in a large cornfield. They usually retreat from people, often by climbing a tree.",
+    "family": "In the wild, mating can happen at almost any time of year but peaks in April to June, when fruit ripens at the start of the wet season. A pair stays together for one to two weeks.\n\nAfter a pregnancy of 5.5 to 8.5 months, the female gives birth in a small den, usually in the dry season between December and February, to one to three cubs, most often two, each weighing about 300 grams. She stays in the den until the cubs can see and walk, three to four months after birth. They nurse for a year and stay with her for about another year.\n\nFemales first breed at around 5 years old. Wild bears are thought to live 20 years or more, and one in a Maryland zoo lived to almost 38.",
+    "remarkable": "For a mostly vegetarian bear, it is surprisingly formidable. It is South America's largest land predator, and among the continent's native land animals only the three tapirs are heavier.\n\nWhen it does hunt, it may climb onto its prey's back and pin it with its weight and claws, or chase it over steep slopes and cliffs.",
+    "outlook": "The spectacled bear is listed as Vulnerable, mainly because of habitat loss to farming, logging and illegal mining, which has split its populations into small, isolated patches, especially in Venezuela, Colombia, Ecuador and Argentina. Bears are also killed in retaliation for raiding crops and livestock, though many cattle 'kills' are actually carrion or the work of other predators.\n\nSome are poached for parts used in traditional medicine or because of local myths, and laws against hunting are rarely enforced. A 1998 study found only 18.5% of the bear's range inside protected areas, many of them small. Conservationists are working on wildlife corridors, education and ways to reduce conflict with farmers; in Ecuador, about two-thirds of bear habitat lies outside protected areas.",
+    "people": "In Aymara and Quechua the bear is called jukumari or ukumari, often translated as 'hole bear', because the pale markings usually stop short of the eyes, which look like dark holes. Its scientific name, Tremarctos ornatus, means roughly 'decorated hole bear', after an unusual hole in its upper arm bone and its markings.\n\nIn the 19th century bear hunting was a pastime of wealthy young men in parts of Latin America, as described in the Colombian novel María. Today the best-known spectacled bear is fictional: Paddington Bear comes from Peru. Stephen Fry wrote a book about helping to rescue spectacled bears there.",
+    "relatives": "Tremarctos ornatus belongs to the subfamily Tremarctinae, the short-faced bears, which split from the ancestors of other living bears about 5.7 million years ago in North America. Its extinct relatives included the huge Arctodus and Arctotherium, which died out around 12,000 years ago, and its sister species Tremarctos floridanus, a North American bear about twice its size.\n\nThe spectacled bear seems to have reached South America late, appearing in the fossil record there only in the Holocene, and its genes hint at past interbreeding with other short-faced bears. It has 52 chromosomes, against 74 in bears of the genus Ursus.",
+    "didYouKnow": "Only a single human death has ever been reported from a spectacled bear, and that bear had already been shot while it was being hunted.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "Males 100–200 kg"
+      },
+      {
+        "label": "Length",
+        "value": "1.2–2 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly plants"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20+ years wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "About how much of the spectacled bear's diet is meat?",
+        "choices": [
+          "About 5–7%",
+          "About half",
+          "About 25%",
+          "Nearly all of it, mainly deer and llamas hunted at night"
+        ],
+        "explanation": "It is one of the most plant-eating bears; meat makes up only about 5 to 7% of its diet."
+      },
+      {
+        "prompt": "Which famous fictional bear is a spectacled bear?",
+        "choices": [
+          "Paddington",
+          "Baloo",
+          "Winnie-the-Pooh",
+          "Fozzie, the stand-up comic from The Muppets"
+        ],
+        "explanation": "Paddington Bear comes from Peru and is a spectacled bear."
+      },
+      {
+        "prompt": "Where does the spectacled bear often rest and store food?",
+        "choices": [
+          "On platforms built in trees",
+          "In caves",
+          "In snow dens",
+          "In burrows dug beneath the roots of giant cacti"
+        ],
+        "explanation": "Once up a tree, it often builds a platform to rest, hide and store food."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Works to protect Andean wildlife and landscapes across South America."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests, including Andean cloud forests, with local partners."
+      }
+    ]
+  },
+  {
+    "id": "sperm-whale",
+    "name": "Sperm Whale",
+    "scientificName": "Physeter macrocephalus",
+    "wikipediaTitle": "Sperm whale",
+    "group": "mammal",
+    "regions": [
+      "openOcean"
+    ],
+    "range": "Deep waters of all the world's oceans",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": -30.0
+    },
+    "mapSpan": 80,
+    "tagline": "The deep-diving giant with Earth's biggest brain",
+    "lede": "The sperm whale is the largest toothed predator on Earth, a blunt-headed giant that dives more than 2 km into the dark to hunt squid. It finds its prey by sound and lives in tight family groups that talk to each other in rhythmic clicks.",
+    "home": "Sperm whales are found in all the world's oceans, from the poles to the equator, and in the Mediterranean, though not in the Black Sea. They prefer ice-free water more than 1,000 metres deep and migrate seasonally to feed and breed.\n\nFemales and young stay in warmer tropical and temperate waters, while adult males travel to colder, more productive high latitudes, returning to the females' groups to breed. Along some coasts, such as parts of southern Australia, sperm whales are considered locally extinct.",
+    "anatomy": "Males average about 16 metres long and can reach 18 to 19 metres, weighing around 57 tonnes at 18 metres; females rarely exceed 12 metres. The enormous, block-shaped head makes up a quarter to a third of the body, and the narrow lower jaw carries 18 to 26 cone-shaped teeth on each side, each weighing up to 1 kg.\n\nInstead of a dorsal fin there is a row of ridges, and the skin on the back is wrinkled like a prune. The S-shaped blowhole sits near the front of the head, skewed to the left, so the blow angles forward and left.\n\nThe head holds the spermaceti organ, a huge case containing up to 1,900 litres of waxy oil, which focuses the whale's powerful clicks. Its ribs are joined by flexible cartilage, letting the chest and lungs collapse safely under the crushing pressure of deep dives.",
+    "life": "Sperm whales usually dive to 300 to 800 metres to feed, sometimes much deeper, with the deepest recorded dive reaching 2,250 metres, and dives can last over an hour; between dives they breathe at the surface for about eight minutes.\n\nThey hunt mainly medium-sized squid, but also giant and colossal squid, octopuses, rays and sharks, finding prey by echolocation, and tagging shows they often hunt upside down. A sperm whale eats about 3% of its body weight a day. Females and their young live in social units of usually six to nine whales that stay together for years, babysitting and even suckling each other's calves while mothers dive.\n\nWhen they socialise, often in the afternoon, they rub against each other and exchange codas, short rhythmic patterns of 3 to 12 clicks. Groups sleep for short periods hanging vertically near the surface.",
+    "family": "Females mature at around 9 years old and give birth to a single calf after a pregnancy of 14 to 16 months, typically only once every 4 to 20 years. Birth is a social event, with other whales gathering to protect mother and calf. The calf, 3.5 to 4.5 metres long at birth, drinks milk that is about 36% fat, with the consistency of cottage cheese, and it may nurse for several years, occasionally up to 13.\n\nMales mature later and leave their family groups, at first forming loose bachelor groups and then living mostly alone as they grow older. Females reach full size at 25 to 45 years and males at 50 to 60. Sperm whales can live 70 years or more.",
+    "remarkable": "The sperm whale's clicks reach 236 decibels underwater, making it the loudest animal in the world. It also has the largest brain of any animal that has ever lived, averaging about 7 kg, more than five times heavier than a human brain.",
+    "outlook": "Whaling devastated sperm whales. Spermaceti and sperm oil lit lamps and lighthouses and greased the machines of the Industrial Revolution, and in the 20th century at least 770,000 sperm whales were killed, most between 1946 and 1980. The population, perhaps 1.1 million before commercial whaling, fell to about a third of that.\n\nThe International Whaling Commission fully protected the species in 1985, and the population today may be as many as 360,000. It is listed as Vulnerable. The greatest threats now are entanglement in fishing gear and collisions with ships, along with swallowed plastic and other debris, ocean noise and chemical pollution. Recovery is slow, especially in the South Pacific, where whaling took a heavy toll on breeding-age males.",
+    "people": "Sperm whaling took off in the 18th century from New England, and the hunt is immortalised in Herman Melville's Moby-Dick, inspired by the real sinking of the whaleship Essex by a sperm whale. Whalers carved the teeth into scrimshaw, and ambergris, a waxy substance formed in the intestines, possibly around squid beaks, is still prized as a fixative in perfume.\n\nIn Fiji, sperm whale teeth called tabua are given as gifts of esteem and atonement and once played a role in negotiations between chiefs; the Māori of New Zealand made rare pendants from teeth taken from stranded whales. Connecticut made the sperm whale its state animal in 1975. Today whale watchers seek it off Kaikōura in New Zealand, Arctic Norway, the Azores and Dominica.",
+    "relatives": "The sperm whale is the only living member of the genus Physeter, from the Greek for 'blowhole', and its species name, macrocephalus, means 'big-headed'. 'Sperm whale' is short for 'spermaceti whale', after the oil in its head, which was once mistaken for semen; its other name, cachalot, may come from a Portuguese word for 'big head'.\n\nIts nearest living relatives are the much smaller pygmy and dwarf sperm whales of the genus Kogia, which together with it form the superfamily Physeteroidea. The oldest fossil with sperm whale features, Ferecetotherium from Azerbaijan, is about 23 to 28 million years old.",
+    "didYouKnow": "When orcas attack, female sperm whales may form a 'marguerite formation', circling a calf with their heads inward and their powerful tails facing out.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Males up to 18–19 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 57 t"
+      },
+      {
+        "label": "Deepest dive",
+        "value": "2,250 m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "70+ years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What gives the sperm whale its name?",
+        "choices": [
+          "Spermaceti oil in its head",
+          "Its pale, creamy skin",
+          "A Norse sailor's name",
+          "An old French word for a whale that swims in deep water"
+        ],
+        "explanation": "'Sperm whale' is short for 'spermaceti whale', after the waxy oil in its head."
+      },
+      {
+        "prompt": "What is a sperm whale coda?",
+        "choices": [
+          "A rhythmic pattern of clicks",
+          "A baby whale",
+          "A deep dive",
+          "The fountain of spray blown out through the blowhole"
+        ],
+        "explanation": "Codas are short patterns of 3 to 12 clicks exchanged when the whales socialise."
+      },
+      {
+        "prompt": "Which novel was inspired by a sperm whale sinking a ship?",
+        "choices": [
+          "Moby-Dick",
+          "Treasure Island",
+          "Robinson Crusoe",
+          "The Old Man and the Sea, by Ernest Hemingway"
+        ],
+        "explanation": "Melville based Moby-Dick on the sinking of the whaleship Essex."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect ocean life, including reducing whale entanglement and ship strikes."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect whales and the oceans they depend on."
+      }
+    ]
+  },
+  {
+    "id": "spotted-hyena",
+    "name": "Spotted Hyena",
+    "scientificName": "Crocuta crocuta",
+    "wikipediaTitle": "Spotted hyena",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Savannas, woodlands and semi-deserts across sub-Saharan Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 55,
+    "tagline": "Africa's laughing hunter, where females rule the clan",
+    "lede": "Forget the cowardly scavenger of legend: the spotted hyena is a powerful hunter that kills most of what it eats. It lives in large clans ruled by females, eats skin and bone as well as meat, and has a social life as intricate as a baboon's.",
+    "home": "The spotted hyena lives across sub-Saharan Africa, in semi-desert, savanna, open and dense dry woodland and mountain forest up to 4,000 metres. It avoids true desert, tropical rainforest and coastal forest.\n\nIts range is patchy in many places, especially West Africa, but continuous across large areas of Ethiopia, Kenya, Tanzania, Botswana, Namibia and northeastern South Africa, and it is the most common large carnivore in Africa. Clan territories vary from under 40 square kilometres in the Ngorongoro Crater to over 1,000 in the Kalahari. Clans patrol and scent-mark their borders, and hunters chasing prey have been seen to stop dead when it crosses into another clan's land.",
+    "anatomy": "The spotted hyena is the largest hyena, with a heavy, vaguely bear-like build, strong neck and shoulders, lower hindquarters, rounded ears and a short, pompom-like tail. Its sandy or greyish coat is marked with dark spots rather than stripes. Unusually for a mammal, females are larger than males; in the Serengeti females weigh 44.5 to 63.9 kg against 40.5 to 55 kg for males.\n\nIts skull is one of the most powerfully built of any carnivore, with conical bone-crushing premolars and a bite 40% stronger than a leopard's; hyenas have been seen cracking giraffe leg bones 7 centimetres thick. Its heart makes up close to 1% of its body weight, nearly twice the proportion of a lion's, giving it stamina for long chases.\n\nFemales have a pseudo-penis, an enlarged clitoris through which they urinate, mate and give birth.",
+    "life": "Spotted hyenas get anywhere from half to 98% of their food by hunting, depending on the area, and scavenge the rest; because they digest skin and bone, they use carcasses more efficiently than any other African carnivore.\n\nThey hunt alone, in small parties or in large groups, running through herds to pick out a target and chasing it for several kilometres at up to 60 km/h. Wildebeest, zebra and gazelles are common prey, and young and old animals are often chosen. A clan of up to 80 hyenas rarely gathers all at once; members forage in smaller groups.\n\nLions steal hyenas' kills more often than the reverse, and the two species compete fiercely. Hyenas keep in touch with far-carrying whoops as well as giggles, grunts and groans, and the pitch of their famous laugh reveals the caller's age.",
+    "family": "Hyenas breed at any time of year, with a birth peak in the wet season, and no lasting pairs form. Pregnancy averages 110 days, and a litter is usually two cubs, occasionally three. Birth is difficult, because the cubs, the largest newborns relative to their mother's weight of any carnivore, must pass through the narrow pseudo-penis, which tears and can take weeks to heal.\n\nUniquely among carnivores, cubs are born with their eyes open and teeth already in place, and they often fight from birth; this siblicide kills about a quarter of all hyenas in their first month. Mothers nurse only their own cubs, for 12 to 16 months, on milk with the highest protein and fat content of any land carnivore. Cubs inherit their mother's rank.\n\nFemales stay in their birth clan, while males usually leave at about 2½ years. Hyenas in zoos live 12 years on average, and up to 25.",
+    "remarkable": "Hyena society resembles that of baboons and macaques more than that of any other carnivore. Rank depends not on size or strength but on networks of allies, the cubs of dominant females outrank adults below their mothers, and hyenas can recognise relatives as distant as great-aunts.\n\nIn tests, pairs of captive hyenas learned to pull two ropes together for food without training, outperforming chimpanzees.",
+    "outlook": "The spotted hyena is listed as Least Concern, with an estimated 27,000 to 47,000 animals, but numbers are falling outside protected areas because of habitat loss and poaching, and populations are increasingly concentrated in parks and the land around them.\n\nHyenas are often killed for supposedly taking livestock, although many reported attacks are never confirmed and scavenging hyenas may be blamed for kills they did not make. Its bad reputation is itself a threat: the IUCN's hyena specialists say negative attitudes harm the species' survival both in the wild and in captivity.",
+    "people": "Spotted hyenas were painted and carved in Ice Age caves such as Lascaux and Chauvet, when they roamed Europe. Western writers from the medieval Physiologus onwards cast them as grave-robbing hermaphrodites, and in the 20th century Hemingway and Disney's The Lion King portrayed them as gluttonous and stupid; after the film, one hyena researcher sued Disney for defamation. African traditions are more varied.\n\nTabwa mythology credits the hyena with bringing the sun to warm the cold earth, and the Yoruba use a hyena mask to mark the end of a ceremony, because hyenas finish the meals of other carnivores. In Harar, Ethiopia, people feed hyenas, believing they keep devils away, and in Addis Ababa up to a thousand hyenas live in the city, scavenging from rubbish tips.",
+    "relatives": "The spotted hyena is the only living member of the genus Crocuta, whose ancestors split from those of the striped and brown hyenas, genus Hyaena, about 10 million years ago. Its name comes not from the Latin for 'saffron-coloured', as once thought, but from the Ancient Greek krokottas, ultimately from a Sanskrit word for the golden jackal.\n\nIt is also called the laughing hyena. Cave hyenas, usually treated as a subspecies, ranged across Europe and Asia for at least a million years before disappearing from Western Europe between about 14,000 and 11,000 years ago, as open grasslands gave way to forest. The oldest Crocuta fossils come from Africa and are about 3.6 to 3.9 million years old.",
+    "didYouKnow": "Hyenas have been seen scent-marking before setting off to hunt zebras but not before hunting other prey, which suggests they plan their hunts in advance.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "40–64 kg (Serengeti)"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 60 km/h"
+      },
+      {
+        "label": "Clan size",
+        "value": "Up to 80"
+      },
+      {
+        "label": "Lifespan",
+        "value": "12 years (zoo average)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Who usually holds the highest rank in a spotted hyena clan?",
+        "choices": [
+          "Females",
+          "The largest male",
+          "The oldest male",
+          "Whichever hyena makes the most kills during the dry season"
+        ],
+        "explanation": "Hyena clans are matriarchal; females are larger than males and dominate them."
+      },
+      {
+        "prompt": "What is unusual about newborn spotted hyena cubs?",
+        "choices": [
+          "Their eyes are open",
+          "They are pure white",
+          "They are deaf",
+          "They ride in a pouch for their first month"
+        ],
+        "explanation": "Unique among carnivores, they are born with open eyes and with teeth already in place."
+      },
+      {
+        "prompt": "Which animals steal kills from hyenas more often than the reverse?",
+        "choices": [
+          "Lions",
+          "Cheetahs",
+          "Vultures",
+          "Jackals that follow the clan in large packs"
+        ],
+        "explanation": "Contrary to popular belief, lions take hyenas' kills more often than hyenas take theirs."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Conserves carnivores and their habitats in southern Africa and works to reduce conflict with farmers."
+      }
+    ]
+  },
+  {
+    "id": "stoat",
+    "name": "Stoat",
+    "scientificName": "Mustela erminea",
+    "wikipediaTitle": "Stoat",
+    "group": "mammal",
+    "regions": [
+      "europe",
+      "asia",
+      "arctic",
+      "naWest"
+    ],
+    "range": "Northern Europe and Asia, Alaska, Arctic Canada and Greenland",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 60.0,
+      "longitude": 60.0
+    },
+    "mapSpan": 80,
+    "tagline": "The fierce little hunter that turns white for winter",
+    "lede": "Small enough to chase a vole down its tunnel yet bold enough to tackle prey far larger than itself, the stoat is one of the north's most formidable little predators. In the far north it swaps its brown summer coat for pure white, the ermine once reserved for kings.",
+    "home": "The stoat lives right around the northern world, across Europe and Asia and in Alaska, Arctic Canada and Greenland, from sea level to 3,000 metres. In Europe it reaches as far south as Portugal and lives on most islands, except Iceland, Svalbard, the Mediterranean islands and a few small North Atlantic islands.\n\nIn Japan it lives in the mountains of Honshu and on Hokkaido. It does not dig its own burrows but takes over those of the rodents it kills, lining the nest with their fur. Each stoat has several dens, in places such as tree roots, rock piles, haystacks, rotting stumps and even old magpie nests.",
+    "anatomy": "The stoat has a long, slender, almost cylindrical body, a long neck with the head set well forward, short rounded ears and long whiskers. Its tail, longer than a least weasel's, is always more than a third of its body length and ends in a black tip.\n\nMales are roughly 25% larger than females and 1.5 to 2 times heavier: males average 258 grams and females under 180 grams. In summer the fur is sandy brown above and white below. In the north it moults into a dense, silky, all-white coat for winter, keeping only the black tail-tip; the change is triggered by day length. Unusually for a carnivore, stoats get smaller the further north they live.",
+    "life": "Stoats eat mainly mouse-sized rodents such as voles, but regularly take larger prey including water voles, hamsters, pikas and, in Britain, rabbits, which males catch more often than the smaller females. They also eat birds, fish and shrews, and climb trees to raid nests.\n\nA stoat eats about 50 grams of food a day, a quarter of its own weight. It kills with a bite to the back of the neck, and caches surplus prey for later. Stoats hunt restlessly, checking every hole and crevice, and the slimmer females can follow rodents further into their tunnels. They are said to mesmerise rabbits with a leaping 'weasel war dance', though this may be linked to a parasitic worm infection.\n\nMales hold territories that overlap the smaller ranges of females, and dominant males can have territories 50 times bigger than young rivals'. Though mostly silent, stoats hiss, bark and screech when angry.",
+    "family": "Stoats mate in late spring and summer, but the embryo does not implant straight away: it lies dormant for nine to ten months, so the young are born the following spring after a total pregnancy of around 300 days. As a result, adult females spend almost their whole lives either pregnant or in heat, and in a harsh winter a female can reabsorb her entire litter.\n\nThe kits are born blind, deaf and toothless, covered in fine white or pinkish down, and huddle together for warmth while their mother is away. Their eyes open at five to six weeks and they are weaned at 12 weeks. Males take no part in rearing them, and litters often have more than one father.",
+    "remarkable": "Female stoats become sexually mature at just 2 to 3 weeks old, while still blind, deaf and almost hairless, and they are often mated by an adult male before they are even weaned. Males, by contrast, do not mature until they are 10 to 11 months old.",
+    "outlook": "The stoat is listed as Least Concern because of its huge circumpolar range. Where it has been introduced, though, it can be a disaster. Stoats were brought to New Zealand from Britain in the 1880s to control rabbits, despite warnings from scientists including the ornithologist Walter Buller, and within six years bird numbers were visibly falling.\n\nThey now prey on kiwi, kaka, mohua and other native birds, and the species is listed among the world's 100 worst invaders. In New Zealand, stoat numbers boom after heavy beech seed years feed the rodents they eat; after one such plague, more than half the takahē in untrapped areas were killed. Stoats reached Orkney around 2010, and by 2024 an eradication project there had trapped more than 6,300.",
+    "people": "Ermine, the white winter fur, has long been a symbol of royalty and rank. It trims the ceremonial robes of British peers and the academic hoods of Oxford and Cambridge, lined medieval coronation cloaks, and formed the earliest flag of the Duchy of Brittany; in heraldry, 'ermine' is a white field scattered with black tail-tips.\n\nLeonardo da Vinci painted Cecilia Gallerani holding one in Lady with an Ermine. A European legend held that a white stoat would rather die than soil its coat, and in Ireland meeting a stoat at the start of a journey was bad luck unless you greeted it as a neighbour. Russia once supplied up to half the world's stoat pelts.\n\nIn 2026, two stoats named Tina and Milo were the mascots of the Milan–Cortina Winter Olympics and Paralympics.",
+    "relatives": "The stoat belongs to the genus Mustela in the weasel family. A 2021 study split the old, circumpolar species into three: the stoat itself in Eurasia and Alaska, the American ermine across most of North America, and the Haida ermine on islands off the Pacific Northwest coast. These two are its closest living relatives.\n\nIts ancestor, Mustela palerminea, lived in Europe in the Middle Pleistocene, and the stoat thrived in the Ice Age, its slim body perfect for hunting under snow. The name probably comes from the Dutch stout, 'bold'. In North America it is often called the short-tailed weasel; males are jacks or hobs, females are jills, and a group is a gang or pack.",
+    "didYouKnow": "A stoat's canine teeth are too short to reach a rabbit's spine or major arteries, so large prey often dies of shock.",
+    "facts": [
+      {
+        "label": "Body length",
+        "value": "17–33 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "Males about 258 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Rodents and rabbits"
+      },
+      {
+        "label": "Pregnancy",
+        "value": "About 300 days"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the stoat's white winter fur called?",
+        "choices": [
+          "Ermine",
+          "Sable",
+          "Mink",
+          "Snowpelt, the name used by Russian trappers"
+        ],
+        "explanation": "The white winter coat, and the fur made from it, is called ermine."
+      },
+      {
+        "prompt": "Why were stoats brought to New Zealand?",
+        "choices": [
+          "To control rabbits",
+          "For fur farms",
+          "As pets",
+          "To hunt the rats that came ashore with whaling ships"
+        ],
+        "explanation": "They were introduced in the 1880s to control rabbits and hares, with disastrous results for native birds."
+      },
+      {
+        "prompt": "How long is a stoat's pregnancy, including the dormant stage?",
+        "choices": [
+          "About 300 days",
+          "About 30 days",
+          "About 60 days",
+          "About 2 weeks, one of the shortest of any mammal"
+        ],
+        "explanation": "The embryo lies dormant for nine to ten months before developing, so pregnancy lasts around 300 days."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Wildlife Trusts",
+        "url": "https://www.wildlifetrusts.org",
+        "blurb": "A UK network of local charities protecting wildlife and wild places."
+      },
+      {
+        "name": "IUCN",
+        "url": "https://www.iucn.org",
+        "blurb": "The global authority on the status of species, including work on invasive predators."
+      }
+    ]
   }
 ]
