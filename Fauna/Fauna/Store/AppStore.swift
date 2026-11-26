@@ -17,9 +17,36 @@ struct AppState: Codable, Equatable {
     var todayChain: [String] = []
     var journal: [JournalEntry] = []
     var quizPassedIDs: [String] = []
+    /// The setting for all units at once.
     var units: UnitPreference = .automatic
+    /// Per-kind choices that override `units`; nil follows it.
+    var lengthUnits: UnitPreference? = nil
+    var weightUnits: UnitPreference? = nil
+    var distanceUnits: UnitPreference? = nil
 
     init() {}
+
+    func unitOverride(_ kind: MeasureKind) -> UnitPreference? {
+        switch kind {
+        case .length: lengthUnits
+        case .weight: weightUnits
+        case .distance: distanceUnits
+        }
+    }
+
+    mutating func setUnitOverride(_ kind: MeasureKind, _ value: UnitPreference?) {
+        switch kind {
+        case .length: lengthUnits = value
+        case .weight: weightUnits = value
+        case .distance: distanceUnits = value
+        }
+    }
+
+    /// Sets every kind at once, clearing the per-kind choices.
+    mutating func setAllUnits(_ value: UnitPreference) {
+        units = value
+        for k in MeasureKind.allCases { setUnitOverride(k, nil) }
+    }
 
     init(from decoder: Decoder) throws {
         let c = try decoder.container(keyedBy: CodingKeys.self)
@@ -36,6 +63,9 @@ struct AppState: Codable, Equatable {
         journal = try c.decodeIfPresent([JournalEntry].self, forKey: .journal) ?? d.journal
         quizPassedIDs = try c.decodeIfPresent([String].self, forKey: .quizPassedIDs) ?? d.quizPassedIDs
         units = (try? c.decodeIfPresent(UnitPreference.self, forKey: .units)) ?? d.units
+        lengthUnits = (try? c.decodeIfPresent(UnitPreference.self, forKey: .lengthUnits)) ?? nil
+        weightUnits = (try? c.decodeIfPresent(UnitPreference.self, forKey: .weightUnits)) ?? nil
+        distanceUnits = (try? c.decodeIfPresent(UnitPreference.self, forKey: .distanceUnits)) ?? nil
     }
 }
 
@@ -99,10 +129,12 @@ final class AppStore {
 
     func animal(_ id: String) -> Animal? { byID[id] }
 
-    var usesImperial: Bool { state.units.usesImperial }
+    func usesImperial(_ kind: MeasureKind) -> Bool { (state.unitOverride(kind) ?? state.units).usesImperial }
+
+    var imperialKinds: Set<MeasureKind> { Set(MeasureKind.allCases.filter { usesImperial($0) }) }
 
     /// Text with measurements shown in the reader's preferred units.
-    func measured(_ text: String) -> String { UnitText.localize(text, imperial: usesImperial) }
+    func measured(_ text: String) -> String { UnitText.localize(text, imperial: imperialKinds) }
 
     var todayAnimals: [Animal] { state.todayChain.compactMap { byID[$0] } }
     var currentAnimal: Animal? { todayAnimals.last }
@@ -254,6 +286,9 @@ final class AppStore {
         fresh.reminderHour = keep.reminderHour
         fresh.reminderMinute = keep.reminderMinute
         fresh.units = keep.units
+        fresh.lengthUnits = keep.lengthUnits
+        fresh.weightUnits = keep.weightUnits
+        fresh.distanceUnits = keep.distanceUnits
         state = fresh
         rebuildQueue()
         refreshDay()

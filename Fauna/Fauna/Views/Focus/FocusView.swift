@@ -156,19 +156,40 @@ struct FocusView: View {
             } icon: {
                 Image(systemName: "ruler.fill").foregroundStyle(.blue)
             }
-            Picker("Units", selection: Binding(get: { store.state.units }, set: { store.state.units = $0 })) {
-                ForEach(UnitPreference.allCases) { Text($0.title).tag($0) }
+            // Once a kind is switched on its own, no segment is selected; any tap resets all three.
+            Picker("Units", selection: Binding<UnitPreference?>(
+                get: { MeasureKind.allCases.contains { store.state.unitOverride($0) != nil } ? nil : store.state.units },
+                set: { if let v = $0 { store.state.setAllUnits(v) } }
+            )) {
+                ForEach(UnitPreference.allCases) { Text($0.title).tag(Optional($0)) }
             }
             .pickerStyle(.segmented)
+            // Each kind can be switched on its own, e.g. kilograms but miles.
+            ForEach(MeasureKind.allCases) { kind in
+                HStack {
+                    Text(kind.title)
+                        .font(.subheadline)
+                        .frame(width: 76, alignment: .leading)
+                    Picker(kind.title, selection: Binding(
+                        get: { store.usesImperial(kind) },
+                        set: { store.state.setUnitOverride(kind, $0 ? .imperial : .metric) }
+                    )) {
+                        Text(kind.label(imperial: false)).tag(false)
+                        Text(kind.label(imperial: true)).tag(true)
+                    }
+                    .pickerStyle(.segmented)
+                    .accessibilityIdentifier("units.\(kind.rawValue)")
+                }
+            }
         }
     }
 
     private var unitsCaption: String {
-        switch store.state.units {
-        case .automatic: "Following your iPhone's setting: \(store.usesImperial ? "feet, pounds, miles" : "metres, kilograms, kilometres")."
-        case .metric: "Metres, kilograms, kilometres."
-        case .imperial: "Feet, pounds, miles."
-        }
+        let shown = MeasureKind.allCases.map { $0.noun(imperial: store.usesImperial($0)) }
+        let list = "\(shown[0]), \(shown[1]), \(shown[2])"
+        let custom = MeasureKind.allCases.contains { store.state.unitOverride($0) != nil }
+        if store.state.units == .automatic && !custom { return "Following your iPhone's setting: \(list)." }
+        return list.prefix(1).uppercased() + list.dropFirst() + "."
     }
 
     private var aboutSection: some View {

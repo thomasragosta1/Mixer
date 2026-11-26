@@ -22,6 +22,38 @@ enum UnitPreference: String, Codable, CaseIterable, Identifiable {
     }
 }
 
+/// The kinds of measurement that can be switched separately. Speeds and areas count as distance.
+enum MeasureKind: String, Codable, CaseIterable, Identifiable {
+    case length, weight, distance
+    var id: String { rawValue }
+
+    var title: String {
+        switch self {
+        case .length: "Length"
+        case .weight: "Weight"
+        case .distance: "Distance"
+        }
+    }
+
+    /// Short segment labels, e.g. "cm, m" or "in, ft".
+    func label(imperial: Bool) -> String {
+        switch self {
+        case .length: imperial ? "in, ft" : "cm, m"
+        case .weight: imperial ? "oz, lb" : "g, kg"
+        case .distance: imperial ? "mi, mph" : "km, km/h"
+        }
+    }
+
+    /// For the caption: "feet", "kilograms"...
+    func noun(imperial: Bool) -> String {
+        switch self {
+        case .length: imperial ? "feet" : "metres"
+        case .weight: imperial ? "pounds" : "kilograms"
+        case .distance: imperial ? "miles" : "kilometres"
+        }
+    }
+}
+
 /// Rewrites the metric measurements in Fauna's text ("3–6 kg", "4,500 kilometres",
 /// "up to 30 m", "100 km/h") into US customary units. Content is written in metric.
 enum UnitText {
@@ -29,6 +61,7 @@ enum UnitText {
         let factor: Double
         let unit: String
         let unitPlural: String
+        var kind: MeasureKind = .length
         /// Above this many target units, switch to the bigger unit (inches → feet).
         var promote: (limit: Double, factor: Double, unit: String, plural: String)? = nil
     }
@@ -38,18 +71,18 @@ enum UnitText {
         let mm = Rule(factor: 1 / 25.4, unit: "in", unitPlural: "in")
         let ft = Rule(factor: 3.28084, unit: "ft", unitPlural: "ft")
         let feetWord = Rule(factor: 3.28084, unit: "foot", unitPlural: "feet")
-        let mi = Rule(factor: 0.621371, unit: "mi", unitPlural: "mi")
-        let miWord = Rule(factor: 0.621371, unit: "mile", unitPlural: "miles")
-        let oz = Rule(factor: 1 / 28.3495, unit: "oz", unitPlural: "oz", promote: (32, 1 / 16, "lb", "lb"))
-        let ozWord = Rule(factor: 1 / 28.3495, unit: "ounce", unitPlural: "ounces")
-        let lb = Rule(factor: 2.20462, unit: "lb", unitPlural: "lb")
-        let lbWord = Rule(factor: 2.20462, unit: "pound", unitPlural: "pounds")
-        let tons = Rule(factor: 1.10231, unit: "ton", unitPlural: "tons")
-        let mph = Rule(factor: 0.621371, unit: "mph", unitPlural: "mph")
-        let mps = Rule(factor: 2.23694, unit: "mph", unitPlural: "mph")
+        let mi = Rule(factor: 0.621371, unit: "mi", unitPlural: "mi", kind: .distance)
+        let miWord = Rule(factor: 0.621371, unit: "mile", unitPlural: "miles", kind: .distance)
+        let oz = Rule(factor: 1 / 28.3495, unit: "oz", unitPlural: "oz", kind: .weight, promote: (32, 1 / 16, "lb", "lb"))
+        let ozWord = Rule(factor: 1 / 28.3495, unit: "ounce", unitPlural: "ounces", kind: .weight)
+        let lb = Rule(factor: 2.20462, unit: "lb", unitPlural: "lb", kind: .weight)
+        let lbWord = Rule(factor: 2.20462, unit: "pound", unitPlural: "pounds", kind: .weight)
+        let tons = Rule(factor: 1.10231, unit: "ton", unitPlural: "tons", kind: .weight)
+        let mph = Rule(factor: 0.621371, unit: "mph", unitPlural: "mph", kind: .distance)
+        let mps = Rule(factor: 2.23694, unit: "mph", unitPlural: "mph", kind: .distance)
         // Areas: "20 square kilometres" must not be converted like a length.
-        let sqmi = Rule(factor: 0.386102, unit: "sq mi", unitPlural: "sq mi")
-        let sqmiWord = Rule(factor: 0.386102, unit: "square mile", unitPlural: "square miles")
+        let sqmi = Rule(factor: 0.386102, unit: "sq mi", unitPlural: "sq mi", kind: .distance)
+        let sqmiWord = Rule(factor: 0.386102, unit: "square mile", unitPlural: "square miles", kind: .distance)
         let inWord = Rule(factor: 1 / 2.54, unit: "inch", unitPlural: "inches",
                           promote: (36, 1 / 12, "foot", "feet"))
         return [
@@ -78,13 +111,18 @@ enum UnitText {
     }()
 
     static func localize(_ text: String, imperial: Bool) -> String {
-        guard imperial else { return text }
+        localize(text, imperial: imperial ? Set(MeasureKind.allCases) : [])
+    }
+
+    /// Converts only the kinds in `imperial`; the rest stay metric.
+    static func localize(_ text: String, imperial kinds: Set<MeasureKind>) -> String {
+        guard !kinds.isEmpty else { return text }
         let ns = text as NSString
         var result = ""
         var cursor = 0
         for match in regex.matches(in: text, range: NSRange(location: 0, length: ns.length)) {
             let unitKey = ns.substring(with: match.range(at: 4))
-            guard let rule = rules[unitKey],
+            guard let rule = rules[unitKey], kinds.contains(rule.kind),
                   let a = value(ns.substring(with: match.range(at: 1))) else { continue }
             let b = match.range(at: 3).location != NSNotFound ? value(ns.substring(with: match.range(at: 3))) : nil
             let joiner = match.range(at: 2).location != NSNotFound ? ns.substring(with: match.range(at: 2)) : nil

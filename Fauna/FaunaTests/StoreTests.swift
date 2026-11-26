@@ -312,6 +312,35 @@ final class StoreTests: XCTestCase {
         XCTAssertEqual(store.measured("Up to ~30 m"), "Up to ~30 m")
     }
 
+    func testEachKindOfUnitCanBeSwitchedOnItsOwn() {
+        let store = AppStore(fileURL: nil)
+        store.state.setAllUnits(.metric)
+        store.state.setUnitOverride(.weight, .imperial)
+        let text = "It weighs 70 kg, is 2 m long and travels 250 km at 40 km/h"
+        XCTAssertEqual(store.measured(text), "It weighs 155 lb, is 2 m long and travels 250 km at 40 km/h")
+        store.state.setUnitOverride(.distance, .imperial)
+        XCTAssertEqual(store.measured(text), "It weighs 155 lb, is 2 m long and travels 155 mi at 25 mph")
+        store.state.setUnitOverride(.length, .imperial)
+        XCTAssertEqual(store.measured(text), "It weighs 155 lb, is 6.6 ft long and travels 155 mi at 25 mph")
+        XCTAssertEqual(store.imperialKinds, Set(MeasureKind.allCases))
+        store.state.setAllUnits(.metric)
+        XCTAssertEqual(store.measured(text), text, "the all-units switch clears per-kind choices")
+        XCTAssertNil(store.state.weightUnits)
+    }
+
+    func testPerKindUnitsPersistAndOldSavesHaveNone() throws {
+        var s = AppState()
+        s.units = .imperial
+        s.setUnitOverride(.length, .metric)
+        let back = try JSONDecoder.fauna.decode(AppState.self, from: JSONEncoder.fauna.encode(s))
+        XCTAssertEqual(back.lengthUnits, .metric)
+        XCTAssertNil(back.weightUnits)
+        let old = try JSONDecoder.fauna.decode(AppState.self, from: Data(#"{"units":"imperial"}"#.utf8))
+        XCTAssertEqual(old.units, .imperial)
+        XCTAssertNil(old.lengthUnits)
+        XCTAssertNil(old.distanceUnits)
+    }
+
     func testDemoStore() {
         let store = AppStore.demo()
         XCTAssertEqual(store.currentAnimal?.id, "red-panda")

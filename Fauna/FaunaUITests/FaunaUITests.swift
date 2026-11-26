@@ -321,6 +321,23 @@ final class FaunaUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["Metres, kilograms, kilometres."].waitForExistence(timeout: 5))
     }
 
+    func testWeightLengthAndDistanceSwitchSeparately() {
+        let app = launch("-FaunaDemo", "-FaunaTab", "focus")
+        let metric = app.buttons["Metric"]
+        XCTAssertTrue(scroll(app, to: metric))
+        metric.tap()
+        app.buttons["oz, lb"].tap()
+        XCTAssertTrue(app.staticTexts["Metres, pounds, kilometres."].waitForExistence(timeout: 5))
+        app.buttons["mi, mph"].tap()
+        XCTAssertTrue(app.staticTexts["Metres, pounds, miles."].waitForExistence(timeout: 5))
+        app.buttons["in, ft"].tap()
+        app.buttons["g, kg"].tap()
+        XCTAssertTrue(app.staticTexts["Feet, kilograms, miles."].waitForExistence(timeout: 5))
+        metric.tap()
+        XCTAssertTrue(app.staticTexts["Metres, kilograms, kilometres."].waitForExistence(timeout: 5),
+                      "Metric resets every kind")
+    }
+
     func testSourcesAndLicenses() {
         let app = launch("-FaunaDemo", "-FaunaTab", "focus")
         let link = button(app, containing: "Sources & Licenses")
