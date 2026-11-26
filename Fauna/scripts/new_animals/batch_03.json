@@ -1,0 +1,430 @@
+[
+  {
+    "id": "american-marten",
+    "name": "American Marten",
+    "scientificName": "Martes americana",
+    "wikipediaTitle": "American marten",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "naWest",
+      "arctic"
+    ],
+    "range": "Northern forests from Newfoundland to Alaska, and south into the northern US",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 54.0,
+      "longitude": -100.0
+    },
+    "mapSpan": 35,
+    "tagline": "A treetop hunter that tunnels under the snow",
+    "lede": "Sleek, golden-brown and quick as a squirrel through the branches, the American marten is a small weasel of the northern forest. In winter it disappears beneath the snow, hunting voles in a hidden world of tunnels between fallen logs, and its silky fur once made it one of the most trapped animals in North America.",
+    "home": "American martens live across northern North America, from the tree line in Arctic Alaska and Canada south to New York and New England, and from Newfoundland to the Pacific coast of Canada. They depend on mature forests, especially conifer and mixed forests with plenty of fallen trees, stumps and branches near the ground.\n\nThat clutter matters in winter. Under the snow, it leaves gaps and passages where voles live, and where martens hunt, rest and shelter from the cold. Martens are scarce in young or heavily logged forest.",
+    "anatomy": "A marten is about the size of a mink, with a long, slender body, short legs, a bushy tail and large, rounded ears on a roughly triangular head. Its long, silky fur ranges from pale buff to tawny brown to almost black, with a paler head and darker legs and tail. On its throat and chest is a 'bib' that's a different shade, often orange or cream.\n\nMales are much bigger than females, sometimes weighing about 1.5 times as much. Martens have sharp, semi-retractable claws for climbing, and furry feet that help in snow.",
+    "life": "Martens are omnivores, but they rely mostly on small mammals, especially voles. They also catch red squirrels, mice, snowshoe hares and birds, and eat eggs, insects, carrion and berries in season.\n\nThey are solitary and active mostly at dawn, dusk and night, though they can be busy for 10 to 16 hours a day. In summer they may be active more than half the day; in deep winter as little as a sixth, resting in hollow logs, squirrel middens or under the snow. When it gets colder than about minus 20 degrees, they spend more time below the snow surface, where it's warmer.",
+    "family": "Martens mate in midsummer, in July or August, but the embryo doesn't implant in the female's womb until late winter, so kits aren't born until the following spring, in March or April.\n\nA litter has one to five kits, born blind and nearly hairless in a den in a hollow tree, log or rock pile. The mother moves them between dens as they grow, and they stay with her until autumn. Young martens are mature by a year old, though most don't breed until they're two. In the wild, females as old as 12 have still had young.",
+    "remarkable": "Martens are agile enough to chase red squirrels through the treetops, leaping from branch to branch, and can climb down trunks head-first. They spend much of their hunting time, though, on the ground and beneath the snow.",
+    "outlook": "The American marten is listed as Least Concern, and its numbers have recovered across much of its range. It is still missing from some areas where it once lived, and local populations depend on old forest. In Newfoundland, the island's isolated marten population fell to a few hundred and is protected.",
+    "people": "With fur as soft as Eurasian sable, the American marten was one of the most valuable animals of the North American fur trade. Trapping peaked around 1820, and populations stayed low until well into the 20th century, when trapping rules and reintroductions helped them recover.\n\nMartens are still trapped legally in much of Canada and Alaska. Because they need old, structurally complex forests, wildlife managers often use them as an indicator of forest health.",
+    "relatives": "The American marten is a mustelid, a member of the weasel family, along with fishers, minks, otters, badgers and wolverines. It is closely related to the Eurasian pine marten and the sable of Siberia.\n\nThe Pacific marten, of the Pacific Northwest and California, was once thought to be the same species, but genetic studies show it is separate, with a longer snout and broader skull. The fisher looks similar but is bigger and darker.",
+    "didYouKnow": "Martens are so dependent on old forests that a whole area of trees can be judged healthy or not by whether martens live there.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "50–70 cm with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "0.5–1.5 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to about 15 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly voles and other small mammals"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does an American marten hunt in winter?",
+        "choices": [
+          "In gaps and tunnels under the snow",
+          "Only in the treetops",
+          "On frozen lakes",
+          "Around farms, where it raids chicken coops for food"
+        ],
+        "explanation": "Fallen logs and branches leave spaces under the snow where voles live and martens hunt."
+      },
+      {
+        "prompt": "What is the 'bib' on a marten?",
+        "choices": [
+          "A patch of different-coloured fur on its throat",
+          "A flap of skin for gliding",
+          "Its winter nest",
+          "A thick ring of fat around the neck that keeps it warm"
+        ],
+        "explanation": "Martens have a throat and chest patch, often orange or cream, that differs from the rest of the coat."
+      },
+      {
+        "prompt": "Why was the American marten heavily trapped?",
+        "choices": [
+          "For its soft, valuable fur",
+          "Because it attacked livestock",
+          "For meat",
+          "Because it damaged trees in logging forests across Canada"
+        ],
+        "explanation": "Its sable-like fur made it one of the most valuable animals in the fur trade, which peaked around 1820."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Canadian Wildlife Federation",
+        "url": "https://cwf-fcf.org",
+        "blurb": "Works to conserve Canada's wildlife and habitats through research, education and restoration."
+      }
+    ]
+  },
+  {
+    "id": "american-pika",
+    "name": "American Pika",
+    "scientificName": "Ochotona princeps",
+    "wikipediaTitle": "American pika",
+    "group": "mammal",
+    "regions": [
+      "naWest"
+    ],
+    "range": "Rocky mountain slopes of western North America, from British Columbia to New Mexico",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 44.0,
+      "longitude": -114.0
+    },
+    "mapSpan": 22,
+    "tagline": "A tiny hay farmer of the high mountains",
+    "lede": "High on mountain rock slides, a small round animal with no visible tail scurries back and forth with mouthfuls of flowers. The American pika doesn't hibernate; instead, it spends the short alpine summer making hay, building piles of dried plants to eat through the long winter under the snow.",
+    "home": "American pikas live in the mountains of western North America, from central British Columbia and Alberta south through the Rockies, Cascades and Sierra Nevada to New Mexico and California.\n\nThey live almost exclusively in talus, the fields of broken rock that pile up below cliffs, usually at or above the tree line, next to meadows where they gather food. The gaps between boulders give shelter from predators and from heat. Pikas need cool conditions, and in the south of their range they are found only at high elevations.",
+    "anatomy": "An American pika is about 16 to 22 centimetres long and weighs 121 to 176 grams, about the weight of a large apple. It is egg-shaped and compact, with short legs, rounded ears and no visible tail, which helps it hold in heat. Its fur is greyish brown to buff, thick and soft.\n\nThe soles of its feet are furry, giving it grip on smooth rock. Pikas were once called 'little chief hares', and although they look like rodents, they are close relatives of rabbits and hares.",
+    "life": "Pikas are active by day, unusual for an animal their size. They eat a wide range of plants: grasses, sedges, thistles, fireweed and wildflowers. In late summer they 'go haying', making up to dozens of trips an hour to carry stems and flowers back to haypiles tucked under boulders. Some haypiles grow large enough to fill a bathtub.\n\nEach pika defends a territory of about 410 to 709 square metres, with neighbouring pairs living closer together than pikas of the same sex. They are noisy, using short calls to warn of eagles, hawks, coyotes, foxes and weasels, and longer songs in the breeding season.",
+    "family": "Pikas with neighbouring territories pair up, and females may choose between several males. Breeding starts about a month before the snow melts, and after a pregnancy of about 30 days, the female gives birth, as early as March at lower elevations.\n\nFemales usually have two litters a year, each averaging three young, though the second litter often fails. The young grow fast and must claim a territory and build a haypile of their own before their first winter.",
+    "remarkable": "Pikas can't cope with heat. They have a high body temperature and thick fur, and can die after a few hours in temperatures of around 25 degrees if they can't find cool shade. On hot days they shelter deep in the rocks, where the air stays cool.",
+    "outlook": "The American pika is listed as Least Concern overall, and it is still common in the northern Rockies and Canada. But it is considered an early warning sign of climate change. In parts of the Great Basin in Nevada and Utah, pikas have disappeared from lower sites, and warming pushes the survivors higher up mountains, where there is less room and nowhere higher to go.",
+    "people": "Pikas are popular with hikers, who often hear their sharp 'eep' calls from rock slides before spotting them. Because they are easy to survey by listening for calls and looking for haypiles, volunteer projects across the western US and Canada help scientists track where pikas still live and where they have vanished.\n\nThe naturalist John Richardson first described the species for science in 1828.",
+    "relatives": "Pikas are lagomorphs, the order that includes rabbits and hares. There are about 30 species of pika, most in the mountains and steppes of Asia; the American pika is one of only two in North America, along with the collared pika of Alaska and northwestern Canada.\n\nLike rabbits, pikas have a second, smaller pair of upper front teeth tucked behind the first, which is one way to tell lagomorphs from rodents.",
+    "didYouKnow": "An American pika may make more than a dozen trips an hour, all summer, to fill its winter haypile.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "16–22 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "121–176 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 3 years, up to 7"
+      },
+      {
+        "label": "Diet",
+        "value": "Grasses, flowers, stored hay"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the American pika survive the winter?",
+        "choices": [
+          "It eats hay it stored in summer",
+          "It hibernates in a burrow until spring",
+          "It migrates to lower valleys",
+          "It eats insects"
+        ],
+        "explanation": "Pikas don't hibernate; they live on haypiles of plants gathered in late summer."
+      },
+      {
+        "prompt": "Which animals are pikas most closely related to?",
+        "choices": [
+          "Rabbits and hares",
+          "Mice and squirrels",
+          "Guinea pigs",
+          "Marmots and groundhogs, which share their rocky homes"
+        ],
+        "explanation": "Pikas are lagomorphs, like rabbits and hares, not rodents."
+      },
+      {
+        "prompt": "Why are pikas called a warning sign of climate change?",
+        "choices": [
+          "They can't survive much heat",
+          "They eat plants that only grow in warm years",
+          "They breed faster when it's warm",
+          "They need deep snow to hibernate"
+        ],
+        "explanation": "Pikas overheat easily and are disappearing from lower, warmer sites."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Nature Conservancy of Canada",
+        "url": "https://www.natureconservancy.ca",
+        "blurb": "Protects natural areas across Canada, including mountain habitats in British Columbia and Alberta."
+      }
+    ]
+  },
+  {
+    "id": "black-footed-ferret",
+    "name": "Black-footed Ferret",
+    "scientificName": "Mustela nigripes",
+    "wikipediaTitle": "Black-footed ferret",
+    "group": "mammal",
+    "regions": [
+      "naWest"
+    ],
+    "range": "Prairie dog colonies of the North American Great Plains",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 43.5,
+      "longitude": -104.0
+    },
+    "mapSpan": 18,
+    "tagline": "Declared extinct, then found by a farm dog",
+    "lede": "In 1979 the black-footed ferret was declared extinct. Two years later, a last few turned up on a Wyoming ranch. From that last colony came one of the most dramatic rescues in conservation: every black-footed ferret alive today descends from just a handful of survivors, and one of them is a clone.",
+    "home": "Black-footed ferrets live on the short-grass and mixed-grass prairies of the Great Plains, and they depend completely on prairie dogs. They live in prairie dog colonies, sleep and raise young in prairie dog burrows, and eat prairie dogs.\n\nTheir historical range stretched from southern Alberta and Saskatchewan south to Texas, New Mexico and Arizona, matching the range of prairie dogs. Today they live only at reintroduction sites in the western United States, Canada and Mexico.",
+    "anatomy": "The black-footed ferret is a slender weasel, about 50 to 60 centimetres long including its tail, with a long neck and short, stout legs. Its fur is buff or tan, with black feet, a black tip to the tail, and a black mask across the eyes.\n\nIt has a broad, arched forehead, a short muzzle, few whiskers and large triangular ears. Its long, narrow body is perfectly shaped for slipping down prairie dog burrows.",
+    "life": "Black-footed ferrets are solitary and nocturnal, and spend most of their time underground. They are most active above ground from dusk to midnight and again before dawn. Up to 90 percent of their diet is prairie dogs, which they usually catch asleep in their burrows; the rest is mice, ground squirrels and rabbits.\n\nA single ferret eats over 100 prairie dogs a year, so a family needs a large colony to survive. Their own predators include coyotes, badgers, great horned owls and golden eagles.\n\nThey are expert diggers too, clearing soil out of burrows and leaving telltale trenches of dirt on the surface, one of the signs biologists look for when searching for ferrets at night with spotlights.",
+    "family": "Ferrets mate in February and March. After about six weeks, the female gives birth to a litter of usually three or four kits in a prairie dog burrow. The kits stay underground until they are about two months old.\n\nBy late summer and early autumn, the young become independent and disperse, the time when ferrets are most visible above ground. Life in the wild is hard: many ferrets live only about a year.",
+    "remarkable": "In 2021, scientists announced the first cloned black-footed ferret, a female named Elizabeth Ann, made from cells frozen in the 1980s from a ferret called Willa, whose genes had been lost from the living population. Her clone sisters, Noreen and Antonia, followed, and in 2024 Antonia gave birth to kits.",
+    "outlook": "The black-footed ferret is listed as endangered. It was moved to 'extinct in the wild' in 1996 and back to endangered in 2008 after reintroductions. About 300 live in the wild, with a few self-sustaining populations in South Dakota, Arizona and Wyoming.\n\nThe biggest threats are sylvatic plague, a disease introduced from Asia that kills both ferrets and prairie dogs, and the loss and poisoning of prairie dog colonies. Biologists vaccinate ferrets and treat prairie dog burrows to fight plague.",
+    "people": "Native American nations, including the Crow, Blackfoot, Sioux, Cheyenne and Pawnee, used black-footed ferrets in religious rites. Lewis and Clark never saw one, and the species wasn't described by science until John James Audubon and John Bachman did so in 1851.\n\nAs prairies were ploughed and prairie dogs poisoned as pests through the 20th century, ferrets vanished with them. In 1981, a dog named Shep brought a dead ferret home to a ranch near Meeteetse, Wyoming, revealing the last wild colony. After disease struck it, the last 18 ferrets were taken into captivity in 1987 to start a breeding programme.",
+    "relatives": "The black-footed ferret is a member of the weasel family and North America's only native ferret. Its closest relative is the steppe polecat of Asia, and both descend from a European ancestor that crossed into North America over the Bering land bridge.\n\nThe domestic ferret is a descendant of the European polecat, not of the black-footed ferret.",
+    "didYouKnow": "Every black-footed ferret alive today descends from just seven of the 18 animals rescued in Wyoming in the 1980s.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "50–60 cm with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "About 1 kg"
+      },
+      {
+        "label": "Wild population",
+        "value": "About 300"
+      },
+      {
+        "label": "Diet",
+        "value": "Up to 90% prairie dogs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes up most of a black-footed ferret's diet?",
+        "choices": [
+          "Prairie dogs",
+          "Grasshoppers",
+          "Ground-nesting birds and their eggs",
+          "Fish"
+        ],
+        "explanation": "Up to 90 percent of its diet is prairie dogs, and it lives in their burrows."
+      },
+      {
+        "prompt": "How was the last wild colony discovered in 1981?",
+        "choices": [
+          "A ranch dog brought home a dead ferret",
+          "A biologist found tracks in the snow near Meeteetse",
+          "A farmer trapped one",
+          "It was seen on a TV news report"
+        ],
+        "explanation": "A dog named Shep brought a ferret home near Meeteetse, Wyoming."
+      },
+      {
+        "prompt": "What disease is one of the biggest threats to black-footed ferrets?",
+        "choices": [
+          "Sylvatic plague",
+          "Rabies",
+          "White-nose syndrome",
+          "Chytrid fungus"
+        ],
+        "explanation": "Plague, introduced from Asia, kills both ferrets and the prairie dogs they depend on."
+      }
+    ],
+    "charities": [
+      {
+        "name": "World Wildlife Fund",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works with ranchers and tribes on the Northern Great Plains to restore prairies, prairie dogs and black-footed ferrets."
+      }
+    ]
+  },
+  {
+    "id": "walrus",
+    "name": "Walrus",
+    "scientificName": "Odobenus rosmarus",
+    "wikipediaTitle": "Walrus",
+    "group": "mammal",
+    "regions": [
+      "arctic"
+    ],
+    "range": "Arctic and subarctic seas, from the Bering Sea to Hudson Bay, Greenland and Svalbard",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 70.0,
+      "longitude": -30.0
+    },
+    "mapSpan": 50,
+    "tagline": "Tusks, whiskers and 2 tonnes of blubber",
+    "lede": "A walrus uses its tusks to haul itself out of the sea, its whiskers to feel for clams in the dark, and its mouth like a vacuum to suck them out of their shells. Pacific bulls can top 2 tonnes, and in late summer tens of thousands crowd onto Arctic beaches together.",
+    "home": "Walruses live around the North Pole in the Arctic Ocean and nearby seas. Pacific walruses spend the winter in the Bering Sea and migrate north into the Chukchi Sea in spring and summer, several hundred thousand animals following the ice. Atlantic walruses live from the Canadian Arctic and Hudson Bay to Greenland, Svalbard and northern Russia.\n\nThey prefer shallow water over the continental shelf, where they can reach the seafloor, and rest on floating sea ice between dives. When the ice melts back, they haul out on rocky beaches instead.",
+    "anatomy": "Walruses are huge: most Pacific bulls weigh 800 to 1,700 kg, and some more than 2,000 kg. Only the two elephant seals are bigger among seals and sea lions. Their skin is wrinkled and nearly hairless, up to 10 centimetres thick on a bull's neck and shoulders, over a layer of blubber up to 15 centimetres deep. Young walruses are deep brown and grow paler and more cinnamon with age.\n\nBoth sexes have tusks, which are long canine teeth that can reach 1 metre and weigh more than 5 kg; males' are longer and thicker. Around the mouth grow 400 to 700 stiff, sensitive whiskers in rows, up to 30 centimetres long.",
+    "life": "Walruses feed mostly on clams and other shellfish on the seafloor, usually in water less than 80 metres deep. They don't dig with their tusks. Instead they search with their whiskers, then blow jets of water or suck with their powerful mouths to expose clams and pull the soft bodies out of their shells. They also eat worms, snails, sea cucumbers and, occasionally, seals.\n\nWalruses are very social. They use their tusks to climb out onto ice, to defend themselves against polar bears and orcas, and to establish rank: the walrus with the biggest tusks usually wins.",
+    "family": "Bulls reach maturity as early as 7 years old but usually don't mate until they're fully grown, at around 15. In winter, they display to females in the water, making whistles, knocks and bell-like sounds, and fight rivals with their tusks.\n\nA female gives birth to a single calf, usually every three years, after a pregnancy of about 15 months. Calves can swim at birth and stay with their mothers for two years or more, a long time for a seal. Walruses live 20 to 30 years in the wild.",
+    "remarkable": "A walrus can suck so hard that it pulls a clam out of its shell in seconds, and can eat thousands of clams in a single feeding session. When resting at sea, it can inflate air sacs in its throat to float upright and sleep with its head above water.",
+    "outlook": "The walrus is listed as Vulnerable. Commercial hunting in the 19th and early 20th centuries for blubber, ivory and leather crashed numbers all around the Arctic, and Atlantic walruses still live in small, scattered groups.\n\nThe biggest threat now is the loss of sea ice. Without ice over shallow feeding grounds, walruses crowd onto beaches by the tens of thousands, where stampedes set off by planes, boats or polar bears can crush calves.",
+    "people": "Walruses have been central to many Arctic Indigenous cultures, which still hunt them for meat, fat, skin and ivory, used for tools and carving. Hunting by Indigenous communities continues under co-management rules in Alaska, Canada, Greenland and Russia.\n\nThe oldest known walrus was Slowpoke, who lived to 49 at SeaWorld Orlando.",
+    "relatives": "The walrus is the only living member of its family, Odobenidae, one of three groups of pinnipeds along with true seals and eared seals, such as sea lions. Its closest relatives are the eared seals.\n\nFossils show many extinct walrus relatives, including some without long tusks. The two living subspecies are the Atlantic walrus and the Pacific walrus, which is larger.",
+    "didYouKnow": "Walruses use their tusks to haul themselves out of the water onto ice, and their scientific family name, Odobenidae, means 'tooth-walkers'.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "800–1,700 kg, up to 2,000 kg"
+      },
+      {
+        "label": "Tusks",
+        "value": "Up to 1 m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20–30 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Clams and other shellfish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a walrus find clams on the dark seafloor?",
+        "choices": [
+          "With its sensitive whiskers",
+          "By digging with its tusks",
+          "By echolocation",
+          "By watching for bubbles that clams give off as they breathe"
+        ],
+        "explanation": "It feels for prey with hundreds of stiff whiskers, then sucks the clams from their shells."
+      },
+      {
+        "prompt": "What are walrus tusks?",
+        "choices": [
+          "Very long canine teeth",
+          "Horns made of keratin",
+          "Bones growing from the jaw",
+          "Hardened whiskers that grow back every year"
+        ],
+        "explanation": "Tusks are elongated canine teeth, found in both males and females."
+      },
+      {
+        "prompt": "Why are walruses gathering on beaches in huge numbers?",
+        "choices": [
+          "The sea ice they rest on is disappearing",
+          "To escape orcas",
+          "The water is too warm to swim in",
+          "To breed"
+        ],
+        "explanation": "Without ice over their feeding grounds, they haul out on land, where stampedes can crush calves."
+      }
+    ],
+    "charities": [
+      {
+        "name": "World Wildlife Fund",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works with Arctic communities to protect walruses and other wildlife as sea ice declines."
+      }
+    ]
+  },
+  {
+    "id": "sea-otter",
+    "name": "Sea Otter",
+    "scientificName": "Enhydra lutris",
+    "wikipediaTitle": "Sea otter",
+    "group": "mammal",
+    "regions": [
+      "naWest",
+      "asia"
+    ],
+    "range": "North Pacific coasts, from Japan and Russia through Alaska to California",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 52.0,
+      "longitude": -160.0
+    },
+    "mapSpan": 40,
+    "tagline": "The thickest fur in the animal kingdom",
+    "lede": "Floating on its back in a kelp forest, cracking a clam on a rock balanced on its chest, the sea otter is one of the few animals that use tools. It has no blubber to keep warm, so it relies on the densest fur of any animal, and by eating sea urchins it keeps entire kelp forests alive.",
+    "home": "Sea otters live along the coasts of the North Pacific, from northern Japan and Russia's Kuril and Commander Islands through the Aleutian Islands and Alaska, down British Columbia and Washington to California.\n\nThey stay close to shore, usually within a kilometre or two, in water shallow enough to dive to the seafloor. Many live in kelp forests, where they wrap themselves in kelp fronds to keep from drifting away while they sleep.",
+    "anatomy": "Sea otters are the heaviest members of the weasel family but among the smallest marine mammals. Males weigh 22 to 45 kg and are 1.2 to 1.5 metres long; females are smaller.\n\nInstead of blubber, they are kept warm by fur with 100,000 to 400,000 hairs per square centimetre, trapping a layer of air against the skin. They must groom constantly to keep it clean and waterproof. Their hind feet are broad, webbed flippers, and their front paws have retractable claws and tough pads for gripping slippery prey. Under each foreleg is a loose pouch of skin where they store food and a favourite rock.",
+    "life": "Sea otters feed in short dives to the seafloor, usually lasting about a minute, though they can hold their breath for up to five. They eat sea urchins, clams, mussels, crabs, snails and some fish, and they can flip over rocks with their paws to find them.\n\nTo open hard shells, an otter floats on its back with a rock on its chest and bashes the prey against it. To stay warm in cold water, it has to eat about a quarter of its body weight every day. Otters feed in the morning and afternoon, rest at midday and often feed again around midnight.",
+    "family": "Males defend territories and mate with the females that live there. After mating, a female gives birth to a single pup, usually in the water. The pup's fur is so fluffy and full of air that it can't dive; it floats like a cork while its mother hunts.\n\nThe mother carries the pup on her chest, grooms it and nurses it for about six months, teaching it to dive and use tools.",
+    "remarkable": "Sea otters are a keystone species. By eating sea urchins, they stop urchins from grazing kelp forests down to bare rock. Where otters disappeared, kelp forests collapsed into 'urchin barrens'; where they returned, the kelp, and the fish and other life it shelters, came back.",
+    "outlook": "The sea otter is listed as endangered. Hunting for their fur between 1741 and 1911 reduced a population of perhaps 150,000 to 300,000 to just 1,000 to 2,000 animals in a few scattered places.\n\nAn international hunting ban in 1911, protection and reintroductions brought them back to much of their range, including British Columbia. But numbers in the Aleutians fell sharply from the 1990s, possibly because orcas began eating them, and oil spills, disease and conflicts with shellfish fisheries remain threats.",
+    "people": "Sea otter fur was the most valuable in the 18th and 19th centuries, driving Russian, British and American traders across the North Pacific. Their hunt shaped the history of Alaska and the Northwest Coast.\n\nToday, otters are a draw for wildlife watchers, and the Monterey Bay Aquarium has raised orphaned pups with surrogate otter mothers to return them to the wild.",
+    "relatives": "The sea otter is the only living member of its genus, Enhydra, and part of the otter subfamily of the weasel family, along with 13 other otter species, from the giant otter of the Amazon to the North American river otter.\n\nIt is the only mustelid with no functional scent glands, and the only one able to spend its whole life at sea without coming ashore.",
+    "didYouKnow": "Sea otters sometimes hold hands while they sleep, or wrap themselves in kelp, so they don't drift apart.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1–1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "14–45 kg"
+      },
+      {
+        "label": "Dive time",
+        "value": "Usually about 1 minute"
+      },
+      {
+        "label": "Diet",
+        "value": "Sea urchins, clams, crabs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a sea otter stay warm without blubber?",
+        "choices": [
+          "Its fur is the densest of any animal",
+          "It shivers constantly",
+          "It basks on rocks all day",
+          "It sleeps curled up in underwater caves between the kelp"
+        ],
+        "explanation": "Its fur, with up to 400,000 hairs per square centimetre, traps a layer of insulating air."
+      },
+      {
+        "prompt": "How do sea otters help kelp forests?",
+        "choices": [
+          "They eat sea urchins that graze on kelp",
+          "They plant kelp seeds",
+          "They clean the kelp with their paws",
+          "They chase away fishing boats"
+        ],
+        "explanation": "Without otters, urchins can graze kelp forests down to bare rock."
+      },
+      {
+        "prompt": "What does a sea otter use a rock for?",
+        "choices": [
+          "To crack open shellfish on its chest",
+          "To anchor itself while sleeping",
+          "To dig burrows",
+          "To scratch its fur when it gets dirty"
+        ],
+        "explanation": "It floats on its back with a rock on its chest and bashes shellfish against it."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Monterey Bay Aquarium",
+        "url": "https://www.montereybayaquarium.org",
+        "blurb": "Runs a sea otter research and rescue programme and works to protect ocean habitats."
+      }
+    ]
+  }
+]

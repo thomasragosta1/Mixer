@@ -1,0 +1,441 @@
+[
+  {
+    "id": "snowy-owl",
+    "name": "Snowy Owl",
+    "scientificName": "Bubo scandiacus",
+    "wikipediaTitle": "Snowy owl",
+    "group": "bird",
+    "regions": [
+      "arctic",
+      "naEast",
+      "naWest"
+    ],
+    "range": "Arctic tundra around the North Pole; winters south into Canada and the northern US",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 70.0,
+      "longitude": -90.0
+    },
+    "mapSpan": 50,
+    "tagline": "The Arctic's white hunter of the midnight sun",
+    "lede": "The only owl that is mostly white, the snowy owl is the largest bird of prey of the high Arctic. It hunts in the round-the-clock daylight of the tundra summer, and in some winters, flocks of them fly south and turn up on airports, beaches and farm fields from Canada to Texas.",
+    "home": "Snowy owls breed on the open Arctic tundra around the North Pole, usually north of 60 degrees latitude, in Alaska, northern Canada, Greenland, Scandinavia and Russia. They are nomads: where they nest each year depends on where lemmings are plentiful.\n\nIn winter, many move south. They prefer wide-open country that resembles the tundra, such as prairies, shorelines, marshes, farm fields and airports. In some years, called irruptions, unusually large numbers spread across southern Canada and the northern United States, and a few reach much farther south.",
+    "anatomy": "This is one of the largest owls in the world, and the heaviest bird of prey in the high Arctic. It has a round head with bright yellow eyes and, usually, no visible ear tufts. Males are almost pure white; females and young birds are flecked and barred with dark brown, which helps hide them on the nest.\n\nTheir feathers are extremely thick and long, covering even their feet and toes like fluffy slippers, and their dense plumage makes them one of the heaviest owls for their size. Standing on the ground, a snowy owl can look like a pale rock or a lump of snow.",
+    "life": "Unlike most owls, snowy owls are often active by day, which is necessary in an Arctic summer with no darkness at all. On the breeding grounds they hunt mainly lemmings, and an adult may eat several a day. In other seasons they take almost any prey they can find: voles, hares, ptarmigan, ducks, seabirds and even carrion.\n\nThey usually hunt by sitting on a low rise and watching, then flying low to snatch prey from the ground, the water or the air. Their main call is a deep, barking hoot, and scientists have recorded as many as 15 different calls.",
+    "family": "Snowy owls nest on the ground, usually on a small rise with a good view, where the female scrapes a shallow hollow. When lemmings are abundant, a female may lay a very large clutch, often 3 to 11 eggs, laid over several days, so the chicks hatch at different times. In years with few lemmings, many don't breed at all.\n\nThe female incubates while the male hunts for both of them, and the male defends the nest fiercely, diving at Arctic foxes, wolves and even people. The chicks leave the nest before they can fly and scatter across the tundra while their parents keep feeding them.",
+    "remarkable": "Satellite tracking has shown that snowy owls wander enormous distances, and that some spend the winter far out on the frozen Arctic Ocean, hunting seabirds in open leads in the sea ice, during weeks of near-total darkness.",
+    "outlook": "The snowy owl was listed as Vulnerable in 2017, after studies suggested the global population was far smaller than once thought and may be declining. Climate change threatens the tundra and its lemming cycles, and in the south, owls are killed by collisions with vehicles, planes and power lines.",
+    "people": "Snowy owls have long been important to Arctic peoples, and appear in Inuit stories and art. The snowy owl is the official bird of Quebec. In the Harry Potter books and films, Harry's owl Hedwig is a snowy owl, which brought the species worldwide fame.\n\nWinter irruptions draw crowds of birdwatchers. At some airports, where owls are drawn to the open grassland, they are trapped and moved to safer places rather than harmed.",
+    "relatives": "The snowy owl belongs to the genus Bubo, the horned owls and eagle-owls, which includes the great horned owl of the Americas and the Eurasian eagle-owl. It was once placed in its own genus, Nyctea, but genetic studies show it is a close relative of the great horned owl.\n\nIts scientific name, scandiacus, means 'of Scandinavia'. Carl Linnaeus described it in 1758.",
+    "didYouKnow": "Male snowy owls tend to get whiter as they age, and some very old males are almost pure white.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "52–71 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "1.25–1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "1.6–3 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Lemmings, voles, birds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why are snowy owls often active during the day?",
+        "choices": [
+          "Arctic summers have no darkness",
+          "They can't see well at night",
+          "Their prey only comes out at noon",
+          "They need sunlight to keep their eggs warm on the ground"
+        ],
+        "explanation": "In the tundra summer the sun never sets, so they hunt in daylight."
+      },
+      {
+        "prompt": "What decides how many eggs a snowy owl lays?",
+        "choices": [
+          "How many lemmings there are",
+          "The female's age",
+          "How cold the winter was",
+          "How many owls nest nearby on the same patch of tundra"
+        ],
+        "explanation": "In lemming-rich years clutches are large; when lemmings crash, many don't breed."
+      },
+      {
+        "prompt": "How can you tell a male snowy owl from a female?",
+        "choices": [
+          "Males are whiter",
+          "Males have ear tufts",
+          "Females are white all over",
+          "Males have red eyes"
+        ],
+        "explanation": "Males are nearly pure white, while females have more dark brown flecks and bars."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Project SNOWstorm",
+        "url": "https://www.projectsnowstorm.org",
+        "blurb": "Tracks snowy owls with GPS transmitters to learn how they move and survive in winter."
+      }
+    ]
+  },
+  {
+    "id": "humpback-whale",
+    "name": "Humpback Whale",
+    "scientificName": "Megaptera novaeangliae",
+    "wikipediaTitle": "Humpback whale",
+    "group": "mammal",
+    "regions": [
+      "openOcean",
+      "naEast",
+      "naWest"
+    ],
+    "range": "Oceans worldwide, migrating between polar feeding grounds and tropical breeding waters",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": -140.0
+    },
+    "mapSpan": 110,
+    "tagline": "The singing whale that hunts with nets of bubbles",
+    "lede": "A 40-tonne humpback whale can launch its whole body out of the sea, sing songs that last half an hour, and catch fish by blowing a spiral net of bubbles. Hunted almost to extinction in the 20th century, it has made one of the greatest comebacks in the ocean.",
+    "home": "Humpback whales live in every ocean. Most make long seasonal migrations, among the longest of any mammal: they spend the summer feeding in cold, food-rich waters towards the poles, then travel to warm, shallow tropical waters to breed and give birth in winter.\n\nIn the North Atlantic, humpbacks feed off Newfoundland, the Gulf of St. Lawrence, Iceland and Norway, and breed in the Caribbean. Pacific humpbacks feed off Alaska and British Columbia and breed around Hawaii and Mexico. Southern Hemisphere humpbacks feed in Antarctic waters.",
+    "anatomy": "Adults are usually 14 to 15 metres long, and can reach 17 metres and 40 tonnes. Females are a little longer than males. A humpback has a stocky body, a small dorsal fin on a hump, which gives it its name, and knobbly bumps called tubercles on its head and jaw, each with a stiff hair.\n\nIts flippers are the longest of any whale, up to a third of its body length, and its scientific name, Megaptera, means 'big wing'. The underside of its tail flukes has a black and white pattern unique to each whale, which researchers use to identify individuals. Instead of teeth, it has baleen plates for straining food.",
+    "life": "Humpbacks feed from spring to autumn, mainly on krill and small schooling fish such as herring, capelin and sand lance. They often feed in groups, using a technique called bubble-netting: one or more whales swim in a spiral below a shoal, blowing bubbles that rise around the fish like a curtain, then the whales lunge up through the middle with their mouths wide open.\n\nThey are very active at the surface, leaping clear of the water, a move called breaching, and slapping the sea with their flippers and tails. Apart from mothers and calves, groups usually stay together for only days or weeks.\n\nHumpbacks often carry passengers: barnacles and whale lice cling to their skin, especially on the head and flippers.",
+    "family": "Humpbacks mate in their winter breeding grounds, where both sexes have several partners. Males follow females and fight rivals by charging, ramming and slapping. After a pregnancy of about 11 months, the female gives birth in warm, shallow water to a single calf about 4 metres long.\n\nThe calf drinks rich milk and grows quickly, then makes the long migration to the feeding grounds beside its mother. Orcas are the humpback's main natural predator, and mothers and other adults escort calves to protect them.",
+    "remarkable": "Male humpbacks sing long, complex songs during the breeding season, lasting 4 to 33 minutes and repeated for hours. All the males in a population sing the same song, which slowly changes over the season, and new songs can spread from one ocean region to another, like a hit tune.",
+    "outlook": "The humpback whale is listed as Least Concern. Commercial whaling reduced the world population to about 5,000 by the 1960s, before a ban on hunting humpbacks in 1966. Numbers have since recovered to about 135,000. Entanglement in fishing gear, collisions with ships and noise pollution still kill and injure many.",
+    "people": "Humpbacks were among the most heavily hunted whales because they swim slowly and stay close to coasts. The 1970 album 'Songs of the Humpback Whale', made from underwater recordings, became a bestseller and helped launch the worldwide campaign to save whales.\n\nToday humpbacks are the stars of whale watching, from Newfoundland and Quebec to Hawaii and Australia.",
+    "relatives": "The humpback is a rorqual, part of the family Balaenopteridae, which includes the blue whale, fin whale and minke whales. Rorquals have pleated throats that expand like a balloon to gulp huge mouthfuls of water and prey. It is the only species in its genus.\n\nIts species name, novaeangliae, means 'of New England', where early specimens were described.",
+    "didYouKnow": "A humpback's song can be heard at least 10 kilometres away underwater.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "14–17 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 40 tonnes"
+      },
+      {
+        "label": "Lifespan",
+        "value": "45–100 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Krill and small fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is bubble-netting?",
+        "choices": [
+          "Trapping fish inside a ring of rising bubbles",
+          "Breathing out underwater to sink",
+          "Cleaning barnacles off with bubbles",
+          "Making a bubble nest for a calf to rest in at the surface"
+        ],
+        "explanation": "Humpbacks blow a spiral of bubbles around a shoal, then lunge up through the middle."
+      },
+      {
+        "prompt": "Who sings the famous humpback songs?",
+        "choices": [
+          "Males, in the breeding season",
+          "Calves calling their mothers",
+          "Every humpback, all year",
+          "Females guarding their young"
+        ],
+        "explanation": "Males sing long, complex songs in the breeding season, and all males in a population sing the same song."
+      },
+      {
+        "prompt": "How do researchers tell individual humpbacks apart?",
+        "choices": [
+          "By the pattern under their tail",
+          "By the shape of their teeth",
+          "By the length of their flippers",
+          "By the sound of their breathing at the surface"
+        ],
+        "explanation": "The black and white pattern under each whale's tail flukes is unique."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Whale and Dolphin Conservation",
+        "url": "https://whales.org",
+        "blurb": "A global charity working to stop whaling, entanglement and other threats to whales and dolphins."
+      }
+    ]
+  },
+  {
+    "id": "coyote",
+    "name": "Coyote",
+    "scientificName": "Canis latrans",
+    "wikipediaTitle": "Coyote",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "naWest",
+      "centralAmerica"
+    ],
+    "range": "Almost all of North America, from Alaska to Panama",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 40.0,
+      "longitude": -100.0
+    },
+    "mapSpan": 50,
+    "tagline": "The trickster that moved into the cities",
+    "lede": "Five hundred years ago, coyotes lived mainly on the open plains and deserts of the West. Today they live in almost every corner of North America, from Alaska to Panama, including the middle of Chicago, Los Angeles and Toronto. Few animals have adapted so well to a world reshaped by people.",
+    "home": "When Europeans arrived in the Americas, coyotes were found mostly on the prairies and in the dry regions of the western half of the continent. As forests were cleared and wolves were killed off, they spread east and north, reaching the Atlantic coast, northern Canada and Alaska.\n\nThey also spread south, through Central America, and were first seen across the Panama Canal in 2013. Today they live in almost every habitat: deserts, mountains, forests, prairies, farmland, suburbs and big cities.",
+    "anatomy": "A coyote looks like a slim, smaller wolf, with large pointed ears, a narrow muzzle and a bushy, black-tipped tail that it carries low. Males usually weigh 8 to 20 kg and females 7 to 18 kg. Northern coyotes average about 18 kg, larger than those in Mexico, which average about 11.5 kg.\n\nIts fur is mostly light grey and reddish brown, mixed with black and white, and varies across its range. Coyotes in the Northeast are larger, partly because many have some wolf ancestry from interbreeding as they spread east.",
+    "life": "Coyotes are opportunists. They eat rabbits, hares, rodents, deer, birds, reptiles, fish, insects and carrion, plus fruit and vegetables. A coyote often hunts mice by pouncing high and landing on them with its front paws, like a fox. Pairs or groups can bring down deer, especially fawns or in deep snow.\n\nTheir social life is flexible. Many live as family groups, a breeding pair with their offspring, while others live alone or in loose packs. Territories range from under 1 square kilometre to more than 60, depending on food. Their famous howls and yips help family members keep in touch and warn others off.",
+    "family": "Coyote pairs often stay together for several years. They mate in late winter, and after a pregnancy of about two months, the female gives birth in a den, often an old burrow dug by a badger or fox, a rock crevice or a hollow log.\n\nA litter usually has about four to seven pups. Both parents bring food, and older offspring sometimes help. The pups emerge from the den at about three weeks, and many leave home in autumn, sometimes travelling more than 100 kilometres to find a territory of their own.",
+    "remarkable": "When coyotes are heavily hunted or trapped, the survivors respond by having bigger litters and breeding younger, so populations bounce back quickly. Decades of efforts to kill coyotes failed to stop them spreading across the continent.",
+    "outlook": "The coyote is listed as Least Concern, and it is more widespread and numerous than ever. Its main threats come from people: hunting, trapping and traffic. In cities, conflicts arise when coyotes lose their fear of people, usually because they've been fed.",
+    "people": "Coyote is one of the great characters of Indigenous stories across North America, a clever, foolish and sometimes creative trickster. The name 'coyote' comes from 'coyotl' in Nahuatl, the language of the Aztecs and of many people in central Mexico today.\n\nRanchers have long seen coyotes as a threat to sheep and other livestock, and government programmes have killed millions. In cities, studies of urban coyotes show they mostly eat rodents and rabbits and avoid people, often travelling at night along rail lines and ravines.",
+    "relatives": "The coyote is a member of the dog family, closely related to the grey wolf, the eastern wolf, the red wolf and the domestic dog. In fact, these species can interbreed, and many eastern coyotes carry wolf and dog genes.\n\nCoyote-like ancestors of the genus Canis first appeared in North America more than 5 million years ago, and the coyote itself is often described as a living example of what early wolves looked like.",
+    "didYouKnow": "A coyote can run at up to about 65 km/h, fast enough to catch a jackrabbit.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1–1.35 m with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "7–20 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "10–14 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Rodents, rabbits, deer, fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where did coyotes mainly live before Europeans arrived?",
+        "choices": [
+          "The plains and dry lands of the West",
+          "The forests of Quebec",
+          "The Arctic",
+          "The swamps of Florida and the Gulf Coast"
+        ],
+        "explanation": "They were mostly found in the western half of the continent before spreading east and north."
+      },
+      {
+        "prompt": "What happens when coyotes are heavily hunted?",
+        "choices": [
+          "Survivors have bigger litters",
+          "They leave the area forever",
+          "They stop howling",
+          "They move into the treetops to hide from hunters at night"
+        ],
+        "explanation": "They breed younger and have more pups, so numbers recover quickly."
+      },
+      {
+        "prompt": "Where does the word 'coyote' come from?",
+        "choices": [
+          "Nahuatl, the Aztec language",
+          "Spanish",
+          "Cree",
+          "Latin, from a word for 'barking dog' used by explorers"
+        ],
+        "explanation": "It comes from 'coyotl' in Nahuatl, spoken in central Mexico."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Project Coyote",
+        "url": "https://projectcoyote.org",
+        "blurb": "Promotes coexistence between people and coyotes and other wild carnivores."
+      }
+    ]
+  },
+  {
+    "id": "bald-eagle",
+    "name": "Bald Eagle",
+    "scientificName": "Haliaeetus leucocephalus",
+    "wikipediaTitle": "Bald eagle",
+    "group": "bird",
+    "regions": [
+      "naEast",
+      "naWest"
+    ],
+    "range": "Lakes, rivers and coasts across Canada, Alaska, the US and northern Mexico",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": -100.0
+    },
+    "mapSpan": 50,
+    "tagline": "The eagle that builds a one-tonne nest",
+    "lede": "The bald eagle isn't bald. Its name comes from an old meaning of the word: white-headed. North America's only native sea eagle builds the biggest tree nests ever recorded, and after nearly vanishing from the lower 48 US states, it has made one of the great conservation comebacks.",
+    "home": "Bald eagles live across most of North America: nearly all of Canada and Alaska, the contiguous United States and northern Mexico. They are found from the bayous of Louisiana and the Sonoran Desert to the forests of Quebec and New England.\n\nThey need water. They nest near seacoasts, rivers, big lakes and marshes with plenty of fish, and with tall old trees for nesting. Northern birds migrate south in winter, and many gather where water stays open, sometimes in hundreds, below dams or at salmon runs.",
+    "anatomy": "An adult bald eagle is dark brown with a white head and tail and a large, hooked yellow beak, yellow feet and pale yellow eyes. Females are about 25 percent larger than males. Wingspans range from about 1.8 to 2.3 metres.\n\nYoung eagles are mottled brown and white and don't get their white head and tail until they are four or five years old, when they're ready to breed. Their feet have rough pads on the toes, called spicules, which help them grip slippery fish.",
+    "life": "Fish make up more than half the bald eagle's diet. It snatches them from near the surface with its talons in a swooping glide, rather than plunging in. Birds, mostly waterbirds, and mammals make up much of the rest, and more than 400 species have been recorded as prey.\n\nBald eagles are also skilled thieves and scavengers. They eat carrion, gather at fish-processing plants and garbage dumps, and often chase ospreys and other birds to steal their catch. They soar on rising warm air, cruise at about 56 to 70 km/h and can dive at up to 160 km/h.",
+    "family": "Bald eagles usually mate for life. A pair builds a huge nest of sticks in a tall tree near water and adds to it every year. The female lays one to three eggs, and both parents incubate them for about 35 days.\n\nThe chicks fledge after about 10 to 12 weeks, but stay near the nest for several more weeks while they learn to hunt. The first-hatched chick often gets more food, and in poor years the youngest may not survive.",
+    "remarkable": "Because pairs keep adding to the same nest year after year, bald eagle nests become enormous, up to 4 metres deep, 2.5 metres across and about a tonne in weight, the largest tree nests ever recorded for any animal.",
+    "outlook": "The bald eagle is listed as Least Concern. In the mid-20th century it nearly disappeared from the contiguous United States, killed by hunting, habitat loss and especially the pesticide DDT, which made eggshells so thin they broke under the parents.\n\nDDT was banned in the US in 1972, and the eagle was protected. It recovered so well that it was removed from the US endangered species list in 2007. Lead poisoning, from eating carcasses containing bullet fragments, is still a major cause of death.",
+    "people": "The bald eagle is the national bird and symbol of the United States, chosen for the Great Seal in 1782. It is also sacred to many Indigenous peoples, and its feathers are used in ceremonies; in the US, only enrolled members of federally recognised tribes may legally hold eagle feathers.\n\nWinter eagle gatherings, such as on the Squamish River in British Columbia and the Chilkat River in Alaska, draw thousands of visitors.",
+    "relatives": "The bald eagle is a sea eagle, genus Haliaeetus, and forms a pair with the white-tailed eagle of Europe and Asia, which fills the same role there. Other relatives include Steller's sea eagle of Russia and Japan and the African fish eagle.\n\nSea eagles are not closely related to golden eagles, which belong to a different group of 'booted' eagles with feathered legs.",
+    "didYouKnow": "A bald eagle's feathers weigh about twice as much as its skeleton.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "1.8–2.3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "3–6.3 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 20 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly fish, also birds and carrion"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why is the bald eagle called 'bald'?",
+        "choices": [
+          "An old meaning of 'bald' was white-headed",
+          "Young eagles have no head feathers",
+          "It loses its head feathers in winter",
+          "Its head is covered in bare, wrinkled yellow skin"
+        ],
+        "explanation": "'Bald' once meant 'white-headed', describing the adult's white head feathers."
+      },
+      {
+        "prompt": "What nearly wiped out bald eagles in the 20th century?",
+        "choices": [
+          "The pesticide DDT, which thinned eggshells",
+          "A shortage of fish",
+          "Cold winters",
+          "Competition from golden eagles that moved east"
+        ],
+        "explanation": "DDT made eggshells break; after it was banned in 1972, eagles recovered."
+      },
+      {
+        "prompt": "How does a bald eagle usually catch fish?",
+        "choices": [
+          "Snatching them from the surface with its talons",
+          "Diving deep underwater",
+          "Wading in shallow water",
+          "Using its beak to spear them"
+        ],
+        "explanation": "It swoops low and grabs fish near the surface rather than plunging in."
+      }
+    ],
+    "charities": [
+      {
+        "name": "American Eagle Foundation",
+        "url": "https://www.eagles.org",
+        "blurb": "Works to protect bald eagles and other birds of prey through rescue, education and research."
+      }
+    ]
+  },
+  {
+    "id": "peregrine-falcon",
+    "name": "Peregrine Falcon",
+    "scientificName": "Falco peregrinus",
+    "wikipediaTitle": "Peregrine falcon",
+    "group": "bird",
+    "regions": [
+      "naEast",
+      "naWest",
+      "europe",
+      "asia",
+      "africa",
+      "oceania",
+      "southAmerica",
+      "arctic"
+    ],
+    "range": "Every continent except Antarctica, from Arctic tundra to tropical coasts and city centres",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": 10.0
+    },
+    "mapSpan": 120,
+    "tagline": "The fastest animal on Earth, in a dive",
+    "lede": "When a peregrine falcon folds its wings and drops onto a pigeon from high above, it may hit over 320 km/h, making it the fastest animal on the planet. Driven nearly to extinction by pesticides, it has bounced back, and now nests on skyscrapers in many of the world's biggest cities.",
+    "home": "The peregrine is found almost everywhere on Earth, from the Arctic tundra to the tropics, missing only from extreme polar regions, high mountains, most rainforests and, among large ice-free landmasses, New Zealand. That makes it the world's most widespread bird of prey.\n\nIt lives mostly along mountain ranges, river valleys, coastlines and, increasingly, cities, where skyscrapers, bridges and cathedrals stand in for cliffs. Peregrines that breed in the Arctic migrate long distances; those in milder places often stay on their territory all year.",
+    "anatomy": "A peregrine is about the size of a crow: 34 to 58 centimetres long, with a wingspan of 74 to 120 centimetres. Females are up to 30 percent larger than males. Adults have a blue-grey back, pale underparts finely barred with black, and a black head with a dark 'moustache' stripe below each eye.\n\nIts long, pointed wings and stiff tail are built for speed. Small bony tubercles in its nostrils are thought to deflect the rush of air during a high-speed dive, so the falcon can keep breathing, and a third eyelid protects its eyes.",
+    "life": "Peregrines eat mostly birds, from songbirds to ducks, caught in mid-air. Pigeons are a favourite, and feral pigeons support many city peregrines. Worldwide, an estimated 1,500 to 2,000 bird species, about a fifth of all bird species, are hunted by peregrines somewhere.\n\nA peregrine usually hunts from high above, then performs a 'stoop', a steep, wings-tucked dive, striking its prey with its feet or grabbing it. It often kills with a bite to the neck, using a notch on its beak called a tomial tooth.\n\nMales and females often hunt different prey: the smaller, more agile male takes more small birds, while the bigger female can tackle ducks and gulls. Outside the breeding season, peregrines usually hunt alone.",
+    "family": "Peregrines usually breed at two or three years old, and pairs often mate for life, returning to the same nest site every year. In courtship, the pair performs acrobatic flights, and the male passes food to the female in mid-air.\n\nThey don't build nests. The female lays usually three or four eggs in a scrape on a cliff ledge, or a gravel tray on a building. Both parents incubate, and the chicks fledge after about six weeks.",
+    "remarkable": "Calculations suggest an ideal falcon could reach about 400 km/h in a low-altitude dive and more at high altitude. The fastest reliably measured peregrine stoops are over 320 km/h, faster than any other animal.",
+    "outlook": "The peregrine falcon is listed as Least Concern. In the 1950s to 1970s, it vanished from much of North America and Europe, because pesticides like DDT built up in its body and thinned its eggshells. In eastern North America it disappeared entirely as a breeding bird.\n\nAfter DDT was banned and thousands of captive-bred young were released, including from city buildings, peregrines recovered. They were removed from the US endangered species list in 1999.",
+    "people": "For thousands of years, peregrines have been prized in falconry for their speed and their 'stoop'. Today many cities have webcams on peregrine nests, with millions of viewers following the chicks each spring.\n\nPeregrines are also used to scare pigeons and gulls away from airports and buildings. Both its English and scientific names mean 'wandering falcon', after the long journeys of young birds.",
+    "relatives": "The peregrine belongs to the genus Falco, along with kestrels, the gyrfalcon, the prairie falcon and the saker falcon. Falcons were once grouped with hawks and eagles, but genetic studies show they are more closely related to parrots and songbirds.\n\nThe peregrine has many subspecies, including the pale Barbary falcon of North Africa and the Middle East, sometimes treated as a separate species.",
+    "didYouKnow": "In some cities, peregrines hunt at night, using the glow of streetlights to catch migrating birds.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "34–58 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "74–120 cm"
+      },
+      {
+        "label": "Dive speed",
+        "value": "Over 320 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly birds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is a peregrine's 'stoop'?",
+        "choices": [
+          "A high-speed dive onto prey",
+          "A bow during courtship",
+          "A nest on a cliff ledge",
+          "The way it perches with its wings folded across its back"
+        ],
+        "explanation": "In a stoop, the falcon tucks its wings and dives at prey, reaching over 320 km/h."
+      },
+      {
+        "prompt": "Why did peregrines disappear from much of North America?",
+        "choices": [
+          "Pesticides like DDT thinned their eggshells",
+          "Too few pigeons",
+          "Falconers took all the chicks",
+          "Skyscrapers"
+        ],
+        "explanation": "DDT built up in their bodies and made their eggshells break."
+      },
+      {
+        "prompt": "Where do many city peregrines nest?",
+        "choices": [
+          "On skyscrapers, bridges and cathedrals",
+          "In parks",
+          "In chimneys",
+          "In nests they build from twigs in big trees"
+        ],
+        "explanation": "Tall buildings stand in for the cliff ledges they use in the wild."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Peregrine Fund",
+        "url": "https://peregrinefund.org",
+        "blurb": "Founded to save the peregrine falcon, it now works to conserve birds of prey worldwide."
+      }
+    ]
+  }
+]
