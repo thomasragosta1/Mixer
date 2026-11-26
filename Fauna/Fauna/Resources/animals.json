@@ -18023,5 +18023,874 @@
         "blurb": "Protects wildlife and habitats worldwide, including Africa's highlands."
       }
     ]
+  },
+  {
+    "id": "periodical-cicada",
+    "name": "Periodical Cicada",
+    "scientificName": "Magicicada",
+    "wikipediaTitle": "Periodical cicadas",
+    "group": "insect",
+    "regions": [
+      "naEast"
+    ],
+    "range": "Broadleaf forests of the eastern and central United States",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 38.0,
+      "longitude": -87.0
+    },
+    "mapSpan": 20,
+    "tagline": "Insects that wait 13 or 17 years to sing for a month",
+    "lede": "For 13 or 17 years, periodical cicadas live in the dark, sipping sap from tree roots. Then, on a warm spring evening, millions climb out of the ground at once, fill the woods with a deafening chorus, breed and die within a few weeks.",
+    "home": "The seven species of periodical cicada live only in eastern North America, in the broadleaf forests of the eastern United States. The 17-year species range from the eastern states across the Ohio Valley to the Great Plains and the edges of the Upper Midwest, while the 13-year species occur in the southern and Mississippi Valley states, with a little overlap between the two.\n\nUnderground, the nymphs usually stay within about 61 centimetres of the surface, moving deeper as they grow and seek out larger roots. Each local population belongs to a geographic brood that emerges in the same calendar year, and a project sponsored by the National Geographic Society has used records gathered by volunteers to redraw the maps of every brood.",
+    "anatomy": "Adults are 2.4 to 3.3 centimetres long, about three-quarters the size of the annual cicadas found in the same woods, and females are slightly larger than males. They have a black back, two red compound eyes, three tiny simple eyes, and clear wings with orange veins. The underside of the abdomen is black, orange or striped, depending on the species. Cicadas cannot sting and do not normally bite.\n\nTheir mouthparts form a piercing tube for drinking plant fluids, and although it can prick human skin if one is handled, the insects are neither venomous nor poisonous. Males make their loud songs with drum-like organs called tymbals.",
+    "life": "Nymphs drink xylem, the watery fluid inside tree roots, and pass through five stages of growth underground. They seem to count the years by sensing seasonal changes in that fluid: when researchers made a grove of trees drop and regrow its leaves twice in one year, cicadas feeding there emerged after 16 years instead of 17.\n\nIn the emergence year, nymphs dig tunnels to the surface and wait until the soil about 20 centimetres down passes 17.9 °C. They come out at dusk, climb tree trunks, walls, fence posts and even parked car tyres, shed their skins, and spend about six days hardening. Males then gather in chorus trees, where the din can reach 100 decibels, and females answer with timed flicks of their wings.",
+    "family": "Most females mate only once. Each cuts V-shaped slits in young twigs and lays about 20 eggs in each, for a clutch of 600 or more. All the adults are dead by mid-July, and after 6 to 10 weeks the eggs hatch and the tiny nymphs drop to the ground and burrow in to begin the long wait again.\n\nPeriodical cicadas spend around 99.5% of their lives underground. A few individuals, called stragglers, come out early or late, usually by 1 or 4 years; 17-year stragglers tend to appear 4 years early, and 13-year ones 4 years late.",
+    "remarkable": "Their survival trick is to swamp their enemies. Emergences can top 370 cicadas per square metre, far more than birds, squirrels, reptiles and other predators can eat, so plenty survive to breed.\n\nOne idea is that the prime-numbered cycles help too: a predator with a 3-year cycle that feasts on one emergence will be out of step by the next, so the cicadas keep arriving when many predators are too young to take full advantage.",
+    "outlook": "Periodical cicadas are not rare, but individual broods can vanish. Of the 30 broods once numbered, only 15 are known to survive, and two, Broods XI and XXI, have gone extinct.\n\nAs early as 1907, the entomologist Charles Lester Marlatt blamed the fading of a Connecticut River valley brood on forest clearing and the spread of introduced house sparrows. The cicadas themselves rarely harm mature trees, though egg-laying can kill twig tips, damage known as flagging. Gardeners are advised to delay planting young trees until after an emergence, or to cover them with fine netting.",
+    "people": "People have recorded these insects since colonial times. A 1666 report to the Royal Society described a swarm in New England, and the naturalist Pehr Kalm, drawing on notes from Benjamin Franklin among others, concluded that the 'locusts' of Pennsylvania appeared every 17th year. In 1775 Thomas Jefferson noted the cycle of Brood II at Monticello.\n\nFor the Onondaga people, the sudden 1780 emergence of Brood VII brought food after a devastating military campaign and a brutal winter, and is remembered as an act of the Creator. Native Americans fried or roasted cicadas, and the insects are still edible when cooked.",
+    "relatives": "Despite the nickname 'locusts', cicadas are true bugs, order Hemiptera, not grasshoppers. Magicicada has three 17-year and four 13-year species, sorted into the Decim, Cassini and Decula groups, each pairing a 17-year species with similar 13-year ones.\n\nResearch suggests the two cycle lengths evolved at least eight separate times in the last 4 million years. Though found only in eastern North America, the genus seems most closely related to Tryella and Aleeta from Australia.",
+    "didYouKnow": "The cicadas depend on Hodgkinia bacteria living inside them, whose genome has split into three separate bacterial species, all of which the insect needs.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "2.4–3.3 cm"
+      },
+      {
+        "label": "Life cycle",
+        "value": "13 or 17 years"
+      },
+      {
+        "label": "Adult life",
+        "value": "About 4–6 weeks"
+      },
+      {
+        "label": "Diet",
+        "value": "Root and stem sap"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How long do periodical cicada nymphs spend underground?",
+        "choices": [
+          "13 or 17 years",
+          "1 year",
+          "7 or 11 years",
+          "Exactly 10 years, whatever the species or region"
+        ],
+        "explanation": "Depending on the species, nymphs develop underground for 13 or 17 years before emerging together."
+      },
+      {
+        "prompt": "What tells mature nymphs it is time to emerge?",
+        "choices": [
+          "Warm soil",
+          "A full moon",
+          "Heavy rain",
+          "The first songs of males already up in the trees"
+        ],
+        "explanation": "They come out once the soil about 20 cm down passes 17.9 °C."
+      },
+      {
+        "prompt": "What happened when trees were made to lose and regrow their leaves twice in one year?",
+        "choices": [
+          "Cicadas emerged a year early",
+          "The nymphs all died",
+          "Nothing changed",
+          "The cicadas switched permanently to a 13-year cycle instead"
+        ],
+        "explanation": "Cicadas feeding on those trees emerged after 16 years instead of 17, suggesting they count the trees' seasons."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates and the habitats they depend on."
+      }
+    ]
+  },
+  {
+    "id": "giraffe",
+    "name": "Giraffe",
+    "scientificName": "Giraffa camelopardalis",
+    "wikipediaTitle": "Giraffe",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Savannahs and woodlands scattered across Africa from Chad to South Africa",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": 28.0
+    },
+    "mapSpan": 50,
+    "tagline": "The world's tallest land animal, built on a towering neck",
+    "lede": "The giraffe is the tallest living land animal and the largest ruminant on Earth, browsing on leaves that no other ground-dwelling herbivore can reach. Its long neck and legs, patchwork coat and horn-like ossicones make it unmistakable, and it has fascinated people for thousands of years.",
+    "home": "Giraffes live in a scattered range from Chad in the north to South Africa, and from Niger in the west to Somalia in the east. They favour savannahs and open woodlands with acacias, Commiphora, Combretum and Terminalia trees, and avoid more densely spaced Brachystegia woodland; the Angolan giraffe even lives in desert.\n\nThey are not territorial, but they keep home ranges that shift with rainfall and with distance from people. In the wet season, when food is plentiful, they spread out; in the dry season they gather around the remaining evergreen trees and bushes.",
+    "anatomy": "Adults stand 4.3 to 5.7 metres tall. Males average about 1,192 kg and females 828 kg. The neck alone can be 2.4 metres long, yet its length comes from stretched vertebrae, each over 28 centimetres, not from extra ones. Both sexes have ossicones, skin-covered knobs of bone up to 13.5 centimetres long; in females and young they are thin and tufted, while old males' are bald and knobbly.\n\nEvery giraffe has its own pattern of dark patches on pale hair. Such height needs special plumbing.\n\nThe heart weighs 11 kg and must produce about double the blood pressure of a human's, while valves in the neck veins and a mesh of vessels near the brain stop blood surging when the head swings down. Tight, thick skin on the lower legs keeps blood from pooling there. The black tongue is about 45 centimetres long.",
+    "life": "Giraffes browse twigs, leaves, fruit and flowers, mostly from acacias, and eat around 34 kg of plant matter a day. They feed most in the first and last hours of daylight, chewing the cud in between, and can tip their heads back more than 90 degrees to grab food above them.\n\nWith water available, a giraffe goes no more than 3 days without drinking, splaying its front legs or bending its knees to reach. They live in a fission-fusion society of shifting groups, with lasting cliques of related females.\n\nMales settle rank by 'necking', swinging their necks to strike each other with their ossicones; duels can last more than half an hour. Giraffes are not mute: they snort, hiss, moan, grunt and appear to hum to each other at night.",
+    "family": "Females can breed at any time of year, and males check whether they are ready by tasting their urine. Pregnancy lasts 400 to 460 days, and the mother gives birth standing up, so the calf, already 1.7 to 2 metres tall, drops to the ground. Within hours it can run, but it spends its first weeks mostly hiding.\n\nMothers form nursery herds and sometimes leave calves in a 'calving pool' with one female while they feed. Calves stop nursing at 6 to 8 months and may be independent at 14 months. Only a quarter to a half reach adulthood, since lions, leopards, spotted hyenas and wild dogs all hunt them. Adults, protected by size and powerful kicks, can live up to 38 years.",
+    "remarkable": "The nerve to the giraffe's voice box takes an absurd detour. As in all mammals, it runs from the brainstem down into the chest before looping back up to the larynx, and in giraffes the left one is over 2 metres long.\n\nIn the biggest animals, single nerve cells along this route are nearly 5 metres long.",
+    "outlook": "The IUCN assessed giraffes as Vulnerable in 2016. Numbers fell from an estimated 155,000 in 1985 to about 97,500 by 2016, and the Nubian subspecies is critically endangered. The main causes are habitat loss and killing for bushmeat, and giraffes have vanished from countries including Eritrea, Guinea, Mauritania and Senegal.\n\nNational parks, community conservation and private reserves all help, and giraffes have been introduced to Rwanda and Eswatini. Since 2019, international trade in giraffe parts has been regulated under CITES.",
+    "people": "The name comes from the Arabic zirāfah, and the old English name 'camelopard' described a camel coloured like a leopard. About 8,000 years ago, the Kiffian people carved a life-size engraving of two giraffes that has been called the world's largest rock art petroglyph.\n\nEgyptians gave the giraffe its own hieroglyph, Julius Caesar brought one to Rome in 46 BC, and a giraffe taken to China in 1414 was linked with the mythical qilin. The giraffe is the national animal of Tanzania. Its tight leg skin has even inspired suits for astronauts and fighter pilots.",
+    "relatives": "Giraffes and the okapi are the only living members of the family Giraffidae, once a far larger group with over 10 fossil genera. Linnaeus treated all giraffes as one species, and they were long split into nine subspecies, but genetic studies point to several species; in 2025 the IUCN accepted four species with seven subspecies.\n\nThe giraffe and okapi lineages split around 11.5 million years ago, and living giraffes appear to have arisen in eastern Africa about 1 million years ago.",
+    "didYouKnow": "Zebras watch giraffes to judge danger, and spend less time scanning for predators when giraffes are nearby.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "4.3–5.7 m"
+      },
+      {
+        "label": "Weight",
+        "value": "828–1,192 kg (average)"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 38 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves, twigs and fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How long does a giraffe pregnancy last?",
+        "choices": [
+          "400–460 days",
+          "About 9 months",
+          "200–250 days",
+          "Nearly three full years, the longest of any mammal"
+        ],
+        "explanation": "Gestation lasts 400–460 days, usually producing a single calf."
+      },
+      {
+        "prompt": "What is 'necking'?",
+        "choices": [
+          "Males fighting with their necks",
+          "Stretching to reach leaves",
+          "Drinking with splayed legs",
+          "A greeting in which mothers and calves twist their necks together"
+        ],
+        "explanation": "Males swing their necks to strike rivals with their ossicones, settling who is dominant."
+      },
+      {
+        "prompt": "How many giraffe species did the IUCN accept in 2025?",
+        "choices": [
+          "Four",
+          "One",
+          "Nine",
+          "Eight, one for each traditional subspecies"
+        ],
+        "explanation": "In 2025 the IUCN accepted four species of giraffe with seven subspecies."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Giraffe Conservation Foundation",
+        "url": "https://giraffeconservation.org",
+        "blurb": "Works across Africa to save giraffes in the wild."
+      },
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Protects wildlife and wild lands across Africa with local communities."
+      }
+    ]
+  },
+  {
+    "id": "greater-roadrunner",
+    "name": "Greater Roadrunner",
+    "scientificName": "Geococcyx californianus",
+    "wikipediaTitle": "Greater roadrunner",
+    "group": "bird",
+    "regions": [
+      "naWest"
+    ],
+    "range": "Deserts and scrubland of the southwestern United States and Mexico",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": -105.0
+    },
+    "mapSpan": 20,
+    "tagline": "A desert cuckoo that would rather run than fly",
+    "lede": "The greater roadrunner is a cuckoo that has largely given up on flying. Streaking across the deserts of the American Southwest and Mexico with its head and tail held level, it chases down scorpions, lizards and even young rattlesnakes.",
+    "home": "Roadrunners live in the Aridoamerica region of the southwestern United States and northern Mexico. They are regular in California, Texas, New Mexico, Arizona, Nevada, Oklahoma and Utah, and in many Mexican states from Baja California to Puebla. They do not migrate.\n\nTheir habitat is arid and semi-arid scrub where plants cover less than half the ground and stand under 3 metres tall, from 61 metres below sea level up to about 2,300 metres. Fossils show that until about 8,000 years ago they lived in sparse forest instead, and only later took to the desert.",
+    "anatomy": "This is the largest cuckoo in the Americas: 52 to 62 centimetres long including its long tail, about 25 to 30 centimetres tall, with a wingspan of 43 to 61 centimetres and a weight of 221 to 538 grams. It is brown above with black streaks, pale and streaked on the neck and breast, and white below.\n\nA shaggy brown crest tops the head, and behind each eye is a patch of bare orange and blue skin. The sexes look alike, though females are slightly smaller. The long, stout bill is hooked at the tip, and each foot has two toes pointing forward and two back.",
+    "life": "Roadrunners eat almost anything they can catch: insects, spiders including black widows and tarantulas, centipedes, scorpions, mice, small birds such as hummingbirds, lizards and young rattlesnakes, along with some plants, eggs and carrion. They run their prey down, holding a steady 29 to 32 km/h over long distances and steering with the tail. To cope with heat, they are active mainly early and late in the day and rest in the shade at midday.\n\nThey save water by reabsorbing it in the lower gut, and shed salt through nasal glands. At night a roadrunner lowers its body temperature from 40 to 34 °C, cutting its energy use by more than 30%, then sunbathes in the morning with its back to the sun, fluffing its feathers to expose patches of black skin.",
+    "family": "Roadrunners live alone until they find a mate, then form long-term monogamous pairs that defend a territory of about 700 to 800 square metres, sometimes all year. Courtship involves chasing, tail wagging, play-fighting and calls, and the male offers food or nest material. Pairs keep mating long after the eggs are fertilised, which seems to strengthen the bond.\n\nThe male gathers material and the female builds a compact nest of thorny twigs lined with grass, feathers and snakeskin, low in a cactus or bush. She lays 3 to 6 eggs, which hatch in 20 days; the chicks fledge 18 days later and stay with their parents until at least 50 days old.",
+    "remarkable": "Roadrunners have been reported running at up to 42 km/h, the fastest running speed clocked for a bird that can fly. Yet they rarely take to the air, managing only short flights of 4 or 5 metres between perches.",
+    "outlook": "The greater roadrunner remains a regular sight across much of the Southwest, and it is spreading. As people have changed the landscape, it has recently begun moving northeast of its usual range, into sparse woodland much like its prehistoric home, and it now turns up less regularly in Kansas, Louisiana, Arkansas and Missouri.\n\nAdults face coyotes, bobcats, lynxes and cougars on the ground, and Cooper's hawks and red-tailed hawks from the air.",
+    "people": "Some Pueblo peoples, including the Hopi, believed the roadrunner protected against evil spirits. In Mexico some said it brought babies, as the stork did in Europe, and some frontier settlers thought it led lost travellers back to the trail.\n\nIt is best known as the Road Runner of the Warner Bros. cartoons, outpacing Wile E. Coyote since 1949. It is the state bird of New Mexico and a mascot for many schools and colleges, and its other name, chaparral cock, inspired the College of DuPage's 'Chaparral' mascot.",
+    "relatives": "The roadrunner belongs to the cuckoo family, Cuculidae, and its genus Geococcyx contains just one other species, the lesser roadrunner. The scientific name means 'Californian earth-cuckoo'. Like some other cuckoos, it occasionally lays eggs in other birds' nests, such as those of common ravens and northern mockingbirds.\n\nFossils from the La Brea Tar Pits and from caves in New Mexico, the oldest about 33,500 years old, show it has lived in the region since the Pleistocene.",
+    "didYouKnow": "Females give a call of up to 22 short, low shrills, like a coyote's squeal, which carries about 300 metres.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "52–62 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "221–538 g"
+      },
+      {
+        "label": "Top speed",
+        "value": "Up to 42 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly small animals"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which bird family does the greater roadrunner belong to?",
+        "choices": [
+          "Cuckoos",
+          "Pheasants",
+          "Hawks",
+          "Ostriches and other flightless running birds"
+        ],
+        "explanation": "It is a member of the cuckoo family, Cuculidae, and the largest cuckoo in the Americas."
+      },
+      {
+        "prompt": "How does a roadrunner save energy at night?",
+        "choices": [
+          "It lowers its body temperature",
+          "It flies to a warmer roost",
+          "It sleeps in a burrow",
+          "It huddles in large groups with roadrunners from nearby territories"
+        ],
+        "explanation": "It drops its body temperature from 40 to 34 °C, cutting energy use by more than 30%."
+      },
+      {
+        "prompt": "Which US state has the roadrunner as its state bird?",
+        "choices": [
+          "New Mexico",
+          "Texas",
+          "Arizona",
+          "California, home of the Warner Bros. studios"
+        ],
+        "explanation": "The greater roadrunner is the state bird of New Mexico."
+      }
+    ],
+    "charities": [
+      {
+        "name": "National Audubon Society",
+        "url": "https://www.audubon.org",
+        "blurb": "Protects birds and the places they need across the Americas."
+      }
+    ]
+  },
+  {
+    "id": "mekong-giant-catfish",
+    "name": "Mekong Giant Catfish",
+    "scientificName": "Pangasianodon gigas",
+    "wikipediaTitle": "Mekong giant catfish",
+    "group": "fish",
+    "regions": [
+      "asia"
+    ],
+    "range": "The Mekong River basin of Southeast Asia and adjacent China",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 14.0,
+      "longitude": 105.0
+    },
+    "mapSpan": 15,
+    "tagline": "A toothless river giant that lives on algae",
+    "lede": "The Mekong giant catfish can grow to 3 metres long, yet as an adult it has no teeth and grazes on algae. This revered giant of Southeast Asia's greatest river is now critically endangered, and still poorly understood.",
+    "home": "The catfish once ranged along almost the whole 4,800-kilometre length of the Mekong, from the river above its brackish delta in Vietnam to Yunnan Province in China. Today it is believed to survive only in small, isolated populations in the middle Mekong.\n\nIt lives mainly in the main channel, in water more than 10 metres deep, and has been found in Cambodia's Tonlé Sap River and Lake, a UNESCO Biosphere Reserve. In December 2024, 6 were sighted and caught along the Tonlé Sap River. Fishers once reported it from several tributaries too.",
+    "anatomy": "Grey to white and without stripes, it differs from the other big Mekong catfish in having almost no barbels and no teeth. Young fish do have barbels and teeth, but these disappear by the time they reach 30 to 50 centimetres.\n\nIt grows remarkably fast, reaching 150 to 200 kg in only 6 years, and may reportedly reach 350 kg. Thailand's heaviest recorded catch, a 2.7-metre female landed in 2005, weighed 293 kg. It held the title of largest entirely freshwater fish ever caught until a giant freshwater stingray from Cambodia beat it in 2022.",
+    "life": "Young fry eat zooplankton and will even eat each other. After about a year the fish become herbivores, scraping filamentous algae from submerged rocks and probably swallowing tiny larvae and other organisms along the way; studies have also found plankton in their stomachs.\n\nTheir migrations are not fully understood. The fish are thought to grow up mainly in the Mekong and Cambodia's Tonlé Sap lake, then gather at the start of the rainy season and travel hundreds of kilometres upstream to spawning grounds in Thailand.",
+    "family": "Much about how the species breeds in the wild remains unknown. A fish must reach 50 to 70 kg before it can spawn, and it will not breed in lakes, so it needs long stretches of open river and the right conditions at its spawning sites.\n\nThailand's Fisheries Department runs a breeding programme to restock the river, and from 2000 to 2003 about 10,000 captive-bred fish were released, though into reservoirs rather than the Mekong itself. The 2005 record female was stripped of her eggs for this programme and was meant to be freed, but she died in captivity and was sold to villagers as food.",
+    "remarkable": "In 2005 the species gained the Guinness World Record for the world's largest freshwater fish. The beluga sturgeon can grow bigger but spends part of its life at sea, while this catfish never leaves fresh water, and it becomes a giant largely on algae.",
+    "outlook": "The IUCN lists the Mekong giant catfish as critically endangered. Nobody knows how many remain, but catch records suggest an 80% fall over 14 years; fishers landed 11 in 2000, 7 in 2001 and just 5 in 2002. Overfishing, dams that fragment the river and threaten larval fish, siltation and the loss of spawning grounds are all to blame, and a 2018 study warned that dam projects could cut Mekong fish stocks by up to 40%.\n\nWild fishing for it is banned in Thailand, Laos and Cambodia, but the bans appear ineffective. International trade in wild fish is banned under CITES Appendix I, and WWF works with partners including the Mekong River Commission on the impacts of hydropower.",
+    "people": "In Thai folklore the fish is treated with reverence, and fishers perform rituals and make offerings before trying to catch one. It appears in ancient art along the Mekong, and in 1977 the writer Jessica Kuper described it as a noble and mysterious fish revered by the Lao.\n\nIts Thai name is pla buek. In June 2006 nearly 60 Thai fishermen agreed to stop catching it, to mark the 60th anniversary of King Bhumibol Adulyadej's accession. Thailand is the only country that allows fishing for privately stocked giant catfish, and lakes such as Bueng Samran in Bangkok hold fish of up to 140 kg, prized by anglers for the fight they put up.",
+    "relatives": "The Mekong giant catfish belongs to the shark catfish family, Pangasiidae, within the catfish order Siluriformes. It is often crossed with a relative, the iridescent shark, to produce a hybrid known as the Mekong iridescent shark.\n\nThe species is now bred successfully in Thailand, some of it for the aquarium trade, and breeders have developed a short-bodied form similar to those of the paroon shark and iridescent shark.",
+    "didYouKnow": "Several Australian states restrict owning or importing the fish, for fear it could become an invasive species.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 350 kg (reported)"
+      },
+      {
+        "label": "Diet",
+        "value": "Algae (adults)"
+      },
+      {
+        "label": "Breeding size",
+        "value": "50–70 kg"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do adult Mekong giant catfish mainly eat?",
+        "choices": [
+          "Algae",
+          "Smaller fish",
+          "Freshwater crabs",
+          "Ducks and other birds snatched from the surface"
+        ],
+        "explanation": "Adults are toothless herbivores that graze algae from submerged rocks."
+      },
+      {
+        "prompt": "What happens to a young catfish's teeth and barbels?",
+        "choices": [
+          "They disappear as it grows",
+          "They grow longer",
+          "They turn white",
+          "They are shed and regrown every rainy season for life"
+        ],
+        "explanation": "Teeth and barbels are gone by the time the fish reaches 30 to 50 cm."
+      },
+      {
+        "prompt": "Which fish beat its record as the largest freshwater fish caught, in 2022?",
+        "choices": [
+          "A giant freshwater stingray",
+          "A beluga sturgeon",
+          "An arapaima",
+          "Another Mekong giant catfish caught in a Bangkok fishing lake"
+        ],
+        "explanation": "A giant freshwater stingray caught in Cambodia in 2022 surpassed the 293 kg catfish."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works on conservation, research and hydropower planning along the Mekong."
+      }
+    ]
+  },
+  {
+    "id": "golden-snub-nosed-monkey",
+    "name": "Golden Snub-nosed Monkey",
+    "scientificName": "Rhinopithecus roxellana",
+    "wikipediaTitle": "Golden snub-nosed monkey",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Mountain forests of Sichuan, Gansu, Shaanxi and Hubei in central China",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 32.5,
+      "longitude": 106.0
+    },
+    "mapSpan": 10,
+    "tagline": "A golden-caped monkey of China's snowy forests",
+    "lede": "High in the snowy mountain forests of central China, troops of monkeys draped in long golden fur move through the canopy. The golden snub-nosed monkey is found nowhere else on Earth, and the forests it depends on are under pressure.",
+    "home": "This monkey is found only in temperate mountain forests in four Chinese provinces, Sichuan, Gansu, Shaanxi and Hubei, at 1,500 to 3,400 metres. The forests change with height, from deciduous broadleaf woods low down to mixed forest above 2,200 metres and conifers above 2,600 metres.\n\nSnow is frequent, and the average yearly temperature is only 6.4 °C, with January lows of −8.3 °C. It spends some 97% of its time in the trees, using mostly primary and young forest. Home ranges shift with the seasons as food changes, and one of the largest covered 40 square kilometres.",
+    "anatomy": "Males and females look very different. Adult males measure 58 to 68 centimetres and weigh about 16.4 kg, with very long golden guard hairs over the back and shoulders like a cape, a brown crest of upright hairs, deep brown arms and long canine teeth.\n\nAdult females are about half the size, around 47 to 52 centimetres and 9.4 kg, with brown coats and shorter golden hairs. The colours change with age. Newborns are grey, infants are light brown that looks almost white in sunshine, and juveniles slowly turn reddish gold. Researchers tell individual males apart by the shape of their crests.",
+    "life": "Lichens are the main food, followed by young leaves, fruit and seeds, buds, mature leaves, herbs, bark and flowers. At Shennongjia Nature Reserve the monkeys eat mostly lichen from November to April, add leaves in early summer, and fruit or seeds in late summer and autumn.\n\nGroups range from 5 to 10 animals up to bands of about 600. The basic unit is a harem of one male with several females and their young, and many such units travel together as a breeding band, shadowed by groups of bachelor males.\n\nWhen a predator such as a northern goshawk appears, the young are moved to the centre while adult males go to meet the threat. On winter nights they sleep huddled in clusters low in the canopy, out of the wind.",
+    "family": "Females mature at about 5 years old and males at 5 to 7. Mating can happen year-round but peaks in October, and after a pregnancy of 6 to 7 months the young are born between March and June. Infants cling to the front of their mothers, and other females often help carry and care for them. Unusually for a harem-living species, males rarely kill infants.\n\nFemales mate with other resident males behind the harem male's back, so a new leader cannot be sure which young are his own and has reason to spare them.",
+    "remarkable": "Few primates face winters like these. This monkey tolerates colder average temperatures than any other non-human primate, relying on its thick coat, on sleeping in warm huddles, and on a diet that switches to lichens when little else is available.",
+    "outlook": "The species is endangered, with an estimated 8,000 to 15,000 left, and its main threat is habitat loss. Because lichen grows most thickly on dead trees, harvesting deadwood takes away food, and this highly selective feeder is hit hard by any damage to its forest.\n\nIt lives in several protected areas, including the Baihe, Foping and Wanglang nature reserves and Shennongjia National Geopark, and international trade is banned under CITES Appendix I. Some populations are recovering: in the Shennongjia reserve, numbers grew from 500 in 1990 to over 1,200 in 2005.",
+    "people": "Its Chinese name means 'Sichuan golden hair monkey', and it is also called the Sichuan snub-nosed monkey.\n\nIt is rarely kept outside mainland China: the San Diego Zoo held the species from 1984 to 1989 and the San Francisco Zoo in 1985, and today only Hong Kong, Japan and South Korea keep it, along with ZooParc de Beauval in France, which in 2025 became the first zoo outside Asia to house it. In 2004 its plight was featured on a postage stamp issued by Guernsey.",
+    "relatives": "The golden snub-nosed monkey is an Old World monkey in the subfamily Colobinae, and the most widespread of the three snub-nosed monkey species found in China.\n\nIt has three subspecies, told apart mainly by tail length: the Moupin, around the Sichuan Basin, with about 10,000 animals; the Qinling, with roughly 4,000 in the Qinling Mountains of Shaanxi; and the smaller Hubei population in the Daba Mountains. Dense human settlement in eastern Sichuan and the Han River valley keeps the three apart.",
+    "didYouKnow": "The monkeys learn to read facial expressions, recognising neutral, happy and angry faces by about age 3, starting with their mother's.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "47–68 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "9.4–16.4 kg"
+      },
+      {
+        "label": "Altitude",
+        "value": "1,500–3,400 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly lichens"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the golden snub-nosed monkey's main food?",
+        "choices": [
+          "Lichens",
+          "Bamboo",
+          "Insects",
+          "Fish caught from cold mountain streams in winter"
+        ],
+        "explanation": "Lichens top its diet, followed by young leaves, fruit and seeds."
+      },
+      {
+        "prompt": "Why do new harem males rarely kill infants?",
+        "choices": [
+          "They can't be sure who the father is",
+          "Mothers hide the infants",
+          "Infants look like adults",
+          "The bachelor males in the band would drive them out at once"
+        ],
+        "explanation": "Females mate with other resident males, so paternity is uncertain and killing infants is risky."
+      },
+      {
+        "prompt": "Roughly how many golden snub-nosed monkeys are thought to remain?",
+        "choices": [
+          "8,000 to 15,000",
+          "About 500",
+          "Over 1 million",
+          "Around 150,000, spread across much of southern Asia"
+        ],
+        "explanation": "Population estimates range from 8,000 to 15,000."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect forests and wildlife in China and around the world."
+      }
+    ]
+  },
+  {
+    "id": "yellow-bellied-sea-snake",
+    "name": "Yellow-bellied Sea Snake",
+    "scientificName": "Hydrophis platurus",
+    "wikipediaTitle": "Yellow-bellied sea snake",
+    "group": "reptile",
+    "regions": [
+      "openOcean",
+      "asia",
+      "oceania",
+      "centralAmerica"
+    ],
+    "range": "Tropical Indian and Pacific oceans, from East Africa to the Americas",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": 150.0
+    },
+    "mapSpan": 80,
+    "tagline": "A drifting sea snake that can swim backwards",
+    "lede": "The yellow-bellied sea snake spends its whole life adrift on the open ocean, riding currents and storms across the tropical Indian and Pacific oceans. Dark above and bright yellow below, it is one of the most widely distributed snakes in the world, and it is extremely venomous.",
+    "home": "This snake ranges across the entire tropical Indo-Pacific, from the coasts of East Africa and Madagascar to Costa Rica, southern California and northern Peru. It is the only sea snake to have reached the Hawaiian Islands. Floating mats of kelp in the Indian Ocean are favoured places to hunt and breed, and it is often seen along oceanic drift lines.\n\nIt needs water of at least 16 to 18 °C to survive long-term, but storms and El Niño currents sometimes carry it to colder coasts. Such strandings make it the snake most often seen in New Zealand, a country that would otherwise be free of snakes apart from the occasional banded sea krait.",
+    "anatomy": "Males reach about 72 centimetres and females 88 centimetres. The body is flattened from side to side, the rear less than half as thick as the neck, and the tail is a flat paddle. The belly scales are tiny and form a keel, so it moves poorly on land.\n\nIts colours vary, but the black back and yellow or brown underside are usually sharply divided, and the yellow may carry black spots or bars. Valved nostrils and a seal in the roof of the mouth keep seawater out, and the snake can absorb oxygen from the water through its skin while diving or resting at the surface.",
+    "life": "It hunts by floating motionless at the surface. Small ocean fish seeking shelter gather beneath it, and the snake catches them by swimming backwards and then making a rapid lunge with its jaws.\n\nIt may sense its prey through the vibrations they make in the water. Sometimes thousands gather together on drift lines, perhaps as a way to catch prey. The snake is not aggressive, but will defend itself if threatened.",
+    "family": "Mating, feeding and birth all take place at sea. Yellow-bellied sea snakes breed in warm waters and give birth to live young after a pregnancy of around 6 months, so they never need to come ashore to lay eggs.\n\nThe herpetologist Raymond Ditmars reported that females give birth in tidal pools. The newborns already carry venom with the same toxins as their parents, though on average it is less concentrated.",
+    "remarkable": "Strangely for an ocean snake, it can die of thirst. It must drink fresh water, probably from thin layers that form on the sea surface after heavy rain, and has been reported to survive up to 7 months of severe dehydration in dry seasons.\n\nA gland in its lower jaw was once thought to remove salt from seawater, but it turns out not to be used that way. Swimming backwards, its hunting manoeuvre, is also unusual and a hallmark of the species.",
+    "outlook": "With its vast range, the yellow-bellied sea snake has no shortage of ocean. Its spread is limited mainly by water temperature, currents and land bridges: the Isthmus of Panama, which formed between about 10 and 3 million years ago, keeps it out of the Caribbean, and the freshwater Panama Canal has not let it through.\n\nThe 4 found off Colombia's Caribbean coast probably arrived with human help, and a few have reached the Atlantic off southern Africa in the Benguela Current. In New Zealand it is considered native and is protected under the Wildlife Act 1953.",
+    "people": "Bites are rare, and most victims are fishers trying to free snakes from their nets. The venom contains several neurotoxins, and sea snake venom can damage muscle and kidneys and cause paralysis.\n\nEven so, no deaths from bites have been recorded in Australian waters, and antivenom made against another sea snake, Enhydrina schistosa, neutralises this species' venom. Stranded snakes draw attention: one beached in Ventura County, California, in 2015 was the first reported there in 30 years.",
+    "relatives": "Linnaeus described the species in 1766 as Anguis platura, and for many years it sat alone in the genus Pelamis, from an Ancient Greek word for a young tuna. Its species name means 'flat tail'. Molecular studies now place it within Hydrophis, a rapidly diversifying group of live-bearing sea snakes.\n\nThose sea snakes split from Australasia's front-fanged venomous land snakes about 10 million years ago. Even within this one species, snakes in two Costa Rican gulfs show slight genetic differences that match their colours: brown and yellow in Golfo de Papagayo, all yellow in Golfo Dulce.",
+    "didYouKnow": "A single bite delivers only 1 to 4 milligrams of venom.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 88 cm"
+      },
+      {
+        "label": "Habitat",
+        "value": "Open tropical ocean"
+      },
+      {
+        "label": "Diet",
+        "value": "Small fish"
+      },
+      {
+        "label": "Young",
+        "value": "Born live at sea"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the yellow-bellied sea snake catch fish?",
+        "choices": [
+          "By floating and ambushing them",
+          "By chasing them into coral reefs and trapping them in crevices",
+          "By digging them out of sand",
+          "By luring them with its tail"
+        ],
+        "explanation": "Fish shelter beneath the floating snake, which catches them with a backwards swim and a rapid lunge."
+      },
+      {
+        "prompt": "Where does this snake get its drinking water?",
+        "choices": [
+          "Rainwater on the sea surface",
+          "Seawater filtered by a gland",
+          "Juices of its prey",
+          "Rivers it swims up each year to drink and to breed"
+        ],
+        "explanation": "It drinks fresh water, probably from layers that form on the sea after heavy rain."
+      },
+      {
+        "prompt": "Which unusual skill sets this species apart?",
+        "choices": [
+          "Swimming backwards",
+          "Gliding through the air",
+          "Spitting venom",
+          "Climbing mangrove trees to bask in the afternoon sun"
+        ],
+        "explanation": "Its ability to swim backwards is a distinguishing feature, used when catching prey."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and marine life."
+      }
+    ]
+  },
+  {
+    "id": "mexican-tetra",
+    "name": "Mexican Tetra",
+    "scientificName": "Astyanax mexicanus",
+    "wikipediaTitle": "Mexican tetra",
+    "group": "fish",
+    "regions": [
+      "naWest"
+    ],
+    "range": "Rivers of Texas and eastern Mexico, with blind forms in Mexican caves",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 24.0,
+      "longitude": -99.5
+    },
+    "mapSpan": 14,
+    "tagline": "A fish that lost its eyes in the dark of caves",
+    "lede": "In the rivers of Texas and Mexico, the Mexican tetra is an ordinary silvery fish. But in about 30 caves in northeastern Mexico, the same species has turned pale and eyeless, making it a favourite of scientists who study how evolution works.",
+    "home": "The surface form lives in the lower Rio Grande and the Nueces and Pecos rivers of Texas, and south into the Central Plateau and eastern states of Mexico. It spends most of its time in midwater above the rocky and sandy bottoms of pools and quiet backwaters of creeks and streams, in water of 20 to 25 °C.\n\nIn winter some populations move to warmer water. The cave populations live in a karst region of San Luis Potosí and far southern Tamaulipas, split between three separate areas, in pitch-black caverns and underground streams.",
+    "anatomy": "The surface fish matures at about 12 centimetres long and has the typical tetra shape and plain silver scales. The cave form is depigmented, a pinkish white like an albino. Depending on the cave, its eyes are reduced or missing altogether, with empty sockets covered by skin: fish in the Pachón caves have lost their eyes completely, while those in the Micos cave keep some sight.\n\nInstead of vision, cavefish rely on a highly sensitive lateral line, which picks up tiny changes in water pressure. Taste buds cover their heads, their sense of smell is sharper, and they can store four times as much fat as surface fish, helping them survive irregular meals.\n\nEven their skulls develop asymmetrically, which may improve water flow over the sensors on one side of the face.",
+    "life": "The Mexican tetra is a peaceful, sociable schooling fish. In the wild it eats mainly crustaceans, worms and insects and their larvae, including water beetles and flies or spiders that fall into the water, and it tops up its diet with algae and water plants.\n\nCavefish have no trouble finding food without eyes. They still react weakly to light and keep a daily body rhythm, and their larvae show a response to shadows controlled by the pineal eye, a light-sensitive organ in the brain.",
+    "family": "Cave and surface fish belong to the same species and can interbreed, producing fertile young. Some caves hold only fully blind, pale fish, at least 11 hold blind, normal and in-between forms, and at least one holds blind and normal fish with no intermediates.\n\nCavefish begin life with eyes. A gene mutation appears to restrict blood flow to the developing eyes at a critical stage, and as the young grow, a flap of skin closes over them. Raising them in bright light does not stop this from happening.",
+    "remarkable": "Blindness evolved more than once. The cave populations are young, under 20,000 years old, and arose from at least five separate invasions of caves by surface fish, with sight lost independently each time.\n\nOne explanation is energy: eyes are costly to run, and in total darkness fish without them save a significant amount. A gene called sonic hedgehog may also tie extra taste buds to smaller eyes, so selection for one brings the other.",
+    "outlook": "Outside the caves, the Mexican tetra is spread through river systems in two countries. Its blind forms are far more restricted, confined to a few dozen caves in a single karst region of northeastern Mexico, with each population isolated underground.",
+    "people": "The blind cave tetras in pet shops all descend from fish collected in the Cueva Chica Cave in the Sierra del Abra in 1936 and sent to an aquarium company in Texas. They have since been selectively bred for their cave traits, and large numbers are now raised at commercial facilities, especially in Asia.\n\nThey are hardy, prefer dim light and gravel, and become semi-aggressive as they age. The fish also features in arguments about evolution. Some creationists have called it 'devolution', but evolution has no set direction, and losing a feature is as much a change as gaining one. Charles Darwin wrote about blind cave animals, suggesting that disuse had erased their eyes.",
+    "relatives": "The Mexican tetra belongs to the American characins, family Acestrorhamphidae. It has sometimes been treated as a subspecies of Astyanax fasciatus, and the blind form has been named as a separate species, Astyanax jordani, but genetic evidence contradicts this: splitting them would leave neither group a natural one.\n\nAnother cave-adapted population of Astyanax lives in the Granadas Cave in Guerrero, southern Mexico, but it belongs to the related A. aeneus.",
+    "didYouKnow": "The blind form's nickname, blind tetra, means it is easily confused with a Brazilian fish, Stygichthys typhlops.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 12 cm"
+      },
+      {
+        "label": "Water",
+        "value": "20–25 °C"
+      },
+      {
+        "label": "Diet",
+        "value": "Crustaceans, worms, insects"
+      },
+      {
+        "label": "Cave populations",
+        "value": "About 30"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do blind cave tetras find their way?",
+        "choices": [
+          "With their lateral line",
+          "By echolocation clicks",
+          "Using glowing spots",
+          "By following chemical trails left by bats roosting above the water"
+        ],
+        "explanation": "Their lateral line senses tiny changes in water pressure around them."
+      },
+      {
+        "prompt": "At least how many separate cave invasions gave rise to today's cave populations?",
+        "choices": [
+          "Five",
+          "One",
+          "Two",
+          "More than a hundred separate times"
+        ],
+        "explanation": "Studies suggest at least five independent invasions of caves by surface fish."
+      },
+      {
+        "prompt": "What happens to a cavefish's eyes as it grows?",
+        "choices": [
+          "Skin grows over them",
+          "They glow",
+          "They double in size",
+          "They move to the top of its head to sense light"
+        ],
+        "explanation": "The young start with eyes, but a flap of skin closes over them as they grow."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Protects lands and fresh waters around the world, including in Texas and Mexico."
+      }
+    ]
+  },
+  {
+    "id": "grizzly-bear",
+    "name": "Grizzly Bear",
+    "scientificName": "Ursus arctos horribilis",
+    "wikipediaTitle": "Grizzly bear",
+    "group": "mammal",
+    "regions": [
+      "naWest",
+      "arctic"
+    ],
+    "range": "Alaska, western Canada and parts of the northwestern United States",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 58.0,
+      "longitude": -128.0
+    },
+    "mapSpan": 40,
+    "tagline": "North America's humped, salmon-catching brown bear",
+    "lede": "The grizzly is North America's brown bear, a shaggy giant with a muscular shoulder hump and front claws up to 10 centimetres long. It can sprint at close to 50 km/h, sleep away half the year, and shape whole ecosystems through what it eats.",
+    "home": "Grizzlies once ranged from Alaska to Mexico and east to the shores of Hudson Bay, including much of the Great Plains. Today, combining Canada and the US, they occupy about half that area: Alaska, much of western Canada, and parts of Washington, Idaho, Montana and Wyoming, as far south as Yellowstone and Grand Teton national parks.\n\nAround 60,000 lived in North America in 2002, half of them in Alaska, where they are densest along salmon-rich coasts. Admiralty Island, known to early natives as Xootsnoowú, 'fortress of bears', holds about 1,600. In 2003 a grizzly was spotted on Melville Island in the high Arctic, the most northerly sighting ever documented.",
+    "anatomy": "Size depends hugely on food. Coastal males on the Alaska Peninsula average 389 kg and females 207 kg, while in northern interior Canada males average just 139 kg, about the same as local black bears. With fat-rich salmon, Alaskan bears can reach 540 kg.\n\nAdults measure about 198 to 240 centimetres long and stand around 102 centimetres at the shoulder. The fur ranges from blond to nearly black, usually brown with darker legs and pale-tipped hairs on the back and flanks. Compared with a black bear, a grizzly has a dished face, short rounded ears and a rump lower than its shoulders. Its bite has been measured at over 8 megapascals.",
+    "life": "Although it belongs to the order Carnivora, the grizzly is an omnivore, and plants can make up 80 to 90% of its diet: berries, grasses, sedges, roots, tubers and whitebark pine nuts. It also eats insects, including miller moths that in Yellowstone can supply half its yearly calories, and digs up ground squirrels and marmots. It takes many moose, elk and caribou calves, sometimes adult bison and moose, and steals kills from wolves and cougars.\n\nAt waterfalls such as Brooks Falls in Katmai National Park, grizzlies gather to catch leaping salmon, and big males fight for the best spots. Before winter a bear may gain about 180 kg, then den for 5 to 7 months, often on a north-facing slope above 1,800 metres, without eating, urinating or defecating.",
+    "family": "Grizzlies are solitary except for mothers with cubs and gatherings at salmon runs. They breed slowly: females mature at 5 at the earliest, and after a summer mating the embryo does not implant until the mother is hibernating. One to four cubs, usually two, are born in the den in winter, weighing only about 450 grams, and nurse there for the rest of the season.\n\nCubs stay with their mother for up to 2 years, growing from about 4.5 kg to 45 kg, and she will not breed again in that time. Males live about 22 years on average and females 26; the oldest known wild coastal grizzly reached 39, but most die in their first year.",
+    "remarkable": "Grizzlies fertilise forests with fish. By carrying salmon carcasses away from streams, they move nitrogen from the sea onto the land, and spruce trees up to 500 metres from salmon streams contain nitrogen that came from fish the bears caught.\n\nTheir digging also churns the soil, releasing nitrogen and increasing plant diversity in alpine meadows.",
+    "outlook": "The grizzly is listed as threatened in the contiguous United States, and its Prairie population in Canada was declared extirpated in 2002. The California grizzly, which still appears on the state flag, is extinct, with the last known bears killed in the early 1920s.\n\nRoads and development split the remaining populations, and isolated groups lose genetic diversity. Recovery has been uneven but real: the Yellowstone population grew from 136 bears in 1975 to about 700 in 2017. Wildlife corridors, road overpasses and sanctuaries such as the Khutzeymateen Grizzly Bear Sanctuary in British Columbia aim to reconnect and protect bears.",
+    "people": "Lewis and Clark called it 'grisley', which could mean grizzled or fear-inspiring, and in 1815 George Ord named it horribilis for its character. Many Native American peoples regard the brown bear with awe and fear; among the Gwichʼin, a grizzly hunt was prepared like a war party.\n\nThe Gwichʼin also tell of 'ice bears' that stay out into winter, coated in icicles after rolling in sand and then water. Grizzlies rarely hunt people, but surprised bears and mothers defending cubs can attack, and sows with cubs cause 70% of human deaths from grizzlies. Bear-watching now draws many visitors to Alaska, where the McNeil River has the greatest concentration of brown bears in the world.",
+    "relatives": "The grizzly is a subspecies or population of the brown bear, Ursus arctos, which originated in Eurasia and first reached North America between about 177,000 and 111,000 years ago.\n\nThe name is sometimes stretched to cover other brown bears too, including the Kodiak bear, the Kamchatka bear and the extinct California and Mexican grizzlies. Only Kamchatka and Kodiak bears grow larger. Black bears share much of the grizzly's range but are not strong competitors, since they eat more plants.",
+    "didYouKnow": "Yellowstone's cutthroat trout are the only spawning fish of the salmon family that Rocky Mountain grizzlies are known to feed on.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "198–240 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "95–389 kg (average)"
+      },
+      {
+        "label": "Lifespan",
+        "value": "22–26 years (average)"
+      },
+      {
+        "label": "Top speed",
+        "value": "48 km/h"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How much of a grizzly's diet can be plants?",
+        "choices": [
+          "80–90%",
+          "Under 5%",
+          "About 25%",
+          "None at all, since its gut can only digest meat"
+        ],
+        "explanation": "Despite being a carnivoran, the grizzly may get 80–90% of its diet from plants."
+      },
+      {
+        "prompt": "When are grizzly cubs born?",
+        "choices": [
+          "In winter, in the den",
+          "In late summer",
+          "In early spring, outside",
+          "In autumn, once the salmon runs have ended"
+        ],
+        "explanation": "Cubs are always born in the mother's winter den while she is hibernating."
+      },
+      {
+        "prompt": "How do grizzlies help fertilise forests?",
+        "choices": [
+          "By carrying salmon into them",
+          "By planting nuts",
+          "By shedding their fur",
+          "By flattening trees so more sunlight reaches the forest floor"
+        ],
+        "explanation": "Salmon carcasses carried away from streams add sea-derived nitrogen to nearby trees."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Yellowstone to Yukon Conservation Initiative",
+        "url": "https://y2y.net",
+        "blurb": "Connects and protects habitat from Yellowstone to the Yukon so wildlife like grizzlies can move freely."
+      },
+      {
+        "name": "Nature Conservancy of Canada",
+        "url": "https://www.natureconservancy.ca",
+        "blurb": "Protects important natural areas and the wildlife they sustain across Canada."
+      }
+    ]
+  },
+  {
+    "id": "frilled-lizard",
+    "name": "Frilled Lizard",
+    "scientificName": "Chlamydosaurus kingii",
+    "wikipediaTitle": "Frilled lizard",
+    "group": "reptile",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Savannahs and woodlands of northern Australia and southern New Guinea",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -15.0,
+      "longitude": 136.0
+    },
+    "mapSpan": 30,
+    "tagline": "An Australian lizard that flares a frill to bluff",
+    "lede": "With a sudden snap, the frilled lizard can turn into something that looks far bigger than itself, a disc of red and orange skin flaring around its gaping jaws. Few animals are more instantly Australian, and few bluffs are more theatrical.",
+    "home": "Frilled lizards live across northern Australia, from the Kimberley in Western Australia through the Top End of the Northern Territory to Cape York Peninsula and south to Brisbane, and on the islands of Muralug, Badu and Moa.\n\nIn New Guinea they live in the Trans-Fly region, on both the Papua New Guinea and Indonesian sides. They favour savannahs and woodlands on higher, well-drained ground with a variety of trees, mostly eucalypts, and avoid low plains dominated by Melaleuca and Pandanus. Open ground beneath the trees helps them spot prey from above.",
+    "anatomy": "This lizard grows to about 90 centimetres long, most of it tail, with a head and body of about 27 centimetres, and weighs at least 600 grams. It has a large, wide head, a long neck and long legs, and its body is grey, brown, orange-brown or black.\n\nMost of its scales are keeled, with a ridge down the centre. The frill is a pleated flap of skin attached to the head and neck. At rest it lies folded over the shoulders like a cape; opened, it forms a disc around 30 centimetres across, more than 4 times the length of the torso, coloured red, orange, yellow or white. Males are bigger than females, with proportionally larger heads, jaws and frills.",
+    "life": "Frilled lizards are active by day and spend over 90% of their time in trees, coming down mainly to feed, socialise or move to a new tree. They are sit-and-wait hunters: a lizard watches from a trunk, then climbs down and rushes at its prey. Termites, ants, centipedes and moth larvae are key foods.\n\nIn the wet season they use smaller trees and come nearer the ground; in the dry season they climb higher into larger trees and cut their energy use. They bask upright on trunks in the morning and evening, and shelter in big trees and termite mounds during bushfires.\n\nWhen birds of prey, bigger lizards or snakes threaten, a lizard raises its frill, gapes, puffs, hisses and lashes its tail, or simply flees and hides.",
+    "family": "Breeding takes place in the late dry and early wet season. Rival males display with gaping mouths and spread frills and may fight, pouncing and biting each other's heads. The female digs a shallow hole for her eggs, and may lay several clutches in a season, each of 4 to over 20 eggs.\n\nThe eggs take 2 to 4 months to hatch. Mild temperatures produce more males and extreme temperatures more females. Hatchlings have proportionally small frills, and the young mature within 2 years. Males live up to 6 years and females up to 4.",
+    "remarkable": "Frilled lizards can run upright on their hind legs, sprinting after prey or away from danger. To keep their balance, they tilt their heads so far back that they line up behind the base of the tail, and they drop to all fours only when it is time to seize a meal.",
+    "outlook": "The IUCN lists the frilled lizard as Least Concern because it is common and widespread, but warns that some local populations may be declining. The pet trade is a worry: export is banned from Australia and Papua New Guinea, so most pet lizards seem to come from Indonesia, and because the species is hard to breed in captivity, many sold as captive-bred are probably wild-caught.\n\nIndonesia itself lists it as protected. Feral cats may be a threat, but the invasive cane toad does not appear to have harmed it significantly.",
+    "people": "Alongside the kangaroo and koala, the frilled lizard is one of Australia's most iconic animals, and it has appeared on some Australian coins. Archaeological evidence shows some Indigenous peoples ate it in ancient times. In the late 19th century William Saville-Kent brought a live one to England, and another was shown at a reptile display in Paris.\n\nIts look has caught the eye of film-makers: in Steven Spielberg's 1993 film Jurassic Park, the dinosaur Dilophosaurus was given a similar neck frill that rose when it attacked, and the lizard's image appeared in The Adventures of Priscilla, Queen of the Desert in 1994.",
+    "relatives": "The frilled lizard is an agamid, family Agamidae, and the only species in its genus, Chlamydosaurus, meaning 'cloaked lizard'. Its species name honours Captain Phillip Parker King, whose expedition collected the first specimen, which John Edward Gray described in 1825.\n\nIt split from its closest living relatives around 10 million years ago. DNA reveals three lineages across its range, divided by the Ord River and the Gulf of Carpentaria, and it probably reached New Guinea about 17,000 years ago, during a glacial period when low seas joined the island to Australia.",
+    "didYouKnow": "At Kakadu National Park, male frilled lizards travel about 69 metres a day on average, three times as far as females.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 90 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "At least 600 g"
+      },
+      {
+        "label": "Frill",
+        "value": "About 30 cm across"
+      },
+      {
+        "label": "Diet",
+        "value": "Insects and other invertebrates"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How wide can the frilled lizard's frill spread?",
+        "choices": [
+          "About 30 cm",
+          "About 5 cm",
+          "About 1 metre",
+          "Nearly 2 metres, wider than the lizard is long"
+        ],
+        "explanation": "Fully opened, the frill forms a disc around 30 cm across."
+      },
+      {
+        "prompt": "What decides whether its eggs hatch as males or females?",
+        "choices": [
+          "Incubation temperature",
+          "Rainfall",
+          "The father's size",
+          "The colour of the mother's frill during courtship"
+        ],
+        "explanation": "Mild temperatures produce more males and extreme temperatures more females."
+      },
+      {
+        "prompt": "Where do most pet frilled lizards appear to come from?",
+        "choices": [
+          "Indonesia",
+          "Australia",
+          "Papua New Guinea",
+          "Captive breeding farms in Europe and the United States"
+        ],
+        "explanation": "Export is banned from Australia and Papua New Guinea, so most pets seem to come from Indonesia."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Protects threatened wildlife and habitats across Australia."
+      }
+    ]
+  },
+  {
+    "id": "grey-parrot",
+    "name": "Grey Parrot",
+    "scientificName": "Psittacus erithacus",
+    "wikipediaTitle": "Grey parrot",
+    "group": "bird",
+    "regions": [
+      "africa"
+    ],
+    "range": "Forests of equatorial Africa from Ivory Coast to Kenya",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 1.0,
+      "longitude": 18.0
+    },
+    "mapSpan": 40,
+    "tagline": "Africa's grey genius, a parrot that talks with meaning",
+    "lede": "Plain grey with a scarlet tail, the grey parrot hardly looks like a superstar. Yet it is among the most intelligent birds known, able to learn words, count and even invent names for things, and that brilliance has made it one of the world's most popular, and most heavily traded, pet birds.",
+    "home": "The grey parrot lives in equatorial Africa, in a range stretching from Kenya west to the eastern Ivory Coast, including Angola, Cameroon, the Congo, Gabon, Ghana and Uganda. It favours dense forest but also uses forest edges and more open gallery and savanna forest.\n\nIts total numbers are very uncertain, with estimates from 630,000 to 13 million birds. Escaped or released pets have been seen in South Florida since at least 1984, but there is no sign they breed there.",
+    "anatomy": "This is a medium to large parrot, about 33 centimetres long with a wingspan of 46 to 52 centimetres, and adults weigh 418 to 526 grams. It is mostly grey with a darker head and wings, feathers edged faintly in white, a black bill and a red tail.\n\nMales and females look alike. Young birds have dark grey to black eyes, while adults have yellow irises. Rare colour mutations occur in the wild, including an all-white form, and breeders have produced red and pied varieties since the 1800s.",
+    "life": "In the wild it eats mostly fruit, nuts and seeds, including oil palm fruit, with some flowers, bark, insects and snails, and it partly feeds on the ground. It is highly social and relies on flock life, keeping in touch with contact calls that share information about location, predators and food.\n\nWild birds are secretive and hard to study, partly because they are prey for palm-nut vultures and other raptors, while monkeys raid their nests. Like captive birds, they imitate other sounds: two roosting in the Democratic Republic of the Congo had more than 200 different calls, including imitations of nine other birds and a bat.",
+    "family": "Grey parrots are monogamous and nest in tree holes, each pair needing its own tree. They start breeding at 3 to 5 years old. The female lays 3 to 5 eggs and incubates them for 30 days while her mate feeds her, and both defend the nest.\n\nChicks weigh only 12 to 14 grams when they hatch and leave the nest at about 12 weeks, but their parents look after them for another 4 to 5 weeks. Wild birds live about 23 years on average, while captive ones may reach 40 to 60.",
+    "remarkable": "On some tasks, grey parrots perform at the level of a 4- to 6-year-old child. Irene Pepperberg's famous parrot Alex learned more than 100 words, could tell objects apart by colour, material and shape, add numbers and grasp something like zero.\n\nOthers combine known words into new names, calling an apple a 'banerry'. They will also share food with a partner even at a cost to themselves, and the partner returns the favour.",
+    "outlook": "The species is listed as Endangered by the IUCN, chiefly because of the pet trade. More than 359,000 were traded internationally between 1994 and 2003, roughly 21% of the wild population was being taken each year, and 60 to 66% of captured birds died before reaching market.\n\nIt is also hunted for meat and traditional medicine, and loses habitat to logging. In Ghana numbers fell 90 to 99% after 1992, and three roosts that once held 700 to 1,200 birds each now hold just 18 in total. Since 2016, CITES has given the species its highest level of protection.",
+    "people": "People have kept grey parrots for thousands of years: Egyptian hieroglyphs from about 2000 BC show them as pets, and the Greeks and Romans kept them in cages. Today it is one of the most popular companion birds for its gift for mimicking speech; one escaped pet in Japan got home by reciting its owner's name and address.\n\nCaptive birds need plenty of company and stimulation, or they may pluck their feathers, as up to 40% do. In 2024 a wildlife park in Lincolnshire moved eight swearing parrots into a flock of more than 100 birds to dilute their language.",
+    "relatives": "Linnaeus named the species in 1758, putting every parrot he knew in Psittacus, Latin for 'parrot'. Today only two species remain in that genus: the grey parrot and the Timneh parrot, which was treated as a subspecies until a 2007 study showed it to be distinct.\n\nThe species name comes from a Greek word for a mystery bird said to mimic human sounds. Some authorities treat the Príncipe grey parrot, from an island off west Africa, as a subspecies of the grey parrot, while others place it with the Timneh.",
+    "didYouKnow": "In one study, two grey parrots given touch screens consistently chose different pieces of music, then danced and sang along.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 33 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "418–526 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 23 years wild; 40–60 captive"
+      },
+      {
+        "label": "Diet",
+        "value": "Fruit, nuts and seeds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What colour is the grey parrot's tail?",
+        "choices": [
+          "Red",
+          "Grey",
+          "Yellow",
+          "Bright blue with black tips"
+        ],
+        "explanation": "Its grey body is set off by red tail feathers."
+      },
+      {
+        "prompt": "What did one grey parrot call an apple?",
+        "choices": [
+          "Banerry",
+          "Red ball",
+          "Crunch",
+          "Sweet round fruit from the tree"
+        ],
+        "explanation": "It combined 'banana' and 'cherry' into a new word, 'banerry'."
+      },
+      {
+        "prompt": "What is the biggest threat to wild grey parrots?",
+        "choices": [
+          "The pet trade",
+          "Climate change",
+          "Disease",
+          "Competition for nest holes with introduced starlings"
+        ],
+        "explanation": "Huge numbers have been captured for the international pet trade, with many dying before reaching market."
+      }
+    ],
+    "charities": [
+      {
+        "name": "World Parrot Trust",
+        "url": "https://www.parrots.org",
+        "blurb": "Works to save wild parrots and improve the welfare of captive ones."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats."
+      }
+    ]
   }
 ]
