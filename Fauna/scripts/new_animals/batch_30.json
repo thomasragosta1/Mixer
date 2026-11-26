@@ -1,0 +1,886 @@
+[
+  {
+    "id": "precious-coral",
+    "name": "Precious Coral",
+    "scientificName": "Corallium",
+    "wikipediaTitle": "Precious coral",
+    "group": "marineInvertebrate",
+    "regions": [
+      "europe",
+      "africa",
+      "asia"
+    ],
+    "range": "Dark rocky seabeds of the Mediterranean, nearby Atlantic and western Pacific",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 39.0,
+      "longitude": 9.0
+    },
+    "mapSpan": 40,
+    "tagline": "Blood-red animal bushes, prized as gems since antiquity",
+    "lede": "In dim sea caves and deep water grow small red bushes that are not plants at all, but colonies of animals. Their skeletons are the colour of blood, hard enough to polish to a glassy shine, and people have worn them as jewellery and charms for thousands of years.",
+    "home": "Precious corals settle on rocky seabeds where little sediment falls, and almost always in darkness: either far down, or tucked into caverns and crevices nearer the surface. The best-known species, Corallium rubrum, lives mainly in the Mediterranean at depths from 10 to 300 metres, although harvesting has stripped much of the shallower part of that band. In the underwater caves of Alghero in Sardinia, a coast nicknamed the Coral Riviera, it grows as shallow as 4 metres.\n\nThe same species turns up at Atlantic sites near the Strait of Gibraltar, off southern Portugal and around the Cape Verde Islands. Other members of the genus live in the western Pacific, especially around Japan and Taiwan, where they grow much deeper, between 350 and 1,500 metres down, in places swept by strong currents.",
+    "anatomy": "A colony looks like a small leafless shrub and can reach about 1 metre in height. Its core is made of tiny interlocking spicules of hard calcium carbonate, tinted every shade of red by carotenoid pigments. Raw, that core is matte; polished, it gleams.\n\nIn life, the branches are sheathed in a soft, bright red skin. From it peep countless small white polyps, each built on an eightfold radial plan, which can be pulled back inside for safety.",
+    "life": "A precious coral spends its whole existence fixed to one patch of rock, so where it lives tells you what it needs: hard ground, clear water with little settling silt, and shade, whether from depth or from the overhang of a cave roof. It thrives in places that receive little or no light at all.\n\nThe real work of the colony is done by its polyps, which push out of the red skin into the surrounding water and shrink back when disturbed. The deep Pacific species favour spots with strong currents, where water is constantly flowing past their branches.",
+    "family": "Each red bush is not one animal but a community. Hundreds of polyps share the same living skin and sit on a single skeleton that they lay down together, so the branching shape of the colony is the combined handiwork of all its members.\n\nThat shared skeleton is what makes the colony so valuable to people, and so vulnerable. A branch that took the whole community years to build can be broken off in moments, and with it go all the polyps living on it.",
+    "remarkable": "Demand for red coral was once so intense that it vanished from the very places that produced it. Pliny the Elder wrote that the Gauls used to decorate their weapons and helmets with it, but that by his day the trade to India, where coral was believed to hold sacred powers, had grown so great that it was seldom seen even in the regions where it was fished.",
+    "outlook": "Intensive fishing, especially in shallow water, has damaged red coral along the Mediterranean coastline, where colonies at depths of less than 50 metres are much diminished. Fishing and climate change both threaten its future.\n\nProtection works, though. The three oldest marine protected areas in the Mediterranean, at Banyuls, Carry-le-Rouet and Scandola off Corsica, all hold substantial populations, and since protection began their colonies have grown in both size and number, in shallow and deeper water alike.",
+    "people": "Coral jewellery has been found in ancient Egyptian graves and prehistoric European burials, and it was especially fashionable in Victorian times. With a hardness of only 3.5 on the Mohs scale, and no transparency, it is usually shaped into beads or smooth domes rather than faceted. The Romans hung coral branches around children’s necks for protection, and in Italy it was long worn against the evil eye.\n\nGreek myth explains its origin: when Perseus set down Medusa’s severed head to wash his hands, her blood turned the seaweed into red coral. Among the Yoruba and Bini peoples of West Africa, coral necklaces and anklets mark kings and chiefs, and in Ladakh coral and turquoise ornaments are worn at festivals. The Italian town of Torre del Greco built its fortunes on working coral, and opened a coral school in 1878.",
+    "relatives": "Precious corals belong to the Octocorallia, the eightfold corals, and share that group’s bushy growth form. The genus Corallium contains several species; the first to be described, Corallium rubrum of the Mediterranean, was once known as Gorgonia nobilis.\n\nThat older name echoes the myth, since the Greek word for coral, gorgeia, comes from the Gorgons, the monstrous sisters of whom Medusa was one.",
+    "didYouKnow": "In traditional Dutch fishing communities, a red coral necklace was an indispensable part of every woman’s traditional costume.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "Up to about 1 m"
+      },
+      {
+        "label": "Depth",
+        "value": "4–1,500 m"
+      },
+      {
+        "label": "Hardness",
+        "value": "3.5 on the Mohs scale"
+      },
+      {
+        "label": "Colour",
+        "value": "Pale pink to deep red"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What gives a precious coral skeleton its red colour?",
+        "choices": [
+          "Carotenoid pigments",
+          "Iron oxide",
+          "Algae living inside it",
+          "Red proteins absorbed from the small fish it catches"
+        ],
+        "explanation": "The calcium carbonate skeleton is tinted red by carotenoid pigments."
+      },
+      {
+        "prompt": "In Greek myth, whose blood turned seaweed into coral?",
+        "choices": [
+          "Medusa’s",
+          "Poseidon’s",
+          "Andromeda’s",
+          "The sea monster that Perseus had just turned to stone"
+        ],
+        "explanation": "When Perseus set down Medusa’s head, her blood turned the seaweed into red coral."
+      },
+      {
+        "prompt": "Why is precious coral usually made into beads rather than faceted gems?",
+        "choices": [
+          "It is soft and opaque",
+          "It is too hard to cut",
+          "Faceting fades its colour",
+          "Its tiny spicules shatter apart whenever flat faces are cut"
+        ],
+        "explanation": "With a hardness of 3.5 and no transparency, coral is shaped into beads or smooth domes."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world’s oceans, including the Mediterranean."
+      }
+    ]
+  },
+  {
+    "id": "indian-star-tortoise",
+    "name": "Indian Star Tortoise",
+    "scientificName": "Geochelone elegans",
+    "wikipediaTitle": "Indian star tortoise",
+    "group": "reptile",
+    "regions": [
+      "asia"
+    ],
+    "range": "Dry forests, grasslands and scrub of India, Sri Lanka and southeastern Pakistan",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 15.0,
+      "longitude": 78.0
+    },
+    "mapSpan": 25,
+    "tagline": "A shell full of stars, and the most smuggled tortoise",
+    "lede": "Every plate of this tortoise’s domed shell carries a burst of yellow rays on black, like a sky full of stars painted onto a helmet. That beauty has made it a prize, and a target, around the world.",
+    "home": "Indian star tortoises are native to parts of western and southeastern India, the island of Sri Lanka and southeastern Pakistan. They are adaptable, coping well with places that swing between dry and wet seasons, and have been found in rainy deciduous forests, dry grasslands, scrub forest and even semi-desert.\n\nTortoises from different parts of the range look slightly different. Those in southeastern India tend to be a little smaller, with a lighter and more contrasting shell pattern than those further north, while Sri Lankan tortoises are generally larger, with broader yellow markings.",
+    "anatomy": "The shell is strongly domed, its plates often rising into humps, with nearly vertical sides and a strongly serrated rear edge. Each plate is etched with concentric rings, and from a yellow centre on each one, many narrow yellow streaks radiate across the black. The underside carries the same black and yellow rays. Adults grow to about 25 centimetres long.\n\nThe front of the forelimbs is armoured with large, pointed, overlapping bony scales, and the heels bear spur-like knobs. The beak is only slightly hooked, with toothed edges to the jaws. Females are considerably larger than males and have a flatter underside, while a male’s underside is concave.",
+    "life": "Star tortoises are mostly vegetarian, grazing on grasses and eating fallen fruit, flowers and the leaves of succulent plants, with the occasional meal of carrion. They spend much of their time resting in the shade of grass and low vegetation.\n\nThere, the starry pattern works as camouflage. Although the colours are bold, the radiating lines break up the tortoise’s outline, so a resting animal blends into the stripes of light and shadow among the stems.",
+    "family": "Males compete for mates by ramming each other and trying to flip a rival onto its back. Some 60 to 90 days after mating, the female digs a nest, lays her eggs and covers them with sand. She can lay up to nine clutches a year, each with 1 to 10 eggs. The brittle-shelled eggs weigh 12 to 21 grams each and start out a translucent pink, turning white after 2 to 3 weeks.\n\nIncubation takes anywhere from 50 to 180 days, and temperature decides the sex of the young: at 28 to 30 °C mostly males hatch, while at 31 to 32 °C mostly females do. Hatchlings have no stars yet, just yellow rectangular blotches on black or brown. Males mature at around 6 to 8 years old, and females at 8 to 12.",
+    "remarkable": "The star tortoise may have a shell shaped to set itself right. The mathematicians who designed the gömböc, a solid object with just one stable and one unstable balance point that always rocks back upright, noticed its resemblance to this tortoise. When they turned 30 of them upside down, many of them righted themselves.",
+    "outlook": "The species has been listed as Vulnerable on the IUCN Red List since 2016; it probably numbers more than 10,000 animals, but is declining. Habitat loss is one threat, but the main one is the illegal pet trade. Roughly 10,000 to 20,000 are taken from the wild each year, and only about 3,000 are rescued. In 2017 alone, more than 6,000 were seized across India, Thailand and Bangladesh.\n\nSmugglers tape the tortoises’ legs and cram them into bags and boxes, and many die of stress, suffocation or cracked shells before they are sold. Stressed animals are also very prone to pneumonia and other respiratory diseases. In 2019 the species was moved to CITES Appendix I by full consensus, banning all commercial trade, yet more than 3,500 were seized in 2020 and 2021.",
+    "people": "This is the most widely trafficked tortoise of all, and it now turns up in Southeast Asia, Europe, the United States and many other places far from home. Its quietness, and its ability to go many days without food, make it easy to smuggle.\n\nThe tortoises are now commonly bred in many countries for the pet market. Keepers are advised never to feed them meat, despite the occasional carrion they eat in the wild.",
+    "relatives": "No subspecies are formally recognised, but a 2006 genetic study by Gaur showed that the tortoises of India and Sri Lanka form distinct populations, matching the differences in size and pattern between them.\n\nIts scientific name, Geochelone elegans, nods to its handsome shell: elegans is Latin for elegant.",
+    "didYouKnow": "CITES, the convention that gave this tortoise its strictest protection, covers more than 38,000 species in all.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to about 25 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Grasses, fruit, flowers"
+      },
+      {
+        "label": "Clutch",
+        "value": "1–10 eggs"
+      },
+      {
+        "label": "Incubation",
+        "value": "50–180 days"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What decides whether a star tortoise egg hatches male or female?",
+        "choices": [
+          "Temperature",
+          "The mother’s age",
+          "Day length",
+          "Which clutch of the year the egg was laid in"
+        ],
+        "explanation": "Cooler nests of 28 to 30 °C produce mostly males, warmer ones of 31 to 32 °C mostly females."
+      },
+      {
+        "prompt": "What happened when researchers turned star tortoises upside down?",
+        "choices": [
+          "Many righted themselves",
+          "They all froze",
+          "They hissed loudly",
+          "They pulled in their heads and waited to be turned back"
+        ],
+        "explanation": "The tortoises’ shell shape, compared to the gömböc, helps many of them roll back upright."
+      },
+      {
+        "prompt": "Which CITES appendix has listed the species since 2019?",
+        "choices": [
+          "Appendix I",
+          "Appendix II",
+          "Appendix III",
+          "None, as only its habitat is protected by law"
+        ],
+        "explanation": "It was moved up to Appendix I, which bans commercial trade."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Turtle Survival Alliance",
+        "url": "https://turtlesurvival.org",
+        "blurb": "Works worldwide to save threatened tortoises and freshwater turtles."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Fights wildlife trafficking and protects wild places across Asia and beyond."
+      }
+    ]
+  },
+  {
+    "id": "golden-poison-frog",
+    "name": "Golden Poison Frog",
+    "scientificName": "Phyllobates terribilis",
+    "wikipediaTitle": "Golden poison frog",
+    "group": "amphibian",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Wet lowland rainforest on Colombia’s Pacific coast",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 3.5,
+      "longitude": -77.0
+    },
+    "mapSpan": 8,
+    "tagline": "A thumb-sized frog thought to be the deadliest animal alive",
+    "lede": "Barely the length of a thumb, the golden poison frog is thought to be the most poisonous animal on Earth. It makes no attempt to hide: its glowing yellow skin is a warning that no predator should ignore.",
+    "home": "This frog lives only in the humid Chocó rainforest on the Pacific coast of Colombia, in the departments of Cauca and Valle del Cauca. Its ideal home is rainforest that gets 5 metres of rain or more each year, from sea level up to 200 metres, with temperatures of at least 26 °C and humidity of 80 to 90%.\n\nIt is known only from primary forest, and its whole range covers less than 5,000 square kilometres.",
+    "anatomy": "It is the largest of the poison dart frogs, reaching about 6 centimetres long and nearly 30 grams; females are usually bigger than males. Young frogs are mostly black, with two golden-yellow stripes down the back. The black fades as they grow, and by about 18 weeks old they are fully coloured.\n\nDespite the name, not all are golden. Frogs from Quebrada Guangui are pale to deep yellow, some there are metallic orange, and the largest form, from La Brea and La Sirpa, is called mint green, though it can be metallic green, pale green or even white. All of these bright colours advertise the frog’s toxicity.",
+    "life": "Golden poison frogs are active by day and live spread out evenly through the forest, never gathering in groups. They are ambush hunters with broad tastes, able to tackle prey that is large for their size compared with most of their relatives. Ants of the genera Brachymyrmex and Paratrechina make up most of their diet, along with many other insects and small invertebrates.\n\nAdults probably have few or no predators. One snake, Leimadophis epinephelus, resists several frog toxins and has been seen eating young frogs without ill effects.",
+    "family": "Males call to females with a trill. Courtship is unusually tender: each partner strokes the other’s head, back and flanks before the eggs are laid on the ground beneath leaf litter, where they are fertilised outside the body.\n\nWhen the tadpoles hatch, they wriggle onto a parent’s back and stick there in its mucus. The adult then climbs into the canopy and drops them into the small pools held in the centres of bromeliads or in water-filled tree holes. In these tiny nurseries the tadpoles feed on algae and mosquito larvae.",
+    "remarkable": "An average wild frog holds about one milligram of batrachotoxin, enough to kill 10 to 20 people or up to two African bull elephants. The toxin jams open the sodium channels of nerve cells, locking muscles in contraction and leading to paralysis and heart failure. Batrachotoxin is extraordinarily rare: it is known only from three Colombian frogs of this genus, a few birds in Papua New Guinea and four Papuan beetles.",
+    "outlook": "The golden poison frog is listed as Endangered, because the forest within its small natural range is being destroyed. Collection for the pet trade was once a serious extra threat. Today, though, the IUCN estimates that most frogs sold as pets come legally from captive lines, and it judges the threat from collecting to be small.",
+    "people": "For the Emberá and Cofán peoples of Colombia’s rainforest, this frog is the main source of poison for the darts they use to hunt. The Emberá carefully warm a frog near a fire until it oozes a little poisonous fluid, then soak their dart and arrow tips in it; the tips stay deadly for two years or more.\n\nThe frog is also a popular vivarium animal, thanks to its colour and bold personality. Captive-bred frogs are harmless, because the frogs seem to build their poison from something in their wild diet, perhaps small melyrid beetles, and lose it on ordinary feeder insects. A Colombian company, Tesoros de Colombia, floods the market with cheap captive-bred frogs, including an orange line with dark feet, to make poaching wild ones pointless.",
+    "relatives": "The species was described in 1978 by herpetologists Charles Myers and Borys Malkin and biochemist John Daly, who named it terribilis for its deadly skin secretions. It belongs to the poison dart frog family, and its genus, Phyllobates, contains the only frogs known to carry batrachotoxin.\n\nHow it avoids poisoning itself is unknown, but some other poison frogs have a ‘toxin sponge’ protein in their blood and muscles that soaks up their own toxin.",
+    "didYouKnow": "Myers based the first description on hundreds of wild frogs plus a breeding colony of 18 kept at the American Museum of Natural History.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to about 6 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "Nearly 30 g"
+      },
+      {
+        "label": "Range",
+        "value": "Under 5,000 km²"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly ants"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why are captive-bred golden poison frogs harmless?",
+        "choices": [
+          "Their diet lacks the toxin source",
+          "They are a different species",
+          "Their glands are removed",
+          "They lose their poison when kept in cool, dry tanks all year"
+        ],
+        "explanation": "The frogs seem to build their poison from wild prey, and lose it on feeder insects."
+      },
+      {
+        "prompt": "Where do the parents put their tadpoles?",
+        "choices": [
+          "Pools in bromeliads and tree holes",
+          "Fast mountain streams",
+          "Under stones",
+          "In a pouch on the father’s back until they become froglets"
+        ],
+        "explanation": "Parents carry tadpoles into the canopy and drop them into small pools in bromeliads and tree holes."
+      },
+      {
+        "prompt": "Which people use the frog’s poison on hunting darts?",
+        "choices": [
+          "The Emberá",
+          "The Maya",
+          "The Inca",
+          "The Guaraní of the southern Brazilian plateau"
+        ],
+        "explanation": "The Emberá and Cofán peoples of Colombia use it to poison their darts."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests, including in Colombia."
+      },
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps save amphibian species that cannot yet be secured in the wild."
+      }
+    ]
+  },
+  {
+    "id": "kereru",
+    "name": "Kererū",
+    "scientificName": "Hemiphaga novaeseelandiae",
+    "wikipediaTitle": "Kererū",
+    "group": "bird",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Forests, farmland, parks and gardens throughout New Zealand",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -41.0,
+      "longitude": 174.0
+    },
+    "mapSpan": 16,
+    "tagline": "New Zealand’s big, beautiful and sometimes tipsy pigeon",
+    "lede": "Listen for a loud whoosh of wings over a New Zealand garden and you may spot a kererū, a pigeon up to half a metre long in shimmering green and a crisp white vest. It is a gardener of the native forest, and every now and then it gets drunk on fruit.",
+    "home": "Kererū live throughout New Zealand, from Northland to Stewart Island and many offshore islands, from the coast up into the mountains. They use native lowland forest, scrub, farmland and city parks and gardens. Their low genetic diversity suggests that during ice ages they shrank back into forest refuges, then spread rapidly across the country as the climate warmed.\n\nThey are mostly sedentary but can roam a long way for food, usually up to 25 kilometres. In a 2011 study near Invercargill, three of four tagged birds crossed Foveaux Strait to Stewart Island, travelling up to 100 kilometres.",
+    "anatomy": "This is a large tree-dwelling pigeon, up to 50 centimetres long and 550 to 850 grams, with a wingspan of about 75 centimetres. Its head, neck and upper breast are dark green with gold-bronze highlights, its nape and upper back a copper-sheened purple, and its breast a clean white, sharply divided from the darker plumage above. The bill is red with an orange tip, the feet dark red and the eyes red with a pink ring. Males and females look alike.\n\nKererū coo softly now and then, but their wings are louder, making a distinctive whoosh in flight. They often climb slowly before plunging in steep, curving dives.",
+    "life": "Kererū mainly eat fruit from native trees such as miro, kahikatea, tawa, taraire, pūriri, nīkau and karaka, along with introduced fruits like elder, privet and plums. When fruit is scarce they browse leaves, flowers and buds, favouring kōwhai, tree lucerne, willow, elm and poplar. Because they eat and spread the fruit of so many trees, they are vital to the health of New Zealand’s podocarp and broadleaf forests.\n\nAfter feeding, kererū like to sunbathe while they digest. In warm weather, fruit can ferment in the crop and the birds become drunk. Like other pigeons, they drink by sucking water up rather than tipping back their heads.",
+    "family": "Pairs are monogamous, often staying together across many seasons. Breeding depends on ripe fruit: in warm Northland they can nest year round, but further south they breed between October and April. The male courts with display flights, climbing steeply, seeming to stall at the top, then swooping down, and by bowing and bouncing beside the female on a perch.\n\nBoth birds build a flimsy platform of twigs, usually kānuka, in a tree or hedge. They lay a single white egg and take turns incubating it in shifts of about six hours for 28 to 29 days. The chick is fed on crop milk and leaves the nest after 30 to 45 days, and in good fruit years a pair may nest up to four times. Kererū live 15 to 25 years.",
+    "remarkable": "In 2020 a kererū nicknamed Pidge turned up in Rotorua at the age of 29, after not being seen for 24 years. Fittingly for such a celebrated bird, an exoplanet orbiting another star, HD 137388 b, was renamed Kererū in its honour in 2019.",
+    "outlook": "The IUCN lists the kererū as Least Concern with a rising population, while the Department of Conservation rates it not threatened but conservation dependent. Kererū were plentiful until the 1960s, then declined under pressure from hunting, habitat loss and introduced mammals: possums and rats eat the fruit they need and raid their nests, while cats and stoats kill adults too.\n\nCitizen science shows a comeback in the suburbs, with a 79% rise in sightings from 2010 to 2020. Collisions remain a danger; many birds have been killed by cars along a Wellington motorway and by flying into windows.",
+    "people": "Kererū are a taonga, a cultural treasure, to Māori, and were traditionally caught with snares for food and feathers, the meat often preserved in its own fat. Their feathers are still used in fine cloaks. In one legend, the hero Māui became a kererū to visit the underworld, carrying his mother’s white apron and green-blue belt, which became the bird’s plumage.\n\nThe species has been fully protected since the early 1920s, and hunting is illegal; Māori may use only feathers and bones from dead birds collected by the Department of Conservation, an arrangement that remains hotly debated. The kererū appeared on the twenty-dollar note from 1967 to 1991 and won Bird of the Year in 2018.",
+    "relatives": "The kererū belongs to a group of fruit-eating pigeons found from Southeast Asia to Australia and New Zealand. Its closest relative is the Chatham Islands pigeon, once treated as a subspecies but now a species in its own right. The Norfolk pigeon of Norfolk Island, a second subspecies, was last seen in 1900, probably hunted to extinction.\n\nThe genus name Hemiphaga combines the Greek for ‘half’ with part of Carpophaga, meaning ‘fruit eating’. Kererū is both singular and plural, though the official English name is New Zealand pigeon.",
+    "didYouKnow": "In July and August 1882, ornithologist Walter Buller reported that at least 8,000 kererū were caught and preserved from a single grove of miro trees near Lake Taupō.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 50 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "550–850 g"
+      },
+      {
+        "label": "Wingspan",
+        "value": "About 75 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "15–25 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why do kererū sometimes become drunk?",
+        "choices": [
+          "Fruit ferments in their crop",
+          "They drink nectar",
+          "They eat toxic leaves",
+          "They sip fermented sap from trees damaged by possums"
+        ],
+        "explanation": "Sunbathing after a meal can make fruit ferment in the crop, producing alcohol."
+      },
+      {
+        "prompt": "How many eggs does a kererū lay in a clutch?",
+        "choices": [
+          "One",
+          "Two",
+          "Four",
+          "Up to six, laid over several days"
+        ],
+        "explanation": "The clutch is a single white egg, incubated by both parents."
+      },
+      {
+        "prompt": "What was renamed in the kererū’s honour in 2019?",
+        "choices": [
+          "An exoplanet",
+          "A mountain",
+          "A ferry",
+          "A national park on the South Island’s west coast"
+        ],
+        "explanation": "The exoplanet HD 137388 b was renamed Kererū."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Forest & Bird",
+        "url": "https://www.forestandbird.org.nz",
+        "blurb": "New Zealand’s largest independent conservation group, which runs Bird of the Year."
+      }
+    ]
+  },
+  {
+    "id": "bull-shark",
+    "name": "Bull Shark",
+    "scientificName": "Carcharhinus leucas",
+    "wikipediaTitle": "Bull shark",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "naEast",
+      "southAmerica",
+      "oceania"
+    ],
+    "range": "Warm coasts, estuaries and rivers worldwide",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": -40.0
+    },
+    "mapSpan": 80,
+    "tagline": "The stocky shark that swims far up rivers",
+    "lede": "Most sharks would die in a river. The bull shark swims thousands of kilometres up them, turning up in lakes, flooded streets and even a golf course pond. Stocky, short-tempered and at home in murky shallows, it is one of the sharks most likely to meet people.",
+    "home": "Bull sharks live in warm coastal waters around the world, usually shallower than 30 metres, although they can go down to 150 metres. In the Atlantic they range from Massachusetts to southern Brazil and from Morocco to Angola, and in the Pacific from Baja California to Ecuador.\n\nThey also travel deep inland. Bull sharks have been found 4,000 kilometres up the Amazon in Peru, in Lake Nicaragua, in the Ganges and Brahmaputra, and in the Tigris as far as Baghdad. More than 500 are thought to live in Australia’s Brisbane River, and during the 2010 to 2011 Queensland floods some were seen swimming in flooded streets.",
+    "anatomy": "Bull sharks are heavier for their length than other requiem sharks, grey above and white below, with a short, broad, blunt snout. Adult females average about 2.4 metres and 130 kg, and males about 2.25 metres and 95 kg. A length of 3.5 metres is often given as the maximum, but one female measured 4 metres and may have weighed more than 600 kg.\n\nFor its size, the bull shark has the strongest bite of any shark, ray or relative that has been measured, at up to 5,914 newtons.",
+    "life": "Bull sharks are apex predators that eat mainly bony fish, smaller sharks, including other bull sharks, and stingrays, but also turtles, birds, dolphins, crustaceans and even land mammals. They hunt in murky water, where prey cannot see them coming, often using a bump-and-bite attack and then biting repeatedly until the victim cannot escape. Usually solitary, they sometimes pair up briefly to hunt.\n\nWhen chased by a predator, a bull shark may throw up its last meal as a distraction. Its enemies include tiger sharks and great whites, which mostly take young ones, and in rivers saltwater and Nile crocodiles.",
+    "family": "Bull sharks mate in late summer and early autumn, often in bays and estuaries, and females commonly bear scratches from the encounter. After a 12-month pregnancy, a female gives birth to between 1 and 13 live, free-swimming pups, each about 70 centimetres long. She gives them no care.\n\nThe pups are born in sheltered, low-salt nurseries such as lagoons and river mouths, because newborns cannot yet tolerate full seawater. As they grow, they move out to sea. Males can start breeding at about 15 years old, and females not until 18.",
+    "remarkable": "Six bull sharks swept into a golf course lake in Queensland by a flood in 1996 lived there for 17 years, until another flood took them away in 2013. The golf club put the sharks on its logo and held a monthly ‘Shark Lake Challenge’, and the episode became the longest recorded stay of the species in such low-salt water.",
+    "outlook": "The bull shark is listed as Vulnerable, and its numbers are falling. It is caught in fishing nets, overfished for its meat, skin and oil, and harmed by pollution, yet it is not a protected species. Shark culling near beaches in places such as Australia and South Africa kills more.\n\nResearchers have tested magnetic barriers to keep sharks away from beaches without killing them, though the technology needs more work. Satellite tagging is helping to map where bull sharks travel and which areas most need protection.",
+    "people": "Because they hunt in shallow water near people, bull sharks are one of the three species most likely to bite humans, with tiger sharks and great whites. One or more may have been involved in the 1916 Jersey Shore attacks, and they have bitten bathers in Indian rivers and swimmers in Sydney Harbour.\n\nIts common name comes from its stocky build, broad flat snout and unpredictable temper. In Africa it is called the Zambezi shark, or zambi, and it has many other local names, from Swan River whaler to Lake Nicaragua shark. It appears on Costa Rica’s 2,000 colones banknote.",
+    "relatives": "The bull shark is a requiem shark in the genus Carcharhinus, which also includes the sandbar shark. Unlike the bull shark, many of these close relatives cannot cope with fresh water.\n\nThe true river sharks of the genus Glyphis share its taste for rivers, but they sit on a separate branch of the family, so the two groups evolved the ability independently. Sharks in Lake Nicaragua were once thought to be their own species, until they were found to be bull sharks in 1961; tagged sharks have since crossed between the lake and the sea.",
+    "didYouKnow": "Bull sharks avoid bright yellow netting, which they can easily see in the water, and this colour sense may explain why sharks are drawn to yellow survival gear.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Usually 2.2–2.4 m"
+      },
+      {
+        "label": "Weight",
+        "value": "95–130 kg on average"
+      },
+      {
+        "label": "Litter",
+        "value": "1–13 pups"
+      },
+      {
+        "label": "Gestation",
+        "value": "12 months"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why are bull sharks born in river mouths and lagoons?",
+        "choices": [
+          "Newborns cannot tolerate full seawater",
+          "To hide from crocodiles",
+          "Rivers are warmer",
+          "Because the mothers only feed in rivers while pregnant"
+        ],
+        "explanation": "Young bull sharks have a low tolerance for high salinity, so they start life in brackish nurseries."
+      },
+      {
+        "prompt": "How long did bull sharks live in a Queensland golf course lake?",
+        "choices": [
+          "17 years",
+          "6 months",
+          "3 years",
+          "Just a few weeks before the groundsmen caught them"
+        ],
+        "explanation": "Swept in by a 1996 flood, they stayed until another flood in 2013."
+      },
+      {
+        "prompt": "Where does the name ‘bull shark’ come from?",
+        "choices": [
+          "Its stocky build and temper",
+          "Its bellowing call",
+          "Its horn-like fins",
+          "It was first caught in a river where cattle were watered"
+        ],
+        "explanation": "It is named for its stocky shape, broad flat snout and aggressive behaviour."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works for the conservation of sharks, skates and rays worldwide."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns for science-based fishing limits and protection of ocean wildlife."
+      }
+    ]
+  },
+  {
+    "id": "sloth-bear",
+    "name": "Sloth Bear",
+    "scientificName": "Melursus ursinus",
+    "wikipediaTitle": "Sloth bear",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests, scrub and grassland of India, Nepal, Bhutan and Sri Lanka",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 21.0,
+      "longitude": 79.0
+    },
+    "mapSpan": 25,
+    "tagline": "A shaggy bear that vacuums up termites with its lips",
+    "lede": "With a mop of black fur, floppy lips and enormous claws, the sloth bear looks like a bear put together in a hurry. It can suck termites out of a mound so noisily you can hear it from 180 metres away, and it has a temper to match.",
+    "home": "Sloth bears live on the Indian subcontinent: in India, the Terai of Nepal, Bhutan and Sri Lanka. They use a wide range of habitats, including moist and dry tropical forest, savanna, scrub and grassland, generally below 1,500 metres, and below 300 metres in Sri Lanka’s dry forests.\n\nThey have died out in Bangladesh.",
+    "anatomy": "Sloth bears are medium-sized, with females usually weighing 55 to 105 kg and males 80 to 145 kg, standing 60 to 92 centimetres at the shoulder. Sri Lankan bears are smaller. The coat is long, shaggy and black, forming a mane up to 30 centimetres long over the neck and shoulders, with a pale Y- or V-shaped chest mark that may be a warning to tigers.\n\nIts head is built for insects. The long lower lip can stretch over the nose, there are no upper front teeth, and the long, broad palate helps it suck. The blunt, sickle-shaped claws are about 10 centimetres long. It has the longest tail of any bear, up to 18 centimetres, and is the only bear with long hair on its ears.",
+    "life": "Termites, ants and bees are their speciality, found by smell; they can sniff out grubs almost a metre underground. At a mound, a bear rips in with its claws, blows away the soil with violent puffs, then sucks up the insects through its muzzle. Its teeth are often worn from the soil. They also eat fruit, fallen mahua petals, honey, crops such as maize and sugar cane, and carrion, and their droppings help seeds of several trees sprout faster.\n\nThey shuffle with a noisy, flapping gait but can outrun a person, climb well, and swim mainly for play. Tigers sometimes hunt them, and sloth bears usually face such enemies down, charging with loud roars.",
+    "family": "In India, sloth bears mate between April and June and give birth in December or early January; in Sri Lanka they breed all year. After about 210 days, the female gives birth in a cave or under boulders to one or two cubs, rarely three. The cubs are born blind and open their eyes at four weeks.\n\nCubs ride on their mother’s back, each keeping its own spot by fighting for it, until they are about a third of her size; she even climbs trees with them aboard to escape danger. They become independent at 2 to 3 years. Mothers feed cubs a hardened mixture of regurgitated fruit and honeycomb, known as bear’s bread.",
+    "remarkable": "The sloth bear attacks people more often than any other bear species. Unable to escape up trees easily because of its long digging claws, it seems to have evolved to meet danger head-on, and it often charges and strikes at once rather than bluffing. One bear in Mysore killed 12 people, and in Madhya Pradesh attacks killed 48 people between 1989 and 1994.",
+    "outlook": "The sloth bear is listed as Vulnerable, mainly because of habitat loss and degradation, and fewer than 20,000 are thought to remain. It is legally protected in India, and all international commercial trade is banned under CITES Appendix I. Even so, poachers kill bears for their claws, canines, paws and gall bladders.\n\nBears do best in well-guarded reserves that also protect tigers and elephants. Managing food waste near towns is important too, since bears that raid rubbish bins run into people. Sanctuaries such as Daroji in Karnataka protect wild bears, while rescued animals are cared for at centres like Wildlife SOS’s Agra Bear Rescue Facility.",
+    "people": "Dancing bears were a street entertainment in India from at least the 13th century. The Kalandars captured cubs and trained them by cruel means, pulling their teeth and leading them by a nose ring. The practice was banned in 1972, yet some 800 dancing bears were still on the streets in the late 20th century. In 2009, after a seven-year campaign that helped handlers find new work, the last Kalandar dancing bear was freed.\n\nBaloo of Rudyard Kipling’s The Jungle Book is, except for his colour, described much like a sloth bear, the only bear in the Seoni area where the story takes place.",
+    "relatives": "The sloth bear is the only species in its genus, Melursus, and one of eight living bears. It probably evolved on the Indian subcontinent, with a fossil bear from the Shivalik hills, Melursus theobaldi, thought by some to be its direct ancestor. Its insect-eating features evolved separately from those of other ant-eating mammals.\n\nEarly naturalists gave it a string of names. George Shaw first described it in 1791 as Bradypus ursinus, and others called it the labiated bear for its long lips.",
+    "didYouKnow": "In Sri Lanka, the penis bone of a sloth bear was once used as a charm against infertility.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "55–145 kg"
+      },
+      {
+        "label": "Claws",
+        "value": "About 10 cm"
+      },
+      {
+        "label": "Litter",
+        "value": "1–2 cubs, rarely 3"
+      },
+      {
+        "label": "Diet",
+        "value": "Termites, ants, fruit, honey"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does a sloth bear lack that helps it suck up termites?",
+        "choices": [
+          "Upper front teeth",
+          "A tongue",
+          "Nostrils",
+          "Back teeth, which fall out as it reaches adulthood"
+        ],
+        "explanation": "With no upper incisors and a stretchy lower lip, it can suck insects up through its muzzle."
+      },
+      {
+        "prompt": "How do sloth bear cubs usually travel?",
+        "choices": [
+          "On their mother’s back",
+          "In a burrow",
+          "Holding her tail",
+          "Following a few paces behind in single file"
+        ],
+        "explanation": "Cubs ride on their mother’s back until they reach about a third of her size."
+      },
+      {
+        "prompt": "In what year was the last Kalandar dancing bear freed?",
+        "choices": [
+          "2009",
+          "1972",
+          "1947",
+          "2019, after the last licences finally expired"
+        ],
+        "explanation": "A seven-year campaign ended with the last Kalandar dancing bear being set free in 2009."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife SOS",
+        "url": "https://wildlifesos.org",
+        "blurb": "Rescues and cares for sloth bears in India and helped end the dancing-bear trade."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Protects forests and wildlife across the Indian subcontinent."
+      }
+    ]
+  },
+  {
+    "id": "cone-snail",
+    "name": "Cone Snails",
+    "scientificName": "Conidae",
+    "wikipediaTitle": "Cone snail",
+    "group": "marineInvertebrate",
+    "regions": [
+      "openOcean",
+      "oceania",
+      "asia",
+      "africa"
+    ],
+    "range": "Tropical and subtropical seas worldwide, richest in the Indo-Pacific",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": 125.0
+    },
+    "mapSpan": 70,
+    "tagline": "Beautiful shells hiding a venomous harpoon",
+    "lede": "Cone snails are slow, beautiful and deadly. Inside each patterned shell waits a hollow, barbed harpoon loaded with venom, fast enough to paralyse a passing fish and, in a few species, strong enough to kill a person.",
+    "home": "Cone snails live in tropical and subtropical seas around the world, on sand, rock and coral reef from the intertidal zone down into deeper water. About 60% of species are found in the Indo-Pacific, where their diversity peaks in the western part of the region. Others live in the tropical eastern Pacific and on both sides of the tropical Atlantic.\n\nA few have adapted to cooler waters. About 10 species live on the warm temperate south coast of South Africa, and others in the Mediterranean and off southern California.",
+    "anatomy": "The shell is shaped like an upside-down cone, narrow at the front, topped by a flatter cone formed by the spire. The opening is long and narrow, with a thin, sharp outer lip. Species range from 1.3 to about 23 centimetres long. Many are brightly coloured and patterned, though in some the pattern is partly hidden under a thin brownish or yellowish skin called the periostracum.\n\nInside, the snail has a venom gland and a radula, the toothed tongue of snails, transformed into a set of hollow, barbed darts made of chitin. Each dart is stored in a sac until needed, with a spare always ready.",
+    "life": "Cone snails are carnivores that eat marine worms, small fish, molluscs and other cone snails. They are slow, so they rely on venom to catch faster prey, sensing it with a specialised smell organ. When a victim comes near, the snail stretches out a long, flexible proboscis and fires a venom-filled dart into it with a powerful muscular contraction, still holding it by a thread of tissue.\n\nWorm hunters sting, wait for the prey to be paralysed and then swallow it. Some fish hunters release toxins into the water first to stun their prey, then harpoon it and pull it into the mouth. Afterwards the snail spits out bones, scales and the used dart.",
+    "family": "Most cone snails have separate sexes, and fertilisation takes place inside the body. Females lay eggs in protective capsules attached to the seabed, the number varying between species.\n\nThe young emerge in one of two ways. Some hatch as free-swimming larvae called veligers that drift for a time before settling, while others hatch as tiny crawling snails.",
+    "remarkable": "The harpoon strike of Conus catus is one of the fastest complete movements recorded in any animal. Fluid pressure inside the proboscis drives the dart out at up to 90 km/h, with an acceleration of 400,000 metres per second squared. Some species go further still: geography and tulip cones release a form of insulin into the water, sending nearby fish into a sugar crash that leaves them helpless.",
+    "outlook": "With more than 800 species, cone snails have no single conservation status, and each species faces its own conditions. Their beauty has long made them targets for shell collectors. Conus gloriamaris, the Glory of the Seas, was once among the most sought-after shells in the world, fetching very high prices while only a few were known, until its habitat was found.\n\nTheir venoms give people a strong reason to care. Every species is thought to make its own cocktail, so each one lost could mean lost medicines.",
+    "people": "About 30 human deaths from cone snail stings are on record, most from large fish-eating species such as the geography cone, nicknamed the cigarette snail because a victim supposedly has only time to smoke one before dying. The venom contains a painkilling component, and symptoms can include numbness, paralysis and breathing failure, so live cones should be handled with great care or not at all; their darts can pierce gloves and wetsuits.\n\nThat same venom is a pharmacy. A toxin from the magician cone became ziconotide, a powerful painkiller approved in 2004 for severe chronic pain, and other cone compounds are being studied for epilepsy, stroke and nerve injury. In Hawaii, beach-worn cone shell tops were once strung as puka shell jewellery.",
+    "relatives": "Cone snails make up the family Conidae, predatory sea snails in the superfamily Conoidea. Until 2009 all were placed in the single genus Conus; later studies split and rearranged them several times, and the family now includes a handful of genera. Shell patterns vary so much within species that more than 3,200 names had been coined by 2009.\n\nFossils go back about 55 million years, and living cone snails fall into two lineages that split some 33 million years ago. Eating fish evolved at least twice within the family.",
+    "didYouKnow": "Carl Linnaeus knew of only 30 cone snail species that are still considered valid today, compared with more than 800 recognised now.",
+    "facts": [
+      {
+        "label": "Species",
+        "value": "Over 800"
+      },
+      {
+        "label": "Length",
+        "value": "1.3–23 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Worms, fish, molluscs"
+      },
+      {
+        "label": "Harpoon speed",
+        "value": "Up to 90 km/h"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is a cone snail’s harpoon made from?",
+        "choices": [
+          "A modified tooth",
+          "A sharpened spine of shell",
+          "A hardened tentacle",
+          "A fragment of the last fish it swallowed"
+        ],
+        "explanation": "The dart is a modified radula tooth, made of chitin and loaded with venom."
+      },
+      {
+        "prompt": "Why is the geography cone nicknamed the cigarette snail?",
+        "choices": [
+          "Victims supposedly die within a cigarette’s time",
+          "Its shell is cigarette-shaped",
+          "It lives in ash-grey sand",
+          "Sailors once dried and smoked its venom glands"
+        ],
+        "explanation": "Gallows humour claims a victim has only enough time to smoke a cigarette before dying."
+      },
+      {
+        "prompt": "What medicine was developed from cone snail venom?",
+        "choices": [
+          "A painkiller",
+          "An antibiotic",
+          "A sleeping pill",
+          "A treatment that regrows damaged teeth and bone"
+        ],
+        "explanation": "Ziconotide, from the magician cone, is used for severe chronic pain."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Coral Reef Alliance",
+        "url": "https://www.coralreefalliance.org",
+        "blurb": "Works with communities to protect coral reefs and the life they support."
+      }
+    ]
+  },
+  {
+    "id": "boomslang",
+    "name": "Boomslang",
+    "scientificName": "Dispholidus typus",
+    "wikipediaTitle": "Boomslang",
+    "group": "reptile",
+    "regions": [
+      "africa"
+    ],
+    "range": "Savannas, forests, grasslands and karoo scrub across sub-Saharan Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -8.0,
+      "longitude": 25.0
+    },
+    "mapSpan": 60,
+    "tagline": "Africa’s big-eyed tree snake with a slow, deadly bite",
+    "lede": "A slim green snake drapes itself through the branches, turning its huge eyes from side to side to get a better look at you. The boomslang is shy and rarely bites, but when it does, its venom quietly stops the blood from working properly.",
+    "home": "The boomslang lives only in sub-Saharan Africa, from Senegal, The Gambia and Guinea across West Africa, through Central and East Africa, and down over much of the south. Some of its densest populations are in Angola, Botswana, Mozambique, Namibia, South Africa, Zambia and Zimbabwe.\n\nIt is a superb climber and spends most of its life in trees, in forests, savannas, grasslands and karoo scrub. It also hunts and shelters on the ground, and in harsh weather may hide underground.",
+    "anatomy": "Adults are usually 100 to 160 centimetres long, occasionally more than 183 centimetres, and weigh 175 to 510 grams. The head is distinctly egg-shaped, with exceptionally large eyes and round pupils, and the boomslang has excellent eyesight. Its body is slightly flattened from side to side, with narrow, strongly keeled scales, and its tail is long.\n\nColour varies a great deal. Males are usually light green with black or blue edges to their scales, while adult females are often brown. Behind several small teeth, each side of the upper jaw carries three large, grooved fangs, set below the eye.",
+    "life": "Boomslangs are active by day and are reclusive, slipping from branch to branch when pursued by anything too big to eat. They eat chameleons and other tree lizards, frogs, and sometimes small mammals, birds and the eggs of birds and reptiles, all swallowed whole. They will also eat other snakes, including other boomslangs.\n\nIn cool weather they become inactive for short spells, often curled up inside the enclosed, woven nest of a weaverbird.",
+    "family": "Boomslangs lay eggs, usually 8 to 14 of them, though up to 27 have been recorded. The female leaves her leathery clutch in a hollow tree trunk or rotting log, where incubation takes about 3 months, unusually long for a snake.\n\nHatchlings are 29 to 38 centimetres long. Young males are grey with blue speckles and young females pale brown, and both take several years to reach their adult colours. Tiny hatchlings pose no danger to people, but by the time a young snake is about 45 centimetres long and as thick as a little finger, its bite can be deadly.",
+    "remarkable": "In 1957 the herpetologist Karl Schmidt was bitten by a young boomslang that he doubted could deliver a fatal dose. He kept notes on his symptoms almost to the end, and died. Until then many herpetologists believed that rear-fanged snakes like this one could not kill a person.",
+    "outlook": "The boomslang is widespread, ranging across much of sub-Saharan Africa and living in a wide array of habitats, from lowland forest to dry karoo scrub.\n\nMeetings with people go badly mainly when people start them. Bites generally happen only when someone tries to handle, catch, chase or kill the snake, so the safest course for both is to leave it alone.",
+    "people": "Its name means ‘tree snake’ in Dutch and Afrikaans, from boom, ‘tree’, and slang, ‘snake’. The boomslang is timid: cornered, it puffs up its neck and draws itself into an S-shaped striking pose as a warning before it bites.\n\nIts venom mainly attacks the blood, setting off many tiny clots that use up the body’s ability to clot, so that victims bleed into muscle, brain and other organs. Symptoms may not show for many hours, which gives time to reach antivenom but can fool victims into thinking they escaped with a harmless dry bite. An antivenom was developed in the 1940s, and severe cases may need full blood transfusions. As little as 2 to 3 mg of venom may be enough to kill an adult.",
+    "relatives": "The boomslang belongs to the Colubridae, the largest snake family, and is a rear-fanged snake: its fangs sit further back than those of cobras or vipers, so it must bite and hold on to work venom into its victim. It can open its jaws to 170 degrees to help.\n\nIts genus, Dispholidus, contains two other species, D. pembae and D. punctatus. Its nearest relatives include the twig snakes of the genus Thelotornis, which together with it form the tribe Dispholidini. Two subspecies of boomslang are recognised.",
+    "didYouKnow": "Between 1919 and 1962, D. S. Chapman recorded eight serious boomslang bites, two of which were fatal.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "100–160 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "175–510 g"
+      },
+      {
+        "label": "Clutch",
+        "value": "8–14 eggs, up to 27"
+      },
+      {
+        "label": "Diet",
+        "value": "Chameleons, frogs, birds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does ‘boomslang’ mean?",
+        "choices": [
+          "Tree snake",
+          "Green death",
+          "Bird catcher",
+          "Snake that drops from branches onto travellers"
+        ],
+        "explanation": "In Dutch and Afrikaans, boom means tree and slang means snake."
+      },
+      {
+        "prompt": "Why can a boomslang bite be dangerously misleading?",
+        "choices": [
+          "Symptoms can take hours",
+          "It is painless and silent",
+          "It leaves no fang marks",
+          "Its venom only works properly in cold weather"
+        ],
+        "explanation": "The slow-acting venom may show no symptoms for many hours, so victims may wrongly think they are safe."
+      },
+      {
+        "prompt": "Where does a boomslang often shelter in cool weather?",
+        "choices": [
+          "In a weaverbird’s nest",
+          "In a termite mound",
+          "Under water",
+          "Coiled in the roots of baobab trees deep underground"
+        ],
+        "explanation": "It often curls up inside the enclosed nest of a weaverbird."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Protects threatened species and ecosystems across southern Africa."
+      }
+    ]
+  },
+  {
+    "id": "northern-crested-newt",
+    "name": "Northern Crested Newt",
+    "scientificName": "Triturus cristatus",
+    "wikipediaTitle": "Northern crested newt",
+    "group": "amphibian",
+    "regions": [
+      "europe",
+      "asia"
+    ],
+    "range": "Ponds and woodland from Great Britain across Europe to Western Siberia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 54.0,
+      "longitude": 25.0
+    },
+    "mapSpan": 45,
+    "tagline": "A warty pond dragon with a jagged crest and a fiery belly",
+    "lede": "In spring, a small dragon sneaks into Europe’s ponds. The male northern crested newt grows a jagged crest along his back and dances for females by night, then the whole show vanishes back into the woods for the rest of the year.",
+    "home": "This is the most widespread and most northerly of the crested newts. Its range runs from Great Britain through southern Scandinavia to Karelia in Russia, south to central France, Romania and Ukraine, and east across the Urals into Western Siberia. It is mainly a lowland animal, though it has been found at 1,750 metres in the Alps.\n\nOutside the breeding season it lives mostly in woodland, preferring deciduous woods and groves, or in hedgerows, scrub, swampy meadows and quarries. To breed it needs fairly large, sunny ponds full of underwater plants and free of fish. Many are human-made: most ponds it uses in the United Kingdom were dug by people, and ditches, gravel pits and garden ponds can suit it too.",
+    "anatomy": "It is a large newt. Males usually reach about 13.5 centimetres long and females 16 centimetres, with rare giants of 20 centimetres. The rough, warty skin is dark brown above, with black spots and heavy white stippling on the flanks, and the belly is yellow-orange with dark, irregular blotches. Females have a yellow line along the lower edge of the tail.\n\nIn the breeding season the male grows a crest up to 1.5 centimetres high, deeply jagged along his back, smoother on the tail and broken at the tail base, along with a blue-white flash down each side of his tail. Females never grow a crest.",
+    "life": "Adults spend about seven months of the year on land, hiding under logs, bark, stones or in small mammal burrows, and hibernate underground in winter, often in groups. They stay close to their ponds, covering about 100 metres in a night and rarely moving more than a kilometre. In the water, from about March, they are mostly nocturnal and keep to the deeper parts.\n\nOn land they eat earthworms, insects, woodlice, snails and slugs; in the water, small molluscs, tiny crustaceans, tadpoles and smaller newts. Their skin secretes a small amount of the poison tetrodotoxin, and when threatened they roll up to flash their bright belly as a warning, oozing a milky fluid.",
+    "family": "Males gather on small patches of clear pond bottom used as display grounds, where each performs an elaborate courtship of body movements and wafts pheromones at a female. If she responds, he guides her over a packet of sperm he has left on the bottom, which she takes up into her body.\n\nShe lays about 200 eggs a season, one at a time, carefully folding each into the leaf of a water plant, a task that takes around five minutes per egg. A genetic quirk shared with its relatives means half of the embryos die. Larvae hatch after two to five weeks, swim freely in open water, and leave the pond as young efts two to four months later; only about 4% survive that far. Adults usually live seven to nine years, sometimes up to 17.",
+    "remarkable": "Although it is now the most widespread crested newt, during the last ice age it was probably confined to small refuges in the Carpathian Mountains. Most of its populations show little genetic variation, except there, which suggests that the newt spread out north, east and west from the Carpathians as the climate warmed.",
+    "outlook": "The northern crested newt is listed as Least Concern, but its numbers are falling and it is rare in parts of its range. The main cause is the loss of ponds and land habitat to building and farming. Because the newts move so little, cut-off ponds are easily lost. Other threats include fish and crayfish released into ponds, road salt, warmer winters and collection for the pet trade.\n\nIt is strictly protected across most of Europe, and some Natura 2000 sites were set up for it. Digging new ponds near existing ones works well, as they are colonised quickly.",
+    "people": "In the United Kingdom, where it is often called the great crested newt, strict legal protection has brought it into conflict with building projects, and whole populations have sometimes been moved out of the way of development. Government agencies issue guidelines on how to reduce the harm.\n\nIt is also seen as a flagship species, since protecting its ponds benefits many other amphibians, and it is also known as the warty newt.",
+    "relatives": "Laurenti described it in 1768 as Triton cristatus, but because Linnaeus had already used Triton for a sea snail, Rafinesque created the genus Triturus for it in 1815. It was long treated as a single species, the crested newt, until its former subspecies were recognised as separate species; there are now seven.\n\nIts closest relative is the Danube crested newt, the only crested newt more slender than it. In western France it sometimes hybridises with the marbled newt, and in the Netherlands genes from introduced Italian crested newts have entered the native population.",
+    "didYouKnow": "Hybrids between crested and marbled newts were once described as two separate species, Triton blasii and Triton trouessarti.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "13.5–16 cm"
+      },
+      {
+        "label": "Eggs",
+        "value": "About 200 a season"
+      },
+      {
+        "label": "Lifespan",
+        "value": "7–9 years, up to 17"
+      },
+      {
+        "label": "Diet",
+        "value": "Invertebrates, tadpoles"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a female crested newt lay her eggs?",
+        "choices": [
+          "Folded singly into leaves",
+          "In long strings",
+          "In a foam nest",
+          "In a big clump attached to a submerged stone"
+        ],
+        "explanation": "She wraps each egg individually in the leaf of a water plant, about 200 a season."
+      },
+      {
+        "prompt": "Where did the species probably survive the last ice age?",
+        "choices": [
+          "The Carpathians",
+          "The Alps",
+          "Southern Spain",
+          "Coastal caves of the Black Sea and the Caspian"
+        ],
+        "explanation": "Genetic variation is highest in the Carpathians, suggesting it spread out from there."
+      },
+      {
+        "prompt": "What does a threatened crested newt do?",
+        "choices": [
+          "Rolls up to show its belly",
+          "Plays dead on its back",
+          "Squeaks loudly",
+          "Sheds its tail and scurries back into the water"
+        ],
+        "explanation": "It flashes its bright yellow-orange belly as a warning and oozes a milky fluid."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian and Reptile Conservation",
+        "url": "https://www.arc-trust.org",
+        "blurb": "Conserves amphibians and reptiles and their habitats across the United Kingdom."
+      },
+      {
+        "name": "The Wildlife Trusts",
+        "url": "https://www.wildlifetrusts.org",
+        "blurb": "Protects wildlife and creates ponds and nature reserves across the UK."
+      }
+    ]
+  },
+  {
+    "id": "red-billed-quelea",
+    "name": "Red-billed Quelea",
+    "scientificName": "Quelea quelea",
+    "wikipediaTitle": "Red-billed quelea",
+    "group": "bird",
+    "regions": [
+      "africa"
+    ],
+    "range": "Dry thornbush grassland across most of sub-Saharan Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": 25.0
+    },
+    "mapSpan": 60,
+    "tagline": "Earth’s most numerous wild bird, a feathered locust",
+    "lede": "It weighs less than a few coins, but there may be 1.5 billion of it. The red-billed quelea is thought to be the most numerous wild bird on Earth, sweeping across Africa’s grasslands in flocks so vast they move like a rolling cloud.",
+    "home": "Queleas live across most of sub-Saharan Africa, mainly in seasonally dry thornbush grassland such as the Sahel. They avoid forests, deserts and colder places, and are absent from western South Africa and the arid coasts of Namibia and Angola. Mostly found below 1,500 metres, they must drink every day, so they stay within about 30 kilometres of water.\n\nThey are nomads, following the rains. Fresh grass seed appears a few weeks after rain falls, so queleas move between temporarily wet areas, some travelling hundreds of kilometres. In southern Africa, the whole population gathers on Zimbabwe’s Highveld in October before splitting to the northwest and southeast.",
+    "anatomy": "This is a small, sparrow-like weaver about 12 centimetres long and 15 to 26 grams, with a heavy, cone-shaped bill. Outside the breeding season both sexes have streaky brown upperparts, pale underparts and a pink or dull red bill.\n\nBreeding males are much bolder. Over 75% wear a black face mask, occasionally a white one, ringed with a band that may be yellow, rusty, pink or purple, and their bills turn bright raspberry red. The richness of that red signals a male’s quality and status. Breeding females instead get a yellow or orange bill and eye-ring.",
+    "life": "Queleas specialise in the seeds of wild annual grasses, preferring grains 1 to 2 millimetres across; a single bird can eat about 15 grams a day. Flocks feed on the ground, with birds at the back constantly leapfrogging those in front to reach fresh seed, so the flock seems to roll across the land. They may fly 50 to 65 kilometres a day to feed, returning to roost in the evening.\n\nWhen wild seed runs out they turn to cereal crops such as sorghum, millet, rice and wheat. A huge range of animals prey on them, from falcons, eagles and marabou storks to snakes, monkeys, lions and leopards; one Nile crocodile even knocked birds into the water with its tail.",
+    "family": "Queleas breed in colonies of up to millions of nests, as dense as 30,000 per hectare, usually in thorny acacia trees. One colony in Zimbabwe was 20 kilometres long, and more than 6,000 nests have been counted in a single tree. Each male weaves an oval nest of 600 to 700 strips of green grass, starting with a ring between two twigs, then displays to attract a female.\n\nThe usual clutch is three pale blue or green eggs. Incubation takes only nine or ten days, and the chicks fledge after about two weeks, one of the shortest breeding cycles of any bird. Chicks are fed insects at first, then seeds. Queleas breed at one year old and live two to three years in the wild.",
+    "remarkable": "The scale of a colony is staggering. One in Namibia, of about five million adults and five million chicks, was calculated to eat roughly 13 tonnes of insects and 1,000 tonnes of grass seed in a single breeding cycle.",
+    "outlook": "The red-billed quelea is listed as Least Concern, thanks to its huge range and population. Far from being threatened, it is treated as a serious agricultural pest and nicknamed Africa’s feathered locust.\n\nGovernments in countries such as Botswana, Kenya, South Africa, Tanzania and Zimbabwe have sprayed roosts and colonies with the bird poison fenthion, often from the air, or used fire-bombs. Attempts to wipe out regional populations in the 1950s and 1960s failed, so control now targets only flocks likely to attack vulnerable crops.",
+    "people": "Queleas are caught and eaten in many parts of Africa. Around Lake Chad, teams of Hadjerai trappers with hand-held nets catch some 20,000 birds a night, and an estimated five to ten million are taken near N’Djamena each year, fried, sun-dried and sold in the city. Even so, the impact on the region’s 200 million or so queleas is thought to be small.\n\nIn Nigeria their droppings are gathered as fertiliser, and tourists in places like Kruger National Park enjoy watching the huge flocks. Queleas also eat pest insects, including migratory locusts.",
+    "relatives": "Linnaeus described the quelea in 1758 as a bunting, and wrongly said it came from India. In 1850 Ludwig Reichenbach recognised it as a weaver and created the genus Quelea. Three subspecies are recognised, told apart by the breeding plumage of the males.\n\nIts closest relatives are the cardinal quelea and red-headed quelea, and the genus is most closely related to the fodies of the western Indian Ocean islands.",
+    "didYouKnow": "One suggestion links the name quelea to medieval Latin qualea, meaning ‘quail’, likening the birds’ vast numbers to the quail that fed the Israelites in the Book of Exodus.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 12 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "15–26 g"
+      },
+      {
+        "label": "Population",
+        "value": "Up to about 1.5 billion"
+      },
+      {
+        "label": "Incubation",
+        "value": "9–10 days"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What nickname reflects the quelea’s impact on farms?",
+        "choices": [
+          "Africa’s feathered locust",
+          "The grain thief",
+          "The sky rat",
+          "The red-beaked plague of the Sahel"
+        ],
+        "explanation": "Its raids on cereal crops earned it the name Africa’s feathered locust."
+      },
+      {
+        "prompt": "Why does a feeding quelea flock look like a rolling cloud?",
+        "choices": [
+          "Birds at the back leapfrog the front",
+          "They circle constantly overhead",
+          "They feed only at dusk",
+          "The flock splits in two and the halves swap places"
+        ],
+        "explanation": "Birds at the rear keep flying over the others to reach the next strip of fallen seed."
+      },
+      {
+        "prompt": "How long do quelea eggs take to hatch?",
+        "choices": [
+          "9–10 days",
+          "About a month",
+          "3 weeks",
+          "Six weeks, timed to the start of the rains"
+        ],
+        "explanation": "Incubation takes only nine or ten days, one of the shortest breeding cycles of any bird."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats, including across Africa."
+      }
+    ]
+  }
+]
