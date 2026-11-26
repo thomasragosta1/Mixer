@@ -1,0 +1,881 @@
+[
+ {
+  "id": "texas-horned-lizard",
+  "name": "Texas Horned Lizard",
+  "scientificName": "Phrynosoma cornutum",
+  "wikipediaTitle": "Texas horned lizard",
+  "group": "reptile",
+  "regions": [
+   "naWest",
+   "centralAmerica"
+  ],
+  "range": "Southern Great Plains and deserts of the south-central US and north-eastern Mexico",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 31.0,
+   "longitude": -101.0
+  },
+  "mapSpan": 20,
+  "tagline": "A spiky little dragon that fires blood from its eyes",
+  "lede": "Squat, round and bristling with bony horns, the Texas horned lizard looks like a pocket-sized dragon from a dusty plain. It spends its days soaking up sunshine and eating ants, and when a coyote gets too close it has one of the strangest defences of any animal.",
+  "home": "This lizard lives in south-central parts of the United States and north-eastern Mexico. Its natural range runs from south-east Colorado and Kansas through Oklahoma and Texas to south-east New Mexico and the far south-east of Arizona, and south into Chihuahua, Coahuila, Nuevo León and Tamaulipas. It is found from barrier islands on the Gulf Coast at sea level up to about 1,830 metres, across the southern Great Plains, the Edwards Plateau and the Chihuahuan Desert.\n\nEscaped and released pets from the early and mid-twentieth century turned up in many other states, but most never formed breeding populations. A few stable colonies in Florida, Georgia and South Carolina have lasted more than 50 years without spreading.",
+  "anatomy": "It is the largest-bodied of the roughly 21 species of horned lizards. Females are bigger than males, reaching about 13 centimetres from snout to vent, while males reach about 9.4 centimetres. The two largest horns crown the head, with more on the brows and jawline, and rows of spikes run along the sides and back. The horns are extensions of the skull and contain true bone.\n\nIts colour matches the ground it lives on, from yellow or reddish-brown in deserts to tan on prairies, and it may brighten in the mating season. Dark lines run from the eyes to the tips of the horns, and a solid white stripe runs down the back with dark round blotches on either side.",
+  "life": "Despite its fierce looks, the Texas horned lizard is extremely docile. It needs bright sunlight to make vitamin D, so it is often found beside roads and in open, rocky places where it can bask. At night it buries itself in sand, and in winter it hibernates in shallow burrows that often face south or south-west for the most sun. On an average day it moves only about 50 metres.\n\nAbout 70% of its diet is harvester ants, topped up with termites, beetles and grasshoppers. A factor in its blood plasma neutralises the ants' venom, and its throat produces thick mucus that wraps up and disables swallowed ants. When threatened it can sprint into thick grass, dig itself quickly underground, or puff up its body so its spikes stick out and it becomes hard to swallow. It will also stab attackers with its horns.",
+  "family": "Females dig burrows with their forelimbs and lay their eggs underground. The odds facing the young are long: in reptile reintroduction programmes like those run for this species, fewer than 1% of a female's offspring typically survive in the wild to adulthood.\n\nPopulations across the range are strongly structured genetically, with limited gene flow between regions, so lizards in one area can differ from those in another.",
+  "remarkable": "When a wolf, coyote or dog attacks, this lizard can restrict the blood flowing out of its head until tiny vessels around its eyelids burst. It then fires an aimed jet of blood from the corners of its eyes, and sometimes its mouth, up to 1.5 metres. The blood carries a chemical that tastes foul to dogs and their relatives. The trick seems to have no effect on birds of prey, and a lizard can lose up to 6% of its body weight performing it.",
+  "outlook": "Globally the species is classed as Least Concern by the IUCN, but it has disappeared from almost half of its geographic range, and Texas lists it as threatened. Pesticides and the spread of invasive red imported fire ants are the main suspects, since both wipe out the harvester ant colonies the lizard depends on. Urban growth, fragmented habitat and predation by pet dogs and cats add to the losses, though small towns with suitable habitat may offer some refuge from predators.\n\nIn Texas it is illegal to take, possess, transport or sell one without a special permit. The Fort Worth Zoo breeds hatchlings for release, the Dallas and Houston zoos have built captive colonies, and the San Antonio Zoo works with private landowners to return lizards to places they once lived.",
+  "people": "It is popularly called the horned toad, horny toad or horned frog because of its rounded body and blunt snout, though it is neither a toad nor a frog. It is the state reptile of Texas and, as the horned frog, the mascot of Texas Christian University. Some Native American peoples regard horned lizards as sacred, and the animal is a common motif in the art of the south-western United States and Mexico.\n\nIn 1928 a lizard called Ol' Rip became a national sensation after supposedly surviving 31 years sealed in a cornerstone time capsule in Eastland, Texas. He toured the country and met President Calvin Coolidge, and the craze for pet horned toads that followed caused a sharp fall in wild numbers. Ol' Rip later inspired the singing frog of the 1955 cartoon One Froggy Evening.",
+  "relatives": "The Texas horned lizard belongs to Phrynosoma, a genus of about 21 spiky horned lizards found only in North America. Phrynosoma means 'toad-bodied' and cornutum means 'horned'. At least three other horned lizards share its blood-squirting defence.\n\nIt is sometimes confused with the Texas spiny lizard, which looks rather similar and shares much of its habitat.",
+  "didYouKnow": "Research into its conservation is partly paid for by sales of 'Keep Texas Wild' horned lizard licence plates.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Up to 13 cm snout–vent"
+   },
+   {
+    "label": "Diet",
+    "value": "Mostly harvester ants"
+   },
+   {
+    "label": "Blood squirt",
+    "value": "Up to 1.5 m"
+   },
+   {
+    "label": "Daily travel",
+    "value": "About 50 m"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What makes up about 70% of the Texas horned lizard's diet?",
+    "choices": [
+     "Harvester ants",
+     "Grasshoppers",
+     "Desert flowers and seeds gathered at dawn",
+     "Termites"
+    ],
+    "explanation": "Harvester ants are its main food, and its blood neutralises their venom."
+   },
+   {
+    "prompt": "Which predators are most affected by its blood-squirting defence?",
+    "choices": [
+     "Dogs and their relatives",
+     "Hawks",
+     "Snakes",
+     "Large birds of prey that hunt from above"
+    ],
+    "explanation": "The blood tastes foul to canines such as wolves, coyotes and dogs, but birds of prey seem unaffected."
+   },
+   {
+    "prompt": "What was Ol' Rip famous for?",
+    "choices": [
+     "Surviving 31 years in a cornerstone",
+     "Being the first lizard taken into space",
+     "Living 50 years in a zoo",
+     "Winning a beauty contest"
+    ],
+    "explanation": "In 1928 he supposedly emerged alive from a cornerstone time capsule in Eastland, Texas."
+   }
+  ],
+  "charities": [
+   {
+    "name": "The Nature Conservancy",
+    "url": "https://www.nature.org",
+    "blurb": "Protects lands and waters across the United States and beyond, including prairie and desert habitats."
+   }
+  ]
+ },
+ {
+  "id": "emu",
+  "name": "Emu",
+  "scientificName": "Dromaius novaehollandiae",
+  "wikipediaTitle": "Emu",
+  "group": "bird",
+  "regions": [
+   "oceania"
+  ],
+  "range": "Woodlands, forests and open country across most of mainland Australia",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -25.0,
+   "longitude": 134.0
+  },
+  "mapSpan": 40,
+  "tagline": "Australia's shaggy, flightless sprinter",
+  "lede": "The emu is Australia's tallest native bird, a shaggy, long-legged giant that cannot fly but can sprint at 48 km/h. In emu families it is the father who hatches the eggs and raises the chicks, while the mother often goes off to start another clutch elsewhere.",
+  "home": "Emus are found across most of the Australian mainland, both inland and near the coast. They are most common in savannah woodland and sclerophyll forest, and least common in heavily populated districts and in very dry areas with less than 600 millimetres of rain a year. Once common on the east coast, they are now uncommon there, while farming and water provided for livestock have widened their range in the arid interior.\n\nThey usually travel in pairs, and although large flocks sometimes form, that is unusual. Dwarf island emus on Tasmania, Kangaroo Island and King Island died out after European settlement.",
+  "anatomy": "Emus stand 150 to 190 centimetres tall and weigh 18 to 60 kg, with females usually slightly larger than males. Their grey-brown plumage looks shaggy, and each feather is unusual in having two shafts emerging from a single base. The black feather tips absorb the sun's heat while the inner plumage insulates the skin, so the birds can stay active through the heat of the day.\n\nThe wings are tiny, about 20 centimetres long, each with a small claw at the tip, and emus flap them when running, perhaps for balance. The three-toed feet carry sharp claws, with toe and claw together reaching 15 centimetres, and the leg muscles make up about as much of the body as the flight muscles of a flying bird. At full gallop a single stride can stretch to 275 centimetres.",
+  "life": "Emus are active by day, foraging, preening, dust bathing and resting, and outside the breeding season they are sociable, with some keeping watch while others feed. They eat many kinds of plants, including acacia, casuarina and grasses, along with insects such as grasshoppers, beetles and caterpillars. They swallow small stones, up to 745 grams at a time, to help grind food in the gizzard, and they can go for weeks without eating. They drink infrequently, but when they find water they may drink without stopping for 10 minutes.\n\nAt night they sleep for about 7 hours in all, waking roughly every 90 minutes to feed briefly before settling again. In deep sleep an emu folds its legs and tucks its neck into an S-shape, perhaps looking like a small mound. Their calls are booms and grunts; the booming comes from an inflatable throat pouch, is mostly made by females, and can carry 2 kilometres.",
+  "family": "Pairs form in December and January, and mating usually happens between April and June, during the coolest part of the year. Unusually, it is the females that court, booming and parading, and they often fight each other for mates. The male builds a rough nest of bark, grass and sticks on the ground, which may end up holding 15 to 25 eggs from several females.\n\nOnce he begins incubating, the male does not eat, drink or defecate, standing only to turn the eggs about ten times a day, and over the 8-week incubation he loses a third of his weight. The female often wanders off to mate again and may nest three times in a good season, so many chicks in a brood are not his. Striped chicks leave the nest within days, and the father guards them for up to 7 months. They are fully grown in 5 to 6 months. Emus can live upwards of 10 years in the wild and up to 20 in captivity.",
+  "remarkable": "In 1932, emus flocking into farmland around Chandler and Walgoolan in Western Australia during a dry spell damaged rabbit fences and devastated crops. The army was called in with machine guns to drive them off, but the birds largely avoided the hunters. The episode became known as the Emu War.",
+  "outlook": "The International Union for Conservation of Nature rates the emu as Least Concern, and its population, estimated at 630,000 to 725,000 birds, is thought to be stable. Things were not always so secure: the Tasmanian emu became extinct, and in the 1930s emu killings in Western Australia peaked at 57,000 as farmers battled crop damage. Bounties were still paid into the 1960s, but wild emus now have formal protection under national law.\n\nSome local populations remain at risk. The isolated population of the New South Wales North Coast and Port Stephens is listed as endangered by the state government, and emus face habitat clearing, deliberate killing, collisions with vehicles and predation on their eggs and young.",
+  "people": "Aboriginal Australians hunted emus by spearing them at waterholes, netting them, or luring the curious birds with imitated calls or a dangling ball of feathers and rags. The meat was an important food, and the fat was used as bush medicine, as an oil for wooden tools and mixed with ochre for ceremonial body paint. Many Aboriginal language groups see the dark dust lanes of the Milky Way as a giant emu in the sky, and the Yuwaalaraay tell that the sun was made by throwing an emu's egg into the sky.\n\nEuropeans first reported emus in 1696, during Willem de Vlamingh's expedition to the west coast. The origin of the name is uncertain; it may come from an Arabic word for a large bird, or from the Portuguese 'ema'.",
+  "relatives": "The emu is the only living member of the genus Dromaius and the third-tallest living bird, after the common and Somali ostriches. Its closest relatives are the cassowaries, and it was long grouped with them in the family Casuariidae, although a 2014 study placed the emu in a family of its own, Dromaiidae.\n\nMainland emus are now treated as a single race, since natural variation in plumage colour and their nomadic habits blur any differences between regions.",
+  "didYouKnow": "Captive emus have been known to swallow shards of glass, marbles, car keys, jewellery and nuts and bolts.",
+  "facts": [
+   {
+    "label": "Height",
+    "value": "1.5–1.9 m"
+   },
+   {
+    "label": "Weight",
+    "value": "18–60 kg"
+   },
+   {
+    "label": "Top speed",
+    "value": "48 km/h"
+   },
+   {
+    "label": "Lifespan",
+    "value": "10+ years wild, 20 captive"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which parent incubates emu eggs?",
+    "choices": [
+     "The male",
+     "The female",
+     "Both parents taking turns",
+     "Neither: the eggs are buried in warm sand"
+    ],
+    "explanation": "The male sits on the eggs for about eight weeks, barely moving and losing a third of his weight."
+   },
+   {
+    "prompt": "What happened during the 1932 Emu War?",
+    "choices": [
+     "The birds largely avoided the army's guns",
+     "Emus were wiped out in Tasmania",
+     "Farmers built a fence across the whole continent",
+     "Emus were moved to Kangaroo Island"
+    ],
+    "explanation": "Soldiers with machine guns were sent to drive off crop-raiding emus, but the birds mostly escaped."
+   },
+   {
+    "prompt": "What is unusual about an emu feather?",
+    "choices": [
+     "Two shafts grow from one base",
+     "It is fully waterproof",
+     "It glows under moonlight",
+     "It is shed every week during the summer heat"
+    ],
+    "explanation": "Each emu feather has a double shaft emerging from a single base."
+   }
+  ],
+  "charities": [
+   {
+    "name": "BirdLife International",
+    "url": "https://www.birdlife.org",
+    "blurb": "A global partnership working to protect birds and the places they live."
+   }
+  ]
+ },
+ {
+  "id": "humphead-wrasse",
+  "name": "Humphead Wrasse",
+  "scientificName": "Crassilabrus undulatus",
+  "wikipediaTitle": "Humphead wrasse",
+  "group": "fish",
+  "regions": [
+   "africa",
+   "asia",
+   "oceania"
+  ],
+  "range": "Coral reefs of the Indo-Pacific, from East Africa and the Red Sea to the Pacific",
+  "status": "EN",
+  "coordinate": {
+   "latitude": 5.0,
+   "longitude": 120.0
+  },
+  "mapSpan": 60,
+  "tagline": "The thick-lipped giant of the coral reef",
+  "lede": "The humphead wrasse is a reef giant with thick lips, a bulging forehead and skin traced with wavy lines like a map. One of the top predators on coral reefs, it crunches through sea urchins, toxic boxfish and even the coral-eating crown-of-thorns starfish.",
+  "home": "This wrasse lives on coral reefs from the east coast of Africa near the mouth of the Red Sea across parts of the Indian and Pacific Oceans. Adults favour steep outer-reef slopes, channels and lagoon reefs in water 2 to 60 metres deep, mostly in the deeper, offshore parts of the reef.\n\nYoung fish lead a more hidden life in shallow, sandy areas bordering reefs, sheltering among dense branching corals, bushy seaweed and seagrass. When they first settle on the reef, they actively choose branching hard and soft corals, such as Acropora, and seagrass beds.",
+  "anatomy": "It is the largest living member of the wrasse family. Males, usually bigger than females, can reach 229 centimetres and 191 kg, though the average length is about 60 centimetres and females rarely grow beyond 1 metre. Larger adults develop the hump on the forehead that gives the fish its name.\n\nIts colour ranges from olive to vivid green and purplish-blue, with yellow wavy lines or a net-like pattern on the head and two black lines behind each eye. Its eggs are tiny, just 0.65 millimetres across, round and without pigment.",
+  "life": "Humphead wrasses are very opportunistic predators. They eat molluscs, especially sea snails and bivalves, along with sea urchins, crustaceans, worms and other fish, and they tackle toxic prey such as sea hares and boxfish. Because many bivalves and urchins hide under sand, a wrasse may follow stingrays that dig them up, or blow jets of water to clear the sand itself and nose around for food.\n\nTo open a sea urchin, it carries the animal in its mouth to a rock and smashes it with brisk, sideways jerks of the head. It sometimes hunts cooperatively with the roving coral grouper. Adults are usually seen alone, but also in male–female pairs and small groups.",
+  "family": "This fish lives long but breeds slowly. It becomes sexually mature at 5 to 7 years and lives for about 30 years. At certain times of year adults gather at the down-current end of the reef to spawn together in local groups, probably without travelling far to do so.\n\nThe eggs and larvae drift in open water before they settle on or near coral reefs, where the young pick out sheltered spots among corals and seagrass.",
+  "remarkable": "Every humphead wrasse that becomes a male starts life as a female. The species is a protogynous hermaphrodite, and some individuals change sex at about 9 years old. What controls the timing of the switch is still not known.",
+  "outlook": "The humphead wrasse is listed as Endangered on the IUCN Red List and in Appendix II of CITES. The primary threat is severe overfishing for the live reef food-fish trade across its core range in Southeast Asia, made worse by bomb and cyanide fishing, habitat loss, and a growing export market for juveniles for aquariums. In Sabah, on Borneo, exports caused a roughly 99% fall in the local population.\n\nProtection is patchy. Exports from Sabah are banned, yet illegal, unreported and unregulated fishing goes on, and fish are smuggled across the Malaysia–Philippines border. The Maldives banned exports in 1995, Niue has banned all fishing for it, and it has been protected in Western Australia since 1998, in Queensland since 2003 and in Taiwan since 2014.",
+  "people": "It is also called the Māori wrasse, Napoleon wrasse and Napoleonfish. The fish has one of the highest retail values in Asia, especially when sold alive, and is considered a delicacy in places such as Malaysia. The Philippines, Indonesia and Malaysia are the three largest exporters.\n\nWeak enforcement keeps the black market alive. There are too few people to monitor fishing, penalties are too light to deter fishers who have no alternative catch as valuable, and so many hands handle each fish that its origin is hard to trace. Besides food and the aquarium trade, the species is increasingly valued for the ecological services it provides to reefs.",
+  "relatives": "For a long time the humphead wrasse was placed in the genus Cheilinus. Genetic analysis then showed it is closer to the slingjaw wrasses of the genus Epibulus, and in 2025 it was moved to the revived genus Crassilabrus as part of a wider revision of the wrasse family, Labridae.\n\nIts full mitochondrial genome was sequenced in 2013, and researchers have since used genetic markers to study how its populations are related across its range.",
+  "didYouKnow": "In Taiwan, killing one can bring a fine of up to NT$1.5 million and a prison sentence of up to 5 years.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Up to 229 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "Up to 191 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "About 30 years"
+   },
+   {
+    "label": "Depth",
+    "value": "2–60 m"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What happens to some humphead wrasses at about 9 years old?",
+    "choices": [
+     "They change from female to male",
+     "They lose their hump",
+     "They leave the reef for the open ocean to breed",
+     "They stop eating"
+    ],
+    "explanation": "The species is a protogynous hermaphrodite: some females become males at around nine years old."
+   },
+   {
+    "prompt": "How does a humphead wrasse open a sea urchin?",
+    "choices": [
+     "Smashes it against a rock",
+     "Waits for it to die",
+     "Pulls off the spines with its lips one at a time",
+     "Lets a grouper crack it"
+    ],
+    "explanation": "It carries the urchin to a rock and strikes it there with sideways jerks of its head."
+   },
+   {
+    "prompt": "What is the main threat to the humphead wrasse?",
+    "choices": [
+     "Overfishing for the live food-fish trade",
+     "Coral bleaching",
+     "Plastic pollution",
+     "Sharks"
+    ],
+    "explanation": "Unsustainable fishing for the live reef food-fish trade is the primary threat."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Coral Reef Alliance",
+    "url": "https://www.coralreefalliance.org",
+    "blurb": "Works with communities to protect and restore coral reefs around the world."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works to protect wildlife and oceans, including the reefs of the Coral Triangle."
+   }
+  ]
+ },
+ {
+  "id": "mourning-cloak",
+  "name": "Mourning Cloak",
+  "scientificName": "Nymphalis antiopa",
+  "wikipediaTitle": "Nymphalis antiopa",
+  "group": "insect",
+  "regions": [
+   "naEast",
+   "naWest",
+   "europe",
+   "asia"
+  ],
+  "range": "Forests and woodlands across North America and northern Eurasia",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 50.0,
+   "longitude": -100.0
+  },
+  "mapSpan": 80,
+  "tagline": "A velvet-caped butterfly that lives for most of a year",
+  "lede": "The mourning cloak wears dark maroon wings edged in pale yellow and studded with blue, like a velvet cape with a gold hem. Most butterflies live for weeks, but this one can live 11 to 12 months, one of the longest lifespans of any butterfly.",
+  "home": "This butterfly is found right around the northern hemisphere, throughout North America and northern Eurasia, including temperate and even arctic Asia. It usually lives in hardwood forests but has turned up in almost every kind of habitat, occasionally as far south as northern South America, though it is seen less often in southern states such as Florida, Louisiana and Texas. It is not usually migratory, but some North American mourning cloaks may head south, and experiments in Germany in the 1960s recorded a long one-way flight from Bonn to Greece.\n\nIn Britain it is a rare visitor, arriving in small numbers in summer and autumn. There is no evidence that it breeds there; mild, wet winters seem to stop it surviving for long.",
+  "anatomy": "The adult has a wingspan of up to about 10 centimetres. Seen from above, its wings are dark maroon, occasionally brown, with ragged pale-yellow edges and a row of bright, iridescent blue spots along the black border between the two colours. Underneath, the wings are grey with fine striations and the same pale edges. Males and females look alike, and like all brush-footed butterflies it has hairy front legs.\n\nThe caterpillar, sometimes called the spiny elm caterpillar, is black with white dots, short hairs and black spines, and a line of eight reddish-orange spots down its back that warns predators away. It grows to about 5 centimetres. The tan or grey chrysalis is about 2 centimetres long, with rows of sharp, red-tipped spikes.",
+  "life": "Adults rarely visit flowers. They feed mainly on tree sap, ripe and fallen fruit, and the sugary honeydew left by aphids, which is why they are not significant pollinators. To warm up in cold habitats they bask in direct sunlight, their dark wings soaking up heat.\n\nThey have several ways to avoid being eaten. Resting on a tree trunk with wings folded, they vanish against the dark bark. Disturbed, they may play dead with their legs tucked in for a few minutes, or fly off with loud clicks, and groups perched together sometimes fly menacingly at attacking birds. Predators include mantises, assassin bugs, dragonflies, birds, reptiles, amphibians and mammals.",
+  "family": "Males set up territories at sunny perches near ravines, woodland edges, parks, ponds and streams, sometimes defending more than 300 square metres for days, and mate with several females in a season. In spring, from April to June, females lay rings of eggs around the tips of twigs on host plants such as willows, elms, birches, poplars and hackberry, often before the leaves open. The tiny eggs, under 1 millimetre long, start amber or olive and darken almost to black before hatching. Females may have two or three broods.\n\nThe caterpillars live together in a silken nest, shedding their skin five times before they scatter to pupate; newly hatched larvae sometimes eat eggs that have not yet hatched. The pupal stage takes about 15 days. New adults appear in late spring and early summer and rest through the summer heat in a dormant state.",
+  "remarkable": "Instead of passing the winter as an egg or chrysalis, the mourning cloak survives it as an adult. It shelters in tree cavities or under loose bark, sometimes beneath a covering of snow, and wakes so early that it is often on the wing before the snow has melted, one of the first butterflies of spring. That long adult life is what lets a single butterfly see most of a year.",
+  "outlook": "The mourning cloak has a huge range across three continents. It is protected by law in Switzerland and Austria, regarded as safe in the Czech Republic, and its numbers have been rising in Finland. It seems to benefit from firebreaks, which open up the clearings it prefers.\n\nIts caterpillars can occasionally be a nuisance. Feeding together, they sometimes strip young willows and poplars bare in nurseries, plantations and parks, as recorded in Oregon and Canada, though mature trees are rarely affected.",
+  "people": "In North America it is called the mourning cloak, a name shared with German 'Trauermantel', Dutch 'rouwmantel' and Swedish 'sorgmantel', suggesting it arrived with German or Scandinavian settlers rather than British ones. In Britain it is the Camberwell beauty, after two individuals found in Camberwell, south London, in August 1748; Moses Harris, who reported them, also called it the grand surprise. Another old name is white petticoat.\n\nThe butterfly farmer L. Hugh Newman noticed that British catches clustered around London, Hull and Harwich, ports in the timber trade with Scandinavia, and suggested the butterflies had hibernated in stacked timber and been shipped over. It is the state insect of Montana, adopted in 2001, and a large mosaic of it decorates the wall of an old library and bathhouse in Burgess Park, near Camberwell.",
+  "relatives": "The mourning cloak belongs to the brush-footed butterfly family, Nymphalidae. Several subspecies are recognised, including the nominate form described from Sweden, a northern form in Canada and Alaska whose eggs are more amber and whose caterpillars have shorter, stouter spines, an eastern North American form and one from Japan. Its species name, antiopa, is thought to come from Antiope, a name from Greek mythology.",
+  "didYouKnow": "In the 1890s, scientists gave developing mourning cloaks sudden heat or cold shocks and found it changed the colour of their pupae, an effect later traced to hormones.",
+  "facts": [
+   {
+    "label": "Wingspan",
+    "value": "Up to about 10 cm"
+   },
+   {
+    "label": "Adult lifespan",
+    "value": "11–12 months"
+   },
+   {
+    "label": "Adult diet",
+    "value": "Tree sap, fruit, honeydew"
+   },
+   {
+    "label": "Caterpillar",
+    "value": "About 5 cm"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does the mourning cloak spend the winter?",
+    "choices": [
+     "As a hibernating adult",
+     "As an egg",
+     "As a chrysalis buried deep in the soil below its tree",
+     "As a caterpillar"
+    ],
+    "explanation": "Adults hibernate in tree cavities or under loose bark and emerge very early in spring."
+   },
+   {
+    "prompt": "Where does the name 'Camberwell beauty' come from?",
+    "choices": [
+     "A London district where two were found",
+     "A painter called Camberwell",
+     "A ship that brought them from Norway to England",
+     "A castle garden"
+    ],
+    "explanation": "Two were discovered in Camberwell, south London, in August 1748."
+   },
+   {
+    "prompt": "What do adult mourning cloaks mainly eat?",
+    "choices": [
+     "Tree sap and fruit",
+     "Flower nectar",
+     "Pollen",
+     "Leaves of willow and elm trees near water"
+    ],
+    "explanation": "Adults feed mainly on sap, ripe fruit and aphid honeydew, and rarely visit flowers."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Xerces Society",
+    "url": "https://xerces.org",
+    "blurb": "Protects butterflies, bees and other invertebrates and the habitats they need."
+   }
+  ]
+ },
+ {
+  "id": "gerenuk",
+  "name": "Gerenuk",
+  "scientificName": "Litocranius walleri",
+  "wikipediaTitle": "Gerenuk",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Dry bush country of the Horn of Africa, from Djibouti and Ethiopia to Tanzania",
+  "status": "NT",
+  "coordinate": {
+   "latitude": 3.0,
+   "longitude": 41.0
+  },
+  "mapSpan": 15,
+  "tagline": "The giraffe-necked antelope that browses on two legs",
+  "lede": "The gerenuk is an antelope that seems to have borrowed a giraffe's neck. Rising onto its hind legs and stretching upward, it browses leaves beyond the reach of other gazelles. With its huge eyes and slender build it looks delicate, yet it makes a living picking food from thorny bushes.",
+  "home": "Gerenuks live mainly in the Somali region of East Africa. The northern gerenuk ranges from north-western Somalia west to the Ethiopian border and Djibouti, while the southern gerenuk ranges from north-eastern Tanzania through Kenya to Galcaio in Somalia, north of the Shebelle River and near the Juba River. In eastern and central Somalia and south-eastern Ethiopia it shares its range with the dibatag, another long-necked antelope.\n\nGerenuks are homebodies. Both sexes keep home ranges of 3 to 6 square kilometres that may overlap, and they become more settled as they grow older.",
+  "anatomy": "The gerenuk is tall and slender, with a long neck and limbs, a flat, wedge-shaped head and large, round eyes. Males stand 89 to 105 centimetres tall and weigh 31 to 52 kg; females are shorter, at 80 to 100 centimetres, and weigh 28 to 45 kg. The head and body measure 140 to 160 centimetres, and the tail, ending in a black tuft, adds 25 to 35 centimetres.\n\nThe smooth coat is two-toned: a reddish-brown 'saddle' on the back above lighter fawn to buff flanks, with a cream belly and white fur ringing the eyes and mouth. Females have a dark patch on the crown. Only males carry horns, which are lyre-shaped, curving back and then slightly forward, and measure 25 to 44 centimetres. The pointed mouth helps it pluck leaves from among sharp thorns.",
+  "life": "Gerenuks are active by day but usually rest or stand in the shade around noon, and they may stand out in the rain, probably to cool off. Feeding takes up most of the day, and females seem to spend even more time at it than males. They are browsers, eating the foliage of bushes and trees as well as shoots, herbs, flowers and fruit. Acacias are eaten whenever available, and evergreen plants carry them through droughts. The gerenuk does not drink water regularly.\n\nThey live in small herds of two to six, usually of one sex, with juveniles staying in female groups, while some males live alone. Fighting and travelling are uncommon, perhaps to save energy for feeding. Males scent-mark and guard their ranges with secretions from glands in front of the eyes, so these work as territories. The main predators are African wild dogs, cheetahs, hyenas, lions and leopards.",
+  "family": "Gerenuks breed throughout the year. Females mature at about 1 year and males at about 18 months, though in the wild a male may not breed successfully until he wins a territory, perhaps at about 3.5 years. After a pregnancy of about 7 months, a single calf is born weighing about 3 kg.\n\nYoung gerenuks grow in clear stages. At 4 months a calf stands about two-thirds the height of an adult female, and at 8 months a young male's horn tips are just visible, about 1 centimetre long. By 2 years the horns have begun their second curve, and at 2.5 years the double curve is nearly complete. Gerenuks can live 13 years or more in captivity and at least 8 years in the wild.",
+  "remarkable": "No other gazelle or antelope feeds so high. Standing upright on its hind legs and stretching out its long neck, a gerenuk can reach branches and twigs more than 2 metres above the ground, giving it food that its competitors cannot get.",
+  "outlook": "The gerenuk's range is limited to the Horn of Africa and its neighbours. In captivity it has become a small success story for reproductive science: in 2010, White Oak Conservation in Yulee, Florida, produced the first gerenuk calves conceived by artificial insemination, four females.\n\nOne of those calves was later inseminated in the same way by White Oak and SEZARC, the South-East Zoo Alliance for Reproduction and Conservation, creating a second generation born from the technique.",
+  "people": "The name gerenuk comes from the Somali name for the animal, gáránúug, first recorded in English in 1895. It is also called the giraffe gazelle because of its resemblance to a giraffe.\n\nScience first described it in 1879, when the naturalist Victor Brooke named it from three male specimens supplied by Gerald Waller, who asked that it be named after his late brother; hence the species name walleri. Brooke believed the animals came from the mainland north of Zanzibar, but John Kirk, who had originally obtained them, later corrected this to the coast near the Juba River in southern Somalia.",
+  "relatives": "The gerenuk is the only member of the genus Litocranius, proposed by Franz Friedrich Kohl in 1886. It belongs to the tribe Antilopini with the gazelles, and a 2013 genetic study found that it forms a group with the springbok. Its two subspecies, the northern and southern gerenuk, are treated as separate species by some authors, and the southern form is the smaller.\n\nIt looks much like the dibatag, which also has a two-tone coat and thick horns in males, and in 1997 the two were proposed as close relatives, though that idea was withdrawn in 2000. The gerenuk has a longer, heavier neck and a shorter tail.",
+  "didYouKnow": "A gerenuk's ear lacks the small inward-curving lobe near the tip that the similar dibatag has.",
+  "facts": [
+   {
+    "label": "Height",
+    "value": "80–105 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "28–52 kg"
+   },
+   {
+    "label": "Horns (males)",
+    "value": "25–44 cm"
+   },
+   {
+    "label": "Feeding reach",
+    "value": "Over 2 m"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does the gerenuk reach high leaves?",
+    "choices": [
+     "It stands on its hind legs",
+     "It climbs trees",
+     "It kneels and stretches its neck under low thorny branches",
+     "It knocks branches down with its horns"
+    ],
+    "explanation": "Standing upright and stretching its neck, it can feed more than 2 metres above the ground."
+   },
+   {
+    "prompt": "Where does the name 'gerenuk' come from?",
+    "choices": [
+     "The Somali language",
+     "A Swahili word for giraffe",
+     "The name of the naturalist who first described it",
+     "An Arabic phrase"
+    ],
+    "explanation": "It comes from the Somali name for the animal, gáránúug."
+   },
+   {
+    "prompt": "Which animal did a 2013 study group with the gerenuk?",
+    "choices": [
+     "The springbok",
+     "The giraffe",
+     "The dibatag, which shares its long neck and two-tone coat",
+     "The impala"
+    ],
+    "explanation": "Genetic analysis found the gerenuk forms a group with the springbok."
+   }
+  ],
+  "charities": [
+   {
+    "name": "African Wildlife Foundation",
+    "url": "https://www.awf.org",
+    "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+   }
+  ]
+ },
+ {
+  "id": "largetooth-sawfish",
+  "name": "Largetooth Sawfish",
+  "scientificName": "Pristis pristis",
+  "wikipediaTitle": "Largetooth sawfish",
+  "group": "fish",
+  "regions": [
+   "southAmerica",
+   "centralAmerica",
+   "africa",
+   "oceania"
+  ],
+  "range": "Tropical coasts, estuaries and rivers worldwide, now patchily",
+  "status": "CR",
+  "coordinate": {
+   "latitude": 0.0,
+   "longitude": -20.0
+  },
+  "mapSpan": 80,
+  "tagline": "A river giant armed with a toothed saw",
+  "lede": "With a long, flat blade lined with teeth on each side of its snout, the largetooth sawfish is one of the strangest giants of tropical coasts and rivers. Once so plentiful that it was called the common sawfish, it has now vanished from much of the world.",
+  "home": "The largetooth sawfish lives in tropical and subtropical coastal waters around the world and readily enters freshwater, having been recorded in rivers up to 1,340 kilometres from the sea. Historically it ranged along West Africa from Mauritania to Angola, from Uruguay to the Caribbean and the Gulf of Mexico, from Peru to Mexico in the Pacific, and across the Indo-Pacific from South Africa to India, Southeast Asia and northern Australia. Its total range, nearly 7.2 million square kilometres, was larger than that of any other sawfish.\n\nAdults mostly live in estuaries and the sea, usually in water less than 10 metres deep, over sand, mud or silt. It prefers water of 24 to 32 °C, and temperatures of 19 °C or colder are lethal. The population in Lake Nicaragua seems to spend most or all of its life in freshwater.",
+  "anatomy": "The largest confirmed specimen, from West Africa, was 7 metres long, and big individuals may weigh 500 to 600 kg or more. Most today are far smaller, typically 2 to 2.5 metres. The upper body is grey to yellowish-brown, often with yellow-tinged fins, and fish in freshwater can look reddish from blood beneath the skin.\n\nThe saw, or rostrum, is relatively wide, 15 to 25% as broad as it is long, and carries 14 to 24 large, evenly spaced teeth on each side, grooved from base to tip. It makes up about 27% of the fish's total length on average, and females tend to have shorter saws with fewer teeth than males. Compared with other sawfish, this one has its dorsal fin set further forward, longer pectoral fins with angular tips, and a small lower tail lobe.",
+  "life": "This sawfish is a predator of fish, molluscs and crustaceans. It uses its saw both to stir up the bottom in search of prey and to slash through schools of fish. Studies of captive fish show that it can thrive for long periods in both salt and fresh water at any age, and that it adjusts from salt to fresh water faster than the other way round.\n\nSawfish are docile and harmless to people, except when captured, when they can cause serious injuries defending themselves with the saw.",
+  "family": "Largetooth sawfish mature at about 2.8 to 3 metres long, when they are roughly 7 to 10 years old. The young develop in eggs that hatch inside the mother, and after a pregnancy of about 5 months she gives birth to between 1 and 13 pups, about 7 on average, each 72 to 90 centimetres long. Females breed every 1 to 2 years and seem to return to the region where they were born to give birth.\n\nPups are probably born in salty or brackish water near river mouths, then move into freshwater, where they spend their first 3 to 5 years, sometimes 400 kilometres upriver. Young fish occasionally get stranded in pools by floods and live there for years. The lifespan is unknown, with estimates ranging from 30 to 80 years.",
+  "remarkable": "For a heavy, flat-bodied fish, the largetooth sawfish is an unexpected athlete. In captivity it can swim backwards, 'climb' with its pectoral fins and leap far out of the water: one 1.8-metre individual jumped to a height of 5 metres. These abilities may help it get past waterfalls and rapids as it travels upriver.",
+  "outlook": "The largetooth sawfish is considered critically endangered by the IUCN. Overfishing is the main threat, along with habitat loss. Its fins are valuable for shark fin soup, its saw is sold as a novelty and its meat is eaten, and the toothed saw makes it especially likely to get tangled in fishing nets.\n\nOf 75 countries where it was recorded, it has disappeared from 28 and may be gone from another 27, leaving only 20 where it certainly survives. Australia holds the only relatively healthy population, possibly the last viable one in the Indo-Pacific. Lake Nicaragua's once abundant population crashed in the 1970s, when tens of thousands were caught, and it remains rare despite protection since the early 1980s.",
+  "people": "Its many English names, among them common, wide, freshwater, river, northern and Leichhardt's sawfish, the last honouring the explorer and naturalist Ludwig Leichhardt, reflect how widespread and familiar it once was. Sawfish were also hunted in the past for the oil in their livers.\n\nIn the Niger Delta of southern Nigeria, where sawfish are known as oki in Ijaw and neighbouring languages, they are traditionally hunted for their saws, which are used in masquerades. A sawfish caught near Galveston, Texas, in 1951 was filmed but never measured, and is thought to have been about as large as the record West African fish.",
+  "relatives": "The largetooth sawfish belongs to the sawfish family, Pristidae, and both its genus and species names come from the Greek word for 'saw'. Fish once described as separate species, Pristis microdon in the Indo-Pacific and Pristis perotteti in the Atlantic and eastern Pacific, were shown in 2013 to be the same species, since they lack real physical or genetic differences. Genetic studies still recognise three main lineages: Atlantic, Indo-West Pacific and East Pacific.\n\nIt is more at home in freshwater than its relatives the smalltooth, green and dwarf sawfish.",
+  "didYouKnow": "A parasitic flatworm that lives on the skin and in the mouth lining of this sawfish has been found only on largetooth sawfish in Australian waters.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Up to 7 m"
+   },
+   {
+    "label": "Weight",
+    "value": "500–600 kg or more"
+   },
+   {
+    "label": "Saw teeth",
+    "value": "14–24 per side"
+   },
+   {
+    "label": "Litter",
+    "value": "1–13 pups"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What was the largetooth sawfish once commonly called?",
+    "choices": [
+     "Common sawfish",
+     "Lake shark",
+     "Atlantic swordfish",
+     "Giant comb ray of the eastern rivers"
+    ],
+    "explanation": "It was so plentiful that it was known as the common sawfish, though it is far from common today."
+   },
+   {
+    "prompt": "How far from the sea has it been recorded in rivers?",
+    "choices": [
+     "1,340 km",
+     "40 km",
+     "200 km",
+     "It never leaves salt water at any stage of life"
+    ],
+    "explanation": "It readily enters freshwater and has been found 1,340 kilometres up river."
+   },
+   {
+    "prompt": "Which country holds the only relatively healthy population?",
+    "choices": [
+     "Australia",
+     "Nicaragua",
+     "Mexico",
+     "Nigeria, in the Niger Delta"
+    ],
+    "explanation": "Australia's population may be the last viable one in the Indo-Pacific."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Shark Trust",
+    "url": "https://www.sharktrust.org",
+    "blurb": "Works to safeguard sharks, skates and rays through science, education and policy."
+   },
+   {
+    "name": "Oceana",
+    "url": "https://oceana.org",
+    "blurb": "Campaigns for policies that protect ocean life from overfishing and bycatch."
+   }
+  ]
+ },
+ {
+  "id": "giant-otter",
+  "name": "Giant Otter",
+  "scientificName": "Pteronura brasiliensis",
+  "wikipediaTitle": "Giant otter",
+  "group": "mammal",
+  "regions": [
+   "southAmerica"
+  ],
+  "range": "Rivers, lakes and flooded forests of the Amazon, Orinoco, Guianas and Pantanal",
+  "status": "EN",
+  "coordinate": {
+   "latitude": -5.0,
+   "longitude": -60.0
+  },
+  "mapSpan": 30,
+  "tagline": "The noisy, sociable giant of South American rivers",
+  "lede": "The giant otter is the longest member of the weasel family, a sleek, chocolate-brown river hunter up to 1.8 metres long. It lives in close-knit family groups that fish, rest and defend their stretch of river together, chattering to one another all the while.",
+  "home": "Giant otters live across north-central South America, mostly in and along the Amazon River and in the Pantanal, as well as in the Orinoco and the rivers of the Guianas. They favour freshwater rivers and streams that flood seasonally, along with springs and permanent lakes, and seem to prefer clear, dark waters with rocky or sandy bottoms. Good sites offer plenty of food and low, sloping banks with cover.\n\nTen countries, from Venezuela and the Guianas to Bolivia and Paraguay, make up its current range, but its distribution has become patchy, and the Guianas are one of its last real strongholds. Near feeding areas the otters clear large patches of vegetation to make campsites, marked with scent and latrines.",
+  "anatomy": "Males measure 1.5 to 1.7 metres from head to tail and weigh 26 to 32 kg; females are 1 to 1.5 metres and 22 to 26 kg. The sea otter may be heavier, but no other mustelid is longer. Its fur, the shortest of any otter, is usually chocolate brown and so dense that water cannot reach the skin. Each animal has unique cream or white markings on the throat and chin, visible from birth.\n\nThe head looks almost ball-shaped, with a short muzzle, small round ears and a fully furred nose, and the otter can close its ears and nostrils underwater. Sensitive whiskers pick up changes in water pressure and currents. Its short legs end in large webbed feet with sharp claws, and its muscular, flattened tail can add 70 centimetres to its length.",
+  "life": "Giant otters are active only by day and hunt mainly by sight. Fish make up almost all of the diet, especially cichlids, perch, characins such as piranhas, and catfish, and when fish are scarce they take crabs, snakes and even small caimans and anacondas. They hunt alone, in pairs or in groups, chasing prey through shallows less than 0.6 metres deep with lunges and twists. Each otter grips its catch in its forepaws and eats it noisily, head first, getting through about 3 kg a day.\n\nGroups usually number three to eight, built around a dominant breeding pair, and are peaceful and cooperative within. They mark territories with latrines, scent and calls, and although they generally avoid conflict, fights between groups do happen. Adults in family groups have no serious natural predators, though caimans have occasionally taken them.",
+  "family": "Giant otters dig dens in riverbanks with several entrances and chambers. After a pregnancy of 65 to 70 days, a female gives birth to one to five furred, blind pups, usually two. In Cantão State Park in Brazil, pups are born in August and September and emerge in October and November, when falling water concentrates fish in shrinking lakes, making it easier for the whole group, older siblings included, to catch enough food for them.\n\nPups open their eyes at 4 weeks, swim confidently at 12 to 14 weeks and are weaned by 9 months. They mature at about 2 years and leave the group for good at 2 to 3 years to start families of their own. The longest known lifespan in the wild is 8 years; in captivity it can reach 17.",
+  "remarkable": "The giant otter may be the most vocal otter of all. The researcher Nicole Duplaix identified nine distinct calls: quick barks or explosive snorts signal interest or possible danger, a wavering scream accompanies bluff charges at intruders, a low growl is an aggressive warning, and hums and coos reassure.",
+  "outlook": "The IUCN has listed the giant otter as endangered since 1999, and wild numbers are thought to be below 5,000. It has lost as much as 80% of its range. Hunting for its velvety pelt was devastating: between 1959 and 1969 Amazonian Brazil alone accounted for 1,000 to 3,000 skins a year, and the otters' curiosity and daytime habits made them easy targets. International trade controls from 1973 greatly reduced hunting.\n\nToday habitat destruction is the greatest danger, and numbers are expected to fall a further 50% in the 25 years after 2020. Logging and farming along riverbanks isolate territories, mercury from gold mining contaminates the fish it eats, and conflict with fishermen and poorly managed tourism add pressure.",
+  "people": "In Brazil it is called ariranha, from the Tupi language, or onça-d'água, meaning water jaguar, and Spanish speakers have called it lobo de río, river wolf, and perro de agua, water dog. It also features in local folklore: the Achuar see giant otters as a form of water spirit, and a Ticuna legend tells how the otter and the jaguar swapped places, the jaguar once living in the water.\n\nAttitudes vary. In parts of Colombia, fishing communities see the otters as nuisances and sometimes kill them, while in Suriname tolerance is the rule. Pups are sometimes taken as pets, but they quickly grow too big to manage.",
+  "relatives": "The giant otter is the only member of the genus Pteronura, from Greek words meaning 'feather' or 'wing' and 'tail', after its wing-like tail. It is the most genetically distinct species in the otter subfamily, and its closest living relative may be the smooth-coated otter of Asia, which has similar calls, a similar skull, strong pair bonds and fathers that help raise the young.\n\nIt shares South America with three other otters, the Neotropical river otter, southern river otter and marine otter, but evolved separately from them. Its earliest fossils come from the Late Pleistocene of Argentina.",
+  "didYouKnow": "In 2003, only 60 giant otters were being kept in captivity.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Up to 1.8 m"
+   },
+   {
+    "label": "Weight",
+    "value": "22–32 kg"
+   },
+   {
+    "label": "Food",
+    "value": "About 3 kg of fish a day"
+   },
+   {
+    "label": "Group size",
+    "value": "Usually 3–8"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What is the giant otter's main food?",
+    "choices": [
+     "Fish",
+     "Fruit",
+     "Freshwater crabs and snails from the riverbed",
+     "Birds"
+    ],
+    "explanation": "Fish appear in almost all of its diet, especially cichlids, characins and catfish."
+   },
+   {
+    "prompt": "What does the Brazilian name onça-d'água mean?",
+    "choices": [
+     "Water jaguar",
+     "River wolf",
+     "Swimming dog",
+     "Spirit of the flooded forest at night"
+    ],
+    "explanation": "Onça-d'água means water jaguar; river wolf is a Spanish name."
+   },
+   {
+    "prompt": "What is the greatest current threat to the giant otter?",
+    "choices": [
+     "Habitat destruction",
+     "Jaguars",
+     "Disease",
+     "Hunting for its pelt, which is still legal everywhere"
+    ],
+    "explanation": "Hunting has been curbed, and habitat loss and degradation are now the main danger."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works to protect the Amazon and Pantanal and the wildlife that depends on them."
+   },
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Buys and protects threatened tropical forests with local partners."
+   }
+  ]
+ },
+ {
+  "id": "tuatara",
+  "name": "Tuatara",
+  "scientificName": "Sphenodon punctatus",
+  "wikipediaTitle": "Tuatara",
+  "group": "reptile",
+  "regions": [
+   "oceania"
+  ],
+  "range": "Predator-free offshore islands and mainland sanctuaries of New Zealand",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -41.0,
+   "longitude": 174.0
+  },
+  "mapSpan": 10,
+  "tagline": "Last survivor of a reptile order older than the dinosaurs",
+  "lede": "The tuatara looks like a lizard but is not one: it is the last survivor of an entire order of reptiles that flourished in the age of the dinosaurs. It loves the cold, grows at a snail's pace, breeds more slowly than any other reptile and can outlive most people.",
+  "home": "Tuatara are found only in New Zealand. They were once widespread on the North and South Islands, where their bones turn up in sand dunes, caves and Māori middens, but they vanished from the main islands before European settlement and survived on 32 mammal-free offshore islands. Between 1995 and 2020 they were moved to 14 more islands and 5 mainland sanctuaries, and hatchlings found on the mainland show that some of the new populations are breeding.\n\nOn their islands they share the ground with burrowing seabirds such as petrels, prions and shearwaters, sheltering in the birds' burrows or digging their own.",
+  "anatomy": "Tuatara are New Zealand's largest reptiles. Adult males are about 61 centimetres long and weigh up to 1 kg; females are about 45 centimetres and up to 0.5 kg. They are greenish brown and grey, and the spiny crest of soft, triangular skin folds along the back is larger in males and can be stiffened for display. Adults shed their skin at least once a year.\n\nThe tip of the upper jaw forms a chisel-like beak, and a second row of teeth grows from the roof of the mouth. The lower teeth slot between the two upper rows, and the jaw slides forward to shear through insect shells and bone. The teeth are fused to the bone and never replaced, so very old tuatara wear them away and must switch to soft prey such as earthworms and slugs. There is no eardrum or ear opening, yet they can hear.",
+  "life": "Adults are nocturnal but often bask in the sun. They thrive at temperatures that would be far too cold for most reptiles, staying active at 5 °C and hibernating in winter, while temperatures above 28 °C are usually fatal. Their preferred body temperature, 16 to 21 °C, is the lowest of any reptile, which slows their metabolism.\n\nThey eat mainly beetles, centipedes, spiders, crickets, wētā, earthworms and snails, which thrive on the seabirds' droppings, and also take frogs, lizards, small birds, eggs and chicks, feeding heavily on fairy prions in summer. Both sexes defend territories and bite intruders, and the bite can cause serious injury. Adults sometimes eat young tuatara, which is probably why hatchlings are active by day, hiding under logs and stones.",
+  "family": "Tuatara take 10 to 20 years to mature. In courtship, a male darkens his skin, raises his crest and circles the female on stiffened legs. Males have no penis; sperm passes in a 'cloacal kiss', much as in birds, and tuatara sperm swims 2 to 4 times faster than that of other reptiles studied. Females take 1 to 3 years to provision eggs with yolk, and 12 to 15 months pass between mating and hatching, so a female breeds only every 2 to 5 years.\n\nThe sex of a hatchling depends on the temperature of the egg: cooler nests produce females and warmer ones males. Some females guard their nests for up to 10 days against other females, which may dig up earlier clutches. Tuatara keep growing for their first 35 years, average about 60 years of life, and can live well over 100.",
+  "remarkable": "Hatchling tuatara have a third eye. Called the parietal eye, it sits in the top centre of the skull and has its own lens, a cornea-like plug and a retina, visible through a translucent patch until scales cover it after 4 to 6 months. It can sense light but probably not form images, and likely helps set daily rhythms and regulate body temperature. Of all living land vertebrates, the tuatara's is the most pronounced.",
+  "outlook": "Tuatara are absolutely protected under New Zealand law, and commercial international trade in wild animals is banned under CITES. Before conservation work began, a quarter of the distinct populations had died out within a century, and introduced Polynesian rats, or kiore, stopped them breeding on several islands. On some islands the tuatara were taken into captivity while the rats were eradicated, then returned along with youngsters bred in the meantime.\n\nThe total population is now estimated at 60,000 to 100,000. Climate change is a new worry, since warmer nests could tip hatchlings towards males. Zoos in Hamilton, Auckland and Wellington breed tuatara for release, and in 2016 Chester Zoo in England became the first to breed them outside New Zealand.",
+  "people": "The name tuatara comes from Māori and means 'peaks on the back'. In Māori tradition tuatara are held as ariki, god forms, and as messengers of Whiro, the god of death and disaster, and they mark the boundaries of tapu, what is sacred and restricted. Today they are regarded as a taonga, a special treasure, and a guardian of knowledge.\n\nThe tuatara appeared on New Zealand's five-cent coin until it was withdrawn in 2006. In 2009, Henry, a tuatara at the Southland Museum in Invercargill, became a father at about 111 years old, with an 80-year-old female, after surgery to remove a tumour.",
+  "relatives": "Tuatara are the only living members of the order Rhynchocephalia, which first appears in the fossil record around 244 million years ago, in the Middle Triassic. During the Jurassic its members lived worldwide and were the dominant small reptiles, but they declined in the Cretaceous. Their closest living relatives are the lizards and snakes, which together with tuatara form the Lepidosauria.\n\nOnly one species is recognised today. The rare Brothers Island tuatara, about 400 animals on one small island in Cook Strait, was once considered a separate species.",
+  "didYouKnow": "Tuatara carry their own tick, the tuatara tick, which depends directly on them and is most common on large males.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "About 61 cm (males)"
+   },
+   {
+    "label": "Weight",
+    "value": "Up to 1 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "About 60 years, often 100+"
+   },
+   {
+    "label": "Maturity",
+    "value": "10–20 years"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What does the Māori name 'tuatara' mean?",
+    "choices": [
+     "Peaks on the back",
+     "Old one",
+     "Guardian of the islands and their sacred places",
+     "Three eyes"
+    ],
+    "explanation": "The name refers to the spiny crest along its back."
+   },
+   {
+    "prompt": "What decides whether a tuatara hatchling is male or female?",
+    "choices": [
+     "Egg temperature",
+     "Its mother's age",
+     "The number of eggs in the nest and the dampness of the soil",
+     "Day length"
+    ],
+    "explanation": "Cooler eggs produce females and warmer eggs produce males."
+   },
+   {
+    "prompt": "What happens to the third eye as a tuatara grows?",
+    "choices": [
+     "Scales cover it",
+     "It falls out",
+     "It moves to the side of the head and becomes a normal eye",
+     "It doubles in size"
+    ],
+    "explanation": "After four to six months it is covered by opaque scales and pigment."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works worldwide to protect threatened species and their habitats."
+   }
+  ]
+ },
+ {
+  "id": "great-hornbill",
+  "name": "Great Hornbill",
+  "scientificName": "Buceros bicornis",
+  "wikipediaTitle": "Great hornbill",
+  "group": "bird",
+  "regions": [
+   "asia"
+  ],
+  "range": "Old-growth forests of India, the Himalayan foothills and Southeast Asia",
+  "status": "VU",
+  "coordinate": {
+   "latitude": 18.0,
+   "longitude": 95.0
+  },
+  "mapSpan": 30,
+  "tagline": "A golden-helmeted forest giant with a sealed-up nest",
+  "lede": "With a bright yellow casque perched on a massive bill and wings that puff like a steam engine, the great hornbill is one of the most spectacular birds of Asia's forests. Its family life is just as extraordinary: the female spends weeks walled up inside a tree.",
+  "home": "The great hornbill lives in the forests of India, Bhutan, Nepal, mainland Southeast Asia, Sumatra and the Ujung Kulon area of Java. In India its distribution is broken up between the Western Ghats and the Himalayan foothills, and deforestation has removed it from places such as the Kolli Hills, where it was recorded in the 1860s.\n\nIt prefers dense, old, unlogged forest in hilly country and seems to depend on large stretches of rainforest. In Thailand, males were found to range over about 3.7 kilometres during the breeding season and about 14.7 kilometres outside it.",
+  "anatomy": "This is a big bird, 95 to 130 centimetres long with a wingspan of 152 centimetres and a weight of 2 to 4 kg. It is the heaviest hornbill in Asia, though not the longest. Females are smaller than males and have bluish-white eyes instead of red, and like other hornbills both sexes have prominent eyelashes.\n\nThe casque on top of the bill is U-shaped from the front, with a concave top and two ridges that end in points. It is hollow and has no known purpose, though it probably evolved to impress mates. Males get their bright yellow colouring partly by spreading yellow preen oil onto the bill and wing feathers. The bones are full of air spaces reaching to the wing tips, and the heavy wingbeats can be heard from far away.",
+  "life": "Great hornbills eat mainly fruit, and figs are especially important, along with fat-rich fruits of the laurel and nutmeg families. They get all the water they need from fruit and are important seed dispersers for many forest trees. They also hop along branches tearing at bark in search of insects, nestling birds and small lizards, and take small mammals, reptiles and amphibians, tossing prey into the air before swallowing it. Lion-tailed macaques have been seen foraging alongside them.\n\nThey usually travel in small parties, though 150 to 200 birds have gathered at once in south-eastern Bhutan. Every evening they fly punctually to regular roosts along the same routes, and jostle for the highest bare branches until dusk. They sleep with the neck drawn back and the bill pointing upward.",
+  "family": "During the breeding season, from January to April, pairs become very vocal, the male's loud 'kok' calls joining with the female's into a duet of roars and barks. Birds form monogamous pairs and live in groups of 2 to 40, and courtship displays involving up to 20 birds have been seen. They nest in large, tall, old trees, especially giants rising above the canopy.\n\nThe clutch is one or two eggs, incubated for 38 to 40 days, and the chicks hatch naked and plump. Young birds have no casque at all; it begins to take shape in their second and third years and takes 5 years to develop fully. Great hornbills have lived for nearly 50 years in captivity.",
+  "remarkable": "Before laying, the female seals herself into a hollow in a large tree trunk, plastering the entrance mostly with droppings and leaving only a narrow slit. She stays imprisoned there, fed by the male through the slit, until the chicks are half grown, and uses the time to moult all her feathers. When she finally breaks out, the chicks seal the nest up again behind her.",
+  "outlook": "The great hornbill has been listed as Vulnerable on the IUCN Red List since 2018 and is in CITES Appendix I. Its main threat is deforestation, and it is also hunted for its meat and fat and for its casque and tail feathers, which are worn as adornments. Declines have been recorded in areas such as Cambodia.\n\nConservation programmes have tried to reduce hunting by supplying tribes with feathers from captive hornbills and ceramic casques to use in place of real ones.",
+  "people": "The great hornbill is called homrai in Nepal and banrao in Mussoorie, both meaning 'king of the jungle'. It is the state bird of Kerala, where it is called vezhambal, and of Arunachal Pradesh. Many tribal peoples use its parts: in north-eastern India its feathers go into head-dresses and its skulls are worn as decorations, while its beak and head are used in charms. The Sema Nagas, by contrast, consider the meat unfit to eat, believing it causes sores on the feet like those of the bird.\n\nA hornbill named William lived for 26 years in a cage behind Walter Millard's chair in an office, where he was known as the 'office canary', and became the model for the logo of the Bombay Natural History Society.",
+  "relatives": "Carl Linnaeus described the great hornbill in 1758, placing it with the rhinoceros hornbill in the genus Buceros, a name meaning 'horned like an ox'. The species name bicornis means 'two-horned', after the points on the casque. No subspecies are recognised today, although birds of the Western Ghats, the Himalayan foothills and Sumatra were once given separate names; populations differ mainly in size.\n\nSince the ground hornbills were split into their own family, Bucorvidae, the great hornbill ranks as the heaviest of the typical hornbills.",
+  "didYouKnow": "Males sometimes clash in mid-air, butting their casques together as they fly.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "95–130 cm"
+   },
+   {
+    "label": "Wingspan",
+    "value": "152 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "2–4 kg"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly fruit, especially figs"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What does the female great hornbill mainly use to seal her nest?",
+    "choices": [
+     "Her droppings",
+     "Mud and leaves",
+     "Tree resin",
+     "Woven grass and spider silk gathered by the male"
+    ],
+    "explanation": "She plasters the entrance mostly with faeces, leaving a slit for the male to pass food through."
+   },
+   {
+    "prompt": "Where does the great hornbill get its water?",
+    "choices": [
+     "From the fruit it eats",
+     "From forest streams",
+     "From dew on leaves",
+     "From rain caught in hollow trees after storms"
+    ],
+    "explanation": "It obtains all its water from its fruit diet."
+   },
+   {
+    "prompt": "What do the names homrai and banrao mean?",
+    "choices": [
+     "King of the jungle",
+     "Two-horned",
+     "Fruit eater",
+     "Bird with a golden helmet that calls at dawn"
+    ],
+    "explanation": "Both local names mean 'king of the jungle'."
+   }
+  ],
+  "charities": [
+   {
+    "name": "BirdLife International",
+    "url": "https://www.birdlife.org",
+    "blurb": "A global partnership working to protect birds and the places they live."
+   },
+   {
+    "name": "Wildlife Conservation Society",
+    "url": "https://www.wcs.org",
+    "blurb": "Protects wildlife and wild places across Asia and around the world."
+   }
+  ]
+ },
+ {
+  "id": "megamouth-shark",
+  "name": "Megamouth Shark",
+  "scientificName": "Megachasma pelagios",
+  "wikipediaTitle": "Megamouth shark",
+  "group": "fish",
+  "regions": [
+   "openOcean"
+  ],
+  "range": "Deep waters of the Pacific, Atlantic and Indian Oceans",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 22.0,
+   "longitude": 125.0
+  },
+  "mapSpan": 60,
+  "tagline": "A rubbery-lipped deep-sea giant found only in 1976",
+  "lede": "The megamouth shark was unknown to science until 1976, when one turned up tangled in a ship's sea anchor. A soft, slow giant with rubbery lips and a gaping mouth up to 1.3 metres wide, it cruises the dim depths straining plankton from the water.",
+  "home": "Megamouths have been found in the Pacific, Atlantic and Indian Oceans, as far north as northern Japan and southern California. Japan, the Philippines and Taiwan have each produced at least 10 specimens, together more than half of all records, while others have come from waters near Hawaii, Mexico, Indonesia, Australia, Brazil, Senegal, South Africa, Puerto Rico, Ecuador, Peru and Panama.\n\nThey can live as deep as 1,500 metres. Genetic samples from Taiwan and Mexico show no differences between regions, suggesting that the species forms a single, highly migratory population that interbreeds across the oceans.",
+  "anatomy": "The megamouth usually measures 4 to 5.5 metres, with mature males averaging 4 metres and females 5 metres, and weights of up to 1,215 kg have been reported. One male caught off Ecuador in 2014 may have been 8 to 9 metres long, judging by eyewitness accounts and the size of its tail. It has a stout, soft, flabby body, a long, wide, bulbous head and a broad rounded snout, so it is occasionally mistaken for a young orca.\n\nIt is dark blue, brownish-black or grey above and pale below, with white edges to its fins and an uneven tail with a long upper lobe, like a thresher shark's. The mouth holds up to 50 rows of small, peg-like teeth in the upper jaw and up to 75 in the lower, and finger-like gill rakers inside the gill slits catch its food.",
+  "life": "The megamouth feeds by swimming with its mouth wide open, filtering water for krill, jellyfish, shrimp larvae, squat lobsters and crab larvae. It is a relatively poor swimmer, much less active than the whale shark or basking shark. Pores on its head that sense electric fields may help it detect prey.\n\nIt follows the daily rise and fall of plankton. A male tagged off California in 1990 spent the day at 120 to 160 metres and rose at sunset to spend the night at 12 to 25 metres, moving slowly at 1.5 to 2.1 km/h. Sharks tagged off Taiwan in a 2024 study dived to 400 to 700 metres by day and came up to the top 50 metres at night, and some made seasonal journeys, one heading north and another south.",
+  "family": "Very little is known about how megamouths breed. They are ovoviviparous, meaning the young develop in eggs that stay inside the mother until they hatch.\n\nIn September 2022 fishermen filmed two megamouths together, the first time more than one had been caught on camera at once. The male trailed closely beneath the female, which may have been courtship, since trailing comes before mating in closely related sharks. Another pair seen by fishermen off California revealed social behaviour that had never been recorded before.",
+  "remarkable": "Its upper lip has a brilliant silvery-white band that shows clearly when the mouth is open. Early researchers wondered whether it glowed to lure plankton, but a 2020 study found that the megamouth produces no light at all; the band is simply highly reflective. It may still help with feeding, or let megamouths recognise one another.",
+  "outlook": "The megamouth is so rarely encountered that its numbers are hard to judge. By March 2025 only 296 had been caught or sighted since its discovery, though 27 were caught off the Hualien coast of eastern Taiwan within a 2-year period. Almost everything known about its behaviour comes from a handful of individuals fitted with tags, and even its maximum size is uncertain: a 2019 study suggested it may reach 6 metres.",
+  "people": "The first megamouth was caught on 15 November 1976, about 40 kilometres north-east of Kahuku, Hawaii, at a depth of about 165 metres, after it became entangled in the sea anchor of a United States Navy research vessel. The 4.5-metre, 750 kg animal was examined by Leighton R. Taylor, who found it was an entirely new kind of shark.\n\nAlong with the coelacanth, it became one of the most sensational fish discoveries of the 20th century, and the species was placed in a family of its own.",
+  "relatives": "The megamouth is the smallest of the three living filter-feeding sharks, alongside the much larger whale shark and basking shark, and is usually placed alone in the family Megachasmidae, though some scientists think it belongs with the basking shark in Cetorhinidae. Its filter feeding seems to have evolved independently of the other two, an example of convergent evolution.\n\nFossils suggest the species existed about 36 million years ago, and molecular studies push its lineage back as far as 100 million years. Two extinct megamouths have been proposed from fossil teeth, while a Cretaceous species once thought to be a megamouth has been reclassified as an unrelated shark.",
+  "didYouKnow": "An early ancestor of today's megamouth has been reported from early Miocene rocks in Belgium.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "4–5.5 m"
+   },
+   {
+    "label": "Weight",
+    "value": "Up to 1,215 kg"
+   },
+   {
+    "label": "Mouth",
+    "value": "Up to 1.3 m wide"
+   },
+   {
+    "label": "Diet",
+    "value": "Krill, jellyfish, larvae"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How was the first megamouth shark found in 1976?",
+    "choices": [
+     "Tangled in a ship's sea anchor",
+     "Washed up on a beach",
+     "Photographed by divers during a night dive off Japan",
+     "Caught on a fishing line"
+    ],
+    "explanation": "It became entangled in the sea anchor of a US Navy research vessel off Hawaii."
+   },
+   {
+    "prompt": "What did a 2020 study find about the megamouth's white lip band?",
+    "choices": [
+     "It reflects light but doesn't glow",
+     "It glows to lure plankton",
+     "It holds venom",
+     "It changes colour with the shark's mood in the breeding season"
+    ],
+    "explanation": "The band produces no light; it is simply highly reflective."
+   },
+   {
+    "prompt": "What does the megamouth mainly eat?",
+    "choices": [
+     "Plankton such as krill",
+     "Seals",
+     "Squid caught in deep canyons with its many rows of teeth",
+     "Seabirds"
+    ],
+    "explanation": "It filters krill, jellyfish and other small animals from the water."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Shark Trust",
+    "url": "https://www.sharktrust.org",
+    "blurb": "Works to safeguard sharks, skates and rays through science, education and policy."
+   }
+  ]
+ }
+]
