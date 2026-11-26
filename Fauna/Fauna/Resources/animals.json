@@ -7556,5 +7556,432 @@
         "blurb": "Founded to save the peregrine falcon, it now works to conserve birds of prey worldwide."
       }
     ]
+  },
+  {
+    "id": "aardvark",
+    "name": "Aardvark",
+    "scientificName": "Orycteropus afer",
+    "wikipediaTitle": "Aardvark",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Savannas, grasslands and woodlands across Africa south of the Sahara",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": 25.0
+    },
+    "mapSpan": 60,
+    "tagline": "Africa's 'earth pig', a living fossil with tube teeth",
+    "lede": "With a pig's snout, a rabbit's ears and a kangaroo's tail, the aardvark looks assembled from spare parts. It is the last survivor of an entire order of mammals, digs faster than almost any animal, and its abandoned burrows give shelter to dozens of other species.",
+    "home": "Aardvarks live across much of Africa south of the Sahara, wherever there are enough ants and termites and soil soft enough to dig: savannas, grasslands, woodlands and bushland. They avoid very rocky ground and swamp forest, where the water table is too high to burrow.\n\nAn aardvark digs several kinds of burrow: shallow ones for quick shelter while feeding, and deep, branching home burrows several metres long, where it sleeps through the heat of the day.",
+    "anatomy": "An aardvark is stout and arched, about 1 to 1.3 metres long plus a thick, tapering tail, and weighs up to about 65 kg. Its skin is thick and grey-pink, with sparse, coarse hair. It has long, upright ears, a long snout ending in a disc with the nostrils, and powerful legs. The front feet have four toes and the back feet five, each with a strong, spade-like claw.\n\nIts teeth are unique. They have no enamel and no roots, and each is made of hundreds of thin tubes of dentine bundled together, which keep growing throughout its life. Its sticky tongue can reach about 30 centimetres, and its stomach has a muscular section that grinds food like a bird's gizzard, so it barely chews.",
+    "life": "Aardvarks come out at night to feed on ants and termites. They walk zigzag routes with their nose to the ground, sniffing out nests, then rip them open with their claws and lap up the insects with their tongue. Dense hairs around the nostrils and the ability to close them keep out dust and biting insects.\n\nA single aardvark can eat tens of thousands of insects in a night. They are solitary and shy, with keen hearing that warns them of lions, leopards, hyenas and pythons. When threatened, an aardvark can dig itself out of sight in minutes, run off in a zigzag, or fight back with its claws.",
+    "family": "Females usually give birth to a single young after a pregnancy of about seven months. The newborn is hairless with floppy ears and pink skin, and stays in the burrow for its first couple of weeks.\n\nIt starts following its mother on her nightly foraging trips at a few weeks old, is weaned at about three months, and digs burrows of its own by six months, though it may stay with its mother until the next young is born. Aardvarks live up to 23 years in captivity.",
+    "remarkable": "The aardvark is the only living member of the order Tubulidentata, 'tube-toothed', a lineage that goes back tens of millions of years in Africa. Its closest living relatives are not anteaters but elephants, manatees, hyraxes and elephant shrews.",
+    "outlook": "The aardvark is listed as Least Concern and is widespread, though seldom seen because it is nocturnal and secretive. Some are hunted for meat or killed as farm pests.\n\nSevere droughts, which can wipe out the termites they eat, have killed many aardvarks in southern Africa, and scientists worry about how they'll cope with a hotter, drier climate.",
+    "people": "The name comes from Afrikaans and means 'earth pig', because of its burrowing. Its digging annoys farmers, since the holes can damage roads and dams, but aardvarks also control termites.\n\nIn some African traditions, parts of the aardvark are used as charms. To many children worldwide, the aardvark is known as the first animal in the dictionary and as Arthur, the cartoon character.",
+    "relatives": "Despite similar diets and long snouts, the aardvark is not related to the anteaters of South America or the pangolins of Africa and Asia: all three evolved their insect-eating build separately.\n\nThe aardvark belongs to the Afrotheria, a group of mammals that evolved in Africa and includes elephants, manatees, hyraxes, tenrecs and golden moles. Its genus name, Orycteropus, means 'burrowing foot'.",
+    "didYouKnow": "The aardvark cucumber, a plant that fruits underground, depends on aardvarks: they dig up and eat the fruit, and spread its seeds in their dung.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1–1.3 m + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 65 kg"
+      },
+      {
+        "label": "Tongue",
+        "value": "Up to about 30 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Ants and termites"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the name 'aardvark' mean?",
+        "choices": [
+          "Earth pig",
+          "Ant bear",
+          "Long nose",
+          "Night digger, from an old Zulu word"
+        ],
+        "explanation": "It comes from Afrikaans and means 'earth pig', because it burrows."
+      },
+      {
+        "prompt": "What is unusual about the aardvark's teeth?",
+        "choices": [
+          "They're bundles of tubes with no enamel",
+          "It has none",
+          "They're made of keratin, like hair",
+          "It grows a new set every year when the old ones wear down"
+        ],
+        "explanation": "Each tooth is made of many thin tubes of dentine, with no enamel or roots, and keeps growing."
+      },
+      {
+        "prompt": "Which animals are the aardvark's closest living relatives?",
+        "choices": [
+          "Elephants, manatees and hyraxes",
+          "South American anteaters",
+          "Pangolins",
+          "Pigs"
+        ],
+        "explanation": "It belongs to the Afrotheria; its anteater-like build evolved separately."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      }
+    ]
+  },
+  {
+    "id": "naked-mole-rat",
+    "name": "Naked Mole-rat",
+    "scientificName": "Heterocephalus glaber",
+    "wikipediaTitle": "Naked mole-rat",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Dry grasslands of Kenya, Ethiopia and Somalia in the Horn of Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 3.0,
+      "longitude": 41.0
+    },
+    "mapSpan": 14,
+    "tagline": "A wrinkly rodent that lives like an ant colony",
+    "lede": "Pink, almost hairless and wrinkled like an old sausage, the naked mole-rat breaks most of the rules of being a mammal. It lives in colonies ruled by a single queen, like ants or bees. It can survive 18 minutes without oxygen, feels no pain from acid, rarely gets cancer, and lives for over 37 years.",
+    "home": "Naked mole-rats live underground in the hot, dry grasslands of the Horn of Africa, in Kenya, Ethiopia and Somalia. Their tunnel systems can stretch for kilometres, with chambers for nesting, food stores and toilets. The tunnels stay at a fairly steady temperature, but the air inside is poor: crowded with animals and sealed from the surface, it is low in oxygen and high in carbon dioxide.\n\nThey rarely come above ground, mainly when a young adult disperses to found a new colony. A single colony's tunnels can cover an area the size of several football pitches, and new tunnels are dug most actively after rain, when the hard soil softens.",
+    "anatomy": "A typical naked mole-rat is 8 to 10 centimetres long and weighs only 30 to 35 grams; queens are larger, up to about 80 grams. It has almost no fur, only scattered sensory hairs, and loose, wrinkled skin. Its eyes are tiny and its vision poor.\n\nIts big front teeth stick out in front of its lips, so it can dig with its teeth without getting soil in its mouth. Each tooth can move on its own, like chopsticks. It has small lungs and blood that binds oxygen very well, helping it cope with stale tunnel air.\n\nIts skin lacks the substance that makes acid or chilli sting in other mammals. Its legs are short and thin, and it can run backwards through its tunnels as fast as it runs forwards.",
+    "life": "Naked mole-rats eat roots and large underground tubers, which they reach by digging tunnels as a team: one digs with its teeth, others sweep the soil backwards with their feet in a chain, and one kicks it up out of a hole, like a tiny volcano.\n\nA large tuber can feed a colony for months, since they eat the inside and let it regrow. Unlike other mammals, they barely control their own body temperature, which drifts with the temperature of their tunnels. They warm up by huddling or moving to shallower, sun-warmed tunnels.",
+    "family": "A colony usually holds about 70 to 80 animals, and sometimes up to 300. Only one female, the queen, breeds, with one to three males. The rest are workers that dig, gather food, care for young and defend the colony against snakes, and larger 'soldiers'.\n\nThe queen can have a litter every few months, often of about 10 to 12 pups, and the workers help raise them. When the queen dies, females fight, sometimes to the death, to take her place, and the winner grows longer as her spine lengthens.",
+    "remarkable": "In experiments, naked mole-rats survived 18 minutes with no oxygen at all, by switching to burning fructose instead of glucose, as plants do. They are also the longest-lived rodent, at over 37 years, and their risk of dying doesn't rise with age the way it does for almost every other mammal.",
+    "outlook": "The naked mole-rat is listed as Least Concern. It is common within its range, and its underground life protects it from most threats. It is also widely kept in zoos and laboratories.\n\nBecause colonies are so closely related, a disease or a flood could in theory hit a whole group at once, but no serious decline has been recorded.",
+    "people": "Scientists study naked mole-rats intensely for clues to ageing, cancer, pain and stroke. Their cells resist forming tumours, partly thanks to a sugar called hyaluronan, and their skin nerves lack a chemical messenger that makes acid and chilli burn.\n\nResearchers hope some of their tricks might one day help people. They're also popular in zoos, where visitors can watch a colony at work in see-through tunnels.",
+    "relatives": "Naked mole-rats are rodents, related to porcupines, guinea pigs and chinchillas. They were long grouped with the African mole-rats, or blesmols, but are now placed in their own family, Heterocephalidae.\n\nThe only other mammal known to live in queen-ruled colonies like this is a relative, the Damaraland mole-rat of southern Africa.",
+    "didYouKnow": "A naked mole-rat's front teeth sit outside its lips, so it can dig with its mouth closed.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "8–10 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "30–35 g, queens up to 80 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Over 37 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Roots and tubers"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How is a naked mole-rat colony organised?",
+        "choices": [
+          "One queen breeds and the rest are workers",
+          "Every adult breeds",
+          "Pairs live alone in their own tunnels",
+          "Groups of brothers share a tunnel and swap partners each year"
+        ],
+        "explanation": "Like ants or bees, a single queen breeds while the others work for the colony."
+      },
+      {
+        "prompt": "How do naked mole-rats survive without oxygen?",
+        "choices": [
+          "They switch to burning fructose",
+          "They hold their breath",
+          "They breathe through their skin",
+          "They sleep through it"
+        ],
+        "explanation": "In experiments they survived 18 minutes with no oxygen by burning fructose, as plants do."
+      },
+      {
+        "prompt": "How long can a naked mole-rat live?",
+        "choices": [
+          "Over 37 years",
+          "About 3 years, like most rodents",
+          "Around 10 years",
+          "Just one year"
+        ],
+        "explanation": "It is the longest-lived rodent, and its risk of death doesn't rise with age."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Smithsonian's National Zoo",
+        "url": "https://nationalzoo.si.edu",
+        "blurb": "Keeps a naked mole-rat colony and supports conservation science worldwide."
+      }
+    ]
+  },
+  {
+    "id": "honey-badger",
+    "name": "Honey Badger",
+    "scientificName": "Mellivora capensis",
+    "wikipediaTitle": "Honey badger",
+    "group": "mammal",
+    "regions": [
+      "africa",
+      "asia"
+    ],
+    "range": "Most of Africa, Arabia, Iran and Central Asia to India",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": 35.0
+    },
+    "mapSpan": 70,
+    "tagline": "The fearless weasel that shrugs off snake bites",
+    "lede": "The honey badger has a reputation as the most fearless animal on Earth, and it isn't entirely undeserved. It raids beehives, digs up venomous snakes, and sees off lions. Its secret is skin so loose and thick that a predator biting it can't get a firm grip, and the badger can twist around inside it to bite back.",
+    "home": "Honey badgers live across most of Africa south of the Sahara, from South Africa's Western Cape to Morocco, and through Arabia, Iran and Central Asia to India.\n\nThey live almost everywhere except the driest deserts and the wettest rainforests: savannas, woodlands, scrub, semi-deserts and mountains up to 4,000 metres in Ethiopia. They shelter in burrows they dig themselves, or take over old burrows of aardvarks and warthogs, or termite mounds.",
+    "anatomy": "The honey badger is the largest land member of the weasel family in Africa, 55 to 77 centimetres long and up to 16 kg, with males larger than females. It has a long, broad, thick-set body, short legs, a small flat head and tiny ears.\n\nIts coat is black underneath, with a wide grey-white cape from the top of the head to the tail, a pattern thought to warn predators off. Its skin is very loose and about 6 millimetres thick around the neck. Its front claws, up to 4 centimetres long, are powerful digging tools, and it has a pouch that releases a foul-smelling liquid.",
+    "life": "Honey badgers eat almost anything. They dig up rodents, scorpions, insect larvae and reptiles, and also eat frogs, tortoises, birds, eggs, carrion, berries and roots. They break into beehives for the larvae and honey, enduring hundreds of stings. They are famous for eating snakes, including cobras and puff adders. A bitten badger may collapse, apparently from the venom, then wake up and carry on eating.\n\nMost live and forage alone, travelling long distances each day, and in the Serengeti they are active mostly at night in the dry season and more by day in the wet. It also follows other predators, such as jackals and snake eagles, to share in their kills or scraps.",
+    "family": "Honey badgers have no fixed breeding season. After a pregnancy of about 50 to 70 days, the female gives birth to one or two cubs in a burrow lined with grass. She often moves them to a new burrow every few days.\n\nThe cubs stay with their mother for more than a year, sometimes up to 16 months, learning where to find food and how to deal with dangerous prey. In captivity, honey badgers have lived for about 24 years.",
+    "remarkable": "Honey badgers are clever escape artists. In a well-known case at a wildlife rehabilitation centre in South Africa, a captive honey badger called Stoffel learned to open gates, stack objects and use tools to climb out of his enclosure.",
+    "outlook": "The honey badger is listed as Least Concern because of its huge range and its ability to live in many habitats. In some places, though, it is killed by beekeepers and poultry farmers, often with poison and traps.\n\nRaising hives on stands the badgers can't climb has helped beekeepers in South Africa protect both bees and badgers. Hunters also take them for traditional medicine in some areas, and they are caught in traps set for other animals. They are thought to be rare in parts of their Asian range.",
+    "people": "The honey badger became an internet celebrity after a viral video in 2011, and it has appeared as a mascot and nickname for tough soldiers and sports teams. In parts of Africa and Asia it is believed to have magical properties.\n\nIt is often said to team up with a bird, the greater honeyguide, which leads it to bees' nests. That partnership is well documented between honeyguides and people, but scientists have found little good evidence that it happens with honey badgers.",
+    "relatives": "The honey badger is the only living species in its own subfamily, Mellivorinae, within the weasel family.\n\nDespite its name, it isn't closely related to European or American badgers; its closest relatives may be the martens. The lineage goes back at least 7 million years, with extinct relatives known from fossils in South Africa, Italy, Pakistan and Chad.",
+    "didYouKnow": "Honey badgers have been seen using logs and rocks as ladders to climb out of enclosures.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "55–77 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 16 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to about 24 years in captivity"
+      },
+      {
+        "label": "Diet",
+        "value": "Almost anything: rodents, snakes, larvae"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What helps a honey badger escape a predator's bite?",
+        "choices": [
+          "Its thick, loose skin",
+          "It plays dead",
+          "Spines on its back",
+          "Its very fast running speed across open ground"
+        ],
+        "explanation": "Its loose skin is hard to grip, and it can twist around inside it to bite back."
+      },
+      {
+        "prompt": "What happens when a venomous snake bites a honey badger?",
+        "choices": [
+          "It may collapse, then recover",
+          "It always dies",
+          "Nothing at all",
+          "It becomes paralysed for days and has to be fed by its mother"
+        ],
+        "explanation": "Bitten badgers have been seen collapsing, then waking and carrying on."
+      },
+      {
+        "prompt": "How do beekeepers protect hives from honey badgers?",
+        "choices": [
+          "Raising hives on stands badgers can't climb",
+          "Spraying them with chilli",
+          "Keeping dogs",
+          "Painting the hives bright colours"
+        ],
+        "explanation": "Hives on raised stands protect both bees and badgers."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://ewt.org.za",
+        "blurb": "A South African conservation organisation that works on wildlife conflicts with farmers, among much else."
+      }
+    ]
+  },
+  {
+    "id": "capybara",
+    "name": "Capybara",
+    "scientificName": "Hydrochoerus hydrochaeris",
+    "wikipediaTitle": "Capybara",
+    "group": "mammal",
+    "regions": [
+      "southAmerica"
+    ],
+    "range": "Rivers, lakes and wetlands in every South American country except Chile",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -12.0,
+      "longitude": -58.0
+    },
+    "mapSpan": 50,
+    "tagline": "The giant, unbothered rodent of the riverbank",
+    "lede": "The capybara is the largest rodent in the world, a guinea pig the size of a big dog, and famously relaxed. It spends hot afternoons wallowing in rivers, lets birds perch on its back, and lives in social groups that bark, purr and whistle to each other.",
+    "home": "Capybaras live in every country in South America except Chile, east of the Andes. They are never far from fresh water: rivers, lakes, ponds, swamps, marshes and reservoirs, in seasonally flooded savannas, wetlands such as Brazil's Pantanal and Venezuela's llanos, and along rivers through rainforest.\n\nThey mostly live in lowlands, and adapt well to farmland and cattle ranches, and even city parks and lakes.",
+    "anatomy": "A capybara has a heavy, barrel-shaped body, short legs and a broad, blunt head, with no visible tail. Adults weigh 35 to 66 kg and stand about 50 to 60 centimetres at the shoulder. Its coarse fur is reddish brown above and yellowish brown below, and it has sweat glands in its skin, unusual for a rodent.\n\nIts feet are slightly webbed, and its eyes, ears and nostrils sit high on its head, so it can hide underwater with just its face showing, like a hippo. Males have a large, dark scent gland on top of the snout, called a morrillo, which they rub on grass and bushes to mark territory.",
+    "life": "Capybaras are grazers, eating mainly grasses and water plants, as well as fruit and bark. They are choosy, often eating one kind of plant while ignoring others around it.\n\nTo get the most out of tough grass, they eat some of their own droppings, which contain bacteria that help digest it, and they bring food back up to chew again, like cows. They rest on land in the morning, cool off in the water during the hot early afternoon, and graze from late afternoon through the night.\n\nThey are superb swimmers and can stay underwater for up to five minutes to escape danger. Capybaras are very vocal, using barks to warn of danger, purrs between friends, and whistles and clicks to keep in touch while grazing.",
+    "family": "Capybaras usually live in groups of 10 to 20, with a few adult males, several adult females and their young; in the dry season, when water is scarce, groups can swell to 50 or 100. A dominant male leads the group. A female lets males know she is ready to mate by whistling through her nose, and capybaras mate only in water.\n\nAfter about 150 days, she gives birth to an average of four pups, which can walk and graze within days. Young are cared for by all the group's females, and may nurse from any of them.",
+    "remarkable": "Capybaras have a famously calm relationship with other animals. Birds such as cattle tyrants and caracaras ride on their backs, picking off ticks and catching insects they flush from the grass, and the capybaras simply carry on grazing.",
+    "outlook": "The capybara is listed as Least Concern, and is common across much of its range. It is hunted for meat and leather in some areas, and in parts of Venezuela it is raised on ranches.\n\nTheir main natural predators are jaguars, pumas, ocelots, caimans, anacondas and eagles; in the wild, few live beyond four years. Wetland drainage for farming is a threat in some places, but capybaras breed quickly, and populations bounce back when hunting is controlled.",
+    "people": "In Venezuela, capybara meat is a traditional dish at Easter. In the 16th century, local clergy asked the Vatican whether they could eat it during Lent, when meat was forbidden, and because it lives in water, it was allowed to be treated as fish.\n\nCapybaras have become internet stars thanks to their calm nature, and have spread into city parks in Brazil and Argentina, sometimes to the dismay of residents.",
+    "relatives": "The capybara is a cavy, related to guinea pigs and rock cavies, and more distantly to agoutis, chinchillas and nutria.\n\nIts only close living relative is the lesser capybara of Panama, Colombia and Venezuela. Its ancestors were even bigger: extinct relatives such as Phugatherium were larger than today's capybara.",
+    "didYouKnow": "The name capybara comes from a Tupi word often translated as 'one who eats slender leaves'.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1.0–1.3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "35–66 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 10 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Grasses and water plants"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why are a capybara's eyes, ears and nostrils high on its head?",
+        "choices": [
+          "So it can hide underwater with only its face showing",
+          "To see over tall grass",
+          "To hear birds above it",
+          "To keep its face dry when it rains in the forest"
+        ],
+        "explanation": "Like a hippo, it can lie almost completely submerged."
+      },
+      {
+        "prompt": "Where do capybaras mate?",
+        "choices": [
+          "In the water",
+          "In burrows",
+          "On riverbanks at night",
+          "In tall grass"
+        ],
+        "explanation": "Capybaras mate only in water."
+      },
+      {
+        "prompt": "How does a capybara get more out of tough grass?",
+        "choices": [
+          "It eats some of its own droppings",
+          "It only eats new shoots",
+          "It soaks the grass in water first",
+          "It lets birds peck the tough stems off for it"
+        ],
+        "explanation": "Its droppings contain helpful gut bacteria, and it also brings food back up to chew again."
+      }
+    ],
+    "charities": [
+      {
+        "name": "World Wildlife Fund",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect South American wetlands such as the Pantanal, home to capybaras and jaguars."
+      }
+    ]
+  },
+  {
+    "id": "giant-anteater",
+    "name": "Giant Anteater",
+    "scientificName": "Myrmecophaga tridactyla",
+    "wikipediaTitle": "Giant anteater",
+    "group": "mammal",
+    "regions": [
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "Grasslands and forests from Honduras to Bolivia and northern Argentina",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -10.0,
+      "longitude": -55.0
+    },
+    "mapSpan": 55,
+    "tagline": "A tongue 60 cm long and no teeth at all",
+    "lede": "The giant anteater has no teeth, can barely open its mouth, and lives almost entirely on ants and termites. To eat enough, it flicks a sticky tongue up to 60 centimetres long in and out of a nest well over a hundred times a minute, then moves on before the soldiers can fight back.",
+    "home": "Giant anteaters live in Central and South America, from Honduras to Bolivia and northern Argentina, east of the Andes. They use many habitats, including grasslands, savannas, wetlands such as the Pantanal and rainforest, often foraging in the open and resting in the shade of forest when it's hot. They have disappeared from Uruguay, Belize, El Salvador and Guatemala and parts of Costa Rica.\n\nFossils show they once lived as far north as Sonora, Mexico. In the hot season they are active mainly in the cool of the evening and night, and in colder places they switch to feeding by day.",
+    "anatomy": "The giant anteater is the largest of the four anteater species, 1.8 to 2.2 metres long including its huge, bushy tail, and weighing 27 to 50 kg. Its coat is grizzled grey and brown, with a bold black stripe edged in white running diagonally from its chest over its shoulders.\n\nIts long, narrow head ends in a tiny mouth. It has no teeth at all, and its jaw works by rotating the two halves of the lower jaw rather than opening wide. Its front feet carry long, curved claws, up to 10 centimetres, so it walks on its knuckles to keep them sharp. Its body temperature is low for a mammal, about 33 °C, which saves energy on its low-calorie diet.",
+    "life": "Giant anteaters feed mostly on ants and termites, eating up to 30,000 insects a day. They find nests by smell, which is about 40 times more sensitive than ours, tear them open with their claws and lap up the insects with their tongue, coated in sticky saliva.\n\nTiny backward-pointing spines on the tongue help hold the insects. An anteater feeds at each nest for only a minute or so, leaving it intact to recover, and visits many nests a day.\n\nThey are mostly solitary, and when cornered they rear up on their hind legs and slash with their claws, strong enough to fend off a jaguar. It sleeps up to 15 hours a day in a shallow hollow, covering itself with its bushy tail like a blanket.",
+    "family": "Females give birth to a single pup after a pregnancy of about six months. The pup is born with a full coat that matches its mother's.\n\nIt rides on its mother's back for up to a year, lying along her body so that its black and white stripe lines up with hers, making mother and pup look like one animal to a predator. Young anteaters become independent at about two years old.",
+    "remarkable": "To swallow its prey without chewing, the anteater crushes the insects against the roof of its mouth and in a muscular stomach, with help from the sand and small stones it swallows along the way.",
+    "outlook": "The giant anteater is listed as Vulnerable. It has disappeared from much of its former range because of habitat loss to farming, large fires in grasslands, road traffic and hunting.\n\nIts slow breeding makes it hard for populations to recover. Many live in protected areas, and reintroduction programmes in Argentina's Iberá wetlands have brought them back to places they had vanished from.",
+    "people": "With its unusual look, the giant anteater appears in the stories and art of pre-Columbian peoples.\n\nToday it is hunted for meat or fur in some places, and killed by dogs and on roads. In Brazil, it is a familiar sight on roadsides in the Cerrado grasslands, where collisions with vehicles kill large numbers each year.",
+    "relatives": "Anteaters are related to sloths; together they form the order Pilosa. Armadillos are their next closest relatives.\n\nThe giant anteater is the only member of its genus, and the only living anteater that lives mainly on the ground; the other three species, the two tamanduas and the silky anteater, live mostly in trees. Its genus name, Myrmecophaga, means 'anteater' in Greek.",
+    "didYouKnow": "A giant anteater's tongue can flick in and out of its mouth about 150 times a minute.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1.8–2.2 m with tail"
+      },
+      {
+        "label": "Weight",
+        "value": "27–50 kg"
+      },
+      {
+        "label": "Tongue",
+        "value": "Up to 60 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Ants and termites, up to 30,000 a day"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why does a giant anteater only feed at a nest for a minute or so?",
+        "choices": [
+          "To leave the nest intact and avoid soldier insects",
+          "Its tongue gets tired",
+          "Ants run away very fast",
+          "It's always being chased by jaguars while it eats"
+        ],
+        "explanation": "It eats a little from many nests, leaving each one to recover."
+      },
+      {
+        "prompt": "How does a giant anteater pup hide from predators?",
+        "choices": [
+          "Its stripe lines up with its mother's",
+          "It burrows underground",
+          "It climbs trees",
+          "It hides inside a hollow termite mound"
+        ],
+        "explanation": "Riding on her back, the pup blends into her outline so they look like one animal."
+      },
+      {
+        "prompt": "Why does a giant anteater walk on its knuckles?",
+        "choices": [
+          "To keep its long front claws sharp",
+          "Its legs are too short",
+          "To feel vibrations of ants",
+          "Because its feet have no pads"
+        ],
+        "explanation": "Walking on its knuckles protects its long digging claws."
+      }
+    ],
+    "charities": [
+      {
+        "name": "World Wildlife Fund",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect South America's grasslands and forests, including the Cerrado and Pantanal."
+      }
+    ]
   }
 ]
