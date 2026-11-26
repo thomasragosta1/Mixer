@@ -10,6 +10,7 @@ on:
       - "!Fauna/FaunaTests/**"
       - "!Fauna/FaunaUITests/**"
       - "!Fauna/scripts/new_animals/drafts/**"
+      - "!Fauna/scripts/new_animals/draft-request.json"
   workflow_dispatch:
 
 concurrency:
