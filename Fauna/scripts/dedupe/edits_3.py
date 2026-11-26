@@ -44,7 +44,7 @@ E = [
 ("vampire-squid","remarkable","Instead of ink, it can release a cloud of glowing mucus that lasts for minutes, confusing predators while it slips away.",""),
 ("vampire-squid","anatomy","Its skin can change colour, from dark red to black.",""),
 ("vampire-squid","anatomy","It has photophores all over its body that can produce flashes of light, and light organs at the tips of its arms.","It can flash these lights, and it has more light organs at the tips of its arms."),
-("atlantic-horseshoe-crab","didYouKnow","Horseshoe crab blood is blue and is used to test vaccines and injectable medicines for dangerous bacterial toxins.","Horseshoe crabs often swim upside down."),
+("atlantic-horseshoe-crab","didYouKnow","Horseshoe crab blood is blue and is used to test injectable medicines for dangerous bacterial toxins.","Horseshoe crabs often swim upside down."),
 ("atlantic-horseshoe-crab","life","Young horseshoe crabs live in shallow, protected waters and gradually move deeper as they grow.",""),
 ("coconut-crab","life","Coconut crabs are mostly nocturnal, hiding in burrows or crevices during the day to avoid heat and predators.","By day they hide in burrows or crevices to avoid heat and predators."),
 ("coconut-crab","life","They can climb trees, including coconut palms, and often drop back to the ground from high branches.","They often drop back to the ground from high branches."),

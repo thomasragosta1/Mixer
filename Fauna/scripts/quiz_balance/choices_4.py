@@ -28,7 +28,7 @@ C = {
 "vampire-squid#1": ["A cloud of glowing mucus", "A spray of poison darts from its arm tips", "Bubbles", "Sand"],
 "vampire-squid#2": ["It lives where there is very little oxygen", "It lives in rivers", "It is invisible", "It's far too big for any predator in the deep sea to swallow"],
 "atlantic-horseshoe-crab#0": ["Spiders and scorpions", "Crabs and lobsters, as their name suggests", "Fish", "Turtles"],
-"atlantic-horseshoe-crab#1": ["It detects bacterial toxins in vaccines and injections", "It cures diseases", "It is the raw material for most of the world's antibiotics", "It stops bleeding"],
+"atlantic-horseshoe-crab#1": ["It detects bacterial toxins in injections", "It cures diseases", "It is the raw material for most of the world's antibiotics", "It stops bleeding"],
 "coconut-crab#0": ["Largest land-living arthropod", "Fastest crab", "Deepest-diving crab of any ocean on Earth", "Smallest crab"],
 "coconut-crab#1": ["By living in borrowed snail shells", "By burrowing deep in sand", "By hiding inside hollowed-out coconut shells on the beach", "By staying in the sea"],
 "atlas-moth#0": ["Snake heads", "The eyes of a large owl", "Flowers", "Leaves"],
