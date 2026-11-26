@@ -1,0 +1,914 @@
+[
+  {
+    "id": "bearded-vulture",
+    "name": "Bearded Vulture",
+    "scientificName": "Gypaetus barbatus",
+    "wikipediaTitle": "Bearded vulture",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "africa",
+      "asia"
+    ],
+    "range": "High mountains of southern Europe, Africa, the Middle East and Asia",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 25.0,
+      "longitude": 45.0
+    },
+    "mapSpan": 80,
+    "tagline": "The mountain vulture that lives on a diet of bone",
+    "lede": "High above the crags glides a huge, falcon-shaped bird with a black beard and a rust-orange chest. The bearded vulture is the only known vertebrate whose diet is 70–90% bone, and it has turned smashing skeletons into a skill that young birds spend years perfecting.",
+    "home": "This vulture is spread thinly across a vast range of mountains: the Pyrenees and the Alps, the Caucasus, the Zagros and Alborz ranges of Iran, the Altai, the Himalayas and western and central China. In Africa it lives in the Atlas Mountains, the Ethiopian Highlands and south through Kenya to northern Tanzania, with an isolated population in South Africa's Drakensberg.\n\nIt is rare below 1,000 metres and usually lives around or above the tree line, up to about 4,500 metres in Africa and 5,000 metres in central Asia. Birds have been seen living at 7,500 metres in the Himalayas. In Ethiopia, oddly, it is common at rubbish dumps on the edges of villages and towns.",
+    "anatomy": "The bearded vulture is 94–125 cm long, weighs 4.5–7.8 kg and has a wingspan of 2.31–2.83 metres, with females slightly larger than males. Its long, narrow wings and long, wedge-shaped tail make it look like a giant falcon. Unlike most vultures it has a fully feathered head.\n\nAdults are grey-blue to grey-black above, with a creamy forehead and a black band through the eye that ends in bristles under the chin: the 'beard'. The orange or rusty colour of the head, breast and legs is cosmetic. The birds get it by dust-bathing or rubbing iron-rich mud into their feathers, and even stain their eggs brown with it. Juveniles are dark black-brown and take five to seven years to gain full adult plumage. The stomach acid is around pH 1, and a large bone is digested in about 24 hours.",
+    "life": "This is a scavenger. Mammals make up about 93% of its food, especially medium-sized hoofed animals, but it ignores most of the meat and lives on bones and marrow. It can swallow brittle bones as big as a lamb's thigh bone whole. Anything larger it carries up to 50–150 metres and drops onto rocks, then spirals down to check the pieces, repeating the drop if needed. It can lift bones 10 cm across and over 4 kg, nearly its own weight. Mastering this takes young birds up to seven years.\n\nIt kills live prey more often than other vultures. Tortoises are dropped in the same way, and hyraxes, hares and marmots have been seized too. Animals such as ibex and chamois have been battered with wings until they fell from cliffs.",
+    "family": "Pairs hold enormous territories all year and are often closely bonded. Their displays are spectacular: the birds show their talons, tumble and spiral, and sometimes lock feet and fall through the sky together.\n\nThe nest is a heap of sticks on a cliff ledge or in a cave, about 1 metre across at first and up to 2.5 metres after years of reuse. The female lays one or two eggs in mid-winter, which are incubated for 53 to 60 days, so they hatch at the start of spring. Chicks stay in the nest for 100 to 130 days and may depend on their parents for up to 2 years, so pairs often breed only every other year. Birds first breed at eight years or older. Wild birds live 21.4 years on average, and one has reached at least 45 in captivity.",
+    "remarkable": "Bone sounds like a poor meal, but it is not. Fresh bones hold about 108% of the energy of the same weight of meat, thanks to their fatty marrow, and even dry bone carries plenty of protein. Better still, a skeleton left on a cold mountain dries out and is protected from bacteria. The vulture can come back to it months after other scavengers and insects have stripped the soft parts, treating the mountainside as its own larder.",
+    "outlook": "The species has been listed as Near Threatened since 2014. It naturally lives at low densities, from a dozen to 500 pairs in each Eurasian mountain range, and is most common in Ethiopia, with an estimated 1,400 to 2,200 pairs. Hunting and poisoning almost wiped it out in Europe: by 1900 it survived mainly in the Pyrenees, and it was gone from the Alps by the 1930s. Collisions with power lines, poisoned baits left for predators and loss of food add to the pressure.\n\nReintroduction has worked well. From 1987, zoo-bred chicks about 90 to 100 days old were placed on protected Alpine ledges and fed until they could fly, and over 200 had been released by 2015. In Spain, a foundation set up in 1995, when only about 30 birds remained, reports more than 1,000 today.",
+    "people": "The German name lammergeier means 'lamb-vulture', from an old belief that it attacks lambs, while 'ossifrage' comes from Latin for 'bone-breaking'. In Iranian mythology the bird is the Homa, a symbol of luck: if its shadow fell on someone, they would rise to rule, and anyone who shot one would die within forty days. Sa'di noted its bone-eating in his Gulistan in 1258, and in 1625 the emperor Jahangir had a bird's crop opened and found it full of bones.\n\nIn Tibet, it takes part in sky burials, where the dead are offered to the birds high in the mountains. Shimon Peres took his surname from its Hebrew name, peres, after finding a nest in the Negev in 1944.",
+    "relatives": "Linnaeus described the bird in 1758 as Vultur barbatus, from a specimen collected near Oran in Algeria, and it is now the only member of the genus Gypaetus.\n\nDespite its name it is not a close cousin of the typical Old World vultures, being hardly nearer to them than to hawks. Its closest living relative is the Egyptian vulture, which shares its unusual lozenge-shaped tail. Two subspecies are recognised; the African one is smaller and lacks the black ear tufts and chin bristles.",
+    "didYouKnow": "One nest in southern Spain held objects such as shoes that were carbon-dated to periods from the 13th to the 19th centuries, showing it had been used by generations of vultures for hundreds of years.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "2.31–2.83 m"
+      },
+      {
+        "label": "Weight",
+        "value": "4.5–7.8 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "70–90% bone"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 21 years in the wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the bearded vulture deal with bones too big to swallow?",
+        "choices": [
+          "Drops them onto rocks",
+          "Crushes them with its feet",
+          "Soaks them in streams",
+          "Hammers them against tree trunks with powerful kicks"
+        ],
+        "explanation": "It carries them up to 50–150 metres and drops them onto rocks to smash them."
+      },
+      {
+        "prompt": "Where does the bird's rusty-orange colouring come from?",
+        "choices": [
+          "Iron-rich mud",
+          "Bone marrow",
+          "Old age",
+          "A pigment it makes only in the breeding season to attract a mate"
+        ],
+        "explanation": "The colour is cosmetic: it rubs iron-rich mud into its feathers or dust-bathes."
+      },
+      {
+        "prompt": "Which bird is the bearded vulture's closest living relative?",
+        "choices": [
+          "Egyptian vulture",
+          "Golden eagle",
+          "Andean condor",
+          "Griffon vulture, the commonest Old World vulture"
+        ],
+        "explanation": "It forms a separate lineage with the Egyptian vulture, which shares its lozenge-shaped tail."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats, including Europe's vultures."
+      },
+      {
+        "name": "Endangered Wildlife Trust",
+        "url": "https://www.ewt.org.za",
+        "blurb": "Works to protect threatened species in southern Africa, including its vultures."
+      }
+    ]
+  },
+  {
+    "id": "banded-archerfish",
+    "name": "Banded Archerfish",
+    "scientificName": "Toxotes jaculatrix",
+    "wikipediaTitle": "Banded archerfish",
+    "group": "fish",
+    "regions": [
+      "asia",
+      "oceania"
+    ],
+    "range": "Mangrove estuaries from India to the Philippines, Australia and Vanuatu",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": 125.0
+    },
+    "mapSpan": 50,
+    "tagline": "A fish that shoots insects down with jets of water",
+    "lede": "An insect resting on a mangrove leaf is safe from almost every fish, but not from this one. The banded archerfish spits a precise jet of water into the air, knocks its victim off the leaf and is already waiting below when it splashes down.",
+    "home": "The banded archerfish lives in the Indo-Pacific, from India east to the Philippines and south to northern Australia, and less often along Australia's southern coast. It is found around the Indonesian Archipelago and the Solomon Islands, and has been seen as far east as Vanuatu.\n\nIts main home is the brackish water of mangrove estuaries, where rivers meet the sea. It sometimes travels upstream into fresh water and is also linked with reefs, and it is often found under overhanging plants. Over its lifetime it moves between fresh, salt and brackish water, though not in order to breed.",
+    "anatomy": "This is an oblong, silvery-white fish with a raised back towards the tail, though yellowish individuals turn up too. The back is olive-green or brown, and the yellow-green dorsal fin sits far back on the body, above a silver anal fin. Four to six broad black bars, wedge-shaped and reaching up into the dorsal fin, run down the upper sides. They grow shorter as the fish ages, and some fish have irregular yellow patches between them.\n\nIt can reach 30 cm, though about 20 cm is more usual. The head is slightly shorter than the body and ends in a pointed snout. Unusually for a fish, its large eyes are placed for binocular vision. Young fish are yellow-green to brown above with grey-green flanks. Nobody has yet checked whether males and females look different.",
+    "life": "Archerfish are omnivores that come up to the surface by day to feed on floating matter, plants and insects. To fire, it presses its tongue against the roof of its mouth to form a tube, then snaps its gill covers shut, forcing water out in a jet. Most can hit targets 150 cm away, and large fish can reach 2–3 metres. Within 100 milliseconds of a hit, it is already swimming towards the spot where the prey will land, and it can be there within 50 milliseconds of the splash.\n\nIt is remarkably accurate despite the way light bends at the water's surface. Scientists once thought it lined up directly beneath its target, but it can hit prey from an angle too, so it seems able to correct for the distortion. It also leaps from the water to snatch insects from low branches, and hunts crustaceans and small fish underwater. Young archerfish practise in small schools, so that at least one shot is likely to land.",
+    "family": "Surprisingly little is known about how banded archerfish breed. They start once they are about 10 cm long and reproduce by spawning. There are reports that they travel out to saltwater reefs to spawn, but these have not been confirmed. Archerfish in general lay between 20,000 and 150,000 eggs at a time.\n\nIn captivity they rarely breed, and the species has never been bred successfully in an aquarium. Kept fish live five to eight years, and occasionally nine or ten.",
+    "remarkable": "Hitting a moving insect is not instinct alone. In one study, banded archerfish were trained to hit moving targets and got it right more than half the time. The researchers found that this is a complex skill the fish learn, and that they can pick it up from each other: archerfish that had watched other members of their school shooting became more accurate themselves.",
+    "outlook": "The banded archerfish is fairly common across the Indo-Pacific and is not currently endangered. It has a minor role in fisheries, being sold fresh in local markets, and some are collected for the aquarium trade. The main risks are the clearing of the mangrove swamps it depends on and pollution of coastal waters, both of which could cause numbers to fall in places.",
+    "people": "Its names celebrate its aim. Toxotes is Greek for 'bowman' or 'archer', after the constellation Sagittarius, and jaculatrix means 'she who throws', as in casting a dart. The naturalist Peter Simon Pallas described it in 1767, and it has since collected several other names and misspellings.\n\nIts silvery colours and party trick make it a tempting aquarium fish, but it is not recommended for most homes. It needs warm brackish water of 25–30 °C, a tank of at least 170 litres and a tall lid, because it may jump out after prey. It would rather shoot down live food than eat flakes, and larger fish may bully or even eat smaller ones, so small groups of similar size are kept together.",
+    "relatives": "The banded archerfish is a perch-like fish in the genus Toxotes, the archerfish. It is often sold alongside the largescale archerfish, Toxotes chatareus, simply as 'archerfish', but the two are easy to tell apart. The largescale has five dorsal spines instead of four, a sooty rather than silvery body, and six or seven spots and short bars in an alternating pattern.\n\nThe smallscale archerfish, Toxotes microlepis, is harder to separate. Both have four or five wedge-shaped bands, but on the smallscale the last bars stop short of the dorsal fin, which carries two separate spots instead.",
+    "didYouKnow": "When other archerfish are watching, a banded archerfish takes longer to shoot, aims more often and fires from closer, probably to reduce the chance that a rival steals its catch.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 30 cm"
+      },
+      {
+        "label": "Spitting range",
+        "value": "Up to 2–3 m"
+      },
+      {
+        "label": "Eggs",
+        "value": "20,000–150,000"
+      },
+      {
+        "label": "Diet",
+        "value": "Insects, plants, small fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the banded archerfish make its water jet?",
+        "choices": [
+          "Tongue pressed to the roof of its mouth",
+          "By squeezing its swim bladder",
+          "Through a tube in its gills",
+          "By gulping air and blasting it out through its nostrils"
+        ],
+        "explanation": "Its tongue forms a tube against the roof of its mouth, and closing the gill covers forces water out."
+      },
+      {
+        "prompt": "What does the genus name Toxotes mean?",
+        "choices": [
+          "Archer",
+          "Spitter",
+          "Mangrove fish",
+          "Striped one, after the black bands on its sides"
+        ],
+        "explanation": "Toxotes is Greek for 'bowman' or 'archer', referring to Sagittarius."
+      },
+      {
+        "prompt": "What is the banded archerfish's main habitat?",
+        "choices": [
+          "Mangrove estuaries",
+          "Coral lagoons",
+          "Mountain streams",
+          "Deep offshore reefs far from any coastline"
+        ],
+        "explanation": "It lives mainly in the brackish water of mangrove estuaries."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and habitats, including mangrove forests."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places, including coastal ecosystems across Asia and the Pacific."
+      }
+    ]
+  },
+  {
+    "id": "desert-locust",
+    "name": "Desert Locust",
+    "scientificName": "Schistocerca gregaria",
+    "wikipediaTitle": "Desert locust",
+    "group": "insect",
+    "regions": [
+      "africa",
+      "asia"
+    ],
+    "range": "Deserts and dry lands of northern Africa, Arabia and southwest Asia",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 20.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 70,
+    "tagline": "The quiet grasshopper that can become a plague",
+    "lede": "For years, desert locusts can live alone and unnoticed in small numbers among the dunes. Then good rains arrive, their numbers explode, and these shy insects transform into swarms of billions that ride the wind and strip whole landscapes bare.",
+    "home": "In quiet years, called recessions, desert locusts are confined to a belt of about 16 million square kilometres that runs from Mauritania across the Sahara and the Arabian Peninsula to northwest India. When conditions allow several generations in a row, swarms spill out in every direction, reaching as far as Spain and Russia, Nigeria and Kenya, and India. Up to 60 countries can be affected, across about 20% of the Earth's land.\n\nSwarms fly no higher than about 2,000 metres because the air above is too cold, so they cannot cross the Atlas, the Hindu Kush or the Himalayas. They regularly cross the Red Sea, and during the 1987–89 plague some even crossed the Atlantic from Africa to the Caribbean in 10 days.",
+    "anatomy": "Desert locusts come in two forms that differ in size and colour. Solitary females are 6–9 cm long and males 4.5–6 cm, while gregarious ones are smaller, with females 5–6 cm and males 4.5–5 cm. An adult weighs about 2 g.\n\nSolitary hoppers are greenish or pale beige to match the plants around them, and the adults are sandy, grey or beige, the males turning pale yellow when mature. Gregarious hoppers are yellow with a black head and black stripes, and the youngest are almost entirely black. Gregarious adults are pink when immature, and mature males turn bright yellow. The hindwings are clear or pale yellow.",
+    "life": "A desert locust eats roughly its own body weight in green plants every day. It feeds on leaves, shoots, flowers, fruit, seeds, stems and bark, and almost no crop is safe: millet, maize, sorghum, barley, rice, sugarcane, cotton, date palms, bananas and vegetables are all eaten.\n\nSolitary adults fly at night, but gregarious ones travel by day in dense swarms that move with the wind at roughly the wind's speed, covering 100–200 km in a day. A single swarm can blanket 1,200 square kilometres and hold 40 to 80 million locusts in each square kilometre, around 50 to 100 billion insects in all. Even a swarm covering 1 square kilometre eats as much in a day as about 35,000 people. There can be two to five generations a year, and numbers can rise 10 to 16 times from one generation to the next.",
+    "family": "Mating can take several hours, and one mating is enough for several batches of eggs. The female looks for soft, damp soil of the right temperature, close to other egg-laying females, and digs a hole with her abdomen. In it she lays a pod of up to 100 eggs, about 10 cm below the surface, sealed with foam that hardens into a plug.\n\nThe eggs hatch after two weeks or more, depending on temperature, and the wingless hoppers moult five times before becoming winged adults. A new adult is soft with drooping wings until fluid is pumped into them and its skin hardens. Maturing can take 2–4 weeks in good conditions or up to 6 months in poor ones. Males mature first and release a scent that speeds up the females. Adults live for 3 to 6 months.",
+    "remarkable": "The switch between forms is triggered by touch. After drought, rain brings fresh plants and the population builds up fast. As hoppers crowd together, their hind legs keep bumping against each other, and that stimulus sets off a cascade of changes in body and behaviour. Within hours, solitary hoppers start acting gregariously: they change colour, release a pheromone that draws them together and form marching bands. Turning back takes a generation or more. A gut bacterium even helps, making guaiacol, one of the main ingredients of the swarming pheromone.",
+    "outlook": "The desert locust is a pest, not a species at risk, and the challenge is keeping it in check. Countries in Africa and Asia share data through the Desert Locust Information Service of the UN Food and Agriculture Organization, which forecasts outbreaks and warns governments. Control still relies mostly on chemical pesticides, which can harm people and other wildlife, though slower-acting biological pesticides made from fungi, bacteria and neem are an alternative.\n\nThe 2019–2021 upsurge began when two cyclones soaked the remote Empty Quarter of Arabia in 2018, allowing an estimated 8,000-fold increase in numbers. Swarms reached the Horn of Africa and Kenya, which had seen swarm invasions only twice in 75 years. Ground and aerial spraying across 2.3 million hectares averted 4.5 million tonnes of crop losses and secured food for nearly 47 million people.",
+    "people": "Locust plagues are described in the Bible and the Qur'an, and they have worsened several famines in Ethiopia. From March to October 1915 swarms stripped Palestine, Mount Lebanon and Syria of almost all vegetation. The West African upsurge of 2003–2005 cost over US$400 million to fight and caused harvest losses worth up to US$2.5 billion.\n\nSeveral rabbinical authorities identify the desert locust as one of the kosher locusts listed in Leviticus. As a symbol of famine, locusts appear in films such as The Mummy (1999) and The Bible (1966).",
+    "relatives": "The desert locust is a short-horned grasshopper in the family Acrididae. What sets locusts apart from other grasshoppers is their ability to switch between a solitary form and swarming bands and swarms as their numbers rise. There are two subspecies: the well-known one north of the equator, and a less important one with a smaller range in south-west Africa.\n\nIts genus, Schistocerca, has more than 30 species in Africa, Asia and the Americas. It is the only genus in its subfamily found in both the Old and New Worlds, and is thought to have begun in Africa and spread to the Americas 6 to 7 million years ago.",
+    "didYouKnow": "Studies of desert locust muscle in the 1960s found unusually thin muscle filaments and helped scientists develop the sliding filament theory of how muscles contract.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "4.5–9 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 2 g"
+      },
+      {
+        "label": "Swarm area",
+        "value": "Up to 1,200 km²"
+      },
+      {
+        "label": "Lifespan",
+        "value": "3–6 months"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What triggers solitary locust hoppers to turn gregarious?",
+        "choices": [
+          "Hind legs bumping in a crowd",
+          "Shorter days",
+          "Eating toxic plants",
+          "A sudden drop in temperature at the end of the rains"
+        ],
+        "explanation": "Crowding makes their hind legs bump together, which sets off the change."
+      },
+      {
+        "prompt": "How much does a desert locust eat each day?",
+        "choices": [
+          "About its own body weight",
+          "Half its weight",
+          "Ten times its weight",
+          "Almost nothing, as adults live on fat stored as hoppers"
+        ],
+        "explanation": "Each locust eats roughly its own weight, about 2 g, in green plants daily."
+      },
+      {
+        "prompt": "Why can't swarms cross the Himalayas?",
+        "choices": [
+          "It's too cold up high",
+          "The winds blow the wrong way",
+          "There is nothing to eat",
+          "The thin air has too little oxygen for their flight muscles"
+        ],
+        "explanation": "Swarms fly only up to about 2,000 metres, because higher up it is too cold."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates and promotes alternatives to harmful pesticides."
+      },
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      }
+    ]
+  },
+  {
+    "id": "bongo",
+    "name": "Bongo",
+    "scientificName": "Tragelaphus eurycerus",
+    "wikipediaTitle": "Bongo (antelope)",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Dense forests of West and Central Africa, and a few Kenyan mountains",
+    "status": "NT",
+    "coordinate": {
+      "latitude": 2.0,
+      "longitude": 18.0
+    },
+    "mapSpan": 55,
+    "tagline": "Africa's shy, striped giant of the rainforest",
+    "lede": "A flash of chestnut and a glimpse of white stripes in the undergrowth is often all anyone sees of a bongo. One of the largest forest antelopes in Africa, it lives in such dense, difficult country that few Europeans or Americans had ever observed one until the 1960s.",
+    "home": "Bongos live in tropical forests with thick undergrowth, up to 4,000 metres above sea level. They are found across Central Africa and in West African countries such as Cameroon, Gabon, the Republic of the Congo, Ghana, Ivory Coast, Liberia and Sierra Leone, with isolated populations in the mountains of Kenya. Historically there were three separate populations, in East, Central and West Africa, and all three have shrunk.\n\nThey favour patchy, disturbed forest with plenty of fresh green growth near the ground. Such patches appear where elephants have browsed heavily or after fires, floods and fallen trees, and in East Africa when bamboo dies back. They need permanent water.",
+    "anatomy": "A bongo stands 1.1–1.3 metres at the shoulder and is 2.15–3.15 metres long including its tail. Males weigh 220–405 kg and females 150–235 kg, making it the largest of its tribe after the two elands. The coat is bright auburn or chestnut, with 10–15 white-yellow stripes down each side, and the count on the left rarely matches the right. Males darken with age to a deep mahogany, while females stay brighter. A white chevron sits between the eyes, there are two white spots on each cheek, and the white lips are topped by a black muzzle.\n\nBoth sexes carry heavy horns 75–99 cm long that twist once and sweep back over the body, larger in males. Like all antelope horns they are never shed, with a hollow core and an outer layer of keratin. When it bolts through tangled lianas, a bongo lays them flat along its back so they don't snag.",
+    "life": "Bongos are browsers that eat leaves, shrubs, vines, bark and the pith of rotting trees, as well as herbs, roots, cereals and fruit. They grip leaves with a long, prehensile tongue, much as the okapi does, and visit natural salt licks regularly. They have also been seen eating burnt wood after storms, probably for its salt and minerals.\n\nThey are mostly nocturnal, sometimes active at dawn and dusk, and very timid. A startled bongo dashes into cover, then stands facing away from the danger, peeking back now and then, ready to run. Adult males usually live alone, while females and young form groups of six to eight; herds of more than 20 are rare. Rival males avoid each other, and meetings are usually settled by display: they swell their necks, roll their eyes and pace with horns held upright. Their main predators are leopards and spotted hyenas.",
+    "family": "Females give birth to a single calf after a pregnancy of about 285 days. They prefer traditional calving grounds, where the newborn lies hidden for a week or more while the mother makes short visits to suckle it. Mothers keep in touch with their young using a weak, mooing call.\n\nCalves grow quickly and soon join their mothers in nursery herds. They are weaned at about 6 months and become mature at around 20 months to just over 2 years. Bongos have been known to live for up to 19 years.",
+    "remarkable": "The rare mountain bongo of Kenya may now be more numerous in zoos than in the wild. North America alone holds over 400 bongos, probably more than the entire wild population of mountain bongos, which may be as low as 100 to 140. Every captive bongo descends from animals taken in Kenya's Aberdare Mountains, and in 2004, 18 bongos born in North American zoos were gathered in Florida and sent to Mount Kenya to be reintroduced to their ancestors' homeland.",
+    "outlook": "The IUCN Antelope Specialist Group considers the lowland bongo Near Threatened and the mountain bongo Critically Endangered. Lowland bongos may number about 28,000, but only around 60% live in protected areas, and they face ongoing loss of forest to farming and logging and hunting for meat, hides and horns. Rinderpest almost wiped the species out in the 1890s.\n\nIn Kenya, camera traps at salt licks and DNA from dung show mountain bongos clinging on in four isolated populations, which are losing genetic diversity with each generation. Conservationists plan to manage these fragments as one linked population, while the Mount Kenya Wildlife Conservancy breeds bongos for release. Sport hunters prize lowland bongos as trophies, which some argue gives remote areas an economic reason to protect them.",
+    "people": "The name bongo probably comes from the Kele language of Gabon and was first used in English in 1861. Although bongos are easy to catch in snares, many people living in their forests believed that eating or even touching one would bring on spasms like epileptic fits. This taboo protected the antelope for a long time, but it is said to have faded, which may explain heavier hunting in recent years.\n\nWith their striking coats, bongos are favourites in zoos. In 2000, North American zoos made the bongo part of a breeding programme designed to protect the genetic health of captive animals, and in 2006 the effort to restore bongos to Mount Kenya was named one of the year's top ten conservation success stories.",
+    "relatives": "The bongo was described by the Irish naturalist William Ogilby in 1837. Its genus name, Tragelaphus, combines the Greek words for goat and deer, and eurycerus means 'broad horn'. There are two subspecies: the lowland or western bongo, and the larger, heavier and more vividly coloured mountain or eastern bongo, found only in Kenya.\n\nIt belongs to the spiral-horned antelopes, along with the nyalas, sitatunga, bushbucks, kudus and elands. Its resemblance to the okapi, in its long tongue and taste for burnt wood, is a coincidence, as the two are not related.",
+    "didYouKnow": "A bongo calf's horns grow quickly and start to show when it is only about 3.5 months old.",
+    "facts": [
+      {
+        "label": "Shoulder height",
+        "value": "1.1–1.3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "150–405 kg"
+      },
+      {
+        "label": "Horns",
+        "value": "75–99 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 19 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How many times does a bongo's horn twist?",
+        "choices": [
+          "Once",
+          "Twice",
+          "Three times",
+          "Never, because its horns grow perfectly straight"
+        ],
+        "explanation": "Bongo horns twist once and sweep back over the body."
+      },
+      {
+        "prompt": "Why do bongos eat burnt wood?",
+        "choices": [
+          "For salt and minerals",
+          "To clean their teeth",
+          "To settle their stomachs",
+          "To disguise their scent from leopards and hyenas"
+        ],
+        "explanation": "Burnt wood is thought to be a source of salt and minerals, which bongos need."
+      },
+      {
+        "prompt": "Where do all captive bongos come from?",
+        "choices": [
+          "Kenya's Aberdare Mountains",
+          "Gabon",
+          "Ghana",
+          "The lowland forests of the Central African Republic"
+        ],
+        "explanation": "Every bongo in captivity descends from the Aberdare Mountains of central Kenya."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Protects forests and wildlife across Central and West Africa and worldwide."
+      }
+    ]
+  },
+  {
+    "id": "humboldt-squid",
+    "name": "Humboldt Squid",
+    "scientificName": "Dosidicus gigas",
+    "wikipediaTitle": "Humboldt squid",
+    "group": "marineInvertebrate",
+    "regions": [
+      "openOcean",
+      "southAmerica",
+      "centralAmerica",
+      "naWest"
+    ],
+    "range": "Eastern Pacific, from Tierra del Fuego north to California and beyond",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": -90.0
+    },
+    "mapSpan": 70,
+    "tagline": "A fast, flashing squid with a fearsome reputation",
+    "lede": "Each night, shoals of up to 1,200 big, fast squid rise from the depths of the eastern Pacific, their skin flickering red and white. The Humboldt squid is one of the largest squids in the world, a fierce hunter with toothed suckers and a parrot-like beak.",
+    "home": "The Humboldt squid lives in the eastern Pacific, usually 200 to 700 metres down, from Tierra del Fuego at the tip of South America north to California. It is especially common off Chile, Peru and Mexico. Tagging shows it makes daily vertical migrations, rising closer to the surface from dusk to dawn.\n\nIts range is spreading north. The strong El Niño of 1997–1998 brought the first sightings in Monterey Bay, and since a smaller El Niño in 2002 the squid have been seen there all year round. They now reach Oregon, Washington, British Columbia and even Alaska, and have ventured into Puget Sound. Mass strandings happen too: between 1,000 and 1,500 washed up on a beach in Washington in 2004.",
+    "anatomy": "Humboldt squid can reach 1.5 metres in mantle length and weigh up to 50 kg, making them the largest members of their family. Females usually mature at larger sizes than males. The mantle, the main body with its two triangular fins, makes up more than half the animal's weight. The squid moves by jet propulsion, squirting water through a siphon, and can reach 24 km/h.\n\nIt has eight arms and two long, elastic tentacles armed with sharp hooks, and each sucker carries a ring of teeth. Prey is pulled back to a large, razor-sharp beak. Its skin is packed with colour cells called chromatophores, which let it flash from red to white in an instant. Its flesh is saturated with ammonium chloride, which keeps it neutrally buoyant in seawater.",
+    "life": "The squid eats mainly small fish, especially lanternfish, along with crustaceans, octopuses, other squid and copepods. It charges in with all ten limbs held forward in a cone, then spreads its eight arms and shoots out the two hooked tentacles. They grab and retract so fast that almost the whole strike happens within one frame of a normal video camera. Fishermen say these squid can strip a hooked fish to the bone before it is reeled in.\n\nThey are cannibals. A quarter of stomachs examined in one study held remains of other Humboldt squid, and off Chile, over half of more than 2,000 squid had eaten their own kind, which may help explain their rapid growth. Injured or weak members of a shoal are readily attacked. Research from 2007 to 2011 also showed that they hunt cooperatively.",
+    "family": "This is a fast-living animal. Humboldt squid are thought to live for about a year, and only the largest survive to 2 years.\n\nFemales lay gelatinous egg masses that are almost entirely transparent and drift freely in the open water. The bigger the female, the bigger the mass: large females produce masses 3–4 metres across, smaller ones about 1 metre. Very few have ever been found, but those seen held anywhere from 5,000 to 4.1 million eggs.",
+    "remarkable": "Cameras attached to these squid revealed two distinct light shows. Near other squid, the whole body flashes between red and white two to four times a second, a signal that can change in speed and strength and may be synchronised between animals. Its meaning is unknown: perhaps an invitation to mate, perhaps a warning to keep away. The second display is a slow ripple of red and white waves travelling along the body, which seems to mimic sunlight dancing on the seabed, like the pattern on the floor of a swimming pool.",
+    "outlook": "The species is the most important squid for commercial fisheries, and as of 2019 about a third of all squid caught worldwide was this one, landed mainly in Chile, Peru and Mexico. In the Gulf of California the fishery collapsed in 2015 as waters warmed and has not recovered.\n\nEl Niño events also affect the squid off Peru, where warm water makes conditions less favourable and the shoals more scattered. A 2008 study predicted that ocean acidification would sharply cut its metabolism and activity by the end of the century, but a later study found its metabolism unaffected.",
+    "people": "It is most often called the jumbo squid in English, and Humboldt after the cold current off western South America where it was first collected. In Chile it is jibia and in Peru pota. Fishermen in Baja California call it diablo rojo, the red devil, because it flashes red and white when caught. Stories of attacks on fishermen and divers abound, but research suggests the squid are aggressive mainly when feeding, perhaps provoked by lights or shiny gear, and calmer and curious at other times.\n\nFresh, its flesh tastes salty, sour and bitter, so it is soaked in acid and brine before freezing. In Peru it became a cheap ceviche in Lima in the 1990s. In the 1950s and 1960s, Chilean scientists in Valparaíso used its giant nerve fibres and synapses for pioneering nerve research.",
+    "relatives": "The Chilean priest and naturalist Juan Ignacio Molina first reported the animal to science in 1782, and the French naturalist Alcide d'Orbigny formally described it in 1835. In 1857 the Danish zoologist Japetus Steenstrup created the genus Dosidicus for it.\n\nIt is the only living species in that genus, part of the family Ommastrephidae, the flying squids. Fossil statoliths, tiny balance stones from the head, show an extinct relative, Dosidicus lomita, lived off California in the Pliocene.",
+    "didYouKnow": "The jigs used to catch it, called poteras in Spanish, can be so selective that one type attracts a single species of squid, and even squid of a particular size.",
+    "facts": [
+      {
+        "label": "Mantle length",
+        "value": "Up to 1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 50 kg"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 24 km/h"
+      },
+      {
+        "label": "Lifespan",
+        "value": "1–2 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why does fresh Humboldt squid taste salty and bitter?",
+        "choices": [
+          "Its flesh holds ammonium chloride",
+          "It eats salty plankton",
+          "It lives in brine pools",
+          "Its ink sac bursts when it is caught and soaks into the meat"
+        ],
+        "explanation": "Ammonium chloride in its flesh keeps it buoyant but gives a sour, bitter taste."
+      },
+      {
+        "prompt": "What is the Humboldt squid called in Peru?",
+        "choices": [
+          "Pota",
+          "Jibia",
+          "Calamar rojo",
+          "Diablo del mar, the devil of the sea"
+        ],
+        "explanation": "It is pota in Peru and jibia in Chile."
+      },
+      {
+        "prompt": "What first brought Humboldt squid to Monterey Bay?",
+        "choices": [
+          "The 1997–1998 El Niño",
+          "A shipping accident",
+          "A fall in sea lion numbers",
+          "Bait thrown overboard by tuna fishermen"
+        ],
+        "explanation": "The strong 1997–1998 El Niño triggered the first sightings there."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns for science-based fishing and healthy oceans, including along the Pacific coasts of the Americas."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide for sustainable fisheries and healthy oceans."
+      }
+    ]
+  },
+  {
+    "id": "blue-footed-booby",
+    "name": "Blue-footed Booby",
+    "scientificName": "Sula nebouxii",
+    "wikipediaTitle": "Blue-footed booby",
+    "group": "bird",
+    "regions": [
+      "southAmerica",
+      "centralAmerica",
+      "naWest"
+    ],
+    "range": "Eastern Pacific coasts from the Gulf of California to Peru and the Galápagos",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 5.0,
+      "longitude": -88.0
+    },
+    "mapSpan": 50,
+    "tagline": "Bright blue feet are its ticket to finding a mate",
+    "lede": "On bare black lava, a seabird lifts one sky-blue foot, then the other, strutting in front of a watching female. For the blue-footed booby, feet are everything: their shade of blue is an honest advertisement of how healthy and well fed their owner is.",
+    "home": "The blue-footed booby lives along the coasts of the eastern Pacific, from the Gulf of California south along Central and South America to Peru, and out to the Galápagos Islands, where about half of all breeding pairs nest. It is strictly a seabird and comes ashore only to breed and raise its young, on rocky islands and coasts.\n\nNests are simple hollows in bare lava, set in large colonies. A booby may claim and defend two or three sites before settling on one a few weeks before laying. Young birds rarely move far from where they hatched, which is why colonies of hundreds build up. While nesting, the female turns to face the sun all day, so the nest ends up ringed with droppings.",
+    "anatomy": "This booby averages 81 cm long and 1.5 kg, and the female is slightly larger, reaching 90 cm with a wingspan of up to 1.5 metres. It has long, pointed brown wings, a light brown head and neck streaked with white, and a pure white belly. Its yellow eyes face forward for good binocular vision, and males have more yellow in the iris than females.\n\nBecause it dives headfirst into the sea, its nostrils are permanently closed and it breathes through the corners of its mouth. Special air sacs in its skull protect the brain from the enormous pressure of the dive. The feet range from pale turquoise to deep aquamarine, and males and younger birds have lighter feet than females. Chicks are covered in soft white down, with black bills and feet.",
+    "life": "Blue-footed boobies are specialist fish eaters, taking small schooling fish such as sardines, anchovies, mackerel and flying fish, as well as squid and offal. They often fish in parties of about 12. When the lead bird spots a shoal, it signals and the whole group plunges in unison, bodies pointed like arrows. They dive from 10 to 30 metres up, sometimes 100 metres, hitting the water at about 97 km/h and reaching 25 metres down. Prey is usually swallowed underwater.\n\nMales and females fish differently. The smaller male, with his relatively larger tail, can fish in both shallow and deep water, while the bigger female can carry more food. Boobies grunt, shout and whistle, and males have been seen throwing back their heads to whistle at females flying past. Mates know each other's voices.",
+    "family": "Pairs are usually monogamous and can breed every 8 to 9 months. Courtship is a dance: the male struts and shows off his feet, presents nest material and 'sky-points' with his bill and tail raised. The female lays two or three eggs a few days apart, and both parents take turns to incubate for 41 to 45 days. Having no bare brood patch, they warm the eggs with their feet.\n\nThe first chick hatches days ahead of the second, and the gap matters. When food is short, the older chick pecks its sibling or pushes it out of the nest, and the parents do not step in, even feeding the stronger chick more. Yet they build steep-sided nests that make ejection harder, and repair them if flattened. Females start breeding at 1 to 6 years old, males at 2 to 6.",
+    "remarkable": "The blue is not a pigment. It comes from tiny, aligned fibres of collagen in the skin, which on their own look a flat, purplish blue. Carotenoid pigments from fresh fish shift this to aquamarine in a healthy bird. After just 48 hours without food, the feet fade, so they reveal a bird's condition almost in real time. Females prefer brighter-footed males, and when researchers dulled males' feet with make-up, their partners laid smaller second eggs.",
+    "outlook": "A study completed in 2014 confirmed that the blue-footed booby population on the Galápagos is declining because the birds are having trouble breeding, and in some years many do not even try. The likely cause is food. Sardines, once almost their entire diet on Española Island, have largely vanished from those waters since 1997, and in 2012–13 they made up only about half of the boobies' prey. No sign was found of other causes such as people, introduced predators or disease. Longer-term monitoring is needed to tell whether this is a natural swing or a lasting decline.",
+    "people": "The name booby comes from the Spanish bobo, meaning foolish or clownish, because like other seabirds it is clumsy on land and seems to have no fear of people. The French naturalist Alphonse Milne-Edwards described the species in 1882 and named it after Adolphe-Simon Neboux, a surgeon, naturalist and explorer.\n\nFor scientists the bird has become a classic model for studying rivalry between siblings and conflict between parents and their young. In one experiment, researchers trimmed females' flight feathers so that finding food cost them more energy. Their daughters, which grow faster than sons and need more care, ended up lighter and shorter-winged than their brothers.",
+    "relatives": "The blue-footed booby is one of six species in the genus Sula, part of the family Sulidae, and two subspecies are recognised. The Galápagos birds are larger and paler. Its closest relative is the Peruvian booby, which split from it between 1.1 and 0.8 million years ago and has grey feet, a whiter head and white-spotted wings. Their ranges overlap off northern Peru and southern Ecuador.\n\nIt is one of only two booby species that raise more than one chick at a time. The masked booby, which nests on flat ground, always loses its second chick to its sibling.",
+    "didYouKnow": "Young boobies are more likely to grow up to breed when one parent is old and the other young, and such nestlings also carry the fewest ticks.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 81 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "Up to 1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "About 1.5 kg"
+      },
+      {
+        "label": "Diving speed",
+        "value": "About 97 km/h"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What gives the booby's feet their colour?",
+        "choices": [
+          "Collagen fibres and carotenoids from fish",
+          "Blue pigment from algae",
+          "Blood vessels under the skin",
+          "Light reflected off the sea, like the shimmer on a duck's feathers"
+        ],
+        "explanation": "Aligned collagen looks purplish blue, and carotenoids from fresh fish turn it aquamarine."
+      },
+      {
+        "prompt": "Where does the name 'booby' come from?",
+        "choices": [
+          "Spanish bobo, meaning foolish",
+          "A sailor's word for blue",
+          "The bird's call",
+          "An old Quechua word for a bird that dives straight into the sea"
+        ],
+        "explanation": "Bobo means foolish or clownish, because the birds are clumsy on land and unafraid of people."
+      },
+      {
+        "prompt": "How do blue-footed boobies keep their eggs warm?",
+        "choices": [
+          "With their feet",
+          "With a brood patch",
+          "By burying them in sand",
+          "By building a thick nest lined with seaweed and feathers"
+        ],
+        "explanation": "They have no brood patch, so they warm the eggs with their feet."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Galápagos Conservancy",
+        "url": "https://www.galapagos.org",
+        "blurb": "Supports research and conservation to protect the wildlife of the Galápagos Islands."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats, including seabird colonies."
+      }
+    ]
+  },
+  {
+    "id": "basking-shark",
+    "name": "Basking Shark",
+    "scientificName": "Cetorhinus maximus",
+    "wikipediaTitle": "Basking shark",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "europe",
+      "naEast"
+    ],
+    "range": "Cool temperate seas worldwide, often near the coast and surface",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": -20.0
+    },
+    "mapSpan": 70,
+    "tagline": "A gentle giant that sieves plankton at the surface",
+    "lede": "A huge dorsal fin cutting slowly through a calm summer sea can alarm anyone watching, but the basking shark is harmless. The second-largest fish alive drifts along with a cavernous mouth agape, straining food so small it is barely visible.",
+    "home": "Basking sharks live in cool and temperate seas around the world, from boreal waters to warm-temperate ones. They are coastal-pelagic sharks of the continental shelf, often seen close to land, even in bays with narrow mouths, and sometimes enter brackish water. They follow the plankton, which keeps them near the surface in summer, and prefer water of 8 to 14.5 °C.\n\nThey are active all year and travel thousands of kilometres with the seasons in search of the richest plankton, often along ocean fronts. In winter they may go as deep as 900 metres. Sharks tagged off Cape Cod in 2009 crossed the equator to reach Brazil, staying 200 to 1,000 metres down for weeks, and one spent a month near the mouth of the Amazon.",
+    "anatomy": "Adults usually reach 7–8.5 metres, averaging around 7.9 metres and 4.65 tonnes. The largest on record, trapped in a herring net in Canada's Bay of Fundy in 1851, was 12.27 metres long, though growth studies suggest sharks over 10 metres are unlikely. The jaw can open up to 1 metre wide, and the long gill slits almost encircle the head, lined with dark, bristle-like gill rakers that trap plankton.\n\nIts teeth are tiny, just 5–6 mm, hooked and numerous, and only the first few rows work. The snout is pointed, and hooked in young sharks, and the tail is crescent-shaped. Colour varies from dark brown or black to blue above, fading to dull white below. Its liver can make up 25% of its weight, helping it float and storing energy. For its size, it has the smallest brain of any shark.",
+    "life": "The basking shark is a ram feeder. Instead of sucking or pumping water like the whale shark and megamouth, it simply swims forward with its mouth open, cruising at about 3.7 km/h. A 5-metre shark has been calculated to filter up to about 450 tonnes of water an hour. It is choosy, feeding where tiny crustaceans called copepods are most densely packed.\n\nMostly solitary, basking sharks gather in summer where plankton is thick, in groups of a few, sometimes up to 100, and gatherings of up to 1,400 have been spotted off the northeastern United States. Small groups off the Hebrides and in the Bay of Fundy have been seen swimming nose to tail in circles, probably as courtship. Despite their slow pace, they can leap clean out of the water. They have few predators, though killer whales have been seen eating them.",
+    "family": "Basking sharks give birth to live young that develop inside the mother, nourished by a yolk sac without a placenta. Their seemingly useless teeth may help unborn pups feed on unfertilised eggs. Pregnancy probably lasts more than a year, perhaps two to three, and the pups are 1.5–2 metres long at birth. Only one pregnant female has ever been caught; she carried six young.\n\nMating is thought to happen in early summer, with births in late summer in shallow water. Sharks mature at between six and 13 years old, at 4.6–6 metres, and females breed only every two to four years. They may live about 50 years.",
+    "remarkable": "Dead basking sharks have repeatedly been mistaken for sea monsters. Globsters are mysterious carcasses that wash up on beaches or are found at sea and cannot at first be identified, and on several occasions the most likely explanation has turned out to be the decomposing remains of a basking shark. Famous examples include the Stronsay Beast of the early 1800s and the Zuiyo-maru case of the 1970s, both of which were at first unidentified.",
+    "outlook": "The IUCN lists the basking shark as Endangered. Overfishing has wiped out some populations and left others needing protection, and accidental capture in trawl nets is a further threat. In New Zealand, sightings became scarce after many were caught as bycatch in the 1990s and 2000s. On Canada's Pacific coast the sharks were treated as a nuisance and targeted by a government eradication programme from 1945 to 1970, and they remain rare there.\n\nThey are now fully protected in British waters and parts of the United States, and since 2008 it has been illegal to fish for or keep them in European Union waters. International trade in their products is restricted. Its generation time is estimated at 22 to 34 years, so lost numbers are slow to return.",
+    "people": "Slow, placid and once plentiful, the basking shark was long a staple of fisheries. Its flesh was eaten and turned into fishmeal, its hide made leather, and its huge liver gave oil rich in squalene. Today it is hunted mainly for its fins, for shark fin soup, and its cartilage is used in traditional medicine.\n\nIt has many other names, including bone shark, elephant shark, sailfish and sunfish. In Orkney it was called the hoe-mother, 'mother of the dogfish'. Because it tolerates boats and divers, and may even circle divers, it is a big draw for wildlife tourism.",
+    "relatives": "The basking shark is the only living member of the family Cetorhinidae, in the mackerel shark order, which also includes the great white. The two are sometimes confused, but the basking shark has a far bigger mouth and gill slits, tiny teeth, smaller eyes and a filter-feeding life. It was first described by Johan Ernst Gunnerus from a Norwegian specimen. Its genus name probably comes from Greek words for 'whale' or 'sea monster' and 'shark', and maximus means 'greatest'.\n\nIt is one of only three plankton-eating sharks, with the whale shark and the megamouth. Its oldest known relatives, in the extinct genus Keasius, lived in the Eocene, in places including Antarctica and Oregon.",
+    "didYouKnow": "A 6.1-metre basking shark caught by accident in Bass Strait in 2015 was the first caught off southeast Australia since the 1930s, and only the third reported there in 160 years.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Usually 7–8.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "About 4.65 t"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 50 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Zooplankton"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which is the only fish larger than the basking shark?",
+        "choices": [
+          "Whale shark",
+          "Great white shark",
+          "Megamouth shark",
+          "Ocean sunfish, the heaviest bony fish in the sea"
+        ],
+        "explanation": "The basking shark is the second-largest fish, after the whale shark."
+      },
+      {
+        "prompt": "How much of a basking shark's weight can its liver make up?",
+        "choices": [
+          "Up to 25%",
+          "About 5%",
+          "Nearly half",
+          "Less than 1%, as in most bony fish"
+        ],
+        "explanation": "Its huge liver, up to a quarter of its weight, helps buoyancy and stores energy."
+      },
+      {
+        "prompt": "What were 'globsters' such as the Stronsay Beast most likely to be?",
+        "choices": [
+          "Rotting basking sharks",
+          "Giant squid",
+          "Dead whales",
+          "Plesiosaurs that survived from the age of the dinosaurs"
+        ],
+        "explanation": "Decomposing basking shark remains are the most likely explanation for several globsters."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to safeguard sharks through science, education and campaigning for better protection."
+      },
+      {
+        "name": "Marine Conservation Society",
+        "url": "https://www.mcsuk.org",
+        "blurb": "Protects UK seas and the wildlife in them, including basking sharks."
+      }
+    ]
+  },
+  {
+    "id": "burchells-army-ant",
+    "name": "Burchell's Army Ant",
+    "scientificName": "Eciton burchellii",
+    "wikipediaTitle": "Eciton burchellii",
+    "group": "insect",
+    "regions": [
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "Tropical forests of Central and South America, from Mexico to Paraguay",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -3.0,
+      "longitude": -62.0
+    },
+    "mapSpan": 60,
+    "tagline": "A colony that marches, hunts and sleeps as one",
+    "lede": "A rustling, glittering carpet of ants sweeps across the rainforest floor, flushing out insects and other small creatures in its path, while birds flit ahead to snatch whatever flees. Burchell's army ant has no permanent home: its colony of hundreds of thousands is always on the move, and builds its shelter out of its own workers.",
+    "home": "These army ants live in the tropical forests of Central and South America, from Mexico to Paraguay, including the Amazon. They prefer damp, well-shaded places and closed-canopy forest, and avoid direct sunlight and high elevations. No colony has been found north of about 23.8 degrees.\n\nInstead of digging a nest, a colony forms a bivouac: a living nest made of workers hanging together, linked by their legs. It may sit in a hollow log, an animal burrow or hang from a tree, and the ants can open or seal airways through it to control temperature and air flow, or shift it to avoid rain and sun. Heat is a real danger. If the ground passes 43 °C, a swarm abandons its route, and overheated ants may shelter under stones or logs for 30 minutes or more.",
+    "anatomy": "Workers vary enormously in size, from 3 mm to 12 mm, and come in four distinct castes: minors, medias, porters and soldiers. The soldiers have huge heads and long, pointed, sickle-shaped jaws used for defence. With long legs and slender bodies, the ants look rather like spiders, and range in colour from deep gold to dark brown.\n\nWorkers have very simple eyes made of a single facet, a two-part waist and a well-developed sting. Special hooks on their feet let them cling to one another to build bridges and bivouacs. Which caste a larva becomes depends partly on how it is fed and raised, but also on its father: workers sharing the same father lean strongly towards particular castes.",
+    "life": "The colony goes out on raids, each using about a third of its members, up to 200,000 ants. A raid moves as a loose swarm over the leaf litter, up to 20 metres wide and 200 metres long, guided by pheromone trails. Outbound ants make way for inbound ones carrying prey. Swarms never raid the same ground twice and avoid areas other colonies have searched. They attack wasp nests to eat the larvae and pupae, and are among the most devastating enemies of some wasps.\n\nThe colony runs on a cycle. For about 20 days in a stationary phase, while eggs and pupae develop, it raids every other day. Then, for about 15 days after they hatch, it is nomadic: it raids daily and moves its bivouac each night, which takes six to eight hours. Workers fill potholes in the trail with their bodies: each ant tests whether it fits a hole and, if it does, lies still across it for hours while traffic passes over.",
+    "family": "A colony can hold 100,000 to 600,000 adults, with a single queen, her developing brood and a huge workforce. The queen mates with 10 to 20 males, so the colony is a mix of many families of full sisters, each with its own father. When a colony reaches its maximum size, it can split in two, with the old queen leading one half and a daughter queen the other.\n\nQueens cannot fly, which limits how far their genes can spread. The winged males do the travelling, flying at least 1 km to mate with the queen of a neighbouring colony. This keeps genes flowing between colonies, and studies have found no signs of inbreeding. The colony's two phases are timed by the development of the brood.",
+    "remarkable": "No other animal is known to support so many hangers-on. A total of 557 species have been found living in some kind of association with this ant, the greatest number for any single species, and about 300 of them are thought to depend on it. Antbirds and woodcreepers follow raids to catch fleeing insects, and butterflies then drink from the birds' droppings. Flies lay eggs on cockroaches escaping the swarm, parasitising 50–90% of the survivors. Beetles mimic the ants, mites ride on them, and rove beetles feed on their rubbish heaps.",
+    "outlook": "Burchell's army ant is particularly vulnerable to the clearing of tropical forest. Because it hunts above ground, open patches expose it to direct sun, swings in temperature and drying out, which insects are especially prone to. Cleared land also harms the males: as they fly between colonies, nocturnal insect-eaters easily spot them in open patches, and they have no defences. Fewer surviving males mean less mixing of genes between colonies. Higher ground can soften some of these effects with cooler air and cloud, but raiding declines with altitude.",
+    "people": "Scientists have studied this ant closely, including on Barro Colorado Island in Panama, where researchers checked more than 3,000 workers and found that 5% carried mites. Scientists also study it to understand how heat shapes insect behaviour, since ants are easy to collect and keep, and their temperatures can be measured and controlled.\n\nThe birds that follow its raids have been studied in detail too. One antbird uses a network of neighbouring pairs to find swarms, and 21 species of antbird regularly visit bivouacs to check whether a colony is about to raid. These birds steal so much that the ants hide large prey under leaf litter and guard food stores with soldiers.",
+    "relatives": "Burchell's army ant is a New World army ant in the genus Eciton. Like other members of the genus, it has a specialised soldier caste with long, sickle-shaped jaws.\n\nIts name has had a bumpy history. It was first published as Eciton burchellii, but in the late 1800s taxonomists dropped the second 'i' as unnecessary, and it became Eciton burchelli. Modern naming rules stick more closely to original spellings, so the double 'i' is back and the shorter form is now largely regarded as invalid.",
+    "didYouKnow": "The ants' alarm signal, a chemical called 4-methyl-3-heptanone, is made in glands in the jaws, so it is released every time an ant opens its mandibles to bite.",
+    "facts": [
+      {
+        "label": "Colony size",
+        "value": "100,000–600,000 adults"
+      },
+      {
+        "label": "Worker length",
+        "value": "3–12 mm"
+      },
+      {
+        "label": "Raid",
+        "value": "Up to 200,000 ants"
+      },
+      {
+        "label": "Diet",
+        "value": "Insects and other arthropods"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is an army ant bivouac?",
+        "choices": [
+          "A nest made of living ants",
+          "A raiding column",
+          "An underground chamber",
+          "The queen's private chamber, dug beneath tree roots"
+        ],
+        "explanation": "A bivouac is a temporary nest formed by workers clinging together."
+      },
+      {
+        "prompt": "How many animal species are known to associate with this ant?",
+        "choices": [
+          "557",
+          "About 50",
+          "Over 2,000",
+          "Just 12, all of them birds that follow its raids"
+        ],
+        "explanation": "557 species have been found associating with it, more than for any other species."
+      },
+      {
+        "prompt": "How do workers speed up traffic on a bumpy trail?",
+        "choices": [
+          "They lie across potholes",
+          "They clear leaves away",
+          "They carry each other",
+          "They lay extra-strong scent so others can run faster"
+        ],
+        "explanation": "Ants that fit a hole lie across it, so others can cross faster."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests by working with local partners to create reserves."
+      },
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates and the habitats they depend on."
+      }
+    ]
+  },
+  {
+    "id": "bonobo",
+    "name": "Bonobo",
+    "scientificName": "Pan paniscus",
+    "wikipediaTitle": "Bonobo",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Rainforests south of the Congo River in the Democratic Republic of the Congo",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": 22.0
+    },
+    "mapSpan": 15,
+    "tagline": "The great ape where the females are in charge",
+    "lede": "With its parted hair, pink lips and long legs, the bonobo looks like a slender, elegant chimpanzee. It shares the title of our nearest living relative with the chimpanzee, yet its society works very differently: led by experienced females, generous with food and far less violent.",
+    "home": "Bonobos live only in the humid forests of the Democratic Republic of the Congo, in an area of about 500,000 square kilometres south of the Congo River and north of the Kasai River. They use both primary and secondary forest, including swamp forest that floods with the seasons.\n\nBecause they are poor swimmers, the Congo River keeps them apart from chimpanzees, which live on the north bank. Political instability and the apes' timid nature mean they have been studied surprisingly little in the wild. A community of about 100 splits into small parties to forage by day and comes back together at night to sleep in nests built in the trees. Communities have no fixed territory and roam widely.",
+    "anatomy": "Bonobos weigh 34–60 kg, with males averaging 45 kg and females 33 kg. On all fours they measure 70–83 cm from nose to rump, and standing upright males average 119 cm and females 111 cm. Compared with chimpanzees, they have a smaller head with less prominent brow ridges, a slim upper body, narrow shoulders, a thin neck and long legs.\n\nThe face is black, with pink lips, small ears and wide nostrils, and long hair on the head forms a natural parting. Adults keep a tuft of hair at the tail end. Their faces vary a lot from one individual to the next, which helps them recognise each other. They climb well but mostly walk on their knuckles; in the wild, walking upright makes up less than 1% of their movement on the ground.",
+    "life": "Bonobos are mainly fruit eaters, with fruit making up about 57% of the diet, topped up with leaves, honey, eggs, invertebrates and the meat of small animals such as flying squirrels and duikers. In some communities only females hunt, in others both sexes do.\n\nA coalition of high-ranking females and males sits at the top, usually headed by an old, experienced matriarch. Females win rank through age and friendships with other females, not by intimidation, and allied females can dominate males and take the best food. Bonobos share food, even with unrelated strangers, and use physical affection, including sexual contact, to greet, bond and settle tensions. Squabbles do happen, especially between males, but deadly violence is essentially unknown. In 2023, researchers reported two separate groups in the Kokolopori reserve grooming, sharing food and defending each other against snakes.",
+    "family": "Wild females have their first baby at 13 or 14 years old, after a pregnancy of about 240 days. Mothers carry and nurse their young for four years and give birth on average every 4.6 years. Since males cannot know which young are theirs, mothers provide all the care. Killing of infants, well known in chimpanzees, seems to be absent.\n\nYoung females leave to join new communities, while males usually stay where they were born. A son keeps a close bond with his mother for life, takes his status from hers, and gets her help in disputes and in finding mates. A grown male has been seen adopting his orphaned baby brother, and females sometimes foster infants from outside their community. In captivity bonobos typically live 40 years.",
+    "remarkable": "Bonobos are gardeners of the Congo forest. After elephants, they are the region's largest fruit-eaters, and over a lifetime each bonobo is estimated to swallow and spread about 9 tonnes of seeds from more than 91 species of plant. Seeds spend about 24 hours in the gut and are dropped an average of 1.3 km away, sometimes 4.5 km, and they sprout better and faster than seeds that were never eaten. Bonobos disperse the seeds of around 40% of the tree species in these forests, and few animals could take their place.",
+    "outlook": "The IUCN lists the bonobo as Endangered, with conservative estimates of 29,500 to 50,000 left. Habitat loss and hunting for bushmeat are the major threats. Hunting soared during the Congo Wars, when armed militias moved even into Salonga National Park, the only national park within their range.\n\nBecause many people share the bonobo's forest, conservation depends on local communities. In some areas bonobos still thrive without any park boundaries, thanks to local beliefs against killing them. Since 2002 the Bonobo Peace Forest project has helped communities set up linked reserves run by local and indigenous people, with agreements protecting over 130,000 square kilometres of habitat.",
+    "people": "Bonobos were once called pygmy chimpanzees, after the small skull from which they were first described, even though they are about the same size as chimpanzees. The name bonobo appeared in 1954 and is thought to come from a misspelling of Bolobo, a town on the Congo River, on a shipping crate.\n\nBonobos recognise themselves in mirrors, and in the wild they use the same call to mean different things depending on the situation. A captive bonobo called Kanzi learned to communicate using a keyboard of symbols, used more than 500 English words and understood around 3,000 spoken ones. He picked up skills simply by watching lessons meant for his mother, and even made stone flakes by throwing one stone against another. February 14 is World Bonobo Day.",
+    "relatives": "The German anatomist Ernst Schwarz recognised the bonobo in 1928 from a skull in a Belgian museum that had been labelled a young chimpanzee, and it was raised to a full species in 1933. Bonobos and chimpanzees make up the genus Pan.\n\nThe two species split roughly 860,000 to 890,000 years ago, separated by the Congo River, though their genes show they interbred at least twice in the past 550,000 years. Bonobo muscles and bones have barely changed since the split, so they may be a good model for the last common ancestor of chimpanzees, bonobos and humans.",
+    "didYouKnow": "Bonobos eat a truffle that bears their name, Hysterangium bonobo.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "34–60 kg"
+      },
+      {
+        "label": "Standing height",
+        "value": "About 1.1–1.2 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly fruit"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 40 years in captivity"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which river separates bonobos from chimpanzees?",
+        "choices": [
+          "The Congo",
+          "The Nile",
+          "The Kasai",
+          "The Zambezi, which runs across southern Africa"
+        ],
+        "explanation": "Bonobos live south of the Congo River and chimpanzees to the north."
+      },
+      {
+        "prompt": "Where is the name 'bonobo' thought to come from?",
+        "choices": [
+          "A misspelt shipping crate",
+          "A local word for ape",
+          "A zoologist's surname",
+          "A Latin phrase meaning 'good ape', chosen by early explorers"
+        ],
+        "explanation": "It probably comes from a misspelling of the town of Bolobo on a shipping crate."
+      },
+      {
+        "prompt": "How long do bonobo mothers carry and nurse their young?",
+        "choices": [
+          "About 4 years",
+          "About 6 months",
+          "About 1 year",
+          "About 10 years, until the young are fully adult"
+        ],
+        "explanation": "Mothers carry and nurse their young for four years."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works with communities across Africa to protect wildlife, and founded World Bonobo Day."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect the Congo Basin's forests and great apes."
+      }
+    ]
+  },
+  {
+    "id": "japanese-spider-crab",
+    "name": "Japanese Spider Crab",
+    "scientificName": "Macrocheira kaempferi",
+    "wikipediaTitle": "Japanese spider crab",
+    "group": "marineInvertebrate",
+    "regions": [
+      "asia"
+    ],
+    "range": "Deep waters off southern Honshu, Japan, with outliers off Taiwan",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 34.0,
+      "longitude": 137.0
+    },
+    "mapSpan": 14,
+    "tagline": "The arthropod with the greatest leg span on Earth",
+    "lede": "Picture a crab whose legs could reach across a small car. The Japanese spider crab picks its way over the deep seabed off Japan on long, spindly orange legs, its knobbly shell disguised with living sponges, looking far more fearsome than it really is.",
+    "home": "This crab lives mostly off the southern coasts of Honshu, Japan's main island, from Tokyo Bay to Kagoshima Prefecture. Outlying populations have been found further north in Iwate Prefecture and off Su-ao in Taiwan.\n\nAdults live between 50 and 600 metres deep and like to shelter in vents and holes in the deeper parts of the ocean. They are regular at 300 metres in Suruga Bay, where the water is usually about 10 °C. In aquariums they cope with 6–16 °C and are usually kept at 10–13 °C. In the breeding season they move into shallower water.",
+    "anatomy": "The Japanese spider crab has the greatest leg span of any known arthropod, up to 3.7 metres from claw to claw. Its body can be 40 cm wide, and it can weigh up to 19 kg, second only to the American lobster among living arthropods. The pear-shaped shell is covered in small spiky bumps. The crab is orange, with white spots along its legs.\n\nMales have longer claw-bearing front legs than females, though even these are shorter than a female's walking legs. Young crabs have long spines relative to their shells, but the spines shrink in proportion as they grow. Oddly, once the crab is mature its shell stops growing, while its legs keep getting longer. Moulting takes about 100 minutes, during which it cannot move; it frees the back of its shell first and its walking legs last.",
+    "life": "The crab is an omnivore. Some scrape the seabed for plants and algae such as kelp, others prise open the shells of molluscs and small invertebrates, and it also scavenges dead and decaying fish. It is active at night.\n\nDespite its menacing look, it is reported to be gentle. Its hard, armoured skeleton protects it from bigger predators such as octopuses, and its bumpy shell already blends in with the rocky floor. Fishermen catch adults with a leg span of 1.0–1.2 metres on average, far short of the record.",
+    "family": "Females carry their fertilised eggs attached to the appendages under their abdomen and can produce up to 1.5 million eggs in a season. The eggs hatch in about 10 days, from January to March, into tiny larvae that drift near the surface, where the water is 12–15 °C, much warmer than the 10 °C depths where adults live.\n\nThe first larval stage lasts only minutes, with most moulting within 15 minutes. Next come two zoea stages lasting 7 to 18 days and a megalopa stage of 25 to 45 days before the young crab settles. Temperature is crucial: larvae grow best at 15–18 °C and survive only between 11 and 20 °C, and colder water slows every stage. Even in ideal conditions, only about 70% survive the first zoea stage and about 30% the later ones.",
+    "remarkable": "This giant is a careful decorator. It plucks sponges, worm tubes and other living things from the seabed with its slender claws, twisting and tearing them free. It then passes each piece to its mouthparts to trim it to shape before fixing it to its shell, where secretions help it stick. The attached animals carry on living and growing, so the camouflage renews itself. Unlike some crabs, it does not pick colours to match its surroundings; it simply breaks up its outline to avoid predators at night.",
+    "outlook": "The crab's numbers have fallen because of overfishing. The catch dropped from 24.7 tonnes in 1976 to only 3.2 tonnes in 1985, and fishermen have had to search ever deeper waters to find them.\n\nJapan now bans fishing for the crab from January to April, during the mating season, when the crabs are in shallower water and easier to catch. This gives the population time to breed and protects the young through their early stages. Crabs raised artificially are also released into fishing grounds to restock them.",
+    "people": "In Japanese the crab is called taka-ashi-gani, literally 'tall-legged crab'. It is considered a delicacy in many parts of Japan and the surrounding region, and the fishery is centred on Suruga Bay, where crabs are caught in small trawl nets. When Coenraad Jacob Temminck described it for Western science in 1836, he noted that the Japanese knew it for the serious injuries its strong claws could cause.\n\nTemminck based his description on material collected by Philipp Franz von Siebold near Dejima, an artificial island off the Japanese coast. The species name honours Engelbert Kaempfer, a German naturalist who lived in Japan from 1690 to 1692 and wrote about its natural history.",
+    "relatives": "The Japanese spider crab is the only living species in the genus Macrocheira. Fossils of relatives are known from the Oligocene of Washington State in the United States and from the Miocene and Pliocene of Japan. It is usually placed in the family Inachidae, but it does not fit neatly, and it may need a family of its own. Some of its features, such as a movable antenna base and seven-part abdomen, are thought to be primitive.\n\nThe males' first pair of swimmerets are unusually twisted, and its larvae look primitive too. It resembles the much smaller European spider crab, but that species belongs to a different family.",
+    "didYouKnow": "The crab's scientific name inspired the Macra, a race of giant crab-like aliens in the Doctor Who stories The Macra Terror and Gridlock.",
+    "facts": [
+      {
+        "label": "Leg span",
+        "value": "Up to 3.7 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 19 kg"
+      },
+      {
+        "label": "Depth",
+        "value": "50–600 m"
+      },
+      {
+        "label": "Eggs",
+        "value": "Up to 1.5 million a season"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the Japanese name taka-ashi-gani mean?",
+        "choices": [
+          "Tall-legged crab",
+          "Giant red crab",
+          "Spider of the sea",
+          "Old man of the deep who walks very slowly"
+        ],
+        "explanation": "Taka-ashi-gani translates literally as 'tall-legged crab'."
+      },
+      {
+        "prompt": "Which living arthropod is heavier than the Japanese spider crab?",
+        "choices": [
+          "American lobster",
+          "Coconut crab",
+          "King crab",
+          "The giant isopod of the deep Atlantic seafloor"
+        ],
+        "explanation": "At up to 19 kg it is second in mass only to the American lobster."
+      },
+      {
+        "prompt": "When is fishing for the crab banned in Japan?",
+        "choices": [
+          "January to April",
+          "June to August",
+          "All year round",
+          "Only in typhoon season, when boats cannot safely go to sea"
+        ],
+        "explanation": "The ban covers the mating season, when crabs are in shallower water."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect ocean life through science-based fishing policy."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide for healthy seas and sustainable fisheries."
+      }
+    ]
+  }
+]

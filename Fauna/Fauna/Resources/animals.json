@@ -13544,5 +13544,925 @@
         "blurb": "Protects wildlife and wild places across the Americas and the world."
       }
     ]
+  },
+  {
+    "id": "green-sea-turtle",
+    "name": "Green Sea Turtle",
+    "scientificName": "Chelonia mydas",
+    "wikipediaTitle": "Green sea turtle",
+    "group": "reptile",
+    "regions": [
+      "openOcean",
+      "centralAmerica",
+      "asia",
+      "oceania"
+    ],
+    "range": "Tropical and subtropical seas worldwide, nesting in over 80 countries",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 5.0,
+      "longitude": -30.0
+    },
+    "mapSpan": 80,
+    "tagline": "The only sea turtle that grazes like a cow",
+    "lede": "Gliding over seagrass meadows like a grazing cow, the green sea turtle is the only sea turtle that turns vegetarian as an adult. Its name has nothing to do with its shell: it comes from the greenish fat that builds up beneath it from a lifetime of eating plants.",
+    "home": "Green sea turtles live in warm tropical and subtropical seas around the world, mostly between 30°N and 30°S, along the coasts of more than 140 countries. Wanderers have turned up as far north as Canada and southern Alaska, but water colder than about 7 to 10 °C sets the limit of their range. Atlantic and Mediterranean turtles form one genetically distinct group, and those of the Indian and Pacific Oceans another.\n\nOver a lifetime they use three kinds of habitat: sandy beaches for nesting, the open ocean as youngsters, and shallow bays, lagoons, reefs and salt marshes rich in seagrass as adults. Major nesting beaches include Tortuguero in Costa Rica, Ascension Island in the South Atlantic and Raine Island on the Great Barrier Reef, where up to 100,000 females have been seen in one season.",
+    "anatomy": "Adults grow to about 1.5 metres long and usually weigh 68 to 190 kg, with a shell 78 to 112 centimetres long. The heaviest on record weighed 395 kg. The body is flattened, with a broad, teardrop-shaped carapace, a small head on a short neck and long, paddle-like flippers.\n\nUnlike the hawksbill, it has a short snout and an unhooked beak, and each front flipper bears a single claw. The carapace is olive to brown, plain, spotted or marbled, over a yellow underside, and in parts of the eastern Pacific it can be almost black. The jaw edges are serrated, ideal for cropping seagrass and algae.\n\nMales have much longer tails than females, and neither sex can pull its head into its shell. Underwater the eyes see well, especially in violet to yellow light, but on land the turtle is short-sighted.",
+    "life": "Hatchlings are carnivores of the open sea, but as they grow the turtles switch to seagrasses and algae, becoming the only aquatic turtle that is herbivorous when fully grown. They crop the leaves and leave the roots, which keeps the meadows healthy for fish and crustaceans.\n\nOn reefs, yellow tang fish pick algae and barnacles off their shells, cleaning them as they swim. During routine activity a turtle dives for four to five minutes, then surfaces for just a few seconds to breathe.\n\nAt night adults wedge themselves under rocks and reef ledges to sleep, often returning to the same spot night after night. They usually cruise at 2.5 to 3 km/h, and steer their long journeys by waves, sunlight and an internal magnetic compass. Tiger sharks are their main natural predator.",
+    "family": "Adults may swim more than 2,600 kilometres from their feeding grounds to breed, usually returning to the very beach where they hatched.\n\nFemales breed every two to four years, males every year. A female hauls herself up the beach at night, digs a hole up to 56 centimetres deep with her hind flippers and lays 85 to 200 round, white eggs, repeating this 3 to 5 times a season. Nest temperature decides the hatchlings' sex: warm nests above about 30 °C produce mostly females, cooler ones males.\n\nAfter 50 to 70 days the young dig out together at night and race for the sea past gulls and crabs. Only about 1% reach maturity, which takes 20 to 50 years, and adults may live to 80 years or more.",
+    "remarkable": "Basking green turtles can look as if they are weeping. The 'tears' are salt: a gland behind each eye collects the excess salt swallowed with seawater and flushes it out.\n\nNavigation is just as impressive, since a young turtle probably imprints on the magnetic signature of its birthplace and uses that memory decades later to find its way back.",
+    "outlook": "After decades listed as Endangered, the green sea turtle was reclassified as Least Concern by the IUCN in 2025, thanks to protection and recovering numbers in many places. Some populations are still in trouble, and the Mediterranean one is Critically Endangered.\n\nTurtles still drown in fishing nets, are struck by boats, swallow plastic and tar balls, and lose nesting beaches to development, while artificial lights lure hatchlings away from the sea. A tumour disease, fibropapillomatosis, kills many of those it infects, and warming sands on the northern Great Barrier Reef are producing far more females than males.",
+    "people": "People have eaten green turtles and their eggs for centuries, and the fat, cartilage and flesh known as calipee went into turtle soup, a popular 19th-century dish in England and America.\n\nWhen Christopher Columbus reached the Cayman Islands in 1503, he named them Las Tortugas for their many turtles, and a green turtle still appears on the islands' coat of arms and flag. In Hawaii the turtle is called honu and stands for good luck and long life. An ancient rock carving of one survives in the Pu'u Loa lava fields, and some legends say honu guided the first Polynesians to the islands.",
+    "relatives": "The green sea turtle is the only species in its genus, Chelonia, within the sea turtle family Cheloniidae. Carl Linnaeus first described it in 1758 as Testudo mydas.\n\nA dark Pacific form, the Galápagos or black sea turtle, was once named as a separate species, but DNA studies show it is simply a local variety. Chelonia sits in its own tribe, apart from the meat-eating hawksbill, loggerhead and ridley turtles.",
+    "didYouKnow": "The Cayman Turtle Farm has released more than 31,000 captive-bred turtles into the wild since 1968.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 1.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "68–190 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Seagrass and algae"
+      },
+      {
+        "label": "Lifespan",
+        "value": "80+ years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the green sea turtle get its name?",
+        "choices": [
+          "Greenish fat under its shell",
+          "The colour of its shell",
+          "Algae growing on its back",
+          "A Caribbean island where Columbus first saw it nesting"
+        ],
+        "explanation": "Its fat turns green from its plant diet; the shell itself is olive to brown."
+      },
+      {
+        "prompt": "What decides whether a hatchling is male or female?",
+        "choices": [
+          "Nest temperature",
+          "Its mother's age",
+          "Day length",
+          "The phase of the moon on the night the eggs are laid"
+        ],
+        "explanation": "Warm nests above about 30 °C produce mostly females, cooler ones males."
+      },
+      {
+        "prompt": "In 2025 the IUCN moved the green sea turtle to which category?",
+        "choices": [
+          "Least Concern",
+          "Endangered",
+          "Vulnerable",
+          "Critically Endangered across its entire range"
+        ],
+        "explanation": "It was reclassified from Endangered to Least Concern, though some populations remain at risk."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Sea Turtle Conservancy",
+        "url": "https://www.seaturtleconservancy.org",
+        "blurb": "Protects sea turtles and their nesting beaches through research and advocacy."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect oceans, wildlife and the people who depend on them."
+      }
+    ]
+  },
+  {
+    "id": "frilled-shark",
+    "name": "Frilled Shark",
+    "scientificName": "Chlamydoselachus anguineus",
+    "wikipediaTitle": "Frilled shark",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "asia",
+      "europe",
+      "oceania"
+    ],
+    "range": "Deep continental shelves and slopes of the Atlantic and Pacific",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 35.0,
+      "longitude": 138.6
+    },
+    "mapSpan": 60,
+    "tagline": "An eel-like shark with 300 needle teeth",
+    "lede": "With an eel's body, a frilly collar of gills and a mouth full of 300 needle-like teeth, the frilled shark looks like something left over from the age of dinosaurs. It lives in the dim waters of the deep continental slope, where few people ever see it alive.",
+    "home": "Frilled sharks are found patchily in the Atlantic and Pacific: from Norway, Scotland and Ireland south to Mauritania, along the Mid-Atlantic Ridge, off New England and Suriname, and in the Pacific from Japan and Taiwan to Australia, New Zealand, Hawaii, California and Chile.\n\nThey live near the sea floor on the outer continental shelf and upper slope, usually above 1,000 metres, though one was caught at 1,570 metres. In Suruga Bay, Japan, they are most common at 50 to 200 metres, but move deeper when the water warms above 15 °C in late summer and autumn. They seem to separate by size, sex and breeding condition, and mostly keep to themselves.",
+    "anatomy": "Females reach about 2 metres and males about 1.7 metres. The body is long and slender, dark brown to grey, with a broad, flat head and a short, rounded snout. The single small dorsal fin sits far back, roughly opposite the anal fin, and the long tail has no lower lobe.\n\nA pair of thick skin folds runs along the belly, for reasons nobody knows. Six pairs of gill slits line the throat. The first pair meets underneath like a collar, and the long tips of the gill filaments create the ruffled look that gives the shark its name.\n\nIts long jaws hinge directly to the skull behind the eyes, and each tooth has three slender points. A cartilaginous skeleton and a huge, oily liver keep it buoyant in deep water.",
+    "life": "Squid make up about 60% of the diet, along with bony fish and smaller sharks; one 1.6-metre individual had swallowed a 590 g catshark whole. The jaws can open wide enough to engulf prey more than half the shark's own length, and the backward-curving teeth snag soft squid bodies and tentacles.\n\nIts bite is weak, though, because of the way the jaws attach. It may strike by bending its body and lunging forward like a snake, and captive animals suggest it also hunts with its mouth open, its white teeth luring prey into the dark. It probably rises towards the surface at night to feed. Stomachs are usually almost empty, hinting at fast digestion or long gaps between meals.",
+    "family": "Frilled sharks have no set breeding season, because conditions in the deep barely change through the year. A haul of more than 30 sharks of both sexes over a Mid-Atlantic Ridge seamount suggests such places may be mating grounds.\n\nMales mature at 1 to 1.2 metres long and females at 1.3 to 1.5 metres. The young develop inside the mother, first in thin golden-brown egg capsules and then free in her uterus, feeding on yolk. Litters hold 2 to 15 pups, about 6 on average, each 40 to 60 centimetres long at birth.",
+    "remarkable": "Its pregnancy can last as long as 3.5 years. Embryos grow only about 1.4 centimetres a month, and their yolk sac stays the same size until they reach about 40 centimetres, then shrinks away completely by around 50 centimetres.\n\nThat slow pace leaves a mother carrying her young for years in the cold, stable dark.",
+    "outlook": "Frilled sharks are caught by accident in trawls, gillnets and longlines, especially in Japan, where fishermen regard them as a nuisance that damages nets, though some are used for meat and fishmeal.\n\nBecause they breed so slowly, and deep-sea fishing depletes their feeding grounds, the IUCN once rated them Near Threatened, but now lists them as Least Concern. New Zealand classes the species as naturally uncommon.",
+    "people": "The species was first described in 1884, when Samuel Garman wrote about a 1.5-metre female from Sagami Bay, Japan, in an article titled 'An Extraordinary Shark'. Ludwig Döderlein had studied the sharks in Japan a few years earlier and taken specimens to Vienna, but lost his manuscript. Encounters with living frilled sharks make headlines.\n\nIn 2007 a Japanese fisherman found one at the surface and took it to Awashima Marine Park, where it died within hours. In 2014 a trawler off Lakes Entrance, Australia, hauled one up from about 1 kilometre down. Other names include lizard shark and scaffold shark.",
+    "relatives": "The frilled shark is often called a living fossil, because its lineage reaches back to the Carboniferous and its body has changed little over a very long time. Early scientists linked it to ancient extinct sharks, but its anatomy and genes place it with the cow sharks in the order Hexanchiformes.\n\nIts only living relative in the family Chlamydoselachidae is the southern African frilled shark, described in 2009 from waters off Angola and Namibia.",
+    "didYouKnow": "Fossils from New Zealand's Chatham Islands suggest frilled sharks survived the extinction that ended the age of dinosaurs in shallow waters, before retreating to the deep.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 2 m"
+      },
+      {
+        "label": "Teeth",
+        "value": "About 300"
+      },
+      {
+        "label": "Pregnancy",
+        "value": "Up to 3.5 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly squid"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What gives the frilled shark its name?",
+        "choices": [
+          "Its frilly gill slits",
+          "Fringed fins",
+          "A frill on its head",
+          "The ruffled pattern of scales running along its back and tail"
+        ],
+        "explanation": "The long tips of its gill filaments give the six gill slits a frilled look."
+      },
+      {
+        "prompt": "How long can a frilled shark's pregnancy last?",
+        "choices": [
+          "Up to 3.5 years",
+          "6 months",
+          "1 year",
+          "Only a few weeks, because the pups hatch from eggs on the sea floor"
+        ],
+        "explanation": "Embryos grow very slowly, so pregnancy can last up to 3.5 years."
+      },
+      {
+        "prompt": "What makes up most of its diet?",
+        "choices": [
+          "Squid",
+          "Krill",
+          "Seaweed",
+          "Crabs and other shellfish scraped from the sea floor"
+        ],
+        "explanation": "About 60% of what it eats is squid."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to safeguard sharks, skates and rays through science, education and policy."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and their wildlife."
+      }
+    ]
+  },
+  {
+    "id": "wandering-glider",
+    "name": "Wandering Glider",
+    "scientificName": "Pantala flavescens",
+    "wikipediaTitle": "Pantala flavescens",
+    "group": "insect",
+    "regions": [
+      "asia",
+      "africa",
+      "southAmerica",
+      "oceania"
+    ],
+    "range": "Warm regions on every continent except Antarctica, rare in Europe",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": 60.0
+    },
+    "mapSpan": 80,
+    "tagline": "A dragonfly that crosses oceans on the monsoon",
+    "lede": "A small golden dragonfly, the wandering glider makes one of the longest journeys of any insect. Riding monsoon winds, swarms cross the ocean between India and Africa, a round trip spread over several generations that adds up to some 18,000 kilometres.",
+    "home": "The wandering glider is thought to be the most widespread dragonfly on Earth, common on every continent except Antarctica. It lives roughly between the 40th parallels, wherever the yearly average temperature is above 20 °C, and reaches about 50°N in North America. It is rare in Europe, with reliable records mainly around the Aegean Sea; the dry winds of the Sahara seem to block its way.\n\nIt cannot survive the winter in cold places such as southern Canada and South Australia, so those areas are restocked by new migrants every year. It breeds in temporary pools, rice paddies and even swimming pools, and it is the only dragonfly on Easter Island.",
+    "anatomy": "Adults are up to 4.5 centimetres long, with wingspans of 7.2 to 8.4 centimetres. The thorax and abdomen are yellow to golden, sometimes brown or olive, and huge chestnut-red eyes cover most of the head. The clear wings are unusually broad at the base, which helps it glide, and may turn yellowish towards the tips.\n\nMales have a reddish wash on the abdomen, marked with black, and golden patches at the base of the hindwings; females lack both. Island populations tend to be darker, and on Easter Island some have black wings. The larvae are light green with purple speckles and grow to 24 to 26 millimetres.",
+    "life": "Adults hunt small flying insects such as mosquitoes, swarming flying ants and termites, catching them on the wing. They fly tirelessly for hours without perching, at up to 5 metres per second, and gather in large swarms over paddy fields, playgrounds and other open spaces.\n\nIn autumn the swarms ride thermals, and one report describes a cloud covering 34 square kilometres. The gliders follow moist winds and rain. They arrive in most of India with the first monsoon, and in Tamil Nadu only after the second, then head for Africa with stopovers in the Maldives, Seychelles and Mozambique.\n\nThe return flight on the strong Somali Jet covers about 3,000 kilometres in one go. The larvae are fierce predators too, eating aquatic insects, small shrimps, tadpoles and even small fish.",
+    "family": "Like other skimmers, wandering gliders have no elaborate courtship. Females may mate many times, though usually only once a day. After mating, the pair fly in tandem, the male still holding on while the female lays her eggs in the water. A clutch holds about 500 to 2,000 tiny round eggs.\n\nThe larvae develop in just 38 to 65 days, fast enough to finish growing before temporary pools dry out, though they are sensitive to temperature. How long adults live is unknown, because they travel so far that following one is almost impossible.",
+    "remarkable": "Modelling suggests the wandering glider makes the longest non-stop migration relative to body size of any animal.\n\nThe likely crossing from the Maldives to Somalia is more than 2,500 kilometres of open ocean with nowhere to rest, equal to about 50.7 million of the insect's own body lengths. It has also been recorded at 6,200 metres in the Himalayas, higher than any other dragonfly.",
+    "outlook": "The wandering glider is in no danger. NatureServe rates it as globally secure: common, widespread and abundant. In Canada, where it is scarcer, it is rated apparently secure, and it has protected status in a number of US states and Canadian provinces.\n\nGenetic studies suggest gliders from across the globe interbreed so freely that they form almost a single worldwide population.",
+    "people": "Its English names, wandering glider and globe skimmer, refer to its travels, and the German Wanderlibelle means 'migrant dragonfly'. In Hong Kong it is the 'typhoon dragonfly', because it arrives with or just before the seasonal rains. In South Korea its colour earned it the name doenjang dragonfly, after a brown bean paste.\n\nBecause it is found almost everywhere, it has appeared on postage stamps from Wallis and Futuna, the Pitcairn Islands, Tuvalu, Botswana and North Korea. It was also the first dragonfly to settle on Bikini Atoll after the nuclear tests there.",
+    "relatives": "Johan Christian Fabricius described the species in 1798 from a female collected in India. It was later given several other names, until it was recognised in 1910 that they all referred to one dragonfly.\n\nIts genus, Pantala, means 'all wings', and flavescens is Latin for 'yellowish'. Its only close relative is the spot-winged glider, which has a brown spot at the base of each hindwing. Both belong to the skimmer family, Libellulidae.",
+    "didYouKnow": "Its Japanese name, usubaki-tombo, translates as 'yellow dragonfly with delicate wings'.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 4.5 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "7.2–8.4 cm"
+      },
+      {
+        "label": "Migration",
+        "value": "About 18,000 km"
+      },
+      {
+        "label": "Diet",
+        "value": "Small flying insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which stretch of sea do wandering gliders cross between India and Africa?",
+        "choices": [
+          "The Arabian Sea",
+          "The Red Sea",
+          "The Mediterranean",
+          "The South Atlantic, following the trade winds westward"
+        ],
+        "explanation": "They fly from India across the Arabian Sea, stopping at islands such as the Maldives."
+      },
+      {
+        "prompt": "Where do wandering gliders often lay their eggs?",
+        "choices": [
+          "In temporary pools",
+          "In tree holes",
+          "Under bark",
+          "Inside the stems of floating water plants in large lakes"
+        ],
+        "explanation": "Their larvae grow in 38 to 65 days, fast enough for pools that soon dry out."
+      },
+      {
+        "prompt": "What does the genus name Pantala mean?",
+        "choices": [
+          "All wings",
+          "Golden one",
+          "Wind rider",
+          "Traveller of the monsoon, from an old Hindi word"
+        ],
+        "explanation": "Pantala means 'all wings', after its big, long wings."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates and the habitats they depend on."
+      },
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Works to save the small things that run the planet, from bees to dragonflies."
+      }
+    ]
+  },
+  {
+    "id": "cougar",
+    "name": "Cougar",
+    "scientificName": "Puma concolor",
+    "wikipediaTitle": "Cougar",
+    "group": "mammal",
+    "regions": [
+      "naWest",
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "From Canada's Yukon through the Americas to Patagonia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 5.0,
+      "longitude": -80.0
+    },
+    "mapSpan": 80,
+    "tagline": "The cat with more names than any other animal",
+    "lede": "The cougar holds the record for the animal with the most names, more than 40 in English alone, from puma and mountain lion to panther and catamount. It also has the largest range of any wild land mammal in the Americas, stretching from Canada's Yukon to the southern Andes.",
+    "home": "Cougars span 110 degrees of latitude, from western Canada and the Rocky Mountains through Mexico and Central America to the Amazon and Patagonia. They live in almost every habitat: all kinds of forest, lowland and mountain deserts, and open country up to 5,800 metres. They prefer places with dense undergrowth and rocks for stalking.\n\nAfter European settlement, hunting wiped out most cougars in eastern North America, leaving only the small Florida panther population. Today the cats are moving back into parts of the Midwest and Canada, and a small breeding population has returned to the Great Lakes region.",
+    "anatomy": "The cougar is the fourth-largest cat. Adults stand 60 to 90 centimetres at the shoulder; males average about 2.4 metres from nose to tail tip and females about 2.05 metres, with the tail making up 63 to 95 centimetres.\n\nMales usually weigh 53 to 72 kg and females 34 to 48 kg, and cougars are smaller near the equator and larger towards the poles. The coat is plain tawny, from silvery-grey to reddish, paler on the belly, jaw and throat.\n\nCubs are spotted, with blue eyes and ringed tails. The cougar has large paws and, for its size, the biggest hind legs of any cat, letting it leap 5.5 metres up into a tree. It cannot roar, but it is the largest cat that can purr.",
+    "life": "Cougars are ambush hunters. They stalk through cover, leap onto the back of their prey and kill with a suffocating bite to the neck. In North America deer make up most of the diet, along with elk, moose, mountain goats and bighorn sheep; further south they take more small and mid-sized animals such as capybaras, and in parts of Patagonia mostly Magellanic penguins.\n\nA cougar typically kills one large hoofed animal every two weeks, drags it to a hidden spot, covers it with brush and returns to feed over several days. It is solitary and territorial: males mark ranges that can cover up to 1,000 square kilometres with scrapes of leaves scented with urine. Bears and wolf packs often steal its kills.",
+    "family": "Females mature at 18 months to three years. Both sexes may have several partners, and a single litter can have more than one father. After about 91 days the female gives birth in a cave or sheltered den to one to six cubs, usually two, and raises them alone.\n\nThe cubs are born blind, begin weaning at about three months and start hunting small prey at six months. The young stay with their mother for one to two years, then disperse, males travelling further than females. Wild cougars live 8 to 13 years, and up to 20 in captivity.",
+    "remarkable": "The cougar is a keystone species, interacting with 485 other species as predator, prey, competitor or provider of leftover carcasses. Its history is surprising too: genetic studies suggest North America's original cougars died out about 10,000 years ago, alongside sabre-toothed cats, and the continent was later recolonised by cougars from South America.",
+    "outlook": "The cougar is listed as Least Concern, but it suffers from habitat loss and fragmentation, poaching of its prey and roads, which block young cats seeking new territory; in Florida, traffic accidents are frequent. Hunting is banned across most of Central and South America and regulated in Canada, the United States, Mexico and Peru.\n\nWildlife corridors that let new cougars join isolated groups are key to their survival. Oddly, heavy hunting to reduce conflict can increase attacks on livestock, because experienced older cats are replaced by bolder young males.",
+    "people": "The name cougar comes, via French and Portuguese, from the Tupi language of Brazil, while puma came into English from Quechua in 1777. Indigenous peoples of the Americas widely admired the cat. The Inca city of Cusco is said to have been laid out in its shape, and the Moche often depicted it in pottery.\n\nTo the Apache and Walapai its wail foretold death, while the Cherokee held it sacred. Attacks on people are rare, since cougars do not usually see humans as prey; North America recorded 88 attacks and 20 deaths between 1890 and 2004. Standing tall, shouting and fighting back usually drive an attacking cougar away.",
+    "relatives": "Linnaeus named the cougar Felis concolor in 1771, and it was moved to the genus Puma in 1834. Despite its size, it is not a true lion: it belongs to the subfamily Felinae, with the smaller cats.\n\nIts closest living relatives are the jaguarundi and the cheetah. Today experts recognise just two subspecies, one in South America and one in North and Central America.",
+    "didYouKnow": "In 1505, explorers from Bristol brought 'wylde catts' from North America back to King Henry VII, the earliest English record of the cougar.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "1.5–2.75 m incl. tail"
+      },
+      {
+        "label": "Weight",
+        "value": "34–72 kg typical"
+      },
+      {
+        "label": "Lifespan",
+        "value": "8–13 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly deer"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What record does the cougar hold?",
+        "choices": [
+          "Most names of any animal",
+          "Fastest cat",
+          "Loudest roar",
+          "Longest jump of any mammal measured in the wild"
+        ],
+        "explanation": "It has more than 40 names in English alone."
+      },
+      {
+        "prompt": "Which animals are the cougar's closest living relatives?",
+        "choices": [
+          "Jaguarundi and cheetah",
+          "Lion and tiger",
+          "Jaguar and leopard",
+          "Bobcat, lynx and the other short-tailed cats"
+        ],
+        "explanation": "Despite its size, it is most closely related to the jaguarundi and the cheetah."
+      },
+      {
+        "prompt": "Which sound can a cougar make?",
+        "choices": [
+          "A purr",
+          "A roar",
+          "A bugle",
+          "A deep booming call heard several kilometres away"
+        ],
+        "explanation": "It cannot roar, but it is the largest cat able to purr."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places across the Americas and the world."
+      },
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "Conserves the lands and waters on which wildlife, including big cats, depends."
+      }
+    ]
+  },
+  {
+    "id": "immortal-jellyfish",
+    "name": "Immortal Jellyfish",
+    "scientificName": "Turritopsis dohrnii",
+    "wikipediaTitle": "Turritopsis dohrnii",
+    "group": "marineInvertebrate",
+    "regions": [
+      "openOcean",
+      "europe"
+    ],
+    "range": "Temperate to tropical seas worldwide, first found in the Mediterranean",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 38.0,
+      "longitude": 15.0
+    },
+    "mapSpan": 60,
+    "tagline": "A tiny jellyfish that can start its life again",
+    "lede": "Smaller than a fingernail, the immortal jellyfish has a trick no other animal is known to share. When starved, injured or old, it can turn its adult body back into a young polyp and begin life again, in theory over and over without end.",
+    "home": "Turritopsis dohrnii was first found in the Mediterranean Sea and has since turned up in temperate to tropical waters around the world. It lives in salty to moderately brackish water and is found in marinas and docks, on ship hulls and on the sea floor.\n\nAdults survive in water from about 14 to 25 °C. Scientists believe it is spreading in ships' ballast water. Unlike most invasions, its spread has gone largely unnoticed because it is so tiny and harmless, prompting one researcher to call it a worldwide silent invasion.",
+    "anatomy": "The adult jellyfish, or medusa, is a transparent bell up to about 4.5 millimetres across and about as tall as it is wide. Its walls are thin, apart from a slightly thicker top, and inside sits a large bright red stomach, cross-shaped in section.\n\nYoung medusae 1 millimetre wide have just 8 tentacles, while adults have 80 to 90 around the rim. Like other jellyfish it is about 95% water. The species also has a bottom-living form, the polyp colony or hydroid. It consists of runners, called stolons, creeping over a surface, with upright branches carrying feeding polyps that bud off new jellyfish.",
+    "life": "The immortal jellyfish is a carnivore, feeding mainly on plankton, fish eggs and small molluscs. It drifts with its tentacles spread, stinging prey with cells called nematocysts, then bends the tentacles to bring food to its mouth, which also serves to expel waste.\n\nAs the bell expands to swim, it draws water and potential prey closer. Despite its fame, it is easy prey. Other jellyfish are its main enemies, and sea anemones, tuna, sharks, swordfish, sea turtles and penguins also eat it.",
+    "family": "Eggs form in the stomach walls of female medusae and are fertilised in the sea. Each becomes a tiny swimming larva, a planula, which settles on the sea floor or even a floating dock and grows into a branching polyp colony.\n\nAll the polyps and jellyfish arising from one larva are clones. The colony releases jellyfish about 1 millimetre across, which grow in the plankton and become sexually mature in a few weeks: 25 to 30 days at 20 °C, and 18 to 22 days at 22 °C.",
+    "remarkable": "Under stress, from starvation, a sudden temperature change, low salinity or damage, a medusa at any stage can shrink into a cyst-like blob, settle and regrow as a polyp colony.\n\nIt does this by transdifferentiation, turning one kind of cell into another, and in one experiment some did it even without stress. The cycle could in theory go on for ever, though in the wild most die from predators or disease first.",
+    "outlook": "Far from being at risk, the immortal jellyfish appears to be expanding its range.\n\nIts ability to retreat into a cluster of cells lets it survive food shortages and harsh conditions that would kill other species, and it may drift on currents in that state. That toughness makes it a strong competitor wherever it arrives.",
+    "people": "Its power was discovered in 1992, reportedly after an Italian scientist accidentally left some of the jellyfish without food over a weekend. Because it can reset its life cycle, it has become a subject of research into ageing and into ways to renew damaged human tissue. Keeping it is very hard.\n\nShin Kubota of Kyoto University is the only scientist known to have kept a group going for long, checking it daily, and his colony rebirthed itself 11 times in two years. He appears on Japanese television and has recorded several songs about his jellyfish. A perennial Singaporean election candidate even changed his name to include Turritopsis dohrnii.",
+    "relatives": "The species was named in 1883 in honour of Anton Dohrn, founder of the Stazione Zoologica research station in Naples. It belongs to the hydrozoans, a group of small jellyfish and their colonial relatives, and was long confused with Turritopsis nutricula and T. rubra until a 2006 study separated them.\n\nGenetic studies point to Nemopsis bachei as its closest relative, but none of its close relatives can reverse their lives.",
+    "didYouKnow": "A 2022 genome study linked its rejuvenation to genes involved in DNA repair and stem cell renewal.",
+    "facts": [
+      {
+        "label": "Bell width",
+        "value": "Up to 4.5 mm"
+      },
+      {
+        "label": "Tentacles",
+        "value": "80–90 in adults"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Potentially unlimited"
+      },
+      {
+        "label": "Diet",
+        "value": "Plankton and fish eggs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What can the immortal jellyfish do when stressed?",
+        "choices": [
+          "Turn back into a polyp",
+          "Split into two adults",
+          "Grow a new bell",
+          "Bury itself in sand and sleep through the bad conditions for years"
+        ],
+        "explanation": "Through transdifferentiation, a medusa can regrow as a polyp colony."
+      },
+      {
+        "prompt": "What colour is its stomach?",
+        "choices": [
+          "Bright red",
+          "Blue",
+          "Green",
+          "Clear, so the food it has eaten shows through"
+        ],
+        "explanation": "Its large, cross-shaped stomach is bright red."
+      },
+      {
+        "prompt": "How is it thought to be spreading around the world?",
+        "choices": [
+          "In ships' ballast water",
+          "On migrating birds",
+          "In fishing nets",
+          "Attached to the shells of sea turtles that carry it between continents"
+        ],
+        "explanation": "Scientists believe ballast water is carrying it to new places."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and their wildlife."
+      },
+      {
+        "name": "Marine Conservation Society",
+        "url": "https://www.mcsuk.org",
+        "blurb": "Works for healthy seas and protects marine life around the UK and beyond."
+      }
+    ]
+  },
+  {
+    "id": "hawksbill-sea-turtle",
+    "name": "Hawksbill Sea Turtle",
+    "scientificName": "Eretmochelys imbricata",
+    "wikipediaTitle": "Hawksbill sea turtle",
+    "group": "reptile",
+    "regions": [
+      "openOcean",
+      "centralAmerica",
+      "asia",
+      "oceania"
+    ],
+    "range": "Tropical reefs of the Atlantic, Indian and Pacific Oceans",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": 110.0
+    },
+    "mapSpan": 80,
+    "tagline": "A reef turtle that dines on toxic sponges",
+    "lede": "The hawksbill is the sea turtle of coral reefs, a beaked specialist that eats sponges so toxic and glass-spiked that few other animals touch them. Its beautiful shell, the source of tortoiseshell, has also made it one of the most heavily hunted turtles in history.",
+    "home": "Hawksbills live in tropical waters of the Atlantic, Indian and Pacific Oceans, and are more tied to warm seas than any other sea turtle. In the Atlantic they range from the Gulf of Mexico and Florida to Brazil and South Africa, with major nesting beaches in the Lesser Antilles, Costa Rica and the Yucatán.\n\nIn the Indo-Pacific they occur from East Africa, the Red Sea and the Persian Gulf to Southeast Asia, northern Australia, Japan and northern New Zealand. Adults spend their days resting in caves and under ledges on coral reefs, but they also use lagoons, the open ocean and mangroves. In the eastern Pacific, from Mexico to Peru, they forage and nest mainly in mangrove estuaries.",
+    "anatomy": "Adults typically grow to about 1 metre long and weigh around 80 kg; the heaviest ever caught weighed 127 kg. The amber shell is patterned with light and dark streaks, black and mottled brown, and its colour changes slightly with water temperature. The thick scutes overlap like roof shingles, and at the rear they give the shell edge a jagged, saw-toothed look.\n\nThe head is long and tapering, ending in a sharp, hooked beak, and each front flipper bears two claws. The tough shell lets the turtle squeeze into tight crevices in the reef. On land it crawls with an alternating gait, leaving uneven tracks in the sand.",
+    "life": "Sponges make up 70 to 95% of a hawksbill's diet, and it is the only reptile that feeds mainly on them. It is picky, choosing particular species, including some that are highly poisonous to other animals and others packed with glassy needles of silica. It also eats algae, seagrass, mangrove fruit, jellyfish, corals, anemones, molluscs, sea urchins, crabs and fish.\n\nIt even eats the Portuguese man o' war, closing its eyes as it feeds, since the stinging cells cannot pierce its armoured head. Because of such meals, its own flesh can become toxic. Hawksbills are solitary for most of their lives, meeting only to mate, and adults have few predators besides people, tiger sharks, crocodiles, octopuses and groupers.",
+    "family": "Hawksbills mate in secluded lagoons near remote nesting beaches, with the biggest nesting sites in Mexico, the Seychelles, Indonesia, Sri Lanka and Australia. A female crawls ashore at night, clears a spot and digs a hole with her hind flippers, then lays about 140 eggs and buries them before returning to the sea.\n\nAfter about 60 days, dark hatchlings weighing under 24 g, with heart-shaped shells 2.5 centimetres long, emerge at night and scramble for the water. Those still on the beach at dawn are picked off by shorebirds and crabs. Maturity may take from 10 to more than 30 years, and the lifespan is unknown.",
+    "remarkable": "The hawksbill was the first reptile found to be biofluorescent: under the right light, parts of its body glow.\n\nMales glow more intensely than females, which hints that the glow may matter in their behaviour. Nobody yet knows whether it comes from the turtle itself or from its diet, which includes fluorescent corals.",
+    "outlook": "The hawksbill is Critically Endangered. Biologists estimate its numbers have fallen by 80% over the past 100 to 135 years, and between 1844 and 1992 the tortoiseshell trade alone killed an estimated 8.98 million turtles.\n\nIts slow growth and low breeding rate make recovery difficult, and it faces coastal development, pollution, egg collecting and nest raiding by animals such as mongooses. International trade is banned under CITES, and on Cousine Island in the Seychelles, where it has been protected since 1994, numbers are recovering.",
+    "people": "People have eaten hawksbills since at least the 5th century BCE in China, but the shell has been far more prized. Ancient Greeks and Romans made combs, brushes and rings from it. In Japan the shell scutes, called bekko, were used for spectacle frames and picks for the three-stringed shamisen; until Japan stopped importing them in 1994, it took in about 30,000 kg of raw shell a year.\n\nOn Rosemary Island in Western Australia, volunteers have monitored hawksbills since 1986, and in 2020 a turtle thought to be 60 years old, first tagged in 1990, returned to the same place.",
+    "relatives": "Linnaeus described the hawksbill in 1766 as Testudo imbricata. Its genus name, Eretmochelys, comes from Greek words for 'oar' and 'turtle', after its oar-like flippers, and imbricata refers to its overlapping scutes.\n\nIt is the only living member of its genus. Although it looks much like the plant-eating green turtle, DNA places it with the carnivorous loggerhead and ridley turtles, suggesting it evolved from meat-eating ancestors.",
+    "didYouKnow": "Hatchlings find the sea by heading for the moon's reflection on the water, so streetlights can lead them astray.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 1 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Around 80 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly sponges"
+      },
+      {
+        "label": "Clutch",
+        "value": "About 140 eggs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes up most of the hawksbill's diet?",
+        "choices": [
+          "Sponges",
+          "Seagrass",
+          "Jellyfish",
+          "Small reef fish caught among the coral at night"
+        ],
+        "explanation": "Sponges make up 70 to 95% of what it eats."
+      },
+      {
+        "prompt": "What was the hawksbill the first reptile known to be?",
+        "choices": [
+          "Biofluorescent",
+          "Venomous",
+          "Warm-blooded",
+          "Able to sleep for months buried in the mud of the sea floor"
+        ],
+        "explanation": "Parts of its body glow under the right light, with males glowing more than females."
+      },
+      {
+        "prompt": "What is hawksbill shell called when used for decoration?",
+        "choices": [
+          "Tortoiseshell",
+          "Mother-of-pearl",
+          "Ivory",
+          "Coral jade, a name used by ancient Roman jewellers"
+        ],
+        "explanation": "Hawksbill shells were the main source of tortoiseshell, known in Japan as bekko."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Sea Turtle Conservancy",
+        "url": "https://www.seaturtleconservancy.org",
+        "blurb": "Protects sea turtles and their nesting beaches through research and advocacy."
+      },
+      {
+        "name": "Coral Reef Alliance",
+        "url": "https://www.coralreefalliance.org",
+        "blurb": "Works with communities to protect the coral reefs that hawksbills depend on."
+      }
+    ]
+  },
+  {
+    "id": "common-cuckoo",
+    "name": "Common Cuckoo",
+    "scientificName": "Cuculus canorus",
+    "wikipediaTitle": "Common cuckoo",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "range": "Breeds across Europe and Asia, winters in Africa and southern Asia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 40.0,
+      "longitude": 50.0
+    },
+    "mapSpan": 80,
+    "tagline": "The bird that tricks others into raising its young",
+    "lede": "Every spring, the male's two-note call tells Europe that summer is coming. Yet the common cuckoo never builds a nest or raises its own young: it tricks other birds into doing it, slipping eggs among theirs and leaving its chick to take over.",
+    "home": "The common cuckoo is a summer visitor to Europe and Asia, from Ireland and Spain across Russia and Siberia to China, Korea and Japan, and it spends the winter in Africa and southern Asia. In Europe birds arrive in April and leave in September.\n\nIt is essentially a bird of open country, and strays have turned up as far afield as Greenland, Barbados and the United States. Its distribution is shifting. Between 1995 and 2015 numbers in England fell by 69% while those in Scotland rose by 33%.",
+    "anatomy": "The cuckoo is 32 to 34 centimetres long, including a tail of 13 to 15 centimetres, with a wingspan of 55 to 60 centimetres. Males weigh about 130 grams and females about 110 grams. It is slim and long-tailed with short legs. Adult males are slate-grey, with a grey breast sharply divided from finely barred underparts, and have yellow eyes, eye-rings, feet and bill base.\n\nMost females look similar but have a buff tinge, while some belong to a rare rufous form with reddish-brown, barred upperparts. Young birds have a white patch on the nape. In flight, its grey back, barred belly and regular wingbeats look remarkably like those of a sparrowhawk.",
+    "life": "Cuckoos eat insects, and specialise in hairy caterpillars that most other birds find distasteful. They occasionally take eggs and chicks too. They moult twice a year, partially in summer and fully in winter. The male's goo-ko song comes in groups of 10 to 20 calls, usually from an open perch, while the female gives a loud bubbling call.\n\nIn April the song is a falling minor third, but the interval widens as the season goes on, and by June the bird seems to forget its tune. When calling hard the male droops his wings, and near a female he wags his tail from side to side.",
+    "family": "A female may visit up to 50 nests in a season. More than 100 host species have been recorded, including meadow pipits, dunnocks and reed warblers. Each female belongs to a lineage, or gens, that favours one host and lays eggs matching that host's colour and pattern.\n\nShe can hold an egg inside her body for an extra 24 hours, so the chick gets a head start. The naked chick hatches after 11 to 13 days and, using its back, rolls the host's eggs or young out of the nest.\n\nIts rapid begging call sounds like a whole brood, persuading its foster parents to keep feeding it. By 14 days it is three times the size of an adult reed warbler, and it fledges at 17 to 21 days. Cuckoos breed from two years old, and the oldest known in Britain lived almost 7 years.",
+    "remarkable": "The cuckoo's resemblance to a bird of prey is a disguise. Experiments with stuffed models showed that reed warblers attacked cuckoos less when they could see the hawk-like barred belly, and that tits panicked at the sight of either a cuckoo or a hawk.\n\nBy looking dangerous, the female buys time to slip into a nest and lay.",
+    "outlook": "The common cuckoo is listed as Least Concern, with an estimated 25 to 100 million birds worldwide, about 12.6 to 25.8 million of them breeding in Europe. Its global population appears to be declining, however.\n\nBecause it depends on so many host species, the cuckoo is a good indicator of bird diversity: where cuckoos occur, the variety of birds tends to be high.",
+    "people": "The cuckoo is named for its call, and the English word appears around 1240 in the song Sumer Is Icumen In, whose opening lines mean 'Summer has come in, loudly sing, cuckoo'. Hearing the first cuckoo is a traditional sign of spring across Europe, celebrated in folk rhymes, in Shakespeare's Love's Labour's Lost, in Delius's On Hearing the First Cuckoo in Spring and in the cuckoo clock.\n\nAristotle described its nesting habits and rejected an old tale that cuckoos turned into hawks in winter. In 1788 Edward Jenner was elected to the Royal Society for his study of the cuckoo chick's behaviour.",
+    "relatives": "Carl Linnaeus described the species in 1758 as Cuculus canorus, from the Latin for 'cuckoo' and 'melodious'. Four subspecies breed across Europe, North Africa and Asia.\n\nIt belongs to the order Cuculiformes, along with roadrunners, anis and coucals, and looks almost identical to the Oriental cuckoo, which even has a similar rufous female form.",
+    "didYouKnow": "The cuckoo's sneaky nesting habits were first captured on film in 1922, in The Cuckoo's Secret.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "32–34 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "55–60 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "110–130 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Hairy caterpillars"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which bird of prey does the common cuckoo resemble?",
+        "choices": [
+          "Sparrowhawk",
+          "Kestrel",
+          "Buzzard",
+          "Golden eagle, especially when soaring high"
+        ],
+        "explanation": "Its barred underparts and flight look like a sparrowhawk's, which helps it reach host nests."
+      },
+      {
+        "prompt": "How does a cuckoo chick get rid of its nest mates?",
+        "choices": [
+          "Pushes them out with its back",
+          "Pecks them",
+          "Smothers them",
+          "Calls loudly until the host parents abandon them"
+        ],
+        "explanation": "It rolls eggs and chicks over the edge of the nest with its back."
+      },
+      {
+        "prompt": "Where do European cuckoos spend the winter?",
+        "choices": [
+          "Africa",
+          "Australia",
+          "South America",
+          "In southern Europe around the shores of the Mediterranean"
+        ],
+        "explanation": "It is a summer migrant to Europe and Asia and winters in Africa."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, protecting birds and their habitats."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds, their habitats and migration routes."
+      }
+    ]
+  },
+  {
+    "id": "giant-oarfish",
+    "name": "Giant Oarfish",
+    "scientificName": "Regalecus glesne",
+    "wikipediaTitle": "Giant oarfish",
+    "group": "fish",
+    "regions": [
+      "openOcean"
+    ],
+    "range": "Open oceans worldwide, except the polar seas",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 25.0,
+      "longitude": -40.0
+    },
+    "mapSpan": 80,
+    "tagline": "The world's longest bony fish, a real sea serpent",
+    "lede": "The giant oarfish is the longest bony fish in the world, a shimmering silver ribbon with a crimson crest. Rarely seen alive, it is the most likely explanation for many old tales of sea serpents.",
+    "home": "Giant oarfish are found throughout the world's oceans except the polar seas, from about 72°N to 52°S, but mostly in tropical to temperate waters. They are more widespread in the Atlantic than the Pacific, and there is an isolated breeding population in the Mediterranean.\n\nThey live in the sunlit upper ocean and the dim twilight zone below it; the deepest confirmed record is 463 to 492 metres in the Gulf of Mexico. They are thought to roam widely in the open ocean, following their food. Once considered rare, they may actually be fairly common, though healthy ones are seldom seen in the wild.",
+    "anatomy": "Its record length is about 7 to 8 metres, possibly up to 11 metres, and the heaviest weighed 272 kg, though most measure around 3 metres. The body is flattened from side to side, scaleless and covered in small bumps, silvery with dark wavy markings.\n\nA pinkish to bright red dorsal fin with over 400 soft rays runs from between the eyes to the tail tip, and its first 10 to 12 rays form a tall crest. The long, single-rayed pelvic fins widen at the tip like oars, giving the fish its name. It has a small head, large eyes, a toothless mouth that is black inside and no swim bladder. Its organs are packed towards the front of the body.",
+    "life": "Little is known about how oarfish live. They swim by rippling the long dorsal fin, and often hang vertically in the water with their tails pointing down. In 2010 a remotely operated vehicle filmed one in the Gulf of Mexico, the first footage of a reliably identified giant oarfish in its natural setting.\n\nMost stomachs examined have been empty, but one held thousands of krill, and two others contained Mediterranean krill. Adults have no documented natural predators, although a pod of pilot whales was once seen attacking one without eating it. One female carried at least 63 tapeworm larvae.",
+    "family": "Almost nothing is known about how oarfish breed. Their eggs, identified by DNA from the western Pacific and found in New Zealand waters, are round and covered in tiny spines. Very young fish have been found near Florida's Gulf Coast and off Canada.\n\nThe larvae already have the long pelvic fins and crest rays of the adults, but their skin is almost transparent, with dark spots along the back and head, and their tail fin has four rays. They begin with a single crest ray; once they reach about 5 centimetres, the following rays grow longer and more ornate.",
+    "remarkable": "Giant oarfish seem to amputate their own tails. They shed the rear part of the body, sometimes just the tail fin and a few vertebrae, sometimes far more, and do so several times in their lives.\n\nEvery oarfish longer than 1.5 metres examined has a shortened body. Because the vital organs sit near the head, the fish survives, but why it happens remains a mystery.",
+    "outlook": "The giant oarfish is listed as Least Concern by the IUCN. No one has tried to count its population.\n\nIt is not fished commercially and is only occasionally caught by accident in nets, and its life far out in the open ocean keeps it away from most people.",
+    "people": "The genus name Regalecus means 'belonging to a king', and the nickname king of herrings may come from its crown-like crest and from sightings near herring shoals, which fishermen thought it was leading. Oarfish are also called earthquake fish, from a popular belief that they surface before earthquakes, although no such link has been shown. A horse-headed snake god on ancient Egyptian coffins may depict an oarfish.\n\nIn 2016 the TV presenter Jeremy Wade dived with two live oarfish in the Mediterranean, even touching one. As food it disappoints: cooked oarfish is said to taste like paper, and a fish-eating dog refused it.",
+    "relatives": "The giant oarfish was described in 1772 by Peter Ascanius from a fish found at a farm near Bergen, Norway, which gave it the species name glesne. It belongs to the oarfish family, Regalecidae, and is often confused with Russell's oarfish, which has a single crest ray rather than several and more gill rakers.\n\nIts only known fossil, a 355-millimetre piece of tail from Late Pliocene rocks near Macerata in Italy, shows the species is millions of years old.",
+    "didYouKnow": "A long tube of unknown purpose runs from the oarfish's stomach to the end of its body, and fish that lose it survive perfectly well.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 8 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 272 kg"
+      },
+      {
+        "label": "Depth",
+        "value": "Down to about 490 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Krill"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the oarfish get its common name?",
+        "choices": [
+          "Its oar-shaped pelvic fins",
+          "Rowing motion",
+          "Its flat tail",
+          "Sailors who used its bones as paddles for small boats"
+        ],
+        "explanation": "Its long pelvic fins widen at the tip like oars."
+      },
+      {
+        "prompt": "What do oarfish seem to do several times in their lives?",
+        "choices": [
+          "Shed the rear of their body",
+          "Change colour",
+          "Migrate up rivers",
+          "Swim to the surface to gulp air at the full moon"
+        ],
+        "explanation": "They shed parts of the body behind the vent, which holds no vital organs."
+      },
+      {
+        "prompt": "Why are oarfish called 'earthquake fish'?",
+        "choices": [
+          "A belief they surface before quakes",
+          "They live on fault lines",
+          "They shake when caught",
+          "Their crest trembles whenever the sea floor starts to move"
+        ],
+        "explanation": "People believe they surface before earthquakes, though no link has been shown."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and their wildlife."
+      },
+      {
+        "name": "Marine Conservation Society",
+        "url": "https://www.mcsuk.org",
+        "blurb": "Works for healthy seas and protects marine life around the UK and beyond."
+      }
+    ]
+  },
+  {
+    "id": "bullet-ant",
+    "name": "Bullet Ant",
+    "scientificName": "Paraponera clavata",
+    "wikipediaTitle": "Paraponera clavata",
+    "group": "insect",
+    "regions": [
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "Humid lowland rainforests from Honduras to Bolivia and Brazil",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -2.0,
+      "longitude": -68.0
+    },
+    "mapSpan": 45,
+    "tagline": "The insect with the most painful sting on Earth",
+    "lede": "A sting from the bullet ant is said to feel like being shot, and the pain can last a full day. This big, reddish-black ant of Central and South American rainforests tops the scale of insect sting pain, yet it spends most of its time quietly gathering nectar in the treetops.",
+    "home": "Bullet ants live in humid lowland rainforests from Honduras and Nicaragua south through Costa Rica and Panama to Venezuela, Colombia, Ecuador, Peru, Bolivia and Brazil. Colonies are usually found from sea level to 750 metres, though some have been collected at 1,500 metres in La Amistad International Park. Nests sit at the bases of trees, and studies in Costa Rica and on Barro Colorado Island in Panama found about four per hectare.\n\nOn Barro Colorado they were found under 70 species of tree as well as shrubs, lianas and a palm, so the ants seem not to be choosy, though they may favour trees with buttresses and nectar glands, and avoid small shrubs that do not reach the canopy.",
+    "anatomy": "Workers are 18 to 30 millimetres long and look like stout, reddish-black wingless wasps. Unlike many ants, the workers are all of one type rather than different sizes for different jobs, and the queen is not much larger than they are.\n\nAt the tip of the abdomen is a sting that delivers venom containing poneratoxin, a paralysing nerve toxin that blocks signals in the nervous system. When disturbed, the ants also make a squeaking, rasping warning sound called stridulation.",
+    "life": "Bullet ants forage mainly in the trees above their nest, climbing as high as the upper canopy, and rarely search the forest floor. They hunt small arthropods, but nectar, carried back as droplets between their jaws, is the food most often brought home. Among their prey are glasswing butterfly caterpillars, which defend themselves with chemicals the ants find unpalatable.\n\nThey are not aggressive in general, but defend the nest fiercely. Neighbouring colonies often fight, leaving injured workers that attract a tiny parasitic fly, Apocephalus paraponerae. Drawn by the scent of a hurt ant within two to three minutes, the flies feed on it and lay eggs, and one ant can host 20 fly larvae.",
+    "family": "Bullet ant colonies are modest, holding several hundred ants, usually in a nest at the base of a tree. As in other primitive poneromorph ants, there is no division of workers into different castes by size, and the queen is barely bigger than her daughters.\n\nWorkers guard their home closely. Healthy ants are agile enough to fend off the parasitic flies, and the entomologist Carl Rettenmeyer watched them actively attack flies approaching the nest entrance.",
+    "remarkable": "On Justin Schmidt's sting pain index, the bullet ant scores 4.0+, the highest of any insect. Schmidt likened it to walking over flaming charcoal with a nail embedded in your heel, and victims describe waves of burning, throbbing pain lasting up to 24 hours.\n\nEven a single sting can bring swollen lymph nodes, swelling and a racing heart.",
+    "outlook": "The bullet ant is widespread across the wet tropical forests of Central and South America.\n\nAs a forest ant that forages from the ground up into the canopy, it depends on that forest staying standing. Its venom toxin is being investigated for possible medical uses.",
+    "people": "The Sateré-Mawé people of Brazil use bullet ants in initiation rites for young warriors. The ants are first stunned with a natural sedative, then 80 of them are woven into gloves of leaves or vines with their stings facing in.\n\nOnce the ants wake and are agitated with smoke, the initiate wears the gloves for 5 to 10 minutes or more, leaving his hands temporarily paralysed. To complete the initiation, the ordeal must be repeated 20 times over months or years. Its many local names include bala, 'bullet', in Costa Rica, and hormiga veinticuatro, the '24-hour ant', in Venezuela. In Brazil it is tocandira, from a Tupi-Guarani phrase meaning 'the one wounding deeply'.",
+    "relatives": "Fabricius described the bullet ant in 1775 as Formica clavata, wrongly giving its home as India. Clavata means 'club-shaped', and the genus name Paraponera, created in 1858, means 'near Ponera'.\n\nIt is the only living species in its genus and in its own subfamily, Paraponerinae. An extinct relative, Paraponera dieteri, is known from Dominican amber, showing the genus once lived on Hispaniola, where moister forests must then have grown.",
+    "didYouKnow": "In English it is also known as the lesser giant hunting ant and the conga ant.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "18–30 mm"
+      },
+      {
+        "label": "Colony",
+        "value": "Several hundred ants"
+      },
+      {
+        "label": "Sting pain",
+        "value": "4.0+ on Schmidt index"
+      },
+      {
+        "label": "Diet",
+        "value": "Nectar and small arthropods"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why is it called the bullet ant?",
+        "choices": [
+          "Its sting feels like a gunshot",
+          "It runs very fast",
+          "Its body is bullet-shaped",
+          "It drops from trees onto its prey like a falling stone"
+        ],
+        "explanation": "Victims compare the pain of its sting to being shot."
+      },
+      {
+        "prompt": "What food do foragers most often carry home?",
+        "choices": [
+          "Nectar",
+          "Seeds",
+          "Leaves",
+          "Pieces of fungus grown in underground gardens"
+        ],
+        "explanation": "Nectar, carried between the jaws, is the most common food taken back to the nest."
+      },
+      {
+        "prompt": "Which people use bullet ants in initiation rites?",
+        "choices": [
+          "The Sateré-Mawé",
+          "The Inca",
+          "The Maya",
+          "The Yanomami of the northern Amazon forests"
+        ],
+        "explanation": "Sateré-Mawé initiates wear gloves filled with bullet ants."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests by buying and safeguarding land with local partners."
+      },
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects insects and other invertebrates and the habitats they depend on."
+      }
+    ]
+  },
+  {
+    "id": "dugong",
+    "name": "Dugong",
+    "scientificName": "Dugong dugon",
+    "wikipediaTitle": "Dugong",
+    "group": "mammal",
+    "regions": [
+      "oceania",
+      "asia",
+      "africa"
+    ],
+    "range": "Warm, shallow coasts of the Indo-West Pacific, from East Africa to Vanuatu",
+    "status": "VU",
+    "coordinate": {
+      "latitude": -10.0,
+      "longitude": 110.0
+    },
+    "mapSpan": 70,
+    "tagline": "The gentle sea cow behind mermaid legends",
+    "lede": "The dugong is a sea cow in every sense, a gentle, whiskered grazer that spends its long life cropping seagrass in warm, shallow bays. It is the only plant-eating mammal that lives strictly in the sea, and it may have inspired legends of mermaids.",
+    "home": "Dugongs live along about 140,000 kilometres of warm coastline in the Indo-West Pacific, in the waters of 37 countries and territories from East Africa and the Red Sea to Vanuatu. They depend on seagrass, so they stay in wide, shallow, sheltered bays, mangrove channels and the lee of large islands, usually at around 10 metres deep.\n\nNorthern Australia, from Shark Bay to Moreton Bay, is their stronghold, with more than 20,000 in the Gulf of Carpentaria and over 25,000 in the Torres Strait. The Arabian Gulf holds the second-largest population. Elsewhere many groups are tiny: Okinawa may have as few as three, and dugongs are now functionally extinct in China.",
+    "anatomy": "Adults rarely exceed 3 metres and usually weigh 250 to 900 kg, and females tend to be larger than males. The largest on record, from western India, was 4.06 metres long and weighed 1,016 kg. The thick, smooth skin is pale cream at birth and darkens to brownish-grey.\n\nUnlike manatees, dugongs have a notched, dolphin-like fluked tail, and their flippers have no nails. The snout turns sharply down, ending in a big, mobile, horseshoe-shaped upper lip fringed with sensitive bristles. Eyesight is poor but hearing is acute, and the nostrils on top of the head close with valves. Males grow tusks at puberty. The bones are among the densest of any animal and act as ballast.",
+    "life": "Dugongs eat mostly seagrass, especially Halophila and Halodule, choosing low-fibre, high-nitrogen kinds. Finding plants by smell and touch, they use the upper lip to dig up whole plants, roots and all, shaking off the sand before eating and leaving furrows behind.\n\nIn some areas they also eat invertebrates when seagrass is scarce. They are semi-nomadic, travelling long distances for food but keeping to one range for life, and they move with the tides to reach shallow feeding areas. They usually live alone or in pairs, since seagrass beds rarely support crowds. They call to each other with chirps, whistles and barks, typically surface to breathe every two and a half minutes, and sometimes rest on their tails with their heads above water.",
+    "family": "Dugongs mature late, between 8 and 18 years. Mating varies: in some places males hold territories that females visit, a system called lekking, while elsewhere several males compete for one female. After a pregnancy of 13 to 15 months, a female gives birth in very shallow water to a single calf, which she pushes to the surface for its first breath.\n\nThe calf is already 1.2 metres long and about 30 kg. It nurses for 14 to 18 months and stays close to its mother until mature. Females have young only every 2.4 to 7 years, but dugongs can live for 70 years or more; the oldest known reached 73.",
+    "remarkable": "Dugongs farm their own pastures. Their digging clears slow-growing, fibrous species such as Zostera, and fast-growing, nutritious Halophila and Halodule spring up in the gaps.\n\nThis cultivation grazing keeps a supply of the young, tender plants dugongs prefer, and they may cycle between meadows to keep it going.",
+    "outlook": "The dugong is listed as Vulnerable by the IUCN, and its numbers are falling. Its slow breeding means a population cannot remain stable if more than 5% of adults die each year. Fishing nets drown many, and hunting, boat traffic, oil spills and pollution add to the losses.\n\nSeagrass is smothered by sediment from dredging, mining and trawling, and cyclones can destroy vast meadows. In Okinawa, a military base being built at Henoko threatens the last tiny population. Many countries in its range now protect it, and CITES restricts trade.",
+    "people": "Hunted for meat, oil, skin and bones for thousands of years, the dugong remains culturally important to Aboriginal and Torres Strait Islander peoples, for whom it is part of sea country. A 5,000-year-old painting of a dugong decorates Tambun Cave in Malaysia.\n\nAcross Southeast Asia, names for the dugong double as words for mermaid, and many people believe dugongs were once human and weep when killed, so harming one brings bad luck. The word dugong comes from the Visayan language of the Philippines and was popularised by Buffon in 1765; despite a common belief, it does not mean 'lady of the sea'.",
+    "relatives": "The dugong is one of four living sirenians, or sea cows, the other three being manatees, and the only surviving member of the family Dugongidae.\n\nIts closest recent relative, Steller's sea cow, was hunted to extinction in the 18th century. Sirenians have a fossil record of some 50 million years, and despite their life at sea their nearest living relatives are elephants, with hyraxes and the aardvark not far off.",
+    "didYouKnow": "In 2025 a fisherman in northeast Taiwan released a dugong caught in his nets, the first live one seen in Taiwanese waters in 88 years.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "250–900 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "70+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Seagrass"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What are the dugong's closest living relatives?",
+        "choices": [
+          "Elephants",
+          "Seals",
+          "Dolphins",
+          "Walruses and other tusked marine mammals"
+        ],
+        "explanation": "Sirenians are more closely related to elephants than to other marine mammals."
+      },
+      {
+        "prompt": "How does a dugong's tail differ from a manatee's?",
+        "choices": [
+          "It is fluked like a dolphin's",
+          "It is paddle-shaped",
+          "It is much shorter",
+          "It has a long fin running along its upper edge for steering"
+        ],
+        "explanation": "The dugong has a notched, dolphin-like fluked tail."
+      },
+      {
+        "prompt": "How long is a dugong pregnancy?",
+        "choices": [
+          "13 to 15 months",
+          "6 months",
+          "9 months",
+          "About 2 years, followed by a long rest before the next calf"
+        ],
+        "explanation": "Females give birth after a 13 to 15 month pregnancy, usually to one calf."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect oceans, wildlife and the people who depend on them."
+      },
+      {
+        "name": "IUCN",
+        "url": "https://www.iucn.org",
+        "blurb": "The global authority on the status of the natural world and the measures to safeguard it."
+      }
+    ]
   }
 ]
