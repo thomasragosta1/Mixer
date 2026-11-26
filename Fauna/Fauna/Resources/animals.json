@@ -25158,5 +25158,915 @@
         "blurb": "Works for cleaner, healthier seas and the wildlife in them."
       }
     ]
+  },
+  {
+    "id": "sun-bear",
+    "name": "Sun Bear",
+    "scientificName": "Helarctos malayanus",
+    "wikipediaTitle": "Sun bear",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Tropical forests of Southeast Asia, from northeast India to Borneo and Sumatra",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 8.0,
+      "longitude": 105.0
+    },
+    "mapSpan": 40,
+    "tagline": "The smallest bear, and the best climber of them all",
+    "lede": "The sun bear is the smallest bear in the world and the one most at home in the trees. It wears a glossy black coat with a pale, crescent-shaped patch on its chest, said to look like a rising sun, and it rips open tree trunks with sickle claws to reach bees and honey.",
+    "home": "Sun bears live in the tropical forests of Southeast Asia. Their range runs from northeastern India and Bangladesh through Myanmar, Thailand, Cambodia, Laos and Vietnam, and south to Malaysia, Brunei and Indonesia. In 2017 one was seen in Yunnan, confirming that the species also reaches China, but it has died out in Singapore.\n\nNorth of the Isthmus of Kra they live in deciduous and seasonally evergreen forest, while in Malaysia and Indonesia they inhabit evergreen rainforest that stays much the same all year round. They are usually found low down, below 1,200 metres in western Thailand and peninsular Malaysia, though in India they have been recorded up to 3,000 metres. They tend to avoid heavily logged forest and places close to people.",
+    "anatomy": "Adults measure 100 to 140 centimetres from nose to rump, stand nearly 70 centimetres at the shoulder and weigh 25 to 65 kg, with males 10 to 20% bigger than females. The build is stocky, with large paws, small round ears, a short grey, silver or orange snout and a stubby tail of just 3 to 7 centimetres.\n\nThe fur is the shortest of any bear, suited to tropical heat; it is usually jet black but can be grey or reddish. The chest patch ranges from orange and ochre to cream or white, and a few bears have none at all. Everything about the body suits climbing: inward-turned front feet, a flattened chest, powerful forelimbs, hairless soles and long, heavy front claws.\n\nIts teeth are very large and its bite is unusually strong for its size, perhaps because it spends so much time breaking into hardwood trees, and its exceptionally long tongue reaches deep inside for insects and honey.",
+    "life": "This is an omnivore with a broad menu: ants, termites, beetles, bees and honey, plus figs and many other fruits, seeds and the soft centre of coconut palms. Now and then it eats birds, reptiles such as the Asian forest tortoise, and even deer.\n\nWhen fruit runs short in Borneo, it switches to a diet of mostly insects. It smashes termite mounds and quickly licks and sucks out the contents, holding chunks of the mound in its front paws. Sun bears are mostly solitary and mainly active by day, though they become more nocturnal where people are around.\n\nThey sunbathe or sleep on branches 2 to 7 metres up, or bed down in hollow logs, and they swim well. They grunt and snuffle while foraging and give short barks when surprised. Because food is available all year, they do not hibernate. Tigers are their main predator.",
+    "family": "Sun bears breed at any time of year and mature at two to four years old. Pregnancy has been reported to last anywhere from 95 to 240 days. Births take place inside hollow trees, and a litter is usually one or two cubs weighing around 325 grams each.\n\nNewborns are deaf with their eyes closed; the eyes open at about 25 days, but the cubs stay blind until around 50 days old. The mother keeps them on the buttress roots at the base of trees until they can walk and climb properly, and defends them fiercely. Young stay with her for nearly three years. In captivity sun bears generally live more than 20 years, and one reached 34.",
+    "remarkable": "Sun bears are surprisingly clever and expressive. One captive bear that watched sugar being locked in a cupboard later opened the lock with its claw.\n\nA study published in 2019 found that sun bears mimic each other's facial expressions with a precision comparable to that of gorillas and humans.",
+    "outlook": "The sun bear is listed as Vulnerable on the IUCN Red List and is on CITES Appendix I.\n\nIts numbers are estimated to have fallen by 35% since the 1990s. Heavy deforestation for agriculture and logging, forest fires and hunting for the wildlife trade are the main threats; Southeast Asia lost almost 12% of its forest cover between 1990 and 2010. Bears are snared even in some protected areas, sold as pets, and killed for gall bladders that end up in traditional medicine shops, and they are kept on bile farms in Laos, Vietnam and Myanmar.\n\nThe species is legally protected from hunting everywhere in its range except Sarawak and Cambodia, but the laws are poorly enforced. The Bornean Sun Bear Conservation Centre, founded in 2008, cares for rescued bears, and a conservation action plan was published in 2019.",
+    "people": "In Malay and Indonesian it is called beruang madu, 'honey bear', for its love of honeycomb. Its timid nature meant sun bears were often tamed and kept as pets in the past. They rarely attack people unless provoked, injured or with cubs, but they can be fierce when surprised in the forest.\n\nFarmers sometimes treat them as vermin when they wander into plantations and orchards, and some have been shot or poisoned to protect coconut and snakefruit crops. Stamford Raffles first described the species in 1821, from a bear in Sumatra.",
+    "relatives": "The sun bear is the only member of its genus, Helarctos, a name built from the Greek words for 'sun' and 'bear'. Thomas Horsfield gave it a genus of its own in 1825.\n\nGenetic studies suggest that it and the sloth bear were the first of the living Ursinae bears to branch off, separate from the Ursus group that includes brown and polar bears, and that it split from the two black bears roughly 5 to 6 million years ago. Sun bears and sloth bears have produced fertile hybrids. On the mainland it shares the forest with the Asian black bear, which has a similar pale chest marking and is more common in the mountains.",
+    "didYouKnow": "During the breeding season, sun bears can give roars that sound like those of a male orangutan.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "100–140 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "25–65 kg"
+      },
+      {
+        "label": "Tail",
+        "value": "3–7 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Insects, honey and fruit"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the sun bear get its name?",
+        "choices": [
+          "Its pale chest patch",
+          "Its habit of basking on rocks at midday in open clearings",
+          "Its golden fur",
+          "Its love of sunny forest edges"
+        ],
+        "explanation": "It is named for the orange to cream, crescent-shaped patch on its chest."
+      },
+      {
+        "prompt": "Why does the sun bear not hibernate?",
+        "choices": [
+          "Food is available all year",
+          "Its fur is too short",
+          "It lives too high up",
+          "Its cubs are born in winter and must be fed constantly"
+        ],
+        "explanation": "Food can be found all year round in its tropical range, so there is no need to hibernate."
+      },
+      {
+        "prompt": "What did a captive sun bear do after watching sugar being locked away?",
+        "choices": [
+          "Opened the lock with its claw",
+          "Broke the cupboard door",
+          "Waited for the keeper",
+          "Gave up"
+        ],
+        "explanation": "It later used its claw to open the lock, a sign of the species' intelligence."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect forests and wildlife across Southeast Asia, including the sun bear's habitat."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forest with local partners."
+      }
+    ]
+  },
+  {
+    "id": "sunda-slow-loris",
+    "name": "Sunda Slow Loris",
+    "scientificName": "Nycticebus coucang",
+    "wikipediaTitle": "Sunda slow loris",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Rainforests of Sumatra, the Malay Peninsula, southern Thailand and Singapore",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 2.5,
+      "longitude": 102.0
+    },
+    "mapSpan": 15,
+    "tagline": "A shy, slow-motion primate with a toxic secret",
+    "lede": "The Sunda slow loris moves through the night canopy so deliberately that early naturalists mistook it for a sloth. Behind its huge, dark-ringed eyes and woolly coat lies a surprising defence: a toxin made in glands on its elbows.",
+    "home": "This loris lives in Indonesia on Sumatra and the small islands of Batam, Galang, Tebing Tinggi and Great Natuna, in Malaysia on the Malay Peninsula and Pulau Tioman, in peninsular southern Thailand, and in Singapore. Its common name refers to the Sunda Islands, in the western part of the Malay Archipelago.\n\nIt prefers tropical rainforest with a continuous, dense canopy, because it travels from tree to tree without coming down, but it is adaptable and can live in other habitats too. In southern Thailand its range overlaps with that of the Bengal slow loris, and the two have hybridised.",
+    "anatomy": "It measures 27 to 38 centimetres and weighs about 600 to 685 grams, and males and females weigh the same. The soft, thick, woolly fur runs from light brown to deep reddish brown, paler underneath.\n\nDark rings surround its large eyes, a white stripe runs between them up to the forehead, and a dark stripe runs from the back of the head down the spine. The small ears are hidden in fur, the face is flat, the nose is wet and the tail is just a stump buried in the coat.\n\nIts hands grip strongly, and the second finger is shortened. On the lower jaw, six forward-pointing teeth form a toothcomb, which it uses for grooming and for scraping gum off bark. For a mammal of its size it has an extremely low metabolic rate.",
+    "life": "The Sunda slow loris is nocturnal and spends almost its whole life in the trees. By day it sleeps curled in a ball on a branch, palm frond or vine. At night it feeds mainly on phloem sap, nectar and fruit, licking wounds in bark to collect gum, and also eats spiders, insects, snails and birds' eggs.\n\nIts slow pace may be linked to the energy it spends breaking down toxic plant compounds in its food. It climbs with three limbs gripping at a time and can switch between branches with almost no noise or change of speed, or hang by its feet for long periods.\n\nAgainst predators such as pythons, hawk-eagles and Sumatran orangutans it relies mostly on staying hidden, so it gives no alarm calls; if found, it may bite, curl up to expose its toxic fur, or drop from the tree. Adults are mostly solitary, but where home ranges overlap a male, a female and their young form loose, friendly groups.",
+    "family": "Females mature at 18 to 24 months and males by 17 months. A female comes into season many times a year and is followed by males; in one case five males trailed a single female. She starts the mating, hanging from a branch while the male holds both her and the branch.\n\nPregnancy lasts about 192 days, and a single young is usual, though twins occur. The young stays with its parents until it disperses at 16 to 27 months, generally once it is mature. Infants click and squeak when disturbed, and the adults groom toxin into their offspring's fur as well as their own.",
+    "remarkable": "The toxin comes from glands on the inside of the elbows. The loris licks the gland and spreads the secretion through its fur with its toothcomb.\n\nThe oily secretion is also used to leave scent messages, and it is dangerous to people: someone who is allergic to it can go into shock and may even die.",
+    "outlook": "The Sunda slow loris was assessed as Endangered on the IUCN Red List in 2020, and in 2007 it was moved to CITES Appendix I, banning international trade. The biggest threat is the exotic pet trade.\n\nSlow lorises are the most commonly traded protected primates in Southeast Asia, and this species has become one of the most abundant primates on sale in Indonesian markets. Sellers often pull out the animals' teeth, causing infections that kill up to 90%, and a loris without teeth can never be returned to the wild. It is also hunted for traditional medicine, killed as a crop pest and squeezed by severe habitat loss.\n\nBecause it needs an unbroken canopy to travel, fragmented forest strands populations in isolated patches. Indonesian law protects it but is poorly enforced, and its total population is unknown.",
+    "people": "Its species name, coucang, comes from kukang, its Indonesian name. Indonesians also call it malu-malu, meaning 'shy', and some local people call it kuskus because they don't distinguish it from the cuscus possums. In Thailand it is ling lom, the 'wind monkey', and in Malaysia it is sometimes kera duku, after the duku fruit tree.\n\nIn traditional medicine its fur has been used to heal wounds, its flesh against epilepsy and its eyes in love potions. Captive lorises die at high rates from stress, poor diet and infection, so the pet trade keeps taking replacements from the wild.",
+    "relatives": "The Dutch naturalist Arnout Vosmaer described the animal in 1770 as a kind of sloth, the 'five-fingered sloth of Bengal', and Pieter Boddaert named it Tardigradus coucang in 1785. For decades all slow lorises were lumped into this one species, until the pygmy and Bengal slow lorises were split off and, in 2010, the Javan and Bornean slow lorises were raised to full species as well.\n\nIt is a strepsirrhine primate, and when the genus Nycticebus was created in 1812 it was made the type species, though that choice was later questioned. It is easily confused with the Bengal slow loris, which is larger and greyer with less contrasting markings, and DNA shows that genes have flowed between the two where they meet.",
+    "didYouKnow": "When exploring somewhere new or being handled, it makes ultrasonic calls too high for human ears to hear.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "27–38 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 600–685 g"
+      },
+      {
+        "label": "Gestation",
+        "value": "About 192 days"
+      },
+      {
+        "label": "Diet",
+        "value": "Sap, nectar, fruit, insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the Sunda slow loris make its toxin?",
+        "choices": [
+          "Glands on its elbows",
+          "In its teeth",
+          "Glands in its tail",
+          "In special pouches under its tongue, like some snakes"
+        ],
+        "explanation": "Glands on the inside of its elbows produce the secretion, which it spreads through its fur."
+      },
+      {
+        "prompt": "What does the Thai name ling lom mean?",
+        "choices": [
+          "Wind monkey",
+          "Shy one",
+          "Night ghost",
+          "Little sloth that sleeps all day in the forest"
+        ],
+        "explanation": "In Thailand the loris is called ling lom, the 'wind monkey'."
+      },
+      {
+        "prompt": "Why can't many lorises rescued from the pet trade be released?",
+        "choices": [
+          "Their teeth have been pulled",
+          "They have forgotten how to climb",
+          "Their fur loses its toxin",
+          "They lose their sense of smell"
+        ],
+        "explanation": "Sellers often pull their teeth, and a loris without teeth cannot survive in the wild."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Fauna & Flora",
+        "url": "https://www.fauna-flora.org",
+        "blurb": "Works with local partners to protect threatened species and forests, including in Sumatra."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Protects threatened tropical forests in Southeast Asia and beyond."
+      }
+    ]
+  },
+  {
+    "id": "tasmanian-devil",
+    "name": "Tasmanian Devil",
+    "scientificName": "Sarcophilus harrisii",
+    "wikipediaTitle": "Tasmanian devil",
+    "group": "mammal",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Forests, woodlands and farmland across the island of Tasmania",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -42.0,
+      "longitude": 146.5
+    },
+    "mapSpan": 6,
+    "tagline": "Tasmania's screaming scavenger with a bone-crushing bite",
+    "lede": "Black, stocky and the size of a small dog, the Tasmanian devil announces itself with an ear-splitting screech. Since the thylacine died out in 1936, it has been the largest carnivorous marsupial in the world, and its jaws can crush bone and bite through thick wire.",
+    "home": "Devils once lived across mainland Australia but vanished there about 3,500 years ago, around the same time as the thylacine; the dingo, growing human activity and climate change have all been suggested as causes. Today wild devils are found only in Tasmania, in every habitat on the island, and on Robbins Island, which joins Tasmania at low tide.\n\nTheir strongholds are the drier east and north-west, where they favour dry sclerophyll forest, coastal woodland and heath, and open rather than tall forest. In late 2020, 26 devils were released into a sanctuary run by Aussie Ark in the Barrington Tops of New South Wales, the first devils on the Australian mainland in over 3,000 years.",
+    "anatomy": "Males average about 65 centimetres in head and body plus a 26 centimetre tail, and weigh about 8 kg; females are smaller, averaging about 6 kg. The fur is black, usually with irregular white patches on the chest and rump, though about 16% of wild devils have none.\n\nUnusually for a marsupial, the front legs are slightly longer than the back legs, and each front foot has a sideways toe that helps it hold food. Devils store fat in their tails, so a healthy devil has a fat tail.\n\nRelative to its size, it has the most powerful bite of any living mammalian carnivore, and its jaws open to 75 to 80 degrees; its teeth and jaws resemble a hyena's. Long whiskers on the face and head help it find food in the dark, hearing is its main sense, and it can smell food up to 1 km away. The female's pouch opens backwards.",
+    "life": "Devils are mainly active at night and around dusk and dawn, spending the day in dense bush or a den; old wombat burrows are prized. They can take prey up to the size of a small kangaroo but more often scavenge carrion.\n\nWombats are a favourite, and the diet also includes wallabies, possums, birds, fish, frogs, insects and fruit. Near people they have even stolen and chewed shoes. They can sprint at 25 km/h on flat ground, keep up about 10 km/h for long periods, climb trees when young, and swim across rivers. Though they live alone, devils often eat together, and these raucous gatherings of up to 12 animals can be heard several kilometres away.\n\nAt a carcass they settle who eats first with some 20 postures and 11 kinds of sound, from clicks and shrieks to growls, including a characteristic gaping yawn.",
+    "family": "Females breed from their second year, mating in sheltered dens around March. Males fight over females and guard them afterwards, and one pair stayed in the den for eight days.\n\nAfter a pregnancy of three weeks, the female gives birth to 20 to 30 tiny young, each weighing about 0.2 grams. They race to the pouch, but it holds only four nipples, so no more than four can survive. The young, called pups, joeys or imps, stay attached to a nipple for about 100 days and leave the pouch at around 105 days, weighing about 200 grams.\n\nThey then spend about three more months in the den, sometimes riding on their mother's back when she hunts, and become independent at around nine months. Devils are fully grown at two, and few live beyond five years in the wild.",
+    "remarkable": "Devils are being killed by a cancer that spreads like an infection. Devil facial tumour disease, first seen in 1996 in north-eastern Tasmania, is a transmissible cancer: living tumour cells pass from one devil to another without triggering the new host's immune system.\n\nInfected devils die within months, dominant animals that bite more are more exposed, and only the west coast and far north-west of the island remain free of it.",
+    "outlook": "The IUCN reclassified the Tasmanian devil as Endangered in 2009. Since the mid-1990s the population has fallen by more than 80%, mostly because of facial tumour disease, and by 2008 only around 10,000 to 15,000 were thought to remain in the wild. Many devils are also killed on roads, because they feed on roadkill and are hard for drivers to see at night; traffic-slowing measures, reflectors and alternative pathways are used to reduce the toll.\n\nScientists monitor wild populations and remove diseased animals in some areas, and since 2013 devils have been sent to zoos around the world under the Save the Tasmanian Devil Program. In 2020, one of the last disease-free wild populations was reported to be suffering from inbreeding.",
+    "people": "European settlers ate devils, saying they tasted like veal, and from 1830 bounties were paid to remove them from farms, as they were wrongly blamed for killing livestock. Trapping and poisoning brought them close to extinction until they were protected by law in June 1941. Early explorers who heard their unearthly calls at night named them 'Beelzebub's pup', and the scientific names Sarcophilus satanicus and Diabolus ursinus followed. Tasmanian Aboriginal names recorded for the devil include tarrabah and purinina.\n\nToday it is the state emblem of Tasmania and the logo of its national parks service, and worldwide it is best known through Taz, the whirling Looney Tunes character created in 1954, who has little in common with the real animal.",
+    "relatives": "The devil belongs to the Dasyuridae, the family of carnivorous marsupials, and its closest living relatives are the quolls; its lineage is thought to have split from theirs 10 to 15 million years ago. It is only distantly related to the thylacine.\n\nSarcophilus means 'flesh-lover', and the full name honours George Harris, who first described it in 1807, believing it was a kind of opossum. Two other Sarcophilus species are known only from Pleistocene fossils. Living devils have low genetic diversity compared with other Australian marsupials.",
+    "didYouKnow": "A 7,000-year-old human skeleton found in New South Wales wore a necklace of 178 teeth taken from 49 different devils.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "57–65 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "About 6–8 kg"
+      },
+      {
+        "label": "Litter",
+        "value": "20–30 born, 4 can survive"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Rarely over 5 years wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How many nipples does a female devil's pouch have?",
+        "choices": [
+          "Four",
+          "Two",
+          "Eight",
+          "Thirty, one for each newborn in the litter"
+        ],
+        "explanation": "With only four nipples, no more than four of the 20 to 30 newborns can survive."
+      },
+      {
+        "prompt": "What is unusual about devil facial tumour disease?",
+        "choices": [
+          "It is a contagious cancer",
+          "It only affects males",
+          "It is spread by mosquitoes and ticks living in the forest",
+          "It turns the fur white"
+        ],
+        "explanation": "Living tumour cells pass from one devil to another, making it a transmissible cancer."
+      },
+      {
+        "prompt": "In what year were devils returned to the Australian mainland?",
+        "choices": [
+          "2020",
+          "1941",
+          "1936",
+          "1996, when a breeding pair escaped from a zoo"
+        ],
+        "explanation": "In late 2020, 26 devils were released into an Aussie Ark sanctuary in New South Wales."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF-Australia",
+        "url": "https://www.wwf.org.au",
+        "blurb": "Works to protect Australia's threatened wildlife and habitats."
+      },
+      {
+        "name": "Aussie Ark",
+        "url": "https://www.aussieark.org.au",
+        "blurb": "Runs sanctuaries that breed and protect threatened Australian species, including the Tasmanian devil."
+      }
+    ]
+  },
+  {
+    "id": "vaquita",
+    "name": "Vaquita",
+    "scientificName": "Phocoena sinus",
+    "wikipediaTitle": "Vaquita",
+    "group": "mammal",
+    "regions": [
+      "centralAmerica",
+      "naWest"
+    ],
+    "range": "Only the shallow northern end of the Gulf of California, Mexico",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 31.0,
+      "longitude": -114.6
+    },
+    "mapSpan": 5,
+    "tagline": "The world's smallest porpoise, down to its last few",
+    "lede": "The vaquita is the smallest whale, dolphin or porpoise alive, a shy little porpoise with dark rings around its eyes like smudged mascara. It lives in a single corner of a single sea, and so few remain that every one of them counts.",
+    "home": "Vaquitas live only at the northern end of the Gulf of California, also called the Sea of Cortez, off Baja California in Mexico. This is the smallest range of any cetacean. They keep to shallow, murky coastal water less than 150 metres deep.\n\nTheir ancestors are thought to have come from the Southern Hemisphere, crossing the equator northwards more than 2.5 million years ago during a cool period of the Pleistocene. In 2019 the UNESCO World Heritage Site where the last vaquitas live was declared a World Heritage Site in Danger. Because they live so close to shore, vaquitas are also exposed to pollution and pesticides washed off farmland.",
+    "anatomy": "Females grow to about 150 centimetres and males to about 140 centimetres, and adults weigh roughly 27 to 68 kg. Females are longer than males, with bigger heads and wider flippers, while males have taller dorsal fins.\n\nThe vaquita has a small body, a rounded head with no obvious beak, and an unusually tall, triangular dorsal fin. It is mostly grey, darker on the back and white underneath, and prominent black patches surround its lips and eyes. These features make it easy to tell apart from any other cetacean in its range.",
+    "life": "Vaquitas are generalist hunters that feed on fish living near the sea floor, along with crustaceans and squid; grunts and croakers make up most of the diet. They are usually seen alone or in pairs, often a mother with her calf, though groups of up to 10 have been observed. Little else is known about their daily lives.\n\nLike other porpoises they use echolocation, and researchers listen for their clicks to learn where they go; in 2023 reports of echolocation outside the main protected zone led the Mexican navy to extend its protective measures. Sharks are among their natural predators.",
+    "family": "Vaquitas mature at three to six years old and are thought to live about 20 years. Males seem to compete for females: they are smaller than females, live in small groups and have very large testes, nearly 3% of their body weight. Pregnancy lasts 10 to 11 months, and a single calf is born, usually between February and April.\n\nThe mother nurses it for 6 to 8 months, until it becomes independent. Early studies of stranded animals suggested females give birth only every other year, but recent sightings suggest they can breed annually. Either way, such slow breeding means the population cannot quickly replace the animals it loses.",
+    "remarkable": "Science barely met the vaquita before it began to vanish. Kenneth Norris and William McFarland described the species in 1958 from skulls found on a beach, and nearly 30 years passed before fresh specimens allowed scientists to describe the living animal fully.\n\nIts genome shows that its ancestors had already passed through a population bottleneck long ago, which may explain why the few survivors still appear healthy despite their tiny numbers.",
+    "outlook": "The vaquita has been listed as Critically Endangered on the IUCN Red List since 1996 and is considered the most endangered marine mammal in the world. The first full survey in 1997 estimated 567 animals; by 2007 there were about 150, and fewer than 19 by 2018.\n\nA 2024 survey counted at least 6 to 8, and monitoring in 2025 identified 7 to 10 individuals along with newborn calves. The cause is drowning in gillnets, especially those set illegally for the totoaba, a large fish whose swim bladder sells on the black market in China.\n\nMexico has banned gillnets in the area and created a zero-tolerance fishing zone, and since 2022 the navy has dropped concrete blocks with hooks onto the sea floor to snag illegal nets. A 2022 study suggested the species could still recover if all bycatch stopped.",
+    "people": "'Vaquita' is Spanish for 'little cow'. The totoaba trade that threatens it is so lucrative that the swim bladders are called the 'cocaine of the sea': in 2017 poachers were paid up to 20,000 US dollars per kilogram, and cartels profit from the trade.\n\nUnder the PACE-VAQUITA programme, launched in 2008, fishermen were offered vaquita-safe gear and payments to give up gillnets, but hundreds of poachers kept fishing. In 2017 a rescue effort called VaquitaCPR tried to move vaquitas into protected sea pens.\n\nIt caught two; one was released and the other died shortly after capture, both having suffered from shock. Groups such as Sea Shepherd work with the Mexican Navy to remove illegal nets, and in 2020 the United States banned imports of Mexican seafood caught in vaquita habitat.",
+    "relatives": "The vaquita is one of four porpoises in the genus Phocoena, most of which live in coastal waters.\n\nIts closest relative is Burmeister's porpoise of South America, followed by the more oceanic spectacled porpoise; both live in the Southern Hemisphere, far from the Gulf of California. Among its relatives, the vaquita stands out for its tiny size, its tall triangular fin and its dark eye and lip patches.",
+    "didYouKnow": "Roughly 80% of the shrimp caught in the northern Gulf of California, where marine mammal bycatch is high, is eaten in the United States.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 150 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 27–68 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 20 years"
+      },
+      {
+        "label": "Population",
+        "value": "7–10 seen in 2025"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does 'vaquita' mean in Spanish?",
+        "choices": [
+          "Little cow",
+          "Little whale",
+          "Shy one",
+          "Sea ghost of the northern gulf"
+        ],
+        "explanation": "Vaquita is Spanish for 'little cow'."
+      },
+      {
+        "prompt": "What is the main cause of the vaquita's decline?",
+        "choices": [
+          "Drowning in gillnets",
+          "Pollution",
+          "Shark attacks",
+          "Noise from tourist boats in the gulf"
+        ],
+        "explanation": "Vaquitas drown as bycatch in gillnets, especially illegal nets set for totoaba."
+      },
+      {
+        "prompt": "Which porpoise is the vaquita's closest relative?",
+        "choices": [
+          "Burmeister's porpoise",
+          "Harbour porpoise",
+          "Dall's porpoise",
+          "Finless porpoise"
+        ],
+        "explanation": "Its closest relative is Burmeister's porpoise of the Southern Hemisphere."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Campaigns to end the bycatch and illegal fishing that threaten the vaquita."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Works to protect ocean wildlife from destructive fishing and bycatch."
+      }
+    ]
+  },
+  {
+    "id": "west-indian-manatee",
+    "name": "West Indian Manatee",
+    "scientificName": "Trichechus manatus",
+    "wikipediaTitle": "West Indian manatee",
+    "group": "mammal",
+    "regions": [
+      "naEast",
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "Warm coasts, rivers and estuaries from Florida through the Caribbean to Brazil",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 18.0,
+      "longitude": -75.0
+    },
+    "mapSpan": 45,
+    "tagline": "A gentle, whiskered grazer of warm Caribbean waters",
+    "lede": "Slow, round and utterly unhurried, the West Indian manatee drifts through warm shallows grazing on seagrass like an underwater cow. It is the largest living sirenian, a cousin of the dugong, and its greatest danger is not a predator but passing boats.",
+    "home": "West Indian manatees live in shallow coastal waters, rivers and estuaries, and cope easily with both fresh and salt water. They have a very low metabolism and no thick layer of insulating fat, so they need warmth; long spells below about 20 °C can kill them.\n\nThe Florida manatee lives mainly along the coasts of Florida, but has wandered as far as Massachusetts and Texas, and in 2006 one turned up in Memphis, Tennessee, more than 1,100 km up rivers from the Gulf of Mexico. In winter Florida's manatees gather at natural warm springs and in the warm water released by power plants. The Antillean manatee is scattered through the Caribbean, from Mexico and the Greater Antilles south to Brazil.",
+    "anatomy": "Adults are usually 2.7 to 3.5 metres long and weigh 200 to 600 kg, with females slightly larger; the biggest on record weighed 1,655 kg and was 4.6 metres long. There are no hind limbs, just a broad, spoon-shaped paddle for a tail, and no external ears. The thick grey skin often carries algae and barnacles, and white scars from injuries last for decades, so researchers can recognise individuals.\n\nManatees have no incisors, only horny plates, and their molars work like a conveyor belt: new teeth form at the back and creep forward at 1 to 2 millimetres a month until they fall out, earning the nickname 'marching molars'. Their dense, heavy bones act as ballast against their buoyant fat, and their diaphragm is split into two halves that can work independently.",
+    "life": "Manatees are strict herbivores, eating more than 60 kinds of aquatic plants, with seagrass as a staple. They graze for five or more hours a day and eat 4 to 10% of their body weight daily, using flexible, grasping lips to pull in food.\n\nDigestion is slow: food takes about seven days to pass through a gut whose contents make up nearly a quarter of the animal's weight. They are often solitary but gather at warm-water spots in winter. Having evolved without natural predators, they never developed escape behaviour, and they swim slowly.\n\nThey communicate with squeaks and screeches that differ with age and sex, and may recognise one another's voices, especially mothers and calves. Their hearing is broad, from 0.25 to 90.5 kHz, but it is easily drowned out by background noise such as snapping shrimp.",
+    "family": "Males mature at 3 to 4 years and females at 3 to 5, though most females first breed successfully at 7 to 9. When a female comes into season, several males gather around her in a mating herd that can last 2 to 4 weeks, and larger, older males usually win.\n\nPregnancy lasts 12 to 14 months and produces one calf, rarely twins. Calves are born 1.2 to 1.4 metres long and weigh 27 to 32 kg, and they suckle from teats under their mother's flippers for one to two years.\n\nDuring that time they learn where to find warm water in winter and which routes to travel in summer. Females calve every two to three years and can breed into their late 30s. Manatees can live 50 years or more; a captive manatee named Snooty lived to 69.",
+    "remarkable": "A manatee's whiskers are not just on its face. Sensory hairs called vibrissae cover its entire body, each set in a blood-filled capsule packed with nerve endings, and those on the face are about 30 times denser than elsewhere.\n\nThey are sensitive enough to tell textures apart, and they let manatees detect movements in the water, much as fish do with their lateral line, which helps them navigate murky rivers.",
+    "outlook": "In late 2023 the IUCN assessed the West Indian manatee and its Florida subspecies as Vulnerable, and the Antillean subspecies as Endangered. In the 1970s only several hundred were left in the United States; decades of protection led the US to downgrade it from endangered to threatened in 2017, though a petition to restore endangered status began in 2025.\n\nBoat strikes cause over 20% of deaths each year, and 96% of adult Florida manatee carcasses bear scars from collisions, which is why Florida created new slow-speed boating zones in 2004. Manatees also die from red tide algal blooms, from cold as old power plants that provide warm refuges close, and from entanglement in fishing line and crab traps. The Antillean subspecies faces habitat fragmentation and illegal hunting.",
+    "people": "People have long hunted manatees. In Brazil, hides were exported from 1935 to make heavy-duty leather, and until hunting was banned there in 1973 more than 1,000 manatees a year were killed.\n\nIn the United States the species is protected by the Marine Mammal Protection Act of 1972 and the Florida Manatee Sanctuary Act of 1978. Large numbers gather each winter around Crystal River and Blue Spring in central and north Florida. Manatees poisoned by red tide can survive if they are rescued and rehabilitated in time, and during one outbreak in 1996 more than 150 died.",
+    "relatives": "The West Indian manatee belongs to the order Sirenia, which also includes the dugong, the other manatees and the extinct Steller's sea cow. It has two subspecies: the Florida manatee, Trichechus manatus latirostris, and the Antillean manatee, T. m. manatus. Genetic studies point to three main groups: Florida and the Greater Antilles; Mexico, Central America and northern South America; and north-eastern South America. Manatees are related to elephants.\n\nLike an elephant, a manatee has a grasping snout, and the female's reproductive anatomy is most like an elephant's. During the Pleistocene the species ranged more widely across North America, with fossils found in Texas and along the Mississippi and Ohio rivers.",
+    "didYouKnow": "In February 2026 a 71-year-old captive manatee called Romeo, living in Fort Walton Beach, was recognised as the world's oldest.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "2.7–3.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "200–600 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "50+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Seagrass and water plants"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why are manatee teeth called 'marching molars'?",
+        "choices": [
+          "They move forward and are replaced",
+          "They click when it eats",
+          "They grow in rows like soldiers on parade",
+          "They are shaped like hooves"
+        ],
+        "explanation": "New molars form at the back and creep forward until they fall out."
+      },
+      {
+        "prompt": "Roughly what share of yearly manatee deaths do boat collisions cause?",
+        "choices": [
+          "Over 20%",
+          "About 1%",
+          "Around 5%",
+          "More than 90% of all deaths every year"
+        ],
+        "explanation": "Watercraft collisions cause over 20% of manatee deaths each year."
+      },
+      {
+        "prompt": "Why do Florida manatees gather at power plants in winter?",
+        "choices": [
+          "For warm water",
+          "For food",
+          "To breed",
+          "To avoid predators such as sharks and orcas"
+        ],
+        "explanation": "Manatees cannot tolerate long spells below about 20 °C, so they seek out warm outflows."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Save the Manatee Club",
+        "url": "https://www.savethemanatee.org",
+        "blurb": "Works to protect manatees and their aquatic habitats in Florida and beyond."
+      }
+    ]
+  },
+  {
+    "id": "cane-toad",
+    "name": "Cane Toad",
+    "scientificName": "Rhinella marina",
+    "wikipediaTitle": "Cane toad",
+    "group": "amphibian",
+    "regions": [
+      "southAmerica",
+      "centralAmerica",
+      "oceania"
+    ],
+    "range": "Native from southern Texas to the Amazon; introduced to Australia and many islands",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 5.0,
+      "longitude": -65.0
+    },
+    "mapSpan": 60,
+    "tagline": "A poisonous pest-control plan that went badly wrong",
+    "lede": "The cane toad is a warty, golden-eyed giant that was shipped around the world to eat beetles in sugarcane fields. It did a poor job of that, but it proved superb at spreading, and its toxic skin has made it a pest across much of the Pacific.",
+    "home": "In its native range the cane toad lives from the Rio Grande Valley of southern Texas to the central Amazon and south-eastern Peru, plus islands near Venezuela such as Trinidad and Tobago. It favours open grassland and woodland, and shows a distinct preference for places changed by people, such as gardens and drainage ditches.\n\nDespite the names 'marine toad' and Rhinella marina, it does not live in the sea, although its tadpoles can tolerate some salt. It has been introduced to Australia, Florida, Papua New Guinea, the Philippines, Taiwan, several Japanese islands, most Caribbean islands, Fiji, Hawaiʻi and many other Pacific islands.\n\nIn Australia it spread from Queensland into the Northern Territory and New South Wales, and in 2010 one turned up at Broome in Western Australia. Toads in South America live at only 1 to 2% of the density found in Australia.",
+    "anatomy": "Considered the largest member of the true toad family, the cane toad usually measures 10 to 15 centimetres, and the biggest on record had a body 24 centimetres long. Females are significantly longer than males.\n\nIts skin is dry and warty, coloured grey, yellowish, red-brown or olive-brown, with a cream belly. Ridges above the eyes run down the snout, the pupils are horizontal and the irises are gold. Behind each eye sits a large parotoid gland.\n\nWhen threatened, these glands and others across the back ooze a milky-white poison called bufotoxin, and the toad can also inflate its lungs and lift its body to look bigger. It is tough: some can survive losing more than half their body water, and some populations adjust to cold within a few hours.",
+    "life": "Cane toads find food mainly by sight but also by smell, and they eat almost anything: insects, snails, crustaceans, small mammals, reptiles, other amphibians, birds and even bats, as well as plants, pet food, faeces and household rubbish.\n\nThis unusual willingness to eat dead as well as living matter is part of their success. Predators in the native range include caimans, snakes, eels and bullet ants. In Australia some animals have learned to eat them safely.\n\nCrows flip toads onto their backs, and rakali, the Australian water rat, learned within two years to remove the poisonous parts and eat the heart and thigh muscle with surgical precision. Meat ants are unaffected by the toxin, and because a cane toad's response to attack is to sit still, the ants can kill and eat it.",
+    "family": "A female lays 8,000 to 25,000 eggs at once, in strings of jelly that can stretch 20 metres. The tadpoles usually hatch within 48 hours; small, black and toxic, they gather in schools on the bottom and turn into toadlets about 10 millimetres long after around four weeks.\n\nYoung toads grow fast, which matters, because they lose the protection of the toxic egg and tadpole stages before their own poison glands are fully developed. Only about 0.5% reach adulthood. In the tropics they breed all year; in cooler places, only in warm, wet seasons. They live 10 to 15 years in the wild, and one captive toad reportedly survived for 35 years.",
+    "remarkable": "In Australia the toads are evolving fast. Tadpoles there have become 30 times more likely to show an interest in eating their siblings and 2.6 times more likely to actually do it, and they cut their own tadpole stage short when older tadpoles are around.\n\nAll this has happened in less than a century, since 102 toads were brought from Hawaiʻi in 1935.",
+    "outlook": "The cane toad is abundant and still spreading, and it is the native wildlife around it that suffers. In Australia, several monitor lizards, venomous land snakes and freshwater crocodiles have declined where toads arrived, and the northern quoll has vanished from parts of Kakadu National Park. The toads are also dangerous to pets, especially dogs that lick or bite them.\n\nOne control tactic is to teach predators to avoid them, using sausage baits made from toad meat and a nausea-inducing chemical, or releases of young, non-lethal 'teacher toads' ahead of the invasion front. Where yellow-spotted monitors had met teacher toads, many survived the real invasion; elsewhere they were almost wiped out. In Florida, residents are advised to kill cane toads.",
+    "people": "The species got its common name from attempts to control the cane beetle, which damages sugarcane. Introductions began before the 1840s in Martinique and Barbados, and after a Nature article titled 'Toads save sugar crop' credited them with rescuing Puerto Rico's harvest, they were shipped across the Pacific; Hawaiʻi alone received over 600,000.\n\nQueensland released them in 1935, but they never controlled the beetles, partly because the beetles live at the tops of the cane and toads climb poorly. People have found other uses.\n\nThe Embera-Wounaan of South America used the toxin as arrow poison, toads were used in mid-20th-century pregnancy tests and as laboratory animals, and the skin is made into leather. In Trinidad they are called crapaud, French for toad, and the 1988 film Cane Toads: An Unnatural History told their Australian story.",
+    "relatives": "Carl Linnaeus named it Rana marina in 1758, basing it on an illustration by Albertus Seba, who wrongly believed it lived both on land and in the sea. It was moved to Bufo in 1799 and to Rhinella, a genus of Central and South American true toads, in 2007, though some herpetologists still call it Bufo marinus.\n\nIts genome confirms an origin in northern South America and a close relationship to Rhinella diptycha. Since 2016, toads from Mesoamerica and north-western South America have sometimes been treated as a separate species, Rhinella horribilis. A fossil from the late Miocene of Colombia looks identical to modern cane toads.",
+    "didYouKnow": "Bufotenin, one of the chemicals in cane toad secretions, is classed under Australian law alongside heroin and LSD.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "10–15 cm, up to 24 cm"
+      },
+      {
+        "label": "Eggs",
+        "value": "8,000–25,000 per clutch"
+      },
+      {
+        "label": "Lifespan",
+        "value": "10–15 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Almost anything"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why was the cane toad introduced to Australia?",
+        "choices": [
+          "To eat cane beetles",
+          "As a pet",
+          "To control rabbits",
+          "To feed crocodiles on farms in northern Queensland"
+        ],
+        "explanation": "It was released to control beetles in Queensland's cane fields, but failed."
+      },
+      {
+        "prompt": "Roughly what share of cane toads survive to adulthood?",
+        "choices": [
+          "About 0.5%",
+          "About 10%",
+          "About half",
+          "Nearly all of them, thanks to their toxin"
+        ],
+        "explanation": "Only about 0.5% reach adulthood, partly because young toads lose their toxicity for a while."
+      },
+      {
+        "prompt": "How have rakali learned to eat cane toads?",
+        "choices": [
+          "By removing the poisonous parts",
+          "By drowning them",
+          "By eating only tadpoles",
+          "By rolling them in mud"
+        ],
+        "explanation": "Rakali flip the toads over, remove the poisonous parts and eat the heart and thigh muscle."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Protects native Australian wildlife, including species harmed by invasive animals."
+      },
+      {
+        "name": "IUCN",
+        "url": "https://www.iucn.org",
+        "blurb": "Brings together governments and experts to tackle threats such as invasive species."
+      }
+    ]
+  },
+  {
+    "id": "common-kingfisher",
+    "name": "Common Kingfisher",
+    "scientificName": "Alcedo atthis",
+    "wikipediaTitle": "Common kingfisher",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "range": "Rivers, lakes and coasts across Europe, Asia and North Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": 60.0
+    },
+    "mapSpan": 70,
+    "tagline": "A flash of blue with eyes built for diving",
+    "lede": "Most people know the common kingfisher as an electric-blue streak flying low and fast along a river. Wait a little longer and you may see it perched on a branch, bill pointed down, before it plunges into the water and comes up with a small fish.",
+    "home": "The common kingfisher breeds across much of Europe and Asia, mostly south of 60°N, and in North Africa, where it is mainly a winter visitor with a few residents on the coasts of Morocco and Tunisia. Other subspecies live in South and Southeast Asia, New Guinea and the Solomon Islands.\n\nIn temperate regions it lives by clear, slow-flowing streams, rivers and lakes with well-vegetated banks and overhanging branches; in winter it moves more to estuaries, harbours and rocky shores. Where rivers stay unfrozen, birds stay put all year, but those from colder regions migrate after breeding, mostly at night.\n\nSome Siberian breeders travel at least 3,000 km to their wintering grounds. Because it needs clean, clear water to spot its prey, the kingfisher's presence is a good sign of a healthy river.",
+    "anatomy": "It is about the size of a sparrow: 16 centimetres long, with a 25 centimetre wingspan and a weight of 34 to 46 grams. The shape is classic kingfisher, with a short tail, a dumpy body, a big head and a long bill. In western Europe the upperparts are green-blue with a pale azure back and rump, the underparts and ear patches are orange-rufous, the throat is white and the legs are bright red.\n\nFemales look like males but have an orange-red lower bill with a black tip. Young birds are duller and greener, with black legs at first. Adults moult gradually between July and November, and the main flight feathers take 90 to 100 days to regrow.",
+    "life": "A kingfisher hunts from a perch 1 to 2 metres above the water, bobbing its head to judge the distance when it spots prey, then diving steeply, usually no deeper than 25 centimetres. Back on the perch it beats the fish against the branch, then swallows it head first.\n\nFish make up most of the diet, typically minnows, sticklebacks, small roach and trout only a few centimetres long, but it also takes dragonfly larvae, water beetles, freshwater shrimps and the occasional newt. It must eat about 60% of its body weight every day, so it defends a stretch of river fiercely, usually at least 1 km long.\n\nIntruders are met with displays, and fights can end with one bird grabbing the other's bill and holding it underwater. It has no song, only a sharp whistled 'chee'.",
+    "family": "Pairs form in autumn but keep separate territories until spring. The male courts by chasing the female and later by feeding her. Together they dig a straight burrow 60 to 90 centimetres long into a low, steep riverbank, ending in a chamber that soon fills with fish bones and pellets.\n\nThe female lays two to ten glossy white eggs; both parents incubate by day but only she does at night, and the eggs hatch after 19 to 20 days. The chicks stay in the nest for 24 to 25 days, and a pair may raise two or even three broods in a season.\n\nLife is hard for fledglings: some become waterlogged and drown on their first dives, about half die within a week or two, and only a quarter survive to breed. Few kingfishers live beyond one breeding season, though the oldest on record reached 21.",
+    "remarkable": "Diving creates a problem, because water bends light differently from air. Each kingfisher eye has two foveae, patches packed with light receptors, and the bird switches from the main one to the second as it enters the water, keeping its prey in sharp view.\n\nAs a result it sees with one eye at a time in air but with both eyes together underwater, while a transparent third eyelid shields the open eye.",
+    "outlook": "The common kingfisher has a huge range of about 10 million square kilometres and an estimated 160,000 to 320,000 birds in Europe alone. Populations appear stable, and it is evaluated as Least Concern. Hard winters kill many birds through cold and hunger, and summer floods can wash out nests or make fishing impossible.\n\nPeople add to the losses: cats, rats, traffic, window strikes and riverbank works all take a toll, and river pollution makes many stretches unsuitable. Because kingfishers sit high in the food chain, chemicals build up in their bodies. Replacing natural banks with artificial channels destroys the fish they depend on, but they can tolerate towns as long as the water stays clean.",
+    "people": "In Victorian times kingfishers were killed to be stuffed and displayed in glass cases or used in hat making, and anglers persecuted them or took their feathers for fishing flies, though this is now largely in the past.\n\nThe English naturalist William Yarrell recorded a country custom of hanging a dead kingfisher from a thread, in the belief that it would swing round to show where the wind would blow. The bird's beauty still wins admirers: the European Central Bank shortlisted a 'kingfisher in a waterfall or runpool' as a possible design for the front of a redesigned 10 euro banknote.",
+    "relatives": "Carl Linnaeus described the species in 1758 as Gracula atthis. Its genus name, Alcedo, is Latin for kingfisher, from the Greek halcyon, while atthis comes from Atthis, a beautiful young woman of Lesbos and a favourite of the poet Sappho. The genus has seven small kingfishers, all of which eat fish, and the closest relative is the cerulean kingfisher of Indonesia, which has white underparts.\n\nSeven subspecies differ in the shade of blue and the richness of the orange; those living south of the Wallace Line are the bluest. In North Africa, Europe and Asia north of the Himalayas it is the only small blue kingfisher, but in South and Southeast Asia it can be confused with six similar species.",
+    "didYouKnow": "Kingfisher parents raising eight chicks were found to deliver almost 900 fish over the nestling period.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "16 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "25 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "34–46 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly small fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How much of its body weight must a kingfisher eat each day?",
+        "choices": [
+          "About 60%",
+          "About 5%",
+          "About 20%",
+          "Twice its own weight, in hundreds of tiny fish"
+        ],
+        "explanation": "It needs about 60% of its body weight daily, so it guards a long stretch of river."
+      },
+      {
+        "prompt": "Where does the common kingfisher nest?",
+        "choices": [
+          "In a burrow in a riverbank",
+          "In a tree hole",
+          "In reeds",
+          "On a platform of sticks built over the water"
+        ],
+        "explanation": "The pair digs a burrow 60 to 90 centimetres long into a low riverbank."
+      },
+      {
+        "prompt": "How can you tell a female kingfisher from a male?",
+        "choices": [
+          "Her lower bill is orange-red",
+          "She is green",
+          "She has no orange",
+          "She is larger"
+        ],
+        "explanation": "Females look like males except for an orange-red lower bill with a black tip."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "Protects birds and their habitats across the UK, including rivers and wetlands."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership working to conserve birds and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "seahorse",
+    "name": "Seahorse",
+    "scientificName": "Hippocampus",
+    "wikipediaTitle": "Seahorse",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "europe",
+      "asia",
+      "oceania"
+    ],
+    "range": "Shallow tropical and temperate seas worldwide, about 45°S to 45°N",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": 120.0
+    },
+    "mapSpan": 80,
+    "tagline": "The fish where the father gives birth",
+    "lede": "A seahorse looks like a chess piece that has wandered into the sea, with a horse's head, a curled tail and a suit of bony armour. It swims upright, steers with tiny fins and leaves pregnancy to the male.",
+    "home": "There are 47 species of seahorse, found in shallow tropical and temperate seas around the world, from about 45°S to 45°N. They live in sheltered places such as seagrass beds, estuaries, coral reefs and mangroves.\n\nSome drift far from home clinging to rafts of sargassum seaweed, while others may spend their whole lives around a single sea fan. In the Atlantic the lined seahorse ranges from Nova Scotia to Uruguay, and the dwarf seahorse lives in the Bahamas.\n\nTwo species live in the Mediterranean, the long-snouted and the short-snouted seahorse, and colonies of short-snouted seahorses have been found as far north as the Thames Estuary in England. The Mediterranean species keep territories: males stay within about 1 square metre, while females range over about a hundred times that area.",
+    "anatomy": "Seahorses range from 1.5 to 35 centimetres. They have no scales; instead, thin skin is stretched over bony plates arranged in rings, and each species has its own number of rings.\n\nThis armour protects them from predators, and because of it they have no ribs. Unusually for a fish, a seahorse has a flexible neck, and on top of its head sits a crown-like 'coronet' that differs between species.\n\nIts eyes move independently, like a chameleon's. There is no tail fin; instead, the tail is made of square-sided rings and can grip like a hand, so seahorses spend much of their time anchored to seagrass or coral. Skin cells called chromatophores let them change colour, and some can grow or reabsorb spiny appendages to match their surroundings.",
+    "life": "Seahorses are slow, ambushing hunters. They have no stomach and a very simple gut, so they must eat almost constantly. Their main food is small crustaceans such as mysid shrimps and copepods, along with other invertebrates and larval fish.\n\nA seahorse waits, then lifts its head, expands its mouth and sucks the prey into its long snout, a method called pivot-feeding. The shape of its head creates little disturbance in the water, letting it get very close to its prey.\n\nThey are poor swimmers, fluttering the dorsal fin to move and using the pectoral fins to steer. The dwarf seahorse is the slowest fish in the world, with a top speed of about 1.5 metres per hour. Where vegetation is thick, seahorses swim about searching for food rather than sitting and waiting.",
+    "family": "Courtship can last several days. Pairs change colour, swim side by side holding tails and circle together in a 'predawn dance'. On the final day the male pumps water through his empty brood pouch to show it off, and the two rise snout to snout while the female inserts her ovipositor and transfers up to 1,500 eggs into his pouch.\n\nMany species stay paired through at least a breeding season. The eggs are fertilised inside the pouch, which supplies oxygen, controls salt levels and passes nutrients such as fats and calcium to the embryos.\n\nAfter 9 to 45 days the male gives birth, usually at night, pushing out typically 100 to 1,000 tiny, fully formed young with muscular contractions, and he may be ready for new eggs by morning. The young get no further care, and fewer than 0.5% survive to adulthood.",
+    "remarkable": "Male pregnancy turns the usual roles around. Producing eggs costs the female dearly, since a clutch can amount to about a third of her body weight, so it is the males that compete for partners, tail-wrestling and snapping their heads at rivals.\n\nBecause she can build her next clutch while he is pregnant, a pair can produce broods in quick succession.",
+    "outlook": "Seahorses face heavy pressure from people. About 70 million are caught each year by fishers in at least 80 countries, and coral reefs and seagrass beds are being damaged by destructive fishing and coastal development. Many die as accidental bycatch in trawls and dredges.\n\nBecause they are scattered, scarce and well hidden, they are very hard to survey, so little is known about how most populations are faring. International trade in seahorses has been controlled under CITES since 2002. Protecting seagrass meadows, mangroves, reefs and estuaries is the key to protecting seahorses, and their charm makes them popular flagship species for marine conservation campaigns.",
+    "people": "Seahorses are widely used in traditional Chinese medicine, mainly for impotence, wheezing, bedwetting and pain, despite a lack of clinical evidence, and up to 20 million a year may be caught for it. Dried seahorse sells for 600 to 3,000 US dollars per kilogram, more than silver by weight.\n\nA shift to pills and capsules has made the trade harder to track and created a market for small, spiny and dark animals once considered unusable. They are popular with aquarium keepers too, but wild-caught seahorses do poorly in tanks, often eating only live food and suffering from stress. Captive-bred animals survive better and don't affect wild populations. The 'freshwater seahorses' sometimes sold are usually pipefish.",
+    "relatives": "The name Hippocampus comes from Ancient Greek words for 'horse' and 'sea monster'. Seahorses belong to the family Syngnathidae with the pipefishes and seadragons, and evidence shows they are highly modified pipefish that took up an upright stance, perhaps because it let them catch shrimps from further away.\n\nSeahorses and pipefish are thought to have split in the Late Oligocene, possibly in the western Pacific, and the oldest seahorse fossils, from Slovenia, are about 13 million years old. The tiniest are the pygmy seahorses, under 15 millimetres tall, most of which have only been noticed since 2001 because they hide so well on sea fans and corals.",
+    "didYouKnow": "A 2016 study found the seahorse genome to be the fastest-evolving fish genome studied so far.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "1.5–35 cm"
+      },
+      {
+        "label": "Species",
+        "value": "47"
+      },
+      {
+        "label": "Brood",
+        "value": "Usually 100–1,000 young"
+      },
+      {
+        "label": "Diet",
+        "value": "Tiny crustaceans"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which parent carries seahorse eggs until they hatch?",
+        "choices": [
+          "The father",
+          "The mother",
+          "Both, taking turns",
+          "Neither; the eggs drift freely among the seagrass"
+        ],
+        "explanation": "The female places her eggs in the male's brood pouch, and he gives birth."
+      },
+      {
+        "prompt": "Why must seahorses eat almost constantly?",
+        "choices": [
+          "They have no stomach",
+          "They swim so fast",
+          "Their armour is heavy",
+          "They grow a new set of spines every week of their lives"
+        ],
+        "explanation": "With no stomach and a simple gut, they need a steady supply of food."
+      },
+      {
+        "prompt": "What is the top speed of the dwarf seahorse?",
+        "choices": [
+          "About 1.5 metres per hour",
+          "About 1 km per hour",
+          "About 10 metres per minute",
+          "About 5 metres per hour"
+        ],
+        "explanation": "The dwarf seahorse is the slowest fish in the world, at about 1.5 metres per hour."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Project Seahorse",
+        "url": "https://www.projectseahorse.org",
+        "blurb": "Researches and protects seahorses and the coastal habitats they depend on."
+      },
+      {
+        "name": "Marine Conservation Society",
+        "url": "https://www.mcsuk.org",
+        "blurb": "Works to protect seas, shores and marine wildlife around the UK."
+      }
+    ]
+  },
+  {
+    "id": "dung-beetle",
+    "name": "Dung Beetle",
+    "scientificName": "Scarabaeinae",
+    "wikipediaTitle": "Dung beetle",
+    "group": "insect",
+    "regions": [
+      "africa",
+      "europe",
+      "asia",
+      "oceania"
+    ],
+    "range": "Every continent except Antarctica, from deserts to forests",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": 20.0
+    },
+    "mapSpan": 80,
+    "tagline": "Ball-rolling recyclers that steer by the Milky Way",
+    "lede": "Few animals do a dirtier job, or do it better. Dung beetles find, shape, bury and eat droppings, and in the process they feed the soil, plant seeds and starve flies of breeding grounds. Some roll their prize away in a dead straight line.",
+    "home": "Dung beetles live on every continent except Antarctica, in deserts, grasslands, savannas, farmland and both native and planted forests. They are strongly shaped by local conditions and avoid extremely cold or dry weather.\n\nBecause they respond so closely to their surroundings, ecologists use them as indicators of the health of tropical ecosystems, tracking the effects of droughts, fires and human activity on seed dispersal, soil mixing and nutrient cycling. Some have been carried far from their homelands: the African dung beetle Digitonthophagus gazella has spread from introductions in the Americas and is probably now established in most countries between Mexico and Argentina.",
+    "anatomy": "Because they are united by diet rather than by ancestry, dung beetles come in many shapes and sizes. Like many other scarabs, they have superposition compound eyes, and they go through complete metamorphosis, from egg to larva to pupa to adult.\n\nThey are astonishingly strong for their size. A male Onthophagus taurus can pull 1,141 times its own body weight, like a person pulling six double-decker buses full of passengers, and some species can bury 250 times their own mass of dung in a single night.",
+    "life": "Most dung beetles track down dung by smell, and some small species simply cling to the animals that produce it and wait. They eat the dung of herbivores and omnivores, preferring the latter, and many also eat mushrooms and rotting leaves and fruit. A few have unusual tastes: three Neotropical Deltochilum species hunt millipedes, two Brazilian Canthon species prey on winged leafcutter ants, and Thorectes lusitanicus of the Iberian Peninsula eats acorns.\n\nIn 1991 scientists sorted them into three types. Rollers shape dung into a ball and roll it away before burying it, keeping a straight course despite any obstacles, and they must move fast because other beetles try to steal the ball.\n\nTunnellers bury dung right where they find it, and dwellers simply live inside the dung pile. The daily dung of one elephant can support 2 million beetles, and one experiment found that a 1 kg pile of elephant dung drew 13,700 beetles at night but only 3,330 by day.",
+    "family": "Among rollers, a male and a female often stay together around the ball, with the male usually pushing while the female hitches a ride or follows behind. When they find soft soil they bury the ball and mate underground.\n\nOne or both of them then prepares a brood ball, and the female lays her eggs inside it, stocking food for the young in advance. Some species stay to guard their offspring. The larvae live inside the brood balls their parents made, feeding on the dung around them as they grow.",
+    "remarkable": "Some dung beetles navigate by the night sky. The nocturnal African beetle Scarabaeus satyrus can hold its course using the Milky Way, even when only the Milky Way or clusters of bright stars are visible, making dung beetles the only insects known to steer this way.\n\nAnother African species, Scarabaeus zambesianus, orients itself by patterns of polarised moonlight, the first animal found to do so.",
+    "outlook": "Dung beetles as a group are widespread and abundant, but because they are so closely tied to their surroundings, they are sensitive to drought, fire and habitat change. Their value to people is enormous. By burying and eating dung they improve soil structure and nutrient recycling, bury seeds in tropical forests, and remove dung that would otherwise breed pests such as flies.\n\nIn the United States they are estimated to save the cattle industry about 380 million US dollars a year. In South Africa they have even helped improve soils and plant growth on rehabilitated coal mines. Introduced species can help farms but might displace native beetles in changed landscapes, and their effect on native species in natural habitats still needs monitoring.",
+    "people": "The ancient Egyptians held several species sacred, above all Scarabaeus sacer, the sacred scarab. They linked it with Khepri, god of the rising sun, who was imagined rolling the sun across the sky, and believed the beetle was entirely male, creating itself from nothing as Khepri did. The mummy-like pupa and the underground brood chamber, reached by a shaft and passage like an Old Kingdom tomb, may have strengthened the link with death and rebirth.\n\nAustralia's Dung Beetle Project, led by George Bornemissza from 1965 to 1985, introduced 23 species from South Africa and Europe to break down cattle dung, improving pastures and cutting bush fly numbers by around 90%. Dung beetles also appear in Aesop's fable 'The Eagle and the Beetle' and Hans Christian Andersen's story 'The Dung Beetle', and some are eaten in Southeast Asia.",
+    "relatives": "Dung beetles are not a single natural group: dung feeding occurs in several beetle families within the superfamily Scarabaeoidea, so it probably evolved more than once. Most belong to the scarab family, Scarabaeidae, where the subfamily Scarabaeinae, with more than 5,000 species, holds the true dung beetles that feed only on dung. The small dung beetles of the Aphodiinae and the earth-boring dung beetles of the Geotrupidae are other branches.\n\nTheir behaviour was poorly understood until the French naturalist Jean-Henri Fabre studied them in the late 19th century. He disproved the old idea that a struggling beetle calls others for help, showing that the apparent helpers were waiting for a chance to steal the ball.",
+    "didYouKnow": "In 1995 dung beetles were trialled in the Sydney beach suburb of Curl Curl to clear up dog droppings.",
+    "facts": [
+      {
+        "label": "Species",
+        "value": "5,000+ true dung beetles"
+      },
+      {
+        "label": "Strength",
+        "value": "Pulls 1,141× own weight"
+      },
+      {
+        "label": "Range",
+        "value": "All continents but Antarctica"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly dung"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which Egyptian god was linked with the dung beetle?",
+        "choices": [
+          "Khepri",
+          "Anubis",
+          "Osiris",
+          "Sobek, the crocodile god of the Nile"
+        ],
+        "explanation": "The scarab was linked to Khepri, god of the rising sun."
+      },
+      {
+        "prompt": "What can Scarabaeus satyrus use to find its way at night?",
+        "choices": [
+          "The Milky Way",
+          "Earth's magnetic field",
+          "The smell of dung",
+          "Vibrations in the ground made by large grazing animals"
+        ],
+        "explanation": "This nocturnal African beetle orients itself using the Milky Way."
+      },
+      {
+        "prompt": "By roughly how much did Australia's introduced dung beetles cut bush fly numbers?",
+        "choices": [
+          "About 90%",
+          "About 10%",
+          "By half",
+          "Not at all"
+        ],
+        "explanation": "The Australian Dung Beetle Project reduced bush flies by around 90%."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Works to save invertebrates, including beetles, and the habitats they need."
+      },
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects invertebrates and their habitats through science and advocacy."
+      }
+    ]
+  },
+  {
+    "id": "nautilus",
+    "name": "Nautilus",
+    "scientificName": "Nautilidae",
+    "wikipediaTitle": "Nautilus",
+    "group": "marineInvertebrate",
+    "regions": [
+      "asia",
+      "oceania",
+      "openOcean"
+    ],
+    "range": "Deep coral reef slopes of the Indo-Pacific",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": 135.0
+    },
+    "mapSpan": 50,
+    "tagline": "A living fossil drifting in its own pearly spiral",
+    "lede": "The nautilus is a cephalopod, a relative of octopuses and squid, that never gave up its shell. Rising and sinking along the dark slopes of Indo-Pacific reefs in a striped, pearly spiral, it belongs to a lineage that has changed remarkably little in hundreds of millions of years.",
+    "home": "Nautiluses live only in the Indo-Pacific, between about 30°N and 30°S and from 90°E to 175°E. They inhabit the steep, deep slopes of coral reefs, usually hundreds of metres down, and avoid water warmer than 25 °C. The deepest sighting was at 703 metres. In most places they stay below 100 metres, but around New Caledonia, the Loyalty Islands and Vanuatu, where surface waters are cooler, they can be seen as shallow as 5 metres.\n\nThey were long thought to rise every night to feed, mate and lay eggs, but in at least some populations their up-and-down movements turn out to be far more complex. Nautiloids were once found worldwide, and their range shrank to its present area during the Pleistocene.",
+    "anatomy": "Depending on the species, the adult shell is 10 to 25 centimetres across; Nautilus pompilius is the largest species and Nautilus macromphalus the smallest. The shell is coiled and lined with nacre, matte white with dark orange stripes outside and a shimmering white inside.\n\nDark above and almost white below, it is countershaded, blending into the gloom when seen from above and into the bright surface when seen from below. Inside, it is divided into chambers, from about 4 at hatching to 30 or more in adults; as the animal grows, it moves into a new, larger chamber and seals the old one behind it.\n\nThe soft body has 50 to more than 90 tentacles without suckers, which grip with a sticky secretion, and a parrot-like beak. A leathery hood made from two folded tentacles closes the shell when the animal withdraws. Its blood contains haemocyanin and turns blue when it carries oxygen.",
+    "life": "To move, the nautilus pumps water in and out through a funnel called the hyponome, a form of jet propulsion that turns out to be unusually efficient. A tube called the siphuncle runs through every chamber and lets the animal slowly change the amount of liquid inside, adjusting its buoyancy over the long term.\n\nIts eyes are open pinholes without a lens, so its vision is poor, and it relies mostly on smell, sensing distant odours with the tentacles in front of its eyes. Nautiluses are scavengers and opportunistic predators, eating lobster moults, hermit crabs and carrion of any kind, ripped from rocks with the beak. Their simple brain was long assumed to mean little intelligence, but in a 2008 experiment nautiluses learned to link a blue light with food and still responded hours later, though they had forgotten it a day later.",
+    "family": "Females attach fertilised eggs, singly or in small batches, to rocks in water of 21 to 25 °C. The eggs take 8 to 12 months to develop, and the young hatch about 30 millimetres across.\n\nFemales spawn once a year and then regrow their reproductive organs, making nautiluses the only cephalopods known to breed repeatedly in this way. Males have four tentacles modified into a spike-shaped organ, the spadix, which passes sperm to the female, and their shells grow slightly larger at maturity.\n\nMales greatly outnumber females, making up 60 to 94% of the animals recorded at different sites. Nautiluses can live more than 20 years, an exceptional age for a cephalopod, but they only mature at about 15, which often leaves them fewer than five years to breed.",
+    "remarkable": "The shell resists pressure only up to a point: below about 800 metres it implodes, killing the animal instantly, which keeps nautiluses out of the deepest water.\n\nYet a nautilus can be hauled to the surface through a pressure change of up to 80 atmospheres without apparent harm, something fish and crustaceans brought up from such depths do not survive. Nobody knows exactly why, though its unusual perforated main vein may play a part.",
+    "outlook": "All nautilus species have been listed on CITES Appendix II since 2016, which regulates international trade. They are caught and sold as live animals and, above all, for their shells, which are carved into souvenirs, and demand for ornamental shells is causing population declines.\n\nLate maturity, few eggs, long development and long lives mean they are very vulnerable to overfishing. Indonesia protects the chambered nautilus with fines of up to 8,500 US dollars or five years in prison, yet its shells were still being sold openly to tourists in Bali in 2014.",
+    "people": "The name comes from Latin and Greek words for 'sailor'. Nautilus shells were prized in Renaissance and Baroque cabinets of curiosities, where goldsmiths mounted them on slender stems to make extravagant cups. The pearly inner layer is used as a pearl substitute, and the so-called osmeña pearl is really a piece of the shell. In Samoa, nautilus shells decorate the forehead band of a traditional headdress, the tuiga.\n\nPalauans call the nautilus kedarm and see it as a symbol of a fragile character, believing it can die from the slightest bump against the rocks, so someone who flares up after a prank is compared to one. The shell's curve is also a famous natural example of a logarithmic spiral, though not a golden spiral.",
+    "relatives": "The family Nautilidae holds up to nine living species in two genera, Nautilus and Allonautilus, and is the only surviving family of the subclass Nautiloidea. Three species from Samoa, Vanuatu and Fiji were described only in 2023, while a 2011 genetic study had suggested there might be just three species in all.\n\nNautiloids appeared in the Late Cambrian and became major sea predators in the Ordovician, when some straight-shelled forms grew over 2.5 metres long. The other living cephalopods, the Coleoidea, branched off long ago, and their ancestors also had shells. After the mass extinction at the end of the Cretaceous, only three nautiloid families survived.",
+    "didYouKnow": "A nautilus's 'ears' are a pair of oval sacs packed with tiny crystals of calcium carbonate, sitting close to its nerve ring.",
+    "facts": [
+      {
+        "label": "Shell",
+        "value": "10–25 cm across"
+      },
+      {
+        "label": "Depth",
+        "value": "Usually several hundred m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "20+ years"
+      },
+      {
+        "label": "Diet",
+        "value": "Carrion and crustaceans"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does a nautilus move through the water?",
+        "choices": [
+          "Jet propulsion",
+          "Flapping fins",
+          "Walking on its tentacles",
+          "Rowing with its hood like a pair of oars"
+        ],
+        "explanation": "It pumps water in and out through its funnel, the hyponome."
+      },
+      {
+        "prompt": "At about what depth is a nautilus shell thought to implode?",
+        "choices": [
+          "About 800 metres",
+          "About 100 metres",
+          "About 3,000 metres",
+          "It never implodes at any depth in the ocean"
+        ],
+        "explanation": "Below roughly 800 metres the shell implodes, killing the animal instantly."
+      },
+      {
+        "prompt": "At roughly what age do nautiluses mature?",
+        "choices": [
+          "About 15 years",
+          "About 1 year",
+          "About 3 years",
+          "About 50 years"
+        ],
+        "explanation": "They mature at about 15, leaving often fewer than five years to breed."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Coral Reef Alliance",
+        "url": "https://www.coralreefalliance.org",
+        "blurb": "Works with communities to protect coral reefs around the world."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect ocean life from overfishing and habitat destruction."
+      }
+    ]
   }
 ]

@@ -1,0 +1,881 @@
+[
+  {
+    "id": "common-frog",
+    "name": "Common Frog",
+    "scientificName": "Rana temporaria",
+    "wikipediaTitle": "Common frog",
+    "group": "amphibian",
+    "regions": [
+      "europe",
+      "asia"
+    ],
+    "range": "Most of Europe from Ireland and Scandinavia east across Asia to Japan",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 54.0,
+      "longitude": 20.0
+    },
+    "mapSpan": 45,
+    "tagline": "Europe's garden-pond frog that hops into the Arctic",
+    "lede": "Each spring, garden ponds across Europe fill with clumps of jelly-wrapped eggs, the work of the common frog. This plump, long-legged amphibian reaches farther north than any other amphibian in Scandinavia, well inside the Arctic Circle.",
+    "home": "Common frogs range across much of Europe, north into Scandinavia and east to the Ural Mountains, though they are largely missing from Iberia, southern Italy and the southern Balkans. Beyond Europe they continue across Asia as far as Japan. They have been introduced to Shetland, Orkney, the Isle of Lewis and the Faroe Islands, and genetic studies suggest that some frogs in south-west Ireland are truly native, descended from animals that sat out the last ice age in ice-free refuges.\n\nOutside the breeding season they live alone in damp places near ponds and marshes or in long grass beside rivers. They hibernate only in the coldest months, in muddy burrows, running water or layers of rotting leaves at the bottom of ponds, breathing through their skin. In Britain this usually runs from late October to January, while in the Alps frogs may not emerge until June, and in the far north they can be trapped under ice for up to 9 months.",
+    "anatomy": "Adults have a body length of 6 to 9 centimetres and weigh on average about 23 grams, with females usually slightly larger. The back and flanks can be olive green, grey-brown, brown, yellowish or rufous, scattered with dark blotches, and there is typically a chevron mark on the neck and a dark 'mask' covering each eye and eardrum. The frog can lighten or darken its skin to match its surroundings, and black, red and albino individuals have all been recorded.\n\nThe eyes are brown with horizontal pupils and have transparent inner eyelids that protect them underwater. Males are recognisable by hard nuptial pads on their first fingers, used for grasping females, and in the mating season they often turn greyish-blue with white throats. Compared with the common toad, the frog has longer legs, moist smooth skin and a hopping rather than crawling gait.",
+    "life": "The common frog is an opportunist that sits still and waits for prey to wander within reach, so its menu changes with the seasons. In summer it eats mostly adult crane flies and the caterpillars of butterflies and moths, along with woodlice, spiders, beetles, slugs, snails and earthworms. Bigger frogs tackle bigger prey. It tends to hide in damp spots by day and hunt at night.\n\nTadpoles start out grazing on algae and decaying plants, then turn carnivorous once their hind legs grow. Unlike the North American wood frog, the common frog cannot load its blood with sugar as an antifreeze, so it survives cold winters by seeking warmer pockets in soil or between rocks and by hibernating in groups. Herons, storks, otters, badgers, snakes and many other animals eat adults, while fish, diving beetles and dragonfly larvae take tadpoles.",
+    "family": "Breeding begins when rain, longer days and rising temperatures trigger hormones in spring, usually in April across most of the range. Frogs return to the shallow, still water where they were born, with males arriving first and calling. For a frenzied few days males try to mate with as many females as possible; those with longer thumbs grip females better and do best, while smaller males are pushed out of the shallows and search for partners on land.\n\nA female lays from a few hundred to 5,000 eggs. Massed together, the spawn stays warmer than the surrounding water, which speeds development, and it hatches in 2 to 3 weeks. Tadpoles gather in schools, and most have turned into froglets by June or July. Frogs mature at about 3 years old and typically live 6 to 8 years.",
+    "remarkable": "Tadpoles can sense danger and adjust their growth to it. If a predator is present early in development, they spend longer as larvae and metamorphose at a smaller size, but once the threat is removed their growth returns to normal or even overtakes the usual rate.",
+    "outlook": "The common frog is listed as Least Concern on the IUCN Red List, but it faces real pressures. Ranavirus, which has driven amphibian declines worldwide, causes skin ulcers and bleeding and can kill more than 90% of infected frogs, with deaths peaking in summer. Large numbers are also killed by cars.\n\nIn towns, roads and buildings cut ponds off from one another, so urban populations have lower genetic diversity, more deformities and higher death rates than rural ones. The invasive red-eared slider turtle is also a serious predator.",
+    "people": "Frogs have long been welcome neighbours for their appetite for mosquitoes and crop-damaging insects. Because they are so widespread and abundant, they have become a standard laboratory animal, and they are even farmed, with research into better pellet food for captive stocks.\n\nTo slow the spread of disease, the UK amphibian charity Froglife advises gardeners not to move frogspawn, tadpoles or frogs between ponds, even nearby ones, and not to add goldfish or exotic frogs to outdoor ponds. Its long list of alternative names includes grass frog, European brown frog and, simply, the frog.",
+    "relatives": "The common frog belongs to the family Ranidae, the true frogs. There are 3 subspecies, of which Rana temporaria temporaria is by far the most widespread. Its closest look-alike is the moor frog, Rana arvalis: the surest way to tell them apart is the small spur on the hind foot, which is soft and short in the common frog but hard and about half the length of the innermost toe in the moor frog. Breeding moor frog males may also turn bright blue.\n\nThe agile frog has even longer hind legs and paler colouring. Fossils from a site in Hungary show the common frog has been around since at least the Early Pleistocene.",
+    "didYouKnow": "Newly transformed froglets feed mainly on springtails, mites and small fly larvae.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "6–9 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 23 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "6–8 years"
+      },
+      {
+        "label": "Eggs",
+        "value": "Up to 5,000"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the surest way to tell a common frog from a moor frog?",
+        "choices": [
+          "The spur on its hind foot",
+          "The number of its toes",
+          "The colour of its eyes",
+          "The high whistle it gives only at dawn in midsummer"
+        ],
+        "explanation": "In the common frog the spur is soft and short; in the moor frog it is hard and about half the length of the innermost toe."
+      },
+      {
+        "prompt": "How does the common frog survive freezing winters?",
+        "choices": [
+          "By hiding in warmer pockets",
+          "By making antifreeze in its blood",
+          "By migrating south",
+          "By burying itself deep in snowdrifts where the temperature stays steady"
+        ],
+        "explanation": "It cannot protect itself chemically against freezing, so it shelters in warm spots and hibernates in groups."
+      },
+      {
+        "prompt": "At about what age do common frogs first breed?",
+        "choices": [
+          "3 years",
+          "A few months",
+          "1 year",
+          "About 10 years"
+        ],
+        "explanation": "They return to their birth pond to breed at about 3 years old."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Froglife",
+        "url": "https://www.froglife.org",
+        "blurb": "UK charity protecting amphibians and reptiles and the ponds and wetlands they need."
+      },
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps conserve threatened amphibians worldwide."
+      }
+    ]
+  },
+  {
+    "id": "eurasian-eagle-owl",
+    "name": "Eurasian Eagle-owl",
+    "scientificName": "Bubo bubo",
+    "wikipediaTitle": "Eurasian eagle-owl",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia"
+    ],
+    "range": "Mountains, cliffs, forests and steppes from Spain across Europe and Asia to Japan",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": 65.0
+    },
+    "mapSpan": 80,
+    "tagline": "Orange-eyed giant owl of cliffs, forests and steppes",
+    "lede": "With blazing orange eyes, upright ear tufts and a wingspan approaching 2 metres, the Eurasian eagle-owl is one of the largest owls on Earth. At dusk its deep, booming hoot carries a long way across the rocky valleys it rules.",
+    "home": "This is one of the most widely distributed owls, found from Spain and Portugal across Europe and Russia to China, Korea, Sakhalin and northern Hokkaido, and south through Central Asia, parts of the Middle East and the northern edge of South Asia. In Russia its range stops only at the treeline of the true Arctic.\n\nEagle-owls favour broken, irregular ground: mountains, cliffs and rocky gorges, often near woodland edges, scrub or wetlands. They also live in conifer forests, steppes and the fringes of deserts, and occasionally in farmland and city parks. They are highly sedentary, and an adult normally keeps the same territory, typically 15 to 80 square kilometres, for its whole life.",
+    "anatomy": "Females are noticeably bigger than males, weighing 1.75 to 4.6 kg against 1.2 to 3.2 kg, and the species measures 56 to 75 centimetres long with a wingspan of 131 to 188 centimetres. The upperparts are mottled blackish and tawny, the wings and tail are barred, and the buff underparts are streaked with dark marks. The facial disc is tawny and loosely defined, and the legs and feet are feathered almost to the talons.\n\nThe iris is usually orange, ranging to blood-red in some European birds and orange-yellow in desert races. Its wings are small for its weight, giving it the highest wing loading of any European owl, yet it flies strongly with shallow beats and fast glides and has even been seen soaring on updrafts. The middle claw of one British female measured nearly 6 centimetres. Like other typical owls, it kills by squeezing prey with its powerful feet.",
+    "life": "Eagle-owls are mostly nocturnal, hunting in the first hours after sunset and the last before dawn, though in the far north, where summer nights barely darken, they hunt in daylight. They are opportunists that take whatever is locally common: mainly small mammals such as rodents and rabbits, but also birds and larger mammals, plus reptiles, amphibians, fish and big insects. That includes many rats, mice and pigeons, as well as some rare and threatened species.\n\nCalling peaks in the colder months, first to defend territory and then for courtship. The male's song is a deep ooh-hu, the female's higher and more drawn out, and pairs often duet from prominent rocky pinnacles along the edge of their territory. An annoyed owl clicks its bill and spits like a cat.",
+    "family": "The male shows the female possible nest sites by kneading out small hollows and clucking, and she picks one. Nests are bare scrapes on cliff ledges, in gullies or among rocks. Laying begins in late winter, making this one of the earliest-nesting birds in Europe. Usually 1 to 3 white eggs are laid about 3 days apart, and the female incubates alone for 31 to 36 days while the male brings her food.\n\nChicks open their eyes at 4 days and grow faster than those of any other owl studied. They leave the nest at 5 to 6 weeks, fly weakly by 7 to 8 weeks and depend on their parents for 20 to 24 weeks in all. Young birds usually breed at 2 to 3 years, once they win a territory. Wild eagle-owls can live 20 years, one ringed bird reached nearly 28, and in zoos they may survive up to 68 years.",
+    "remarkable": "Primitive eagle-owls that spread into North America are thought to have given rise to the great horned owl, and some authorities consider the two barely separate species. Even so, the Eurasian bird is much larger, with orange rather than yellow eyes, vertical rather than horizontal barring underneath and a different voice.",
+    "outlook": "The IUCN lists the eagle-owl as Least Concern because of its huge range and a world population estimated at a few hundred thousand to a few million birds, but numbers are thought to be decreasing. Healthy adults have no natural enemies; the leading killers are electrocution on power pylons, traffic and shooting. Across 25 published studies, electrocution was the top cause of death in 68%, and insulating pylons has helped local populations recover.\n\nThe outlook is best in sparsely populated Russia and Scandinavia and most worrying in western and central Europe, where heavily modified landscapes bring collisions with man-made structures and fewer native prey animals. Wind turbines can also be a local problem.",
+    "people": "In Germany and other parts of Europe the bird is widely called the uhu, after the sound of its song. Linnaeus described it scientifically in 1758, from Sweden.\n\nEagle-owls once lived naturally in Great Britain; remains from Meare Lake Village show they were still present roughly 2,000 years ago. Today a few pairs breed there, and while many are thought to be escaped captive birds, the World Owl Trust believes some may have crossed the North Sea from Norway. Their return has alarmed some people worried about native wildlife, and most British breeding attempts have failed through disturbance or persecution, including smashed eggs.",
+    "relatives": "The genus Bubo holds about 10 living species, including many of the world's largest owls, and appears to have originated in Africa. The Pharaoh eagle-owl of Arabia and the Sahara and the Indian eagle-owl were both once treated as subspecies of this bird but are now separate species, smaller and with higher-pitched calls. The Eurasian eagle-owl itself has a dozen or more recognised subspecies.\n\nGenetic work shows the snowy owl is more closely related to the great horned owl than the Eurasian eagle-owl is. Beyond the Pharaoh, Indian and Cape eagle-owls, its nearest relative is the smaller spotted eagle-owl of Africa.",
+    "didYouKnow": "Eagle-owl eggs weigh about 75 to 80 grams each, only slightly more than a snowy owl's.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "131–188 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "1.2–4.6 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 20 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Mammals and birds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the German name 'uhu' come from?",
+        "choices": [
+          "Its song",
+          "A Latin word for night",
+          "A mountain range",
+          "An old falconers' term meaning 'cliff dweller'"
+        ],
+        "explanation": "The name imitates the owl's deep territorial song."
+      },
+      {
+        "prompt": "What is the leading man-made cause of eagle-owl deaths in Europe?",
+        "choices": [
+          "Electrocution",
+          "Pesticides",
+          "Egg collectors",
+          "Collisions with lighthouses along the North Sea coast"
+        ],
+        "explanation": "Electrocution on power pylons was the top cause of death in 68% of published studies."
+      },
+      {
+        "prompt": "Which American owl is thought to descend from eagle-owls?",
+        "choices": [
+          "Great horned owl",
+          "Snowy owl",
+          "Barn owl",
+          "Great grey owl"
+        ],
+        "explanation": "Primitive eagle-owls spreading into North America gave rise to the great horned owl."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "flying-fish",
+    "name": "Flying Fish",
+    "scientificName": "Exocoetidae",
+    "wikipediaTitle": "Flying fish",
+    "group": "fish",
+    "regions": [
+      "openOcean"
+    ],
+    "range": "Surface waters of all oceans, mainly in the tropics and subtropics",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 10.0,
+      "longitude": -40.0
+    },
+    "mapSpan": 80,
+    "tagline": "Ocean fish that escape the sea on wing-like fins",
+    "lede": "Chased by a tuna, a flying fish bursts from the sea, spreads its long fins and glides away above the waves. It cannot flap like a bird, yet by riding the wind it can stay airborne for hundreds of metres before slipping back into the water.",
+    "home": "The roughly 64 species of flying fish live in all the world's oceans, mostly in tropical and warm subtropical waters. They keep to the epipelagic zone, the sunlit top layer of the sea down to about 200 metres, where they feed mainly on plankton.\n\nSome populations migrate. Those around Barbados once moved between the warm, coral-fringed waters of the island and the plankton-rich outflow of the Orinoco River in Venezuela, though today they travel only as far north as Tobago, about 220 kilometres short of Barbados.",
+    "anatomy": "A flying fish's 'wings' are its enlarged paired fins, which act as aerofoils; their curved profile is comparable to a bird's wing. Species of the genus Exocoetus have a single pair of enlarged fins and streamlined bodies built for speed, while Cypselurus species have flattened bodies and two pairs, which keeps them aloft longer.\n\nThe skeleton is built for launching. Broadened neural arches anchor ligaments firmly, linking the backbone tightly to the skull, and a strong vertebral column and bony tail complex make the body rigid. Less flexibility means the fish can make powerful leaps without buckling in mid-air, and a stiff body is more aerodynamic, improving speed and aim.",
+    "life": "Leaping is thought to be mainly an escape from predators below, including swordfish, mackerel, tuna, marlin, dolphins, squid and porpoises. The trick has a cost, since in the air the fish are exposed to frigatebirds and other seabirds.\n\nA flight usually covers about 50 metres, but by using the updrafts at the leading edge of waves a fish can travel up to 400 metres, at speeds above 70 kilometres an hour and up to 6 metres above the surface. At the end of a glide it folds its fins and drops back in, or dips its tail and beats it against the water to launch another glide, sometimes changing direction. Flying straight into updrafts lengthens the time aloft. Flying fish often land by accident on the decks of small boats.",
+    "family": "Flying fish make up the family Exocoetidae, with about 64 species in seven genera grouped into four subfamilies. The largest subfamily, Cypselurinae, holds four genera, Cheilopogon, Cypselurus, Hirundichthys and Prognichthys, while Exocoetus, Fodiator and Parexocoetus each sit in a subfamily of their own.\n\nYoung flying fish can look quite unlike adults. A fossil from Monte Bolca in Italy, named Engraulis evolans in 1835, was long taken for an anchovy before experts recognised it as a juvenile flying fish.",
+    "remarkable": "Between 1900 and the 1930s, flying fish were studied as possible models for designing aeroplanes. The French Exocet anti-ship missile is named after them, because it can be launched from underwater and skims low over the sea before striking its target.",
+    "outlook": "Local stocks can suffer badly. Around Barbados, pollution from ships after the opening of the deep-water harbour at Bridgetown damaged the coral reefs, and overfishing pushed the fish towards the Orinoco delta, so that they no longer return to the island in large numbers.\n\nCompetition for the remaining fish has caused friction between neighbours. In 2006 a ruling under the United Nations Convention on the Law of the Sea fixed the maritime boundary between Barbados and Trinidad and Tobago and stated that both countries must preserve stocks for the future. Barbadian fishers still follow the fish southward.",
+    "people": "Barbados is known as 'the land of the flying fish'. The fish appears on its coins, in fountain sculptures and artwork, in the tourism authority's logo and in holograms in the Barbadian passport, and cou-cou and flying fish is the national dish. The taste is close to that of a sardine.\n\nFlying fish are caught commercially with gillnets in Japan, Vietnam and China and with dipnets in Indonesia and India. In Japan they are dried to make stock for dashi, and the roe of the Japanese flying fish is the tobiko used in sushi. They are a staple for the Tao people of Orchid Island in Taiwan, and in southern Peru the roe is called cau-cau. In the Solomon Islands fishers lure them with torches on moonless nights and net them in mid-flight from outrigger canoes, while Makassar fishermen of Sulawesi have hunted them for centuries in boats called patorani.",
+    "relatives": "The family belongs to the order Beloniformes. The oldest fossils of the group date from the Early Eocene and include Rhamphexocoetus, which appears transitional between halfbeaks and true flying fish.\n\nGliding has evolved in fish more than once. The extinct Thoracopteridae glided over Triassic seas 235 to 242 million years ago, and the Late Cretaceous Cheirothricidae also had wing-like fins, but neither is related to modern flying fish; their 'wings' evolved independently.",
+    "didYouKnow": "The longest flight on record, filmed by a Japanese television crew off Yakushima Island in 2008, lasted 45 seconds.",
+    "facts": [
+      {
+        "label": "Species",
+        "value": "About 64"
+      },
+      {
+        "label": "Glide",
+        "value": "Up to 400 m"
+      },
+      {
+        "label": "Speed",
+        "value": "Over 70 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Plankton"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why do flying fish leap out of the water?",
+        "choices": [
+          "To escape predators",
+          "To catch flying insects",
+          "To shed parasites",
+          "To dry their fins in the sun before diving deeper"
+        ],
+        "explanation": "Gliding is thought to be mainly a way to escape predators such as tuna and marlin."
+      },
+      {
+        "prompt": "Which country is known as 'the land of the flying fish'?",
+        "choices": [
+          "Barbados",
+          "Japan",
+          "Peru",
+          "The Solomon Islands"
+        ],
+        "explanation": "The fish is a national symbol of Barbados and part of its national dish."
+      },
+      {
+        "prompt": "What do flying fish mainly eat?",
+        "choices": [
+          "Plankton",
+          "Seaweed",
+          "Small squid",
+          "Insects blown out to sea from islands"
+        ],
+        "explanation": "Flying fish feed mainly on plankton near the surface."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and fisheries."
+      }
+    ]
+  },
+  {
+    "id": "mayfly",
+    "name": "Mayfly",
+    "scientificName": "Ephemeroptera",
+    "wikipediaTitle": "Mayfly",
+    "group": "insect",
+    "regions": [
+      "europe",
+      "naEast",
+      "asia",
+      "southAmerica"
+    ],
+    "range": "Clean fresh waters on every continent except Antarctica",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": 10.0
+    },
+    "mapSpan": 80,
+    "tagline": "Years underwater, then a few hours on the wing",
+    "lede": "A mayfly may spend years as a nymph grazing on a stream bed, only to live as a winged adult for a day or less, without ever eating. In that brief window, vast swarms rise over rivers and lakes to dance, mate and lay their eggs.",
+    "home": "More than 3,000 species of mayfly are known, found wherever there is clean fresh water except Antarctica, though few reach oceanic islands. The greatest variety of genera is in the American tropics. Adult females can be carried by the wind, and eggs may hitch rides on the legs of waterbirds.\n\nThe nymphs live mostly in streams, under rocks, in decaying vegetation or in sediment. Few species live in lakes, but those that do are among the most abundant. Some families have clear tastes: Baetidae favour warm water, Heptageniidae cling under stones in fast currents, and Ephemeridae dig burrows in sandy beds.",
+    "anatomy": "Nymphs pass through between 10 and 50 moults, more than in most insect groups, and are 3 to 30 millimetres long when ready to emerge. They have chewing mouthparts, sturdy legs and up to seven pairs of gills along the abdomen, which ends in 2 or 3 thread-like tails. In most species oxygen passes straight through the skin and the paddle-like gills just stir a current of water, but in burrowers living in oxygen-poor mud the gills do the breathing.\n\nAdults are delicate, with one or two pairs of triangular, heavily veined wings held upright over the back like a butterfly's, and long tails. Their mouthparts are useless and their guts are filled with air. Males usually have large eyes and long front legs for seizing females in flight, and some have extra 'turban' eyes facing upwards to spot females above them. Uniquely among insects, both sexes have paired genitalia.",
+    "life": "Most nymphs are herbivores or detritivores feeding on algae, diatoms and debris, though a few hunt midge larvae, and some filter food from the water with bristly forelegs. Their grazing shapes the plant life of stream beds, and when they emerge they carry phosphates and nitrates out of the water onto land. They are a staple for fish, stonefly and dragonfly larvae, beetles, crayfish and amphibians, and once airborne they feed birds, bats and other insects.\n\nThe adults of a population often emerge together in a mass 'hatch', usually around dawn or dusk, which probably reduces each insect's chance of being eaten. Males gather in swarms a few metres above the water and perform an up-and-down dance; females fly in, and mating happens in the air.",
+    "family": "The final moult of the nymph produces not an adult but a subimago, or dun: a winged, dull, usually sexually immature stage with cloudy wings. Within a day or two, or in some species a few minutes, it moults again into the adult, or imago. Adult life is short; females of Dolania americana survive less than 5 minutes.\n\nA female lays between 400 and 3,000 eggs, often dropping them onto the water or dipping her abdomen to release small batches. Eggs may hatch in a few days or take nearly a year, and nymphs grow for months or years. To stop their young drifting downstream, some females fly upriver first: the Tisza mayfly, Europe's largest at 12 centimetres, travels up to 3 kilometres. Around half the species studied can reproduce without mating.",
+    "remarkable": "Mayflies are the only insects that moult again after they already have working wings. In a few, such as females of the subfamily Palingeniinae, the dun never moults at all and breeds in that half-finished form.",
+    "outlook": "Mayfly nymphs are very sensitive to sewage, pesticides, industrial waste and especially acidification, which makes them useful indicators of water quality. In English rivers, modest pollution can kill 80% of mayfly eggs, and the blue-winged olive has almost vanished from some rivers, mainly because of fine sediment and phosphate from farms and sewage. Females find water by the polarised light it reflects, so other shiny surfaces can trap them.\n\nMany species are known only from their first collection, and 4 North American species are thought to be extinct. The IUCN Red List includes just one mayfly, Australia's large blue lake mayfly, listed as Endangered because climate change threatens its alpine habitat.",
+    "people": "The adult mayfly's short life has fascinated people since the Epic of Gilgamesh, which compares the hero's life to a mayfly floating on the river. Aristotle noted that it seemed to walk on 4 legs, since males use their front pair to clasp females, and Pliny the Elder said it lived no more than a day. Albrecht Dürer put one in his 1495 engraving The Holy Family with the Mayfly, and George Crabbe likened a daily newspaper to a mayfly, both being 'ephemera'.\n\nFly fishers have modelled countless artificial flies on mayflies, such as the March brown. Mayflies are also eaten: in Malawi they are pressed with mosquitoes into kungu cakes, and they are gathered for food in China, Japan and around Lake Victoria. Ships and aircraft have carried the name too, including a Royal Navy torpedo boat.",
+    "relatives": "Mayflies form the order Ephemeroptera, from Greek words meaning 'lasting a day' and 'wing'. With the dragonflies and damselflies they belong to the Palaeoptera, an ancient group of insects that cannot fold their wings flat over the body. They are grouped into over 400 genera and 42 families.\n\nPossible early relatives date back to the late Carboniferous, and Permian forms had 9 pairs of gills and long hindwings. The extinct Coxoplectoptera, known from Brazil, were their sister group and had grasping forelegs for catching prey. The English name comes from emerging around May in Britain, and the American 'shadfly' from the shad fish that run up rivers at the same time.",
+    "didYouKnow": "Mayflies are thought to have the highest raw protein content by dry weight of any edible insect.",
+    "facts": [
+      {
+        "label": "Species",
+        "value": "Over 3,000"
+      },
+      {
+        "label": "Adult life",
+        "value": "Often a day or less"
+      },
+      {
+        "label": "Eggs",
+        "value": "400–3,000"
+      },
+      {
+        "label": "Nymph length",
+        "value": "3–30 mm"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is unique about the mayfly's life cycle?",
+        "choices": [
+          "It moults after getting wings",
+          "It has no larval stage",
+          "It lives entirely on land",
+          "It hibernates for several winters as an adult before mating"
+        ],
+        "explanation": "Mayflies are the only insects in which a winged stage moults again."
+      },
+      {
+        "prompt": "Why can't adult mayflies feed?",
+        "choices": [
+          "Their mouthparts don't work",
+          "They have no legs",
+          "They are too busy flying",
+          "Their mouths are sealed by a hard shell when they emerge"
+        ],
+        "explanation": "Adults have useless, vestigial mouthparts and guts filled with air."
+      },
+      {
+        "prompt": "Which continent has no mayflies?",
+        "choices": [
+          "Antarctica",
+          "Australia",
+          "Africa",
+          "South America"
+        ],
+        "explanation": "Mayflies live in clean fresh water everywhere except Antarctica."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Works to save invertebrates and the habitats they depend on."
+      },
+      {
+        "name": "The Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects invertebrates and their habitats across North America."
+      }
+    ]
+  },
+  {
+    "id": "red-kangaroo",
+    "name": "Red Kangaroo",
+    "scientificName": "Osphranter rufus",
+    "wikipediaTitle": "Red kangaroo",
+    "group": "mammal",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Scrub, grassland and desert across inland mainland Australia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -25.0,
+      "longitude": 133.0
+    },
+    "mapSpan": 35,
+    "tagline": "Australia's 'Big Red', the world's largest marsupial",
+    "lede": "Bounding across the outback on spring-loaded legs, the red kangaroo is the largest kangaroo, the largest native land mammal in Australia and the largest marsupial alive. A big male can clear 8 metres in a single leap.",
+    "home": "Red kangaroos live across mainland Australia except for its more fertile fringes: southern Western Australia, the eastern and south-eastern coasts and the northern rainforests. Their heartland is the scrubland, grassland and desert of the west and centre, especially open country with a few trees for shade.\n\nThey stay mostly within a well-defined home range; in New South Wales weekly ranges cover 258 to 560 hectares, the largest belonging to adult males. When food runs short and rain is patchy, they may travel 25 to 30 kilometres to better grazing, and after rain they spread out to find fresh growth. In extreme heat they shelter under small saltbushes or mulga bushes rather than in caves.",
+    "anatomy": "Males are red-brown above and pale buff below, while females are smaller and blue-grey, though in arid areas they look more like males. A male's head and body measures 1.3 to 1.6 metres, with a tail adding another 1.2 metres, and weighs 55 to 90 kg, about twice a female's 18 to 40 kg. The tallest confirmed male stood about 2.1 metres. The ears are long and pointed, the muzzle square, and wide-set eyes give a field of view of about 300 degrees.\n\nThe Achilles tendon works like a rubber band, stretching as the animal lands and releasing the energy to throw it forward, powering speeds of around 60 kilometres an hour. The thick tail forms a tripod with the legs when standing. To cope with heat, the kangaroo pants, sweats, licks its forearms and rests in shade, and its kidneys concentrate urine so efficiently that it can go long periods without drinking.",
+    "life": "Red kangaroos are grazers. In central Australia green grass makes up 75 to 95% of their diet, and they can find enough green food even when the landscape looks brown. In dry spells they keep to open grassland and watercourses, and they will browse shrubs when favourite plants are scarce. They are mostly active at dusk and night, resting in shade by day.\n\nThey usually live in loose groups of 2 to 4, typically females and young, but up to 1,500 may gather where food is plentiful. Males, called boomers, are not territorial and fight only over females, called flyers, that come into season. Young males box, standing tall to jab and lock forearms, and serious fights end in kicks delivered while balanced on the tail. Adults are too big for most predators, though dingoes, wedge-tailed eagles and saltwater crocodiles can take them, and a kangaroo chased into water may hold an attacker under to drown it.",
+    "family": "Red kangaroos breed all year round. After a pregnancy of only 33 days, a single blind, hairless joey a few centimetres long hauls itself with its forelegs through its mother's fur into the pouch, a climb of 3 to 5 minutes, and latches onto a teat. It first leaves the pouch at about 190 days, quits it for good at around 235 days and keeps suckling until it is about 12 months old, on milk whose make-up changes to suit its needs.\n\nFemales usually start breeding at about 2.5 years, though it can be as early as 18 months or as late as 5 years in drought. Mothers have also been seen adopting another female's joey.",
+    "remarkable": "Almost as soon as a joey reaches the pouch, its mother mates again, but the new embryo stops developing and waits until the pouch is free, a pause called embryonic diapause. As a result a female is usually pregnant on every day of her adult life except the day she gives birth, and she may care for three generations at once: a youngster at foot, a joey in the pouch and an embryo on hold.",
+    "outlook": "The red kangaroo is plentiful and has even benefited from the spread of farming and the man-made waterholes that came with it. Competition with livestock and rabbits is a threat, and farmers sometimes shoot kangaroos as pests, though a permit is needed in Queensland and New South Wales.\n\nLike all Australian wildlife it is protected by law, yet it is numerous enough for a regulated commercial harvest under nationally approved management plans meant to keep populations healthy. More than half a million were harvested in 2023. The harvest is controversial, partly because the animal is so popular.",
+    "people": "Australians call big males 'Big Reds'. Collisions with cars are a familiar hazard: kangaroos dazzled by headlights or startled by engines leap into the road, and crashes peak in the evening, in winter and after long dry spells, which is why kangaroo crossing signs are commonplace.\n\nThe kangaroo industry is worth about A$270 million a year and employs more than 4,000 people. The lean meat, only about 2% fat, is eaten by people and used in pet food, and the skins become leather.",
+    "relatives": "The species was first described by Anselme Desmarest in 1822, from somewhere west of the Blue Mountains, and placed in the genus Kangurus. In 1842 John Gould moved it to Osphranter. For many years Osphranter was treated as a mere subgenus of Macropus, but a 2015 review of Australian mammals raised it back to a full genus, and genetic analysis in 2019 supported the change.",
+    "didYouKnow": "To save energy in harsh conditions, red kangaroos can slip into a state of torpor.",
+    "facts": [
+      {
+        "label": "Head and body",
+        "value": "Up to 1.6 m (males)"
+      },
+      {
+        "label": "Weight",
+        "value": "55–90 kg (males)"
+      },
+      {
+        "label": "Speed",
+        "value": "About 60 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly green grass"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is a male red kangaroo called?",
+        "choices": [
+          "A boomer",
+          "A flyer",
+          "A joey",
+          "A jack, after an old drovers' term for a lead animal"
+        ],
+        "explanation": "Males are boomers; females are called flyers."
+      },
+      {
+        "prompt": "How long is a red kangaroo's pregnancy?",
+        "choices": [
+          "About 33 days",
+          "About 6 months",
+          "About 9 months",
+          "Almost a full year, timed to the rains"
+        ],
+        "explanation": "The joey is born after only 33 days and finishes developing in the pouch."
+      },
+      {
+        "prompt": "How do young male red kangaroos settle disputes?",
+        "choices": [
+          "By boxing",
+          "By drumming their feet",
+          "By roaring",
+          "By marking territory with scent from glands on their chest"
+        ],
+        "explanation": "They stand on their hind legs to jab and wrestle, kicking if the fight escalates."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Protects Australian wildlife and habitats across a network of sanctuaries."
+      }
+    ]
+  },
+  {
+    "id": "giant-pacific-octopus",
+    "name": "Giant Pacific Octopus",
+    "scientificName": "Enteroctopus dofleini",
+    "wikipediaTitle": "Giant Pacific octopus",
+    "group": "marineInvertebrate",
+    "regions": [
+      "naWest",
+      "asia"
+    ],
+    "range": "Coastal North Pacific from Baja California to Alaska, Russia, Japan and Korea",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": -170.0
+    },
+    "mapSpan": 70,
+    "tagline": "The world's biggest octopus, a puzzle-solving den dweller",
+    "lede": "The giant Pacific octopus is the largest octopus on Earth, with arms that can span more than 4 metres. It solves puzzles, opens childproof bottles and recognises individual people, yet it lives only a few years and dies soon after breeding.",
+    "home": "This octopus lives along much of the coastal North Pacific, from Baja California north along the west coast of the United States and Canada to Alaska and the Aleutians, then across to Kamchatka, the Sea of Okhotsk, Japan and Korea and south to the East China and Yellow Seas. It ranges from the intertidal zone down to 2,000 metres.\n\nIt prefers cold water rich in oxygen and nutrients, usually around 8 to 12 °C, with dense kelp and rocky ground. Each octopus keeps a den in a cave, under a rock or even in a bottle, tyre or barrel on the sea floor, just big enough to turn around in. It may use the same den for a month or more, and when it moves, the new one is usually nearby, on average about 13 metres away.",
+    "anatomy": "Adults usually weigh around 15 kg, having grown from hatchlings of just 0.03 grams, about the size of a grain of rice, at roughly 0.9% of body weight a day. Fishermen have reported giants of 180 kg and even 270 kg, though such claims are hard to verify. The largest suckers are about 6.4 centimetres across, and each can hold 16 kg.\n\nIts blood is blue, carrying oxygen with copper-based haemocyanin, which is not an efficient carrier and ties the animal to cool, well-oxygenated water. The hard beak, made of chitin, sets the limit on where it can squeeze: the soft body can pass through a gap of just 50 millimetres. In open water it swims by jet propulsion, squirting water from a siphon, and on the sea floor it crawls on its arms. The brain has folded lobes and about 300 million neurons.",
+    "life": "It eats shrimp, crabs, scallops, abalones, clams, snails, lobsters, fish, squid and other octopuses, gripping prey with its suckers and biting with its beak. Remains of spiny dogfish in its middens show that it catches small sharks in the wild, and in 2012 one was photographed drowning a seagull. Food is carried back to the den, and the shells and bones that pile up outside, called den litter, help divers find it.\n\nThe octopus spends 94% of its time still or hidden, in dens, in kelp or camouflaged, and is most active from midnight to early morning. Its travels are deliberate, steered by familiar cliff edges, terrain and sight. Harbour seals, sea otters, sperm whales and Pacific sleeper sharks all eat it.",
+    "family": "Unlike most octopuses, which live about a year, this species lives 3 to 5 years and matures at 1 to 2. Both sexes breed only once. The male uses a specialised third arm, the hectocotylus, to pass a sperm packet more than 1 metre long into the female, who can store it; one at the Seattle Aquarium kept a packet for 7 months before laying.\n\nShe lays 120,000 to 400,000 eggs on a hard surface and guards them for about 6 months, blowing water over them and cleaning them, never leaving to feed. She starves and dies soon after they hatch. Males also stop eating after mating and decline over a month or two, their skin pulling back from the eyes and white sores appearing. The hatchlings drift up to join the plankton, and very few survive.",
+    "remarkable": "In aquariums, giant Pacific octopuses behave differently towards particular keepers, consistently squirting water or changing skin texture at specific individuals. They have opened tank valves and taken apart expensive equipment, and some researchers believe they play and have personalities.",
+    "outlook": "The giant Pacific octopus has not been evaluated for the IUCN Red List and is not protected under CITES. In Puget Sound a legal harvest sparked a public outcry, and Washington's Fish and Wildlife Commission now protects octopuses at 7 sites, although local populations are not considered threatened.\n\nWarming seas are a bigger long-term worry. Higher temperatures speed up reproduction and can shorten lifespan by up to 20%, and in Washington's Hood Canal autumn dead zones with very little oxygen force octopuses into shallow water, while brooding females stay and die with their eggs. Ocean acidification threatens the shellfish they eat, and heavy metals and PCBs have been found in their tissues, probably from the red rock crabs they prey on.",
+    "people": "The species was described in 1910 by Gerhard Wülker of Leipzig University and named dofleini after the German scientist Franz Theodor Doflein. Its size and intelligence make it a favourite in aquariums and research labs.\n\nOctopuses are also food: about 3.3 million tonnes are fished commercially each year, worth around 6 billion dollars, and people have caught them for thousands of years with lures, spears, pots, nets and bare hands. Because processed octopus is hard to identify, scientists have developed DNA tests to tell this species from the big blue and common octopuses and so catch seafood fraud.",
+    "relatives": "It belongs to the genus Enteroctopus in the family Enteroctopodidae, and was moved into that genus by Eric Hochberg in 1998. Very large sperm packets are a hallmark of the genus. DNA studies suggest the species may really be three subspecies, one in Japan, one in Alaska and one in Puget Sound. Octopuses, like squid and cuttlefish, are cephalopods, and they are ranked as the most intelligent invertebrates.",
+    "didYouKnow": "A tiny parasite called Dicyemodeca anthinocephalum lives in the kidney-like renal appendages of the giant Pacific octopus.",
+    "facts": [
+      {
+        "label": "Arm span",
+        "value": "Up to 4.3 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Usually about 15 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "3–5 years"
+      },
+      {
+        "label": "Eggs",
+        "value": "120,000–400,000"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What makes the octopus's blood blue?",
+        "choices": [
+          "Copper",
+          "Iron",
+          "Ink",
+          "A pigment taken from the algae it eats"
+        ],
+        "explanation": "Its blood carries oxygen with copper-based haemocyanin."
+      },
+      {
+        "prompt": "How long does a giant Pacific octopus usually live?",
+        "choices": [
+          "3 to 5 years",
+          "About 1 year",
+          "Up to 20 years",
+          "Around 50 years, like many deep-sea animals"
+        ],
+        "explanation": "It lives 3 to 5 years, longer than most octopuses."
+      },
+      {
+        "prompt": "What happens to a female after her eggs hatch?",
+        "choices": [
+          "She dies",
+          "She lays a second clutch",
+          "She moves to deeper water",
+          "She guards the young until they are fully grown"
+        ],
+        "explanation": "She stops feeding while guarding the eggs and starves soon after they hatch."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans."
+      }
+    ]
+  },
+  {
+    "id": "leopard-gecko",
+    "name": "Leopard Gecko",
+    "scientificName": "Eublepharis macularius",
+    "wikipediaTitle": "Leopard gecko",
+    "group": "reptile",
+    "regions": [
+      "asia"
+    ],
+    "range": "Rocky dry grassland and desert from Iran and Afghanistan to India and Nepal",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": 68.0
+    },
+    "mapSpan": 20,
+    "tagline": "Spotted desert gecko with eyelids and a fat-filled tail",
+    "lede": "Unlike most geckos, the leopard gecko can blink, and instead of climbing walls it lives on the ground among rocks and dry grass. Its thick tail is a larder of fat, and so many have been bred as pets that it is sometimes called the first domesticated lizard.",
+    "home": "Wild leopard geckos come from the rocky, dry grasslands and deserts of southern Asia: Afghanistan, Pakistan, north-west India, western Nepal and parts of Iran. They favour arid and semi-arid ground with sparse plants, clay or sandy soil and rocky crevices for shelter, but reportedly avoid places that are mostly sand. In the dry forests of Nepal and Pakistan they hide under loose bark.\n\nWinters can drop below 10 °C, sending the geckos underground into brumation, a dormant state in which they live off their fat reserves.",
+    "anatomy": "Hatchlings are 7 to 10 centimetres long and weigh 2 to 5 grams. Adult females reach 18 to 20 centimetres and 50 to 70 grams, males 20 to 28 centimetres and 60 to 80 grams. Males can be told by pores in front of the vent and bulges at the tail base. The wild colour is a yellow to brownish-orange base covered in dark spots, produced by yellow and black pigment cells.\n\nIts toes lack the sticky pads of many geckos, so it cannot climb smooth walls. It has around 100 teeth and can replace each one every 3 to 4 months, with a new tooth always developing beside the old. The tail stores fat much as a camel's hump does, and like most geckos it can shed the tail to escape. The dropped tail keeps twitching for up to 30 minutes to distract a predator, and a new one grows back, usually shorter, wider and smoother.",
+    "life": "Most field biologists consider wild leopard geckos nocturnal: they hide in burrows by day and come out at dusk, soaking up warmth from rocks that hold the day's heat. Some keepers argue they are more active at dawn and dusk, or even by day, which is one reason many give pet geckos UVB light.\n\nThey are opportunistic hunters, eating mostly invertebrates but also mouse pups, small reptiles and even hatchling leopard geckos, though this cannibalism seems to happen only in poorly fed animals. While stalking, a gecko may wag or twitch its tail. Males recognise each other's sex by scent; rival males arch their backs, make short dashes and bite hard. Camouflage is the main defence, and a cornered gecko may call out to scare off an attacker.",
+    "family": "Breeding takes place in summer. Females store sperm and can produce up to 3 clutches from one or two matings, laying about 6 to 8 clutches of 2 eggs in a season, each 21 to 28 days after mating. Incubation lasts 35 to 89 days, usually nearer the longer end. Hatchlings break out with an egg tooth that drops off within a day or two, shed their skin within 24 hours and cannot eat until they have done so.\n\nWild leopard geckos live an average of 4.9 years, but with good care captive ones can pass 20.",
+    "remarkable": "The temperature of the nest decides a leopard gecko's sex. Eggs kept cool, around 26 to 29 °C, or very warm, around 34 to 35 °C, produce females, while intermediate temperatures of about 31 to 33 °C produce males. Females from the hottest eggs tend to be more aggressive and are often infertile, and keepers call them 'hot females'.",
+    "outlook": "The leopard gecko's secretive habits make it easy to overlook: in Nepal the species went undetected until 2016. Because it breeds so readily in captivity, most of the animals sold as pets are captive-bred rather than wild-caught.",
+    "people": "Leopard geckos are among the most popular pet lizards, second only to the bearded dragon, and were one of the first lizards to become widely established in the pet trade thanks to how well they adapt to captivity. Selective breeding has produced a huge range of colours and patterns, called morphs, far brighter than the dull wild form, and some designer geckos carry red and white pigment cells that wild ones lack.\n\nThey are also laboratory animals, used to study the genetics of reptile colour. The Lemon Frost morph is of special interest because it is linked to tumours of the reflective pigment cells called iridophores, shedding light on how pigment cells develop and how tumours form.",
+    "relatives": "Edward Blyth described the species in 1854. Its genus name, Eublepharis, combines Greek words for 'good' and 'eyelid', because movable upper and lower eyelids, along with the lack of toe pads, set this family apart from other geckos. The species name macularius comes from the Latin macula, a spot. Five subspecies are recognised, including E. m. afghanicus, E. m. montanus and E. m. smithi.",
+    "didYouKnow": "Male leopard geckos treat females that are shedding their skin as if they were rival males.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "18–28 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "50–80 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 5 years wild"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly invertebrates"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What sets the leopard gecko apart from most other geckos?",
+        "choices": [
+          "It has movable eyelids",
+          "It has no tail",
+          "It lays a single egg",
+          "It glides between trees on flaps of skin along its sides"
+        ],
+        "explanation": "Movable eyelids and a lack of toe pads distinguish its family from other geckos."
+      },
+      {
+        "prompt": "What decides whether a leopard gecko hatches male or female?",
+        "choices": [
+          "Incubation temperature",
+          "The father's size",
+          "Day length",
+          "Whether the egg was laid early or late in the breeding season"
+        ],
+        "explanation": "Intermediate temperatures produce males; cool or very warm ones produce females."
+      },
+      {
+        "prompt": "How often can a leopard gecko replace each tooth?",
+        "choices": [
+          "Every 3 to 4 months",
+          "Once a week",
+          "Never",
+          "Once a year"
+        ],
+        "explanation": "Each of its roughly 100 teeth can be replaced every 3 to 4 months."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to conserve wildlife and wild places."
+      }
+    ]
+  },
+  {
+    "id": "fire-salamander",
+    "name": "Fire Salamander",
+    "scientificName": "Salamandra salamandra",
+    "wikipediaTitle": "Fire salamander",
+    "group": "amphibian",
+    "regions": [
+      "europe"
+    ],
+    "range": "Hilly deciduous forests across southern and central Europe",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 47.0,
+      "longitude": 10.0
+    },
+    "mapSpan": 20,
+    "tagline": "Europe's black-and-yellow salamander with a toxic warning",
+    "lede": "Glossy black splashed with yellow, the fire salamander wears its warning in plain sight: those bright patches mark the glands that make its skin poisonous. It is one of Europe's largest salamanders and can live astonishingly long; one kept at a German museum survived more than 50 years.",
+    "home": "Fire salamanders are found across most of southern and central Europe, usually at altitudes between 250 and 1,000 metres, though they occur higher in the Balkans and Spain and occasionally as low as 25 metres in northern Germany. They are most common in hilly country.\n\nTheir favourite habitat is deciduous woodland, where they hide among fallen leaves and around mossy tree trunks. They need clean small brooks or ponds nearby, because that is where their larvae develop.",
+    "anatomy": "Adults grow 15 to 25 centimetres long and weigh about 40 grams. The pattern varies enormously: some are almost entirely black, others mostly yellow, and in some subspecies red or orange replaces or mixes with the yellow. Compared with Luschan's salamander, which lives in the same region, it is larger and has a longer, sturdier shoulder girdle.\n\nThe colours are honest advertising, a defence known as aposematism. The poison glands are concentrated around the head and along the back, including the large parotid glands, and the coloured patches usually sit right over them. Outside the breeding season, males and females look almost identical.",
+    "life": "Fire salamanders are secretive, spending much of their time under logs and other cover, whether on land or in water. They come out in the evening and at night, but on rainy days they may be active in daylight too.\n\nThey eat insects, spiders, millipedes, centipedes, earthworms and slugs, and occasionally newts and young frogs. Small prey is snapped up within reach of the teeth on the roof of the mouth, or caught on the back half of the sticky tongue. In captivity they take crickets, mealworms, waxworms and silkworm larvae.",
+    "family": "Courtship happens on land. In the breeding season a male develops a swollen gland around his vent that produces a spermatophore, a stalk tipped with a sperm packet. When he meets a female he blocks her path, rubs her with his chin, then crawls beneath her and grips her front legs with his own. He deposits the spermatophore on the ground and tries to lower her onto it; if she takes up the packet, her eggs are fertilised inside her body.\n\nThe eggs also develop internally, and in most subspecies the female releases larvae into water just as they hatch. In two subspecies, fastuosa and bernardezi, the young develop fully inside her and she gives birth to small, fully formed salamanders. Captive females can store sperm for long periods and use it for later clutches.",
+    "remarkable": "Its main poison, samandarin, causes strong muscle convulsions, high blood pressure and rapid breathing in any vertebrate. Larvae do not produce it; only after maturity do the ovaries, liver and testes start making these defensive steroids. Some compounds in the skin secretions may also protect the salamander against bacterial and fungal skin infections.",
+    "outlook": "Despite its wide range and abundance, the fire salamander was moved from Least Concern to Vulnerable on the IUCN Red List in 2023. The reason is Batrachochytrium salamandrivorans, or Bsal, a chytrid fungus probably brought to Europe from east Asia with captive amphibians.\n\nThe collapse was first noticed in the Netherlands. Dead animals appeared in 2008, numbers fell by 96% from 2010, and the largest population dropped from 241 animals to 4 by 2011; just three small populations survive in the south of the country. Bsal has since spread to Belgium and western Germany, with a contained outbreak in Spain. Some sites in the Eifel Mountains now seem empty, though at many infected sites salamanders hang on in low numbers, and one population appears to have recovered.",
+    "people": "Some of the compounds in a fire salamander's skin secretions are potentially dangerous to human life, and the poison can be swabbed straight from its parotid glands. Chemists analysing these secretions found that the balance between samandarin and a second alkaloid, samandarone, varies from one salamander to the next, regardless of sex.\n\nPeople have shaped its fortunes in other ways. In the Netherlands it was already listed as Endangered on the national Red List before the fungus struck, having lost 57% of its range since 1950, mainly through changes in water availability and damage to its habitat.",
+    "relatives": "The fire salamander, Salamandra salamandra, has many recognised subspecies, among them the spotted fire salamander (the nominate form), the barred fire salamander S. s. terrestris, the yellow-striped S. s. fastuosa and the Galician fire salamander. Genetic studies have split several former subspecies off as full species: the African fire salamander, the Corsican fire salamander and the Near Eastern fire salamander, also called arouss al ayn.",
+    "didYouKnow": "Breeding has never been observed in neotenic fire salamanders, the ones that keep their larval form into adulthood.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "15–25 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 40 g"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Over 50 years recorded"
+      },
+      {
+        "label": "Diet",
+        "value": "Invertebrates"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What do the fire salamander's yellow patches signal?",
+        "choices": [
+          "That it is poisonous",
+          "That it is ready to mate",
+          "That it is young",
+          "That it has warmed up enough in the sun to hunt"
+        ],
+        "explanation": "The bright colours sit over its poison glands and warn predators away."
+      },
+      {
+        "prompt": "What has caused severe declines of fire salamanders?",
+        "choices": [
+          "An introduced fungus",
+          "Collecting for food",
+          "Forest fires",
+          "Competition with frogs brought from North America"
+        ],
+        "explanation": "The chytrid fungus Bsal, probably introduced from east Asia, has devastated populations."
+      },
+      {
+        "prompt": "How long did one fire salamander live at a German museum?",
+        "choices": [
+          "Over 50 years",
+          "About 5 years",
+          "About 15 years",
+          "Roughly 100 years"
+        ],
+        "explanation": "A specimen at Museum Koenig lived for more than 50 years."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps conserve threatened amphibians worldwide."
+      },
+      {
+        "name": "Save The Frogs",
+        "url": "https://www.savethefrogs.com",
+        "blurb": "Works to protect amphibian populations and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "great-bustard",
+    "name": "Great Bustard",
+    "scientificName": "Otis tarda",
+    "wikipediaTitle": "Great bustard",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "africa"
+    ],
+    "range": "Open grassland and farmland from Morocco and Iberia to Central and East Asia",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 45.0,
+      "longitude": 55.0
+    },
+    "mapSpan": 80,
+    "tagline": "One of the heaviest flying birds, a strutting ball of foam",
+    "lede": "A big male great bustard is among the heaviest birds that can still fly, yet in spring he struts across the steppe in one of the strangest displays in the bird world. Once widespread on the open plains, this stately bird is now Endangered.",
+    "home": "Great bustards breed in open grassland, steppe and farmland from northern Morocco and Portugal across southern and central Europe to the temperate grasslands of Central and East Asia, as far as Manchuria. They like flat or gently rolling country and undisturbed cultivation with cereals, vineyards or fodder crops, but avoid busy places in the breeding season.\n\nSpain is the stronghold, with around 30,000 birds, and Portugal and Spain together host about 60% of the world population. European birds mostly stay put, while Asian ones migrate: birds from the Volga travel about 1,000 kilometres to winter in Crimea, and those from northern Mongolia fly more than 2,000 kilometres to Shaanxi in China.",
+    "anatomy": "Males stand 90 to 105 centimetres tall, with wingspans of 2.1 to 2.7 metres, and weigh 5.8 to 18 kg; the heaviest verified bird, from Manchuria, weighed about 21 kg, a world record for a flying bird. Females are about a third smaller and weigh 3.1 to 8 kg, making this the most sexually dimorphic bird in size; Spanish males averaged nearly 2.5 times a female's weight.\n\nThe male is brown barred with black above and white below, with a grey head and neck, a chestnut breast and long white whisker-like bristles in the breeding season. Females are buff and brown, well camouflaged on open ground. In flight the long wings flash mostly white. The bird is long-legged, long-necked and barrel-chested.",
+    "life": "Great bustards are sociable, especially in winter, when flocks of several dozen gather, though the sexes keep apart outside the breeding season. They walk with a slow, stately gait and prefer to run rather than fly when disturbed; females have outrun red foxes. They are mostly silent, but grunt when alarmed.\n\nThey are omnivores whose diet shifts with the seasons. In north-west Spain in August, adults ate about half green plants, 40% invertebrates and the rest seeds, while in winter they lived almost entirely on seeds and greenery. Alfalfa, legumes, dandelions, grapes and the seeds of wheat and barley are favourites, and beetles and grasshoppers are among the main insects taken. Chicks rely on insects in their first summer.",
+    "family": "Males settle their rank over winter, ramming each other and striking with their bills. In March they gather at a lek to display, and one male may mate with up to five females. The female lays 1 to 3 glossy olive or tan eggs in May or June in a shallow scrape, usually near the lek, and incubates them alone for 21 to 28 days.\n\nChicks leave the nest almost at once but stay close to their mother. They start growing adult feathers and practising flight at about 2 months and can fly reasonable distances at 3 months, freezing against the ground if threatened. Over 80% die in their first year, many taken by foxes, crows and other predators. Females first breed at 2 to 3 years, males usually at 5 to 6. Most live around 10 years, and the oldest known reached 28.",
+    "remarkable": "The male's courtship display turns him almost inside out. He inflates his throat to the size of a football, tips forward with his head buried so his whiskery chin feathers point skyward, cocks his tail flat along his back and fans out his white wing feathers, then parades for minutes at a time looking like a heap of bath foam.",
+    "outlook": "The great bustard was classed as Endangered in 2023, after being listed as Vulnerable on the IUCN Red List since 1996. As of 2008 there were 44,000 to 51,000 birds, and there have been steep declines in eastern and central Europe and in Asia, especially Kazakhstan and Mongolia; in Iran only 19 remained in 2025. Ploughing of grassland, intensive farming, tree planting, irrigation, roads and fences destroy habitat, while machinery, pesticides, fires and dogs kill chicks and hunting takes adults.\n\nOverhead power lines are a major killer. In Austria and Hungary, power companies buried some cables and marked others with fluorescent markers, which quickly cut deaths.",
+    "people": "The word bustard comes from the Latin avis tarda, 'slow bird', via Old French, a nod to its deliberate walk. A bustard appears on the Wiltshire coat of arms and on Cambridgeshire's, and it is Hungary's national bird. In 1797 Thomas Bewick praised its flavour and warned it was in danger of extinction in Britain; he was right, and it was hunted out of the country in the 19th century.\n\nSince 2004 the Great Bustard Group has reintroduced the species to Salisbury Plain in Wiltshire using eggs from Saratov in Russia. The army training area offers the seclusion the birds need, chicks were raised there in 2009 and 2010, and by 2020 there were more than 100 birds.",
+    "relatives": "The great bustard is the only living member of the genus Otis, a name Linnaeus took in 1758 from the Greek word used by Pliny the Elder. It belongs to the bustard family. Three smaller bustards share parts of its range, the little bustard, the houbara and MacQueen's bustard, but none matches its size or colours. Africa's kori bustard rivals it in maximum weight, and the eastern subspecies, dybowskii, is greyer and less dimorphic than western birds.",
+    "didYouKnow": "Great bustards sometimes eat toxic blister beetles, apparently as a form of self-medication that also increases the males' sexual arousal.",
+    "facts": [
+      {
+        "label": "Wingspan",
+        "value": "2.1–2.7 m (males)"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to 18 kg (males)"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 10 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Plants, seeds and insects"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the word 'bustard' originally mean?",
+        "choices": [
+          "Slow bird",
+          "Great hen",
+          "Grass runner",
+          "Bird that booms across the open plain at dawn"
+        ],
+        "explanation": "It comes from the Latin avis tarda, 'slow bird', describing its deliberate walk."
+      },
+      {
+        "prompt": "Which country holds the largest great bustard population?",
+        "choices": [
+          "Spain",
+          "Russia",
+          "Hungary",
+          "Mongolia, on its eastern steppes"
+        ],
+        "explanation": "Spain holds around 30,000 birds, more than half the world population."
+      },
+      {
+        "prompt": "What is a major man-made killer of adult great bustards?",
+        "choices": [
+          "Power lines",
+          "Wind farms",
+          "Lighthouses",
+          "Poisoned bait set out for wolves and foxes"
+        ],
+        "explanation": "Fast-flying bustards are often killed by overhead electricity cables."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Great Bustard Group",
+        "url": "https://www.greatbustard.org",
+        "blurb": "UK charity reintroducing great bustards to Salisbury Plain."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "beluga-sturgeon",
+    "name": "Beluga Sturgeon",
+    "scientificName": "Huso huso",
+    "wikipediaTitle": "Beluga (sturgeon)",
+    "group": "fish",
+    "regions": [
+      "europe",
+      "asia"
+    ],
+    "range": "Caspian and Black Sea basins and rivers such as the Danube and Volga",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 43.0,
+      "longitude": 45.0
+    },
+    "mapSpan": 20,
+    "tagline": "Giant of the Caspian and source of beluga caviar",
+    "lede": "The beluga is the largest freshwater fish in the world, a heavily built, bony-plated giant that keeps growing throughout its life. Its eggs are sold as beluga caviar, and the hunt for them has pushed it to the edge of extinction.",
+    "home": "Belugas are found mainly in the basins of the Caspian and Black Seas. They once also lived in the Adriatic and the Sea of Azov and in the rivers linking these waters, but today the range has shrunk to the Caspian, the Black Sea and a few rivers such as the Danube. The Adriatic population is extinct.\n\nThey are euryhaline, moving freely between salt water, estuaries and fresh water, and sturgeons have proved tough enough to survive in some of the world's most altered and polluted rivers. Like most sturgeons they are anadromous, living at sea and running up rivers to spawn.",
+    "anatomy": "The largest accepted record is a female caught in the Volga estuary in 1827, weighing 1,571 kg and measuring 7.2 metres. Today mature fish caught are usually 1.4 to 3.3 metres long and weigh 19 to 264 kg, with females typically 20% larger than males.\n\nIt has the classic sturgeon build: a long body, a tail with a longer upper lobe, a partly cartilaginous skeleton and scaleless skin with rows of bony plates called scutes. Young belugas are slender with a pointed snout, while adults become heavy, humpbacked and massive-headed, with an enormous crescent-shaped mouth that can shoot forward. They are blue-grey or dark brown above, with silvery flanks and a white belly.",
+    "life": "The beluga is a predator of open water, sucking prey into its mouth extremely fast. Young fish eat bottom-dwelling invertebrates and become largely fish-eaters once they reach 8 to 10 centimetres. Adults mainly eat a wide range of large fish, about 73% of their diet, along with molluscs, crustaceans, waterbirds and even young Caspian seals.\n\nThe menu changes with age and place. In the Caspian, the smallest belugas take little Clupeonella fish, mid-sized ones eat gobies, and the largest hunt mullets, shads and other sturgeons. Spawners migrating up rivers eat carp, roach and zander.",
+    "family": "Belugas mature late: males at 12 to 16 years and females at 16 to 22, and they spawn only every 4 to 7 years. In the Danube they enter the river in autumn, spend the winter there and spawn the following spring on clean, hard gravel, where the sticky eggs cling. Some travel 1,700 kilometres upstream while others spawn just 100 kilometres from the sea.\n\nFemales lay their eggs at depths of 4 to 40 metres. Newly hatched larvae are 11 to 14 millimetres long, reaching about 18 to 20 millimetres 10 to 14 days later, once they have absorbed their yolk. Heading back to the sea, young sturgeon can cover up to 60 kilometres a day. The species can reportedly survive more than 100 years, though overfishing means no recent specimens have been found older than 56.",
+    "remarkable": "Among all bony fish, only the ocean sunfish rivals the beluga for sheer bulk, and only the giant oarfish is longer. It also competes with the great white shark and the Greenland shark for the title of largest actively predatory fish.",
+    "outlook": "The IUCN classifies the beluga as Critically Endangered. Overfishing and poaching for caviar removed the largest, most mature fish and nearly halted natural reproduction. Dams such as the Iron Gate on the Danube and the Volgograd Dam have cut off spawning grounds, and pollution from oil, industry, sewage and farming builds up in such a long-lived fish, harming its breeding.\n\nThe Danube is now the only river in the European Union with naturally reproducing sturgeon. International trade is restricted under CITES, and the United States has banned Caspian beluga caviar imports since 2005. Restocking is under way: more than 7,000 young fish were released into the Danube in Bulgaria after a WWF appeal, and since 2019 belugas have been released into Italy's Po river in an attempt to bring back the Adriatic population. Poaching continues; in 2021 two men in Romania were caught smuggling a 140 kg fish, which was returned to the river.",
+    "people": "Beluga caviar has long been one of the world's most prized and expensive delicacies, and the fish's rarity has only pushed its price higher. The flesh is less celebrated, a hearty white meat compared to swordfish. Its swim bladder once made the finest isinglass, now mostly replaced by cheaper alternatives from cod.\n\nThe name comes from the Russian word for 'white', probably for its pale flanks and belly; the beluga whale shares the name but is unrelated. Management of the Caspian sturgeon fishery began in the 1950s, but demand for caviar undermined it, and in 2016 a Florida fish farm became the only facility allowed to sell beluga caviar in the United States.",
+    "relatives": "The beluga belongs to the sturgeon family, Acipenseridae, in the order Acipenseriformes. Among sturgeons, only its close relative the kaluga, Huso dauricus, reaches a similar size, with a maximum of about 1,000 kg. Sturgeons are described as the most ancient fish of the Danube, and the beluga's spawning habits there evolved alongside the river valley itself, which may explain why fish of the same species spawn at such different distances upstream.",
+    "didYouKnow": "The beluga has 2 pairs of flattened barbels with leaf-like flaps dangling in front of its mouth.",
+    "facts": [
+      {
+        "label": "Record weight",
+        "value": "1,571 kg"
+      },
+      {
+        "label": "Record length",
+        "value": "7.2 m"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Over 100 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the name 'beluga' mean in Russian?",
+        "choices": [
+          "White",
+          "Giant",
+          "Ancient",
+          "River king, from an old Volga fishing word"
+        ],
+        "explanation": "It comes from the Russian word for 'white', probably for its pale flanks and belly."
+      },
+      {
+        "prompt": "Why has the beluga been so heavily fished?",
+        "choices": [
+          "For its caviar",
+          "For its skin",
+          "For its oil",
+          "For its bones, ground into traditional medicine"
+        ],
+        "explanation": "Poaching and overfishing for the female's roe have devastated wild populations."
+      },
+      {
+        "prompt": "At what age do female belugas mature?",
+        "choices": [
+          "16 to 22 years",
+          "1 to 2 years",
+          "About 5 years",
+          "Around 50 years old"
+        ],
+        "explanation": "Females mature at 16 to 22 years and spawn only every 4 to 7 years."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to conserve wildlife, including Danube sturgeon restocking."
+      }
+    ]
+  }
+]
