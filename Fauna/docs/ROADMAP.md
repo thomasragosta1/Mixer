@@ -1,13 +1,13 @@
 # Fauna roadmap
 
-## Now: grow the library to 365 animals
+## Done: the library has 365 animals
 
-Written in the Claude Code session from each animal's Wikipedia article (no API cost), in
+365 animals across all seven groups and every region, worldwide. Written in the Claude Code session from each animal's Wikipedia article (no API cost), in
 batches, using `scripts/plan/plan.json` (species chosen and checked by `scripts/plan/verify.py`).
-Each batch: write `scripts/new_animals/batch_NN.json`, run `scripts/add_animals.py` and
+Each batch: write `scripts/new_animals/batch_NN.json`, run `scripts/add_animals.py BATCH.json` and
 `scripts/validate_content.py`, push. Phones pick new animals up via ContentSync.
 
-## Then: release to everyone (remind the owner when 365 is reached)
+## Next: release to everyone
 
 1. Serve content through a free CDN (jsDelivr) from a stable branch, not the working branch.
 2. Write and host a privacy policy (Fauna collects no personal data).

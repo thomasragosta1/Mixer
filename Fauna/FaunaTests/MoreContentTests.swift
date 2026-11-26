@@ -40,12 +40,16 @@ final class MoreContentTests: XCTestCase {
         }
     }
 
-    func testScientificNamesAreBinomial() {
+    /// A binomial ("Panthera leo") or, for entries about a whole group, a single capitalised
+    /// genus or family name ("Atta", "Nautilidae").
+    func testScientificNamesAreBinomialOrAGroup() {
         for a in animals {
             let parts = a.scientificName.split(separator: " ")
-            XCTAssertGreaterThanOrEqual(parts.count, 2, a.id)
-            XCTAssertTrue(parts[0].first!.isUppercase, a.id)
-            XCTAssertTrue(parts[1].first!.isLowercase, a.id)
+            guard let first = parts.first?.first else { XCTFail("\(a.id) has no scientific name"); continue }
+            XCTAssertTrue(first.isUppercase, a.id)
+            if parts.count > 1 {
+                XCTAssertTrue(parts[1].first?.isLowercase == true, a.id)
+            }
         }
     }
 

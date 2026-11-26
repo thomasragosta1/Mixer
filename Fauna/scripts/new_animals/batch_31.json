@@ -1,0 +1,888 @@
+[
+  {
+    "id": "red-fox",
+    "name": "Red Fox",
+    "scientificName": "Vulpes vulpes",
+    "wikipediaTitle": "Red fox",
+    "group": "mammal",
+    "regions": [
+      "europe",
+      "asia",
+      "naEast",
+      "oceania"
+    ],
+    "range": "Across the Northern Hemisphere, with an introduced population in Australia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 50.0,
+      "longitude": 40.0
+    },
+    "mapSpan": 80,
+    "tagline": "The world's most widespread wild carnivore",
+    "lede": "Few wild animals have made themselves at home in as many places as the red fox. From Arctic forest edges to suburban back gardens, this russet hunter thrives almost anywhere, thanks to a rare talent for adapting quickly to new surroundings.",
+    "home": "The red fox is found on every continent except South America and Antarctica, across a range of nearly 70 million square kilometres. It lives throughout Europe, in Africa north of the Sahara, across most of Asia apart from the far south-east, and over much of North America, reaching as far north as the Arctic Circle. It is missing only from the Arctic islands, the coldest parts of central Siberia and extreme deserts.\n\nSettlers brought foxes to Australia in the 1830s and 1840s, and by 2012 there were thought to be more than 7.2 million there. Foxes have also moved into towns: they reached Bristol and London in the 1940s, and Britain's urban fox population is estimated to have grown from 33,000 in 1995 to 150,000 in 2017.",
+    "anatomy": "It is the largest of the 12 living species in the genus Vulpes, with a body 45 to 90 centimetres long, a fluffy tail of 30 to 55 centimetres that brushes the ground, and a weight of 2.2 to 14 kg. Vixens are typically 15 to 20 percent lighter than males. For their size red foxes are lightly built: their limb bones weigh about 30 percent less than a similar-sized dog's. They trot at 6 to 13 km/h and can sprint at 50 km/h.\n\nDespite the name, not every red fox is red. There are three main colour forms: red, silver or black, and the partly dark 'cross' fox, with a dark stripe down the spine and another across the shoulders. Their hearing is superb; they can pick up a mouse squeaking about 100 metres away.",
+    "life": "Red foxes are omnivores that have been recorded eating more than 300 kinds of animal, chiefly small rodents but also rabbits, birds, reptiles and insects. Each needs about 500 g of food a day, and in some places autumn fruit such as blackberries, plums and grapes can make up its entire diet. Foxes sometimes kill far more than they can eat: four foxes were once recorded killing around 200 black-headed gulls each in a single breeding season.\n\nThey mostly hunt alone, at dawn and dusk, and are fiercely possessive of their catches. Foxes mark their territories with urine, using up to 12 different postures to place each scent mark precisely, and they also mark empty food caches so they don't waste time checking them again.",
+    "family": "Red foxes breed once a year. After a pregnancy of 49 to 58 days, the vixen gives birth in a den to an average of four to six kits, though litters of up to 13 have been reported. Newborns weigh 56 to 110 g and are blind, deaf and toothless. Their eyes open at about two weeks, starting blue and turning amber at 4 to 5 weeks.\n\nWhile the mother stays with the kits, the father or a non-breeding vixen brings her food. Young foxes from the previous year often stay on as helpers, guarding, grooming and feeding their younger siblings. Kits leave the den at 3 to 4 weeks and reach adult proportions at 6 to 7 months. Captive foxes can live 15 years, but wild ones rarely survive past 5.",
+    "remarkable": "A hunting red fox can find a mouse it cannot see. It pinpoints the rodent by sound, then leaps high into the air, steering with its tail, and drops onto its target from as far as 5 metres away. Studies suggest that successful pounces in long grass or under snow involve the fox lining itself up with Earth's magnetic field.",
+    "outlook": "The red fox is listed as Least Concern. In Australia, however, it preys on native rodents and marsupials, and it is included among the world's 100 worst invasive species. New Zealand bans its import altogether.\n\nFoxes are also among the most important animals in the fur trade, with their pelts used for scarves, trimmings and coats, and farmers dislike them because losses of poultry and penned game birds can be substantial.",
+    "people": "The word 'fox' comes from Old English and goes back to an ancient root meaning 'thick-haired' or 'tail'; the Welsh name llwynog means 'bushy'. Males are called dogs or tods, females vixens and the young kits or cubs. Foxes star in folklore everywhere, from Reynard the trickster of medieval Europe to the shape-shifting kitsune of Japan and the nine-tailed fox spirits of Chinese tales.\n\nFox hunting dates back at least to the 4th century BC, and Alexander the Great is said to have hunted them. In the 20th century, the Russian geneticist Dmitry Belyayev spent 40 years breeding the tamest silver foxes, creating a line of genuinely domesticated foxes.",
+    "relatives": "The red fox arose in Eurasia, and the earliest fossils, from Hungary, date to between 3.4 and 1.8 million years ago. It reached North America in two waves, and genetic work shows North American foxes have been separated from those in the Old World for over 400,000 years, so they may yet prove to be a separate species.\n\nForty-six subspecies are recognised, split between large northern foxes and small grey desert foxes of North Africa and Asia. Wherever red and Arctic foxes meet, the red fox tends to win; in 1866 a single male was reported to have killed every Arctic fox on a small island.",
+    "didYouKnow": "Red foxes seem to dislike the taste of moles, yet they still catch them alive and bring them home for their kits to play with.",
+    "facts": [
+      {
+        "label": "Body length",
+        "value": "45–90 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "2.2–14 kg"
+      },
+      {
+        "label": "Top speed",
+        "value": "50 km/h"
+      },
+      {
+        "label": "Diet",
+        "value": "Omnivore, mainly rodents"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is a female red fox called?",
+        "choices": [
+          "A vixen",
+          "A tod",
+          "A reynard",
+          "A jill, from an old hunting term"
+        ],
+        "explanation": "Females are vixens; males are called dogs, tods or reynards."
+      },
+      {
+        "prompt": "From how far away can a pouncing red fox land on a mouse?",
+        "choices": [
+          "Up to 5 metres",
+          "Up to 50 centimetres",
+          "Up to 1 metre",
+          "Up to 20 metres when running downhill"
+        ],
+        "explanation": "It leaps high, steering with its tail, and can land on prey up to 5 metres away."
+      },
+      {
+        "prompt": "Where is the red fox counted among the worst invasive species?",
+        "choices": [
+          "Australia",
+          "New Zealand",
+          "Japan",
+          "South America"
+        ],
+        "explanation": "Introduced in the 1830s and 1840s, foxes in Australia prey on native rodents and marsupials."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Wildlife Trusts",
+        "url": "https://www.wildlifetrusts.org",
+        "blurb": "A UK federation of charities caring for local wildlife and nature reserves."
+      }
+    ]
+  },
+  {
+    "id": "mexican-beaded-lizard",
+    "name": "Mexican Beaded Lizard",
+    "scientificName": "Heloderma horridum",
+    "wikipediaTitle": "Mexican beaded lizard",
+    "group": "reptile",
+    "regions": [
+      "centralAmerica"
+    ],
+    "range": "Dry forests and scrub of western Mexico, from Sonora to Oaxaca",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 20.0,
+      "longitude": -104.0
+    },
+    "mapSpan": 20,
+    "tagline": "A venomous lizard that lives on stolen eggs",
+    "lede": "Clad in black and yellow scales that look like rows of tiny beads, the Mexican beaded lizard is one of very few lizards with a true venom system. Yet this slow, secretive reptile spends its life underground or up trees raiding nests, and almost never bites anyone who leaves it alone.",
+    "home": "Beaded lizards live along the Pacific side of Mexico and Central America, and the Mexican beaded lizard itself ranges from Sonora south to Oaxaca. Its homes are mostly tropical dry forest, thorn scrub and desert, though it also turns up in pine-oak woodland, from sea level to about 1,500 metres.\n\nIt is a creature of hiding places. In the wild it is active only from April to mid-November, and even then it spends only about an hour a day above ground.",
+    "anatomy": "Adults are 57 to 91 centimetres long, much bigger than their relative the Gila monster. A typical adult weighs about 800 g, large ones exceed 2 kg, and the heaviest known reached 4 kg. Both sexes are stocky with broad heads, though males have slightly wider heads and are a little larger overall.\n\nThe scales are small, rounded and do not overlap, and most of them, except on the belly, are reinforced by tiny bones called osteoderms. The colour is black with variable yellowish spots or bands. Its short, thick tail stores fat to see it through months of inactivity, and unlike many lizards it cannot regrow the tail if it breaks. A forked pink tongue collects scents and carries them to an organ in the roof of the mouth.",
+    "life": "This lizard is a specialist nest robber that feeds mainly on the eggs of birds and reptiles. It climbs into deciduous trees in search of nests and occasionally eats small birds, mammals, frogs, lizards and insects.\n\nIts venom comes from modified salivary glands in the lower jaw, each with a duct leading to grooved teeth. Rather than injecting venom like a snake, the lizard clamps on and chews so that venomous saliva works into the wound. Its grip is strong, but its teeth snap off easily at the base. Because it lives mostly on eggs, scientists still debate what the venom is really for. A bite is excruciatingly painful for up to 24 hours and can cause swelling, weakness and a fall in blood pressure, though deaths are rare.",
+    "family": "Beaded lizards can mature at 3 years old and usually mate in summer. Rival males wrestle in ritual combat bouts that can last several hours, and the winner mates with the female. She lays a clutch of 2 to 30 eggs in late summer or early autumn, and they hatch the following spring or summer.\n\nThe young are seldom seen. They are thought to spend their early lives underground, only emerging at 2 to 3 years old once they have grown considerably.",
+    "remarkable": "Together with the Gila monster, the beaded lizards are the only lizards known to have evolved an obvious venom delivery system.",
+    "outlook": "The species is threatened across its range by overcollection and habitat loss. It is protected under Mexican law as threatened, occurs in several protected areas, and is listed on Appendix II of CITES, which controls international trade.\n\nSuperstition is a problem too. Locals wrongly believe it is more venomous than a rattlesnake, that it can summon lightning with its tail, or that a glance from it can make a pregnant woman miscarry, so it is often killed on sight. Its close relative in Guatemala's Motagua Valley is down to fewer than 200 animals, and Project Heloderma, led by The Nature Conservancy and partners, works to save its dry-forest habitat.",
+    "people": "The genus name Heloderma means 'studded skin', from Greek words for a nail head and skin, while horridum is Latin for 'rough'. Arend Wiegmann described the species in 1829 as Trachyderma horridum, then renamed it six months later.\n\nIn the past century only about eight human bites have been documented, and nearly all came from people prodding captive lizards with a finger or bare foot. Breeders report that captive beaded lizards do best on small mice and rats.",
+    "relatives": "The beaded lizards belong to the family Helodermatidae, whose history can be traced back to the Cretaceous. The genus Heloderma has existed since the Miocene, when an extinct species ranged over most of North America, and because these lizards have changed so little they are sometimes called living fossils.\n\nTheir only other close living relative is the Gila monster. Beaded lizards look rather like the monitor lizards of Africa, Asia and Australia, but distinctive features and vast distances suggest they belong in a family of their own.",
+    "didYouKnow": "Beaded lizards are immune to the effects of their own venom.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "57–91 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 800 g, up to 4 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Bird and reptile eggs"
+      },
+      {
+        "label": "Clutch",
+        "value": "2–30 eggs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the genus name Heloderma mean?",
+        "choices": [
+          "Studded skin",
+          "Venom mouth",
+          "Sun lizard",
+          "Black dragon of the dry forest"
+        ],
+        "explanation": "It comes from Greek words for a nail head and skin."
+      },
+      {
+        "prompt": "What does the Mexican beaded lizard mainly eat?",
+        "choices": [
+          "Bird and reptile eggs",
+          "Fruit and flowers",
+          "Scorpions",
+          "Large mammals brought down with venom"
+        ],
+        "explanation": "It is a specialist nest predator that often climbs trees to find eggs."
+      },
+      {
+        "prompt": "What does the beaded lizard store in its short tail?",
+        "choices": [
+          "Fat",
+          "Venom",
+          "Water",
+          "Eggs"
+        ],
+        "explanation": "Fat in the tail helps it survive months of inactivity."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Nature Conservancy",
+        "url": "https://www.nature.org",
+        "blurb": "A global conservation group that helps protect beaded lizard habitat in Guatemala through Project Heloderma."
+      }
+    ]
+  },
+  {
+    "id": "iberian-ribbed-newt",
+    "name": "Iberian Ribbed Newt",
+    "scientificName": "Pleurodeles waltl",
+    "wikipediaTitle": "Iberian ribbed newt",
+    "group": "amphibian",
+    "regions": [
+      "europe",
+      "africa"
+    ],
+    "range": "Central and southern Iberian Peninsula and northern Morocco",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 38.0,
+      "longitude": -5.0
+    },
+    "mapSpan": 14,
+    "tagline": "Europe's largest newt fights back with its ribs",
+    "lede": "When a predator grabs an Iberian ribbed newt, it gets a mouthful of spikes. Europe's largest newt can push the sharp tips of its own ribs out through its skin, and it has also become an unlikely space traveller.",
+    "home": "This newt lives in the central and southern Iberian Peninsula and in northern Morocco. It is more aquatic than most European newts and salamanders: although it can walk perfectly well on land, most individuals rarely leave the water. It favours cool, quiet, deep water in ponds and cisterns, and in Spain and Portugal it once lived in the old wells that were common in villages.\n\nIn warmer months some of these pools dry up, and the newts move to damp places under rocks or among vegetation. Studies show they can adjust both their body workings and their behaviour to cope with these changing surroundings.",
+    "anatomy": "In the wild it grows to about 30 centimetres including the tail, though in captivity it rarely exceeds 20 centimetres. It is dark grey above and paler grey below, with a flat, spade-shaped head and a tail about half its body length. Along each side runs a row of 8 to 10 orange, wart-like bumps, the points where its ribs can break through. Its ribs are larger than those of most salamanders.\n\nMales are slimmer and usually smaller than females. The larvae have bushy external gills and paler patterns than the adults, and a pale, leucistic form is kept in captivity.",
+    "life": "Iberian ribbed newts feed on insects, aquatic molluscs, worms and tadpoles, hunting them in the calm water where they spend most of their time.\n\nTheir first response to danger is simply to swim or run away. Only when escape is impossible do they resort to their extraordinary defence.",
+    "family": "Like most amphibians, these newts begin life in water, breathing through gills as larvae. As they grow legs they lose their gills and become able to live on land as well as in water. Their development is slow, and females can store live sperm in the cloaca for up to five months before fertilising their eggs.\n\nA newt's sex is set by its chromosomes, but heat can override them. Females carry Z and W chromosomes and males two Zs, yet ZW larvae reared at 32 °C during particular stages of development turn into fully functional males.",
+    "remarkable": "When cornered, the newt stretches its skin so that its sharp ribs pierce through the orange bumps on its flanks. At the same moment, glands on its neck, back, sides and tail ooze a milky, sticky poison. The poison-coated rib tips act as stingers, injecting toxins into the thin lining of an attacker's mouth. It is harmless to humans, and the newt itself suffers little: its immune system, collagen-coated ribs and germ-killing skin chemicals let the punctures heal quickly without infection.",
+    "outlook": "The IUCN listed it as Least Concern in October 2020, after earlier assessments in 2006 and 2009 placed it as Near Threatened. It is still abundant in Morocco, Andalusia, Extremadura and southern Portugal, but it is declining in northern and central Portugal and eastern Spain.\n\nThreats include draining of ponds, farm chemicals, livestock trampling seasonal pools in North Africa, pollution, golf courses and new roads and buildings. It has largely vanished from coasts near tourist resorts and from the outskirts of Madrid. Introduced largemouth bass and red swamp crayfish eat its eggs and larvae, and many newts are killed on roads.",
+    "people": "In Spanish it is called gallipato, and in English it is also known as the sharp-ribbed newt or Spanish ribbed newt. It has flown in space on at least six missions, starting in 1985 aboard the Soviet satellite Bion 7, where ten newts shared the trip with two rhesus macaques and ten rats. Later experiments ran on the Mir space station between 1996 and 1999 and on Foton-M2 in 2005.\n\nScientists chose it because females can be mated on Earth and then have fertilisation triggered in orbit, and because its slow development makes every stage easy to watch. Injured newts healed faster in space, up to twice as fast at first, and the newts born there were fertile back on Earth.",
+    "relatives": "The Iberian ribbed newt belongs to the subfamily Pleurodelinae of the newt and salamander family Salamandridae. It should not be confused with the smaller Iberian newt, Lissotriton boscai, which shares part of its name.\n\nLike other salamanders it can regrow lost limbs, damaged heart tissue, brain cells and even its spinal cord, and its huge genome, about 20 billion letters long, has been sequenced to study how it does this.",
+    "didYouKnow": "If its eye lens is removed, the newt can grow a brand new one, and larvae manage it faster than adults.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 30 cm"
+      },
+      {
+        "label": "Diet",
+        "value": "Insects, molluscs, worms, tadpoles"
+      },
+      {
+        "label": "Habitat",
+        "value": "Ponds, cisterns, wells"
+      },
+      {
+        "label": "Defence",
+        "value": "Poison-coated ribs"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How does the Iberian ribbed newt defend itself when it cannot escape?",
+        "choices": [
+          "It pushes its ribs through its skin",
+          "It sheds its tail",
+          "It plays dead",
+          "It puffs up its throat and screams at the attacker"
+        ],
+        "explanation": "Its poison-coated rib tips pierce the skin and sting the predator's mouth."
+      },
+      {
+        "prompt": "In which year were Iberian ribbed newts first sent into space?",
+        "choices": [
+          "1985",
+          "1961",
+          "1999",
+          "2005"
+        ],
+        "explanation": "Ten newts flew aboard the Soviet satellite Bion 7 in 1985."
+      },
+      {
+        "prompt": "Where does the Iberian ribbed newt spend most of its life?",
+        "choices": [
+          "In water",
+          "Underground",
+          "In trees",
+          "In dry grassland far from any pond"
+        ],
+        "explanation": "It is more aquatic than most European newts and rarely leaves the water."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps zoos and partners worldwide save amphibian species at risk of extinction."
+      }
+    ]
+  },
+  {
+    "id": "eurasian-lynx",
+    "name": "Eurasian Lynx",
+    "scientificName": "Lynx lynx",
+    "wikipediaTitle": "Eurasian lynx",
+    "group": "mammal",
+    "regions": [
+      "europe",
+      "asia"
+    ],
+    "range": "Forests and mountains from Europe across Siberia to the Himalayas",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 55.0,
+      "longitude": 70.0
+    },
+    "mapSpan": 75,
+    "tagline": "Europe's ghostly forest cat, back from the brink",
+    "lede": "Tufted ears, a bobbed tail and paws like snowshoes give the Eurasian lynx an unmistakable look, yet few people ever see one. This secretive cat is so quiet that it can live in a forest for years without anyone noticing, its tracks in the snow found long before the animal itself.",
+    "home": "The Eurasian lynx ranges from northern, central and eastern Europe across Central Asia and Siberia to the Tibetan Plateau and the Himalayas, living in temperate and boreal forests up to 5,500 metres. It prefers rugged country with plenty of cover for stalking, including rocky steppe, forest-steppe and mountain woodland.\n\nIn mountainous areas it follows its prey down to the lowlands in winter. Despite its broad feet, it struggles in loose, deep snow and cannot survive where snow lies deeper than 100 centimetres.",
+    "anatomy": "It is the largest of the four lynx species. Males measure 76 to 106 centimetres from nose to rump and females 73 to 99 centimetres, with a short tail of 11 to 24.5 centimetres and a shoulder height of 55 to 75 centimetres. In Russia adults weigh 12 to 32 kg, while those in Scandinavia and farther west are smaller, at 7 to 26 kg.\n\nThe short coat is reddish or brown with black spots whose number and pattern vary hugely; animals in the south are brighter and more heavily spotted. In winter the fur grows much thicker and turns silver-grey to greyish brown. It has long, powerful legs, large furred paws, an all-black tail tip, black ear tufts and a grey-and-white ruff around the face.",
+    "life": "Lynx are mostly active at night and twilight, sleeping in dense thickets by day, and adults live alone. A hunting range can cover anything from 20 to 450 square kilometres depending on prey, and a lynx may travel up to 20 kilometres in a night, marking its range with scent.\n\nIt hunts by ambush and stalking, often climbing a rock or fallen tree to scan for prey. It is the only lynx that prefers hoofed animals, and roe deer are its favourite where they are common; in Estonia an adult kills about 60 a year. It can bring down deer weighing at least 150 kg and needs 1.1 to 2 kg of meat a day. In Anatolia, by contrast, hares make up almost its entire diet.",
+    "family": "The mating season runs from January to April, and after a pregnancy of 67 to 74 days the female gives birth in a secluded den under branches or roots, lined with feathers, deer hair and dry grass. Usually there are two kittens, each weighing 240 to 430 g, and their eyes open after 10 to 12 days.\n\nThe kittens start on solid food at 6 to 7 weeks but are not fully weaned until 5 or 6 months, and they stay with their mother until about 10 months old. Lynx mature at two or three years and have lived for 21 years in captivity.",
+    "remarkable": "The grey wolf is the lynx's main enemy, and in Russian forests wolves kill lynx that fail to escape up a tree. Yet the cat can turn the tables: in Belarus a male lynx was seen driving off a healthy adult wolf in a fight, and lynx in some forests may even dominate local wolves.",
+    "outlook": "By the 1950s the lynx had been wiped out across most of western and central Europe, and Norway paid a bounty on it from 1846 to 1980. It is now returning. Lynx from the Carpathians were released in Switzerland from 1971, and about 250 lived there in 2019; Germany, where the species was exterminated in 1850, saw its first wild-born litter in the Harz in 2002. The Carpathian population, about 2,800 animals, is the largest west of Russia.\n\nThe lynx is still threatened by habitat loss and fragmentation, poaching and loss of prey. The Balkan lynx numbers only about 100. The species is listed on CITES Appendix II and protected under the Bern Convention, though hunting is allowed in a few countries, including Russia and Estonia.",
+    "people": "The Balkan lynx is a national symbol of North Macedonia and appears on its 5 denar coin. An ancient Macedonian tribe, the Lynkestis, took its name from the 'Land of the Lynx', and Croatia's Risnjak massif is named after ris, the Croatian word for the cat.\n\nIn Britain, a Welsh poem from the 7th or 8th century probably refers to lynx in Cumbria, and reintroductions to the Scottish Highlands and Kielder Forest have been proposed. In January 2025 several lynx were illegally released in the Cairngorms and had to be captured and taken into care.",
+    "relatives": "Carl Linnaeus named the species Felis lynx in 1758. Many subspecies have since been proposed, though several, such as the Altai and Amur lynx, are no longer considered valid. Its closest relatives are the other members of the genus Lynx, including the smaller Iberian lynx of Spain and Portugal.\n\nFossils from Japan show that the Eurasian lynx or a close relative once lived there too, before disappearing thousands of years ago.",
+    "didYouKnow": "Like a house cat, the Eurasian lynx will 'chatter' at prey that is just out of reach.",
+    "facts": [
+      {
+        "label": "Body length",
+        "value": "73–106 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "7–32 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 21 years (captive)"
+      },
+      {
+        "label": "Diet",
+        "value": "Roe deer, hares, other mammals"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which prey does the Eurasian lynx prefer where it is common?",
+        "choices": [
+          "Roe deer",
+          "Wild boar",
+          "Brown hares",
+          "Salmon caught in shallow rivers"
+        ],
+        "explanation": "It is the only lynx that prefers hoofed prey, especially roe deer."
+      },
+      {
+        "prompt": "What snow depth is too deep for the lynx to survive in?",
+        "choices": [
+          "Over 100 centimetres",
+          "Over 10 centimetres",
+          "Over 30 centimetres",
+          "Over 3 metres, the depth of a large drift"
+        ],
+        "explanation": "Despite its snowshoe paws, it cannot cope where snow is deeper than 100 centimetres."
+      },
+      {
+        "prompt": "Which country's coin shows the Balkan lynx?",
+        "choices": [
+          "North Macedonia",
+          "Croatia",
+          "Norway",
+          "The Czech Republic and Slovakia"
+        ],
+        "explanation": "The Balkan lynx is a national symbol of North Macedonia and appears on its 5 denar coin."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and the habitats they depend on."
+      }
+    ]
+  },
+  {
+    "id": "australian-green-tree-frog",
+    "name": "Australian Green Tree Frog",
+    "scientificName": "Pelodryas caerulea",
+    "wikipediaTitle": "Australian green tree frog",
+    "group": "amphibian",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Northern and eastern Australia and the lowlands of New Guinea",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -18.0,
+      "longitude": 140.0
+    },
+    "mapSpan": 40,
+    "tagline": "The plump, smiling frog that moves in with people",
+    "lede": "Plump, green and wearing what looks like a permanent smile, the Australian green tree frog is happy to share a home with people. It often turns up on window sills or even inside houses, waiting patiently for the insects drawn to the lights.",
+    "home": "This frog is native to northern and eastern Australia and the lowlands of New Guinea, mostly where the climate is warm and wet. In Australia it ranges from the Kimberley through the Northern Territory and Queensland to northern and central New South Wales, covering about 4 million square kilometres in all.\n\nIt prefers moist forest but is not tied to rainforest. It is often found in trees near water, especially old eucalyptus with hollows that collect rain, but it also lives well away from water. Small introduced populations exist in Florida, and frogs released in New Zealand in the 1890s have not been seen since the 1950s.",
+    "anatomy": "It is a large, chunky tree frog up to 11.5 centimetres long, with females slightly bigger than males. A fatty ridge runs over each eye, the golden iris has a horizontal pupil, and the eardrum shows as a disc behind the eye. Its long hind legs and big, round sticky pads on every toe make it a good climber, and its toes are nearly three-quarters webbed.\n\nThe back can be brown, greyish-green or bright emerald, depending on temperature and surroundings, sometimes with small white spots. Males have a wrinkled grey to yellow vocal sac under the throat, while females have smooth white throats. A waxy coating on the skin helps stop it drying out.",
+    "life": "Green tree frogs are docile, unafraid of people and active at night, when they come out to call and hunt. By day they rest somewhere cool, dark and damp, such as a tree hole or rock crevice. In dry spells they hide away and wrap themselves in a cocoon of shed skin and mucus, and they sometimes sleep in clumps, perhaps to save moisture.\n\nThey eat mainly moths, cockroaches and locusts, but also spiders, smaller frogs and even small bats. Small prey is caught with the sticky tongue; larger prey is pounced on and pushed into the mouth with the hands. Snakes and birds hunt them, as do introduced cats and dogs. A frog in danger screams to scare off its attacker, and it squeaks when touched.",
+    "family": "Breeding takes place from November to February. Males call from slightly raised perches near the still water where they breed, and females lay clumps of 200 to 2,000 eggs, which float at first and sink within 24 hours.\n\nThe tadpoles take about six weeks to develop before turning into froglets and leaving the water. For a frog, the species is long-lived: in captivity the average is about 16 years, and some have passed 20.",
+    "remarkable": "Its skin is a natural pharmacy. Glands on the head release a mix of 25 peptides called caerins that kill bacteria and viruses, along with caeruleins that are now used in medicine. Several peptides from its skin destroy HIV without harming healthy immune cells, and the secretions also protect it from the deadly chytrid fungus that has devastated frogs elsewhere.",
+    "outlook": "The IUCN lists the green tree frog as Least Concern, thanks to its wide range, large population and tolerance of many habitats, and its numbers appear stable. Like all native Australian animals it is protected by federal law.\n\nIn suburbs it suffers from pollution and from pet cats and dogs, and some frogs carry chytrid. Its status in New Guinea is poorly known, and in 2002 about 75,000 were exported from Indonesia for the pet trade, which may affect some local populations.",
+    "people": "This was the first Australian frog ever described, by John White in 1790, which is why it is also called White's tree frog. The original specimen ended up in Sir Joseph Banks's collection and was destroyed when London's Hunterian Museum was bombed in the Second World War. White's frogs were damaged by preservative and looked blue, so the species was named Rana caerulea, the 'blue frog'. Its colour comes from blue and green pigments under a yellow layer, and the preservative had destroyed the yellow.\n\nToday it is one of the world's most popular pet frogs. Captive frogs often get overfed and grow fat over the head, earning the name 'dumpy tree frog'.",
+    "relatives": "It belongs to the family Pelodryadidae, found only in Australia and New Guinea, and is often listed under its older name, Litoria caerulea. It closely resembles the magnificent tree frog of north-western Australia, which has huge glands covering its head, and the white-lipped tree frog.\n\nA 2020 study found that it is really a complex of several species, including Pelodryas mira of New Guinea.",
+    "didYouKnow": "Fireflies of the genus Photinus are poisonous to green tree frogs, and a pet frog once died after being fed one.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Up to 11.5 cm"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 16 years (captive)"
+      },
+      {
+        "label": "Eggs",
+        "value": "200–2,000 per clump"
+      },
+      {
+        "label": "Diet",
+        "value": "Insects, spiders, small animals"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why was the species first named the 'blue frog'?",
+        "choices": [
+          "Preservative made specimens look blue",
+          "It is blue at night",
+          "Blue was a lucky name",
+          "Its tadpoles are bright blue for their first few weeks"
+        ],
+        "explanation": "The preservative destroyed a yellow pigment layer, leaving the frogs looking blue."
+      },
+      {
+        "prompt": "How does the green tree frog survive dry spells?",
+        "choices": [
+          "It wraps itself in a cocoon",
+          "It moves to the coast",
+          "It hides in ant nests",
+          "It drinks from flowers through its skin every morning"
+        ],
+        "explanation": "It hides in a cool spot inside a cocoon of shed skin and mucus."
+      },
+      {
+        "prompt": "Where does the nickname 'dumpy tree frog' come from?",
+        "choices": [
+          "Overfed pets get fat",
+          "Its short legs",
+          "Its call",
+          "Its habit of sitting in rubbish dumps near houses"
+        ],
+        "explanation": "Overfed captive frogs lay down fat over the head and body."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps zoos and partners worldwide save amphibian species at risk of extinction."
+      },
+      {
+        "name": "Save The Frogs",
+        "url": "https://www.savethefrogs.com",
+        "blurb": "Works to protect amphibians and their habitats through education and advocacy."
+      }
+    ]
+  },
+  {
+    "id": "eurasian-beaver",
+    "name": "Eurasian Beaver",
+    "scientificName": "Castor fiber",
+    "wikipediaTitle": "Eurasian beaver",
+    "group": "mammal",
+    "regions": [
+      "europe",
+      "asia"
+    ],
+    "range": "Rivers and wetlands from western Europe to China and Mongolia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 55.0,
+      "longitude": 45.0
+    },
+    "mapSpan": 65,
+    "tagline": "Europe's great engineer makes a comeback",
+    "lede": "A century ago the Eurasian beaver had almost disappeared, hunted out of nearly every river it once called home. Today it is one of the great conservation comebacks, gnawing, damming and reshaping waterways from Spain to Mongolia.",
+    "home": "The Eurasian beaver now lives across Europe, Scandinavia and Russia to China and Mongolia, with about half of all beavers in Russia. It is found in almost every country of continental Europe, from Spain and France to Bulgaria, and only the southern Balkans, such as Greece and Albania, lack a known population. Signs of beavers were recorded in Portugal in 2022 and again in 2025.\n\nIn Britain, beavers were hunted out in the 16th century, with the last record in England in 1526. In 2009 three families from Norway were released in Knapdale, Argyll, and by 2022 Scotland had more than 1,500 beavers. England now has over 1,000, and beavers are back in Wales too.",
+    "anatomy": "It is the largest rodent native to Eurasia and one of the largest in the world, with a body 80 to 100 centimetres long, a flat tail of 25 to 50 centimetres and a weight of 11 to 30 kg. On average it is the world's second-heaviest rodent after the capybara, slightly bigger than the North American beaver. One exceptional animal weighed 31.7 kg.\n\nIts fur colour varies by region: about two-thirds of Eurasian beavers are beige or pale brown, a fifth reddish-brown, and only 4 percent blackish. Its front teeth are a distinctive red.",
+    "life": "Beavers are strict vegetarians. They eat water and riverbank plants, including tubers, shoots, leaves and the roots of water lilies and cattails, as well as twigs and bark from willow, aspen and birch, and crops where they live near farms. A long appendix full of microbes lets them digest tough bark, and each beaver eats about 20 percent of its body weight every day.\n\nThey are a keystone species. Their dams trap sediment, clean the water, recharge groundwater and give shelter and food to trout and salmon, and the wetlands they create are home to water voles, otters and water shrews. By coppicing waterside trees they also produce dense thickets that shelter birds.",
+    "family": "Unlike most rodents, beavers form monogamous pairs that stay together for several breeding seasons. A female comes into season for only 12 to 24 hours once a year, between late December and May, most often in January.\n\nAfter a pregnancy of about 107 days she has an average of three kits, though litters range from two to six. Most beavers do not breed until they are three, but about a fifth of two-year-old females do.",
+    "remarkable": "By the early 20th century only about 1,200 beavers survived, scattered in eight separate pockets from France to Mongolia. Yet the species kept enough genetic variety to rebound, and beavers can recover from groups as small as three. One reason is that they choose mates that are genetically different from themselves.",
+    "outlook": "Beavers were hunted almost to extinction for their fur and for castoreum, a secretion from their scent glands believed to have medicinal powers. Conservation began in 1923 with the Voronezh Nature Reserve in the Soviet Union, and from 1934 to 1977 about 3,000 Voronezh beavers were moved to 52 regions from Poland to Mongolia.\n\nThe beaver has since been reintroduced to 25 European countries and was assessed as Least Concern in 2008. By 2020 there were at least 1.5 million. In England it became legally protected in 2022. Asian populations, however, remain small, fragmented and under considerable threat.",
+    "people": "People have known beavers for thousands of years. A carved stone from about 1,000 to 800 BC at Tell Halaf in northeastern Syria shows a beaver, and early Iranian writings had separate words for beaver and otter and prized castoreum highly.\n\nIn Denmark the beaver vanished some 2,000 to 2,500 years ago until 18 were brought from Germany's Elbe in 1999. In Spain, where it was wiped out in the 17th century, 18 beavers were released unofficially in 2003 and now live along the Ebro.",
+    "relatives": "Carl Linnaeus named the species Castor fiber in 1758. Over the following two centuries dozens of subspecies were described, but they were based on tiny differences in fur and skull shape and are not considered valid.\n\nIts closest relative is the North American beaver, which looks very similar but has 40 chromosomes to the Eurasian beaver's 48. In more than 27 attempts in Russia to cross the two, just one stillborn kit was born. Fossils show the Eurasian beaver lived in Spain in the Early Pleistocene, and its remains have turned up in the famous Denisova Cave.",
+    "didYouKnow": "Bats benefit from beavers too: the gaps beavers open in forests make it easier for bats to navigate, and bat numbers and variety rise.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "80–100 cm + tail"
+      },
+      {
+        "label": "Weight",
+        "value": "11–30 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Plants, twigs and bark"
+      },
+      {
+        "label": "Litter",
+        "value": "2–6 kits"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Besides fur, what were Eurasian beavers hunted for?",
+        "choices": [
+          "Castoreum",
+          "Their teeth",
+          "Their meat for royal feasts",
+          "Their tails, which were boiled into glue"
+        ],
+        "explanation": "Castoreum, a scent gland secretion, was believed to have medicinal properties."
+      },
+      {
+        "prompt": "How many chromosomes does the Eurasian beaver have?",
+        "choices": [
+          "48",
+          "40",
+          "24",
+          "64"
+        ],
+        "explanation": "It has 48, while the North American beaver has 40, so the two cannot interbreed."
+      },
+      {
+        "prompt": "Which rodent is heavier on average than the Eurasian beaver?",
+        "choices": [
+          "Capybara",
+          "North American beaver",
+          "Porcupine",
+          "Marmot"
+        ],
+        "explanation": "The Eurasian beaver is the world's second-heaviest rodent after the capybara."
+      }
+    ],
+    "charities": [
+      {
+        "name": "The Wildlife Trusts",
+        "url": "https://www.wildlifetrusts.org",
+        "blurb": "A UK federation of charities that has helped bring beavers back to British rivers."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and the habitats they depend on."
+      }
+    ]
+  },
+  {
+    "id": "sockeye-salmon",
+    "name": "Sockeye Salmon",
+    "scientificName": "Oncorhynchus nerka",
+    "wikipediaTitle": "Sockeye salmon",
+    "group": "fish",
+    "regions": [
+      "naWest",
+      "asia",
+      "openOcean"
+    ],
+    "range": "North Pacific Ocean and the rivers and lakes that drain into it",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 55.0,
+      "longitude": -165.0
+    },
+    "mapSpan": 60,
+    "tagline": "The salmon that turns scarlet for its last journey",
+    "lede": "Sockeye salmon leave the sea silver-blue and arrive at their spawning streams blazing red, with bright green heads. They make that journey only once, because after spawning every one of them dies.",
+    "home": "Sockeye live in the northern Pacific and the rivers that drain into it. In North America they reach south to the Columbia River, with strays seen as far as California, and north to Bathurst Inlet in the Canadian Arctic; in Asia they range from northern Hokkaido in Japan to the Anadyr River in Siberia. The longest inland journey ends at Redfish Lake in Idaho, more than 1,400 kilometres up river and 2,000 metres above sea level.\n\nSome populations never go to sea at all. These landlocked sockeye, called kokanee, spend their whole lives in lakes in Canada and the western United States and are much smaller, rarely over 35 centimetres.",
+    "anatomy": "Sea-run sockeye are 60 to 84 centimetres long and weigh 2.3 to 7 kg. At sea they are blue tinged with silver, which is why they are also called blueback salmon. They have 30 to 40 long, serrated gill rakers for straining food and, unlike some salmon, no spots on the back or tail.\n\nAs they mature, males change shape dramatically, growing a deeper body, a hump on the back and a longer snout. Females' snouts lengthen too, and their egg-filled ovaries can make up about a quarter of their body weight.",
+    "life": "Unlike other Pacific salmon, sockeye feed heavily on zooplankton both in fresh water and at sea, along with small shrimp; young fish also eat insects and the odd snail. In lakes they shift their depth, feeding times and schooling to stay safe from predators while still getting enough to eat.\n\nMost sockeye hatch in rivers near lakes, and the young spend one or two years in the lake before heading to the ocean, a journey of up to 1,600 kilometres. After two or three years at sea they return to their home waters to breed.",
+    "family": "On the spawning grounds males compete for females. Big males with tall humps rise to the top of the pecking order, while smaller ones lurk near a pair and dart in to release sperm as the eggs are laid. Males prefer red females and will move on to new ones after spawning.\n\nThe female does all the parental care. She digs 3 to 5 nests in the gravel, called redds, over several days and defends them until she dies or is driven off. The eggs hatch in six to nine weeks, and the young fish usually grow up in lakes.",
+    "remarkable": "Sockeye stop eating as soon as they enter fresh water, often months before spawning. The whole upstream journey, the fights, the nest digging and the eggs must all be powered by the fat and protein they brought from the sea. Fish with longer, harder migrations lay fewer eggs, and warm water burns their reserves even faster.",
+    "outlook": "In the United States, Snake River sockeye were listed as endangered in 1991, after a petition by the Shoshone-Bannock Tribes, and the Lake Ozette population in Washington is listed as threatened. Some runs have bounced back: by 2 July 2010 more than 300,000 sockeye had passed Bonneville Dam on the Columbia, and record numbers returned there in 2012.\n\nIn Canada, the famous Fraser River run collapsed in 2009 to about 1.37 million fish, only 13 percent of the forecast and the lowest in over 50 years, prompting a government inquiry. Illegal fishing is a concern in Kamchatka.",
+    "people": "The name 'sockeye' comes from suk-kegh, meaning 'red fish', in Halkomelem, the language of indigenous people along the lower Fraser River, and sockeye have long been central to the food and culture of the Coast Salish peoples of British Columbia. 'Kokanee' likewise means red fish in the Sinixt language.\n\nIn 2010 the sockeye catch was about 170,000 tonnes, some 65 million fish. Bristol Bay in Alaska is the world's biggest sockeye fishery, with up to 30 million caught in a year. In Asia, Kurile Lake on Kamchatka produces almost 90 percent of the sockeye. Sockeye are almost never farmed.",
+    "relatives": "The sockeye is a Pacific salmon and the third most common after pink and chum salmon. The genus name Oncorhynchus comes from Greek words for 'bend' and 'snout', and nerka is the Russian name for the sea-going form.\n\nJapan's kunimasu, or black kokanee, is a landlocked relative that was thought extinct after 1940, when a hydroelectric scheme made its lake too acidic. It survived because eggs had been moved to Lake Saiko, 500 kilometres to the south.",
+    "didYouKnow": "Nantahala Lake is the only place in North Carolina with kokanee, stocked there in the 1960s as food for predatory fish.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "60–84 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "2.3–7 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly zooplankton"
+      },
+      {
+        "label": "Migration",
+        "value": "Up to 1,600 km"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the name 'sockeye' originally mean?",
+        "choices": [
+          "Red fish",
+          "Sunken eye",
+          "River traveller",
+          "Fish that swims against the current"
+        ],
+        "explanation": "It comes from suk-kegh, a Halkomelem word meaning 'red fish'."
+      },
+      {
+        "prompt": "What do sockeye salmon mainly eat?",
+        "choices": [
+          "Zooplankton",
+          "Other salmon",
+          "Seaweed",
+          "Crabs and squid hunted on the seabed"
+        ],
+        "explanation": "Unlike other Pacific salmon, they feed heavily on zooplankton in fresh water and at sea."
+      },
+      {
+        "prompt": "Where is the world's largest sockeye fishery?",
+        "choices": [
+          "Bristol Bay, Alaska",
+          "Fraser River",
+          "Lake Ozette",
+          "The Columbia River estuary in Oregon"
+        ],
+        "explanation": "Up to 30 million sockeye a year are caught in Bristol Bay."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife, rivers and oceans."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans and fisheries."
+      }
+    ]
+  },
+  {
+    "id": "barn-swallow",
+    "name": "Barn Swallow",
+    "scientificName": "Hirundo rustica",
+    "wikipediaTitle": "Barn swallow",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "naEast",
+      "africa"
+    ],
+    "range": "Breeds across the Northern Hemisphere and winters across the south",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": 20.0
+    },
+    "mapSpan": 80,
+    "tagline": "The forked-tailed messenger of summer",
+    "lede": "For thousands of years, the return of the barn swallow has told people that summer is on its way. This glossy blue bird with a deeply forked tail is the most widespread swallow on Earth, and stray birds have even been reported in Antarctica.",
+    "home": "Barn swallows breed right across the Northern Hemisphere, from sea level to about 2,700 metres, avoiding only deserts and the coldest far north. They like open country with low vegetation, such as pasture, meadows and farmland near water, along with barns, stables or culverts to nest in and wires or roof ridges to perch on. In Europe they shun towns, but in Japan's Honshū they are town birds.\n\nIn winter they spread over much of the Southern Hemisphere, favouring savanna and ranch land. Birds that winter in southern Africa come from across Eurasia and may fly up to 11,660 kilometres on their yearly migration.",
+    "anatomy": "An adult male is 17 to 19 centimetres long, including 2 to 7 centimetres of long outer tail streamers, with a wingspan of 32 to 34.5 centimetres and a weight of just 16 to 22 g. It has steel-blue upperparts, a rusty red forehead and throat, a dark blue band across the chest and off-white underparts, with a line of white spots across the tail.\n\nFemales look similar but have shorter streamers and duller colours. Young birds are browner and lack the streamers. Barn swallows are not especially fast, flying at about 40 km/h and up to 72 km/h.",
+    "life": "Barn swallows catch insects on the wing, usually 7 to 8 metres above the ground or water. They often follow cattle, people or farm machinery to snap up the insects they disturb. In the breeding season large flies make up around 70 percent of their diet, while flying ants are important in winter.\n\nThey have a rich vocabulary, including a sharp alarm call for cats and a different one for birds of prey such as the hobby. Both sexes sing, though the female's short song was only described recently. Swallows boldly mob cats and hawks that come too close to their nests.",
+    "family": "Males arrive at the breeding grounds first, choose a nest site and advertise it with song and circling flights. Females favour males with long tail streamers, which tend to live longer and resist disease. Pairs stay together for life, but mating outside the pair is common, and males guard their mates closely.\n\nThe neat cup nest is built from mud pellets carried in the beak and lined with grass and feathers. Building one takes about two weeks, so old nests are highly prized. A pair usually raises two broods a year. The female lays two to seven red-spotted white eggs, which hatch after 14 to 19 days, and the chicks fly 18 to 23 days later. Young from the first brood sometimes help feed the second.",
+    "remarkable": "In North America, barn swallows often build their nests beneath those of ospreys. The ospreys eat only fish, but they drive off other birds of prey, giving the swallows a bodyguard. In return, the swallows' alarm calls warn the ospreys when a predator is near.",
+    "outlook": "With around 190 million birds spread over about 250 million square kilometres, the barn swallow was assessed as Least Concern on the 2019 IUCN Red List. Forest clearance and buildings have helped it for centuries.\n\nStill, there have been local declines, from DDT in Israel in the 1950s to a steady loss in parts of Europe and Asia as intensive farming reduces insects. A single reed bed at Mount Moreland near Durban in South Africa holds more than 3 million roosting swallows in winter, about 1 percent of the world population, and it lies under the flight path of a nearby international airport.",
+    "people": "Swallows nesting under the rafters were already familiar to the Roman poet Virgil, and Aristotle wrote that one swallow does not make a spring. Sailors traditionally earned a swallow tattoo after 5,000 nautical miles at sea, or 9,300 kilometres, as a symbol of safe return.\n\nOld superstitions said that harming a swallow's nest would make cows give bloody milk, which may be why nests often last 10 to 15 years; one was used for 48 years. In heraldry the swallow appears as the footless martlet. It is the national bird of Estonia and Austria.",
+    "relatives": "Carl Linnaeus named it Hirundo rustica in 1758, from the Latin for 'swallow' and 'of the country'. It is the only member of its genus that reaches the Americas, since most Hirundo swallows are African. The English name may come from the Swedish ladusvala, 'barn swallow'.\n\nEight subspecies are recognised. The North American form has reddish underparts, and the red-chested swallow of Africa was once treated as a subspecies.",
+    "didYouKnow": "In Africa, tigerfish have been recorded leaping out of the water to catch low-flying swallows.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "17–19 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "32–34.5 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "16–22 g"
+      },
+      {
+        "label": "Migration",
+        "value": "Up to 11,660 km"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What did a sailor's swallow tattoo traditionally mark?",
+        "choices": [
+          "5,000 nautical miles at sea",
+          "A first voyage",
+          "Surviving a storm",
+          "Crossing the equator for the very first time"
+        ],
+        "explanation": "A swallow was earned after 5,000 nautical miles, as a symbol of safe return."
+      },
+      {
+        "prompt": "What is the barn swallow's nest mainly made from?",
+        "choices": [
+          "Mud pellets",
+          "Woven grass",
+          "Saliva",
+          "Twigs stolen from house martin nests"
+        ],
+        "explanation": "Both birds carry mud pellets in their beaks and line the cup with grass and feathers."
+      },
+      {
+        "prompt": "Which bird do barn swallows sometimes nest beneath for protection?",
+        "choices": [
+          "Osprey",
+          "Peregrine falcon",
+          "White stork",
+          "Hobby"
+        ],
+        "explanation": "Ospreys drive off other birds of prey, and the swallows warn them of danger."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership protecting birds, their habitats and migration routes."
+      },
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, working to save birds and wildlife."
+      }
+    ]
+  },
+  {
+    "id": "veiled-chameleon",
+    "name": "Veiled Chameleon",
+    "scientificName": "Chamaeleo calyptratus",
+    "wikipediaTitle": "Veiled chameleon",
+    "group": "reptile",
+    "regions": [
+      "asia"
+    ],
+    "range": "Mountains, plateaus and valleys of Yemen and south-western Saudi Arabia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 15.5,
+      "longitude": 44.0
+    },
+    "mapSpan": 12,
+    "tagline": "A helmeted lizard that speaks in colour",
+    "lede": "With a tall crest rising from its head like a helmet, the veiled chameleon is one of the most striking lizards on Earth. It talks with its skin, flashing colours that warn rivals, attract mates and reveal its mood.",
+    "home": "The veiled chameleon is native to the south-western Arabian Peninsula, in Yemen and Saudi Arabia, where the climate is semi-arid and tropical. It lives on plateaus, in mountains and in valleys, and like most chameleons it spends its life in trees and large shrubs, preferring temperatures between 24 and 35 °C.\n\nEscaped and released pets have also set up wild populations in Florida and on the Hawaiian island of Maui.",
+    "anatomy": "Males are 43 to 61 centimetres long from snout to tail tip, while females are shorter, no more than about 35 centimetres, but bulkier. Both have a casque, the 'veil' on the head, which grows to about 5 centimetres in the largest adults and channels dew and rain down to the mouth. Hatchlings are pastel green and have no casque at all. Adult females are green with white, orange, yellow or tan mottling, and males are brighter, with bold bands of yellow or blue.\n\nIt is built for life in branches. Its toes are arranged in opposing pairs that grip like pincers, its tail can curl around twigs, and each eye swivels on its own, giving an all-round view. Its sticky tongue is about twice the length of its body.",
+    "life": "The veiled chameleon is mainly an insect eater and seems especially fond of green insects. It can tackle large prey but usually takes small items. Like a few other chameleons, it also eats plants such as vegetables and fruit, perhaps to get water during the dry season, and it drinks from water droplets.\n\nIt relies on camouflage to hunt and to hide from predators, and it turns dark grey or black when upset or stressed. Newly hatched chameleons that get a fright may drop to the ground and turn bright red.",
+    "family": "Veiled chameleons can breed at just four to five months old and mate several times a year. Males court with head rolls, chin rubs, swaying and bright colours. A receptive female shows pale blue spots on her back, but one that is not interested turns dark brown or black and may bite a persistent male.\n\nThe female buries clutches of up to 85 tough white eggs in sand. The embryos then rest for about 60 to 75 days before developing, and rising temperatures wake them up. Unlike many reptiles, the sex of the young does not depend on incubation temperature. Hatchlings can grow about a hundredfold in weight within a year. Females live about five years and males about eight.",
+    "remarkable": "Its colour changes are a language that helps rivals avoid pointless fights. Males brighten before approaching a rival, and the brighter and longer-lasting their stripes, the stronger their bite. A brighter head signals a male more likely to win. The veiled chameleon was one of the first species in which scientists studied the speed of colour change, and faster changes also predict the winner.",
+    "outlook": "Outside Arabia, the veiled chameleon has become a problem. On Maui it eats native Hawaiian insects such as the koa looper moth, small lizards and plants including koa and hala. It copes with places from dry coasts to wet mountains up to about 3,700 metres, and it breeds fast, laying eggs up to three times a year.\n\nHawaii is trying to control it by catching and removing chameleons and by urging owners never to release pets into the wild.",
+    "people": "The veiled chameleon is the most common chameleon in the pet trade and has been bred in captivity for almost 30 years. It copes with captivity better than most chameleons but is still hard to keep healthy, and young ones easily develop bone disease without calcium, vitamins and ultraviolet light.\n\nScientists use it to study how bodies develop and evolve, because it breeds readily and lays many eggs that are still at an early stage. Chameleons have fascinated people for a long time: the earliest known description of one was written by Aristotle.",
+    "relatives": "It belongs to the chameleon family, Chamaeleonidae, and has two subspecies: the veiled chameleon proper and the short-casqued chameleon. It is also called the cone-head or Yemen chameleon.\n\nThe word 'chameleon' comes from Greek words meaning 'ground lion', while calyptratus comes from the Greek for 'veil', after its tall casque.",
+    "didYouKnow": "Young veiled chameleons raised alone grow up darker and duller than those raised alongside others.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "43–61 cm (male)"
+      },
+      {
+        "label": "Clutch",
+        "value": "Up to 85 eggs"
+      },
+      {
+        "label": "Lifespan",
+        "value": "5–8 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly insects, some plants"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the veiled chameleon's casque help it do?",
+        "choices": [
+          "Channel water to its mouth",
+          "Hear predators",
+          "Store fat",
+          "Shade its eyes from the strong desert sun"
+        ],
+        "explanation": "The casque collects dew and rain and directs the drops into its mouth."
+      },
+      {
+        "prompt": "How long is a veiled chameleon's tongue?",
+        "choices": [
+          "About twice its body length",
+          "Half its body length",
+          "As long as its tail",
+          "Only a few millimetres, so it catches prey with its jaws"
+        ],
+        "explanation": "Its sticky tongue can reach about twice the length of its body."
+      },
+      {
+        "prompt": "Where has the veiled chameleon become an invasive pest?",
+        "choices": [
+          "Hawaii",
+          "Yemen",
+          "Saudi Arabia",
+          "Madagascar"
+        ],
+        "explanation": "On Maui it eats native insects, lizards and plants."
+      }
+    ],
+    "charities": [
+      {
+        "name": "IUCN",
+        "url": "https://www.iucn.org",
+        "blurb": "The global authority on the status of the natural world and the measures needed to protect it."
+      }
+    ]
+  },
+  {
+    "id": "indian-peafowl",
+    "name": "Indian Peafowl",
+    "scientificName": "Pavo cristatus",
+    "wikipediaTitle": "Indian peafowl",
+    "group": "bird",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests, farmland and villages across India and Sri Lanka",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 21.0,
+      "longitude": 79.0
+    },
+    "mapSpan": 30,
+    "tagline": "The peacock's train, nature's most famous puzzle",
+    "lede": "When a peacock raises his train into a shimmering, quivering fan of eyespots, it is one of the great sights of the natural world. It has also puzzled scientists for well over a century.",
+    "home": "The Indian peafowl is native to the Indian subcontinent and lives across most of India and Sri Lanka. In India it is found from the Indus valley to Assam and from the Himalayas to the southern tip, missing only from the marshy Sundarbans, at elevations up to 1,800 metres in the southern mountains. In Sri Lanka it keeps mostly to the drier lowlands.\n\nIt favours forest, small hills and scrub near water, and it also lives on farmland and in a semi-domesticated state around villages. People have carried it around the world, and it had reached Athens by 450 BC.",
+    "anatomy": "The male, or peacock, measures 100 to 120 centimetres from bill to tail, and as much as 230 centimetres to the end of a full train. Weighing 4.1 to 5.2 kg, it is among the heaviest birds in the pheasant family. It has a metallic blue head and neck, a fan-shaped crest, and patches of bare white skin above and below the eye. The train is not its tail but a mass of long upper tail coverts, most ending in an eyespot with a purplish-black heart ringed with blue and copper.\n\nThe peahen is smaller, about 97 centimetres long and 2.7 to 4.1 kg, with brown plumage, a whitish belly and a metallic green lower neck. Males grow their train from their second year, reach full splendour at four, and moult it every year.",
+    "life": "Peafowl forage on the ground in small groups called musters, usually one peacock with three to five peahens. They feed in the open in the early morning and evening, rest in shade in the heat of the day, dust-bathe at dusk and roost high in trees at night. Despite their size they can fly, but they usually escape by running through the undergrowth.\n\nThey eat almost anything: grass, seeds, flower buds, fruit, insects and small reptiles, as well as crops such as peanuts, tomatoes and rice. Their loud 'may-awe' calls become more frequent before the monsoon, and their alarm calls warn the forest of tigers. Leopards, dholes and jackals also hunt them.",
+    "family": "Peacocks are polygamous, and breeding begins with the monsoon rains. Several males, often related, gather at a display ground, each holding a small patch, and females visit them. A male raises his train into an arched fan, quivers it with a rustling sound and sometimes turns to show off his back. Peahens often seem to ignore the performance and carry on feeding.\n\nThe female lays three to eight eggs in a shallow scrape and incubates them alone for 28 to 30 days. The chicks follow her soon after hatching, and she may even carry downy young on her back up to a safe branch. Peafowl live about 15 years in the wild and up to 23 in captivity.",
+    "remarkable": "No one fully agrees why the peacock's train exists. Charles Darwin found it so baffling that he wrote that the sight of a peacock's feather made him sick, and he proposed sexual selection, choice by females, to explain it. In the 1970s Amotz Zahavi argued it is an honest handicap that proves a male's fitness. And despite its brilliance, the train contains no coloured pigments at all: the colours come from the microscopic structure of the feathers.",
+    "outlook": "The Indian peafowl is listed as Least Concern. A cautious estimate in 2002 put the population at more than 100,000, and it is not thought to be declining. It is poached for meat and feathers and poisoned by eating seed treated with pesticides.\n\nIt can also be a pest, cutting rice yields by up to 40 percent and, in towns, attacking its own reflection and breaking glass and mirrors. It is protected by law and culture in India and Sri Lanka, where only naturally shed feathers may be collected, and several sanctuaries have been set up for it.",
+    "people": "The peacock is India's national bird. The Hindu war god Kartikeya rides one, Krishna wears a peacock feather in his crown, and one story tells how the god Indra blessed the peacock with a 'thousand eyes'. In Greek myth, the origin of its plumage is told in the tale of Hera and Argus, and the Yazidi figure Melek Taus is shown as a peacock.\n\nMedieval European knights swore a 'vow of the peacock', and in 1526 Cardinal Wolsey summoned all of England's judges to decide whether peacocks were wild or domestic fowl; they ruled domestic. The genus name Pavo can be traced back through Greek and Persian to the Tamil word tokei.",
+    "relatives": "Linnaeus named the species Pavo cristatus, 'crested peacock', in 1758, and no subspecies are recognised. It belongs to the pheasant family, Phasianidae, and its relatives include the green peafowl. A cross between a male green peafowl and a female Indian peafowl produces a hybrid called a 'Spalding', after a Californian bird fancier.\n\nCaptive breeding has produced white, pied and black-shouldered forms. Darwin showed that the black-shouldered bird, once thought a separate species, was just a domestic colour variety.",
+    "didYouKnow": "Two Indian peafowl were once seen pecking at and teasing a cobra, though they did not kill it.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Male up to 230 cm with train"
+      },
+      {
+        "label": "Weight",
+        "value": "4.1–5.2 kg (male)"
+      },
+      {
+        "label": "Clutch",
+        "value": "3–8 eggs"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 15 years (wild)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What gives the peacock's train its colours?",
+        "choices": [
+          "The structure of its feathers",
+          "Blue and green pigments",
+          "Oil from a gland",
+          "Dust from the berries it eats during the monsoon"
+        ],
+        "explanation": "The train has no coloured pigments; its colours come from the feathers' microscopic structure."
+      },
+      {
+        "prompt": "What is a small foraging group of peafowl called?",
+        "choices": [
+          "A muster",
+          "A parliament",
+          "A lek",
+          "A murmuration of peacocks"
+        ],
+        "explanation": "A muster is usually one peacock with three to five peahens."
+      },
+      {
+        "prompt": "What did England's judges decide about peacocks in 1526?",
+        "choices": [
+          "They were domestic fowl",
+          "They were royal property",
+          "They were wild game",
+          "They could only be eaten by bishops"
+        ],
+        "explanation": "Summoned by Cardinal Wolsey, the judges ruled that peacocks were domestic fowl."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide, including across India, to protect wildlife and habitats."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership working to conserve birds and their habitats."
+      }
+    ]
+  }
+]

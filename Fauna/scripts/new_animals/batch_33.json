@@ -1,0 +1,908 @@
+[
+ {
+  "id": "lion",
+  "name": "Lion",
+  "scientificName": "Panthera leo",
+  "wikipediaTitle": "Lion",
+  "group": "mammal",
+  "regions": [
+   "africa",
+   "asia"
+  ],
+  "range": "Savannahs of sub-Saharan Africa and the Gir forest of western India",
+  "status": "VU",
+  "coordinate": {
+   "latitude": 5.0,
+   "longitude": 35.0
+  },
+  "mapSpan": 80,
+  "tagline": "The only wild cat that lives in families",
+  "lede": "The lion is the most social of all wild cats, living in prides where sisters, mothers and daughters hunt together and raise their cubs side by side. Once found from southeastern Europe to India, it now survives in scattered pockets of Africa and a single corner of western India.",
+  "home": "Lions prefer grassy plains, savannahs, scrub along rivers and open woodland with bushes, and they rarely enter closed forest. Most African lion country is savannah that gets 300 to 1,500 mm of rain a year, yet lions have been recorded at 3,600 metres on Mount Elgon and close to the snow line on Mount Kenya.\n\nThe Asiatic lion now lives only in and around Gir National Park in Gujarat, a mix of dry savannah forest and deciduous scrub. Historically, lions roamed almost all of Africa outside the Sahara and the central rainforest, and much of Southwest Asia. The last wild lion in Iran was sighted in 1942.",
+  "anatomy": "The lion is a muscular, broad-chested cat with a short, rounded head and round ears, second only to the tiger in size among cats. Its fur ranges from pale buff to silvery grey, yellowish red and dark brown. Cubs are born with dark spots that fade. Every lion's tail ends in a dark tuft, which in some individuals hides a hard spur about 5 mm long whose purpose is unknown.\n\nSkeletal muscle makes up 58.8% of a lion's body weight, the highest share of any mammal, and it is packed with fast-twitch fibres built for bursts rather than endurance. The male's mane starts growing in adolescence as testosterone rises and is full-sized by about 4 years. Males with darker manes seem to father more cubs and keep their prides longer, but they also suffer more from heat. Almost all the males in Benin's Pendjari National Park have no mane or only a very short one.",
+  "life": "Lions are inactive for about 20 hours a day, and most hunting happens around dawn. An average pride holds around 15 animals: several related females, up to 4 males and their cubs. Females usually stay in the pride they were born into and refuse to tolerate outside females, while young males leave and spend years as nomads before winning a pride of their own.\n\nLionesses often hunt as a team, each with a favoured role, some circling out on the wings while others wait in the centre to catch fleeing prey. Their main targets are wildebeest, zebra, buffalo, gemsbok and giraffe. A lion's heart is under 0.6% of its body weight, so it cannot chase for long; instead it creeps close and relies on a sudden acceleration that outstrips a gazelle's, then kills with a bite to the throat or muzzle that it can hold for up to 13 minutes. They roar mostly at night, a sound that carries 8 km.",
+  "family": "Lions breed at any time of year. After a pregnancy of about 110 days, the lioness gives birth to 1 to 4 cubs in a hidden den such as a thicket, reed-bed or cave, away from the pride. The cubs are born blind and weigh 1.2 to 2.1 kg. So that scent does not build up and draw predators, she moves them to a new den several times a month, carrying them one at a time by the scruff.\n\nShe usually brings them to meet the pride at 6 to 8 weeks old. Lionesses in a pride often give birth around the same time, and the cubs suckle from any nursing female. Weaning comes at 6 or 7 months. When new males take over a pride they often kill the young cubs, and mothers rarely stop them unless 3 or 4 join forces. Lions live 12 to 17 years in the wild and can pass 20 in captivity.",
+  "remarkable": "Lions and spotted hyenas are fierce rivals whose diets overlap by 58.6%, and who robs whom depends on where you look. In Ngorongoro Crater, lions live largely on kills stolen from hyenas. In Botswana's Chobe National Park, the reverse is true: hyenas take food from 63% of lion kills. Lions can cause up to 71% of hyena deaths in Etosha National Park, and hyenas have answered by mobbing lions that wander into their ranges.",
+  "outlook": "The lion has been listed as Vulnerable since 1996, after populations in African countries fell by about 43% from the early 1990s. Habitat loss and conflict with people are the biggest worries, and lions can no longer hold on outside protected areas. The isolated West African population, about 400 animals in 2015, is listed as Critically Endangered.\n\nIn India, numbers in and around Gir rose from roughly 180 in 1974 to about 650 counted in 2017, though a single isolated population risks inbreeding. Herders who keep livestock in improved enclosures lose far fewer animals to lions, which eases the conflict.",
+  "people": "Lions have stood for power and kingship for thousands of years. An Egyptian inscription from around 1380 BC credits Pharaoh Amenhotep III with killing 102 lions in ten years with his own arrows, and lions decorate the Processional Way to Babylon's Ishtar Gate. In Swahili, simba also means 'king' and 'strong', and the Sumerians recognised the constellation Leo about 4,000 years ago.\n\nThe relationship has a darker side: in 1898, lions took 28 officially recorded workers building the Uganda Railway near Tsavo, in Kenya.",
+  "relatives": "The lion belongs to the big-cat genus Panthera, and the earliest fossils recognisable as lions come from Olduvai Gorge in Tanzania and are up to 2 million years old. Today two subspecies are recognised: a northern one that includes the Asiatic lion and the lions of West and Central Africa, and a southern one in East and Southern Africa.\n\nThe cave lion of Ice Age Eurasia and the American lion were close prehistoric relatives. In zoos, lions have been crossed with tigers to produce the liger, which grows bigger than either parent.",
+  "didYouKnow": "White lions are not albinos: they carry a recessive gene for leucism and have normally coloured eyes and skin.",
+  "facts": [
+   {
+    "label": "Lifespan",
+    "value": "12–17 years in the wild"
+   },
+   {
+    "label": "Pride size",
+    "value": "About 15 on average"
+   },
+   {
+    "label": "Top speed",
+    "value": "74.1 km/h recorded"
+   },
+   {
+    "label": "Diet",
+    "value": "Large hoofed mammals"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "For roughly how many hours a day are lions inactive?",
+    "choices": [
+     "About 20",
+     "About 8",
+     "About 12",
+     "About 4, as they patrol their territory constantly"
+    ],
+    "explanation": "Lions spend about 20 hours a day resting, with most hunting around dawn."
+   },
+   {
+    "prompt": "Where does the Asiatic lion survive today?",
+    "choices": [
+     "Gir National Park, India",
+     "The Caucasus",
+     "Northern Iran",
+     "The Atlas Mountains of Morocco, after reintroduction"
+    ],
+    "explanation": "The Asiatic lion lives only in and around Gir National Park in Gujarat."
+   },
+   {
+    "prompt": "In which park do hyenas take food from 63% of lion kills?",
+    "choices": [
+     "Chobe",
+     "Ngorongoro Crater",
+     "Etosha",
+     "Kruger"
+    ],
+    "explanation": "In Botswana's Chobe National Park, hyenas regularly steal from lions."
+   }
+  ],
+  "charities": [
+   {
+    "name": "African Wildlife Foundation",
+    "url": "https://www.awf.org",
+    "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+   },
+   {
+    "name": "Panthera",
+    "url": "https://www.panthera.org",
+    "blurb": "A conservation group devoted to protecting the world's wild cats and their landscapes."
+   }
+  ]
+ },
+ {
+  "id": "plains-zebra",
+  "name": "Plains Zebra",
+  "scientificName": "Equus quagga",
+  "wikipediaTitle": "Plains zebra",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Grasslands and savanna woodlands of eastern and southern Africa",
+  "status": "NT",
+  "coordinate": {
+   "latitude": -10.0,
+   "longitude": 30.0
+  },
+  "mapSpan": 40,
+  "tagline": "Striped horses that live in loyal families",
+  "lede": "The plains zebra is the most common and widespread zebra, a stocky striped horse that lives in tight families of one stallion and several mares. Its high-pitched barking call, 'kwa-ha', is the origin of its scientific name, quagga, a Khoikhoi word for zebra.",
+  "home": "Plains zebras range from South Sudan and southern Ethiopia down through East Africa to Zambia, Mozambique and Malawi, and on into most of southern Africa. They live mainly in treeless grassland and savanna woodland, both tropical and temperate, and avoid deserts, dense rainforest and permanent wetlands. They need to drink and seldom stray more than 10 to 12 km from water, and they occur from sea level up to 1,300 metres on Mount Kenya.\n\nSome herds stay put in small ranges, while others migrate between separate wet- and dry-season ranges. Migrating zebras seem to remember where grazing was best and may anticipate conditions months before they arrive.",
+  "anatomy": "A plains zebra stands 127 to 140 cm at the shoulder and measures 217 to 246 cm along the head and body. Males weigh 220 to 322 kg and females 175 to 250 kg, putting the species between the larger Grévy's zebra and the smaller mountain zebra. It is stocky and fairly short-legged, with an upright mane and a tufted tail. Its body hair is only about 9.4 mm long, shorter than in other African hoofed mammals.\n\nIts stripes are broader than those of other zebras, running vertically at the front and turning almost horizontal on the hindquarters, and no two animals are alike. Northern zebras have narrow, crisp stripes, while southern ones have fewer stripes on the legs and belly and faint brown 'shadow' stripes between the black and white. Foals are brown and white, and rare albino zebras on Mount Kenya have blonde stripes.",
+  "life": "Plains zebras feed mostly on grass, browsing on leaves and twigs or digging up roots in the dry season. A flexible upper lip pushes stems between the incisors. Food passes through a zebra twice as fast as through a cow or antelope, so it can live on coarse, tough grass stems. It is often the first grazer to move into tall grass, opening the way for wildebeest and Thomson's gazelles.\n\nLions are the main predators and tend to pick off lone old males, while spotted hyenas chase down females and foals. When a lion is in view, zebras stand watching in a semicircle 50 to 100 metres away, and the stallion may make bluff charges. An adult can gallop at 60 to 70 km/h. Against hyenas and wild dogs, the family bunches up around its young while the stallion attacks.",
+  "family": "A harem's adults may stay together for months or years, while young males form bachelor groups of up to 15. Stallions build their harems by abducting young mares at their first oestrus, and rival males fight over her each cycle until one of them fathers her foal and keeps her for good. The mares have a pecking order, and the top mare leads the group.\n\nPregnancy lasts about a year, and a single foal of 30 to 35 kg is born, usually in the rainy season. It can stand almost at once and nibbles grass within a week. At first the mother keeps every other zebra away, even the stallion. Foals are weaned at about 11 months, females mature before 3 years and males after 5 or 6, and plains zebras live 25 years on average in the wild.",
+  "remarkable": "Unusually for animals that live in harems, plains zebra families gather into herds of hundreds, especially when migrating. Within these herds, pairs of harems may form stable subgroups so that individuals can mix with zebras outside their own family. Among harem-living animals, this has otherwise only been seen in primates such as the gelada and the hamadryas baboon.",
+  "outlook": "The plains zebra was listed as Near Threatened in 2016, with about 500,000 animals. It remains common, but numbers have fallen in 10 of the 17 countries where it lives, and it has vanished from Burundi and Lesotho. It is hunted for its hide and meat, loses land to farming, competes with livestock and finds migration routes blocked by fences. Civil wars have also caused declines, and the spread of woody scrub over open grassland makes zebras easier for predators to ambush. Large populations remain in parks such as the Serengeti, Etosha and Kruger.",
+  "people": "Zebras appear in southern African rock art made 20,000 to 28,000 years ago. The San people linked their dazzling stripes with water, rain and lightning, and for the Shona of Zimbabwe the zebra is a totem animal; the girls' name Madhuve means 'woman of the zebra totem'.\n\nThe southernmost form, the quagga, had stripes mostly on its head and neck. Dutch settlers and later Afrikaners hunted it for meat and skins, the last wild quagga died in 1878, and the last captive one died in Amsterdam's zoo in 1883. In 1984 the quagga became the first extinct animal to have its DNA analysed, and the Quagga Project is now trying to breed its look back from living zebras.",
+  "relatives": "John Edward Gray named the species Equus burchellii in 1824. When 21st-century research showed the quagga, named in 1785, was the same species, the older name Equus quagga took over. Despite appearances, plains zebras are more closely related to Grévy's zebras than to mountain zebras, and the two sometimes share herds and produce fertile hybrids.\n\nA 2018 DNA study found no clear subspecies, only a gradual north-to-south change, with modern populations spreading from southern Africa around 370,000 years ago.",
+  "didYouKnow": "A free-roaming herd of about 129 plains zebras lives near San Simeon in California, descended from animals left behind when William Randolph Hearst's private zoo was broken up.",
+  "facts": [
+   {
+    "label": "Shoulder height",
+    "value": "127–140 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "175–322 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "About 25 years"
+   },
+   {
+    "label": "Top speed",
+    "value": "60–70 km/h"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What do plains zebras typically do when a lion is in view?",
+    "choices": [
+     "Stand watching in a semicircle",
+     "Flee into dense forest",
+     "Lie flat in the grass",
+     "Form a tight ring with the foals hidden underneath the adults"
+    ],
+    "explanation": "They stay alert in a semicircle 50 to 100 metres away, and the stallion may bluff-charge."
+   },
+   {
+    "prompt": "In which city did the last captive quagga die?",
+    "choices": [
+     "Amsterdam",
+     "London",
+     "Cape Town",
+     "Berlin, in a royal menagerie"
+    ],
+    "explanation": "The last captive quagga died at Amsterdam's zoo in 1883."
+   },
+   {
+    "prompt": "How long does a plains zebra pregnancy last?",
+    "choices": [
+     "About a year",
+     "About 6 months",
+     "About 8 months",
+     "About 2 years"
+    ],
+    "explanation": "Gestation lasts around a year and produces a single foal."
+   }
+  ],
+  "charities": [
+   {
+    "name": "African Wildlife Foundation",
+    "url": "https://www.awf.org",
+    "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "A global conservation organisation protecting wildlife and habitats, including Africa's savannas."
+   }
+  ]
+ },
+ {
+  "id": "chimpanzee",
+  "name": "Chimpanzee",
+  "scientificName": "Pan troglodytes",
+  "wikipediaTitle": "Chimpanzee",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Forests and savannas of equatorial Africa, from Senegal to Tanzania",
+  "status": "EN",
+  "coordinate": {
+   "latitude": 2.0,
+   "longitude": 18.0
+  },
+  "mapSpan": 45,
+  "tagline": "Our closest cousin, a toolmaker and a politician",
+  "lede": "Chimpanzees and bonobos are humans' closest living relatives, and chimps share many of our habits: they make tools, hunt in teams, form alliances and even wage war on their neighbours. Watching them, Jane Goodall wrote, shows that personality, reason and joy are not ours alone.",
+  "home": "Chimpanzees live across equatorial Africa, from Senegal and Guinea in the west to Uganda, Tanzania and Zambia in the east. They adapt to rainforest, mountain forest, swamp forest, savanna and dry woodland, and at Bossou in Guinea they also use farmland. Four subspecies are recognised: western, Nigeria-Cameroon, central and eastern.\n\nA community's home range averages about 4 km across. Each evening, every chimp builds a sleeping nest in the trees, usually used for just one night.",
+  "anatomy": "Adults stand about 150 cm tall on average. Wild males weigh about 40 kg and females about 30 kg, though captive animals have reached 136 kg. The arms, averaging 83 cm, are longer than the legs, the hands have long fingers and short thumbs, and the big toe is opposable, so the feet can grip like hands.\n\nCoarse black hair covers the body except for the face, ears, fingers, toes, palms and soles; it can also be brown or ginger, and older chimps go bald in patches. On the ground they knuckle-walk on all fours or stride on two legs. Thanks to a high share of fast-twitch fibres, their muscles are about 50% stronger for their weight than ours.",
+  "life": "Chimpanzees are mainly fruit-eaters: in Uganda's Budongo Forest, 64.5% of feeding time went on fruit and 19% on leaves. They also eat insects, honey, eggs and mammals, most often red colobus monkeys. At Taï in Ivory Coast, hunters take roles, with drivers herding the monkeys, blockers cutting off escape, chasers and hidden ambushers, and the meat is shared out afterwards.\n\nNearly every population uses tools. Chimps fish for termites with twigs, choose longer sticks for the hives of dangerous honeybees than for stingless bees, crack nuts with stones and soak up water with leaf sponges. In Senegal, some sharpen sticks with their teeth to spear bushbabies hiding in tree holes.\n\nCommunities can exceed 200 members, but chimps usually travel in shifting parties of 6 or fewer. Males stay for life and climb a strict hierarchy by building coalitions, while low-ranking males may switch sides to win favours.",
+  "family": "Chimpanzees mate at any time of year, and females mate with several males. After 8 months a single helpless infant is born, which stays in contact with its mother about 80% of the time. From 5 to 7 months it rides on her back, and it is weaned at 4 to 5 years but stays emotionally close to her long afterwards. Females leave their birth community in adolescence and are adult at about 15, males a year later.\n\nFathers keep company with the mothers of their young and support their offspring, and adult males have adopted orphans. In good conditions, wild chimpanzees at Ngogo in Uganda live nearly 33 years on average, and captive ones have passed 60.",
+  "remarkable": "Chimpanzees at Kyoto University's Primate Research Institute learned to recognise the numbers 1 to 9 and their values. When the digits were flashed on a screen for less than a quarter of a second, a young male named Ayumu could point to where each had been, in order, quickly and correctly, and he did better than human adults given the same test.",
+  "outlook": "The chimpanzee is listed as Endangered. Between about 172,700 and 299,700 live in the wild, down from around 1 million in the early 1900s. Forests are being cleared and cut up by roads, which also let poachers in; in Ivory Coast, chimps make up 1 to 3% of bushmeat sold in city markets. Others are taken for the pet trade, killed by farmers or caught in snares set for other animals, and because they are so like us, they catch many human diseases. The western chimpanzee is Critically Endangered, with an estimated 21,300 to 55,600 left.",
+  "people": "The word chimpanzee came into English in 1738 from the Kongo or Vili language and was explained as meaning 'mockman'. In 1960, Jane Goodall began the first long-term field study of wild chimpanzees at Gombe in Tanzania; that year, a Gombe chimp became the first animal other than a human reported to make a tool.\n\nIn the 1960s a chimp named Washoe was taught American Sign Language and eventually learned more than 350 signs, though whether apes can truly acquire language is still argued over. On 31 January 1961, a chimpanzee called Ham became the first great ape in space.",
+  "relatives": "Chimpanzees belong to the great ape family with orangutans, gorillas and humans. They share the genus Pan with the bonobo, from which they split close to 2 million years ago, and the two lines parted from ours 7 to 10 million years ago. Chimps have 24 pairs of chromosomes to our 23, because two chromosomes fused during human evolution.\n\nThe species name troglodytes comes from the Troglodytae, a mythical race of cave-dwellers.",
+  "didYouKnow": "A 2022 study reported chimpanzees crushing insects and applying them to their own wounds and to the wounds of others.",
+  "facts": [
+   {
+    "label": "Height",
+    "value": "About 150 cm standing"
+   },
+   {
+    "label": "Weight",
+    "value": "30–40 kg in the wild"
+   },
+   {
+    "label": "Lifespan",
+    "value": "Over 60 years in captivity"
+   },
+   {
+    "label": "Diet",
+    "value": "Mostly fruit, plus meat"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What did a Gombe chimpanzee do in 1960 that had never been reported in a non-human animal?",
+    "choices": [
+     "Made a tool",
+     "Learned sign language",
+     "Built a nest",
+     "Taught its young to count using rows of pebbles"
+    ],
+    "explanation": "It modified a twig to fish termites out of their mound."
+   },
+   {
+    "prompt": "How many pairs of chromosomes does a chimpanzee have?",
+    "choices": [
+     "24",
+     "23",
+     "21",
+     "32"
+    ],
+    "explanation": "Chimps have 24 pairs; in humans two fused, leaving 23."
+   },
+   {
+    "prompt": "About how many chimpanzees lived in the wild in the early 1900s?",
+    "choices": [
+     "Around 1 million",
+     "Around 50,000",
+     "Around 200,000",
+     "Around 10 million across Africa and Arabia"
+    ],
+    "explanation": "Numbers have fallen from about 1 million to under 300,000."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Jane Goodall Institute",
+    "url": "https://www.janegoodall.org",
+    "blurb": "Founded by Jane Goodall to protect chimpanzees and their forests with local communities."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "A global conservation organisation working to protect Africa's great apes and their habitat."
+   }
+  ]
+ },
+ {
+  "id": "grey-wolf",
+  "name": "Grey Wolf",
+  "scientificName": "Canis lupus",
+  "wikipediaTitle": "Wolf",
+  "group": "mammal",
+  "regions": [
+   "naWest",
+   "europe",
+   "asia",
+   "arctic"
+  ],
+  "range": "Forests, tundra, grasslands and mountains across Eurasia and North America",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 55.0,
+   "longitude": 90.0
+  },
+  "mapSpan": 80,
+  "tagline": "The family hunter that gave us the dog",
+  "lede": "The grey wolf is the largest wild member of the dog family, a long-legged hunter that lives in close family packs and can roam tens of kilometres in a night. Its wild ancestors gave rise to every pet dog, yet few animals have been so feared and so persecuted by people.",
+  "home": "Wolves live across Eurasia and North America in forests, wetlands, shrubland, grassland, Arctic tundra, deserts and rocky mountain peaks. Human persecution has shrunk them to about a third of their historic range: they have vanished from much of western Europe, the United States and Mexico, and are extinct in the British Isles and Japan. They favour remote wilderness but can adapt to farmland.\n\nA pack defends a territory far bigger than it strictly needs, covering roughly 25 km a day. The smallest on record, held by six wolves in Minnesota, was about 33 km², while an Alaskan pack of ten ranged over 6,272 km².",
+  "anatomy": "A wolf is slender but powerful, with a deep rib cage, a sloping back, a heavily muscled neck and legs long enough to bound through deep snow. Its large head has a wide forehead and a long, blunt muzzle, and its heavy teeth are better at crushing bone than those of other canids. Adults are 105 to 160 cm long and 80 to 85 cm at the shoulder. They average about 40 kg, from 12 kg to a record 80 kg, and get bigger further north: Indian and Arabian wolves average only 25 kg.\n\nThe winter coat is so warm that a wolf can rest in the open at −40 °C with its tail over its face, and it does not freeze when breathed on. A separate warming system in the foot pads protects them from frostbite on ice. Most wolves are mottled grey, but coats range from white in the Canadian Arctic to black.",
+  "life": "Wolves feed mainly on large hoofed mammals: elk, moose, caribou and deer in North America, and wild boar, roe deer, red deer and chamois in Europe. They also catch hares, rodents and birds, eat apples, figs, melons and berries, and chew grass, perhaps to purge parasites. A pack of 15 can bring down an adult moose, yet single wolves and pairs often hunt more successfully than big packs, and success against hoofed prey is usually low. Even a white-tailed deer can kill a wolf.\n\nWolves often wound large prey and then rest for hours until it weakens. Once it is down, they eat the heart, liver and lungs first, and a wolf can swallow 15 to 19% of its body weight in one sitting. Packs howl to gather before and after hunts, and the sound can carry over 130 km²; despite the legend, wolves do not howl at the Moon.",
+  "family": "Wolves are monogamous, and pairs usually stay together for life. A pack is a family: the average is 8 wolves in North America and 5.5 in Europe, though one of 42 has been recorded. Young wolves stay 10 to 54 months before leaving, sometimes travelling 670 km to find a mate and found a new pack. Stress hormone levels in wolves rise sharply when a pack member dies.\n\nAfter 62 to 75 days, the female gives birth to 4 to 8 pups, occasionally as many as 14, in a den usually within 500 metres of water and often facing south for warmth. The pups weigh 300 to 500 g and are born blind and deaf. For the first weeks the mother stays with them while the father brings food. A pup's weight can rise nearly 30 times in 4 months, and by autumn the young join hunts for large prey.",
+  "remarkable": "Black wolves in North America owe their colour to dogs. When dogs first crossed the Bering Strait 12,000 to 14,000 years ago, they interbred with wolves and passed on their dark colouring. In parts of the western Canadian Rockies, black is now the most common wolf colour, and black wolves sometimes turn silver or even white as they age.",
+  "outlook": "The grey wolf is listed as Least Concern, with about 300,000 in the wild in 2003. Wolves were wiped out of Great Britain by 1684 and Ireland by 1770, and the last Japanese wolf was killed in 1905. Since the late 20th century, legal protection and the drift of people to cities have let them return: wolves were reintroduced to Yellowstone and Idaho, the Great Lakes states held over 4,000 by 2018, and the European Union now has more than 20,000. Every Mexican wolf left in the wild was captured between 1977 and 1980 for breeding, and more than 300 now live wild again. Conflict over livestock remains the main threat.",
+  "people": "Wolves run through human myth. Rome's founders, Romulus and Remus, were said to have been suckled by a she-wolf, and Norse legend feared the giant wolf Fenrir. The Pawnee called Sirius the 'wolf star', and both they and the Blackfoot knew the Milky Way as the 'wolf trail'. Anglo-Saxons used the animal in names such as Wulfstan, 'Wolf Stone'.\n\nLittle Red Riding Hood, first written down by Charles Perrault in 1697, cemented the big bad wolf of European stories. Attacks on people are in fact rare, and most recorded ones involved wolves with rabies.",
+  "relatives": "Carl Linnaeus named the wolf Canis lupus in 1758, keeping the dog as a separate species because of its upturned tail. Genetic studies now show that dogs and modern wolves are sister groups, both descended from an earlier wolf population, and over 30 subspecies of Canis lupus are recognised, including the dog and the dingo. Wolves are close enough to coyotes and golden jackals to produce fertile hybrids with them. One of the oldest modern wolf fossils, from Ponte Galeria in Italy, is about 406,500 years old.",
+  "didYouKnow": "A 2025 report described a wolf pulling on a crab trap's floating buoy and line to haul the sunken trap ashore and reach its bait.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "105–160 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "About 40 kg on average"
+   },
+   {
+    "label": "Litter",
+    "value": "4–8 pups, up to 14"
+   },
+   {
+    "label": "Diet",
+    "value": "Mostly large hoofed mammals"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How much of its body weight can a wolf eat in one sitting?",
+    "choices": [
+     "15–19%",
+     "About 5%",
+     "About 50%",
+     "Its whole body weight after a long winter fast"
+    ],
+    "explanation": "A wolf can bolt down 15 to 19% of its body weight at a single meal."
+   },
+   {
+    "prompt": "Where did black wolves in North America get their dark coats?",
+    "choices": [
+     "From dogs",
+     "From coyotes",
+     "From dark forests",
+     "From ancient interbreeding with the extinct dire wolf"
+    ],
+    "explanation": "Dogs that crossed the Bering Strait 12,000 to 14,000 years ago passed the colour to wolves."
+   },
+   {
+    "prompt": "What is the average wolf pack size in North America?",
+    "choices": [
+     "About 8",
+     "About 3",
+     "About 20",
+     "About 42"
+    ],
+    "explanation": "North American packs average 8 wolves, Europe's 5.5."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Defenders of Wildlife",
+    "url": "https://defenders.org",
+    "blurb": "Works to protect wolves and other native wildlife across North America."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "A global conservation organisation that helps people and large carnivores live side by side."
+   }
+  ]
+ },
+ {
+  "id": "black-rhinoceros",
+  "name": "Black Rhinoceros",
+  "scientificName": "Diceros bicornis",
+  "wikipediaTitle": "Black rhinoceros",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Bushland and savanna reserves of eastern and southern Africa",
+  "status": "CR",
+  "coordinate": {
+   "latitude": -15.0,
+   "longitude": 28.0
+  },
+  "mapSpan": 40,
+  "tagline": "A hook-lipped browser with a famously short fuse",
+  "lede": "The black rhinoceros is a two-horned, hook-lipped browser that plucks leaves from thorny bushes and charges at almost anything it doesn't like, including tree trunks. Hunted for its horn, it crashed from tens of thousands to a few thousand animals in a single human lifetime.",
+  "home": "Black rhinos once lived across most of eastern and southern Africa, from Eritrea and Sudan to the Cape, and westward around Lake Chad. Today they survive only in protected reserves, in scattered populations in countries such as Kenya, Tanzania, Namibia, South Africa and Zimbabwe. Their ideal habitat is thick scrub and bushland with some woodland, though they also use riverside woods and marshes, and one subspecies lives in the deserts of north-western Namibia.\n\nSome animals have been moved to safer areas and reintroduced where they had died out: to Malawi in 1993, Botswana in 2003, Zambia in 2008, and Rwanda's Akagera National Park, which received 18 rhinos from South Africa in 2017.",
+  "anatomy": "An adult stands 1.32 to 1.8 metres at the shoulder, measures 2.8 to 3.75 metres long and usually weighs 800 to 1,400 kg, with cows smaller than bulls. Despite the name, its skin is brown to grey. Its two horns are made of keratin; the front one is usually about 50 cm long, and the longest known was nearly 1.5 metres. Occasionally a small third horn grows.\n\nThe pointed, grasping upper lip strips leaves and twigs, unlike the square lip of the grass-eating white rhino, and the black rhino holds its head higher because it browses rather than grazes. Thick skin shields it from thorns. Its eyesight is better than once thought, roughly as good as a rabbit's, and its tube-shaped ears swivel in all directions.",
+  "life": "Black rhinos browse on leafy plants, twigs, shoots, thorny bushes and small trees, with a fondness for acacias and euphorbias, and are known to eat up to 220 plant species. They feed in the morning and evening and spend the hottest hours resting or wallowing in mud, which cools them and keeps off parasites. They can go up to 5 days without water during drought and often follow elephant trails to waterholes.\n\nThey are mostly solitary and not strongly territorial. Home ranges are about 70 to 100 km² in the Serengeti but much smaller where food and water are plentiful. Rhinos read each other's dung piles and urine sprays to learn who is around, and their age, sex and identity. Though bulky, a black rhino can run at 55 km/h on its toes.",
+  "family": "Black rhinos breed at any time of year. When a cow is in season, a bull follows her and scrapes and scatters her dung so that rivals have a harder time picking up her trail. Courtship includes snorting, horn sparring and a display called 'bluff and bluster', in which a rhino swings its head and repeatedly runs off, and pairs may stay together for days or weeks.\n\nPregnancy lasts 15 months. The single calf weighs 35 to 50 kg and can follow its mother after just 3 days. It is weaned at about 2 years and stays with her until the next calf arrives 2 to 3 years later. Without poaching, black rhinos live 35 to 50 years, and one named Fausta reached 57.",
+  "remarkable": "Black rhinos have the highest rate of deadly fighting recorded for any mammal. About 50% of males and 30% of females die from injuries suffered in combat with other rhinos. Adults have almost no natural predators beyond the odd crocodile, so their fiercest enemy, apart from people, is often another black rhino.",
+  "outlook": "The black rhinoceros is Critically Endangered. There were probably several hundred thousand around 1900 and about 70,000 in the late 1960s, but by the early 1990s fewer than 2,500 remained. Demand for horn, especially for carved dagger handles in the Middle East and for traditional Chinese medicine, cut numbers by 96% between 1970 and 1992. Armed guards and reserves have helped, and the IUCN now estimates 3,142 mature animals in the wild. Three subspecies are extinct, including the western black rhinoceros, declared extinct in 2011, and the Chobe subspecies may be down to a single animal.",
+  "people": "Rhino horn has been prized for a very long time: Chinese records of rhino killing go back to 1200 BC, when horn was carved into wine cups and the skin made into armour, belts and crowns. Medical science has never shown the horn to treat any illness. International commercial trade in black rhino horn has been banned under CITES since 1977.\n\nSome reserves have tried dehorning, sawing most of the horn off a sedated rhino so that it is worth less to poachers, though it is unclear whether this works, and mothers use their horns to fend off predators.",
+  "relatives": "Carl Linnaeus named it Rhinoceros bicornis, 'double-horned rhinoceros', in 1758, probably working partly from an Indian rhino skull with a second horn fixed on by a collector. It is the only living member of the genus Diceros. Its closest relative is the white rhinoceros, from which it split about 7 million years ago; the 'white' in that name may come from an Afrikaans word for 'wide', describing its square lip. The oldest definite black rhino fossils, from Koobi Fora in Kenya, are about 2.5 million years old.",
+  "didYouKnow": "The chemical make-up of a rhino's horn reflects its diet, so scientists can use it to trace where a seized horn came from and help convict poachers.",
+  "facts": [
+   {
+    "label": "Shoulder height",
+    "value": "1.32–1.8 m"
+   },
+   {
+    "label": "Weight",
+    "value": "800–1,400 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "35–50 years"
+   },
+   {
+    "label": "Top speed",
+    "value": "55 km/h"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What shape is a black rhino's upper lip?",
+    "choices": [
+     "Pointed and grasping",
+     "Square and wide",
+     "Split like a camel's",
+     "Flat and broad, built for cropping short grass"
+    ],
+    "explanation": "Its pointed, prehensile lip strips leaves and twigs; the white rhino has the square lip."
+   },
+   {
+    "prompt": "How long is a black rhino's pregnancy?",
+    "choices": [
+     "15 months",
+     "9 months",
+     "11 months",
+     "22 months, as long as an elephant's"
+    ],
+    "explanation": "Gestation lasts 15 months and produces a single calf."
+   },
+   {
+    "prompt": "Roughly what share of male black rhinos die from fighting injuries?",
+    "choices": [
+     "About half",
+     "About 5%",
+     "About 20%",
+     "Nearly all of them"
+    ],
+    "explanation": "About 50% of males and 30% of females die from combat injuries, the highest rate known in mammals."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Save the Rhino",
+    "url": "https://www.savetherhino.org",
+    "blurb": "Supports field programmes protecting all five rhino species from poaching."
+   },
+   {
+    "name": "International Rhino Foundation",
+    "url": "https://rhinos.org",
+    "blurb": "Funds rhino protection and research in Africa and Asia."
+   }
+  ]
+ },
+ {
+  "id": "eurasian-otter",
+  "name": "Eurasian Otter",
+  "scientificName": "Lutra lutra",
+  "wikipediaTitle": "Eurasian otter",
+  "group": "mammal",
+  "regions": [
+   "europe",
+   "asia",
+   "africa"
+  ],
+  "range": "Rivers, lakes and coasts of Europe, much of Asia and North Africa",
+  "status": "NT",
+  "coordinate": {
+   "latitude": 48.0,
+   "longitude": 40.0
+  },
+  "mapSpan": 70,
+  "tagline": "The river hunter that came back from the brink",
+  "lede": "The Eurasian otter is a sleek, brown river hunter with a cream belly, found from the coasts of Norway to the foothills of the Himalayas. Poisoned out of much of Europe in the last century, it has since made one of the continent's great wildlife comebacks.",
+  "home": "No otter is more widespread. This species lives across Europe, in the Maghreb of North Africa, and through much of Asia, from Syria's Euphrates valley to the Himalayan foothills, the Western Ghats and central India. In western Nepal it has been recorded in rivers at about 1,600 metres. It is now common in Latvia, along the Norwegian coast, in western Spain and Portugal, and throughout Great Britain and Ireland, but it is thought to be extinct in Switzerland and Liechtenstein. In Kyrgyzstan it was believed lost until a single otter was spotted on the Turuk River in 2025.\n\nIt needs clean fresh water with plenty of food: lakes, streams, rivers, canals and ponds, especially open stretches of stream. It also hunts along sea coasts, but it must visit fresh water regularly to wash the salt from its fur.",
+  "anatomy": "Eurasian otters are long and slender, with brown fur on the back and cream fur on the belly. They usually measure 57 to 95 cm, plus a tail of 35 to 45 cm, and females are shorter than males. Most weigh 7 to 12 kg, though a big old male can reach 17 kg, and one unverified record exceeded 24 kg.\n\nTheir bones are unusually thick and dense, a condition called osteosclerosis, which makes them heavier for their size and less buoyant in the water.",
+  "life": "Fish make up most of the diet, especially in Mediterranean and temperate rivers, where they are most plentiful. In winter and in colder places, otters widen their menu to worms, caterpillars, clams, crustaceans, insects, eggs, amphibians, birds and small mammals, including young European beavers. An otter can overpower prey much larger than itself, and occasionally kills adult greylag geese.\n\nOtters are strongly territorial and usually live alone. A territory stretches anywhere from 1 to 40 km along the water, typically about 18 km. It is shorter on coasts, where the hunting ground is wide, and longer on narrow rivers. Each otter marks its patch with droppings, known as spraints, and defends it only against otters of the same sex, so male and female territories overlap.",
+  "family": "Otters mate in the water and can breed at any time of year. Females mature at 18 to 24 months, but usually first breed at about 2.5 years old. After a pregnancy of 60 to 64 days, the mother gives birth to 1 to 4 pups, each weighing about a tenth of her own weight.\n\nThe young depend on her for around 13 months. The father plays no direct part in raising them, although the mother's territory usually lies entirely inside his.",
+  "remarkable": "In 2001, scientists extracted DNA from the teeth of otter skulls held in two Danish museums, collected between 1883 and 1963. They expected to find that the 20th-century crash had drained the otters' genetic diversity. It had not. Instead, the DNA revealed a population bottleneck about 2,000 years ago, possibly caused by ancient human pressure.",
+  "outlook": "Across its range, the Eurasian otter declined sharply in the second half of the 20th century, mainly because of pollution from PCBs and organochlorine pesticides, along with habitat loss and hunting. It is now listed as Near Threatened and recovering in much of Europe. In the United Kingdom, the number of sites with otters rose by 55% between 1994 and 2002, and by 2011 they had returned to every county in England, having once survived only in the West Country and parts of the north. The recovery owes much to a Europe-wide ban on the worst pesticides from 1979, cleaner rivers with more fish, and legal protection.\n\nElsewhere the picture is darker. The otter is nearly extinct in the wild in Germany and is listed as endangered in Pakistan, India, Bangladesh, Myanmar and Thailand, and critically endangered in Mongolia. In Iberia, falling numbers of native fish and the spread of introduced species such as sunfish could put otters at risk.",
+  "people": "The species goes by many names, including European otter, common otter and Old World otter. In Germany, where it is critically endangered, the group Aktion Fischotterschutz was founded in 1979 to fund the protection and expansion of otter habitat, and an otter centre at Hankensbüttel cares for the animals in captivity. South Korea lists the otter as a Natural Monument and a first-class endangered species, and in Hong Kong it is protected by law.",
+  "relatives": "The Eurasian otter belongs to the otter subfamily, Lutrinae, within the weasel family, Mustelidae. It looks much like the North American river otter but has a shorter neck, a broader face, ears set further apart and a longer tail. Because it is the only otter across much of its range, it is rarely mistaken for anything else.\n\nThe extinct Japanese otter was sometimes treated as a subspecies, but recent studies place it outside the Eurasian otter's lineages, so it is now usually considered a separate species, though some uncertainty remains.",
+  "didYouKnow": "In Andalusia, in southern Spain, Eurasian otters make use of artificial lakes on golf courses.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "57–95 cm + tail"
+   },
+   {
+    "label": "Weight",
+    "value": "7–12 kg"
+   },
+   {
+    "label": "Territory",
+    "value": "Usually about 18 km of water"
+   },
+   {
+    "label": "Diet",
+    "value": "Mainly fish"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What do Eurasian otters use to mark their territories?",
+    "choices": [
+     "Droppings called spraints",
+     "Scratched tree bark",
+     "Piles of fish bones",
+     "Musky oil rubbed onto riverside stones and tree roots"
+    ],
+    "explanation": "Otters leave spraints along their stretch of water to mark it."
+   },
+   {
+    "prompt": "Why does an otter living on the coast still need fresh water?",
+    "choices": [
+     "To clean its fur",
+     "To find eels",
+     "To raise its pups",
+     "To leave scent marks where rivals will find them"
+    ],
+    "explanation": "Coastal otters must regularly wash the salt out of their fur in fresh water."
+   },
+   {
+    "prompt": "By 2011, where in England had otters returned?",
+    "choices": [
+     "Every county",
+     "Only the West Country",
+     "Only Northern England",
+     "Only Kent"
+    ],
+    "explanation": "The Environment Agency announced that otters were back in every English county."
+   }
+  ],
+  "charities": [
+   {
+    "name": "The Wildlife Trusts",
+    "url": "https://www.wildlifetrusts.org",
+    "blurb": "A UK movement of local trusts caring for rivers, wetlands and the wildlife that depends on them."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "A global conservation organisation working to protect rivers and freshwater wildlife."
+   }
+  ]
+ },
+ {
+  "id": "arabian-oryx",
+  "name": "Arabian Oryx",
+  "scientificName": "Oryx leucoryx",
+  "wikipediaTitle": "Arabian oryx",
+  "group": "mammal",
+  "regions": [
+   "asia"
+  ],
+  "range": "Gravel plains and hard-sand deserts of the Arabian Peninsula",
+  "status": "VU",
+  "coordinate": {
+   "latitude": 22.0,
+   "longitude": 47.0
+  },
+  "mapSpan": 20,
+  "tagline": "The desert antelope that came back from extinction",
+  "lede": "The Arabian oryx is a gleaming white desert antelope with long, straight horns, built to survive some of the harshest deserts on Earth. Hunted out of the wild by 1972, it became in 2011 the first animal to return from 'extinct in the wild' to Vulnerable.",
+  "home": "In the early 1800s the Arabian oryx still lived in the Sinai, the Palestine region, Transjordan, much of Iraq and most of the Arabian Peninsula. By 1914 only a few survived outside Saudi Arabia, and by the mid-1930s the last herds clung on in the Nafud Desert in the north-west and the Rub' al Khali in the south.\n\nIt prefers gravel desert and hard sand, where its speed and stamina protect it from predators, and in sandy deserts it kept to the firm flats between the dunes. Herds wander widely: one in Oman ranged over more than 3,000 km². Reintroduced oryxes now live in Oman, Saudi Arabia, the United Arab Emirates, Jordan, Syria and Israel, with smaller herds in Bahrain and Qatar.",
+  "anatomy": "The smallest of the oryxes, it stands 0.79 to 1.25 metres at the shoulder and weighs about 100 to 209 kg. It has a distinct shoulder hump and a tufted tail. The coat is an almost luminous white, with brown legs and underparts and bold black markings on the forehead, the nose, where the head meets the neck, and in a stripe running from each horn down across the eye to the mouth. Both sexes carry long, ringed horns, straight or slightly curved, measuring 0.61 to 1.49 metres.",
+  "life": "Arabian oryxes eat mainly grasses, but also buds, herbs, fruit, tubers and roots. They can detect rain falling far away and travel towards it to feed on the fresh growth that follows, and they can go several weeks without drinking.\n\nIn summer they lie still in the shade through the day, often in shallow scrapes they dig under shrubs or trees, and forage over smaller areas at night. By letting its body temperature rise in the heat, an oryx relies less on evaporative cooling and saves water, then cools off in the night air. A network of fine arteries called the rete mirabile lets warm blood bound for the brain shed heat to cooler blood in the sinuses. Together these tricks cut its urine, water lost in dung and resting energy use by at least half.",
+  "family": "Oryx herds are mixed groups of males and females, usually 2 to 15 strong and on average 10 or fewer, though up to 100 have been seen together. There are no bachelor herds. Every female and every male older than about 7 months has a place in a simple pecking order, settled by posturing displays rather than fights, which spares them injuries from those long, sharp horns. Subordinate males take up positions between the main herd and outlying females, and a male that gets separated searches the places the herd last visited and waits alone for it to return.\n\nThe Arabian wolf is the oryx's only predator. Oryxes can live up to 20 years, though drought, fights between males, snakebites, disease and drowning in floods all take a toll.",
+  "remarkable": "The oryx may lie behind the legend of the unicorn. Aristotle and Pliny the Elder considered it the unicorn's 'prototype', and from certain angles, its two straight horns can line up to look like one. Its horns are hollow bone and cannot grow back, so an oryx that loses one goes through life with a single horn.",
+  "outlook": "From the 1930s, Arabian princes and oil company workers hunted oryxes with cars and rifles, in hunts said to involve as many as 300 vehicles, and the last wild animal was reported in 1972. In 1962 the Phoenix Zoo, the Fauna and Flora Preservation Society and WWF started 'Operation Oryx', the first captive-breeding herd in any zoo; from just 9 animals, it has produced more than 240 calves. Releases began in Oman in 1980.\n\nIn 2016 there were about 1,220 oryxes in the wild and 6,000 to 7,000 in captivity, and the species is listed as Vulnerable. Success is fragile: in 2007, Oman's Arabian Oryx Sanctuary became the first site ever removed from the UNESCO World Heritage List after the government opened 90% of it to oil prospecting, by which time its oryxes had fallen from 450 to 65.",
+  "people": "The Arabian oryx is the national animal of Jordan, Oman, the United Arab Emirates, Bahrain and Qatar, and in Arabic it is called maha, a name borne by an airline and a petroleum company. In 1968, Sheikh Zayed bin Sultan Al Nahyan founded the Al Ain Zoo in Abu Dhabi partly to conserve it. The Hebrew word re'em, which may refer to the oryx, was translated as 'unicorn' in the King James Bible.",
+  "relatives": "The Arabian oryx is a bovid, a member of the cattle family, and the smallest member of the genus Oryx. Peter Simon Pallas described it as Oryx leucoryx in 1767, from Greek words meaning 'white antelope'. The name was later mixed up with the scimitar oryx of North Africa, and when London Zoo received Europe's first living Arabian oryx in 1857, John Edward Gray proposed calling it Oryx beatrix after Princess Beatrice. Oldfield Thomas restored the original name in 1903.",
+  "didYouKnow": "An oryx called Orry was the official mascot of the 2006 Asian Games in Doha.",
+  "facts": [
+   {
+    "label": "Shoulder height",
+    "value": "0.79–1.25 m"
+   },
+   {
+    "label": "Weight",
+    "value": "100–209 kg"
+   },
+   {
+    "label": "Horns",
+    "value": "0.61–1.49 m"
+   },
+   {
+    "label": "Lifespan",
+    "value": "Up to 20 years"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Why does an oryx that loses a horn stay one-horned for life?",
+    "choices": [
+     "Its horns cannot regrow",
+     "It sheds them yearly",
+     "Rivals target the stump",
+     "The stump is covered over by skin and fur that grows across it"
+    ],
+    "explanation": "Oryx horns are hollow bone and do not grow back."
+   },
+   {
+    "prompt": "What is the Arabian oryx's only predator?",
+    "choices": [
+     "The Arabian wolf",
+     "The striped hyena",
+     "The caracal",
+     "The Arabian leopard, which hunts it at waterholes"
+    ],
+    "explanation": "Apart from people, only the Arabian wolf preys on it."
+   },
+   {
+    "prompt": "Where was the first captive-breeding herd of Arabian oryxes started in 1962?",
+    "choices": [
+     "Phoenix Zoo",
+     "London Zoo",
+     "Al Ain Zoo",
+     "San Diego Wild Animal Park"
+    ],
+    "explanation": "'Operation Oryx' began at the Phoenix Zoo with just 9 animals."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Fauna & Flora",
+    "url": "https://www.fauna-flora.org",
+    "blurb": "The conservation charity that helped launch Operation Oryx and still protects threatened species worldwide."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "A global conservation organisation that helped fund the rescue of the Arabian oryx."
+   }
+  ]
+ },
+ {
+  "id": "ethiopian-wolf",
+  "name": "Ethiopian Wolf",
+  "scientificName": "Canis simensis",
+  "wikipediaTitle": "Ethiopian wolf",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Afroalpine grasslands of the Ethiopian Highlands, above 3,000 metres",
+  "status": "EN",
+  "coordinate": {
+   "latitude": 8.5,
+   "longitude": 39.5
+  },
+  "mapSpan": 8,
+  "tagline": "A fox-red wolf that hunts rats on Africa's roof",
+  "lede": "The Ethiopian wolf is a slender, fox-red hunter of mountain rats that lives only on the cold, high plateaus of Ethiopia. With just a few hundred adults left, it is the world's rarest canid and Africa's most endangered carnivore.",
+  "home": "Ethiopian wolves survive in a handful of isolated mountain ranges. North of the Rift Valley they live in the Simien Mountains, the Wollo highlands and Guassa Menz; to the south-east, in the Arsi and Bale Mountains, where more than half of them are found. They are confined to Afroalpine grassland and heath from the tree line at about 3,200 metres up to 4,500 metres, though some in Bale use grassland at 3,000 metres.\n\nThey favour open, flat or gently sloping ground with short herbs and grasses and deep, poorly drained soils, where rodents are most plentiful. Farming now reaches 3,700 metres, pushing the wolves onto the highest peaks.",
+  "anatomy": "This wolf is about the size and build of a coyote, with longer legs than Africa's jackals. Its skull is very flat, and the long face makes up 58% of its length, while the small teeth are widely spaced, a design suited to snapping up rodents. Adults measure 84 to 101 cm along the body and stand 53 to 62 cm tall. Males weigh 14.2 to 19.3 kg and females 11.2 to 14.15 kg.\n\nThe coat is ochre to rusty red, with a white throat, chest and belly, a white band on each side of the neck, a white crescent below each eye and a black-tipped tail. Thick underfur keeps it warm down to −15 °C. The contrast between red and white grows stronger with age and social rank, and in the breeding season a female's coat turns yellowish and woolly.",
+  "life": "Unlike most social carnivores, Ethiopian wolves hunt alone, by day, when rodents are about. In Bale their main prey is the big-headed African mole-rat, along with grass rats and highland hares. A wolf stands motionless beside a colony and pounces when a rodent appears, or digs furiously, sometimes leaving metre-high mounds of earth. Packs occasionally team up to catch mountain nyala calves, and in Bale wolves forage among cattle herds, using the cows as cover to ambush rodents.\n\nThe wolves live in packs of up to 20 adults, though 6 is more usual, sharing territories averaging 6 km². They sleep together in the open, never in dens, and gather at dawn, noon and evening to greet one another and patrol their borders. When two packs meet, the smaller one usually retreats.",
+  "family": "Within a pack, only the dominant female normally breeds, mating with the pack's breeding male or with males from neighbouring packs. Mating takes place between August and November, and after 60 to 62 days she gives birth to 2 to 6 pups between October and December. They are born toothless, with eyes closed and charcoal-grey fur. They first leave the den at about 3 weeks, when the dark coat starts giving way to adult colours.\n\nThe whole pack helps to guard and feed the pups, and subordinate females sometimes suckle them. They start eating solid food at 5 weeks and are fully weaned by 10 weeks to 6 months. The young are full grown at 2 years. Most females then leave home, some wandering as 'floaters' until they can join another pack, so breeding pairs are usually unrelated.",
+  "remarkable": "Ethiopian wolves often hunt in the middle of grazing troops of gelada monkeys. They ignore the young geladas, even though these are as big as some of their prey, and the monkeys in turn largely ignore the wolves, though they flee from feral dogs. Among the monkeys, the wolves catch rodents far more successfully than usual, perhaps because the geladas flush them out, or because so many large animals make it harder for a rodent to spot the real threat.",
+  "outlook": "The Ethiopian wolf is listed as Endangered, with an estimated 360 to 440 adults in 2011. Its fertile highland home is ideal for farming: in parts of the north there are 300 people per km², and almost all land below 3,700 metres has become barley fields. Wolves have already vanished from Gosh Meda, Guguftu and Mount Guna. The greatest danger is rabies caught from village dogs, and outbreaks in Bale in 1991 and in 2008 to 2009 each killed or removed 75% of the known animals. Wolves also interbreed with dogs, and known hybrids are sterilised.\n\nKilling one carries a two-year prison sentence in Ethiopia. Since 1995, Oxford University's Ethiopian Wolf Conservation Programme has worked with local people on dog health, education and monitoring, and new parks now protect 87% of suitable habitat.",
+  "people": "Eduard Rüppell first described the species in 1835. Nineteenth-century travellers reported that local people never wore its skin, believing that anyone would die if a wolf hair got into an open wound, and Charles Darwin suggested that it might be the ancestor of the greyhound. It is also called the red jackal and the Simien fox, and in south-eastern Ethiopia, the horse jackal.\n\nIn Bale, farmers often leave their herds unattended in wolf country, because the wolves pose no threat to livestock.",
+  "relatives": "Despite its fox-like look, the Ethiopian wolf is a true member of Canis, more closely related to the grey wolf and the coyote than to other African canids. Its ancestors seem to have arrived from Eurasia about 1.8 million years ago, and the oldest fossil, half a lower jaw from Melka Wakena in Ethiopia, is 1.4 to 1.6 million years old. Plenty of rodents in the high grasslands turned it into a specialist rat hunter. About 15,000 years ago, a warming climate broke its habitat into the isolated islands it occupies today.\n\nIt once had a wider reach: the African golden wolf descends from an ancient hybrid of 72% grey wolf and 28% Ethiopian wolf.",
+  "didYouKnow": "Ethiopian wolves feed on nectar from the flowers of Kniphofia foliosa, making them the only large carnivore known to feed on nectar, and they may even help pollinate the plant.",
+  "facts": [
+   {
+    "label": "Weight",
+    "value": "11–19 kg"
+   },
+   {
+    "label": "Population",
+    "value": "360–440 adults (2011)"
+   },
+   {
+    "label": "Altitude",
+    "value": "3,000–4,500 m"
+   },
+   {
+    "label": "Diet",
+    "value": "Mostly mole-rats"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which monkeys do Ethiopian wolves often hunt among?",
+    "choices": [
+     "Geladas",
+     "Baboons",
+     "Colobus monkeys",
+     "Vervet monkeys, which warn them of eagles"
+    ],
+    "explanation": "Wolves hunting inside gelada troops catch rodents far more successfully."
+   },
+   {
+    "prompt": "Where do Ethiopian wolves sleep at night?",
+    "choices": [
+     "Out in the open",
+     "In deep dens",
+     "Up in trees",
+     "In caves shared with other packs for warmth"
+    ],
+    "explanation": "They rest together in the open and use dens only for nursing pups."
+   },
+   {
+    "prompt": "What is the Ethiopian wolf's main prey in the Bale Mountains?",
+    "choices": [
+     "Mole-rats",
+     "Rock hyraxes",
+     "Gelada monkeys",
+     "Mountain nyala calves"
+    ],
+    "explanation": "The big-headed African mole-rat is its staple food in Bale."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Born Free Foundation",
+    "url": "https://www.bornfree.org.uk",
+    "blurb": "A wildlife charity that has long supported the Ethiopian Wolf Conservation Programme."
+   },
+   {
+    "name": "Wildlife Conservation Society",
+    "url": "https://www.wcs.org",
+    "blurb": "Protects wildlife and wild places worldwide, and first publicised the Ethiopian wolf's plight in 1983."
+   }
+  ]
+ },
+ {
+  "id": "blue-wildebeest",
+  "name": "Blue Wildebeest",
+  "scientificName": "Connochaetes taurinus",
+  "wikipediaTitle": "Blue wildebeest",
+  "group": "mammal",
+  "regions": [
+   "africa"
+  ],
+  "range": "Short-grass plains and acacia savannas of eastern and southern Africa",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -10.0,
+   "longitude": 32.0
+  },
+  "mapSpan": 40,
+  "tagline": "The bearded antelope behind Africa's great migration",
+  "lede": "The blue wildebeest is a front-heavy, bearded antelope with a silvery-blue sheen, and its vast herds pour across the plains of East Africa in one of the world's great migrations. Bulky as it looks, it can gallop at 80 km/h.",
+  "home": "Blue wildebeest live in Kenya, Tanzania, Zambia, Zimbabwe, Mozambique, Botswana, Angola, South Africa and Eswatini. They have died out in Malawi but been successfully reintroduced to Namibia. Their range runs south to the Orange River and west to Lake Victoria and Mount Kenya. They thrive on short-grass plains bordering bushy acacia savanna, in country neither too wet nor too dry, and they need drinking water within about 15 to 25 km. They avoid mountain grasslands and miombo woodland and are rarely found above 1,800 to 2,100 metres.\n\nThree populations still make long-distance migrations, in the Serengeti, Tarangire and Kafue. At the end of the rainy season they head for dry-season ranges with water, and when the rains return a few months later, they trek back to the rich new grass. A century ago there were many more such migrations, but the rest have been cut off and lost.",
+  "anatomy": "The blue wildebeest is broad-shouldered and muscular at the front, with a robust muzzle. It measures 1.7 to 2.4 metres long and 1.15 to 1.45 metres tall. Males weigh 165 to 290 kg and are larger and darker than females, which weigh 140 to 260 kg. The coat ranges from deep slate or bluish grey to grey-brown, with dark vertical stripes from the neck to the ribs, and the mane, face and 60 to 100 cm tail are black. Two subspecies have a creamy white beard; in the others it is black.\n\nBoth sexes carry horns shaped like a pair of brackets, curving out and then up and in; a bull's can reach 83 cm. Calves are born tawny brown and start to gain adult colours at 2 months. Wildebeest are tough walkers, able to travel 80 km in 5 days without drinking, in daytime heat averaging 38 °C.",
+  "life": "Wildebeest graze mainly on the short grasses that grow on light, alkaline soils, using their broad mouths to crop large amounts, and they feed by day and night. They often follow plains zebras, which eat the taller, coarser grass and expose the greener growth beneath that wildebeest prefer. They like to drink twice a day and take in 9 to 12 litres every day or two, but in the Kalahari they survive on water from melons and juicy roots.\n\nAt night they rest in groups of a few to thousands, keeping 1 to 2 metres apart. From 4 or 5 years old, bulls hold territories, marking them with dung heaps and scent, pawing, rolling and calling 'ga-noo'; a single square kilometre of plain can hold 270 bulls. Lions, cheetahs, leopards, wild dogs, spotted hyenas and Nile crocodiles all hunt them.",
+  "family": "Males mature at about 2 years, and females can conceive at 16 months, though most wait another year. The rut lasts about 3 weeks at the end of the rainy season, often starting on the night of a full moon, and with the herds well fed, up to 95% of females conceive. A bull with a female in his territory neither eats nor rests.\n\nPregnancy lasts about 8.5 months and produces a single calf weighing about 19 kg, which may keep suckling until the next calf is nearly due. Young males leave their mothers at about 8 months to join other young males, while females stay with their mother's herd for life. Captive wildebeest live about 20 years, and the oldest known reached 24.3.",
+  "remarkable": "Wildebeest beat predators by flooding the plains with calves. Between 80 and 90% of calves are born within the same 3 weeks, and mothers give birth in the middle of the herd, usually around midday, so each newborn has hours to find its feet before night falls and predators become more active. Calves can stand within minutes. Safety in numbers works: in large herds, 80% of calves survive their first month, against 50% in small ones.",
+  "outlook": "The blue wildebeest is listed as Least Concern, with about 1.55 million animals, around 1.3 million of them in Tanzania's Serengeti. Yet many local populations are in trouble. Forests are cleared, water sources dry up, settlements spread and animals are poached. Fences across migration routes have caused mass deaths when herds were cut off from water and grazing during droughts. In Kenya's Maasai Mara, wildebeest fell by about 80%, from around 119,000 in 1977 to about 22,000 twenty years later, mainly because farms took over their wet-season grazing and calving grounds. The eastern white-bearded wildebeest is down to roughly 6,000 to 8,000.",
+  "people": "The name 'gnu' comes from the Khoikhoi people of south-western Africa, while 'blue' refers to the coat's silvery sheen and 'brindled gnu' to its stripes. Wildebeest are a big draw for wildlife tourists and so matter greatly to local economies. They have long been hunted for their hides, which make good leather, and for meat, though it is coarse and tough. They can also compete with cattle for grass and water and pass diseases to livestock.\n\nA carved slate slab from about 3000 BC, found at Hierakonpolis in Upper Egypt, shows an animal very like a blue wildebeest, hinting that the species once lived in North Africa.",
+  "relatives": "William John Burchell named the species in 1823. Its genus, Connochaetes, comes from Greek words for 'beard' and 'flowing mane', and taurinus means 'bull-like', fitting for an antelope with a heavy, cattle-like build and horns like a female African buffalo's. Five subspecies are recognised.\n\nThe blue wildebeest appeared about 2.5 million years ago, and its fossils are common in South Africa's Cradle of Humankind. Its closest relative, the black wildebeest, split off about 1 million years ago. Where the two are fenced in together they interbreed, and their fertile hybrids often have deformed teeth, horns and skulls.",
+  "didYouKnow": "Blue wildebeest have some of the most efficient walking and running muscles known, turning 62.6% of the energy they use into movement rather than heat.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "1.7–2.4 m"
+   },
+   {
+    "label": "Weight",
+    "value": "140–290 kg"
+   },
+   {
+    "label": "Top speed",
+    "value": "80 km/h"
+   },
+   {
+    "label": "Population",
+    "value": "About 1.55 million"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Why do wildebeest often graze behind plains zebras?",
+    "choices": [
+     "Zebras expose greener grass",
+     "Zebras warn of lions",
+     "Zebras dig for water",
+     "Zebras pick ticks off wildebeest backs as they graze side by side"
+    ],
+    "explanation": "Zebras eat the tall, coarse grass, uncovering the greener growth wildebeest prefer."
+   },
+   {
+    "prompt": "Where does the name 'gnu' come from?",
+    "choices": [
+     "The Khoikhoi people",
+     "The animal's bellow",
+     "A Dutch word for beard",
+     "An ancient Egyptian word carved at Hierakonpolis"
+    ],
+    "explanation": "'Gnu' comes from the Khoikhoi name for the animal."
+   },
+   {
+    "prompt": "In large herds, what share of wildebeest calves survive their first month?",
+    "choices": [
+     "80%",
+     "20%",
+     "50%",
+     "95%"
+    ],
+    "explanation": "Calves in big herds survive far better than the 50% seen in small herds."
+   }
+  ],
+  "charities": [
+   {
+    "name": "African Wildlife Foundation",
+    "url": "https://www.awf.org",
+    "blurb": "Works across Africa to protect wildlife, migration corridors and wild lands with local communities."
+   },
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "A global conservation organisation protecting Africa's savannas and the great herds that roam them."
+   }
+  ]
+ },
+ {
+  "id": "asian-elephant",
+  "name": "Asian Elephant",
+  "scientificName": "Elephas maximus",
+  "wikipediaTitle": "Asian elephant",
+  "group": "mammal",
+  "regions": [
+   "asia"
+  ],
+  "range": "Forests and grasslands from India and Nepal to Borneo and Sumatra",
+  "status": "EN",
+  "coordinate": {
+   "latitude": 15.0,
+   "longitude": 95.0
+  },
+  "mapSpan": 40,
+  "tagline": "Asia's forest giant, with a single fingertip on its trunk",
+  "lede": "The Asian elephant is the largest land animal in Asia, a forest giant with a domed head, folded ears and more brain cortex for thinking than any other land animal. People have tamed, worked with and worshipped it for more than 4,000 years.",
+  "home": "Asian elephants range from India in the west to Borneo in the east, and from Nepal south to Sumatra. They live in grassland and in many kinds of forest, from tropical evergreen and moist deciduous to dry thorn forest, as well as scrub, secondary forest and farmland, and they are never far from permanent fresh water. They occur from sea level to over 3,000 metres, and in the eastern Himalaya some regularly climb that high in summer.\n\nOf the roughly 48,000 to 52,000 left in the wild in 2019, India held about 27,000 to 29,000, and the state of Karnataka alone has about a fifth of India's elephants. In China, only around 300 survive, all in southern Yunnan.",
+  "anatomy": "Smaller than the African bush elephant, the Asian elephant has its highest point on the head, which bears two rounded bulges, and small ears whose top edges fold over. Bulls average about 2.75 metres at the shoulder and 4 tonnes, cows about 2.4 metres and 2.7 tonnes. Its trunk ends in a single finger-like tip, where African elephants have two, so it tends to wrap its trunk around food and squeeze it into its mouth.\n\nCows usually have no tusks, or tiny ones called tushes that show only when the mouth is open, and some bulls are tuskless too; these 'makhnas' are especially common in Sri Lanka. The wrinkled grey skin is often patchily pale on the trunk, ears or neck, and is 30 mm thick on the back. Its folds help shed heat, and the species copes better with cold than with great heat.",
+  "life": "Asian elephants are most active at dawn and dusk and spend 50 to 75% of the day eating, getting through up to 150 kg of plants. They both graze and browse on at least 112 plant species, including grasses, palms, sedges and legumes, and in the cool dry season bark becomes a major food. Each needs 80 to 200 litres of water a day, plus more for bathing, and they sometimes scrape the soil for clay and minerals.\n\nCows and calves travel in small groups, typically about 3 related adult females and their young, linked into wide, shifting social networks. Bulls leave in adolescence and live alone or in loose bachelor groups. Elephants growl, rumble and roar, chirp when nervous and trumpet when highly excited, and an elephant bouncing its trunk tip makes a booming threat. Tigers rarely kill calves, and elephants react to a leopard's growl less fearfully than to a tiger's.",
+  "family": "Each year, bulls aged between 10 and 20 go into 'musth', when testosterone can rise to 100 times its usual level and they turn aggressive, leaking a pheromone-rich fluid from glands between the eye and ear. Serious fights over females are nonetheless extremely rare.\n\nPregnancy lasts 18 to 22 months and usually produces a single calf. The calf is fully formed by the 19th month but stays in the womb to grow tall enough to reach its mother's teats. It weighs about 100 kg at birth and suckles for up to 3 years, so mothers give birth only every 4 to 5 years. Females mature at 10 to 15 and stay with the herd, while young males are chased away. Elephants live about 60 years, and some reach their late 80s.",
+  "remarkable": "Elephants and insects share a chemical language. When a female is ready to mate, she releases a compound in her urine, (Z)-7-dodecen-1-yl acetate, which is also a sex attractant for many insect species. Bulls in musth produce frontalin, a pheromone first discovered in bark beetles, and it makes them more sensitive to the female's signal, which they sample with their trunks.",
+  "outlook": "The Asian elephant has been listed as Endangered since 1986, after numbers fell by at least half over three elephant generations, about 60 to 75 years. Its forests are being logged, cleared for crops and plantations, and cut up by roads and fences, which pushes elephants into fields and villages. In Assam alone, more than 1,150 people and 370 elephants died in such conflicts between 1980 and 2003. Elephants are poached for ivory, and skin is increasingly taken for traditional Chinese medicine and beads; in Myanmar, poachers killed 61 elephants in 2016. India's Project Elephant, begun in 1992, sets aside elephant reserves, and keeping forest corridors open between them is seen as key.",
+  "people": "Engravings on seals of the Indus Valley civilisation show that elephants were in human care by the 3rd millennium BC. Since then they have served as war mounts, siege engines, status symbols and beasts of burden, especially for hauling timber, and they can learn more than 20 spoken commands. In Myanmar, the Kachin Independence Army reportedly still uses about four dozen elephants to carry supplies.\n\nThe Asian elephant is the national animal of Thailand and Laos and India's national heritage animal. In Hinduism the god Ganesha has an elephant's head, and a temple elephant's blessing is highly prized.",
+  "relatives": "The Asian elephant is the only living species of Elephas, the closest relative of the extinct mammoths; the two lines parted about 7 million years ago. The genus arose in Africa and later spread into southern Asia, and the modern species is thought to have evolved from Elephas hysudricus, which appeared about 2.6 million years ago and is known mainly from the Indian subcontinent.\n\nThree subspecies are recognised: the Sri Lankan elephant, the largest and darkest; the Indian elephant; and the Sumatran elephant. Elephants in northern Borneo, smaller with bigger ears and straighter tusks, may form a fourth; their ancestors split from the mainland population about 300,000 years ago.",
+  "didYouKnow": "The skeleton that officially defines the species belonged to Hansken, a female elephant from Sri Lanka who toured Europe in the 17th century and is now kept in a museum in Florence.",
+  "facts": [
+   {
+    "label": "Weight",
+    "value": "2.7–4 tonnes"
+   },
+   {
+    "label": "Shoulder height",
+    "value": "2.4–2.75 m"
+   },
+   {
+    "label": "Pregnancy",
+    "value": "18–22 months"
+   },
+   {
+    "label": "Lifespan",
+    "value": "About 60 years"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How many finger-like tips does an Asian elephant's trunk have?",
+    "choices": [
+     "One",
+     "Two",
+     "Three",
+     "None, it grips with the whole trunk instead"
+    ],
+    "explanation": "Asian elephants have one fingertip; African elephants have two."
+   },
+   {
+    "prompt": "Why does a calf stay in the womb after it is fully formed?",
+    "choices": [
+     "To grow tall enough to suckle",
+     "To grow its tusks",
+     "To wait for the rains",
+     "To wait until the herd reaches a safe calving ground"
+    ],
+    "explanation": "It keeps growing so that it can reach its mother's teats at birth."
+   },
+   {
+    "prompt": "What are tuskless bull Asian elephants called?",
+    "choices": [
+     "Makhnas",
+     "Tushes",
+     "Rogues",
+     "Musth bulls"
+    ],
+    "explanation": "Makhnas are tuskless males, especially common in Sri Lanka."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "A global conservation organisation protecting Asian elephants and the forest corridors they need."
+   },
+   {
+    "name": "Wildlife Conservation Society",
+    "url": "https://www.wcs.org",
+    "blurb": "Protects wildlife and wild places across Asia and the rest of the world."
+   }
+  ]
+ }
+]

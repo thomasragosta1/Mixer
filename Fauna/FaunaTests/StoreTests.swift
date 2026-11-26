@@ -126,7 +126,7 @@ final class StoreTests: XCTestCase {
         var unlocked = 0
         while let current = store.currentAnimal, let _ = store.unlockNext(for: current, allowOutsideFocus: true) {
             unlocked += 1
-            if unlocked >= 200 { return XCTFail("unlocking never ends") }
+            if unlocked > store.library.count { return XCTFail("unlocking never ends") }
         }
         XCTAssertEqual(unlocked, store.library.count - 1)
         XCTAssertFalse(store.canUnlockAnywhere)

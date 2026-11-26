@@ -1,0 +1,907 @@
+[
+  {
+    "id": "gastric-brooding-frog",
+    "name": "Gastric-brooding Frog",
+    "scientificName": "Rheobatrachus",
+    "wikipediaTitle": "Gastric-brooding frog",
+    "group": "amphibian",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Rainforest creeks of Queensland, eastern Australia (extinct)",
+    "status": "EX",
+    "coordinate": {
+      "latitude": -24.0,
+      "longitude": 150.5
+    },
+    "mapSpan": 12,
+    "tagline": "The frogs that raised their young in their stomachs",
+    "lede": "For several weeks at a time, a female gastric-brooding frog turned her own stomach into a nursery. She swallowed her fertilised eggs, shut down her digestion, and later gave birth to fully formed froglets through her mouth. Both species in this astonishing genus vanished from the rainforests of Queensland in the 1980s, barely a decade after scientists first described them.",
+    "home": "The genus Rheobatrachus held just two species, the southern and the northern gastric-brooding frogs, and both lived only in Queensland, a state in eastern Australia. Their combined ranges covered less than 2,000 square kilometres, and both were tied to creek systems in rainforest at elevations between 350 and 1,400 metres.\n\nThe northern species lived in what is now Eungella National Park. The southern species lived along streams in catchments that were logged between 1972 and 1979; it kept using those streams after the logging, although nobody studied how the work affected it.",
+    "anatomy": "These frogs looked unlike any other Australian frog. They had large, protruding eyes, a short, blunt snout, completely webbed feet and slimy bodies, all suited to a life spent largely in water. Within Australia, only Dahl's aquatic frog shared their strongly aquatic habits.\n\nThe eggs were large for a frog, up to 5.1 mm across, and packed with yolk. Such big yolk supplies are typical of species whose young feed entirely on yolk while they develop, which is exactly what the swallowed young had to do, sealed away from any other food.",
+    "life": "Much of what is known about how these frogs lived comes from a short window of study before they disappeared. They spent most of their time in and around rainforest streams, so much so that they earned the nickname platypus frogs.\n\nA brooding female did not eat at all while her young were inside her. As they grew, her stomach swelled until it filled most of her body cavity. Her lungs deflated, and she came to rely more on taking in oxygen through her skin. Despite her increasing size and the squeeze on her organs, she stayed active throughout.",
+    "family": "Fertilisation took place outside the body. The female then took the eggs or embryos into her mouth and swallowed them, though no one ever saw whether the eggs were laid on land or in water. Most females carried about 40 ripe eggs, yet only 21 to 26 young were ever found in a stomach, so either some eggs were missed or the first few swallowed were digested.\n\nThe jelly around each egg contained a substance called prostaglandin E2, which switched off acid production in the stomach. Once the tadpoles hatched, they made it themselves, releasing it in mucus from their gills. Development took at least 6 weeks, and the tadpoles, at first without pigment, gradually took on adult colouring. Birth could be spread over as long as a week, and the froglets emerged fully developed, closely matched in colour and length.",
+    "remarkable": "If disturbed, a brooding female could expel her entire brood in a single burst of propulsive vomiting. Much of what is known about tadpole development came from one such group, regurgitated by its mother and then raised successfully in shallow water. No other frog is known to have incubated its offspring in the stomach; the nearest parallel is Darwin's frog, which broods its young in the mouth.",
+    "outlook": "Both species are listed as Extinct on the IUCN Red List and under Australia's national environment law, although Queensland's own Nature Conservation Act still lists them as Endangered. The southern gastric-brooding frog was last seen in 1983 and declared extinct in 2006; the northern species was last seen in 1987 and declared extinct in 2015.\n\nThe causes are not fully understood. Habitat damage, pollution, weeds, feral pigs and bushfires may all have played a part, but the timing and spread of the amphibian chytrid fungus across Australia make disease the most likely culprit. Chytrid has been found in several rainforest creeks in Eungella, and sick and dead Eungella torrent frogs, which shared the same streams, were found in nearby Pelion State Forest within months of the northern species being discovered.",
+    "people": "The two common names describe the frogs well: 'gastric-brooding' for the way females raised their young, and 'platypus frog' for their watery way of life. The northern species was discovered by Michael Mahony, who would later help lead an effort to bring it back.\n\nIn March 2013, scientists at the University of Newcastle and the University of New South Wales announced the Lazarus Project, which used a cloning method called somatic cell nuclear transfer on preserved tissue. They created living embryos, but the cells died before reaching the tadpole stage and the project was put on hold. The team also froze and thawed amphibian embryonic cells successfully, a step towards genome banks for other threatened frogs.",
+    "relatives": "The genus Rheobatrachus was named in 1973 by David Liem, and where it belongs has been argued over ever since. It has been given its own subfamily within Myobatrachidae, placed in a separate family called Rheobatrachidae, linked with Limnodynastidae, and even merged into it.\n\nIn 2006, molecular work by D. R. Frost and colleagues found that its closest relative is the genus Mixophyes, and placed both within Myobatrachidae.",
+    "didYouKnow": "In August 2010, a search organised by the IUCN's Amphibian Specialist Group set out to look for frogs feared lost, including the gastric-brooding frog.",
+    "facts": [
+      {
+        "label": "Species",
+        "value": "2, both extinct"
+      },
+      {
+        "label": "Range",
+        "value": "Under 2,000 km²"
+      },
+      {
+        "label": "Last seen",
+        "value": "1987 (northern species)"
+      },
+      {
+        "label": "Eggs",
+        "value": "Up to 5.1 mm across"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What switched off acid production in the brooding mother's stomach?",
+        "choices": [
+          "Prostaglandin E2",
+          "Cold stream water",
+          "A thick layer of mucus she swallowed first",
+          "Bacteria in her stomach lining"
+        ],
+        "explanation": "A substance called prostaglandin E2, first in the egg jelly and then from the tadpoles, shut down the stomach."
+      },
+      {
+        "prompt": "Why were these frogs also called platypus frogs?",
+        "choices": [
+          "They were largely aquatic",
+          "They had a duck-like snout",
+          "They laid eggs in burrows",
+          "The males had venomous spurs on their hind feet"
+        ],
+        "explanation": "The name refers to their largely aquatic way of life."
+      },
+      {
+        "prompt": "What is the most likely main cause of their extinction?",
+        "choices": [
+          "Disease",
+          "Logging",
+          "Collection for the pet trade",
+          "Introduced cane toads eating the tadpoles"
+        ],
+        "explanation": "The spread of the amphibian chytrid fungus fits the timing and pattern of their disappearance."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Amphibian Ark",
+        "url": "https://www.amphibianark.org",
+        "blurb": "Helps zoos and aquariums run conservation breeding for amphibians at risk of extinction."
+      },
+      {
+        "name": "Save The Frogs",
+        "url": "https://www.savethefrogs.com",
+        "blurb": "Works to protect frogs and other amphibians through education, research and habitat projects."
+      }
+    ]
+  },
+  {
+    "id": "dingo",
+    "name": "Dingo",
+    "scientificName": "Canis familiaris dingo",
+    "wikipediaTitle": "Dingo",
+    "group": "mammal",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Most of mainland Australia, largely absent from the south-east",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -24.0,
+      "longitude": 134.0
+    },
+    "mapSpan": 40,
+    "tagline": "Australia's wild dog, which howls far more than it barks",
+    "lede": "Lean, ginger and watchful, the dingo is Australia's largest land predator and one of the oldest forms of dog still living wild. Its ancestors arrived from Asia thousands of years ago, and it has hunted kangaroos across the continent ever since, its shape barely changed.",
+    "home": "Dingoes once lived throughout mainland Australia, but they never reached Tasmania, which seems to have been cut off by rising seas before they arrived. Farming, poisoning, trapping and land clearance later removed them from much of the south-east, and today they are largely absent from most of New South Wales, Victoria, the south-eastern third of South Australia and the south-western tip of Western Australia. Across the rest of the continent they are regarded as common.\n\nThey usually stay in one area all year rather than migrating, but in times of famine they may wander into pastoral land. Densities can reach 3 per square kilometre where food is plentiful, as during a rabbit plague.",
+    "anatomy": "The dingo is a medium-sized canine built for speed, agility and stamina. An average wild male weighs about 15.8 kg, measures around 125 centimetres long and stands 59 centimetres at the shoulder; females are a little smaller. Wild dingoes rarely carry fat and often show their ribs. The wedge-shaped head is the widest part of the body, and the tail is carried low rather than curled over the back.\n\nAbout three quarters of dingoes are ginger, from deep rust to pale cream, often with white on the feet, chest and tail tip. Others are black and tan, and a few are solid white or black. Dingoes can rotate their wrists and have unusually flexible shoulders, so they climb fences, trees and rocks, and can even turn doorknobs to escape.",
+    "life": "A 20-year study of 13,000 stomachs and droppings found dingoes eating 177 species, mostly mammals, followed by birds. Red kangaroos, swamp wallabies, rabbits, rats, possums, magpie geese and livestock made up most of the diet. Packs hunt large kangaroos by having lead dogs chase the quarry towards pack mates, which cut corners until it tires, and a pack is three times as likely as a lone dingo to bring one down.\n\nDingoes are most active around dusk and dawn, or at night in warmer regions. Their voice is distinctive: barking makes up only about 5% of their calls, mostly as warnings, while growling accounts for about 65%, and they have at least 10 variations of howl.",
+    "family": "A typical pack is a mated pair with their pups of the year and sometimes the previous year's young. Usually only the dominant pair breeds; the others help raise the pups, and the dominant female may kill the litters of subordinate females, which keeps numbers in check. Dingoes breed once a year, with pups usually born between May and August.\n\nPregnancy lasts 61 to 69 days, and litters range from 1 to 10 pups, usually about 5. Pups first leave the den at 3 weeks and abandon it completely at 8 weeks. Dens are often underground, in old rabbit or wombat burrows, among rocks or in hollow logs. Wild dingoes typically live 3 to 5 years, while captive ones can reach 14 to 16.",
+    "remarkable": "Dingoes adapt their hunting to the land around them. On K'gari, they have been seen using waves to trap and tire a swamp wallaby and an echidna until the prey drowned. In one part of Central Australia they chase kangaroos into wire fences, where the animals are briefly stuck, and in arid regions in winter they can survive on the moisture in their prey.",
+    "outlook": "The dingo's conservation status is complicated. It was once listed as Least Concern, then as Vulnerable in 2008 because of crossbreeding with domestic dogs, but in 2018 the IUCN treated it as a feral dog and removed it from the Red List, so it is now Not Evaluated. A 2011 study found 46% of sampled wild dogs were pure dingoes, though a 2026 survey concluded that most free-roaming canines in Australia are still overwhelmingly dingo.\n\nDingoes are shot, trapped and poisoned to protect sheep and cattle, and the Dingo Fence, completed in 1946, keeps them out of sheep country. Yet they also prey on rabbits, foxes and feral cats, and many conservationists suggest their numbers should be allowed to recover because they appear to help regulate other species.",
+    "people": "The name comes from the Dharug language of the Sydney area and was first written down in 1789 by Watkin Tench, who noted that the local people's only domestic animal was a dog they called dingo. Indigenous Australians and dingoes lived and hunted together, and people sometimes took pups from dens and raised them until they matured and left.\n\nThe dingo has a prominent place in Dreamtime stories, in some of which an ancestor created both dingoes and people. For settlers it became a pest and, from the 1960s, a political insult, and in Australia the word still stands for a coward or cheat. On K'gari, the Butchulla people know their dingoes as wongari.",
+    "relatives": "Exactly what a dingo is remains debated. It has been treated as a form of domestic dog, a subspecies of dog or wolf, or a species of its own, Canis dingo. Its closest relative is the New Guinea singing dog; their lineage split early from the one that led to today's domestic dogs and can be traced back through Island Southeast Asia to mainland Asia.\n\nThe oldest dingo remains in Australia are about 3,450 years old, from the Madura Caves on the Nullarbor Plain. Dingoes, wolves and dogs all have 78 chromosomes and can interbreed, which is why dingo–dog hybrids are now widespread.",
+    "didYouKnow": "A large eastern grey kangaroo was once seen fighting off a lone dingo in a struggle that lasted more than an hour.",
+    "facts": [
+      {
+        "label": "Weight",
+        "value": "About 14–16 kg (wild)"
+      },
+      {
+        "label": "Length",
+        "value": "About 1.2–1.25 m"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 60 km/h"
+      },
+      {
+        "label": "Lifespan",
+        "value": "3–5 years in the wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Roughly what share of a dingo's calls are barks?",
+        "choices": [
+          "About 5%",
+          "About half",
+          "About 65%",
+          "Nearly all of them, just as in domestic dogs"
+        ],
+        "explanation": "Barking makes up only about 5% of dingo calls; growling is far more common."
+      },
+      {
+        "prompt": "Which language does the word 'dingo' come from?",
+        "choices": [
+          "Dharug",
+          "Pitjantjatjara",
+          "Afrikaans",
+          "An old Malay word brought by sailors"
+        ],
+        "explanation": "It comes from the Dharug language of the Sydney area."
+      },
+      {
+        "prompt": "Which part of Australia did dingoes never reach?",
+        "choices": [
+          "Tasmania",
+          "Cape York",
+          "The Nullarbor Plain",
+          "The tropical north around Arnhem Land"
+        ],
+        "explanation": "Tasmania seems to have been cut off by rising seas before dingoes arrived."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Manages a network of sanctuaries across Australia, including fenced reserves free of foxes and cats."
+      },
+      {
+        "name": "WWF-Australia",
+        "url": "https://www.wwf.org.au",
+        "blurb": "Protects Australia's threatened species and the forests, woodlands and oceans they depend on."
+      }
+    ]
+  },
+  {
+    "id": "numbat",
+    "name": "Numbat",
+    "scientificName": "Myrmecobius fasciatus",
+    "wikipediaTitle": "Numbat",
+    "group": "mammal",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Eucalypt woodland in south-western Australia, plus fenced reserves",
+    "status": "NT",
+    "coordinate": {
+      "latitude": -32.5,
+      "longitude": 118.0
+    },
+    "mapSpan": 25,
+    "tagline": "A striped termite-eater that works the day shift",
+    "lede": "Small, striped and busy in broad daylight, the numbat spends its waking hours nose-down in the leaf litter, hunting termites. It is the only marsupial fully active by day, and an adult may eat up to 20,000 termites before retiring to a hollow log for the night.",
+    "home": "Numbats once ranged across southern Australia, from Western Australia to north-western New South Wales, through semi-arid woodland, spinifex grassland and sand dune country. After European settlement they survived naturally in just two small patches of Western Australia, Dryandra Woodland and the Tone-Perup Nature Reserve, both areas of eucalypt forest with plenty of hollow logs to hide in.\n\nSince then, numbats have been reintroduced to fenced reserves free of foxes and cats, including Yookamurra Sanctuary in South Australia, Scotia Sanctuary in New South Wales and Mount Gibson Sanctuary in Western Australia. Attempts near Roxby Downs and at Newhaven Sanctuary in the Northern Territory failed.",
+    "anatomy": "A numbat is 35 to 45 centimetres long including its bushy tail, which is about as long as its body, and weighs 280 to 700 grams. Its coat ranges from soft grey to reddish-brown, with 4 to 11 white bars across the hindquarters and a black stripe running from the snout through the eye to the ear.\n\nIts jaw is weak, carrying up to 50 tiny teeth it rarely uses, and its long, narrow tongue is coated with sticky saliva. Ridges on the palate scrape termites off the tongue. Uniquely among land mammals, it has an extra cheek tooth between its premolars and molars. It also has the sharpest eyesight of any marsupial, which helps it spot predators.",
+    "life": "Without the heavy claws of an aardvark or anteater, a numbat cannot break into a termite mound. Instead it sniffs out the shallow underground galleries that termites build between nest and feeding sites, digs them open with its front claws and laps up the insects. Because termite activity depends on temperature, the numbat adjusts its timetable: in winter it feeds from mid-morning to mid-afternoon, while in summer it rises earlier, shelters through the heat and feeds again late in the day.\n\nAdults are solitary, each defending a territory of up to 1.5 square kilometres against others of the same sex. At night a numbat retreats to a hollow log, tree hollow or burrow lined with grass, leaves and shredded bark. In winter it can enter torpor for up to 15 hours a day, and it gets most of its water from its food.",
+    "family": "Numbats breed in February and March, usually raising one litter of 4 young a year after a pregnancy of just 15 days. Unusually for a marsupial, the female has no pouch. Instead her 4 teats are protected by a patch of crimped golden hair and the swelling of her belly and thighs while she is feeding young.\n\nThe newborns are just 2 centimetres long and cling to the teats until late July or early August, by which time they have grown to 7.5 centimetres. Afterwards they are left in a nest or carried on their mother's back, and they become independent by November. Females can breed the following summer, while males take another year.",
+    "remarkable": "When a numbat bolts into its burrow, it can plug the narrow entrance with its own rump, using the thick hide there like a door so that a predator cannot reach in after it. That defence matters, because being out by day makes the numbat far more exposed to eagles, hawks, goannas and pythons than most marsupials its size.",
+    "outlook": "European colonisation hit the numbat hard. The deliberate release of red foxes in the 19th century is presumed to have wiped out every population outside Western Australia and nearly all within it, and by the late 1970s fewer than 1,000 remained. When fox baiting began at Dryandra, sightings rose 40-fold.\n\nAn intensive conservation programme since 1980, along with captive breeding at Perth Zoo, has substantially increased numbers. The numbat is still classed as endangered within Australia, but in 2026 the IUCN Red List moved it to Near Threatened after populations rose and stabilised. Feral cats remain a major threat; after cat control at Dryandra, survey counts climbed from 5 in 2018 to 35 in 2020.",
+    "people": "Europeans first encountered the numbat in 1831, when an expedition led by Robert Dale explored the Avon Valley. George Fletcher Moore, a member of the party, described a 'beautiful animal' that escaped into a hollow tree, and the next day they caught one and guessed from its long tongue that it was an ant-eater.\n\nThe name numbat comes from the Nyungar language of south-western Australia, while in the Pitjantjatjara dialect it is called walpurti. It is the faunal emblem of Western Australia, and World Numbat Day is celebrated on the first Saturday of November each year.",
+    "relatives": "The numbat is the only member of its family, Myrmecobiidae, which belongs to the Dasyuromorphia, the order of Australian marsupial carnivores. Its ancestors split from other marsupials between 32 and 42 million years ago, and only a handful of fossils are known.\n\nA second, rusty-coloured subspecies once lived in the arid centre of South Australia but has been extinct since at least the 1960s. Despite its old name, banded anteater, the numbat apparently does not eat ants on purpose: the few found in its droppings belong to species that prey on termites themselves.",
+    "didYouKnow": "Numbats are fairly quiet animals, but when disturbed they may hiss, growl or make a repetitive 'tut' sound.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "35–45 cm incl. tail"
+      },
+      {
+        "label": "Weight",
+        "value": "280–700 g"
+      },
+      {
+        "label": "Diet",
+        "value": "Up to 20,000 termites a day"
+      },
+      {
+        "label": "Gestation",
+        "value": "15 days"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does a female numbat lack that most marsupials have?",
+        "choices": [
+          "A pouch",
+          "Teats",
+          "Claws on her front feet",
+          "A tail long enough to balance on thin branches"
+        ],
+        "explanation": "Her teats are protected only by golden hair and swollen skin, not a pouch."
+      },
+      {
+        "prompt": "How can a numbat block its burrow against predators?",
+        "choices": [
+          "With its rump",
+          "By rolling a stone in",
+          "By stuffing the entrance with shredded bark",
+          "By digging a second exit"
+        ],
+        "explanation": "The thick hide of its rump plugs the entrance like a door."
+      },
+      {
+        "prompt": "What is the numbat's main food?",
+        "choices": [
+          "Termites",
+          "Ants",
+          "Beetle larvae dug from under bark",
+          "Seeds"
+        ],
+        "explanation": "It eats almost nothing but termites; ants are only swallowed by accident."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Manages a network of sanctuaries across Australia, including fenced reserves free of foxes and cats."
+      },
+      {
+        "name": "WWF-Australia",
+        "url": "https://www.wwf.org.au",
+        "blurb": "Protects Australia's threatened species and the forests, woodlands and oceans they depend on."
+      }
+    ]
+  },
+  {
+    "id": "sugar-glider",
+    "name": "Sugar Glider",
+    "scientificName": "Petaurus breviceps",
+    "wikipediaTitle": "Sugar glider",
+    "group": "mammal",
+    "regions": [
+      "oceania"
+    ],
+    "range": "Coastal forests of south-eastern Queensland and eastern New South Wales",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -30.5,
+      "longitude": 152.5
+    },
+    "mapSpan": 12,
+    "tagline": "A pocket-sized possum that glides 50 metres between trees",
+    "lede": "At dusk, a sugar glider climbs to a high branch, spreads its limbs and launches itself into the dark, sailing from tree to tree on furry membranes stretched along its sides. This tiny possum has a sweet tooth for sap and nectar, which gives it the first half of its name.",
+    "home": "As defined by a recent genetic study, the sugar glider is native only to a small part of south-eastern Australia: the coastal forests of southern Queensland and most of New South Wales east of the Great Dividing Range, reaching altitudes of 2,000 metres. Populations across northern Australia and New Guinea once included in the species are now treated as separate species or as yet undescribed.\n\nSugar gliders shelter by day in tree hollows lined with leafy twigs. A home range averages just 0.5 hectares, and they share their forests with squirrel gliders and yellow-bellied gliders, each species using food and space in a different way.",
+    "anatomy": "A sugar glider measures about 24 to 30 centimetres from nose to tail tip, with a long, partly prehensile tail. Males weigh about 140 grams and females about 115. The thick, soft fur is usually blue-grey, with a black stripe from the nose halfway down the back and a cream belly. Large, widely spaced eyes help it judge distances when gliding, and its ears swivel to pinpoint prey in the dark.\n\nThe gliding membrane runs from the fifth finger of each forefoot to the first toe of each hind foot. Each hind foot has a clawless, thumb-like toe for gripping branches, and two partly fused toes that form a grooming comb. A long, sharp fourth finger on each forefoot helps it winkle insects out from under bark.",
+    "life": "Sugar gliders are seasonal omnivores. In summer they eat mainly insects, but in winter, when insects are scarce, they switch to acacia gum, eucalyptus sap, manna, honeydew and lerp, stripping bark or boring holes with their teeth to reach it. They also take nectar, pollen, seeds, fungi, bird eggs and even small lizards and birds, and may be important pollinators of Banksia.\n\nThey live in family groups of up to 7 adults plus the year's young, bonding through mutual grooming. Two co-dominant males mark group members and territory with scent from glands on their forehead and chest, and intruders lacking the group's smell are driven out. In cold weather they huddle together and can drop into torpor for 2 to 23 hours a day, letting their body temperature fall as low as about 10 °C.",
+    "family": "Females can come into season several times a year, but in the wild they breed once or twice a year, and in the south-east young are born only between June and November. Most litters are twins, though about 1 in 5 is a single joey. After a pregnancy of 15 to 17 days, the blind, furless newborn, weighing just 0.2 grams, crawls into the pouch guided by smell.\n\nJoeys stay entirely in the pouch for about 60 days, open their eyes at around 80 days and leave the nest at around 110 days. Sugar gliders live up to 9 years in the wild and typically up to 12 in captivity, with a record of 17.8 years.",
+    "remarkable": "Sugar gliders are among the few mammals in which fathers help raise the young. The oldest co-dominant male, the likely father, gives a high level of care, so one adult can huddle with the joeys to keep them warm while the other forages. This matters because young gliders cannot regulate their own body temperature until they are about 100 days old.",
+    "outlook": "Under the old, broad definition of the species, the sugar glider was rated Least Concern on the IUCN Red List. Now that it is known to have a small, restricted range, it is thought to be far more vulnerable. The 2019–20 Australian bushfires hit much of its habitat just months before the study defining its true range was published, and because it depends on tree hollows, intense fires are a particular danger.\n\nIt can survive in small patches of remnant bush and in lightly logged forest, provided 3 to 5 hollow-bearing trees remain per hectare. Native owls are its main predators, and feral cats are a significant threat. Light pollution may also make it harder for gliders to forage and avoid being caught.",
+    "people": "The scientific name Petaurus breviceps means 'short-headed rope-dancer', a nod to its acrobatics in the canopy. Gliders of this genus are popular exotic pets in several countries, sometimes called pocket pets, though DNA tests suggest the pet gliders in the United States came from West Papua and are probably Krefft's gliders rather than true sugar gliders.\n\nIn Australia, keeping them is legal in Victoria, South Australia and the Northern Territory but banned in the other states and territories, and wildlife groups have raised welfare concerns. Captive gliders need a carefully balanced diet, as a lack of calcium can cause hind-leg paralysis.",
+    "relatives": "The genus Petaurus probably arose in New Guinea 18 to 24 million years ago and reached Australia between about 4.8 and 8.4 million years ago, perhaps over land bridges exposed by falling sea levels. In 2020, a major study split the old sugar glider into three: Krefft's glider of eastern Australia, the savanna glider of the north, and a narrowly defined sugar glider.\n\nThe sugar glider and Krefft's glider diverged about 1 million years ago. Despite looking and behaving much like flying squirrels, sugar gliders are not closely related to them; the resemblance is a classic case of convergent evolution.",
+    "didYouKnow": "A sugar glider's heart beats 200 to 300 times a minute.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "24–30 cm incl. tail"
+      },
+      {
+        "label": "Weight",
+        "value": "115–140 g"
+      },
+      {
+        "label": "Glide",
+        "value": "50 m or more"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Up to 9 years in the wild"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the name Petaurus breviceps mean?",
+        "choices": [
+          "Short-headed rope-dancer",
+          "Sweet-toothed flyer",
+          "Little sap-drinker",
+          "Small night-glider of the eucalyptus forest"
+        ],
+        "explanation": "The name refers to the glider's acrobatics in the treetops."
+      },
+      {
+        "prompt": "Who helps the mother care for young sugar gliders?",
+        "choices": [
+          "The oldest dominant male",
+          "Older sisters",
+          "Nobody",
+          "Unrelated females from neighbouring colonies"
+        ],
+        "explanation": "The oldest co-dominant male, the likely father, helps keep the young warm."
+      },
+      {
+        "prompt": "What do sugar gliders mainly eat in winter?",
+        "choices": [
+          "Gum and sap",
+          "Insects",
+          "Fruit dropped by fruit bats in the canopy",
+          "Grass seeds"
+        ],
+        "explanation": "When insects are scarce they feed on acacia gum, eucalyptus sap, manna, honeydew and lerp."
+      }
+    ],
+    "charities": [
+      {
+        "name": "WWF-Australia",
+        "url": "https://www.wwf.org.au",
+        "blurb": "Protects Australia's threatened species and the forests, woodlands and oceans they depend on."
+      },
+      {
+        "name": "Australian Wildlife Conservancy",
+        "url": "https://www.australianwildlife.org",
+        "blurb": "Manages a network of sanctuaries across Australia, including fenced reserves free of foxes and cats."
+      }
+    ]
+  },
+  {
+    "id": "mountain-gorilla",
+    "name": "Mountain Gorilla",
+    "scientificName": "Gorilla beringei beringei",
+    "wikipediaTitle": "Mountain gorilla",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Virunga Mountains and Bwindi forest in Uganda, Rwanda and DR Congo",
+    "status": "EN",
+    "coordinate": {
+      "latitude": -1.2,
+      "longitude": 29.6
+    },
+    "mapSpan": 5,
+    "tagline": "Gentle giants of the misty volcano forests",
+    "lede": "High on the misty slopes of dormant volcanoes in central Africa, families of mountain gorillas spend their days munching vines and bamboo shoots under the watchful eye of a silverback. Only about 1,063 remain, yet their numbers are rising, a rare conservation success built on decades of protection and tourism.",
+    "home": "Mountain gorillas live in two separate populations. One occupies the Virunga Mountains, spread across Mgahinga in south-western Uganda, Volcanoes National Park in north-western Rwanda and Virunga National Park in the eastern Democratic Republic of the Congo. The other lives in Uganda's Bwindi Impenetrable National Park, and some primatologists think it may be a separate subspecies.\n\nIn the Virungas, they inhabit montane cloud forest between 2,200 and 4,300 metres, mostly on the slopes of the volcanoes Karisimbi, Mikeno and Visoke. They spend most of their time in Hagenia forest, moving into bamboo forest when fresh shoots appear and climbing to the giant senecio zone to eat the soft centres of the trees.",
+    "anatomy": "Adult males stand about 1.7 metres tall when upright, with an arm span of around 2.3 metres, and weigh about 155 kg; females weigh 70 to 98 kg. The fur is thicker and longer than in other gorillas, helping them cope with the cold. Males develop a saddle of grey or silver hair on the back with age, which is why they are called silverbacks, and bony crests on the skull give their heads a conical shape.\n\nLike other great apes, their arms are longer than their legs, and they move mostly on all fours by knuckle-walking. Each gorilla has a unique nose print, which researchers use to tell individuals apart.",
+    "life": "Mountain gorillas are mainly vegetarian. Leaves, shoots, stems and pith of 142 plant species make up about 86% of their diet, with bark, roots, flowers, fruit and a few insects making up the rest. In Bwindi, adult males eat an average of 18.8 kg of food a day. Their day follows a rhythm: feeding in the morning, resting around midday, feeding again in the afternoon, and building a fresh nest of vegetation each night.\n\nThough immensely strong, they are generally gentle and shy. Researchers recognise 25 distinct calls; deep, rumbling belches signal contentment and are the most common way group members keep in touch. They have surprising dislikes: infants avoid chameleons and caterpillars, and adults dislike rain and will cross streams only where they can stay dry, such as on fallen logs.",
+    "family": "Groups range from 5 to 30 animals, averaging 10. A typical group has one dominant silverback, a subordinate silverback, one or two younger blackbacks acting as sentries, several adult females and a handful of juveniles and infants. The silverback leads the group to feeding sites, settles disputes and will defend it with his life. Only infants share a nest with their mothers, but if a mother dies the silverback usually looks after her young, even letting them sleep in his nest.\n\nMost males and about 60% of females eventually leave the group they were born into. Females usually go at around 8 years old, and males at about 11, often spending 2 to 5 years alone or with other males before attracting females of their own.",
+    "remarkable": "Young mountain gorillas have been seen searching for and dismantling poachers' snares. These traps, set for other animals, regularly maim or kill gorillas, so the behaviour is a striking example of the apes tackling one of the biggest dangers in their forest.",
+    "outlook": "The mountain gorilla has been listed as Endangered on the IUCN Red List since 2018. A census in 1981 found only 254 gorillas in the Virungas, but strict protection, anti-poaching patrols and carefully managed tourism have since pushed the total for both populations above 1,000.\n\nThreats remain. Farming, logging and settlement press on the forests, and in the late 1960s part of Rwanda's park was cut by more than half to grow pyrethrum. Gorillas are maimed by snares and killed by poachers seeking infants for the illegal pet trade, and decades of war in the region have taken a toll. With a genetic make-up so similar to ours, they also catch human diseases, and infections, mostly respiratory, cause about 20% of sudden deaths.",
+    "people": "The subspecies is named after Captain Robert von Beringe, who shot two of the apes in 1902 during an expedition in German East Africa. In 1925, Carl Akeley persuaded King Albert I of Belgium to create Albert National Park to protect the Virunga gorillas. George Schaller's 20-month study from 1959 revealed their social life, and Dian Fossey's 18-year study, begun in 1967, produced the first accurate census and pioneered anti-poaching patrols.\n\nToday gorilla tourism funds much of their protection. In Rwanda a visit costs 1,500 dollars per person, and by law 10% of the revenue goes back to local communities for schools, roads and drinking water.",
+    "relatives": "The mountain gorilla is one of two subspecies of the eastern gorilla, Gorilla beringei; the other is the larger eastern lowland gorilla, from which it has been isolated for about 10,000 years. Eastern and western gorillas separated roughly 1.2 to 3 million years ago, and since 2003 they have been treated as two species, each with two subspecies.\n\nThe genus Gorilla split from the ancestors of humans and chimpanzees between about 8.8 and 12 million years ago. Small, isolated populations have led to extensive inbreeding, and individual mountain gorillas are typically homozygous across about a third of their genome.",
+    "didYouKnow": "A gorilla's ritualised charge display has nine steps, running from quickening hoots and chest-beating with cupped hands to thumping the ground with its palms.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "About 1.7 m (males upright)"
+      },
+      {
+        "label": "Weight",
+        "value": "120–191 kg (males)"
+      },
+      {
+        "label": "Diet",
+        "value": "Mostly leaves, shoots and stems"
+      },
+      {
+        "label": "Population",
+        "value": "About 1,063"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why are adult male gorillas called silverbacks?",
+        "choices": [
+          "Grey hair grows on their backs",
+          "Their skin pales with age",
+          "They rest on silvery rocks",
+          "Their backs shine in the sun after rain soaks the fur"
+        ],
+        "explanation": "A saddle of grey or silver hair develops on the back of mature males."
+      },
+      {
+        "prompt": "What have young mountain gorillas been seen doing to snares?",
+        "choices": [
+          "Dismantling them",
+          "Eating the bait",
+          "Burying them under leaves",
+          "Carrying them to the silverback to inspect"
+        ],
+        "explanation": "They have been observed searching for and taking apart poachers' snares."
+      },
+      {
+        "prompt": "Whose name does the mountain gorilla's scientific name honour?",
+        "choices": [
+          "Robert von Beringe",
+          "Dian Fossey",
+          "George Schaller",
+          "King Albert I of Belgium, who founded a national park"
+        ],
+        "explanation": "It is named after Captain Robert von Beringe, who shot two in 1902."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Dian Fossey Gorilla Fund",
+        "url": "https://gorillafund.org",
+        "blurb": "Continues Dian Fossey's work protecting and studying gorillas in Rwanda and the Democratic Republic of the Congo."
+      },
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      }
+    ]
+  },
+  {
+    "id": "sumatran-rhinoceros",
+    "name": "Sumatran Rhinoceros",
+    "scientificName": "Dicerorhinus sumatrensis",
+    "wikipediaTitle": "Sumatran rhinoceros",
+    "group": "mammal",
+    "regions": [
+      "asia"
+    ],
+    "range": "Scattered rainforest pockets on Sumatra and in Indonesian Borneo",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 0.5,
+      "longitude": 107.0
+    },
+    "mapSpan": 22,
+    "tagline": "The smallest, hairiest and chattiest rhino on Earth",
+    "lede": "Shaggy, red-brown and under 1.5 metres tall at the shoulder, the Sumatran rhinoceros is the smallest of the world's rhinos and the only Asian rhino with two horns. It is also one of the rarest large mammals on Earth, with fewer than 80 mature animals thought to survive in the wild.",
+    "home": "This rhino once roamed rainforests, swamps and cloud forests from India, Bhutan and Bangladesh through Myanmar, Thailand and Laos to Malaysia, Indonesia and southern China. It prefers hilly country near water, especially steep upper valleys with dense undergrowth, moving higher in the rainy season and returning to lower ground in cooler months.\n\nToday only a handful of populations survive, four on Sumatra and one in Borneo, mostly in remote mountains of Indonesia. The species was lost from Malaysia in 2019, and a tiny population was found in East Kalimantan, the Indonesian part of Borneo, where it had been thought extinct since the 1990s.",
+    "anatomy": "A mature Sumatran rhino stands 112 to 145 centimetres at the shoulder, measures 2.36 to 3.18 metres long and usually weighs 500 to 800 kg. Like the African rhinos it has two horns, but the front horn is typically only 15 to 25 centimetres long and the rear one is often just a knob. Two thick folds of skin circle the body, though the skin itself is only 10 to 16 mm thick.\n\nIts reddish-brown hair is densest in young calves and often hidden under mud in the wild, but grows long and shaggy in captivity. There is a patch of long hair around the ears and a thick tuft at the tip of the tail. Its eyesight is poor, but it is fast and agile, climbing steep slopes with ease and swimming across strong rivers.",
+    "life": "Sumatran rhinos live alone, except when courting or raising a calf. They feed mainly in the morning and just before nightfall, eating up to 50 kg a day of saplings, leaves, twigs and shoots from more than 100 plant species. A rhino often pushes a sapling over with its body and walks over it, without stepping on it, to reach the leaves. Salt licks are vital for minerals, and bulls visit them to pick up the scent of females ready to mate.\n\nThe heat of the day is spent wallowing in mud for 2 to 3 hours, which cools the rhino and protects its skin from insects; captive animals denied wallows quickly sicken. Rhinos mark their ranges by scraping soil, leaving dung and twisting saplings into distinctive patterns, and they keep up trails that are used by generation after generation.",
+    "family": "Females mature at 6 to 7 years and males at about 10. After a pregnancy of 15 to 16 months, a single calf weighing 40 to 60 kg is born. It is weaned at about 15 months but stays with its mother for its first 2 to 3 years, and in the wild a female is thought to give birth only once every 4 to 5 years.\n\nThat slow pace makes every calf precious. Tigers and wild dogs may occasionally kill a calf, but calves keep close to their mothers, and adults have no known predators other than people.",
+    "remarkable": "This is the most vocal rhino, calling almost constantly. Its repertoire has three sounds: the eep, a short yelp lasting about a second; the whale, a song-like call of 4 to 7 seconds named for its likeness to a humpback whale; and the whistle-blow, a 2-second whistle followed by a burst of air, which is the loudest of the three.",
+    "outlook": "The Sumatran rhinoceros is Critically Endangered. Its horn fetches high prices, and centuries of hunting, together with habitat loss, have left tiny, scattered populations at risk of inbreeding. From the early 1990s, numbers fell by more than half each decade, and Kerinci Seblat National Park, home to an estimated 500 rhinos in the 1980s, now has none.\n\nBetween 1984 and 1996, 40 rhinos were taken into captivity for breeding, with little success at first. Malaysia's last rhinos, Tam and Iman, died in 2019. Hopes now rest on the Sumatran Rhino Sanctuary in Way Kambas National Park, Indonesia, where several calves were born between 2016 and 2023.",
+    "people": "The first documented Sumatran rhino was shot near Fort Marlborough on Sumatra's west coast in 1793, and drawings were sent to the naturalist Joseph Banks. In 2001, a female named Emi at Cincinnati Zoo gave birth to a male calf, Andalas, the first captive birth of a Sumatran rhino in 112 years. Andalas later returned to Sumatra and fathered a calf of his own.\n\nColonial-era folk tales are colourful. In Burma people believed the rhino ate fire and would follow smoke to attack campfires, while in Malaya and Sumatra it was said to shed its horns every year and bury them in the ground.",
+    "relatives": "The Sumatran rhino is the only living member of the genus Dicerorhinus. Despite its two horns, genetic evidence places it closer to the one-horned Indian and Javan rhinoceroses than to the African species. Its closest relatives were the extinct woolly rhinoceros and Stephanorhinus, from which its lineage split around 9.5 million years ago.\n\nThree subspecies are recognised: the western Sumatran rhinoceros, the Bornean rhinoceros, and the northern or Chittagong rhinoceros, which has been declared extinct in India and Bangladesh.",
+    "didYouKnow": "One field researcher spent seven weeks in a treehide beside a salt lick without ever seeing a rhino.",
+    "facts": [
+      {
+        "label": "Shoulder height",
+        "value": "112–145 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "500–800 kg"
+      },
+      {
+        "label": "Gestation",
+        "value": "15–16 months"
+      },
+      {
+        "label": "Population",
+        "value": "Under 80 mature adults"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which living rhinos are the Sumatran rhino's closest relatives?",
+        "choices": [
+          "The Indian and Javan rhinos",
+          "The black rhino",
+          "The white rhino",
+          "Both African species, which also have two horns"
+        ],
+        "explanation": "Genetic evidence links it more closely to the one-horned Asian rhinos than to the African species."
+      },
+      {
+        "prompt": "Why do Sumatran rhinos wallow in mud?",
+        "choices": [
+          "To keep cool and protect their skin",
+          "To soften their horns",
+          "To find salt",
+          "To hide their scent from tigers and wild dogs"
+        ],
+        "explanation": "Wallowing controls body temperature and guards the skin against insects."
+      },
+      {
+        "prompt": "Which is the loudest call a Sumatran rhino makes?",
+        "choices": [
+          "The whistle-blow",
+          "The eep",
+          "The whale",
+          "A deep roar used only in the breeding season"
+        ],
+        "explanation": "The whistle-blow, a whistle followed by a burst of air, is the loudest."
+      }
+    ],
+    "charities": [
+      {
+        "name": "International Rhino Foundation",
+        "url": "https://rhinos.org",
+        "blurb": "Supports rhino protection units and breeding work for the Sumatran rhino in Indonesia."
+      },
+      {
+        "name": "Save the Rhino International",
+        "url": "https://www.savetherhino.org",
+        "blurb": "Funds field programmes that protect all five rhino species in Africa and Asia."
+      }
+    ]
+  },
+  {
+    "id": "african-forest-elephant",
+    "name": "African Forest Elephant",
+    "scientificName": "Loxodonta cyclotis",
+    "wikipediaTitle": "African forest elephant",
+    "group": "mammal",
+    "regions": [
+      "africa"
+    ],
+    "range": "Rainforests of West Africa and the Congo Basin",
+    "status": "CR",
+    "coordinate": {
+      "latitude": 0.5,
+      "longitude": 15.0
+    },
+    "mapSpan": 30,
+    "tagline": "The rainforest's megagardener, planting trees as it walks",
+    "lede": "Moving quietly through the green gloom of the Congo Basin, the African forest elephant is the smallest of the world's three elephant species. It may also be the most important gardener in Africa's rainforests, scattering the seeds of trees that cannot survive without it.",
+    "home": "Forest elephants live in humid tropical forests. In Central Africa they range through large, continuous tracts of rainforest from Cameroon to the Democratic Republic of the Congo, with the largest stable population in Gabon, where suitable habitat covers 90% of the country and about 95,000 elephants were estimated to live in 2021. Smaller populations survive in the Upper Guinean forests of Ivory Coast and Ghana.\n\nFamily groups travel about 7.8 km a day within home ranges of up to 2,000 square kilometres, following the ripening of fruit. They use a network of permanent trails linking fruit trees, forest clearings and mineral licks, and these paths are reused by people and other animals.",
+    "anatomy": "Size estimates vary, but a 2015 study suggested that fully grown bulls average about 2.2 metres at the shoulder and 2 tonnes, much smaller than bush elephants. The grey skin looks yellow to reddish after wallowing and is sparsely covered with coarse black hair. The ears are oval, the back nearly straight, and the tip of the trunk has two finger-like projections.\n\nBoth sexes carry straight, downward-pointing tusks, which start growing at 1 to 3 years old and help them push through dense undergrowth. The tusks are pinkish, thinner and harder than a bush elephant's; a bull's keep growing throughout life, while a cow's stop at maturity. The largest recorded tusk was 2.41 metres long and weighed 60 kg.",
+    "life": "Forest elephants are herbivores, feeding on leaves, bark, seeds and fruit; in Gabon's Lopé National Park they ate at least 72 different fruits. They gather at mineral-rich waterholes and licks to supplement their diet.\n\nFamily groups of adult females and their young number up to 20, and members help look after one another's calves. At forest clearings, groups often meet, mingle and linger longer when others are present. Their calls include low, tonal rumbles and bark-like or roar-like broadband sounds, which they combine into multi-part calls with specific meanings. With poor eyesight, they rely heavily on hearing and smell, and can sense vibrations through the ground.",
+    "family": "Females mature at 8 to 12 years but on average begin breeding at about 23, and then give birth only every 5 to 6 years, a much slower rate than in bush elephants. Pregnancy lasts 22 months, and twins are rare. A newborn weighs around 105 kg and can stand and walk almost at once.\n\nCalves suckle with the trunk held over the head and are not weaned until they are 4 or 5 years old, when their growing tusks begin to get in the way. Young bulls leave the family at maturity and mostly live alone, joining families only to mate. Between 15 and 25, bulls begin to experience musth, a hormonal state of heightened aggression. Forest elephants live about 60 to 70 years.",
+    "remarkable": "The forest elephant has been called the 'megagardener of the forest'. A single dung pile can hold up to 1,102 large seeds, and elephants carry about a third of the large seeds they swallow more than 5 km before depositing them. Seeds that pass through an elephant germinate faster, and in the Cuvette Centrale, 14 of 18 large-fruited tree species, including wild mango, depend on the elephants to spread them.",
+    "outlook": "Since 2021 the African forest elephant has been listed as Critically Endangered on the IUCN Red List, after its population fell by more than 80% over three generations. Numbers are thought to have dropped from about 700,000 to fewer than 100,000 over several decades, with about half of the survivors in Gabon.\n\nPoaching for ivory and bushmeat is the main threat, together with forest clearance for plantations, farming and settlements. Its hard ivory is prized by carvers and fetches higher prices on the black market. International commercial trade has been banned since 1989, and DNA tests now trace seized tusks back to the forests where the elephants were killed.",
+    "people": "The species was described in 1900 by Paul Matschie, from skulls collected beside the Sanaga River in southern Cameroon. Hunter-gatherers of the Congo Basin, including the Mbuti, have traditionally hunted forest elephants with spears, preparing with song and dance and masking their scent with mud, dung and charcoal. Such hunts were dangerous and often failed; in one 6-month study, only 1 in 6 succeeded.\n\nIn Japan, premium bachi, the plectrums used to play traditional stringed instruments, are made only from forest elephant ivory. In 2020, a poacher who had killed over 500 elephants in the Republic of the Congo was sentenced to 30 years in prison.",
+    "relatives": "The forest elephant was long considered a subspecies of the African elephant, alongside the bush elephant, but DNA studies show the two are distinct species that diverged at least 1.9 million years ago. They occasionally hybridise where their ranges meet. The so-called African pygmy elephant turns out to be a forest elephant kept small by its environment.\n\nRemarkably, ancient DNA shows that the extinct straight-tusked elephants of Europe inherited more than a third of their nuclear genome from interbreeding with African forest elephants around 1 million years ago.",
+    "didYouKnow": "Thermal imaging has revealed that forest elephants are far more sexually active at night than during the day, which surprised researchers.",
+    "facts": [
+      {
+        "label": "Shoulder height",
+        "value": "About 2.2 m (bulls)"
+      },
+      {
+        "label": "Gestation",
+        "value": "22 months"
+      },
+      {
+        "label": "Lifespan",
+        "value": "60–70 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Leaves, bark, fruit and seeds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why has the forest elephant been called the 'megagardener of the forest'?",
+        "choices": [
+          "It spreads tree seeds",
+          "It prunes branches",
+          "It digs waterholes",
+          "It clears paths that let sunlight reach young trees"
+        ],
+        "explanation": "Seeds carried in its gut are spread far and germinate faster, and some trees depend on it."
+      },
+      {
+        "prompt": "How long is a forest elephant's pregnancy?",
+        "choices": [
+          "22 months",
+          "9 months",
+          "15 months",
+          "About 3 years, longer than any other mammal"
+        ],
+        "explanation": "Gestation lasts 22 months."
+      },
+      {
+        "prompt": "How do forest elephant tusks differ from those of bush elephants?",
+        "choices": [
+          "Straighter and harder",
+          "Only males have them",
+          "They're bright white",
+          "They fall out and regrow every few years, like antlers"
+        ],
+        "explanation": "They are straight, downward-pointing, pinkish and harder than bush elephant tusks."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places through science and field conservation worldwide."
+      },
+      {
+        "name": "World Wildlife Fund",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works worldwide to protect wildlife and the habitats they depend on."
+      }
+    ]
+  },
+  {
+    "id": "scarlet-macaw",
+    "name": "Scarlet Macaw",
+    "scientificName": "Ara macao",
+    "wikipediaTitle": "Scarlet macaw",
+    "group": "bird",
+    "regions": [
+      "centralAmerica",
+      "southAmerica"
+    ],
+    "range": "Humid lowland forests from southern Mexico to the Amazon basin",
+    "status": "LC",
+    "coordinate": {
+      "latitude": -3.0,
+      "longitude": -62.0
+    },
+    "mapSpan": 50,
+    "tagline": "A blaze of red, yellow and blue above the rainforest",
+    "lede": "Few sights in the tropics match a pair of scarlet macaws flying over the canopy, red bodies blazing and long tails streaming behind. These big, noisy parrots mate for life, can live for decades, and have been prized by people for their feathers for more than a thousand years.",
+    "home": "The scarlet macaw lives in humid evergreen forests of the Americas, from the Yucatán Peninsula of south-eastern Mexico and Belize through Central America to Peru, Bolivia and Brazil. In South America its range covers much of the Amazon basin, and it also lives on Trinidad and the Pacific island of Coiba. It favours lowland rainforest, open woodland, river edges and savanna, mostly below about 1,000 metres.\n\nIn Costa Rica, studies found that these macaws spend nearly all their time high in the canopy, usually more than 10 metres above the ground, where most of their food grows and predators are fewer. Escaped birds also turn up in Florida and Puerto Rico.",
+    "anatomy": "The scarlet macaw is about 84 centimetres long, and more than half of that is its pointed, graduated tail, a larger share than in other big macaws. It weighs about 1 kg. Most of the plumage is scarlet, with yellow on the upper wing, dark blue flight feathers and a light blue rump. Underneath, the wing and tail feathers are dark red with a metallic golden sheen.\n\nThe face has a patch of bare white skin dotted with tiny white feathers, and the upper bill is pale horn-coloured while the lower is black. Young birds have dark eyes; adults' eyes are pale yellow. The Central American subspecies is larger, averaging 89 centimetres, and shows blue rather than green on its wings.",
+    "life": "Wild scarlet macaws eat fruits, nuts, seeds, flowers and nectar, and only rarely insects or snails. Seeds of Cnidoscolus and Schizolobium are thought to supply most of the protein for nestlings. In Costa Rica's Central Pacific region, they have learned to feed on introduced teak and beach almond trees, and local groups have planted hundreds of these along the coast, helping numbers grow.\n\nThey are usually seen alone or in pairs, though flocks gather in some areas, especially at clay licks, where they eat mineral-rich soil that aids digestion and supplies sodium and calcium. Their loud, throaty squawks and screams carry for kilometres, and in captivity they can be skilled mimics of human speech.",
+    "family": "Scarlet macaws stay with one partner throughout their lives, and although docile for most of the year, they can become fiercely aggressive when breeding. The female lays 2 or 3 white eggs in a large tree cavity and incubates them for about 5 weeks. The chicks fledge around 90 days after hatching and stay with their parents for about another year, reaching maturity at 5 years old.\n\nSnakes, monkeys and small carnivores may raid nests, while jaguars, eagles and hawks take adults and fledglings. In captivity these macaws can live 75 or even 90 years, though 40 to 50 is more typical.",
+    "remarkable": "People were breeding scarlet macaws long before modern aviculture. Breeding pens, perches, bones and eggshell fragments uncovered at Paquimé in northern Mexico show the birds were raised there in the 11th century, and their plumes were traded north to the Colorado Plateau for use in religious rites. Feathers from a tomb near Pachacamac also reveal trade across the Andes between about 1000 and 1470.",
+    "outlook": "The scarlet macaw has the widest north-to-south range of any Ara macaw, and because it remains numerous across much of South America it is listed as Least Concern by the IUCN, with an estimated 50,000 to 499,999 wild birds. In Mexico and Central America, however, habitat destruction and capture for the pet trade have left only small, scattered populations. The northern subspecies is listed as endangered by the US Fish and Wildlife Service, which estimates just 2,000 to 3,000 remain.\n\nInternational commercial trade is banned under CITES. In Costa Rica, where adults sometimes kill their own chicks when food and nest sites are scarce, conservationists now rescue vulnerable chicks, hand-rear them and release them back into the wild.",
+    "people": "The scarlet macaw is the national bird of Honduras. Its striking colours have made it a favourite in aviculture, and it is the third most common macaw kept in captivity, though stricter laws have made it rarer and more expensive in recent years.\n\nIn 2013, a team at Texas A&M University sequenced the scarlet macaw's complete genome, creating genetic markers that let researchers identify individual wild birds from the DNA in a feather. Ecotourism helps too: tour companies along Costa Rica's Tárcoles River promote birdwatching, giving local people a reason to protect the macaws.",
+    "relatives": "The scarlet macaw belongs to the genus Ara, one of six genera of Central and South American macaws, and its relatives include the blue-and-yellow macaw. Two subspecies are recognised: the South American nominate form and the larger North Central American form, described in 1995.\n\nIt is often confused with the slightly larger green-winged macaw, which has distinct red lines on its face and no yellow on its wings. Carl Linnaeus first described the species in 1758, under the name Psittacus macao.",
+    "didYouKnow": "A small free-flying group of scarlet macaws has lived around the village of Kirkby Stephen in Cumbria, England, since about 2010, returning to a conservation centre each evening.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "About 84 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "About 1 kg"
+      },
+      {
+        "label": "Clutch",
+        "value": "2–3 eggs"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Typically 40–50 years (captive)"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Why do scarlet macaws gather at clay licks?",
+        "choices": [
+          "To eat mineral-rich soil",
+          "To bathe",
+          "To court",
+          "To sharpen their bills on the hard clay banks"
+        ],
+        "explanation": "The clay aids digestion and supplies nutrients such as sodium and calcium."
+      },
+      {
+        "prompt": "Which country has the scarlet macaw as its national bird?",
+        "choices": [
+          "Honduras",
+          "Mexico",
+          "Costa Rica",
+          "Brazil"
+        ],
+        "explanation": "It is the national bird of Honduras."
+      },
+      {
+        "prompt": "How much of a scarlet macaw's length is tail?",
+        "choices": [
+          "More than half",
+          "About a quarter",
+          "A tenth",
+          "Roughly a third, as in most other parrots"
+        ],
+        "explanation": "More than half of its 84 centimetres is the long, pointed tail."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests with local partners."
+      },
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places through science and field conservation worldwide."
+      }
+    ]
+  },
+  {
+    "id": "northern-bald-ibis",
+    "name": "Northern Bald Ibis",
+    "scientificName": "Geronticus eremita",
+    "wikipediaTitle": "Northern bald ibis",
+    "group": "bird",
+    "regions": [
+      "africa",
+      "europe",
+      "asia"
+    ],
+    "range": "Coastal cliffs of southern Morocco, plus reintroduced colonies in Europe and Turkey",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 37.0,
+      "longitude": 10.0
+    },
+    "mapSpan": 40,
+    "tagline": "The bald ibis that learned to migrate behind microlights",
+    "lede": "With its glossy black plumage, wispy ruff and bare red face, the northern bald ibis looks like a cross between a crow and a wizened old man. It vanished from Europe more than 300 years ago, and its last truly wild birds now cling to a few coastal cliffs in Morocco, but bold reintroduction projects are bringing it back.",
+    "home": "Unlike most ibises, which nest in trees and feed in wetlands, this species breeds on undisturbed cliff ledges and forages in dry, open country such as semi-arid steppe, grazed land and fallow fields, often near running water. It needs good feeding grounds close to its breeding cliffs.\n\nIt once lived across the Middle East, North Africa and southern and central Europe, nesting along the Danube and Rhone and in the mountains of Spain, Italy, Germany, Austria and Switzerland, sometimes on castle walls. Today the only wild colonies are in southern Morocco, at Souss-Massa National Park and Tamri. The Moroccan birds stay all year, perhaps helped by moisture from coastal fog, whereas other populations migrated south for the winter.",
+    "anatomy": "The northern bald ibis is 70 to 80 centimetres long with a wingspan of 125 to 135 centimetres, and weighs 1 to 1.3 kg. Its black plumage shimmers with bronze-green and violet, and the long, curved bill and legs are red. The sexes look alike, but males are larger with longer bills, and longer-billed males are more successful at attracting a mate.\n\nChicks are covered in pale brown down, and young birds resemble adults but have dark heads, grey legs and pale bills; their bare skin reddens as they mature. In flight the bird has powerful, shallow wingbeats, and its feet do not stick out beyond its tail, unlike those of the similar glossy ibis.",
+    "life": "The ibis is sociable, commuting in V-shaped flocks between its cliffs and its feeding grounds, with winter flocks of up to 100 birds. In the breeding season it may forage up to 15 km from the colony. It walks across the ground probing loose, sandy soil with its long bill, so it needs soft earth and sparse vegetation no more than about 20 centimetres high.\n\nLizards and tenebrionid beetles dominate its diet, but it also eats small mammals, ground-nesting birds, snails, scorpions, spiders and caterpillars. Males sometimes scrounge food from females.",
+    "family": "Bald ibises breed in loose colonies and pair for life, starting at 3 to 5 years old. The male picks and cleans a nest site, then advertises for a female by waving his crest and giving low rumbling calls, and pairs strengthen their bond by bowing and preening each other. The nest is a loose platform of twigs lined with grass or straw.\n\nThe female lays 2 to 4 rough-shelled eggs, blue-white with brown spots. Both parents incubate for 24 to 25 days and feed the chicks, which fly at about 2 months old. Birds live 20 to 25 years on average in captivity, with a record of 37, but only an estimated 10 to 15 years in the wild.",
+    "remarkable": "To restore a migratory population in Europe, Austrian researchers taught young ibises to follow microlight aircraft from Austria to southern Tuscany, starting in 2003. The birds then flew the route on their own. In 2008, a female named Aurelia flew 930 km back to Austria for her fourth return to the breeding site, although her mate and two offspring had died on the southward journey the year before.",
+    "outlook": "The species lost 98% of its population between 1900 and 2002, through hunting, loss of steppe and traditional farmland, pesticide poisoning and, on migration, electrocution. The last wild Turkish colony at Birecik died out in 1992, and a relict colony discovered in Syria's Palmyra desert in 2002 had dwindled to nothing by 2015.\n\nIn Morocco, careful protection, including extra nest ledges created by volunteer climbers, has turned the tide: by 2019 the colonies held 708 birds. With semi-wild and reintroduced birds in Turkey, Austria, Italy, Spain and northern Morocco, the species was moved from Critically Endangered to Endangered on the IUCN Red List in 2018, a decision some consider controversial.",
+    "people": "This ibis was revered in Ancient Egypt, where with the sacred ibis it was seen as an embodiment of Thoth, scribe of the gods. A bald ibis hieroglyph spelled the word akh, meaning 'to shine', probably for its glossy feathers. In Turkey it was believed to guide pilgrims to Mecca, and local legend at Birecik says it was one of the first birds Noah released from the Ark.\n\nIn 1504, the Archbishop of Salzburg declared it protected, making it one of the world's earliest officially protected species, though young birds were still eaten at noble feasts. Its genus name, Geronticus, comes from the Greek for 'old man', after its bald head, and Waldrapp is German for 'forest raven'.",
+    "relatives": "Ibises and spoonbills together make up one subfamily of the family Threskiornithidae. The northern bald ibis shares its genus with just one other species, the southern bald ibis of southern Africa, which has a whitish face. Both differ from other ibises in having bare heads, nesting on cliffs and preferring dry habitats.\n\nThe eastern and western populations probably separated at least 400 years ago and have drifted apart since, though they are not classed as separate subspecies. Fossils show the species lived around the Mediterranean at least 1.8 million years ago.",
+    "didYouKnow": "In 2023, a pair nested on a commercial building near Zurich Airport, the first breeding bald ibises recorded in Switzerland for over 400 years.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "70–80 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "125–135 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "1–1.3 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Lizards and beetles"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How did researchers teach young bald ibises a migration route?",
+        "choices": [
+          "By leading them with microlights",
+          "With recorded calls",
+          "By fitting them with GPS tags",
+          "By releasing them alongside flocks of migrating storks"
+        ],
+        "explanation": "Young birds were trained to follow microlight aircraft from Austria to Tuscany."
+      },
+      {
+        "prompt": "Where do the last truly wild northern bald ibises live?",
+        "choices": [
+          "Morocco",
+          "Syria",
+          "Austria",
+          "Southern Turkey, near the town of Birecik"
+        ],
+        "explanation": "The only wild colonies left are at Souss-Massa and Tamri in southern Morocco."
+      },
+      {
+        "prompt": "What does the name Waldrapp mean?",
+        "choices": [
+          "Forest raven",
+          "Bald head",
+          "Old man",
+          "Wandering hermit of the desert"
+        ],
+        "explanation": "Waldrapp is German for 'forest raven'."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership of conservation groups working to protect birds and their habitats."
+      },
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's bird conservation charity, which also supports bald ibis protection in Morocco."
+      }
+    ]
+  },
+  {
+    "id": "great-white-pelican",
+    "name": "Great White Pelican",
+    "scientificName": "Pelecanus onocrotalus",
+    "wikipediaTitle": "Great white pelican",
+    "group": "bird",
+    "regions": [
+      "africa",
+      "europe",
+      "asia"
+    ],
+    "range": "Lakes and swamps from south-eastern Europe through Asia and Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 20.0,
+      "longitude": 35.0
+    },
+    "mapSpan": 70,
+    "tagline": "A giant fishing bird that hunts in synchronised teams",
+    "lede": "A flock of great white pelicans fishing together is a lesson in teamwork: 6 to 8 birds form a horseshoe in the shallows and plunge their huge bills in unison, trapping every fish in reach. With a wingspan that can reach 3.6 metres, this is also one of the largest flying birds in the world.",
+    "home": "Great white pelicans breed from south-eastern Europe through Asia and in Africa, usually on shallow, warm freshwater lakes, deltas, lagoons and swamps with dense reed beds for nesting. In Africa they also use alkaline lakes and coastal estuaries, and some nest on islands off Banc d'Arguin National Park. The African population of about 75,000 pairs stays put, while birds breeding in Europe and Asia migrate.\n\nMore than half of Eurasia's breeding birds nest in the Danube Delta in Romania, arriving in late March or April. In winter they spread from north-eastern Africa through Iraq to India, Pakistan and Sri Lanka, and more than 75,000 have been counted passing through Israel on migration.",
+    "anatomy": "This is a huge bird; among pelicans only the Dalmatian pelican is larger on average. Adults measure 140 to 180 centimetres long, with a pink and yellow bill up to 47 centimetres long and a pale yellow throat pouch. Males weigh 9 to 15 kg and females 5.4 to 9 kg, and males can be more than 30% heavier, perhaps the greatest size difference between the sexes in any pelican.\n\nThe plumage is white, tinged pink in the breeding season, contrasting with black flight feathers. Unlike other pelicans, it has a bare face, with the forehead feathering tapering to a point over the bill. Breeding males show pinkish facial skin and females orange, while juveniles are mostly brown.",
+    "life": "The great white pelican eats mainly fish, needing 0.9 to 1.4 kg a day, and may fly over 100 km from its roost to find them. It prefers fairly large fish of around 500 to 600 grams: carp in Europe, mullet in China and cichlids such as tilapia in Africa. Its pouch works simply as a scoop, filling with water and fish when the bill is pushed underwater, then contracting as the head lifts to squeeze the water out.\n\nThese sociable birds often travel in V-shaped or circling formations, flying with a few slow wingbeats followed by a glide. On water, short strong legs and webbed feet propel them, though take-off is rather awkward. They are mostly silent, but give low grunts and growls, and deep 'moooo' calls at breeding colonies.",
+    "family": "In temperate regions breeding begins in April or May, while in Africa it can happen at almost any time of year. Pelicans nest in large colonies. Some build stick nests in trees, but most, including all African birds, nest in scrapes on the ground lined with grass, sticks and feathers.\n\nThe female lays 1 to 4 eggs, usually 2, which hatch after 29 to 36 days. Chicks are naked at first but soon grow blackish-brown down, and both parents care for them. At around 20 to 25 days old they gather in groups called pods, and they fledge at 65 to 75 days. Around 64% survive to adulthood, breeding at 3 to 4 years old.",
+    "remarkable": "Great white pelicans are not just fish-eaters. Off south-western South Africa, pelicans from Dassen Island raid the Cape gannet colony on Malgas Island and eat chicks weighing up to 2 kg. At Walvis Bay in Namibia, young pelicans are regularly fed the eggs and chicks of Cape cormorants. In hard times they will drown gulls and swallow them headfirst, and the captive flock in London's St James's Park is known for sometimes eating pigeons.",
+    "outlook": "Since 1998 the great white pelican has been rated Least Concern on the IUCN Red List because of its huge range and lack of rapid decline. Even so, its total population is unknown, and it is not abundant anywhere. Europe holds roughly 7,345 to 10,000 breeding pairs, and declines have been especially marked in the Palaearctic; it may be extinct in Serbia and Montenegro and is regionally extinct in Hungary.\n\nOverfishing forces pelicans to fly further for food, and adults may abandon colonies when fish run short. Disturbance, pollution and the loss of breeding and feeding sites add to the pressure. The species is protected under several international agreements, including the Agreement on the Conservation of African-Eurasian Migratory Waterbirds.",
+    "people": "People have long exploited pelicans. Their pouches have been made into tobacco bags, their skin into leather and their guano into fertiliser, while the fat of young birds has been used in traditional medicine in China and India, and in Ethiopia they are shot for meat.\n\nThey are also admired. The pelicans of St James's Park in London descend from birds given to King Charles II by the Russian ambassador in 1664, which began a tradition of ambassadors presenting the birds. The species name onocrotalus comes from a Greek word meaning 'one who brays like a donkey', after its harsh mating calls.",
+    "relatives": "Linnaeus described the great white pelican in 1758, and no subspecies are recognised. It is sometimes called the eastern white pelican, in contrast to the white pelican of the Americas, which looks similar in flight but has white inner secondary feathers.\n\nIt can be told from the Dalmatian pelican by its pure white rather than greyish-white plumage, the bare pink patch around the eye and its pinkish legs. The spot-billed pelican of Asia and the pink-backed pelican of Africa are both smaller, with greyer or browner plumage.",
+    "didYouKnow": "At Tanzania's Lake Rukwa, Africa's largest colony with almost 75,000 birds, the pelicans are estimated to eat 28 million kg of fish a year.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "140–180 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "2.26–3.6 m"
+      },
+      {
+        "label": "Weight",
+        "value": "5.4–15 kg"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly fish"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How do great white pelicans often catch fish?",
+        "choices": [
+          "By fishing as a team",
+          "By diving from great heights",
+          "By stealing them from cormorants",
+          "By spearing them with the hooked tip of the bill"
+        ],
+        "explanation": "Groups form a horseshoe and dip their bills in unison to trap fish."
+      },
+      {
+        "prompt": "What does the name onocrotalus mean?",
+        "choices": [
+          "One who brays like a donkey",
+          "Great white fisher",
+          "Bag-throat",
+          "Bird of the lakes and marshes of the east"
+        ],
+        "explanation": "It comes from a Greek word referring to the pelican's harsh mating calls."
+      },
+      {
+        "prompt": "Who gave the first pelicans to St James's Park in London?",
+        "choices": [
+          "The Russian ambassador",
+          "Queen Victoria",
+          "A London zoo",
+          "Sailors returning from a long voyage to Africa"
+        ],
+        "explanation": "They were a gift to Charles II from the Russian ambassador in 1664."
+      }
+    ],
+    "charities": [
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership of conservation groups working to protect birds and their habitats."
+      },
+      {
+        "name": "Wetlands International",
+        "url": "https://www.wetlands.org",
+        "blurb": "Works to protect and restore wetlands and the waterbirds that rely on them."
+      }
+    ]
+  }
+]

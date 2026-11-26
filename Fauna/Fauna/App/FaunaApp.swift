@@ -70,8 +70,7 @@ extension RootView {
     /// Picks up newly published animals and prepares upcoming ones for offline reading.
     /// Demo and onboarding launches (screenshots, UI tests) stay on the bundled library.
     fileprivate func refreshContent() async {
-        let args = ProcessInfo.processInfo.arguments
-        guard !args.contains("-FaunaDemo"), !args.contains("-FaunaOnboarding") else { return }
+        guard !ContentSync.usesBundledLibraryOnly else { return }
         await OfflineLibrary.refresh(store)
     }
 }

@@ -32,6 +32,9 @@ enum ContentSync {
     /// The library to start with: the downloaded one if it's newer than this build's bundle,
     /// otherwise the bundled one.
     static func initialLibrary(bundle: Bundle = .main) -> [Animal] {
+        // Demo and onboarding launches (screenshots, UI tests) and test runs use the bundled
+        // library, so what they show matches the build being tested.
+        if usesBundledLibraryOnly { return AnimalLibrary.load(bundle: bundle) }
         if let cached = cachedFile("animals.json", bundle: bundle),
            let animals = decodeLibrary(cached) {
             return animals
@@ -41,7 +44,14 @@ enum ContentSync {
 
     /// Photo credits and files published alongside the library, if a newer copy was downloaded.
     static func cachedPhotos(bundle: Bundle = .main) -> Data? {
-        cachedFile("photos.json", bundle: bundle)
+        if usesBundledLibraryOnly { return nil }
+        return cachedFile("photos.json", bundle: bundle)
+    }
+
+    static var usesBundledLibraryOnly: Bool {
+        let info = ProcessInfo.processInfo
+        return info.arguments.contains("-FaunaDemo") || info.arguments.contains("-FaunaOnboarding")
+            || info.environment["XCTestConfigurationFilePath"] != nil
     }
 
     /// A downloaded file, but only if it was downloaded while this same build was installed.
