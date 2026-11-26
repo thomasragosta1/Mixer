@@ -43,6 +43,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/AndeanCondorMale.jpg",
   "width": 3137
  },
+ "Arctic fox": {
+  "credit": {
+   "author": "Jonatan Pie (unsplash.com/@r3dmax)",
+   "file": "Vulpes_lagopus_in_Iceland_(cropped_3).jpg",
+   "license": "CC0",
+   "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Vulpes_lagopus_in_Iceland_(cropped_3).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Vulpes_lagopus_in_Iceland_%28cropped_3%29.jpg",
+  "width": 3115
+ },
  "Atlantic horseshoe crab": {
   "credit": {
    "author": "Hans Hillewaert",
@@ -98,6 +109,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Wild_aye_aye.jpg",
   "width": 5184
  },
+ "Beluga whale": {
+  "credit": {
+   "author": "Javier Yaya Tur / CIUDAD DE LAS ARTES Y LAS CIENCIAS from Valencia, España",
+   "file": "Oceanogràfic_29102004.jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Oceanogr%C3%A0fic_29102004.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Oceanogr%C3%A0fic_29102004.jpg",
+  "width": 1925
+ },
  "Blanding's turtle": {
   "credit": {
    "author": "Andrew C",
@@ -152,6 +174,28 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bradypus.jpg",
   "width": 1536
+ },
+ "Canada jay": {
+  "credit": {
+   "author": "Cephas",
+   "file": "Perisoreus_canadensis_mercier2.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Perisoreus_canadensis_mercier2.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Perisoreus_canadensis_mercier2.jpg",
+  "width": 2457
+ },
+ "Canada lynx": {
+  "credit": {
+   "author": "Michael Zahra",
+   "file": "Canada_lynx_by_Michael_Zahra_(cropped).jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Canada_lynx_by_Michael_Zahra_(cropped).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Canada_lynx_by_Michael_Zahra_%28cropped%29.jpg",
+  "width": 2608
  },
  "Cheetah": {
   "credit": {
@@ -252,6 +296,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Erinaceus_europaeus_LC0119.jpg",
   "width": 2002
  },
+ "Fisher (animal)": {
+  "credit": {
+   "author": "Mount Rainier National Park from Ashford, WA, United States",
+   "file": "Fishers_(14584727897).jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Fishers_(14584727897).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Fishers_%2814584727897%29.jpg",
+  "width": 5184
+ },
  "Fossa (animal)": {
   "credit": {
    "author": "Ran Kirlian",
@@ -284,6 +339,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/2/21/Glaucus_atlanticus_1_cropped.jpg",
   "width": 1640
+ },
+ "Great grey owl": {
+  "credit": {
+   "author": "Dion Art",
+   "file": "Бородатая_неясыть_(Strix_nebulosa,_m),_Ботанический_сад.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D1%8F%D1%81%D1%8B%D1%82%D1%8C_(Strix_nebulosa,_m),_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D0%B4.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/0b/%D0%91%D0%BE%D1%80%D0%BE%D0%B4%D0%B0%D1%82%D0%B0%D1%8F_%D0%BD%D0%B5%D1%8F%D1%81%D1%8B%D1%82%D1%8C_%28Strix_nebulosa%2C_m%29%2C_%D0%91%D0%BE%D1%82%D0%B0%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B9_%D1%81%D0%B0%D0%B4.jpg",
+  "width": 3304
  },
  "Greenland shark": {
   "credit": {
@@ -406,6 +472,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Leatherback_sea_turtle_Tinglar%2C_USVI_%285839996547%29.jpg",
   "width": 1864
  },
+ "Little brown bat": {
+  "credit": {
+   "author": "SMBishop",
+   "file": "Little_Brown_Myotis_(cropped).JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Little_Brown_Myotis_(cropped).JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/88/Little_Brown_Myotis_%28cropped%29.JPG",
+  "width": 1998
+ },
  "Luna moth": {
   "credit": {
    "author": "David notMD",
@@ -450,6 +527,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Alaska_moose.jpg",
   "width": 5247
  },
+ "Muskox": {
+  "credit": {
+   "author": "Charles J. Sharp",
+   "file": "Muskox_(Ovibos_moschatus)_male_Dovrefjell_4.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Muskox_(Ovibos_moschatus)_male_Dovrefjell_4.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Muskox_%28Ovibos_moschatus%29_male_Dovrefjell_4.jpg",
+  "width": 3649
+ },
  "Narwhal": {
   "credit": {
    "author": "пресс-служба ПАО \"Газпром нефть\"",
@@ -471,6 +559,28 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg",
   "width": 714
+ },
+ "North American porcupine": {
+  "credit": {
+   "author": "Charles J. Sharp",
+   "file": "North_American_porcupine_(Erethizon_dorsatum_nigrescens)_Yoho.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:North_American_porcupine_(Erethizon_dorsatum_nigrescens)_Yoho.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5d/North_American_porcupine_%28Erethizon_dorsatum_nigrescens%29_Yoho.jpg",
+  "width": 6513
+ },
+ "Northern gannet": {
+  "credit": {
+   "author": "Andreas Trepte",
+   "file": "Morus_bassanus_adu.jpg",
+   "license": "CC BY-SA 2.5",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Morus_bassanus_adu.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Morus_bassanus_adu.jpg",
+  "width": 2803
  },
  "Ocean sunfish": {
   "credit": {
