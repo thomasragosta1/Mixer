@@ -1,0 +1,880 @@
+[
+ {
+  "id": "gaboon-viper",
+  "name": "Gaboon Viper",
+  "scientificName": "Bitis gabonica",
+  "wikipediaTitle": "Gaboon viper",
+  "group": "reptile",
+  "regions": [
+   "africa"
+  ],
+  "range": "Rainforests and nearby woodlands of sub-Saharan Africa",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 0.0,
+   "longitude": 20.0
+  },
+  "mapSpan": 45,
+  "tagline": "Africa's leaf-litter giant with record-breaking fangs",
+  "lede": "Lying among fallen leaves on an African forest floor, the Gaboon viper is almost invisible until you are nearly on top of it. This heavy, gorgeously patterned snake carries the longest fangs of any venomous snake and one of the largest venom loads, yet it is famously calm and slow to anger.",
+  "home": "Gaboon vipers live across a broad belt of sub-Saharan Africa, from Guinea, Ghana and Nigeria through Cameroon, Gabon and the Congo basin to Uganda, Kenya, Tanzania, Zambia, Malawi, Mozambique and the north-east of South Africa's KwaZulu-Natal. They are snakes of rainforest and nearby woodland, mostly at low altitude, though they have been recorded as high as 2100 metres.\n\nThey also cope well with land that people have changed. In West Africa they turn up in cacao plantations and in East Africa in coffee plantations, while in Tanzania they hide in thickets, cashew groves and farmland. They are often found on roads at night near forests, and sometimes in swamps and around streams.",
+  "anatomy": "Adults are typically 125 to 155 centimetres long, and they are astonishingly stout. One female 174 centimetres long had a head 12 centimetres wide and weighed 8.5 kg, and a 1.8-metre snake caught in 1973 weighed 11.3 kg with an empty stomach. It is the heaviest venomous snake in Africa. The broad triangular head sits on a neck only a third as wide, with a pair of tiny horns between the raised nostrils, and the fangs can reach 55 millimetres.\n\nThe pattern looks garish in the open but melts into leaf litter: pale rectangles run down the spine between dark, yellow-edged hourglass shapes, the flanks carry fawn or brown diamonds, and a dark blue-black triangle sits behind and below each eye. Males have proportionally longer tails, about 12% of their total length against 6% in females.",
+  "life": "Gaboon vipers are mostly active at night and hunt chiefly by ambush, lying motionless for long periods until prey wanders close, though they sometimes hunt actively in the first six hours of darkness. They can strike from any angle and are among the fastest-striking snakes in the world. Unlike most vipers, which bite and release, a Gaboon viper hangs on to its victim with its fangs.\n\nAdults easily manage prey as large as a fully grown rabbit. They eat rodents, hares, amphibians and birds such as doves, guineafowl and francolins, and there are reports of tree monkeys, brush-tailed porcupines and even the tiny royal antelope. They usually creep slowly in a straight line, inching forward on their belly scales, and when threatened they hiss in a deep, steady rhythm, flattening the head slightly with each breath.",
+  "family": "In the breeding season males wrestle for dominance. One rubs his chin along the other's back, both rear up with necks entwined, and they push head against head, so absorbed that they carry on even after tumbling off a ledge or into water. The contest ends when one forces the other's head to the ground and raises his own 20 to 30 centimetres. Tired rivals sometimes break off by mutual consent, rest, then begin again.\n\nGaboon vipers do not lay eggs. Females give birth to live young, and a single litter can number 50 to 60 babies.",
+  "remarkable": "Its eyes are unusual among snakes. A Gaboon viper can keep its gaze level even when its head tilts up or down by as much as 45 degrees, and when one eye looks forward, the other looks backwards, as if the two were fixed to a shared axle. Awake, its eyes flick back and forth in rapid, jerky movements; asleep, they stay still with the pupils tightly contracted.",
+  "outlook": "Bites are extremely rare, because these snakes are placid, reluctant to move and live mostly in forest. Most victims are people who accidentally tread on one, and even then many are not bitten. When a bite does happen it is a serious emergency: the venom damages tissue and the heart, causing rapid swelling, intense pain, blistering and shock, so antivenom is needed fast. One estimate suggests 35 mg of venom could kill a 70 kg man, while a single bite can deliver 450 to 600 mg.",
+  "people": "Its many common names include butterfly adder, forest puff adder, whisper and swampjack. 'Gaboon' recalls an old Portuguese name for the estuary on which the town of Libreville was built, and the snake was first described in 1854 as Echidna gabonica.\n\nIts gentleness has long impressed handlers. One wrote that it could be handled as freely as a harmless snake, and the collector Ionides would test a snake's mood with a light tap of his tongs, then simply pick it up by hand, finding that it hardly ever struggled. Experts stress that this is never recommended.",
+  "relatives": "The Gaboon viper is the largest member of the genus Bitis, and its close relative the puff adder, Bitis arietans, lives in comparable but more open country. Two subspecies were once recognised, but genetic work in 1999 showed that they were as different from each other as either was from Bitis nasicornis. The western form is therefore now treated as a separate species, Bitis rhinoceros, which is why a much-quoted 205-centimetre record from Sierra Leone no longer counts for this snake.",
+  "didYouKnow": "The Congolese giant toad may be a mimic of the Gaboon viper, with markings that seem to copy the snake's pale head against a darker body.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "125–155 cm typical"
+   },
+   {
+    "label": "Weight",
+    "value": "Up to 11.3 kg recorded"
+   },
+   {
+    "label": "Fangs",
+    "value": "Up to 55 mm"
+   },
+   {
+    "label": "Young",
+    "value": "50–60 born live"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What record do the Gaboon viper's fangs hold?",
+    "choices": [
+     "Longest of any venomous snake",
+     "Only viper fangs that fold",
+     "They are replaced every week throughout its life",
+     "Shortest of any viper"
+    ],
+    "explanation": "Its fangs can reach 55 millimetres, the longest of any venomous snake."
+   },
+   {
+    "prompt": "What does a Gaboon viper do after striking prey?",
+    "choices": [
+     "Holds on with its fangs",
+     "Lets go and follows the scent",
+     "Coils round and squeezes it",
+     "Releases it and waits nearby for the venom to work, as most vipers do"
+    ],
+    "explanation": "Unlike most vipers, it hangs on to its victim rather than letting go."
+   },
+   {
+    "prompt": "How do Gaboon vipers produce their young?",
+    "choices": [
+     "They give birth to live young",
+     "In eggs laid in burrows",
+     "In eggs guarded by the mother",
+     "In eggs buried in warm leaf litter on the forest floor"
+    ],
+    "explanation": "Females give birth to live young, sometimes 50 to 60 at once."
+   }
+  ],
+  "charities": [
+   {
+    "name": "African Wildlife Foundation",
+    "url": "https://www.awf.org",
+    "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+   }
+  ]
+ },
+ {
+  "id": "common-surinam-toad",
+  "name": "Common Surinam Toad",
+  "scientificName": "Pipa pipa",
+  "wikipediaTitle": "Common Surinam toad",
+  "group": "amphibian",
+  "regions": [
+   "southAmerica"
+  ],
+  "range": "Rainforest waters east of the Andes and southwest Trinidad",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -3.0,
+   "longitude": -60.0
+  },
+  "mapSpan": 35,
+  "tagline": "The flat frog that raises its young in its back",
+  "lede": "The common Surinam toad looks like a dead leaf lying on the bottom of a murky Amazonian pool, and that is exactly the point. Flat, tongueless and almost helpless on land, it waits motionless for prey and then inhales it in a fraction of a second. Its most famous habit is stranger still: the mother carries her brood inside the skin of her back.",
+  "home": "Despite its name, this frog is found far beyond Suriname. It lives in tropical rainforest east of the Andes in Brazil, Bolivia, Colombia, Ecuador, French Guiana, Guyana and Venezuela, with a small population in the south-west corner of Trinidad. No other member of its genus has such a large range.\n\nIt inhabits warm, slow-moving or still waters: streams, backwaters, ponds and the seasonal pools left by local flooding. These waters are often dark and acidic, stained by tannins and rich in rotting plant matter. The toad is so committed to life in water that on land it can scarcely move.",
+  "anatomy": "This is the largest Pipa, with males reaching 154 millimetres and females 171 millimetres. The body is extraordinarily flattened, with a broad, triangular head, tiny eyes, nostrils at the very tip of the snout and no external eardrum. Its light brown skin with darker spots resembles a mottled leaf. The limbs sprawl out sideways, the hind feet are broadly webbed, and each fingertip splits into four small lobes, the star-shaped tips behind its other name, the star-fingered toad.\n\nIt has no tongue at all, and its skull is unusually heavily boned. In water too murky to see through, it probably relies on its lateral line system and sensory organs called neuromasts to detect prey and predators.",
+  "life": "The Surinam toad is an ambush hunter that will eat almost anything that falls into the water. Its diet is mostly small aquatic invertebrates such as worms, insects and crustaceans, along with small fish; one study found that tiny cyclopoid copepods made up 67% of its prey. Stomachs have also held catfish, smaller Surinam toads and pieces of amphibian skin, which suggests cannibalism or the common amphibian habit of eating shed skin.\n\nTo feed, it holds its hands in front of its face, then expands its mouth and throat cavity in roughly 12 to 24 milliseconds. The suction pulls in water and prey together. The water is pushed out through the partly open mouth while the raised forelimbs guard against escape, and the hands may also scoop food in.",
+  "family": "Breeding happens in autumn and winter. Instead of croaking, males attract females by snapping a throat bone, the hyoid, to make sharp metallic clicks at about four per second. A pair in amplexus rises from the bottom and swims in looping arcs, surfacing to breathe. Back near the bottom, the male turns onto his back beneath the female, and the eggs are pressed onto her swollen back.\n\nEach egg, about 6.5 millimetres across, sinks into her skin within a day. The young develop through the tadpole stage inside these pockets and emerge after 12 to 20 weeks as tiny toads about 25 millimetres long, already looking like their parents. They then live largely solitary lives, while the mother sheds the thin layer of skin and can begin again.",
+  "remarkable": "Its feeding apparatus is a marvel. To make room for each gulp, organs including the heart, lungs, liver and stomach can slide backwards by up to a third of the body's length, and the trunk swells to about 1.5 times its resting volume. It may be the only four-limbed vertebrate able to enlarge its entire trunk during suction feeding.",
+  "outlook": "The IUCN lists the common Surinam toad as Least Concern, but it suffers from habitat loss and fragmentation as farming expands. With deforestation and human encroachment on the Amazon rainforest, these toads have even been found in places where they would not normally occur, including on dry land, a sign of how disturbed their homes have become.",
+  "people": "The poet Samuel Taylor Coleridge borrowed the animal for a vivid image in a letter to Catherine Clarkson, complaining that his thoughts bustled along 'like a Surinam Toad, with little toads sprouting out of back, side, and belly'. He envied his friend Southey's knack for saying one thing at a time.\n\nToday the honeycomb of pits on a brooding female's back is commonly cited as a trigger for trypophobia. The species is also known as the Suriname toad.",
+  "relatives": "Despite its common name, the Surinam toad is a frog in the family Pipidae, which also contains the African clawed frog. Pipids are entirely aquatic and tongueless. Its scientific name simply repeats its genus, Pipa pipa, and within that genus it is the biggest and most widespread species.",
+  "didYouKnow": "When two rival males meet, they press their snouts against each other's chest or throat and trade clicks, and a fight can end with one biting the other.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Up to 171 mm"
+   },
+   {
+    "label": "Brooding",
+    "value": "12–20 weeks on the back"
+   },
+   {
+    "label": "Diet",
+    "value": "Invertebrates and small fish"
+   },
+   {
+    "label": "Habitat",
+    "value": "Murky, still fresh water"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Where do Surinam toad eggs develop?",
+    "choices": [
+     "In the skin of the mother's back",
+     "In a foam nest",
+     "In the father's vocal sac",
+     "Inside a floating raft of jelly attached to water plants"
+    ],
+    "explanation": "The eggs sink into the female's back and the young emerge as tiny toads."
+   },
+   {
+    "prompt": "How do male Surinam toads call to females?",
+    "choices": [
+     "By clicking a throat bone",
+     "With a deep croak",
+     "By slapping the water",
+     "By whistling through inflated cheek pouches at dusk"
+    ],
+    "explanation": "Males snap the hyoid bone in their throats to make metallic clicks."
+   },
+   {
+    "prompt": "How does the Surinam toad catch its prey?",
+    "choices": [
+     "Suction",
+     "A long sticky tongue",
+     "A venomous bite",
+     "By stunning it with a burst of electric current"
+    ],
+    "explanation": "It has no tongue and sucks prey in by rapidly expanding its body."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Amphibian Ark",
+    "url": "https://www.amphibianark.org",
+    "blurb": "Helps zoos and partners save threatened amphibians through conservation breeding."
+   },
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Protects tropical forests, including in the Amazon, by working with local partners."
+   }
+  ]
+ },
+ {
+  "id": "harpy-eagle",
+  "name": "Harpy Eagle",
+  "scientificName": "Harpia harpyja",
+  "wikipediaTitle": "Harpy eagle",
+  "group": "bird",
+  "regions": [
+   "centralAmerica",
+   "southAmerica"
+  ],
+  "range": "Lowland rainforests from southern Mexico to Argentina",
+  "status": "VU",
+  "coordinate": {
+   "latitude": -5.0,
+   "longitude": -62.0
+  },
+  "mapSpan": 55,
+  "tagline": "The rainforest eagle that snatches sloths from trees",
+  "lede": "High in the emergent crowns of the rainforest, where the tallest trees break through the canopy, the harpy eagle hunts sloths and monkeys. With talons larger than those of any other living eagle, it can pluck an animal half its own weight from a branch and carry it away.",
+  "home": "The harpy eagle ranges from southern Mexico through Central America and across South America as far south as Argentina, but it is rare and elusive almost everywhere. It is most common in Brazil, where it occurs across the whole country, while in Central America it has nearly vanished except in parts of Panama and Costa Rica.\n\nIts home is tropical lowland rainforest, and it nests and hunts mainly in the emergent layer. In good forest, pairs may nest just 3 km apart, as in parts of Panama and Guyana. In Peru each pair occupied about 4,300 hectares, and in fragmented forest territories are far larger.",
+  "anatomy": "Females typically weigh 6 to 9 kg and males only 4 to 6 kg, so the female is much the bigger bird. Harpies measure 86.5 to 107 centimetres long, with a wingspan of 176 to 224 centimetres. The wings are relatively short for an eagle this size but very broad, which helps it manoeuvre among trees. Female talons average 12.3 centimetres.\n\nThe plumage is the same in both sexes: slate-black above and white below, with a broad black band across the upper breast separating the pale grey head from the white belly. The head is crowned with a double crest, the tail is barred black and grey, and the thick legs and toes are yellow.",
+  "life": "Harpies usually hunt from perches, making short flights from tree to tree and scanning for movement before diving on prey. Sometimes they sit and wait for long periods near a river, clearing or salt lick, and they have even been seen chasing birds through the trees like a hawk. Researchers have listed 116 prey species, but sloths dominate: at one Brazilian nest, two species of sloth made up 79% of the food brought to the chick.\n\nMonkeys are the other staple, including capuchins, sakis, howlers and spider monkeys. Harpies also take porcupines, agoutis, armadillos, coatis, kinkajous, macaws and iguanas. Males tend to catch prey of 0.5 to 2.5 kg, about half their own weight, while females go after larger animals.",
+  "family": "Pairs are thought to mate for life and have no known courtship display. They build a huge stick nest, often 1.5 metres across and 1.2 metres deep, usually in the main fork of a giant tree such as a kapok or Brazil nut, 16 to 43 metres above the ground. The female lays two white eggs, but once the first chick hatches the second egg is ignored.\n\nIncubation takes around 56 days. The chick fledges at 6 months, yet its parents keep feeding it for another 6 to 10 months, so a pair usually raises just one young every 2 to 3 years. The male brings much of the food. Harpies do not breed until they are 4 to 6 years old.",
+  "remarkable": "Adult females have been seen seizing large howler or spider monkeys and mature sloths weighing 6 to 9 kg and flying off without landing, an enormous feat of strength. By hunting capuchin monkeys, which raid birds' nests for eggs, harpies may also protect sensitive forest birds from local extinction.",
+  "outlook": "The harpy eagle is listed as Vulnerable by the IUCN, and its populations have shrunk considerably. The main threat is habitat loss to logging, cattle ranching, farming and prospecting. Harpies are also shot, partly as a supposed danger to livestock or people, and their size and nearly fearless behaviour make them easy targets. The species is considered critically endangered in Mexico and Central America.\n\nRecovery work includes research and captive breeding by the Peregrine Fund, which has released 49 birds in Panama and Belize, and a Brazilian programme in which researchers and local volunteers monitor dozens of nests.",
+  "people": "The name comes from the harpies of Greek mythology, wind spirits with a raptor's talons who carried the dead to the underworld, and Linnaeus described the bird in 1758 as Vultur harpyja. The harpy eagle is the national bird of Panama and appears on its coat of arms, and in Aztec religion it was sacred to Quetzalcoatl.\n\nIt inspired the design of Fawkes the phoenix in the Harry Potter films. In many South American cultures, cutting down a kapok tree is considered bad luck, which may help safeguard the eagle's nest trees.",
+  "relatives": "The harpy is the only member of the genus Harpia. Its closest relatives are the crested eagle of the Neotropics, the Papuan eagle of New Guinea, sometimes called the New Guinea harpy eagle, and the bat hawk; together they form the subfamily Harpiinae. The Philippine eagle was once thought to belong with them, but DNA has shown it sits elsewhere in the hawk and eagle family. The harpy is sometimes ranked as the largest eagle, alongside the Philippine and Steller's sea eagles.",
+  "didYouKnow": "Harpy eagle nestlings call 'chi-chi-chi' when rain or direct sunlight hits the nest, and croak, quack and whistle when people approach.",
+  "facts": [
+   {
+    "label": "Wingspan",
+    "value": "176–224 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "Females 6–9 kg"
+   },
+   {
+    "label": "Talons",
+    "value": "Female average 12.3 cm"
+   },
+   {
+    "label": "Breeding",
+    "value": "One chick every 2–3 years"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which animals make up most of a harpy eagle's diet?",
+    "choices": [
+     "Sloths",
+     "Fish",
+     "Snakes",
+     "Large ground-dwelling birds such as curassows"
+    ],
+    "explanation": "At one Brazilian nest, sloths made up 79% of the prey."
+   },
+   {
+    "prompt": "How often does a harpy eagle pair usually raise a chick?",
+    "choices": [
+     "Every 2 to 3 years",
+     "Twice a year",
+     "Every year",
+     "Only once in a lifetime, as pairs breed a single time"
+    ],
+    "explanation": "Chicks are fed for many months after fledging, so pairs breed only every 2 to 3 years."
+   },
+   {
+    "prompt": "Which country has the harpy eagle as its national bird?",
+    "choices": [
+     "Panama",
+     "Brazil",
+     "Mexico",
+     "Argentina"
+    ],
+    "explanation": "It is Panama's national bird and appears on the Panamanian coat of arms."
+   }
+  ],
+  "charities": [
+   {
+    "name": "The Peregrine Fund",
+    "url": "https://peregrinefund.org",
+    "blurb": "Runs long-term research, captive breeding and release projects for harpy eagles."
+   },
+   {
+    "name": "Rainforest Trust",
+    "url": "https://www.rainforesttrust.org",
+    "blurb": "Protects tropical forests across Central and South America with local partners."
+   }
+  ]
+ },
+ {
+  "id": "pacific-viperfish",
+  "name": "Pacific Viperfish",
+  "scientificName": "Chauliodus macouni",
+  "wikipediaTitle": "Pacific viperfish",
+  "group": "fish",
+  "regions": [
+   "openOcean"
+  ],
+  "range": "Deep waters of the North Pacific Ocean",
+  "status": "LC",
+  "coordinate": {
+   "latitude": 42.0,
+   "longitude": -175.0
+  },
+  "mapSpan": 70,
+  "tagline": "A deep-sea hunter with fangs too long for its mouth",
+  "lede": "The Pacific viperfish is a nightmare in miniature: a dark fish about 30 centimetres long whose fangs are too big to fit inside its mouth. It dangles a glowing lure in the blackness of the deep North Pacific and impales whatever comes to investigate.",
+  "home": "This viperfish lives in the deep waters of the North Pacific. It is described as either mesopelagic or bathypelagic, meaning it inhabits the twilight and midnight zones far below the sunlit surface, where daylight fades to nothing. One specimen was collected from the deep waters of Suruga Bay in Japan.\n\nLike many deep-sea fishes, it does not stay at one depth. Each night it makes a diel vertical migration, rising towards shallower water to feed on fish, then sinking back into the dark.",
+  "anatomy": "Pacific viperfish typically reach about 30 centimetres, making them the largest of their genus and an example of deep-sea gigantism; females tend to be longer and heavier than males. In life they are an iridescent dark silver-blue with pale fins, or sometimes a light black with blue fins. Their ultra-black skin contains melanosomes tuned to reflect as little light as possible, so the glow of other animals barely shows on them.\n\nThe fangs are so long that the jaw juts forward and the teeth rest outside the mouth, reaching up near the eyes. A hinged jaw and a skull that tilts upwards let it swallow surprisingly large prey, and the vertebra just behind the head acts like an airbag, absorbing the shock of high-speed strikes. It has no swim bladder; instead its jelly-like tissue is rich in substances that may help it stay buoyant.",
+  "life": "The viperfish is an ambush predator. It lies motionless in the dark and waves a light organ on a long ray of its dorsal fin over its head, flickering like a fishing lure, then darts at prey and spears it on its fangs. Its commonest prey are lanternfishes and slender fangjaws. A large stomach and a low metabolic rate let it go for days without eating, and individuals are often caught with empty stomachs.\n\nThe rods of its eyes use the pigment rhodopsin, which helps it manoeuvre where almost no sunlight reaches. Rows of light organs called photophores along its belly and sides hide its silhouette from fish swimming below, and may also signal to mates or warn off rivals.",
+  "family": "Very little is known about how Pacific viperfish breed, because they live so deep. They are thought to spawn in open water, with females releasing eggs for males to fertilise, and the number of eggs a female produces depends on water temperature and salinity. Spawning seems to happen all year, with peaks of young larvae in January and March.\n\nNewly hatched young are about 6 millimetres long and must fend for themselves from the start. In the wild, Pacific viperfish have been recorded living 15 to 40 years, a long life for such a small fish.",
+  "remarkable": "A scientist who kept a living viperfish in a tank for 45 minutes described its glow as blue. Prodding it with a glass rod sent pulses of light rippling through its body before it settled back to a steady glow on its underside, and adrenaline made it shine more brightly still. Beyond its photophores, the whole fish is wrapped in a gelatinous sheath containing simple, unpigmented light organs.",
+  "outlook": "Viperfish are not considered endangered, though they are eaten by some dolphins and sharks. They cannot be kept in captivity, because they do not survive the drastic change in pressure when brought up from the deep, and the few that have been caught alive lasted only a couple of hours. That makes them hard to study, and much of their biology remains a mystery.",
+  "people": "Few people will ever see a living Pacific viperfish, and almost everything known about it comes from the handful of specimens brought up from the depths. Its ultra-black skin has interested scientists studying how deep-sea animals avoid being seen.\n\nIn 2018 Japanese researchers described a new genus and species of parasitic copepod, Protosarcotretes nishikawai, from a single female attached behind the right eye of a viperfish from Suruga Bay. It remains the fish's only documented parasite.",
+  "relatives": "Chauliodus macouni is one of nine species in the genus Chauliodus, known collectively as viperfish. Its skeleton is unusual: the first two vertebral centra are replaced by an enlarged bone and cartilage set in connective tissue, and this bone points upwards in both larvae and adults, part of the neck that cushions its strikes.",
+  "didYouKnow": "Scientists have suggested that the viperfish's glowing silhouette might even help it escape predators by briefly blinding them, though this remains speculative.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Up to about 30 cm"
+   },
+   {
+    "label": "Lifespan",
+    "value": "15–40 years"
+   },
+   {
+    "label": "Diet",
+    "value": "Lanternfishes and fangjaws"
+   },
+   {
+    "label": "Hatchling",
+    "value": "About 6 mm"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Why do the viperfish's fangs sit outside its mouth?",
+    "choices": [
+     "They are too long to fit inside",
+     "They dig in the seabed",
+     "To show off to rivals",
+     "They are shed and regrown so quickly that there is no room"
+    ],
+    "explanation": "The fangs are so long that the jaw juts out and the teeth rest near the eyes."
+   },
+   {
+    "prompt": "Why can't Pacific viperfish be kept in aquariums?",
+    "choices": [
+     "They can't survive the pressure change",
+     "They only eat live squid",
+     "They glow too brightly",
+     "Their fangs shatter the glass when they strike at their own reflection"
+    ],
+    "explanation": "Brought up from the deep, they survive only a couple of hours."
+   },
+   {
+    "prompt": "What does the Pacific viperfish use as a lure?",
+    "choices": [
+     "A glowing fin ray",
+     "A wriggling tongue",
+     "Its shiny fangs",
+     "A cloud of luminous mucus released from its gills"
+    ],
+    "explanation": "A light organ on a long dorsal fin ray flickers like a fishing lure."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Oceana",
+    "url": "https://oceana.org",
+    "blurb": "Campaigns to protect and restore the world's oceans and the life within them."
+   }
+  ]
+ },
+ {
+  "id": "madagascan-sunset-moth",
+  "name": "Madagascan Sunset Moth",
+  "scientificName": "Chrysiridia rhipheus",
+  "wikipediaTitle": "Chrysiridia rhipheus",
+  "group": "insect",
+  "regions": [
+   "africa"
+  ],
+  "range": "Forests across most of Madagascar",
+  "status": "NE",
+  "coordinate": {
+   "latitude": -19.0,
+   "longitude": 46.5
+  },
+  "mapSpan": 15,
+  "tagline": "Madagascar's jewel-winged moth that flies by day",
+  "lede": "Glittering like a jewel and trailing a fringe of tails, the Madagascan sunset moth is easily mistaken for a butterfly. It is one of the most admired insects in the world, and its whole life is bound to a single genus of toxic plants.",
+  "home": "The sunset moth is found only in Madagascar, where it occurs almost everywhere except the south-west and the arid far south of Androy, where its food plants are missing. Adults are seen all year, with peak numbers from March to August and the fewest from October to December.\n\nIts life is tied to four Omphalea species. Three are shrubs of dry forest in the west and the limestone of the north, while the fourth, Omphalea oppositifolia, is a tree of the eastern rainforest. Thousands of moths migrate between these widely separated host populations. The western plants lie mostly in protected areas, but the evergreen eastern tree, probably crucial to the moth's survival, is largely unprotected and scattered.",
+  "anatomy": "Adults have a wingspan of 7 to 9 centimetres, sometimes up to 11 centimetres. Moths from highlands at 900 to 1,080 metres are smaller, with a median of 7 centimetres, than those from about 600 metres, which reach 9 centimetres. The black wings carry iridescent red, blue and green markings and a fringe of white scales, broadest on the hindwings, and there are six tails that are often lost or damaged. Many individuals are slightly asymmetrical, partly because of temperature shocks during the pupal stage.\n\nThe caterpillar is whitish yellow with black spots and red feet, and is covered in black bristles with club-shaped tips.",
+  "life": "Unlike most moths, it flies by day, and its bright colours warn predators that it is toxic. It rests with its wings held upright over its back like a butterfly, and during migrations groups gather to spend the night together. Adults fly over the treetops and in clearings and sip nectar mainly from white or whitish-yellow flowers, often bottle-brush shaped blooms such as those of mango, eucalyptus, tea and loquat.\n\nThe caterpillars feed only on Omphalea. Young ones eat the tissue between leaf veins to avoid the plant's sticky, toxic latex; after a few days they devour everything from flowers and fruit to stems, stripping whole plants. Ants that normally guard Omphalea ignore them, probably because the caterpillars carry chemical defences taken from the plant.",
+  "family": "Females lay eggs late in the afternoon or at dusk, choosing sites by sight, usually on the underside of Omphalea leaves. The ribbed, domed eggs weigh about 1 milligram each and are laid in groups of 60 to 110, usually around 80. Caterpillars spin silk as they walk, swinging their heads in a figure-of-eight, which keeps them from slipping off smooth leaves and lets them climb back if they fall.\n\nAfter four instars, lasting 2 to 3 months, the caterpillar spins a loose, open-mesh cocoon, often near the ground among moss and bark. The pupa lasts 17 days in warm November and 23 in cool July. The adult emerges at night, pumps up its wings in about 10 minutes and takes its first flight one and a half to two hours later.",
+  "remarkable": "Its colours are made by structure, not pigment; only the black areas are pigmented. Each ribbon-like scale contains up to six layers of cuticle separated by air gaps thinner than a wavelength of light, which reflect particular colours. The scales are also strongly curved, so light can bounce from one scale to the next at roughly 90 degrees, an effect unusual among butterflies and moths. Because of this the colour depends on the polarisation of light, which might even act as a signal between moths.",
+  "outlook": "The moth is widespread, but its future depends on its host plants. Its eastern rainforest host is threatened by deforestation, and a Jamaican relative, Urania sloanus, probably died out after losing one of its host plants. The relationship is turbulent too: caterpillars can strip Omphalea so badly that the plants seem to respond by becoming more toxic, causing local booms followed by sudden crashes as adults move on. Moths are also collected from the wild for the butterfly trade.",
+  "people": "Dru Drury described the moth in 1773 as a butterfly, Papilio rhipheus, partly because his specimen had the clubbed-antennae head of another insect attached. Early naturalists thought it came from China or Bengal, which gave it the French name page de Chadernagor. Its wings were made into jewellery in Victorian times, and it is still raised commercially for the international trade.\n\nIt first appeared on a Madagascan stamp in 1960 and has since featured on more than ten standard and twenty commemorative stamps. In Malagasy, lolo means both moth or butterfly and soul, and the souls of ancestors are believed to take this form.",
+  "relatives": "Chrysiridia rhipheus belongs to the family Uraniidae, many of whose members resemble swallowtail butterflies. Its relatives include Chrysiridia croesus and the Neotropical Urania moths, which also feed strictly on Omphalea; Urania shares its structural colours and is equally popular with optical scientists. Jacob Hübner gave it its present genus in 1823, and older books often misspell its name as 'ripheus'.",
+  "didYouKnow": "Strong winds sometimes carry a sunset moth about 100 metres, after which it drops to the ground, wings closed and motionless.",
+  "facts": [
+   {
+    "label": "Wingspan",
+    "value": "7–9 cm"
+   },
+   {
+    "label": "Eggs",
+    "value": "About 80 per batch"
+   },
+   {
+    "label": "Pupa",
+    "value": "17–23 days"
+   },
+   {
+    "label": "Host plants",
+    "value": "Omphalea only"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Where do the sunset moth's shimmering colours come from?",
+    "choices": [
+     "The structure of its scales",
+     "Red and green pigments",
+     "Pollen dust",
+     "Chemicals absorbed by the caterpillar from its host plants"
+    ],
+    "explanation": "Layered, curved scales reflect light; only the black parts are pigmented."
+   },
+   {
+    "prompt": "What do sunset moth caterpillars eat?",
+    "choices": [
+     "Omphalea plants",
+     "Mango leaves",
+     "Eucalyptus leaves",
+     "Any flowering shrub in the eastern rainforest"
+    ],
+    "explanation": "The caterpillars feed only on Omphalea, a genus of toxic plants."
+   },
+   {
+    "prompt": "Besides 'moth' or 'butterfly', what does the Malagasy word lolo mean?",
+    "choices": [
+     "Soul",
+     "Sunset",
+     "Rainbow",
+     "A gift sent by the forest spirits"
+    ],
+    "explanation": "In Malagasy belief, the souls of ancestors can appear as moths and butterflies."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Durrell Wildlife Conservation Trust",
+    "url": "https://www.durrell.org",
+    "blurb": "Works to save threatened species and habitats, with long-running programmes in Madagascar."
+   }
+  ]
+ },
+ {
+  "id": "bengal-tiger",
+  "name": "Bengal Tiger",
+  "scientificName": "Panthera tigris tigris",
+  "wikipediaTitle": "Bengal tiger",
+  "group": "mammal",
+  "regions": [
+   "asia"
+  ],
+  "range": "India, Nepal, Bangladesh, Bhutan and southwestern China",
+  "status": "EN",
+  "coordinate": {
+   "latitude": 23.0,
+   "longitude": 82.0
+  },
+  "mapSpan": 30,
+  "tagline": "The striped emblem of the Indian subcontinent",
+  "lede": "Few animals carry as much weight in a nation's imagination as the Bengal tiger, the national animal of both India and Bangladesh. Among the largest wild cats alive, it stalks forests, grasslands and even tidal mangroves across the Indian subcontinent, where a few thousand still survive.",
+  "home": "Bengal tigers live in India, southern Nepal, Bangladesh, Bhutan and southwestern China. They once ranged into the Indus valley, until the early 19th century, and tigers have probably lived on the subcontinent for 12,000 to 16,500 years. As of 2022 there were an estimated 3,167 to 3,682 in India, 316 to 355 in Nepal, 131 in Bhutan and around 125 in Bangladesh.\n\nTheir habitats are remarkably varied: tropical dry and moist forests, the tall grasslands of the Terai, Himalayan foothills and the mangroves of the Sundarbans, where tigers swim between islands to hunt. In Bhutan they range from 200 metres to over 3,000 metres, and in India's Mishmi Hills a tiger was recorded at 3,630 metres in snow.",
+  "anatomy": "The coat is yellow to light orange with dark brown to black stripes, a white belly and an orange tail ringed in black. In central India, adult males averaged 190 kg and females 132 kg, while males in Nepal's Chitwan averaged 235 kg, and two caught there in the 1980s topped 270 kg, the largest free-ranging tigers reported. Males measure about 2.8 to 3.1 metres including the tail and stand around 1 metre at the shoulder.\n\nIts canine teeth, 7.5 to 10 centimetres long, are the longest of any cat. The smallest Bengal tigers live in the Sundarbans of Bangladesh, where adult females weigh only 75 to 80 kg, probably because of fierce competition and small prey. White tigers are a rare recessive mutation, not albinos.",
+  "life": "Adults lead mostly solitary lives, each keeping a home range that supplies prey, water and shelter; the basic social unit is a mother with her cubs. Tigers prefer large hoofed animals such as gaur, sambar, chital, barasingha, water buffalo and nilgai, and in Nagarahole National Park gaur remains turned up in almost 45% of tiger droppings. They also take wild boar, langurs, porcupines and peafowl, and occasionally kill leopards, crocodiles, bears and dholes.\n\nA tiger stalks as close as it can from the side or behind, seizes the throat, then drags the carcass into cover. Feeding is feast or famine: a tiger may eat 18 to 40 kg in one sitting, and tigresses in Nepal made 40 to 50 kills a year.",
+  "family": "India has no fixed breeding season, though most cubs are born in December and April. After a pregnancy of 104 to 106 days, a tigress gives birth to 1 to 4 cubs in tall grass, thick bush or a cave. Newborns weigh 780 to 1,600 grams, with eyes and ears closed and a thick woolly coat.\n\nCubs begin eating some solid food at about 2 months, follow their mother on hunts, and start taking part at 5 to 6 months. At 2 to 3 years they drift away to find ranges of their own, young males travelling farther than females. Females mature at 3 to 4 years and males at 4 to 5.",
+  "remarkable": "Bengal tigers will tackle astonishing prey. In Kaziranga National Park, tigers killed 20 rhinoceroses in 2007, and tigers killing adult elephants were recorded in 2011 and 2014. Sundarbans tigers have been found with king cobras, monitor lizards, crabs and fish in their stomachs, and one tiger in Chitwan reportedly hunted three gharials.",
+  "outlook": "This population is listed as Endangered in Nepal, India and Bhutan, and as Critically Endangered in Bangladesh and China. The gravest immediate threat is poaching for skins and body parts, traded illegally between India, Nepal and China by organised gangs. Habitat loss and fragmentation mean that no tiger landscape in its range is big enough to hold an effective population of 250 animals.\n\nConservation has had real successes. India launched Project Tiger in 1973 to create reserves that would act as breeding strongholds, and Nepal's tigers rose from 121 in 2009 to 355 in 2022, almost tripling.",
+  "people": "Tigers appear on the Pashupati seal of the Indus Valley Civilisation, and a tiger crest was the emblem on Chola coins. Tipu Sultan, the 18th-century ruler of Mysore, made the tiger his dynastic symbol, and the famous automaton Tipu's Tiger was built for him.\n\nConflict is part of the story too. In the Bangladesh Sundarbans, people entering the forest for wood, honey or fish have been attacked for over a century, and in recent decades up to 50 people have been killed there in a year. In fiction, Shere Khan of The Jungle Book and Richard Parker of Life of Pi are both Bengal tigers.",
+  "relatives": "The Bengal tiger is a population of the subspecies Panthera tigris tigris, and Bengal is the traditional type locality for the whole species, which Linnaeus named Felis tigris in 1758. Genetically, Bengal tigers carry three distinctive mitochondrial sites and 12 unique microsatellite variants, a pattern consistent with tigers reaching India around 12,000 years ago. That timing may explain why Sri Lanka, cut off by rising seas in the early Holocene, has no tigers. In average weight it rivals the Siberian tiger.",
+  "didYouKnow": "The heaviest wild Bengal tiger on record may have been a male killed in 1967 in the Himalayan foothills, which weighed 388.7 kg after eating a buffalo calf.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "Males 2.8–3.1 m with tail"
+   },
+   {
+    "label": "Weight",
+    "value": "Males 200–260 kg"
+   },
+   {
+    "label": "Litter",
+    "value": "1–4 cubs"
+   },
+   {
+    "label": "Population",
+    "value": "About 3,700–4,300 (2022)"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Which two countries have the Bengal tiger as their national animal?",
+    "choices": [
+     "India and Bangladesh",
+     "Nepal and Bhutan",
+     "India and China",
+     "Bangladesh and Myanmar, which share the Sundarbans"
+    ],
+    "explanation": "The tiger is the national animal of both India and Bangladesh."
+   },
+   {
+    "prompt": "Where do the smallest Bengal tigers live?",
+    "choices": [
+     "The Sundarbans",
+     "The Himalayas",
+     "Central India",
+     "The high temperate forests of northern Bhutan"
+    ],
+    "explanation": "Sundarbans tigresses weigh only 75 to 80 kg, probably because of small prey."
+   },
+   {
+    "prompt": "What is unusual about the Bengal tiger's canine teeth?",
+    "choices": [
+     "They are the longest of any cat",
+     "They never stop growing",
+     "They are serrated like a shark's",
+     "They are shorter than a leopard's"
+    ],
+    "explanation": "At 7.5 to 10 centimetres, its canines are the longest among all cats."
+   }
+  ],
+  "charities": [
+   {
+    "name": "WWF",
+    "url": "https://www.worldwildlife.org",
+    "blurb": "Works to double wild tiger numbers and protect tiger landscapes across Asia."
+   },
+   {
+    "name": "Wildlife Conservation Society",
+    "url": "https://www.wcs.org",
+    "blurb": "Studies and protects tigers and other wildlife in India and beyond."
+   }
+  ]
+ },
+ {
+  "id": "bigfin-reef-squid",
+  "name": "Bigfin Reef Squid",
+  "scientificName": "Sepioteuthis lessoniana",
+  "wikipediaTitle": "Bigfin reef squid",
+  "group": "marineInvertebrate",
+  "regions": [
+   "asia",
+   "oceania",
+   "africa"
+  ],
+  "range": "Warm coastal waters of the Indian Ocean and western Pacific",
+  "status": "NE",
+  "coordinate": {
+   "latitude": 5.0,
+   "longitude": 110.0
+  },
+  "mapSpan": 80,
+  "tagline": "A fast-growing squid that lives and dies within a year",
+  "lede": "The bigfin reef squid grows faster than almost any other large invertebrate in the sea, reaching 600 grams in just 4 months, and it rarely lives to see its first birthday. Wrapped in a skirt-like fin that makes it look like a cuttlefish, it flickers through colours and patterns from the moment it hatches.",
+  "home": "Bigfin reef squid are the most widespread members of their genus, found in warm temperate and tropical waters of the Indian Ocean and western Pacific, from the Red Sea east to Hawaii and from Japan south to Australia and New Zealand. In 2002 they were first recorded in the south-eastern Mediterranean, probably as Lessepsian migrants that travelled from the Red Sea through the Suez Canal.\n\nThey stay close to shore, usually within 100 metres of the surface, around rocks and coral reefs. They are slightly more active at night, moving to deeper water or taking cover by day, and large numbers of juveniles shelter beneath floating driftwood.",
+  "anatomy": "Their thick, muscular fins run around almost the whole mantle, which is why they are sometimes mistaken for cuttlefish. The mantle is usually 4 to 33 centimetres long in males and slightly less in females, with a maximum of 38 centimetres, and the heaviest recorded weigh about 1.8 kg. The large eyes, covered by a transparent cornea, are greenish at the base, and one of the species' many names is green-eyed squid.\n\nIts skin is crowded with chromatophores, which it controls voluntarily to change colour and pattern in an instant. Iridophores add metallic greens and reds, and it may be one of only two squid species with leucophores, reflectors that look white in white light and green in green light. It has no photophores, so it cannot make its own light.",
+  "life": "Bigfin reef squid eat mainly prawns and other crustaceans, along with small fish; captives have been seen eating a fish every 2 to 25 hours. They are hunted in turn by tuna, marlin, swordfish and other predatory fish. They form both shoals and schools, and unlike most squid they are rarely cannibalistic.\n\nThey are strongly drawn to light, stopping all other movement as soon as a lamp is switched on, whatever its colour. Courtship is elaborate. Squid may brighten their gonads so they show white through the transparent mantle, and males perform a 'spread arms' display. Smaller 'sneaker' males slip sperm packets to females while larger males are courting them, and some even mimic females to fool rivals.",
+  "family": "The main spawning season usually begins in May, but eggs are laid all year and timing varies from place to place. A female releases 20 to 1,180 eggs, packed two to nine at a time into jelly capsules that are laid in strands on rocks, corals, plants and branches, and she may spawn more than once before she dies. The capsules incubate for about 3 weeks, swelling as they absorb water.\n\nHatchlings are about 6 millimetres long and already look like tiny adults. Young hatchlings often eat one another, the main cause of death in dense groups. Bigfin reef squid mature in under 210 days in the wild, and captive animals live just 161 to 315 days.",
+  "remarkable": "These squid helped settle a century-long argument over whether cephalopods can hear. A study published in 2009 showed that they detect sound with their statocysts, organs mainly used for balance, picking up frequencies from 400 to 1,500 hertz and hearing best at 600. That is a wider range than the common octopus, perhaps because open-water squid need to hear echolocating dolphins coming.",
+  "outlook": "Rather than declining, this squid may be a winner in a changing ocean. Warmer water prompts it to lay more eggs, and with its fast growth and short life its numbers may rise sharply as the oceans heat up, making it a useful indicator species for climate change. In the Gulf of Thailand, the fishing industry has had to adapt to the large numbers now present, and warming may help it spread further into new areas, as in the Mediterranean.",
+  "people": "Bigfin reef squid are among the most commercially important squid, eaten widely in Asia. They are caught by trawls, seine nets and traps, or by jigging at night under bright lights that exploit their attraction to illumination. They go by many names, including northern calamari in Australia, oval squid, tiger squid, glitter squid and aori-ika in Japan.\n\nThey also serve science. This was the first squid cultured in captivity for more than one generation, and its giant nerve fibres, up to 560 micrometres across compared with about 1 micrometre in humans, are used in neuroscience research.",
+  "relatives": "Sepioteuthis lessoniana is one of three recognised species in the genus Sepioteuthis, in the loliginid squid family, and its scientific name reflects its resemblance to cuttlefish. Its relatives include the Caribbean reef squid, known for its complex social life, and the southern reef squid of Australia. Studies suggest that the bigfin reef squid is really a complex of several cryptic species that look almost identical.",
+  "didYouKnow": "The bigfin reef squid's eight arms are unequal in length, the third pair being the longest, and in males the left arm of the fourth pair is modified to transfer sperm.",
+  "facts": [
+   {
+    "label": "Mantle",
+    "value": "Up to 38 cm"
+   },
+   {
+    "label": "Weight",
+    "value": "Up to 1.8 kg"
+   },
+   {
+    "label": "Lifespan",
+    "value": "161–315 days (captive)"
+   },
+   {
+    "label": "Diet",
+    "value": "Crustaceans and small fish"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "Why are bigfin reef squid often mistaken for cuttlefish?",
+    "choices": [
+     "Their fins run around the mantle",
+     "They have a hard internal cuttlebone like a cuttlefish",
+     "They live on the seabed",
+     "They change colour"
+    ],
+    "explanation": "Their thick oval fins extend around almost the entire mantle."
+   },
+   {
+    "prompt": "Which organ do bigfin reef squid use to hear?",
+    "choices": [
+     "Statocysts",
+     "A swim bladder",
+     "Their eyes",
+     "Tiny hairs on the tips of their tentacles"
+    ],
+    "explanation": "A 2009 study showed they detect sound with their balance organs, the statocysts."
+   },
+   {
+    "prompt": "How do fishers often catch bigfin reef squid at night?",
+    "choices": [
+     "With bright lights",
+     "With baited hooks",
+     "With sound",
+     "By releasing scent trails of crushed prawns into the water"
+    ],
+    "explanation": "The squid are strongly attracted to light, which jigging boats exploit."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Coral Reef Alliance",
+    "url": "https://www.coralreefalliance.org",
+    "blurb": "Works with communities to protect and restore coral reefs."
+   },
+   {
+    "name": "Oceana",
+    "url": "https://oceana.org",
+    "blurb": "Campaigns for science-based fishing and healthy oceans."
+   }
+  ]
+ },
+ {
+  "id": "inland-taipan",
+  "name": "Inland Taipan",
+  "scientificName": "Oxyuranus microlepidotus",
+  "wikipediaTitle": "Inland taipan",
+  "group": "reptile",
+  "regions": [
+   "oceania"
+  ],
+  "range": "Cracking-clay plains of inland Queensland and South Australia",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -26.5,
+   "longitude": 140.0
+  },
+  "mapSpan": 12,
+  "tagline": "The world's most venomous snake is a shy recluse",
+  "lede": "Drop for drop, the inland taipan has the most toxic venom of any snake ever tested, and a single bite is estimated to hold enough to kill at least 100 people. Yet this shy snake of Australia's remote clay plains spends much of the day underground and very rarely meets anyone.",
+  "home": "The inland taipan is found only in semiarid central-eastern Australia, on the cracking-clay plains near the border of Queensland and South Australia. In Queensland it lives in the Channel Country, including Diamantina and Astrebla Downs national parks. In South Australia it is known from Goyder Lagoon, the Sturt Stony Desert, Coongie Lakes and Innamincka, with an isolated population near Coober Pedy.\n\nTwo 19th-century specimens came from much farther south-east, where the Murray and Darling rivers meet in Victoria and near Bourke in New South Wales, but it has not been recorded in either state since.",
+  "anatomy": "Inland taipans average about 1.8 metres long and can reach 2.5 metres. They are usually dark tan, ranging from rich dark brown to a brownish light green, and many back scales have blackish edges that line up into broken chevrons. The rounded head and neck are noticeably darker than the body. The fangs are 3.5 to 6.2 millimetres long, a little shorter than the coastal taipan's.\n\nRemarkably, the snake changes colour with the seasons, becoming darker in winter and paler in summer. Dark skin absorbs more sunshine in the cold months, and a glossy black head in winter lets it warm up while exposing only a small part of its body at a burrow entrance.",
+  "life": "This is a specialist hunter of mammals, especially rodents such as the long-haired rat, the plains rat and the introduced house mouse, plus small dasyurid marsupials. Rather than striking once and waiting, it attacks at close quarters, pinning its prey with its body and delivering up to eight bites in quick succession. Its venom is especially suited to warm-blooded prey, which is overcome almost at once and has little chance to fight back.\n\nAdults have few predators, but young snakes fall prey to mulga snakes, which resist many venoms, and to perenties, huge monitor lizards. When cornered, a taipan raises its front body into a tight, low S-shaped curve, and if the warning is ignored it strikes with great speed and precision.",
+  "family": "Inland taipans lay clutches of 10 to 24 eggs in abandoned mammal burrows, deep rock crevices and similar sheltered spots. Incubation takes about 2 months, depending on temperature and humidity. Breeding depends on food: in years when rodents are scarce, females may lay smaller clutches or not breed at all.\n\nIn captivity they usually live 10 to 15 years, and one at Australia Zoo reportedly lived more than 20. Juveniles are no less dangerous than adults, as their venom is similar in make-up and toxicity.",
+  "remarkable": "Venom strength is measured by the median lethal dose in mice: for this snake about 0.025 mg per kilogram when injected under the skin, far lower than the beaked sea snake's 0.164 mg or the Indian cobra's 0.565 mg. An adult delivers about 44 mg in an average bite, much less than a cobra, but its venom is almost four times as toxic as the coastal taipan's, weight for weight. For years Belcher's sea snake was wrongly called the most venomous snake, because tests by different methods were muddled.",
+  "outlook": "The inland taipan was first assessed for the IUCN Red List in 2017 and listed as Least Concern in 2018; it is widespread within its range and not thought to be declining, though local threats need more study. Like all native Australian snakes it is protected by law. Queensland also lists it as Least Concern, but New South Wales considers it presumed extinct and Victoria regionally extinct.",
+  "people": "Aboriginal people around Goyder Lagoon knew it as dandarabilla. Science then lost track of it for almost 90 years after the first specimens, until a snake head sent to the Queensland Museum in 1972 led herpetologists Jeanette Covacevich and Charles Tanner to 13 live snakes west of Windorah.\n\nMost bites since have involved herpetologists, keepers and venom extractors. Untreated bites are very often fatal, but since specific antivenom became available no deaths have been conclusively linked to this species. It is also called the fierce snake, western taipan and small-scaled snake.",
+  "relatives": "Its scientific name, Oxyuranus microlepidotus, combines Greek for a needle-like palate arch with Latin for 'small-scaled'. It passed through several genera, including Diemenia, Pseudechis and its own genus Parademansia, before a 1981 study placed it with the coastal taipan in Oxyuranus. 'Taipan', from the Aboriginal word dhayban, stayed with the coastal species, which is often thought the more dangerous in practice because of how it behaves around people and how close it lives to them.",
+  "didYouKnow": "In New South Wales, only keepers holding the highest class of venomous reptile licence may own an inland taipan privately.",
+  "facts": [
+   {
+    "label": "Length",
+    "value": "About 1.8 m, up to 2.5 m"
+   },
+   {
+    "label": "Venom yield",
+    "value": "About 44 mg per bite"
+   },
+   {
+    "label": "Clutch",
+    "value": "10–24 eggs"
+   },
+   {
+    "label": "Diet",
+    "value": "Rodents and small marsupials"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How does the inland taipan's colour change through the year?",
+    "choices": [
+     "It darkens in winter",
+     "It brightens when breeding",
+     "It pales at night",
+     "It turns bright yellow during the summer wet season"
+    ],
+    "explanation": "Darker winter colours absorb more warmth from the sun."
+   },
+   {
+    "prompt": "How does an inland taipan usually attack prey?",
+    "choices": [
+     "Several quick bites while holding it",
+     "One strike, then it waits",
+     "By constriction",
+     "It sprays venom into the eyes of its prey from a distance"
+    ],
+    "explanation": "It pins prey with its body and may bite up to eight times."
+   },
+   {
+    "prompt": "In which year was the inland taipan rediscovered?",
+    "choices": [
+     "1972",
+     "1879",
+     "1923",
+     "During a mining survey in the 1990s"
+    ],
+    "explanation": "A snake head sent to the Queensland Museum in 1972 led to its rediscovery."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Australian Wildlife Conservancy",
+    "url": "https://www.australianwildlife.org",
+    "blurb": "Protects native Australian wildlife and habitats across a network of sanctuaries."
+   }
+  ]
+ },
+ {
+  "id": "african-clawed-frog",
+  "name": "African Clawed Frog",
+  "scientificName": "Xenopus laevis",
+  "wikipediaTitle": "African clawed frog",
+  "group": "amphibian",
+  "regions": [
+   "africa"
+  ],
+  "range": "Ponds and wetlands across sub-Saharan Africa; introduced elsewhere",
+  "status": "LC",
+  "coordinate": {
+   "latitude": -15.0,
+   "longitude": 28.0
+  },
+  "mapSpan": 50,
+  "tagline": "The tongueless frog that became a laboratory star",
+  "lede": "Tongueless, toothless and almost never out of water, the African clawed frog shovels food into its mouth with its hands. This hardy frog from sub-Saharan Africa became a mainstay of laboratories around the world, and has since gone feral on several continents.",
+  "home": "The African clawed frog is native to much of sub-Saharan Africa, from Nigeria and Sudan south to South Africa, where it lives in wetlands, ponds and lakes, including in arid and semiarid regions. In the wild it is found at higher densities in artificial waters such as farm ponds, dams and irrigation canals than in natural lagoons, streams or rivers.\n\nThanks to the pet and laboratory trades, introduced populations now exist in North America, South America, Europe and Asia, including South Wales, California and Lake Kunming in China's Yunnan province, where the frogs are albino.",
+  "anatomy": "Its name comes from the short black claws on the last three toes of each hind foot, used to rip apart food and scratch predators. The genus name Xenopus means 'strange foot' and laevis means 'smooth', fitting its slippery skin, which is mottled greenish-grey to brown above, sometimes with yellowish blotches, and creamy white below. Females are larger and rounder than the slim males, which have black patches on their hands and arms for gripping during mating.\n\nLike other pipids it lacks a tongue, teeth and external eardrums, hearing instead through cartilage discs under the skin. Powerful legs make it fast underwater and even on land.",
+  "life": "Clawed frogs are nocturnal carnivores that will try to eat anything that fits in their mouths, living or dead: fish, tadpoles, crustaceans, worms and insects. Rather than hunting by sight like most frogs, they find food with smell, sensitive fingers and a lateral line that senses movement in the water, and they dig through mud for worms. They are also strongly cannibalistic, and their own tadpoles can make up much of their diet.\n\nWhen not feeding they float motionless at the surface with legs splayed and only eyes and nostrils showing. In droughts they bury themselves in mud and can stay dormant for up to a year, and they can travel overland to new ponds; feral frogs in Wales have moved up to 2 kilometres.",
+  "family": "Clawed frogs breed whenever conditions allow. Males have no vocal sac but call with alternating long and short trills made by contracting muscles in the larynx, and females answer with a rapping sound to accept or a slow ticking to reject. The male clasps the female just in front of her hind legs and fertilises the eggs as she lays them.\n\nThe tadpoles are filter feeders, straining plankton from the water. Frogs take 1 to 2 years to mature, and have survived 15 or more years in the wild and 25 to 30 years in captivity. They shed their skin every season, and then eat it.",
+  "remarkable": "In the 1930s, Hillel Shapiro and Harry Zwarenstein, students of Lancelot Hogben at the University of Cape Town, discovered that injecting urine from a pregnant woman into one of these frogs made it produce eggs within 8 to 12 hours. This became the first widely used pregnancy test and was relied on until the 1960s.",
+  "outlook": "In its native range the species is plentiful, but elsewhere it is a serious invader. Voracious and adaptable, it can devastate native frogs by eating their young, and it may have been an important carrier and original source of the chytrid fungus Batrachochytrium dendrobatidis, which has devastated amphibians worldwide while leaving the clawed frog itself unharmed. Many US states ban owning it without a permit, and after the frogs turned up in Golden Gate Park in 2003, San Francisco drained the pond.",
+  "people": "Across sub-Saharan Africa people know this frog well, and some cultures eat it or use it as an aphrodisiac or fertility medicine. It has been kept as a pet since the 1950s and is sometimes confused with the African dwarf frog.\n\nIn science, its large, easily handled eggs and embryos made it a key model for developmental and cell biology, partly because it can lay eggs all year. Roger Sperry used it in his famous experiments on how the visual system develops, and its stem cells were used to create xenobots.",
+  "relatives": "The African clawed frog belongs to the Pipidae, a family of fully aquatic frogs that also includes the Surinam toads of South America. Its genome is unusual: it is allotetraploid, carrying the remains of two whole genomes from extinct ancestral species, known as the 'long' and 'short' subgenomes, with 36 chromosomes in all. Its relative Xenopus tropicalis is often preferred for genetics, and Xenopus muelleri shares part of its range along the western edge of the Great Rift.",
+  "didYouKnow": "Albino clawed frogs are common and are bred and sold especially for laboratories.",
+  "facts": [
+   {
+    "label": "Claws",
+    "value": "3 on each hind foot"
+   },
+   {
+    "label": "Lifespan",
+    "value": "25–30 years in captivity"
+   },
+   {
+    "label": "Chromosomes",
+    "value": "36"
+   },
+   {
+    "label": "Diet",
+    "value": "Almost anything"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "How was the African clawed frog once used in medicine?",
+    "choices": [
+     "As a pregnancy test",
+     "As a painkiller",
+     "To treat burns",
+     "To produce an antivenom for snakebite in rural clinics"
+    ],
+    "explanation": "Urine from pregnant women made the frogs lay eggs within hours."
+   },
+   {
+    "prompt": "How does the clawed frog get food into its mouth?",
+    "choices": [
+     "With its hands",
+     "With a sticky tongue",
+     "By filter feeding",
+     "It waits for currents to wash food straight down its throat"
+    ],
+    "explanation": "It has no tongue, so it grabs food and shovels it in with its hands."
+   },
+   {
+    "prompt": "Which disease-causing fungus may the clawed frog have spread?",
+    "choices": [
+     "Chytrid fungus",
+     "Ringworm",
+     "Honey fungus",
+     "The white-nose fungus that kills bats in caves"
+    ],
+    "explanation": "It may have carried the chytrid fungus without being harmed by it."
+   }
+  ],
+  "charities": [
+   {
+    "name": "Amphibian Ark",
+    "url": "https://www.amphibianark.org",
+    "blurb": "Helps zoos and partners save threatened amphibians through conservation breeding."
+   },
+   {
+    "name": "Save The Frogs",
+    "url": "https://www.savethefrogs.com",
+    "blurb": "Works to protect amphibian populations and promote respect for wildlife."
+   }
+  ]
+ },
+ {
+  "id": "andean-flamingo",
+  "name": "Andean Flamingo",
+  "scientificName": "Phoenicoparrus andinus",
+  "wikipediaTitle": "Andean flamingo",
+  "group": "bird",
+  "regions": [
+   "southAmerica"
+  ],
+  "range": "High Andean salt lakes from southern Peru to northern Argentina",
+  "status": "VU",
+  "coordinate": {
+   "latitude": -22.0,
+   "longitude": -67.5
+  },
+  "mapSpan": 15,
+  "tagline": "A high-mountain flamingo with yellow legs",
+  "lede": "On high salt lakes in the Andes, the Andean flamingo strains microscopic algae from the mud with a bill built like a sieve. It is among the rarest of flamingos, and mining for borax and lithium is reshaping the fragile wetlands it depends on.",
+  "home": "The Andean flamingo lives in the wetlands of the high Andes, from southern Peru to northwestern Argentina and northern Chile. Breeding is concentrated in northern Chile, the far south-west of Bolivia and north-western Argentina.\n\nIt is migratory. In summer it lives on salt lakes, then many birds move to lower wetlands for winter, possibly because the salt flats become extremely dry. Some head east to the central plains of Argentina, such as Córdoba and Santa Fe, and others north through the Andes to southern Peru, while some stay near their breeding lakes all year. The exact routes are unknown.",
+  "anatomy": "It is the largest flamingo in the Andes and, with the taller greater flamingo, one of the two heaviest flamingos alive. Adults weigh 1.5 to 4.9 kg, stand 1 to 1.4 metres tall and have a wingspan of 1.4 to 1.6 metres. The body is pale pink, almost white in places, with a deep wine-pink lower neck and breast, and the black flight feathers form a bold black triangle at the rear when the wings are folded.\n\nIt is the only flamingo with yellow legs and three toes on each foot. The downcurved bill is pale yellow near the face and black for most of its length, with a deep lower jaw and very long filtering filaments.",
+  "life": "Andean flamingos are filter feeders. Their diet can include fish, invertebrates and plants, but they mostly take tiny particles from the bottom layer of the lake, especially diatoms. The upper jaw is narrower than the lower, leaving a gap along the top of the bill, and dense diatoms strike the filters and stay behind as water flows out, a method called inertial impaction.\n\nThey share lakes with Chilean and James's flamingos and have the most flexible foraging style of the three, copying their companions: alongside Chilean flamingos they feed deeper, and with James's they keep to the shallow edges. Their calls include a high, songbird-like peep, a rough quack often given in flight and a quiet, conversational chuckle.",
+  "family": "Andean flamingos are social birds that live and nest in colonies, often in breeding areas shared with Chilean and James's flamingos. The main breeding colonies are in northern Chile.\n\nYoung birds look quite different from their parents. Juveniles are a uniform pale grey, often duskier on the head and neck, with darker brown centres to some wing feathers, before they gain the pale pink adult plumage. Breeding is easily disrupted: since the 1980s both the number of successful colonies and the total number of chicks have declined, and at Salinas Lake in Peru fewer than 1% of the flamingos observed were juveniles.",
+  "remarkable": "For a bird of remote mountain lakes, it is a formidable traveller: an Andean flamingo can cover up to about 1,100 kilometres in a single day.",
+  "outlook": "The IUCN classifies the Andean flamingo as Vulnerable, and in 2010 it was also declared endangered under the US Endangered Species Act. A census in 2000 found fewer than 34,000 birds. The main threat is mining. Its lakes are rich in boron compounds, and excess boron has been linked to skeletal and heart defects in animals; mining also muddies and drains the water the birds filter, and flamingos desert their nests when it starts close to a colony. New highways fragment the lakes, and lithium brine extraction is a growing concern, with 17 lithium projects in Argentina's Salta province alone.\n\nEgg collecting, by local families and by organised poachers serving international demand, adds to the pressure and can make birds abandon nests.",
+  "people": "In the Altiplano, gathering flamingo eggs has deep cultural roots. Today the birds also draw visitors, and tourism, much of it unregulated, has grown alongside mining over the past two decades, especially in Chile.\n\nThe Flamingo Specialist Group, founded in 1971, publishes a yearly newsletter on the status of the world's flamingos and has worked with the IUCN on an action plan for them. National parks now cover many of the places the birds use in summer and winter, though not the areas where the habitat is changing.",
+  "relatives": "The Andean flamingo was placed in the genus Phoenicopterus until 2014, and it now shares the genus Phoenicoparrus with its close relative James's flamingo. Its quack is lower and shorter than the Chilean flamingo's, but slightly higher than James's. Fossils attributed to the species, found on the edge of the Salar de Atacama, date to about 3,000 to 2,200 years ago, when the region's modern climate was taking shape.",
+  "didYouKnow": "As little as 5 g of borax can harm animal populations, yet the same levels leave human mine workers unaffected.",
+  "facts": [
+   {
+    "label": "Height",
+    "value": "1–1.4 m"
+   },
+   {
+    "label": "Wingspan",
+    "value": "1.4–1.6 m"
+   },
+   {
+    "label": "Weight",
+    "value": "1.5–4.9 kg"
+   },
+   {
+    "label": "Population",
+    "value": "Under 34,000 (2000)"
+   }
+  ],
+  "quiz": [
+   {
+    "prompt": "What makes the Andean flamingo's legs unique among flamingos?",
+    "choices": [
+     "They are yellow",
+     "They are the longest",
+     "They are bright red",
+     "They have four webbed toes and a spur"
+    ],
+    "explanation": "It is the only flamingo with yellow legs, and it has three toes."
+   },
+   {
+    "prompt": "What is the Andean flamingo's main food?",
+    "choices": [
+     "Diatoms",
+     "Brine shrimp",
+     "Small fish",
+     "Seeds of reeds that grow around the lake edge"
+    ],
+    "explanation": "It filters tiny particles, mainly diatoms, from the lake bottom."
+   },
+   {
+    "prompt": "What is the main threat to Andean flamingos?",
+    "choices": [
+     "Mining",
+     "Hunting for feathers",
+     "Bird flu",
+     "Competition with James's flamingos for nesting space"
+    ],
+    "explanation": "Mining pollutes, drains and disturbs the salt lakes where they feed and breed."
+   }
+  ],
+  "charities": [
+   {
+    "name": "BirdLife International",
+    "url": "https://www.birdlife.org",
+    "blurb": "A global partnership of conservation groups protecting birds and their habitats."
+   }
+  ]
+ }
+]
