@@ -417,6 +417,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
   "width": 4007
  },
+ "Banded archerfish": {
+  "credit": {
+   "author": "Chrumps",
+   "file": "Toxotes_jaculatrix.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Toxotes_jaculatrix.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Toxotes_jaculatrix.jpg",
+  "width": 2800
+ },
  "Bar-tailed godwit": {
   "credit": {
    "author": "Andreas Trepte",
@@ -428,6 +439,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Bar-tailed_Godwit.jpg",
   "width": 2279
  },
+ "Basking shark": {
+  "credit": {
+   "author": "Greg Skomal / NOAA Fisheries Service",
+   "file": "Cetorhinus_maximus_by_greg_skomal.JPG",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Cetorhinus_maximus_by_greg_skomal.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Cetorhinus_maximus_by_greg_skomal.JPG",
+  "width": 1984
+ },
  "Bat-eared fox": {
   "credit": {
    "author": "Yathin S Krishnappa",
@@ -438,6 +460,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/8/84/Otocyon_megalotis_-_Etosha_2014.jpg",
   "width": 3000
+ },
+ "Bearded vulture": {
+  "credit": {
+   "author": "Giles Laurent",
+   "file": "010e_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:010e_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/cf/010e_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg",
+  "width": 2886
  },
  "Beluga whale": {
   "credit": {
@@ -516,6 +549,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg",
   "width": 2600
  },
+ "Blue-footed booby": {
+  "credit": {
+   "author": "Benjamint444",
+   "file": "Blue-footed-booby.jpg",
+   "license": "GFDL 1.2",
+   "licenseURL": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Blue-footed-booby.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Blue-footed-booby.jpg",
+  "width": 1000
+ },
  "Bombus affinis": {
   "credit": {
    "author": "USGS Bee Inventory and Monitoring Lab from Beltsville, Maryland, USA",
@@ -538,6 +582,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/4/47/Pairedmoths.jpg",
   "width": 540
  },
+ "Bongo (antelope)": {
+  "credit": {
+   "author": "Charles Miller from Basingstoke, United Kingdom",
+   "file": "Tragelaphus_eurycerus_-Marwell_Wildlife,_Hampshire,_England-8a.jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Tragelaphus_eurycerus_-Marwell_Wildlife,_Hampshire,_England-8a.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Tragelaphus_eurycerus_-Marwell_Wildlife%2C_Hampshire%2C_England-8a.jpg",
+  "width": 1600
+ },
+ "Bonobo": {
+  "credit": {
+   "author": "natataek",
+   "file": "Apeldoorn_Apenheul_zoo_Bonobo.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Apeldoorn_Apenheul_zoo_Bonobo.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e2/Apeldoorn_Apenheul_zoo_Bonobo.jpg",
+  "width": 1158
+ },
  "Bornean orangutan": {
   "credit": {
    "author": "Nanosanchez",
@@ -559,6 +625,39 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/Bradypus.jpg",
   "width": 1536
+ },
+ "Burrowing owl": {
+  "credit": {
+   "author": "Charles J. Sharp",
+   "file": "Southern_burrowing_owl_(Athene_cunicularia_cunicularia)_Colonia.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Southern_burrowing_owl_(Athene_cunicularia_cunicularia)_Colonia.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/be/Southern_burrowing_owl_%28Athene_cunicularia_cunicularia%29_Colonia.jpg",
+  "width": 5851
+ },
+ "Bush dog": {
+  "credit": {
+   "author": "Evan Hargus",
+   "file": "Bush_Dogs_at_the_Detroit_Zoo.jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Bush_Dogs_at_the_Detroit_Zoo.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Bush_Dogs_at_the_Detroit_Zoo.jpg",
+  "width": 3000
+ },
+ "California condor": {
+  "credit": {
+   "author": "Don Graham from Redlands, CA, USA - God bless it!",
+   "file": "California-condor-gymnogyps-californianus-078_(21196759264).jpg",
+   "license": "CC BY-SA 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:California-condor-gymnogyps-californianus-078_(21196759264).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/11/California-condor-gymnogyps-californianus-078_%2821196759264%29.jpg",
+  "width": 1280
  },
  "Canada jay": {
   "credit": {
@@ -648,6 +747,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/5/56/Christmas_Island_%285774532171%29.jpg",
   "width": 4790
  },
+ "Clouded leopard": {
+  "credit": {
+   "author": "Rushenb",
+   "file": "Neofelis_nebulosa,_Clouded_leopard.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Neofelis_nebulosa,_Clouded_leopard.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/39/Neofelis_nebulosa%2C_Clouded_leopard.jpg",
+  "width": 4500
+ },
  "Coccinella septempunctata": {
   "credit": {
    "author": "Photographer: Dominik Stodulski Graphic Processing: User:MathKnight",
@@ -669,6 +779,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Coconut_Crab_Birgus_latro.jpg",
   "width": 3264
+ },
+ "Common cuckoo": {
+  "credit": {
+   "author": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+   "file": "Cuckoo_(51169010335).jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Cuckoo_(51169010335).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Cuckoo_%2851169010335%29.jpg",
+  "width": 4654
  },
  "Common loon": {
   "credit": {
@@ -692,6 +813,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/5/57/Octopus2.jpg",
   "width": 2704
  },
+ "Common ostrich": {
+  "credit": {
+   "author": "Yathin S Krishnappa",
+   "file": "Struthio_camelus_-_Etosha_2014_(3).jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Struthio_camelus_-_Etosha_2014_%283%29.jpg",
+  "width": 1795
+ },
+ "Common raven": {
+  "credit": {
+   "author": "Frank Schulenburg",
+   "file": "Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/91/Corvus_corax_clarionensis%2C_Point_Reyes_National_Seashore.jpg",
+  "width": 6493
+ },
  "Common snapping turtle": {
   "credit": {
    "author": "Chuck Homler, Focus On Wildlife",
@@ -702,6 +845,50 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Snapping_Turtle_Heinz.png",
   "width": 8192
+ },
+ "Common vampire bat": {
+  "credit": {
+   "author": "Uwe Schmidt",
+   "file": "Desmo-Flug-01.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Desmo-Flug-01.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/41/Desmo-Flug-01.jpg",
+  "width": 1128
+ },
+ "Common wombat": {
+  "credit": {
+   "author": "JJ Harrison (jjharrison89@facebook.com)",
+   "file": "Vombatus_ursinus_-Maria_Island_National_Park.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg",
+  "width": 1700
+ },
+ "Cookiecutter shark": {
+  "credit": {
+   "author": "NOAA Observer Project",
+   "file": "Isistius_brasiliensis.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Isistius_brasiliensis.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Isistius_brasiliensis.jpg",
+  "width": 733
+ },
+ "Cougar": {
+  "credit": {
+   "author": "National Park Service",
+   "file": "Mountain_Lion_in_Glacier_National_Park.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Mountain_Lion_in_Glacier_National_Park.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Mountain_Lion_in_Glacier_National_Park.jpg",
+  "width": 1500
  },
  "Coyote": {
   "credit": {
@@ -747,6 +934,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Deinacrida_heteracantha_%28female%29_Holotype_specimen_from_the_Auckland_Museum.jpg",
   "width": 7087
  },
+ "Desert locust": {
+  "credit": {
+   "author": "Christiaan Kooyman",
+   "file": "SGR_laying.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:SGR_laying.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f2/SGR_laying.jpg",
+  "width": 724
+ },
+ "Devils Hole pupfish": {
+  "credit": {
+   "author": "Olin Feuerbacher / USFWS",
+   "file": "Cyprinodon_diabolis,_males.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Cyprinodon_diabolis,_males.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/3/37/Cyprinodon_diabolis%2C_males.jpg",
+  "width": 1771
+ },
  "Dhole": {
   "credit": {
    "author": "Davidvraju",
@@ -758,6 +967,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/01/Dhole_%28Asiatic_wild_dog%29_cropped.jpg",
   "width": 2148
  },
+ "Dugong": {
+  "credit": {
+   "author": "Gejuni",
+   "file": "Dugong.JPG",
+   "license": "CC BY-SA 3.0 de",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Dugong.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/42/Dugong.JPG",
+  "width": 2784
+ },
  "Dynastes hercules": {
   "credit": {
    "author": "Didier Descouens",
@@ -768,6 +988,28 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Dynastes_hercules_ecuatorianus_MHNT.jpg",
   "width": 5861
+ },
+ "Eciton burchellii": {
+  "credit": {
+   "author": "April Nobile",
+   "file": "Eciton_burchellii_casent0009218_profile_1.jpg",
+   "license": "CC BY 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Eciton_burchellii_casent0009218_profile_1.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d9/Eciton_burchellii_casent0009218_profile_1.jpg",
+  "width": 1041
+ },
+ "Electric eel": {
+  "credit": {
+   "author": "Steven G. Johnson",
+   "file": "Electric-eel.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Electric-eel.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Electric-eel.jpg",
+  "width": 2304
  },
  "Elkhorn coral": {
   "credit": {
@@ -824,6 +1066,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Cryptoprocta_Ferox.JPG",
   "width": 1788
  },
+ "Frilled shark": {
+  "credit": {
+   "author": "Robert Mintern",
+   "file": "Chlamydoselachus_anguineus1.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Chlamydoselachus_anguineus1.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/bb/Chlamydoselachus_anguineus1.jpg",
+  "width": 2577
+ },
+ "Galápagos tortoise": {
+  "credit": {
+   "author": "Mfield, Matthew Field, http://www.photography.mattfield.com",
+   "file": "Galapagos_giant_tortoise_Geochelone_elephantopus.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/42/Galapagos_giant_tortoise_Geochelone_elephantopus.jpg",
+  "width": 3504
+ },
  "Gharial": {
   "credit": {
    "author": "Charles J. Sharp",
@@ -846,6 +1110,39 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Myresluger2.jpg",
   "width": 850
  },
+ "Giant clam": {
+  "credit": {
+   "author": "Charles J. Sharp",
+   "file": "Giant_clam_(Tridacna_gigas)_Michaelmas_Cay.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Giant_clam_(Tridacna_gigas)_Michaelmas_Cay.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Giant_clam_%28Tridacna_gigas%29_Michaelmas_Cay.jpg",
+  "width": 4432
+ },
+ "Giant oarfish": {
+  "credit": {
+   "author": "Sandstein",
+   "file": "Regalecus_glesne,_Naturhistorisches_Museum_Wien.jpg",
+   "license": "CC BY 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Regalecus_glesne,_Naturhistorisches_Museum_Wien.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Regalecus_glesne%2C_Naturhistorisches_Museum_Wien.jpg",
+  "width": 5503
+ },
+ "Giant oceanic manta ray": {
+  "credit": {
+   "author": "jon hanson from london, UK",
+   "file": "Manta_birostris-Thailand4.jpg",
+   "license": "CC BY-SA 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Manta_birostris-Thailand4.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/df/Manta_birostris-Thailand4.jpg",
+  "width": 800
+ },
  "Giant squid": {
   "credit": {
    "author": "NTNU Vitenskapsmuseet",
@@ -857,6 +1154,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Giant_squid_Ranheim.jpg",
   "width": 1161
  },
+ "Gila monster": {
+  "credit": {
+   "author": "Blueag9",
+   "file": "Gila_monster2.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Gila_monster2.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Gila_monster2.JPG",
+  "width": 2560
+ },
  "Glaucus atlanticus": {
   "credit": {
    "author": "Taro Taylor from Sydney, Australia",
@@ -867,6 +1175,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/2/21/Glaucus_atlanticus_1_cropped.jpg",
   "width": 1640
+ },
+ "Goblin shark": {
+  "credit": {
+   "author": "Michigan State University/USFWS",
+   "file": "Goblin_shark_(Mitsukurina_owstoni).jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Goblin_shark_(Mitsukurina_owstoni).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Goblin_shark_%28Mitsukurina_owstoni%29.jpg",
+  "width": 3508
  },
  "Great grey owl": {
   "credit": {
@@ -890,6 +1209,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Hapalochlaena_lunulata2.JPG",
   "width": 1118
  },
+ "Green anaconda": {
+  "credit": {
+   "author": "MKAMPIS",
+   "file": "Sucuri_verde.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Sucuri_verde.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Sucuri_verde.jpg",
+  "width": 3456
+ },
+ "Green sea turtle": {
+  "credit": {
+   "author": "Charles J. Sharp",
+   "file": "Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Green_sea_turtle_%28Chelonia_mydas%29_Moorea.jpg",
+  "width": 6671
+ },
  "Greenland shark": {
   "credit": {
    "author": "NOAA Okeanos Explorer Program",
@@ -900,6 +1241,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/7/77/Somniosus_microcephalus_okeanos.jpg",
   "width": 1225
+ },
+ "Hawksbill sea turtle": {
+  "credit": {
+   "author": "Thierry Caro",
+   "file": "Eretmochelys-imbricata-Kélonia-2.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Eretmochelys-imbricata-K%C3%A9lonia-2.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Eretmochelys-imbricata-K%C3%A9lonia-2.JPG",
+  "width": 3888
  },
  "Hellbender": {
   "credit": {
@@ -933,6 +1285,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/4/42/Honey_Badger.jpg",
   "width": 6830
+ },
+ "Humboldt squid": {
+  "credit": {
+   "author": "Image courtesy of NOAA/MBARI 2006",
+   "file": "Dosidicus_gigas.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Dosidicus_gigas.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/92/Dosidicus_gigas.jpg",
+  "width": 384
  },
  "Humpback whale": {
   "credit": {
@@ -989,6 +1352,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Japanese_giant_salamander_in_Tottori_Prefecture%2C_Japan.jpg",
   "width": 4608
  },
+ "Japanese spider crab": {
+  "credit": {
+   "author": "Lycaon (Hans Hillewaert)",
+   "file": "Macrocheira_kaempferi.jpg",
+   "license": "CC BY 2.5",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.5",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Macrocheira_kaempferi.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Macrocheira_kaempferi.jpg",
+  "width": 1200
+ },
  "Kea": {
   "credit": {
    "author": "Mark Whatmough",
@@ -999,6 +1373,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/3/34/Nestor_notabilis_-Fiordland%2C_New_Zealand-8b.jpg",
   "width": 3888
+ },
+ "King cobra": {
+  "credit": {
+   "author": "Michael Allen Smith from Seattle, USA",
+   "file": "12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
+   "license": "CC BY-SA 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/4d/12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg",
+  "width": 1080
  },
  "Komodo dragon": {
   "credit": {
@@ -1044,6 +1429,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Leatherback_sea_turtle_Tinglar%2C_USVI_%285839996547%29.jpg",
   "width": 1864
  },
+ "Lion's mane jellyfish": {
+  "credit": {
+   "author": "W.carter",
+   "file": "Lion's_mane_jellyfish_in_Gullmarn_fjord_at_Sämstad_7.jpg",
+   "license": "CC0",
+   "licenseURL": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Lion%27s_mane_jellyfish_in_Gullmarn_fjord_at_S%C3%A4mstad_7.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/47/Lion%27s_mane_jellyfish_in_Gullmarn_fjord_at_S%C3%A4mstad_7.jpg",
+  "width": 5007
+ },
  "Little brown bat": {
   "credit": {
    "author": "SMBishop",
@@ -1054,6 +1450,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/8/88/Little_Brown_Myotis_%28cropped%29.JPG",
   "width": 1998
+ },
+ "Lucanus cervus": {
+  "credit": {
+   "author": "J.F. Gaffard",
+   "file": "Lucanus_cervus.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Lucanus_cervus.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/09/Lucanus_cervus.jpg",
+  "width": 480
  },
  "Luna moth": {
   "credit": {
@@ -1099,6 +1506,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Alaska_moose.jpg",
   "width": 5247
  },
+ "Morpho menelaus": {
+  "credit": {
+   "author": "Didier Descouens",
+   "file": "Morpho_menelaus_huebneri_MHNT_Male_Dos.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Morpho_menelaus_huebneri_MHNT_Male_Dos.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/2/23/Morpho_menelaus_huebneri_MHNT_Male_Dos.jpg",
+  "width": 4468
+ },
  "Muskox": {
   "credit": {
    "author": "Charles J. Sharp",
@@ -1131,6 +1549,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/%D0%9D%D0%B0%D1%80%D0%B2%D0%B0%D0%BB_%D0%B2_%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%BE%D0%B9_%D0%90%D1%80%D0%BA%D1%82%D0%B8%D0%BA%D0%B5.jpg",
   "width": 1500
+ },
+ "Nicrophorus vespilloides": {
+  "credit": {
+   "author": "Holger Gröschl",
+   "file": "Nicrophorus_vespilloides5.jpg",
+   "license": "CC BY-SA 2.0 de",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Nicrophorus_vespilloides5.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Nicrophorus_vespilloides5.jpg",
+  "width": 1080
  },
  "North American beaver": {
   "credit": {
@@ -1176,6 +1605,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/9/98/Mola_mola.jpg",
   "width": 1520
  },
+ "Oecophylla smaragdina": {
+  "credit": {
+   "author": "Muhammad Mahdi Karim",
+   "file": "Red_Weaver_Ant,_Oecophylla_smaragdina.jpg",
+   "license": "GFDL 1.2",
+   "licenseURL": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Red_Weaver_Ant,_Oecophylla_smaragdina.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/55/Red_Weaver_Ant%2C_Oecophylla_smaragdina.jpg",
+  "width": 2250
+ },
  "Okapi": {
   "credit": {
    "author": "Daniel Jolivet",
@@ -1208,6 +1648,28 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/3/35/Strawberry_poison_dart_frog_%2870539%29.jpg",
   "width": 2504
+ },
+ "Pantala flavescens": {
+  "credit": {
+   "author": "Jeevan Jose, Kerala, India",
+   "file": "Pantala_flavescens-Kadavoor-2017-05-04-002.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Pantala_flavescens-Kadavoor-2017-05-04-002.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/bd/Pantala_flavescens-Kadavoor-2017-05-04-002.jpg",
+  "width": 4072
+ },
+ "Paraponera clavata": {
+  "credit": {
+   "author": "Hans Hillewaert",
+   "file": "Paraponera_clavata.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Paraponera_clavata.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Paraponera_clavata.jpg",
+  "width": 1421
  },
  "Peacock mantis shrimp": {
   "credit": {
@@ -1275,6 +1737,39 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg",
   "width": 563
  },
+ "Portuguese man o' war": {
+  "credit": {
+   "author": "Image courtesy of Islands in the Sea 2002, NOAA/OER.",
+   "file": "Portuguese_Man-O-War_(Physalia_physalis).jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Portuguese_Man-O-War_(Physalia_physalis).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Portuguese_Man-O-War_%28Physalia_physalis%29.jpg",
+  "width": 1100
+ },
+ "Pyrosome": {
+  "credit": {
+   "author": "Show_ryu",
+   "file": "Pyrosoma_atlanticum.JPG",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Pyrosoma_atlanticum.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Pyrosoma_atlanticum.JPG",
+  "width": 2418
+ },
+ "Red king crab": {
+  "credit": {
+   "author": "Dr. Roger Mann, VIMS",
+   "file": "Spider_crab.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Spider_crab.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a7/Spider_crab.jpg",
+  "width": 700
+ },
  "Red panda": {
   "credit": {
    "author": "Mathias Appel",
@@ -1285,6 +1780,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Red_Panda_%2824986761703%29.jpg",
   "width": 3900
+ },
+ "Reticulated python": {
+  "credit": {
+   "author": "This photography was created by Mariluna. Other photos see here.",
+   "file": "Python_reticulatus_сетчатый_питон-2.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Python_reticulatus_%D1%81%D0%B5%D1%82%D1%87%D0%B0%D1%82%D1%8B%D0%B9_%D0%BF%D0%B8%D1%82%D0%BE%D0%BD-2.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Python_reticulatus_%D1%81%D0%B5%D1%82%D1%87%D0%B0%D1%82%D1%8B%D0%B9_%D0%BF%D0%B8%D1%82%D0%BE%D0%BD-2.jpg",
+  "width": 2077
  },
  "Ruby-throated hummingbird": {
   "credit": {
@@ -1418,6 +1924,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/7/72/Thornydevil.jpg",
   "width": 1587
  },
+ "Turritopsis dohrnii": {
+  "credit": {
+   "author": "Bachware",
+   "file": "Turritopsis_dohrnii.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Turritopsis_dohrnii.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/7/74/Turritopsis_dohrnii.jpg",
+  "width": 300
+ },
  "Vampire squid": {
   "credit": {
    "author": "Carl Chun",
@@ -1428,6 +1945,28 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Vampyroteuthis_illustration.jpg",
   "width": 675
+ },
+ "Vanessa cardui": {
+  "credit": {
+   "author": "Jean-Pol GRANDMONT",
+   "file": "0_Belle-dame_(Vanessa_cardui)_-_Echinacea_purpurea_-_Havré_(3).jpg",
+   "license": "CC BY 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:0_Belle-dame_(Vanessa_cardui)_-_Echinacea_purpurea_-_Havr%C3%A9_(3).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/c8/0_Belle-dame_%28Vanessa_cardui%29_-_Echinacea_purpurea_-_Havr%C3%A9_%283%29.jpg",
+  "width": 3194
+ },
+ "Venus' flower basket": {
+  "credit": {
+   "author": "NOAA Okeanos Explorer Program, Gulf of Mexico 2012 Expedition",
+   "file": "Euplectella_aspergillum_Okeanos.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Euplectella_aspergillum_Okeanos.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Euplectella_aspergillum_Okeanos.jpg",
+  "width": 1920
  },
  "Walrus": {
   "credit": {
@@ -1461,6 +2000,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Coelacanth_off_Pumula_on_the_KwaZulu-Natal_South_Coast%2C_South_Africa%2C_on_22_November_2019.png",
   "width": 963
+ },
+ "Western honey bee": {
+  "credit": {
+   "author": "Andreas Trepte",
+   "file": "Apis_mellifera_Western_honey_bee.jpg",
+   "license": "CC BY-SA 2.5",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.5",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Apis_mellifera_Western_honey_bee.jpg",
+  "width": 1923
  },
  "Whale shark": {
   "credit": {
