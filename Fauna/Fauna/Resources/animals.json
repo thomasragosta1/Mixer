@@ -15340,5 +15340,916 @@
         "blurb": "Campaigns for science-based fisheries and healthy oceans."
       }
     ]
+  },
+  {
+    "id": "venus-flower-basket",
+    "name": "Venus' Flower Basket",
+    "scientificName": "Euplectella aspergillum",
+    "wikipediaTitle": "Venus' flower basket",
+    "group": "marineInvertebrate",
+    "regions": [
+      "asia",
+      "openOcean"
+    ],
+    "range": "Deep seafloor of the western Pacific around the Philippines",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 12.0,
+      "longitude": 124.0
+    },
+    "mapSpan": 20,
+    "tagline": "A deep-sea sponge that builds itself out of glass",
+    "lede": "Hundreds of metres down in the western Pacific stands an animal made of glass. The Venus' flower basket weaves its skeleton from silica into a lattice so fine and so strong that engineers, optical scientists and architects have all come to study it.",
+    "home": "This sponge lives in the western Pacific Ocean around the Philippine Islands, while other members of its genus turn up in oceans across the world, including near Japan and in the Indian Ocean. It has been found from 100 to 1,000 metres below the surface and is most common deeper than 500 metres.\n\nIt spends its whole life fixed in one spot on the seafloor. Although it is associated with rocky areas, it tends to anchor itself in soft, loose, muddy sediment, and grows a rooting structure that keeps it upright in the ooze.",
+    "anatomy": "The body is a curved tube shaped like a vase or basket, usually 10 to 30 centimetres tall. It is built entirely of silica, the main ingredient of glass, in the form of tiny six-pointed spicules, each made of three rays crossing at right angles.\n\nThese spicules weave together into a very fine mesh that gives the animal a rigidity other sponges lack and lets it survive at great depth. The walls are pierced by countless gaps leading into a central cavity, and water leaves through a single opening at the top.\n\nAt the base, a tuft of glassy anchoring fibres, 5 to 20 centimetres long and as thin as a human hair, holds it in the mud. The species is told apart from its relatives partly by these anchors, which end in six teeth.",
+    "life": "Like other sponges, the Venus' flower basket feeds by filtering seawater, straining out plankton and the drifting flakes of organic debris known as marine snow. Some scientists suspect it may use bioluminescence to lure plankton towards it.\n\nIts lattice works as plumbing as well as a skeleton. Studies of water flow show that it reduces the drag the animal feels from passing currents and sets up gentle, orderly swirls inside the body cavity, which may help it feed selectively. In the Pacific, glass sponges of this group can build reefs, which may lock away carbon in the deep sea.",
+    "family": "Very little is known about how this sponge breeds. Sperm has been found in the connective tissue of one specimen, gathered in clusters within fine, thread-like structures, which supports the idea that each individual may be a hermaphrodite.\n\nBecause the adult cannot move, its sperm is thought to drift on the current until it reaches eggs held by another sponge. A team of Italian researchers built a three-dimensional model of the skeleton to simulate water moving in and out of it. They found that the lattice creates tiny vortices inside the body that help mix sperm and eggs.",
+    "remarkable": "The sponge often shelters a breeding pair of glass sponge shrimp. They slip into the lattice while young and small, then grow too large to squeeze back out, and spend the rest of their lives inside.\n\nThe shrimp eat particles the sponge collects, mate in its shelter and keep its interior clean, a partnership that lasts until they die.",
+    "outlook": "This sponge has not been assessed for the IUCN Red List, and its deep, remote home makes it hard to study at all. Researchers have noted how inaccessible it is, which limits how much can be learned about its numbers or about any pressures it might face.",
+    "people": "In Japan, the dried skeletons are presented as wedding gifts, a symbol of undying love that may have been inspired by the shrimp couples sealed inside for life. Materials scientists prize the skeleton too. The sponge draws silicic acid from seawater and turns it into glass fibres in cold water, whereas factory-made optical fibres need high temperatures and come out brittle, so a sponge-inspired method could give finer control over fibres and perhaps cheaper solar cells.\n\nIts geometry has inspired a lattice design with a better strength-to-weight ratio than other diagonally braced square grids, and an aluminium tube of the same size, with its material spread evenly, has only a hundredth of its stiffness. Writers on biomimicry have linked its form to Norman Foster's Gherkin tower in London.",
+    "relatives": "Euplectella aspergillum was described in 1841 by Sir Richard Owen, who called it one of the most singular and beautiful, as well as the rarest, of marine productions. Yet he doubted it was an animal at all and placed it in the very lowest class of living things.\n\nThe genus Euplectella was created for it, so it is the type species, and 4 subspecies are now accepted. It belongs to the glass sponges, named for their silica skeletons. Making glass is not unique to them, though: the orange puffball sponge, a demosponge from a different class, can also produce it biologically.",
+    "didYouKnow": "When tested with alkali the skeletons proved highly resistant, hinting that they may also contain tough biomaterials such as chitin.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "10–30 cm"
+      },
+      {
+        "label": "Depth",
+        "value": "100–1,000 m"
+      },
+      {
+        "label": "Skeleton",
+        "value": "Silica (glass)"
+      },
+      {
+        "label": "Diet",
+        "value": "Plankton and marine snow"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What is the Venus' flower basket's skeleton made of?",
+        "choices": [
+          "Silica",
+          "Calcium carbonate",
+          "Chitin",
+          "Spongin fibres stiffened with iron from seawater"
+        ],
+        "explanation": "Its skeleton is made of six-pointed silica spicules woven into a mesh."
+      },
+      {
+        "prompt": "What often lives inside the sponge's lattice?",
+        "choices": [
+          "A pair of shrimp",
+          "A small octopus",
+          "A colony of worms",
+          "A shoal of tiny fish that leave at night to feed"
+        ],
+        "explanation": "Glass sponge shrimp enter when young and grow too big to leave."
+      },
+      {
+        "prompt": "In Japan, what are the sponge's skeletons given as?",
+        "choices": [
+          "Wedding gifts",
+          "Funeral offerings",
+          "Good-luck charms for fishing boats",
+          "Prizes"
+        ],
+        "explanation": "They symbolise undying love and are presented at weddings."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to protect and restore the world's oceans, including deep-sea habitats."
+      },
+      {
+        "name": "IUCN",
+        "url": "https://www.iucn.org",
+        "blurb": "The global authority on the status of the natural world and the measures needed to safeguard it."
+      }
+    ]
+  },
+  {
+    "id": "king-cobra",
+    "name": "King Cobra",
+    "scientificName": "Ophiophagus hannah",
+    "wikipediaTitle": "King cobra",
+    "group": "reptile",
+    "regions": [
+      "asia"
+    ],
+    "range": "Forests of South and Southeast Asia, from India to southern China and the Philippines",
+    "status": "VU",
+    "coordinate": {
+      "latitude": 16.0,
+      "longitude": 100.0
+    },
+    "mapSpan": 40,
+    "tagline": "The longest venomous snake, and it eats other snakes",
+    "lede": "Rearing high off the forest floor with its narrow hood spread, the king cobra is the longest venomous snake in the world. It is also a specialist in eating other snakes, which is exactly what its scientific name means.",
+    "home": "King cobras range widely across tropical Asia, up to elevations of 2,000 metres. They are found from the Terai of India and southern Nepal through Bhutan, northeast India and Bangladesh to Myanmar, southern China, Cambodia, Thailand, Laos and Vietnam, and on to Malaysia, Singapore, Indonesia and the Philippines.\n\nIn India they live along both the Western and Eastern Ghats, in the Sundarbans and on Baratang Island in the Andamans. A few records come from as far west as eastern Pakistan, near Lahore, though it is uncertain whether any snakes survive there. Despite this huge range, the species is not commonly seen.",
+    "anatomy": "Adults are usually 3.18 to 4 metres long, and the longest known individual measured 5.85 metres. The skin is olive green with black and white bands that converge towards the head, which is covered by 15 large shields. The eyes are big, with golden irises and round pupils, the tongue is black, and the oval hood bears two black spots.\n\nJuveniles are black with white, yellow or buff chevrons pointing towards the head. Males are larger than females and paler, especially in the breeding season. Males caught in Kerala reached 3.75 metres and 10 kg, while the biggest females measured 2.75 metres and weighed 5 kg.",
+    "life": "The king cobra hunts by day, tasting the air with its forked tongue and passing scent to a sensory organ in the roof of its mouth. It is an apex predator, dominant over every snake except large pythons, and eats mainly snakes and lizards: Indian cobras, banded kraits, rat snakes, monitor lizards and even reticulated pythons.\n\nIt tracks pit vipers by following their odour trails. Flexible jaws let it swallow prey much larger than its head, and after a big meal it may go months without eating.\n\nIt is not considered aggressive and usually slips away from people. Cornered, it raises the front of its body, flares its hood and strikes, and it can still glide forward while upright, so people often misjudge a safe distance.",
+    "family": "The king cobra is the only snake that builds a nest. Between late March and late May, the female gathers dry leaf litter into a layered mound, usually at the base of a tree, up to 55 centimetres high and 140 centimetres across, with a chamber for her eggs.\n\nShe lays 7 to 43 eggs and stays by the nest for anywhere from 2 to 77 days, defending it fiercely. The eggs hatch after 66 to 105 days. Hatchlings are 37.5 to 58.5 centimetres long, nervous and quick to bite, and their venom is already as potent as an adult's. Females have also been shown to produce young without mating. Wild king cobras live about 20 years on average.",
+    "remarkable": "Most snakes hiss across a broad range of frequencies centred near 7,500 Hz. The king cobra's warning sound stays below 2,500 Hz, centred near 600 Hz, closer in pitch to a human voice, so people liken it to a growl.\n\nPouches off its windpipe act as resonating chambers, and the rat snakes it preys on can growl in a similar way.",
+    "outlook": "The king cobra has been listed as Vulnerable on the IUCN Red List since 2010. In Southeast Asia its greatest threat is the loss of forest to logging and farmland. It is also smuggled, and poached for bushmeat, snake leather and traditional Chinese medicine.\n\nInternational trade is regulated under CITES Appendix II, and the snake is protected in China and Vietnam. In India, killing one can bring up to 6 years in prison, and in the Philippines, where it is called banakon, it is listed as a threatened species.",
+    "people": "A single bite can deliver up to 420 mg of dried venom, rich in nerve toxins, and without prompt treatment death can follow in as little as 30 minutes. Antivenoms produced in India and by the Thai Red Cross Society can neutralise it.\n\nThe snake holds a special place in the folklore of India, Bangladesh, Sri Lanka and Myanmar, and is India's national reptile. In one Myanmar ritual, a tattooed priestess kisses a king cobra on the top of its head.\n\nAn Indian myth claims the killer's image stays in the dead snake's eyes for its mate to find, so slain cobras often have their heads crushed or burned. In Bangkok, a roadside shrine was built after a female's nest and young were destroyed during roadworks.",
+    "relatives": "Despite its name, the king cobra is not a true cobra. Genetic studies show it split early from the lineage that gave rise to the mambas, rather than from the Naja cobras. Albert Günther coined the genus Ophiophagus, 'snake-eater', in 1864, because the earlier name Hamadryas already belonged to the cracker butterflies.\n\nWhat was long treated as one species is now seen as a complex. Three more have been proposed: the Sunda king cobra, the Western Ghats king cobra and the Luzon king cobra, each a separate genetic lineage adapted to its own region.",
+    "didYouKnow": "One early specimen, described in 1840, was reportedly caught floating in a basket off the coast near Chennai, where wild king cobras have never lived.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "3.2–4 m (record 5.85 m)"
+      },
+      {
+        "label": "Diet",
+        "value": "Mainly other snakes"
+      },
+      {
+        "label": "Clutch",
+        "value": "7–43 eggs"
+      },
+      {
+        "label": "Lifespan",
+        "value": "About 20 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the king cobra mainly eat?",
+        "choices": [
+          "Other snakes",
+          "Rodents",
+          "Frogs and toads",
+          "Birds' eggs stolen from nests high in the canopy"
+        ],
+        "explanation": "Its genus name means 'snake-eater', and snakes and lizards are its main prey."
+      },
+      {
+        "prompt": "What does the female king cobra build for her eggs?",
+        "choices": [
+          "A leaf-litter nest",
+          "A burrow",
+          "A mud chamber",
+          "A floating raft of reeds bound with silk"
+        ],
+        "explanation": "It is the only snake known to build a nest, from dry leaf litter."
+      },
+      {
+        "prompt": "Which snakes is the king cobra most closely related to?",
+        "choices": [
+          "Mambas",
+          "True cobras of the genus Naja",
+          "Pythons",
+          "Rattlesnakes"
+        ],
+        "explanation": "It split early from the lineage that led to the mambas, not the Naja cobras."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places across Asia and around the world."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to conserve forests and the species that depend on them across tropical Asia."
+      }
+    ]
+  },
+  {
+    "id": "common-ostrich",
+    "name": "Common Ostrich",
+    "scientificName": "Struthio camelus",
+    "wikipediaTitle": "Common ostrich",
+    "group": "bird",
+    "regions": [
+      "africa"
+    ],
+    "range": "Savannas, Sahel and semi-deserts of Africa",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 3.0,
+      "longitude": 25.0
+    },
+    "mapSpan": 60,
+    "tagline": "The biggest bird alive, and the fastest on two legs",
+    "lede": "Standing up to 2.75 metres tall, the common ostrich is the tallest and heaviest bird on Earth. It cannot fly, but it can outrun almost any predator, and it lays the largest eggs of any living bird.",
+    "home": "Ostriches once roamed Africa north and south of the Sahara and much of Asia Minor. Today they live in open country, on the savannas and in the Sahel on both sides of the equatorial forest, and in southwest Africa they inhabit semi-desert and true desert. Temperatures there can swing by 40 °C between night and day.\n\nThe Arabian population of the Middle East was hunted to extinction by the middle of the 20th century, and attempts to reintroduce ostriches to Israel have failed. Birds brought to Australia for farming have escaped to form a small feral population in the outback. DNA from fossil eggshells shows that ostriches also lived in India 25,000 years ago.",
+    "anatomy": "Males stand 2.1 to 2.75 metres tall and weigh 100 to 130 kg; females are smaller and lighter. Adult males are mostly black with white wing tips and tail, while females and young males are greyish-brown and white.\n\nThe head and neck are almost bare, and the eyes, 50 mm across, are the largest of any land vertebrate, letting the bird spot predators far away. Each foot has just two toes, the larger bearing a nail like a hoof, which helps with running, and the bird can cover 3 to 5 metres in a stride.\n\nIts feathers lack the tiny hooks that zip together a flying bird's plumage, so they stay soft and fluffy. The wings, spanning about 2 metres, act as stabilisers for braking, turning and zigzagging at speed.",
+    "life": "Ostriches eat mainly seeds, shrubs, grass, fruit and flowers, with the occasional locust, mouse, lizard or scrap from a predator's kill. Having no teeth, they swallow pebbles that grind food in the gizzard, which can hold 1,300 g, up to 45% of it sand and stones.\n\nThey can go several days without drinking and survive losing a quarter of their body weight to dehydration. Outside the breeding season they live alone or in pairs, but they may gather in nomadic groups of 5 to 100, led by a top hen and often mixing with zebras and antelopes.\n\nAn ostrich can hold a steady 50 km/h and sprint at over 70 km/h. To hide, it lays its head and neck flat on the ground, looking like a mound of earth, and if cornered it kicks forward with enough force to kill a lion.",
+    "family": "Ostriches mature at 2 to 4 years. Territorial males boom by inflating their necks and gather a harem of 2 to 7 hens, then court with alternating wing beats and spiralling head movements. The male scrapes a communal nest, a shallow pit about 3 metres wide, and the dominant female lays first, later pushing out extra eggs from weaker hens until about 20 remain. She can tell her own eggs from the others.\n\nEach egg is about 15 centimetres long and weighs 1.4 kg, over 20 times a hen's egg. The drab female sits on them by day and the black male by night, so the nest stays hard to see.\n\nChicks hatch after 35 to 45 days, but fewer than 10% of nests survive and only 15% of chicks reach their first birthday. Survivors can live long lives: one in captivity reached 62 years and 7 months.",
+    "remarkable": "As the largest bird alive, the ostrich is also the largest living dinosaur, and scientists use it to study how extinct dinosaurs moved. It is unlike every other living bird in one more curious way: it produces urine separately from its faeces.",
+    "outlook": "Wild ostriches have declined drastically over the past 200 years, and most now survive in reserves or on farms.\n\nEven so, the species still occupies a vast range of about 9,800,000 square kilometres, and the IUCN and BirdLife International list it as Least Concern. The Arabian subspecies died out around 1966, and North African populations are protected under CITES Appendix I, which bans commercial international trade.",
+    "people": "Ostriches have inspired people for at least 5,000 years, in Mesopotamia, Egypt and the Kingdom of Kush. Kalahari hunter-gatherers use the eggshells as water flasks and jewellery, and engraved shells at Diepkloof Rock Shelter in South Africa date back about 60,000 years.\n\nThe idea that ostriches bury their heads in sand is false, probably dating to Pliny the Elder, and it gave us the phrase 'ostrich effect' for ignoring bad news. The birds were nearly wiped out in the 18th century for their plumes, and feather farming took off in South Africa in the 19th century; by the early 1900s more than 700,000 were in captivity.\n\nToday they are farmed for leather, feathers and lean red meat, and in South Africa people even race them. Near Oudtshoorn, where farms sit beside wild birds, 2 or 3 serious or fatal attacks happen each year.",
+    "relatives": "Carl Linnaeus named the species in the 18th century. Struthio is Late Latin for ostrich, and camelus recalls the Ancient Greek name meaning 'camel-sparrow', a nod to its dry home. Only one other ostrich survives, the Somali ostrich, recognised as a separate species by BirdLife International since 2014; it split off around 4 million years ago as the East African Rift formed. Ostriches are ratites, alongside rheas, emus, cassowaries and kiwis.\n\nGenetic work now places them alone in their order and as the sister group to all other members of this ancient group of birds, which also includes the flying tinamous.",
+    "didYouKnow": "Ostriches raised entirely by people may direct their courtship displays at their keepers instead of at other ostriches.",
+    "facts": [
+      {
+        "label": "Height",
+        "value": "Up to 2.75 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 130 kg"
+      },
+      {
+        "label": "Top speed",
+        "value": "Over 70 km/h"
+      },
+      {
+        "label": "Egg",
+        "value": "About 1.4 kg"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "How many toes does an ostrich have on each foot?",
+        "choices": [
+          "Two",
+          "Three",
+          "Four",
+          "Five, with the outer pair fused into a hoof"
+        ],
+        "explanation": "It has just two toes, an adaptation that helps it run."
+      },
+      {
+        "prompt": "Who sits on the ostrich eggs at night?",
+        "choices": [
+          "The male",
+          "The dominant female",
+          "A younger helper hen",
+          "Nobody, because the warm sand heats them until morning"
+        ],
+        "explanation": "The black male sits by night and the drab female by day, keeping the nest hidden."
+      },
+      {
+        "prompt": "Where does the 'head in the sand' myth seem to have begun?",
+        "choices": [
+          "With Pliny the Elder",
+          "In Egyptian tomb paintings",
+          "With Victorian zookeepers",
+          "In a Kalahari tale"
+        ],
+        "explanation": "It probably started with Pliny the Elder, who misunderstood ostrich behaviour."
+      }
+    ],
+    "charities": [
+      {
+        "name": "African Wildlife Foundation",
+        "url": "https://www.awf.org",
+        "blurb": "Works across Africa to protect wildlife and wild lands with local communities."
+      },
+      {
+        "name": "BirdLife International",
+        "url": "https://www.birdlife.org",
+        "blurb": "A global partnership of conservation groups working to protect birds and their habitats."
+      }
+    ]
+  },
+  {
+    "id": "giant-oceanic-manta-ray",
+    "name": "Giant Oceanic Manta Ray",
+    "scientificName": "Mobula birostris",
+    "wikipediaTitle": "Giant oceanic manta ray",
+    "group": "fish",
+    "regions": [
+      "openOcean"
+    ],
+    "range": "Tropical, subtropical and temperate oceans worldwide",
+    "status": "EN",
+    "coordinate": {
+      "latitude": 0.0,
+      "longitude": 160.0
+    },
+    "mapSpan": 80,
+    "tagline": "The largest ray, with the biggest brain of any fish",
+    "lede": "With a disc up to 7 metres across, the giant oceanic manta ray is the largest ray in the world. It spends most of its life far out at sea, sweeping up plankton with its mouth open wide, and it may be one of the few animals that recognise themselves in a mirror.",
+    "home": "This manta lives in tropical, subtropical and temperate waters around the globe. It has been recorded as far north as southern California, New Jersey, northern Japan, the Sinai Peninsula and the Azores, and as far south as Peru, Uruguay, South Africa and New Zealand.\n\nIt is an ocean-going fish that travels with the currents, migrating to places where upwellings of nutrient-rich water bring blooms of zooplankton. It is often found around offshore oceanic islands, and it visits coastlines to hunt.",
+    "anatomy": "The giant manta can reach 9 metres long and weigh around 3,000 kg, though a typical adult is about 4.5 metres. Its flattened body carries huge triangular pectoral fins. At the front, a pair of cephalic fins can be rolled into spirals while swimming or unfurled to funnel water into its wide, rectangular mouth.\n\nIts teeth are tiny, in a band of 18 rows on the lower jaw only, and unlike its devil ray cousins it has no spine on its whip-like tail, just a knob at the base. The back is black, dark brown or steely blue, and the belly white with dark spots, a pattern unique enough to identify individuals.\n\nTwo sharply marked white patches on the shoulders are divided by a line shaped like a T.",
+    "life": "In deep water the manta swims steadily in a straight line, while closer to shore it tends to bask or cruise idly, alone or in groups of up to 50. When feeding it circles slowly to herd plankton into a tight ball, then speeds through it with its mouth agape, sieving copepods, shrimp, krill and larvae from the water with tissue between its gill arches.\n\nResearch published in 2016 found that about 73% of its diet comes from deep-water sources, including fish, overturning the old idea that it fed only by filtering at the surface. It must swim constantly to push water over its gills, so it never rests on the seabed. It can reach 24 km/h, and only large sharks, false killer whales and orcas are big enough to kill it, though most adults carry scars from shark bites.",
+    "family": "Males can breed once their disc is about 4 metres wide, females at about 5 metres. When a female is ready, one or several males may follow her in a 'train'. During mating, the male grips her pectoral fin with his teeth and the pair swim belly to belly for several minutes.\n\nThe young develop inside the mother. At first each embryo lives on yolk inside an egg case; after hatching it stays in the oviduct, feeding on a milky secretion.\n\nUsually just 1 pup is born after a pregnancy of about 12 to 13 months. It is already 1.4 metres across and weighs 9 kg, and it spends its first few years growing in shallow coastal water. Females breed only every 2 or 3 years.",
+    "remarkable": "The oceanic manta has the largest brain of any fish, weighing up to 200 g, five to ten times heavier than a whale shark's. A network of blood vessels called the rete mirabile warms the blood flowing to it, and mantas are among the few animals, on land or at sea, that might pass the mirror test, seemingly showing self-awareness.",
+    "outlook": "The giant oceanic manta ray is listed as Endangered by the IUCN because its numbers have fallen drastically over the past 20 years through overfishing. Because it feeds in shallow water, it is easily caught in drifting gillnets and bottom nets, whether targeted or taken as bycatch.\n\nWith late maturity, a long pregnancy and usually a single pup, it cannot make up such losses for decades. Pollution adds to the pressure. A 2019 study in Indonesia's Coral Triangle found filter-feeders, including oceanic mantas, regularly swallowing microplastics, and tissue from carcasses in Ghana contained high levels of arsenic and mercury.",
+    "people": "Since the 1970s, fishing for mantas has been driven by demand for their gill rakers, the comb-like filters on their gills. These are the main ingredient in a tonic sold in traditional Chinese medicine under the trade name pengyusai, fetching up to 400 US dollars a kilogram, though there is no strong evidence that it does any good. Few aquariums have managed to keep this species.\n\nSince 2018 it has been displayed at Nausicaá in France and at the Okinawa Churaumi Aquarium in Japan. It goes by many names, including giant manta, oceanic manta and pelagic manta ray.",
+    "relatives": "The giant manta belongs to the family Mobulidae. Until 2017 it was placed in the genus Manta with the smaller reef manta ray, but DNA showed that both mantas sit within the devil rays of the genus Mobula, so they were moved there.\n\nThe two mantas overlap in range and are easily confused, especially when young. The oceanic manta is larger, typically 4 to 5 metres across against 3 to 3.5 metres, and the pale shoulder patches of the reef manta blend gradually into the back and form a Y rather than a T.",
+    "didYouKnow": "At reef cleaning stations, oceanic mantas hover almost motionless for several minutes while small fish pick off loose skin and parasites, mostly at high tide.",
+    "facts": [
+      {
+        "label": "Disc width",
+        "value": "Up to 7 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Around 3,000 kg"
+      },
+      {
+        "label": "Speed",
+        "value": "Up to 24 km/h"
+      },
+      {
+        "label": "Young",
+        "value": "Usually 1 pup every 2–3 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Roughly how much of the giant manta's diet comes from deep-water sources?",
+        "choices": [
+          "About 73%",
+          "None",
+          "About 10%",
+          "Almost all of it, as it never feeds at the surface"
+        ],
+        "explanation": "A 2016 study found about 73% of its diet is deep-water food, including fish."
+      },
+      {
+        "prompt": "Why does the giant manta never rest on the seabed?",
+        "choices": [
+          "It must swim to breathe",
+          "It would sink into mud",
+          "Its fins are too fragile",
+          "Bottom-dwelling stingrays chase it out of their territory"
+        ],
+        "explanation": "It has to keep swimming to push water over its gills."
+      },
+      {
+        "prompt": "What does a manta's T-shaped back marking help tell it apart from?",
+        "choices": [
+          "The reef manta ray",
+          "The whale shark",
+          "The great hammerhead",
+          "The common stingray of shallow coastal lagoons"
+        ],
+        "explanation": "Oceanic mantas have a T between their white shoulder patches; reef mantas have a Y."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to safeguard sharks, skates and rays through science, education and policy."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to end overfishing and protect marine life worldwide."
+      }
+    ]
+  },
+  {
+    "id": "painted-lady",
+    "name": "Painted Lady",
+    "scientificName": "Vanessa cardui",
+    "wikipediaTitle": "Vanessa cardui",
+    "group": "insect",
+    "regions": [
+      "europe",
+      "africa",
+      "asia",
+      "naWest"
+    ],
+    "range": "Every continent except Antarctica; rare in South America",
+    "status": "NE",
+    "coordinate": {
+      "latitude": 35.0,
+      "longitude": 15.0
+    },
+    "mapSpan": 80,
+    "tagline": "A butterfly that flies from Africa to the Arctic",
+    "lede": "The painted lady is the most widespread butterfly on Earth, found on every continent except Antarctica. Each year, relay teams of successive generations shuttle between tropical Africa and the Arctic Circle, and some have even crossed an ocean.",
+    "home": "Painted ladies can turn up in almost any temperate region, including mountains in the tropics, but they live year-round only in warmer areas. In South America they are rare visitors, and in Australia they are limited to a small area around Bunbury, Fremantle and Rottnest Island.\n\nThey like sunny, brightly lit, open places, and are drawn to meadows full of flowers and clover. Males set up territories in spots sheltered by hedgerows, and on overcast days the adults settle into small hollows in the ground.",
+    "anatomy": "The upper wings are a warm reddish orange, browner towards the body, with black-and-white chequered fringes. Each forewing has an irregular black band, a black tip with a short white streak, and a curved row of 4 round spots near the corner. The hindwing carries a row of 5 small black spots between bands of dark markings.\n\nUnderneath, the hindwing is marbled olive brown, speckled with black and crossed by white veins, with a row of 5 eyespots. Painted ladies see much like honey bees, with receptors for ultraviolet, blue and green light, but they lack red receptors, so red light is invisible to them.",
+    "life": "Caterpillars feed mainly on plants of the daisy family, such as thistles, knapweeds, burdock, sunflowers and wormwoods, and more than 300 host plants have been recorded.\n\nAdults sip flower nectar and the sugary honeydew left by aphids. In spring, painted ladies pour out of North Africa and the Mediterranean into Britain and Europe in May and June, sometimes reaching Iceland, while others travel from the Red Sea through Israel and Cyprus to Turkey. Radar studies show that the return flight south in autumn happens at high altitude, which is why it was overlooked for so long.\n\nThe butterflies appear to steer by a sun compass, and in the laboratory they lost their bearings when cut off from the sky. Their main defences are flight and camouflage, while caterpillars hide in small silk tents on leaves.",
+    "family": "Courtship begins with small groups of 2 to 8 butterflies circling one another for a few seconds. Males perch in the late afternoon on hilltops, meadow edges and other landmarks where females are likely to pass, and chase off rival males. A male often mates with several females. Unusually, painted ladies breed continuously through every season, even winter, and keep reproducing throughout their migrations, so no overwintering stage has ever been found.\n\nFemales lay their eggs one by one, choosing plants with plenty of nectar for adults even when those plants are poor food for caterpillars, a strategy that favours quantity over quality. They also seem to fly towards rain, which may help more eggs and larvae thrive.",
+    "remarkable": "In 2024, scientists reported painted ladies on a beach in French Guiana, far outside their usual range. Pollen on their bodies came from West African shrubs, and genetic and isotope tests confirmed the butterflies were born in Europe or Africa.\n\nHelped by unusually favourable trade winds, they had flown over 4,200 kilometres, the first evidence of any insect crossing an ocean.",
+    "outlook": "With an enormous range and females that produce large numbers of offspring, the painted lady is one of the most successful butterflies on the planet. Its numbers swing wildly from year to year because migrations are erratic.\n\nHeavy winter rain in deserts grows the plants that caterpillars need, and in March 2019 it sent millions streaming across Southern California, while a migration through Israel the same spring was estimated at a billion butterflies. Global climate events such as El Niño may also trigger large movements.",
+    "people": "In North America the butterfly was once called the cosmopolitan, a fitting name for a species found almost everywhere. It is bred in schools for teaching, and released at weddings, memorial events and hospices. Ordinary people have helped reveal its travels.\n\nThe Worldwide Painted Lady Migration project, a citizen science effort led by the Institute of Evolutionary Biology in Barcelona, has tracked butterflies flying from Iceland all the way to the Sahara and beyond. Other research suggests that British painted ladies complete a round trip of about 14,500 kilometres from tropical Africa to the Arctic Circle over as many as 6 generations.",
+    "relatives": "The painted lady belongs to the genus Vanessa. Its close relatives include the Australian painted lady, sometimes treated as a subspecies, which ranges over half of Australia, as well as the American painted lady and the West Coast lady of North America.\n\nStudies of colour vision in another cousin, the red admiral, show that it cannot tell yellow light from orange, or orange from red.",
+    "didYouKnow": "Groups of courting painted ladies rarely stray more than 4.5 metres from the point where their circling flight began.",
+    "facts": [
+      {
+        "label": "Range",
+        "value": "Every continent but Antarctica"
+      },
+      {
+        "label": "Host plants",
+        "value": "300+ recorded"
+      },
+      {
+        "label": "Migration",
+        "value": "Up to 14,500 km round trip"
+      },
+      {
+        "label": "Adult diet",
+        "value": "Nectar and aphid honeydew"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which colour can painted ladies not see?",
+        "choices": [
+          "Red",
+          "Blue",
+          "Ultraviolet",
+          "Green, which is why they ignore leaves"
+        ],
+        "explanation": "They have ultraviolet, blue and green receptors but no red ones."
+      },
+      {
+        "prompt": "Over how many generations can the Africa to Arctic round trip take place?",
+        "choices": [
+          "Up to 6",
+          "Just 1",
+          "About 20",
+          "Exactly 2, one flying north and one returning south"
+        ],
+        "explanation": "British painted ladies complete the 14,500 km round trip over as many as 6 generations."
+      },
+      {
+        "prompt": "Where were the ocean-crossing painted ladies found in 2024?",
+        "choices": [
+          "French Guiana",
+          "Florida",
+          "Iceland",
+          "The Azores, after drifting on the trade winds"
+        ],
+        "explanation": "Pollen and genetic tests showed the French Guiana butterflies had flown from Africa or Europe."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Butterfly Conservation",
+        "url": "https://butterfly-conservation.org",
+        "blurb": "Works to save butterflies, moths and their habitats, and runs national butterfly counts."
+      },
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects pollinators and other invertebrates and the habitats they depend on."
+      }
+    ]
+  },
+  {
+    "id": "giant-clam",
+    "name": "Giant Clam",
+    "scientificName": "Tridacna gigas",
+    "wikipediaTitle": "Giant clam",
+    "group": "marineInvertebrate",
+    "regions": [
+      "asia",
+      "oceania"
+    ],
+    "range": "Shallow coral reefs of the Indo-Pacific",
+    "status": "NE",
+    "coordinate": {
+      "latitude": -5.0,
+      "longitude": 135.0
+    },
+    "mapSpan": 50,
+    "tagline": "The largest clam alive, powered by sunlight",
+    "lede": "The giant clam is the biggest bivalve mollusc alive, able to top 200 kg and live for more than a century. It gets most of its food by farming tiny algae in its own flesh, gaping open each day so they can soak up the sun.",
+    "home": "Giant clams live on the shallow coral reefs of the South Pacific and Indian oceans, including the Philippines and the reefs of Malaysia in the South China Sea. They settle on flat coral sand or broken coral, at depths of up to 20 metres.\n\nThe species ranges across the Indo-Pacific, but its populations are shrinking fast, and it has vanished from many areas where it was once common. The South China Sea is a hotspot for the whole group: 7 of the 10 known kinds of giant clam live on its reefs.",
+    "anatomy": "A giant clam can measure up to 120 centimetres across. The largest known specimen, found off Sumatra around 1817, was 137 centimetres long and weighed an estimated 250 kg alive, and its shells are now in a museum in Northern Ireland. A heavier clam found off the Japanese island of Ishigaki in 1956 was shorter, at 115 centimetres, but weighed an estimated 340 kg alive.\n\nAdults are the only giant clams that cannot close their shells completely, so part of the brownish-yellow mantle always shows. The shell has 4 or 5 deep vertical folds, which separates it from the similar Tridacna derasa, with 6 or 7.",
+    "life": "Giant clams filter food from the water, yet 65 to 70% of their nutrition comes from single-celled algae called zooxanthellae living in their mantle. The algae use carbon dioxide, phosphates and nitrates supplied by the clam, which keeps them in a special circulatory system at far higher densities than usual.\n\nThis partnership lets the clam grow to 1 metre long in nutrient-poor reef water. The balance shifts with size: very small clams get about 65% of their carbon from filter feeding, but larger ones only 34%. Recent modelling suggests the algae are stacked in vertical columns and fed light by shimmering cells called iridocytes, turning sunlight into energy with an efficiency of up to about 67%, among the best natural solar collectors known.",
+    "family": "Each clam is a hermaphrodite, producing both eggs and sperm, though it cannot fertilise itself. Because adults cannot move, they spawn into open water, coordinated by a chemical signal: when one clam releases it, its neighbours detect it and respond.\n\nSpawning tends to follow incoming tides around certain phases of the moon, and an adult can release more than 500 million eggs at once. About 12 hours after fertilisation a larva hatches and starts to build a shell. Within a week it settles on the bottom, using a small foot to crawl and shift position.\n\nAt first it has no algae and depends on plankton, picking up its partners from the water later. Many die at this stage. Laboratory-reared clams grow about 12 centimetres a year, and in the wild giant clams live on average for more than 100 years.",
+    "remarkable": "The edge of the mantle is dotted with several hundred to several thousand pinhole eyes, each about 0.5 mm across.\n\nEach contains a pupil-like opening over a bed of 100 or more light receptors, sensitive to three ranges of light including ultraviolet, which may be unique among molluscs. When a shadow passes or the light dims, the clam partly closes its shell.",
+    "outlook": "The main reason giant clams are disappearing is heavy harvesting, both for food and for the aquarium trade, and it is the large, most profitable adults that are taken. The species has been reported as locally extinct in peninsular Malaysia. International trade, including in parts and shells, is regulated under CITES Appendix II. Farming offers hope.\n\nMass culture began at the Micronesian Mariculture Demonstration Center in Palau, and an Australian project ran from 1985 to 1992 at James Cook University's Orpheus Island Research Station, helping to set up hatcheries across the Pacific Islands and the Philippines. Clams have been introduced to Hawaii and Micronesia, and restocked clams in the Philippines spread their own larvae to sites hundreds of metres away within 10 years.",
+    "people": "Peoples of East Asia have known giant clams for thousands of years, and the Venetian explorer Antonio Pigafetta described them in his journal in 1521. The meat is a delicacy in Japan, where it is called himejako, as well as in France, Southeast Asia and many Pacific Islands.\n\nIn parts of China high prices are paid for the adductor muscle, believed to be an aphrodisiac, and the shells sell on the black market as decorations. Folklore has long cast the clam as a killer.\n\nA Polynesian tale tells of one biting off a monkey's hand, a Maori legend describes one attacking a canoe, and versions of the US Navy Diving Manual explained how to escape its grip. In reality its slow-closing muscle, and the need to squeeze water out first, mean it cannot trap a person.",
+    "relatives": "Tridacna gigas is the best-known species of the genus Tridacna, and several other giant clams are often mistaken for it. Its relatives include Tridacna derasa and Hippopus porcellanus, both found on the reefs of eastern Malaysia.\n\nGiant clams have reorganised the basic bivalve body plan, growing fleshy mantles that spill over the edges of their shells. Biologists have long debated how: Sir Yonge argued the internal organs rotated 180 degrees relative to the shell, while Stasek proposed that the body simply grows backwards rather than downwards.",
+    "didYouKnow": "Chemical traces locked in a giant clam's shell, including oxygen isotopes and the ratio of strontium to calcium, can reveal past sea surface temperatures.",
+    "facts": [
+      {
+        "label": "Width",
+        "value": "Up to 120 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "Over 200 kg"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Over 100 years"
+      },
+      {
+        "label": "Diet",
+        "value": "Algae it hosts, plus plankton"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the giant clam get most of its nutrition?",
+        "choices": [
+          "Algae in its mantle",
+          "Fish it traps",
+          "Plankton alone",
+          "Dead material that drifts down from the reef"
+        ],
+        "explanation": "Zooxanthellae living in its mantle supply 65 to 70% of its needs."
+      },
+      {
+        "prompt": "What do the pinhole spots on the clam's mantle do?",
+        "choices": [
+          "Detect light",
+          "Release eggs",
+          "Absorb oxygen",
+          "Squirt jets of water at approaching fish"
+        ],
+        "explanation": "They are tiny eyes that make the clam close up when light dims or something moves."
+      },
+      {
+        "prompt": "How many eggs can an adult giant clam release at once?",
+        "choices": [
+          "More than 500 million",
+          "About 50",
+          "Around 10,000",
+          "Roughly a million, spread out over a week"
+        ],
+        "explanation": "Giant clams spawn into open water and can release over 500 million eggs at a time."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Coral Reef Alliance",
+        "url": "https://www.coralreefalliance.org",
+        "blurb": "Works with communities to protect and restore coral reefs around the world."
+      },
+      {
+        "name": "WWF",
+        "url": "https://www.worldwildlife.org",
+        "blurb": "Works to protect coral reefs and marine life in the Coral Triangle and beyond."
+      }
+    ]
+  },
+  {
+    "id": "reticulated-python",
+    "name": "Reticulated Python",
+    "scientificName": "Malayopython reticulatus",
+    "wikipediaTitle": "Reticulated python",
+    "group": "reptile",
+    "regions": [
+      "asia"
+    ],
+    "range": "Rainforests, woodlands and river margins of South and Southeast Asia",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 3.0,
+      "longitude": 110.0
+    },
+    "mapSpan": 40,
+    "tagline": "The world's longest snake, and a superb swimmer",
+    "lede": "The reticulated python is the longest snake in the world, a non-venomous constrictor wrapped in a net of diamond markings. It swims so well that it has been seen far out at sea and has made its own way to many small islands.",
+    "home": "This python ranges across South and Southeast Asia, from the Nicobar Islands, India and Bangladesh through Myanmar, Thailand, Laos, Cambodia, Vietnam, Malaysia and Singapore. It is found on a long chain of Indonesian islands, from Sumatra and Borneo to Sulawesi, Java, Flores and Timor, as well as in Timor-Leste and on many islands of the Philippines.\n\nIt lives in rainforests, woodlands and nearby grasslands, usually close to rivers, streams or lakes. In the early 20th century it was said to be common even in busy parts of Bangkok, where it sometimes ate domestic animals.",
+    "anatomy": "A study of more than a thousand wild pythons in southern Sumatra found lengths of 1.5 to 6.5 metres and weights of 1 to 75 kg. Snakes over 6 metres are rare, but this is the only living species that regularly exceeds that length. It is the third heaviest snake, after the green anaconda and the Burmese python.\n\nIts smooth scales are arranged in 69 to 79 rows around the middle of the body, and deep pits line some of the scales along its lips. The back carries a complex geometric pattern of irregular diamonds flanked by smaller, pale-centred markings.\n\nIn a zoo it can look garish, but among shadows and fallen leaves this disruptive colouring makes the snake almost vanish, hiding it from predators and prey alike.",
+    "life": "The reticulated python is an ambush hunter. It waits until an animal wanders within range, seizes it, wraps it in its coils and kills it by constriction. Pythons up to 3 or 4 metres long eat mainly rats and other rodents, bats and treeshrews.\n\nLarger ones take civets, binturongs, primates, wild boar and deer weighing more than 60 kg. It can swallow prey up to a quarter of its own length and as heavy as itself. Near villages it sometimes snatches stray chickens, cats and dogs.",
+    "family": "Reticulated pythons lay eggs, with females producing clutches of 15 to 80. At an ideal incubation temperature of 31 to 32 °C, the eggs take an average of 88 days to hatch, and the hatchlings are already at least 0.61 metres long.\n\nOn some small islands, pythons have shrunk over time. The Tanahjampea population south of Sulawesi rarely grows much beyond 2 metres, and the Selayar population does not exceed 4 metres. Island-bred pythons are now selectively bred in captivity into 'super dwarfs' that grow only 1.82 to 2.4 metres long.",
+    "remarkable": "One of the largest pythons ever scientifically measured, from Balikpapan in East Kalimantan, was 6.95 metres long. It was measured under anaesthetic while surgeons removed a radio collar from its intestines: it had eaten a half-starved, radio-collared sun bear weighing 23 kg, a meal that took about 10 weeks to digest.",
+    "outlook": "Because it is so widespread, the reticulated python is listed as Least Concern on the IUCN Red List. Even so, in several countries it is hunted for its skin, for traditional medicine and for the pet trade, which makes it one of the most economically important reptiles in the world.\n\nIn 2015 the United States added it to its list of injurious wildlife, banning imports. A court decision in 2017 overturned the ban on moving it between states.",
+    "people": "This is one of the very few snakes known to prey on people, and the only one for which photographs and video prove it has swallowed humans. Most recent fatal cases have been in Indonesia, especially on Sulawesi and nearby islands; in 2017 a farmer in West Sulawesi became the first fully confirmed case of a person found inside a python.\n\nEven a huge snake can struggle to get past an adult's shoulders. Size claims are notoriously unreliable. Colossus, a zoo python in Pittsburgh, was once credited with 8.7 metres, but its skeleton measured 6.35 metres, and a snake in Indonesia claimed at 14.85 metres turned out to be about 7 metres.\n\nScientists accept only measurements of dead or anaesthetised animals. Even so, a captive python in Kansas City called Medusa was recorded at 7.67 metres in 2011.",
+    "relatives": "Johann Gottlob Schneider described the species in 1801 as Boa reticulata. The name reticulatus is Latin for 'net-like', after its complex pattern. Genetic studies later showed that it is more closely related to the pythons of Australia and New Guinea than to the Indian python and its kin.\n\nA proposal in 2004 to give it the genus Broghammerus was widely rejected because it lacked scientific rigour. In 2014 researchers named the genus Malayopython for this species and its sister, the Timor python, and that name is now in general use.",
+    "didYouKnow": "In 2012 an albino reticulated python called Twinkie, 7 metres long, was named the largest albino snake in captivity.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Usually 1.5–6.5 m"
+      },
+      {
+        "label": "Weight",
+        "value": "Up to about 75 kg (wild)"
+      },
+      {
+        "label": "Clutch",
+        "value": "15–80 eggs"
+      },
+      {
+        "label": "Diet",
+        "value": "Mammals, sometimes birds"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the name reticulatus mean?",
+        "choices": [
+          "Net-like",
+          "Giant",
+          "Swimmer",
+          "Strangler of deer, from an old Javanese word"
+        ],
+        "explanation": "It is Latin for 'net-like', after the python's patterned scales."
+      },
+      {
+        "prompt": "How does the reticulated python kill its prey?",
+        "choices": [
+          "By constriction",
+          "With venom",
+          "By drowning it",
+          "By crushing it with its powerful jaws and teeth"
+        ],
+        "explanation": "It is non-venomous and kills by squeezing prey in its coils."
+      },
+      {
+        "prompt": "How has the reticulated python reached many small islands?",
+        "choices": [
+          "By swimming",
+          "On fishing boats",
+          "Across land bridges",
+          "As eggs carried on rafts of floating vegetation"
+        ],
+        "explanation": "It is an excellent swimmer and has been reported far out at sea."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Wildlife Conservation Society",
+        "url": "https://www.wcs.org",
+        "blurb": "Protects wildlife and wild places across Asia and around the world."
+      },
+      {
+        "name": "Rainforest Trust",
+        "url": "https://www.rainforesttrust.org",
+        "blurb": "Buys and protects threatened tropical forests in partnership with local groups."
+      }
+    ]
+  },
+  {
+    "id": "common-raven",
+    "name": "Common Raven",
+    "scientificName": "Corvus corax",
+    "wikipediaTitle": "Common raven",
+    "group": "bird",
+    "regions": [
+      "europe",
+      "asia",
+      "naWest",
+      "arctic"
+    ],
+    "range": "Across the Northern Hemisphere, from Arctic tundra to North African desert",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 55.0,
+      "longitude": 30.0
+    },
+    "mapSpan": 80,
+    "tagline": "The heaviest perching bird, and one of the cleverest",
+    "lede": "The common raven is a big, glossy black bird with a deep, rolling croak and a mind to match. It is the heaviest of all perching birds, and its knack for solving problems places it among the most intelligent animals known.",
+    "home": "Ravens have the largest range of any member of their genus and one of the largest of any perching bird. They live right across the Northern Hemisphere, from the Arctic and temperate lands of North America and Eurasia to the deserts of North Africa and islands in the Pacific. In Tibet they have been recorded at 5,000 metres, and on Mount Everest as high as 6,350 metres.\n\nMost prefer wooded country with wide open land nearby, or coasts with sea cliffs for nesting. They generally stay put all year, even in Arctic Canada and Alaska. In Britain they were wiped out of many areas by gamekeepers, but are now spreading again under legal protection.",
+    "anatomy": "An adult raven is 54 to 71 centimetres long, with a wingspan of 116 to 153 centimetres, and weighs from 0.69 to 2.25 kg. Birds from cold places such as Greenland and the Himalayas tend to be bigger, with larger bills. Compared with crows, ravens have a heavier, slightly curved bill, shaggy throat feathers, longer bristles above the beak and a long, wedge-shaped tail. The plumage is iridescent black and the eyes dark brown.\n\nIn the air they soar steadily with fewer wingbeats than crows, yet are just as agile, and their feathers creak in flight like rustling silk. A pied form once lived in the Faroe Islands, and pale, leucistic ravens are occasionally seen in British Columbia.",
+    "life": "Ravens will eat almost anything: carrion and the maggots on it, grain, acorns, berries, eggs, small mammals, frogs, lizards and human rubbish. On Alaska's Arctic tundra, birds got about half their energy from hunting rodents and half from scavenging caribou and ptarmigan.\n\nThey follow wolves to scavenge their kills, and have even been seen leading packs to prey they could spot from the air. Surplus food, especially fat, is hidden away, and ravens learn to cache it out of sight of other ravens, which steal from one another freely.\n\nTheir voice is just as varied, with 15 to 30 types of call, and they can mimic sounds including human speech. Young ravens are famously playful, sliding down snowbanks, playing chase with wolves, otters and dogs, and breaking off twigs to play with together.",
+    "family": "Young ravens start courting early but may not pair up for another 2 or 3 years. Once paired, they usually stay together for life, nesting in the same place year after year and defending a territory.\n\nThe nest is a deep bowl of large sticks, some 150 centimetres long, lined with soft material such as deer fur, built in a tall tree, on a cliff ledge or on a utility pole. The female lays 4 to 6 pale bluish-green, brown-blotched eggs and incubates them alone for 18 to 21 days.\n\nBoth parents feed the chicks, which fledge at 35 to 49 days and stay with them for another 6 months. Wild ravens typically live 10 to 15 years, the record being 23 years and 3 months, while birds at the Tower of London have passed 40.",
+    "remarkable": "In one test, meat hung from a perch on a string. To reach it, a raven had to pull up a loop, pin it with a foot and repeat.\n\nFour of five birds succeeded, with no obvious trial and error, suggesting genuine insight. Other studies show ravens remember unfair trades, pretend to bury food to fool onlookers, and by 4 months old match adult chimpanzees and orangutans on tests of reasoning.",
+    "outlook": "With its size, sociability and fierce defence of its nest, the raven has few natural predators, mainly eagles and large owls that take eggs and fledglings. People have been its main enemy: gamekeepers still persecute it illegally in parts of Britain, and Finland paid a bounty for ravens from the mid-18th century until 1923. Elsewhere ravens have boomed alongside people.\n\nIn the western Mojave Desert, towns, landfills and roads helped the population grow about 16-fold in 25 years, and the birds now threaten young desert tortoises, prompting shooting, trapping and efforts to cover rubbish. Limited culling in Alaska aims to protect the vulnerable Steller's eider.",
+    "people": "Few birds loom so large in human stories. To the Tlingit and Haida, Raven was a trickster and creator, and in Siberian legend the raven god Kutkh made the Kamchatka Peninsula.\n\nIn Norse myth the ravens Huginn and Muninn flew over the world to bring news to Odin, and in Jewish, Christian and Islamic tradition the raven was the first animal Noah released from the Ark. In parts of Europe, though, its black plumage and taste for carrion made it a bird of ill omen.\n\nThe raven is the national bird of Bhutan, whose kings wear the Raven Crown, and the official bird of the Yukon. The legend that England will fall if the Tower of London's ravens leave is probably a Victorian invention. A group of ravens is called an unkindness or a conspiracy.",
+    "relatives": "Carl Linnaeus named the raven in 1758, and it is the type species of the genus Corvus. Both names simply mean 'raven', corvus in Latin and corax in Greek. Most authorities recognise 11 subspecies, and it shares the title of largest corvid with the thick-billed raven.\n\nIts closest relatives are the brown-necked raven, the pied crow of Africa and the Chihuahuan raven. Genetic studies reveal a surprise: ravens of the southwestern United States form a separate lineage that split off about 2 million years ago and is closer to the Chihuahuan raven than to other common ravens, though the two groups can still interbreed.",
+    "didYouKnow": "Ravens often steal shiny objects such as golf balls, perhaps because young birds are drawn to bright, round things that resemble eggs.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "54–71 cm"
+      },
+      {
+        "label": "Wingspan",
+        "value": "116–153 cm"
+      },
+      {
+        "label": "Weight",
+        "value": "0.69–2.25 kg"
+      },
+      {
+        "label": "Wild lifespan",
+        "value": "Typically 10–15 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Which two ravens brought news to the Norse god Odin?",
+        "choices": [
+          "Huginn and Muninn",
+          "Brân and Morrígan",
+          "Kutkh and Corbie",
+          "Geri and Freki, the twin storm birds of the north"
+        ],
+        "explanation": "In Norse myth, Huginn and Muninn flew over the world to report to Odin."
+      },
+      {
+        "prompt": "In the string-pulling test, what did ravens have to do?",
+        "choices": [
+          "Pull up hanging meat",
+          "Count pebbles",
+          "Open a puzzle box",
+          "Fly through a maze of mirrors to reach a hidden nest of eggs"
+        ],
+        "explanation": "Four of five ravens worked out how to haul up meat hanging on a string."
+      },
+      {
+        "prompt": "Who incubates a raven's eggs?",
+        "choices": [
+          "The female",
+          "The male",
+          "Both parents in turn",
+          "Young birds from the previous year's brood"
+        ],
+        "explanation": "The female incubates alone for 18 to 21 days while the male shelters the young."
+      }
+    ],
+    "charities": [
+      {
+        "name": "RSPB",
+        "url": "https://www.rspb.org.uk",
+        "blurb": "The UK's largest nature conservation charity, protecting birds and their habitats."
+      },
+      {
+        "name": "National Audubon Society",
+        "url": "https://www.audubon.org",
+        "blurb": "Protects birds and the places they need across the Americas."
+      }
+    ]
+  },
+  {
+    "id": "goblin-shark",
+    "name": "Goblin Shark",
+    "scientificName": "Mitsukurina owstoni",
+    "wikipediaTitle": "Goblin shark",
+    "group": "fish",
+    "regions": [
+      "openOcean",
+      "asia"
+    ],
+    "range": "Deep continental slopes, canyons and seamounts worldwide",
+    "status": "LC",
+    "coordinate": {
+      "latitude": 33.0,
+      "longitude": 137.0
+    },
+    "mapSpan": 40,
+    "tagline": "A pink deep-sea shark with catapulting jaws",
+    "lede": "The goblin shark is pink, flabby and armed with a long, flat snout like a blade. When a meal drifts close, its whole mouth shoots out from under its head to snatch it, then folds neatly back out of sight.",
+    "home": "Goblin sharks have been caught in all three major oceans. In the Atlantic they are known from the Gulf of Mexico, Suriname, French Guiana and Brazil, and from France, Portugal, Madeira and Senegal, as well as seamounts along the Mid-Atlantic Ridge. In the Indo-Pacific they turn up off South Africa, Mozambique, Japan, Taiwan, Australia and New Zealand, and a single specimen is known from southern California.\n\nMost are found over the upper continental slope at 270 to 960 metres. One was caught at 1,300 metres, a tooth was found stuck in an undersea cable at 1,370 metres, and an adult was filmed at 2,000 metres in 2024. Juveniles live shallower, in submarine canyons off southern Japan at 100 to 350 metres.",
+    "anatomy": "Adults usually measure 3 to 4 metres, but a huge female caught in 2000 was estimated at 5.4 to 6.2 metres. A heavily pregnant female 4.7 metres long, landed in Taiwan in 2023, weighed 800 kg. The skin is soft and semi-translucent, and pink or tan because blood vessels show through it; young sharks can be almost white, and after death the colour quickly fades to grey or brown.\n\nThe snout gets proportionally shorter with age. The front teeth are long, narrow and finely grooved, while those at the back are flattened for crushing. The body is slender and flabby, with small, rounded fins, weak muscles and a poorly calcified skeleton, all signs of a slow, sluggish swimmer.",
+    "life": "The goblin shark hunts deep-sea fish such as rattails and dragonfishes, along with squid and crustaceans, foraging both near the seafloor and high above it. Garbage has turned up in some stomachs. Its snout is lined with ampullae of Lorenzini, sensors that pick up the faint electric fields of other animals.\n\nThe snout is too soft to dig with, and the shark seems to rely little on sight, although, unlike most deep-sea sharks, it can change the size of its pupils. A low-density body and a large, oily liver make it neutrally buoyant, so it can drift towards prey with barely a twitch, probably ambushing rather than chasing. Blue sharks may prey on it.",
+    "family": "Almost nothing is known about how goblin sharks breed, and mating has never been seen. In 2023 fishermen in Taiwan caught a pregnant female carrying 6 pups. Like other mackerel sharks, the species probably gives birth to live young in small litters, with embryos nourished by eating unfertilised eggs in the womb.\n\nNewborns are probably close to 82 centimetres long, the size of the smallest specimen ever found. Males mature at about 2.6 metres, while the size at which females mature is unknown. Some researchers estimate that males take about 16 years to mature and that the sharks can live for up to 60 years.",
+    "remarkable": "The jaws are spring-loaded. Two pairs of elastic ligaments are pulled taut when the mouth is retracted, and when the shark bites they release and catapult the jaws forward almost to the end of the snout, while the floor of the mouth drops to suck in water.\n\nFirst recorded striking prey in 2008 and 2011, the jaws proved 2.1 to 9.5 times more protrusible than those of other sharks.",
+    "outlook": "The IUCN assesses the goblin shark as Least Concern. It has a wide range, few adults are ever caught, and most of the population is thought to live in waters that are not fished. No fishery targets it, but it is taken now and then as bycatch in gillnets, trawls and longlines.\n\nOff southern Japan about 30, mostly juveniles, are caught each year, and a fishery for black scabbardfish off Madeira takes 2 or 3. In April 2003 more than a hundred were caught off northwestern Taiwan, shortly after a major earthquake. The species had never been recorded there before and has not been seen in such numbers since.",
+    "people": "The goblin shark was described in 1898 by the American ichthyologist David Starr Jordan, from a 107 centimetre young male caught in Sagami Bay near Yokohama. The specimen passed from the shipmaster and naturalist Alan Owston to Professor Kakichi Mitsukuri of the University of Tokyo, and Jordan named the shark after both men.\n\nIts common name translates the Japanese tenguzame, after the tengu, a long-nosed, red-faced creature of Japanese myth. It is also called the elfin shark. It poses no known danger to people. The few kept alive in aquariums survived only briefly, one for a week at Tokai University and another for two days at Tokyo Sea Life Park.\n\nIts meat may be dried and salted, its jaws fetch high prices from collectors, and the Japanese once used it for liver oil and fertiliser.",
+    "relatives": "The goblin shark is the only living member of the family Mitsukurinidae, a lineage around 125 million years old, and it is often called a living fossil. Studies of both anatomy and genes place it as the most primitive member of the mackerel sharks, the order Lamniformes.\n\nFor a time it was lumped with the extinct shark Scapanorhynchus, until better fossils showed the two were distinct. Several goblin sharks described as new species between 1904 and 1937 turned out to be the same species, their jaws simply preserved at different degrees of extension.",
+    "didYouKnow": "Parasites recorded from the goblin shark include a copepod called Echthrogaleus mitsukurinae and a tapeworm called Marsupiobothrium gobelinus.",
+    "facts": [
+      {
+        "label": "Length",
+        "value": "Usually 3–4 m"
+      },
+      {
+        "label": "Depth",
+        "value": "Mostly 270–960 m"
+      },
+      {
+        "label": "Diet",
+        "value": "Fish, squid, crustaceans"
+      },
+      {
+        "label": "Lifespan",
+        "value": "Possibly up to 60 years"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "Where does the name 'goblin shark' come from?",
+        "choices": [
+          "A long-nosed Japanese spirit",
+          "Its green skin",
+          "A Norse sea monster",
+          "A sailor's tale of a shark that stole fishing nets"
+        ],
+        "explanation": "It translates the Japanese tenguzame, after the long-nosed tengu."
+      },
+      {
+        "prompt": "Why is a living goblin shark pink?",
+        "choices": [
+          "Blood vessels show through its skin",
+          "It eats pink shrimp",
+          "Bacteria",
+          "Its diet of red crustaceans slowly stains the skin over many years"
+        ],
+        "explanation": "Its skin is semi-translucent, so blood vessels give it a pink colour."
+      },
+      {
+        "prompt": "What helps the goblin shark sense prey in the dark?",
+        "choices": [
+          "Electric sensors on its snout",
+          "Huge eyes",
+          "Whiskers",
+          "A glowing lure dangling from the tip of its long snout"
+        ],
+        "explanation": "Its snout is lined with ampullae of Lorenzini, which detect electric fields."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Shark Trust",
+        "url": "https://www.sharktrust.org",
+        "blurb": "Works to safeguard sharks, skates and rays through science, education and policy."
+      },
+      {
+        "name": "Oceana",
+        "url": "https://oceana.org",
+        "blurb": "Campaigns to reduce bycatch and protect marine life worldwide."
+      }
+    ]
+  },
+  {
+    "id": "western-honey-bee",
+    "name": "Western Honey Bee",
+    "scientificName": "Apis mellifera",
+    "wikipediaTitle": "Western honey bee",
+    "group": "insect",
+    "regions": [
+      "europe",
+      "africa",
+      "asia"
+    ],
+    "range": "Native to Africa, the Middle East and Europe; kept worldwide",
+    "status": "DD",
+    "coordinate": {
+      "latitude": 30.0,
+      "longitude": 20.0
+    },
+    "mapSpan": 80,
+    "tagline": "The dancing insect that pollinates our crops",
+    "lede": "A western honey bee colony can hold tens of thousands of bees, nearly all daughters of a single queen, working together so closely that the hive behaves like one living thing. People have gathered its honey for thousands of years, and today it pollinates a large share of the world's crops.",
+    "home": "The species probably originated in Africa or Asia and spread naturally through Africa, the Middle East and Europe. People then carried European subspecies to North America in the early 1600s, and later to South America, Australia, New Zealand and eastern Asia, so it now lives on every continent except Antarctica.\n\nAs it spread, it adapted to local conditions, timing its colony cycle to local flowers, forming tight winter clusters in cold climates, swarming long distances in Africa and foraging harder in deserts. Its subspecies fall into four branches: African, northwestern European, southeastern European and Middle Eastern. Wild colonies nest in cavities such as hollow tree trunks.",
+    "anatomy": "A colony has three kinds of bee. The queen is larger than the workers, with a rounder, longer abdomen and a fully developed reproductive system. Workers are smaller, infertile females. Drones, the males, are about 1.5 times the size of workers and have no sting. A honey bee needs a body temperature of 35 °C to fly, and it warms its flight muscles by shivering.\n\nIt can forage across a 30 °C range of air temperatures, but becomes immobile below about 7 to 10 °C. In hot weather it cools off by regurgitating a droplet of fluid, which lowers the temperature of its head by 10 °C, and it can survive 50 °C for short periods.",
+    "life": "A worker's job changes with age. For its first 10 days it cleans the hive and feeds larvae, then it builds comb, from days 16 to 20 it stores food brought in by others, and after day 20 it flies out to forage for the rest of its life.\n\nIn midsummer a healthy hive may hold 40,000 to 80,000 bees. Workers evaporate nectar into honey and seal it under wax, and the colony lives on these stores through winter. Foragers share news through dance, as Karl von Frisch showed, winning the 1973 Nobel Prize.\n\nA round dance means food lies within 50 metres of the hive, while the waggle dance gives both distance and direction. Bees also use a shaking signal to rouse or calm nestmates, and they rely on pheromones for almost everything, from alarm to recognising their colony.",
+    "family": "The colony reproduces by swarming. In spring and early summer the hive raises 1 or 2 dozen new queens, and just before they emerge the old queen leaves with about two-thirds of the workers to found a new home. The daughter queens 'pipe', then fight until one survives.\n\nShe makes one or more mating flights, meeting drones about 9 metres up at a drone congregation area and mating with up to 17 each time, then returns to lay eggs, sometimes more than 2,500 in a day. Whether a female larva becomes a queen or a worker depends on diet: both get royal jelly at first, but only future queens keep receiving it.\n\nEach bee spends about a week as a larva and another as a pupa. Queens live 3 to 5 years, summer workers only a few weeks and autumn workers several months, while drones die after mating or are driven out to starve before winter.",
+    "remarkable": "Only worker western honey bees have a barbed sting. When it lodges in elastic skin, the sting tears free along with its venom sac, muscles and a nerve centre that keep pumping venom after the bee has gone.\n\nThat is why a bee usually dies after stinging a mammal. Yet the barbs often fail to catch in other targets, and the bee can pull free and sting again.",
+    "outlook": "As of 2025 the western honey bee is listed as Data Deficient on the IUCN Red List. Varroa mites devastated colonies in North America and Europe in the early 1990s, and American beekeepers were hit again by colony collapse disorder in 2006 and 2007. Feral colonies are slowly recovering in mild climates as natural selection favours mite-resistant bees.\n\nOutside its native range, the bee can be a problem in its own right. It may compete with native bees and help spread invasive plants; a 2025 study in San Diego County found it made up around 98% of the local bee biomass. In North America many die stuck in milkweed flowers, which they are not adapted to handle.",
+    "people": "Rock art in France and Spain shows people collecting honey around 7,000 BCE, and tomb paintings show that Egyptians kept bees before 2600 BC. Beekeepers have since selected bees that survive cold and lean times, resist disease, make more honey and swarm less, though scientists still argue over whether the bee is truly domesticated.\n\nSettlers brought it to North America in 1622, and according to Thomas Jefferson, Native Americans called it the white man's fly. Pollination is its greatest gift.\n\nIn 2005 its commercial value was estimated at just under 200 billion US dollars worldwide. Almond pollination in California each February is the largest managed pollination event in the world, using more than a third of all managed honey bees in the United States. Hives also yield beeswax, propolis, royal jelly and pollen.",
+    "relatives": "Apis is Latin for 'bee', and mellifera means 'honey-bearing'. The western honey bee is the most common of the 7 to 12 species of honey bee. The others in the genus, such as Apis cerana, Apis dorsata and the dwarf honey bees, all originated in southern and southeastern Asia.\n\nCompared with its dwarf relatives, the western honey bee varies the precision of its waggle dance to signal the kind of site it has found, suggesting it has evolved a better way of sharing information than their common ancestor.",
+    "didYouKnow": "Bee brood, the eggs, larvae and pupae of honey bees, contains as much protein as beef or poultry.",
+    "facts": [
+      {
+        "label": "Colony size",
+        "value": "40,000–80,000 in midsummer"
+      },
+      {
+        "label": "Queen lifespan",
+        "value": "3–5 years"
+      },
+      {
+        "label": "Eggs",
+        "value": "Over 2,500 a day at peak"
+      },
+      {
+        "label": "Diet",
+        "value": "Nectar and pollen"
+      }
+    ],
+    "quiz": [
+      {
+        "prompt": "What does the round dance tell other foragers?",
+        "choices": [
+          "Food is within 50 metres",
+          "Where water is",
+          "A predator is near",
+          "The queen has died and a new one must be raised"
+        ],
+        "explanation": "The round dance signals food close to the hive; the waggle dance gives distance and direction."
+      },
+      {
+        "prompt": "What food turns a female larva into a queen?",
+        "choices": [
+          "Royal jelly",
+          "Bee bread",
+          "Honey",
+          "Propolis mixed with nectar from rare flowers"
+        ],
+        "explanation": "Future queens keep getting royal jelly, while future workers switch to bee bread."
+      },
+      {
+        "prompt": "What happens to most drones before winter in temperate regions?",
+        "choices": [
+          "They're driven out",
+          "They hibernate",
+          "They become workers",
+          "They fly south in large swarms to warmer countries"
+        ],
+        "explanation": "Drones cannot forage or care for themselves, so they are expelled and die."
+      }
+    ],
+    "charities": [
+      {
+        "name": "Xerces Society",
+        "url": "https://xerces.org",
+        "blurb": "Protects pollinators and other invertebrates and the habitats they depend on."
+      },
+      {
+        "name": "Buglife",
+        "url": "https://www.buglife.org.uk",
+        "blurb": "Works to save the invertebrates that underpin healthy ecosystems."
+      }
+    ]
   }
 ]
