@@ -21,6 +21,28 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Nur01521_-_Flickr_-_NOAA_Photo_Library.jpg",
   "width": 1820
  },
+ "American marten": {
+  "credit": {
+   "author": "Bailey Parsons",
+   "file": "Newfoundland_Pine_Marten.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Newfoundland_Pine_Marten.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Newfoundland_Pine_Marten.jpg",
+  "width": 960
+ },
+ "American pika": {
+  "credit": {
+   "author": "sevenstar",
+   "file": "Ochotona_princeps_rockies.JPG",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Ochotona_princeps_rockies.JPG"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ochotona_princeps_rockies.JPG",
+  "width": 1313
+ },
  "Anax junius": {
   "credit": {
    "author": "JeffreyGammon",
@@ -109,6 +131,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Wild_aye_aye.jpg",
   "width": 5184
  },
+ "Bald eagle": {
+  "credit": {
+   "author": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+   "file": "Bald_eagle_about_to_fly_in_Alaska_(2016).jpg",
+   "license": "CC BY 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Bald_eagle_about_to_fly_in_Alaska_(2016).jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/db/Bald_eagle_about_to_fly_in_Alaska_%282016%29.jpg",
+  "width": 4007
+ },
  "Beluga whale": {
   "credit": {
    "author": "Javier Yaya Tur / CIUDAD DE LAS ARTES Y LAS CIENCIAS from Valencia, España",
@@ -119,6 +152,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Oceanogr%C3%A0fic_29102004.jpg",
   "width": 1925
+ },
+ "Black-footed ferret": {
+  "credit": {
+   "author": "USFWS Mountain Prairie",
+   "file": "Mustela_nigripes_2.jpg",
+   "license": "Public domain",
+   "licenseURL": null,
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Mustela_nigripes_2.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Mustela_nigripes_2.jpg",
+  "width": 722
  },
  "Blanding's turtle": {
   "credit": {
@@ -252,6 +296,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Snapping_Turtle_Heinz.png",
   "width": 8192
  },
+ "Coyote": {
+  "credit": {
+   "author": "Yathin S Krishnappa",
+   "file": "2009-Coyote-Yosemite.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:2009-Coyote-Yosemite.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/9c/2009-Coyote-Yosemite.jpg",
+  "width": 565
+ },
  "Dhole": {
   "credit": {
    "author": "Davidvraju",
@@ -383,6 +438,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/5/54/Hoatzin_%28Opisthocomus_hoazin%29_Rio_Napo.jpg",
   "width": 2501
+ },
+ "Humpback whale": {
+  "credit": {
+   "author": "Juan Cruzado Cortés",
+   "file": "Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
+   "license": "CC BY 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Humpback_whale_breaching_off_Cabo_San_Lucas.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Humpback_whale_breaching_off_Cabo_San_Lucas.jpg",
+  "width": 1846
  },
  "Hyalinobatrachium valerioi": {
   "credit": {
@@ -637,6 +703,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Odontodactylus_scyllarus_R%C3%A9union.jpg",
   "width": 5290
  },
+ "Peregrine falcon": {
+  "credit": {
+   "author": "Mykola Swarnyk",
+   "file": "Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg",
+  "width": 1446
+ },
  "Photinus pyralis": {
   "credit": {
    "author": "art farmer from evansville indiana, usa",
@@ -714,6 +791,17 @@
   "original": "https://upload.wikimedia.org/wikipedia/commons/5/57/Saiga_antelope_at_the_Stepnoi_Sanctuary.jpg",
   "width": 2449
  },
+ "Sea otter": {
+  "credit": {
+   "author": "Marshal Hedin from San Diego",
+   "file": "Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg",
+   "license": "CC BY-SA 2.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/2.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Sea_Otter_(Enhydra_lutris)_(25169790524)_crop.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/0/02/Sea_Otter_%28Enhydra_lutris%29_%2825169790524%29_crop.jpg",
+  "width": 922
+ },
  "Secretarybird": {
   "credit": {
    "author": "Sumeet Moghe",
@@ -746,6 +834,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Irbis4.JPG",
   "width": 1575
+ },
+ "Snowy owl": {
+  "credit": {
+   "author": "Chuck Homler d/b/a Focus On Wildlife",
+   "file": "SnowyOwlAmericanBlackDuck.jpg",
+   "license": "CC BY-SA 3.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:SnowyOwlAmericanBlackDuck.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/f/f1/SnowyOwlAmericanBlackDuck.jpg",
+  "width": 2319
  },
  "Spring peeper": {
   "credit": {
@@ -812,6 +911,17 @@
   },
   "original": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Vampyroteuthis_illustration.jpg",
   "width": 675
+ },
+ "Walrus": {
+  "credit": {
+   "author": "Nixette",
+   "file": "Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg",
+   "license": "CC BY-SA 4.0",
+   "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0",
+   "pageURL": "https://commons.wikimedia.org/wiki/File:Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg"
+  },
+  "original": "https://upload.wikimedia.org/wikipedia/commons/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg",
+  "width": 5472
  },
  "Wandering albatross": {
   "credit": {
