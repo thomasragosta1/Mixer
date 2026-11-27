@@ -76,13 +76,34 @@ struct SizeComparisonView: View {
             let animalSpan = animalVertical ? aw : v
             let rw = ref.upright ? rs * CGFloat(ref.aspect) : rs
             let rh = ref.upright ? rs : rs / CGFloat(ref.aspect)
+            // Heights compare best side by side on one ground line; lengths stacked from one edge.
+            if animalVertical || ref.upright {
+                let gap: CGFloat = 32
+                let sideScale = min((geo.size.width - gap - 70) / (max(aw, animalSpan) + rw), 170 / max(ah, rh))
+                return AnyView(HStack(alignment: .top, spacing: gap) {
+                    standing(drawW: aw * sideScale, drawH: ah * sideScale, span: animalSpan * sideScale,
+                             vertical: animalVertical, guides: comparison.dimension != .wingspan,
+                             value: "\(store.measured(comparison.valueText)) \(animalMeasure)", name: animal.name) {
+                        animalShape
+                    }
+                    standing(drawW: rw * sideScale, drawH: rh * sideScale, span: rw * sideScale,
+                             vertical: ref.upright, guides: true,
+                             value: "\(store.measured(comparison.referenceText)) \(ref.measure)", name: capitalised(ref.name)) {
+                        Image(systemName: ref.symbol).resizable().foregroundStyle(.secondary)
+                    }
+                    Spacer(minLength: 0)
+                }
+                .background(alignment: .topLeading) {
+                    Rectangle().fill(.tertiary).frame(height: 1.5).offset(y: 180)
+                })
+            }
             let labelWidth: CGFloat = 112
             let drawWidth = geo.size.width - labelWidth - 12
             let scale = min(drawWidth / max(aw, animalSpan, rw), 120 / max(ah, rh))
             let shorter = min(max(aw, animalSpan), rw) * scale
             // Only meaningful when both are measured end to end.
             let showDash = !animalVertical && !ref.upright
-            return VStack(alignment: .leading, spacing: 22) {
+            return AnyView(VStack(alignment: .leading, spacing: 22) {
                 row(drawW: aw * scale, drawH: ah * scale, span: animalSpan * scale, vertical: animalVertical,
                     guides: comparison.dimension != .wingspan, drawWidth: drawWidth, labelWidth: labelWidth,
                     value: "\(store.measured(comparison.valueText)) \(animalMeasure)", name: animal.name) {
@@ -106,9 +127,59 @@ struct SizeComparisonView: View {
                         .frame(width: 1)
                         .offset(x: shorter)
                 }
-            }
+            })
         }
-        .frame(height: 330)
+        .frame(height: 300)
+    }
+
+    /// An item standing on the shared ground line (side-by-side layout): the drawing with its
+    /// measuring arrow, then the measurement and name underneath.
+    private func standing<S: View>(drawW: CGFloat, drawH: CGFloat, span: CGFloat, vertical: Bool, guides: Bool,
+                                   value: String, name: String, @ViewBuilder shape: () -> S) -> some View {
+        let w = max(drawW, 4), h = max(drawH, 4)
+        let dash = StrokeStyle(lineWidth: 1, dash: [3, 3])
+        return VStack(alignment: .leading, spacing: 0) {
+            HStack(alignment: .bottom, spacing: 0) {
+                shape().frame(width: w, height: h)
+                if vertical {
+                    ZStack(alignment: .leading) {
+                        if guides {
+                            VStack(spacing: 0) {
+                                Line(horizontal: true).stroke(style: dash).frame(height: 1)
+                                Spacer(minLength: 0)
+                                Line(horizontal: true).stroke(style: dash).frame(height: 1)
+                            }
+                            .frame(width: 14, height: h)
+                        }
+                        DimensionArrow(axis: .vertical).frame(width: 8, height: h).offset(x: 10)
+                    }
+                    .frame(width: 22, height: h, alignment: .leading)
+                    .foregroundStyle(.secondary)
+                }
+            }
+            .frame(height: 180, alignment: .bottomLeading)
+            VStack(alignment: .leading, spacing: 4) {
+                if !vertical {
+                    ZStack(alignment: .topLeading) {
+                        if guides {
+                            HStack(spacing: 0) {
+                                Line().stroke(style: dash).frame(width: 1)
+                                Spacer(minLength: 0)
+                                Line().stroke(style: dash).frame(width: 1)
+                            }
+                            .frame(width: max(span, 8), height: 10)
+                        }
+                        DimensionArrow(axis: .horizontal).frame(width: max(span, 8), height: 8).offset(y: 6)
+                    }
+                    .frame(height: 16, alignment: .topLeading)
+                    .foregroundStyle(.secondary)
+                }
+                Text(value).font(.subheadline.weight(.semibold))
+                Text(name).font(.caption).foregroundStyle(.secondary).lineLimit(2)
+            }
+            .padding(.top, 6)
+        }
+        .frame(minWidth: 90, alignment: .leading)
     }
 
     /// One item with its measurement drawn on it: the shape spans exactly the measured length,
