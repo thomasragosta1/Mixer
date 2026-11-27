@@ -329,14 +329,15 @@ final class StoreTests: XCTestCase {
     func testMissedDaysDontPileUp() {
         let store = onboarded()
         let monday = store.state.journal.count
+        let noon = Calendar.current.startOfDay(for: .now).addingTimeInterval(12 * 3600)
         // Skip Tuesday entirely; open on Wednesday: one new animal, not one for Tuesday too.
-        store.refreshDay(now: Date().addingTimeInterval(2 * 86_400))
+        store.refreshDay(now: noon.addingTimeInterval(2 * 86_400))
         XCTAssertEqual(store.state.journal.count, monday + 1)
         // A week away still brings just one.
-        store.refreshDay(now: Date().addingTimeInterval(9 * 86_400))
+        store.refreshDay(now: noon.addingTimeInterval(9 * 86_400))
         XCTAssertEqual(store.state.journal.count, monday + 2)
         // Opening several times on the same day changes nothing.
-        store.refreshDay(now: Date().addingTimeInterval(9 * 86_400 + 60))
+        store.refreshDay(now: noon.addingTimeInterval(9 * 86_400 + 3600))
         XCTAssertEqual(store.state.journal.count, monday + 2)
         XCTAssertEqual(store.todayAnimals.count, 1)
         assertConsistent(store)
