@@ -58,6 +58,8 @@ struct SizeComparisonView: View {
         }
     }
 
+    /// The animal above the familiar object, both starting from the same edge at the same scale,
+    /// each with a measuring arrow and its measurement on the right.
     private var lengthPicture: some View {
         GeometryReader { geo in
             let ref = comparison.reference
@@ -72,57 +74,67 @@ struct SizeComparisonView: View {
             let animalSpan = animalVertical ? aw : v
             let rw = ref.upright ? rs * CGFloat(ref.aspect) : rs
             let rh = ref.upright ? rs : rs / CGFloat(ref.aspect)
-            let gap: CGFloat = 28
-            let scale = min((geo.size.width - gap - 24) / (max(aw, animalSpan) + rw), 160 / max(ah, rh))
-            return ZStack(alignment: .topLeading) {
-                Rectangle().fill(.tertiary)
-                    .frame(width: geo.size.width, height: 1.5)
-                    .offset(y: 180)
-                HStack(alignment: .top, spacing: gap) {
-                    column(drawW: aw * scale, drawH: ah * scale, span: animalSpan * scale, vertical: animalVertical,
-                           value: "\(store.measured(comparison.valueText)) \(animalMeasure)", name: animal.name) {
-                        animalShape
-                    }
-                    column(drawW: rw * scale, drawH: rh * scale, span: rw * scale, vertical: ref.upright,
-                           value: "\(store.measured(comparison.referenceText)) \(ref.measure)", name: capitalised(ref.name)) {
-                        Image(systemName: ref.symbol)
-                            .resizable()
-                            .foregroundStyle(.secondary)
-                    }
-                    Spacer(minLength: 0)
+            let labelWidth: CGFloat = 112
+            let drawWidth = geo.size.width - labelWidth - 12
+            let scale = min(drawWidth / max(aw, animalSpan, rw), 120 / max(ah, rh))
+            let shorter = min(max(aw, animalSpan), rw) * scale
+            // Only meaningful when both are measured end to end.
+            let showDash = !animalVertical && !ref.upright
+            return VStack(alignment: .leading, spacing: 22) {
+                row(drawW: aw * scale, drawH: ah * scale, span: animalSpan * scale, vertical: animalVertical,
+                    drawWidth: drawWidth, labelWidth: labelWidth,
+                    value: "\(store.measured(comparison.valueText)) \(animalMeasure)", name: animal.name) {
+                    animalShape
                 }
-            }
-        }
-        .frame(height: 260)
-    }
-
-    /// One item standing on the ground line: the drawing, a measuring arrow (beside it for a
-    /// height, under it for a length), then its measurement and name.
-    private func column<S: View>(drawW: CGFloat, drawH: CGFloat, span: CGFloat, vertical: Bool,
-                                 value: String, name: String, @ViewBuilder shape: () -> S) -> some View {
-        let width = max(drawW + (vertical ? 12 : 0), span, 96)
-        return VStack(alignment: .leading, spacing: 0) {
-            HStack(alignment: .bottom, spacing: 4) {
-                shape().frame(width: max(drawW, 4), height: max(drawH, 4))
-                if vertical {
-                    DimensionArrow(axis: .vertical)
-                        .frame(width: 8, height: max(drawH, 4))
+                row(drawW: rw * scale, drawH: rh * scale, span: rw * scale, vertical: ref.upright,
+                    drawWidth: drawWidth, labelWidth: labelWidth,
+                    value: "\(store.measured(comparison.referenceText)) \(ref.measure)", name: capitalised(ref.name)) {
+                    Image(systemName: ref.symbol)
+                        .resizable()
                         .foregroundStyle(.secondary)
                 }
             }
-            .frame(width: width, height: 180, alignment: .bottomLeading)
-            VStack(alignment: .leading, spacing: 4) {
+            .background(alignment: .topLeading) {
+                // Both start on this line; the dashed one shows where the shorter one ends.
+                Rectangle().fill(.tertiary).frame(width: 1.5)
+                if showDash {
+                    Line()
+                        .stroke(style: StrokeStyle(lineWidth: 1, dash: [4, 4]))
+                        .foregroundStyle(.tertiary)
+                        .frame(width: 1)
+                        .offset(x: shorter)
+                }
+            }
+        }
+        .frame(height: 330)
+    }
+
+    private func row<S: View>(drawW: CGFloat, drawH: CGFloat, span: CGFloat, vertical: Bool,
+                              drawWidth: CGFloat, labelWidth: CGFloat,
+                              value: String, name: String, @ViewBuilder shape: () -> S) -> some View {
+        HStack(alignment: .bottom, spacing: 12) {
+            VStack(alignment: .leading, spacing: 6) {
+                HStack(alignment: .bottom, spacing: 4) {
+                    shape().frame(width: max(drawW, 4), height: max(drawH, 4))
+                    if vertical {
+                        DimensionArrow(axis: .vertical)
+                            .frame(width: 8, height: max(drawH, 4))
+                            .foregroundStyle(.secondary)
+                    }
+                }
                 if !vertical {
                     DimensionArrow(axis: .horizontal)
                         .frame(width: max(span, 8), height: 8)
                         .foregroundStyle(.secondary)
                 }
+            }
+            .frame(width: drawWidth, alignment: .bottomLeading)
+            VStack(alignment: .leading, spacing: 2) {
                 Text(value).font(.subheadline.weight(.semibold))
                 Text(name).font(.caption).foregroundStyle(.secondary).lineLimit(2)
             }
-            .padding(.top, 8)
+            .frame(width: labelWidth, alignment: .leading)
         }
-        .frame(width: width, alignment: .leading)
     }
 
     // MARK: Weight
@@ -197,6 +209,16 @@ struct SizeComparisonView: View {
     }
 
     private func capitalised(_ s: String) -> String { s.prefix(1).uppercased() + s.dropFirst() }
+}
+
+/// A vertical line down the middle of its frame.
+private struct Line: Shape {
+    func path(in r: CGRect) -> Path {
+        var p = Path()
+        p.move(to: CGPoint(x: r.midX, y: r.minY))
+        p.addLine(to: CGPoint(x: r.midX, y: r.maxY))
+        return p
+    }
 }
 
 /// A measuring line with arrowheads at both ends.
