@@ -208,7 +208,7 @@ final class MoreUITests: XCTestCase {
     func testJournalCanShowOnlyQuizzesToTake() {
         // In the demo, the puffin's quiz was never taken and the axolotl's was passed.
         let app = launch(["-FaunaDemo", "-FaunaTab", "journal"])
-        let toTake = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Quiz to take'")).firstMatch
+        let toTake = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'To take'")).firstMatch
         XCTAssertTrue(toTake.waitForExistence(timeout: 10), "the filter sits above the journal")
         toTake.tap()
         XCTAssertTrue(scroll(app, to: button(app, "Atlantic Puffin,")), "an untaken quiz stays listed")
@@ -217,6 +217,18 @@ final class MoreUITests: XCTestCase {
         for _ in 0..<12 { app.swipeDown() }
         app.buttons["All"].tap()
         XCTAssertTrue(scroll(app, to: button(app, "Axolotl,")), "All shows it again")
+    }
+
+    func testJournalCanShowOnlyCompletedQuizzes() {
+        let app = launch(["-FaunaDemo", "-FaunaTab", "journal"])
+        let completed = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Completed'")).firstMatch
+        XCTAssertTrue(completed.waitForExistence(timeout: 10))
+        completed.tap()
+        let axolotl = button(app, "Axolotl,")
+        XCTAssertTrue(scroll(app, to: axolotl), "a passed quiz is listed")
+        XCTAssertTrue(axolotl.label.contains("quiz passed"), "and announced as passed")
+        for _ in 0..<8 { app.swipeUp() }
+        XCTAssertFalse(button(app, "Atlantic Puffin,").exists, "an untaken quiz is hidden")
     }
 
     /// In the two-column journal, a tap at the very edge of a card must open that card's animal,

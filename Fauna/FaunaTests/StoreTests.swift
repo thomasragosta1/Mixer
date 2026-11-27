@@ -294,9 +294,11 @@ final class StoreTests: XCTestCase {
         s.quizPassedIDs = ["okapi"]
         store.state = s
         XCTAssertEqual(store.quizzesToTake.map(\.animal.id), ["platypus", "axolotl"])
+        XCTAssertEqual(store.quizzesCompleted.map(\.animal.id), ["okapi"])
         s.quizPassedIDs = ["okapi", "axolotl", "platypus"]
         store.state = s
         XCTAssertTrue(store.quizzesToTake.isEmpty)
+        XCTAssertEqual(store.quizzesCompleted.count, 3)
     }
 
     func testDayKeyIsZeroPadded() {

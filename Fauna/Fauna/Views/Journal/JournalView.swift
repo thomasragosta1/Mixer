@@ -16,18 +16,19 @@ struct JournalView: View {
                             Eyebrow("Animals you've met")
                             Picker("Show", selection: $filter) {
                                 Text("All").tag(JournalFilter.all)
-                                Text("Quiz to take (\(store.quizzesToTake.count))").tag(JournalFilter.quizToTake)
+                                Text("To take (\(store.quizzesToTake.count))").tag(JournalFilter.quizToTake)
+                                Text("Completed (\(store.quizzesCompleted.count))").tag(JournalFilter.completed)
                             }
                             .pickerStyle(.segmented)
                             .accessibilityIdentifier("journal.filter")
                             if filter == .quizToTake && store.quizzesToTake.isEmpty {
-                                Label("You've passed every quiz so far.", systemImage: "checkmark.seal.fill")
-                                    .font(.subheadline)
-                                    .foregroundStyle(.secondary)
-                                    .padding(.vertical, 8)
+                                emptyNote("You've passed every quiz so far.", symbol: "checkmark.seal.fill")
+                            }
+                            if filter == .completed && store.quizzesCompleted.isEmpty {
+                                emptyNote("Pass an animal's quiz to earn its gold seal.", symbol: "rosette")
                             }
                             LazyVGrid(columns: columns, spacing: 14) {
-                                ForEach(filter == .all ? store.journalAnimals : store.quizzesToTake) { item in
+                                ForEach(shownItems) { item in
                                     if item.animal.id == store.currentAnimal?.id {
                                         // Today's animal lives on Today, where its quiz unlocks the next one.
                                         Button {
@@ -78,6 +79,21 @@ struct JournalView: View {
         }
     }
 
+    private var shownItems: [JournalItem] {
+        switch filter {
+        case .all: store.journalAnimals
+        case .quizToTake: store.quizzesToTake
+        case .completed: store.quizzesCompleted
+        }
+    }
+
+    private func emptyNote(_ text: String, symbol: String) -> some View {
+        Label(text, systemImage: symbol)
+            .font(.subheadline)
+            .foregroundStyle(.secondary)
+            .padding(.vertical, 8)
+    }
+
     private var stats: some View {
         let met = store.metIDs.count
         let total = store.library.count
@@ -109,7 +125,7 @@ struct JournalView: View {
     }
 }
 
-private enum JournalFilter: Hashable { case all, quizToTake }
+private enum JournalFilter: Hashable { case all, quizToTake, completed }
 
 private struct StatTile: View {
     let value: String
@@ -163,14 +179,8 @@ private struct JournalCard: View {
             }
             .overlay(alignment: .topTrailing) {
                 if passed {
-                    Image(systemName: "checkmark.seal.fill")
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(Color.faunaGold)
-                        .padding(7)
-                        .background(.ultraThinMaterial, in: Circle())
-                        .environment(\.colorScheme, .dark)
-                        .padding(10)
-                        .accessibilityLabel("Quiz passed")
+                    PassedSeal()
+                        .padding(9)
                 }
             }
             .overlay(alignment: .topLeading) {
@@ -182,10 +192,54 @@ private struct JournalCard: View {
                     .padding(10)
             }
             .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .overlay {
+                // A gold frame for every quiz passed, so a full journal glitters.
+                if passed {
+                    RoundedRectangle(cornerRadius: 22, style: .continuous)
+                        .strokeBorder(PassedSeal.gold, lineWidth: 2.5)
+                }
+            }
             .contentShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
             .shadow(color: .black.opacity(0.12), radius: 10, y: 6)
             .accessibilityElement(children: .combine)
-            .accessibilityLabel("\(animal.name), met \(date.formatted(date: .abbreviated, time: .omitted))")
+            .accessibilityLabel("\(animal.name), met \(date.formatted(date: .abbreviated, time: .omitted))\(passed ? ", quiz passed" : "")")
+    }
+}
+
+/// The gold seal on a journal card whose quiz has been passed: a glowing medal with a white
+/// check and a sparkle, which pops in when it first appears.
+struct PassedSeal: View {
+    static let gold = LinearGradient(
+        colors: [Color(red: 1.0, green: 0.90, blue: 0.55), Color.faunaGold, Color(red: 0.80, green: 0.55, blue: 0.12)],
+        startPoint: .topLeading, endPoint: .bottomTrailing)
+
+    @State private var shown = false
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
+    var body: some View {
+        ZStack {
+            Image(systemName: "seal.fill")
+                .font(.system(size: 34))
+                .foregroundStyle(Self.gold)
+                .shadow(color: Color.faunaGold.opacity(0.8), radius: 6)
+            Image(systemName: "seal")
+                .font(.system(size: 34, weight: .light))
+                .foregroundStyle(.white.opacity(0.7))
+            Image(systemName: "checkmark")
+                .font(.system(size: 13, weight: .black))
+                .foregroundStyle(.white)
+                .shadow(color: Color(red: 0.55, green: 0.35, blue: 0.0).opacity(0.6), radius: 1, y: 1)
+            Image(systemName: "sparkle")
+                .font(.system(size: 10, weight: .bold))
+                .foregroundStyle(.white)
+                .offset(x: 15, y: -15)
+                .opacity(shown ? 1 : 0)
+        }
+        .scaleEffect(shown || reduceMotion ? 1 : 0.4)
+        .onAppear {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.45, dampingFraction: 0.5)) { shown = true }
+        }
+        .accessibilityHidden(true)
     }
 }
 
