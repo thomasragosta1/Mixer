@@ -79,7 +79,7 @@ struct JournalView: View {
         }
     }
 
-    private var shownItems: [JournalItem] {
+    private var shownItems: [AppStore.JournalItem] {
         switch filter {
         case .all: store.journalAnimals
         case .quizToTake: store.quizzesToTake
