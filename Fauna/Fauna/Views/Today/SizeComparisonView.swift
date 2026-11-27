@@ -1,21 +1,21 @@
 import SwiftUI
 
-/// "How big is it?": the animal's silhouette, cut from its own photo, beside something
-/// familiar of known size. Lengths are drawn to scale; weights as a count of the familiar thing.
+/// "How big is it?": the animal's silhouette beside something familiar.
+/// Lengths: both drawn to the same scale on one ground line, each with an arrow showing what's
+/// measured. Weights: bars, so a lighter animal never looks bigger.
 struct SizeComparisonView: View {
     @Environment(AppStore.self) private var store
     @Environment(\.dismiss) private var dismiss
     let animal: Animal
     let comparison: SizeComparison
-    @State private var silhouette: UIImage?
-    @State private var loaded = false
 
     private var tint: Color { animal.group.color }
+    private var silhouette: UIImage? { Silhouettes.image(for: animal.id) }
 
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack(spacing: 26) {
+                VStack(spacing: 24) {
                     Text(comparison.sentence(animal: animal.name))
                         .font(FaunaFont.display(26))
                         .multilineTextAlignment(.center)
@@ -24,16 +24,18 @@ struct SizeComparisonView: View {
                     Group {
                         if comparison.kind == .length { lengthPicture } else { weightPicture }
                     }
+                    .padding(20)
                     .frame(maxWidth: .infinity)
-                    .padding(.vertical, 22)
-                    .padding(.horizontal, 16)
                     .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 26, style: .continuous))
                     .accessibilityElement(children: .ignore)
                     .accessibilityLabel(comparison.sentence(animal: animal.name))
-                    Text("Sizes are approximate, using the largest figure given. The silhouette is cut from the animal's photo.")
-                        .font(.footnote)
-                        .foregroundStyle(.secondary)
-                        .multilineTextAlignment(.center)
+                    VStack(spacing: 6) {
+                        Text("Sizes are approximate, using the largest figure given.")
+                        if let credit = Silhouettes.creditLine(for: animal.id) { Text(credit) }
+                    }
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+                    .multilineTextAlignment(.center)
                 }
                 .padding(22)
             }
@@ -42,109 +44,132 @@ struct SizeComparisonView: View {
             .toolbar {
                 ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } }
             }
-            .task {
-                silhouette = await Silhouette.make(for: animal)
-                withAnimation(.smooth) { loaded = true }
-            }
         }
     }
 
-    // MARK: Length: both drawn to the same scale on a shared ground line.
+    // MARK: Length
+
+    /// What the animal's figure measures, in words: "long", "tall", "wingspan".
+    private var animalMeasure: String {
+        switch comparison.dimension {
+        case .long: "long"
+        case .tall: "tall"
+        case .wingspan: "wingspan"
+        }
+    }
 
     private var lengthPicture: some View {
         GeometryReader { geo in
-            let width = geo.size.width
-            let animalAspect = silhouetteAspect
             let ref = comparison.reference
-            let tall = comparison.dimension == .tall
             let v = CGFloat(comparison.value), rs = CGFloat(ref.size)
-            // The animal's drawn width and height per metre of its measurement.
-            let animalW: CGFloat = tall ? animalAspect : 1
-            let animalH: CGFloat = tall ? 1 : 1 / animalAspect
-            // Metres to points, so the wider of the two fills the width and neither is too tall.
-            let refW = ref.upright ? rs * 0.3 : rs
-            let refH = ref.upright ? rs : rs * 0.45
-            let byWidth = width * 0.9 / max(v * animalW, refW)
-            let byHeight = 130 / max(v * animalH, refH)
-            let scale = min(byWidth, byHeight)
-            return VStack(alignment: .leading, spacing: 18) {
-                row(label: animal.name, size: comparison.valueText) {
-                    animalShape
-                        .frame(width: max(v * animalW * scale, 6), height: max(v * animalH * scale, 4))
+            let aspect = animalAspect
+            let animalVertical = comparison.dimension == .tall
+            // A wingspan is wider than a bird at rest, so the bird is drawn smaller than its arrow.
+            let restShare: CGFloat = comparison.dimension == .wingspan ? 0.5 : 1
+            // Drawn sizes in metres, and the span each measuring arrow covers.
+            let aw = animalVertical ? v * aspect : v * restShare
+            let ah = animalVertical ? v : v * restShare / aspect
+            let animalSpan = animalVertical ? aw : v
+            let rw = ref.upright ? rs * CGFloat(ref.aspect) : rs
+            let rh = ref.upright ? rs : rs / CGFloat(ref.aspect)
+            let gap: CGFloat = 28
+            let scale = min((geo.size.width - gap - 24) / (max(aw, animalSpan) + rw), 160 / max(ah, rh))
+            return ZStack(alignment: .topLeading) {
+                Rectangle().fill(.tertiary)
+                    .frame(width: geo.size.width, height: 1.5)
+                    .offset(y: 180)
+                HStack(alignment: .top, spacing: gap) {
+                    column(drawW: aw * scale, drawH: ah * scale, span: animalSpan * scale, vertical: animalVertical,
+                           value: "\(store.measured(comparison.valueText)) \(animalMeasure)", name: animal.name) {
+                        animalShape
+                    }
+                    column(drawW: rw * scale, drawH: rh * scale, span: rw * scale, vertical: ref.upright,
+                           value: "\(store.measured(comparison.referenceText)) \(ref.measure)", name: capitalised(ref.name)) {
+                        Image(systemName: ref.symbol)
+                            .resizable()
+                            .foregroundStyle(.secondary)
+                    }
+                    Spacer(minLength: 0)
                 }
-                row(label: capitalised(ref.name), size: comparison.referenceText + (ref.upright ? " tall" : "")) {
-                    Image(systemName: ref.symbol)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
+            }
+        }
+        .frame(height: 260)
+    }
+
+    /// One item standing on the ground line: the drawing, a measuring arrow (beside it for a
+    /// height, under it for a length), then its measurement and name.
+    private func column<S: View>(drawW: CGFloat, drawH: CGFloat, span: CGFloat, vertical: Bool,
+                                 value: String, name: String, @ViewBuilder shape: () -> S) -> some View {
+        let width = max(drawW + (vertical ? 12 : 0), span, 96)
+        return VStack(alignment: .leading, spacing: 0) {
+            HStack(alignment: .bottom, spacing: 4) {
+                shape().frame(width: max(drawW, 4), height: max(drawH, 4))
+                if vertical {
+                    DimensionArrow(axis: .vertical)
+                        .frame(width: 8, height: max(drawH, 4))
                         .foregroundStyle(.secondary)
-                        .frame(width: ref.upright ? nil : max(rs * scale, 6),
-                               height: ref.upright ? max(rs * scale, 6) : nil)
                 }
             }
-            .frame(width: width, alignment: .leading)
-        }
-        .frame(height: 370)
-    }
-
-    private func row<Shape: View>(label: String, size: String, @ViewBuilder shape: () -> Shape) -> some View {
-        VStack(alignment: .leading, spacing: 6) {
-            shape()
-                .frame(height: 140, alignment: .bottomLeading)
-            Rectangle().fill(.quaternary).frame(height: 1)
-            HStack {
-                Text(label).font(.subheadline.weight(.semibold))
-                Spacer()
-                Text(store.measured(size)).font(.subheadline).foregroundStyle(.secondary)
+            .frame(width: width, height: 180, alignment: .bottomLeading)
+            VStack(alignment: .leading, spacing: 4) {
+                if !vertical {
+                    DimensionArrow(axis: .horizontal)
+                        .frame(width: max(span, 8), height: 8)
+                        .foregroundStyle(.secondary)
+                }
+                Text(value).font(.subheadline.weight(.semibold))
+                Text(name).font(.caption).foregroundStyle(.secondary).lineLimit(2)
             }
+            .padding(.top, 8)
         }
+        .frame(width: width, alignment: .leading)
     }
 
-    // MARK: Weight: the animal against a pile of the familiar thing.
+    // MARK: Weight
 
     private var weightPicture: some View {
         let ref = comparison.reference
-        let n = max(1, Int(comparison.ratio.rounded()))
-        let shown = min(n, 12)
-        return VStack(spacing: 18) {
-            HStack(alignment: .bottom, spacing: 18) {
-                VStack(spacing: 8) {
-                    animalShape
-                        .frame(width: 120, height: 120 / silhouetteAspect.clamped(0.6, 2.5))
-                        .frame(height: 140, alignment: .bottom)
-                    Text(store.measured(comparison.valueText)).font(.subheadline.weight(.semibold))
-                }
-                Text(comparison.ratio < 0.85 ? "<" : "≈")
-                    .font(.system(size: 34, weight: .semibold, design: .rounded))
-                    .foregroundStyle(.secondary)
-                    .padding(.bottom, 40)
-                VStack(spacing: 8) {
-                    let columns = Array(repeating: GridItem(.fixed(30), spacing: 6), count: min(shown, 4))
-                    LazyVGrid(columns: columns, spacing: 6) {
-                        ForEach(0..<(comparison.ratio < 0.85 ? 1 : shown), id: \.self) { _ in
-                            Image(systemName: ref.symbol)
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 30, height: 30)
-                                .foregroundStyle(.secondary)
-                        }
-                    }
-                    .frame(height: 140, alignment: .bottom)
-                    Text(weightLabel(n: n, shown: shown))
-                        .font(.subheadline.weight(.semibold))
-                        .lineLimit(2)
-                        .multilineTextAlignment(.center)
-                }
+        let heaviest = max(comparison.value, ref.size)
+        return VStack(alignment: .leading, spacing: 18) {
+            weightRow(name: animal.name, value: comparison.valueText, fraction: comparison.value / heaviest, color: tint) {
+                animalShape
             }
-            Text("\(capitalised(ref.name)) weighs about \(store.measured(comparison.referenceText)).")
-                .font(.footnote)
-                .foregroundStyle(.secondary)
+            weightRow(name: capitalised(ref.name), value: comparison.referenceText, fraction: ref.size / heaviest,
+                      color: Color(.systemGray)) {
+                Image(systemName: ref.symbol)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .foregroundStyle(.secondary)
+            }
+            if comparison.ratio >= 1.5 {
+                Text("That's about \(SizeComparison.count(comparison.ratio)) \(ref.plural).")
+                    .font(.footnote)
+                    .foregroundStyle(.secondary)
+            }
         }
     }
 
-    private func weightLabel(n: Int, shown: Int) -> String {
-        let ref = comparison.reference
-        if comparison.ratio < 0.85 || n == 1 { return capitalised(ref.name) }
-        return n > shown ? "×\(n.formatted()) \(ref.plural)" : "\(n) \(ref.plural)"
+    private func weightRow<S: View>(name: String, value: String, fraction: Double, color: Color,
+                                    @ViewBuilder icon: () -> S) -> some View {
+        HStack(spacing: 14) {
+            icon()
+                .frame(width: 56, height: 44)
+            VStack(alignment: .leading, spacing: 6) {
+                HStack {
+                    Text(name).font(.subheadline.weight(.semibold))
+                    Spacer()
+                    Text(store.measured(value)).font(.subheadline).foregroundStyle(.secondary)
+                }
+                GeometryReader { geo in
+                    Capsule().fill(Color(.tertiarySystemFill))
+                        .overlay(alignment: .leading) {
+                            Capsule().fill(color)
+                                .frame(width: max(geo.size.width * CGFloat(fraction), 6))
+                        }
+                }
+                .frame(height: 12)
+            }
+        }
     }
 
     // MARK: Shapes
@@ -155,25 +180,47 @@ struct SizeComparisonView: View {
             Image(uiImage: silhouette)
                 .renderingMode(.template)
                 .resizable()
+                .aspectRatio(contentMode: .fit)
                 .foregroundStyle(tint)
-                .transition(.opacity)
         } else {
             Image(systemName: animal.group.symbol)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .foregroundStyle(tint.opacity(loaded ? 1 : 0.3))
+                .foregroundStyle(tint)
         }
     }
 
-    /// Width over height of the animal's outline.
-    private var silhouetteAspect: CGFloat {
+    /// Width over height of the animal's silhouette.
+    private var animalAspect: CGFloat {
         guard let s = silhouette, s.size.height > 0 else { return 1.6 }
-        return (s.size.width / s.size.height).clamped(0.4, 4)
+        return min(max(s.size.width / s.size.height, 0.3), 8)
     }
 
     private func capitalised(_ s: String) -> String { s.prefix(1).uppercased() + s.dropFirst() }
 }
 
-private extension CGFloat {
-    func clamped(_ lo: CGFloat, _ hi: CGFloat) -> CGFloat { Swift.min(Swift.max(self, lo), hi) }
+/// A measuring line with arrowheads at both ends.
+private struct DimensionArrow: Shape {
+    let axis: Axis
+
+    func path(in r: CGRect) -> Path {
+        var p = Path()
+        let head: CGFloat = 4
+        if axis == .horizontal {
+            let y = r.midY
+            p.move(to: CGPoint(x: r.minX, y: y)); p.addLine(to: CGPoint(x: r.maxX, y: y))
+            p.move(to: CGPoint(x: r.minX + head, y: y - head)); p.addLine(to: CGPoint(x: r.minX, y: y))
+            p.addLine(to: CGPoint(x: r.minX + head, y: y + head))
+            p.move(to: CGPoint(x: r.maxX - head, y: y - head)); p.addLine(to: CGPoint(x: r.maxX, y: y))
+            p.addLine(to: CGPoint(x: r.maxX - head, y: y + head))
+        } else {
+            let x = r.midX
+            p.move(to: CGPoint(x: x, y: r.minY)); p.addLine(to: CGPoint(x: x, y: r.maxY))
+            p.move(to: CGPoint(x: x - head, y: r.minY + head)); p.addLine(to: CGPoint(x: x, y: r.minY))
+            p.addLine(to: CGPoint(x: x + head, y: r.minY + head))
+            p.move(to: CGPoint(x: x - head, y: r.maxY - head)); p.addLine(to: CGPoint(x: x, y: r.maxY))
+            p.addLine(to: CGPoint(x: x + head, y: r.maxY - head))
+        }
+        return p.strokedPath(StrokeStyle(lineWidth: 1.5, lineCap: .round, lineJoin: .round))
+    }
 }

@@ -40,6 +40,13 @@ struct SourcesView: View {
             }
 
             Section {
+                Text("Size comparisons use animal silhouettes from PhyloPic (phylopic.org), each under its own licence (public domain, CC0, CC BY or CC BY-SA), credited on the comparison. Some animals are shown with a close relative's silhouette.")
+                    .font(.subheadline)
+            } header: {
+                Text("Silhouettes")
+            }
+
+            Section {
                 Text("New animals are published to Fauna's public library on GitHub, and the app checks for them every few hours. It downloads photos and maps for the animals you're likely to meet next, so you can keep reading offline. These downloads carry no information about you.")
                     .font(.subheadline)
             } header: {

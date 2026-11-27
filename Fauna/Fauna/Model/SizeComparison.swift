@@ -14,6 +14,10 @@ struct SizeComparison: Equatable, Identifiable {
         let size: Double
         /// True when the size is a height (a person standing), so it's drawn upright.
         var upright = false
+        /// Width over height of the drawn symbol.
+        var aspect: Double = 1
+        /// What the size measures: "long", "tall", "across".
+        var measure: String { symbol == "figure.stand" ? "tall" : symbol == "centsign.circle.fill" ? "across" : "long" }
     }
 
     let kind: Kind
@@ -26,13 +30,13 @@ struct SizeComparison: Equatable, Identifiable {
 
     static let lengthReferences: [Reference] = [
         Reference(name: "a coin", plural: "coins", symbol: "centsign.circle.fill", size: 0.024),
-        Reference(name: "a credit card", plural: "credit cards", symbol: "creditcard.fill", size: 0.086),
-        Reference(name: "a phone", plural: "phones", symbol: "iphone", size: 0.15),
-        Reference(name: "a house cat", plural: "house cats", symbol: "cat.fill", size: 0.46),
-        Reference(name: "an adult person", plural: "adult people", symbol: "figure.stand", size: 1.7, upright: true),
-        Reference(name: "a car", plural: "cars", symbol: "car.side.fill", size: 4.5),
-        Reference(name: "a bus", plural: "buses", symbol: "bus.fill", size: 12),
-        Reference(name: "an airliner", plural: "airliners", symbol: "airplane", size: 38),
+        Reference(name: "a credit card", plural: "credit cards", symbol: "creditcard.fill", size: 0.086, aspect: 1.5),
+        Reference(name: "a phone", plural: "phones", symbol: "iphone", size: 0.15, upright: true, aspect: 0.5),
+        Reference(name: "a house cat", plural: "house cats", symbol: "cat.fill", size: 0.46, aspect: 1.1),
+        Reference(name: "an adult person", plural: "adult people", symbol: "figure.stand", size: 1.7, upright: true, aspect: 0.45),
+        Reference(name: "a car", plural: "cars", symbol: "car.side.fill", size: 4.5, aspect: 2.2),
+        Reference(name: "a truck", plural: "trucks", symbol: "truck.box.fill", size: 12, aspect: 1.9),
+        Reference(name: "an airliner", plural: "airliners", symbol: "airplane", size: 38, aspect: 1.1),
     ]
 
     static let weightReferences: [Reference] = [
