@@ -283,7 +283,7 @@ struct AnimalArticleView: View {
             }
 
             FactGrid(facts: animal.facts.map { Fact(label: $0.label, value: store.measured($0.value)) }, tint: accent,
-                     comparisons: animal.facts.map(SizeComparison.make(for:))) { comparison = $0 }
+                     comparisons: animal.facts.map { SizeComparison.make(for: $0) }) { comparison = $0 }
                 .id("facts")
 
             ArticleSection(title: "Where it lives", symbol: "map.fill", tint: accent) {
