@@ -301,6 +301,31 @@ final class StoreTests: XCTestCase {
         XCTAssertEqual(store.quizzesCompleted.count, 3)
     }
 
+    func testTheReservedNextAnimalIsTheOneThatArrives() {
+        let store = onboarded()
+        let today = store.currentAnimal!
+        store.markQuizPassed(today)
+        let next = store.reserveNext()
+        XCTAssertNotNil(next)
+        XCTAssertEqual(store.reservedNext?.id, next?.id)
+        XCTAssertEqual(store.reserveNext()?.id, next?.id, "reserving again keeps the same animal")
+        XCTAssertTrue(store.isWaitingForTomorrow)
+        XCTAssertEqual(store.currentAnimal?.id, today.id, "nothing unlocks until asked")
+        XCTAssertFalse(store.metIDs.contains(next!.id), "the hidden animal isn't in the journal yet")
+        XCTAssertEqual(store.unlockReservedNow()?.id, next?.id, "unlocking now brings the blurred one")
+        XCTAssertFalse(store.isWaitingForTomorrow)
+        assertConsistent(store)
+    }
+
+    func testTheReservedNextAnimalArrivesTomorrow() {
+        let store = onboarded()
+        store.markQuizPassed(store.currentAnimal!)
+        let next = store.reserveNext()
+        store.refreshDay(now: Date().addingTimeInterval(86_400))
+        XCTAssertEqual(store.currentAnimal?.id, next?.id, "tomorrow's animal is the one shown blurred")
+        XCTAssertFalse(store.isWaitingForTomorrow)
+    }
+
     func testDayKeyIsZeroPadded() {
         let date = cal.date(from: DateComponents(year: 2026, month: 1, day: 5, hour: 12))!
         XCTAssertEqual(AppStore.dayKey(for: date), "2026-01-05")

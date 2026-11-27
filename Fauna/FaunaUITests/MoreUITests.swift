@@ -99,7 +99,7 @@ final class MoreUITests: XCTestCase {
         let app = launch()
         openQuiz(app)
         answerCorrectly(app)
-        let meet = button(app, "Meet the ")
+        let meet = button(app, "Meet my next animal")
         XCTAssertTrue(meet.waitForExistence(timeout: 10))
         meet.tap()
         tab(app, "Journal")
@@ -200,7 +200,7 @@ final class MoreUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["1 of 3"].waitForExistence(timeout: 10))
         answerCorrectly(app)
         XCTAssertTrue(app.buttons["Done"].waitForExistence(timeout: 10))
-        XCTAssertFalse(button(app, "Meet the ").exists, "journal quizzes don't unlock animals")
+        XCTAssertFalse(button(app, "Meet my next animal").exists, "journal quizzes don't unlock animals")
         app.buttons["Done"].tap()
         XCTAssertTrue(scroll(app, to: button(app, "Retake the quiz")), "and can be taken again")
     }
@@ -208,7 +208,7 @@ final class MoreUITests: XCTestCase {
     func testJournalCanShowOnlyQuizzesToTake() {
         // In the demo, the puffin's quiz was never taken and the axolotl's was passed.
         let app = launch(["-FaunaDemo", "-FaunaTab", "journal"])
-        let toTake = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'To take'")).firstMatch
+        let toTake = app.buttons.matching(NSPredicate(format: "label BEGINSWITH 'Quiz needed'")).firstMatch
         XCTAssertTrue(toTake.waitForExistence(timeout: 10), "the filter sits above the journal")
         toTake.tap()
         XCTAssertTrue(scroll(app, to: button(app, "Atlantic Puffin,")), "an untaken quiz stays listed")
@@ -271,6 +271,7 @@ final class MoreUITests: XCTestCase {
         let app = launch(["-FaunaDemo", "-UIPreferredContentSizeCategoryName", "UICTContentSizeCategoryAccessibilityXXXL"])
         openQuiz(app)
         answerCorrectly(app)
-        XCTAssertTrue(button(app, "Meet the ").waitForExistence(timeout: 10))
+        XCTAssertTrue(button(app, "Meet my next animal").waitForExistence(timeout: 10))
+        XCTAssertTrue(button(app, "Save it for tomorrow").exists)
     }
 }

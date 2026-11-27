@@ -72,17 +72,55 @@ final class FaunaUITests: XCTestCase {
         }
     }
 
+    private func title(_ app: XCUIApplication) -> String {
+        let t = app.staticTexts["article.title"].firstMatch
+        _ = t.waitForExistence(timeout: 10)
+        return t.exists ? t.label : ""
+    }
+
+    /// Passes today's quiz and meets the next animal straight away; returns its name.
     private func passAndMeetNext(_ app: XCUIApplication) -> String {
+        let before = title(app)
         openQuiz(app)
         answer(app)
         XCTAssertTrue(app.staticTexts["3 for 3. You really read it."].waitForExistence(timeout: 10))
-        let meet = button(app, containing: "Meet the ")
+        let meet = app.buttons["Meet my next animal"]
         XCTAssertTrue(meet.waitForExistence(timeout: 10))
-        // "Meet the Okapi, The forest giraffe…" -> "Okapi"
-        let label = meet.label
-        let name = label.components(separatedBy: "Meet the ").last?.components(separatedBy: ",").first ?? label
+        XCTAssertTrue(app.buttons["Save it for tomorrow"].exists, "meeting the next animal is a choice")
         meet.tap()
-        return name.trimmingCharacters(in: .whitespaces)
+        var now = title(app)
+        for _ in 0..<20 where now == before || now.isEmpty {
+            usleep(500_000)
+            now = title(app)
+        }
+        XCTAssertNotEqual(now, before, "a new animal should open on Today")
+        return now
+    }
+
+    func testSavingTheNextAnimalForTomorrowKeepsItHidden() {
+        let app = launch("-FaunaDemo")
+        let before = title(app)
+        openQuiz(app)
+        answer(app)
+        let save = app.buttons["Save it for tomorrow"]
+        XCTAssertTrue(save.waitForExistence(timeout: 10))
+        save.tap()
+        XCTAssertEqual(title(app), before, "today's animal stays")
+        let waiting = button(app, containing: "Next animal unlocks tomorrow")
+        XCTAssertTrue(waiting.waitForExistence(timeout: 10), "the next one waits, blurred")
+        XCTAssertFalse(unlockPill(app).exists, "no quiz to take again")
+        waiting.tap()
+        let confirm = app.buttons["Unlock now"]
+        XCTAssertTrue(confirm.waitForExistence(timeout: 5), "unlocking early asks first")
+        app.buttons["Wait for tomorrow"].tap()
+        XCTAssertEqual(title(app), before, "cancelling keeps it hidden")
+        waiting.tap()
+        XCTAssertTrue(confirm.waitForExistence(timeout: 5))
+        confirm.tap()
+        var now = title(app)
+        for _ in 0..<20 where now == before || now.isEmpty { usleep(500_000); now = title(app) }
+        XCTAssertNotEqual(now, before, "confirming unlocks it")
+        XCTAssertTrue(unlockPill(app).waitForExistence(timeout: 10), "and its quiz is next")
     }
 
     // MARK: Onboarding
@@ -277,7 +315,7 @@ final class FaunaUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["1 of 3"].waitForExistence(timeout: 10))
         answer(app)
         XCTAssertTrue(app.buttons["Done"].waitForExistence(timeout: 10))
-        XCTAssertFalse(button(app, containing: "Meet the ").exists, "practice must not unlock an animal")
+        XCTAssertFalse(button(app, containing: "Meet my next animal").exists, "practice must not unlock an animal")
         app.buttons["Done"].tap()
         tab(app, "Journal")
         XCTAssertTrue(app.staticTexts["12"].waitForExistence(timeout: 5))

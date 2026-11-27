@@ -16,7 +16,7 @@ struct JournalView: View {
                             Eyebrow("Animals you've met")
                             Picker("Show", selection: $filter) {
                                 Text("All").tag(JournalFilter.all)
-                                Text("To take (\(store.quizzesToTake.count))").tag(JournalFilter.quizToTake)
+                                Text("Quiz needed (\(store.quizzesToTake.count))").tag(JournalFilter.quizToTake)
                                 Text("Completed (\(store.quizzesCompleted.count))").tag(JournalFilter.completed)
                             }
                             .pickerStyle(.segmented)

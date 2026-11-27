@@ -20,6 +20,13 @@ struct AnimalArticleView: View {
     @State private var showPhoto = false
     /// The end-of-article unlock card is on screen, so the floating unlock button steps aside.
     @State private var unlockCardVisible = false
+    @State private var confirmUnlock = false
+
+    /// On Today, once this animal's quiz is passed and the reader chose to wait: the next animal.
+    private var waitingNext: Animal? {
+        guard mode == .today, animal.id == store.currentAnimal?.id, store.isWaitingForTomorrow else { return nil }
+        return store.reservedNext
+    }
 
     /// The photo is shown whole: the header takes the photo's own shape (within sensible limits)
     /// and any leftover space is filled with a soft blur of the same photo.
@@ -53,13 +60,32 @@ struct AnimalArticleView: View {
         // page's layout, or the scroll position jumps.
         .overlay(alignment: .bottom) {
             if mode == .today, let onStartQuiz, store.canUnlockAnywhere, !unlockCardVisible {
-                UnlockPill(action: onStartQuiz)
-                    .padding(.horizontal, 20)
-                    .padding(.bottom, 10)
-                    .transition(.move(edge: .bottom).combined(with: .opacity))
+                Group {
+                    if let next = waitingNext {
+                        TomorrowPill(animal: next) { confirmUnlock = true }
+                    } else {
+                        UnlockPill(action: onStartQuiz)
+                    }
+                }
+                .padding(.horizontal, 20)
+                .padding(.bottom, 10)
+                .transition(.move(edge: .bottom).combined(with: .opacity))
             }
         }
         .animation(.spring(response: 0.4, dampingFraction: 0.85), value: unlockCardVisible)
+        .confirmationDialog("Unlock your next animal now?", isPresented: $confirmUnlock, titleVisibility: .visible) {
+            Button("Unlock now") {
+                withAnimation(.smooth) { _ = store.unlockReservedNow() }
+                Task { await Reminders.reschedule(store) }
+            }
+            Button("Wait for tomorrow", role: .cancel) {}
+        } message: {
+            Text("It's due tomorrow. Unlock it now and tomorrow still brings another.")
+        }
+        .task(id: animal.id) {
+            // A passed quiz from an earlier visit: make sure tomorrow's animal is chosen.
+            if mode == .today, store.hasPassedQuiz(animal), store.reservedNext == nil { store.reserveNext() }
+        }
         .scrollIndicators(.hidden)
         .toolbarBackground(.hidden, for: .navigationBar)
         .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
@@ -177,6 +203,7 @@ struct AnimalArticleView: View {
         VStack(alignment: .leading, spacing: 8) {
             Eyebrow(eyebrowText, color: accent)
             Text(animal.name)
+                .accessibilityIdentifier("article.title")
                 .font(FaunaFont.display(titleSize))
                 .lineLimit(3)
                 .minimumScaleFactor(0.7)
@@ -319,7 +346,13 @@ struct AnimalArticleView: View {
             sourceFooter
 
             if mode == .today, let onStartQuiz {
-                UnlockCard(animal: animal, start: onStartQuiz)
+                Group {
+                    if let next = waitingNext {
+                        TomorrowCard(animal: next) { confirmUnlock = true }
+                    } else {
+                        UnlockCard(animal: animal, start: onStartQuiz)
+                    }
+                }
                     .id("unlock")
                     .onGeometryChange(for: Bool.self) { geo in
                         // Swap the floating button for the card only once the card's own
@@ -690,5 +723,106 @@ private struct UnlockPill: View {
         }
         .buttonStyle(PressableStyle())
         .accessibilityHint("Answer three questions about this animal to unlock another")
+    }
+}
+
+/// The next animal, photo blurred so it stays a surprise. Its name is never shown or spoken.
+struct HiddenAnimalTile: View {
+    let animal: Animal
+    let caption: String
+    var height: CGFloat = 150
+
+    var body: some View {
+        AnimalPhoto(animal: animal, size: .card)
+            .frame(maxWidth: .infinity)
+            .frame(height: height)
+            .blur(radius: 22, opaque: true)
+            .overlay(Color.black.opacity(0.25))
+            .overlay {
+                VStack(spacing: 8) {
+                    Image(systemName: "lock.fill")
+                        .font(.system(size: 22, weight: .bold))
+                        .foregroundStyle(.white)
+                        .frame(width: 48, height: 48)
+                        .background(.ultraThinMaterial, in: Circle())
+                    Text(caption)
+                        .font(.headline)
+                        .foregroundStyle(.white)
+                }
+            }
+            .clipShape(RoundedRectangle(cornerRadius: 22, style: .continuous))
+            .accessibilityElement(children: .ignore)
+            .accessibilityLabel("\(caption). It stays hidden until you meet it.")
+    }
+}
+
+/// End of today's article once its quiz is passed: tomorrow's animal, blurred, with the
+/// option to unlock it early.
+private struct TomorrowCard: View {
+    let animal: Animal
+    let unlockNow: () -> Void
+
+    var body: some View {
+        VStack(spacing: 18) {
+            HiddenAnimalTile(animal: animal, caption: "Unlocks tomorrow", height: 190)
+            VStack(spacing: 8) {
+                Text("Quiz passed")
+                    .font(FaunaFont.display(26))
+                    .foregroundStyle(.white)
+                Text("Your next animal arrives tomorrow. Can't wait? Unlock it now.")
+                    .font(.callout)
+                    .foregroundStyle(.white.opacity(0.78))
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
+            }
+            Button(action: unlockNow) {
+                Label("Unlock it now", systemImage: "lock.open.fill")
+            }
+            .buttonStyle(ProminentPillStyle(tint: .faunaMoss))
+        }
+        .padding(22)
+        .frame(maxWidth: .infinity)
+        .background(RoundedRectangle(cornerRadius: 30, style: .continuous).fill(Color.faunaForest))
+        .overlay(RoundedRectangle(cornerRadius: 30, style: .continuous).strokeBorder(Color.white.opacity(0.08)))
+    }
+}
+
+/// Floating bar on Today while the next animal waits for tomorrow.
+private struct TomorrowPill: View {
+    let animal: Animal
+    let unlockNow: () -> Void
+
+    var body: some View {
+        Button(action: unlockNow) {
+            HStack(spacing: 12) {
+                AnimalPhoto(animal: animal, size: .card)
+                    .frame(width: 34, height: 34)
+                    .blur(radius: 6, opaque: true)
+                    .clipShape(Circle())
+                    .overlay(Image(systemName: "lock.fill").font(.system(size: 12, weight: .bold)))
+                    .accessibilityHidden(true)
+                VStack(alignment: .leading, spacing: 1) {
+                    Text("Next animal unlocks tomorrow")
+                        .font(.subheadline.weight(.bold))
+                    Text("Tap to unlock it now")
+                        .font(.caption)
+                        .opacity(0.85)
+                }
+                Spacer(minLength: 0)
+                Image(systemName: "chevron.right")
+                    .font(.footnote.weight(.bold))
+                    .opacity(0.8)
+            }
+            .foregroundStyle(.white)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 10)
+            .background(Color.faunaForest, in: Capsule())
+            .shadow(color: .black.opacity(0.18), radius: 12, y: 6)
+        }
+        .buttonStyle(PressableStyle())
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("Next animal unlocks tomorrow")
+        .accessibilityHint("Unlocks it now, after you confirm")
+        .accessibilityAddTraits(.isButton)
     }
 }

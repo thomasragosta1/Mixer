@@ -266,6 +266,38 @@ final class AppStore {
         return byID[id]
     }
 
+    /// The animal that comes next, whether unlocked now or arriving tomorrow. Reserving it at
+    /// the front of the queue means the blurred preview is exactly the animal that follows.
+    @discardableResult
+    func reserveNext() -> Animal? {
+        var next = state
+        let anywhere = !canUnlockInFocus
+        guard let id = popNext(in: &next, allowOutsideFocus: anywhere, unmetOnly: true) else { return nil }
+        next.queue.insert(id, at: 0)
+        if next != state { state = next }
+        return byID[id]
+    }
+
+    /// The reserved next animal, if there is one and it hasn't been met.
+    var reservedNext: Animal? {
+        let met = metIDs.union(state.todayChain)
+        return state.queue.first { !met.contains($0) && byID[$0] != nil }.flatMap { byID[$0] }
+    }
+
+    /// Today's animal has been quizzed and the reader chose to wait: the next one is kept
+    /// blurred until tomorrow (or until they unlock it now).
+    var isWaitingForTomorrow: Bool {
+        guard let current = currentAnimal, hasPassedQuiz(current), canUnlockAnywhere else { return false }
+        return reservedNext != nil
+    }
+
+    /// Unlocks the reserved animal now instead of tomorrow.
+    @discardableResult
+    func unlockReservedNow() -> Animal? {
+        guard let current = currentAnimal else { return nil }
+        return unlockNext(for: current, allowOutsideFocus: !canUnlockInFocus)
+    }
+
     func markQuizPassed(_ animal: Animal) {
         guard !state.quizPassedIDs.contains(animal.id) else { return }
         state.quizPassedIDs.append(animal.id)

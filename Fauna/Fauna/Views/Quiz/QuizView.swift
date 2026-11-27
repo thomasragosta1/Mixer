@@ -25,7 +25,8 @@ struct QuizView: View {
     @State private var correctCount = 0
     @State private var phase: Phase = .asking
     @State private var shake = 0
-    @State private var unlocked: Animal?
+    /// The animal that comes next, kept hidden until the reader chooses to meet it.
+    @State private var upcoming: Animal?
     @State private var revealed = false
 
     private var passed: Bool { correctCount == items.count && !items.isEmpty }
@@ -244,33 +245,22 @@ struct QuizView: View {
                     .foregroundStyle(.white.opacity(0.75))
             }
 
-            if let unlocked {
-                Button {
-                    dismiss()
-                } label: {
-                    HStack(spacing: 14) {
-                        AnimalPhoto(animal: unlocked, size: .card)
-                            .frame(width: 64, height: 64)
-                            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
-                        VStack(alignment: .leading, spacing: 3) {
-                            Text("Meet the \(unlocked.name)")
-                                .font(FaunaFont.display(20))
-                                .foregroundStyle(.white)
-                            Text(unlocked.tagline)
-                                .font(.subheadline)
-                                .foregroundStyle(.white.opacity(0.7))
-                                .lineLimit(2)
-                        }
-                        .multilineTextAlignment(.leading)
-                        Spacer(minLength: 0)
-                        Image(systemName: "arrow.right.circle.fill")
-                            .font(.title)
-                            .foregroundStyle(Color.faunaGold)
+            if let upcoming, !practice {
+                VStack(spacing: 12) {
+                    HiddenAnimalTile(animal: upcoming, caption: "Your next animal is ready")
+                    Button {
+                        store.unlockReservedNow()
+                        Task { await Reminders.reschedule(store) }
+                        dismiss()
+                    } label: {
+                        Label("Meet my next animal", systemImage: "sparkles")
                     }
-                    .padding(14)
-                    .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 24, style: .continuous))
+                    .buttonStyle(ProminentPillStyle(tint: .faunaMoss))
+                    Button("Save it for tomorrow") { dismiss() }
+                        .font(.headline)
+                        .foregroundStyle(.white.opacity(0.85))
+                        .padding(.vertical, 6)
                 }
-                .buttonStyle(PressableStyle())
                 .opacity(revealed ? 1 : 0)
                 .offset(y: revealed ? 0 : 30)
                 .animation(.spring(response: 0.6, dampingFraction: 0.8).delay(0.35), value: revealed)
@@ -329,7 +319,7 @@ struct QuizView: View {
         index = 0
         picked = nil
         correctCount = 0
-        unlocked = nil
+        upcoming = nil
         revealed = false
         phase = .asking
     }
@@ -348,9 +338,8 @@ struct QuizView: View {
 
     private var successMessage: String {
         if practice { return "The \(animal.name) is yours." }
-        guard unlocked != nil else { return "You've discovered every animal in Fauna. Come back tomorrow." }
-        let today = store.state.todayChain.count
-        return "Your next animal is ready. That's \(today) today, and you can keep going as long as you like."
+        guard upcoming != nil else { return "You've discovered every animal in Fauna. Come back tomorrow." }
+        return "Meet it now, or save it for tomorrow."
     }
 
     private func advance() {
@@ -365,8 +354,8 @@ struct QuizView: View {
                 store.markQuizPassed(animal)
                 Haptics.success()
             } else if passed {
-                let anywhere = !store.canUnlockInFocus
-                unlocked = store.unlockNext(for: animal, allowOutsideFocus: anywhere)
+                store.markQuizPassed(animal)
+                upcoming = store.reserveNext()
                 Task { await Reminders.reschedule(store) }
                 Haptics.success()
             }
