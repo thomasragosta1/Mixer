@@ -76,3 +76,17 @@ final class SizeComparisonTests: XCTestCase {
         }
     }
 }
+
+final class SilhouetteTests: XCTestCase {
+    func testMostAnimalsHaveACreditedSilhouette() {
+        let animals = AnimalLibrary.load()
+        let with = animals.filter { Silhouettes.image(for: $0.id) != nil }
+        XCTAssertGreaterThan(Double(with.count) / Double(animals.count), 0.9)
+        for a in with {
+            let credit = Silhouettes.credits[a.id]
+            XCTAssertNotNil(credit, "\(a.id) has a silhouette but no credit")
+            XCTAssertNotNil(Silhouettes.creditLine(for: a.id), a.id)
+            XCTAssertFalse(credit?.licenseURL.lowercased().contains("/nc") ?? true, "\(a.id): non-commercial licence")
+        }
+    }
+}

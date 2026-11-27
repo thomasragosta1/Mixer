@@ -1,0 +1,2858 @@
+{
+ "aardvark": {
+  "author": "Pearson Scott Foresman",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/cfee2dca-3767-46b8-8d03-bd8f46e79e9e",
+  "taxon": "Orycteropus afer"
+ },
+ "aardwolf": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/932ef4c4-9e52-47ac-8ef5-1de77d06cba1",
+  "taxon": "Proteles cristatus"
+ },
+ "adelie-penguin": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Spheniscidae)",
+  "page": "https://www.phylopic.org/images/21c50828-58d8-42df-9219-2c1b0fb57c99",
+  "taxon": "Aptenodytes patagonicus"
+ },
+ "african-bush-elephant": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/62398ac0-f0c3-48f8-8455-53512a05fbc4",
+  "taxon": "Loxodonta africana africana"
+ },
+ "african-clawed-frog": {
+  "author": "Sarah Werning",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/cd0f49a1-4adf-448e-859c-b703a73b9481",
+  "taxon": "Xenopus laevis"
+ },
+ "african-forest-elephant": {
+  "author": "Richard Ruggiero, vectorized by Zimices",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/09af15bc-97ee-4fa0-9379-da7ee328560a",
+  "taxon": "Loxodonta cyclotis"
+ },
+ "african-wild-dog": {
+  "author": "Holly English",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/c974b08c-1189-48db-afc6-edf54356abb4",
+  "taxon": "Lycaon pictus"
+ },
+ "aldabra-giant-tortoise": {
+  "author": "Yotcmdr",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/67de5291-d93f-4b5b-9c5f-3a12de8daa6a",
+  "taxon": "Aldabrachelys gigantea"
+ },
+ "alligator-gar": {
+  "author": "Lily Hughes",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/4b878d44-26e1-483e-8ef4-7879da69d1d7",
+  "taxon": "Atractosteus spatula"
+ },
+ "alligator-snapping-turtle": {
+  "author": "DataBase Center for Life Science (DBCLS)",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "stand-in (Trachemys scripta)",
+  "page": "https://www.phylopic.org/images/144afc91-06d6-4d8c-84f5-734d5478d58d",
+  "taxon": "Trachemys scripta elegans"
+ },
+ "amazon-river-dolphin": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f36c9daa-a102-42dd-88ac-a126753943d2",
+  "taxon": "Inia geoffrensis"
+ },
+ "american-alligator": {
+  "author": "Ferran Sayol",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/eefc0a4d-24b5-4c91-b687-8bd28c414295",
+  "taxon": "Alligator mississippiensis"
+ },
+ "american-bison": {
+  "author": "Tracy A. Heath",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d44d834e-1c32-4a08-a5d5-f30139de4450",
+  "taxon": "Bos bison"
+ },
+ "american-bullfrog": {
+  "author": "Jose Carlos Arenas-Monroy",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/2c0cae10-ce70-4fd9-8b64-07a03a3a24a6",
+  "taxon": "Lithobates megapoda"
+ },
+ "american-eel": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/629e1135-d0c5-4f02-bb13-8cbf63e48692",
+  "taxon": "Anguilla rostrata"
+ },
+ "american-flamingo": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/28473411-c079-4654-bbb7-34a5615bb414",
+  "taxon": "Phoenicopterus ruber"
+ },
+ "american-lobster": {
+  "author": "Michaël Rabiller",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/46f3f90b-48ee-4d25-b751-e5070e37532e",
+  "taxon": "Homarus americanus"
+ },
+ "american-marten": {
+  "author": "Ferran Sayol",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Martes (Martes))",
+  "page": "https://www.phylopic.org/images/7f7431c6-8f78-498b-92e2-ebf8882a8923",
+  "taxon": "Martes foina"
+ },
+ "american-paddlefish": {
+  "author": "Olivia Fitch",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9b80988a-0a9e-48d6-ba07-256796677d4e",
+  "taxon": "Polyodon spathula"
+ },
+ "american-pika": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/638b61e5-037d-46d5-9cc0-762ac8881d5a",
+  "taxon": "Ochotona princeps"
+ },
+ "american-white-pelican": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6aeffa32-78e5-4f96-9797-f7a1994afdbf",
+  "taxon": "Pelecanus erythrorhynchos"
+ },
+ "amur-leopard": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "relative (Pantherinae)",
+  "page": "https://www.phylopic.org/images/cf57bcb2-d369-406f-a27a-96243328fa75",
+  "taxon": "Neofelis nebulosa"
+ },
+ "andean-cock-of-the-rock": {
+  "author": "Gargominy O.",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/1dffb5d5-f9ee-4b01-bb8a-ad1feff0f4fb",
+  "taxon": "Clausilia cruciata"
+ },
+ "andean-condor": {
+  "author": "Mark P. Witton & Darren Naish",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/901bfc1f-5f97-499c-961f-6cf4d8ab6239",
+  "taxon": "Vultur gryphus"
+ },
+ "andean-flamingo": {
+  "author": "Ferran Sayol",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Phoenicopterus roseus)",
+  "page": "https://www.phylopic.org/images/a1244226-f2c2-41dc-b113-f1c6545958ce",
+  "taxon": "Phoenicopterus roseus"
+ },
+ "antarctic-krill": {
+  "author": "Steven Haddock • Jellywatch.org",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/44a3628d-aafd-45cc-97a6-1cb74bd43dec",
+  "taxon": "Euphausia pacifica"
+ },
+ "antlions": {
+  "author": "Caleb M. Gordon",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/60fc28c2-d267-4de1-823d-a3af82fbf2d3",
+  "taxon": "Myrmeleon"
+ },
+ "arabian-oryx": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a9ec4a76-e2c0-495e-ba39-9a66180bcae6",
+  "taxon": "Oryx leucoryx"
+ },
+ "arapaima": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/dd5aa97d-9abe-42b2-8e35-59bd0c506569",
+  "taxon": "Arapaima gigas"
+ },
+ "arctic-fox": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/8db421ba-4b42-4bd8-b948-5214ce122f57",
+  "taxon": "Vulpes lagopus"
+ },
+ "arctic-tern": {
+  "author": "Sharon Wegner-Larsen",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Sterna)",
+  "page": "https://www.phylopic.org/images/f164783d-3bab-45f3-9885-c1b382202369",
+  "taxon": "Sterna dougallii"
+ },
+ "asian-arowana": {
+  "author": "Arthur S. Brum",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "stand-in (Osteoglossum bicirrhosum)",
+  "page": "https://www.phylopic.org/images/4edcd691-55e4-49fb-85e6-7bc82abbdd95",
+  "taxon": "Coilia lindmani"
+ },
+ "asian-elephant": {
+  "author": "T. Michael Keesey",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7c9ab182-175d-4f02-96d0-09c1e5212bff",
+  "taxon": "Elephas maximus"
+ },
+ "asian-giant-hornet": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d3777b58-6a4e-4bf0-a4ef-c2500cb99e80",
+  "taxon": "Vespa mandarinia"
+ },
+ "asian-weaver-ant": {
+  "author": "Encyclopædia Britannica",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "stand-in (Formica rufa)",
+  "page": "https://www.phylopic.org/images/efecbd35-8143-40a7-9163-ea3120caa15b",
+  "taxon": "Formica rufa"
+ },
+ "atlantic-bluefin-tuna": {
+  "author": "Stuart Humphries",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/16989401-0080-4502-828d-e85a45a262be",
+  "taxon": "Thunnus thynnus"
+ },
+ "atlantic-horseshoe-crab": {
+  "author": "Noah Schlottman",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/38c82deb-b187-4e85-a9f8-dba2794b42d0",
+  "taxon": "Limulus polyphemus"
+ },
+ "atlantic-mudskipper": {
+  "author": "Zachary Quigley",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9698bcd8-a02a-43f0-857a-21780f612fc3",
+  "taxon": "Periophthalmus barbarus"
+ },
+ "atlantic-puffin": {
+  "author": "Richard Bartz (photo) and Albertonykus (silhouette)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d973f930-85f8-4a91-9e7f-8c3a0b140c81",
+  "taxon": "Fratercula arctica"
+ },
+ "atlantic-salmon": {
+  "author": "Domino Joyce",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f6c6590d-8aa1-4d08-a25f-e6c90727c071",
+  "taxon": "Salmo salar"
+ },
+ "atlantic-wolffish": {
+  "author": "Nick Jeffery",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/d70dabc6-06f1-4fde-9d82-233b1874ebb0",
+  "taxon": "Anarhichas denticulatus"
+ },
+ "atlas-moth": {
+  "author": "Chris A. Hamilton",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Actias luna)",
+  "page": "https://www.phylopic.org/images/8229756b-82c3-4a9f-a1c6-e88f958e623e",
+  "taxon": "Actias luna"
+ },
+ "australian-box-jellyfish": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9a9b00b8-6abc-491f-a3cf-2cc0dc65e4cf",
+  "taxon": "Chironex fleckeri"
+ },
+ "australian-green-tree-frog": {
+  "author": "Luca Leicht",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "stand-in (Hyla arborea)",
+  "page": "https://www.phylopic.org/images/c1afaae9-6aef-4591-8948-db82b612cff0",
+  "taxon": "Hyla arborea"
+ },
+ "axolotl": {
+  "author": "Jake Warner",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/575eaa51-6c9b-4d36-9881-b8463c68ebbc",
+  "taxon": "Ambystoma mexicanum"
+ },
+ "aye-aye": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/bb5ccfea-39a0-48de-b5ed-d55ed5b48ed0",
+  "taxon": "Daubentonia madagascariensis"
+ },
+ "bactrian-camel": {
+  "author": "nicubunu",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/799065e8-f7a7-4581-8af5-7fe70165fa8a",
+  "taxon": "Camelus bactrianus"
+ },
+ "bald-eagle": {
+  "author": "Ron Holmes/U. S. Fish and Wildlife Service (source photo), T. Michael Keesey (vectorization)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9fbdceb3-6183-415f-8647-3783bc7cfa18",
+  "taxon": "Haliaeetus leucocephalus washingtoniensis"
+ },
+ "banded-archerfish": {
+  "author": "Gilles San Martin",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "stand-in (Perca fluviatilis)",
+  "page": "https://www.phylopic.org/images/1c06074b-62c6-4066-8ed2-1ab127e45709",
+  "taxon": "Perca fluviatilis"
+ },
+ "bar-tailed-godwit": {
+  "author": "Alexandre Vong",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a6a38d55-71be-43f2-b781-9a845662de20",
+  "taxon": "Limosa lapponica"
+ },
+ "barn-swallow": {
+  "author": "Matt Wilkins",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/cf38be70-f0a8-4a47-b387-e797ec16c7c1",
+  "taxon": "Hirundo rustica"
+ },
+ "basking-shark": {
+  "author": "Stephen O'Connor",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/e1b6d3d8-0be9-4868-b527-dc97f5f5edef",
+  "taxon": "Cetorhinus maximus"
+ },
+ "bat-eared-fox": {
+  "author": "Bernard Dupont (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/39dc7ce6-3700-4d4a-9fdf-d84d8a0482e4",
+  "taxon": "Otocyon megalotis"
+ },
+ "bearded-vulture": {
+  "author": "Shyamal",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/2c8d7b25-ceec-4b6a-be73-c3126421927c",
+  "taxon": "Gypaetus barbatus"
+ },
+ "bee-eaters": {
+  "author": "Pepe Reigada",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "relative (Picodynastornithes)",
+  "page": "https://www.phylopic.org/images/701824d2-773f-433e-892c-74cc7846314a",
+  "taxon": "Jynx torquilla"
+ },
+ "beluga-sturgeon": {
+  "author": "Robbie Cada",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/cd7e54b4-aff4-48c8-9159-c8977ff07717",
+  "taxon": "Acipenser huso"
+ },
+ "beluga-whale": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/79010a33-76f6-4f16-9e35-b9121b0e6bed",
+  "taxon": "Delphinapterus leucas"
+ },
+ "bengal-tiger": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "relative (Pantherinae)",
+  "page": "https://www.phylopic.org/images/cf57bcb2-d369-406f-a27a-96243328fa75",
+  "taxon": "Neofelis nebulosa"
+ },
+ "bigfin-reef-squid": {
+  "author": "Hans Hillewaert (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "stand-in (Loligo vulgaris)",
+  "page": "https://www.phylopic.org/images/a684fe05-44aa-4522-af0c-9390adbd0335",
+  "taxon": "Loligo vulgaris"
+ },
+ "bighorn-sheep": {
+  "author": "Scott Hartman",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b7344c53-6115-49cf-836d-ae71cc3853a8",
+  "taxon": "Ovis canadensis"
+ },
+ "binturong": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d7471762-ce76-45d9-bd25-e422188fb9e3",
+  "taxon": "Arctictis binturong"
+ },
+ "black-footed-ferret": {
+  "author": "Vanessa Guerra",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/592c3569-ccf3-4f11-920d-3765aa12343f",
+  "taxon": "Mustela nigripes"
+ },
+ "black-mamba": {
+  "author": "V. Deepak",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "stand-in (Naja naja)",
+  "page": "https://www.phylopic.org/images/7d7ef734-8a79-4dcf-ad8e-f2cbcd1bf43e",
+  "taxon": "Ophiophagus hannah"
+ },
+ "black-rhinoceros": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/90839fda-8f63-4609-abed-25a7fb73c39c",
+  "taxon": "Diceros bicornis"
+ },
+ "blue-dragon": {
+  "author": "Joseba Iza",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/52158fe4-2c65-4476-aa39-182c4cad3be1",
+  "taxon": "Glaucus atlanticus"
+ },
+ "blue-footed-booby": {
+  "author": "Jon Hill (Photo by Benjamint444: http://en.wikipedia.org/wiki/File:Blue-footed-booby.jpg)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ce1deb29-e295-4b58-aab2-b8a6132cce53",
+  "taxon": "Sula nebouxii"
+ },
+ "blue-whale": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/16969246-31e0-48e3-90ff-cad9a8746073",
+  "taxon": "Balaenoptera musculus"
+ },
+ "blue-wildebeest": {
+  "author": "Jan A. Venter, Herbert H. T. Prins, David A. Balfour & Rob Slotow (vectorized by T. Michael Keesey)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "relative (caprine group)",
+  "page": "https://www.phylopic.org/images/f93103f1-e2a0-4c73-b274-c7b51afe4db0",
+  "taxon": "Kobus ellipsiprymnus"
+ },
+ "bongo": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/01552300-a8e6-41ac-bc3d-85ed396af66a",
+  "taxon": "Tragelaphus eurycerus"
+ },
+ "bonobo": {
+  "author": "T. Michael Keesey",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f06b4dd0-094e-4f37-9105-25fdb4eb1b02",
+  "taxon": "Pan paniscus"
+ },
+ "boomslang": {
+  "author": "Danny S.",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "stand-in (Natrix natrix)",
+  "page": "https://www.phylopic.org/images/1da15fb6-e1f2-4122-b5ae-dbdaa7ef7525",
+  "taxon": "Natrix natrix"
+ },
+ "bornean-orangutan": {
+  "author": "Gareth Monger",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/63c557ce-d82c-42e6-a26a-a9f0f05c2c18",
+  "taxon": "Pongo pygmaeus"
+ },
+ "brown-throated-sloth": {
+  "author": "Sarah Werning",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/925fa570-10d9-4319-bd8a-e64ad7987900",
+  "taxon": "Bradypus"
+ },
+ "bull-shark": {
+  "author": "John Hlavin",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/2a9848fe-5f84-4189-af65-ff659121cebc",
+  "taxon": "Carcharhinus leucas"
+ },
+ "bullet-ant": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/565a2de1-d040-4424-b995-5ed58cdf7c96",
+  "taxon": "Paraponera clavata"
+ },
+ "burchells-army-ant": {
+  "author": "Encyclopædia Britannica",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "stand-in (Formica rufa)",
+  "page": "https://www.phylopic.org/images/efecbd35-8143-40a7-9163-ea3120caa15b",
+  "taxon": "Formica rufa"
+ },
+ "burrowing-owl": {
+  "author": "Caleb M. Gordon",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7aa2f023-1684-4ffb-a916-ca19290f3e85",
+  "taxon": "Athene cunicularia"
+ },
+ "burying-beetle": {
+  "author": "Maxime Dahirel",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/4e3892fe-0054-4c94-a5bf-46a9818bb252",
+  "taxon": "Nicrophorus"
+ },
+ "bush-dog": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ee39f689-8bc1-40f5-b5cd-c8431aeeae06",
+  "taxon": "Speothos venaticus"
+ },
+ "california-condor": {
+  "author": "Stacy Spensley (Modified)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/73528af2-c4ca-4bc4-81ca-d22126220fa9",
+  "taxon": "Gymnogyps californianus"
+ },
+ "canada-jay": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3f76e209-8ac4-4e4b-aec2-b8a62d1a7ce0",
+  "taxon": "Perisoreus canadensis"
+ },
+ "canada-lynx": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/72166d2d-348b-4201-81c6-3599871f8981",
+  "taxon": "Lynx canadensis"
+ },
+ "cane-toad": {
+  "author": "Dennis C. Murphy, after http://bit.ly/4q6IESe",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/411ddd2c-12e8-4e92-9399-be8406d00356",
+  "taxon": "Rhinella marina"
+ },
+ "capybara": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/097336ef-db5f-4edc-a2e4-2c29a10aa512",
+  "taxon": "Hydrochoerus hydrochaeris"
+ },
+ "cheetah": {
+  "author": "nicubunu",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6290407d-2193-4d97-a194-2a7afc8f89c6",
+  "taxon": "Acinonyx jubatus"
+ },
+ "chimpanzee": {
+  "author": "T. Michael Keesey (vectorization) and Tony Hisgett (photography)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/2f7da8c8-897a-445e-b003-b3955ad08850",
+  "taxon": "Pan troglodytes"
+ },
+ "chinese-alligator": {
+  "author": "Wani2Y",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/fddc8b3c-20a3-4e7b-8c9c-be62e52aa2ab",
+  "taxon": "Alligator sinensis"
+ },
+ "chinese-giant-salamander": {
+  "author": "Chuanixn Yu",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/dd44eb4f-f4d1-4557-939e-44f35694b615",
+  "taxon": "Andrias davidianus"
+ },
+ "christmas-island-red-crab": {
+  "author": "Mario Quevedo",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Carcinus maenas)",
+  "page": "https://www.phylopic.org/images/9958579e-5e63-4b7c-8e76-9b1a92d7f7ca",
+  "taxon": "Carcinus maenas"
+ },
+ "clouded-leopard": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/cf57bcb2-d369-406f-a27a-96243328fa75",
+  "taxon": "Neofelis nebulosa"
+ },
+ "coconut-crab": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/79b7c6f7-0b2a-4d4b-a7e4-e2eb7dd09b63",
+  "taxon": "Birgus latro"
+ },
+ "coelacanth": {
+  "author": "Tasman Dixon",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Latimeriidae)",
+  "page": "https://www.phylopic.org/images/f81f45c4-b7de-437c-8e51-48299d131ac3",
+  "taxon": "Foreyia maxkuhni"
+ },
+ "common-cuckoo": {
+  "author": "Ferran Sayol",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Cuculinae)",
+  "page": "https://www.phylopic.org/images/5311f33f-6db1-47b0-94c4-c60fa7521884",
+  "taxon": "Cuculinae"
+ },
+ "common-eastern-firefly": {
+  "author": "Melissa Broussard",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ae83a86e-79a8-46b5-ba0e-9d4b25bd707e",
+  "taxon": "Photinus pyralis"
+ },
+ "common-frog": {
+  "author": "Beth Reinke",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/e73c5c1c-7727-4687-bf0b-3957343edfc3",
+  "taxon": "Rana temporaria"
+ },
+ "common-hoopoe": {
+  "author": "Ferran Sayol",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b217ad1b-0669-4666-80da-9ddc3c3506e2",
+  "taxon": "Upupa epops"
+ },
+ "common-kingfisher": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/632580ed-9bf0-4e01-b3b6-3cf31fcf417e",
+  "taxon": "Alcedo atthis"
+ },
+ "common-loon": {
+  "author": "Unknown (photo), John E. McCormack, Michael G. Harvey, Brant C. Faircloth, Nicholas G. Crawford, Travis C. Glenn, Robb T. Brumfield & T. Michael Keesey",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ae2506e3-b97d-45d7-a3f9-1bfb1567e1b1",
+  "taxon": "Gavia immer"
+ },
+ "common-octopus": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f400b519-3564-4183-b4bd-c3b922cc7c5e",
+  "taxon": "Octopus vulgaris"
+ },
+ "common-ostrich": {
+  "author": "Matt Martyniuk (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/14ddbf4d-7749-4153-bbe1-8d0c6ffdf142",
+  "taxon": "Struthio camelus"
+ },
+ "common-raven": {
+  "author": "Peileppe",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Corvus (Corvus))",
+  "page": "https://www.phylopic.org/images/2db31c7c-b0a9-460f-807e-da9181f21cf6",
+  "taxon": "Corvus brachyrhynchos"
+ },
+ "common-surinam-toad": {
+  "author": "Dein Freund der Baum (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/cf64d1cd-ee3c-4ce9-90ac-2fdb71e5e8f7",
+  "taxon": "Pipa pipa"
+ },
+ "common-swift": {
+  "author": "Ferran Sayol",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3e6b9118-7aff-4b64-8c95-38b2ee49d922",
+  "taxon": "Apus apus"
+ },
+ "common-vampire-bat": {
+  "author": "Roberto Díaz Sibaja",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/21180755-3394-40bf-93eb-810954c0f7ba",
+  "taxon": "Desmodus rotundus"
+ },
+ "common-wombat": {
+  "author": "Sarah Werning",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/35fa51dc-e912-4158-97c4-d2088ea7abbc",
+  "taxon": "Vombatus ursinus"
+ },
+ "cone-snail": {
+  "author": "Karla Martinez",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/94dba319-8374-4996-93bc-530520b1526a",
+  "taxon": "Conus magus"
+ },
+ "cookiecutter-shark": {
+  "author": "Ignacio Contreras",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/1173c269-c25a-4792-9d5c-39164f2caa55",
+  "taxon": "Isistius brasiliensis"
+ },
+ "cougar": {
+  "author": "An Ignorant Atheist",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3f8eff77-2868-4121-8d7d-a55ebdd49e04",
+  "taxon": "Puma concolor"
+ },
+ "coyote": {
+  "author": "David Orr",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/da5faa63-085f-4523-a542-e71cb386c999",
+  "taxon": "Canis latrans"
+ },
+ "crown-of-thorns-starfish": {
+  "author": "Zechariah Meunier",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b7a75547-2a58-4303-9497-42eee2412700",
+  "taxon": "Acanthaster planci"
+ },
+ "darwins-frog": {
+  "author": "Beth Reinke",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Rana temporaria)",
+  "page": "https://www.phylopic.org/images/e73c5c1c-7727-4687-bf0b-3957343edfc3",
+  "taxon": "Rana temporaria"
+ },
+ "deaths-head-hawkmoth": {
+  "author": "Jamie Whitehouse",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/dd150b9b-9592-4df2-bcf6-da7f6e282314",
+  "taxon": "Acherontia atropos"
+ },
+ "dhole": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Canina)",
+  "page": "https://www.phylopic.org/images/1e970fe5-61da-4082-b1c6-ff8dc31cd791",
+  "taxon": "Lupulella mesomelas"
+ },
+ "dingo": {
+  "author": "Sam Fraser-Smith (vectorized by T. Michael Keesey)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3c534a59-fd0c-41bb-80c7-1d18db9bae13",
+  "taxon": "Canis familiaris dingo"
+ },
+ "domestic-silk-moth": {
+  "author": "Gemma Martínez-Redondo",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/38601f77-7e38-4261-8fab-8379c9b2924c",
+  "taxon": "Bombyx mori"
+ },
+ "dugong": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/5584723d-1756-48a0-8a0d-9bdb703d62ce",
+  "taxon": "Dugong dugon"
+ },
+ "dung-beetle": {
+  "author": "Kristina Gagalova",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/1b856960-aeb5-41fb-a70c-294884f1bb44",
+  "taxon": "Onthophagus taurus"
+ },
+ "electric-eel": {
+  "author": "Neil Kelley",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/c931ef9c-ff5a-4b7d-96b5-80a6be323b04",
+  "taxon": "Electrophorus electricus"
+ },
+ "elkhorn-coral": {
+  "author": "Victor Piñon-González",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/32eeaa29-2e90-40b5-92fb-eb8d7fcab9ab",
+  "taxon": "Acropora palmata"
+ },
+ "emperor-penguin": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Aptenodytes)",
+  "page": "https://www.phylopic.org/images/21c50828-58d8-42df-9219-2c1b0fb57c99",
+  "taxon": "Aptenodytes patagonicus"
+ },
+ "emu": {
+  "author": "Darren Naish (vectorize by T. Michael Keesey)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/35947c43-1e5c-4003-bbaa-d352530b5af7",
+  "taxon": "Dromaius novaehollandiae novaehollandiae"
+ },
+ "ethiopian-wolf": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/96adba97-2fad-4d87-89f3-63ec358dd038",
+  "taxon": "Canis simensis"
+ },
+ "eurasian-beaver": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/0b9b783b-b537-4fa6-b387-a9ca2d3f7a12",
+  "taxon": "Castor fiber"
+ },
+ "eurasian-eagle-owl": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Bubo)",
+  "page": "https://www.phylopic.org/images/919a6f91-cb0b-4646-9ec2-b6a8b5e4b024",
+  "taxon": "Bubo scandiacus"
+ },
+ "eurasian-lynx": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/20442a12-596d-4987-a668-509c19a155da",
+  "taxon": "Lynx pardinus"
+ },
+ "eurasian-otter": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3cdae098-058b-4ce2-8f46-ad3101b624db",
+  "taxon": "Lutra lutra"
+ },
+ "european-hedgehog": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6ecff71e-fcfc-4cb9-b773-9e6e21607587",
+  "taxon": "Erinaceus europaeus"
+ },
+ "european-mantis": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/c5a14ad6-6d6f-49db-97b9-680cb36f8646",
+  "taxon": "Mantis religiosa"
+ },
+ "european-stag-beetle": {
+  "author": "Archaeodontosaurus (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6b947ea6-07c9-4946-9556-d7739dd1a672",
+  "taxon": "Lucanus cervus"
+ },
+ "fennec-fox": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7c580599-c78e-48d8-a8ef-5154583d8bb5",
+  "taxon": "Vulpes zerda"
+ },
+ "fire-salamander": {
+  "author": "Beth Reinke",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/0a948f02-6e35-42d5-a835-b9360f450d39",
+  "taxon": "Salamandra salamandra"
+ },
+ "fisher": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (core)",
+  "page": "https://www.phylopic.org/images/0171618b-8200-469f-a1a2-6da09e2f21da",
+  "taxon": "Melogale moschata"
+ },
+ "fishing-cat": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Felis silvestris)",
+  "page": "https://www.phylopic.org/images/1edbe9ff-c453-47f3-9174-2e1f9c5983de",
+  "taxon": "Felis silvestris silvestris"
+ },
+ "flying-fish": {
+  "author": "Lankester Edwin Ray (modified)",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/94fbb75c-6357-42bd-813a-26dd79c87b95",
+  "taxon": "Cheilopogon spilopterus"
+ },
+ "fossa": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7546aa75-8b04-4025-975c-7472c1f7fa5f",
+  "taxon": "Cryptoprocta ferox"
+ },
+ "frilled-lizard": {
+  "author": "Jose Carlos Arenas-Monroy",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/c4419539-43de-49d4-82f4-1fc599f42a15",
+  "taxon": "Chlamydosaurus kingii"
+ },
+ "frilled-shark": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/2269a810-0a5c-4c99-93c6-bb5581e05f90",
+  "taxon": "Chlamydoselachus anguineus"
+ },
+ "gaboon-viper": {
+  "author": "Beth Reinke",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Vipera berus)",
+  "page": "https://www.phylopic.org/images/a1cd1814-e0b4-409c-af18-8cb2f841569c",
+  "taxon": "Vipera berus"
+ },
+ "galapagos-tortoise": {
+  "author": "Kai Caspar",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Geochelona)",
+  "page": "https://www.phylopic.org/images/760cced8-4303-49b4-bc4c-bf74ec652304",
+  "taxon": "Chelonoidis carbonarius"
+ },
+ "gastric-brooding-frog": {
+  "author": "Jose Carlos Arenas-Monroy",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/b05d80ba-18ab-46b1-97ad-7ff72fabba0a",
+  "taxon": "Rheobatrachus vitellinus"
+ },
+ "gelada": {
+  "author": "Kai R. Caspar",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3b9150ed-4203-4cdb-b2a5-c21654857e5f",
+  "taxon": "Theropithecus gelada"
+ },
+ "gerenuk": {
+  "author": "Andrew A. Farke",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/999c5343-2b8f-4277-ae8c-83289f18b644",
+  "taxon": "Litocranius walleri"
+ },
+ "gharial": {
+  "author": "Jagged Fang Designs",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f963f388-8297-4ceb-91f6-493b38dccba5",
+  "taxon": "Gavialis gangeticus"
+ },
+ "giant-anteater": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d52b48fc-be52-46a1-94b7-ac7790b4730c",
+  "taxon": "Myrmecophaga tridactyla"
+ },
+ "giant-clam": {
+  "author": "Jimmy Bernot",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/fe233431-4014-4612-8ee6-eb1060b7eaa5",
+  "taxon": "Tridacna"
+ },
+ "giant-isopod": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Ligia oceanica)",
+  "page": "https://www.phylopic.org/images/a626cebb-cb3d-48b4-a62e-9f87536ba906",
+  "taxon": "Ligia oceanica"
+ },
+ "giant-oceanic-manta-ray": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f3fa5012-3c60-4d0d-9f78-ffdeef367411",
+  "taxon": "Mobula birostris"
+ },
+ "giant-otter": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/1ff6d0be-3c7a-4908-8125-ff5eb879e1e0",
+  "taxon": "Pteronura brasiliensis"
+ },
+ "giant-pacific-octopus": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Octopus vulgaris)",
+  "page": "https://www.phylopic.org/images/f400b519-3564-4183-b4bd-c3b922cc7c5e",
+  "taxon": "Octopus vulgaris"
+ },
+ "giant-squid": {
+  "author": "Jamie Whitehouse",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/32cafb8f-26f9-462d-868b-8a8fe88a662d",
+  "taxon": "Architeuthis dux"
+ },
+ "giant-tube-worm": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d76df72f-2ae4-4604-ba94-f5567f94179c",
+  "taxon": "Riftia pachyptila"
+ },
+ "gila-monster": {
+  "author": "Nicolas Mongiardino Koch",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9cae2028-126b-416f-9094-250782c5bc22",
+  "taxon": "Heloderma suspectum"
+ },
+ "giraffe": {
+  "author": "Bernard Dupont (photograph) and T. Michael Keesey (tracing)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b35f867d-26e8-4c48-806e-0f07f18b1844",
+  "taxon": "Giraffa camelopardalis camelopardalis var. rothschildi"
+ },
+ "glass-frog": {
+  "author": "Jose Carlos Arenas-Monroy",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/e73987bf-768c-40af-bf0e-e7edd3ea05ed",
+  "taxon": "Hyalinobatrachium viridissimum"
+ },
+ "goblin-shark": {
+  "author": "Haplochromis (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/41f62d55-3c86-4204-b753-dfff8f11c6d3",
+  "taxon": "Mitsukurina owstoni"
+ },
+ "golden-poison-frog": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/be8bb25e-d825-49a1-ae9f-0289efb8d410",
+  "taxon": "Phyllobates terribilis"
+ },
+ "golden-snub-nosed-monkey": {
+  "author": "Yan Wong from drawing by Joseph Smit",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/648ed122-6b72-4c69-91f5-bf6c2bf75c78",
+  "taxon": "Rhinopithecus roxellana"
+ },
+ "goliath-frog": {
+  "author": "Jose Carlos Arenas-Monroy",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/6e75b249-7f67-44cd-b63d-5ae8b2191c89",
+  "taxon": "Conraua crassipes"
+ },
+ "great-bustard": {
+  "author": "Kai Caspar",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/4291fa38-2fbd-4b3e-970c-ee8a937e4f4d",
+  "taxon": "Chlamydotis undulata"
+ },
+ "great-grey-owl": {
+  "author": "Sharon Wegner-Larsen",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/088bc660-44e4-4717-b5fc-13ee15ade62b",
+  "taxon": "Tyto alba"
+ },
+ "great-hammerhead": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/af51e4b5-39d6-4a39-8705-97799334b7f6",
+  "taxon": "Sphyrna mokarran"
+ },
+ "great-hornbill": {
+  "author": "Vijay Karthick",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/220252f6-a950-4173-ab6c-8101f8cac81c",
+  "taxon": "Buceros bicornis"
+ },
+ "great-white-pelican": {
+  "author": "Oscar G. Miranda",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/37373c17-86fb-40e1-99bb-52e0338b7e88",
+  "taxon": "Pelecanus onocrotalus"
+ },
+ "great-white-shark": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/545d45f0-0dd1-4cfd-aad6-2b835223ea0d",
+  "taxon": "Carcharodon carcharias"
+ },
+ "greater-blue-ringed-octopus": {
+  "author": "Leann Biancani / photo: opencage.info",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/a4670091-e9ef-4ed9-aa80-eeb09fdfb750",
+  "taxon": "Hapalochlaena fasciata"
+ },
+ "greater-roadrunner": {
+  "author": "Nicolas Huet le Jeune and Jean-Gabriel Prêtre (vectorized by T. Michael Keesey)",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "relative (Neomorphini)",
+  "page": "https://www.phylopic.org/images/61ddd908-b19d-4769-a1b3-0243d4b13431",
+  "taxon": "Neomorphus geoffroyi"
+ },
+ "green-anaconda": {
+  "author": "Gamma 124",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/40a9c52e-814a-439a-b7c6-905ddd70c96f",
+  "taxon": "Eunectes murinus"
+ },
+ "green-darner": {
+  "author": "Marie Russell",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/7ba461ab-1eb4-4fa9-8852-806006fba558",
+  "taxon": "Anax imperator"
+ },
+ "green-iguana": {
+  "author": "Jack Mayer Wood",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/5dec03d9-66a2-4033-b1a9-6dbb3485199f",
+  "taxon": "Iguana iguana"
+ },
+ "green-sea-turtle": {
+  "author": "James R. Spotila and Ray Chatterji",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/95a56d8c-896f-44ed-bf00-5f07d64ca6f8",
+  "taxon": "Chelonia mydas"
+ },
+ "greenland-shark": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/50f67ea6-a922-4ede-a054-af9632cff470",
+  "taxon": "Somniosus microcephalus"
+ },
+ "grey-parrot": {
+  "author": "Cameron Dunn",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d791cad7-c2bc-41ed-9ec2-d49e0e3152bb",
+  "taxon": "Psittacus erithacus"
+ },
+ "grey-wolf": {
+  "author": "David Orr",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/da5faa63-085f-4523-a542-e71cb386c999",
+  "taxon": "Canis latrans"
+ },
+ "grizzly-bear": {
+  "author": "xgirouxb",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/0cd82109-bb1c-4e08-ab11-c845d8a82eba",
+  "taxon": "Ursus arctos horribilis"
+ },
+ "harpy-eagle": {
+  "author": "Anthony Caravaggi",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Aquila chrysaetos)",
+  "page": "https://www.phylopic.org/images/b2b60a18-fd7d-49b2-a15d-54a62cdcac6b",
+  "taxon": "Aquila chrysaetos"
+ },
+ "hawksbill-sea-turtle": {
+  "author": "James R. Spotila and Ray Chatterji",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f38583f2-b978-4bfe-afba-7bcd18efac60",
+  "taxon": "Eretmochelys imbricata"
+ },
+ "hellbender": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/00ddecf5-e95b-4898-be00-989a14ba175e",
+  "taxon": "Cryptobranchus alleganiensis"
+ },
+ "hercules-beetle": {
+  "author": "Udo Schmidt",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "stand-in (Oryctes nasicornis)",
+  "page": "https://www.phylopic.org/images/c27bd9c4-6a3e-46bf-bf7a-81198b7e03cd",
+  "taxon": "Oryctes nasicornis"
+ },
+ "hippopotamus": {
+  "author": "Evan Boucher",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3769e205-b10c-4aab-affc-b4f0302f4eaa",
+  "taxon": "Hippopotamus amphibius"
+ },
+ "hispaniolan-solenodon": {
+  "author": "Inessa Voet",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3717bf88-d959-4bdd-aa69-54e3dccc53b6",
+  "taxon": "Solenodon paradoxus"
+ },
+ "hoatzin": {
+  "author": "Warren H (photography), T. Michael Keesey (vectorization)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/79ad5f09-cf21-4c89-8e7d-0c82a00ce728",
+  "taxon": "Opisthocomus hoazin"
+ },
+ "honey-badger": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/71409c76-60f0-4a92-a3eb-9a739f01bc09",
+  "taxon": "Mellivora capensis"
+ },
+ "humboldt-squid": {
+  "author": "Hans Hillewaert (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "stand-in (Loligo vulgaris)",
+  "page": "https://www.phylopic.org/images/a684fe05-44aa-4522-af0c-9390adbd0335",
+  "taxon": "Loligo vulgaris"
+ },
+ "humpback-anglerfish": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/342500a8-eabd-4630-8223-dc44bcfc678e",
+  "taxon": "Melanocetus johnsonii"
+ },
+ "humpback-whale": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ce70490a-79a5-47fc-afb9-834e45803ab4",
+  "taxon": "Balaenoptera novaeangliae"
+ },
+ "humphead-wrasse": {
+  "author": "Ieuan Jones",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "stand-in (Labrus bergylta)",
+  "page": "https://www.phylopic.org/images/40c41a37-68a4-444a-be52-d8601447eb03",
+  "taxon": "Labrus bergylta"
+ },
+ "hyacinth-macaw": {
+  "author": "Zitan Song",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/0e752edb-ec92-4f5e-b988-2b22566a196e",
+  "taxon": "Anodorhynchus hyacinthinus"
+ },
+ "hyrax": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/bae84fd8-937a-4390-b123-0a22bfcd7df7",
+  "taxon": "Dendrohyrax"
+ },
+ "iberian-ribbed-newt": {
+  "author": "Nick Leigh",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b29b9cba-66c2-4f67-839d-d090292e75e8",
+  "taxon": "Pleurodeles waltl"
+ },
+ "immortal-jellyfish": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/68cd12e5-716b-4c3c-ac98-37761edc74fb",
+  "taxon": "Turritopsis dohrnii"
+ },
+ "indian-peafowl": {
+  "author": "Holly Marshall",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Pavo)",
+  "page": "https://www.phylopic.org/images/2928641d-32f3-4543-889e-dd891c1a7783",
+  "taxon": "Pavo muticus"
+ },
+ "indian-star-tortoise": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Testudo graeca)",
+  "page": "https://www.phylopic.org/images/d57e095a-eae7-4fca-90da-1355cad04dfa",
+  "taxon": "Testudo graeca"
+ },
+ "indri": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Propithecus verreauxi)",
+  "page": "https://www.phylopic.org/images/3fc9fced-817a-466a-817b-d8710364e010",
+  "taxon": "Propithecus verreauxi"
+ },
+ "inland-taipan": {
+  "author": "V. Deepak",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "stand-in (Naja naja)",
+  "page": "https://www.phylopic.org/images/7d7ef734-8a79-4dcf-ad8e-f2cbcd1bf43e",
+  "taxon": "Ophiophagus hannah"
+ },
+ "jaguar": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "relative (Pantherinae)",
+  "page": "https://www.phylopic.org/images/cf57bcb2-d369-406f-a27a-96243328fa75",
+  "taxon": "Neofelis nebulosa"
+ },
+ "japanese-giant-salamander": {
+  "author": "Y. de Hoev. (vectorized by T. Michael Keesey)",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/4825e499-7da0-479a-b189-89f61d40617b",
+  "taxon": "Andrias japonicus"
+ },
+ "japanese-macaque": {
+  "author": "Erik Junior",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Haemulidae)",
+  "page": "https://www.phylopic.org/images/a7d45e6a-4e23-41cc-b9dd-fd64fcc4ad44",
+  "taxon": "Conodon nobilis"
+ },
+ "japanese-spider-crab": {
+  "author": "Michael Wolf (photo), Hans Hillewaert (editing), T. Michael Keesey (vectorization)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/e29b80f3-df87-46f9-ad82-be4b6c212121",
+  "taxon": "Macrocheira kaempferi"
+ },
+ "kakapo": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/68367902-fd43-4a9d-9e07-4a64ac73cfac",
+  "taxon": "Strigops habroptila"
+ },
+ "kea": {
+  "author": "Ferran Sayol",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b985eefe-7873-437b-93b6-e06673df564c",
+  "taxon": "Nestor notabilis"
+ },
+ "kereru": {
+  "author": "Anthony Caravaggi",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Columba palumbus)",
+  "page": "https://www.phylopic.org/images/9509aeb5-dbae-4902-9c56-6fdd01b321f2",
+  "taxon": "Columba palumbus"
+ },
+ "king-cobra": {
+  "author": "V. Deepak",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7d7ef734-8a79-4dcf-ad8e-f2cbcd1bf43e",
+  "taxon": "Ophiophagus hannah"
+ },
+ "king-penguin": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/21c50828-58d8-42df-9219-2c1b0fb57c99",
+  "taxon": "Aptenodytes patagonicus"
+ },
+ "kinkajou": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/1efc1026-6bc4-4a7f-9fe7-a341b83ca38c",
+  "taxon": "Potos flavus"
+ },
+ "koala": {
+  "author": "Sarah Werning",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/8a06d489-024f-4505-8ccb-f86e84e00e75",
+  "taxon": "Phascolarctos cinereus"
+ },
+ "komodo-dragon": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ce6a78bc-3ef1-4d60-ab40-113eb84c7802",
+  "taxon": "Varanus komodoensis"
+ },
+ "largetooth-sawfish": {
+  "author": "C. Camilo Julián-Caballero",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/bc78209e-0aea-4671-aa5c-a23509af2bf6",
+  "taxon": "Pristis pristis"
+ },
+ "laughing-kookaburra": {
+  "author": "Craig Dylke",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7fd4bf79-aebc-4c0f-a8a6-10ba7cce6c33",
+  "taxon": "Dacelo novaeguineae"
+ },
+ "leafcutter-ant": {
+  "author": "Mattia Menchetti",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Myrmicinae)",
+  "page": "https://www.phylopic.org/images/9baeb207-5a37-4e43-9d9c-4cfb9038c0cc",
+  "taxon": "Messor capitatus"
+ },
+ "leafy-seadragon": {
+  "author": "Jamie Whitehouse",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/89cf6943-ab88-492c-9ca1-33cecdeea886",
+  "taxon": "Phycodurus eques"
+ },
+ "leatherback-sea-turtle": {
+  "author": "Neil Kelley",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a1fa1020-ec8e-4bb0-94e8-2f678c4fecac",
+  "taxon": "Dermochelys coriacea"
+ },
+ "leopard-gecko": {
+  "author": "Jose Carlos Arenas-Monroy",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/e28cf327-0bec-42bf-af73-c1bbc0368c3e",
+  "taxon": "Eublepharis turcmenicus"
+ },
+ "leopard-seal": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/da451b45-b32c-4982-861d-59d24ccff14f",
+  "taxon": "Hydrurga leptonyx"
+ },
+ "lilac-breasted-roller": {
+  "author": "Hugo Gruson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/086d2b94-f13c-47ab-9538-c9b71d97f934",
+  "taxon": "Coracias caudata"
+ },
+ "lion": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "relative (Pantherinae)",
+  "page": "https://www.phylopic.org/images/cf57bcb2-d369-406f-a27a-96243328fa75",
+  "taxon": "Neofelis nebulosa"
+ },
+ "lions-mane-jellyfish": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f2fb5773-f8ff-45b0-9c6c-cc5aef3c93d5",
+  "taxon": "Cyanea capillata"
+ },
+ "little-barrier-giant-weta": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/50eb0080-39a6-4a7d-8ca4-736244301c7d",
+  "taxon": "Deinacrida heteracantha"
+ },
+ "little-brown-bat": {
+  "author": "Archibald Thorburn",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/15f040d4-d9db-4751-8b97-286fcc60288d",
+  "taxon": "Myotis daubentonii"
+ },
+ "luna-moth": {
+  "author": "Chris A. Hamilton",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/8229756b-82c3-4a9f-a1c6-e88f958e623e",
+  "taxon": "Actias luna"
+ },
+ "madagascan-sunset-moth": {
+  "author": "Chris A. Hamilton",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Actias luna)",
+  "page": "https://www.phylopic.org/images/8229756b-82c3-4a9f-a1c6-e88f958e623e",
+  "taxon": "Actias luna"
+ },
+ "malayan-tapir": {
+  "author": "Zimices",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/77da08e1-0d42-4910-8011-ee92f9b8beda",
+  "taxon": "Acrocodia sanyuanensis"
+ },
+ "mandarin-duck": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a1bb78e7-0657-4189-ab31-8c2a3798fbae",
+  "taxon": "Aix galericulata"
+ },
+ "mandrill": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/88f44b35-0d87-4176-a23f-b699ad04cf40",
+  "taxon": "Mandrillus sphinx"
+ },
+ "maned-wolf": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ebd8b68c-b9db-4466-b0ae-1edebd18153c",
+  "taxon": "Chrysocyon brachyurus"
+ },
+ "marine-iguana": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/0da59be7-20cc-4bbe-ae22-41f169350adb",
+  "taxon": "Amblyrhynchus cristatus"
+ },
+ "mayfly": {
+  "author": "Emily Willoughby",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/19c45126-9daf-48c8-b241-fbfa0be7025f",
+  "taxon": "Epicharmeropsis"
+ },
+ "meerkat": {
+  "author": "T. Michael Keesey",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/71cc5f62-d26d-4ea9-8637-c8ac39ea1533",
+  "taxon": "Suricata suricatta"
+ },
+ "megamouth-shark": {
+  "author": "Dr. Tony Ayling",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "relative (Alopioidea)",
+  "page": "https://www.phylopic.org/images/5bb5e293-2cd3-4e49-b6a0-1e1fbb959c01",
+  "taxon": "Odontaspis ferox"
+ },
+ "mekong-giant-catfish": {
+  "author": "Carlos Cano-Barbacil",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Silurus glanis)",
+  "page": "https://www.phylopic.org/images/7cb387d7-9b23-4e5c-a007-2d938339cb8a",
+  "taxon": "Silurus glanis"
+ },
+ "menelaus-blue-morpho": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/5a29b2b8-18b5-4003-83a5-349124514403",
+  "taxon": "Morpho menelaus"
+ },
+ "mexican-beaded-lizard": {
+  "author": "Gabriela Palomo-Munoz",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a20e94ce-1bee-4b38-a753-03e264ba4db4",
+  "taxon": "Heloderma charlesbogerti"
+ },
+ "mexican-tetra": {
+  "author": "www.studiospectre.com",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Tetragonopterini)",
+  "page": "https://www.phylopic.org/images/199829d3-183a-4eb3-a35a-a8705d28cb56",
+  "taxon": "Hemigrammus rhodostomus"
+ },
+ "monarch-butterfly": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/e6705593-91ba-4b6e-9dfd-515005e35fc6",
+  "taxon": "Danaus plexippus"
+ },
+ "moose": {
+  "author": "Rebecca Collins",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/df2d0ad0-adb0-49d7-afe5-edc6cad21064",
+  "taxon": "Alces alces"
+ },
+ "mountain-gorilla": {
+  "author": "T. Michael Keesey (after Colin M. L. Burnett)",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/d9af529d-e426-4c7a-922a-562d57a7872e",
+  "taxon": "Gorilla gorilla gorilla"
+ },
+ "mourning-cloak": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ec822d7d-ef19-4652-b81d-0de952369fbd",
+  "taxon": "Nymphalis antiopa"
+ },
+ "muskox": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b697158f-d535-4a47-973c-9926103f255f",
+  "taxon": "Ovibos moschatus"
+ },
+ "naked-mole-rat": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7a7d8226-aa19-4f6f-8afa-f039cc860d7e",
+  "taxon": "Heterocephalus glaber"
+ },
+ "narwhal": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/bfe45de4-d8a8-423c-abf3-087a7c7d0d6c",
+  "taxon": "Monodon monoceros"
+ },
+ "nautilus": {
+  "author": "Antonov (vectorized by T. Michael Keesey)",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/201c6030-3bff-43fc-8547-dac6e2d50227",
+  "taxon": "Nautilus"
+ },
+ "nile-crocodile": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/2fa0c118-f96c-407e-91eb-522065829f14",
+  "taxon": "Crocodylus niloticus"
+ },
+ "north-american-beaver": {
+  "author": "xgirouxb",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b3dd721e-6084-4413-8300-44e10d8fd3ca",
+  "taxon": "Castor canadensis"
+ },
+ "north-american-porcupine": {
+  "author": "T. Michael Keesey",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/be839ae5-9c7c-42f2-a9a1-0326d70a3b82",
+  "taxon": "Erethizon dorsatum"
+ },
+ "north-atlantic-right-whale": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/fb533874-aa63-4f76-baf0-e9ceacd7333c",
+  "taxon": "Eubalaena glacialis"
+ },
+ "north-island-brown-kiwi": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/ad7d0f80-889e-4dba-a89d-c864f2f48184",
+  "taxon": "Apteryx australis"
+ },
+ "northern-bald-ibis": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3bb0928f-f9d2-4163-b0ce-7a1b58e3a47a",
+  "taxon": "Geronticus eremita"
+ },
+ "northern-crested-newt": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f65e780a-f29a-48a5-9838-aa5a17ca596c",
+  "taxon": "Triturus cristatus"
+ },
+ "northern-elephant-seal": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d5cb6d50-6d1e-4e9c-a9c2-4a4e6fe025a1",
+  "taxon": "Mirounga angustirostris"
+ },
+ "northern-gannet": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/dece9524-b81b-4ed7-b04d-248a496edec5",
+  "taxon": "Morus bassanus"
+ },
+ "northern-lapwing": {
+  "author": "Nina Skinner",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/4249a198-4b12-4878-a89b-699e47e95803",
+  "taxon": "Vanellus vanellus"
+ },
+ "northern-pike": {
+  "author": "Timothy Knepp (vectorized by T. Michael Keesey)",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/e11a3135-cfe1-4f8a-8e1e-1824fef0e833",
+  "taxon": "Esox lucius"
+ },
+ "numbat": {
+  "author": "Sarah Werning",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/decf3474-61e7-4b5c-a3aa-d5adb13d89cb",
+  "taxon": "Myrmecobius fasciatus fasciatus"
+ },
+ "ocean-sunfish": {
+  "author": "Nick Hahlbeck",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/bd9fc44c-2855-4f0d-8d74-883cb27dc482",
+  "taxon": "Mola mola"
+ },
+ "ocellaris-clownfish": {
+  "author": "Kamil S. Jaron",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b7ef52c0-e6a1-4914-b37f-f1a87fe435dc",
+  "taxon": "Amphiprion ocellaris"
+ },
+ "oilbird": {
+  "author": "Christopher Watson (photo) and T. Michael Keesey (vectorization)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "relative (Vanescaves)",
+  "page": "https://www.phylopic.org/images/b99fb786-7aa3-4344-aa41-eee1dbca1186",
+  "taxon": "Aegotheles cristatus"
+ },
+ "okapi": {
+  "author": "T. Michael Keesey",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/44eea793-5a86-4801-ac56-0962e62491d8",
+  "taxon": "Okapia johnstoni"
+ },
+ "olm": {
+  "author": "Jose Carlos Arenas-Monroy",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/05497054-f1a2-47b7-945c-ac5ee871b895",
+  "taxon": "Proteus anguinus"
+ },
+ "orange-oakleaf": {
+  "author": "Wouter Koch",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Vanessa atalanta)",
+  "page": "https://www.phylopic.org/images/c808be57-42d4-421b-aeb9-d1b93571416d",
+  "taxon": "Vanessa atalanta"
+ },
+ "orca": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/880129b5-b78b-40a9-88ad-55f7d1dc823f",
+  "taxon": "Orcinus orca"
+ },
+ "orchid-mantis": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Mantis religiosa)",
+  "page": "https://www.phylopic.org/images/c5a14ad6-6d6f-49db-97b9-680cb36f8646",
+  "taxon": "Mantis religiosa"
+ },
+ "pacific-viperfish": {
+  "author": "C. Camilo Julián-Caballero",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/6d1616dd-ab90-4652-bc27-8bbcadef2744",
+  "taxon": "Chauliodus danae"
+ },
+ "painted-lady": {
+  "author": "Gareth Monger",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/4207925a-1a59-47cd-acc5-e75da4e5e128",
+  "taxon": "Vanessa cardui"
+ },
+ "pallas-cat": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7fd7d388-f245-4d2d-a9ab-e8abc50c55d9",
+  "taxon": "Otocolobus manul"
+ },
+ "peacock-mantis-shrimp": {
+  "author": "T. Michael Keesey (after Mivart)",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Squilla mantis)",
+  "page": "https://www.phylopic.org/images/9ab896a7-9f73-4a24-b08b-539a4b860845",
+  "taxon": "Squilla mantis"
+ },
+ "peregrine-falcon": {
+  "author": "Liftarn",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6cebf754-cb71-448d-a5bb-947157205264",
+  "taxon": "Falco peregrinus"
+ },
+ "periodical-cicada": {
+  "author": "Caleb Gordon",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/29af591e-9d31-4fef-8942-391367b542c5",
+  "taxon": "Magicicada"
+ },
+ "philippine-eagle": {
+  "author": "Anthony Caravaggi",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Aquila chrysaetos)",
+  "page": "https://www.phylopic.org/images/b2b60a18-fd7d-49b2-a15d-54a62cdcac6b",
+  "taxon": "Aquila chrysaetos"
+ },
+ "philippine-tarsier": {
+  "author": "Yan Wong",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f598fb39-facf-43ea-a576-1861304b2fe4",
+  "taxon": "Carlito syrichta"
+ },
+ "pink-fairy-armadillo": {
+  "author": "T. Michael Keesey, from a photo by David Stang",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/06719808-32ca-4258-b2ec-9c7e1b1c24bb",
+  "taxon": "Chlamyphorus truncatus"
+ },
+ "plain-tiger": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/fbe94261-7748-47f3-8ee3-a4eebdefd132",
+  "taxon": "Pieris rapae"
+ },
+ "plains-zebra": {
+  "author": "Mercedes Yrayzoz (vectorized by T. Michael Keesey)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "relative (Equus)",
+  "page": "https://www.phylopic.org/images/85d95128-912c-427a-9542-138e1dbf5651",
+  "taxon": "Equus ferus przewalskii"
+ },
+ "platypus": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/61932f57-1fd2-49d9-bb86-042d6005581a",
+  "taxon": "Ornithorhynchus anatinus"
+ },
+ "polar-bear": {
+  "author": "Tracy A. Heath",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/c11b4873-aa21-4394-9f5e-6996033c379f",
+  "taxon": "Ursus maritimus"
+ },
+ "polyphemus-moth": {
+  "author": "Chris A. Hamilton",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Actias luna)",
+  "page": "https://www.phylopic.org/images/8229756b-82c3-4a9f-a1c6-e88f958e623e",
+  "taxon": "Actias luna"
+ },
+ "portuguese-man-o-war": {
+  "author": "Noah Schlottman, photo by Casey Dunn",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6872620a-34e1-4744-b536-a5b5437b9097",
+  "taxon": "Physalia physalis"
+ },
+ "precious-coral": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/ac9f4e10-ea4c-4956-bfe8-2bc3e86ba3c9",
+  "taxon": "Ramaria subbotrytis"
+ },
+ "proboscis-monkey": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/cfce3721-fd48-448c-b019-82d8808baf48",
+  "taxon": "Nasalis larvatus"
+ },
+ "pronghorn": {
+  "author": "Xavier Giroux-Bougard",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a1ead819-3839-4430-9774-ae6984178fe8",
+  "taxon": "Antilocapra americana"
+ },
+ "przewalskis-horse": {
+  "author": "Mercedes Yrayzoz (vectorized by T. Michael Keesey)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/85d95128-912c-427a-9542-138e1dbf5651",
+  "taxon": "Equus ferus przewalskii"
+ },
+ "pygmy-hippopotamus": {
+  "author": "T. Michael Keesey (after Marek Velechovský)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/72c02812-d2c8-4d0d-83ce-3f0677a01ace",
+  "taxon": "Choeropsis liberiensis"
+ },
+ "pyrosome": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/90dcba1f-677c-4e45-810c-a6305e988c68",
+  "taxon": "Pyrosoma atlanticum"
+ },
+ "quokka": {
+  "author": "T. Michael Keesey (photo by Sean Mack)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/abd569c8-126c-4211-9304-5bb58be0666c",
+  "taxon": "Setonix brachyurus"
+ },
+ "razorbill": {
+  "author": "cornebuzz",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/80b24a41-1175-4a70-8d93-f656be8bd089",
+  "taxon": "Alca torda"
+ },
+ "red-billed-quelea": {
+  "author": "Andrew Butko (modified)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "stand-in (Passer domesticus)",
+  "page": "https://www.phylopic.org/images/3b74c3e5-1ffa-4089-95b1-371f1b71fce0",
+  "taxon": "Passer domesticus"
+ },
+ "red-fox": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a1116e25-7b50-4666-bef5-de18b6e2778c",
+  "taxon": "Vulpes bengalensis"
+ },
+ "red-kangaroo": {
+  "author": "Michael Scroggie",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Macropodina)",
+  "page": "https://www.phylopic.org/images/eccfc4b3-faee-4384-b35b-64c788f30846",
+  "taxon": "Wallabia bicolor"
+ },
+ "red-knot": {
+  "author": "Richard Rich",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/8df99626-e447-4b1b-928f-fe5dc3b7bd1f",
+  "taxon": "Calidris canutus"
+ },
+ "red-lionfish": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6c1bd650-faf2-4242-ae8d-ec9faa635a0a",
+  "taxon": "Pterois volitans"
+ },
+ "red-panda": {
+  "author": "Xavier A. Jenkins",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/02990f6d-82d3-45a9-b85e-99deb69d2a96",
+  "taxon": "Ailurus fulgens"
+ },
+ "resplendent-quetzal": {
+  "author": "Jamie Whitehouse",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/8c7cb07b-dd3a-43d1-8487-e5d125395bb3",
+  "taxon": "Pharomachrus mocinno"
+ },
+ "reticulated-python": {
+  "author": "Gamma 124",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/4a37350f-cf50-4c3e-bc07-7700d6552942",
+  "taxon": "Malayopython reticulatus"
+ },
+ "rhinoceros-beetle": {
+  "author": "YA",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/db741d09-5f75-49db-91aa-cd803f5b9dfa",
+  "taxon": "Oryctes rhinoceros"
+ },
+ "ring-tailed-lemur": {
+  "author": "Roberto Díaz Sibaja",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "relative (Lemurini)",
+  "page": "https://www.phylopic.org/images/d6cfb28f-136e-4a20-a5ac-8eb353c7fc4a",
+  "taxon": "Lemur catta"
+ },
+ "rock-ptarmigan": {
+  "author": "xgirouxb",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/42f85a2b-7517-439a-8dc3-b745a35c035d",
+  "taxon": "Lagopus lagopus"
+ },
+ "ruby-throated-hummingbird": {
+  "author": "Andy Wilson",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/618b6a9d-6aa6-4316-bf25-2a7a3f788e88",
+  "taxon": "Archilochus colubris"
+ },
+ "rusty-patched-bumble-bee": {
+  "author": "Melissa Broussard",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/ccf32802-954f-433d-a5e7-d8a9d63098e5",
+  "taxon": "Bombus vosnesenskii"
+ },
+ "saiga": {
+  "author": "Trent Sperry",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/fcb4f3e0-4bd8-416d-9466-edf91aafc77e",
+  "taxon": "Saiga tatarica"
+ },
+ "saltwater-crocodile": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a796420f-5158-4e96-acbe-e30ef36b26d6",
+  "taxon": "Crocodylus porosus"
+ },
+ "sand-cat": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9a496bf8-e7dc-4774-952a-8878b9e87b38",
+  "taxon": "Felis margarita"
+ },
+ "saola": {
+  "author": "Jan A. Venter, Herbert H. T. Prins, David A. Balfour & Rob Slotow (vectorized by T. Michael Keesey)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "stand-in (Oryx gazella)",
+  "page": "https://www.phylopic.org/images/8a6e967b-ff17-416d-9829-58957585b0c9",
+  "taxon": "Oryx gazella"
+ },
+ "scarlet-macaw": {
+  "author": "Myriam_Ramirez",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/0d19238f-25ca-42a5-a1e2-d108defb75f1",
+  "taxon": "Ara macao"
+ },
+ "sea-butterflies": {
+  "author": "Elodie Jacob",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/0de35c9c-31a6-4d34-b899-14ebfbebbfa8",
+  "taxon": "Cavolinia inflexa"
+ },
+ "sea-lamprey": {
+  "author": "Gareth Monger",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f9313512-3ce4-4349-86bc-060d4faa013e",
+  "taxon": "Petromyzon marinus"
+ },
+ "sea-otter": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d3a78afb-1b9e-45e0-b6f4-144d79f399f0",
+  "taxon": "Enhydra lutris"
+ },
+ "seahorse": {
+  "author": "Kelly",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/1ce0d9a9-c644-4cc6-b4b3-02e2e7aa2266",
+  "taxon": "Hippocampus"
+ },
+ "secretarybird": {
+  "author": "Danielle Alba",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/43843001-a702-4f51-9a23-7a7829273664",
+  "taxon": "Sagittarius serpentarius"
+ },
+ "serval": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/01895510-7c27-489d-b441-6f72b1f562d2",
+  "taxon": "Leptailurus serval"
+ },
+ "seven-spot-ladybird": {
+  "author": "Melissa Broussard",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/984448b7-2ada-4e49-aaf1-3dcb7b056532",
+  "taxon": "Coccinella undecimpunctata"
+ },
+ "shingleback-lizard": {
+  "author": "Kailah Thorn & Ben King",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Egerniini)",
+  "page": "https://www.phylopic.org/images/0e2a08ed-13a1-4b9e-a047-ef4045e7d88f",
+  "taxon": "Egernia saxatilis"
+ },
+ "shoebill": {
+  "author": "Tom Tarrant (photo), John E. McCormack, Michael G. Harvey, Brant C. Faircloth, Nicholas G. Crawford, Travis C. Glenn, Robb T. Brumfield & T. Michael Keesey",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/93851bd5-c8fd-4e56-a193-235611066cde",
+  "taxon": "Balaeniceps rex"
+ },
+ "short-beaked-echidna": {
+  "author": "Becky Barnes",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6885c062-5deb-4ebf-a481-752186819108",
+  "taxon": "Tachyglossus aculeatus"
+ },
+ "siamang": {
+  "author": "Kai R. Caspar",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/fa433f7b-662f-4c8b-a7b8-36974923dfc6",
+  "taxon": "Symphalangus syndactylus syndactylus"
+ },
+ "sloth-bear": {
+  "author": "Tracy A. Heath",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f88ead45-e1ca-4baf-b4c4-c05729df1ba3",
+  "taxon": "Melursus ursinus"
+ },
+ "snapping-turtle": {
+  "author": "DataBase Center for Life Science (DBCLS)",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "stand-in (Trachemys scripta)",
+  "page": "https://www.phylopic.org/images/144afc91-06d6-4d8c-84f5-734d5478d58d",
+  "taxon": "Trachemys scripta elegans"
+ },
+ "snow-bunting": {
+  "author": "Lauren McLean",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9e4392ad-9aff-4658-abeb-a729355384c7",
+  "taxon": "Plectrophenax nivalis"
+ },
+ "snow-leopard": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "relative (Pantherinae)",
+  "page": "https://www.phylopic.org/images/cf57bcb2-d369-406f-a27a-96243328fa75",
+  "taxon": "Neofelis nebulosa"
+ },
+ "snowy-owl": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/919a6f91-cb0b-4646-9ec2-b6a8b5e4b024",
+  "taxon": "Bubo scandiacus"
+ },
+ "sockeye-salmon": {
+  "author": "xgirouxb",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/3c098bb8-4158-4777-b567-80e48049409c",
+  "taxon": "Oncorhynchus nerka"
+ },
+ "southern-cassowary": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6fe53db2-831d-47c4-84db-34b7b429cc40",
+  "taxon": "Casuarius casuarius"
+ },
+ "spectacled-bear": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/05f87521-20d4-4a05-8ac6-aa0bab7f1394",
+  "taxon": "Tremarctos ornatus"
+ },
+ "sperm-whale": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6579c20d-f8c2-46d8-8d23-5dd2571584bc",
+  "taxon": "Physeter macrocephalus"
+ },
+ "spotted-hyena": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9d2832fd-5b5a-4876-bbc5-ea0971079410",
+  "taxon": "Crocuta spelaea spelaea"
+ },
+ "spring-peeper": {
+  "author": "Beth Reinke",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/3f8ba1d5-7456-4358-9afa-bd5f8b970a79",
+  "taxon": "Pseudacris maculata"
+ },
+ "stalk-eyed-flies": {
+  "author": "Sasha Bliznina",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/e44ab447-850c-4e25-a265-fd3c2df5137a",
+  "taxon": "Madagopsina parvapollina"
+ },
+ "star-nosed-mole": {
+  "author": "Didier Descouens (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/8b656a93-ecf3-4985-8f4d-1f5c032d1a27",
+  "taxon": "Condylura cristata"
+ },
+ "stellers-sea-eagle": {
+  "author": "Ron Holmes/U. S. Fish and Wildlife Service (source photo), T. Michael Keesey (vectorization)",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/9fbdceb3-6183-415f-8647-3783bc7cfa18",
+  "taxon": "Haliaeetus leucocephalus washingtoniensis"
+ },
+ "stoat": {
+  "author": "Margot Michaud",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/001f56ab-8383-4dfb-9673-67872280449e",
+  "taxon": "Mustela erminea"
+ },
+ "strawberry-poison-frog": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "relative (Dendrobatinae)",
+  "page": "https://www.phylopic.org/images/4679516b-405b-444f-974d-9775876716e2",
+  "taxon": "Dendrobates tinctorius"
+ },
+ "sugar-glider": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/735f29a4-2d43-4a63-8c7a-4e264e60d71a",
+  "taxon": "Petaurus breviceps"
+ },
+ "sumatran-rhinoceros": {
+  "author": "Christophe Mallet",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/b588650a-14a7-4b32-9010-f0383b07131b",
+  "taxon": "Dicerorhinus sumatrensis"
+ },
+ "sun-bear": {
+  "author": "Tracy A. Heath",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/22938c15-0d24-4d45-a403-4280a10cd3d1",
+  "taxon": "Helarctos malayanus"
+ },
+ "sunda-pangolin": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/f628f6fe-6e2d-4173-a20f-265dc7d2d04f",
+  "taxon": "Manis culionensis"
+ },
+ "sunda-slow-loris": {
+  "author": "Mareike C. Janiak",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/7f877a9e-53d7-48d0-a422-d3fa0ff5e2f9",
+  "taxon": "Nycticebus bengalensis"
+ },
+ "superb-fairywren": {
+  "author": "Michael Scroggie",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/52adef9e-6d59-46e8-9c3e-7fc593c55a42",
+  "taxon": "Malurus cyaneus"
+ },
+ "superb-lyrebird": {
+  "author": "Anders Alexander",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/94b3f85c-02aa-4129-a5d3-9b7293c9400a",
+  "taxon": "Menura novaehollandiae"
+ },
+ "sword-billed-hummingbird": {
+  "author": "Ernst Haeckel (vectorized by T. Michael Keesey)",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/e6f81459-0714-43a0-8bfb-805b81ee262e",
+  "taxon": "Ensifera ensifera"
+ },
+ "swordfish": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/c892eff7-52de-46cf-b056-5cd4496ed47f",
+  "taxon": "Xiphias gladius"
+ },
+ "tasmanian-devil": {
+  "author": "Sarah Werning",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/58cc56c2-5a36-4031-be9f-28c86f77963c",
+  "taxon": "Sarcophilus harrisii"
+ },
+ "texas-horned-lizard": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/448fecbd-e606-451b-aca8-23b949a79770",
+  "taxon": "Phrynosoma cornutum"
+ },
+ "thorny-devil": {
+  "author": "Matthew Speight",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "stand-in (Phrynosoma cornutum)",
+  "page": "https://www.phylopic.org/images/448fecbd-e606-451b-aca8-23b949a79770",
+  "taxon": "Phrynosoma cornutum"
+ },
+ "tiger-shark": {
+  "author": "Jimmy Bernot",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f9d9e345-5d79-4df0-b259-e7ab88e48854",
+  "taxon": "Galeocerdo cuvier"
+ },
+ "toco-toucan": {
+  "author": "Edwin Price",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/1174077e-944b-4a54-b0cd-ffc2975310ae",
+  "taxon": "Ramphastos toco"
+ },
+ "tuatara": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/f2a5ae73-c899-4e47-b0ad-b6eac3a99350",
+  "taxon": "Sphenodon punctatus"
+ },
+ "vampire-squid": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/6e6e9ed4-685f-42c8-9622-b967688ecb95",
+  "taxon": "Vampyroteuthis infernalis"
+ },
+ "vaquita": {
+  "author": "Chris huh",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/a23658b6-e872-45a8-b6ce-7eaba9e12a32",
+  "taxon": "Phocoena sinus"
+ },
+ "veiled-chameleon": {
+  "author": "T. Michael Keesey",
+  "license": "Public domain",
+  "licenseURL": "https://creativecommons.org/publicdomain/mark/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/610a6dc2-9aee-47d0-bffe-89647d2884f2",
+  "taxon": "Chamaeleo calyptratus"
+ },
+ "venus-flower-basket": {
+  "author": "Guillaume Dera",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/9d6fc9d2-cbd1-49fe-bb39-ac8355466e48",
+  "taxon": "Euplectella aspergillum"
+ },
+ "walrus": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/16cfde1b-d577-4de8-82b9-62b760aacba5",
+  "taxon": "Odobenus rosmarus"
+ },
+ "wandering-albatross": {
+  "author": "Alexandre Vong",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/d1e7e88d-20fb-4d4c-8a3e-b3417c392291",
+  "taxon": "Diomedea exulans"
+ },
+ "wandering-glider": {
+  "author": "Marie Russell",
+  "license": "CC BY 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/3.0/",
+  "match": "stand-in (Anax imperator)",
+  "page": "https://www.phylopic.org/images/7ba461ab-1eb4-4fa9-8852-806006fba558",
+  "taxon": "Anax imperator"
+ },
+ "wels-catfish": {
+  "author": "Carlos Cano-Barbacil",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/7cb387d7-9b23-4e5c-a007-2d938339cb8a",
+  "taxon": "Silurus glanis"
+ },
+ "west-indian-manatee": {
+  "author": "Flurin Leugger",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "relative (Trichechini)",
+  "page": "https://www.phylopic.org/images/3f69e1ee-08bc-40d1-b4fd-75246024e2c6",
+  "taxon": "Trichechus"
+ },
+ "western-barn-owl": {
+  "author": "Sharon Wegner-Larsen",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/088bc660-44e4-4717-b5fc-13ee15ade62b",
+  "taxon": "Tyto alba"
+ },
+ "western-honey-bee": {
+  "author": "Adrian Reich",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/956cf95f-9cbd-459b-a457-c80ba19877a4",
+  "taxon": "Apis mellifera"
+ },
+ "whale-shark": {
+  "author": "Scarlet23 (vectorized by T. Michael Keesey)",
+  "license": "CC BY-SA 3.0",
+  "licenseURL": "https://creativecommons.org/licenses/by-sa/3.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/ef0b81ab-a39e-4780-a572-e2849a23226b",
+  "taxon": "Rhincodon typus"
+ },
+ "wolverine": {
+  "author": "Steven Traver",
+  "license": "CC0",
+  "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "match": "species",
+  "page": "https://www.phylopic.org/images/1f9bbb79-f060-47c1-9954-ea78812d3b91",
+  "taxon": "Gulo gulo gulo"
+ },
+ "yellow-bellied-sea-snake": {
+  "author": "Dr Christina Zdenek",
+  "license": "CC BY 4.0",
+  "licenseURL": "https://creativecommons.org/licenses/by/4.0/",
+  "match": "genus",
+  "page": "https://www.phylopic.org/images/93d6ca5a-96b2-4243-8424-100925e970bb",
+  "taxon": "Hydrophis elegans"
+ }
+}

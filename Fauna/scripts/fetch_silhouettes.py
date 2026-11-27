@@ -4,7 +4,7 @@ the species, else its genus, else the nearest ancestor a few steps up that has o
 licences that allow use in a free app are kept (public domain, CC0, CC BY, CC BY-SA; never NC).
 Writes Fauna/Resources/Silhouettes/sil-<id>.png and Fauna/Resources/silhouettes.json (credits).
 Usage: fetch_silhouettes.py [--refresh]"""
-import json, sys, time, urllib.parse, urllib.request
+import json, sys, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -15,14 +15,38 @@ UA = {"User-Agent": "FaunaSilhouettes/1.0 (educational app; contact via GitHub)"
 MAX_STEPS_UP = 3   # genus, then up to two more ranks; beyond that the shape may be misleading
 
 def get(url, raw=False):
-    for i in range(5):
+    for i in range(4):
         try:
             with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
                 data = r.read()
                 return data if raw else json.loads(data)
+        except urllib.error.HTTPError as e:
+            if 400 <= e.code < 500 and e.code != 429: return None   # not found: don't retry
+            time.sleep(1.5 * (i + 1))
         except Exception:
             time.sleep(1.5 * (i + 1))
     return None
+
+# Animals PhyloPic has nothing for (or nothing close): a similar-shaped relative to stand in.
+STAND_INS = {
+    "snapping-turtle": "Trachemys scripta", "alligator-snapping-turtle": "Trachemys scripta",
+    "blandings-turtle": "Emys orbicularis", "indian-star-tortoise": "Testudo graeca",
+    "peacock-mantis-shrimp": "Squilla mantis", "pistol-shrimp": "Alpheus",
+    "thorny-devil": "Phrynosoma cornutum", "atlas-moth": "Actias luna", "polyphemus-moth": "Actias luna",
+    "madagascan-sunset-moth": "Actias luna", "orange-oakleaf": "Vanessa atalanta",
+    "orchid-mantis": "Mantis religiosa", "hercules-beetle": "Oryctes nasicornis",
+    "christmas-island-red-crab": "Carcinus maenas", "red-king-crab": "Lithodes maja",
+    "black-mamba": "Naja naja", "inland-taipan": "Naja naja", "boomslang": "Natrix natrix", "gaboon-viper": "Vipera berus",
+    "banded-archerfish": "Perca fluviatilis", "desert-locust": "Locusta migratoria",
+    "humboldt-squid": "Loligo vulgaris", "bigfin-reef-squid": "Loligo vulgaris", "giant-pacific-octopus": "Octopus vulgaris",
+    "burchells-army-ant": "Formica rufa", "asian-weaver-ant": "Formica rufa", "wandering-glider": "Anax imperator",
+    "giant-oarfish": "Trachipterus", "devils-hole-pupfish": "Cyprinodon variegatus", "humphead-wrasse": "Labrus bergylta",
+    "fishing-cat": "Felis silvestris", "mekong-giant-catfish": "Silurus glanis", "red-bellied-piranha": "Colossoma macropomum",
+    "indri": "Propithecus verreauxi", "philippine-eagle": "Aquila chrysaetos", "harpy-eagle": "Aquila chrysaetos",
+    "saola": "Oryx gazella", "takahe": "Porphyrio porphyrio", "giant-isopod": "Ligia oceanica",
+    "darwins-frog": "Rana temporaria", "australian-green-tree-frog": "Hyla arborea", "asian-arowana": "Osteoglossum bicirrhosum",
+    "andean-flamingo": "Phoenicopterus roseus", "kereru": "Columba palumbus", "red-billed-quelea": "Passer domesticus",
+}
 
 def licence_ok(href):
     h = (href or "").lower()
@@ -48,9 +72,9 @@ def usable(image):
     if not licence_ok(lic): return None
     raster = image["_links"].get("rasterFiles") or []
     if not raster: return None
-    # Largest raster up to 1024 px wide.
+    # Largest raster up to 512 px wide (plenty for a phone, and keeps the app small).
     def width(f): return int(f["sizes"].split("x")[0])
-    pick = sorted((f for f in raster if width(f) <= 1024), key=width)[-1] if any(width(f) <= 1024 for f in raster) else raster[-1]
+    pick = sorted((f for f in raster if width(f) <= 512), key=width)[-1] if any(width(f) <= 512 for f in raster) else raster[-1]
     return {"url": pick["href"], "license": licence_name(lic), "licenseURL": lic,
             "author": image.get("attribution") or image["_links"].get("contributor", {}).get("title", "Unknown"),
             "page": "https://www.phylopic.org" + image["_links"]["self"]["href"].split("?")[0],
@@ -87,6 +111,9 @@ def main():
 
     def one(a):
         hit, how = find(build, a["scientificName"])
+        if not hit and a["id"] in STAND_INS:
+            hit, how2 = find(build, STAND_INS[a["id"]])
+            how = f"stand-in ({STAND_INS[a['id']]})" if hit else how
         if not hit: return a["id"], None, f"{a['scientificName']}: {how}"
         png = get(hit.pop("url"), raw=True)
         if not png: return a["id"], None, "download failed"
@@ -95,10 +122,11 @@ def main():
         return a["id"], hit, None
 
     missing = []
-    with ThreadPoolExecutor(max_workers=2) as pool:
+    with ThreadPoolExecutor(max_workers=6) as pool:
         for aid, hit, err in pool.map(one, todo):
             if hit:
                 credits[aid] = hit
+                path.write_text(json.dumps(credits, ensure_ascii=False, indent=1, sort_keys=True) + "\n")
                 print(f"ok  {aid:32} {hit['match'][:28]:28} {hit['license']:12} {hit['author'][:30]}", flush=True)
             else:
                 missing.append(f"{aid}: {err}")
