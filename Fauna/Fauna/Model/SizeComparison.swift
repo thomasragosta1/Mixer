@@ -16,8 +16,10 @@ struct SizeComparison: Equatable, Identifiable {
         var upright = false
         /// Width over height of the drawn symbol.
         var aspect: Double = 1
+        /// A coin's size is its diameter.
+        var measuresAcross = false
         /// What the size measures: "long", "tall", "across".
-        var measure: String { symbol == "figure.stand" ? "tall" : symbol == "centsign.circle.fill" ? "across" : "long" }
+        var measure: String { symbol == "figure.stand" ? "tall" : measuresAcross ? "across" : "long" }
     }
 
     let kind: Kind
@@ -29,7 +31,6 @@ struct SizeComparison: Equatable, Identifiable {
     let reference: Reference
 
     static let lengthReferences: [Reference] = [
-        Reference(name: "a coin", plural: "coins", symbol: "centsign.circle.fill", size: 0.024),
         Reference(name: "a credit card", plural: "credit cards", symbol: "creditcard.fill", size: 0.086, aspect: 1.5),
         Reference(name: "a phone", plural: "phones", symbol: "iphone", size: 0.15, upright: true, aspect: 0.5),
         Reference(name: "a house cat", plural: "house cats", symbol: "cat.fill", size: 0.46, aspect: 1.1),
@@ -40,7 +41,6 @@ struct SizeComparison: Equatable, Identifiable {
     ]
 
     static let weightReferences: [Reference] = [
-        Reference(name: "a coin", plural: "coins", symbol: "centsign.circle.fill", size: 0.006),
         Reference(name: "a phone", plural: "phones", symbol: "iphone", size: 0.2),
         Reference(name: "a bag of sugar", plural: "bags of sugar", symbol: "bag.fill", size: 1),
         Reference(name: "a house cat", plural: "house cats", symbol: "cat.fill", size: 4.5),
@@ -50,17 +50,48 @@ struct SizeComparison: Equatable, Identifiable {
         Reference(name: "a bus", plural: "buses", symbol: "bus.fill", size: 12000),
     ]
 
+    /// A coin people actually carry where the phone is set up: its diameter and weight.
+    struct Coin { let name: String; let plural: String; let symbol: String; let diameter: Double; let mass: Double }
+
+    static func coin(region: String?) -> Coin {
+        let euro: Set<String> = ["AT", "BE", "CY", "DE", "EE", "ES", "FI", "FR", "GR", "HR", "IE", "IT", "LT", "LU",
+                                 "LV", "MT", "NL", "PT", "SI", "SK"]
+        switch region ?? "" {
+        case "CA": return Coin(name: "a Canadian quarter", plural: "Canadian quarters", symbol: "centsign.circle.fill",
+                               diameter: 0.02388, mass: 0.0044)
+        case "GB": return Coin(name: "a £1 coin", plural: "£1 coins", symbol: "sterlingsign.circle.fill",
+                               diameter: 0.02343, mass: 0.00875)
+        case "AU": return Coin(name: "an Australian $1 coin", plural: "Australian $1 coins", symbol: "dollarsign.circle.fill",
+                               diameter: 0.025, mass: 0.009)
+        case "NZ": return Coin(name: "a NZ $1 coin", plural: "NZ $1 coins", symbol: "dollarsign.circle.fill",
+                               diameter: 0.023, mass: 0.008)
+        case let r where euro.contains(r):
+            return Coin(name: "a €1 coin", plural: "€1 coins", symbol: "eurosign.circle.fill", diameter: 0.02325, mass: 0.0075)
+        default: return Coin(name: "a US quarter", plural: "US quarters", symbol: "centsign.circle.fill",
+                             diameter: 0.02426, mass: 0.00567)
+        }
+    }
+
+    static func references(_ kind: Kind, region: String?) -> [Reference] {
+        let c = coin(region: region)
+        if kind == .length {
+            return [Reference(name: c.name, plural: c.plural, symbol: c.symbol, size: c.diameter, measuresAcross: true)]
+                + lengthReferences
+        }
+        return [Reference(name: c.name, plural: c.plural, symbol: c.symbol, size: c.mass)] + weightReferences
+    }
+
     private static let lengthLabels: Set<String> = ["length", "body length", "wingspan", "height", "shoulder height",
                                                      "shell length", "total length", "size", "head-body length"]
 
     /// A comparison for a fact, or nil when it isn't a length or weight with a readable number.
     /// `fact` must be the original, metric fact.
-    static func make(for fact: Fact) -> SizeComparison? {
+    static func make(for fact: Fact, region: String? = Locale.current.region?.identifier) -> SizeComparison? {
         let label = fact.label.lowercased()
         let kind: Kind
         if label == "weight" { kind = .weight } else if lengthLabels.contains(label) { kind = .length } else { return nil }
         guard let value = parse(fact.value, kind: kind), value > 0 else { return nil }
-        let refs = kind == .length ? lengthReferences : weightReferences
+        let refs = references(kind, region: region)
         // The familiar object closest in size, so the picture stays readable.
         let reference = refs.min { abs(log($0.size / value)) < abs(log($1.size / value)) }!
         let dimension: Dimension = label.contains("height") ? .tall : label == "wingspan" ? .wingspan : .long

@@ -25,7 +25,7 @@ final class SizeComparisonTests: XCTestCase {
     func testPicksTheClosestFamiliarThing() {
         XCTAssertEqual(SizeComparison.make(for: fact("Length", "Up to about 6 m"))?.reference.name, "a car")
         XCTAssertEqual(SizeComparison.make(for: fact("Length", "1.8 m"))?.reference.name, "an adult person")
-        XCTAssertEqual(SizeComparison.make(for: fact("Length", "8 mm"))?.reference.name, "a coin")
+        XCTAssertEqual(SizeComparison.make(for: fact("Length", "8 mm"), region: "US")?.reference.name, "a US quarter")
         XCTAssertEqual(SizeComparison.make(for: fact("Weight", "150 tonnes"))?.reference.name, "a bus")
         XCTAssertEqual(SizeComparison.make(for: fact("Weight", "3–6 kg"))?.reference.name, "a house cat")
     }
@@ -50,6 +50,22 @@ final class SizeComparisonTests: XCTestCase {
         let albatross = SizeComparison.make(for: fact("Wingspan", "Up to 3.5 m"))!
         XCTAssertEqual(albatross.sentence(animal: "Wandering Albatross"),
                        "The Wandering Albatross's wingspan is about two-thirds the length of a car.")
+    }
+
+    func testTheCoinIsOneYouKnow() {
+        let tiny = fact("Length", "35 mm")
+        XCTAssertEqual(SizeComparison.make(for: tiny, region: "US")?.reference.name, "a US quarter")
+        XCTAssertEqual(SizeComparison.make(for: tiny, region: "CA")?.reference.name, "a Canadian quarter")
+        XCTAssertEqual(SizeComparison.make(for: tiny, region: "GB")?.reference.name, "a £1 coin")
+        XCTAssertEqual(SizeComparison.make(for: tiny, region: "FR")?.reference.name, "a €1 coin")
+        XCTAssertEqual(SizeComparison.make(for: tiny, region: "AU")?.reference.name, "an Australian $1 coin")
+        XCTAssertEqual(SizeComparison.make(for: tiny, region: nil)?.reference.name, "a US quarter")
+        XCTAssertEqual(SizeComparison.make(for: tiny, region: "US")?.reference.measure, "across")
+        XCTAssertEqual(SizeComparison.make(for: fact("Weight", "6 g"), region: "CA")?.reference.plural, "Canadian quarters")
+        for region in ["US", "CA", "GB", "DE", "AU", "NZ", "JP"] {
+            let c = SizeComparison.make(for: tiny, region: region)!
+            XCTAssertFalse(c.sentence(animal: "Spring Peeper").contains("a coin"), region)
+        }
     }
 
     func testMetricTextForTheReadersUnits() {
