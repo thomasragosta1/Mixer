@@ -65,7 +65,9 @@ struct SizeComparisonView: View {
             let ref = comparison.reference
             let v = CGFloat(comparison.value), rs = CGFloat(ref.size)
             let aspect = animalAspect
-            let animalVertical = comparison.dimension == .tall
+            // Heights are measured upright. So is a length when the silhouette stands taller than
+            // it is long (a penguin, a sitting frog): its long side is then its height.
+            let animalVertical = comparison.dimension == .tall || (comparison.dimension == .long && aspect < 0.9)
             // A wingspan is wider than a bird at rest, so the bird is drawn smaller than its arrow.
             let restShare: CGFloat = comparison.dimension == .wingspan ? 0.5 : 1
             // Drawn sizes in metres, and the span each measuring arrow covers.
@@ -82,12 +84,12 @@ struct SizeComparisonView: View {
             let showDash = !animalVertical && !ref.upright
             return VStack(alignment: .leading, spacing: 22) {
                 row(drawW: aw * scale, drawH: ah * scale, span: animalSpan * scale, vertical: animalVertical,
-                    drawWidth: drawWidth, labelWidth: labelWidth,
+                    guides: comparison.dimension != .wingspan, drawWidth: drawWidth, labelWidth: labelWidth,
                     value: "\(store.measured(comparison.valueText)) \(animalMeasure)", name: animal.name) {
                     animalShape
                 }
                 row(drawW: rw * scale, drawH: rh * scale, span: rw * scale, vertical: ref.upright,
-                    drawWidth: drawWidth, labelWidth: labelWidth,
+                    guides: true, drawWidth: drawWidth, labelWidth: labelWidth,
                     value: "\(store.measured(comparison.referenceText)) \(ref.measure)", name: capitalised(ref.name)) {
                     Image(systemName: ref.symbol)
                         .resizable()
@@ -109,23 +111,55 @@ struct SizeComparisonView: View {
         .frame(height: 330)
     }
 
-    private func row<S: View>(drawW: CGFloat, drawH: CGFloat, span: CGFloat, vertical: Bool,
+    /// One item with its measurement drawn on it: the shape spans exactly the measured length,
+    /// with dashed guides from its two ends to the measuring arrow (beside it for heights).
+    private func row<S: View>(drawW: CGFloat, drawH: CGFloat, span: CGFloat, vertical: Bool, guides: Bool,
                               drawWidth: CGFloat, labelWidth: CGFloat,
                               value: String, name: String, @ViewBuilder shape: () -> S) -> some View {
-        HStack(alignment: .bottom, spacing: 12) {
-            VStack(alignment: .leading, spacing: 6) {
-                HStack(alignment: .bottom, spacing: 4) {
-                    shape().frame(width: max(drawW, 4), height: max(drawH, 4))
-                    if vertical {
-                        DimensionArrow(axis: .vertical)
-                            .frame(width: 8, height: max(drawH, 4))
-                            .foregroundStyle(.secondary)
-                    }
-                }
-                if !vertical {
-                    DimensionArrow(axis: .horizontal)
-                        .frame(width: max(span, 8), height: 8)
+        let w = max(drawW, 4), h = max(drawH, 4)
+        let dash = StrokeStyle(lineWidth: 1, dash: [3, 3])
+        return HStack(alignment: .bottom, spacing: 12) {
+            Group {
+                if vertical {
+                    HStack(alignment: .bottom, spacing: 0) {
+                        shape().frame(width: w, height: h)
+                        ZStack(alignment: .leading) {
+                            if guides {
+                                // Guides from the top and bottom of the shape across to the arrow.
+                                VStack(spacing: 0) {
+                                    Line(horizontal: true).stroke(style: dash).frame(height: 1)
+                                    Spacer(minLength: 0)
+                                    Line(horizontal: true).stroke(style: dash).frame(height: 1)
+                                }
+                                .frame(width: 14, height: h)
+                            }
+                            DimensionArrow(axis: .vertical)
+                                .frame(width: 8, height: h)
+                                .offset(x: 10)
+                        }
+                        .frame(width: 22, height: h, alignment: .leading)
                         .foregroundStyle(.secondary)
+                    }
+                } else {
+                    VStack(alignment: .leading, spacing: 0) {
+                        shape().frame(width: w, height: h)
+                        ZStack(alignment: .topLeading) {
+                            if guides {
+                                // Guides down from the shape's two ends to the arrow.
+                                HStack(spacing: 0) {
+                                    Line().stroke(style: dash).frame(width: 1)
+                                    Spacer(minLength: 0)
+                                    Line().stroke(style: dash).frame(width: 1)
+                                }
+                                .frame(width: max(span, 8), height: 14)
+                            }
+                            DimensionArrow(axis: .horizontal)
+                                .frame(width: max(span, 8), height: 8)
+                                .offset(y: 10)
+                        }
+                        .frame(height: 20, alignment: .topLeading)
+                        .foregroundStyle(.secondary)
+                    }
                 }
             }
             .frame(width: drawWidth, alignment: .bottomLeading)
@@ -211,12 +245,19 @@ struct SizeComparisonView: View {
     private func capitalised(_ s: String) -> String { s.prefix(1).uppercased() + s.dropFirst() }
 }
 
-/// A vertical line down the middle of its frame.
+/// A line through the middle of its frame: vertical by default, or horizontal.
 private struct Line: Shape {
+    var horizontal = false
+
     func path(in r: CGRect) -> Path {
         var p = Path()
-        p.move(to: CGPoint(x: r.midX, y: r.minY))
-        p.addLine(to: CGPoint(x: r.midX, y: r.maxY))
+        if horizontal {
+            p.move(to: CGPoint(x: r.minX, y: r.midY))
+            p.addLine(to: CGPoint(x: r.maxX, y: r.midY))
+        } else {
+            p.move(to: CGPoint(x: r.midX, y: r.minY))
+            p.addLine(to: CGPoint(x: r.midX, y: r.maxY))
+        }
         return p
     }
 }
