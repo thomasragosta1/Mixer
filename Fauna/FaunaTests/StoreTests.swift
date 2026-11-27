@@ -326,6 +326,22 @@ final class StoreTests: XCTestCase {
         XCTAssertFalse(store.isWaitingForTomorrow)
     }
 
+    func testMissedDaysDontPileUp() {
+        let store = onboarded()
+        let monday = store.state.journal.count
+        // Skip Tuesday entirely; open on Wednesday: one new animal, not one for Tuesday too.
+        store.refreshDay(now: Date().addingTimeInterval(2 * 86_400))
+        XCTAssertEqual(store.state.journal.count, monday + 1)
+        // A week away still brings just one.
+        store.refreshDay(now: Date().addingTimeInterval(9 * 86_400))
+        XCTAssertEqual(store.state.journal.count, monday + 2)
+        // Opening several times on the same day changes nothing.
+        store.refreshDay(now: Date().addingTimeInterval(9 * 86_400 + 60))
+        XCTAssertEqual(store.state.journal.count, monday + 2)
+        XCTAssertEqual(store.todayAnimals.count, 1)
+        assertConsistent(store)
+    }
+
     func testDayKeyIsZeroPadded() {
         let date = cal.date(from: DateComponents(year: 2026, month: 1, day: 5, hour: 12))!
         XCTAssertEqual(AppStore.dayKey(for: date), "2026-01-05")
