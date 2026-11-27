@@ -270,6 +270,25 @@ final class MoreUITests: XCTestCase {
         edgeTap(open: "Luna Moth", neighbour: "Jaguar", dx: 0.05)
     }
 
+    // MARK: Size comparisons
+
+    func testTappingWeightComparesItWithSomethingFamiliar() {
+        let app = launch(["-FaunaDemo"])
+        let weight = app.buttons["fact.compare.weight"]
+        XCTAssertTrue(scroll(app, to: weight), "length and weight facts can be tapped")
+        weight.tap()
+        XCTAssertTrue(app.navigationBars["How heavy?"].waitForExistence(timeout: 10))
+        let sentence = app.staticTexts["size.sentence"]
+        XCTAssertTrue(sentence.waitForExistence(timeout: 5))
+        XCTAssertTrue(sentence.label.contains("house cat"), sentence.label)
+        app.buttons["Done"].tap()
+        let length = app.buttons["fact.compare.length"]
+        XCTAssertTrue(length.waitForExistence(timeout: 5))
+        length.tap()
+        XCTAssertTrue(app.navigationBars["How long?"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.staticTexts["size.sentence"].label.contains("as long as"))
+    }
+
     // MARK: Accessibility
 
     func testLargestTextSizeStillWorks() {

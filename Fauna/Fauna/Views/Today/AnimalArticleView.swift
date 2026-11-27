@@ -21,6 +21,8 @@ struct AnimalArticleView: View {
     /// The end-of-article unlock card is on screen, so the floating unlock button steps aside.
     @State private var unlockCardVisible = false
     @State private var confirmUnlock = false
+    /// A length or weight tapped in the facts: shown against something familiar.
+    @State private var comparison: SizeComparison?
 
     /// On Today, once this animal's quiz is passed and the reader chose to wait: the next animal.
     private var waitingNext: Animal? {
@@ -73,6 +75,7 @@ struct AnimalArticleView: View {
             }
         }
         .animation(.spring(response: 0.4, dampingFraction: 0.85), value: unlockCardVisible)
+        .sheet(item: $comparison) { SizeComparisonView(animal: animal, comparison: $0).presentationDetents([.medium, .large]) }
         .confirmationDialog("Unlock your next animal now?", isPresented: $confirmUnlock, titleVisibility: .visible) {
             Button("Unlock now") {
                 withAnimation(.smooth) { _ = store.unlockReservedNow() }
@@ -279,7 +282,8 @@ struct AnimalArticleView: View {
                     .fixedSize(horizontal: false, vertical: true)
             }
 
-            FactGrid(facts: animal.facts.map { Fact(label: $0.label, value: store.measured($0.value)) }, tint: accent)
+            FactGrid(facts: animal.facts.map { Fact(label: $0.label, value: store.measured($0.value)) }, tint: accent,
+                     comparisons: animal.facts.map(SizeComparison.make(for:))) { comparison = $0 }
                 .id("facts")
 
             ArticleSection(title: "Where it lives", symbol: "map.fill", tint: accent) {
@@ -474,40 +478,65 @@ private struct ArticleSection<Content: View>: View {
 struct FactGrid: View {
     let facts: [Fact]
     let tint: Color
+    /// For each fact, a size comparison when it's a length or weight; those tiles can be tapped.
+    var comparisons: [SizeComparison?] = []
+    var onCompare: ((SizeComparison) -> Void)? = nil
 
     var body: some View {
         LazyVGrid(columns: [GridItem(.flexible(), spacing: 12), GridItem(.flexible(), spacing: 12)], spacing: 12) {
-            ForEach(facts, id: \.self) { fact in
-                VStack(alignment: .leading, spacing: 10) {
-                    Image(systemName: fact.symbol)
-                        .font(.system(size: 15, weight: .semibold))
-                        .foregroundStyle(tint)
-                    VStack(alignment: .leading, spacing: 3) {
-                        Text(fact.value)
-                            .font(.system(.headline, design: .rounded))
-                            .lineLimit(2)
-                            .minimumScaleFactor(0.8)
-                            .fixedSize(horizontal: false, vertical: true)
-                        Text(fact.label.uppercased())
-                            .font(.caption2.weight(.semibold))
-                            .tracking(0.8)
-                            .foregroundStyle(.secondary)
-                    }
+            ForEach(Array(facts.enumerated()), id: \.offset) { i, fact in
+                if let c = comparisons.indices.contains(i) ? comparisons[i] : nil, let onCompare {
+                    Button { onCompare(c) } label: { tile(fact, comparable: true) }
+                        .buttonStyle(PressableStyle())
+                        .accessibilityHint(c.kind == .length ? "Compares its length with something familiar"
+                                                             : "Compares its weight with something familiar")
+                        .accessibilityIdentifier("fact.compare.\(fact.label.lowercased())")
+                } else {
+                    tile(fact, comparable: false)
                 }
-                .frame(maxWidth: .infinity, minHeight: 96, alignment: .topLeading)
-                .padding(14)
-                .background(
-                    RoundedRectangle(cornerRadius: 20, style: .continuous)
-                        .fill(tint.opacity(0.08))
-                )
-                .overlay(
-                    RoundedRectangle(cornerRadius: 20, style: .continuous)
-                        .strokeBorder(tint.opacity(0.12))
-                )
-                .accessibilityElement(children: .ignore)
-                .accessibilityLabel("\(fact.label): \(fact.value)")
             }
         }
+    }
+
+    private func tile(_ fact: Fact, comparable: Bool) -> some View {
+        VStack(alignment: .leading, spacing: 10) {
+            HStack {
+                Image(systemName: fact.symbol)
+                    .font(.system(size: 15, weight: .semibold))
+                    .foregroundStyle(tint)
+                Spacer()
+                if comparable {
+                    Image(systemName: "arrow.up.left.and.arrow.down.right")
+                        .font(.system(size: 11, weight: .bold))
+                        .foregroundStyle(tint.opacity(0.8))
+                }
+            }
+            VStack(alignment: .leading, spacing: 3) {
+                Text(fact.value)
+                    .font(.system(.headline, design: .rounded))
+                    .foregroundStyle(.primary)
+                    .lineLimit(2)
+                    .minimumScaleFactor(0.8)
+                    .fixedSize(horizontal: false, vertical: true)
+                    .multilineTextAlignment(.leading)
+                Text(comparable ? "\(fact.label.uppercased()) · COMPARE" : fact.label.uppercased())
+                    .font(.caption2.weight(.semibold))
+                    .tracking(0.8)
+                    .foregroundStyle(.secondary)
+            }
+        }
+        .frame(maxWidth: .infinity, minHeight: 96, alignment: .topLeading)
+        .padding(14)
+        .background(
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .fill(tint.opacity(0.08))
+        )
+        .overlay(
+            RoundedRectangle(cornerRadius: 20, style: .continuous)
+                .strokeBorder(tint.opacity(comparable ? 0.3 : 0.12))
+        )
+        .accessibilityElement(children: .ignore)
+        .accessibilityLabel("\(fact.label): \(fact.value)")
     }
 }
 
