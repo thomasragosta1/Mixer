@@ -19,7 +19,7 @@ struct SizeComparison: Equatable, Identifiable {
         /// A coin's size is its diameter.
         var measuresAcross = false
         /// What the size measures: "long", "tall", "across".
-        var measure: String { symbol == "figure.stand" ? "tall" : measuresAcross ? "across" : "long" }
+        var measure: String { upright ? "tall" : measuresAcross ? "across" : "long" }
     }
 
     let kind: Kind
@@ -30,14 +30,25 @@ struct SizeComparison: Equatable, Identifiable {
     let value: Double
     let reference: Reference
 
+    /// Things whose length (end to end) is familiar. All lie along the same axis as the animal.
     static let lengthReferences: [Reference] = [
         Reference(name: "a credit card", plural: "credit cards", symbol: "creditcard.fill", size: 0.086, aspect: 1.5),
-        Reference(name: "a phone", plural: "phones", symbol: "iphone", size: 0.15, upright: true, aspect: 0.5),
+        Reference(name: "a phone", plural: "phones", symbol: "iphone.landscape", size: 0.15, aspect: 2),
         Reference(name: "a house cat", plural: "house cats", symbol: "cat.fill", size: 0.46, aspect: 1.1),
-        Reference(name: "an adult person", plural: "adult people", symbol: "figure.stand", size: 1.7, upright: true, aspect: 0.45),
+        Reference(name: "a bicycle", plural: "bicycles", symbol: "bicycle", size: 1.75, aspect: 1.7),
         Reference(name: "a car", plural: "cars", symbol: "car.side.fill", size: 4.5, aspect: 2.2),
         Reference(name: "a truck", plural: "trucks", symbol: "truck.box.fill", size: 12, aspect: 1.9),
         Reference(name: "an airliner", plural: "airliners", symbol: "airplane", size: 38, aspect: 1.1),
+    ]
+
+    /// Things whose height is familiar, standing up, for heights and shoulder heights.
+    static let heightReferences: [Reference] = [
+        Reference(name: "a phone", plural: "phones", symbol: "iphone", size: 0.15, upright: true, aspect: 0.5),
+        Reference(name: "a house cat", plural: "house cats", symbol: "cat.fill", size: 0.25, upright: true, aspect: 1.1),
+        Reference(name: "a big dog", plural: "big dogs", symbol: "dog.fill", size: 0.6, upright: true, aspect: 1.1),
+        Reference(name: "an adult person", plural: "adult people", symbol: "figure.stand", size: 1.7, upright: true, aspect: 0.45),
+        Reference(name: "a truck", plural: "trucks", symbol: "truck.box.fill", size: 3.5, upright: true, aspect: 1.9),
+        Reference(name: "a two-storey house", plural: "two-storey houses", symbol: "house.fill", size: 8, upright: true, aspect: 1.1),
     ]
 
     static let weightReferences: [Reference] = [
@@ -91,10 +102,11 @@ struct SizeComparison: Equatable, Identifiable {
         let kind: Kind
         if label == "weight" { kind = .weight } else if lengthLabels.contains(label) { kind = .length } else { return nil }
         guard let value = parse(fact.value, kind: kind), value > 0 else { return nil }
-        let refs = references(kind, region: region)
+        let dimension: Dimension = label.contains("height") ? .tall : label == "wingspan" ? .wingspan : .long
+        // Like with like: a height against heights, a length against lengths.
+        let refs = kind == .length && dimension == .tall ? heightReferences : references(kind, region: region)
         // The familiar object closest in size, so the picture stays readable.
         let reference = refs.min { abs(log($0.size / value)) < abs(log($1.size / value)) }!
-        let dimension: Dimension = label.contains("height") ? .tall : label == "wingspan" ? .wingspan : .long
         return SizeComparison(kind: kind, dimension: dimension, value: value, reference: reference)
     }
 

@@ -24,7 +24,8 @@ final class SizeComparisonTests: XCTestCase {
 
     func testPicksTheClosestFamiliarThing() {
         XCTAssertEqual(SizeComparison.make(for: fact("Length", "Up to about 6 m"))?.reference.name, "a car")
-        XCTAssertEqual(SizeComparison.make(for: fact("Length", "1.8 m"))?.reference.name, "an adult person")
+        XCTAssertEqual(SizeComparison.make(for: fact("Length", "1.8 m"))?.reference.name, "a bicycle")
+        XCTAssertEqual(SizeComparison.make(for: fact("Height", "1.8 m"))?.reference.name, "an adult person")
         XCTAssertEqual(SizeComparison.make(for: fact("Length", "8 mm"), region: "US")?.reference.name, "a US quarter")
         XCTAssertEqual(SizeComparison.make(for: fact("Weight", "150 tonnes"))?.reference.name, "a bus")
         XCTAssertEqual(SizeComparison.make(for: fact("Weight", "3–6 kg"))?.reference.name, "a house cat")
@@ -66,6 +67,27 @@ final class SizeComparisonTests: XCTestCase {
             let c = SizeComparison.make(for: tiny, region: region)!
             XCTAssertFalse(c.sentence(animal: "Spring Peeper").contains("a coin"), region)
         }
+    }
+
+    func testHeightsCompareWithHeightsAndLengthsWithLengths() {
+        for f in ["Length", "Body length", "Wingspan", "Shell length"] {
+            for v in ["2 cm", "30 cm", "1.2 m", "6 m", "20 m"] {
+                let c = SizeComparison.make(for: fact(f, v), region: "US")!
+                XCTAssertFalse(c.reference.upright, "\(f) \(v) compared with a height (\(c.reference.name))")
+                XCTAssertNotEqual(c.reference.measure, "tall")
+            }
+        }
+        for f in ["Height", "Shoulder height"] {
+            for v in ["10 cm", "30 cm", "1 m", "1.8 m", "5.5 m"] {
+                let c = SizeComparison.make(for: fact(f, v), region: "US")!
+                XCTAssertTrue(c.reference.upright, "\(f) \(v) compared with a length (\(c.reference.name))")
+                XCTAssertEqual(c.reference.measure, "tall")
+                XCTAssertTrue(c.sentence(animal: "Giraffe").contains("tall"))
+            }
+        }
+        XCTAssertEqual(SizeComparison.make(for: fact("Height", "Up to 5.5 m"))?.reference.name, "a two-storey house")
+        XCTAssertEqual(SizeComparison.make(for: fact("Length", "29–33 cm"), region: "US")?.sentence(animal: "Atlantic Puffin"),
+                       "The Atlantic Puffin is about two-thirds as long as a house cat.")
     }
 
     func testMetricTextForTheReadersUnits() {

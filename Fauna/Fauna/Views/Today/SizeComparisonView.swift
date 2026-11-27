@@ -65,9 +65,9 @@ struct SizeComparisonView: View {
             let ref = comparison.reference
             let v = CGFloat(comparison.value), rs = CGFloat(ref.size)
             let aspect = animalAspect
-            // Heights are measured upright. So is a length when the silhouette stands taller than
-            // it is long (a penguin, a sitting frog): its long side is then its height.
-            let animalVertical = comparison.dimension == .tall || (comparison.dimension == .long && aspect < 0.9)
+            // The fact decides the axis for both: heights are measured upright, lengths end to end
+            // (bill to tail, nose to tail), whatever pose the silhouette is in.
+            let animalVertical = comparison.dimension == .tall
             // A wingspan is wider than a bird at rest, so the bird is drawn smaller than its arrow.
             let restShare: CGFloat = comparison.dimension == .wingspan ? 0.5 : 1
             // Drawn sizes in metres, and the span each measuring arrow covers.
@@ -76,8 +76,8 @@ struct SizeComparisonView: View {
             let animalSpan = animalVertical ? aw : v
             let rw = ref.upright ? rs * CGFloat(ref.aspect) : rs
             let rh = ref.upright ? rs : rs / CGFloat(ref.aspect)
-            // Heights compare best side by side on one ground line; lengths stacked from one edge.
-            if animalVertical || ref.upright {
+            // Heights compare side by side on one ground line; lengths stacked from one edge.
+            if animalVertical {
                 let gap: CGFloat = 32
                 let sideScale = min((geo.size.width - gap - 70) / (max(aw, animalSpan) + rw), 170 / max(ah, rh))
                 return AnyView(HStack(alignment: .top, spacing: gap) {
