@@ -112,7 +112,13 @@ final class FaunaUITests: XCTestCase {
         waiting.tap()
         let confirm = app.buttons["Unlock now"]
         XCTAssertTrue(confirm.waitForExistence(timeout: 5), "unlocking early asks first")
-        app.buttons["Wait for tomorrow"].tap()
+        // Newer iOS shows the dialog as a popover with no cancel button: tap outside it instead.
+        if app.buttons["Wait for tomorrow"].exists {
+            app.buttons["Wait for tomorrow"].tap()
+        } else {
+            app.coordinate(withNormalizedOffset: CGVector(dx: 0.5, dy: 0.12)).tap()
+        }
+        XCTAssertTrue(confirm.waitForNonExistence(timeout: 5), "the dialog closes")
         XCTAssertEqual(title(app), before, "cancelling keeps it hidden")
         waiting.tap()
         XCTAssertTrue(confirm.waitForExistence(timeout: 5))

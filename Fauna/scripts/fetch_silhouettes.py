@@ -95,7 +95,7 @@ def main():
         return a["id"], hit, None
 
     missing = []
-    with ThreadPoolExecutor(max_workers=8) as pool:
+    with ThreadPoolExecutor(max_workers=2) as pool:
         for aid, hit, err in pool.map(one, todo):
             if hit:
                 credits[aid] = hit
