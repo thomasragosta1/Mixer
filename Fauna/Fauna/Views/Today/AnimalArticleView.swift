@@ -506,9 +506,13 @@ struct FactGrid: View {
                     .foregroundStyle(tint)
                 Spacer()
                 if comparable {
-                    Image(systemName: "arrow.up.left.and.arrow.down.right")
-                        .font(.system(size: 11, weight: .bold))
-                        .foregroundStyle(tint.opacity(0.8))
+                    // A gold "?" badge: clearly tappable, and set apart from the tile's own colour.
+                    Image(systemName: "questionmark")
+                        .font(.system(size: 12, weight: .heavy))
+                        .foregroundStyle(.black.opacity(0.75))
+                        .frame(width: 24, height: 24)
+                        .background(Color.faunaGold, in: Circle())
+                        .shadow(color: Color.faunaGold.opacity(0.5), radius: 4)
                 }
             }
             VStack(alignment: .leading, spacing: 3) {
@@ -519,7 +523,7 @@ struct FactGrid: View {
                     .minimumScaleFactor(0.8)
                     .fixedSize(horizontal: false, vertical: true)
                     .multilineTextAlignment(.leading)
-                Text(comparable ? "\(fact.label.uppercased()) · COMPARE" : fact.label.uppercased())
+                Text(fact.label.uppercased())
                     .font(.caption2.weight(.semibold))
                     .tracking(0.8)
                     .foregroundStyle(.secondary)
