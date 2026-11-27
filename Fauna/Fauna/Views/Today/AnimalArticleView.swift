@@ -90,6 +90,22 @@ struct AnimalArticleView: View {
         .toolbarBackground(.hidden, for: .navigationBar)
         .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
         .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                let saved = store.isBookmarked(animal)
+                Button {
+                    Haptics.tap()
+                    withAnimation(.spring(response: 0.3, dampingFraction: 0.6)) { store.toggleBookmark(animal) }
+                } label: {
+                    Image(systemName: saved ? "bookmark.fill" : "bookmark")
+                        .font(.body.weight(.semibold))
+                        .foregroundStyle(saved ? Color.faunaGold : (pastHero ? Color.primary : .white))
+                        .symbolEffect(.bounce, value: saved)
+                        .frame(width: 36, height: 36)
+                        .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Circle())
+                }
+                .accessibilityLabel(saved ? "Remove bookmark" : "Bookmark")
+                .accessibilityIdentifier("article.bookmark")
+            }
             ToolbarItem(placement: .topBarTrailing) {
                 ShareLink(item: animal.wikipediaURL,
                           subject: Text(animal.name),
@@ -622,7 +638,7 @@ private struct UnlockCard: View {
                 .buttonStyle(ProminentPillStyle(tint: .faunaMoss))
             }
             if !inFocus && store.hasFocus {
-                Button("Widen my focus") { store.selectedTab = .focus }
+                Button("Widen my focus") { store.showSettings = true }
                     .font(.subheadline.weight(.semibold))
                     .foregroundStyle(Color.faunaGold)
             }

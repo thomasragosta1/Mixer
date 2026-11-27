@@ -62,7 +62,13 @@ struct FocusView: View {
                 .padding(.bottom, 40)
             }
             .background(Color(.systemGroupedBackground))
-            .navigationTitle("Focus")
+            .navigationTitle("Settings")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .confirmationAction) {
+                    Button("Done") { store.showSettings = false }
+                }
+            }
             .onAppear(perform: load)
             .task { offlineReady = OfflineLibrary.readyCount(store) }
             .onChange(of: groups) { _, _ in saveFocus() }
@@ -80,6 +86,8 @@ struct FocusView: View {
 
     private var header: some View {
         VStack(alignment: .leading, spacing: 6) {
+            Label("Focus", systemImage: "scope")
+                .font(.headline)
             Text("Narrow your daily animal to the creatures and places you care about. Want bugs in eastern Canada? Pick Insects & Bugs and Eastern North America.")
                 .font(.subheadline)
                 .foregroundStyle(.secondary)

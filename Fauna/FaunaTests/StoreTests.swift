@@ -343,6 +343,22 @@ final class StoreTests: XCTestCase {
         assertConsistent(store)
     }
 
+    func testBookmarksToggleNewestFirstAndSurviveReset() throws {
+        let store = onboarded()
+        let a = store.library[0], b = store.library[1]
+        store.toggleBookmark(a)
+        store.toggleBookmark(b)
+        XCTAssertEqual(store.bookmarkedAnimals.map(\.id), [b.id, a.id])
+        XCTAssertTrue(store.isBookmarked(a))
+        store.toggleBookmark(a)
+        XCTAssertFalse(store.isBookmarked(a))
+        XCTAssertEqual(store.bookmarkedAnimals.map(\.id), [b.id])
+        let back = try JSONDecoder.fauna.decode(AppState.self, from: JSONEncoder.fauna.encode(store.state))
+        XCTAssertEqual(back.bookmarkedIDs, [b.id])
+        store.resetProgress()
+        XCTAssertEqual(store.state.bookmarkedIDs, [b.id], "favourites aren't progress")
+    }
+
     func testDayKeyIsZeroPadded() {
         let date = cal.date(from: DateComponents(year: 2026, month: 1, day: 5, hour: 12))!
         XCTAssertEqual(AppStore.dayKey(for: date), "2026-01-05")

@@ -75,6 +75,14 @@ struct JournalView: View {
             }
             .background(Color(.systemGroupedBackground))
             .navigationTitle("Journal")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button { store.showSettings = true } label: {
+                        Image(systemName: "gearshape.fill")
+                    }
+                    .accessibilityLabel("Settings")
+                }
+            }
             .navigationDestination(for: Animal.self) { AnimalArticleView(animal: $0, mode: .journal) }
         }
     }

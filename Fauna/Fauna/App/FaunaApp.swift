@@ -15,7 +15,10 @@ struct FaunaApp: App {
             if let i = args.firstIndex(of: "-FaunaTab"), i + 1 < args.count {
                 switch args[i + 1] {
                 case "journal": store.selectedTab = .journal
-                case "focus": store.selectedTab = .focus
+                case "focus", "settings":
+                    store.selectedTab = .journal
+                    store.showSettings = true
+                case "bookmarks": store.selectedTab = .bookmarks
                 default: break
                 }
             }
@@ -87,10 +90,11 @@ struct MainTabs: View {
             JournalView()
                 .tabItem { Label("Journal", systemImage: "book.closed.fill") }
                 .tag(AppStore.Tab.journal)
-            FocusView()
-                .tabItem { Label("Focus", systemImage: "scope") }
-                .tag(AppStore.Tab.focus)
+            BookmarksView()
+                .tabItem { Label("Bookmarks", systemImage: "bookmark.fill") }
+                .tag(AppStore.Tab.bookmarks)
         }
+        .sheet(isPresented: $store.showSettings) { FocusView() }
     }
 }
 

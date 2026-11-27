@@ -23,6 +23,8 @@ struct AppState: Codable, Equatable {
     var lengthUnits: UnitPreference? = nil
     var weightUnits: UnitPreference? = nil
     var distanceUnits: UnitPreference? = nil
+    /// Favourite animals, most recently bookmarked first.
+    var bookmarkedIDs: [String] = []
 
     init() {}
 
@@ -66,6 +68,7 @@ struct AppState: Codable, Equatable {
         lengthUnits = (try? c.decodeIfPresent(UnitPreference.self, forKey: .lengthUnits)) ?? nil
         weightUnits = (try? c.decodeIfPresent(UnitPreference.self, forKey: .weightUnits)) ?? nil
         distanceUnits = (try? c.decodeIfPresent(UnitPreference.self, forKey: .distanceUnits)) ?? nil
+        bookmarkedIDs = (try? c.decodeIfPresent([String].self, forKey: .bookmarkedIDs)) ?? d.bookmarkedIDs
     }
 }
 
@@ -100,7 +103,9 @@ final class AppStore {
     /// Selected tab, so any screen can send the reader somewhere else.
     var selectedTab: Tab = .today
 
-    enum Tab: Hashable { case today, journal, focus }
+    enum Tab: Hashable { case today, journal, bookmarks }
+    /// Settings (focus, reminders, units) open as a sheet from the Journal.
+    var showSettings = false
 
     init(library: [Animal] = ContentSync.initialLibrary(), fileURL: URL? = AppStore.defaultFileURL) {
         self.library = library
@@ -159,6 +164,21 @@ final class AppStore {
     }
 
     func hasPassedQuiz(_ animal: Animal) -> Bool { state.quizPassedIDs.contains(animal.id) }
+
+    // MARK: Bookmarks
+
+    func isBookmarked(_ animal: Animal) -> Bool { state.bookmarkedIDs.contains(animal.id) }
+
+    func toggleBookmark(_ animal: Animal) {
+        if let i = state.bookmarkedIDs.firstIndex(of: animal.id) {
+            state.bookmarkedIDs.remove(at: i)
+        } else {
+            state.bookmarkedIDs.insert(animal.id, at: 0)
+        }
+    }
+
+    /// Bookmarked animals, newest first. Animals an update removed are skipped.
+    var bookmarkedAnimals: [Animal] { state.bookmarkedIDs.compactMap { byID[$0] } }
 
     /// Journal animals whose quiz hasn't been passed yet (never taken, or taken and missed).
     var quizzesToTake: [JournalItem] { journalAnimals.filter { !hasPassedQuiz($0.animal) } }
@@ -324,6 +344,7 @@ final class AppStore {
         fresh.lengthUnits = keep.lengthUnits
         fresh.weightUnits = keep.weightUnits
         fresh.distanceUnits = keep.distanceUnits
+        fresh.bookmarkedIDs = keep.bookmarkedIDs
         state = fresh
         rebuildQueue()
         refreshDay()

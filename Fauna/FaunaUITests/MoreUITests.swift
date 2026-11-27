@@ -37,10 +37,14 @@ final class MoreUITests: XCTestCase {
     }
 
     private func setUnits(_ app: XCUIApplication, _ name: String) {
-        tab(app, "Focus")
+        tab(app, "Journal")
+        let gear = app.navigationBars["Journal"].buttons["Settings"]
+        XCTAssertTrue(gear.waitForExistence(timeout: 10))
+        gear.tap()
         let seg = app.buttons[name]
         XCTAssertTrue(scroll(app, to: seg))
         seg.tap()
+        app.buttons["Done"].tap()
         tab(app, "Today")
     }
 
@@ -174,6 +178,7 @@ final class MoreUITests: XCTestCase {
         XCTAssertTrue(scroll(app, to: place))
         place.tap()
         XCTAssertTrue(app.staticTexts["No animals match yet"].waitForExistence(timeout: 5))
+        app.buttons["Done"].tap()
         tab(app, "Today")
         XCTAssertTrue(pill(app).waitForExistence(timeout: 10), "Today still works")
     }

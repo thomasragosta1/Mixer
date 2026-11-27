@@ -329,11 +329,46 @@ final class FaunaUITests: XCTestCase {
         XCTAssertTrue(unlockPill(app).waitForExistence(timeout: 10))
     }
 
+    // MARK: Settings and bookmarks
+
+    func testSettingsOpenFromTheJournal() {
+        let app = launch("-FaunaDemo", "-FaunaTab", "journal")
+        let gear = app.navigationBars["Journal"].buttons["Settings"]
+        XCTAssertTrue(gear.waitForExistence(timeout: 10), "a settings button at the top right of the Journal")
+        gear.tap()
+        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 10))
+        XCTAssertTrue(button(app, containing: "Mammals").exists, "focus lives in Settings")
+        app.buttons["Done"].tap()
+        XCTAssertTrue(app.navigationBars["Journal"].waitForExistence(timeout: 10))
+        XCTAssertFalse(app.tabBars.buttons["Focus"].exists, "Focus is no longer a tab")
+    }
+
+    func testBookmarkAnArticle() {
+        let app = launch("-FaunaDemo")
+        tab(app, "Bookmarks")
+        XCTAssertTrue(app.staticTexts["No bookmarks yet"].waitForExistence(timeout: 10))
+        tab(app, "Today")
+        let bookmark = app.buttons["article.bookmark"]
+        XCTAssertTrue(bookmark.waitForExistence(timeout: 10), "a bookmark at the top left of the article")
+        XCTAssertEqual(bookmark.label, "Bookmark")
+        bookmark.tap()
+        XCTAssertEqual(app.buttons["article.bookmark"].label, "Remove bookmark")
+        tab(app, "Bookmarks")
+        let card = button(app, containing: "Red Panda, bookmarked")
+        XCTAssertTrue(card.waitForExistence(timeout: 10), "the bookmarked animal is listed")
+        card.tap()
+        let inside = app.buttons["article.bookmark"]
+        XCTAssertTrue(inside.waitForExistence(timeout: 10))
+        inside.tap()
+        app.navigationBars.buttons["Bookmarks"].tap()
+        XCTAssertTrue(app.staticTexts["No bookmarks yet"].waitForExistence(timeout: 10), "removing it empties the tab")
+    }
+
     // MARK: Focus
 
     func testFocusListsKindsAndPlaces() {
         let app = launch("-FaunaDemo", "-FaunaTab", "focus")
-        XCTAssertTrue(app.navigationBars["Focus"].waitForExistence(timeout: 10))
+        XCTAssertTrue(app.navigationBars["Settings"].waitForExistence(timeout: 10))
         XCTAssertTrue(button(app, containing: "Mammals").exists)
         XCTAssertTrue(button(app, containing: "Africa").exists)
         XCTAssertTrue(app.staticTexts["\(LibraryFacts.total) animals match"].exists)
@@ -403,6 +438,7 @@ final class FaunaUITests: XCTestCase {
         }
         XCTAssertNotNil(confirm, "no confirmation before erasing progress")
         confirm?.tap()
+        tapWhenReady(app.buttons["Done"])
         tab(app, "Journal")
         XCTAssertTrue(app.staticTexts["1"].waitForExistence(timeout: 5), "only today's animal remains")
     }
@@ -411,7 +447,7 @@ final class FaunaUITests: XCTestCase {
 
     func testRapidTabSwitching() {
         let app = launch("-FaunaDemo")
-        for i in 0..<30 { tab(app, ["Today", "Journal", "Focus"][i % 3]) }
+        for i in 0..<30 { tab(app, ["Today", "Journal", "Bookmarks"][i % 3]) }
         tab(app, "Today")
         XCTAssertTrue(unlockPill(app).waitForExistence(timeout: 10))
         XCTAssertEqual(app.state, .runningForeground)
