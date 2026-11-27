@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// Favourite animals, saved with the bookmark at the top left of any article.
+/// Favourite animals, saved with the bookmark at the top right of any article.
 struct BookmarksView: View {
     @Environment(AppStore.self) private var store
     private let columns = [GridItem(.flexible(), spacing: 14), GridItem(.flexible(), spacing: 14)]
@@ -12,7 +12,7 @@ struct BookmarksView: View {
                     ContentUnavailableView {
                         Label("No bookmarks yet", systemImage: "bookmark")
                     } description: {
-                        Text("Tap the bookmark at the top left of any article to keep your favourite animals here.")
+                        Text("Tap the bookmark at the top right of any article to keep your favourite animals here.")
                     }
                 } else {
                     ScrollView {

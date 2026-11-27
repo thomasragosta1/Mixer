@@ -91,6 +91,18 @@ struct AnimalArticleView: View {
         .toolbarColorScheme(pastHero ? nil : .dark, for: .navigationBar)
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {
+                ShareLink(item: animal.wikipediaURL,
+                          subject: Text(animal.name),
+                          message: Text("I met the \(animal.name) on Fauna today. \(animal.tagline).")) {
+                    Image(systemName: "square.and.arrow.up")
+                        .font(.body.weight(.semibold))
+                        .foregroundStyle(pastHero ? Color.primary : .white)
+                        .frame(width: 36, height: 36)
+                        .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Circle())
+                }
+                .accessibilityLabel("Share")
+            }
+            ToolbarItem(placement: .topBarTrailing) {
                 let saved = store.isBookmarked(animal)
                 Button {
                     Haptics.tap()
@@ -105,18 +117,6 @@ struct AnimalArticleView: View {
                 }
                 .accessibilityLabel(saved ? "Remove bookmark" : "Bookmark")
                 .accessibilityIdentifier("article.bookmark")
-            }
-            ToolbarItem(placement: .topBarTrailing) {
-                ShareLink(item: animal.wikipediaURL,
-                          subject: Text(animal.name),
-                          message: Text("I met the \(animal.name) on Fauna today. \(animal.tagline).")) {
-                    Image(systemName: "square.and.arrow.up")
-                        .font(.body.weight(.semibold))
-                        .foregroundStyle(pastHero ? Color.primary : .white)
-                        .frame(width: 36, height: 36)
-                        .background(pastHero ? AnyShapeStyle(Color.clear) : AnyShapeStyle(Material.ultraThinMaterial), in: Circle())
-                }
-                .accessibilityLabel("Share")
             }
         }
     }

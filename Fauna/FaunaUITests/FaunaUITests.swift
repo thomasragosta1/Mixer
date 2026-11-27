@@ -349,7 +349,7 @@ final class FaunaUITests: XCTestCase {
         XCTAssertTrue(app.staticTexts["No bookmarks yet"].waitForExistence(timeout: 10))
         tab(app, "Today")
         let bookmark = app.buttons["article.bookmark"]
-        XCTAssertTrue(bookmark.waitForExistence(timeout: 10), "a bookmark at the top left of the article")
+        XCTAssertTrue(bookmark.waitForExistence(timeout: 10), "a bookmark at the top right of the article")
         XCTAssertEqual(bookmark.label, "Bookmark")
         bookmark.tap()
         XCTAssertEqual(app.buttons["article.bookmark"].label, "Remove bookmark")
